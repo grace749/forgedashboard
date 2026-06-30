@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Forge — Owner Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f6fa; color: #1a1a2e; }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e8e8ee;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
+    header .meta { font-size: 0.78rem; color: #888; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 22px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    .card h2 {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #999;
+      margin-bottom: 14px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 6px 0;
+      border-bottom: 1px solid #f0f0f5;
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-label { font-size: 0.88rem; color: #444; }
+    .stat-value { font-size: 1rem; font-weight: 600; color: #1a1a2e; }
+    .stat-value.green { color: #16a34a; }
+    .stat-value.red { color: #dc2626; }
+
+    .big-stat {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .big-label { font-size: 0.82rem; color: #999; }
+
+    .task-list { list-style: none; }
+    .task-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 7px 0;
+      font-size: 0.88rem;
+      border-bottom: 1px solid #f0f0f5;
+    }
+    .task-list li:last-child { border-bottom: none; }
+    .task-check { width: 16px; height: 16px; border-radius: 50%; border: 2px solid #d1d5db; flex-shrink: 0; margin-top: 1px; }
+    .task-check.done { background: #16a34a; border-color: #16a34a; }
+    .task-project { font-size: 0.72rem; color: #aaa; margin-top: 2px; }
+    .task-name a { color: inherit; text-decoration: none; }
+    .task-name a:hover { text-decoration: underline; }
+
+    .null-value { color: #ccc; font-size: 0.85rem; }
+
+    .full-width { grid-column: 1 / -1; }
+
+    .kpi-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    .kpi-table th { text-align: left; padding: 6px 8px; color: #999; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #f0f0f5; }
+    .kpi-table td { padding: 8px 8px; border-bottom: 1px solid #f8f8fc; }
+    .kpi-table tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .badge.on-track { background: #dcfce7; color: #16a34a; }
+    .badge.at-risk { background: #fef9c3; color: #ca8a04; }
+    .badge.behind { background: #fee2e2; color: #dc2626; }
+
+    @media (max-width: 600px) {
+      .grid { padding: 12px; gap: 12px; }
+      .big-stat { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Forge — Owner Dashboard</h1>
+  <span class="meta" id="gen-time">Loading…</span>
+</header>
+
+<div class="grid" id="dashboard">
+  <div class="card"><h2>Loading</h2><p style="color:#aaa;font-size:.9rem">Fetching data…</p></div>
+</div>
+
+<script>
+async function loadData() {
+  const res = await fetch("data/data.json?t=" + Date.now());
+  return res.json();
+}
+
+function fmt(val, prefix = "") {
+  if (val === null || val === undefined) return `<span class="null-value">—</span>`;
+  if (typeof val === "number") return `${prefix}${val.toLocaleString("en-IE", { maximumFractionDigits: 0 })}`;
+  return val;
+}
+
+function fmtEur(val) { return fmt(val, "€"); }
+
+function render(data) {
+  const d = document.getElementById("dashboard");
+  const t = document.getElementById("gen-time");
+
+  if (data.generated_at) {
+    const dt = new Date(data.generated_at);
+    t.textContent = "Updated " + dt.toLocaleString("en-IE", { dateStyle: "medium", timeStyle: "short" });
+  }
+
+  const cards = [];
+
+  // ── Membership snapshot ──────────────────────────────────────────────────
+  const tm = data.teamup || {};
+  cards.push(`
+    <div class="card">
+      <h2>Membership</h2>
+      <div class="stat-row"><span class="stat-label">Total members</span><span class="stat-value">${fmt(tm.total_members)}</span></div>
+      <div class="stat-row"><span class="stat-label">Recurring</span><span class="stat-value">${fmt(tm.recurring)}</span></div>
+      <div class="stat-row"><span class="stat-label">Trials</span><span class="stat-value">${fmt(tm.trial)}</span></div>
+      <div class="stat-row"><span class="stat-label">Cancellations (MTD)</span><span class="stat-value ${tm.cancellations_this_month > 3 ? 'red' : ''}">${fmt(tm.cancellations_this_month)}</span></div>
+      <div class="stat-row"><span class="stat-label">New leads (7d)</span><span class="stat-value green">${fmt(tm.weekly_leads)}</span></div>
+    </div>
+  `);
+
+  // ── Financials ────────────────────────────────────────────────────────────
+  const xr = data.xero || {};
+  cards.push(`
+    <div class="card">
+      <h2>Financials (MTD)</h2>
+      <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-value green">${fmtEur(xr.revenue_mtd)}</span></div>
+      <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-value ${xr.net_profit_mtd > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit_mtd)}</span></div>
+      <div class="stat-row"><span class="stat-label">Owner salary</span><span class="stat-value">${fmtEur(xr.owner_salary)}</span></div>
+      <div class="stat-row"><span class="stat-label">Coaches salary</span><span class="stat-value">${fmtEur(xr.coaches_salary)}</span></div>
+      <div class="stat-row"><span class="stat-label">Rent</span><span class="stat-value">${fmtEur(xr.rent)}</span></div>
+      <div class="stat-row"><span class="stat-label">Total expenses</span><span class="stat-value">${fmtEur(xr.expenses_mtd)}</span></div>
+    </div>
+  `);
+
+  // ── Today's tasks ─────────────────────────────────────────────────────────
+  const tasks = (data.asana?.tasks_today ?? []);
+  const taskItems = tasks.length
+    ? tasks.map(t => `
+        <li>
+          <div class="task-check ${t.completed ? 'done' : ''}"></div>
+          <div>
+            <div class="task-name">${t.url ? `<a href="${t.url}" target="_blank">${t.name}</a>` : t.name}</div>
+            ${t.project ? `<div class="task-project">${t.project}</div>` : ""}
+          </div>
+        </li>`)
+      .join("")
+    : `<li style="color:#aaa;font-size:.88rem;padding:8px 0">No tasks due today</li>`;
+
+  cards.push(`
+    <div class="card">
+      <h2>Today's Tasks (${tasks.length})</h2>
+      <ul class="task-list">${taskItems}</ul>
+    </div>
+  `);
+
+  // ── 90-day sprint KPIs ────────────────────────────────────────────────────
+  const kpis = data.growth_sprint?.kpis ?? [];
+  let sprintCard;
+  if (kpis.length === 0) {
+    sprintCard = `<div class="card full-width"><h2>90-Day Growth Sprint</h2><p style="color:#aaa;font-size:.88rem">No data yet</p></div>`;
+  } else {
+    // Detect columns — use whatever headers the sheet has
+    const cols = Object.keys(kpis[0]);
+    const headerRow = cols.map(c => `<th>${c}</th>`).join("");
+    const bodyRows = kpis.map(row => `<tr>${cols.map(c => `<td>${row[c] || "—"}</td>`).join("")}</tr>`).join("");
+    sprintCard = `
+      <div class="card full-width">
+        <h2>90-Day Growth Sprint</h2>
+        <table class="kpi-table">
+          <thead><tr>${headerRow}</tr></thead>
+          <tbody>${bodyRows}</tbody>
+        </table>
+      </div>`;
+  }
+  cards.push(sprintCard);
+
+  d.innerHTML = cards.join("");
+}
+
+loadData().then(render).catch(err => {
+  document.getElementById("dashboard").innerHTML =
+    `<div class="card"><h2>Error</h2><p style="color:#dc2626;font-size:.88rem">${err.message}</p></div>`;
+});
+</script>
+</body>
+</html>

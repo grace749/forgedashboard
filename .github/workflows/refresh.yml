@@ -1,0 +1,47 @@
+name: Refresh Dashboard Data
+
+on:
+  schedule:
+    # 6:00 AM UTC = 7:00 AM BST (summer) / 6:00 AM GMT (winter)
+    # Adjust to 0 5 * * * in summer if you want 6am BST precisely
+    - cron: "0 6 * * *"
+  workflow_dispatch: # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write  # needed to commit data.json back to the repo
+  secrets: write   # needed to rotate the Xero refresh token
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch all data sources
+        env:
+          ASANA_PAT: ${{ secrets.ASANA_PAT }}
+          TEAMUP_API_KEY: ${{ secrets.TEAMUP_API_KEY }}
+          TEAMUP_SITE_ID: ${{ secrets.TEAMUP_SITE_ID }}
+          XERO_CLIENT_ID: ${{ secrets.XERO_CLIENT_ID }}
+          XERO_CLIENT_SECRET: ${{ secrets.XERO_CLIENT_SECRET }}
+          XERO_REFRESH_TOKEN: ${{ secrets.XERO_REFRESH_TOKEN }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: cd scripts && python build_data.py
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "forge-dashboard-bot"
+          git config user.email "bot@theforge.pt"
+          git add data/data.json
+          git diff --staged --quiet || git commit -m "chore: refresh dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
