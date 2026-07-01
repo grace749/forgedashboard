@@ -29,7 +29,6 @@ jobs:
         env:
           ASANA_PAT: ${{ secrets.ASANA_PAT }}
           TEAMUP_API_KEY: ${{ secrets.TEAMUP_API_KEY }}
-          TEAMUP_SITE_ID: ${{ secrets.TEAMUP_SITE_ID }}
           XERO_CLIENT_ID: ${{ secrets.XERO_CLIENT_ID }}
           XERO_CLIENT_SECRET: ${{ secrets.XERO_CLIENT_SECRET }}
           XERO_REFRESH_TOKEN: ${{ secrets.XERO_REFRESH_TOKEN }}

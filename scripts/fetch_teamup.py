@@ -1,51 +1,53 @@
-"""Fetch membership snapshot from TeamUp (goteamup.com)."""
+"""Fetch membership snapshot from TeamUp (goteamup.com) using M2M token."""
 import os, json, requests
 from datetime import date, timedelta
 
 TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
-TEAMUP_SITE_ID = os.environ["TEAMUP_SITE_ID"]
-BASE = "https://api.goteamup.com/v1"
-HEADERS = {"Authorization": f"Bearer {TEAMUP_API_KEY}"}
+BASE = "https://goteamup.com/api/v1"
+HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
+
+
+def get_all(endpoint, params=None):
+    """Fetch all pages from a paginated endpoint."""
+    results = []
+    url = f"{BASE}/{endpoint}/"
+    p = params or {}
+    while url:
+        r = requests.get(url, headers=HEADERS, params=p)
+        r.raise_for_status()
+        data = r.json()
+        results.extend(data.get("results", []))
+        url = data.get("next")
+        p = {}  # next URL already has params baked in
+    return results
 
 
 def run():
-    # Active members
-    r = requests.get(f"{BASE}/customers", headers=HEADERS, params={"site": TEAMUP_SITE_ID, "status": "active"})
-    r.raise_for_status()
-    members = r.json()
+    # All active customer memberships
+    all_memberships = get_all("customermemberships", {"status": "active"})
 
-    total = members.get("count", 0)
+    total = len(all_memberships)
 
-    # Recurring (have an active subscription)
-    r2 = requests.get(f"{BASE}/subscriptions", headers=HEADERS, params={"site": TEAMUP_SITE_ID, "status": "active"})
-    r2.raise_for_status()
-    subs = r2.json()
+    # Recurring = memberships with a recurring billing type
+    recurring = sum(1 for m in all_memberships if m.get("membership_type") == "recurring"
+                    or m.get("is_recurring") is True)
 
-    recurring = subs.get("count", 0)
-
-    # Trials — customers with trial membership type (adjust filter to match your TeamUp setup)
-    r3 = requests.get(f"{BASE}/customers", headers=HEADERS, params={"site": TEAMUP_SITE_ID, "membership_type": "trial"})
-    r3.raise_for_status()
-    trial = r3.json().get("count", 0)
+    # Trials
+    trial = sum(1 for m in all_memberships if "trial" in str(m.get("membership", "")).lower()
+                or m.get("is_trial") is True)
 
     # Cancellations this month
     month_start = date.today().replace(day=1).isoformat()
-    r4 = requests.get(f"{BASE}/subscriptions", headers=HEADERS, params={
-        "site": TEAMUP_SITE_ID,
+    cancelled = get_all("customermemberships", {
         "status": "cancelled",
-        "cancelled_after": month_start,
+        "end_date__gte": month_start,
     })
-    r4.raise_for_status()
-    cancellations = r4.json().get("count", 0)
+    cancellations = len(cancelled)
 
-    # Leads this week (new sign-ups / enquiries in last 7 days)
+    # New customers in last 7 days (weekly leads)
     week_ago = (date.today() - timedelta(days=7)).isoformat()
-    r5 = requests.get(f"{BASE}/customers", headers=HEADERS, params={
-        "site": TEAMUP_SITE_ID,
-        "created_after": week_ago,
-    })
-    r5.raise_for_status()
-    weekly_leads = r5.json().get("count", 0)
+    new_customers = get_all("customers", {"created__gte": week_ago})
+    weekly_leads = len(new_customers)
 
     return {
         "total_members": total,
