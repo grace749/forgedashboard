@@ -90,7 +90,7 @@ def run():
     month_start = today.replace(day=1).isoformat()
     month_end = today.isoformat()
 
-    pl = get_report(access_token, tenant_id, "ProfitAndLoss", {
+    pl = get_report(access_token, tenant_id, "ProfitAndLoss", {  # requires accounting.reports.profitandloss.read
         "fromDate": month_start,
         "toDate": month_end,
     })
