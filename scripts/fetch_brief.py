@@ -257,42 +257,44 @@ def _draft_exists_for_thread(svc, thread_id):
 
 
 def _generate_reply(sender_name, subject, body):
-    """Use Anthropic API to write a suggested reply."""
+    """Use Anthropic API to write a suggested reply. Falls back to a template."""
     import urllib.request
     ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not ANTHROPIC_KEY:
-        return None
-    try:
-        payload = json.dumps({
-            "model": "claude-haiku-4-5-20251001",
-            "max_tokens": 300,
-            "messages": [{
-                "role": "user",
-                "content": (
-                    f"You are Grace Smith, owner of The Forge — a women's fitness gym in Belfast. "
-                    f"Write a short, warm, professional reply to this email. "
-                    f"Keep it brief (3-5 sentences max). Don't use filler phrases like 'I hope this finds you well'. "
-                    f"Sign off as Grace.\n\n"
-                    f"From: {sender_name}\n"
-                    f"Subject: {subject}\n\n"
-                    f"{body[:1000]}"
-                )
-            }]
-        }).encode()
-        req = urllib.request.Request(
-            "https://api.anthropic.com/v1/messages",
-            data=payload,
-            headers={
-                "x-api-key": ANTHROPIC_KEY,
-                "anthropic-version": "2023-06-01",
-                "content-type": "application/json",
-            }
-        )
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            result = json.loads(resp.read())
-            return result["content"][0]["text"]
-    except Exception:
-        return None
+    if ANTHROPIC_KEY:
+        try:
+            payload = json.dumps({
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 300,
+                "messages": [{
+                    "role": "user",
+                    "content": (
+                        f"You are Grace Smith, owner of The Forge — a women's fitness gym in Belfast. "
+                        f"Write a short, warm, professional reply to this email. "
+                        f"Keep it brief (3-5 sentences max). Don't use filler phrases like 'I hope this finds you well'. "
+                        f"Sign off as Grace.\n\n"
+                        f"From: {sender_name}\n"
+                        f"Subject: {subject}\n\n"
+                        f"{body[:1000]}"
+                    )
+                }]
+            }).encode()
+            req = urllib.request.Request(
+                "https://api.anthropic.com/v1/messages",
+                data=payload,
+                headers={
+                    "x-api-key": ANTHROPIC_KEY,
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                }
+            )
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                result = json.loads(resp.read())
+                return result["content"][0]["text"]
+        except Exception as ex:
+            print(f"[brief] Anthropic API error for '{subject}': {ex}")
+
+    # Fallback: blank draft so Grace can still reply quickly from the thread
+    return f"Hi {sender_name.split()[0]},\n\n\n\nThanks,\nGrace"
 
 
 def _create_draft_reply(svc, email_data):
