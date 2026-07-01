@@ -42,7 +42,7 @@ def get_report(access_token, tenant_id, report_name, params=None):
 
 
 def extract_pl_value(report, account_name):
-    """Pull a line value from a Profit & Loss report by account name."""
+    """Pull a line value from a Profit & Loss report by account name (exact, case-insensitive)."""
     for section in report.get("Reports", [{}])[0].get("Rows", []):
         for row in section.get("Rows", []):
             cells = row.get("Cells", [])
@@ -52,6 +52,36 @@ def extract_pl_value(report, account_name):
                 except (IndexError, ValueError, KeyError):
                     return None
     return None
+
+
+def extract_pl_sum(report, *keywords):
+    """Sum all P&L rows whose name contains ANY of the given keywords (case-insensitive)."""
+    total = 0.0
+    found = False
+    for section in report.get("Reports", [{}])[0].get("Rows", []):
+        for row in section.get("Rows", []):
+            cells = row.get("Cells", [])
+            if not cells:
+                continue
+            label = cells[0].get("Value", "").lower()
+            if any(kw.lower() in label for kw in keywords):
+                try:
+                    total += float(cells[1]["Value"].replace(",", ""))
+                    found = True
+                except (IndexError, ValueError, KeyError):
+                    pass
+    return total if found else None
+
+
+def dump_pl_rows(report):
+    """Print all P&L row labels — helps identify exact Xero account names."""
+    for section in report.get("Reports", [{}])[0].get("Rows", []):
+        title = section.get("Title", "")
+        for row in section.get("Rows", []):
+            cells = row.get("Cells", [])
+            if cells:
+                val = cells[1].get("Value", "") if len(cells) > 1 else ""
+                print(f"  [{title}] {cells[0].get('Value','')} = {val}")
 
 
 def update_github_secret(secret_name, secret_value):
@@ -96,10 +126,16 @@ def run():
         "toDate": last_month_end.isoformat(),
     })
 
+    print("=== Xero P&L rows ===")
+    dump_pl_rows(pl)
+
+    # Wages: sum all rows containing "wage" or "salary" or "salaries" or "payroll" or "staff cost"
+    total_wages = extract_pl_sum(pl, "wage", "salary", "salaries", "payroll", "staff cost")
+
     return {
         "period": last_month_start.strftime("%B %Y"),
         "revenue": extract_pl_value(pl, "Total Income"),
-        "direct_wages": extract_pl_value(pl, "Direct Wages"),
+        "direct_wages": total_wages,
         "rent": extract_pl_value(pl, "Rent"),
         "marketing": extract_pl_value(pl, "Advertising & Marketing"),
         "cleaning": extract_pl_value(pl, "Cleaning"),

@@ -24,7 +24,7 @@
     }
     .logo { display: flex; align-items: center; gap: 10px; }
     .logo-mark {
-      width: 30px; height: 30px; background: #e63946; border-radius: 7px;
+      width: 30px; height: 30px; background: #7c3aed; border-radius: 7px;
       display: flex; align-items: center; justify-content: center;
       font-size: 14px; font-weight: 900; color: #fff;
     }
@@ -246,7 +246,7 @@
 <header>
   <div class="logo">
     <div class="logo-mark">F</div>
-    <span class="logo-text">The Forge</span>
+    <span class="logo-text">Forge Dashboard</span>
   </div>
   <span class="header-meta" id="gen-time">Loading…</span>
 </header>
@@ -400,10 +400,13 @@ function render(data) {
       ${mkMonthly.length ? `
       <div class="inner-divider">Monthly breakdown</div>
       <table class="mini-table">
-        <thead><tr><th>Month</th><th>Ad Cost</th><th>Profit</th></tr></thead>
+        <thead><tr><th>Month</th><th>Ad Cost</th><th>Leads</th><th>CPL</th><th>Profit</th></tr></thead>
         <tbody>
-          ${mkMonthly.map(m => `<tr><td>${m.month}</td><td>${fmtGbp(m.spend)}</td><td style="color:#16a34a;font-weight:600">${fmtGbp(m.profit)}</td></tr>`).join("")}
-          ${mkLife.spend ? `<tr class="total"><td>Total</td><td>${fmtGbp(mkLife.spend)}</td><td style="color:#16a34a">${fmtGbp(mkLife.profit)}</td></tr>` : ""}
+          ${mkMonthly.map(m => {
+            const cpl = m.leads > 0 ? fmtGbp(Math.round(m.spend / m.leads)) : "—";
+            return `<tr><td>${m.month}</td><td>${fmtGbp(m.spend)}</td><td>${m.leads}</td><td>${cpl}</td><td style="color:#16a34a;font-weight:600">${fmtGbp(m.profit)}</td></tr>`;
+          }).join("")}
+          ${mkLife.spend ? `<tr class="total"><td>Total</td><td>${fmtGbp(mkLife.spend)}</td><td>${mkLife.leads||""}</td><td></td><td style="color:#16a34a">${fmtGbp(mkLife.profit)}</td></tr>` : ""}
         </tbody>
       </table>` : ""}
     </div>
