@@ -166,32 +166,65 @@ def _needs_attention(sender, subject, snippet):
 
 
 def fetch_gmail_urgent():
-    """Unread emails from real humans in last 48h that genuinely need action."""
+    """
+    Emails needing a reply: looks at inbox threads where the last message
+    is NOT from Grace — catches read-but-never-replied emails like Aaron
+    from S Moore Motors, not just unread ones.
+    """
     svc = _gmail_service()
     if not svc:
         return {"error": "Gmail not configured — add GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN secrets"}
     try:
+        # Fetch inbox threads updated in last 7 days, excluding noise categories
         q = (
-            "is:unread newer_than:2d "
+            "in:inbox newer_than:7d "
             "-category:promotions -category:updates -category:social "
             "NOT label:spam"
         )
-        result = svc.users().messages().list(userId="me", q=q, maxResults=30).execute()
+        threads_result = svc.users().threads().list(userId="me", q=q, maxResults=40).execute()
+        threads = threads_result.get("threads", [])
+
         emails = []
-        for msg in result.get("messages", []):
-            hdrs, snippet = _get_headers(svc, msg["id"])
-            sender  = hdrs.get("From", "")
-            subject = hdrs.get("Subject", "(no subject)")
-            if not _needs_attention(sender, subject, snippet):
+        for t in threads:
+            thread = svc.users().threads().get(
+                userId="me", id=t["id"],
+                format="metadata",
+                metadataHeaders=["From", "Subject", "Date"]
+            ).execute()
+            messages = thread.get("messages", [])
+            if not messages:
                 continue
+
+            # Last message in thread — if it's from Grace, she already replied
+            last_msg  = messages[-1]
+            last_hdrs = {h["name"]: h["value"] for h in last_msg.get("payload", {}).get("headers", [])}
+            last_from = last_hdrs.get("From", "")
+
+            # Skip if Grace sent the last message (she already replied)
+            if "grace@theforge.pt" in last_from.lower():
+                continue
+
+            subject = last_hdrs.get("Subject", "(no subject)")
+            snippet = last_msg.get("snippet", "")
+
+            if _is_noise(last_from, subject, snippet):
+                continue
+
+            # For threads with multiple messages, show how many days since last received
+            first_hdrs = {h["name"]: h["value"] for h in messages[0].get("payload", {}).get("headers", [])}
+            original_subject = first_hdrs.get("Subject", subject)
+
             emails.append({
-                "from":     _sender_name(sender),
-                "from_raw": sender,
-                "subject":  subject,
-                "snippet":  snippet[:250],
-                "id":       msg["id"],
+                "from":      _sender_name(last_from),
+                "from_raw":  last_from,
+                "subject":   original_subject,
+                "snippet":   snippet[:250],
+                "id":        last_msg["id"],
+                "thread_id": t["id"],
+                "msg_count": len(messages),
             })
-        return emails[:8]
+
+        return emails[:10]
     except Exception as ex:
         return {"error": str(ex)}
 
