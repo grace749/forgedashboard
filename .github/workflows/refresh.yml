@@ -34,6 +34,11 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           ASANA_SCRIPT_URL: ${{ secrets.ASANA_SCRIPT_URL }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+          GOOGLE_IMPERSONATE_EMAIL: ${{ secrets.GOOGLE_IMPERSONATE_EMAIL }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: cd scripts && python build_data.py
