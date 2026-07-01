@@ -296,12 +296,27 @@ function render(data) {
 
   // ── Marketing ────────────────────────────────────────────────
   const mk = data.marketing || {};
+  const mkMonthly = mk.monthly || [];
+  const mkLife = mk.lifetime || {};
+  const monthRows = [...mkMonthly.map(m => `
+    <tr>
+      <td style="color:#374151;font-weight:500">${m.month}</td>
+      <td>${fmtGbp(m.spend)}</td>
+      <td style="color:#16a34a;font-weight:600">${fmtGbp(m.profit)}</td>
+    </tr>`),
+    mkLife.spend ? `<tr style="border-top:2px solid #f0f0f5">
+      <td style="color:#111;font-weight:700">Total</td>
+      <td style="font-weight:700">${fmtGbp(mkLife.spend)}</td>
+      <td style="color:#16a34a;font-weight:700">${fmtGbp(mkLife.profit)}</td>
+    </tr>` : ""
+  ].join("");
+
   cards.push(`
     <div class="card col-3">
-      <div class="card-title">Ads & Leads — ${mk.period || "—"}</div>
+      <div class="card-title">Social Media Ads</div>
       <div class="big-kpi">
         <div class="number">${mk.leads ?? "—"}</div>
-        <div class="sublabel">Leads from ads</div>
+        <div class="sublabel">Leads · ${mk.period || ""}</div>
       </div>
       <div class="stat-row">
         <span class="stat-label">Ad spend</span>
@@ -312,23 +327,27 @@ function render(data) {
         <span class="stat-val">${fmtGbp(mk.cost_per_lead)}</span>
       </div>
       <div class="stat-row">
-        <span class="stat-label">Sales from ads</span>
+        <span class="stat-label">Sales</span>
         <span class="stat-val green">${fmt(mk.sales)}</span>
-      </div>
-      <div class="stat-row">
-        <span class="stat-label">Income from ads</span>
-        <span class="stat-val green">${fmtGbp(mk.income_from_ads)}</span>
       </div>
       <div class="stat-row">
         <span class="stat-label">Close rate</span>
         <span class="stat-val ${(mk.close_rate||0) >= 10 ? 'green' : 'red'}">${mk.close_rate != null ? mk.close_rate + "%" : "—"}</span>
       </div>
-      ${mk.latest_week ? `
-      <div class="inner-divider">Latest week — ${mk.latest_week}</div>
-      <div class="stat-row pl-sub"><span class="stat-label">Spend</span><span class="stat-val">${fmtGbp(mk.latest_spend)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Leads</span><span class="stat-val">${fmt(mk.latest_leads)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Sales</span><span class="stat-val">${fmt(mk.latest_sales)}</span></div>
-      ` : ""}
+      <div class="stat-row">
+        <span class="stat-label">Profit from ads</span>
+        <span class="stat-val green">${fmtGbp(mk.profit)}</span>
+      </div>
+      ${mkMonthly.length ? `
+      <div class="inner-divider">Monthly breakdown</div>
+      <table style="width:100%;border-collapse:collapse;font-size:.78rem">
+        <thead><tr>
+          <th style="text-align:left;padding:4px 0;color:#bbb;font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid #f0f0f5">Month</th>
+          <th style="text-align:left;padding:4px 0;color:#bbb;font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid #f0f0f5">Ad Cost</th>
+          <th style="text-align:left;padding:4px 0;color:#bbb;font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid #f0f0f5">Profit</th>
+        </tr></thead>
+        <tbody style="color:#6b7280">${monthRows}</tbody>
+      </table>` : ""}
     </div>
   `);
 

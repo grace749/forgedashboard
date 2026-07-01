@@ -22,6 +22,7 @@ ROW_AD_SPEND  = 6   # Ad Spend
 ROW_LEADS     = 7   # Number Of Leads
 ROW_SALES     = 14  # Number of Sales (from ads)
 ROW_INCOME    = 15  # Total Income (from ads)
+ROW_PROFIT    = 17  # Profit/Loss
 
 
 def parse_currency(val):
@@ -69,90 +70,84 @@ def run():
     leads_row  = rows[ROW_LEADS]
     sales_row  = rows[ROW_SALES]
     income_row = rows[ROW_INCOME]
+    profit_row = rows[ROW_PROFIT] if len(rows) > ROW_PROFIT else []
 
     today = date.today()
     current_month = today.month
 
-    # Data starts at column index 1 (col B)
-    month_spend = 0.0
-    month_leads = 0
-    month_sales = 0
-    month_income = 0.0
-    latest_week_label = None
-    latest_spend = None
-    latest_leads = None
-    latest_sales = None
-    weeks_found = 0
+    # Group all weeks by month
+    month_data = {}  # {month_int: {spend, leads, sales, income, profit}}
 
     for col in range(1, max_cols - 2):  # skip Total/Average cols at end
         label = week_row[col] if col < len(week_row) else ""
         if not label:
             continue
         m = week_month(label)
-        if m != current_month:
+        if not m:
             continue
 
         spend  = parse_currency(spend_row[col]  if col < len(spend_row)  else "")
         leads  = parse_int(leads_row[col]        if col < len(leads_row)  else "")
         sales  = parse_int(sales_row[col]        if col < len(sales_row)  else "")
         income = parse_currency(income_row[col]  if col < len(income_row) else "")
+        profit = parse_currency(profit_row[col]  if col < len(profit_row) else "")
 
-        month_spend  += spend
-        month_leads  += leads
-        month_sales  += sales
-        month_income += income
-        weeks_found  += 1
+        if m not in month_data:
+            month_data[m] = {"spend": 0.0, "leads": 0, "sales": 0, "income": 0.0, "profit": 0.0}
+        month_data[m]["spend"]  += spend
+        month_data[m]["leads"]  += leads
+        month_data[m]["sales"]  += sales
+        month_data[m]["income"] += income
+        month_data[m]["profit"] += profit
 
-        # Track most recent populated week
-        if spend > 0 or leads > 0 or sales > 0:
-            latest_week_label = label.strip()
-            latest_spend  = spend
-            latest_leads  = leads
-            latest_sales  = sales
+    # Build monthly breakdown sorted chronologically
+    month_names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+    monthly = []
+    for m in sorted(month_data.keys()):
+        d = month_data[m]
+        monthly.append({
+            "month":  month_names[m - 1],
+            "spend":  round(d["spend"], 2),
+            "leads":  d["leads"],
+            "sales":  d["sales"],
+            "income": round(d["income"], 2),
+            "profit": round(d["profit"], 2),
+        })
 
-    # If no data for current month yet, fall back to previous month
-    if weeks_found == 0:
-        prev_month = current_month - 1 if current_month > 1 else 12
-        for col in range(1, max_cols - 2):
-            label = week_row[col] if col < len(week_row) else ""
-            if not label:
-                continue
-            m = week_month(label)
-            if m != prev_month:
-                continue
-            spend  = parse_currency(spend_row[col]  if col < len(spend_row)  else "")
-            leads  = parse_int(leads_row[col]        if col < len(leads_row)  else "")
-            sales  = parse_int(sales_row[col]        if col < len(sales_row)  else "")
-            income = parse_currency(income_row[col]  if col < len(income_row) else "")
-            month_spend  += spend
-            month_leads  += leads
-            month_sales  += sales
-            month_income += income
-            if spend > 0 or leads > 0 or sales > 0:
-                latest_week_label = label.strip()
-                latest_spend = spend
-                latest_leads = leads
-                latest_sales = sales
+    # Lifetime totals
+    lifetime_spend  = sum(d["spend"]  for d in month_data.values())
+    lifetime_leads  = sum(d["leads"]  for d in month_data.values())
+    lifetime_sales  = sum(d["sales"]  for d in month_data.values())
+    lifetime_income = sum(d["income"] for d in month_data.values())
+    lifetime_profit = sum(d["profit"] for d in month_data.values())
 
-        period = date(today.year, prev_month, 1).strftime("%B %Y") + " (prev)"
-    else:
-        period = today.strftime("%B %Y") + " (MTD)"
+    # Current month summary (fall back to last available month)
+    cur = month_data.get(current_month) or month_data.get(max(month_data.keys()), {})
+    period_m = current_month if current_month in month_data else max(month_data.keys())
+    period = date(today.year, period_m, 1).strftime("%B %Y")
+    if period_m != current_month:
+        period += " (latest)"
 
-    cost_per_lead = round(month_spend / month_leads, 2) if month_leads else None
-    close_rate    = round(month_sales / month_leads * 100, 1) if month_leads else None
+    cost_per_lead = round(cur["spend"] / cur["leads"], 2) if cur.get("leads") else None
+    close_rate    = round(cur["sales"] / cur["leads"] * 100, 1) if cur.get("leads") else None
 
     return {
         "period":           period,
-        "ad_spend":         round(month_spend, 2),
-        "leads":            month_leads,
-        "sales":            month_sales,
-        "income_from_ads":  round(month_income, 2),
+        "ad_spend":         round(cur.get("spend", 0), 2),
+        "leads":            cur.get("leads", 0),
+        "sales":            cur.get("sales", 0),
+        "income_from_ads":  round(cur.get("income", 0), 2),
+        "profit":           round(cur.get("profit", 0), 2),
         "cost_per_lead":    cost_per_lead,
         "close_rate":       close_rate,
-        "latest_week":      latest_week_label,
-        "latest_spend":     latest_spend,
-        "latest_leads":     latest_leads,
-        "latest_sales":     latest_sales,
+        "monthly":          monthly,
+        "lifetime": {
+            "spend":  round(lifetime_spend, 2),
+            "leads":  lifetime_leads,
+            "sales":  lifetime_sales,
+            "income": round(lifetime_income, 2),
+            "profit": round(lifetime_profit, 2),
+        },
     }
 
 
