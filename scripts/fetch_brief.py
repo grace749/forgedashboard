@@ -160,7 +160,7 @@ def fetch_gmail_urgent():
             "-category:promotions -category:updates -category:social "
             "NOT label:spam"
         )
-        threads_result = svc.users().threads().list(userId="me", q=q, maxResults=40).execute()
+        threads_result = svc.users().threads().list(userId="me", q=q, maxResults=100).execute()
         threads = threads_result.get("threads", [])
 
         emails = []
