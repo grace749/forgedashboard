@@ -159,13 +159,20 @@ function render(data) {
   const xr = data.xero || {};
   cards.push(`
     <div class="card">
-      <h2>Financials (MTD)</h2>
-      <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-value green">${fmtEur(xr.revenue_mtd)}</span></div>
-      <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-value ${xr.net_profit_mtd > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit_mtd)}</span></div>
-      <div class="stat-row"><span class="stat-label">Owner salary</span><span class="stat-value">${fmtEur(xr.owner_salary)}</span></div>
-      <div class="stat-row"><span class="stat-label">Coaches salary</span><span class="stat-value">${fmtEur(xr.coaches_salary)}</span></div>
+      <h2>Financials — ${xr.period || "Last Month"}</h2>
+      <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-value green">${fmtEur(xr.revenue)}</span></div>
+      <div class="stat-row"><span class="stat-label">Gross profit</span><span class="stat-value">${fmtEur(xr.gross_profit)}</span></div>
+      <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-value ${xr.net_profit > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit)}</span></div>
+      <div class="stat-row"><span class="stat-label" style="font-weight:600;color:#999;font-size:0.75rem;text-transform:uppercase">Expenses</span><span class="stat-value"></span></div>
+      <div class="stat-row"><span class="stat-label">Wages</span><span class="stat-value">${fmtEur(xr.direct_wages)}</span></div>
       <div class="stat-row"><span class="stat-label">Rent</span><span class="stat-value">${fmtEur(xr.rent)}</span></div>
-      <div class="stat-row"><span class="stat-label">Total expenses</span><span class="stat-value">${fmtEur(xr.expenses_mtd)}</span></div>
+      <div class="stat-row"><span class="stat-label">Marketing</span><span class="stat-value">${fmtEur(xr.marketing)}</span></div>
+      <div class="stat-row"><span class="stat-label">IT & Software</span><span class="stat-value">${fmtEur(xr.it_software)}</span></div>
+      <div class="stat-row"><span class="stat-label">Electricity</span><span class="stat-value">${fmtEur(xr.electricity)}</span></div>
+      <div class="stat-row"><span class="stat-label">Telephone</span><span class="stat-value">${fmtEur(xr.telephone)}</span></div>
+      <div class="stat-row"><span class="stat-label">Cleaning</span><span class="stat-value">${fmtEur(xr.cleaning)}</span></div>
+      <div class="stat-row"><span class="stat-label">General</span><span class="stat-value">${fmtEur(xr.general_expenses)}</span></div>
+      <div class="stat-row"><span class="stat-label">Total expenses</span><span class="stat-value">${fmtEur(xr.total_expenses)}</span></div>
     </div>
   `);
 

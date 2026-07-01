@@ -87,21 +87,29 @@ def run():
     tenant_id = get_tenant_id(access_token)
 
     today = date.today()
-    month_start = today.replace(day=1).isoformat()
-    month_end = today.isoformat()
+    first_of_this_month = today.replace(day=1)
+    last_month_end = first_of_this_month - timedelta(days=1)
+    last_month_start = last_month_end.replace(day=1)
 
     pl = get_report(access_token, tenant_id, "ProfitAndLoss", {  # requires accounting.reports.profitandloss.read
-        "fromDate": month_start,
-        "toDate": month_end,
+        "fromDate": last_month_start.isoformat(),
+        "toDate": last_month_end.isoformat(),
     })
 
     return {
-        "revenue_mtd": extract_pl_value(pl, "Total Income"),
-        "owner_salary": extract_pl_value(pl, "Owner Salary"),
-        "coaches_salary": extract_pl_value(pl, "Coaches Salary"),
+        "period": last_month_start.strftime("%B %Y"),
+        "revenue": extract_pl_value(pl, "Total Income"),
+        "direct_wages": extract_pl_value(pl, "Direct Wages"),
         "rent": extract_pl_value(pl, "Rent"),
-        "expenses_mtd": extract_pl_value(pl, "Total Expenses"),
-        "net_profit_mtd": extract_pl_value(pl, "Net Profit"),
+        "marketing": extract_pl_value(pl, "Advertising & Marketing"),
+        "cleaning": extract_pl_value(pl, "Cleaning"),
+        "it_software": extract_pl_value(pl, "IT Software and Consumables"),
+        "electricity": extract_pl_value(pl, "Light, Power, Heating"),
+        "telephone": extract_pl_value(pl, "Telephone & Internet"),
+        "general_expenses": extract_pl_value(pl, "General Expenses"),
+        "total_expenses": extract_pl_value(pl, "Total Operating Expenses"),
+        "gross_profit": extract_pl_value(pl, "Gross Profit"),
+        "net_profit": extract_pl_value(pl, "Net Profit"),
     }
 
 
