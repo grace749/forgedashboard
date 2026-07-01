@@ -239,7 +239,10 @@
   <div class="modal">
     <h3 id="modal-title">Members</h3>
     <ul class="modal-list" id="modal-list"></ul>
-    <button class="modal-close" onclick="closeModal()">Close</button>
+    <div style="display:flex;gap:8px;margin-top:18px">
+      <a id="modal-asana-link" href="#" target="_blank" style="display:none;flex:1;text-align:center;padding:9px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none">Open in Asana ↗</a>
+      <button class="modal-close" style="flex:1;margin-top:0" onclick="closeModal()">Close</button>
+    </div>
   </div>
 </div>
 
@@ -429,13 +432,16 @@ function render(data) {
         const barClass  = isOverdue ? "overdue" : isToday ? "today" : t.due_on ? "soon" : "";
         const dateClass = isOverdue ? "overdue" : isToday ? "today" : t.due_on ? "soon" : "later";
         const dateLabel = isOverdue ? `⚠ ${fmtDate(t.due_on)}` : isToday ? "Today" : t.due_on ? fmtDate(t.due_on) : "No date";
-        return `<li class="task-item">
+        const safeNotes = (t.notes || "").replace(/'/g, "\\'").replace(/\n/g, "\\n");
+        const hasNotes = t.notes && t.notes.length > 0;
+        return `<li class="task-item" ${hasNotes ? `onclick="showTaskDetail('${t.name.replace(/'/g,"\\'").replace(/"/g,'&quot;')}','${safeNotes}','${t.url||""}')" style="cursor:pointer"` : ""}>
           <div class="task-bar ${barClass}"></div>
           <div class="task-body">
-            <div class="task-name">${t.url ? `<a href="${t.url}" target="_blank">${t.name}</a>` : t.name}</div>
+            <div class="task-name">${t.name}${hasNotes ? ' <span style="font-size:.65rem;color:#c4b5fd;vertical-align:middle">●</span>' : ""}</div>
             <div class="task-footer">
               ${t.project ? `<span class="task-proj">${t.project}</span>` : ""}
               <span class="task-due ${dateClass}">${dateLabel}</span>
+              ${t.url ? `<a href="${t.url}" target="_blank" onclick="event.stopPropagation()" style="font-size:.68rem;color:#9ca3af;text-decoration:none;margin-left:auto">Open ↗</a>` : ""}
             </div>
           </div>
         </li>`;
@@ -496,6 +502,20 @@ function render(data) {
   }
 
   el.innerHTML = cards.join("");
+}
+
+function showTaskDetail(name, notes, url) {
+  document.getElementById("modal-title").textContent = name;
+  const list = document.getElementById("modal-list");
+  const notesHtml = notes.replace(/\\n/g, "\n").split("\n").filter(l => l.trim()).map(l => `<li style="padding:5px 0;border-bottom:1px solid #f3f4f6;line-height:1.5">${l}</li>`).join("") || "<li style='color:#aaa'>No description</li>";
+  list.innerHTML = notesHtml;
+  if (url) {
+    document.getElementById("modal-asana-link").href = url;
+    document.getElementById("modal-asana-link").style.display = "inline-block";
+  } else {
+    document.getElementById("modal-asana-link").style.display = "none";
+  }
+  document.getElementById("modal-overlay").classList.add("open");
 }
 
 async function toggleDone(btn, action, markDone, scriptUrl) {

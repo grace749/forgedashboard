@@ -20,7 +20,7 @@ def get_my_incomplete_tasks(workspace_gid):
         "workspace": workspace_gid,
         "assignee": "me",
         "completed": False,
-        "opt_fields": "name,due_on,completed,permalink_url,projects.name",
+        "opt_fields": "name,due_on,completed,permalink_url,projects.name,notes",
     }
     r = requests.get(f"{BASE}/tasks", headers=HEADERS, params=params)
     r.raise_for_status()
@@ -44,6 +44,7 @@ def run():
             "project": t["projects"][0]["name"] if t.get("projects") else None,
             "due_on": due,
             "overdue": overdue,
+            "notes": (t.get("notes") or "").strip(),
         })
     # Sort: overdue first, then by due date, then no date last
     result.sort(key=lambda x: (0 if x["overdue"] else (1 if x["due_on"] else 2), x["due_on"] or ""))
