@@ -120,94 +120,155 @@ def _sender_name(from_header):
     return m.group(1).strip() if m else from_header.split("@")[0]
 
 
+# Subjects/senders that are never worth surfacing
+_NOISE_SUBJECT = re.compile(
+    r'receipt|invoice|unsubscribe|newsletter|loyalty|reward|points|'
+    r'monthly update|weekly update|mileage rate|HMRC rate|'
+    r'pages build|workflow run|run failed|github action|'
+    r'info sent|membership info sent',
+    re.I
+)
+_NOISE_SENDER = re.compile(
+    r'noreply|no-reply|donotreply|automated|bounce|mailer-daemon|'
+    r'notifications@|github\.com|captions\.ai|velites|tripcatcher|'
+    r'myzone|chase servicing',
+    re.I
+)
+
+# Signals that an email genuinely needs a reply or attention
+_NEEDS_REPLY = re.compile(
+    r'\?|please (reply|respond|confirm|let me know|get back)|'
+    r'(can|could|would) you|following up|just checking|'
+    r'question|query|help|issue|problem|concern|complaint|'
+    r'payment (failed|issue|problem)|direct debit|'
+    r'(join|interested in|enquir|information about|tell me more)',
+    re.I
+)
+_IMPORTANT_SUBJECT = re.compile(
+    r'invitation|enquir|complaint|payment|problem|issue|urgent|'
+    r'cancel|injury|refund|join|interested|information|membership',
+    re.I
+)
+
+
+def _is_noise(sender, subject, snippet):
+    return bool(_NOISE_SENDER.search(sender) or _NOISE_SUBJECT.search(subject))
+
+
+def _needs_attention(sender, subject, snippet):
+    """True if email looks like it needs a reply or action."""
+    if _is_noise(sender, subject, snippet):
+        return False
+    return bool(
+        _IMPORTANT_SUBJECT.search(subject) or
+        _NEEDS_REPLY.search(snippet)
+    )
+
+
 def fetch_gmail_urgent():
-    """Unread emails from real humans in last 24h needing a reply today."""
+    """Unread emails from real humans in last 48h that genuinely need action."""
     svc = _gmail_service()
     if not svc:
         return {"error": "Gmail not configured — add GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN secrets"}
     try:
-        # Exclude automated senders, promotions, updates
         q = (
-            "is:unread newer_than:1d "
-            "-from:noreply@ -from:no-reply@ -from:notifications@ "
-            "-from:donotreply@ -from:automated@ "
+            "is:unread newer_than:2d "
             "-category:promotions -category:updates -category:social "
             "NOT label:spam"
         )
-        result = svc.users().messages().list(userId="me", q=q, maxResults=15).execute()
+        result = svc.users().messages().list(userId="me", q=q, maxResults=30).execute()
         emails = []
         for msg in result.get("messages", []):
             hdrs, snippet = _get_headers(svc, msg["id"])
-            sender = hdrs.get("From", "")
-            # Skip obvious automation by checking common no-reply patterns
-            if re.search(r'noreply|no-reply|donotreply|automated|bounce|mailer-daemon', sender, re.I):
+            sender  = hdrs.get("From", "")
+            subject = hdrs.get("Subject", "(no subject)")
+            if not _needs_attention(sender, subject, snippet):
                 continue
             emails.append({
-                "from":    _sender_name(sender),
+                "from":     _sender_name(sender),
                 "from_raw": sender,
-                "subject": hdrs.get("Subject", "(no subject)"),
-                "snippet": snippet[:250],
-                "id":      msg["id"],
+                "subject":  subject,
+                "snippet":  snippet[:250],
+                "id":       msg["id"],
             })
-        return emails
+        return emails[:8]
     except Exception as ex:
         return {"error": str(ex)}
 
 
 def fetch_gmail_enquiries():
-    """New enquiry emails from last 48h (enquiry forms, membership interest)."""
+    """Actual people enquiring about membership or services — form submissions and direct interest."""
     svc = _gmail_service()
     if not svc:
         return {"error": "Gmail not configured"}
     try:
-        q = "newer_than:2d (subject:enquiry OR subject:enquire OR subject:membership OR subject:\"interested in\" OR subject:\"join the forge\")"
+        # Tighter query: form submissions and direct personal enquiries only
+        q = (
+            "newer_than:3d ("
+            "subject:enquiry OR subject:enquire OR "
+            "subject:\"join the forge\" OR subject:\"interested in joining\" OR "
+            "subject:\"form submission\" OR subject:\"corporate partnership\" OR "
+            "subject:\"personal training\" OR subject:\"PT enquiry\""
+            ")"
+        )
         result = svc.users().messages().list(userId="me", q=q, maxResults=20).execute()
-        seen   = set()
-        leads  = []
+        seen  = set()
+        leads = []
         for msg in result.get("messages", []):
             hdrs, snippet = _get_headers(svc, msg["id"])
-            sender  = _sender_name(hdrs.get("From", ""))
+            sender  = hdrs.get("From", "")
             subject = hdrs.get("Subject", "")
-            key     = f"{sender}|{subject}"
+            # Skip if sender is a company/marketing list
+            if _NOISE_SENDER.search(sender):
+                continue
+            # Skip if Grace herself sent it
+            if "grace@theforge.pt" in sender.lower():
+                continue
+            key = f"{sender}|{subject}"
             if key in seen:
                 continue
             seen.add(key)
-            # Extract name/interest from snippet if possible
-            name_m     = re.search(r'[Nn]ame[:\s]+([A-Z][a-z]+ [A-Z][a-z]+)', snippet)
-            interest_m = re.search(r'[Ii]nterested in[:\s]+([^\n,\.]{3,60})', snippet)
+            # Extract name from form submission snippets
+            name_m    = re.search(r'(?:Full Name|Name)[:\s]+([A-Z][a-z]+ [A-Z][a-z]+)', snippet)
+            email_m   = re.search(r'(?:Email)[:\s]+([\w.+-]+@[\w.-]+)', snippet)
+            path_m    = re.search(r'(?:Choose your path|path|goal)[:\s]+([^\n]{3,40})', snippet, re.I)
             leads.append({
-                "name":     name_m.group(1) if name_m else sender,
-                "subject":  subject,
-                "interest": interest_m.group(1).strip() if interest_m else "",
-                "snippet":  snippet[:200],
-                "id":       msg["id"],
+                "name":    name_m.group(1) if name_m else _sender_name(sender),
+                "email":   email_m.group(1) if email_m else "",
+                "subject": subject,
+                "path":    path_m.group(1).strip() if path_m else "",
+                "snippet": snippet[:200],
+                "id":      msg["id"],
             })
-        return leads
+        return leads[:6]
     except Exception as ex:
         return {"error": str(ex)}
 
 
 def fetch_gmail_important():
-    """Important but not urgent — starred or high-priority unread."""
+    """Starred emails or calendar invites from real people needing attention."""
     svc = _gmail_service()
     if not svc:
         return {"error": "Gmail not configured"}
     try:
-        q = "is:unread (is:starred OR is:important) newer_than:3d -category:promotions"
-        result = svc.users().messages().list(userId="me", q=q, maxResults=10).execute()
+        q = "is:unread (is:starred OR subject:invitation) newer_than:5d -category:promotions"
+        result = svc.users().messages().list(userId="me", q=q, maxResults=15).execute()
         emails = []
         for msg in result.get("messages", []):
             hdrs, snippet = _get_headers(svc, msg["id"])
-            sender = hdrs.get("From", "")
-            if re.search(r'noreply|no-reply|donotreply', sender, re.I):
+            sender  = hdrs.get("From", "")
+            subject = hdrs.get("Subject", "(no subject)")
+            if _is_noise(sender, subject, snippet):
+                continue
+            if "grace@theforge.pt" in sender.lower():
                 continue
             emails.append({
                 "from":    _sender_name(sender),
-                "subject": hdrs.get("Subject", "(no subject)"),
+                "subject": subject,
                 "snippet": snippet[:200],
                 "id":      msg["id"],
             })
-        return emails
+        return emails[:5]
     except Exception as ex:
         return {"error": str(ex)}
 
