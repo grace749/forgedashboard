@@ -6,133 +6,191 @@
   <title>The Forge — Owner Dashboard</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f6fa; color: #1a1a2e; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #111318;
+      color: #1a1a2e;
+      min-height: 100vh;
+    }
 
     header {
-      background: #fff;
-      border-bottom: 1px solid #e8e8ee;
+      background: #111318;
+      border-bottom: 1px solid #1e2028;
       padding: 14px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    header h1 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
-    header .meta { font-size: 0.75rem; color: #aaa; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-mark {
+      width: 30px; height: 30px;
+      background: #e63946;
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 900; color: #fff; letter-spacing: -1px;
+    }
+    .logo-text { font-size: 1rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .header-meta { font-size: 0.72rem; color: #444; }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 14px;
-      padding: 16px;
-      max-width: 1300px;
+      padding: 18px 20px;
+      max-width: 1380px;
       margin: 0 auto;
     }
 
     .card {
       background: #fff;
-      border-radius: 10px;
-      padding: 16px 18px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    }
-    .card h2 {
-      font-size: 0.68rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: #aaa;
-      margin-bottom: 12px;
+      border-radius: 12px;
+      padding: 20px 22px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
     }
 
-    /* Column spans */
     .col-3  { grid-column: span 3; }
     .col-4  { grid-column: span 4; }
-    .col-5  { grid-column: span 5; }
     .col-6  { grid-column: span 6; }
     .col-12 { grid-column: span 12; }
 
-    /* Stat rows */
-    .stat-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 5px 0;
-      border-bottom: 1px solid #f2f2f7;
-    }
-    .stat-row:last-child { border-bottom: none; }
-    .stat-label { font-size: 0.82rem; color: #555; }
-    .stat-value { font-size: 0.95rem; font-weight: 600; color: #1a1a2e; }
-    .stat-value.green { color: #16a34a; }
-    .stat-value.red   { color: #dc2626; }
-    .stat-value.amber { color: #d97706; }
-
-    .section-divider {
-      font-size: 0.65rem;
+    .card-title {
+      font-size: 0.63rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #ccc;
-      padding: 8px 0 4px;
+      letter-spacing: 0.1em;
+      color: #bbb;
+      margin-bottom: 14px;
     }
+
+    /* Big KPI */
+    .big-kpi { margin-bottom: 16px; }
+    .big-kpi .number { font-size: 2.8rem; font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: #111; }
+    .big-kpi .sublabel { font-size: 0.72rem; color: #999; margin-top: 3px; }
+    .big-kpi .number.green { color: #16a34a; }
+
+    /* Pills */
+    .pill-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+    .pill {
+      padding: 4px 11px; border-radius: 20px;
+      font-size: 0.69rem; font-weight: 600;
+      border: 1.5px solid;
+    }
+    .pill.green  { color: #16a34a; background: #f0fdf4; border-color: #bbf7d0; }
+    .pill.amber  { color: #d97706; background: #fffbeb; border-color: #fde68a; }
+    .pill.red    { color: #dc2626; background: #fef2f2; border-color: #fecaca; }
+    .pill.grey   { color: #6b7280; background: #f9fafb; border-color: #e5e7eb; }
+
+    /* Stat rows */
+    .stat-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 6px 0; border-bottom: 1px solid #f3f4f6;
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-label { font-size: 0.8rem; color: #6b7280; }
+    .stat-val   { font-size: 0.88rem; font-weight: 600; color: #111; }
+    .stat-val.green { color: #16a34a; }
+    .stat-val.red   { color: #dc2626; }
+
+    /* Section divider inside card */
+    .inner-divider {
+      font-size: 0.6rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: #d1d5db;
+      padding: 10px 0 5px;
+      border-top: 1px solid #f3f4f6;
+      margin-top: 4px;
+    }
+    .inner-divider:first-of-type { border-top: none; margin-top: 0; }
+
+    /* P&L sub rows */
+    .pl-sub .stat-label { padding-left: 10px; color: #9ca3af; }
+    .pl-sub .stat-val   { color: #374151; font-weight: 500; }
+    .pl-highlight .stat-label { color: #111; font-weight: 700; }
+    .pl-highlight .stat-val   { color: #111; font-size: 0.95rem; font-weight: 700; }
+    .pl-highlight .stat-val.green { color: #16a34a; }
+    .pl-highlight .stat-val.red   { color: #dc2626; }
 
     /* Task list */
-    .task-list { list-style: none; max-height: 340px; overflow-y: auto; }
-    .task-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-      padding: 6px 0;
-      border-bottom: 1px solid #f2f2f7;
-      font-size: 0.82rem;
+    .task-list { list-style: none; max-height: 300px; overflow-y: auto; }
+    .task-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0; border-bottom: 1px solid #f3f4f6;
     }
-    .task-list li:last-child { border-bottom: none; }
-    .task-dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      margin-top: 5px;
-      background: #d1d5db;
+    .task-item:last-child { border-bottom: none; }
+    .task-bar {
+      width: 3px; border-radius: 2px; align-self: stretch;
+      flex-shrink: 0; min-height: 30px;
+      background: #e5e7eb;
     }
-    .task-dot.overdue { background: #dc2626; }
-    .task-dot.due-today { background: #d97706; }
+    .task-bar.overdue { background: #dc2626; }
+    .task-bar.today   { background: #d97706; }
+    .task-bar.soon    { background: #3b82f6; }
     .task-body { flex: 1; min-width: 0; }
-    .task-name a { color: #1a1a2e; text-decoration: none; }
-    .task-name a:hover { text-decoration: underline; }
-    .task-meta { display: flex; gap: 8px; margin-top: 2px; }
-    .task-project { font-size: 0.7rem; color: #aaa; }
-    .task-due { font-size: 0.7rem; font-weight: 600; }
-    .task-due.overdue { color: #dc2626; }
-    .task-due.due-today { color: #d97706; }
-    .task-due.upcoming { color: #6b7280; }
-
-    /* Sprint table */
-    .kpi-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
-    .kpi-table th {
-      text-align: left; padding: 5px 8px;
-      color: #aaa; font-weight: 600; font-size: 0.68rem;
-      text-transform: uppercase; letter-spacing: 0.05em;
-      border-bottom: 1px solid #f0f0f5;
+    .task-name { font-size: 0.82rem; color: #1f2937; line-height: 1.35; }
+    .task-name a { color: #1f2937; text-decoration: none; }
+    .task-name a:hover { color: #e63946; }
+    .task-footer { display: flex; gap: 8px; align-items: center; margin-top: 3px; }
+    .task-proj {
+      font-size: 0.67rem; color: #9ca3af;
+      background: #f3f4f6; padding: 1px 6px; border-radius: 3px;
     }
-    .kpi-table td { padding: 7px 8px; border-bottom: 1px solid #f8f8fc; vertical-align: top; }
-    .kpi-table tr:last-child td { border-bottom: none; }
-    .done-tick { color: #16a34a; font-weight: 700; }
-    .done-empty { color: #e5e7eb; }
+    .task-due { font-size: 0.69rem; font-weight: 600; }
+    .task-due.overdue { color: #dc2626; }
+    .task-due.today   { color: #d97706; }
+    .task-due.soon    { color: #3b82f6; }
+    .task-due.later   { color: #d1d5db; }
 
-    .null-value { color: #ccc; }
+    /* Action plan table */
+    .ap-wrap { overflow-x: auto; }
+    .ap-table { width: 100%; border-collapse: collapse; font-size: 0.79rem; }
+    .ap-table th {
+      text-align: left; padding: 6px 12px;
+      font-size: 0.62rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: #bbb; border-bottom: 1px solid #f0f0f5;
+    }
+    .ap-table td {
+      padding: 9px 12px; border-bottom: 1px solid #f9f9fc;
+      color: #374151; vertical-align: top;
+    }
+    .ap-table tr:last-child td { border-bottom: none; }
+    .ap-table tr:hover td { background: #fafafa; }
+    .ap-table td:first-child { color: #111; font-weight: 500; }
+    .ap-owner {
+      display: inline-block;
+      font-size: 0.68rem; background: #f3f4f6;
+      padding: 2px 8px; border-radius: 4px; color: #6b7280;
+    }
+    .ap-deadline { font-size: 0.75rem; color: #6b7280; }
+    .ap-done  { color: #16a34a; font-weight: 700; font-size: 0.9rem; }
+    .ap-todo  { color: #e5e7eb; font-size: 0.9rem; }
 
-    @media (max-width: 900px) {
-      .col-3, .col-4, .col-5, .col-6 { grid-column: span 12; }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 2px; }
+
+    @media (max-width: 960px) {
+      .col-3, .col-4, .col-6 { grid-column: span 12; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>The Forge — Owner Dashboard</h1>
-  <span class="meta" id="gen-time">Loading…</span>
+  <div class="logo">
+    <div class="logo-mark">F</div>
+    <span class="logo-text">The Forge</span>
+  </div>
+  <span class="header-meta" id="gen-time">Loading…</span>
 </header>
 
 <div class="grid" id="dashboard">
-  <div class="card col-12"><p style="color:#aaa;font-size:.9rem">Loading…</p></div>
+  <div class="card col-12"><p style="color:#aaa;font-size:.9rem;padding:8px 0">Loading…</p></div>
 </div>
 
 <script>
@@ -142,26 +200,25 @@ async function loadData() {
 }
 
 function fmt(val, prefix = "") {
-  if (val === null || val === undefined) return `<span class="null-value">—</span>`;
+  if (val === null || val === undefined) return `<span style="color:#ddd">—</span>`;
   if (typeof val === "number") return `${prefix}${val.toLocaleString("en-IE", { maximumFractionDigits: 0 })}`;
   return val;
 }
-function fmtEur(val) { return fmt(val, "£"); }
+function fmtGbp(val) { return fmt(val, "£"); }
 
 function fmtDate(iso) {
   if (!iso) return null;
-  const [y, m, d] = iso.split("-");
-  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  return `${parseInt(d)} ${months[parseInt(m)-1]}`;
+  const [, m, d] = iso.split("-");
+  return `${parseInt(d)} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][parseInt(m)-1]}`;
 }
 
 function render(data) {
-  const d = document.getElementById("dashboard");
-  const t = document.getElementById("gen-time");
+  const el = document.getElementById("dashboard");
+  const metaEl = document.getElementById("gen-time");
 
   if (data.generated_at) {
     const dt = new Date(data.generated_at);
-    t.textContent = "Updated " + dt.toLocaleString("en-IE", { dateStyle: "medium", timeStyle: "short" });
+    metaEl.textContent = "Updated " + dt.toLocaleString("en-IE", { dateStyle: "medium", timeStyle: "short" });
   }
 
   const today = new Date().toISOString().split("T")[0];
@@ -169,14 +226,28 @@ function render(data) {
 
   // ── Membership ──────────────────────────────────────────────
   const tm = data.teamup || {};
+  const totalM = tm.total_members ?? null;
+  const recurring = tm.recurring ?? null;
+  const trial = tm.trial ?? null;
+  const pending = tm.cancellations_this_month ?? null;
+  const joined = tm.new_this_month ?? null;
+
   cards.push(`
     <div class="card col-3">
-      <h2>Membership</h2>
-      <div class="stat-row"><span class="stat-label">Total members</span><span class="stat-value">${fmt(tm.total_members)}</span></div>
-      <div class="stat-row"><span class="stat-label">Recurring (DD)</span><span class="stat-value">${fmt(tm.recurring)}</span></div>
-      <div class="stat-row"><span class="stat-label">6 Wk Jumpstart</span><span class="stat-value">${fmt(tm.trial)}</span></div>
-      <div class="stat-row"><span class="stat-label">Joined this month</span><span class="stat-value green">${fmt(tm.new_this_month)}</span></div>
-      <div class="stat-row"><span class="stat-label">Pending cancellations</span><span class="stat-value ${(tm.cancellations_this_month||0) > 0 ? 'red' : ''}">${fmt(tm.cancellations_this_month)}</span></div>
+      <div class="card-title">Membership</div>
+      <div class="big-kpi">
+        <div class="number">${totalM ?? "—"}</div>
+        <div class="sublabel">Active members</div>
+      </div>
+      <div class="pill-row">
+        ${recurring !== null ? `<div class="pill green">${recurring} Recurring</div>` : ""}
+        ${trial !== null ? `<div class="pill amber">${trial} Jumpstart</div>` : ""}
+        ${pending ? `<div class="pill red">${pending} Leaving</div>` : `<div class="pill grey">0 Leaving</div>`}
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Joined this month</span>
+        <span class="stat-val green">+${fmt(joined)}</span>
+      </div>
     </div>
   `);
 
@@ -184,87 +255,107 @@ function render(data) {
   const xr = data.xero || {};
   cards.push(`
     <div class="card col-3">
-      <h2>Financials — ${xr.period || "Last Month"}</h2>
-      <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-value green">${fmtEur(xr.revenue)}</span></div>
-      <div class="section-divider">Cost of Sales</div>
-      <div class="stat-row"><span class="stat-label">Wages</span><span class="stat-value">${fmtEur(xr.direct_wages)}</span></div>
-      <div class="stat-row"><span class="stat-label" style="font-weight:600">Gross profit</span><span class="stat-value">${fmtEur(xr.gross_profit)}</span></div>
-      <div class="section-divider">Operating Expenses</div>
-      <div class="stat-row"><span class="stat-label">Rent</span><span class="stat-value">${fmtEur(xr.rent)}</span></div>
-      <div class="stat-row"><span class="stat-label">Marketing</span><span class="stat-value">${fmtEur(xr.marketing)}</span></div>
-      <div class="stat-row"><span class="stat-label">IT & Software</span><span class="stat-value">${fmtEur(xr.it_software)}</span></div>
-      <div class="stat-row"><span class="stat-label">Electricity</span><span class="stat-value">${fmtEur(xr.electricity)}</span></div>
-      <div class="stat-row"><span class="stat-label">Telephone</span><span class="stat-value">${fmtEur(xr.telephone)}</span></div>
-      <div class="stat-row"><span class="stat-label">Cleaning</span><span class="stat-value">${fmtEur(xr.cleaning)}</span></div>
-      <div class="stat-row"><span class="stat-label">General</span><span class="stat-value">${fmtEur(xr.general_expenses)}</span></div>
-      <div class="stat-row"><span class="stat-label">Total op. expenses</span><span class="stat-value">${fmtEur(xr.total_expenses)}</span></div>
-      <div class="stat-row"><span class="stat-label" style="font-weight:600">Net profit</span><span class="stat-value ${(xr.net_profit||0) > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit)}</span></div>
+      <div class="card-title">Financials — ${xr.period || "Last Month"}</div>
+      <div class="big-kpi">
+        <div class="number green">${fmtGbp(xr.revenue)}</div>
+        <div class="sublabel">Revenue</div>
+      </div>
+
+      <div class="inner-divider">Cost of Sales</div>
+      <div class="stat-row pl-sub">
+        <span class="stat-label">Wages</span>
+        <span class="stat-val">${fmtGbp(xr.direct_wages)}</span>
+      </div>
+      <div class="stat-row pl-highlight">
+        <span class="stat-label">Gross profit</span>
+        <span class="stat-val">${fmtGbp(xr.gross_profit)}</span>
+      </div>
+
+      <div class="inner-divider">Operating Expenses</div>
+      <div class="stat-row pl-sub"><span class="stat-label">Rent</span><span class="stat-val">${fmtGbp(xr.rent)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Marketing</span><span class="stat-val">${fmtGbp(xr.marketing)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">IT & Software</span><span class="stat-val">${fmtGbp(xr.it_software)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Electricity</span><span class="stat-val">${fmtGbp(xr.electricity)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Telephone</span><span class="stat-val">${fmtGbp(xr.telephone)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Cleaning</span><span class="stat-val">${fmtGbp(xr.cleaning)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">General</span><span class="stat-val">${fmtGbp(xr.general_expenses)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Total op. expenses</span><span class="stat-val">${fmtGbp(xr.total_expenses)}</span></div>
+
+      <div class="stat-row pl-highlight" style="margin-top:4px;border-top:1px solid #f3f4f6;padding-top:8px">
+        <span class="stat-label">Net profit</span>
+        <span class="stat-val ${(xr.net_profit || 0) >= 0 ? 'green' : 'red'}">${fmtGbp(xr.net_profit)}</span>
+      </div>
     </div>
   `);
 
   // ── Tasks ────────────────────────────────────────────────────
   const tasks = data.asana?.tasks_today ?? [];
-  const taskItems = tasks.length
+  const taskHtml = tasks.length
     ? tasks.map(t => {
         const isOverdue = t.overdue;
-        const isToday = t.due_on === today;
-        const dotClass = isOverdue ? "overdue" : isToday ? "due-today" : "";
-        const dueClass = isOverdue ? "overdue" : isToday ? "due-today" : "upcoming";
-        const dueLabel = t.due_on ? fmtDate(t.due_on) : "";
-        const dueTag = t.due_on ? `<span class="task-due ${dueClass}">${isOverdue ? "⚠ " : ""}${dueLabel}</span>` : "";
-        return `<li>
-          <div class="task-dot ${dotClass}"></div>
-          <div class="task-body">
-            <div class="task-name">${t.url ? `<a href="${t.url}" target="_blank">${t.name}</a>` : t.name}</div>
-            <div class="task-meta">
-              ${t.project ? `<span class="task-project">${t.project}</span>` : ""}
-              ${dueTag}
+        const isToday  = t.due_on === today;
+        const barClass  = isOverdue ? "overdue" : isToday ? "today" : t.due_on ? "soon" : "";
+        const dateClass = isOverdue ? "overdue" : isToday ? "today" : t.due_on ? "soon" : "later";
+        const dateLabel = isOverdue ? `⚠ ${fmtDate(t.due_on)}` : isToday ? "Today" : t.due_on ? fmtDate(t.due_on) : "No date";
+        return `
+          <li class="task-item">
+            <div class="task-bar ${barClass}"></div>
+            <div class="task-body">
+              <div class="task-name">${t.url ? `<a href="${t.url}" target="_blank">${t.name}</a>` : t.name}</div>
+              <div class="task-footer">
+                ${t.project ? `<span class="task-proj">${t.project}</span>` : ""}
+                <span class="task-due ${dateClass}">${dateLabel}</span>
+              </div>
             </div>
-          </div>
-        </li>`;
+          </li>`;
       }).join("")
-    : `<li style="color:#aaa;padding:8px 0">No incomplete tasks</li>`;
+    : `<li style="padding:10px 0;color:#ccc;font-size:.85rem">No incomplete tasks</li>`;
 
   cards.push(`
     <div class="card col-6">
-      <h2>Tasks (${tasks.length})</h2>
-      <ul class="task-list">${taskItems}</ul>
+      <div class="card-title">Tasks — ${tasks.length} incomplete</div>
+      <ul class="task-list">${taskHtml}</ul>
     </div>
   `);
 
-  // ── 30-Day Sprint ─────────────────────────────────────────────
+  // ── 30-Day Action Plan ───────────────────────────────────────
   const kpis = data.growth_sprint?.kpis ?? [];
-  if (kpis.length === 0) {
-    cards.push(`<div class="card col-12"><h2>30-Day Action Plan</h2><p style="color:#aaa;font-size:.85rem">No data</p></div>`);
+  if (!kpis.length) {
+    cards.push(`<div class="card col-12"><div class="card-title">30-Day Action Plan</div><p style="color:#ccc;font-size:.85rem">No data</p></div>`);
   } else {
     const cols = Object.keys(kpis[0]);
-    const headerRow = cols.map(c => `<th>${c}</th>`).join("");
-    const bodyRows = kpis.map(row => `<tr>${cols.map(c => {
-      const val = row[c] || "";
+    const rows = kpis.map(row => `<tr>${cols.map(c => {
+      const v = row[c] || "";
       if (c === "Done") {
-        const v = val.trim().toLowerCase();
-        return (v === "x" || v === "yes" || v === "✓")
-          ? `<td class="done-tick">✓</td>`
-          : `<td class="done-empty">○</td>`;
+        const done = v.trim().toLowerCase();
+        return (done === "x" || done === "yes" || done === "✓")
+          ? `<td class="ap-done">✓</td>`
+          : `<td class="ap-todo">○</td>`;
       }
-      return `<td>${val || ""}</td>`;
+      if (c === "Owner")   return `<td><span class="ap-owner">${v || "—"}</span></td>`;
+      if (c === "Deadline") return `<td><span class="ap-deadline">${v || "—"}</span></td>`;
+      return `<td>${v}</td>`;
     }).join("")}</tr>`).join("");
+
     cards.push(`
       <div class="card col-12">
-        <h2>30-Day Action Plan</h2>
-        <table class="kpi-table">
-          <thead><tr>${headerRow}</tr></thead>
-          <tbody>${bodyRows}</tbody>
-        </table>
-      </div>`);
+        <div class="card-title">30-Day Action Plan</div>
+        <div class="ap-wrap">
+          <table class="ap-table">
+            <thead><tr>${cols.map(c => `<th>${c}</th>`).join("")}</tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>
+    `);
   }
 
-  d.innerHTML = cards.join("");
+  el.innerHTML = cards.join("");
 }
 
 loadData().then(render).catch(err => {
   document.getElementById("dashboard").innerHTML =
-    `<div class="card col-12"><h2>Error</h2><p style="color:#dc2626;font-size:.85rem">${err.message}</p></div>`;
+    `<div class="card col-12"><div class="card-title">Error</div><p style="color:#dc2626;font-size:.85rem">${err.message}</p></div>`;
 });
 </script>
 </body>
