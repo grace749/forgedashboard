@@ -10,8 +10,9 @@ Secrets required in GitHub Actions:
   GMAIL_CLIENT_SECRET          — OAuth2 client secret
   GMAIL_REFRESH_TOKEN          — long-lived refresh token (run setup_gmail_oauth.py once)
 """
-import os, json, re
+import os, json, re, base64, email as email_lib
 from datetime import datetime, date, timezone
+from email.mime.text import MIMEText
 
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request as GoogleRequest
@@ -203,9 +204,138 @@ def fetch_gmail_urgent():
                 "msg_count": len(messages),
             })
 
+        # Create AI draft replies for emails needing attention (max 8, last 48h only)
+        recent = [e for e in emails if e.get("msg_count", 1) <= 5][:8]
+        for e in recent:
+            try:
+                draft_id = _create_draft_reply(svc, e)
+                if draft_id:
+                    e["draft_id"] = draft_id
+            except Exception:
+                pass
+
         return emails[:10]
     except Exception as ex:
         return {"error": str(ex)}
+
+
+def _get_email_body(svc, msg_id):
+    """Fetch the plain text body of an email."""
+    try:
+        msg = svc.users().messages().get(userId="me", id=msg_id, format="full").execute()
+        payload = msg.get("payload", {})
+
+        def extract_text(part):
+            if part.get("mimeType") == "text/plain":
+                data = part.get("body", {}).get("data", "")
+                if data:
+                    return base64.urlsafe_b64decode(data + "==").decode("utf-8", errors="ignore")
+            for p in part.get("parts", []):
+                result = extract_text(p)
+                if result:
+                    return result
+            return ""
+
+        return extract_text(payload)[:2000]
+    except Exception:
+        return ""
+
+
+def _draft_exists_for_thread(svc, thread_id):
+    """Check if a draft already exists for this thread to avoid duplicates."""
+    try:
+        drafts = svc.users().drafts().list(userId="me").execute()
+        for d in drafts.get("drafts", []):
+            draft = svc.users().drafts().get(userId="me", id=d["id"], format="metadata",
+                metadataHeaders=["Subject"]).execute()
+            msg = draft.get("message", {})
+            if msg.get("threadId") == thread_id:
+                return True
+    except Exception:
+        pass
+    return False
+
+
+def _generate_reply(sender_name, subject, body):
+    """Use Anthropic API to write a suggested reply."""
+    import urllib.request
+    ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not ANTHROPIC_KEY:
+        return None
+    try:
+        payload = json.dumps({
+            "model": "claude-haiku-4-5-20251001",
+            "max_tokens": 300,
+            "messages": [{
+                "role": "user",
+                "content": (
+                    f"You are Grace Smith, owner of The Forge — a women's fitness gym in Belfast. "
+                    f"Write a short, warm, professional reply to this email. "
+                    f"Keep it brief (3-5 sentences max). Don't use filler phrases like 'I hope this finds you well'. "
+                    f"Sign off as Grace.\n\n"
+                    f"From: {sender_name}\n"
+                    f"Subject: {subject}\n\n"
+                    f"{body[:1000]}"
+                )
+            }]
+        }).encode()
+        req = urllib.request.Request(
+            "https://api.anthropic.com/v1/messages",
+            data=payload,
+            headers={
+                "x-api-key": ANTHROPIC_KEY,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            }
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            result = json.loads(resp.read())
+            return result["content"][0]["text"]
+    except Exception:
+        return None
+
+
+def _create_draft_reply(svc, email_data):
+    """Create a Gmail draft reply for an email thread."""
+    thread_id = email_data.get("thread_id")
+    if not thread_id:
+        return None
+
+    # Don't create duplicate drafts
+    if _draft_exists_for_thread(svc, thread_id):
+        return None
+
+    body_text = _get_email_body(svc, email_data["id"])
+    reply_text = _generate_reply(
+        email_data.get("from", ""),
+        email_data.get("subject", ""),
+        body_text
+    )
+    if not reply_text:
+        return None
+
+    # Build reply email
+    subject = email_data.get("subject", "")
+    re_subject = subject if subject.lower().startswith("re:") else f"Re: {subject}"
+    sender_raw = email_data.get("from_raw", "")
+
+    msg = MIMEText(reply_text)
+    msg["To"] = sender_raw
+    msg["From"] = "grace@theforge.pt"
+    msg["Subject"] = re_subject
+    msg["In-Reply-To"] = email_data.get("id", "")
+    msg["References"] = email_data.get("id", "")
+
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+
+    draft = svc.users().drafts().create(userId="me", body={
+        "message": {
+            "threadId": thread_id,
+            "raw": raw,
+        }
+    }).execute()
+
+    return draft.get("id")
 
 
 def fetch_gmail_enquiries():

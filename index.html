@@ -398,6 +398,7 @@ function render(data) {
       ...important.filter(e => !urgent.find(u => u.id === e.id)).map(e => ({...e, _type:"important"}))
     ];
     const gmailUrl = (e) => {
+      // If a draft was created, open the thread (draft shows inline at bottom)
       const id = e.thread_id || e.id;
       return id ? `https://mail.google.com/mail/u/0/#inbox/${id}` : "https://mail.google.com/mail/u/0/#inbox";
     };
@@ -409,6 +410,7 @@ function render(data) {
               <div class="brief-row-title">${e.subject}</div>
               <div class="brief-row-sub" style="color:${e._type === 'urgent' ? '#ef4444' : '#7c3aed'}">${e.from}</div>
               <div class="brief-row-sub" style="color:#ccc;margin-top:2px">${(e.snippet||"").substring(0,70)}…</div>
+              ${e.draft_id ? `<div style="font-size:.68rem;color:#059669;font-weight:600;margin-top:2px">✓ Draft reply ready</div>` : ""}
             </div>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>`).join("")
