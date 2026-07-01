@@ -6,7 +6,8 @@ TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
 BASE = "https://goteamup.com/api/v2"
 HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
 
-TRIAL_KEYWORDS = ["trial", "emerge", "intro", "taster"]
+TRIAL_NAMES = ["6 week jumpstart"]
+RECURRING_NAMES = ["elevate", "evolve", "empower"]
 
 
 def get_all(endpoint, params=None):
@@ -31,9 +32,10 @@ def run():
     active = get_all("customermemberships", {"status": "active"})
 
     total = len({m["customer"] for m in active})
-    recurring = sum(1 for m in active if m.get("payment_subscription"))
-    trial = sum(1 for m in active
-                if any(kw in m.get("name", "").lower() for kw in TRIAL_KEYWORDS))
+    recurring = len({m["customer"] for m in active
+                     if m.get("name", "").strip().lower() in RECURRING_NAMES})
+    trial = len({m["customer"] for m in active
+                 if m.get("name", "").strip().lower() in TRIAL_NAMES})
 
     # New joins this month — filter by start_date in Python
     new_this_month = len({
