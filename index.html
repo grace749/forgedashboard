@@ -87,12 +87,13 @@
     .chip-purple { background: #f5f3ff; color: #7c3aed; }
     .chip-red    { background: #fef2f2; color: #ef4444; }
     .chip-green  { background: #f0fdf4; color: #059669; }
+    .chip-amber  { background: #fffbeb; color: #d97706; }
     .brief-chevron { transition: transform .2s; flex-shrink: 0; }
     .brief-chevron.rotated { transform: rotate(180deg); }
     .brief-collapsed { display: none; }
     .brief-body { border-top: 1px solid #f3f4f6; }
     .brief-cols {
-      display: grid; grid-template-columns: repeat(3, 1fr);
+      display: grid; grid-template-columns: repeat(4, 1fr);
       gap: 0;
     }
     .brief-col { padding: 14px 20px; }
@@ -104,6 +105,7 @@
     .brief-col-title--purple { color: #7c3aed; border-color: #ede9fe; }
     .brief-col-title--red    { color: #ef4444; border-color: #fee2e2; }
     .brief-col-title--green  { color: #059669; border-color: #d1fae5; }
+    .brief-col-title--amber  { color: #d97706; border-color: #fde68a; }
     .brief-row {
       display: flex; align-items: flex-start; gap: 10px;
       padding: 7px 0; border-bottom: 1px solid #f9fafb;
@@ -373,6 +375,7 @@ function render(data) {
     const urgent    = Array.isArray(br.urgent)    ? br.urgent    : [];
     const important = Array.isArray(br.important) ? br.important : [];
     const enquiries = Array.isArray(br.enquiries) ? br.enquiries : [];
+    const ghl       = Array.isArray(data.ghl)     ? data.ghl     : [];
 
     // Calendar column
     const calHtml = cal.length
@@ -415,11 +418,26 @@ function render(data) {
           </div>`).join("")
       : `<div class="brief-empty">No new enquiries</div>`;
 
+    // GHL conversations column
+    const channelIcon = { WhatsApp:"💬", Webchat:"🌐", SMS:"📱", Email:"✉️", Instagram:"📸", Facebook:"👤", Google:"⭐" };
+    const ghlHtml = ghl.length
+      ? ghl.map(e => `
+          <div class="brief-row" style="align-items:center">
+            <div class="brief-avatar" style="background:#fef9c3;color:#a16207;font-size:.8rem">${channelIcon[e.channel] || "💬"}</div>
+            <div style="min-width:0">
+              <div class="brief-row-title">${e.name} <span style="font-size:.68rem;font-weight:500;color:#aaa">${e.channel}</span></div>
+              <div class="brief-row-sub">${(e.message||"").substring(0,80)}${e.message&&e.message.length>80?"…":""}</div>
+              ${e.age ? `<div style="font-size:.68rem;color:#ccc;margin-top:1px">${e.age}${e.unread ? ` · <span style="color:#f59e0b;font-weight:700">${e.unread} unread</span>` : ""}</div>` : ""}
+            </div>
+          </div>`).join("")
+      : `<div class="brief-empty">No open conversations</div>`;
+
     // Stat chips for collapsed header
     const chips = [
-      cal.length    ? `<span class="brief-chip chip-purple">${cal.length} event${cal.length!==1?"s":""}</span>` : "",
+      cal.length ? `<span class="brief-chip chip-purple">${cal.length} event${cal.length!==1?"s":""}</span>` : "",
       allEmails.filter(e=>e._type==="urgent").length ? `<span class="brief-chip chip-red">${allEmails.filter(e=>e._type==="urgent").length} to reply</span>` : "",
       enquiries.length ? `<span class="brief-chip chip-green">${enquiries.length} enquir${enquiries.length!==1?"ies":"y"}</span>` : "",
+      ghl.length ? `<span class="brief-chip chip-amber">${ghl.length} GHL message${ghl.length!==1?"s":""}</span>` : "",
     ].filter(Boolean).join("");
 
     cards.push(`
@@ -447,8 +465,12 @@ function render(data) {
               ${emailHtml}
             </div>
             <div class="brief-col">
-              <div class="brief-col-title brief-col-title--green">New enquiries</div>
+              <div class="brief-col-title brief-col-title--green">New enquiries (email)</div>
               ${enquiryHtml}
+            </div>
+            <div class="brief-col">
+              <div class="brief-col-title brief-col-title--amber">WhatsApp &amp; webchat</div>
+              ${ghlHtml}
             </div>
           </div>
         </div>

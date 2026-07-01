@@ -5,6 +5,7 @@ from pathlib import Path
 
 import fetch_asana
 import fetch_brief
+import fetch_ghl
 import fetch_teamup
 import fetch_xero
 import fetch_sheets
@@ -27,6 +28,7 @@ data = {
     "apps_script_url": os.environ.get("APPS_SCRIPT_URL", ""),
     "asana_script_url": os.environ.get("ASANA_SCRIPT_URL", ""),
     "brief": safe_run("brief", fetch_brief.run),
+    "ghl":   safe_run("ghl",   fetch_ghl.run),
     "asana": safe_run("asana", fetch_asana.run),
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),
