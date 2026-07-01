@@ -68,6 +68,23 @@
     .col-6  { grid-column: span 6; }
     .col-12 { grid-column: span 12; }
 
+    /* ── Tabs ───────────────────────────────────────────────── */
+    .tab-bar {
+      background: #1e0f38; border-bottom: 1px solid #3d2464;
+      padding: 0 18px; display: flex; gap: 2px; overflow-x: auto;
+    }
+    .tab-bar::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      padding: 10px 16px; font-size: .78rem; font-weight: 600;
+      color: #7c5fa0; background: none; border: none; cursor: pointer;
+      border-bottom: 2px solid transparent; white-space: nowrap;
+      transition: color .15s, border-color .15s;
+    }
+    .tab-btn:hover  { color: #c4b5fd; }
+    .tab-btn.active { color: #fff; border-bottom-color: #7c3aed; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
     /* ── Daily Brief ────────────────────────────────────────── */
     .brief-card { padding: 0; overflow: hidden; }
     .brief-toggle {
@@ -91,12 +108,14 @@
     .brief-chevron { transition: transform .2s; flex-shrink: 0; }
     .brief-chevron.rotated { transform: rotate(180deg); }
     .brief-collapsed { display: none; }
-    .brief-body { border-top: 1px solid #f3f4f6; }
+    .brief-body { border-top: 1px solid #f3f4f6; max-height: 280px; overflow-y: auto; }
+    .brief-body::-webkit-scrollbar { width: 3px; }
+    .brief-body::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 2px; }
     .brief-cols {
       display: grid; grid-template-columns: repeat(4, 1fr);
       gap: 0;
     }
-    .brief-col { padding: 14px 20px; }
+    .brief-col { padding: 10px 16px; }
     .brief-col + .brief-col { border-left: 1px solid #f3f4f6; }
     .brief-col-title {
       font-size: .62rem; font-weight: 700; text-transform: uppercase;
@@ -319,8 +338,36 @@
   <span class="header-meta" id="gen-time">Loading…</span>
 </header>
 
-<div class="grid" id="dashboard">
-  <div class="card col-12"><p style="color:#aaa;font-size:.9rem;padding:8px 0">Loading…</p></div>
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('home',this)">Home</button>
+  <button class="tab-btn" onclick="switchTab('finances',this)">Finances</button>
+  <button class="tab-btn" onclick="switchTab('members',this)">Members</button>
+  <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
+  <button class="tab-btn" onclick="switchTab('tasks',this)">Tasks</button>
+  <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
+  <button class="tab-btn" onclick="switchTab('social',this)">Social Media</button>
+</div>
+
+<div class="tab-panel active" id="tab-home">
+  <div class="grid" id="grid-home"><div class="card col-12"><p style="color:#aaa;font-size:.9rem;padding:8px 0">Loading…</p></div></div>
+</div>
+<div class="tab-panel" id="tab-finances">
+  <div class="grid" id="grid-finances"></div>
+</div>
+<div class="tab-panel" id="tab-members">
+  <div class="grid" id="grid-members"></div>
+</div>
+<div class="tab-panel" id="tab-leads">
+  <div class="grid" id="grid-leads"></div>
+</div>
+<div class="tab-panel" id="tab-tasks">
+  <div class="grid" id="grid-tasks"></div>
+</div>
+<div class="tab-panel" id="tab-growth">
+  <div class="grid" id="grid-growth"></div>
+</div>
+<div class="tab-panel" id="tab-social">
+  <div class="grid" id="grid-social"></div>
 </div>
 
 <script>
@@ -357,9 +404,16 @@ function fmtDate(iso) {
   return `${parseInt(d)} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][parseInt(m)-1]}`;
 }
 
+// ── Tabs ──────────────────────────────────────────────────────
+function switchTab(name, btn) {
+  document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("tab-" + name).classList.add("active");
+  btn.classList.add("active");
+}
+
 // ── Render ────────────────────────────────────────────────────
 function render(data) {
-  const el    = document.getElementById("dashboard");
   const metaEl = document.getElementById("gen-time");
   if (data.generated_at) {
     const dt = new Date(data.generated_at);
@@ -368,7 +422,11 @@ function render(data) {
 
   const today = new Date().toISOString().split("T")[0];
   const asanaScriptUrl = data.asana_script_url || "";
-  const cards = [];
+
+  // Each tab gets its own cards array
+  const tabs = { home: [], finances: [], members: [], leads: [], tasks: [], growth: [], social: [] };
+  const cards = tabs; // alias helpers below use push(tab, html)
+  function push(tab, html) { tabs[tab].push(html); }
 
   // ── Daily Brief ────────────────────────────────────────────
   const br = data.brief || {};
@@ -450,7 +508,7 @@ function render(data) {
       ghl.length ? `<span class="brief-chip chip-amber">${ghl.length} GHL message${ghl.length!==1?"s":""}</span>` : "",
     ].filter(Boolean).join("");
 
-    cards.push(`
+    push("home", `
       <div class="card col-12 brief-card">
         <button class="brief-toggle" onclick="
           this.closest('.brief-card').querySelector('.brief-body').classList.toggle('brief-collapsed');
@@ -502,7 +560,7 @@ function render(data) {
     window._members["bd_" + b.name] = b.members || [];
   });
 
-  cards.push(`
+  push("members", `
     <div class="card col-3">
       <div class="card-title">Members</div>
       <div class="card-headline">Membership Snapshot</div>
@@ -546,7 +604,7 @@ function render(data) {
 
   // ── Financials ─────────────────────────────────────────────
   const xr = data.xero || {};
-  cards.push(`
+  push("finances", `
     <div class="card col-3">
       <div class="card-title">Xero</div>
       <div class="card-headline">Profit & Loss — ${xr.period || "Last Month"}</div>
@@ -584,7 +642,7 @@ function render(data) {
   const mk = data.marketing || {};
   const mkMonthly = mk.monthly || [];
   const mkLife    = mk.lifetime || {};
-  cards.push(`
+  push("finances", `
     <div class="card col-3">
       <div class="card-title">Meta Ads</div>
       <div class="card-headline">Social Media Ads</div>
@@ -643,7 +701,7 @@ function render(data) {
       }).join("")
     : `<li style="padding:12px 0;color:#ccc;font-size:.88rem">No incomplete tasks 🎉</li>`;
 
-  cards.push(`
+  push("tasks", `
     <div class="card col-3">
       <div class="card-title">Asana</div>
       <div class="card-headline">Your Tasks (${tasks.length})</div>
@@ -656,7 +714,7 @@ function render(data) {
   const apScriptUrl = data.apps_script_url || "";
 
   if (!kpis.length) {
-    cards.push(`<div class="card col-12"><div class="card-title">Google Sheets</div><div class="card-headline">30-Day Action Plan</div><p style="color:#ccc;font-size:.85rem">No data</p></div>`);
+    push("growth", `<div class="card col-12"><div class="card-title">Google Sheets</div><div class="card-headline">30-Day Action Plan</div><p style="color:#ccc;font-size:.85rem">No data</p></div>`);
   } else {
     const cols = Object.keys(kpis[0]);
     const rows = kpis.map((row, rowIdx) => `<tr>${cols.map(c => {
@@ -676,7 +734,7 @@ function render(data) {
       return `<td>${v}</td>`;
     }).join("")}</tr>`).join("");
 
-    cards.push(`
+    push("growth", `
       <div class="card col-12">
         <div class="card-title">Google Sheets</div>
         <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
@@ -696,7 +754,53 @@ function render(data) {
     `);
   }
 
-  el.innerHTML = cards.join("");
+  // ── Leads placeholder ──────────────────────────────────────
+  const ghlConvos = Array.isArray(data.ghl) ? data.ghl : [];
+  const briefEnquiries = Array.isArray(data.brief?.enquiries) ? data.brief.enquiries : [];
+  const allLeads = [
+    ...ghlConvos.map(c => ({...c, source: c.channel || "WhatsApp"})),
+    ...briefEnquiries.map(e => ({name: e.name, message: e.snippet, source: "Email", age: ""})),
+  ];
+  const sourceCounts = allLeads.reduce((a, l) => { a[l.source] = (a[l.source]||0)+1; return a; }, {});
+  push("leads", `
+    <div class="card col-12">
+      <div class="card-title">Leads & Enquiries</div>
+      <div class="card-headline">Open Conversations</div>
+      ${Object.keys(sourceCounts).length ? `
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">
+          ${Object.entries(sourceCounts).map(([s,n]) => `<span class="brief-chip chip-amber">${n} via ${s}</span>`).join("")}
+        </div>` : ""}
+      ${allLeads.length ? `
+        <div style="display:flex;flex-direction:column;gap:0">
+          ${allLeads.map(l => `
+            <div class="brief-row" style="align-items:center">
+              <div class="brief-avatar" style="background:#fef9c3;color:#a16207">${(l.name||"?")[0].toUpperCase()}</div>
+              <div style="min-width:0;flex:1">
+                <div class="brief-row-title">${l.name} <span style="font-size:.68rem;color:#aaa;font-weight:400">${l.source}</span></div>
+                <div class="brief-row-sub">${(l.message||"").substring(0,100)}</div>
+              </div>
+              ${l.age ? `<div style="font-size:.68rem;color:#ccc;white-space:nowrap">${l.age}</div>` : ""}
+            </div>`).join("")}
+        </div>` : `<p style="color:#ccc;font-size:.85rem">No open leads — set up Zapier to pull WhatsApp & webchat conversations here</p>`}
+    </div>
+  `);
+
+  // ── Social Media placeholder ────────────────────────────────
+  push("social", `
+    <div class="card col-12" style="text-align:center;padding:60px 20px">
+      <div style="font-size:2rem;margin-bottom:12px">📱</div>
+      <div class="card-headline">Social Media</div>
+      <p style="color:#bbb;font-size:.88rem;max-width:400px;margin:0 auto">
+        Coming soon — connect Instagram, Facebook, and Google Reviews to track engagement, new followers, and reviews needing a reply.
+      </p>
+    </div>
+  `);
+
+  // ── Render each tab ─────────────────────────────────────────
+  Object.entries(tabs).forEach(([tab, cards]) => {
+    const grid = document.getElementById("grid-" + tab);
+    if (grid) grid.innerHTML = cards.join("") || `<div class="card col-12"><p style="color:#ccc;font-size:.88rem;padding:8px 0">Nothing here yet</p></div>`;
+  });
 }
 
 function showTaskDetail(gid, name, notes, url, scriptUrl) {
