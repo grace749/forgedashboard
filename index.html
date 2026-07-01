@@ -123,6 +123,8 @@
       font-size: .72rem; font-weight: 700; color: #059669; flex-shrink: 0;
     }
     .brief-empty { font-size: .8rem; color: #ccc; padding: 6px 0; }
+    .brief-row-link { text-decoration: none; color: inherit; cursor: pointer; }
+    .brief-row-link:hover { background: #f9fafb; margin: 0 -8px; padding: 7px 8px; border-radius: 6px; }
     @media (max-width: 900px) {
       .brief-cols { grid-template-columns: 1fr; }
       .brief-col + .brief-col { border-left: none; border-top: 1px solid #f3f4f6; }
@@ -395,15 +397,21 @@ function render(data) {
       ...urgent.map(e => ({...e, _type:"urgent"})),
       ...important.filter(e => !urgent.find(u => u.id === e.id)).map(e => ({...e, _type:"important"}))
     ];
+    const gmailUrl = (e) => {
+      const id = e.thread_id || e.id;
+      return id ? `https://mail.google.com/mail/u/0/#inbox/${id}` : "https://mail.google.com/mail/u/0/#inbox";
+    };
     const emailHtml = allEmails.length
       ? allEmails.map(e => `
-          <div class="brief-row">
+          <a href="${gmailUrl(e)}" target="_blank" rel="noopener" class="brief-row brief-row-link">
             <div class="brief-email-dot ${e._type === 'urgent' ? 'dot-red' : 'dot-purple'}"></div>
             <div style="min-width:0">
               <div class="brief-row-title">${e.subject}</div>
               <div class="brief-row-sub" style="color:${e._type === 'urgent' ? '#ef4444' : '#7c3aed'}">${e.from}</div>
+              <div class="brief-row-sub" style="color:#ccc;margin-top:2px">${(e.snippet||"").substring(0,70)}…</div>
             </div>
-          </div>`).join("")
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2.5" style="flex-shrink:0;margin-top:3px"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>`).join("")
       : `<div class="brief-empty">All clear</div>`;
 
     // Enquiries column
