@@ -4,7 +4,7 @@ from datetime import datetime, timezone, timedelta
 import requests as http
 
 GHL_API_KEY   = os.environ.get("GHL_API_KEY", "")
-LOCATION_ID   = "eJ81HuWlVVSQQaqsZ6X"
+LOCATION_ID   = "eJ81HuWlVVSQQQaqsZ6X"
 BASE          = "https://services.leadconnectorhq.com"
 HEADERS       = {
     "Authorization": f"Bearer {GHL_API_KEY}",
