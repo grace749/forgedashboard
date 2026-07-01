@@ -248,6 +248,11 @@ function render(data) {
         <span class="stat-label">Joined this month</span>
         <span class="stat-val green">+${fmt(joined)}</span>
       </div>
+      ${(tm.breakdown || []).map(b => `
+      <div class="stat-row">
+        <span class="stat-label">${b.name}</span>
+        <span class="stat-val">${b.count}</span>
+      </div>`).join("")}
     </div>
   `);
 

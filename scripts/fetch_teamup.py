@@ -46,12 +46,29 @@ def run():
     # Members who have requested cancellation (still active but leaving)
     cancellations = len({m["customer"] for m in active if m.get("is_set_for_cancellation")})
 
+    # Count unique customers per membership type
+    type_counts = {}
+    for m in active:
+        name = m.get("name", "Unknown").strip()
+        cid = m["customer"]
+        if name not in type_counts:
+            type_counts[name] = set()
+        type_counts[name].add(cid)
+    breakdown = sorted(
+        [{"name": k, "count": len(v)} for k, v in type_counts.items()],
+        key=lambda x: -x["count"]
+    )
+    # Filter out internal/dummy entries
+    EXCLUDE = ["dummy membership", "body composition scan"]
+    breakdown = [b for b in breakdown if b["name"].lower() not in EXCLUDE]
+
     return {
         "total_members": total,
         "recurring": recurring,
         "trial": trial,
         "new_this_month": new_this_month,
         "cancellations_this_month": cancellations,
+        "breakdown": breakdown,
     }
 
 
