@@ -129,23 +129,31 @@ def run():
     print("=== Xero P&L rows ===")
     dump_pl_rows(pl)
 
-    # Wages: sum all rows containing "wage" or "salary" or "salaries" or "payroll" or "staff cost"
+    # Wages: sum all rows containing wage/salary/payroll/staff cost keywords
     total_wages = extract_pl_sum(pl, "wage", "salary", "salaries", "payroll", "staff cost")
 
     return {
-        "period": last_month_start.strftime("%B %Y"),
-        "revenue": extract_pl_value(pl, "Total Income"),
-        "direct_wages": total_wages,
-        "rent": extract_pl_value(pl, "Rent"),
-        "marketing": extract_pl_value(pl, "Advertising & Marketing"),
-        "cleaning": extract_pl_value(pl, "Cleaning"),
-        "it_software": extract_pl_value(pl, "IT Software and Consumables"),
-        "electricity": extract_pl_value(pl, "Light, Power, Heating"),
-        "telephone": extract_pl_value(pl, "Telephone & Internet"),
+        "period":           last_month_start.strftime("%B %Y"),
+        "revenue":          extract_pl_value(pl, "Total Income"),
+        "direct_wages":     total_wages,
+        "gross_profit":     extract_pl_value(pl, "Gross Profit"),
+        # Operating expenses
+        "rent":             extract_pl_sum(pl, "rent"),
+        "rates":            extract_pl_sum(pl, "rates", "land & property", "lps"),
+        "marketing":        extract_pl_sum(pl, "advertising", "marketing", "women in business", "women in biz"),
+        "subscriptions":    extract_pl_sum(pl, "subscription", "systemize", "zapier", "teamup", "software"),
+        "it_software":      extract_pl_sum(pl, "it software", "consumables", "computer"),
+        "electricity":      extract_pl_sum(pl, "light", "power", "heating", "electricity", "energy", "airtricity", "sse"),
+        "telephone":        extract_pl_sum(pl, "telephone", "internet", "broadband", "o2", "mobile"),
+        "cleaning":         extract_pl_sum(pl, "cleaning"),
+        "insurance":        extract_pl_sum(pl, "insurance"),
+        "kit":              extract_pl_sum(pl, "kit", "equipment", "gym equipment"),
+        "entertainment":    extract_pl_sum(pl, "entertainment", "meals", "coffee", "restaurant"),
+        "accountancy":      extract_pl_sum(pl, "accountan", "accounting fee"),
+        "miscellaneous":    extract_pl_sum(pl, "miscellaneous", "misc", "macblair", "builder"),
         "general_expenses": extract_pl_value(pl, "General Expenses"),
-        "total_expenses": extract_pl_value(pl, "Total Operating Expenses"),
-        "gross_profit": extract_pl_value(pl, "Gross Profit"),
-        "net_profit": extract_pl_value(pl, "Net Profit"),
+        "total_expenses":   extract_pl_value(pl, "Total Operating Expenses"),
+        "net_profit":       extract_pl_value(pl, "Net Profit"),
     }
 
 
