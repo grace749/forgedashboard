@@ -32,6 +32,7 @@ jobs:
           XERO_CLIENT_SECRET: ${{ secrets.XERO_CLIENT_SECRET }}
           XERO_REFRESH_TOKEN: ${{ secrets.XERO_REFRESH_TOKEN }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: cd scripts && python build_data.py
