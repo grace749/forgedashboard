@@ -313,6 +313,8 @@ function render(data) {
   const leaving   = JSON.stringify(tm.leaving_members   || []);
   const paused    = JSON.stringify(tm.paused_members    || []);
   const cancelled = JSON.stringify(tm.cancelled_members || []);
+  const recurring = JSON.stringify(tm.recurring_members || []);
+  const trial     = JSON.stringify(tm.trial_members     || []);
   cards.push(`
     <div class="card col-3">
       <div class="card-title">Members</div>
@@ -322,8 +324,8 @@ function render(data) {
         <div class="sublabel">Active members</div>
       </div>
       <div class="pill-row">
-        ${tm.recurring != null ? `<div class="pill green">${tm.recurring} Recurring</div>` : ""}
-        ${tm.trial     != null ? `<div class="pill amber">${tm.trial} Jumpstart</div>` : ""}
+        ${tm.recurring != null ? `<div class="pill green" onclick='showModal("Recurring Members",${recurring})' style="cursor:pointer">${tm.recurring} Recurring ↗</div>` : ""}
+        ${tm.trial     != null ? `<div class="pill amber" onclick='showModal("Jumpstart Members",${trial})' style="cursor:pointer">${tm.trial} Jumpstart ↗</div>` : ""}
         ${(tm.cancellations_this_month||0) > 0
           ? `<div class="pill red" onclick='showModal("Pending Cancellations",${leaving})'>${tm.cancellations_this_month} Leaving ↗</div>`
           : `<div class="pill grey">0 Leaving</div>`}
@@ -345,9 +347,9 @@ function render(data) {
       <div class="inner-divider">By membership type</div>
       <div class="membership-scroll">
         ${(tm.breakdown || []).map(b => `
-        <div class="stat-row">
+        <div class="stat-row" onclick='showModal("${b.name}",${JSON.stringify(b.members||[])})' style="cursor:pointer">
           <span class="stat-label">${b.name}</span>
-          <span class="stat-val">${b.count}</span>
+          <span class="stat-val" style="display:flex;align-items:center;gap:6px">${b.count} <span style="font-size:.65rem;color:#c4b5fd">↗</span></span>
         </div>`).join("")}
       </div>
     </div>
