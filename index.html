@@ -186,10 +186,10 @@ function render(data) {
     <div class="card col-3">
       <h2>Financials — ${xr.period || "Last Month"}</h2>
       <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-value green">${fmtEur(xr.revenue)}</span></div>
-      <div class="stat-row"><span class="stat-label">Gross profit</span><span class="stat-value">${fmtEur(xr.gross_profit)}</span></div>
-      <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-value ${(xr.net_profit||0) > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit)}</span></div>
-      <div class="section-divider">Expenses</div>
+      <div class="section-divider">Cost of Sales</div>
       <div class="stat-row"><span class="stat-label">Wages</span><span class="stat-value">${fmtEur(xr.direct_wages)}</span></div>
+      <div class="stat-row"><span class="stat-label" style="font-weight:600">Gross profit</span><span class="stat-value">${fmtEur(xr.gross_profit)}</span></div>
+      <div class="section-divider">Operating Expenses</div>
       <div class="stat-row"><span class="stat-label">Rent</span><span class="stat-value">${fmtEur(xr.rent)}</span></div>
       <div class="stat-row"><span class="stat-label">Marketing</span><span class="stat-value">${fmtEur(xr.marketing)}</span></div>
       <div class="stat-row"><span class="stat-label">IT & Software</span><span class="stat-value">${fmtEur(xr.it_software)}</span></div>
@@ -197,7 +197,8 @@ function render(data) {
       <div class="stat-row"><span class="stat-label">Telephone</span><span class="stat-value">${fmtEur(xr.telephone)}</span></div>
       <div class="stat-row"><span class="stat-label">Cleaning</span><span class="stat-value">${fmtEur(xr.cleaning)}</span></div>
       <div class="stat-row"><span class="stat-label">General</span><span class="stat-value">${fmtEur(xr.general_expenses)}</span></div>
-      <div class="stat-row"><span class="stat-label" style="font-weight:600">Total expenses</span><span class="stat-value">${fmtEur(xr.total_expenses)}</span></div>
+      <div class="stat-row"><span class="stat-label">Total op. expenses</span><span class="stat-value">${fmtEur(xr.total_expenses)}</span></div>
+      <div class="stat-row"><span class="stat-label" style="font-weight:600">Net profit</span><span class="stat-value ${(xr.net_profit||0) > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit)}</span></div>
     </div>
   `);
 

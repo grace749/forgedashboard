@@ -8,10 +8,10 @@ TARGET_SHEET = "30 Action Plan"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 # Columns to exclude (case-insensitive substring match)
-EXCLUDE_COLS = ["risk"]
+EXCLUDE_COLS = ["risk", "resources", "insert", "(insert"]
 
 # Only keep these columns (in this order) — must match header names in sheet
-KEEP_COLS = ["30 day action plan", "owner", "deadline", "completed"]
+KEEP_COLS = ["30 day action plan", "owner", "deadline", "completed", "done"]
 
 
 def run():
