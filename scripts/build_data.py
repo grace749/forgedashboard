@@ -5,7 +5,7 @@ from pathlib import Path
 
 import fetch_asana
 import fetch_brief
-import fetch_ghl
+import fetch_ghl_sheet as fetch_ghl
 import fetch_teamup
 import fetch_xero
 import fetch_sheets
