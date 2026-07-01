@@ -151,7 +151,7 @@ function render(data) {
       <div class="stat-row"><span class="stat-label">Recurring</span><span class="stat-value">${fmt(tm.recurring)}</span></div>
       <div class="stat-row"><span class="stat-label">Trials</span><span class="stat-value">${fmt(tm.trial)}</span></div>
       <div class="stat-row"><span class="stat-label">Pending cancellations</span><span class="stat-value ${tm.cancellations_this_month > 3 ? 'red' : ''}">${fmt(tm.cancellations_this_month)}</span></div>
-      <div class="stat-row"><span class="stat-label">New this month</span><span class="stat-value green">${fmt(tm.new_this_month)}</span></div>
+      <div class="stat-row"><span class="stat-label">Joined this month</span><span class="stat-value green">${fmt(tm.new_this_month)}</span></div>
     </div>
   `);
 
