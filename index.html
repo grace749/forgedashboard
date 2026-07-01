@@ -294,6 +294,44 @@ function render(data) {
     </div>
   `);
 
+  // ── Marketing ────────────────────────────────────────────────
+  const mk = data.marketing || {};
+  cards.push(`
+    <div class="card col-3">
+      <div class="card-title">Ads & Leads — ${mk.period || "—"}</div>
+      <div class="big-kpi">
+        <div class="number">${mk.leads ?? "—"}</div>
+        <div class="sublabel">Leads from ads</div>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Ad spend</span>
+        <span class="stat-val">${fmtGbp(mk.ad_spend)}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Cost per lead</span>
+        <span class="stat-val">${fmtGbp(mk.cost_per_lead)}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Sales from ads</span>
+        <span class="stat-val green">${fmt(mk.sales)}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Income from ads</span>
+        <span class="stat-val green">${fmtGbp(mk.income_from_ads)}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Close rate</span>
+        <span class="stat-val ${(mk.close_rate||0) >= 10 ? 'green' : 'red'}">${mk.close_rate != null ? mk.close_rate + "%" : "—"}</span>
+      </div>
+      ${mk.latest_week ? `
+      <div class="inner-divider">Latest week — ${mk.latest_week}</div>
+      <div class="stat-row pl-sub"><span class="stat-label">Spend</span><span class="stat-val">${fmtGbp(mk.latest_spend)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Leads</span><span class="stat-val">${fmt(mk.latest_leads)}</span></div>
+      <div class="stat-row pl-sub"><span class="stat-label">Sales</span><span class="stat-val">${fmt(mk.latest_sales)}</span></div>
+      ` : ""}
+    </div>
+  `);
+
   // ── Tasks ────────────────────────────────────────────────────
   const tasks = data.asana?.tasks_today ?? [];
   const taskHtml = tasks.length

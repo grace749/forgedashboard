@@ -7,6 +7,7 @@ import fetch_asana
 import fetch_teamup
 import fetch_xero
 import fetch_sheets
+import fetch_marketing
 
 OUTPUT = Path(__file__).parent.parent / "data" / "data.json"
 
@@ -26,6 +27,7 @@ data = {
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),
     "growth_sprint": safe_run("sheets", fetch_sheets.run),
+    "marketing": safe_run("marketing", fetch_marketing.run),
 }
 
 OUTPUT.write_text(json.dumps(data, indent=2))
