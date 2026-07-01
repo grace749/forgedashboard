@@ -206,10 +206,18 @@ function render(data) {
     // Detect columns — use whatever headers the sheet has
     const cols = Object.keys(kpis[0]);
     const headerRow = cols.map(c => `<th>${c}</th>`).join("");
-    const bodyRows = kpis.map(row => `<tr>${cols.map(c => `<td>${row[c] || "—"}</td>`).join("")}</tr>`).join("");
+    const bodyRows = kpis.map(row => `<tr>${cols.map(c => {
+      const val = row[c] || "";
+      if (c === "Done") {
+        const done = val.trim().toLowerCase();
+        if (done === "x" || done === "yes" || done === "✓") return `<td style="color:#16a34a;font-weight:700">✓</td>`;
+        return `<td style="color:#d1d5db">○</td>`;
+      }
+      return `<td>${val || "—"}</td>`;
+    }).join("")}</tr>`).join("");
     sprintCard = `
       <div class="card full-width">
-        <h2>90-Day Growth Sprint</h2>
+        <h2>30-Day Action Plan</h2>
         <table class="kpi-table">
           <thead><tr>${headerRow}</tr></thead>
           <tbody>${bodyRows}</tbody>
