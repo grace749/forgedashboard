@@ -179,6 +179,14 @@
     .ap-deadline { font-size: 0.78rem; color: #6b7280; }
     .ap-done { color: #16a34a; font-weight: 700; font-size: 1rem; }
     .ap-todo { color: #e5e7eb; font-size: 1rem; }
+    .ap-btn {
+      border: none; border-radius: 6px; padding: 4px 10px;
+      font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: opacity .15s;
+    }
+    .ap-btn:disabled { opacity: .5; cursor: wait; }
+    .ap-btn-done { background: #dcfce7; color: #16a34a; }
+    .ap-btn-todo { background: #f3f4f6; color: #9ca3af; }
+    .ap-btn-todo:hover { background: #e0e7ff; color: #4f46e5; }
 
     /* ── Mini table (marketing) ─────────────────────────────── */
     .mini-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 2px; }
@@ -424,17 +432,23 @@ function render(data) {
 
   // ── 30-Day Action Plan ─────────────────────────────────────
   const kpis = data.growth_sprint?.kpis ?? [];
+  const apScriptUrl = data.apps_script_url || "";
+
   if (!kpis.length) {
     cards.push(`<div class="card col-12"><div class="card-title">Google Sheets</div><div class="card-headline">30-Day Action Plan</div><p style="color:#ccc;font-size:.85rem">No data</p></div>`);
   } else {
     const cols = Object.keys(kpis[0]);
-    const rows = kpis.map(row => `<tr>${cols.map(c => {
+    const rows = kpis.map((row, rowIdx) => `<tr>${cols.map(c => {
       const v = row[c] || "";
       if (c === "Done") {
-        const done = v.trim().toLowerCase();
-        return (done === "x" || done === "yes" || done === "✓")
-          ? `<td class="ap-done">✓</td>`
-          : `<td class="ap-todo">○</td>`;
+        const isDone = ["x","yes","✓"].includes(v.trim().toLowerCase());
+        const action = (row["Action"] || "").replace(/'/g, "\\'");
+        if (apScriptUrl) {
+          return isDone
+            ? `<td><button class="ap-btn ap-btn-done" onclick="toggleDone(this,'${action}',false,'${apScriptUrl}')">✓ Done</button></td>`
+            : `<td><button class="ap-btn ap-btn-todo" onclick="toggleDone(this,'${action}',true,'${apScriptUrl}')">○ Mark done</button></td>`;
+        }
+        return isDone ? `<td class="ap-done">✓</td>` : `<td class="ap-todo">○</td>`;
       }
       if (c === "Owner")    return `<td><span class="ap-owner">${v||"—"}</span></td>`;
       if (c === "Deadline") return `<td><span class="ap-deadline">${v||"—"}</span></td>`;
@@ -448,7 +462,7 @@ function render(data) {
           30-Day Action Plan
           <a href="https://docs.google.com/spreadsheets/d/1Cztbi-zVqFvpZ48q-aAIMBZWSeeQjUM8abHRI98b6iY" target="_blank"
              style="font-size:0.72rem;font-weight:600;color:#7c3aed;text-decoration:none;background:#f5f3ff;padding:4px 10px;border-radius:6px;border:1px solid #ddd6fe">
-            Edit in Sheets ↗
+            Open Sheet ↗
           </a>
         </div>
         <div class="ap-wrap">
@@ -462,6 +476,33 @@ function render(data) {
   }
 
   el.innerHTML = cards.join("");
+}
+
+async function toggleDone(btn, action, markDone, scriptUrl) {
+  btn.disabled = true;
+  btn.textContent = "Saving…";
+  try {
+    const res = await fetch(scriptUrl, {
+      method: "POST",
+      body: JSON.stringify({ action, done: markDone }),
+    });
+    const json = await res.json();
+    if (!json.ok) throw new Error(json.error);
+    if (markDone) {
+      btn.className = "ap-btn ap-btn-done";
+      btn.textContent = "✓ Done";
+      btn.onclick = () => toggleDone(btn, action, false, scriptUrl);
+    } else {
+      btn.className = "ap-btn ap-btn-todo";
+      btn.textContent = "○ Mark done";
+      btn.onclick = () => toggleDone(btn, action, true, scriptUrl);
+    }
+  } catch (e) {
+    btn.textContent = "Error — retry";
+    btn.style.background = "#fee2e2";
+    btn.style.color = "#dc2626";
+  }
+  btn.disabled = false;
 }
 
 loadData().then(render).catch(err => {
