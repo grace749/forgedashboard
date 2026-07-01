@@ -39,7 +39,7 @@
       padding: 16px 18px;
       max-width: 1440px;
       margin: 0 auto;
-      align-items: stretch;
+      align-items: start;
     }
 
     /* ── Card ───────────────────────────────────────────────── */
@@ -446,7 +446,7 @@ function render(data) {
     <div class="card col-3">
       <div class="card-title">Asana</div>
       <div class="card-headline">Your Tasks (${tasks.length})</div>
-      <ul class="task-list" style="flex:1;overflow-y:auto;min-height:0">${taskHtml}</ul>
+      <ul class="task-list" style="max-height:400px;overflow-y:auto">${taskHtml}</ul>
     </div>
   `);
 
