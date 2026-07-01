@@ -11,98 +11,116 @@
     header {
       background: #fff;
       border-bottom: 1px solid #e8e8ee;
-      padding: 18px 24px;
+      padding: 14px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    header h1 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
-    header .meta { font-size: 0.78rem; color: #888; }
+    header h1 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
+    header .meta { font-size: 0.75rem; color: #aaa; }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 16px;
-      padding: 20px;
-      max-width: 1200px;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+      padding: 16px;
+      max-width: 1300px;
       margin: 0 auto;
     }
 
     .card {
       background: #fff;
-      border-radius: 12px;
-      padding: 20px 22px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      border-radius: 10px;
+      padding: 16px 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
     }
     .card h2 {
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #999;
-      margin-bottom: 14px;
+      letter-spacing: 0.07em;
+      color: #aaa;
+      margin-bottom: 12px;
     }
 
+    /* Column spans */
+    .col-3  { grid-column: span 3; }
+    .col-4  { grid-column: span 4; }
+    .col-5  { grid-column: span 5; }
+    .col-6  { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+
+    /* Stat rows */
     .stat-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      padding: 6px 0;
-      border-bottom: 1px solid #f0f0f5;
+      padding: 5px 0;
+      border-bottom: 1px solid #f2f2f7;
     }
     .stat-row:last-child { border-bottom: none; }
-    .stat-label { font-size: 0.88rem; color: #444; }
-    .stat-value { font-size: 1rem; font-weight: 600; color: #1a1a2e; }
+    .stat-label { font-size: 0.82rem; color: #555; }
+    .stat-value { font-size: 0.95rem; font-weight: 600; color: #1a1a2e; }
     .stat-value.green { color: #16a34a; }
-    .stat-value.red { color: #dc2626; }
+    .stat-value.red   { color: #dc2626; }
+    .stat-value.amber { color: #d97706; }
 
-    .big-stat {
-      font-size: 2.4rem;
+    .section-divider {
+      font-size: 0.65rem;
       font-weight: 700;
-      line-height: 1;
-      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #ccc;
+      padding: 8px 0 4px;
     }
-    .big-label { font-size: 0.82rem; color: #999; }
 
-    .task-list { list-style: none; }
+    /* Task list */
+    .task-list { list-style: none; max-height: 340px; overflow-y: auto; }
     .task-list li {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      padding: 7px 0;
-      font-size: 0.88rem;
-      border-bottom: 1px solid #f0f0f5;
+      gap: 9px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f2f2f7;
+      font-size: 0.82rem;
     }
     .task-list li:last-child { border-bottom: none; }
-    .task-check { width: 16px; height: 16px; border-radius: 50%; border: 2px solid #d1d5db; flex-shrink: 0; margin-top: 1px; }
-    .task-check.done { background: #16a34a; border-color: #16a34a; }
-    .task-project { font-size: 0.72rem; color: #aaa; margin-top: 2px; }
-    .task-name a { color: inherit; text-decoration: none; }
-    .task-name a:hover { text-decoration: underline; }
-
-    .null-value { color: #ccc; font-size: 0.85rem; }
-
-    .full-width { grid-column: 1 / -1; }
-
-    .kpi-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
-    .kpi-table th { text-align: left; padding: 6px 8px; color: #999; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #f0f0f5; }
-    .kpi-table td { padding: 8px 8px; border-bottom: 1px solid #f8f8fc; }
-    .kpi-table tr:last-child td { border-bottom: none; }
-
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 99px;
-      font-size: 0.72rem;
-      font-weight: 600;
+    .task-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 5px;
+      background: #d1d5db;
     }
-    .badge.on-track { background: #dcfce7; color: #16a34a; }
-    .badge.at-risk { background: #fef9c3; color: #ca8a04; }
-    .badge.behind { background: #fee2e2; color: #dc2626; }
+    .task-dot.overdue { background: #dc2626; }
+    .task-dot.due-today { background: #d97706; }
+    .task-body { flex: 1; min-width: 0; }
+    .task-name a { color: #1a1a2e; text-decoration: none; }
+    .task-name a:hover { text-decoration: underline; }
+    .task-meta { display: flex; gap: 8px; margin-top: 2px; }
+    .task-project { font-size: 0.7rem; color: #aaa; }
+    .task-due { font-size: 0.7rem; font-weight: 600; }
+    .task-due.overdue { color: #dc2626; }
+    .task-due.due-today { color: #d97706; }
+    .task-due.upcoming { color: #6b7280; }
 
-    @media (max-width: 600px) {
-      .grid { padding: 12px; gap: 12px; }
-      .big-stat { font-size: 1.9rem; }
+    /* Sprint table */
+    .kpi-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    .kpi-table th {
+      text-align: left; padding: 5px 8px;
+      color: #aaa; font-weight: 600; font-size: 0.68rem;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      border-bottom: 1px solid #f0f0f5;
+    }
+    .kpi-table td { padding: 7px 8px; border-bottom: 1px solid #f8f8fc; vertical-align: top; }
+    .kpi-table tr:last-child td { border-bottom: none; }
+    .done-tick { color: #16a34a; font-weight: 700; }
+    .done-empty { color: #e5e7eb; }
+
+    .null-value { color: #ccc; }
+
+    @media (max-width: 900px) {
+      .col-3, .col-4, .col-5, .col-6 { grid-column: span 12; }
     }
   </style>
 </head>
@@ -114,7 +132,7 @@
 </header>
 
 <div class="grid" id="dashboard">
-  <div class="card"><h2>Loading</h2><p style="color:#aaa;font-size:.9rem">Fetching data…</p></div>
+  <div class="card col-12"><p style="color:#aaa;font-size:.9rem">Loading…</p></div>
 </div>
 
 <script>
@@ -128,8 +146,14 @@ function fmt(val, prefix = "") {
   if (typeof val === "number") return `${prefix}${val.toLocaleString("en-IE", { maximumFractionDigits: 0 })}`;
   return val;
 }
+function fmtEur(val) { return fmt(val, "£"); }
 
-function fmtEur(val) { return fmt(val, "€"); }
+function fmtDate(iso) {
+  if (!iso) return null;
+  const [y, m, d] = iso.split("-");
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  return `${parseInt(d)} ${months[parseInt(m)-1]}`;
+}
 
 function render(data) {
   const d = document.getElementById("dashboard");
@@ -140,30 +164,31 @@ function render(data) {
     t.textContent = "Updated " + dt.toLocaleString("en-IE", { dateStyle: "medium", timeStyle: "short" });
   }
 
+  const today = new Date().toISOString().split("T")[0];
   const cards = [];
 
-  // ── Membership snapshot ──────────────────────────────────────────────────
+  // ── Membership ──────────────────────────────────────────────
   const tm = data.teamup || {};
   cards.push(`
-    <div class="card">
+    <div class="card col-3">
       <h2>Membership</h2>
       <div class="stat-row"><span class="stat-label">Total members</span><span class="stat-value">${fmt(tm.total_members)}</span></div>
-      <div class="stat-row"><span class="stat-label">Recurring</span><span class="stat-value">${fmt(tm.recurring)}</span></div>
-      <div class="stat-row"><span class="stat-label">Trials</span><span class="stat-value">${fmt(tm.trial)}</span></div>
-      <div class="stat-row"><span class="stat-label">Pending cancellations</span><span class="stat-value ${tm.cancellations_this_month > 3 ? 'red' : ''}">${fmt(tm.cancellations_this_month)}</span></div>
+      <div class="stat-row"><span class="stat-label">Recurring (DD)</span><span class="stat-value">${fmt(tm.recurring)}</span></div>
+      <div class="stat-row"><span class="stat-label">6 Wk Jumpstart</span><span class="stat-value">${fmt(tm.trial)}</span></div>
       <div class="stat-row"><span class="stat-label">Joined this month</span><span class="stat-value green">${fmt(tm.new_this_month)}</span></div>
+      <div class="stat-row"><span class="stat-label">Pending cancellations</span><span class="stat-value ${(tm.cancellations_this_month||0) > 0 ? 'red' : ''}">${fmt(tm.cancellations_this_month)}</span></div>
     </div>
   `);
 
-  // ── Financials ────────────────────────────────────────────────────────────
+  // ── Financials ───────────────────────────────────────────────
   const xr = data.xero || {};
   cards.push(`
-    <div class="card">
+    <div class="card col-3">
       <h2>Financials — ${xr.period || "Last Month"}</h2>
       <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-value green">${fmtEur(xr.revenue)}</span></div>
       <div class="stat-row"><span class="stat-label">Gross profit</span><span class="stat-value">${fmtEur(xr.gross_profit)}</span></div>
-      <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-value ${xr.net_profit > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit)}</span></div>
-      <div class="stat-row"><span class="stat-label" style="font-weight:600;color:#999;font-size:0.75rem;text-transform:uppercase">Expenses</span><span class="stat-value"></span></div>
+      <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-value ${(xr.net_profit||0) > 0 ? 'green' : 'red'}">${fmtEur(xr.net_profit)}</span></div>
+      <div class="section-divider">Expenses</div>
       <div class="stat-row"><span class="stat-label">Wages</span><span class="stat-value">${fmtEur(xr.direct_wages)}</span></div>
       <div class="stat-row"><span class="stat-label">Rent</span><span class="stat-value">${fmtEur(xr.rent)}</span></div>
       <div class="stat-row"><span class="stat-label">Marketing</span><span class="stat-value">${fmtEur(xr.marketing)}</span></div>
@@ -172,66 +197,73 @@ function render(data) {
       <div class="stat-row"><span class="stat-label">Telephone</span><span class="stat-value">${fmtEur(xr.telephone)}</span></div>
       <div class="stat-row"><span class="stat-label">Cleaning</span><span class="stat-value">${fmtEur(xr.cleaning)}</span></div>
       <div class="stat-row"><span class="stat-label">General</span><span class="stat-value">${fmtEur(xr.general_expenses)}</span></div>
-      <div class="stat-row"><span class="stat-label">Total expenses</span><span class="stat-value">${fmtEur(xr.total_expenses)}</span></div>
+      <div class="stat-row"><span class="stat-label" style="font-weight:600">Total expenses</span><span class="stat-value">${fmtEur(xr.total_expenses)}</span></div>
     </div>
   `);
 
-  // ── Today's tasks ─────────────────────────────────────────────────────────
-  const tasks = (data.asana?.tasks_today ?? []);
+  // ── Tasks ────────────────────────────────────────────────────
+  const tasks = data.asana?.tasks_today ?? [];
   const taskItems = tasks.length
-    ? tasks.map(t => `
-        <li>
-          <div class="task-check ${t.completed ? 'done' : ''}"></div>
-          <div>
+    ? tasks.map(t => {
+        const isOverdue = t.overdue;
+        const isToday = t.due_on === today;
+        const dotClass = isOverdue ? "overdue" : isToday ? "due-today" : "";
+        const dueClass = isOverdue ? "overdue" : isToday ? "due-today" : "upcoming";
+        const dueLabel = t.due_on ? fmtDate(t.due_on) : "";
+        const dueTag = t.due_on ? `<span class="task-due ${dueClass}">${isOverdue ? "⚠ " : ""}${dueLabel}</span>` : "";
+        return `<li>
+          <div class="task-dot ${dotClass}"></div>
+          <div class="task-body">
             <div class="task-name">${t.url ? `<a href="${t.url}" target="_blank">${t.name}</a>` : t.name}</div>
-            ${t.project ? `<div class="task-project">${t.project}</div>` : ""}
+            <div class="task-meta">
+              ${t.project ? `<span class="task-project">${t.project}</span>` : ""}
+              ${dueTag}
+            </div>
           </div>
-        </li>`)
-      .join("")
-    : `<li style="color:#aaa;font-size:.88rem;padding:8px 0">No tasks due today</li>`;
+        </li>`;
+      }).join("")
+    : `<li style="color:#aaa;padding:8px 0">No incomplete tasks</li>`;
 
   cards.push(`
-    <div class="card">
-      <h2>Today's Tasks (${tasks.length})</h2>
+    <div class="card col-6">
+      <h2>Tasks (${tasks.length})</h2>
       <ul class="task-list">${taskItems}</ul>
     </div>
   `);
 
-  // ── 90-day sprint KPIs ────────────────────────────────────────────────────
+  // ── 30-Day Sprint ─────────────────────────────────────────────
   const kpis = data.growth_sprint?.kpis ?? [];
-  let sprintCard;
   if (kpis.length === 0) {
-    sprintCard = `<div class="card full-width"><h2>90-Day Growth Sprint</h2><p style="color:#aaa;font-size:.88rem">No data yet</p></div>`;
+    cards.push(`<div class="card col-12"><h2>30-Day Action Plan</h2><p style="color:#aaa;font-size:.85rem">No data</p></div>`);
   } else {
-    // Detect columns — use whatever headers the sheet has
     const cols = Object.keys(kpis[0]);
     const headerRow = cols.map(c => `<th>${c}</th>`).join("");
     const bodyRows = kpis.map(row => `<tr>${cols.map(c => {
       const val = row[c] || "";
       if (c === "Done") {
-        const done = val.trim().toLowerCase();
-        if (done === "x" || done === "yes" || done === "✓") return `<td style="color:#16a34a;font-weight:700">✓</td>`;
-        return `<td style="color:#d1d5db">○</td>`;
+        const v = val.trim().toLowerCase();
+        return (v === "x" || v === "yes" || v === "✓")
+          ? `<td class="done-tick">✓</td>`
+          : `<td class="done-empty">○</td>`;
       }
-      return `<td>${val || "—"}</td>`;
+      return `<td>${val || ""}</td>`;
     }).join("")}</tr>`).join("");
-    sprintCard = `
-      <div class="card full-width">
+    cards.push(`
+      <div class="card col-12">
         <h2>30-Day Action Plan</h2>
         <table class="kpi-table">
           <thead><tr>${headerRow}</tr></thead>
           <tbody>${bodyRows}</tbody>
         </table>
-      </div>`;
+      </div>`);
   }
-  cards.push(sprintCard);
 
   d.innerHTML = cards.join("");
 }
 
 loadData().then(render).catch(err => {
   document.getElementById("dashboard").innerHTML =
-    `<div class="card"><h2>Error</h2><p style="color:#dc2626;font-size:.88rem">${err.message}</p></div>`;
+    `<div class="card col-12"><h2>Error</h2><p style="color:#dc2626;font-size:.85rem">${err.message}</p></div>`;
 });
 </script>
 </body>

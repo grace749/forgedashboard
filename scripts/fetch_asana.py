@@ -15,12 +15,10 @@ def get_workspace_gid():
     return workspaces[0]["gid"]
 
 
-def get_tasks_due_today(workspace_gid):
-    today = date.today().isoformat()
+def get_my_incomplete_tasks(workspace_gid):
     params = {
         "workspace": workspace_gid,
         "assignee": "me",
-        "due_on": today,
         "completed": False,
         "opt_fields": "name,due_on,completed,permalink_url,projects.name",
     }
@@ -31,19 +29,25 @@ def get_tasks_due_today(workspace_gid):
 
 def run():
     workspace_gid = get_workspace_gid()
-    tasks = get_tasks_due_today(workspace_gid)
-    return {
-        "tasks_today": [
-            {
-                "name": t["name"],
-                "completed": t["completed"],
-                "url": t.get("permalink_url"),
-                "project": t["projects"][0]["name"] if t.get("projects") else None,
-            }
-            for t in tasks
-            if not t["completed"]
-        ]
-    }
+    tasks = get_my_incomplete_tasks(workspace_gid)
+    today = date.today().isoformat()
+    result = []
+    for t in tasks:
+        if t["completed"]:
+            continue
+        due = t.get("due_on")
+        overdue = due and due < today
+        result.append({
+            "name": t["name"],
+            "completed": False,
+            "url": t.get("permalink_url"),
+            "project": t["projects"][0]["name"] if t.get("projects") else None,
+            "due_on": due,
+            "overdue": overdue,
+        })
+    # Sort: overdue first, then by due date, then no date last
+    result.sort(key=lambda x: (0 if x["overdue"] else (1 if x["due_on"] else 2), x["due_on"] or ""))
+    return {"tasks_today": result}
 
 
 if __name__ == "__main__":
