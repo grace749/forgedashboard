@@ -21,6 +21,7 @@ def get_tasks_due_today(workspace_gid):
         "workspace": workspace_gid,
         "assignee": "me",
         "due_on": today,
+        "completed": False,
         "opt_fields": "name,due_on,completed,permalink_url,projects.name",
     }
     r = requests.get(f"{BASE}/tasks", headers=HEADERS, params=params)
