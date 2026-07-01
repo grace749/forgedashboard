@@ -8,7 +8,6 @@ HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
 
 
 def get_all(endpoint, params=None):
-    """Fetch all pages from a paginated endpoint."""
     results = []
     url = f"{BASE}/{endpoint}/"
     p = params or {}
@@ -18,33 +17,30 @@ def get_all(endpoint, params=None):
         data = r.json()
         results.extend(data.get("results", []))
         url = data.get("next")
-        p = {}  # next URL already has params baked in
+        p = {}
     return results
 
 
 def run():
-    # All active customer memberships
-    all_memberships = get_all("customermemberships", {"status": "active"})
+    # All active customers
+    active = get_all("customers", {"status": "active"})
+    total = len(active)
 
-    total = len(all_memberships)
+    # Trials — customers with trial status
+    trial = sum(1 for c in active if "trial" in str(c.get("status", "")).lower())
 
-    # Recurring = memberships with a recurring billing type
-    recurring = sum(1 for m in all_memberships if m.get("membership_type") == "recurring"
-                    or m.get("is_recurring") is True)
-
-    # Trials
-    trial = sum(1 for m in all_memberships if "trial" in str(m.get("membership", "")).lower()
-                or m.get("is_trial") is True)
+    # Recurring — customers with a direct debit / recurring payment
+    recurring = sum(1 for c in active if c.get("has_direct_debit") or c.get("is_recurring"))
 
     # Cancellations this month
     month_start = date.today().replace(day=1).isoformat()
-    cancelled = get_all("customermemberships", {
+    cancelled = get_all("customers", {
         "status": "cancelled",
-        "end_date__gte": month_start,
+        "updated__gte": month_start,
     })
     cancellations = len(cancelled)
 
-    # New customers in last 7 days (weekly leads)
+    # New customers in last 7 days
     week_ago = (date.today() - timedelta(days=7)).isoformat()
     new_customers = get_all("customers", {"created__gte": week_ago})
     weekly_leads = len(new_customers)

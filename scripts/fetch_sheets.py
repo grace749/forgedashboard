@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 SPREADSHEET_ID = "1Cztbi-zVqFvpZ48q-aAIMBZWSeeQjUM8abHRI98b6iY"
-RANGE = "Sheet1!A1:Z200"  # adjust tab name / range to match your sheet layout
+RANGE = "30 Action Plan!A1:Z200"
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
