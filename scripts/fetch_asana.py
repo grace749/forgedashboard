@@ -41,6 +41,7 @@ def run():
                 "project": t["projects"][0]["name"] if t.get("projects") else None,
             }
             for t in tasks
+            if not t["completed"]
         ]
     }
 
