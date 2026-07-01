@@ -43,12 +43,8 @@ def run():
         if m.get("start_date", "") >= month_start
     })
 
-    # Cancellations this month — filter cancelled by expiration_date this month
-    cancelled = get_all("customermemberships", {"status": "cancelled"})
-    cancellations = len({
-        m["customer"] for m in cancelled
-        if m.get("expiration_date", "") >= month_start
-    })
+    # Members who have requested cancellation (still active but leaving)
+    cancellations = len({m["customer"] for m in active if m.get("is_set_for_cancellation")})
 
     return {
         "total_members": total,
