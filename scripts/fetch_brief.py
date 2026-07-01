@@ -120,49 +120,28 @@ def _sender_name(from_header):
     return m.group(1).strip() if m else from_header.split("@")[0]
 
 
-# Subjects/senders that are never worth surfacing
-_NOISE_SUBJECT = re.compile(
-    r'receipt|invoice|unsubscribe|newsletter|loyalty|reward|points|'
-    r'monthly update|weekly update|mileage rate|HMRC rate|'
-    r'pages build|workflow run|run failed|github action|'
-    r'info sent|membership info sent',
-    re.I
-)
+# Senders that are definitely automated — never needs a reply
 _NOISE_SENDER = re.compile(
     r'noreply|no-reply|donotreply|automated|bounce|mailer-daemon|'
-    r'notifications@|github\.com|captions\.ai|velites|tripcatcher|'
-    r'myzone|chase servicing',
+    r'notification@|notifications@|billing\.|'
+    r'github\.com|captions\.ai|velites|tripcatcher|'
+    r'myzone|temu@|etsy\.com|o2\.com|'
+    r'@forgefemalefitness\.co',   # Grace's own automated system emails
     re.I
 )
 
-# Signals that an email genuinely needs a reply or attention
-_NEEDS_REPLY = re.compile(
-    r'\?|please (reply|respond|confirm|let me know|get back)|'
-    r'(can|could|would) you|following up|just checking|'
-    r'question|query|help|issue|problem|concern|complaint|'
-    r'payment (failed|issue|problem)|direct debit|'
-    r'(join|interested in|enquir|information about|tell me more)',
-    re.I
-)
-_IMPORTANT_SUBJECT = re.compile(
-    r'invitation|enquir|complaint|payment|problem|issue|urgent|'
-    r'cancel|injury|refund|join|interested|information|membership',
+# Subjects that are definitely automated noise
+_NOISE_SUBJECT = re.compile(
+    r'unsubscribe|loyalty points|reward|your bill is ready|'
+    r'pages build|workflow run|run failed|github action|'
+    r'appointment confirmation|new member lifestyle|t-shirt size|'
+    r'well75 registration|refer a friend|member of the month',
     re.I
 )
 
 
-def _is_noise(sender, subject, snippet):
+def _is_noise(sender, subject, snippet=""):
     return bool(_NOISE_SENDER.search(sender) or _NOISE_SUBJECT.search(subject))
-
-
-def _needs_attention(sender, subject, snippet):
-    """True if email looks like it needs a reply or action."""
-    if _is_noise(sender, subject, snippet):
-        return False
-    return bool(
-        _IMPORTANT_SUBJECT.search(subject) or
-        _NEEDS_REPLY.search(snippet)
-    )
 
 
 def fetch_gmail_urgent():
@@ -207,10 +186,10 @@ def fetch_gmail_urgent():
             subject = last_hdrs.get("Subject", "(no subject)")
             snippet = last_msg.get("snippet", "")
 
-            if _is_noise(last_from, subject, snippet):
+            if _is_noise(last_from, subject):
                 continue
 
-            # For threads with multiple messages, show how many days since last received
+            # For threads with multiple messages, use original subject
             first_hdrs = {h["name"]: h["value"] for h in messages[0].get("payload", {}).get("headers", [])}
             original_subject = first_hdrs.get("Subject", subject)
 
@@ -291,7 +270,7 @@ def fetch_gmail_important():
             hdrs, snippet = _get_headers(svc, msg["id"])
             sender  = hdrs.get("From", "")
             subject = hdrs.get("Subject", "(no subject)")
-            if _is_noise(sender, subject, snippet):
+            if _is_noise(sender, subject):
                 continue
             if "grace@theforge.pt" in sender.lower():
                 continue
