@@ -411,9 +411,10 @@ function render(data) {
         <tbody>
           ${mkMonthly.map(m => {
             const cpl = m.leads > 0 ? fmtGbp(Math.round(m.spend / m.leads)) : "—";
-            return `<tr><td>${m.month}</td><td>${fmtGbp(m.spend)}</td><td>${m.leads}</td><td>${cpl}</td><td style="color:#16a34a;font-weight:600">${fmtGbp(m.profit)}</td></tr>`;
+            const netProfit = (m.profit || 0) - 750;
+            return `<tr><td>${m.month}</td><td>${fmtGbp(m.spend)}</td><td>${m.leads}</td><td>${cpl}</td><td style="color:${netProfit>=0?'#16a34a':'#dc2626'};font-weight:600">${fmtGbp(netProfit)}</td></tr>`;
           }).join("")}
-          ${mkLife.spend ? `<tr class="total"><td>Total</td><td>${fmtGbp(mkLife.spend)}</td><td>${mkLife.leads||""}</td><td></td><td style="color:#16a34a">${fmtGbp(mkLife.profit)}</td></tr>` : ""}
+          ${mkLife.spend ? `<tr class="total"><td>Total</td><td>${fmtGbp(mkLife.spend)}</td><td>${mkLife.leads||""}</td><td></td><td style="color:#16a34a">${fmtGbp((mkLife.profit||0) - (750 * mkMonthly.length))}</td></tr>` : ""}
         </tbody>
       </table>` : ""}
     </div>
