@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T19:30:16.226426+00:00",
+  "generated_at": "2026-07-01T19:55:01.012056+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
@@ -8,7 +8,7 @@
     "urgent_count": 2,
     "enquiry_count": 6,
     "calendar": {
-      "error": "<HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-01T00%3A00%3A00%2B00%3A00&timeMax=2026-07-01T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Google Calendar API has not been used in project 341758554905 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=341758554905 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\". Details: \"[{'message': 'Google Calendar API has not been used in project 341758554905 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=341758554905 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]\">"
+      "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-01T00%3A00%3A00%2B00%3A00&timeMax=2026-07-01T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
     },
     "urgent": [
       {
