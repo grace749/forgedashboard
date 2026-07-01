@@ -119,7 +119,7 @@
 
 <script>
 async function loadData() {
-  const res = await fetch("data/data.json?t=" + Date.now());
+  const res = await fetch("./data/data.json?t=" + Date.now());
   return res.json();
 }
 
