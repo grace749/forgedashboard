@@ -310,11 +310,19 @@ function render(data) {
 
   // ── Membership ─────────────────────────────────────────────
   const tm = data.teamup || {};
-  const leaving   = JSON.stringify(tm.leaving_members   || []);
-  const paused    = JSON.stringify(tm.paused_members    || []);
-  const cancelled = JSON.stringify(tm.cancelled_members || []);
-  const recurring = JSON.stringify(tm.recurring_members || []);
-  const trial     = JSON.stringify(tm.trial_members     || []);
+
+  // Store all member lists in a global so onclick can reference by key safely
+  window._members = {
+    recurring:  tm.recurring_members  || [],
+    trial:      tm.trial_members      || [],
+    leaving:    tm.leaving_members    || [],
+    paused:     tm.paused_members     || [],
+    cancelled:  tm.cancelled_members  || [],
+  };
+  (tm.breakdown || []).forEach(b => {
+    window._members["bd_" + b.name] = b.members || [];
+  });
+
   cards.push(`
     <div class="card col-3">
       <div class="card-title">Members</div>
@@ -324,16 +332,16 @@ function render(data) {
         <div class="sublabel">Active members</div>
       </div>
       <div class="pill-row">
-        ${tm.recurring != null ? `<div class="pill green" onclick='showModal("Recurring Members",${recurring})' style="cursor:pointer">${tm.recurring} Recurring ↗</div>` : ""}
-        ${tm.trial     != null ? `<div class="pill amber" onclick='showModal("Jumpstart Members",${trial})' style="cursor:pointer">${tm.trial} Jumpstart ↗</div>` : ""}
+        ${tm.recurring != null ? `<div class="pill green" onclick="showModal('Recurring Members',window._members.recurring)" style="cursor:pointer">${tm.recurring} Recurring ↗</div>` : ""}
+        ${tm.trial     != null ? `<div class="pill amber" onclick="showModal('Jumpstart Members',window._members.trial)" style="cursor:pointer">${tm.trial} Jumpstart ↗</div>` : ""}
         ${(tm.cancellations_this_month||0) > 0
-          ? `<div class="pill red" onclick='showModal("Pending Cancellations",${leaving})'>${tm.cancellations_this_month} Leaving ↗</div>`
+          ? `<div class="pill red" onclick="showModal('Pending Cancellations',window._members.leaving)">${tm.cancellations_this_month} Leaving ↗</div>`
           : `<div class="pill grey">0 Leaving</div>`}
         ${(tm.paused||0) > 0
-          ? `<div class="pill grey" onclick='showModal("Paused Members",${paused})'>${tm.paused} Paused ↗</div>`
+          ? `<div class="pill grey" onclick="showModal('Paused Members',window._members.paused)">${tm.paused} Paused ↗</div>`
           : ""}
         ${(tm.cancelled_last_month||0) > 0
-          ? `<div class="pill purple" onclick='showModal("Cancelled Last Month",${cancelled})'>${tm.cancelled_last_month} Cancelled ↗</div>`
+          ? `<div class="pill purple" onclick="showModal('Cancelled Last Month',window._members.cancelled)">${tm.cancelled_last_month} Cancelled ↗</div>`
           : ""}
       </div>
       <div class="stat-row">
@@ -346,11 +354,13 @@ function render(data) {
       </div>
       <div class="inner-divider">By membership type</div>
       <div class="membership-scroll">
-        ${(tm.breakdown || []).map(b => `
-        <div class="stat-row" onclick='showModal("${b.name}",${JSON.stringify(b.members||[])})' style="cursor:pointer">
-          <span class="stat-label">${b.name}</span>
-          <span class="stat-val" style="display:flex;align-items:center;gap:6px">${b.count} <span style="font-size:.65rem;color:#c4b5fd">↗</span></span>
-        </div>`).join("")}
+        ${(tm.breakdown || []).map(b => {
+          const key = "bd_" + b.name.replace(/'/g, "\\'");
+          return `<div class="stat-row" onclick="showModal('${b.name.replace(/'/g,"\\'")}',window._members['bd_${b.name.replace(/'/g,"\\'")}'])" style="cursor:pointer">
+            <span class="stat-label">${b.name}</span>
+            <span class="stat-val" style="display:flex;align-items:center;gap:6px">${b.count} <span style="font-size:.65rem;color:#c4b5fd">↗</span></span>
+          </div>`;
+        }).join("")}
       </div>
     </div>
   `);
