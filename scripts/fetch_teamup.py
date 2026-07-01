@@ -6,6 +6,8 @@ TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
 BASE = "https://goteamup.com/api/v2"
 HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
 
+TRIAL_KEYWORDS = ["trial", "emerge", "intro", "taster"]
+
 
 def get_all(endpoint, params=None):
     results = []
@@ -17,32 +19,41 @@ def get_all(endpoint, params=None):
         data = r.json()
         results.extend(data.get("results", []))
         url = data.get("next")
-        p = None  # next URL already has params baked in
+        p = None
     return results
 
 
 def run():
+    today = date.today()
+    month_start = today.replace(day=1).isoformat()
+
+    # All active memberships
     active = get_all("customermemberships", {"status": "active"})
 
-    customer_ids = {m["customer"] for m in active}
-    total = len(customer_ids)
+    total = len({m["customer"] for m in active})
     recurring = sum(1 for m in active if m.get("payment_subscription"))
-    trial = sum(1 for m in active if "trial" in m.get("name", "").lower())
+    trial = sum(1 for m in active
+                if any(kw in m.get("name", "").lower() for kw in TRIAL_KEYWORDS))
 
-    month_start = date.today().replace(day=1).isoformat()
-    cancelled = get_all("customermemberships", {"status": "cancelled", "updated__gte": month_start})
-    cancellations = len({m["customer"] for m in cancelled})
+    # New joins this month — filter by start_date in Python
+    new_this_month = len({
+        m["customer"] for m in active
+        if m.get("start_date", "") >= month_start
+    })
 
-    week_ago = (date.today() - timedelta(days=7)).isoformat()
-    new_joins = get_all("customermemberships", {"created__gte": week_ago})
-    weekly_leads = len({m["customer"] for m in new_joins})
+    # Cancellations this month — filter cancelled by expiration_date this month
+    cancelled = get_all("customermemberships", {"status": "cancelled"})
+    cancellations = len({
+        m["customer"] for m in cancelled
+        if m.get("expiration_date", "") >= month_start
+    })
 
     return {
         "total_members": total,
         "recurring": recurring,
         "trial": trial,
+        "new_this_month": new_this_month,
         "cancellations_this_month": cancellations,
-        "weekly_leads": weekly_leads,
     }
 
 
