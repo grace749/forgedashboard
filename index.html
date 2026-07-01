@@ -303,8 +303,9 @@ function render(data) {
 
   // ── Membership ─────────────────────────────────────────────
   const tm = data.teamup || {};
-  const leaving = JSON.stringify(tm.leaving_members || []);
-  const paused  = JSON.stringify(tm.paused_members  || []);
+  const leaving   = JSON.stringify(tm.leaving_members   || []);
+  const paused    = JSON.stringify(tm.paused_members    || []);
+  const cancelled = JSON.stringify(tm.cancelled_members || []);
   cards.push(`
     <div class="card col-3">
       <div class="card-title">Members</div>
@@ -321,6 +322,9 @@ function render(data) {
           : `<div class="pill grey">0 Leaving</div>`}
         ${(tm.paused||0) > 0
           ? `<div class="pill grey" onclick='showModal("Paused Members",${paused})'>${tm.paused} Paused ↗</div>`
+          : ""}
+        ${(tm.cancelled_last_month||0) > 0
+          ? `<div class="pill purple" onclick='showModal("Cancelled Last Month",${cancelled})'>${tm.cancelled_last_month} Cancelled ↗</div>`
           : ""}
       </div>
       <div class="stat-row">

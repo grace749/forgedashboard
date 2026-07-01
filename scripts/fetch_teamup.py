@@ -1,5 +1,5 @@
 """Fetch membership snapshot from TeamUp (goteamup.com) using M2M token."""
-import os, json, requests
+import os, json, requests, datetime
 from datetime import date
 
 TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
@@ -56,6 +56,11 @@ def run():
     today = date.today()
     month_start = today.replace(day=1).isoformat()
 
+    # Previous month date range
+    first_of_this_month = today.replace(day=1)
+    last_month_end = first_of_this_month - datetime.timedelta(days=1)
+    last_month_start = last_month_end.replace(day=1)
+
     # ── Active memberships ──────────────────────────────────────
     active = get_all("customermemberships", {"status": "active"})
 
@@ -106,6 +111,21 @@ def run():
     }
     churn_rate = round(len(churn_leaving) / len(churn_base_ids) * 100, 1) if churn_base_ids else 0
 
+    # ── Cancelled last month ────────────────────────────────────
+    cancelled_all = get_all("customermemberships", {"status": "cancelled"})
+    cancelled_last_month = [
+        m for m in cancelled_all
+        if last_month_start.isoformat() <= (m.get("end_date") or "") <= last_month_end.isoformat()
+        and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
+    ]
+    cancelled_ids = {m["customer"] for m in cancelled_last_month}
+    cancelled_names_map = get_customer_names(cancelled_ids)
+    cancelled_members = [
+        {"id": cid, "name": cancelled_names_map.get(cid, f"Customer {cid}")}
+        for cid in cancelled_ids
+        if cancelled_names_map.get(cid, "").lower() not in EXCLUDE_CUSTOMER_NAMES
+    ]
+
     # ── Breakdown by membership type ────────────────────────────
     type_counts = {}
     for m in active:
@@ -129,6 +149,8 @@ def run():
         "paused":                len(paused_ids),
         "paused_members":        paused_members,
         "churn_rate":            churn_rate,
+        "cancelled_last_month":  len(cancelled_members),
+        "cancelled_members":     cancelled_members,
         "breakdown":             breakdown,
     }
 
