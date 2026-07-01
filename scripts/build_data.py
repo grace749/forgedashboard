@@ -24,6 +24,7 @@ def safe_run(name, fn):
 data = {
     "generated_at": datetime.now(timezone.utc).isoformat(),
     "apps_script_url": os.environ.get("APPS_SCRIPT_URL", ""),
+    "asana_script_url": os.environ.get("ASANA_SCRIPT_URL", ""),
     "asana": safe_run("asana", fetch_asana.run),
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),

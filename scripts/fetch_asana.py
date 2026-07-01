@@ -38,6 +38,7 @@ def run():
         due = t.get("due_on")
         overdue = due and due < today
         result.append({
+            "gid": t["gid"],
             "name": t["name"],
             "completed": False,
             "url": t.get("permalink_url"),

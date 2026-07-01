@@ -239,8 +239,9 @@
   <div class="modal">
     <h3 id="modal-title">Members</h3>
     <ul class="modal-list" id="modal-list"></ul>
-    <div style="display:flex;gap:8px;margin-top:18px">
-      <a id="modal-asana-link" href="#" target="_blank" style="display:none;flex:1;text-align:center;padding:9px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none">Open in Asana ↗</a>
+    <div style="display:flex;gap:8px;margin-top:18px;flex-wrap:wrap">
+      <button id="modal-task-done" style="display:none;flex:1;align-items:center;justify-content:center;padding:9px;background:#f0fdf4;color:#16a34a;border:1.5px solid #bbf7d0;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer">✓ Mark Done</button>
+      <a id="modal-asana-link" href="#" target="_blank" style="display:none;flex:1;align-items:center;justify-content:center;padding:9px;background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none">Open in Asana ↗</a>
       <button class="modal-close" style="flex:1;margin-top:0" onclick="closeModal()">Close</button>
     </div>
   </div>
@@ -302,6 +303,7 @@ function render(data) {
   }
 
   const today = new Date().toISOString().split("T")[0];
+  const asanaScriptUrl = data.asana_script_url || "";
   const cards = [];
 
   // ── Membership ─────────────────────────────────────────────
@@ -433,11 +435,11 @@ function render(data) {
         const dateClass = isOverdue ? "overdue" : isToday ? "today" : t.due_on ? "soon" : "later";
         const dateLabel = isOverdue ? `⚠ ${fmtDate(t.due_on)}` : isToday ? "Today" : t.due_on ? fmtDate(t.due_on) : "No date";
         const safeNotes = (t.notes || "").replace(/'/g, "\\'").replace(/\n/g, "\\n");
-        const hasNotes = t.notes && t.notes.length > 0;
-        return `<li class="task-item" ${hasNotes ? `onclick="showTaskDetail('${t.name.replace(/'/g,"\\'").replace(/"/g,'&quot;')}','${safeNotes}','${t.url||""}')" style="cursor:pointer"` : ""}>
+        const safeName  = t.name.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return `<li class="task-item" onclick="showTaskDetail('${t.gid}','${safeName}','${safeNotes}','${t.url||""}','${asanaScriptUrl}')" style="cursor:pointer">
           <div class="task-bar ${barClass}"></div>
           <div class="task-body">
-            <div class="task-name">${t.name}${hasNotes ? ' <span style="font-size:.65rem;color:#c4b5fd;vertical-align:middle">●</span>' : ""}</div>
+            <div class="task-name">${t.name}${t.notes ? ' <span style="font-size:.65rem;color:#c4b5fd;vertical-align:middle">●</span>' : ""}</div>
             <div class="task-footer">
               ${t.project ? `<span class="task-proj">${t.project}</span>` : ""}
               <span class="task-due ${dateClass}">${dateLabel}</span>
@@ -504,18 +506,54 @@ function render(data) {
   el.innerHTML = cards.join("");
 }
 
-function showTaskDetail(name, notes, url) {
+function showTaskDetail(gid, name, notes, url, scriptUrl) {
   document.getElementById("modal-title").textContent = name;
   const list = document.getElementById("modal-list");
-  const notesHtml = notes.replace(/\\n/g, "\n").split("\n").filter(l => l.trim()).map(l => `<li style="padding:5px 0;border-bottom:1px solid #f3f4f6;line-height:1.5">${l}</li>`).join("") || "<li style='color:#aaa'>No description</li>";
+  const notesHtml = notes
+    ? notes.replace(/\\n/g, "\n").split("\n").filter(l => l.trim())
+        .map(l => `<li style="padding:5px 0;border-bottom:1px solid #f3f4f6;line-height:1.5">${l}</li>`).join("")
+    : "<li style='color:#aaa;padding:8px 0'>No description</li>";
   list.innerHTML = notesHtml;
-  if (url) {
-    document.getElementById("modal-asana-link").href = url;
-    document.getElementById("modal-asana-link").style.display = "inline-block";
+
+  const asanaLink = document.getElementById("modal-asana-link");
+  asanaLink.href = url || "#";
+  asanaLink.style.display = url ? "flex" : "none";
+
+  const doneBtn = document.getElementById("modal-task-done");
+  if (scriptUrl) {
+    doneBtn.style.display = "flex";
+    doneBtn.onclick = () => markTaskDone(gid, name, scriptUrl, doneBtn);
   } else {
-    document.getElementById("modal-asana-link").style.display = "none";
+    doneBtn.style.display = "none";
   }
+
   document.getElementById("modal-overlay").classList.add("open");
+}
+
+async function markTaskDone(gid, name, scriptUrl, btn) {
+  btn.disabled = true;
+  btn.textContent = "Marking done…";
+  try {
+    const res = await fetch(scriptUrl, {
+      method: "POST",
+      body: JSON.stringify({ task_gid: gid, completed: true }),
+    });
+    const json = await res.json();
+    if (!json.ok) throw new Error(json.error);
+    btn.textContent = "✓ Marked done!";
+    btn.style.background = "#dcfce7";
+    btn.style.color = "#16a34a";
+    btn.style.borderColor = "#bbf7d0";
+    // Remove task row from list
+    document.querySelectorAll(".task-item").forEach(el => {
+      if (el.textContent.includes(name.substring(0, 20))) el.style.opacity = "0.35";
+    });
+  } catch (e) {
+    btn.textContent = "Error — retry";
+    btn.style.background = "#fee2e2";
+    btn.style.color = "#dc2626";
+    btn.disabled = false;
+  }
 }
 
 async function toggleDone(btn, action, markDone, scriptUrl) {
