@@ -243,6 +243,7 @@ function render(data) {
         ${recurring !== null ? `<div class="pill green">${recurring} Recurring</div>` : ""}
         ${trial !== null ? `<div class="pill amber">${trial} Jumpstart</div>` : ""}
         ${pending ? `<div class="pill red">${pending} Leaving</div>` : `<div class="pill grey">0 Leaving</div>`}
+        ${(tm.paused || 0) > 0 ? `<div class="pill grey">${tm.paused} Paused</div>` : ""}
       </div>
       <div class="stat-row">
         <span class="stat-label">Joined this month</span>

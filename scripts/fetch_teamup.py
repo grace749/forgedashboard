@@ -46,6 +46,10 @@ def run():
     # Members who have requested cancellation (still active but leaving)
     cancellations = len({m["customer"] for m in active if m.get("is_set_for_cancellation")})
 
+    # Paused memberships
+    on_hold = get_all("customermemberships", {"status": "hold"})
+    paused = len({m["customer"] for m in on_hold})
+
     # Count unique customers per membership type
     type_counts = {}
     for m in active:
@@ -68,6 +72,7 @@ def run():
         "trial": trial,
         "new_this_month": new_this_month,
         "cancellations_this_month": cancellations,
+        "paused": paused,
         "breakdown": breakdown,
     }
 
