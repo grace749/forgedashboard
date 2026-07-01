@@ -1,6 +1,6 @@
 """Fetch financial KPIs from Xero using OAuth2 with stored refresh token."""
 import os, json, requests
-from datetime import date
+from datetime import date, timedelta
 
 CLIENT_ID = os.environ["XERO_CLIENT_ID"]
 CLIENT_SECRET = os.environ["XERO_CLIENT_SECRET"]

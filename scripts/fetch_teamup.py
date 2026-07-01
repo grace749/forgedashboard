@@ -3,7 +3,7 @@ import os, json, requests
 from datetime import date, timedelta
 
 TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
-BASE = "https://goteamup.com/api/v1"
+BASE = "https://goteamup.com/api/v2"
 HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
 
 
@@ -22,28 +22,31 @@ def get_all(endpoint, params=None):
 
 
 def run():
-    # All active customers
-    active = get_all("customers", {"status": "active"})
-    total = len(active)
+    # Active customers with a payment subscription
+    all_memberships = get_all("customermemberships", {"status": "active"})
 
-    # Trials — customers with trial status
-    trial = sum(1 for c in active if "trial" in str(c.get("status", "")).lower())
+    # Unique customers with active membership
+    customer_ids = set(m.get("customer") or m.get("customer_id") for m in all_memberships)
+    total = len(customer_ids)
 
-    # Recurring — customers with a direct debit / recurring payment
-    recurring = sum(1 for c in active if c.get("has_direct_debit") or c.get("is_recurring"))
+    # Customers on recurring payment plans
+    recurring = sum(1 for m in all_memberships if m.get("payment_subscription"))
+
+    # Trials
+    trial = sum(1 for m in all_memberships if "trial" in str(m.get("membership_type_name", "")).lower())
 
     # Cancellations this month
     month_start = date.today().replace(day=1).isoformat()
-    cancelled = get_all("customers", {
+    cancelled = get_all("customermemberships", {
         "status": "cancelled",
         "updated__gte": month_start,
     })
-    cancellations = len(cancelled)
+    cancellations = len(set(m.get("customer") or m.get("customer_id") for m in cancelled))
 
-    # New customers in last 7 days
+    # New joins in last 7 days
     week_ago = (date.today() - timedelta(days=7)).isoformat()
-    new_customers = get_all("customers", {"created__gte": week_ago})
-    weekly_leads = len(new_customers)
+    new_memberships = get_all("customermemberships", {"created__gte": week_ago})
+    weekly_leads = len(set(m.get("customer") or m.get("customer_id") for m in new_memberships))
 
     return {
         "total_members": total,
