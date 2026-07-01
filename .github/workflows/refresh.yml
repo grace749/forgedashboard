@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: write  # needed to commit data.json back to the repo
-  secrets: write   # needed to rotate the Xero refresh token
 
 jobs:
   refresh:
