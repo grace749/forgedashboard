@@ -1110,14 +1110,17 @@ function render(data) {
   const recurringMembers = tm.recurring ?? 0;  // Elevate / Evolve / Empower members
   const totalMembers    = tm.total_members ?? 0;
 
-  // From the jumpstart tracker — completed trials and how many converted
-  const jsCompleted    = jsStat.total_complete ?? 0;
-  const jsConverted    = jsStat.converted      ?? 0;
-  const jsNotConverted = jsStat.not_converted  ?? 0;
-  const jsConvRate     = jsStat.conv_rate;      // % of completed trials that became members
+  // From the jumpstart tracker — monthly conversion history
+  const jsMonthly = data.jumpstart?.monthly ?? [];
+  const thisMonth = new Date().toISOString().slice(0, 7);
+  const curMonth  = jsMonthly.find(m => m.month === thisMonth) || { month: thisMonth, completed: 0, converted: 0, conv_rate: null };
+  const prevMonths = jsMonthly.filter(m => m.month !== thisMonth).slice(0, 4);
+  const monthLabel = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "short" });
 
-  // LTV = (monthly revenue ÷ active members) × (1 ÷ monthly churn rate)
-  const avgMonthlyRev  = (xr.revenue && totalMembers) ? xr.revenue / totalMembers : null;
+  const jsNotConverted = curMonth.completed - curMonth.converted;
+
+  // LTV = real avg membership price (from TeamUp billed prices) × avg months retained
+  const avgMonthlyRev  = tm.avg_member_price ?? ((xr.revenue && totalMembers) ? xr.revenue / totalMembers : null);
   const avgMonths      = (tm.churn_rate && tm.churn_rate > 0) ? Math.round(100 / tm.churn_rate) : null;
   const ltv            = avgMonthlyRev && avgMonths ? Math.round(avgMonthlyRev * avgMonths) : null;
 
@@ -1163,13 +1166,20 @@ function render(data) {
 
         <div style="padding:10px 0;border-bottom:1px solid #f3f4f6">
           <div style="display:flex;justify-content:space-between;align-items:baseline">
-            <span style="font-size:.82rem;font-weight:600;color:#374151">Trial → Member</span>
-            <span style="font-size:1.4rem;font-weight:800;color:${(jsConvRate||0)>=70?'#059669':'#d97706'};letter-spacing:-.03em">${jsConvRate != null ? jsConvRate + "%" : "—"}</span>
+            <span style="font-size:.82rem;font-weight:600;color:#374151">Trial → Member <span style="font-size:.68rem;font-weight:500;color:#aaa">this month</span></span>
+            <span style="font-size:1.4rem;font-weight:800;color:${(curMonth.conv_rate||0)>=60?'#059669':'#d97706'};letter-spacing:-.03em">${curMonth.conv_rate != null ? curMonth.conv_rate + "%" : "—"}</span>
           </div>
           <div style="font-size:.7rem;color:#aaa;margin-top:2px">
-            ${jsCompleted ? `${jsConverted} of ${jsCompleted} completed trials converted` : "No completed trials yet"}
+            ${curMonth.completed ? `${curMonth.converted} of ${curMonth.completed} trials finishing this month converted` : "No trials finishing this month yet"}
           </div>
-          ${jsConvRate != null ? funnelBar(jsConvRate) : ""}
+          ${curMonth.conv_rate != null ? funnelBar(curMonth.conv_rate) : ""}
+          ${prevMonths.length ? `
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">
+              ${prevMonths.map(m => `
+                <span style="font-size:.68rem;background:#f9fafb;border:1px solid #f3f4f6;border-radius:6px;padding:3px 8px;color:#6b7280">
+                  <b style="color:#374151">${monthLabel(m.month)}</b> ${m.converted}/${m.completed} · ${m.conv_rate}%
+                </span>`).join("")}
+            </div>` : ""}
         </div>
 
         ${arrow()}
@@ -1206,17 +1216,18 @@ function render(data) {
 
       <div class="inner-divider">How this is calculated</div>
       <div class="stat-row">
-        <span class="stat-label">Monthly revenue (last period)</span>
-        <span class="stat-val">${fmtGbp(xr.revenue)}</span>
-      </div>
-      <div class="stat-row">
-        <span class="stat-label">Active members</span>
-        <span class="stat-val">${totalMembers}</span>
-      </div>
-      <div class="stat-row">
-        <span class="stat-label">Avg revenue per member / mo</span>
+        <span class="stat-label">Avg paid per member / mo${tm.avg_member_price ? " (real billed prices)" : ""}</span>
         <span class="stat-val">${avgMonthlyRev ? fmtGbp(Math.round(avgMonthlyRev)) : "—"}</span>
       </div>
+      <div class="stat-row">
+        <span class="stat-label">Recurring members</span>
+        <span class="stat-val">${recurringMembers}</span>
+      </div>
+      ${tm.monthly_recurring_revenue ? `
+      <div class="stat-row">
+        <span class="stat-label">Monthly recurring revenue</span>
+        <span class="stat-val">${fmtGbp(Math.round(tm.monthly_recurring_revenue))}</span>
+      </div>` : ""}
       <div class="stat-row">
         <span class="stat-label">Monthly churn rate</span>
         <span class="stat-val">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</span>

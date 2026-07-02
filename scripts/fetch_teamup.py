@@ -461,6 +461,17 @@ def run():
     recurring_ids = {m["customer"] for m in active if m.get("name","").strip().lower() in RECURRING_NAMES}
     trial_ids     = {m["customer"] for m in active if m.get("name","").strip().lower() in TRIAL_NAMES}
 
+    # ── Real average price paid per recurring member ────────────
+    recurring_prices = [
+        m["billed_price"]["decimal"]
+        for m in active
+        if m.get("name", "").strip().lower() in RECURRING_NAMES
+        and isinstance(m.get("billed_price"), dict)
+        and m["billed_price"].get("decimal")
+    ]
+    avg_member_price = round(sum(recurring_prices) / len(recurring_prices), 2) if recurring_prices else None
+    monthly_recurring_revenue = round(sum(recurring_prices), 2) if recurring_prices else None
+
     # ── Recent attendance (30 days, enriched with event name/time) ─────────
     date_today  = today.isoformat()
     date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
@@ -506,6 +517,8 @@ def run():
         "paused":                   len(paused_ids),
         "paused_members":           members_list(paused_ids, name_map),
         "churn_rate":               churn_rate,
+        "avg_member_price":         avg_member_price,
+        "monthly_recurring_revenue": monthly_recurring_revenue,
         "cancelled_last_month":     len([c for c in cancelled_ids if name_map.get(c,"").lower() not in EXCLUDE_CUSTOMER_NAMES]),
         "cancelled_members":        [m for m in members_list(cancelled_ids, name_map) if m["name"].lower() not in EXCLUDE_CUSTOMER_NAMES],
         "breakdown":                breakdown,

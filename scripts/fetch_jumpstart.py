@@ -227,7 +227,29 @@ def run():
     not_converted  = [m for m in total_complete if m["not_converted"]]
     conv_rate      = round(len(converted) / len(total_complete) * 100) if total_complete else None
 
+    # ── Monthly conversion history (by trial end month) ─────────
+    by_month = {}
+    for m in all_members:
+        if m["is_active"] or not m["end"]:
+            continue
+        month = m["end"][:7]  # YYYY-MM
+        b = by_month.setdefault(month, {"completed": 0, "converted": 0})
+        b["completed"] += 1
+        if m["is_converted"]:
+            b["converted"] += 1
+
+    monthly = []
+    for month in sorted(by_month, reverse=True)[:6]:
+        b = by_month[month]
+        monthly.append({
+            "month":     month,
+            "completed": b["completed"],
+            "converted": b["converted"],
+            "conv_rate": round(b["converted"] / b["completed"] * 100) if b["completed"] else None,
+        })
+
     return {
+        "monthly":       monthly,
         "active":        sorted(active, key=lambda m: m["end"] or ""),
         "recent":        sorted(recent, key=lambda m: m["end"] or "", reverse=True),
         "alerts":        alerts,
