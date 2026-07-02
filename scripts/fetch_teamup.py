@@ -214,35 +214,52 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids)
 
 # ── New member milestones ───────────────────────────────────────────────────
 
-def build_new_milestones(active, name_map):
+def build_first_seen_map(all_memberships):
     """
-    First week: jumpstart membership started 0-7 days ago.
-    First month: any membership started 28-34 days ago.
+    Each customer's earliest-ever membership start date across ALL their
+    memberships. This is their true 'join date' — a member who upgrades or
+    switches membership type keeps their original start, so long-standing
+    members don't falsely re-trigger 'first week/month'.
+    """
+    first_seen = {}
+    for m in all_memberships:
+        cid   = m.get("customer")
+        start = m.get("start_date", "")
+        if not cid or not start:
+            continue
+        if cid not in first_seen or start < first_seen[cid]:
+            first_seen[cid] = start
+    return first_seen
+
+
+def build_new_milestones(active, name_map, first_seen):
+    """
+    First week / first month are measured from the member's EARLIEST-ever
+    membership start (their real join date), not the current membership record.
     """
     today = date.today()
     milestones = []
     seen = set()
 
     for m in active:
-        start_raw = m.get("start_date", "")
-        if not start_raw:
-            continue
-        cid   = m["customer"]
+        cid = m["customer"]
         if cid in seen:
             continue
-        name  = name_map.get(cid, "")
+        name = name_map.get(cid, "")
         if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue
         mname = m.get("name", "").strip().lower()
         if mname in EXCLUDE_FROM_CHURN or mname in EXCLUDE_FROM_BREAKDOWN:
             continue
 
-        is_jumpstart = any(t in mname for t in TRIAL_NAMES)
+        start_raw = first_seen.get(cid, "")
+        if not start_raw:
+            continue
 
         try:
             start   = date.fromisoformat(start_raw)
             days_in = (today - start).days
-            if is_jumpstart and 0 <= days_in <= 7:
+            if 0 <= days_in <= 7:
                 seen.add(cid)
                 milestones.append({"name": name, "type": "first_week",  "days_in": days_in, "start_date": start_raw})
             elif 28 <= days_in <= 34:
@@ -486,8 +503,9 @@ def run():
     date_2yr_ago = (today - datetime.timedelta(days=730)).isoformat()
     all_attended_raw = fetch_attendance_counts(date_2yr_ago, date_today, max_results=20000)
 
-    # ── New member milestones ───────────────────────────────────
-    new_milestones = build_new_milestones(active, name_map)
+    # ── New member milestones (measured from earliest-ever join) ─
+    first_seen = build_first_seen_map(active + on_hold + cancelled_all)
+    new_milestones = build_new_milestones(active, name_map, first_seen)
 
     # ── Class stats ─────────────────────────────────────────────
     class_stats = build_class_stats(recent_bookings)
