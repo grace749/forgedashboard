@@ -532,7 +532,7 @@ function render(data) {
     ].filter(Boolean).join("");
 
     push("home", `
-      <div class="card col-12 brief-card">
+      <div class="card col-8 brief-card">
         <button class="brief-toggle" onclick="
           this.closest('.brief-card').querySelector('.brief-body').classList.toggle('brief-collapsed');
           this.querySelector('.brief-chevron').classList.toggle('rotated')">

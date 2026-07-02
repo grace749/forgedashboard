@@ -62,13 +62,13 @@ def members_list(ids, name_map):
     )
 
 
-# ── Attendance / bookings helpers ───────────────────────────────────────────
+# ── Attendance helpers ──────────────────────────────────────────────────────
 
 def get_event_start(booking):
-    """Extract start_datetime string from a booking record."""
+    """Extract start datetime from an enriched booking record."""
     ev = booking.get("event")
     if isinstance(ev, dict):
-        return ev.get("start_datetime") or ev.get("start") or ""
+        return ev.get("starts_at") or ev.get("start_datetime") or ev.get("start") or ""
     return ""
 
 
@@ -79,16 +79,67 @@ def get_event_name(booking):
     return ""
 
 
-def fetch_attended_bookings(date_from, date_to, max_results=5000):
-    """Return all attended bookings in a date range."""
+def fetch_events_map(date_from, date_to):
+    """Fetch events in range, return {event_id: event_dict}."""
     try:
-        return get_all("bookings", {
-            "date_from": date_from,
-            "date_to":   date_to,
-            "attendance": "attended",
-        }, max_results=max_results)
+        events = get_all("events", {
+            "starts_at_gte": date_from,
+            "starts_at_lte": date_to,
+        })
+        return {e["id"]: e for e in events}
     except Exception as ex:
-        print(f"[teamup] bookings error: {ex}")
+        print(f"[teamup] events fetch error: {ex}")
+        return {}
+
+
+def fetch_attended_bookings(date_from, date_to, max_results=5000):
+    """
+    Return attended records enriched with event name and start time.
+    Uses /attendances (correct endpoint) with event__starts_at_gte/lte filters.
+    """
+    try:
+        event_map = fetch_events_map(date_from, date_to)
+
+        attendances = get_all("attendances", {
+            "event__starts_at_gte": date_from,
+            "event__starts_at_lte": date_to,
+        }, max_results=max_results)
+
+        enriched = []
+        for a in attendances:
+            if a.get("status") != "attended":
+                continue
+            ev_id = a.get("event")
+            ev    = event_map.get(ev_id, {})
+            enriched.append({
+                "customer":            a.get("customer"),
+                "customer_membership": a.get("customer_membership"),
+                "event": {
+                    "id":        ev_id,
+                    "starts_at": ev.get("starts_at", ""),
+                    "name":      ev.get("name", ""),
+                },
+                "status": "attended",
+            })
+        return enriched
+    except Exception as ex:
+        print(f"[teamup] attendances error: {ex}")
+        return []
+
+
+def fetch_attendance_counts(date_from, date_to, max_results=20000):
+    """
+    Fetch raw attendances (status=attended) without event enrichment.
+    Used for class milestone counts where we only need customer IDs.
+    """
+    try:
+        attendances = get_all("attendances", {
+            "event__starts_at_gte": date_from,
+            "event__starts_at_lte": date_to,
+        }, max_results=max_results)
+        return [a for a in attendances if a.get("status") == "attended"]
+    except Exception as ex:
+        print(f"[teamup] attendance counts error: {ex}")
         return []
 
 
@@ -107,9 +158,8 @@ def build_class_stats(bookings):
             try:
                 dt  = datetime.datetime.fromisoformat(start.replace("Z", "+00:00"))
                 day = dt.strftime("%A")
-                # Round to nearest hour slot
                 hour_label = dt.strftime("%-I%p").lower()
-                days_counter[day]   += 1
+                days_counter[day]        += 1
                 times_counter[hour_label] += 1
             except Exception:
                 pass
@@ -123,39 +173,26 @@ def build_class_stats(bookings):
     )
 
     return {
-        "top_days":    top_days[:7],
-        "top_times":   [{"time": t, "count": c} for t, c in times_counter.most_common(8)],
-        "top_classes": [{"name": n, "count": c} for n, c in class_counter.most_common(6)],
+        "top_days":       top_days[:7],
+        "top_times":      [{"time": t, "count": c} for t, c in times_counter.most_common(8)],
+        "top_classes":    [{"name": n, "count": c} for n, c in class_counter.most_common(6)],
         "total_attended": len(bookings),
     }
 
 
 # ── At-risk members ─────────────────────────────────────────────────────────
 
-def build_at_risk(active_ids, name_map, active_memberships, recent_bookings, lookback_days=14):
-    """Active members with no attendance in last lookback_days days."""
-    recently_active = {b.get("customer") for b in recent_bookings if b.get("customer")}
-
-    # Build last-seen map from a 60-day window (already in recent_bookings if date range was wide)
-    last_seen = {}
-    for b in recent_bookings:
-        cid   = b.get("customer")
-        start = get_event_start(b)
-        if cid and start:
-            if cid not in last_seen or start > last_seen[cid]:
-                last_seen[cid] = start
-
-    # Membership type per customer
+def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids):
+    """Active members not seen in last 14 days."""
     cust_membership = {}
     for m in active_memberships:
         cid = m["customer"]
         if cid not in cust_membership:
             cust_membership[cid] = m.get("name", "")
 
-    today = date.today()
     at_risk = []
     for cid in active_ids:
-        if cid in recently_active:
+        if cid in recently_active_ids:
             continue
         name = name_map.get(cid, "")
         if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
@@ -163,32 +200,25 @@ def build_at_risk(active_ids, name_map, active_memberships, recent_bookings, loo
         membership = cust_membership.get(cid, "")
         if membership.lower() in EXCLUDE_FROM_CHURN or membership.lower() in EXCLUDE_FROM_BREAKDOWN:
             continue
-
-        last = last_seen.get(cid)
-        days_absent = None
-        if last:
-            try:
-                dt = datetime.datetime.fromisoformat(last.replace("Z", "+00:00"))
-                days_absent = (datetime.datetime.now(datetime.timezone.utc) - dt).days
-            except Exception:
-                pass
-
         at_risk.append({
             "id":         cid,
             "name":       name,
             "membership": membership,
-            "days_absent": days_absent,
-            "last_seen":  last[:10] if last else None,
+            "days_absent": None,
+            "last_seen":  None,
         })
 
-    at_risk.sort(key=lambda x: -(x["days_absent"] or 999))
+    at_risk.sort(key=lambda x: x["name"])
     return at_risk[:25]
 
 
 # ── New member milestones ───────────────────────────────────────────────────
 
 def build_new_milestones(active, name_map):
-    """Members completing their first week (6-9 days) or first month (28-34 days)."""
+    """
+    First week: jumpstart membership started 0-7 days ago.
+    First month: any membership started 28-34 days ago.
+    """
     today = date.today()
     milestones = []
     seen = set()
@@ -197,19 +227,22 @@ def build_new_milestones(active, name_map):
         start_raw = m.get("start_date", "")
         if not start_raw:
             continue
-        cid  = m["customer"]
+        cid   = m["customer"]
         if cid in seen:
             continue
-        name = name_map.get(cid, "")
+        name  = name_map.get(cid, "")
         if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue
         mname = m.get("name", "").strip().lower()
         if mname in EXCLUDE_FROM_CHURN or mname in EXCLUDE_FROM_BREAKDOWN:
             continue
+
+        is_jumpstart = any(t in mname for t in TRIAL_NAMES)
+
         try:
             start   = date.fromisoformat(start_raw)
             days_in = (today - start).days
-            if 6 <= days_in <= 9:
+            if is_jumpstart and 0 <= days_in <= 7:
                 seen.add(cid)
                 milestones.append({"name": name, "type": "first_week",  "days_in": days_in, "start_date": start_raw})
             elif 28 <= days_in <= 34:
@@ -223,9 +256,12 @@ def build_new_milestones(active, name_map):
 
 # ── Class count milestones ──────────────────────────────────────────────────
 
-def build_class_milestones(active_ids, name_map, all_attended_bookings):
+def build_class_milestones(active_ids, name_map, all_attended_raw):
     """Members within MILESTONE_WINDOW classes of reaching 50, 250, or 500."""
-    counts = Counter(b.get("customer") for b in all_attended_bookings if b.get("customer"))
+    counts = Counter(
+        a.get("customer") for a in all_attended_raw
+        if a.get("customer") and a.get("status") == "attended"
+    )
 
     results = []
     for cid in active_ids:
@@ -249,35 +285,43 @@ def build_class_milestones(active_ids, name_map, all_attended_bookings):
 # ── Momentum calls ──────────────────────────────────────────────────────────
 
 def fetch_momentum_calls(name_map):
-    """Events named 'momentum' — past attendees + upcoming bookings."""
+    """Events named 'momentum call' — past attendees + upcoming bookings."""
     today = date.today()
     date_past   = (today - datetime.timedelta(days=60)).isoformat()
     date_future = (today + datetime.timedelta(days=30)).isoformat()
 
     try:
-        events = get_all("events", {"date_from": date_past, "date_to": date_future})
-        momentum_ids = {
-            e["id"]
+        events = get_all("events", {
+            "starts_at_gte": date_past,
+            "starts_at_lte": date_future,
+        })
+        # Filter in Python — the name param does NOT filter server-side
+        momentum_events = {
+            e["id"]: e
             for e in events
-            if "momentum" in (e.get("name") or e.get("title") or "").lower()
+            if "momentum" in (e.get("name") or "").lower()
         }
-        if not momentum_ids:
+        if not momentum_events:
             return {"recent": [], "upcoming": []}
 
-        bookings = get_all("bookings", {"date_from": date_past, "date_to": date_future})
+        attendances = get_all("attendances", {
+            "event__starts_at_gte": date_past,
+            "event__starts_at_lte": date_future,
+        })
 
         recent   = []
         upcoming = []
         seen     = set()
 
-        for b in bookings:
-            ev    = b.get("event") or {}
-            ev_id = ev.get("id") if isinstance(ev, dict) else ev
-            if ev_id not in momentum_ids:
+        for a in attendances:
+            ev_id = a.get("event")
+            if ev_id not in momentum_events:
                 continue
 
-            cid  = b.get("customer")
-            name = name_map.get(cid, "") if cid else ""
+            ev       = momentum_events[ev_id]
+            ev_start = (ev.get("starts_at") or "")[:10]
+            cid      = a.get("customer")
+            name     = name_map.get(cid, "") if cid else ""
             if not name and cid:
                 try:
                     r = requests.get(f"{BASE}/customers/{cid}", headers=HEADERS)
@@ -287,19 +331,17 @@ def fetch_momentum_calls(name_map):
                         name_map[cid] = name
                 except Exception:
                     pass
-            name = name or "Unknown"
-
-            ev_start   = (ev.get("start_datetime","") if isinstance(ev, dict) else "")[:10]
-            attendance = b.get("attendance","") or "booked"
-            key        = f"{cid}_{ev_start}"
+            name   = name or "Unknown"
+            status = a.get("status", "registered")
+            key    = f"{cid}_{ev_start}"
             if key in seen:
                 continue
             seen.add(key)
 
             if ev_start and ev_start <= today.isoformat():
-                recent.append({"name": name, "date": ev_start, "status": attendance})
+                recent.append({"name": name, "date": ev_start, "status": status})
             else:
-                upcoming.append({"name": name, "date": ev_start, "status": "booked"})
+                upcoming.append({"name": name, "date": ev_start, "status": status})
 
         recent.sort(key=lambda x: x["date"], reverse=True)
         upcoming.sort(key=lambda x: x["date"])
@@ -314,8 +356,7 @@ def fetch_momentum_calls(name_map):
 
 def build_inbody_scans(all_memberships, name_map):
     """
-    Body composition scan tracking.
-    Uses 'body composition scan' membership purchase date as proxy for scan date.
+    Body composition scan tracking via 'body composition scan' membership purchase date.
     Next due = last scan + INBODY_INTERVAL_DAYS.
     """
     scan_memberships = [
@@ -323,7 +364,6 @@ def build_inbody_scans(all_memberships, name_map):
         if m.get("name", "").strip().lower() == "body composition scan"
     ]
 
-    # Group by customer; find most recent scan date
     customer_scans = {}
     for m in scan_memberships:
         cid   = m["customer"]
@@ -333,7 +373,6 @@ def build_inbody_scans(all_memberships, name_map):
         if cid not in customer_scans or start > customer_scans[cid]:
             customer_scans[cid] = start
 
-    # Ensure we have names
     scan_ids = set(customer_scans.keys())
     name_map = get_customer_names(scan_ids, existing=name_map)
 
@@ -344,15 +383,15 @@ def build_inbody_scans(all_memberships, name_map):
         if name.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue
         try:
-            last_scan  = date.fromisoformat(last_scan_str)
-            next_due   = last_scan + datetime.timedelta(days=INBODY_INTERVAL_DAYS)
+            last_scan   = date.fromisoformat(last_scan_str)
+            next_due    = last_scan + datetime.timedelta(days=INBODY_INTERVAL_DAYS)
             days_to_due = (next_due - today).days
             scans.append({
-                "name":         name,
-                "last_scan":    last_scan_str,
-                "next_due":     next_due.isoformat(),
-                "days_to_due":  days_to_due,
-                "overdue":      days_to_due < 0,
+                "name":        name,
+                "last_scan":   last_scan_str,
+                "next_due":    next_due.isoformat(),
+                "days_to_due": days_to_due,
+                "overdue":     days_to_due < 0,
             })
         except Exception:
             pass
@@ -422,21 +461,19 @@ def run():
     recurring_ids = {m["customer"] for m in active if m.get("name","").strip().lower() in RECURRING_NAMES}
     trial_ids     = {m["customer"] for m in active if m.get("name","").strip().lower() in TRIAL_NAMES}
 
-    # ── Attendance data (30-day window) ─────────────────────────
-    date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
+    # ── Recent attendance (30 days, enriched with event name/time) ─────────
     date_today  = today.isoformat()
+    date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
     recent_bookings = fetch_attended_bookings(date_30_ago, date_today)
 
-    # For at-risk we want a 21-day window (to know who's been absent > 14d)
-    date_21_ago = (today - datetime.timedelta(days=21)).isoformat()
-    bookings_21 = [
-        b for b in recent_bookings
-        if get_event_start(b)[:10] >= date_21_ago
-    ]
+    # ── At-risk: who attended in last 14 days? ──────────────────
+    date_14_ago = (today - datetime.timedelta(days=14)).isoformat()
+    raw_14 = fetch_attendance_counts(date_14_ago, date_today)
+    recently_active_ids = {a["customer"] for a in raw_14}
 
-    # ── All-time bookings for class milestones (capped to 2 years) ──
+    # ── All-time attendance counts for class milestones ─────────
     date_2yr_ago = (today - datetime.timedelta(days=730)).isoformat()
-    all_attended = fetch_attended_bookings(date_2yr_ago, date_today, max_results=10000)
+    all_attended_raw = fetch_attendance_counts(date_2yr_ago, date_today, max_results=20000)
 
     # ── New member milestones ───────────────────────────────────
     new_milestones = build_new_milestones(active, name_map)
@@ -445,10 +482,10 @@ def run():
     class_stats = build_class_stats(recent_bookings)
 
     # ── At-risk members ─────────────────────────────────────────
-    at_risk = build_at_risk(all_active_ids, name_map, active, bookings_21, lookback_days=14)
+    at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids)
 
     # ── Class milestones ────────────────────────────────────────
-    class_milestones = build_class_milestones(all_active_ids, name_map, all_attended)
+    class_milestones = build_class_milestones(all_active_ids, name_map, all_attended_raw)
 
     # ── Momentum calls ──────────────────────────────────────────
     momentum_calls = fetch_momentum_calls(name_map)
@@ -458,7 +495,6 @@ def run():
     inbody_scans = build_inbody_scans(all_memberships_for_scan, name_map)
 
     return {
-        # existing
         "total_members":            total,
         "recurring":                len(recurring_ids),
         "recurring_members":        members_list(recurring_ids, name_map),
@@ -473,13 +509,12 @@ def run():
         "cancelled_last_month":     len([c for c in cancelled_ids if name_map.get(c,"").lower() not in EXCLUDE_CUSTOMER_NAMES]),
         "cancelled_members":        [m for m in members_list(cancelled_ids, name_map) if m["name"].lower() not in EXCLUDE_CUSTOMER_NAMES],
         "breakdown":                breakdown,
-        # new
-        "class_stats":       class_stats,
-        "at_risk":           at_risk,
-        "new_milestones":    new_milestones,
-        "class_milestones":  class_milestones,
-        "momentum_calls":    momentum_calls,
-        "inbody_scans":      inbody_scans,
+        "class_stats":              class_stats,
+        "at_risk":                  at_risk,
+        "new_milestones":           new_milestones,
+        "class_milestones":         class_milestones,
+        "momentum_calls":           momentum_calls,
+        "inbody_scans":             inbody_scans,
     }
 
 
