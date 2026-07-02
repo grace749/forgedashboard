@@ -108,7 +108,7 @@
     .brief-chevron { transition: transform .2s; flex-shrink: 0; }
     .brief-chevron.rotated { transform: rotate(180deg); }
     .brief-collapsed { display: none; }
-    .brief-body { border-top: 1px solid #f3f4f6; max-height: 280px; overflow-y: auto; }
+    .brief-body { border-top: 1px solid #f3f4f6; }
     .brief-body::-webkit-scrollbar { width: 3px; }
     .brief-body::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 2px; }
     .brief-cols {
@@ -522,7 +522,7 @@ function render(data) {
           </div>
           <svg class="brief-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-        <div class="brief-body brief-collapsed">
+        <div class="brief-body">
           <div class="brief-cols">
             <div class="brief-col">
               <div class="brief-col-title brief-col-title--purple">Calendar today</div>
@@ -557,9 +557,17 @@ function render(data) {
     cancelled:  tm.cancelled_members  || [],
   };
   (tm.breakdown || []).forEach(b => {
-    window._members["bd_" + b.name] = b.members || [];
+    window._members["bd_" + b.name.replace(/[^a-z0-9]/gi,"_")] = b.members || [];
   });
 
+  // ── helpers ──────────────────────────────────────────────────
+  function fmtDateShort(iso) {
+    if (!iso) return "—";
+    const d = new Date(iso + "T12:00:00");
+    return d.toLocaleDateString("en-IE", { day:"numeric", month:"short" });
+  }
+
+  // ── Membership Snapshot ───────────────────────────────────────
   push("members", `
     <div class="card col-3">
       <div class="card-title">Members</div>
@@ -592,13 +600,178 @@ function render(data) {
       <div class="inner-divider">By membership type</div>
       <div class="membership-scroll">
         ${(tm.breakdown || []).map(b => {
-          const key = "bd_" + b.name.replace(/'/g, "\\'");
-          return `<div class="stat-row" onclick="showModal('${b.name.replace(/'/g,"\\'")}',window._members['bd_${b.name.replace(/'/g,"\\'")}'])" style="cursor:pointer">
+          return `<div class="stat-row" onclick="showModal('${b.name.replace(/'/g,"\\'")}',window._members['bd_${b.name.replace(/[^a-z0-9]/gi,"_")}'])" style="cursor:pointer">
             <span class="stat-label">${b.name}</span>
             <span class="stat-val" style="display:flex;align-items:center;gap:6px">${b.count} <span style="font-size:.65rem;color:#c4b5fd">↗</span></span>
           </div>`;
         }).join("")}
       </div>
+    </div>
+  `);
+
+  // ── At-Risk Members ───────────────────────────────────────────
+  const atRisk = tm.at_risk || [];
+  push("members", `
+    <div class="card col-4">
+      <div class="card-title">Retention</div>
+      <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
+        At-Risk Members
+        <span style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444">${atRisk.length} absent 14+ days</span>
+      </div>
+      ${atRisk.length ? `
+      <div style="overflow-y:auto;max-height:360px">
+        ${atRisk.map(m => {
+          const days = m.days_absent;
+          const urgency = days == null ? "grey" : days >= 28 ? "red" : days >= 21 ? "amber" : "purple";
+          const label   = days != null ? `${days}d away` : "No recent data";
+          return `<div class="stat-row" style="gap:10px">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+              <div style="font-size:.72rem;color:#aaa;margin-top:1px">${m.membership || ""}</div>
+            </div>
+            <span class="pill ${urgency}" style="cursor:default;white-space:nowrap">${label}</span>
+          </div>`;
+        }).join("")}
+      </div>` : `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">All members attended in the last 14 days 🎉</p>`}
+    </div>
+  `);
+
+  // ── New Member Milestones ─────────────────────────────────────
+  const newMs = tm.new_milestones || [];
+  const clsMs = tm.class_milestones || [];
+  push("members", `
+    <div class="card col-3">
+      <div class="card-title">Milestones</div>
+      <div class="card-headline">Member Celebrations</div>
+      ${newMs.length ? `
+        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">First week & month</div>
+        ${newMs.map(m => `
+          <div class="stat-row">
+            <div>
+              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+              <div style="font-size:.72rem;color:#aaa">Started ${fmtDateShort(m.start_date)}</div>
+            </div>
+            <span class="pill green" style="cursor:default;white-space:nowrap">
+              ${m.type === "first_week" ? "🎉 1st week!" : "🏆 1st month!"}
+            </span>
+          </div>`).join("")}
+      ` : `<div class="brief-empty" style="padding:6px 0">No first-week or first-month milestones today</div>`}
+      ${clsMs.length ? `
+        <div class="inner-divider">Class count milestones</div>
+        ${clsMs.map(m => `
+          <div class="stat-row">
+            <div>
+              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+              <div style="font-size:.72rem;color:#aaa">${m.total_classes} classes done</div>
+            </div>
+            <span class="pill purple" style="cursor:default;white-space:nowrap">${m.classes_away} to ${m.next_milestone}</span>
+          </div>`).join("")}
+      ` : `<div class="brief-empty" style="padding:6px 0;margin-top:8px">No one near 50 / 250 / 500 right now</div>`}
+    </div>
+  `);
+
+  // ── Most Popular Classes ──────────────────────────────────────
+  const cs = tm.class_stats || {};
+  const maxDayCount  = Math.max(...(cs.top_days  || [{count:1}]).map(x=>x.count), 1);
+  const maxTimeCount = Math.max(...(cs.top_times || [{count:1}]).map(x=>x.count), 1);
+  push("members", `
+    <div class="card col-4">
+      <div class="card-title">Attendance (last 30 days)</div>
+      <div class="card-headline">Most Popular Classes</div>
+      ${cs.top_classes && cs.top_classes.length ? `
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px">
+          ${cs.top_classes.map(c => `<span class="pill purple" style="cursor:default">${c.name} <strong>${c.count}</strong></span>`).join("")}
+        </div>` : ""}
+      ${cs.top_days && cs.top_days.length ? `
+        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">By day</div>
+        ${cs.top_days.map(d => `
+          <div style="display:flex;align-items:center;gap:8px;padding:4px 0">
+            <div style="min-width:80px;font-size:.8rem;color:#374151;font-weight:500">${d.day}</div>
+            <div style="flex:1;height:8px;background:#f3f4f6;border-radius:4px;overflow:hidden">
+              <div style="height:100%;background:#7c3aed;border-radius:4px;width:${Math.round(d.count/maxDayCount*100)}%"></div>
+            </div>
+            <div style="font-size:.78rem;font-weight:700;color:#7c3aed;min-width:28px;text-align:right">${d.count}</div>
+          </div>`).join("")}
+      ` : ""}
+      ${cs.top_times && cs.top_times.length ? `
+        <div class="inner-divider">By time slot</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          ${cs.top_times.map(t => {
+            const pct = Math.round(t.count / maxTimeCount * 100);
+            const bg  = pct >= 80 ? "#7c3aed" : pct >= 50 ? "#a78bfa" : "#ddd6fe";
+            const col = pct >= 80 ? "#fff" : "#5b21b6";
+            return `<div style="background:${bg};color:${col};padding:4px 10px;border-radius:20px;font-size:.75rem;font-weight:700">${t.time} <span style="opacity:.75">${t.count}</span></div>`;
+          }).join("")}
+        </div>
+      ` : ""}
+    </div>
+  `);
+
+  // ── Momentum Calls ────────────────────────────────────────────
+  const mc = tm.momentum_calls || {};
+  const mcRecent   = mc.recent   || [];
+  const mcUpcoming = mc.upcoming || [];
+  push("members", `
+    <div class="card col-3">
+      <div class="card-title">Check-ins</div>
+      <div class="card-headline">Momentum Calls</div>
+      ${mcUpcoming.length ? `
+        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none;color:#059669">Upcoming</div>
+        ${mcUpcoming.map(m => `
+          <div class="stat-row">
+            <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+            <span style="font-size:.75rem;font-weight:700;color:#059669">${fmtDateShort(m.date)}</span>
+          </div>`).join("")}
+      ` : ""}
+      ${mcRecent.length ? `
+        <div class="inner-divider">Recently had one</div>
+        ${mcRecent.map(m => `
+          <div class="stat-row">
+            <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+            <span style="font-size:.75rem;color:#aaa">${fmtDateShort(m.date)}</span>
+          </div>`).join("")}
+      ` : ""}
+      ${!mcUpcoming.length && !mcRecent.length ? `
+        <p style="color:#ccc;font-size:.85rem;padding:8px 0">No momentum calls found — make sure TeamUp events are named "Momentum Call"</p>
+      ` : ""}
+    </div>
+  `);
+
+  // ── InBody Scans ──────────────────────────────────────────────
+  const inbody = tm.inbody_scans || [];
+  push("members", `
+    <div class="card col-4">
+      <div class="card-title">Body Composition</div>
+      <div class="card-headline">InBody Scans</div>
+      ${inbody.length ? `
+        <div style="overflow-y:auto;max-height:400px">
+          <table style="width:100%;border-collapse:collapse;font-size:.82rem">
+            <thead>
+              <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:#bbb">
+                <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Member</th>
+                <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Last Scan</th>
+                <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Next Due</th>
+                <th style="text-align:right;padding:5px 0;border-bottom:1px solid #f0f0f5">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${inbody.map(s => {
+                const tag = s.overdue
+                  ? `<span class="pill red" style="cursor:default;font-size:.65rem">${Math.abs(s.days_to_due)}d overdue</span>`
+                  : s.days_to_due <= 7
+                  ? `<span class="pill amber" style="cursor:default;font-size:.65rem">Due soon</span>`
+                  : `<span style="font-size:.72rem;color:#aaa">in ${s.days_to_due}d</span>`;
+                return `<tr>
+                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;font-weight:500;color:#111">${s.name}</td>
+                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.last_scan)}</td>
+                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.next_due)}</td>
+                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;text-align:right">${tag}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No scan history yet — InBody scans are tracked as "Body Composition Scan" memberships in TeamUp</p>`}
     </div>
   `);
 
