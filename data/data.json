@@ -1,26 +1,16 @@
 {
-  "generated_at": "2026-07-02T14:14:31.830805+00:00",
+  "generated_at": "2026-07-02T14:48:31.277566+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
     "date": "2026-07-02",
     "event_count": 0,
-    "urgent_count": 2,
+    "urgent_count": 1,
     "enquiry_count": 0,
     "calendar": {
       "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-02T00%3A00%3A00%2B00%3A00&timeMax=2026-07-02T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
     },
     "urgent": [
-      {
-        "from": "Alexandra from TeamUp",
-        "from_raw": "Alexandra from TeamUp <support@goteamup.com>",
-        "subject": "Re: \"How do I use an M2M token to call the REST API to get customer/mem...",
-        "snippet": "Hi Grace, Thanks for your patience. The correct base URL for the TeamUp Business API is: https://goteamup.com/api/v2 The https://goteamup.com/api/v1 endpoints are no longer supported, which is why you",
-        "id": "19f22f6bd6fd491b",
-        "thread_id": "19f1dff910b90d31",
-        "msg_count": 3,
-        "draft_id": "r8418639673688790819"
-      },
       {
         "from": "S Moore",
         "from_raw": "S Moore <smooremotors@btconnect.com>",
