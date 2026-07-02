@@ -342,10 +342,9 @@
   <button class="tab-btn active" onclick="switchTab('home',this)">Home</button>
   <button class="tab-btn" onclick="switchTab('finances',this)">Finances</button>
   <button class="tab-btn" onclick="switchTab('members',this)">Members</button>
+  <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
-  <button class="tab-btn" onclick="switchTab('tasks',this)">Tasks</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
-  <button class="tab-btn" onclick="switchTab('social',this)">Social Media</button>
 </div>
 
 <div class="tab-panel active" id="tab-home">
@@ -357,17 +356,14 @@
 <div class="tab-panel" id="tab-members">
   <div class="grid" id="grid-members"></div>
 </div>
+<div class="tab-panel" id="tab-jumpstart">
+  <div class="grid" id="grid-jumpstart"></div>
+</div>
 <div class="tab-panel" id="tab-leads">
   <div class="grid" id="grid-leads"></div>
 </div>
-<div class="tab-panel" id="tab-tasks">
-  <div class="grid" id="grid-tasks"></div>
-</div>
 <div class="tab-panel" id="tab-growth">
   <div class="grid" id="grid-growth"></div>
-</div>
-<div class="tab-panel" id="tab-social">
-  <div class="grid" id="grid-social"></div>
 </div>
 
 <script>
@@ -378,12 +374,40 @@ function showModal(title, members) {
   list.innerHTML = members.length
     ? members.map(m => `<li>${m.name}</li>`).join("")
     : "<li style='color:#aaa'>None</li>";
+  document.getElementById("modal-task-done").style.display = "none";
+  document.getElementById("modal-asana-link").style.display = "none";
   document.getElementById("modal-overlay").classList.add("open");
 }
 function closeModal(e) {
   if (!e || e.target === document.getElementById("modal-overlay")) {
     document.getElementById("modal-overlay").classList.remove("open");
   }
+}
+
+function showAdviceModal(action) {
+  const advice = (window._growthAdvice || {})[action] || "";
+  document.getElementById("modal-title").innerHTML =
+    `<span style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#7c3aed;display:block;margin-bottom:6px">Strategy Advice ✦</span>${action}`;
+  const list = document.getElementById("modal-list");
+  if (advice) {
+    // Render bullet points (lines starting with • or - or *)
+    const lines = advice.split("\n").map(l => l.trim()).filter(Boolean);
+    list.innerHTML = lines.map(l => {
+      const isBullet = /^[•\-\*]/.test(l);
+      const text = l.replace(/^[•\-\*]\s*/, "");
+      return isBullet
+        ? `<li style="padding:7px 0;border-bottom:1px solid #f3f4f6;line-height:1.55;color:#1f2937;display:flex;gap:8px">
+             <span style="color:#7c3aed;flex-shrink:0;font-size:.9rem;margin-top:1px">▸</span>
+             <span>${text}</span>
+           </li>`
+        : `<li style="padding:5px 0;border-bottom:1px solid #f9f9fc;line-height:1.5;color:#6b7280;font-size:.82rem;list-style:none">${l}</li>`;
+    }).join("");
+  } else {
+    list.innerHTML = "<li style='color:#aaa;padding:8px 0'>No advice generated yet — run the workflow to generate AI strategy advice.</li>";
+  }
+  document.getElementById("modal-task-done").style.display = "none";
+  document.getElementById("modal-asana-link").style.display = "none";
+  document.getElementById("modal-overlay").classList.add("open");
 }
 
 // ── Data ──────────────────────────────────────────────────────
@@ -424,9 +448,8 @@ function render(data) {
   const asanaScriptUrl = data.asana_script_url || "";
 
   // Each tab gets its own cards array
-  const tabs = { home: [], finances: [], members: [], leads: [], tasks: [], growth: [], social: [] };
-  const cards = tabs; // alias helpers below use push(tab, html)
-  function push(tab, html) { tabs[tab].push(html); }
+  const tabs = { home: [], finances: [], members: [], jumpstart: [], leads: [], growth: [] };
+  function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
 
   // ── Daily Brief ────────────────────────────────────────────
   const br = data.brief || {};
@@ -783,7 +806,7 @@ function render(data) {
   const jsStat    = js.stats   || {};
 
   // ── Jumpstart: Active Members tracker ──────────────────────
-  push("members", `
+  push("jumpstart", `
     <div class="card col-12" style="margin-top:4px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px">
         <div>
@@ -877,7 +900,7 @@ function render(data) {
 
   // ── Jumpstart: Recent Cohort Results ───────────────────────
   if (jsRecent.length) {
-    push("members", `
+    push("jumpstart", `
       <div class="card col-6">
         <div class="card-title">6 Week Jumpstart</div>
         <div class="card-headline">Recent Cohort Results</div>
@@ -942,7 +965,7 @@ function render(data) {
   const mk = data.marketing || {};
   const mkMonthly = mk.monthly || [];
   const mkLife    = mk.lifetime || {};
-  push("finances", `
+  push("leads", `
     <div class="card col-3">
       <div class="card-title">Meta Ads</div>
       <div class="card-headline">Social Media Ads</div>
@@ -1001,11 +1024,11 @@ function render(data) {
       }).join("")
     : `<li style="padding:12px 0;color:#ccc;font-size:.88rem">No incomplete tasks 🎉</li>`;
 
-  push("tasks", `
-    <div class="card col-3">
+  push("home", `
+    <div class="card col-4">
       <div class="card-title">Asana</div>
       <div class="card-headline">Your Tasks (${tasks.length})</div>
-      <ul class="task-list" style="max-height:400px;overflow-y:auto">${taskHtml}</ul>
+      <ul class="task-list" style="max-height:560px;overflow-y:auto">${taskHtml}</ul>
     </div>
   `);
 
@@ -1016,37 +1039,54 @@ function render(data) {
   if (!kpis.length) {
     push("growth", `<div class="card col-12"><div class="card-title">Google Sheets</div><div class="card-headline">30-Day Action Plan</div><p style="color:#ccc;font-size:.85rem">No data</p></div>`);
   } else {
-    const cols = Object.keys(kpis[0]);
-    const rows = kpis.map((row, rowIdx) => `<tr>${cols.map(c => {
-      const v = row[c] || "";
-      if (c === "Done") {
-        const isDone = ["x","yes","✓"].includes(v.trim().toLowerCase());
-        const action = (row["Action"] || "").replace(/'/g, "\\'");
-        if (apScriptUrl) {
-          return isDone
-            ? `<td><button class="ap-btn ap-btn-done" onclick="toggleDone(this,'${action}',false,'${apScriptUrl}')">✓ Done</button></td>`
-            : `<td><button class="ap-btn ap-btn-todo" onclick="toggleDone(this,'${action}',true,'${apScriptUrl}')">○ Mark done</button></td>`;
-        }
-        return isDone ? `<td class="ap-done">✓</td>` : `<td class="ap-todo">○</td>`;
-      }
-      if (c === "Owner")    return `<td><span class="ap-owner">${v||"—"}</span></td>`;
-      if (c === "Deadline") return `<td><span class="ap-deadline">${v||"—"}</span></td>`;
-      return `<td>${v}</td>`;
-    }).join("")}</tr>`).join("");
+    // Store advice keyed by action for the modal
+    window._growthAdvice = {};
+    kpis.forEach(row => {
+      if (row["Action"] && row["advice"]) window._growthAdvice[row["Action"]] = row["advice"];
+    });
+
+    const displayCols = ["Action","Owner","Deadline","Done"];
+    const rows = kpis.map(row => {
+      const v       = col => (row[col] || "");
+      const isDone  = ["x","yes","✓"].includes(v("Done").trim().toLowerCase());
+      const action  = v("Action");
+      const safeAct = action.replace(/\\/g,"\\\\").replace(/'/g,"\\'");
+      const advice  = row["advice"] || "";
+
+      const doneCell = apScriptUrl
+        ? isDone
+          ? `<td><button class="ap-btn ap-btn-done" onclick="event.stopPropagation();toggleDone(this,'${safeAct}',false,'${apScriptUrl}')">✓ Done</button></td>`
+          : `<td><button class="ap-btn ap-btn-todo" onclick="event.stopPropagation();toggleDone(this,'${safeAct}',true,'${apScriptUrl}')">○ Mark done</button></td>`
+        : isDone ? `<td class="ap-done">✓</td>` : `<td class="ap-todo">○</td>`;
+
+      return `<tr class="ap-row" onclick="showAdviceModal('${safeAct}')" style="cursor:pointer" title="Click for strategy advice">
+        <td style="display:flex;align-items:center;gap:6px">
+          ${action}
+          ${advice ? `<span style="font-size:.6rem;background:#f5f3ff;color:#7c3aed;padding:1px 5px;border-radius:4px;white-space:nowrap">AI ✦</span>` : ""}
+        </td>
+        <td><span class="ap-owner">${v("Owner")||"—"}</span></td>
+        <td><span class="ap-deadline">${v("Deadline")||"—"}</span></td>
+        ${doneCell}
+      </tr>`;
+    }).join("");
 
     push("growth", `
       <div class="card col-12">
         <div class="card-title">Google Sheets</div>
         <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
           30-Day Action Plan
-          <a href="https://docs.google.com/spreadsheets/d/1Cztbi-zVqFvpZ48q-aAIMBZWSeeQjUM8abHRI98b6iY" target="_blank"
-             style="font-size:0.72rem;font-weight:600;color:#7c3aed;text-decoration:none;background:#f5f3ff;padding:4px 10px;border-radius:6px;border:1px solid #ddd6fe">
-            Open Sheet ↗
-          </a>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:.72rem;color:#9ca3af">Click any row for strategy advice</span>
+            <a href="https://docs.google.com/spreadsheets/d/1Cztbi-zVqFvpZ48q-aAIMBZWSeeQjUM8abHRI98b6iY" target="_blank"
+               onclick="event.stopPropagation()"
+               style="font-size:0.72rem;font-weight:600;color:#7c3aed;text-decoration:none;background:#f5f3ff;padding:4px 10px;border-radius:6px;border:1px solid #ddd6fe">
+              Open Sheet ↗
+            </a>
+          </div>
         </div>
         <div class="ap-wrap">
           <table class="ap-table">
-            <thead><tr>${cols.map(c => `<th>${c}</th>`).join("")}</tr></thead>
+            <thead><tr><th>Action</th><th>Owner</th><th>Deadline</th><th>Done</th></tr></thead>
             <tbody>${rows}</tbody>
           </table>
         </div>
@@ -1054,7 +1094,7 @@ function render(data) {
     `);
   }
 
-  // ── Leads placeholder ──────────────────────────────────────
+  // ── Leads ──────────────────────────────────────────────────
   const ghlConvos = Array.isArray(data.ghl) ? data.ghl : [];
   const briefEnquiries = Array.isArray(data.brief?.enquiries) ? data.brief.enquiries : [];
   const allLeads = [
@@ -1082,17 +1122,6 @@ function render(data) {
               ${l.age ? `<div style="font-size:.68rem;color:#ccc;white-space:nowrap">${l.age}</div>` : ""}
             </div>`).join("")}
         </div>` : `<p style="color:#ccc;font-size:.85rem">No open leads — set up Zapier to pull WhatsApp & webchat conversations here</p>`}
-    </div>
-  `);
-
-  // ── Social Media placeholder ────────────────────────────────
-  push("social", `
-    <div class="card col-12" style="text-align:center;padding:60px 20px">
-      <div style="font-size:2rem;margin-bottom:12px">📱</div>
-      <div class="card-headline">Social Media</div>
-      <p style="color:#bbb;font-size:.88rem;max-width:400px;margin:0 auto">
-        Coming soon — connect Instagram, Facebook, and Google Reviews to track engagement, new followers, and reviews needing a reply.
-      </p>
     </div>
   `);
 

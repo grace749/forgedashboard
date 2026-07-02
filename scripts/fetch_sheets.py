@@ -1,5 +1,5 @@
-"""Fetch 30-day action plan from the private Google Sheet."""
-import os, json
+"""Fetch 30-day action plan from the private Google Sheet, with AI strategy advice per task."""
+import os, json, urllib.request
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -7,11 +7,46 @@ SPREADSHEET_ID = "1Cztbi-zVqFvpZ48q-aAIMBZWSeeQjUM8abHRI98b6iY"
 TARGET_SHEET = "30 Action Plan"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
-# Columns to exclude (case-insensitive substring match)
 EXCLUDE_COLS = ["risk", "resources", "insert", "(insert"]
-
-# Only keep these columns (in this order) — must match header names in sheet
 KEEP_COLS = ["30 day action plan", "owner", "deadline", "completed", "done"]
+
+SYSTEM_PROMPT = (
+    "You are a sharp business growth strategist advising Grace Smith, owner of The Forge — "
+    "a women's-only fitness gym in Belfast. Grace is ambitious, results-driven, and wants "
+    "practical, specific advice she can act on today. Keep responses to 3-5 punchy bullet points. "
+    "No fluff. Focus on the HOW, not the what."
+)
+
+
+def _generate_advice(action):
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not key:
+        return ""
+    try:
+        payload = json.dumps({
+            "model": "claude-haiku-4-5-20251001",
+            "max_tokens": 350,
+            "system": SYSTEM_PROMPT,
+            "messages": [{
+                "role": "user",
+                "content": f"How should Grace execute this growth action? Give practical step-by-step advice:\n\n\"{action}\""
+            }]
+        }).encode()
+        req = urllib.request.Request(
+            "https://api.anthropic.com/v1/messages",
+            data=payload,
+            headers={
+                "x-api-key": key,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            }
+        )
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            result = json.loads(resp.read())
+            return result["content"][0]["text"]
+    except Exception as ex:
+        print(f"[sheets] AI advice error for '{action[:40]}': {ex}")
+        return ""
 
 
 def run():
@@ -37,7 +72,6 @@ def run():
     if not rows:
         return {"kpis": []}
 
-    # Find header row (contains "Owner")
     header_idx = next(
         (i for i, row in enumerate(rows) if any("owner" in str(c).lower() for c in row)),
         0
@@ -45,7 +79,6 @@ def run():
 
     raw_headers = rows[header_idx]
 
-    # Determine which column indices to keep
     keep_indices = []
     keep_names = []
     for i, h in enumerate(raw_headers):
@@ -55,7 +88,6 @@ def run():
         matched_keep = next((k for k in KEEP_COLS if k in hl), None)
         if matched_keep is not None:
             keep_indices.append(i)
-            # Use a clean display name
             display = {
                 "30 day action plan": "Action",
                 "owner": "Owner",
@@ -67,16 +99,15 @@ def run():
     kpis = []
     for row in rows[header_idx + 1:]:
         padded = row + [""] * (max(keep_indices, default=0) + 1 - len(row))
-        # Only include rows that have an actual action item (col 0 has text)
         action_val = padded[0].strip() if padded else ""
         if not action_val:
             continue
-        # Skip section header rows (no owner and no deadline)
-        owner_val = padded[keep_indices[1]].strip() if len(keep_indices) > 1 else ""
+        owner_val    = padded[keep_indices[1]].strip() if len(keep_indices) > 1 else ""
         deadline_val = padded[keep_indices[2]].strip() if len(keep_indices) > 2 else ""
         if not owner_val and not deadline_val:
             continue
         entry = {keep_names[j]: padded[keep_indices[j]] for j in range(len(keep_indices))}
+        entry["advice"] = _generate_advice(action_val)
         kpis.append(entry)
 
     return {"kpis": kpis}
