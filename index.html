@@ -775,6 +775,133 @@ function render(data) {
     </div>
   `);
 
+  // ── 6 Week Jumpstart ───────────────────────────────────────
+  const js = data.jumpstart || {};
+  const jsActive  = js.active  || [];
+  const jsRecent  = js.recent  || [];
+  const jsAlerts  = js.alerts  || [];
+  const jsStat    = js.stats   || {};
+
+  // ── Jumpstart: Active Members tracker ──────────────────────
+  push("members", `
+    <div class="card col-12" style="margin-top:4px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px">
+        <div>
+          <div class="card-title">6 Week Jumpstart</div>
+          <div class="card-headline" style="margin-bottom:0">Active Members</div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+          ${jsStat.active_count ? `<span class="brief-chip chip-purple">${jsStat.active_count} active</span>` : ""}
+          ${jsStat.conv_rate != null ? `<span class="brief-chip ${jsStat.conv_rate >= 70 ? 'chip-green' : 'chip-amber'}">${jsStat.conv_rate}% conversion rate</span>` : ""}
+          ${jsStat.converted ? `<span class="brief-chip chip-green">${jsStat.converted} converted</span>` : ""}
+          ${jsStat.not_converted ? `<span class="brief-chip chip-red">${jsStat.not_converted} didn't convert</span>` : ""}
+          <a href="https://docs.google.com/spreadsheets/d/1aPlFYzsJDu4lLhlQEsxdqQWqErCMSrqhmVUO48Mzpg8/edit" target="_blank"
+             style="font-size:.72rem;font-weight:600;color:#7c3aed;text-decoration:none;background:#f5f3ff;padding:4px 10px;border-radius:6px;border:1px solid #ddd6fe">
+            Open Tracker ↗
+          </a>
+        </div>
+      </div>
+      ${jsAlerts.length ? `
+        <div style="background:#fef2f2;border-radius:8px;padding:10px 14px;margin-bottom:14px;border-left:3px solid #ef4444">
+          <div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#ef4444;margin-bottom:6px">Needs Attention</div>
+          ${jsAlerts.map(a => {
+            const icon = a.type === "conversion" ? "🔴" : a.type === "nutrition" ? "🟡" : "⚠️";
+            return `<div style="font-size:.82rem;color:#374151;padding:3px 0"><strong>${a.member}</strong> — ${icon} ${a.detail}</div>`;
+          }).join("")}
+        </div>
+      ` : jsActive.length ? `<div style="background:#f0fdf4;border-radius:8px;padding:8px 14px;margin-bottom:14px;border-left:3px solid #059669;font-size:.82rem;color:#059669;font-weight:600">✓ All check-ins on track</div>` : ""}
+      ${jsActive.length ? `
+        <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:800px">
+            <thead>
+              <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:#bbb">
+                <th style="text-align:left;padding:6px 10px 6px 0;border-bottom:2px solid #f0f0f5;min-width:130px">Member</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Week</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Goal</th>
+                <th style="text-align:center;padding:6px 6px;border-bottom:2px solid #f0f0f5" title="Wk1">W1</th>
+                <th style="text-align:center;padding:6px 6px;border-bottom:2px solid #f0f0f5" title="Wk2">W2</th>
+                <th style="text-align:center;padding:6px 6px;border-bottom:2px solid #f0f0f5" title="Wk3">W3</th>
+                <th style="text-align:center;padding:6px 6px;border-bottom:2px solid #f0f0f5" title="Wk4">W4</th>
+                <th style="text-align:center;padding:6px 6px;border-bottom:2px solid #f0f0f5" title="Wk5">W5</th>
+                <th style="text-align:center;padding:6px 6px;border-bottom:2px solid #f0f0f5" title="Wk6">W6</th>
+                <th style="text-align:center;padding:6px 8px;border-bottom:2px solid #f0f0f5">Nutrition</th>
+                <th style="text-align:center;padding:6px 8px;border-bottom:2px solid #f0f0f5">InBody</th>
+                <th style="text-align:left;padding:6px 8px;border-bottom:2px solid #f0f0f5">Finishes</th>
+                <th style="text-align:left;padding:6px 0 6px 8px;border-bottom:2px solid #f0f0f5">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${jsActive.map(m => {
+                const daysLeft = m.days_left;
+                const urgency  = daysLeft != null && daysLeft <= 7  ? "#fef2f2"
+                               : daysLeft != null && daysLeft <= 14 ? "#fffbeb"
+                               : "#fff";
+                const ci = m.check_ins || [false,false,false,false,false,false];
+                const wkOn = m.week_on || 1;
+                const ciDots = ci.map((done, i) => {
+                  const weekNum = i + 1;
+                  const isFuture = weekNum > wkOn;
+                  const color = isFuture ? "#e5e7eb"
+                              : done      ? "#059669"
+                              : "#ef4444";
+                  return `<td style="text-align:center;padding:8px 6px;border-bottom:1px solid #f9f9fc">
+                    <span style="display:inline-block;width:16px;height:16px;border-radius:50%;background:${color};font-size:.6rem;line-height:16px;text-align:center;color:#fff">${isFuture ? "" : done ? "✓" : "✗"}</span>
+                  </td>`;
+                }).join("");
+                const statusTag = daysLeft != null && daysLeft <= 14 && !m.conv_chat_done
+                  ? `<span class="pill red" style="cursor:default;font-size:.65rem">Conv. needed</span>`
+                  : daysLeft != null && daysLeft <= 14
+                  ? `<span class="pill green" style="cursor:default;font-size:.65rem">Chat scheduled</span>`
+                  : `<span style="font-size:.72rem;color:#aaa">On track</span>`;
+                return `<tr style="background:${urgency}">
+                  <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc">
+                    <span style="background:#f5f3ff;color:#7c3aed;font-weight:700;font-size:.75rem;padding:2px 8px;border-radius:10px">Wk ${wkOn}</span>
+                  </td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${(m.goal||"").replace(/"/g,"&quot;")}">${(m.goal||"").substring(0,60)}${(m.goal||"").length>60?"…":""}</td>
+                  ${ciDots}
+                  <td style="text-align:center;padding:8px 8px;border-bottom:1px solid #f9f9fc">${m.nutrition_sent ? `<span style="color:#059669;font-weight:700">✓</span>` : `<span style="color:#ef4444;font-weight:700">✗</span>`}</td>
+                  <td style="text-align:center;padding:8px 8px;border-bottom:1px solid #f9f9fc">${m.inbody_done ? `<span style="color:#059669;font-weight:700">✓</span>` : `<span style="color:#9ca3af">–</span>`}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;white-space:nowrap;color:${daysLeft!=null&&daysLeft<=7?"#ef4444":daysLeft!=null&&daysLeft<=14?"#d97706":"#6b7280"};font-weight:${daysLeft!=null&&daysLeft<=14?"700":"400"}">
+                    ${m.end ? fmtDateShort(m.end) : "—"}${daysLeft != null ? ` <span style="font-size:.7rem">(${daysLeft}d)</span>` : ""}
+                  </td>
+                  <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc">${statusTag}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No active Jumpstart members right now — make sure the Trial Tracker sheet is shared with the service account.</p>`}
+    </div>
+  `);
+
+  // ── Jumpstart: Recent Cohort Results ───────────────────────
+  if (jsRecent.length) {
+    push("members", `
+      <div class="card col-6">
+        <div class="card-title">6 Week Jumpstart</div>
+        <div class="card-headline">Recent Cohort Results</div>
+        <div style="overflow-y:auto;max-height:340px">
+          ${jsRecent.map(m => {
+            const tag = m.is_converted
+              ? `<span class="pill green" style="cursor:default;font-size:.68rem">✓ Converted</span>`
+              : m.not_converted
+              ? `<span class="pill red" style="cursor:default;font-size:.68rem">✗ Not converted</span>`
+              : `<span class="pill grey" style="cursor:default;font-size:.68rem">Outcome unknown</span>`;
+            return `<div class="stat-row" style="gap:10px">
+              <div style="flex:1;min-width:0">
+                <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+                <div style="font-size:.72rem;color:#aaa">Finished ${fmtDateShort(m.end)} · ${m.cohort}</div>
+                ${m.follow_up ? `<div style="font-size:.72rem;color:#6b7280;margin-top:2px">${m.follow_up}</div>` : ""}
+              </div>
+              ${tag}
+            </div>`;
+          }).join("")}
+        </div>
+      </div>
+    `);
+  }
+
   // ── Financials ─────────────────────────────────────────────
   const xr = data.xero || {};
   push("finances", `
