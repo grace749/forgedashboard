@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T14:21:07.163215+00:00",
+  "generated_at": "2026-07-03T15:29:09.304642+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
@@ -35,13 +35,28 @@
         "id": "19f1d07071c69b06"
       }
     ],
-    "enquiries": []
+    "enquiries": [],
+    "checkins": {
+      "by_name": {
+        "coach grace": {
+          "name": "Coach Grace",
+          "date": "2026-06-29"
+        }
+      },
+      "count": 1
+    }
   },
   "ghl": {
     "error": "Sheet 'GHL Conversations' not found \u2014 create it and set up Zapier to write to it"
   },
   "jumpstart": {
     "monthly": [
+      {
+        "month": "2026-07",
+        "completed": 1,
+        "converted": 0,
+        "conv_rate": 0
+      },
       {
         "month": "2026-06",
         "completed": 15,
@@ -85,6 +100,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
       },
       {
@@ -116,6 +132,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Medicated for depression and anxiety. Has been debilitating in the past but under control for most part now."
       },
       {
@@ -147,6 +164,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Not regularly, I try not to let stress get the better of me as it presents itself as a migraine."
       },
       {
@@ -178,6 +196,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "no"
       },
       {
@@ -209,6 +228,7 @@
         "completed_checkins": 4,
         "expected_checkins": 5,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "perimenopause, overactice thyroid"
       },
       {
@@ -240,38 +260,8 @@
         "completed_checkins": 4,
         "expected_checkins": 5,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "achilies rupture, high blood pressure"
-      },
-      {
-        "name": "Mandy Mair",
-        "cohort": "JUNE",
-        "joined": "2026-06-09",
-        "end": "2026-07-21",
-        "goal": "No Lifestyle form ",
-        "notes": "",
-        "nutrition_sent": false,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "week_on": 4,
-        "days_left": 18,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": true,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
-        "expected_checkins": 4,
-        "paused": false,
-        "pause_reason": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED"
       },
       {
         "name": "Julie Lennox",
@@ -302,6 +292,7 @@
         "completed_checkins": 2,
         "expected_checkins": 4,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "n/a"
       },
       {
@@ -333,6 +324,7 @@
         "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "hysterectomy, partial thyroid removal, high chloestrol, kidney stones. taking anti depressants since 2007 child took asmtha attak and needed resuctating. looks after elderly aunt 4 nights a week. husband at home all day due to accident in 1997"
       },
       {
@@ -364,6 +356,7 @@
         "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
+        "pink_red": false,
         "pause_reason": ""
       },
       {
@@ -395,6 +388,7 @@
         "completed_checkins": 1,
         "expected_checkins": 2,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "n/a"
       },
       {
@@ -426,6 +420,7 @@
         "completed_checkins": 1,
         "expected_checkins": 2,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "sometimes struggles with eating"
       },
       {
@@ -457,6 +452,7 @@
         "completed_checkins": 0,
         "expected_checkins": 2,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "graves disease, c section"
       },
       {
@@ -488,6 +484,7 @@
         "completed_checkins": 0,
         "expected_checkins": 1,
         "paused": false,
+        "pink_red": false,
         "pause_reason": ""
       },
       {
@@ -519,6 +516,7 @@
         "completed_checkins": 0,
         "expected_checkins": 1,
         "paused": false,
+        "pink_red": false,
         "pause_reason": ""
       },
       {
@@ -550,10 +548,43 @@
         "completed_checkins": 0,
         "expected_checkins": 1,
         "paused": false,
+        "pink_red": false,
         "pause_reason": ""
       }
     ],
     "recent": [
+      {
+        "name": "Mandy Mair",
+        "cohort": "JUNE",
+        "joined": "2026-06-09",
+        "end": "2026-07-21",
+        "goal": "No Lifestyle form ",
+        "notes": "",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 4,
+        "days_left": 18,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": true,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED",
+        "missing_checkins": 2,
+        "completed_checkins": 2,
+        "expected_checkins": 4,
+        "paused": false,
+        "pink_red": true,
+        "pause_reason": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED"
+      },
       {
         "name": "Lesley Laverty",
         "cohort": "APR-MAY",
@@ -583,6 +614,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -614,6 +646,7 @@
         "completed_checkins": 0,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Taking a break due to health issues"
       },
       {
@@ -645,6 +678,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "I was diagnosed with severe depression 3 years ago. I finally spoke up about being sexually abused by 2 male family members and got help. March 2025 I was put in touch with the crisis team at Ross Thompson Unit as I was suicidal. Doing much better th"
       },
       {
@@ -676,6 +710,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -707,6 +742,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Find change difficult"
       },
       {
@@ -738,6 +774,7 @@
         "completed_checkins": 5,
         "expected_checkins": 5,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "Can feel stressed and anxious and then it makes my OCD worse"
       },
       {
@@ -769,6 +806,7 @@
         "completed_checkins": 4,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Converted early so she can book the rest of june. She has 2 weeks left on her trial"
       },
       {
@@ -800,6 +838,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "No, but I can get overwhelmed some days with all things going on. I have 3 children and a farmer husband so my days can be busy and sometimes mentally exhausting"
       },
       {
@@ -831,6 +870,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Mild Anxiety - usually low mood but made worse by monthly cycle"
       },
       {
@@ -862,6 +902,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -893,6 +934,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "No"
       },
       {
@@ -924,6 +966,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -955,6 +998,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Managing a fibromyalgia flareup since late May and hasnt attended many classes or has cancelled late"
       },
       {
@@ -986,6 +1030,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "I can suffer with stress trying to balance work and home. Work is quite stressful at the moment. It presents itself in comfort eating and a tendency to go inwards."
       },
       {
@@ -1017,6 +1062,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": ""
       },
       {
@@ -1048,6 +1094,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": ""
       },
       {
@@ -1079,6 +1126,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "I am too aware of my extended family history which includes cancer, brain tumour, MND, & heart problems & while an elderly population and extended families are obviously more likely to to become unwell I at times panic that I will become unwell & not"
       },
       {
@@ -1110,6 +1158,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "Yes. I become increasingly withdrawn Usually on verge of tears Like a deer in headlights Frozen or avoidant"
       },
       {
@@ -1141,6 +1190,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Not diagnosed / formally but just as previously mentioned I can stress myself out with work."
       },
       {
@@ -1172,6 +1222,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Gets anxious"
       },
       {
@@ -1203,6 +1254,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Just natural anxiety about starting new things"
       },
       {
@@ -1234,6 +1286,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Suffer from anxiety and stress. I get heart palpitations mainly because of it"
       },
       {
@@ -1265,6 +1318,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "Yes, work related- interrupts sleep, night sweats, short tempered at times"
       },
       {
@@ -1296,6 +1350,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Stress with work and kids. I tend to reach for chocolate."
       },
       {
@@ -1327,6 +1382,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "I would say I probably have ADHD or ASD. Not diagnosed but my children have ASD and ADHD. Yes anxiety, I just close away, hide, I don't want to see or talk to anyone. I won't even go to the shop"
       },
       {
@@ -1358,6 +1414,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -1389,6 +1446,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "Had postnatal depression after children. Currently on anti-depressants complex grief following sudden death of my husband in April 2021"
       },
       {
@@ -1420,6 +1478,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -1451,6 +1510,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "Not converted"
       },
       {
@@ -1482,6 +1542,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -1513,6 +1574,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
+        "pink_red": true,
         "pause_reason": "Stress and anxiety leads me to eat more unhealthy snacks. Gastric sleeve (2021) ba (2023), low iron anemia (2024), fractured coxxyx (2000)"
       }
     ],
@@ -1546,6 +1608,7 @@
         "completed_checkins": 3,
         "expected_checkins": 6,
         "paused": true,
+        "pink_red": false,
         "pause_reason": "Had a fall - taking time off 29.6.26"
       },
       {
@@ -1577,6 +1640,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": true,
+        "pink_red": false,
         "pause_reason": "Bad back - taking time off 29.6.26"
       },
       {
@@ -1608,6 +1672,7 @@
         "completed_checkins": 2,
         "expected_checkins": 4,
         "paused": true,
+        "pink_red": false,
         "pause_reason": "car accident"
       },
       {
@@ -1639,6 +1704,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": true,
+        "pink_red": false,
         "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       }
     ],
@@ -1704,16 +1770,6 @@
         "detail": "13d left \u2014 conversion chat not scheduled!"
       },
       {
-        "member": "Mandy Mair",
-        "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
-      },
-      {
-        "member": "Mandy Mair",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
-      },
-      {
         "member": "Julie Lennox",
         "type": "missing_checkin",
         "detail": "Missing 2 check-in(s) (on week 4)"
@@ -1775,18 +1831,1022 @@
       }
     ],
     "stats": {
-      "active_count": 16,
+      "active_count": 15,
       "paused_count": 4,
-      "conv_rate": 55,
+      "conv_rate": 53,
       "converted": 17,
-      "not_converted": 9,
-      "total_complete": 31
+      "not_converted": 10,
+      "total_complete": 32
     }
   },
   "inbody": {
-    "scans": [],
-    "total": 0,
-    "configured": false
+    "scans": [
+      {
+        "name": "Marymckenna",
+        "last_scan": "2026-07-02",
+        "days_since": 1,
+        "next_due": "2026-08-13",
+        "days_to_due": 41,
+        "overdue": false
+      },
+      {
+        "name": "Sarab",
+        "last_scan": "2026-06-30",
+        "days_since": 3,
+        "next_due": "2026-08-11",
+        "days_to_due": 39,
+        "overdue": false
+      },
+      {
+        "name": "Rosiemc",
+        "last_scan": "2026-06-29",
+        "days_since": 4,
+        "next_due": "2026-08-10",
+        "days_to_due": 38,
+        "overdue": false
+      },
+      {
+        "name": "Leahcalvin",
+        "last_scan": "2026-06-27",
+        "days_since": 6,
+        "next_due": "2026-08-08",
+        "days_to_due": 36,
+        "overdue": false
+      },
+      {
+        "name": "Louisefar",
+        "last_scan": "2026-06-27",
+        "days_since": 6,
+        "next_due": "2026-08-08",
+        "days_to_due": 36,
+        "overdue": false
+      },
+      {
+        "name": "Yasmined",
+        "last_scan": "2026-06-26",
+        "days_since": 7,
+        "next_due": "2026-08-07",
+        "days_to_due": 35,
+        "overdue": false
+      },
+      {
+        "name": "Member",
+        "last_scan": "2026-06-25",
+        "days_since": 8,
+        "next_due": "2026-08-06",
+        "days_to_due": 34,
+        "overdue": false
+      },
+      {
+        "name": "Hilarya",
+        "last_scan": "2026-06-24",
+        "days_since": 9,
+        "next_due": "2026-08-05",
+        "days_to_due": 33,
+        "overdue": false
+      },
+      {
+        "name": "Victoriath",
+        "last_scan": "2026-06-23",
+        "days_since": 10,
+        "next_due": "2026-08-04",
+        "days_to_due": 32,
+        "overdue": false
+      },
+      {
+        "name": "Noleenmcm",
+        "last_scan": "2026-06-23",
+        "days_since": 10,
+        "next_due": "2026-08-04",
+        "days_to_due": 32,
+        "overdue": false
+      },
+      {
+        "name": "Alisonb",
+        "last_scan": "2026-06-23",
+        "days_since": 10,
+        "next_due": "2026-08-04",
+        "days_to_due": 32,
+        "overdue": false
+      },
+      {
+        "name": "Jojo",
+        "last_scan": "2026-06-22",
+        "days_since": 11,
+        "next_due": "2026-08-03",
+        "days_to_due": 31,
+        "overdue": false
+      },
+      {
+        "name": "Kiera Lawthers",
+        "last_scan": "2026-06-22",
+        "days_since": 11,
+        "next_due": "2026-08-03",
+        "days_to_due": 31,
+        "overdue": false
+      },
+      {
+        "name": "Zarad",
+        "last_scan": "2026-06-20",
+        "days_since": 13,
+        "next_due": "2026-08-01",
+        "days_to_due": 29,
+        "overdue": false
+      },
+      {
+        "name": "Lizb",
+        "last_scan": "2026-06-20",
+        "days_since": 13,
+        "next_due": "2026-08-01",
+        "days_to_due": 29,
+        "overdue": false
+      },
+      {
+        "name": "Kathyh",
+        "last_scan": "2026-06-19",
+        "days_since": 14,
+        "next_due": "2026-07-31",
+        "days_to_due": 28,
+        "overdue": false
+      },
+      {
+        "name": "Reginab",
+        "last_scan": "2026-06-19",
+        "days_since": 14,
+        "next_due": "2026-07-31",
+        "days_to_due": 28,
+        "overdue": false
+      },
+      {
+        "name": "Laurado",
+        "last_scan": "2026-06-19",
+        "days_since": 14,
+        "next_due": "2026-07-31",
+        "days_to_due": 28,
+        "overdue": false
+      },
+      {
+        "name": "Katiemcf",
+        "last_scan": "2026-06-18",
+        "days_since": 15,
+        "next_due": "2026-07-30",
+        "days_to_due": 27,
+        "overdue": false
+      },
+      {
+        "name": "Grace",
+        "last_scan": "2026-06-18",
+        "days_since": 15,
+        "next_due": "2026-07-30",
+        "days_to_due": 27,
+        "overdue": false
+      },
+      {
+        "name": "Lauramcg",
+        "last_scan": "2026-06-17",
+        "days_since": 16,
+        "next_due": "2026-07-29",
+        "days_to_due": 26,
+        "overdue": false
+      },
+      {
+        "name": "Sheilal",
+        "last_scan": "2026-06-17",
+        "days_since": 16,
+        "next_due": "2026-07-29",
+        "days_to_due": 26,
+        "overdue": false
+      },
+      {
+        "name": "Julielennox",
+        "last_scan": "2026-06-17",
+        "days_since": 16,
+        "next_due": "2026-07-29",
+        "days_to_due": 26,
+        "overdue": false
+      },
+      {
+        "name": "Louisefe",
+        "last_scan": "2026-06-16",
+        "days_since": 17,
+        "next_due": "2026-07-28",
+        "days_to_due": 25,
+        "overdue": false
+      },
+      {
+        "name": "Dinah",
+        "last_scan": "2026-06-16",
+        "days_since": 17,
+        "next_due": "2026-07-28",
+        "days_to_due": 25,
+        "overdue": false
+      },
+      {
+        "name": "Noor",
+        "last_scan": "2026-06-15",
+        "days_since": 18,
+        "next_due": "2026-07-27",
+        "days_to_due": 24,
+        "overdue": false
+      },
+      {
+        "name": "Noleen",
+        "last_scan": "2026-06-15",
+        "days_since": 18,
+        "next_due": "2026-07-27",
+        "days_to_due": 24,
+        "overdue": false
+      },
+      {
+        "name": "Puff",
+        "last_scan": "2026-06-10",
+        "days_since": 23,
+        "next_due": "2026-07-22",
+        "days_to_due": 19,
+        "overdue": false
+      },
+      {
+        "name": "Austen",
+        "last_scan": "2026-06-10",
+        "days_since": 23,
+        "next_due": "2026-07-22",
+        "days_to_due": 19,
+        "overdue": false
+      },
+      {
+        "name": "Joanneham",
+        "last_scan": "2026-06-09",
+        "days_since": 24,
+        "next_due": "2026-07-21",
+        "days_to_due": 18,
+        "overdue": false
+      },
+      {
+        "name": "Fionah",
+        "last_scan": "2026-06-09",
+        "days_since": 24,
+        "next_due": "2026-07-21",
+        "days_to_due": 18,
+        "overdue": false
+      },
+      {
+        "name": "Kirstymc",
+        "last_scan": "2026-06-09",
+        "days_since": 24,
+        "next_due": "2026-07-21",
+        "days_to_due": 18,
+        "overdue": false
+      },
+      {
+        "name": "Heather",
+        "last_scan": "2026-06-08",
+        "days_since": 25,
+        "next_due": "2026-07-20",
+        "days_to_due": 17,
+        "overdue": false
+      },
+      {
+        "name": "Sharonsm",
+        "last_scan": "2026-06-06",
+        "days_since": 27,
+        "next_due": "2026-07-18",
+        "days_to_due": 15,
+        "overdue": false
+      },
+      {
+        "name": "Bronamcq",
+        "last_scan": "2026-06-06",
+        "days_since": 27,
+        "next_due": "2026-07-18",
+        "days_to_due": 15,
+        "overdue": false
+      },
+      {
+        "name": "Nuala N",
+        "last_scan": "2026-06-06",
+        "days_since": 27,
+        "next_due": "2026-07-18",
+        "days_to_due": 15,
+        "overdue": false
+      },
+      {
+        "name": "Tinat",
+        "last_scan": "2026-06-05",
+        "days_since": 28,
+        "next_due": "2026-07-17",
+        "days_to_due": 14,
+        "overdue": false
+      },
+      {
+        "name": "Maryt",
+        "last_scan": "2026-06-04",
+        "days_since": 29,
+        "next_due": "2026-07-16",
+        "days_to_due": 13,
+        "overdue": false
+      },
+      {
+        "name": "Heathermcw",
+        "last_scan": "2026-06-04",
+        "days_since": 29,
+        "next_due": "2026-07-16",
+        "days_to_due": 13,
+        "overdue": false
+      },
+      {
+        "name": "Susan",
+        "last_scan": "2026-06-02",
+        "days_since": 31,
+        "next_due": "2026-07-14",
+        "days_to_due": 11,
+        "overdue": false
+      },
+      {
+        "name": "Melt",
+        "last_scan": "2026-06-01",
+        "days_since": 32,
+        "next_due": "2026-07-13",
+        "days_to_due": 10,
+        "overdue": false
+      },
+      {
+        "name": "Member",
+        "last_scan": "2026-06-01",
+        "days_since": 32,
+        "next_due": "2026-07-13",
+        "days_to_due": 10,
+        "overdue": false
+      },
+      {
+        "name": "Member",
+        "last_scan": "2026-06-01",
+        "days_since": 32,
+        "next_due": "2026-07-13",
+        "days_to_due": 10,
+        "overdue": false
+      },
+      {
+        "name": "Helent",
+        "last_scan": "2026-06-01",
+        "days_since": 32,
+        "next_due": "2026-07-13",
+        "days_to_due": 10,
+        "overdue": false
+      },
+      {
+        "name": "Member",
+        "last_scan": "2026-06-01",
+        "days_since": 32,
+        "next_due": "2026-07-13",
+        "days_to_due": 10,
+        "overdue": false
+      },
+      {
+        "name": "Sorcha",
+        "last_scan": "2026-06-01",
+        "days_since": 32,
+        "next_due": "2026-07-13",
+        "days_to_due": 10,
+        "overdue": false
+      },
+      {
+        "name": "Wee Mo",
+        "last_scan": "2026-05-30",
+        "days_since": 34,
+        "next_due": "2026-07-11",
+        "days_to_due": 8,
+        "overdue": false
+      },
+      {
+        "name": "Victoria",
+        "last_scan": "2026-05-30",
+        "days_since": 34,
+        "next_due": "2026-07-11",
+        "days_to_due": 8,
+        "overdue": false
+      },
+      {
+        "name": "Lesley",
+        "last_scan": "2026-05-30",
+        "days_since": 34,
+        "next_due": "2026-07-11",
+        "days_to_due": 8,
+        "overdue": false
+      },
+      {
+        "name": "Chrissie",
+        "last_scan": "2026-05-30",
+        "days_since": 34,
+        "next_due": "2026-07-11",
+        "days_to_due": 8,
+        "overdue": false
+      },
+      {
+        "name": "Paula",
+        "last_scan": "2026-05-28",
+        "days_since": 36,
+        "next_due": "2026-07-09",
+        "days_to_due": 6,
+        "overdue": false
+      },
+      {
+        "name": "Cindy",
+        "last_scan": "2026-05-28",
+        "days_since": 36,
+        "next_due": "2026-07-09",
+        "days_to_due": 6,
+        "overdue": false
+      },
+      {
+        "name": "Kerrie",
+        "last_scan": "2026-05-27",
+        "days_since": 37,
+        "next_due": "2026-07-08",
+        "days_to_due": 5,
+        "overdue": false
+      },
+      {
+        "name": "Jackie",
+        "last_scan": "2026-05-26",
+        "days_since": 38,
+        "next_due": "2026-07-07",
+        "days_to_due": 4,
+        "overdue": false
+      },
+      {
+        "name": "Amanda",
+        "last_scan": "2026-05-25",
+        "days_since": 39,
+        "next_due": "2026-07-06",
+        "days_to_due": 3,
+        "overdue": false
+      },
+      {
+        "name": "Claire",
+        "last_scan": "2026-05-25",
+        "days_since": 39,
+        "next_due": "2026-07-06",
+        "days_to_due": 3,
+        "overdue": false
+      },
+      {
+        "name": "Emma",
+        "last_scan": "2026-05-25",
+        "days_since": 39,
+        "next_due": "2026-07-06",
+        "days_to_due": 3,
+        "overdue": false
+      },
+      {
+        "name": "Karen",
+        "last_scan": "2026-05-25",
+        "days_since": 39,
+        "next_due": "2026-07-06",
+        "days_to_due": 3,
+        "overdue": false
+      },
+      {
+        "name": "Lesley",
+        "last_scan": "2026-05-25",
+        "days_since": 39,
+        "next_due": "2026-07-06",
+        "days_to_due": 3,
+        "overdue": false
+      },
+      {
+        "name": "Becca",
+        "last_scan": "2026-05-23",
+        "days_since": 41,
+        "next_due": "2026-07-04",
+        "days_to_due": 1,
+        "overdue": false
+      },
+      {
+        "name": "Eilis",
+        "last_scan": "2026-05-23",
+        "days_since": 41,
+        "next_due": "2026-07-04",
+        "days_to_due": 1,
+        "overdue": false
+      },
+      {
+        "name": "Rosemary",
+        "last_scan": "2026-05-23",
+        "days_since": 41,
+        "next_due": "2026-07-04",
+        "days_to_due": 1,
+        "overdue": false
+      },
+      {
+        "name": "Kerry",
+        "last_scan": "2026-05-22",
+        "days_since": 42,
+        "next_due": "2026-07-03",
+        "days_to_due": 0,
+        "overdue": false
+      }
+    ],
+    "total": 63,
+    "configured": true
+  },
+  "sop": {
+    "sections": [
+      {
+        "name": "FOR ALL COACHES",
+        "items": [
+          {
+            "task": "All Services SOP",
+            "type": "Facilities",
+            "sop": "Forge Female Fitness \u2014 Internal Service Menu",
+            "owner": "",
+            "built": true
+          }
+        ]
+      },
+      {
+        "name": "Daily",
+        "items": [
+          {
+            "task": "Cleaning",
+            "type": "Facilities",
+            "sop": "Forge Cleaning Checklist",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Studio Open and Close",
+            "type": "Facilities",
+            "sop": "Forge Open/Close Checklist",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Being a great Coach",
+            "type": "Coaches",
+            "sop": "How to be a Great Coach Masterlist SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Current Quarter Programming",
+            "type": "Coaches",
+            "sop": "Q4 Program Movements Q1 2026 Q2 2026 Q3 2026 Strongevity Programme",
+            "owner": "GS / JH",
+            "built": true
+          },
+          {
+            "task": "Cardio Machine Technique Guide",
+            "type": "Coaches",
+            "sop": "Cardio Machine Technique SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Instagram DM & Lead Followup",
+            "type": "Marketing",
+            "sop": "Instagram DM SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Daily Social Story Upload",
+            "type": "Marketing",
+            "sop": "Instagram Daily Story SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Walk-Ins",
+            "type": "General",
+            "sop": "Walk-Ins SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "No Sweat Intro",
+            "type": "Clients",
+            "sop": "No Sweat Intro SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Full Member Welcome Pack",
+            "type": "Clients",
+            "sop": "Full Member Welcome Pack",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Warmups & Cooldown Sheets",
+            "type": "Coaches",
+            "sop": "Warmups and Cooldowns SOP https://canva.link/rdamphvgb76et2s FOR Q3",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Forge InBody 270 Member Guide",
+            "type": "Clients",
+            "sop": "Forge InBody 270 Info.pdf",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Forge InBody Coaches Guide",
+            "type": "Coaches",
+            "sop": "Forge InBody 270 SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "InBody Admin Dashboard",
+            "type": "Clients",
+            "sop": "InBody Admin Dashboard SOP",
+            "owner": "GS /JH",
+            "built": true
+          }
+        ]
+      },
+      {
+        "name": "Weekly (More Than Once per Month)",
+        "items": [
+          {
+            "task": "KPI Dashboard Update",
+            "type": "General",
+            "sop": "Mission Control Forge",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Update Member Mastersheet Tracker",
+            "type": "Clients",
+            "sop": "Forge Master Member Tracker",
+            "owner": "JH / GS",
+            "built": true
+          },
+          {
+            "task": "Update Prospect & Lead Tracker",
+            "type": "Marketing",
+            "sop": "Forge Prospect & Onboarding Tracker",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Social Media Posts",
+            "type": "Marketing",
+            "sop": "Social Media Posting SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Mission Control Meeting Notes",
+            "type": "General",
+            "sop": "Mission Control Forge",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "2 Referral Requests per week",
+            "type": "Clients",
+            "sop": "Client Referral Ask SOP Referral Form Link",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Email Newsletter",
+            "type": "Marketing",
+            "sop": "",
+            "owner": "JH",
+            "built": false
+          },
+          {
+            "task": "Blog Post",
+            "type": "Marketing",
+            "sop": "",
+            "owner": "JH",
+            "built": false
+          },
+          {
+            "task": "Momentum Sessions",
+            "type": "Clients",
+            "sop": "Momentum Session SOP   Book Momentum Call Teamup.mp4",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Weekly Client Wins (SLACK)",
+            "type": "Clients",
+            "sop": "Weekly Wins SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Personal Training Sales Calls",
+            "type": "Marketing",
+            "sop": "Jumpstart Sales Call SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "New PT Guide",
+            "type": "Clients",
+            "sop": "SOP: New PT Member Induction",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to create Recurring reservations for PT Clients",
+            "type": "Clients",
+            "sop": "Reservations for PTs.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to create PT sessions on Teamup",
+            "type": "Clients",
+            "sop": "One off PT Sessions Video Guide",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Edit PT Sessions",
+            "type": "Clients",
+            "sop": "Change PT Sessions & update coaches.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Personal Training Guide",
+            "type": "Coaches",
+            "sop": "Personal Training Clients SOP",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Schedule PT Sales Calls",
+            "type": "Marketing",
+            "sop": "Schedule PT Sales Call",
+            "owner": "",
+            "built": true
+          },
+          {
+            "task": "Personal Training Sales Call & Post Call Msg",
+            "type": "Marketing",
+            "sop": "PT Sales Call & Follow Message",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Trial to Full Member Conversion",
+            "type": "Clients",
+            "sop": "Trial to Full Member Conversion",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Remove member from class",
+            "type": "Clients",
+            "sop": "Remove Member from Class.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "No Social Members",
+            "type": "Clients",
+            "sop": "No Social Members",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Trial Lead",
+            "type": "Clients",
+            "sop": "Trial Lead SOP",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Trials Tracker",
+            "type": "Clients",
+            "sop": "Trial Tracker",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Ordering T-Shirts",
+            "type": "Facilities",
+            "sop": "Ordering Clothing SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Slack - Trial to Full Member",
+            "type": "Clients",
+            "sop": "Slack - Trial to Full Member",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Trial to Full Member Swag Bag",
+            "type": "Clients",
+            "sop": "Full Member Swag Bag",
+            "owner": "JH / EK",
+            "built": true
+          }
+        ]
+      },
+      {
+        "name": "Monthly (Once Per Month)",
+        "items": [
+          {
+            "task": "Marketing KPI Dashboard",
+            "type": "Marketing",
+            "sop": "Monthly Marketing KPI",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Marketing Calendar",
+            "type": "Marketing",
+            "sop": "Monthly Marketing KPI (sheet 1)",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Corporate / Studio Partner Outreach",
+            "type": "Marketing",
+            "sop": "Forge Corporate Partnership Tracker",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Member of the Month Announcement",
+            "type": "Clients",
+            "sop": "Consistency Queen SOP  Canva Template",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Member Milestone Tees",
+            "type": "Clients",
+            "sop": "Milestone Tees Tracker",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Team Meetings",
+            "type": "Coaches",
+            "sop": "Team Meetings SOP",
+            "owner": "GS / JH / EK",
+            "built": true
+          }
+        ]
+      },
+      {
+        "name": "Quarterly",
+        "items": [
+          {
+            "task": "Head Coach Peformance Review",
+            "type": "Coaches",
+            "sop": "Canva Link for Head Coaches",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Coach Performance Review",
+            "type": "Coaches",
+            "sop": "Canva Link for Coaches to print out",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Evaluation Sheet for Head Coaches",
+            "type": "Coaches",
+            "sop": "Canva Link to Evaluation sheet for Head Coaches",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Performance Review FAQ",
+            "type": "Coaches",
+            "sop": "Performance Review & Class Audit FAQ",
+            "owner": "GS / JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to frame Feedback",
+            "type": "Coaches",
+            "sop": "Forge Feedback Cheat Sheet",
+            "owner": "GS / JH",
+            "built": true
+          },
+          {
+            "task": "Coaches Quarterly Audit",
+            "type": "Coaches",
+            "sop": "Coach Audit Template",
+            "owner": "GS / JH / EK",
+            "built": true
+          }
+        ]
+      },
+      {
+        "name": "Yearly",
+        "items": [
+          {
+            "task": "Annual Member Awards",
+            "type": "Clients",
+            "sop": "Forge Awards",
+            "owner": "GS/JH",
+            "built": true
+          },
+          {
+            "task": "Coach Annual Review",
+            "type": "Coaches",
+            "sop": "Coach Annual Review Template",
+            "owner": "GS / JH / EK",
+            "built": true
+          }
+        ]
+      },
+      {
+        "name": "Coach HQ's",
+        "items": [
+          {
+            "task": "JoJo",
+            "type": "Coaches",
+            "sop": "JoJo Forge HQ",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Eilis",
+            "type": "Coaches",
+            "sop": "Eilis Forge HQ",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Grace",
+            "type": "Coaches",
+            "sop": "Grace Forge HQ",
+            "owner": "GS",
+            "built": true
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "total": 58,
+      "built": 56,
+      "not_built": 2,
+      "pct_built": 97,
+      "by_type": [
+        {
+          "type": "Clients",
+          "total": 22,
+          "built": 22
+        },
+        {
+          "type": "Coaches",
+          "total": 17,
+          "built": 17
+        },
+        {
+          "type": "Facilities",
+          "total": 4,
+          "built": 4
+        },
+        {
+          "type": "General",
+          "total": 3,
+          "built": 3
+        },
+        {
+          "type": "Marketing",
+          "total": 12,
+          "built": 10
+        }
+      ]
+    },
+    "not_built_list": [
+      {
+        "task": "Email Newsletter",
+        "type": "Marketing",
+        "sop": "",
+        "owner": "JH",
+        "built": false
+      },
+      {
+        "task": "Blog Post",
+        "type": "Marketing",
+        "sop": "",
+        "owner": "JH",
+        "built": false
+      }
+    ]
+  },
+  "slack": {
+    "configured": true,
+    "unreplied_dms": [],
+    "mentions": []
   },
   "asana": {
     "tasks_today": [
@@ -2093,7 +3153,7 @@
     ]
   },
   "teamup": {
-    "total_members": 150,
+    "total_members": 149,
     "recurring": 99,
     "recurring_members": [
       {
@@ -3304,24 +4364,6 @@
         ]
       },
       {
-        "name": "New You Next Level",
-        "count": 3,
-        "members": [
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 12337511,
-            "name": "Kay Sweeney"
-          },
-          {
-            "id": 12309853,
-            "name": "Lorraine Dunlop"
-          }
-        ]
-      },
-      {
         "name": "8 Session Block",
         "count": 2,
         "members": [
@@ -3346,6 +4388,20 @@
           {
             "id": 8500731,
             "name": "Noor AlShehabi"
+          }
+        ]
+      },
+      {
+        "name": "New You Next Level",
+        "count": 2,
+        "members": [
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 12337511,
+            "name": "Kay Sweeney"
           }
         ]
       },
@@ -3469,7 +4525,7 @@
         "top_days": [
           {
             "day": "Wednesday",
-            "count": 553
+            "count": 552
           },
           {
             "day": "Tuesday",
@@ -3477,11 +4533,11 @@
           },
           {
             "day": "Thursday",
-            "count": 401
+            "count": 389
           },
           {
             "day": "Friday",
-            "count": 393
+            "count": 387
           },
           {
             "day": "Monday",
@@ -3499,11 +4555,11 @@
           },
           {
             "day": "Friday",
-            "count": 393
+            "count": 387
           },
           {
             "day": "Thursday",
-            "count": 401
+            "count": 389
           },
           {
             "day": "Tuesday",
@@ -3562,13 +4618,125 @@
             "count": 262
           }
         ],
-        "total_attended": 2367
+        "top_slots": [
+          {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 110,
+            "sessions": 10,
+            "avg": 11.0,
+            "label": "Friday 7pm Mobility"
+          },
+          {
+            "day": "Monday",
+            "time": "8pm",
+            "name": "Build: Lower",
+            "count": 87,
+            "sessions": 8,
+            "avg": 10.9,
+            "label": "Monday 8pm Build: Lower"
+          },
+          {
+            "day": "Monday",
+            "time": "6pm",
+            "name": "Build: Lower",
+            "count": 86,
+            "sessions": 8,
+            "avg": 10.8,
+            "label": "Monday 6pm Build: Lower"
+          },
+          {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 127,
+            "sessions": 12,
+            "avg": 10.6,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Monday",
+            "time": "10am",
+            "name": "Build: Lower",
+            "count": 95,
+            "sessions": 9,
+            "avg": 10.6,
+            "label": "Monday 10am Build: Lower"
+          },
+          {
+            "day": "Monday",
+            "time": "7pm",
+            "name": "Build: Lower",
+            "count": 85,
+            "sessions": 8,
+            "avg": 10.6,
+            "label": "Monday 7pm Build: Lower"
+          }
+        ],
+        "bottom_slots": [
+          {
+            "day": "Thursday",
+            "time": "8pm",
+            "name": "Barbelle",
+            "count": 19,
+            "sessions": 3,
+            "avg": 6.3,
+            "label": "Thursday 8pm Barbelle"
+          },
+          {
+            "day": "Thursday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 13,
+            "sessions": 2,
+            "avg": 6.5,
+            "label": "Thursday 11am Strongevity"
+          },
+          {
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 79,
+            "sessions": 11,
+            "avg": 7.2,
+            "label": "Thursday 10am Elevate"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 77,
+            "sessions": 10,
+            "avg": 7.7,
+            "label": "Friday 6pm Circuits"
+          },
+          {
+            "day": "Wednesday",
+            "time": "8pm",
+            "name": "Capacity",
+            "count": 62,
+            "sessions": 8,
+            "avg": 7.8,
+            "label": "Wednesday 8pm Capacity"
+          },
+          {
+            "day": "Saturday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 72,
+            "sessions": 9,
+            "avg": 8.0,
+            "label": "Saturday 10am Elevate"
+          }
+        ],
+        "total_attended": 2348
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Wednesday",
-            "count": 198
+            "count": 197
           },
           {
             "day": "Tuesday",
@@ -3580,11 +4748,11 @@
           },
           {
             "day": "Thursday",
-            "count": 154
+            "count": 153
           },
           {
             "day": "Friday",
-            "count": 153
+            "count": 151
           }
         ],
         "bottom_days": [
@@ -3594,11 +4762,11 @@
           },
           {
             "day": "Friday",
-            "count": 153
+            "count": 151
           },
           {
             "day": "Thursday",
-            "count": 154
+            "count": 153
           },
           {
             "day": "Monday",
@@ -3661,7 +4829,119 @@
             "count": 70
           }
         ],
-        "total_attended": 900
+        "top_slots": [
+          {
+            "day": "Monday",
+            "time": "8pm",
+            "name": "Build: Lower",
+            "count": 44,
+            "sessions": 4,
+            "avg": 11.0,
+            "label": "Monday 8pm Build: Lower"
+          },
+          {
+            "day": "Monday",
+            "time": "6pm",
+            "name": "Build: Lower",
+            "count": 43,
+            "sessions": 4,
+            "avg": 10.8,
+            "label": "Monday 6pm Build: Lower"
+          },
+          {
+            "day": "Wednesday",
+            "time": "6pm",
+            "name": "Plate",
+            "count": 32,
+            "sessions": 3,
+            "avg": 10.7,
+            "label": "Wednesday 6pm Plate"
+          },
+          {
+            "day": "Monday",
+            "time": "7pm",
+            "name": "Build: Lower",
+            "count": 42,
+            "sessions": 4,
+            "avg": 10.5,
+            "label": "Monday 7pm Build: Lower"
+          },
+          {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 41,
+            "sessions": 4,
+            "avg": 10.2,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Friday 7pm Mobility"
+          }
+        ],
+        "bottom_slots": [
+          {
+            "day": "Thursday",
+            "time": "8pm",
+            "name": "Barbelle",
+            "count": 12,
+            "sessions": 2,
+            "avg": 6.0,
+            "label": "Thursday 8pm Barbelle"
+          },
+          {
+            "day": "Thursday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 13,
+            "sessions": 2,
+            "avg": 6.5,
+            "label": "Thursday 11am Strongevity"
+          },
+          {
+            "day": "Wednesday",
+            "time": "8pm",
+            "name": "Capacity",
+            "count": 30,
+            "sessions": 4,
+            "avg": 7.5,
+            "label": "Wednesday 8pm Capacity"
+          },
+          {
+            "day": "Thursday",
+            "time": "6pm",
+            "name": "Build: Full Body",
+            "count": 32,
+            "sessions": 4,
+            "avg": 8.0,
+            "label": "Thursday 6pm Build: Full Body"
+          },
+          {
+            "day": "Thursday",
+            "time": "7pm",
+            "name": "Engine",
+            "count": 24,
+            "sessions": 3,
+            "avg": 8.0,
+            "label": "Thursday 7pm Engine"
+          },
+          {
+            "day": "Tuesday",
+            "time": "10am",
+            "name": "Build: Upper",
+            "count": 33,
+            "sessions": 4,
+            "avg": 8.2,
+            "label": "Tuesday 10am Build: Upper"
+          }
+        ],
+        "total_attended": 896
       },
       "suggestion": "\u201cEngine\u201d is your least-attended class over 3 months (52). Try moving it to a busier time or promoting it \u2014 or swap it for a more popular format. Saturday is your quietest day. Consider trimming a class or running a popular format to lift attendance. \u201cBuild: Full Body\u201d is your most popular class (485) \u2014 adding another slot could capture unmet demand."
     },
@@ -3744,13 +5024,6 @@
         "last_seen": null
       },
       {
-        "id": 3236503,
-        "name": "Michelle McKnight",
-        "membership": "8 Session Block",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
         "id": 7561270,
         "name": "Mollie McGregor",
         "membership": "Elevate",
@@ -3818,21 +5091,6 @@
           "start_date": "2026-07-03"
         },
         {
-          "name": "Mollie McGregor",
-          "days_in": 2,
-          "start_date": "2026-07-01"
-        },
-        {
-          "name": "Jayne Scott",
-          "days_in": 4,
-          "start_date": "2026-06-29"
-        },
-        {
-          "name": "Sorcha Gilmore",
-          "days_in": 4,
-          "start_date": "2026-06-29"
-        },
-        {
           "name": "Laura Fullerton",
           "days_in": 4,
           "start_date": "2026-06-29"
@@ -3897,13 +5155,6 @@
           "start_date": "2025-10-02"
         },
         {
-          "name": "Lorraine Dunlop",
-          "label": "6 months",
-          "months": 6,
-          "days_until": 0,
-          "start_date": "2026-01-01"
-        },
-        {
           "name": "Kay Sweeney",
           "label": "6 months",
           "months": 6,
@@ -3928,22 +5179,34 @@
     },
     "class_milestones": [
       {
-        "name": "Linda Davidson",
+        "name": "Louise Feeney",
+        "total_classes": 49,
+        "next_milestone": 50,
+        "classes_away": 1
+      },
+      {
+        "name": "Jackie Elliott",
         "total_classes": 48,
         "next_milestone": 50,
         "classes_away": 2
       },
       {
-        "name": "Sami-Jo Smyth",
+        "name": "Nicola Duffin",
         "total_classes": 48,
         "next_milestone": 50,
         "classes_away": 2
       },
       {
-        "name": "Jenny McCracken",
-        "total_classes": 47,
+        "name": "Noleen MCKILLOP",
+        "total_classes": 46,
         "next_milestone": 50,
-        "classes_away": 3
+        "classes_away": 4
+      },
+      {
+        "name": "Lesley Greehy",
+        "total_classes": 45,
+        "next_milestone": 50,
+        "classes_away": 5
       }
     ],
     "momentum_calls": {
@@ -3971,6 +5234,1037 @@
       ],
       "upcoming": []
     },
+    "member_list": [
+      {
+        "name": "Alison Borland",
+        "join_date": "2025-05-16",
+        "membership": "Empower",
+        "class_count": 161,
+        "last_momentum": null
+      },
+      {
+        "name": "Alison Moffitt-Robinson",
+        "join_date": "2025-02-01",
+        "membership": "4 Class Pass",
+        "class_count": 131,
+        "last_momentum": null
+      },
+      {
+        "name": "Amanda Hanna",
+        "join_date": "2026-05-17",
+        "membership": "Empower",
+        "class_count": 39,
+        "last_momentum": null
+      },
+      {
+        "name": "Amy McNeill",
+        "join_date": "2026-07-06",
+        "membership": "6 Week Jumpstart",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Amy McWilliams",
+        "join_date": "2026-07-04",
+        "membership": "6 Week Jumpstart",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Ann Vance",
+        "join_date": "2024-05-13",
+        "membership": "Foundation PAID IN FULL",
+        "class_count": 202,
+        "last_momentum": null
+      },
+      {
+        "name": "Ann Wales",
+        "join_date": "2025-06-27",
+        "membership": "Elevate",
+        "class_count": 103,
+        "last_momentum": null
+      },
+      {
+        "name": "Anna Richmond",
+        "join_date": "2026-02-17",
+        "membership": "4 PT Sessions",
+        "class_count": 12,
+        "last_momentum": null
+      },
+      {
+        "name": "Anne Buchanan",
+        "join_date": "2026-06-03",
+        "membership": "6 Week Jumpstart",
+        "class_count": 1,
+        "last_momentum": null
+      },
+      {
+        "name": "Anne Meager",
+        "join_date": "2023-07-10",
+        "membership": "Empower",
+        "class_count": 344,
+        "last_momentum": null
+      },
+      {
+        "name": "Annette Scott",
+        "join_date": "2024-06-25",
+        "membership": "8 Session Block",
+        "class_count": 235,
+        "last_momentum": null
+      },
+      {
+        "name": "Ashley George",
+        "join_date": "2026-01-29",
+        "membership": "Elevate",
+        "class_count": 41,
+        "last_momentum": null
+      },
+      {
+        "name": "Carol Chestnutt",
+        "join_date": "2025-01-26",
+        "membership": "Empower",
+        "class_count": 149,
+        "last_momentum": null
+      },
+      {
+        "name": "Carrie Taylor",
+        "join_date": "2026-05-01",
+        "membership": "6 Week Jumpstart",
+        "class_count": 6,
+        "last_momentum": null
+      },
+      {
+        "name": "Catherine Finney",
+        "join_date": "2026-05-29",
+        "membership": "Empower",
+        "class_count": 41,
+        "last_momentum": null
+      },
+      {
+        "name": "Catherine Gavin",
+        "join_date": "2025-11-27",
+        "membership": "8 PT Sessions",
+        "class_count": 44,
+        "last_momentum": null
+      },
+      {
+        "name": "Catherine McMullan",
+        "join_date": "2026-04-10",
+        "membership": "Empower",
+        "class_count": 54,
+        "last_momentum": null
+      },
+      {
+        "name": "Cherith Cubitt",
+        "join_date": "2024-11-20",
+        "membership": "Empower",
+        "class_count": 355,
+        "last_momentum": null
+      },
+      {
+        "name": "Chrissie taggart",
+        "join_date": "2026-02-15",
+        "membership": "Elevate",
+        "class_count": 56,
+        "last_momentum": null
+      },
+      {
+        "name": "Christina Faulkner",
+        "join_date": "2025-07-03",
+        "membership": "Empower",
+        "class_count": 147,
+        "last_momentum": null
+      },
+      {
+        "name": "Christine Bartlett",
+        "join_date": "2025-06-30",
+        "membership": "1:2 PT 4 Sessions",
+        "class_count": 42,
+        "last_momentum": null
+      },
+      {
+        "name": "Christine Calvin",
+        "join_date": "2023-08-01",
+        "membership": "Evolve",
+        "class_count": 285,
+        "last_momentum": null
+      },
+      {
+        "name": "Claire Green",
+        "join_date": "2024-10-29",
+        "membership": "Kickstart PAID IN FULL",
+        "class_count": 166,
+        "last_momentum": null
+      },
+      {
+        "name": "Claire Leeke",
+        "join_date": "2025-10-02",
+        "membership": "Elevate",
+        "class_count": 79,
+        "last_momentum": null
+      },
+      {
+        "name": "Claire Walker",
+        "join_date": "2026-05-25",
+        "membership": "6 Week Jumpstart",
+        "class_count": 11,
+        "last_momentum": null
+      },
+      {
+        "name": "Colleen Morrison",
+        "join_date": "2026-06-30",
+        "membership": "Strongevity",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
+        "name": "Connie Gerrow",
+        "join_date": "2026-05-30",
+        "membership": "Empower",
+        "class_count": 30,
+        "last_momentum": null
+      },
+      {
+        "name": "Deborah Goss",
+        "join_date": "2023-08-28",
+        "membership": "Elevate",
+        "class_count": 114,
+        "last_momentum": null
+      },
+      {
+        "name": "Diane McLean",
+        "join_date": "2026-02-15",
+        "membership": "Elevate",
+        "class_count": 37,
+        "last_momentum": null
+      },
+      {
+        "name": "Dinah Evans",
+        "join_date": "2024-11-30",
+        "membership": "Foundation PAID IN FULL",
+        "class_count": 280,
+        "last_momentum": null
+      },
+      {
+        "name": "Donna Mclean",
+        "join_date": "2024-06-12",
+        "membership": "4 PT Sessions",
+        "class_count": 110,
+        "last_momentum": null
+      },
+      {
+        "name": "Donna Thompson",
+        "join_date": "2026-06-08",
+        "membership": "Elevate",
+        "class_count": 19,
+        "last_momentum": null
+      },
+      {
+        "name": "Donna Watton",
+        "join_date": "2025-06-17",
+        "membership": "Empower",
+        "class_count": 133,
+        "last_momentum": null
+      },
+      {
+        "name": "Dorothy McIntyre",
+        "join_date": "2026-04-13",
+        "membership": "Elevate",
+        "class_count": 33,
+        "last_momentum": null
+      },
+      {
+        "name": "Dympna Brogan",
+        "join_date": "2026-03-12",
+        "membership": "Elevate",
+        "class_count": 42,
+        "last_momentum": null
+      },
+      {
+        "name": "Eilis Kearns",
+        "join_date": "2025-11-15",
+        "membership": "Online Client Monthly Pass",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Eleanor Anderson",
+        "join_date": "2026-05-20",
+        "membership": "Elevate",
+        "class_count": 32,
+        "last_momentum": "2026-06-24"
+      },
+      {
+        "name": "Emma Gamble",
+        "join_date": "2026-05-18",
+        "membership": "Emerge",
+        "class_count": 18,
+        "last_momentum": null
+      },
+      {
+        "name": "Emma Hamilton",
+        "join_date": "2025-11-04",
+        "membership": "Empower",
+        "class_count": 82,
+        "last_momentum": null
+      },
+      {
+        "name": "Emma Hopkins",
+        "join_date": "2024-12-23",
+        "membership": "Empower",
+        "class_count": 174,
+        "last_momentum": null
+      },
+      {
+        "name": "Fiona Hunter",
+        "join_date": "2026-02-01",
+        "membership": "Empower",
+        "class_count": 79,
+        "last_momentum": null
+      },
+      {
+        "name": "Grace McAlister",
+        "join_date": "2024-05-25",
+        "membership": "Empower",
+        "class_count": 211,
+        "last_momentum": null
+      },
+      {
+        "name": "Hayley Moore",
+        "join_date": "2025-09-19",
+        "membership": "Empower",
+        "class_count": 115,
+        "last_momentum": null
+      },
+      {
+        "name": "Heather McIlrath",
+        "join_date": "2026-05-22",
+        "membership": "6 Week Jumpstart",
+        "class_count": 8,
+        "last_momentum": null
+      },
+      {
+        "name": "Heather McWilliams",
+        "join_date": "2026-04-02",
+        "membership": "Empower",
+        "class_count": 41,
+        "last_momentum": null
+      },
+      {
+        "name": "Heather Meenagh",
+        "join_date": "2024-11-01",
+        "membership": "Empower",
+        "class_count": 275,
+        "last_momentum": null
+      },
+      {
+        "name": "Heather Mitchell",
+        "join_date": "2024-04-12",
+        "membership": "Empower",
+        "class_count": 379,
+        "last_momentum": null
+      },
+      {
+        "name": "Helen Logan",
+        "join_date": "2023-09-27",
+        "membership": "Empower",
+        "class_count": 168,
+        "last_momentum": null
+      },
+      {
+        "name": "Helen Traynor",
+        "join_date": "2018-05-04",
+        "membership": "Empower",
+        "class_count": 215,
+        "last_momentum": null
+      },
+      {
+        "name": "Hilary McDowell",
+        "join_date": "2025-04-15",
+        "membership": "Elevate",
+        "class_count": 127,
+        "last_momentum": null
+      },
+      {
+        "name": "Hilary-Anne Christie",
+        "join_date": "2023-09-14",
+        "membership": "Elevate",
+        "class_count": 292,
+        "last_momentum": null
+      },
+      {
+        "name": "Hilda Clements",
+        "join_date": "2025-01-26",
+        "membership": "Elevate",
+        "class_count": 149,
+        "last_momentum": null
+      },
+      {
+        "name": "Irene Robinson",
+        "join_date": "2025-11-11",
+        "membership": "4 PT Sessions",
+        "class_count": 19,
+        "last_momentum": null
+      },
+      {
+        "name": "Jackie Elliott",
+        "join_date": "2026-04-01",
+        "membership": "Empower",
+        "class_count": 48,
+        "last_momentum": null
+      },
+      {
+        "name": "Jane Hegarty",
+        "join_date": "2024-11-29",
+        "membership": "Empower",
+        "class_count": 213,
+        "last_momentum": null
+      },
+      {
+        "name": "Janeen Gilfillan",
+        "join_date": "2025-09-28",
+        "membership": "Elevate",
+        "class_count": 111,
+        "last_momentum": null
+      },
+      {
+        "name": "Jayne Scott",
+        "join_date": "2026-05-23",
+        "membership": "Elevate",
+        "class_count": 24,
+        "last_momentum": null
+      },
+      {
+        "name": "Jenny McCracken",
+        "join_date": "2025-12-14",
+        "membership": "Elevate",
+        "class_count": 58,
+        "last_momentum": null
+      },
+      {
+        "name": "Jill Chadburn",
+        "join_date": "2025-06-28",
+        "membership": "Empower",
+        "class_count": 175,
+        "last_momentum": null
+      },
+      {
+        "name": "Joanne  Hall",
+        "join_date": "2016-12-21",
+        "membership": "Empower",
+        "class_count": 543,
+        "last_momentum": null
+      },
+      {
+        "name": "Joanne Hamill",
+        "join_date": "2024-08-23",
+        "membership": "Evolve",
+        "class_count": 214,
+        "last_momentum": null
+      },
+      {
+        "name": "Joanne Honeyford",
+        "join_date": "2026-06-26",
+        "membership": "Empower",
+        "class_count": 15,
+        "last_momentum": null
+      },
+      {
+        "name": "Joules Williamson",
+        "join_date": "2025-12-05",
+        "membership": "4 PT Sessions",
+        "class_count": 22,
+        "last_momentum": null
+      },
+      {
+        "name": "Julie Lennox",
+        "join_date": "2026-06-17",
+        "membership": "6 Week Jumpstart",
+        "class_count": 6,
+        "last_momentum": null
+      },
+      {
+        "name": "Karen Hanna",
+        "join_date": "2026-02-05",
+        "membership": "Empower",
+        "class_count": 74,
+        "last_momentum": null
+      },
+      {
+        "name": "Karen Hobson",
+        "join_date": "2025-06-02",
+        "membership": "Empower",
+        "class_count": 146,
+        "last_momentum": null
+      },
+      {
+        "name": "Karen Rhodes",
+        "join_date": "2024-06-26",
+        "membership": "Empower",
+        "class_count": 284,
+        "last_momentum": "2026-06-16"
+      },
+      {
+        "name": "Kathleen Simpson",
+        "join_date": "2026-04-15",
+        "membership": "Elevate",
+        "class_count": 34,
+        "last_momentum": null
+      },
+      {
+        "name": "Kathryn Greehy",
+        "join_date": "2023-12-13",
+        "membership": "Elevate",
+        "class_count": 154,
+        "last_momentum": null
+      },
+      {
+        "name": "Katie Reynolds",
+        "join_date": "2026-05-22",
+        "membership": "6 Week Jumpstart",
+        "class_count": 1,
+        "last_momentum": null
+      },
+      {
+        "name": "Kay Sweeney",
+        "join_date": "2026-01-05",
+        "membership": "New You Next Level",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Kellie Carson",
+        "join_date": "2023-09-25",
+        "membership": "Empower",
+        "class_count": 421,
+        "last_momentum": null
+      },
+      {
+        "name": "Kerrie MacKerracher",
+        "join_date": "2025-09-16",
+        "membership": "Elevate",
+        "class_count": 116,
+        "last_momentum": null
+      },
+      {
+        "name": "Kerry McGillan",
+        "join_date": "2025-09-27",
+        "membership": "Empower",
+        "class_count": 140,
+        "last_momentum": null
+      },
+      {
+        "name": "Kerry Tweed",
+        "join_date": "2026-02-23",
+        "membership": "Elevate",
+        "class_count": 37,
+        "last_momentum": null
+      },
+      {
+        "name": "Khalida Ali",
+        "join_date": "2026-05-08",
+        "membership": "4 PT Sessions",
+        "class_count": 6,
+        "last_momentum": null
+      },
+      {
+        "name": "Kiera Lawthers",
+        "join_date": "2024-06-03",
+        "membership": "4 PT Sessions",
+        "class_count": 103,
+        "last_momentum": null
+      },
+      {
+        "name": "Kirsty Dunn",
+        "join_date": "2021-12-07",
+        "membership": "Empower",
+        "class_count": 580,
+        "last_momentum": null
+      },
+      {
+        "name": "Laura Doherty",
+        "join_date": "2026-06-17",
+        "membership": "Elevate",
+        "class_count": 24,
+        "last_momentum": null
+      },
+      {
+        "name": "Laura Douglas",
+        "join_date": "2026-07-03",
+        "membership": "Empower",
+        "class_count": 21,
+        "last_momentum": null
+      },
+      {
+        "name": "Laura Fullerton",
+        "join_date": "2026-06-29",
+        "membership": "Empower",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Laura McGarry",
+        "join_date": "2026-06-17",
+        "membership": "6 Week Jumpstart",
+        "class_count": 2,
+        "last_momentum": null
+      },
+      {
+        "name": "Leah Calvin",
+        "join_date": "2026-06-27",
+        "membership": "6 Week Jumpstart",
+        "class_count": 3,
+        "last_momentum": null
+      },
+      {
+        "name": "Lesley Drake",
+        "join_date": "2026-05-30",
+        "membership": "6 Week Jumpstart",
+        "class_count": 8,
+        "last_momentum": null
+      },
+      {
+        "name": "Lesley Greehy",
+        "join_date": "2025-07-03",
+        "membership": "4 PT Sessions",
+        "class_count": 45,
+        "last_momentum": null
+      },
+      {
+        "name": "Linda Davidson",
+        "join_date": "2026-01-24",
+        "membership": "Elevate",
+        "class_count": 52,
+        "last_momentum": null
+      },
+      {
+        "name": "Lisa Rankin",
+        "join_date": "2026-07-08",
+        "membership": "6 Week Jumpstart",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Liz Bloomer",
+        "join_date": "2026-06-01",
+        "membership": "Empower",
+        "class_count": 31,
+        "last_momentum": null
+      },
+      {
+        "name": "Liz Houston",
+        "join_date": "2026-03-25",
+        "membership": "4 PT Sessions",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
+        "name": "Lizzie Hogg",
+        "join_date": "2023-12-30",
+        "membership": "Elevate",
+        "class_count": 29,
+        "last_momentum": null
+      },
+      {
+        "name": "Lorna McMullan",
+        "join_date": "2023-07-28",
+        "membership": "Empower",
+        "class_count": 373,
+        "last_momentum": null
+      },
+      {
+        "name": "Lorna Skelton",
+        "join_date": "2026-06-11",
+        "membership": "Strongevity",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Louise Farley",
+        "join_date": "2026-06-27",
+        "membership": "6 Week Jumpstart",
+        "class_count": 3,
+        "last_momentum": null
+      },
+      {
+        "name": "Louise Feeney",
+        "join_date": "2026-03-13",
+        "membership": "Elevate",
+        "class_count": 49,
+        "last_momentum": null
+      },
+      {
+        "name": "Lyn Chestnutt",
+        "join_date": "2026-07-02",
+        "membership": "Strongevity",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
+        "name": "Lyndsay Sinclair",
+        "join_date": "2023-10-25",
+        "membership": "Empower",
+        "class_count": 444,
+        "last_momentum": null
+      },
+      {
+        "name": "Margaret Hughes",
+        "join_date": "2025-12-21",
+        "membership": "Elevate",
+        "class_count": 64,
+        "last_momentum": null
+      },
+      {
+        "name": "Margaret Reynolds",
+        "join_date": "2026-05-21",
+        "membership": "Empower",
+        "class_count": 40,
+        "last_momentum": null
+      },
+      {
+        "name": "Marlene Hayes",
+        "join_date": "2024-09-30",
+        "membership": "Empower",
+        "class_count": 236,
+        "last_momentum": null
+      },
+      {
+        "name": "Mary Barkley",
+        "join_date": "2025-05-28",
+        "membership": "Empower",
+        "class_count": 142,
+        "last_momentum": null
+      },
+      {
+        "name": "Mary Mckenna",
+        "join_date": "2025-04-06",
+        "membership": "Empower",
+        "class_count": 165,
+        "last_momentum": null
+      },
+      {
+        "name": "Mary Taggart",
+        "join_date": "2025-06-04",
+        "membership": "Empower",
+        "class_count": 160,
+        "last_momentum": null
+      },
+      {
+        "name": "Megan McClure Botha",
+        "join_date": "2026-05-22",
+        "membership": "Evolve",
+        "class_count": 34,
+        "last_momentum": null
+      },
+      {
+        "name": "Melissa McQuitty",
+        "join_date": "2025-01-04",
+        "membership": "Elevate",
+        "class_count": 135,
+        "last_momentum": null
+      },
+      {
+        "name": "Melissa Traynor",
+        "join_date": "2025-10-14",
+        "membership": "Empower",
+        "class_count": 137,
+        "last_momentum": null
+      },
+      {
+        "name": "Michelle McKnight",
+        "join_date": "2021-11-02",
+        "membership": "8 Session Block",
+        "class_count": 224,
+        "last_momentum": null
+      },
+      {
+        "name": "Mollie McGregor",
+        "join_date": "2023-10-30",
+        "membership": "Elevate",
+        "class_count": 276,
+        "last_momentum": null
+      },
+      {
+        "name": "Nerys Young",
+        "join_date": "2024-09-30",
+        "membership": "Empower",
+        "class_count": 58,
+        "last_momentum": null
+      },
+      {
+        "name": "Nichola McAuley",
+        "join_date": "2025-04-28",
+        "membership": "Elevate",
+        "class_count": 96,
+        "last_momentum": null
+      },
+      {
+        "name": "Nicola Duffin",
+        "join_date": "2026-02-09",
+        "membership": "Elevate",
+        "class_count": 48,
+        "last_momentum": null
+      },
+      {
+        "name": "Nicole Williams",
+        "join_date": "2024-10-01",
+        "membership": "Empower",
+        "class_count": 188,
+        "last_momentum": null
+      },
+      {
+        "name": "Noeleen Murphy",
+        "join_date": "2026-05-02",
+        "membership": "Empower",
+        "class_count": 65,
+        "last_momentum": null
+      },
+      {
+        "name": "Noleen MCKILLOP",
+        "join_date": "2026-04-09",
+        "membership": "Elevate",
+        "class_count": 46,
+        "last_momentum": null
+      },
+      {
+        "name": "Noleen McMullan",
+        "join_date": "2026-03-10",
+        "membership": "Elevate",
+        "class_count": 58,
+        "last_momentum": null
+      },
+      {
+        "name": "Noor AlShehabi",
+        "join_date": "2024-02-29",
+        "membership": "8 PT Sessions",
+        "class_count": 244,
+        "last_momentum": null
+      },
+      {
+        "name": "Nuala O'Neill",
+        "join_date": "2026-06-06",
+        "membership": "6 Week Jumpstart",
+        "class_count": 10,
+        "last_momentum": null
+      },
+      {
+        "name": "Paula Bamford",
+        "join_date": "2026-05-22",
+        "membership": "6 Week Jumpstart",
+        "class_count": 16,
+        "last_momentum": null
+      },
+      {
+        "name": "Rebekah Newnes",
+        "join_date": "2026-05-26",
+        "membership": "Empower",
+        "class_count": 26,
+        "last_momentum": null
+      },
+      {
+        "name": "Rose McGill",
+        "join_date": "2022-10-17",
+        "membership": "4 PT Sessions",
+        "class_count": 186,
+        "last_momentum": null
+      },
+      {
+        "name": "Rosie Mc Fetridge",
+        "join_date": "2026-06-29",
+        "membership": "6 Week Jumpstart",
+        "class_count": 4,
+        "last_momentum": null
+      },
+      {
+        "name": "Sami-Jo Smyth",
+        "join_date": "2026-01-29",
+        "membership": "Empower",
+        "class_count": 82,
+        "last_momentum": null
+      },
+      {
+        "name": "Sara Benetti",
+        "join_date": "2024-07-27",
+        "membership": "Kickstart PAID IN FULL",
+        "class_count": 203,
+        "last_momentum": null
+      },
+      {
+        "name": "Sarah Calvin",
+        "join_date": "2026-05-29",
+        "membership": "Empower",
+        "class_count": 31,
+        "last_momentum": null
+      },
+      {
+        "name": "Sarah Lacey",
+        "join_date": "2025-02-09",
+        "membership": "Empower",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "name": "Sarah Sandford",
+        "join_date": "2023-11-10",
+        "membership": "Empower",
+        "class_count": 175,
+        "last_momentum": null
+      },
+      {
+        "name": "Sarah jayne Simpson",
+        "join_date": "2026-01-20",
+        "membership": "Empower",
+        "class_count": 67,
+        "last_momentum": null
+      },
+      {
+        "name": "Sharon Kirk",
+        "join_date": "2025-04-04",
+        "membership": "Empower",
+        "class_count": 205,
+        "last_momentum": null
+      },
+      {
+        "name": "Sharon Smyth",
+        "join_date": "2026-06-06",
+        "membership": "6 Week Jumpstart",
+        "class_count": 6,
+        "last_momentum": null
+      },
+      {
+        "name": "Sheila Lundy",
+        "join_date": "2026-06-17",
+        "membership": "6 Week Jumpstart",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
+        "name": "Siobhan Honeyford",
+        "join_date": "2026-06-26",
+        "membership": "Empower",
+        "class_count": 16,
+        "last_momentum": null
+      },
+      {
+        "name": "Sorcha Gilmore",
+        "join_date": "2026-05-25",
+        "membership": "Evolve",
+        "class_count": 35,
+        "last_momentum": null
+      },
+      {
+        "name": "Suzanne Reynolds",
+        "join_date": "2024-10-01",
+        "membership": "Empower",
+        "class_count": 320,
+        "last_momentum": null
+      },
+      {
+        "name": "Sybil M Donaghy",
+        "join_date": "2026-02-19",
+        "membership": "Empower",
+        "class_count": 70,
+        "last_momentum": null
+      },
+      {
+        "name": "Teresa Dougan",
+        "join_date": "2025-10-13",
+        "membership": "Elevate",
+        "class_count": 84,
+        "last_momentum": null
+      },
+      {
+        "name": "Therese Charles",
+        "join_date": "2025-06-12",
+        "membership": "Foundation PAID IN FULL",
+        "class_count": 97,
+        "last_momentum": null
+      },
+      {
+        "name": "Tina Taggart",
+        "join_date": "2023-10-23",
+        "membership": "Empower",
+        "class_count": 293,
+        "last_momentum": null
+      },
+      {
+        "name": "Tracey Greer",
+        "join_date": "2025-10-16",
+        "membership": "Empower",
+        "class_count": 93,
+        "last_momentum": null
+      },
+      {
+        "name": "Victoria McCullough",
+        "join_date": "2026-05-30",
+        "membership": "6 Week Jumpstart",
+        "class_count": 7,
+        "last_momentum": null
+      },
+      {
+        "name": "Victoria Thompson",
+        "join_date": "2026-06-27",
+        "membership": "Empower",
+        "class_count": 25,
+        "last_momentum": null
+      },
+      {
+        "name": "Wilma Reid",
+        "join_date": "2026-04-16",
+        "membership": "4 PT Sessions",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
+        "name": "Yasmine Douglas",
+        "join_date": "2026-05-26",
+        "membership": "4 PT Sessions",
+        "class_count": 1,
+        "last_momentum": null
+      },
+      {
+        "name": "Zara Drain",
+        "join_date": "2026-06-20",
+        "membership": "6 Week Jumpstart",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
+        "name": "Zara Morrison",
+        "join_date": "2024-12-11",
+        "membership": "Foundation PAID IN FULL",
+        "class_count": 231,
+        "last_momentum": null
+      },
+      {
+        "name": "hazel graham",
+        "join_date": "2026-03-21",
+        "membership": "Empower",
+        "class_count": 37,
+        "last_momentum": null
+      },
+      {
+        "name": "lynne brown",
+        "join_date": "2025-05-27",
+        "membership": "Elevate",
+        "class_count": 108,
+        "last_momentum": null
+      },
+      {
+        "name": "sandra mccrea",
+        "join_date": "2026-02-12",
+        "membership": "Elevate",
+        "class_count": 37,
+        "last_momentum": null
+      },
+      {
+        "name": "susan Henry",
+        "join_date": "2024-10-31",
+        "membership": "Empower",
+        "class_count": 257,
+        "last_momentum": null
+      }
+    ],
     "inbody_scans": [
       {
         "name": "Helen Traynor",
