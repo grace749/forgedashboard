@@ -59,6 +59,48 @@ def _get(row, idx, default=""):
         return default
 
 
+def _is_orange(bg):
+    """
+    True for an orange cell background (paused trial). Orange has high red,
+    medium green and clearly lower blue — distinguishing it from the pink/red
+    cells (where green ≈ blue) and cream/yellow (where blue is high).
+    """
+    r = bg.get("red", 1); g = bg.get("green", 1); b = bg.get("blue", 1)
+    return r > 0.8 and 0.45 <= g <= 0.8 and b < 0.5 and (g - b) >= 0.15
+
+
+def _fetch_bg_colors(svc, sheet_title):
+    """Return a list (by row index) of the per-cell background colours for a tab."""
+    safe = sheet_title.replace("'", "''")
+    try:
+        gd = svc.spreadsheets().get(
+            spreadsheetId=SPREADSHEET_ID,
+            ranges=[f"'{safe}'!A1:T200"],
+            includeGridData=True,
+            fields="sheets.data.rowData.values.effectiveFormat.backgroundColor",
+        ).execute()
+        data = gd["sheets"][0].get("data", [{}])[0].get("rowData", [])
+        return [
+            [v.get("effectiveFormat", {}).get("backgroundColor", {}) for v in r.get("values", [])]
+            for r in data
+        ]
+    except Exception as ex:
+        print(f"[jumpstart] colour fetch failed for '{sheet_title}': {ex}")
+        return []
+
+
+def _row_is_orange(colors, row_index, c_name):
+    """Is the given row (any of its first few cells) orange?"""
+    if row_index >= len(colors):
+        return False
+    cells = colors[row_index]
+    # check the name cell and a couple around it, since the whole row is shaded
+    for c in {c_name, 0, 1, 2}:
+        if c < len(cells) and _is_orange(cells[c]):
+            return True
+    return False
+
+
 def _find_header_row(rows):
     """Find the row index containing 'Member Name' header."""
     for i, row in enumerate(rows):
@@ -113,14 +155,19 @@ def _parse_cohort_tab(svc, sheet_title):
     c_welcome   = _col_index(headers, "welcome pack") or 16
     c_followup  = _col_index(headers, "follow up") or _col_index(headers, "notes") or 17
 
+    colors = _fetch_bg_colors(svc, sheet_title)
+
     members = []
-    for row in rows[header_idx + 1:]:
+    for offset, row in enumerate(rows[header_idx + 1:]):
+        row_index = header_idx + 1 + offset
         name = _get(row, c_name).strip()
         if not name or name.lower().startswith("member"):
             continue
         # Skip clearly blank rows
         if len(name) < 2:
             continue
+
+        paused = _row_is_orange(colors, row_index, c_name)
 
         joined_raw = _get(row, c_joined)
         end_raw    = _get(row, c_end)
@@ -177,6 +224,9 @@ def _parse_cohort_tab(svc, sheet_title):
             "missing_checkins":   missing_checkins,
             "completed_checkins": completed_checkins,
             "expected_checkins":  expected_checkins,
+            "paused":             paused,
+            # reason for the pause: prefer follow-up note, fall back to key notes
+            "pause_reason":       (_get(row, c_followup).strip() or _get(row, c_notes).strip())[:250],
         })
     return members
 
@@ -202,9 +252,11 @@ def run():
     today = date.today()
     cutoff = today - timedelta(weeks=RECENT_WEEKS)
 
-    active   = [m for m in all_members if m["is_active"]]
-    recent   = [m for m in all_members if not m["is_active"] and m["end"] and m["end"] >= cutoff.isoformat()]
-    historic = [m for m in all_members if not m["is_active"] and (not m["end"] or m["end"] < cutoff.isoformat())]
+    # Paused trials (orange rows) are pulled out and NOT counted as active
+    paused   = [m for m in all_members if m.get("paused")]
+    active   = [m for m in all_members if m["is_active"] and not m.get("paused")]
+    recent   = [m for m in all_members if not m["is_active"] and not m.get("paused") and m["end"] and m["end"] >= cutoff.isoformat()]
+    historic = [m for m in all_members if not m["is_active"] and not m.get("paused") and (not m["end"] or m["end"] < cutoff.isoformat())]
 
     # ── Alerts for active members ──────────────────────────────
     alerts = []
@@ -230,7 +282,7 @@ def run():
     # ── Monthly conversion history (by trial end month) ─────────
     by_month = {}
     for m in all_members:
-        if m["is_active"] or not m["end"]:
+        if m["is_active"] or m.get("paused") or not m["end"]:
             continue
         month = m["end"][:7]  # YYYY-MM
         b = by_month.setdefault(month, {"completed": 0, "converted": 0})
@@ -252,9 +304,11 @@ def run():
         "monthly":       monthly,
         "active":        sorted(active, key=lambda m: m["end"] or ""),
         "recent":        sorted(recent, key=lambda m: m["end"] or "", reverse=True),
+        "paused":        sorted(paused, key=lambda m: m["name"]),
         "alerts":        alerts,
         "stats": {
             "active_count":  len(active),
+            "paused_count":  len(paused),
             "conv_rate":     conv_rate,
             "converted":     len(converted),
             "not_converted": len(not_converted),
