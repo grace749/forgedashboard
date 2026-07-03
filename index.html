@@ -879,38 +879,54 @@ function render(data) {
   // Prefer the full list from Lookin'Body; fall back to the TeamUp proxy.
   const inbodyData = data.inbody || {};
   const inbody = (inbodyData.scans && inbodyData.scans.length) ? inbodyData.scans : (tm.inbody_scans || []);
+  // InBody usernames encode the member name (e.g. "096marymckenna"). Resolve to
+  // the real name by matching against the member directory.
+  const memberNorm = {};
+  (tm.member_list || []).forEach(m => { memberNorm[(m.name||"").toLowerCase().replace(/[^a-z]/g,"")] = m.name; });
+  const resolveName = raw => {
+    const norm = (raw||"").toLowerCase().replace(/[^a-z]/g,"");
+    if (memberNorm[norm]) return memberNorm[norm];
+    const hit = Object.keys(memberNorm).find(k => k && (k.includes(norm) || norm.includes(k)) && norm.length > 4);
+    return hit ? memberNorm[hit] : raw;
+  };
+  const delta = v => v == null ? "" : (v > 0 ? `<span style="color:#059669">▲${v}</span>` : v < 0 ? `<span style="color:#dc2626">▼${Math.abs(v)}</span>` : "—");
   push("members", `
-    <div class="card col-4">
+    <div class="card col-8">
       <div class="card-title">Body Composition</div>
       <div class="card-headline" style="display:flex;align-items:baseline;gap:8px">InBody Scans ${inbody.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${inbody.length} members</span>` : ""}</div>
       ${inbody.length ? `
-        <div style="overflow-y:auto;max-height:460px">
-          <table style="width:100%;border-collapse:collapse;font-size:.82rem">
+        <div style="overflow-x:auto;overflow-y:auto;max-height:520px">
+          <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:640px">
             <thead>
-              <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:#bbb">
-                <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Member</th>
-                <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Last Scan</th>
-                <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Next Due</th>
-                <th style="text-align:right;padding:5px 0;border-bottom:1px solid #f0f0f5">Status</th>
+              <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:#bbb;position:sticky;top:0;background:#fff">
+                <th style="text-align:left;padding:6px 8px 6px 0;border-bottom:2px solid #f0f0f5">Member</th>
+                <th style="text-align:left;padding:6px 8px;border-bottom:2px solid #f0f0f5">Last scan</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Weight</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Muscle (SMM)</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Body fat %</th>
+                <th style="text-align:right;padding:6px 0 6px 8px;border-bottom:2px solid #f0f0f5">Next due</th>
               </tr>
             </thead>
             <tbody>
               ${inbody.map(s => {
-                const tag = s.overdue
-                  ? `<span class="pill red" style="cursor:default;font-size:.65rem">${Math.abs(s.days_to_due)}d overdue</span>`
+                const due = s.overdue
+                  ? `<span class="pill red" style="cursor:default;font-size:.62rem">${Math.abs(s.days_to_due)}d over</span>`
                   : s.days_to_due <= 7
-                  ? `<span class="pill amber" style="cursor:default;font-size:.65rem">Due soon</span>`
-                  : `<span style="font-size:.72rem;color:#aaa">in ${s.days_to_due}d</span>`;
+                  ? `<span class="pill amber" style="cursor:default;font-size:.62rem">soon</span>`
+                  : `<span style="color:#aaa">${fmtDateShort(s.next_due)}</span>`;
                 return `<tr>
-                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;font-weight:500;color:#111">${s.name}</td>
-                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.last_scan)}</td>
-                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.next_due)}</td>
-                  <td style="padding:8px 0;border-bottom:1px solid #f9f9fc;text-align:right">${tag}</td>
+                  <td style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${resolveName(s.name)}${s.scan_count>1?` <span style="font-size:.66rem;color:#c4b5fd">${s.scan_count} scans</span>`:""}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.last_scan)}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.weight ?? "—"} <span style="font-size:.7rem">${delta(s.weight_change)}</span></td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.smm ?? "—"} <span style="font-size:.7rem">${delta(s.smm_change)}</span></td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.pbf ?? "—"}% <span style="font-size:.7rem">${delta(s.pbf_change)}</span></td>
+                  <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc;text-align:right">${due}</td>
                 </tr>`;
               }).join("")}
             </tbody>
           </table>
         </div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">▲/▼ = change since previous scan · from Lookin'Body</div>
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">${inbodyData.configured === false ? "InBody not connected — add INBODY_LOGIN_ID and INBODY_PASSWORD secrets." : "No scan history yet."}</p>`}
     </div>
   `);

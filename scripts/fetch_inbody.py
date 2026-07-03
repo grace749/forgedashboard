@@ -2,20 +2,33 @@
 Fetch InBody scan data from Lookin'Body Web (gbr.lookinbody.com).
 
 Lookin'Body is InBody's admin backend. There's no public API, so we log in with
-the admin credentials and read the member list (which carries each member's last
-InBody test date). Scans are recommended every ~6 weeks, so we compute the next
-due date from the last scan.
+the admin credentials and use the built-in data export
+(/SetupExportDataInBody/SetupExportDataWithColumn), which returns real member
+names plus scan metrics (weight, skeletal muscle mass, body fat %, BMI) — one
+row per scan. We group by member to get their latest scan, the change since the
+previous scan, and when the next one is due.
 
 Env:
   INBODY_LOGIN_ID   Lookin'Body admin login id
   INBODY_PASSWORD   Lookin'Body admin password
 """
-import os, datetime, urllib.parse
+import os, re, datetime
 from datetime import date
 import requests
 
 BASE = "https://gbr.lookinbody.com"
 SCAN_INTERVAL_DAYS = 42   # recommended every ~6 weeks
+
+# Columns to export: (table, field, header)
+EXPORT_COLS = [
+    ("USER_INFO1_TBL", "NAME",      "Name"),
+    ("USER_INFO1_TBL", "USER_ID",   "ID"),
+    ("BCA_TBL",        "DATETIMES", "TestDate"),
+    ("BCA_TBL",        "WT",        "Weight"),
+    ("MFA_TBL",        "SMM",       "SMM"),
+    ("MFA_TBL",        "PBF",       "PBF"),
+    ("MFA_TBL",        "BMI",       "BMI"),
+]
 
 
 def _login(session):
@@ -29,92 +42,85 @@ def _login(session):
               "IsForceLogin": "true", "IP": "", "BrowserType": "Mozilla/5.0"},
         timeout=30,
     )
-    data = r.json().get("Data", {})
-    code = data.get("Code")
+    code = r.json().get("Data", {}).get("Code")
     if code:
-        # The Code is already URL-encoded in the response — append it raw so
-        # requests doesn't double-encode it (which invalidates the session).
+        # Code is already URL-encoded — append raw so it isn't double-encoded.
         session.get(BASE + "/BaseForm/Index?code=" + code, timeout=30)
-    return data
 
 
-def _fetch_members(session, page_size=200, max_pages=20):
-    members = []
+def _fetch_uids(session, page_size=200, max_pages=20):
+    uids = []
     for page in range(max_pages):
         start = page * page_size + 1
         end   = (page + 1) * page_size
-        body = (
-            f"startPage={start}&endPage={end}"
-            "&SearchOption%5BName%5D="
-            "&SearchOption%5BSortAsecding%5D=false"
-            "&SearchOption%5BSortColName%5D=InBodyTestDate"
-        )
-        r = session.post(
-            BASE + "/MemberList/GetUserData",
-            headers={"X-Requested-With": "XMLHttpRequest",
-                     "Content-Type": "application/x-www-form-urlencoded"},
-            data=body, timeout=30,
-        )
+        body = (f"startPage={start}&endPage={end}"
+                "&SearchOption%5BName%5D=&SearchOption%5BSortAsecding%5D=false"
+                "&SearchOption%5BSortColName%5D=InBodyTestDate")
+        r = session.post(BASE + "/MemberList/GetUserData",
+                         headers={"X-Requested-With": "XMLHttpRequest",
+                                  "Content-Type": "application/x-www-form-urlencoded"},
+                         data=body, timeout=30)
         d = r.json().get("Data", {})
         batch = d.get("Data", []) or []
-        members.extend(batch)
+        uids.extend([m["UID"] for m in batch if m.get("UID")])
         if start + len(batch) - 1 >= (d.get("TotalCount") or 0) or not batch:
             break
-    return members
+    return uids
 
 
-def _parse_dt(s):
-    # LastInBodyTest looks like "20260618094107"
-    if not s or len(s) < 8:
-        return None
+def _export_scans(session, uids):
+    data = {"StartDate": "2019-01-01", "EndDate": "2100-01-01", "DownloadType": "0"}
+    data["LUIDS[]"] = uids
+    for i, (tbl, field, name) in enumerate(EXPORT_COLS):
+        data[f"Columns[{i}][TABLENAME]"] = tbl
+        data[f"Columns[{i}][FieldName]"] = field
+        data[f"Columns[{i}][Name]"] = name
+    r = session.post(BASE + "/SetupExportDataInBody/SetupExportDataWithColumn",
+                     data=data, timeout=120)
+    return r.json().get("Data", "")
+
+
+def _parse_export(xml_text):
+    """Parse the SpreadsheetML export into a list of row dicts, honouring
+    ss:Index (empty cells are skipped in the XML)."""
+    rows = []
+    for row_xml in re.findall(r"<Row[^>]*>(.*?)</Row>", xml_text, re.S):
+        cells = {}
+        idx = 0
+        for cell_xml in re.findall(r"<Cell([^>]*)>(.*?)</Cell>", row_xml, re.S):
+            attrs, inner = cell_xml
+            m = re.search(r'ss:Index="(\d+)"', attrs)
+            if m:
+                idx = int(m.group(1))
+            else:
+                idx += 1
+            dm = re.search(r"<Data[^>]*>(.*?)</Data>", inner, re.S)
+            val = re.sub(r"<[^>]+>", "", dm.group(1)).strip() if dm else ""
+            cells[idx] = val
+        rows.append(cells)
+    if not rows:
+        return []
+    # Return each data row as a positional list matching EXPORT_COLS order.
+    # (The header row is dropped; export headers are numbered like "1. Name".)
+    n = len(EXPORT_COLS)
+    return [[r.get(i + 1, "") for i in range(n)] for r in rows[1:]]
+
+
+def _parse_test_date(s):
+    for fmt in ("%d.%m.%Y %H:%M:%S", "%d.%m.%Y", "%Y-%m-%d %H:%M:%S",
+                "%Y-%m-%d %H:%M", "%Y-%m-%d", "%m/%d/%Y", "%d/%m/%Y"):
+        try:
+            return datetime.datetime.strptime(s.strip(), fmt).date()
+        except (ValueError, AttributeError):
+            pass
+    return None
+
+
+def _num(s):
     try:
-        return datetime.datetime.strptime(s[:8], "%Y%m%d").date()
-    except ValueError:
+        return round(float(s), 1)
+    except (ValueError, TypeError):
         return None
-
-
-def _phone_from_uid(uid):
-    # UID looks like "5895_44_07515339656"
-    parts = (uid or "").split("_")
-    return parts[-1] if parts else ""
-
-
-def _teamup_name_map():
-    """phone -> 'First Last' from TeamUp, to de-mask Lookin'Body names."""
-    key = os.environ.get("TEAMUP_API_KEY", "")
-    if not key:
-        return {}
-    names = {}
-    url = "https://goteamup.com/api/v2/customers"
-    headers = {"Authorization": f"Token {key}"}
-    params = {"page_size": 200}
-    try:
-        while url:
-            r = requests.get(url, headers=headers, params=params, timeout=30)
-            if not r.ok:
-                break
-            j = r.json()
-            for c in j.get("results", []):
-                phone = "".join(ch for ch in (c.get("phone") or c.get("mobile") or "") if ch.isdigit())
-                nm = f"{c.get('first_name','')} {c.get('last_name','')}".strip()
-                if phone and nm:
-                    names[phone[-9:]] = nm  # last 9 digits, ignore leading 0/44
-            url = j.get("next")
-            params = None
-    except Exception as ex:
-        print(f"[inbody] teamup name lookup failed: {ex}")
-    return names
-
-
-def _clean_username(user_id):
-    """
-    Best-effort display name from an InBody username. The admin feed masks real
-    names, so usernames like '094louisefar' / 'katiemcf038' are the only handle.
-    Strip the sequence digits and title-case what's left.
-    """
-    import re
-    s = re.sub(r"\d+", "", user_id or "").strip()
-    return s.title() if s else "Member"
 
 
 def run():
@@ -124,28 +130,55 @@ def run():
 
     session = requests.Session()
     _login(session)
-    members = _fetch_members(session)
+    uids = _fetch_uids(session)
+    if not uids:
+        return {"scans": [], "total": 0, "configured": True}
 
-    phone_names = _teamup_name_map()
+    rows = _parse_export(session and _export_scans(session, uids))
+
+    # Group scans by member. Columns are positional (see EXPORT_COLS):
+    # 0 Name, 1 ID, 2 TestDate, 3 Weight, 4 SMM, 5 PBF, 6 BMI
+    by_member = {}
+    for r in rows:
+        name = (r[0] or "").strip()
+        if name in ("", "-"):
+            name = (r[1] or "").strip()   # fall back to InBody ID
+        d = _parse_test_date(r[2] if len(r) > 2 else "")
+        if not name or not d:
+            continue
+        entry = {
+            "date":   d,
+            "weight": _num(r[3] if len(r) > 3 else None),
+            "smm":    _num(r[4] if len(r) > 4 else None),
+            "pbf":    _num(r[5] if len(r) > 5 else None),
+            "bmi":    _num(r[6] if len(r) > 6 else None),
+        }
+        by_member.setdefault(name, []).append(entry)
+
     today = date.today()
     scans = []
-    for m in members:
-        last = _parse_dt(m.get("LastInBodyTest"))
-        if not last:
-            continue
-        uid   = m.get("UID", "")
-        phone = _phone_from_uid(uid)
-        name  = (m.get("Name") or "").strip()
-        if not name and phone:
-            name = phone_names.get(phone[-9:], "")
-        if not name:
-            name = _clean_username(m.get("UserID"))
+    for name, entries in by_member.items():
+        entries.sort(key=lambda e: e["date"])
+        latest = entries[-1]
+        prev = entries[-2] if len(entries) > 1 else None
+        next_due = latest["date"] + datetime.timedelta(days=SCAN_INTERVAL_DAYS)
 
-        next_due = last + datetime.timedelta(days=SCAN_INTERVAL_DAYS)
+        def change(k):
+            if prev and latest[k] is not None and prev[k] is not None:
+                return round(latest[k] - prev[k], 1)
+            return None
+
         scans.append({
             "name":        name,
-            "last_scan":   last.isoformat(),
-            "days_since":  (today - last).days,
+            "last_scan":   latest["date"].isoformat(),
+            "scan_count":  len(entries),
+            "weight":      latest["weight"],
+            "smm":         latest["smm"],
+            "pbf":         latest["pbf"],
+            "bmi":         latest["bmi"],
+            "weight_change": change("weight"),
+            "smm_change":    change("smm"),
+            "pbf_change":    change("pbf"),
             "next_due":    next_due.isoformat(),
             "days_to_due": (next_due - today).days,
             "overdue":     (next_due - today).days < 0,
