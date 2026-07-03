@@ -79,67 +79,34 @@ def get_event_name(booking):
     return ""
 
 
-def fetch_events_map(date_from, date_to):
-    """Fetch events in range, return {event_id: event_dict}."""
+# IMPORTANT TeamUp API quirks (verified against live API):
+#  - /attendances IGNORES event__starts_at_gte/lte date filters — it returns
+#    ALL records ordered oldest-first, so a max_results cap only ever sees
+#    ancient data. This silently broke at-risk/class stats.
+#  - /attendances DOES honour ?status=attended (server-side filter).
+#  - /events DOES honour starts_at_gte/starts_at_lte correctly.
+# So: fetch ALL attended records once (for lifetime counts), fetch recent
+# events via their working date filter, then intersect on event id.
+
+def fetch_all_attended():
+    """Every attended attendance record, lifetime. ~12.5k records / ~26 pages."""
     try:
-        events = get_all("events", {
-            "starts_at_gte": date_from,
-            "starts_at_lte": date_to,
-        })
-        return {e["id"]: e for e in events}
+        return get_all("attendances", {"status": "attended", "page_size": 500})
     except Exception as ex:
-        print(f"[teamup] events fetch error: {ex}")
-        return {}
-
-
-def fetch_attended_bookings(date_from, date_to, max_results=5000):
-    """
-    Return attended records enriched with event name and start time.
-    Uses /attendances (correct endpoint) with event__starts_at_gte/lte filters.
-    """
-    try:
-        event_map = fetch_events_map(date_from, date_to)
-
-        attendances = get_all("attendances", {
-            "event__starts_at_gte": date_from,
-            "event__starts_at_lte": date_to,
-        }, max_results=max_results)
-
-        enriched = []
-        for a in attendances:
-            if a.get("status") != "attended":
-                continue
-            ev_id = a.get("event")
-            ev    = event_map.get(ev_id, {})
-            enriched.append({
-                "customer":            a.get("customer"),
-                "customer_membership": a.get("customer_membership"),
-                "event": {
-                    "id":        ev_id,
-                    "starts_at": ev.get("starts_at", ""),
-                    "name":      ev.get("name", ""),
-                },
-                "status": "attended",
-            })
-        return enriched
-    except Exception as ex:
-        print(f"[teamup] attendances error: {ex}")
+        print(f"[teamup] fetch_all_attended error: {ex}")
         return []
 
 
-def fetch_attendance_counts(date_from, date_to, max_results=20000):
-    """
-    Fetch raw attendances (status=attended) without event enrichment.
-    Used for class milestone counts where we only need customer IDs.
-    """
+def fetch_events_in_range(date_from, date_to):
+    """Events whose start falls in [date_from, date_to]. Date filter works here."""
     try:
-        attendances = get_all("attendances", {
-            "event__starts_at_gte": date_from,
-            "event__starts_at_lte": date_to,
-        }, max_results=max_results)
-        return [a for a in attendances if a.get("status") == "attended"]
+        return get_all("events", {
+            "starts_at_gte": date_from,
+            "starts_at_lte": date_to,
+            "page_size": 500,
+        })
     except Exception as ex:
-        print(f"[teamup] attendance counts error: {ex}")
+        print(f"[teamup] fetch_events_in_range error: {ex}")
         return []
 
 
@@ -489,19 +456,43 @@ def run():
     avg_member_price = round(sum(recurring_prices) / len(recurring_prices), 2) if recurring_prices else None
     monthly_recurring_revenue = round(sum(recurring_prices), 2) if recurring_prices else None
 
-    # ── Recent attendance (30 days, enriched with event name/time) ─────────
+    # ── Attendance ──────────────────────────────────────────────
+    # Fetch ALL attended records once (lifetime), then use the working events
+    # date-filter to work out which of those are recent. See notes above the
+    # fetch helpers for why we can't date-filter /attendances directly.
     date_today  = today.isoformat()
     date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
-    recent_bookings = fetch_attended_bookings(date_30_ago, date_today)
-
-    # ── At-risk: who attended in last 14 days? ──────────────────
     date_14_ago = (today - datetime.timedelta(days=14)).isoformat()
-    raw_14 = fetch_attendance_counts(date_14_ago, date_today)
-    recently_active_ids = {a["customer"] for a in raw_14}
 
-    # ── All-time attendance counts for class milestones ─────────
-    date_2yr_ago = (today - datetime.timedelta(days=730)).isoformat()
-    all_attended_raw = fetch_attendance_counts(date_2yr_ago, date_today, max_results=20000)
+    all_attended_raw = fetch_all_attended()
+
+    # Recent events (last 30 days) → map of id -> event, plus the 14-day subset
+    recent_events   = fetch_events_in_range(date_30_ago, date_today)
+    event_map_30    = {e["id"]: e for e in recent_events}
+    events_14_ids   = {
+        e["id"] for e in recent_events
+        if (e.get("starts_at") or "")[:10] >= date_14_ago
+    }
+
+    # Who attended in the last 14 days (any event = they're active)
+    recently_active_ids = {
+        a["customer"] for a in all_attended_raw
+        if a.get("event") in events_14_ids and a.get("customer")
+    }
+
+    # Enrich last-30-day attended records with event name/time for class stats
+    recent_bookings = [
+        {
+            "customer": a.get("customer"),
+            "event": {
+                "id":        a.get("event"),
+                "starts_at": event_map_30[a["event"]].get("starts_at", ""),
+                "name":      event_map_30[a["event"]].get("name", ""),
+            },
+        }
+        for a in all_attended_raw
+        if a.get("event") in event_map_30
+    ]
 
     # ── New member milestones (measured from earliest-ever join) ─
     first_seen = build_first_seen_map(active + on_hold + cancelled_all)
