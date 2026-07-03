@@ -1157,9 +1157,63 @@ function render(data) {
 
   // ── Financials ─────────────────────────────────────────────
   const xr = data.xero || {};
+  const kpiData = data.kpi || {};
+  const kpiCats = kpiData.categories || [];
+
+  // Two source cards at the top: Xero (accountant, ~6-weekly) + KPI (monthly)
+  push("finances", `
+    <div class="card col-6" style="margin-top:4px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
+        <div>
+          <div class="card-title">Xero · Accountant</div>
+          <div class="card-headline" style="margin-bottom:0">Profit &amp; Loss</div>
+        </div>
+        <span style="font-size:.68rem;font-weight:600;color:#9ca3af;background:#f3f4f6;padding:4px 9px;border-radius:6px;white-space:nowrap">Updated ~6-weekly · ${xr.period || "—"}</span>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 4px">
+        <div style="flex:1;min-width:100px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+          <div style="font-size:1.5rem;font-weight:800;color:#059669;letter-spacing:-.02em">${fmtGbp(xr.revenue)}</div>
+          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Revenue</div>
+        </div>
+        <div style="flex:1;min-width:100px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+          <div style="font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-.02em">${fmtGbp(xr.gross_profit)}</div>
+          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Gross profit</div>
+        </div>
+        <div style="flex:1;min-width:100px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+          <div style="font-size:1.5rem;font-weight:800;color:${(xr.net_profit||0)>=0?'#059669':'#dc2626'};letter-spacing:-.02em">${fmtGbp(xr.net_profit)}</div>
+          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Net profit</div>
+        </div>
+      </div>
+      <div style="font-size:.7rem;color:#c4b5fd;margin-top:8px">Full breakdown below · from your accountant's Xero</div>
+    </div>
+  `);
+
+  push("finances", `
+    <div class="card col-6" style="margin-top:4px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
+        <div>
+          <div class="card-title">KPI Dashboard · Starling</div>
+          <div class="card-headline" style="margin-bottom:0">Monthly KPIs</div>
+        </div>
+        <span style="font-size:.68rem;font-weight:600;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;padding:4px 9px;border-radius:6px;white-space:nowrap">More current · ${kpiData.last_updated ? "updated " + fmtDateShort(kpiData.last_updated) : "as of " + (kpiData.period || "—")}</span>
+      </div>
+      ${kpiCats.length ? kpiCats.map(cat => `
+        <div class="inner-divider" ${cat === kpiCats[0] ? 'style="margin-top:12px;padding-top:0;border-top:none"' : ""}>${cat.name}</div>
+        ${cat.items.map(it => `
+          <div class="stat-row">
+            <span class="stat-label">${it.name}</span>
+            <span style="display:flex;gap:8px;align-items:baseline">
+              <span class="stat-val">${it.value || "—"}</span>
+              ${it.goal ? `<span style="font-size:.68rem;color:#9ca3af">goal ${it.goal}</span>` : ""}
+            </span>
+          </div>`).join("")}
+      `).join("") : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No KPI data — check the sheet is shared with the service account.</p>`}
+    </div>
+  `);
+
   push("finances", `
     <div class="card col-3">
-      <div class="card-title">Xero</div>
+      <div class="card-title">Xero · Full breakdown</div>
       <div class="card-headline">Profit & Loss — ${xr.period || "Last Month"}</div>
       <div class="big-kpi">
         <div class="number green">${fmtGbp(xr.revenue)}</div>

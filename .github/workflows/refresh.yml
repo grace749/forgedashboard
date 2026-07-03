@@ -9,6 +9,9 @@ on:
     # avoids the top-of-hour queue where GitHub most often delays/drops runs.
     - cron: "12 5 * * *"
     - cron: "12 6 * * *"
+    # Afternoon refresh ~3pm Belfast (14:12 UTC in summer / 15:12 in winter)
+    - cron: "12 14 * * *"
+    - cron: "12 15 * * *"
   workflow_dispatch: # allow manual trigger from GitHub UI
 
 permissions:
