@@ -23,6 +23,8 @@ EXCLUDE_FROM_CHURN = {
     "dummy membership", "body composition scan",
 }
 EXCLUDE_CUSTOMER_NAMES = {"grace smith", "joan smith"}
+# Staff / coaches — never flag as at-risk members
+AT_RISK_EXCLUDE_NAMES = {"joanne hall", "eilis kearns", "michelle mcknight"}
 EXCLUDE_FROM_BREAKDOWN = {"dummy membership", "body composition scan"}
 
 INBODY_INTERVAL_DAYS = 42   # 6 weeks between scans
@@ -397,7 +399,7 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
         if cid in recently_active_ids:
             continue
         name = name_map.get(cid, "")
-        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
+        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES or name.lower() in AT_RISK_EXCLUDE_NAMES:
             continue
         membership = cust_membership.get(cid, "")
         if membership.lower() in EXCLUDE_FROM_CHURN or membership.lower() in EXCLUDE_FROM_BREAKDOWN:
