@@ -1,26 +1,16 @@
 {
-  "generated_at": "2026-07-03T09:59:38.512237+00:00",
+  "generated_at": "2026-07-03T14:21:07.163215+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
     "date": "2026-07-03",
     "event_count": 0,
-    "urgent_count": 2,
+    "urgent_count": 1,
     "enquiry_count": 0,
     "calendar": {
       "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-03T00%3A00%3A00%2B00%3A00&timeMax=2026-07-03T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
     },
     "urgent": [
-      {
-        "from": "Alexandra from TeamUp",
-        "from_raw": "Alexandra from TeamUp <support@goteamup.com>",
-        "subject": "Re: \"How do I use an M2M token to call the REST API to get customer/mem...",
-        "snippet": "Hi Grace, I just wanted to follow up to see if you were able to update your integration to use the /api/v2 endpoints. If you&#39;re still running into any issues, could you let me know which endpoint",
-        "id": "19f275c67f689fdc",
-        "thread_id": "19f1dff910b90d31",
-        "msg_count": 5,
-        "draft_id": "r7474494518566977902"
-      },
       {
         "from": "S Moore",
         "from_raw": "S Moore <smooremotors@btconnect.com>",
@@ -54,9 +44,9 @@
     "monthly": [
       {
         "month": "2026-06",
-        "completed": 17,
+        "completed": 15,
         "converted": 7,
-        "conv_rate": 41
+        "conv_rate": 47
       },
       {
         "month": "2026-05",
@@ -93,7 +83,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 5,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
       },
       {
         "name": "Claire Walker",
@@ -122,7 +114,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 5,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Medicated for depression and anxiety. Has been debilitating in the past but under control for most part now."
       },
       {
         "name": "Victoria McCullough",
@@ -151,36 +145,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 5,
-        "expected_checkins": 6
-      },
-      {
-        "name": "Anne Buchanan",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-26",
-        "end": "2026-07-07",
-        "goal": "Lose weight, increase core strength to support healthy body in aging process.",
-        "notes": "No",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          true,
-          false,
-          false,
-          false
-        ],
-        "week_on": 6,
-        "days_left": 4,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "Had a fall - taking time off 29.6.26",
-        "missing_checkins": 3,
-        "completed_checkins": 3,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Not regularly, I try not to let stress get the better of me as it presents itself as a migraine."
       },
       {
         "name": "Lesley Drake",
@@ -209,7 +176,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 5,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "no"
       },
       {
         "name": "Sharon Smyth",
@@ -238,7 +207,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 4,
-        "expected_checkins": 5
+        "expected_checkins": 5,
+        "paused": false,
+        "pause_reason": "perimenopause, overactice thyroid"
       },
       {
         "name": "Nuala O'neill",
@@ -267,7 +238,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 4,
-        "expected_checkins": 5
+        "expected_checkins": 5,
+        "paused": false,
+        "pause_reason": "achilies rupture, high blood pressure"
       },
       {
         "name": "Mandy Mair",
@@ -290,42 +263,15 @@
         "days_left": 18,
         "is_active": true,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED",
         "missing_checkins": 2,
         "completed_checkins": 2,
-        "expected_checkins": 4
-      },
-      {
-        "name": "Laura McGarry",
-        "cohort": "JUNE",
-        "joined": "2026-06-11",
-        "end": "2026-07-23",
-        "goal": "No Lifestyle form ",
-        "notes": "",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "week_on": 4,
-        "days_left": 20,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "car accident ",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
-        "expected_checkins": 4
+        "expected_checkins": 4,
+        "paused": false,
+        "pause_reason": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED"
       },
       {
         "name": "Julie Lennox",
@@ -354,7 +300,9 @@
         "follow_up": "",
         "missing_checkins": 2,
         "completed_checkins": 2,
-        "expected_checkins": 4
+        "expected_checkins": 4,
+        "paused": false,
+        "pause_reason": "n/a"
       },
       {
         "name": "Zara Drain",
@@ -383,7 +331,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 2,
-        "expected_checkins": 3
+        "expected_checkins": 3,
+        "paused": false,
+        "pause_reason": "hysterectomy, partial thyroid removal, high chloestrol, kidney stones. taking anti depressants since 2007 child took asmtha attak and needed resuctating. looks after elderly aunt 4 nights a week. husband at home all day due to accident in 1997"
       },
       {
         "name": "Sheila Lundy",
@@ -412,7 +362,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 2,
-        "expected_checkins": 3
+        "expected_checkins": 3,
+        "paused": false,
+        "pause_reason": ""
       },
       {
         "name": "Leah Calvin",
@@ -441,7 +393,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 1,
-        "expected_checkins": 2
+        "expected_checkins": 2,
+        "paused": false,
+        "pause_reason": "n/a"
       },
       {
         "name": "Louise Farley",
@@ -470,7 +424,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 1,
-        "expected_checkins": 2
+        "expected_checkins": 2,
+        "paused": false,
+        "pause_reason": "sometimes struggles with eating"
       },
       {
         "name": "Rosie McFetridge",
@@ -499,7 +455,9 @@
         "follow_up": "",
         "missing_checkins": 2,
         "completed_checkins": 0,
-        "expected_checkins": 2
+        "expected_checkins": 2,
+        "paused": false,
+        "pause_reason": "graves disease, c section"
       },
       {
         "name": "Lisa Rankin",
@@ -528,7 +486,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 0,
-        "expected_checkins": 1
+        "expected_checkins": 1,
+        "paused": false,
+        "pause_reason": ""
       },
       {
         "name": "Amy McWilliams",
@@ -557,7 +517,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 0,
-        "expected_checkins": 1
+        "expected_checkins": 1,
+        "paused": false,
+        "pause_reason": ""
       },
       {
         "name": "laura fullerton",
@@ -586,39 +548,12 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 0,
-        "expected_checkins": 1
+        "expected_checkins": 1,
+        "paused": false,
+        "pause_reason": ""
       }
     ],
     "recent": [
-      {
-        "name": "Heather McIlrath",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-19",
-        "end": "2026-06-30",
-        "goal": "To feel like me again. To gain confidence. To be fit for life and farming!",
-        "notes": "I have no body confidence though due to fertility issues",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        "week_on": 6,
-        "days_left": -3,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "Bad back - taking time off 29.6.26",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6
-      },
       {
         "name": "Lesley Laverty",
         "cohort": "APR-MAY",
@@ -646,7 +581,9 @@
         "follow_up": "",
         "missing_checkins": 1,
         "completed_checkins": 5,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Katie Reynolds",
@@ -675,7 +612,9 @@
         "follow_up": "Taking a break due to health issues",
         "missing_checkins": 6,
         "completed_checkins": 0,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Taking a break due to health issues"
       },
       {
         "name": "Laura Douglas",
@@ -704,7 +643,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "I was diagnosed with severe depression 3 years ago. I finally spoke up about being sexually abused by 2 male family members and got help. March 2025 I was put in touch with the crisis team at Ross Thompson Unit as I was suicidal. Doing much better th"
       },
       {
         "name": "Regina Bloomfield",
@@ -733,7 +674,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 0,
-        "expected_checkins": 0
+        "expected_checkins": 0,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Siobhan Honeyford",
@@ -762,36 +705,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 0,
-        "expected_checkins": 0
-      },
-      {
-        "name": "Rose Cosgrove",
-        "cohort": "APR-MAY",
-        "joined": "2026-07-05",
-        "end": "2026-06-18",
-        "goal": "Lose weight, build strength and get fit",
-        "notes": "No",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "week_on": null,
-        "days_left": -15,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
-        "missing_checkins": 0,
-        "completed_checkins": 0,
-        "expected_checkins": 0
+        "expected_checkins": 0,
+        "paused": false,
+        "pause_reason": "Find change difficult"
       },
       {
         "name": "Gillian Connolly",
@@ -820,7 +736,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 5,
-        "expected_checkins": 5
+        "expected_checkins": 5,
+        "paused": false,
+        "pause_reason": "Can feel stressed and anxious and then it makes my OCD worse"
       },
       {
         "name": "Liz Bloomer",
@@ -849,7 +767,9 @@
         "follow_up": "Converted early so she can book the rest of june. She has 2 weeks left on her trial",
         "missing_checkins": 2,
         "completed_checkins": 4,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Converted early so she can book the rest of june. She has 2 weeks left on her trial"
       },
       {
         "name": "Katie McFetridge",
@@ -872,13 +792,15 @@
         "days_left": -17,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": true,
         "welcome_pack": false,
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No, but I can get overwhelmed some days with all things going on. I have 3 children and a farmer husband so my days can be busy and sometimes mentally exhausting"
       },
       {
         "name": "Laura Doherty",
@@ -895,7 +817,7 @@
           true,
           true,
           true,
-          false
+          true
         ],
         "week_on": 6,
         "days_left": -18,
@@ -905,9 +827,11 @@
         "conv_chat_done": true,
         "welcome_pack": true,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6
+        "missing_checkins": 0,
+        "completed_checkins": 6,
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Mild Anxiety - usually low mood but made worse by monthly cycle"
       },
       {
         "name": "Victoria Thompson",
@@ -936,7 +860,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Kathy Higgins",
@@ -965,7 +891,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Joanne Honeyford",
@@ -994,7 +922,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Carrie Taylor",
@@ -1023,7 +953,9 @@
         "follow_up": "Managing a fibromyalgia flareup since late May and hasnt attended many classes or has cancelled late",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Managing a fibromyalgia flareup since late May and hasnt attended many classes or has cancelled late"
       },
       {
         "name": "Connie Gerrow",
@@ -1052,7 +984,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "I can suffer with stress trying to balance work and home. Work is quite stressful at the moment. It presents itself in comfort eating and a tendency to go inwards."
       },
       {
         "name": "Megan McClure",
@@ -1069,7 +1003,7 @@
           true,
           true,
           true,
-          false
+          true
         ],
         "week_on": 6,
         "days_left": -31,
@@ -1079,9 +1013,11 @@
         "conv_chat_done": true,
         "welcome_pack": true,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6
+        "missing_checkins": 0,
+        "completed_checkins": 6,
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": ""
       },
       {
         "name": "Emma Leckey",
@@ -1110,7 +1046,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": ""
       },
       {
         "name": "Jacqueline Blair",
@@ -1139,7 +1077,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "I am too aware of my extended family history which includes cancer, brain tumour, MND, & heart problems & while an elderly population and extended families are obviously more likely to to become unwell I at times panic that I will become unwell & not"
       },
       {
         "name": "Sabia Akbar",
@@ -1168,7 +1108,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Yes. I become increasingly withdrawn Usually on verge of tears Like a deer in headlights Frozen or avoidant"
       },
       {
         "name": "Sorcha Gilmore",
@@ -1197,7 +1139,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Not diagnosed / formally but just as previously mentioned I can stress myself out with work."
       },
       {
         "name": "Margaret Reynolds",
@@ -1226,7 +1170,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Gets anxious"
       },
       {
         "name": "Catherine Finney",
@@ -1255,7 +1201,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Just natural anxiety about starting new things"
       },
       {
         "name": "Rebekah Newnes",
@@ -1284,7 +1232,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 0,
-        "expected_checkins": 0
+        "expected_checkins": 0,
+        "paused": false,
+        "pause_reason": "Suffer from anxiety and stress. I get heart palpitations mainly because of it"
       },
       {
         "name": "Lesley Moore",
@@ -1313,7 +1263,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 0,
-        "expected_checkins": 0
+        "expected_checkins": 0,
+        "paused": false,
+        "pause_reason": "Yes, work related- interrupts sleep, night sweats, short tempered at times"
       },
       {
         "name": "Sarah Calvin",
@@ -1342,7 +1294,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 0,
-        "expected_checkins": 0
+        "expected_checkins": 0,
+        "paused": false,
+        "pause_reason": "Stress with work and kids. I tend to reach for chocolate."
       },
       {
         "name": "Donna Thompson",
@@ -1371,7 +1325,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 0,
-        "expected_checkins": 0
+        "expected_checkins": 0,
+        "paused": false,
+        "pause_reason": "I would say I probably have ADHD or ASD. Not diagnosed but my children have ASD and ADHD. Yes anxiety, I just close away, hide, I don't want to see or talk to anyone. I won't even go to the shop"
       },
       {
         "name": "Jayne Scott",
@@ -1400,7 +1356,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Eleanor Anderson",
@@ -1429,7 +1387,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Had postnatal depression after children. Currently on anti-depressants complex grief following sudden death of my husband in April 2021"
       },
       {
         "name": "Emma Gamble",
@@ -1458,7 +1418,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Elizabeth Stevenson",
@@ -1487,7 +1449,9 @@
         "follow_up": "Not converted",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Not converted"
       },
       {
         "name": "Amanda Hanna",
@@ -1516,7 +1480,9 @@
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "No"
       },
       {
         "name": "Julie Hill",
@@ -1539,13 +1505,141 @@
         "days_left": -49,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
-        "expected_checkins": 6
+        "expected_checkins": 6,
+        "paused": false,
+        "pause_reason": "Stress and anxiety leads me to eat more unhealthy snacks. Gastric sleeve (2021) ba (2023), low iron anemia (2024), fractured coxxyx (2000)"
+      }
+    ],
+    "paused": [
+      {
+        "name": "Anne Buchanan",
+        "cohort": "APR-MAY",
+        "joined": "2026-05-26",
+        "end": "2026-07-07",
+        "goal": "Lose weight, increase core strength to support healthy body in aging process.",
+        "notes": "No",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "week_on": 6,
+        "days_left": 4,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "Had a fall - taking time off 29.6.26",
+        "missing_checkins": 3,
+        "completed_checkins": 3,
+        "expected_checkins": 6,
+        "paused": true,
+        "pause_reason": "Had a fall - taking time off 29.6.26"
+      },
+      {
+        "name": "Heather McIlrath",
+        "cohort": "APR-MAY",
+        "joined": "2026-05-19",
+        "end": "2026-06-30",
+        "goal": "To feel like me again. To gain confidence. To be fit for life and farming!",
+        "notes": "I have no body confidence though due to fertility issues",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -3,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "Bad back - taking time off 29.6.26",
+        "missing_checkins": 1,
+        "completed_checkins": 5,
+        "expected_checkins": 6,
+        "paused": true,
+        "pause_reason": "Bad back - taking time off 29.6.26"
+      },
+      {
+        "name": "Laura McGarry",
+        "cohort": "JUNE",
+        "joined": "2026-06-11",
+        "end": "2026-07-23",
+        "goal": "No Lifestyle form ",
+        "notes": "",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 4,
+        "days_left": 20,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "car accident ",
+        "missing_checkins": 2,
+        "completed_checkins": 2,
+        "expected_checkins": 4,
+        "paused": true,
+        "pause_reason": "car accident"
+      },
+      {
+        "name": "Rose Cosgrove",
+        "cohort": "APR-MAY",
+        "joined": "2026-07-05",
+        "end": "2026-06-18",
+        "goal": "Lose weight, build strength and get fit",
+        "notes": "No",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "week_on": null,
+        "days_left": -15,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
+        "missing_checkins": 0,
+        "completed_checkins": 0,
+        "expected_checkins": 0,
+        "paused": true,
+        "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       }
     ],
     "alerts": [
@@ -1578,16 +1672,6 @@
         "member": "Victoria McCullough",
         "type": "conversion",
         "detail": "3d left \u2014 conversion chat not scheduled!"
-      },
-      {
-        "member": "Anne Buchanan",
-        "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 6)"
-      },
-      {
-        "member": "Anne Buchanan",
-        "type": "conversion",
-        "detail": "4d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Lesley Drake",
@@ -1628,11 +1712,6 @@
         "member": "Mandy Mair",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
-      },
-      {
-        "member": "Laura McGarry",
-        "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
       },
       {
         "member": "Julie Lennox",
@@ -1696,12 +1775,18 @@
       }
     ],
     "stats": {
-      "active_count": 18,
-      "conv_rate": 52,
+      "active_count": 16,
+      "paused_count": 4,
+      "conv_rate": 55,
       "converted": 17,
-      "not_converted": 7,
-      "total_complete": 33
+      "not_converted": 9,
+      "total_complete": 31
     }
+  },
+  "inbody": {
+    "scans": [],
+    "total": 0,
+    "configured": false
   },
   "asana": {
     "tasks_today": [
@@ -1794,16 +1879,6 @@
         "due_on": null,
         "overdue": null,
         "notes": "Review the Fit Pro landing page to confirm everything that's included in the offer is actually listed on the page (nothing missing).\n\nAlso do a competitor comparison against what Empire are doing on their equivalent landing page \u2014 check their inclusions, positioning, and offer structure to see where we're ahead/behind."
-      },
-      {
-        "gid": "1216199756715278",
-        "name": "",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216199756715278",
-        "project": null,
-        "due_on": null,
-        "overdue": null,
-        "notes": ""
       },
       {
         "gid": "1216230212200932",
@@ -2501,7 +2576,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 11,
+    "new_this_month": 12,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -2551,8 +2626,50 @@
     "churn_rate": 1.4,
     "avg_member_price": 134.62,
     "monthly_recurring_revenue": 12924.0,
-    "cancelled_last_month": 0,
-    "cancelled_members": [],
+    "avg_tenure_months": 8.9,
+    "cancelled_last_month": 10,
+    "cancelled_members": [
+      {
+        "id": 10057245,
+        "name": "Alison Moffitt-Robinson"
+      },
+      {
+        "id": 12280596,
+        "name": "Cindy McIntyre"
+      },
+      {
+        "id": 12164396,
+        "name": "Courtney Elliott"
+      },
+      {
+        "id": 10301313,
+        "name": "Hilary McDowell"
+      },
+      {
+        "id": 12947742,
+        "name": "Jayne Scott"
+      },
+      {
+        "id": 4772999,
+        "name": "Kirsty Dunn"
+      },
+      {
+        "id": 13330500,
+        "name": "Mandy Mair"
+      },
+      {
+        "id": 10803556,
+        "name": "Marbeth Barkley"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor"
+      },
+      {
+        "id": 13014573,
+        "name": "Sorcha Gilmore"
+      }
+    ],
     "breakdown": [
       {
         "name": "Empower",
@@ -3087,6 +3204,36 @@
         ]
       },
       {
+        "name": "Well75",
+        "count": 6,
+        "members": [
+          {
+            "id": 8935595,
+            "name": "Grace McAlister"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 12947742,
+            "name": "Jayne Scott"
+          },
+          {
+            "id": 9388799,
+            "name": "Joanne Hamill"
+          },
+          {
+            "id": 11611451,
+            "name": "Kerrie MacKerracher"
+          },
+          {
+            "id": 7580861,
+            "name": "Tina Taggart"
+          }
+        ]
+      },
+      {
         "name": "Evolve",
         "count": 5,
         "members": [
@@ -3109,32 +3256,6 @@
           {
             "id": 13014573,
             "name": "Sorcha Gilmore"
-          }
-        ]
-      },
-      {
-        "name": "Well75",
-        "count": 5,
-        "members": [
-          {
-            "id": 8935595,
-            "name": "Grace McAlister"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 12947742,
-            "name": "Jayne Scott"
-          },
-          {
-            "id": 9388799,
-            "name": "Joanne Hamill"
-          },
-          {
-            "id": 11611451,
-            "name": "Kerrie MacKerracher"
           }
         ]
       },
@@ -3344,113 +3465,211 @@
       }
     ],
     "class_stats": {
-      "top_days": [
-        {
-          "day": "Tuesday",
-          "count": 175
-        },
-        {
-          "day": "Monday",
-          "count": 167
-        },
-        {
-          "day": "Wednesday",
-          "count": 165
-        },
-        {
-          "day": "Friday",
-          "count": 153
-        },
-        {
-          "day": "Thursday",
-          "count": 113
-        },
-        {
-          "day": "Saturday",
-          "count": 57
-        }
-      ],
-      "top_times": [
-        {
-          "time": "6pm",
-          "count": 181
-        },
-        {
-          "time": "7pm",
-          "count": 156
-        },
-        {
-          "time": "10am",
-          "count": 153
-        },
-        {
-          "time": "7am",
-          "count": 152
-        },
-        {
-          "time": "8pm",
-          "count": 106
-        },
-        {
-          "time": "5pm",
-          "count": 21
-        },
-        {
-          "time": "9am",
-          "count": 20
-        },
-        {
-          "time": "8am",
-          "count": 20
-        }
-      ],
-      "top_classes": [
-        {
-          "name": "Build: Upper",
-          "count": 174
-        },
-        {
-          "name": "Build: Lower",
-          "count": 166
-        },
-        {
-          "name": "Build: Full Body",
-          "count": 132
-        },
-        {
-          "name": "Plate",
-          "count": 83
-        },
-        {
-          "name": "Elevate",
-          "count": 71
-        },
-        {
-          "name": "Mobility",
-          "count": 70
-        }
-      ],
-      "total_attended": 830
+      "last_90_days": {
+        "top_days": [
+          {
+            "day": "Wednesday",
+            "count": 553
+          },
+          {
+            "day": "Tuesday",
+            "count": 469
+          },
+          {
+            "day": "Thursday",
+            "count": 401
+          },
+          {
+            "day": "Friday",
+            "count": 393
+          },
+          {
+            "day": "Monday",
+            "count": 361
+          }
+        ],
+        "bottom_days": [
+          {
+            "day": "Saturday",
+            "count": 189
+          },
+          {
+            "day": "Monday",
+            "count": 361
+          },
+          {
+            "day": "Friday",
+            "count": 393
+          },
+          {
+            "day": "Thursday",
+            "count": 401
+          },
+          {
+            "day": "Tuesday",
+            "count": 469
+          }
+        ],
+        "top_classes": [
+          {
+            "name": "Build: Full Body",
+            "count": 485
+          },
+          {
+            "name": "Build: Upper",
+            "count": 469
+          },
+          {
+            "name": "Build: Lower",
+            "count": 361
+          },
+          {
+            "name": "Elevate",
+            "count": 262
+          },
+          {
+            "name": "Plate",
+            "count": 226
+          },
+          {
+            "name": "Mobility",
+            "count": 203
+          }
+        ],
+        "bottom_classes": [
+          {
+            "name": "Engine",
+            "count": 52
+          },
+          {
+            "name": "Capacity",
+            "count": 62
+          },
+          {
+            "name": "Circuits",
+            "count": 189
+          },
+          {
+            "name": "Mobility",
+            "count": 203
+          },
+          {
+            "name": "Plate",
+            "count": 226
+          },
+          {
+            "name": "Elevate",
+            "count": 262
+          }
+        ],
+        "total_attended": 2367
+      },
+      "last_30_days": {
+        "top_days": [
+          {
+            "day": "Wednesday",
+            "count": 198
+          },
+          {
+            "day": "Tuesday",
+            "count": 174
+          },
+          {
+            "day": "Monday",
+            "count": 166
+          },
+          {
+            "day": "Thursday",
+            "count": 154
+          },
+          {
+            "day": "Friday",
+            "count": 153
+          }
+        ],
+        "bottom_days": [
+          {
+            "day": "Saturday",
+            "count": 55
+          },
+          {
+            "day": "Friday",
+            "count": 153
+          },
+          {
+            "day": "Thursday",
+            "count": 154
+          },
+          {
+            "day": "Monday",
+            "count": 166
+          },
+          {
+            "day": "Tuesday",
+            "count": 174
+          }
+        ],
+        "top_classes": [
+          {
+            "name": "Build: Full Body",
+            "count": 174
+          },
+          {
+            "name": "Build: Upper",
+            "count": 174
+          },
+          {
+            "name": "Build: Lower",
+            "count": 166
+          },
+          {
+            "name": "Plate",
+            "count": 83
+          },
+          {
+            "name": "Elevate",
+            "count": 80
+          },
+          {
+            "name": "Circuits",
+            "count": 70
+          }
+        ],
+        "bottom_classes": [
+          {
+            "name": "Barbelle",
+            "count": 12
+          },
+          {
+            "name": "Strongevity",
+            "count": 13
+          },
+          {
+            "name": "Engine",
+            "count": 24
+          },
+          {
+            "name": "Capacity",
+            "count": 30
+          },
+          {
+            "name": "Mobility",
+            "count": 70
+          },
+          {
+            "name": "Circuits",
+            "count": 70
+          }
+        ],
+        "total_attended": 900
+      },
+      "suggestion": "\u201cEngine\u201d is your least-attended class over 3 months (52). Try moving it to a busier time or promoting it \u2014 or swap it for a more popular format. Saturday is your quietest day. Consider trimming a class or running a popular format to lift attendance. \u201cBuild: Full Body\u201d is your most popular class (485) \u2014 adding another slot could capture unmet demand."
     },
     "at_risk": [
       {
         "id": 10057245,
         "name": "Alison Moffitt-Robinson",
         "membership": "4 Class Pass",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 13448952,
-        "name": "Amy McNeill",
-        "membership": "6 Week Jumpstart",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 13442966,
-        "name": "Amy McWilliams",
-        "membership": "6 Week Jumpstart",
         "days_absent": null,
         "last_seen": null
       },
@@ -3469,30 +3688,9 @@
         "last_seen": null
       },
       {
-        "id": 13247470,
-        "name": "Anne Buchanan",
-        "membership": "6 Week Jumpstart",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
         "id": 13067175,
         "name": "Carrie Taylor",
         "membership": "6 Week Jumpstart",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 12162382,
-        "name": "Catherine Gavin",
-        "membership": "8 PT Sessions",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 11178634,
-        "name": "Christine Bartlett",
-        "membership": "1:2 PT 4 Sessions",
         "days_absent": null,
         "last_seen": null
       },
@@ -3511,23 +3709,9 @@
         "last_seen": null
       },
       {
-        "id": 12103572,
-        "name": "Eilis Kearns",
-        "membership": "Online Client Monthly Pass",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
         "id": 13216673,
         "name": "Heather McIlrath",
         "membership": "6 Week Jumpstart",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 11929298,
-        "name": "Irene Robinson",
-        "membership": "4 PT Sessions",
         "days_absent": null,
         "last_seen": null
       },
@@ -3546,51 +3730,9 @@
         "last_seen": null
       },
       {
-        "id": 13194865,
-        "name": "Katie Reynolds",
-        "membership": "6 Week Jumpstart",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
         "id": 13149261,
         "name": "Khalida Ali",
         "membership": "4 PT Sessions",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 9049277,
-        "name": "Kiera Lawthers",
-        "membership": "4 PT Sessions",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 13414562,
-        "name": "Laura Fullerton",
-        "membership": "Empower",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 13332194,
-        "name": "Laura McGarry",
-        "membership": "6 Week Jumpstart",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 11212636,
-        "name": "Lesley Greehy",
-        "membership": "4 PT Sessions",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 13435406,
-        "name": "Lisa Rankin",
-        "membership": "6 Week Jumpstart",
         "days_absent": null,
         "last_seen": null
       },
@@ -3602,105 +3744,188 @@
         "last_seen": null
       },
       {
-        "id": 13216141,
-        "name": "Lorna Skelton",
-        "membership": "Strongevity",
+        "id": 3236503,
+        "name": "Michelle McKnight",
+        "membership": "8 Session Block",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
+        "id": 9166511,
+        "name": "Nicole Williams",
+        "membership": "Empower",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
+        "id": 6086046,
+        "name": "Rose McGill",
+        "membership": "4 PT Sessions",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
+        "id": 7775785,
+        "name": "Sarah Sandford",
+        "membership": "Empower",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
+        "id": 10244264,
+        "name": "Sharon Kirk",
+        "membership": "Empower",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
+        "id": 10623000,
+        "name": "lynne brown",
+        "membership": "Elevate",
         "days_absent": null,
         "last_seen": null
       }
     ],
-    "new_milestones": [
-      {
-        "name": "Victoria McCullough",
-        "type": "first_month",
-        "days_in": 34,
-        "start_date": "2026-05-30"
-      },
-      {
-        "name": "Anne Buchanan",
-        "type": "first_month",
-        "days_in": 30,
-        "start_date": "2026-06-03"
-      },
-      {
-        "name": "Lesley Drake",
-        "type": "first_month",
-        "days_in": 34,
-        "start_date": "2026-05-30"
-      },
-      {
-        "name": "Connie Gerrow",
-        "type": "first_month",
-        "days_in": 34,
-        "start_date": "2026-05-30"
-      },
-      {
-        "name": "Liz Bloomer",
-        "type": "first_month",
-        "days_in": 32,
-        "start_date": "2026-06-01"
-      },
-      {
-        "name": "Leah Calvin",
-        "type": "first_week",
-        "days_in": 6,
-        "start_date": "2026-06-27"
-      },
-      {
-        "name": "Louise Farley",
-        "type": "first_week",
-        "days_in": 6,
-        "start_date": "2026-06-27"
-      },
-      {
-        "name": "Rosie Mc Fetridge",
-        "type": "first_week",
-        "days_in": 4,
-        "start_date": "2026-06-29"
-      },
-      {
-        "name": "Siobhan Honeyford",
-        "type": "first_week",
-        "days_in": 7,
-        "start_date": "2026-06-26"
-      },
-      {
-        "name": "Joanne Honeyford",
-        "type": "first_week",
-        "days_in": 7,
-        "start_date": "2026-06-26"
-      },
-      {
-        "name": "Victoria Thompson",
-        "type": "first_week",
-        "days_in": 6,
-        "start_date": "2026-06-27"
-      },
-      {
-        "name": "Laura Fullerton",
-        "type": "first_week",
-        "days_in": 4,
-        "start_date": "2026-06-29"
-      },
-      {
-        "name": "Colleen Morrison",
-        "type": "first_week",
-        "days_in": 3,
-        "start_date": "2026-06-30"
-      },
-      {
-        "name": "Laura Douglas",
-        "type": "first_week",
-        "days_in": 0,
-        "start_date": "2026-07-03"
-      },
-      {
-        "name": "Lyn Chestnutt",
-        "type": "first_week",
-        "days_in": 1,
-        "start_date": "2026-07-02"
-      }
-    ],
+    "celebrations": {
+      "first_week": [
+        {
+          "name": "Rosie Mc Fetridge",
+          "days_in": 4,
+          "start_date": "2026-06-29"
+        },
+        {
+          "name": "Leah Calvin",
+          "days_in": 6,
+          "start_date": "2026-06-27"
+        },
+        {
+          "name": "Louise Farley",
+          "days_in": 6,
+          "start_date": "2026-06-27"
+        }
+      ],
+      "new_members": [
+        {
+          "name": "Laura Douglas",
+          "days_in": 0,
+          "start_date": "2026-07-03"
+        },
+        {
+          "name": "Mollie McGregor",
+          "days_in": 2,
+          "start_date": "2026-07-01"
+        },
+        {
+          "name": "Jayne Scott",
+          "days_in": 4,
+          "start_date": "2026-06-29"
+        },
+        {
+          "name": "Sorcha Gilmore",
+          "days_in": 4,
+          "start_date": "2026-06-29"
+        },
+        {
+          "name": "Laura Fullerton",
+          "days_in": 4,
+          "start_date": "2026-06-29"
+        },
+        {
+          "name": "Victoria Thompson",
+          "days_in": 6,
+          "start_date": "2026-06-27"
+        },
+        {
+          "name": "Siobhan Honeyford",
+          "days_in": 7,
+          "start_date": "2026-06-26"
+        },
+        {
+          "name": "Joanne Honeyford",
+          "days_in": 7,
+          "start_date": "2026-06-26"
+        }
+      ],
+      "tenure": [
+        {
+          "name": "Melissa McQuitty",
+          "label": "18 months",
+          "months": 18,
+          "days_until": 3,
+          "start_date": "2025-01-04"
+        },
+        {
+          "name": "Christine Bartlett",
+          "label": "1 year",
+          "months": 12,
+          "days_until": -3,
+          "start_date": "2025-06-30"
+        },
+        {
+          "name": "Christina Faulkner",
+          "label": "1 year",
+          "months": 12,
+          "days_until": 0,
+          "start_date": "2025-07-03"
+        },
+        {
+          "name": "Lesley Greehy",
+          "label": "1 year",
+          "months": 12,
+          "days_until": 0,
+          "start_date": "2025-07-03"
+        },
+        {
+          "name": "Janeen Gilfillan",
+          "label": "9 months",
+          "months": 9,
+          "days_until": -4,
+          "start_date": "2025-09-28"
+        },
+        {
+          "name": "Claire Leeke",
+          "label": "9 months",
+          "months": 9,
+          "days_until": 0,
+          "start_date": "2025-10-02"
+        },
+        {
+          "name": "Lorraine Dunlop",
+          "label": "6 months",
+          "months": 6,
+          "days_until": 0,
+          "start_date": "2026-01-01"
+        },
+        {
+          "name": "Kay Sweeney",
+          "label": "6 months",
+          "months": 6,
+          "days_until": 4,
+          "start_date": "2026-01-05"
+        },
+        {
+          "name": "Jackie Elliott",
+          "label": "3 months",
+          "months": 3,
+          "days_until": -2,
+          "start_date": "2026-04-01"
+        },
+        {
+          "name": "Heather McWilliams",
+          "label": "3 months",
+          "months": 3,
+          "days_until": -1,
+          "start_date": "2026-04-02"
+        }
+      ]
+    },
     "class_milestones": [
       {
         "name": "Linda Davidson",
@@ -3785,119 +4010,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cINTERNAL: Create clear service menu (for coaches and for members) \u2014 what we offe\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cEXTERNAL: Refine our funnel landing pages to make it very clear what we offer, l\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cImplement internal member feedback system (simple monthly form or post-class che\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cWrite SOP's for membership members, personal training members, fuel forward, wel\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cEstablish a consistent social media content calendar with 3\u20134 posts/week planned\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cSchedule regular videography sessions every 8 weeks with Jordan\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cRevisit systemize automations for 6 week trial enquiries\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cFinalise and document weekly action checklist for each role (JoJo, Eilis, Sarah)\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cRun team vision session \u2014 share the SSO, 90-day plan, and each person's lane cle\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cAudit workload distribution \u2014 identify who is over-stretched and rebalance over \u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cDecrease costs by 10%\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cUpdate Monthly finance KPI's\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cStart Financial Forecasting\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cMap profitability of each service (classes vs PT vs add-ons) \u2014 build a simple pe\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cAudit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-t\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cPick 3 repetitive tasks and build an AI automation\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": ""
+        "advice": "\u2022 Break it down: list the 3-4 concrete sub-tasks needed to deliver \u201cStart Cyber security for forge website\u201d.\n\u2022 Assign an owner and a deadline to each sub-task so nothing stalls.\n\u2022 Define what 'done' looks like \u2014 a measurable outcome you can point to.\n\u2022 Do the smallest first step this week to build momentum.\n\u2022 Review progress at your weekly check-in and adjust."
       }
     ]
   },
