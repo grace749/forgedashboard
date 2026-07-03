@@ -610,16 +610,15 @@ function render(data) {
 
   // ── Member Directory ──────────────────────────────────────────
   const memberRows = tm.member_list || [];
-  // Merge goal (from Jumpstart onboarding) + last check-in by name where available
+  // Goal fallback from Jumpstart onboarding (by name)
   const jsAll = [...(data.jumpstart?.active||[]), ...(data.jumpstart?.recent||[]), ...(data.jumpstart?.paused||[])];
   const goalByName = {};
   jsAll.forEach(m => { if (m.name && m.goal) goalByName[m.name.toLowerCase()] = m.goal; });
-  // Last check-in from "Client Reflection" emails, matched by name
-  const checkinByName = (data.brief?.checkins?.by_name) || {};
-  const lastCheckin = nm => {
-    nm = (nm||"").toLowerCase();
-    return checkinByName[nm] ? checkinByName[nm].date : null;
-  };
+  // Match check-ins + lifestyle-form goals to members by EMAIL
+  const checkinByEmail = (data.brief?.checkins?.by_email) || {};
+  const goalByEmail    = (data.brief?.goals?.by_email) || {};
+  const lastCheckin = em => checkinByEmail[(em||"").toLowerCase()] || null;
+  const goalFor = (em, nm) => goalByEmail[(em||"").toLowerCase()] || goalByName[(nm||"").toLowerCase()] || "";
   push("members", `
     <div class="card col-12" style="margin-top:4px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
@@ -646,8 +645,8 @@ function render(data) {
             </thead>
             <tbody id="memberTableBody">
               ${memberRows.map(m => {
-                const goal = goalByName[(m.name||"").toLowerCase()] || "";
-                const ci = lastCheckin(m.name);
+                const goal = goalFor(m.email, m.name);
+                const ci = lastCheckin(m.email);
                 return `<tr class="member-row" data-name="${(m.name||'').toLowerCase()}">
                   <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(m.join_date)}</td>
@@ -661,7 +660,7 @@ function render(data) {
             </tbody>
           </table>
         </div>
-        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">Class count via TeamUp · Last check-in from “Client Reflection” emails · Goal from Jumpstart onboarding where available</div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">Full members only (trials excluded) · Check-in from “Client Reflection” emails · Goal from “New Member Lifestyle Form” — matched by email</div>
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No member data yet.</p>`}
     </div>
   `);
@@ -1366,6 +1365,31 @@ function render(data) {
   const sopStats = sop.stats || {};
   const sopSections = sop.sections || [];
   const typeColour = { Facilities:"#0891b2", Coaches:"#7c3aed", Marketing:"#db2777", Clients:"#059669", General:"#64748b" };
+
+  // Fractional COO AI agent (top of the tab)
+  if (sop.coo_evaluation) {
+    const cooHtml = sop.coo_evaluation.split("\n").map(l => l.trim()).filter(Boolean).map(l => {
+      const bullet = /^[•\-\*]/.test(l);
+      const bold = /^\*\*(.+)\*\*$/.test(l);
+      if (bold) return `<div style="font-weight:700;color:#5b21b6;margin:4px 0 6px">${l.replace(/\*\*/g,'')}</div>`;
+      const text = l.replace(/^[•\-\*]\s*/, "").replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+      return bullet
+        ? `<li style="padding:5px 0;line-height:1.5;color:#1f2937;display:flex;gap:8px;list-style:none"><span style="color:#7c3aed;flex-shrink:0">▸</span><span>${text}</span></li>`
+        : `<div style="padding:3px 0;color:#374151;line-height:1.5">${text}</div>`;
+    }).join("");
+    push("sop", `
+      <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="font-size:1.4rem">🧭</div>
+          <div>
+            <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">Fractional COO ✦</div>
+            <div class="card-headline" style="margin-bottom:0">Process & SOP Strategy</div>
+          </div>
+        </div>
+        <ul style="margin:0;padding:0">${cooHtml}</ul>
+      </div>
+    `);
+  }
 
   // Overview card
   push("sop", `

@@ -79,6 +79,18 @@ def get_customer_names(customer_ids, existing=None):
     return names
 
 
+def get_all_customer_emails():
+    """Map customer_id -> lowercased email, from the customers list endpoint."""
+    emails = {}
+    try:
+        for c in get_all("customers", {"page_size": 200}):
+            if c.get("email"):
+                emails[c["id"]] = c["email"].strip().lower()
+    except Exception as ex:
+        print(f"[teamup] email map error: {ex}")
+    return emails
+
+
 def members_list(ids, name_map):
     return sorted(
         [{"id": cid, "name": name_map.get(cid, f"Customer {cid}")} for cid in ids],
@@ -562,11 +574,15 @@ def build_celebrations(active, name_map, first_seen, first_recurring):
 
 # ── Full member directory ───────────────────────────────────────────────────
 
-def build_member_list(active, name_map, first_seen, class_counts, momentum_calls):
+# Coaches with test memberships — never show in the member directory
+MEMBER_LIST_EXCLUDE = {"grace smith", "eilis kearns", "sarah lacey", "joanne hall"}
+
+
+def build_member_list(active, name_map, first_seen, class_counts, momentum_calls, email_map):
     """
-    One row per active member with: join date, current membership, lifetime
-    class count, and last momentum call. (Last check-in via GHL and goal via the
-    onboarding lifestyle form are merged in the frontend from their own sources.)
+    One row per active FULL member (trials excluded) with: join date, current
+    membership, lifetime class count, last momentum call, and email (for
+    matching check-ins / goals from Gmail). Coaches' test accounts excluded.
     """
     # Latest momentum call date per member name
     last_momentum = {}
@@ -594,13 +610,17 @@ def build_member_list(active, name_map, first_seen, class_counts, momentum_calls
             continue
         seen.add(cid)
         name = name_map.get(cid, "")
-        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
+        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES or name.lower() in MEMBER_LIST_EXCLUDE:
             continue
         membership = _primary(cid)
-        if membership.strip().lower() in EXCLUDE_FROM_BREAKDOWN:
+        ml = membership.strip().lower()
+        if ml in EXCLUDE_FROM_BREAKDOWN:
+            continue
+        if ml in TRIAL_NAMES:       # don't list trials in the member directory
             continue
         rows.append({
             "name":          name,
+            "email":         email_map.get(cid, ""),
             "join_date":     first_seen.get(cid),
             "membership":    membership,
             "class_count":   class_counts.get(cid, 0),
@@ -904,7 +924,8 @@ def run():
     momentum_calls = fetch_momentum_calls(name_map)
 
     # ── Full member directory ───────────────────────────────────
-    member_list = build_member_list(active, name_map, first_seen, class_counts, momentum_calls)
+    email_map = get_all_customer_emails()
+    member_list = build_member_list(active, name_map, first_seen, class_counts, momentum_calls, email_map)
 
     # ── InBody scans ────────────────────────────────────────────
     all_memberships_for_scan = active + cancelled_all

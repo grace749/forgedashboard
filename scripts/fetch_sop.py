@@ -7,7 +7,7 @@ A row is a real SOP task when it has a task name (col A) and a Type (col B).
 It counts as BUILT when the SOP column (col C) is filled in.
 Section headers (Daily/Weekly/Monthly/Quarterly/Yearly/Coach HQ's) group them.
 """
-import os, json
+import os, json, urllib.request, urllib.error
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -37,6 +37,69 @@ def _section_name(cell_a, cell_b, cell_c):
         if key in al:
             return a
     return None
+
+
+COO_SYSTEM = (
+    "You are the Fractional COO for The Forge, a women's-only fitness gym in Belfast. "
+    "Your job is operational excellence: help Grace organise the business into clean, "
+    "repeatable processes and decide which SOPs to build next. You look at what SOPs "
+    "exist, what's missing, and where the business likely has process gaps (onboarding, "
+    "retention, coaching standards, finance, marketing, staffing). Give sharp, prioritised, "
+    "practical guidance — what to build next and how to structure it. 4-6 short bullet "
+    "points, no fluff, no preamble."
+)
+
+
+def _coo_fallback(stats, not_built, sections):
+    parts = ["**Fractional COO — process priorities**"]
+    if not_built:
+        parts.append("• Finish the unbuilt SOPs first: " +
+                     ", ".join(it["task"] for it in not_built) + ".")
+    weakest = min((t for t in stats.get("by_type", [])),
+                  key=lambda t: (t["built"] / t["total"]) if t["total"] else 1, default=None)
+    if weakest and weakest["built"] < weakest["total"]:
+        parts.append(f"• {weakest['type']} has the lowest SOP coverage "
+                     f"({weakest['built']}/{weakest['total']}) — tighten that area next.")
+    parts.append("• Group SOPs by the member journey (enquiry → trial → onboarding → "
+                 "retention → win-back) and check each stage has one clear owner.")
+    parts.append("• Add a quarterly review cadence so SOPs stay current as the team grows.")
+    return "\n".join(parts)
+
+
+def _coo_evaluation(stats, not_built, sections):
+    """Fractional COO review of SOP coverage — AI with a rule-based fallback."""
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if key:
+        try:
+            by_area = ", ".join(f"{t['type']} {t['built']}/{t['total']}"
+                                for t in stats.get("by_type", []))
+            not_built_names = ", ".join(it["task"] for it in not_built) or "none"
+            section_names = ", ".join(s["name"] for s in sections)
+            summary = (
+                f"SOPs built: {stats['built']} of {stats['total']} ({stats['pct_built']}%). "
+                f"By area: {by_area}. Not built yet: {not_built_names}. "
+                f"Sections: {section_names}."
+            )
+            payload = json.dumps({
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 400,
+                "system": COO_SYSTEM,
+                "messages": [{"role": "user", "content":
+                    f"Here's our current SOP status:\n{summary}\n\n"
+                    "As our Fractional COO, what processes/SOPs should we organise or build "
+                    "next, and how should we structure them?"}],
+            }).encode()
+            req = urllib.request.Request(
+                "https://api.anthropic.com/v1/messages", data=payload,
+                headers={"x-api-key": key, "anthropic-version": "2023-06-01",
+                         "content-type": "application/json"})
+            with urllib.request.urlopen(req, timeout=40) as resp:
+                text = json.loads(resp.read())["content"][0]["text"].strip()
+                if text:
+                    return text
+        except Exception as ex:
+            print(f"[sop] COO AI error: {ex}")
+    return _coo_fallback(stats, not_built, sections)
 
 
 def run():
@@ -92,16 +155,20 @@ def run():
         d["total"] += 1
         d["built"] += 1 if it["built"] else 0
 
+    stats = {
+        "total":     len(all_items),
+        "built":     len(built),
+        "not_built": len(all_items) - len(built),
+        "pct_built": round(len(built) / len(all_items) * 100) if all_items else 0,
+        "by_type":   [{"type": k, **v} for k, v in sorted(by_type.items())],
+    }
+    not_built_list = [it for it in all_items if not it["built"]]
+
     return {
         "sections": sections,
-        "stats": {
-            "total":     len(all_items),
-            "built":     len(built),
-            "not_built": len(all_items) - len(built),
-            "pct_built": round(len(built) / len(all_items) * 100) if all_items else 0,
-            "by_type":   [{"type": k, **v} for k, v in sorted(by_type.items())],
-        },
-        "not_built_list": [it for it in all_items if not it["built"]],
+        "stats": stats,
+        "not_built_list": not_built_list,
+        "coo_evaluation": _coo_evaluation(stats, not_built_list, sections),
     }
 
 

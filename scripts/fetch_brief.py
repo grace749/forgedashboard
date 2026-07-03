@@ -417,51 +417,87 @@ def fetch_gmail_important():
         return {"error": str(ex)}
 
 
-# ── Member check-ins (from "Client Reflection" emails) ──────────────────────
+# ── Member forms from email (check-ins + lifestyle goals) ───────────────────
 
-def _extract_checkin_name(subject, sender, snippet):
-    """Best-effort member name from a Client Reflection email."""
-    # 1) subject like "Client Reflection - Jane Smith" / "Client Reflection: Jane"
-    m = re.search(r"client reflection\s*[-–:]\s*(.+)$", subject, re.I)
-    if m:
-        return m.group(1).strip()[:60]
-    # 2) sender display name if it looks like a person (has a space, not a service)
-    if sender and " " in sender and not re.search(r"reflection|form|typeform|noreply|forge", sender, re.I):
-        return sender.strip()[:60]
-    # 3) a "Name:" field in the snippet/body
-    m = re.search(r"name[:\s]+([A-Z][a-z]+\s+[A-Z][a-z]+)", snippet or "")
-    if m:
-        return m.group(1).strip()[:60]
-    return ""
+_EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
+# our own / automated addresses that aren't the member
+_OWN_EMAIL = re.compile(r"theforge\.pt|forgefemalefitness|noreply|no-reply|"
+                        r"typeform|jotform|google|mailer|notification", re.I)
+
+
+def _emails_in(text):
+    return {e.lower() for e in _EMAIL_RE.findall(text or "") if not _OWN_EMAIL.search(e)}
+
+
+def _email_date(hdrs):
+    try:
+        return email_lib.utils.parsedate_to_datetime(hdrs.get("Date", "")).date().isoformat()
+    except Exception:
+        return None
+
+
+def _scan_form_emails(svc, subject_query, max_results=500):
+    """Return [(member_email, iso_date, body), …] for emails matching a subject."""
+    res = svc.users().messages().list(
+        userId="me", q=f'subject:"{subject_query}" newer_than:400d',
+        maxResults=max_results).execute()
+    out = []
+    for msg in res.get("messages", []):
+        m = svc.users().messages().get(
+            userId="me", id=msg["id"], format="full").execute()
+        hdrs = {h["name"]: h["value"] for h in m.get("payload", {}).get("headers", [])}
+        iso  = _email_date(hdrs)
+        body = _get_email_body(svc, msg["id"])
+        # member email can be the sender, the reply-to, or in the body
+        candidates = _emails_in(hdrs.get("From", "")) | _emails_in(hdrs.get("Reply-To", "")) | _emails_in(body)
+        for e in candidates:
+            out.append((e, iso, body))
+    return out
 
 
 def fetch_checkins():
-    """Map member name -> last check-in date, from 'Client Reflection' emails."""
+    """Map member email -> last check-in date, from 'Client Reflection' emails."""
     svc = _gmail_service()
     if not svc:
         return {"error": "Gmail not configured"}
     try:
-        q = 'subject:"Client Reflection" newer_than:270d'
-        res = svc.users().messages().list(userId="me", q=q, maxResults=300).execute()
-        msgs = res.get("messages", [])
-        by_name = {}
-        for msg in msgs:
-            hdrs, snippet = _get_headers(svc, msg["id"])
-            subject  = hdrs.get("Subject", "")
-            sender   = _sender_name(hdrs.get("From", ""))
-            date_raw = hdrs.get("Date", "")
-            try:
-                dt = email_lib.utils.parsedate_to_datetime(date_raw)
-                iso = dt.date().isoformat()
-            except Exception:
-                iso = None
-            name = _extract_checkin_name(subject, sender, snippet)
-            if not name:
+        by_email = {}
+        for email_addr, iso, _body in _scan_form_emails(svc, "Client Reflection"):
+            if not iso:
                 continue
-            key = name.lower()
-            if key not in by_name or (iso and iso > (by_name[key]["date"] or "")):
-                by_name[key] = {"name": name, "date": iso}
-        return {"by_name": by_name, "count": len(by_name)}
+            if email_addr not in by_email or iso > by_email[email_addr]:
+                by_email[email_addr] = iso
+        return {"by_email": by_email, "count": len(by_email)}
+    except Exception as ex:
+        return {"error": str(ex)}
+
+
+def _extract_goal(body):
+    """Pull the member's goal out of a lifestyle-form email body."""
+    if not body:
+        return ""
+    # look for a goal question label and grab the answer after it
+    m = re.search(r"(?:goal|hoping to achieve|what.{0,30}achieve|why.{0,20}join)"
+                  r"[^\n:?]*[:?]\s*(.+)", body, re.I)
+    if m:
+        return re.sub(r"\s+", " ", m.group(1)).strip()[:200]
+    return ""
+
+
+def fetch_lifestyle_goals():
+    """Map member email -> goal, from 'New Member Lifestyle Form' emails."""
+    svc = _gmail_service()
+    if not svc:
+        return {"error": "Gmail not configured"}
+    try:
+        by_email = {}   # email -> {goal, date}
+        for email_addr, iso, body in _scan_form_emails(svc, "New Member Lifestyle Form"):
+            goal = _extract_goal(body)
+            if not goal:
+                continue
+            if email_addr not in by_email or (iso or "") > (by_email[email_addr]["date"] or ""):
+                by_email[email_addr] = {"goal": goal, "date": iso}
+        return {"by_email": {k: v["goal"] for k, v in by_email.items()}, "count": len(by_email)}
     except Exception as ex:
         return {"error": str(ex)}
 
@@ -476,6 +512,7 @@ def run():
     important = fetch_gmail_important()
     enquiries = fetch_gmail_enquiries()
     checkins  = fetch_checkins()
+    goals     = fetch_lifestyle_goals()
 
     event_count   = len(calendar) if isinstance(calendar, list) else 0
     urgent_count  = len(urgent)   if isinstance(urgent, list)   else 0
@@ -491,6 +528,7 @@ def run():
         "important":     important,
         "enquiries":     enquiries,
         "checkins":      checkins,
+        "goals":         goals,
     }
 
 
