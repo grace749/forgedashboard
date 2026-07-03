@@ -109,6 +109,11 @@
     .brief-chevron { transition: transform .2s; flex-shrink: 0; }
     .brief-chevron.rotated { transform: rotate(180deg); }
     .brief-collapsed { display: none; }
+    /* Home: brief and tasks cards match height, each scrolls internally */
+    .brief-card { height: 600px; }
+    .brief-card .brief-body { flex: 1; overflow-y: auto; }
+    .tasks-card { height: 600px; }
+    .tasks-card .task-list { flex: 1; overflow-y: auto; max-height: none !important; }
     .brief-body { border-top: 1px solid #f3f4f6; }
     .brief-body::-webkit-scrollbar { width: 3px; }
     .brief-body::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 2px; }
@@ -660,74 +665,96 @@ function render(data) {
     </div>
   `);
 
-  // ── New Member Milestones ─────────────────────────────────────
-  const newMs = tm.new_milestones || [];
-  const clsMs = tm.class_milestones || [];
+  // ── Member Celebrations ───────────────────────────────────────
+  const celeb    = tm.celebrations || {};
+  const firstWk  = celeb.first_week  || [];
+  const newFull  = celeb.new_members || [];
+  const tenure   = celeb.tenure      || [];
+  const clsMs    = tm.class_milestones || [];
+  const celebRow = (name, sub, pill, pillClass) => `
+    <div class="stat-row">
+      <div style="min-width:0">
+        <div style="font-size:.85rem;font-weight:600;color:#111">${name}</div>
+        <div style="font-size:.72rem;color:#aaa">${sub}</div>
+      </div>
+      <span class="pill ${pillClass}" style="cursor:default;white-space:nowrap">${pill}</span>
+    </div>`;
+  const anyCeleb = firstWk.length || newFull.length || tenure.length || clsMs.length;
   push("members", `
-    <div class="card col-3">
+    <div class="card col-4">
       <div class="card-title">Milestones</div>
       <div class="card-headline">Member Celebrations</div>
-      ${newMs.length ? `
-        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">First week & month</div>
-        ${newMs.map(m => `
-          <div class="stat-row">
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-              <div style="font-size:.72rem;color:#aaa">Started ${fmtDateShort(m.start_date)}</div>
-            </div>
-            <span class="pill green" style="cursor:default;white-space:nowrap">
-              ${m.type === "first_week" ? "🎉 1st week!" : "🏆 1st month!"}
-            </span>
-          </div>`).join("")}
-      ` : `<div class="brief-empty" style="padding:6px 0">No first-week or first-month milestones today</div>`}
+
+      ${newFull.length ? `
+        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">Just joined as a full member</div>
+        ${newFull.map(m => celebRow(m.name, `Started ${fmtDateShort(m.start_date)}`, "⭐ New member!", "green")).join("")}
+      ` : ""}
+
+      ${firstWk.length ? `
+        <div class="inner-divider" ${!newFull.length ? 'style="margin-top:0;padding-top:0;border-top:none"' : ""}>First week (Jumpstart)</div>
+        ${firstWk.map(m => celebRow(m.name, `Day ${m.days_in} of week 1`, "🎉 1st week!", "green")).join("")}
+      ` : ""}
+
+      ${tenure.length ? `
+        <div class="inner-divider" ${!newFull.length && !firstWk.length ? 'style="margin-top:0;padding-top:0;border-top:none"' : ""}>Anniversaries</div>
+        ${tenure.map(m => {
+          const when = m.days_until > 0 ? `in ${m.days_until}d` : m.days_until === 0 ? "today" : `${-m.days_until}d ago`;
+          return celebRow(m.name, `Joined ${fmtDateShort(m.start_date)}`, `🏆 ${m.label} (${when})`, "purple");
+        }).join("")}
+      ` : ""}
+
       ${clsMs.length ? `
-        <div class="inner-divider">Class count milestones</div>
-        ${clsMs.map(m => `
-          <div class="stat-row">
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-              <div style="font-size:.72rem;color:#aaa">${m.total_classes} classes done</div>
-            </div>
-            <span class="pill purple" style="cursor:default;white-space:nowrap">${m.classes_away} to ${m.next_milestone}</span>
-          </div>`).join("")}
-      ` : `<div class="brief-empty" style="padding:6px 0;margin-top:8px">No one near 50 / 250 / 500 right now</div>`}
+        <div class="inner-divider" ${!anyCeleb || (!newFull.length && !firstWk.length && !tenure.length) ? 'style="margin-top:0;padding-top:0;border-top:none"' : ""}>Approaching a class milestone</div>
+        ${clsMs.map(m => celebRow(m.name, `${m.total_classes} classes done`, `${m.classes_away} to ${m.next_milestone}`, "purple")).join("")}
+      ` : ""}
+
+      ${!anyCeleb ? `<div class="brief-empty" style="padding:6px 0">No celebrations today</div>` : ""}
     </div>
   `);
 
-  // ── Most Popular Classes ──────────────────────────────────────
-  const cs = tm.class_stats || {};
-  const maxDayCount  = Math.max(...(cs.top_days  || [{count:1}]).map(x=>x.count), 1);
-  const maxTimeCount = Math.max(...(cs.top_times || [{count:1}]).map(x=>x.count), 1);
-  push("members", `
-    <div class="card col-4">
-      <div class="card-title">Attendance (last 30 days)</div>
-      <div class="card-headline">Most Popular Classes</div>
-      ${cs.top_classes && cs.top_classes.length ? `
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px">
-          ${cs.top_classes.map(c => `<span class="pill purple" style="cursor:default">${c.name} <strong>${c.count}</strong></span>`).join("")}
-        </div>` : ""}
-      ${cs.top_days && cs.top_days.length ? `
-        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">By day</div>
-        ${cs.top_days.map(d => `
-          <div style="display:flex;align-items:center;gap:8px;padding:4px 0">
-            <div style="min-width:80px;font-size:.8rem;color:#374151;font-weight:500">${d.day}</div>
-            <div style="flex:1;height:8px;background:#f3f4f6;border-radius:4px;overflow:hidden">
-              <div style="height:100%;background:#7c3aed;border-radius:4px;width:${Math.round(d.count/maxDayCount*100)}%"></div>
-            </div>
-            <div style="font-size:.78rem;font-weight:700;color:#7c3aed;min-width:28px;text-align:right">${d.count}</div>
-          </div>`).join("")}
-      ` : ""}
-      ${cs.top_times && cs.top_times.length ? `
-        <div class="inner-divider">By time slot</div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap">
-          ${cs.top_times.map(t => {
-            const pct = Math.round(t.count / maxTimeCount * 100);
-            const bg  = pct >= 80 ? "#7c3aed" : pct >= 50 ? "#a78bfa" : "#ddd6fe";
-            const col = pct >= 80 ? "#fff" : "#5b21b6";
-            return `<div style="background:${bg};color:${col};padding:4px 10px;border-radius:20px;font-size:.75rem;font-weight:700">${t.time} <span style="opacity:.75">${t.count}</span></div>`;
-          }).join("")}
+  // ── Attendance / Class Popularity ─────────────────────────────
+  const cs   = tm.class_stats || {};
+  const cs90 = cs.last_90_days || {};
+  const cs30 = cs.last_30_days || {};
+
+  const chipRow = (items, key, colour) => items && items.length
+    ? `<div style="display:flex;gap:6px;flex-wrap:wrap">
+        ${items.map(x => `<span class="pill ${colour}" style="cursor:default">${x[key]} <strong>${x.count}</strong></span>`).join("")}
+      </div>`
+    : `<div class="brief-empty" style="padding:4px 0">No data</div>`;
+
+  const rangeBlock = (data, label) => `
+    <div style="flex:1;min-width:230px">
+      <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#9ca3af;margin-bottom:8px">${label}</div>
+      <div style="font-size:.68rem;font-weight:700;color:#059669;margin-bottom:4px">MOST popular classes</div>
+      ${chipRow(data.top_classes, "name", "green")}
+      <div style="font-size:.68rem;font-weight:700;color:#ef4444;margin:10px 0 4px">LEAST popular classes</div>
+      ${chipRow(data.bottom_classes, "name", "red")}
+      <div style="display:flex;gap:14px;margin-top:10px">
+        <div style="flex:1">
+          <div style="font-size:.68rem;font-weight:700;color:#059669;margin-bottom:4px">Busiest days</div>
+          ${(data.top_days||[]).slice(0,3).map(d => `<div style="font-size:.8rem;color:#374151;padding:1px 0">${d.day} <span style="color:#aaa">${d.count}</span></div>`).join("") || '<div class="brief-empty">–</div>'}
         </div>
-      ` : ""}
+        <div style="flex:1">
+          <div style="font-size:.68rem;font-weight:700;color:#ef4444;margin-bottom:4px">Quietest days</div>
+          ${(data.bottom_days||[]).slice(0,3).map(d => `<div style="font-size:.8rem;color:#374151;padding:1px 0">${d.day} <span style="color:#aaa">${d.count}</span></div>`).join("") || '<div class="brief-empty">–</div>'}
+        </div>
+      </div>
+    </div>`;
+
+  push("members", `
+    <div class="card col-8">
+      <div class="card-title">Attendance</div>
+      <div class="card-headline">Class Popularity</div>
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        ${rangeBlock(cs90, "Last 3 months")}
+        ${rangeBlock(cs30, "Last 30 days")}
+      </div>
+      ${cs.suggestion ? `
+        <div style="margin-top:16px;background:#f5f3ff;border:1px solid #ede9fe;border-radius:10px;padding:12px 14px">
+          <div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#7c3aed;margin-bottom:6px">AI Suggestion ✦</div>
+          <div style="font-size:.85rem;color:#374151;line-height:1.55">${cs.suggestion}</div>
+        </div>` : ""}
     </div>
   `);
 
@@ -1099,10 +1126,10 @@ function render(data) {
     : `<li style="padding:12px 0;color:#ccc;font-size:.88rem">No incomplete tasks 🎉</li>`;
 
   push("home", `
-    <div class="card col-4">
+    <div class="card col-4 tasks-card">
       <div class="card-title">Asana</div>
       <div class="card-headline">Your Tasks (${tasks.length})</div>
-      <ul class="task-list" style="max-height:560px;overflow-y:auto">${taskHtml}</ul>
+      <ul class="task-list">${taskHtml}</ul>
     </div>
   `);
 
@@ -1193,9 +1220,11 @@ function render(data) {
 
   const jsNotConverted = curMonth.completed - curMonth.converted;
 
-  // LTV = real avg membership price (from TeamUp billed prices) × avg months retained
+  // LTV = real avg membership price (from TeamUp billed prices) × real avg tenure.
+  // Tenure = average months members actually stayed, measured from those who
+  // have fully left (join date → cancellation). No churn-rate extrapolation.
   const avgMonthlyRev  = tm.avg_member_price ?? ((xr.revenue && totalMembers) ? xr.revenue / totalMembers : null);
-  const avgMonths      = (tm.churn_rate && tm.churn_rate > 0) ? Math.round(100 / tm.churn_rate) : null;
+  const avgMonths      = tm.avg_tenure_months ?? null;
   const ltv            = avgMonthlyRev && avgMonths ? Math.round(avgMonthlyRev * avgMonths) : null;
 
   function funnelBar(pct) {
@@ -1303,15 +1332,11 @@ function render(data) {
         <span class="stat-val">${fmtGbp(Math.round(tm.monthly_recurring_revenue))}</span>
       </div>` : ""}
       <div class="stat-row">
-        <span class="stat-label">Monthly churn rate</span>
-        <span class="stat-val">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</span>
-      </div>
-      <div class="stat-row">
-        <span class="stat-label">Avg months retained</span>
-        <span class="stat-val">${avgMonths ? avgMonths + " months" : "—"}</span>
+        <span class="stat-label">Avg months stayed ${avgMonths ? "(members who've left)" : ""}</span>
+        <span class="stat-val">${avgMonths ? avgMonths + " months" : "— (no cancellations yet)"}</span>
       </div>
       <div class="stat-row pl-highlight" style="margin-top:6px;border-top:2px solid #f0f0f5;padding-top:8px">
-        <span class="stat-label">LTV (rev/member × avg months)</span>
+        <span class="stat-label">LTV (price × months stayed)</span>
         <span class="stat-val green">${ltv ? fmtGbp(ltv) : "—"}</span>
       </div>
 

@@ -1,5 +1,5 @@
 """Fetch membership snapshot + member intelligence from TeamUp (goteamup.com)."""
-import os, json, time, requests, datetime
+import os, json, time, requests, datetime, urllib.request
 from datetime import date
 from collections import Counter
 
@@ -133,39 +133,143 @@ def fetch_all_attended():
 
 # ── Class statistics ────────────────────────────────────────────────────────
 
+# Non-class events excluded from popularity stats (they're 1:1 / admin sessions)
+NON_CLASS_EVENTS = {"no sweat intro", "momentum call", "body composition scan",
+                    "consultation", "induction"}
+DAY_ORDER = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+
+
 def build_class_stats(bookings):
-    """Most popular class days, times, and class names from recent bookings."""
+    """
+    Class popularity from a set of attended bookings.
+    Returns most AND least popular days and classes.
+    """
     days_counter  = Counter()
-    times_counter = Counter()
     class_counter = Counter()
 
     for b in bookings:
         start = get_event_start(b)
-        name  = get_event_name(b)
+        name  = (get_event_name(b) or "").strip()
+        if name.lower() in NON_CLASS_EVENTS:
+            continue
         if start:
             try:
-                dt  = datetime.datetime.fromisoformat(start.replace("Z", "+00:00"))
-                day = dt.strftime("%A")
-                hour_label = dt.strftime("%-I%p").lower()
-                days_counter[day]        += 1
-                times_counter[hour_label] += 1
+                dt = datetime.datetime.fromisoformat(start.replace("Z", "+00:00"))
+                days_counter[dt.strftime("%A")] += 1
             except Exception:
                 pass
         if name:
             class_counter[name] += 1
 
-    DAY_ORDER = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-    top_days = sorted(
+    days_sorted = sorted(
         [{"day": d, "count": c} for d, c in days_counter.items()],
         key=lambda x: (-x["count"], DAY_ORDER.index(x["day"]) if x["day"] in DAY_ORDER else 99)
     )
+    classes_sorted = [{"name": n, "count": c} for n, c in class_counter.most_common()]
+
+    # For "least popular" ignore days/classes that barely run (one-offs, special
+    # events, a day with almost no classes) so the bottom list is meaningful.
+    max_day   = days_sorted[0]["count"]    if days_sorted    else 0
+    max_class = classes_sorted[0]["count"] if classes_sorted else 0
+    day_floor   = max(3, max_day   * 0.10)
+    class_floor = max(5, max_class * 0.05)
+    operating_days   = [d for d in days_sorted    if d["count"] >= day_floor]
+    regular_classes  = [c for c in classes_sorted if c["count"] >= class_floor]
 
     return {
-        "top_days":       top_days[:7],
-        "top_times":      [{"time": t, "count": c} for t, c in times_counter.most_common(8)],
-        "top_classes":    [{"name": n, "count": c} for n, c in class_counter.most_common(6)],
-        "total_attended": len(bookings),
+        "top_days":       days_sorted[:5],
+        "bottom_days":    list(reversed(operating_days))[:5] if len(operating_days) > 1 else [],
+        "top_classes":    classes_sorted[:6],
+        "bottom_classes": list(reversed(regular_classes))[:6] if len(regular_classes) > 1 else [],
+        "total_attended": sum(class_counter.values()),
     }
+
+
+def _rule_suggestion(stats):
+    """Data-driven fallback suggestion when the AI call is unavailable."""
+    d90 = stats.get("last_90_days", {})
+    parts = []
+    if d90.get("bottom_classes"):
+        bc = d90["bottom_classes"][0]
+        parts.append(f"“{bc['name']}” is your least-attended class over 3 months ({bc['count']}). "
+                     f"Try moving it to a busier time or promoting it — or swap it for a more popular format.")
+    if d90.get("bottom_days"):
+        bd = d90["bottom_days"][0]
+        parts.append(f"{bd['day']} is your quietest day. Consider trimming a class or running a popular format to lift attendance.")
+    if d90.get("top_classes"):
+        tc = d90["top_classes"][0]
+        parts.append(f"“{tc['name']}” is your most popular class ({tc['count']}) — adding another slot could capture unmet demand.")
+    return " ".join(parts)
+
+
+def _class_suggestion(stats):
+    """AI suggestion on class scheduling; falls back to a rule-based tip."""
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if key:
+        try:
+            d90 = stats["last_90_days"]
+            d30 = stats["last_30_days"]
+            def pairs(items, k): return [(x[k], x["count"]) for x in items]
+            summary = (
+                f"Last 90 days — busiest days: {pairs(d90['top_days'][:3],'day')}; "
+                f"quietest days: {pairs(d90['bottom_days'][:3],'day')}; "
+                f"most popular classes: {pairs(d90['top_classes'][:5],'name')}; "
+                f"least popular classes: {pairs(d90['bottom_classes'][:5],'name')}. "
+                f"Last 30 days — most popular classes: {pairs(d30['top_classes'][:5],'name')}; "
+                f"least popular: {pairs(d30['bottom_classes'][:5],'name')}."
+            )
+            payload = json.dumps({
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 300,
+                "system": ("You are an operations advisor for The Forge, a women's fitness gym in "
+                           "Belfast. From class attendance data, give 2-3 short, specific, practical "
+                           "suggestions to improve attendance and optimise the timetable. Plain "
+                           "sentences, no preamble, no bullet characters."),
+                "messages": [{"role": "user", "content": f"Class attendance data:\n{summary}\n\nWhat should Grace do?"}],
+            }).encode()
+            req = urllib.request.Request(
+                "https://api.anthropic.com/v1/messages",
+                data=payload,
+                headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+            )
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                text = json.loads(resp.read())["content"][0]["text"].strip()
+                if text:
+                    return text
+        except Exception as ex:
+            print(f"[teamup] class suggestion AI error: {ex}")
+    return _rule_suggestion(stats)
+
+
+def build_avg_tenure(cancelled, active_ids, first_seen):
+    """
+    Average months a member stayed, measured only for members who FULLY left
+    (had a recurring membership, now no active membership). Tenure runs from
+    their earliest-ever join to when their recurring membership ended, so an
+    upgrade/switch isn't mistaken for churn.
+    """
+    spans = []
+    seen  = set()
+    for m in cancelled:
+        cid = m.get("customer")
+        if cid in active_ids or cid in seen:
+            continue
+        if m.get("name", "").strip().lower() not in RECURRING_NAMES:
+            continue
+        end   = m.get("end_date") or m.get("expiration_date")
+        start = first_seen.get(cid) or m.get("start_date")
+        if not end or not start:
+            continue
+        try:
+            days = (date.fromisoformat(end) - date.fromisoformat(start)).days
+            if days > 0:
+                spans.append(days / 30.44)
+                seen.add(cid)
+        except Exception:
+            pass
+    if not spans:
+        return None
+    return round(sum(spans) / len(spans), 1)
 
 
 # ── At-risk members ─────────────────────────────────────────────────────────
@@ -220,43 +324,111 @@ def build_first_seen_map(all_memberships):
     return first_seen
 
 
-def build_new_milestones(active, name_map, first_seen):
+# Tenure anniversaries to celebrate (months) — 2+ years handled as yearly after
+TENURE_MONTHS = [3, 6, 9, 12, 18, 24]
+TENURE_WINDOW_DAYS = 4   # celebrate within ±4 days of the anniversary
+
+
+def _tenure_label(months):
+    if months < 12:
+        return f"{months} months"
+    if months == 12:
+        return "1 year"
+    if months == 18:
+        return "18 months"
+    if months % 12 == 0:
+        return f"{months // 12} years"
+    return f"{months} months"
+
+
+def build_celebrations(active, name_map, first_seen):
     """
-    First week / first month are measured from the member's EARLIEST-ever
-    membership start (their real join date), not the current membership record.
+    Member celebrations:
+      - first_week:  jumpstart members in their first 7 days
+      - new_member:  just started a full membership (Elevate/Evolve/Empower) in
+                     the last 14 days
+      - tenure:      near an anniversary (3/6/9/12/18 months, 2 years, then yearly)
     """
     today = date.today()
-    milestones = []
-    seen = set()
+    first_week  = []
+    new_members = []
+    tenure      = []
+    seen_new    = set()
 
+    # Current membership name per customer (for jumpstart / full-member checks)
+    cust_current = {}
     for m in active:
         cid = m["customer"]
-        if cid in seen:
-            continue
+        cust_current.setdefault(cid, set()).add(m.get("name", "").strip().lower())
+
+    for cid, names in cust_current.items():
         name = name_map.get(cid, "")
         if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue
-        mname = m.get("name", "").strip().lower()
-        if mname in EXCLUDE_FROM_CHURN or mname in EXCLUDE_FROM_BREAKDOWN:
-            continue
+
+        is_jumpstart   = any(t in n for n in names for t in TRIAL_NAMES)
+        is_full_member = any(n in RECURRING_NAMES for n in names)
 
         start_raw = first_seen.get(cid, "")
         if not start_raw:
             continue
-
         try:
             start   = date.fromisoformat(start_raw)
-            days_in = (today - start).days
-            if 0 <= days_in <= 7:
-                seen.add(cid)
-                milestones.append({"name": name, "type": "first_week",  "days_in": days_in, "start_date": start_raw})
-            elif 28 <= days_in <= 34:
-                seen.add(cid)
-                milestones.append({"name": name, "type": "first_month", "days_in": days_in, "start_date": start_raw})
         except Exception:
-            pass
+            continue
+        days_in = (today - start).days
+        if days_in < 0:
+            continue
 
-    return milestones
+        # First week — jumpstart only
+        if is_jumpstart and days_in <= 7:
+            first_week.append({"name": name, "days_in": days_in, "start_date": start_raw})
+            seen_new.add(cid)
+            continue
+
+        # Just joined as a full member (started a recurring membership recently).
+        # Use the recurring membership's own start, not first_seen, so jumpstart
+        # converts count from when they upgraded.
+        if is_full_member:
+            rec_start = min(
+                (mm.get("start_date", "") for mm in active
+                 if mm["customer"] == cid and mm.get("name", "").strip().lower() in RECURRING_NAMES
+                 and mm.get("start_date")),
+                default="",
+            )
+            if rec_start:
+                try:
+                    rdays = (today - date.fromisoformat(rec_start)).days
+                    if 0 <= rdays <= 14:
+                        new_members.append({"name": name, "days_in": rdays, "start_date": rec_start})
+                        seen_new.add(cid)
+                        continue
+                except Exception:
+                    pass
+
+        # Tenure anniversaries (skip anyone already celebrated as new above)
+        months_milestones = list(TENURE_MONTHS)
+        # add yearly anniversaries beyond 2 years (36, 48, 60, …)
+        yrs = days_in // 365
+        if yrs >= 3:
+            months_milestones.append(yrs * 12)
+        for months in months_milestones:
+            anniversary = start + datetime.timedelta(days=round(months * 30.44))
+            delta = (anniversary - today).days
+            if abs(delta) <= TENURE_WINDOW_DAYS:
+                tenure.append({
+                    "name":       name,
+                    "label":      _tenure_label(months),
+                    "months":     months,
+                    "days_until": delta,   # negative = just passed, positive = upcoming
+                    "start_date": start_raw,
+                })
+                break
+
+    first_week.sort(key=lambda x: x["days_in"])
+    new_members.sort(key=lambda x: x["days_in"])
+    tenure.sort(key=lambda x: (-x["months"], x["days_until"]))
+    return {"first_week": first_week, "new_members": new_members, "tenure": tenure}
 
 
 # ── Class count milestones ──────────────────────────────────────────────────
@@ -435,7 +607,7 @@ def run():
     cancelled_all        = get_all("customermemberships", {"status": "cancelled"})
     cancelled_last_month = [
         m for m in cancelled_all
-        if last_month_start.isoformat() <= (m.get("end_date") or "") <= last_month_end.isoformat()
+        if last_month_start.isoformat() <= (m.get("end_date") or m.get("expiration_date") or "") <= last_month_end.isoformat()
         and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
     ]
     cancelled_ids = {m["customer"] for m in cancelled_last_month}
@@ -484,17 +656,17 @@ def run():
     # are derived by intersecting with recent event ids (events date-filter
     # works); /attendances itself ignores date filters.
     date_today  = today.isoformat()
+    date_90_ago = (today - datetime.timedelta(days=90)).isoformat()
     date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
-    date_28_ago = (today - datetime.timedelta(days=28)).isoformat()
     date_10_ago = (today - datetime.timedelta(days=10)).isoformat()
 
     all_attended_raw = fetch_all_attended()
 
-    # Recent events (last 30 days) → map for enriching + date subsets
-    recent_events = fetch_events_in_range(date_30_ago, date_today)
-    event_map_30  = {e["id"]: e for e in recent_events}
-    events_28_ids = {e["id"] for e in recent_events if (e.get("starts_at") or "")[:10] >= date_28_ago}
-    events_10_ids = {e["id"] for e in recent_events if (e.get("starts_at") or "")[:10] >= date_10_ago}
+    # Class stats use a 3-month window; fetch those events once (date filter works)
+    events_90     = fetch_events_in_range(date_90_ago, date_today)
+    event_map_90  = {e["id"]: e for e in events_90}
+    events_30_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_30_ago}
+    events_10_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_10_ago}
 
     # At-risk = active members with no attendance in the last 10 days
     recently_active_ids = {
@@ -502,32 +674,37 @@ def run():
         if a.get("event") in events_10_ids and a.get("customer")
     }
 
-    # Class stats — attended records from the last 28 days, enriched
-    recent_bookings = [
-        {
-            "customer": a.get("customer"),
-            "event": {
-                "id":        a.get("event"),
-                "starts_at": event_map_30[a["event"]].get("starts_at", ""),
-                "name":      event_map_30[a["event"]].get("name", ""),
-            },
-        }
-        for a in all_attended_raw
-        if a.get("event") in events_28_ids
-    ]
+    def _enrich(pred):
+        return [
+            {"customer": a.get("customer"),
+             "event": {"id": a.get("event"),
+                       "starts_at": event_map_90[a["event"]].get("starts_at", ""),
+                       "name": event_map_90[a["event"]].get("name", "")}}
+            for a in all_attended_raw if pred(a.get("event"))
+        ]
 
-    # ── New member milestones (measured from earliest-ever join) ─
-    first_seen = build_first_seen_map(active + on_hold + cancelled_all)
-    new_milestones = build_new_milestones(active, name_map, first_seen)
+    bookings_90 = _enrich(lambda eid: eid in event_map_90)
+    bookings_30 = _enrich(lambda eid: eid in events_30_ids)
 
-    # ── Class stats ─────────────────────────────────────────────
-    class_stats = build_class_stats(recent_bookings)
+    # ── Celebrations (first week / new full member / tenure) ────
+    first_seen   = build_first_seen_map(active + on_hold + cancelled_all)
+    celebrations = build_celebrations(active, name_map, first_seen)
+
+    # ── Class stats (3-month + 30-day, most & least popular) ────
+    class_stats = {
+        "last_90_days": build_class_stats(bookings_90),
+        "last_30_days": build_class_stats(bookings_30),
+    }
+    class_stats["suggestion"] = _class_suggestion(class_stats)
 
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
     class_milestones = build_class_milestones(all_active_ids, name_map, all_attended_raw)
+
+    # ── Average tenure (for LTV) from cancelled recurring memberships ──
+    avg_tenure_months = build_avg_tenure(cancelled_all, all_active_ids, first_seen)
 
     # ── Momentum calls ──────────────────────────────────────────
     momentum_calls = fetch_momentum_calls(name_map)
@@ -550,12 +727,13 @@ def run():
         "churn_rate":               churn_rate,
         "avg_member_price":         avg_member_price,
         "monthly_recurring_revenue": monthly_recurring_revenue,
+        "avg_tenure_months":        avg_tenure_months,
         "cancelled_last_month":     len([c for c in cancelled_ids if name_map.get(c,"").lower() not in EXCLUDE_CUSTOMER_NAMES]),
         "cancelled_members":        [m for m in members_list(cancelled_ids, name_map) if m["name"].lower() not in EXCLUDE_CUSTOMER_NAMES],
         "breakdown":                breakdown,
         "class_stats":              class_stats,
         "at_risk":                  at_risk,
-        "new_milestones":           new_milestones,
+        "celebrations":             celebrations,
         "class_milestones":         class_milestones,
         "momentum_calls":           momentum_calls,
         "inbody_scans":             inbody_scans,

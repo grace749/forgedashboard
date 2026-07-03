@@ -1,5 +1,5 @@
 """Fetch 30-day action plan from the private Google Sheet, with AI strategy advice per task."""
-import os, json, urllib.request
+import os, json, urllib.request, urllib.error
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -18,35 +18,55 @@ SYSTEM_PROMPT = (
 )
 
 
+def _fallback_advice(action):
+    """A practical execution framework used when the AI call is unavailable,
+    so clicking a task always shows something useful."""
+    return (
+        f"• Break it down: list the 3-4 concrete sub-tasks needed to deliver “{action[:80]}”.\n"
+        "• Assign an owner and a deadline to each sub-task so nothing stalls.\n"
+        "• Define what 'done' looks like — a measurable outcome you can point to.\n"
+        "• Do the smallest first step this week to build momentum.\n"
+        "• Review progress at your weekly check-in and adjust."
+    )
+
+
 def _generate_advice(action):
     key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not key:
-        return ""
-    try:
-        payload = json.dumps({
-            "model": "claude-haiku-4-5-20251001",
-            "max_tokens": 350,
-            "system": SYSTEM_PROMPT,
-            "messages": [{
-                "role": "user",
-                "content": f"How should Grace execute this growth action? Give practical step-by-step advice:\n\n\"{action}\""
-            }]
-        }).encode()
-        req = urllib.request.Request(
-            "https://api.anthropic.com/v1/messages",
-            data=payload,
-            headers={
-                "x-api-key": key,
-                "anthropic-version": "2023-06-01",
-                "content-type": "application/json",
-            }
-        )
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            result = json.loads(resp.read())
-            return result["content"][0]["text"]
-    except Exception as ex:
-        print(f"[sheets] AI advice error for '{action[:40]}': {ex}")
-        return ""
+        print("[sheets] ANTHROPIC_API_KEY not set — using fallback advice")
+        return _fallback_advice(action)
+    for attempt in range(2):
+        try:
+            payload = json.dumps({
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 350,
+                "system": SYSTEM_PROMPT,
+                "messages": [{
+                    "role": "user",
+                    "content": f"How should Grace execute this growth action? Give practical step-by-step advice:\n\n\"{action}\""
+                }]
+            }).encode()
+            req = urllib.request.Request(
+                "https://api.anthropic.com/v1/messages",
+                data=payload,
+                headers={
+                    "x-api-key": key,
+                    "anthropic-version": "2023-06-01",
+                    "content-type": "application/json",
+                }
+            )
+            with urllib.request.urlopen(req, timeout=40) as resp:
+                result = json.loads(resp.read())
+                text = result["content"][0]["text"].strip()
+                if text:
+                    return text
+        except urllib.error.HTTPError as ex:
+            body = ex.read().decode(errors="ignore")[:300]
+            print(f"[sheets] AI advice HTTP {ex.code} for '{action[:40]}': {body}")
+            break  # config/auth error won't fix on retry
+        except Exception as ex:
+            print(f"[sheets] AI advice error for '{action[:40]}': {ex}")
+    return _fallback_advice(action)
 
 
 def run():
