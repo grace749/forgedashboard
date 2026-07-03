@@ -13,11 +13,30 @@ Env:
                      groups:history, users:read, search:read.
   SLACK_USER_ID      Grace's Slack user id (default U05P1R84NKS).
 """
-import os, time, json, urllib.parse, urllib.request
+import os, re, time, json, urllib.parse, urllib.request
 
 SLACK_API = "https://slack.com/api/"
 GRACE_ID = os.environ.get("SLACK_USER_ID", "U05P1R84NKS")
-STALE_HOURS = 48
+STALE_HOURS = 48          # unanswered this long → flag
+MAX_AGE_DAYS = 14         # …but ignore threads that have gone quiet for weeks
+
+
+def _is_noise_message(msg):
+    """Skip Slack system messages and emoji/one-word acknowledgements."""
+    if msg.get("subtype"):        # channel_join, invitation accepted, etc.
+        return True
+    text = (msg.get("text") or "")
+    low = text.lower()
+    if "accepted your invitation" in low or "has joined" in low:
+        return True
+    # strip :emoji: and whitespace — if almost nothing's left, it's a reaction/ack
+    stripped = re.sub(r":[a-z0-9_+'-]+:", "", text).strip()
+    if len(stripped) < 4:
+        return True
+    # short thank-you / sign-off that closes the conversation (no reply needed)
+    if len(stripped) <= 35 and re.search(r"\b(thanks?|thank you|great|brilliant|perfect|ok|okay)\b", low):
+        return True
+    return False
 
 
 def _call(method, token, **params):
@@ -61,8 +80,13 @@ def run():
                 continue
             last = hist[0]
             ts = float(last.get("ts", 0))
-            # last message is from the other person (not Grace) and older than 48h
-            if last.get("user") and last["user"] != GRACE_ID and ts < stale_before:
+            # Flag when: last message is from the other person, it's been
+            # unanswered 48h+, it's not a system/emoji message, and the thread
+            # hasn't gone completely quiet (within the last 14 days).
+            if (last.get("user") and last["user"] != GRACE_ID
+                    and ts < stale_before
+                    and ts > now - MAX_AGE_DAYS * 86400
+                    and not _is_noise_message(last)):
                 other_ids.add(im.get("user"))
                 pending.append({
                     "user_id": im.get("user"),
