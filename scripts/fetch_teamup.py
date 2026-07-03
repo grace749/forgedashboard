@@ -2,6 +2,13 @@
 import os, json, time, requests, datetime, urllib.request
 from datetime import date
 from collections import Counter
+from pathlib import Path
+
+# Lifetime class counts are expensive (they also pull every 'registered' record).
+# Cache them and only recompute every 2 weeks — attendance milestones don't
+# move fast enough to need a daily recount.
+CLASS_COUNT_CACHE = Path(__file__).parent.parent / "data" / "class_counts.json"
+CLASS_COUNT_MAX_AGE_DAYS = 14
 
 TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
 BASE = "https://goteamup.com/api/v2"
@@ -139,6 +146,47 @@ def fetch_all_registered():
     except Exception as ex:
         print(f"[teamup] fetch_all_registered error: {ex}")
         return []
+
+
+def load_class_count_cache():
+    """Return cached {customer_id: count} if fresh (<14 days), else None."""
+    try:
+        d = json.loads(CLASS_COUNT_CACHE.read_text())
+        gen = date.fromisoformat(d["generated"])
+        if (date.today() - gen).days <= CLASS_COUNT_MAX_AGE_DAYS:
+            return Counter({int(k): v for k, v in d["counts"].items()})
+    except Exception:
+        pass
+    return None
+
+
+def save_class_count_cache(counts):
+    try:
+        CLASS_COUNT_CACHE.write_text(json.dumps({
+            "generated": date.today().isoformat(),
+            "counts": {str(k): v for k, v in counts.items()},
+        }))
+    except Exception as ex:
+        print(f"[teamup] class count cache save failed: {ex}")
+
+
+def compute_class_counts(all_attended_raw):
+    """Full lifetime class count per customer (attended + past bookings).
+    Heavy — pulls every 'registered' record. Called at most every 2 weeks."""
+    today = date.today()
+    all_registered = fetch_all_registered()
+    upcoming = fetch_events_in_range(
+        today.isoformat(), (today + datetime.timedelta(days=45)).isoformat())
+    upcoming_ids = {e["id"] for e in upcoming}
+    counts = Counter()
+    for a in all_attended_raw:
+        if a.get("customer"):
+            counts[a["customer"]] += 1
+    for a in all_registered:
+        cid = a.get("customer")
+        if cid and a.get("event") not in upcoming_ids:
+            counts[cid] += 1
+    return counts
 
 
 # ── Class statistics ────────────────────────────────────────────────────────
@@ -797,19 +845,15 @@ def run():
     events_10_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_10_ago}
 
     # ── Lifetime class counts (attended + past bookings) to match TeamUp ──
-    # TeamUp's "overall class" counts attended plus classes booked-and-happened.
-    # So combine attended with registered records whose event is NOT upcoming.
-    all_registered = fetch_all_registered()
-    upcoming_events = fetch_events_in_range(date_today, (today + datetime.timedelta(days=45)).isoformat())
-    upcoming_ids = {e["id"] for e in upcoming_events}
-    class_counts = Counter()
-    for a in all_attended_raw:
-        if a.get("customer"):
-            class_counts[a["customer"]] += 1
-    for a in all_registered:
-        cid = a.get("customer")
-        if cid and a.get("event") not in upcoming_ids:
-            class_counts[cid] += 1
+    # Cached and only recomputed every 2 weeks (the recompute pulls every
+    # 'registered' record, which is slow). Fresh cache → skip the heavy fetch.
+    class_counts = load_class_count_cache()
+    if class_counts is None:
+        print("[teamup] recomputing lifetime class counts (cache stale)")
+        class_counts = compute_class_counts(all_attended_raw)
+        save_class_count_cache(class_counts)
+    else:
+        print("[teamup] using cached lifetime class counts")
 
     # At-risk = active members with no attendance in the last 10 days
     recently_active_ids = {
