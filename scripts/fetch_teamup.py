@@ -116,39 +116,19 @@ def fetch_events_in_range(date_from, date_to):
         return []
 
 
-def fetch_recent_attendance(date_from, date_to):
+def fetch_all_attended():
     """
-    Attended records for events in [date_from, date_to] ONLY — never the full
-    history. We fetch the events in range (date filter works), then pull each
-    event's attendances by event id (per-event filter works). This keeps the
-    lookup bounded to the last few weeks instead of crawling every attendance
-    since the gym opened.
-    Returns (records, event_map) where each record is
-    {customer, event:{id, starts_at, name}}.
+    Every attended attendance record, lifetime (~12.5k / ~26 pages). Needed for
+    the lifetime class milestones (50/250/500). /attendances honours
+    ?status=attended server-side, so this is ~26 requests, not a per-event crawl.
+    Recent-activity views (at-risk, class stats) are derived from this same
+    pull by intersecting with recent event ids — no extra fetching.
     """
-    events = fetch_events_in_range(date_from, date_to)
-    event_map = {e["id"]: e for e in events}
-    records = []
-    for ev in events:
-        if not ev.get("attending_count"):
-            continue
-        try:
-            atts = get_all("attendances", {"event": ev["id"], "page_size": 100})
-        except Exception as ex:
-            print(f"[teamup] attendances for event {ev['id']} error: {ex}")
-            continue
-        for a in atts:
-            if a.get("status") != "attended" or not a.get("customer"):
-                continue
-            records.append({
-                "customer": a["customer"],
-                "event": {
-                    "id":        ev["id"],
-                    "starts_at": ev.get("starts_at", ""),
-                    "name":      ev.get("name", ""),
-                },
-            })
-    return records, event_map
+    try:
+        return get_all("attendances", {"status": "attended", "page_size": 500})
+    except Exception as ex:
+        print(f"[teamup] fetch_all_attended error: {ex}")
+        return []
 
 
 # ── Class statistics ────────────────────────────────────────────────────────
@@ -498,18 +478,43 @@ def run():
     avg_member_price = round(sum(recurring_prices) / len(recurring_prices), 2) if recurring_prices else None
     monthly_recurring_revenue = round(sum(recurring_prices), 2) if recurring_prices else None
 
-    # ── Attendance (last 4 weeks only — never the full history) ─────────────
+    # ── Attendance ──────────────────────────────────────────────
+    # One lifetime pull of attended records (~26 requests) serves BOTH the
+    # lifetime class milestones AND the recent-activity views. Recent windows
+    # are derived by intersecting with recent event ids (events date-filter
+    # works); /attendances itself ignores date filters.
     date_today  = today.isoformat()
+    date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
     date_28_ago = (today - datetime.timedelta(days=28)).isoformat()
     date_10_ago = (today - datetime.timedelta(days=10)).isoformat()
 
-    recent_bookings, _ = fetch_recent_attendance(date_28_ago, date_today)
+    all_attended_raw = fetch_all_attended()
 
-    # At-risk = active members who haven't attended in the last 10 days
+    # Recent events (last 30 days) → map for enriching + date subsets
+    recent_events = fetch_events_in_range(date_30_ago, date_today)
+    event_map_30  = {e["id"]: e for e in recent_events}
+    events_28_ids = {e["id"] for e in recent_events if (e.get("starts_at") or "")[:10] >= date_28_ago}
+    events_10_ids = {e["id"] for e in recent_events if (e.get("starts_at") or "")[:10] >= date_10_ago}
+
+    # At-risk = active members with no attendance in the last 10 days
     recently_active_ids = {
-        b["customer"] for b in recent_bookings
-        if (b["event"].get("starts_at") or "")[:10] >= date_10_ago
+        a["customer"] for a in all_attended_raw
+        if a.get("event") in events_10_ids and a.get("customer")
     }
+
+    # Class stats — attended records from the last 28 days, enriched
+    recent_bookings = [
+        {
+            "customer": a.get("customer"),
+            "event": {
+                "id":        a.get("event"),
+                "starts_at": event_map_30[a["event"]].get("starts_at", ""),
+                "name":      event_map_30[a["event"]].get("name", ""),
+            },
+        }
+        for a in all_attended_raw
+        if a.get("event") in events_28_ids
+    ]
 
     # ── New member milestones (measured from earliest-ever join) ─
     first_seen = build_first_seen_map(active + on_hold + cancelled_all)
@@ -521,11 +526,8 @@ def run():
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids)
 
-    # ── Class milestones ────────────────────────────────────────
-    # Lifetime 50/250/500-class milestones need every attendance since the gym
-    # opened, which we deliberately no longer crawl (per Grace: only look at the
-    # last 4 weeks). Paused until we add a cached lifetime-count store.
-    class_milestones = []
+    # ── Class milestones (lifetime 50/250/500) ──────────────────
+    class_milestones = build_class_milestones(all_active_ids, name_map, all_attended_raw)
 
     # ── Momentum calls ──────────────────────────────────────────
     momentum_calls = fetch_momentum_calls(name_map)
