@@ -117,6 +117,7 @@
     .brief-chevron { transition: transform .2s; flex-shrink: 0; }
     .brief-chevron.rotated { transform: rotate(180deg); }
     .brief-collapsed { display: none; }
+    .brief-panel { height: 360px; }
     /* Home: brief and tasks cards match height, each scrolls internally */
     .brief-card { height: 600px; }
     .brief-card .brief-body { flex: 1; overflow-y: auto; }
@@ -557,41 +558,26 @@ function render(data) {
       ghl.length ? `<span class="brief-chip chip-amber">${ghl.length} GHL message${ghl.length!==1?"s":""}</span>` : "",
     ].filter(Boolean).join("");
 
+    // Slim header banner
     push("home", `
-      <div class="card col-8 brief-card">
-        <button class="brief-toggle" onclick="
-          this.closest('.brief-card').querySelector('.brief-body').classList.toggle('brief-collapsed');
-          this.querySelector('.brief-chevron').classList.toggle('rotated')">
-          <div class="brief-header-left">
-            <div class="brief-icon">☀️</div>
-            <div>
-              <div class="brief-label">Daily Brief — ${new Date(br.date + 'T12:00:00').toLocaleDateString('en-IE',{weekday:'long',day:'numeric',month:'long'})}</div>
-              <div class="brief-chips">${chips || '<span style="font-size:.8rem;color:#bbb">Tap to expand</span>'}</div>
-            </div>
-          </div>
-          <svg class="brief-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="brief-body">
-          <div class="brief-cols">
-            <div class="brief-col">
-              <div class="brief-col-title brief-col-title--purple">Calendar today</div>
-              ${calHtml}
-            </div>
-            <div class="brief-col">
-              <div class="brief-col-title brief-col-title--red">Needs your attention</div>
-              ${emailHtml}
-            </div>
-            <div class="brief-col">
-              <div class="brief-col-title brief-col-title--green">New enquiries (email)</div>
-              ${enquiryHtml}
-            </div>
-            <div class="brief-col">
-              <div class="brief-col-title brief-col-title--amber">WhatsApp &amp; webchat</div>
-              ${ghlHtml}
-            </div>
-          </div>
+      <div class="card col-12" style="flex-direction:row;align-items:center;gap:14px;padding:14px 20px">
+        <div class="brief-icon">☀️</div>
+        <div style="flex:1">
+          <div class="brief-label">Daily Brief — ${new Date(br.date + 'T12:00:00').toLocaleDateString('en-IE',{weekday:'long',day:'numeric',month:'long'})}</div>
+          <div class="brief-chips" style="margin-top:4px">${chips || '<span style="font-size:.8rem;color:#bbb">All quiet</span>'}</div>
         </div>
       </div>`);
+
+    // Four separate cards, equal height, each scrolls
+    const briefCard = (title, colour, html) => `
+      <div class="card col-3 brief-panel">
+        <div class="brief-col-title brief-col-title--${colour}" style="margin-top:0">${title}</div>
+        <div style="overflow-y:auto;flex:1">${html}</div>
+      </div>`;
+    push("home", briefCard("Calendar today",        "purple", calHtml));
+    push("home", briefCard("Needs your attention",  "red",    emailHtml));
+    push("home", briefCard("New enquiries (email)", "green",  enquiryHtml));
+    push("home", briefCard("WhatsApp &amp; webchat","amber",  ghlHtml));
   }
 
   // ── Membership ─────────────────────────────────────────────
@@ -714,6 +700,51 @@ function render(data) {
       </div>
     </div>
   `);
+
+  // ── Paused Members ────────────────────────────────────────────
+  const pausedMembers = tm.paused_members || [];
+  push("members", `
+    <div class="card col-4">
+      <div class="card-title">Membership status</div>
+      <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
+        Paused Members
+        <span class="brief-chip ${pausedMembers.length ? 'chip-amber' : 'chip-green'}">${pausedMembers.length}</span>
+      </div>
+      ${pausedMembers.length ? `
+        <div style="overflow-y:auto;max-height:360px">
+          ${pausedMembers.map(m => `
+            <div class="stat-row"><span style="font-size:.85rem;font-weight:600;color:#111">${m.name}</span>
+              <span class="pill amber" style="cursor:default;font-size:.66rem">On hold</span></div>`).join("")}
+        </div>` : `<p style="color:#16a34a;font-size:.85rem;padding:8px 0">No members on hold 🎉</p>`}
+    </div>
+  `);
+
+  // ── Cancellations by month ────────────────────────────────────
+  const cancByMonth = tm.cancelled_by_month || [];
+  const cancMonthName = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
+  if (cancByMonth.length) {
+    cancByMonth.forEach(grp => {
+      push("members", `
+        <div class="card col-4">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+            <div>
+              <div class="card-title">Cancelled</div>
+              <div class="card-headline" style="margin-bottom:0">${cancMonthName(grp.month)}</div>
+            </div>
+            <span class="brief-chip chip-red">${grp.members.length}</span>
+          </div>
+          <div style="overflow-y:auto;max-height:320px">
+            ${grp.members.map(m => `
+              <div class="stat-row">
+                <div style="min-width:0">
+                  <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+                  <div style="font-size:.7rem;color:#aaa">${m.membership} · ${fmtDateShort(m.end)}</div>
+                </div>
+              </div>`).join("")}
+          </div>
+        </div>`);
+    });
+  }
 
   // ── At-Risk Members ───────────────────────────────────────────
   // Exclude paused trials — they're not attending on purpose, not at-risk.
@@ -997,32 +1028,48 @@ function render(data) {
     </div>
   `);
 
-  // ── Jumpstart: Recent Cohort Results (top-right) ───────────
-  push("jumpstart", `
-    <div class="card col-6" style="margin-top:4px">
-      <div class="card-title">6 Week Jumpstart</div>
-      <div class="card-headline">Recent Cohort Results</div>
-      ${jsRecent.length ? `
-        <div style="overflow-y:auto;max-height:420px">
-          ${jsRecent.map(m => {
-            const tag = m.is_converted
-              ? `<span class="pill green" style="cursor:default;font-size:.68rem">✓ Converted</span>`
-              : m.not_converted
-              ? `<span class="pill red" style="cursor:default;font-size:.68rem">✗ Not converted</span>`
-              : `<span class="pill grey" style="cursor:default;font-size:.68rem">Outcome unknown</span>`;
-            return `<div class="stat-row" style="gap:10px">
-              <div style="flex:1;min-width:0">
-                <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-                <div style="font-size:.72rem;color:#aaa">Finished ${fmtDateShort(m.end)} · ${m.cohort}</div>
-                ${m.follow_up ? `<div style="font-size:.72rem;color:#6b7280;margin-top:2px">${m.follow_up}</div>` : ""}
-              </div>
-              ${tag}
-            </div>`;
-          }).join("")}
-        </div>
-      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No recent finished cohorts yet.</p>`}
-    </div>
-  `);
+  // ── Jumpstart: Cohort Results, one card per month ──────────
+  const cohortByMonth = {};
+  jsRecent.forEach(m => {
+    const mo = (m.end || "").slice(0, 7);
+    if (!mo) return;
+    (cohortByMonth[mo] = cohortByMonth[mo] || []).push(m);
+  });
+  const cohortMonths = Object.keys(cohortByMonth).sort().reverse();
+  const monthName = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
+  if (!cohortMonths.length) {
+    push("jumpstart", `<div class="card col-6" style="margin-top:4px"><div class="card-title">6 Week Jumpstart</div><div class="card-headline">Cohort Results</div><p style="color:#ccc;font-size:.85rem">No finished cohorts yet.</p></div>`);
+  } else {
+    cohortMonths.forEach(mo => {
+      const list = cohortByMonth[mo];
+      const conv = list.filter(m => m.is_converted).length;
+      push("jumpstart", `
+        <div class="card col-4" style="margin-top:4px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px">
+            <div>
+              <div class="card-title">Cohort finished</div>
+              <div class="card-headline" style="margin-bottom:0">${monthName(mo)}</div>
+            </div>
+            <span class="pill ${conv/list.length>=0.6?'green':'amber'}" style="cursor:default;font-size:.7rem">${conv}/${list.length} converted</span>
+          </div>
+          <div style="overflow-y:auto;max-height:300px">
+            ${list.map(m => {
+              const tag = m.is_converted
+                ? `<span class="pill green" style="cursor:default;font-size:.66rem">✓</span>`
+                : m.not_converted
+                ? `<span class="pill red" style="cursor:default;font-size:.66rem">✗</span>`
+                : `<span class="pill grey" style="cursor:default;font-size:.66rem">?</span>`;
+              return `<div class="stat-row" style="gap:10px">
+                <div style="flex:1;min-width:0">
+                  <div style="font-size:.84rem;font-weight:600;color:#111">${m.name}</div>
+                  ${m.follow_up ? `<div style="font-size:.7rem;color:#aaa">${m.follow_up}</div>` : ""}
+                </div>${tag}
+              </div>`;
+            }).join("")}
+          </div>
+        </div>`);
+    });
+  }
 
   // ── Jumpstart: Needs Attention (grouped by member) ─────────
   if (jsAlerts.length) {
@@ -1493,17 +1540,17 @@ function render(data) {
   sopSections.forEach(section => {
     const builtN = section.items.filter(i => i.built).length;
     push("sop", `
-      <div class="card col-6">
+      <div class="card col-4" style="height:340px">
         <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-          <span>${section.name}</span>
-          <span style="font-size:.72rem;font-weight:700;color:#059669">${builtN}/${section.items.length}</span>
+          <span style="font-size:.95rem">${section.name}</span>
+          <span style="font-size:.72rem;font-weight:700;color:#059669;white-space:nowrap">${builtN}/${section.items.length}</span>
         </div>
-        <div style="overflow-y:auto;max-height:420px">
+        <div style="overflow-y:auto;flex:1">
           ${section.items.map(it => `
-            <div class="stat-row" style="gap:10px">
+            <div class="stat-row" style="gap:10px;padding:6px 0">
               <div style="min-width:0;flex:1">
-                <div style="font-size:.85rem;font-weight:600;color:#111">${it.built ? "✅" : "⬜"} ${it.task}</div>
-                <div style="font-size:.72rem;color:#aaa">${it.type}${it.owner ? " · " + it.owner : ""}${it.sop ? " · " + it.sop : ""}</div>
+                <div style="font-size:.82rem;font-weight:600;color:#111">${it.built ? "✅" : "⬜"} ${it.task}</div>
+                <div style="font-size:.7rem;color:#aaa">${it.type}${it.owner ? " · " + it.owner : ""}</div>
               </div>
             </div>`).join("")}
         </div>

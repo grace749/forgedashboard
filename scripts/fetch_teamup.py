@@ -811,6 +811,32 @@ def run():
     cancelled_ids = {m["customer"] for m in cancelled_last_month}
     name_map      = get_customer_names(cancelled_ids, existing=name_map)
 
+    # ── Cancellations grouped by month (last 6 months) ──────────
+    six_months_ago = (first_of_this_month - datetime.timedelta(days=185)).isoformat()
+    cancelled_recent = [
+        m for m in cancelled_all
+        if (m.get("end_date") or m.get("expiration_date") or "") >= six_months_ago
+        and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
+    ]
+    cancel_name_ids = {m["customer"] for m in cancelled_recent}
+    name_map = get_customer_names(cancel_name_ids, existing=name_map)
+    cancelled_by_month = {}
+    for m in cancelled_recent:
+        cid  = m["customer"]
+        nm   = name_map.get(cid, "")
+        if not nm or nm.lower() in EXCLUDE_CUSTOMER_NAMES:
+            continue
+        end  = (m.get("end_date") or m.get("expiration_date") or "")[:10]
+        if not end:
+            continue
+        cancelled_by_month.setdefault(end[:7], []).append({
+            "name": nm, "membership": m.get("name", ""), "end": end,
+        })
+    cancelled_by_month = [
+        {"month": mo, "members": sorted(mem, key=lambda x: x["end"], reverse=True)}
+        for mo, mem in sorted(cancelled_by_month.items(), reverse=True)
+    ]
+
     # ── Churn rate ──────────────────────────────────────────────
     churn_base_ids = {
         cid for cid in all_active_ids
@@ -942,6 +968,7 @@ def run():
         "leaving_members":          members_list(leaving_ids, name_map),
         "paused":                   len(paused_ids),
         "paused_members":           members_list(paused_ids, name_map),
+        "cancelled_by_month":       cancelled_by_month,
         "churn_rate":               churn_rate,
         "avg_member_price":         avg_member_price,
         "monthly_recurring_revenue": monthly_recurring_revenue,
