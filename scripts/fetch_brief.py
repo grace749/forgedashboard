@@ -417,6 +417,55 @@ def fetch_gmail_important():
         return {"error": str(ex)}
 
 
+# ── Member check-ins (from "Client Reflection" emails) ──────────────────────
+
+def _extract_checkin_name(subject, sender, snippet):
+    """Best-effort member name from a Client Reflection email."""
+    # 1) subject like "Client Reflection - Jane Smith" / "Client Reflection: Jane"
+    m = re.search(r"client reflection\s*[-–:]\s*(.+)$", subject, re.I)
+    if m:
+        return m.group(1).strip()[:60]
+    # 2) sender display name if it looks like a person (has a space, not a service)
+    if sender and " " in sender and not re.search(r"reflection|form|typeform|noreply|forge", sender, re.I):
+        return sender.strip()[:60]
+    # 3) a "Name:" field in the snippet/body
+    m = re.search(r"name[:\s]+([A-Z][a-z]+\s+[A-Z][a-z]+)", snippet or "")
+    if m:
+        return m.group(1).strip()[:60]
+    return ""
+
+
+def fetch_checkins():
+    """Map member name -> last check-in date, from 'Client Reflection' emails."""
+    svc = _gmail_service()
+    if not svc:
+        return {"error": "Gmail not configured"}
+    try:
+        q = 'subject:"Client Reflection" newer_than:270d'
+        res = svc.users().messages().list(userId="me", q=q, maxResults=300).execute()
+        msgs = res.get("messages", [])
+        by_name = {}
+        for msg in msgs:
+            hdrs, snippet = _get_headers(svc, msg["id"])
+            subject  = hdrs.get("Subject", "")
+            sender   = _sender_name(hdrs.get("From", ""))
+            date_raw = hdrs.get("Date", "")
+            try:
+                dt = email_lib.utils.parsedate_to_datetime(date_raw)
+                iso = dt.date().isoformat()
+            except Exception:
+                iso = None
+            name = _extract_checkin_name(subject, sender, snippet)
+            if not name:
+                continue
+            key = name.lower()
+            if key not in by_name or (iso and iso > (by_name[key]["date"] or "")):
+                by_name[key] = {"name": name, "date": iso}
+        return {"by_name": by_name, "count": len(by_name)}
+    except Exception as ex:
+        return {"error": str(ex)}
+
+
 # ── Assemble ───────────────────────────────────────────────────────────────
 
 def run():
@@ -426,6 +475,7 @@ def run():
     urgent    = fetch_gmail_urgent()
     important = fetch_gmail_important()
     enquiries = fetch_gmail_enquiries()
+    checkins  = fetch_checkins()
 
     event_count   = len(calendar) if isinstance(calendar, list) else 0
     urgent_count  = len(urgent)   if isinstance(urgent, list)   else 0
@@ -440,6 +490,7 @@ def run():
         "urgent":        urgent,
         "important":     important,
         "enquiries":     enquiries,
+        "checkins":      checkins,
     }
 
 

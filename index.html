@@ -614,6 +614,12 @@ function render(data) {
   const jsAll = [...(data.jumpstart?.active||[]), ...(data.jumpstart?.recent||[]), ...(data.jumpstart?.paused||[])];
   const goalByName = {};
   jsAll.forEach(m => { if (m.name && m.goal) goalByName[m.name.toLowerCase()] = m.goal; });
+  // Last check-in from "Client Reflection" emails, matched by name
+  const checkinByName = (data.brief?.checkins?.by_name) || {};
+  const lastCheckin = nm => {
+    nm = (nm||"").toLowerCase();
+    return checkinByName[nm] ? checkinByName[nm].date : null;
+  };
   push("members", `
     <div class="card col-12" style="margin-top:4px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
@@ -641,12 +647,13 @@ function render(data) {
             <tbody id="memberTableBody">
               ${memberRows.map(m => {
                 const goal = goalByName[(m.name||"").toLowerCase()] || "";
+                const ci = lastCheckin(m.name);
                 return `<tr class="member-row" data-name="${(m.name||'').toLowerCase()}">
                   <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(m.join_date)}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc"><span class="pill purple" style="cursor:default;font-size:.7rem">${m.membership||"—"}</span></td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;text-align:right;font-weight:700;color:#7c3aed">${m.class_count ?? "—"}</td>
-                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#9ca3af">—</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${ci ? fmtDateShort(ci) : "—"}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${m.last_momentum ? fmtDateShort(m.last_momentum) : "—"}</td>
                   <td style="padding:8px 0 8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${(goal||'').replace(/"/g,'&quot;')}">${goal ? goal.substring(0,70) : "—"}</td>
                 </tr>`;
@@ -654,7 +661,7 @@ function render(data) {
             </tbody>
           </table>
         </div>
-        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">Class count via TeamUp (refreshed ~fortnightly) · Last check-in needs the GoHighLevel feed · Goal from Jumpstart onboarding where available</div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">Class count via TeamUp · Last check-in from “Client Reflection” emails · Goal from Jumpstart onboarding where available</div>
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No member data yet.</p>`}
     </div>
   `);
