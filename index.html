@@ -639,13 +639,15 @@ function render(data) {
   `);
 
   // ── At-Risk Members ───────────────────────────────────────────
-  const atRisk = tm.at_risk || [];
+  // Exclude paused trials — they're not attending on purpose, not at-risk.
+  const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
+  const atRisk = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
   push("members", `
     <div class="card col-4">
       <div class="card-title">Retention</div>
       <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
         At-Risk Members
-        <span style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444">${atRisk.length} absent 14+ days</span>
+        <span style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444">${atRisk.length} absent 10+ days</span>
       </div>
       ${atRisk.length ? `
       <div style="overflow-y:auto;max-height:360px">
@@ -789,13 +791,15 @@ function render(data) {
   `);
 
   // ── InBody Scans ──────────────────────────────────────────────
-  const inbody = tm.inbody_scans || [];
+  // Prefer the full list from Lookin'Body; fall back to the TeamUp proxy.
+  const inbodyData = data.inbody || {};
+  const inbody = (inbodyData.scans && inbodyData.scans.length) ? inbodyData.scans : (tm.inbody_scans || []);
   push("members", `
     <div class="card col-4">
       <div class="card-title">Body Composition</div>
-      <div class="card-headline">InBody Scans</div>
+      <div class="card-headline" style="display:flex;align-items:baseline;gap:8px">InBody Scans ${inbody.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${inbody.length} members</span>` : ""}</div>
       ${inbody.length ? `
-        <div style="overflow-y:auto;max-height:400px">
+        <div style="overflow-y:auto;max-height:460px">
           <table style="width:100%;border-collapse:collapse;font-size:.82rem">
             <thead>
               <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:#bbb">
@@ -822,7 +826,7 @@ function render(data) {
             </tbody>
           </table>
         </div>
-      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No scan history yet — InBody scans are tracked as "Body Composition Scan" memberships in TeamUp</p>`}
+      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">${inbodyData.configured === false ? "InBody not connected — add INBODY_LOGIN_ID and INBODY_PASSWORD secrets." : "No scan history yet."}</p>`}
     </div>
   `);
 

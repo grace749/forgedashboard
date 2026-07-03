@@ -6,6 +6,7 @@ from pathlib import Path
 import fetch_asana
 import fetch_brief
 import fetch_ghl_sheet as fetch_ghl
+import fetch_inbody
 import fetch_jumpstart
 import fetch_teamup
 import fetch_xero
@@ -31,6 +32,7 @@ data = {
     "brief":     safe_run("brief",     fetch_brief.run),
     "ghl":       safe_run("ghl",       fetch_ghl.run),
     "jumpstart": safe_run("jumpstart", fetch_jumpstart.run),
+    "inbody": safe_run("inbody", fetch_inbody.run),
     "asana": safe_run("asana", fetch_asana.run),
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),

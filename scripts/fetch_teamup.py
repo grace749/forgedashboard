@@ -274,8 +274,18 @@ def build_avg_tenure(cancelled, active_ids, first_seen):
 
 # ── At-risk members ─────────────────────────────────────────────────────────
 
-def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids):
-    """Active members not seen in last 14 days."""
+AT_RISK_GRACE_DAYS = 14   # brand-new members get a grace period before at-risk
+
+
+def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
+                  first_seen, ever_attended_ids):
+    """
+    Active members with no attendance in the last 10 days — EXCLUDING brand-new
+    members who haven't had their first class yet. A member is 'too new to flag'
+    if they joined within the grace period, or have no attendance on record at
+    all (e.g. a fresh 6-week trial or PT signup who hasn't started).
+    """
+    today = date.today()
     cust_membership = {}
     for m in active_memberships:
         cid = m["customer"]
@@ -292,6 +302,18 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids)
         membership = cust_membership.get(cid, "")
         if membership.lower() in EXCLUDE_FROM_CHURN or membership.lower() in EXCLUDE_FROM_BREAKDOWN:
             continue
+
+        # Skip brand-new members who haven't started yet
+        start_raw = first_seen.get(cid, "")
+        if start_raw:
+            try:
+                if (today - date.fromisoformat(start_raw)).days <= AT_RISK_GRACE_DAYS:
+                    continue
+            except Exception:
+                pass
+        if cid not in ever_attended_ids:
+            continue  # never attended a class — they haven't started, not at-risk
+
         at_risk.append({
             "id":         cid,
             "name":       name,
@@ -673,6 +695,8 @@ def run():
         a["customer"] for a in all_attended_raw
         if a.get("event") in events_10_ids and a.get("customer")
     }
+    # Everyone who's ever attended anything (to spot members who never started)
+    ever_attended_ids = {a["customer"] for a in all_attended_raw if a.get("customer")}
 
     def _enrich(pred):
         return [
@@ -698,7 +722,8 @@ def run():
     class_stats["suggestion"] = _class_suggestion(class_stats)
 
     # ── At-risk members ─────────────────────────────────────────
-    at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids)
+    at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids,
+                            first_seen, ever_attended_ids)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
     class_milestones = build_class_milestones(all_active_ids, name_map, all_attended_raw)
