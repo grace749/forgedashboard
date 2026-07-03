@@ -1,5 +1,5 @@
 """Fetch membership snapshot + member intelligence from TeamUp (goteamup.com)."""
-import os, json, requests, datetime
+import os, json, time, requests, datetime
 from datetime import date
 from collections import Counter
 
@@ -23,13 +23,28 @@ MILESTONE_CLASSES    = [50, 250, 500]
 MILESTONE_WINDOW     = 5    # flag if within 5 classes of a milestone
 
 
+def _get(url, params=None, max_retries=5):
+    """GET with retry/backoff on 429 rate limits (respects Retry-After)."""
+    delay = 2
+    for attempt in range(max_retries):
+        r = requests.get(url, headers=HEADERS, params=params)
+        if r.status_code == 429:
+            wait = int(r.headers.get("Retry-After", delay))
+            time.sleep(wait)
+            delay = min(delay * 2, 30)
+            continue
+        r.raise_for_status()
+        return r
+    r.raise_for_status()
+    return r
+
+
 def get_all(endpoint, params=None, max_results=None):
     results = []
     url = f"{BASE}/{endpoint}"
     p = dict(params or {})
     while url:
-        r = requests.get(url, headers=HEADERS, params=p)
-        r.raise_for_status()
+        r = _get(url, params=p)
         data = r.json()
         results.extend(data.get("results", []))
         url = data.get("next")
@@ -44,7 +59,7 @@ def get_customer_names(customer_ids, existing=None):
     to_fetch = [cid for cid in customer_ids if cid not in names]
     for cid in to_fetch:
         try:
-            r = requests.get(f"{BASE}/customers/{cid}", headers=HEADERS)
+            r = _get(f"{BASE}/customers/{cid}")
             if r.ok:
                 d = r.json()
                 first = d.get("first_name", "") or ""
@@ -88,15 +103,6 @@ def get_event_name(booking):
 # So: fetch ALL attended records once (for lifetime counts), fetch recent
 # events via their working date filter, then intersect on event id.
 
-def fetch_all_attended():
-    """Every attended attendance record, lifetime. ~12.5k records / ~26 pages."""
-    try:
-        return get_all("attendances", {"status": "attended", "page_size": 500})
-    except Exception as ex:
-        print(f"[teamup] fetch_all_attended error: {ex}")
-        return []
-
-
 def fetch_events_in_range(date_from, date_to):
     """Events whose start falls in [date_from, date_to]. Date filter works here."""
     try:
@@ -108,6 +114,41 @@ def fetch_events_in_range(date_from, date_to):
     except Exception as ex:
         print(f"[teamup] fetch_events_in_range error: {ex}")
         return []
+
+
+def fetch_recent_attendance(date_from, date_to):
+    """
+    Attended records for events in [date_from, date_to] ONLY — never the full
+    history. We fetch the events in range (date filter works), then pull each
+    event's attendances by event id (per-event filter works). This keeps the
+    lookup bounded to the last few weeks instead of crawling every attendance
+    since the gym opened.
+    Returns (records, event_map) where each record is
+    {customer, event:{id, starts_at, name}}.
+    """
+    events = fetch_events_in_range(date_from, date_to)
+    event_map = {e["id"]: e for e in events}
+    records = []
+    for ev in events:
+        if not ev.get("attending_count"):
+            continue
+        try:
+            atts = get_all("attendances", {"event": ev["id"], "page_size": 100})
+        except Exception as ex:
+            print(f"[teamup] attendances for event {ev['id']} error: {ex}")
+            continue
+        for a in atts:
+            if a.get("status") != "attended" or not a.get("customer"):
+                continue
+            records.append({
+                "customer": a["customer"],
+                "event": {
+                    "id":        ev["id"],
+                    "starts_at": ev.get("starts_at", ""),
+                    "name":      ev.get("name", ""),
+                },
+            })
+    return records, event_map
 
 
 # ── Class statistics ────────────────────────────────────────────────────────
@@ -288,10 +329,11 @@ def fetch_momentum_calls(name_map):
         if not momentum_events:
             return {"recent": [], "upcoming": []}
 
-        attendances = get_all("attendances", {
-            "event__starts_at_gte": date_past,
-            "event__starts_at_lte": date_future,
-        })
+        # Only a handful of momentum events — fetch each one's attendances by id
+        # rather than pulling every attendance in the window.
+        attendances = []
+        for ev_id in momentum_events:
+            attendances.extend(get_all("attendances", {"event": ev_id, "page_size": 100}))
 
         recent   = []
         upcoming = []
@@ -308,7 +350,7 @@ def fetch_momentum_calls(name_map):
             name     = name_map.get(cid, "") if cid else ""
             if not name and cid:
                 try:
-                    r = requests.get(f"{BASE}/customers/{cid}", headers=HEADERS)
+                    r = _get(f"{BASE}/customers/{cid}")
                     if r.ok:
                         d = r.json()
                         name = f"{d.get('first_name','')} {d.get('last_name','')}".strip()
@@ -456,43 +498,18 @@ def run():
     avg_member_price = round(sum(recurring_prices) / len(recurring_prices), 2) if recurring_prices else None
     monthly_recurring_revenue = round(sum(recurring_prices), 2) if recurring_prices else None
 
-    # ── Attendance ──────────────────────────────────────────────
-    # Fetch ALL attended records once (lifetime), then use the working events
-    # date-filter to work out which of those are recent. See notes above the
-    # fetch helpers for why we can't date-filter /attendances directly.
+    # ── Attendance (last 4 weeks only — never the full history) ─────────────
     date_today  = today.isoformat()
-    date_30_ago = (today - datetime.timedelta(days=30)).isoformat()
-    date_14_ago = (today - datetime.timedelta(days=14)).isoformat()
+    date_28_ago = (today - datetime.timedelta(days=28)).isoformat()
+    date_10_ago = (today - datetime.timedelta(days=10)).isoformat()
 
-    all_attended_raw = fetch_all_attended()
+    recent_bookings, _ = fetch_recent_attendance(date_28_ago, date_today)
 
-    # Recent events (last 30 days) → map of id -> event, plus the 14-day subset
-    recent_events   = fetch_events_in_range(date_30_ago, date_today)
-    event_map_30    = {e["id"]: e for e in recent_events}
-    events_14_ids   = {
-        e["id"] for e in recent_events
-        if (e.get("starts_at") or "")[:10] >= date_14_ago
-    }
-
-    # Who attended in the last 14 days (any event = they're active)
+    # At-risk = active members who haven't attended in the last 10 days
     recently_active_ids = {
-        a["customer"] for a in all_attended_raw
-        if a.get("event") in events_14_ids and a.get("customer")
+        b["customer"] for b in recent_bookings
+        if (b["event"].get("starts_at") or "")[:10] >= date_10_ago
     }
-
-    # Enrich last-30-day attended records with event name/time for class stats
-    recent_bookings = [
-        {
-            "customer": a.get("customer"),
-            "event": {
-                "id":        a.get("event"),
-                "starts_at": event_map_30[a["event"]].get("starts_at", ""),
-                "name":      event_map_30[a["event"]].get("name", ""),
-            },
-        }
-        for a in all_attended_raw
-        if a.get("event") in event_map_30
-    ]
 
     # ── New member milestones (measured from earliest-ever join) ─
     first_seen = build_first_seen_map(active + on_hold + cancelled_all)
@@ -505,7 +522,10 @@ def run():
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids)
 
     # ── Class milestones ────────────────────────────────────────
-    class_milestones = build_class_milestones(all_active_ids, name_map, all_attended_raw)
+    # Lifetime 50/250/500-class milestones need every attendance since the gym
+    # opened, which we deliberately no longer crawl (per Grace: only look at the
+    # last 4 weeks). Paused until we add a cached lifetime-count store.
+    class_milestones = []
 
     # ── Momentum calls ──────────────────────────────────────────
     momentum_calls = fetch_momentum_calls(name_map)
