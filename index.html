@@ -685,7 +685,7 @@ function render(data) {
       </div>
       <span class="pill ${pillClass}" style="cursor:default;white-space:nowrap">${pill}</span>
     </div>`;
-  const anyCeleb = firstWk.length || newFull.length || tenure.length || clsMs.length;
+  const anyCeleb = firstWk.length || newFull.length || tenure.length;
   push("members", `
     <div class="card col-4">
       <div class="card-title">Milestones</div>
@@ -709,12 +709,23 @@ function render(data) {
         }).join("")}
       ` : ""}
 
-      ${clsMs.length ? `
-        <div class="inner-divider" ${!anyCeleb || (!newFull.length && !firstWk.length && !tenure.length) ? 'style="margin-top:0;padding-top:0;border-top:none"' : ""}>Approaching a class milestone</div>
-        ${clsMs.map(m => celebRow(m.name, `${m.total_classes} classes done`, `${m.classes_away} to ${m.next_milestone}`, "purple")).join("")}
-      ` : ""}
-
       ${!anyCeleb ? `<div class="brief-empty" style="padding:6px 0">No celebrations today</div>` : ""}
+    </div>
+  `);
+
+  // ── Class Count Milestones (own card) ─────────────────────────
+  push("members", `
+    <div class="card col-4">
+      <div class="card-title">Milestones</div>
+      <div class="card-headline">Approaching a Class Milestone</div>
+      ${clsMs.length ? clsMs.map(m => celebRow(
+          m.name,
+          `${m.total_classes} classes done`,
+          `${m.classes_away} to ${m.next_milestone}`,
+          "purple"
+        )).join("")
+        : `<div class="brief-empty" style="padding:6px 0">No one within reach of 50 / 250 / 500 right now</div>`}
+      <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Counts attended classes + past bookings, to match TeamUp's overall total</div>
     </div>
   `);
 
@@ -746,6 +757,10 @@ function render(data) {
           ${(data.bottom_days||[]).slice(0,3).map(d => `<div style="font-size:.8rem;color:#374151;padding:1px 0">${d.day} <span style="color:#aaa">${d.count}</span></div>`).join("") || '<div class="brief-empty">–</div>'}
         </div>
       </div>
+      <div style="font-size:.68rem;font-weight:700;color:#059669;margin:12px 0 4px">Best time slots <span style="color:#aaa;font-weight:500">(avg per class)</span></div>
+      ${(data.top_slots||[]).slice(0,4).map(s => `<div style="font-size:.8rem;color:#374151;padding:2px 0">${s.label} <span style="color:#059669;font-weight:700">${s.avg}</span></div>`).join("") || '<div class="brief-empty">–</div>'}
+      <div style="font-size:.68rem;font-weight:700;color:#ef4444;margin:10px 0 4px">Quietest time slots</div>
+      ${(data.bottom_slots||[]).slice(0,4).map(s => `<div style="font-size:.8rem;color:#374151;padding:2px 0">${s.label} <span style="color:#ef4444;font-weight:700">${s.avg}</span></div>`).join("") || '<div class="brief-empty">–</div>'}
     </div>`;
 
   push("members", `

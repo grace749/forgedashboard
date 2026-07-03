@@ -131,12 +131,32 @@ def fetch_all_attended():
         return []
 
 
+def fetch_all_registered():
+    """Every 'registered' attendance record. Combined with attended (and minus
+    upcoming bookings) this matches TeamUp's lifetime 'overall class' count."""
+    try:
+        return get_all("attendances", {"status": "registered", "page_size": 500})
+    except Exception as ex:
+        print(f"[teamup] fetch_all_registered error: {ex}")
+        return []
+
+
 # ── Class statistics ────────────────────────────────────────────────────────
 
 # Non-class events excluded from popularity stats (they're 1:1 / admin sessions)
 NON_CLASS_EVENTS = {"no sweat intro", "momentum call", "body composition scan",
                     "consultation", "induction"}
 DAY_ORDER = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+
+
+def _is_non_class(name):
+    """Exclude 1:1 / admin sessions from group-class popularity stats."""
+    n = (name or "").strip().lower()
+    if n in NON_CLASS_EVENTS:
+        return True
+    if "personal training" in n or "pt session" in n or n.startswith("pt ") or n.startswith("1:") or "1:2 pt" in n:
+        return True
+    return False
 
 
 def build_class_stats(bookings):
@@ -146,20 +166,35 @@ def build_class_stats(bookings):
     """
     days_counter  = Counter()
     class_counter = Counter()
+    slot_counter  = Counter()   # (weekday, hour, class) -> attendances
+    slot_sessions = Counter()   # distinct event instances per slot (to average)
+    slot_seen_events = {}
+
+    def _fmt_hour(dt):
+        return dt.strftime("%-I%p").lower()  # "6pm"
 
     for b in bookings:
         start = get_event_start(b)
         name  = (get_event_name(b) or "").strip()
-        if name.lower() in NON_CLASS_EVENTS:
+        if _is_non_class(name):
             continue
+        dt = None
         if start:
             try:
                 dt = datetime.datetime.fromisoformat(start.replace("Z", "+00:00"))
                 days_counter[dt.strftime("%A")] += 1
             except Exception:
-                pass
+                dt = None
         if name:
             class_counter[name] += 1
+        if dt is not None and name:
+            slot = (dt.strftime("%A"), _fmt_hour(dt), name)
+            slot_counter[slot] += 1
+            ev_id = b.get("event", {}).get("id")
+            key = (slot, ev_id)
+            if key not in slot_seen_events:
+                slot_seen_events[key] = True
+                slot_sessions[slot] += 1
 
     days_sorted = sorted(
         [{"day": d, "count": c} for d, c in days_counter.items()],
@@ -167,8 +202,23 @@ def build_class_stats(bookings):
     )
     classes_sorted = [{"name": n, "count": c} for n, c in class_counter.most_common()]
 
-    # For "least popular" ignore days/classes that barely run (one-offs, special
-    # events, a day with almost no classes) so the bottom list is meaningful.
+    # Class-day-time slots, with average attendance per session (fairer than raw
+    # totals when a slot has run more times).
+    slots = []
+    for (day, time, name), total in slot_counter.items():
+        sessions = slot_sessions.get((day, time, name), 1)
+        slots.append({
+            "day": day, "time": time, "name": name,
+            "count": total,
+            "sessions": sessions,
+            "avg": round(total / sessions, 1),
+            "label": f"{day} {time} {name}",
+        })
+    # Only slots that have actually run a few times (ignore one-offs)
+    real_slots = [s for s in slots if s["sessions"] >= 2]
+    slots_by_avg = sorted(real_slots, key=lambda s: -s["avg"])
+
+    # For "least popular" ignore days/classes that barely run.
     max_day   = days_sorted[0]["count"]    if days_sorted    else 0
     max_class = classes_sorted[0]["count"] if classes_sorted else 0
     day_floor   = max(3, max_day   * 0.10)
@@ -181,6 +231,8 @@ def build_class_stats(bookings):
         "bottom_days":    list(reversed(operating_days))[:5] if len(operating_days) > 1 else [],
         "top_classes":    classes_sorted[:6],
         "bottom_classes": list(reversed(regular_classes))[:6] if len(regular_classes) > 1 else [],
+        "top_slots":      slots_by_avg[:6],
+        "bottom_slots":   list(reversed(slots_by_avg))[:6] if len(slots_by_avg) > 1 else [],
         "total_attended": sum(class_counter.values()),
     }
 
@@ -363,19 +415,35 @@ def _tenure_label(months):
     return f"{months} months"
 
 
-def build_celebrations(active, name_map, first_seen):
+def build_first_recurring_map(all_memberships):
+    """Earliest-ever recurring (Elevate/Evolve/Empower) start date per customer."""
+    first_rec = {}
+    for m in all_memberships:
+        if m.get("name", "").strip().lower() not in RECURRING_NAMES:
+            continue
+        cid   = m.get("customer")
+        start = m.get("start_date", "")
+        if not cid or not start:
+            continue
+        if cid not in first_rec or start < first_rec[cid]:
+            first_rec[cid] = start
+    return first_rec
+
+
+def build_celebrations(active, name_map, first_seen, first_recurring):
     """
     Member celebrations:
       - first_week:  jumpstart members in their first 7 days
-      - new_member:  just started a full membership (Elevate/Evolve/Empower) in
-                     the last 14 days
+      - new_member:  genuinely new full member — their FIRST-EVER recurring
+                     membership started in the last 14 days. A member who just
+                     switches membership type, or who regularly buys class packs,
+                     is NOT new (their first recurring start is old / absent).
       - tenure:      near an anniversary (3/6/9/12/18 months, 2 years, then yearly)
     """
     today = date.today()
     first_week  = []
     new_members = []
     tenure      = []
-    seen_new    = set()
 
     # Current membership name per customer (for jumpstart / full-member checks)
     cust_current = {}
@@ -388,8 +456,7 @@ def build_celebrations(active, name_map, first_seen):
         if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue
 
-        is_jumpstart   = any(t in n for n in names for t in TRIAL_NAMES)
-        is_full_member = any(n in RECURRING_NAMES for n in names)
+        is_jumpstart = any(t in n for n in names for t in TRIAL_NAMES)
 
         start_raw = first_seen.get(cid, "")
         if not start_raw:
@@ -405,28 +472,18 @@ def build_celebrations(active, name_map, first_seen):
         # First week — jumpstart only
         if is_jumpstart and days_in <= 7:
             first_week.append({"name": name, "days_in": days_in, "start_date": start_raw})
-            seen_new.add(cid)
             continue
 
-        # Just joined as a full member (started a recurring membership recently).
-        # Use the recurring membership's own start, not first_seen, so jumpstart
-        # converts count from when they upgraded.
-        if is_full_member:
-            rec_start = min(
-                (mm.get("start_date", "") for mm in active
-                 if mm["customer"] == cid and mm.get("name", "").strip().lower() in RECURRING_NAMES
-                 and mm.get("start_date")),
-                default="",
-            )
-            if rec_start:
-                try:
-                    rdays = (today - date.fromisoformat(rec_start)).days
-                    if 0 <= rdays <= 14:
-                        new_members.append({"name": name, "days_in": rdays, "start_date": rec_start})
-                        seen_new.add(cid)
-                        continue
-                except Exception:
-                    pass
+        # Genuinely new full member — first-ever recurring membership <14 days ago
+        rec_start = first_recurring.get(cid, "")
+        if rec_start:
+            try:
+                rdays = (today - date.fromisoformat(rec_start)).days
+                if 0 <= rdays <= 14:
+                    new_members.append({"name": name, "days_in": rdays, "start_date": rec_start})
+                    continue
+            except Exception:
+                pass
 
         # Tenure anniversaries (skip anyone already celebrated as new above)
         months_milestones = list(TENURE_MONTHS)
@@ -455,12 +512,11 @@ def build_celebrations(active, name_map, first_seen):
 
 # ── Class count milestones ──────────────────────────────────────────────────
 
-def build_class_milestones(active_ids, name_map, all_attended_raw):
-    """Members within MILESTONE_WINDOW classes of reaching 50, 250, or 500."""
-    counts = Counter(
-        a.get("customer") for a in all_attended_raw
-        if a.get("customer") and a.get("status") == "attended"
-    )
+def build_class_milestones(active_ids, name_map, class_counts):
+    """Members within MILESTONE_WINDOW classes of reaching 50, 250, or 500.
+    class_counts is a {customer_id: total_classes} map (attended + past bookings,
+    to match TeamUp's 'overall class' number)."""
+    counts = class_counts
 
     results = []
     for cid in active_ids:
@@ -690,6 +746,21 @@ def run():
     events_30_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_30_ago}
     events_10_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_10_ago}
 
+    # ── Lifetime class counts (attended + past bookings) to match TeamUp ──
+    # TeamUp's "overall class" counts attended plus classes booked-and-happened.
+    # So combine attended with registered records whose event is NOT upcoming.
+    all_registered = fetch_all_registered()
+    upcoming_events = fetch_events_in_range(date_today, (today + datetime.timedelta(days=45)).isoformat())
+    upcoming_ids = {e["id"] for e in upcoming_events}
+    class_counts = Counter()
+    for a in all_attended_raw:
+        if a.get("customer"):
+            class_counts[a["customer"]] += 1
+    for a in all_registered:
+        cid = a.get("customer")
+        if cid and a.get("event") not in upcoming_ids:
+            class_counts[cid] += 1
+
     # At-risk = active members with no attendance in the last 10 days
     recently_active_ids = {
         a["customer"] for a in all_attended_raw
@@ -711,8 +782,10 @@ def run():
     bookings_30 = _enrich(lambda eid: eid in events_30_ids)
 
     # ── Celebrations (first week / new full member / tenure) ────
-    first_seen   = build_first_seen_map(active + on_hold + cancelled_all)
-    celebrations = build_celebrations(active, name_map, first_seen)
+    all_memberships = active + on_hold + cancelled_all
+    first_seen      = build_first_seen_map(all_memberships)
+    first_recurring = build_first_recurring_map(all_memberships)
+    celebrations    = build_celebrations(active, name_map, first_seen, first_recurring)
 
     # ── Class stats (3-month + 30-day, most & least popular) ────
     class_stats = {
@@ -726,7 +799,7 @@ def run():
                             first_seen, ever_attended_ids)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
-    class_milestones = build_class_milestones(all_active_ids, name_map, all_attended_raw)
+    class_milestones = build_class_milestones(all_active_ids, name_map, class_counts)
 
     # ── Average tenure (for LTV) from cancelled recurring memberships ──
     avg_tenure_months = build_avg_tenure(cancelled_all, all_active_ids, first_seen)

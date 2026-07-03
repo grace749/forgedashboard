@@ -245,6 +245,7 @@ def _parse_cohort_tab(svc, sheet_title):
             "completed_checkins": completed_checkins,
             "expected_checkins":  expected_checkins,
             "paused":             paused,
+            "pink_red":           pink_red,
             # reason for the pause: prefer follow-up note, fall back to key notes
             "pause_reason":       (_get(row, c_followup).strip() or _get(row, c_notes).strip())[:250],
         })
@@ -272,10 +273,12 @@ def run():
     today = date.today()
     cutoff = today - timedelta(weeks=RECENT_WEEKS)
 
-    # Paused trials (orange rows) are pulled out and NOT counted as active
+    # Paused (orange) trials are pulled out and NOT counted as active.
+    # Pink/red rows = didn't join / withdrew early (e.g. injury) — also NOT
+    # active, even if their trial end date is still in the future.
     paused   = [m for m in all_members if m.get("paused")]
-    active   = [m for m in all_members if m["is_active"] and not m.get("paused")]
-    recent   = [m for m in all_members if not m["is_active"] and not m.get("paused") and m["end"] and m["end"] >= cutoff.isoformat()]
+    active   = [m for m in all_members if m["is_active"] and not m.get("paused") and not m.get("pink_red")]
+    recent   = [m for m in all_members if (not m["is_active"] or m.get("pink_red")) and not m.get("paused") and m["end"] and m["end"] >= cutoff.isoformat()]
     historic = [m for m in all_members if not m["is_active"] and not m.get("paused") and (not m["end"] or m["end"] < cutoff.isoformat())]
 
     # ── Alerts for active members ──────────────────────────────
@@ -293,8 +296,11 @@ def run():
                            "detail": f"{m['days_left']}d left — conversion chat not scheduled!"})
 
     # ── Conversion stats across recent + active cohorts ────────
+    # 'complete' = finished their trial OR withdrew (pink/red), not still active
+    def _is_complete(m):
+        return (not m["is_active"] or m.get("pink_red")) and not m.get("paused")
     for_stats = active + recent
-    total_complete = [m for m in for_stats if not m["is_active"]]
+    total_complete = [m for m in for_stats if _is_complete(m)]
     converted      = [m for m in total_complete if m["is_converted"]]
     not_converted  = [m for m in total_complete if m["not_converted"]]
     conv_rate      = round(len(converted) / len(total_complete) * 100) if total_complete else None
@@ -302,7 +308,7 @@ def run():
     # ── Monthly conversion history (by trial end month) ─────────
     by_month = {}
     for m in all_members:
-        if m["is_active"] or m.get("paused") or not m["end"]:
+        if not _is_complete(m) or not m["end"]:
             continue
         month = m["end"][:7]  # YYYY-MM
         b = by_month.setdefault(month, {"completed": 0, "converted": 0})
