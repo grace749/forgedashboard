@@ -510,6 +510,56 @@ def build_celebrations(active, name_map, first_seen, first_recurring):
     return {"first_week": first_week, "new_members": new_members, "tenure": tenure}
 
 
+# ── Full member directory ───────────────────────────────────────────────────
+
+def build_member_list(active, name_map, first_seen, class_counts, momentum_calls):
+    """
+    One row per active member with: join date, current membership, lifetime
+    class count, and last momentum call. (Last check-in via GHL and goal via the
+    onboarding lifestyle form are merged in the frontend from their own sources.)
+    """
+    # Latest momentum call date per member name
+    last_momentum = {}
+    for m in (momentum_calls or {}).get("recent", []):
+        nm = (m.get("name") or "").lower()
+        if nm and (nm not in last_momentum or m["date"] > last_momentum[nm]):
+            last_momentum[nm] = m["date"]
+
+    # Primary membership per customer: prefer recurring, then trial, then other
+    def _primary(cid):
+        names = [mm.get("name", "") for mm in active if mm["customer"] == cid]
+        for n in names:
+            if n.strip().lower() in RECURRING_NAMES:
+                return n
+        for n in names:
+            if n.strip().lower() in TRIAL_NAMES:
+                return n
+        return next((n for n in names if n.strip().lower() not in EXCLUDE_FROM_BREAKDOWN), names[0] if names else "")
+
+    seen = set()
+    rows = []
+    for m in active:
+        cid = m["customer"]
+        if cid in seen:
+            continue
+        seen.add(cid)
+        name = name_map.get(cid, "")
+        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
+            continue
+        membership = _primary(cid)
+        if membership.strip().lower() in EXCLUDE_FROM_BREAKDOWN:
+            continue
+        rows.append({
+            "name":          name,
+            "join_date":     first_seen.get(cid),
+            "membership":    membership,
+            "class_count":   class_counts.get(cid, 0),
+            "last_momentum": last_momentum.get(name.lower()),
+        })
+    rows.sort(key=lambda r: r["name"])
+    return rows
+
+
 # ── Class count milestones ──────────────────────────────────────────────────
 
 def build_class_milestones(active_ids, name_map, class_counts):
@@ -807,6 +857,9 @@ def run():
     # ── Momentum calls ──────────────────────────────────────────
     momentum_calls = fetch_momentum_calls(name_map)
 
+    # ── Full member directory ───────────────────────────────────
+    member_list = build_member_list(active, name_map, first_seen, class_counts, momentum_calls)
+
     # ── InBody scans ────────────────────────────────────────────
     all_memberships_for_scan = active + cancelled_all
     inbody_scans = build_inbody_scans(all_memberships_for_scan, name_map)
@@ -834,6 +887,7 @@ def run():
         "celebrations":             celebrations,
         "class_milestones":         class_milestones,
         "momentum_calls":           momentum_calls,
+        "member_list":              member_list,
         "inbody_scans":             inbody_scans,
     }
 

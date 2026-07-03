@@ -377,6 +377,14 @@
 </div>
 
 <script>
+// ── Member directory search ───────────────────────────────────
+function filterMembers(q) {
+  q = (q || "").toLowerCase().trim();
+  document.querySelectorAll("#memberTableBody .member-row").forEach(row => {
+    row.style.display = row.getAttribute("data-name").includes(q) ? "" : "none";
+  });
+}
+
 // ── Modal ─────────────────────────────────────────────────────
 function showModal(title, members) {
   document.getElementById("modal-title").textContent = title;
@@ -599,6 +607,57 @@ function render(data) {
     const d = new Date(iso + "T12:00:00");
     return d.toLocaleDateString("en-IE", { day:"numeric", month:"short" });
   }
+
+  // ── Member Directory ──────────────────────────────────────────
+  const memberRows = tm.member_list || [];
+  // Merge goal (from Jumpstart onboarding) + last check-in by name where available
+  const jsAll = [...(data.jumpstart?.active||[]), ...(data.jumpstart?.recent||[]), ...(data.jumpstart?.paused||[])];
+  const goalByName = {};
+  jsAll.forEach(m => { if (m.name && m.goal) goalByName[m.name.toLowerCase()] = m.goal; });
+  push("members", `
+    <div class="card col-12" style="margin-top:4px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <div>
+          <div class="card-title">Members</div>
+          <div class="card-headline" style="margin-bottom:0">Member Directory ${memberRows.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${memberRows.length}</span>` : ""}</div>
+        </div>
+        <input id="memberSearch" placeholder="Search…" oninput="filterMembers(this.value)"
+          style="font-size:.82rem;padding:6px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      </div>
+      ${memberRows.length ? `
+        <div style="overflow-x:auto;overflow-y:auto;max-height:600px;margin-top:12px">
+          <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:820px">
+            <thead>
+              <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:#bbb;position:sticky;top:0;background:#fff">
+                <th style="text-align:left;padding:6px 10px 6px 0;border-bottom:2px solid #f0f0f5">Member</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Joined</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Membership</th>
+                <th style="text-align:right;padding:6px 10px;border-bottom:2px solid #f0f0f5">Classes</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last check-in</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last momentum</th>
+                <th style="text-align:left;padding:6px 0 6px 10px;border-bottom:2px solid #f0f0f5">Goal</th>
+              </tr>
+            </thead>
+            <tbody id="memberTableBody">
+              ${memberRows.map(m => {
+                const goal = goalByName[(m.name||"").toLowerCase()] || "";
+                return `<tr class="member-row" data-name="${(m.name||'').toLowerCase()}">
+                  <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(m.join_date)}</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc"><span class="pill purple" style="cursor:default;font-size:.7rem">${m.membership||"—"}</span></td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;text-align:right;font-weight:700;color:#7c3aed">${m.class_count ?? "—"}</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#9ca3af">—</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${m.last_momentum ? fmtDateShort(m.last_momentum) : "—"}</td>
+                  <td style="padding:8px 0 8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${(goal||'').replace(/"/g,'&quot;')}">${goal ? goal.substring(0,70) : "—"}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">Class count via TeamUp (refreshed ~fortnightly) · Last check-in needs the GoHighLevel feed · Goal from Jumpstart onboarding where available</div>
+      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No member data yet.</p>`}
+    </div>
+  `);
 
   // ── Membership Snapshot ───────────────────────────────────────
   push("members", `
