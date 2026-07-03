@@ -47,6 +47,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           INBODY_LOGIN_ID: ${{ secrets.INBODY_LOGIN_ID }}
           INBODY_PASSWORD: ${{ secrets.INBODY_PASSWORD }}
+          SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+          SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: cd scripts && python build_data.py

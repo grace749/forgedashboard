@@ -1240,6 +1240,42 @@ function render(data) {
     </div>
   `);
 
+  // ── Slack panel ────────────────────────────────────────────
+  const slack = data.slack || {};
+  const slackDms = slack.unreplied_dms || [];
+  const slackMentions = slack.mentions || [];
+  const slackTotal = slackDms.length + slackMentions.length;
+  push("home", `
+    <div class="card col-12">
+      <div class="card-headline" style="display:flex;align-items:center;gap:8px">
+        Slack — Needs Your Reply
+        ${slackTotal ? `<span class="brief-chip chip-red">${slackTotal}</span>` : `<span class="brief-chip chip-green">all clear</span>`}
+      </div>
+      ${slack.configured === false ? `
+        <p style="color:#ccc;font-size:.85rem;padding:8px 0">Slack not connected — add a <b>SLACK_USER_TOKEN</b> secret (scopes: im:read, im:history, users:read, search:read).</p>
+      ` : `
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#ef4444;margin-bottom:6px">DMs unanswered 48h+</div>
+            ${slackDms.length ? slackDms.map(d => `
+              <div style="padding:8px 12px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;margin-bottom:6px">
+                <div style="font-size:.85rem;font-weight:700;color:#111">${d.name} <span style="font-size:.7rem;font-weight:500;color:#dc2626">${d.hours}h ago</span></div>
+                <div style="font-size:.78rem;color:#6b7280;margin-top:2px">${d.text}</div>
+              </div>`).join("") : `<div style="font-size:.85rem;color:#16a34a;padding:4px 0">✓ No unanswered DMs</div>`}
+          </div>
+          <div>
+            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#ef4444;margin-bottom:6px">Mentions of you</div>
+            ${slackMentions.length ? slackMentions.map(m => `
+              <div style="padding:8px 12px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;margin-bottom:6px">
+                <div style="font-size:.85rem;font-weight:700;color:#111">${m.name} ${m.channel ? `<span style="font-size:.7rem;font-weight:500;color:#9ca3af">#${m.channel}</span>` : ""} <span style="font-size:.7rem;font-weight:500;color:#dc2626">${m.hours}h ago</span></div>
+                <div style="font-size:.78rem;color:#6b7280;margin-top:2px">${m.text}</div>
+              </div>`).join("") : `<div style="font-size:.85rem;color:#16a34a;padding:4px 0">✓ No recent mentions</div>`}
+          </div>
+        </div>
+      `}
+    </div>
+  `);
+
   // ── 30-Day Action Plan ─────────────────────────────────────
   const kpis = data.growth_sprint?.kpis ?? [];
   const apScriptUrl = data.apps_script_url || "";
