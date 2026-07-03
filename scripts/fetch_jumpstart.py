@@ -69,6 +69,16 @@ def _is_orange(bg):
     return r > 0.8 and 0.45 <= g <= 0.8 and b < 0.5 and (g - b) >= 0.15
 
 
+def _is_pink_red(bg):
+    """
+    True for a pink/red cell background = member who didn't join/convert.
+    Pink/red has red dominant with green ≈ blue (unlike orange, where green is
+    clearly higher than blue). Excludes white/cream (green very high).
+    """
+    r = bg.get("red", 1); g = bg.get("green", 1); b = bg.get("blue", 1)
+    return r > 0.8 and abs(g - b) < 0.12 and 0.3 < g < 0.85
+
+
 def _fetch_bg_colors(svc, sheet_title):
     """Return a list (by row index) of the per-cell background colours for a tab."""
     safe = sheet_title.replace("'", "''")
@@ -168,6 +178,14 @@ def _parse_cohort_tab(svc, sheet_title):
             continue
 
         paused = _row_is_orange(colors, row_index, c_name)
+        # Pink/red row = member who didn't join/convert
+        pink_red = False
+        if row_index < len(colors):
+            crow = colors[row_index]
+            for ci in {c_name, 0, 1, 2}:
+                if ci < len(crow) and _is_pink_red(crow[ci]):
+                    pink_red = True
+                    break
 
         joined_raw = _get(row, c_joined)
         end_raw    = _get(row, c_end)
@@ -200,8 +218,10 @@ def _parse_cohort_tab(svc, sheet_title):
         missing_checkins   = expected_checkins - completed_checkins
 
         converted_val = _get(row, c_converted)
-        is_converted  = _is_yes(converted_val)
-        not_converted = _is_no(converted_val) or "not converted" in str(converted_val).lower()
+        is_converted  = _is_yes(converted_val) and not pink_red
+        # Pink/red row is an explicit "didn't join/convert" marker
+        not_converted = (pink_red or _is_no(converted_val)
+                         or "not converted" in str(converted_val).lower())
 
         members.append({
             "name":               name,

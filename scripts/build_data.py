@@ -8,6 +8,7 @@ import fetch_brief
 import fetch_ghl_sheet as fetch_ghl
 import fetch_inbody
 import fetch_jumpstart
+import fetch_sop
 import fetch_teamup
 import fetch_xero
 import fetch_sheets
@@ -33,6 +34,7 @@ data = {
     "ghl":       safe_run("ghl",       fetch_ghl.run),
     "jumpstart": safe_run("jumpstart", fetch_jumpstart.run),
     "inbody": safe_run("inbody", fetch_inbody.run),
+    "sop": safe_run("sop", fetch_sop.run),
     "asana": safe_run("asana", fetch_asana.run),
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),
