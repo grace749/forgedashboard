@@ -806,34 +806,134 @@ function render(data) {
   const jsAlerts  = js.alerts  || [];
   const jsStat    = js.stats   || {};
 
+  // ── Jumpstart: Programme Stats + monthly breakdown (top-left) ──
+  const jsMonths = js.monthly || [];
+  const jsMonthLabel = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "short", year: "2-digit" });
+  const kpi = (label, val, colour) =>
+    `<div style="flex:1;min-width:90px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+       <div style="font-size:1.6rem;font-weight:800;letter-spacing:-.03em;color:${colour}">${val}</div>
+       <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">${label}</div>
+     </div>`;
+
+  push("jumpstart", `
+    <div class="card col-6" style="margin-top:4px">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
+        <div>
+          <div class="card-title">6 Week Jumpstart</div>
+          <div class="card-headline" style="margin-bottom:0">Programme Stats</div>
+        </div>
+        <a href="https://docs.google.com/spreadsheets/d/1aPlFYzsJDu4lLhlQEsxdqQWqErCMSrqhmVUO48Mzpg8/edit" target="_blank"
+           style="font-size:.72rem;font-weight:600;color:#7c3aed;text-decoration:none;background:#f5f3ff;padding:4px 10px;border-radius:6px;border:1px solid #ddd6fe;white-space:nowrap">Open Tracker ↗</a>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 4px">
+        ${kpi("Active now", jsStat.active_count ?? 0, "#7c3aed")}
+        ${kpi("Conversion", jsStat.conv_rate != null ? jsStat.conv_rate + "%" : "—", (jsStat.conv_rate||0) >= 60 ? "#059669" : "#d97706")}
+        ${kpi("Converted", jsStat.converted ?? 0, "#059669")}
+        ${kpi("Didn't convert", jsStat.not_converted ?? 0, "#ef4444")}
+      </div>
+      ${jsMonths.length ? `
+        <div class="inner-divider">Monthly breakdown</div>
+        <table style="width:100%;border-collapse:collapse;font-size:.82rem">
+          <thead>
+            <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:#bbb">
+              <th style="text-align:left;padding:5px 0;border-bottom:1px solid #f0f0f5">Month</th>
+              <th style="text-align:center;padding:5px 0;border-bottom:1px solid #f0f0f5">Trials finished</th>
+              <th style="text-align:center;padding:5px 0;border-bottom:1px solid #f0f0f5">Converted</th>
+              <th style="text-align:right;padding:5px 0;border-bottom:1px solid #f0f0f5">Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${jsMonths.map(m => `
+              <tr>
+                <td style="padding:7px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${jsMonthLabel(m.month)}</td>
+                <td style="padding:7px 0;border-bottom:1px solid #f9f9fc;text-align:center;color:#6b7280">${m.completed}</td>
+                <td style="padding:7px 0;border-bottom:1px solid #f9f9fc;text-align:center;color:#059669;font-weight:600">${m.converted}</td>
+                <td style="padding:7px 0;border-bottom:1px solid #f9f9fc;text-align:right;font-weight:700;color:${(m.conv_rate||0) >= 60 ? '#059669' : '#d97706'}">${m.conv_rate != null ? m.conv_rate + "%" : "—"}</td>
+              </tr>`).join("")}
+          </tbody>
+        </table>
+      ` : ""}
+    </div>
+  `);
+
+  // ── Jumpstart: Recent Cohort Results (top-right) ───────────
+  push("jumpstart", `
+    <div class="card col-6" style="margin-top:4px">
+      <div class="card-title">6 Week Jumpstart</div>
+      <div class="card-headline">Recent Cohort Results</div>
+      ${jsRecent.length ? `
+        <div style="overflow-y:auto;max-height:420px">
+          ${jsRecent.map(m => {
+            const tag = m.is_converted
+              ? `<span class="pill green" style="cursor:default;font-size:.68rem">✓ Converted</span>`
+              : m.not_converted
+              ? `<span class="pill red" style="cursor:default;font-size:.68rem">✗ Not converted</span>`
+              : `<span class="pill grey" style="cursor:default;font-size:.68rem">Outcome unknown</span>`;
+            return `<div class="stat-row" style="gap:10px">
+              <div style="flex:1;min-width:0">
+                <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+                <div style="font-size:.72rem;color:#aaa">Finished ${fmtDateShort(m.end)} · ${m.cohort}</div>
+                ${m.follow_up ? `<div style="font-size:.72rem;color:#6b7280;margin-top:2px">${m.follow_up}</div>` : ""}
+              </div>
+              ${tag}
+            </div>`;
+          }).join("")}
+        </div>
+      ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No recent finished cohorts yet.</p>`}
+    </div>
+  `);
+
+  // ── Jumpstart: Needs Attention (grouped by member) ─────────
+  if (jsAlerts.length) {
+    // Group alerts per member so each person appears once with their issues
+    const byMember = {};
+    jsAlerts.forEach(a => { (byMember[a.member] = byMember[a.member] || []).push(a); });
+    const rank = { conversion: 0, missing_checkin: 1, nutrition: 2 };
+    const members = Object.keys(byMember).sort((x, y) =>
+      Math.min(...byMember[x].map(a => rank[a.type] ?? 9)) - Math.min(...byMember[y].map(a => rank[a.type] ?? 9)));
+
+    const tagFor = a => {
+      const map = {
+        conversion:      ["#fef2f2", "#dc2626", "#fecaca"],
+        missing_checkin: ["#fffbeb", "#b45309", "#fde68a"],
+        nutrition:       ["#fefce8", "#a16207", "#fef08a"],
+      };
+      const [bg, fg, bd] = map[a.type] || ["#f3f4f6", "#6b7280", "#e5e7eb"];
+      return `<span style="display:inline-block;font-size:.72rem;font-weight:600;color:${fg};background:${bg};border:1px solid ${bd};border-radius:6px;padding:3px 9px;margin:2px 4px 2px 0">${a.detail}</span>`;
+    };
+
+    push("jumpstart", `
+      <div class="card col-12">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div class="card-headline" style="margin-bottom:0;color:#dc2626">Needs Attention</div>
+          <span class="brief-chip chip-red">${members.length} member${members.length!==1?"s":""}</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:8px">
+          ${members.map(name => `
+            <div style="display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
+              <div style="font-size:.85rem;font-weight:700;color:#111;min-width:120px;flex-shrink:0">${name}</div>
+              <div style="flex:1">${byMember[name].map(tagFor).join("")}</div>
+            </div>`).join("")}
+        </div>
+      </div>
+    `);
+  } else if (jsActive.length) {
+    push("jumpstart", `
+      <div class="card col-12">
+        <div style="background:#f0fdf4;border-radius:8px;padding:10px 14px;border-left:3px solid #059669;font-size:.85rem;color:#059669;font-weight:600">✓ All check-ins on track — nothing needs attention</div>
+      </div>
+    `);
+  }
+
   // ── Jumpstart: Active Members tracker ──────────────────────
   push("jumpstart", `
-    <div class="card col-12" style="margin-top:4px">
+    <div class="card col-12">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px">
         <div>
           <div class="card-title">6 Week Jumpstart</div>
-          <div class="card-headline" style="margin-bottom:0">Active Members</div>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-          ${jsStat.active_count ? `<span class="brief-chip chip-purple">${jsStat.active_count} active</span>` : ""}
-          ${jsStat.conv_rate != null ? `<span class="brief-chip ${jsStat.conv_rate >= 70 ? 'chip-green' : 'chip-amber'}">${jsStat.conv_rate}% conversion rate</span>` : ""}
-          ${jsStat.converted ? `<span class="brief-chip chip-green">${jsStat.converted} converted</span>` : ""}
-          ${jsStat.not_converted ? `<span class="brief-chip chip-red">${jsStat.not_converted} didn't convert</span>` : ""}
-          <a href="https://docs.google.com/spreadsheets/d/1aPlFYzsJDu4lLhlQEsxdqQWqErCMSrqhmVUO48Mzpg8/edit" target="_blank"
-             style="font-size:.72rem;font-weight:600;color:#7c3aed;text-decoration:none;background:#f5f3ff;padding:4px 10px;border-radius:6px;border:1px solid #ddd6fe">
-            Open Tracker ↗
-          </a>
+          <div class="card-headline" style="margin-bottom:0">Active Members (${jsActive.length})</div>
         </div>
       </div>
-      ${jsAlerts.length ? `
-        <div style="background:#fef2f2;border-radius:8px;padding:10px 14px;margin-bottom:14px;border-left:3px solid #ef4444">
-          <div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#ef4444;margin-bottom:6px">Needs Attention</div>
-          ${jsAlerts.map(a => {
-            const icon = a.type === "conversion" ? "🔴" : a.type === "nutrition" ? "🟡" : "⚠️";
-            return `<div style="font-size:.82rem;color:#374151;padding:3px 0"><strong>${a.member}</strong> — ${icon} ${a.detail}</div>`;
-          }).join("")}
-        </div>
-      ` : jsActive.length ? `<div style="background:#f0fdf4;border-radius:8px;padding:8px 14px;margin-bottom:14px;border-left:3px solid #059669;font-size:.82rem;color:#059669;font-weight:600">✓ All check-ins on track</div>` : ""}
       ${jsActive.length ? `
         <div style="overflow-x:auto">
           <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:800px">
@@ -898,33 +998,6 @@ function render(data) {
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No active Jumpstart members right now — make sure the Trial Tracker sheet is shared with the service account.</p>`}
     </div>
   `);
-
-  // ── Jumpstart: Recent Cohort Results ───────────────────────
-  if (jsRecent.length) {
-    push("jumpstart", `
-      <div class="card col-6">
-        <div class="card-title">6 Week Jumpstart</div>
-        <div class="card-headline">Recent Cohort Results</div>
-        <div style="overflow-y:auto;max-height:340px">
-          ${jsRecent.map(m => {
-            const tag = m.is_converted
-              ? `<span class="pill green" style="cursor:default;font-size:.68rem">✓ Converted</span>`
-              : m.not_converted
-              ? `<span class="pill red" style="cursor:default;font-size:.68rem">✗ Not converted</span>`
-              : `<span class="pill grey" style="cursor:default;font-size:.68rem">Outcome unknown</span>`;
-            return `<div class="stat-row" style="gap:10px">
-              <div style="flex:1;min-width:0">
-                <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-                <div style="font-size:.72rem;color:#aaa">Finished ${fmtDateShort(m.end)} · ${m.cohort}</div>
-                ${m.follow_up ? `<div style="font-size:.72rem;color:#6b7280;margin-top:2px">${m.follow_up}</div>` : ""}
-              </div>
-              ${tag}
-            </div>`;
-          }).join("")}
-        </div>
-      </div>
-    `);
-  }
 
   // ── Financials ─────────────────────────────────────────────
   const xr = data.xero || {};
