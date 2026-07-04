@@ -64,11 +64,13 @@ def _finance_advice(period, months):
         f"Latest complete month is {latest}"
         + (f", compare it to {prev} (month-on-month). " if prev else ". ")
         + q_note + yoy_note +
-        "IMPORTANT CONTEXT: April 2026 was a STUDIO RELOCATION month — the gym "
-        "moved to a new studio roughly twice the size, with large one-off capital / "
-        "fit-out costs. Treat April as an anomaly (its huge expenses and loss are "
-        "one-time investment, not an operational problem); exclude it from expense "
-        "and profit trend judgements and don't recommend cutting costs based on it. "
+        "IMPORTANT CONTEXT: April 2026 was a STUDIO RELOCATION month — the gym moved "
+        "to a new studio roughly twice the size. The large one-off fit-out cost was a "
+        "PLANNED, SELF-FUNDED investment paid from savings — NOT a real trading loss or "
+        "cash-flow problem. The business still holds ~£12k in cash reserves in a "
+        "separate account, so it is financially healthy. Treat April purely as a "
+        "successful launch of the bigger space: exclude it from expense/profit trend "
+        "judgements, do NOT frame it as a loss or recommend cost-cutting because of it. "
         "The bigger studio should now support more members/revenue — factor that in.\n"
         "As our Fractional CFO, give specific, numbers-referenced moves to increase "
         "revenue, reduce expenses and improve profitability. Call out trends "
