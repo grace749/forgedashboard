@@ -7,55 +7,50 @@ Layout: CAPTAIN | CATEGORY | MEASURABLES | YTD/AVG | GOAL | <month cols…>
 We read each measurable's goal and its latest month value, grouped by category.
 Updated monthly, so "last updated" = the sheet's Drive modified time.
 """
-import os, json, datetime, urllib.request, urllib.error
+import os, json, datetime
+import ai
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 FINANCE_SYSTEM = (
     "You are the Fractional CFO for The Forge, a women's-only fitness gym in Belfast "
-    "run as a UK limited company. You have expertise in UK small-business finance and "
-    "accounting: corporation tax, director responsibilities, dividends vs salary, "
-    "allowable expenses, VAT thresholds, cash flow, margins, and limited-company "
-    "obligations. From the month's KPIs (revenue, profit, expenses, owner's comp, "
-    "churn, LTV) give practical, specific advice to improve the financial position and "
-    "stay compliant/tax-efficient. 4-6 short bullet points, plain UK English, no "
-    "preamble, no disclaimers."
+    "run as a UK limited company. Your job is to grow profit month on month. Give "
+    "specific, actionable advice across three areas, using the actual figures: "
+    "(1) INCREASE REVENUE — pricing, upsells, retention, filling quiet classes, new "
+    "revenue lines; (2) REDUCE EXPENSES — where costs look high vs revenue, supplier/"
+    "staffing efficiency; (3) IMPROVE PROFITABILITY & TAX — margin targets, corporation "
+    "tax, director salary/dividend split, allowable expenses, VAT threshold. "
+    "Reference the numbers you're given (call out what's off-target). 5-7 short bullet "
+    "points grouped by those three areas, plain UK English, no preamble, no disclaimers."
 )
 
 
 def _finance_advice(period, categories):
-    """UK-accounting finance adviser — AI with a rule-based fallback."""
+    """Fractional CFO — grow revenue, cut costs, lift profit. AI with a fallback."""
     facts = "; ".join(f"{it['name']}: {it['value']}"
                       for cat in categories for it in cat["items"] if it.get("value"))
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if key and facts:
-        try:
-            payload = json.dumps({
-                "model": "claude-haiku-4-5-20251001",
-                "max_tokens": 420,
-                "system": FINANCE_SYSTEM,
-                "messages": [{"role": "user", "content":
-                    f"The Forge — {period} figures:\n{facts}\n\n"
-                    "As our UK finance adviser, how do we improve the financial position "
-                    "and stay tax-efficient/compliant as a limited company?"}],
-            }).encode()
-            req = urllib.request.Request(
-                "https://api.anthropic.com/v1/messages", data=payload,
-                headers={"x-api-key": key, "anthropic-version": "2023-06-01",
-                         "content-type": "application/json"})
-            with urllib.request.urlopen(req, timeout=40) as resp:
-                text = json.loads(resp.read())["content"][0]["text"].strip()
-                if text:
-                    return text
-        except Exception as ex:
-            print(f"[kpi] finance AI error: {ex}")
-    return ("**Fractional CFO**\n"
+    if facts:
+        text = ai.generate(
+            FINANCE_SYSTEM,
+            f"The Forge — {period} figures:\n{facts}\n\n"
+            "As our Fractional CFO, give me specific moves this month to increase "
+            "revenue, reduce expenses, and improve profitability — referencing these "
+            "numbers and what's off-target.",
+            max_tokens=500,
+        )
+        if text:
+            return text
+    return ("**Grow revenue**\n"
+            "• Fill your quietest class slots (see Members → Class Popularity) — a promo or "
+            "format change there is revenue you're already paying the coach for.\n"
+            "• Review pricing vs your AR/M; even a small rise across recurring members compounds.\n"
+            "**Reduce expenses**\n"
+            "• Track non-people expenses against the 20-35% target — anything above needs a reason.\n"
+            "• Renegotiate or cut the lowest-ROI subscriptions/suppliers this month.\n"
+            "**Improve profitability & tax**\n"
             "• Set aside ~19-25% of profit for corporation tax so it isn't a year-end shock.\n"
-            "• Review the salary/dividend split with your accountant — a small director's "
-            "salary to the NI threshold plus dividends is usually the tax-efficient route.\n"
-            "• Track non-people expenses against the 20-35% target; anything above needs a reason.\n"
-            "• Keep receipts for all allowable business expenses (kit, training, mileage, home office).\n"
-            "• If rolling 12-month turnover nears the £90k VAT threshold, plan registration early.")
+            "• Review the director salary/dividend split with your accountant for tax efficiency.\n"
+            "• Watch the rolling 12-month turnover against the £90k VAT threshold.")
 
 SPREADSHEET_ID = "1hnmdTnecyLu3WQBynvRgGxor1JnEGyJG9_7O4czWC90"
 TARGET_SHEET = "KPI Revenue"

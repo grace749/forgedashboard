@@ -7,7 +7,8 @@ A row is a real SOP task when it has a task name (col A) and a Type (col B).
 It counts as BUILT when the SOP column (col C) is filled in.
 Section headers (Daily/Weekly/Monthly/Quarterly/Yearly/Coach HQ's) group them.
 """
-import os, json, urllib.request, urllib.error
+import os, json
+import ai
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -68,38 +69,22 @@ def _coo_fallback(stats, not_built, sections):
 
 def _coo_evaluation(stats, not_built, sections):
     """Fractional COO review of SOP coverage — AI with a rule-based fallback."""
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if key:
-        try:
-            by_area = ", ".join(f"{t['type']} {t['built']}/{t['total']}"
-                                for t in stats.get("by_type", []))
-            not_built_names = ", ".join(it["task"] for it in not_built) or "none"
-            section_names = ", ".join(s["name"] for s in sections)
-            summary = (
-                f"SOPs built: {stats['built']} of {stats['total']} ({stats['pct_built']}%). "
-                f"By area: {by_area}. Not built yet: {not_built_names}. "
-                f"Sections: {section_names}."
-            )
-            payload = json.dumps({
-                "model": "claude-haiku-4-5-20251001",
-                "max_tokens": 400,
-                "system": COO_SYSTEM,
-                "messages": [{"role": "user", "content":
-                    f"Here's our current SOP status:\n{summary}\n\n"
-                    "As our Fractional COO, what processes/SOPs should we organise or build "
-                    "next, and how should we structure them?"}],
-            }).encode()
-            req = urllib.request.Request(
-                "https://api.anthropic.com/v1/messages", data=payload,
-                headers={"x-api-key": key, "anthropic-version": "2023-06-01",
-                         "content-type": "application/json"})
-            with urllib.request.urlopen(req, timeout=40) as resp:
-                text = json.loads(resp.read())["content"][0]["text"].strip()
-                if text:
-                    return text
-        except Exception as ex:
-            print(f"[sop] COO AI error: {ex}")
-    return _coo_fallback(stats, not_built, sections)
+    by_area = ", ".join(f"{t['type']} {t['built']}/{t['total']}"
+                        for t in stats.get("by_type", []))
+    not_built_names = ", ".join(it["task"] for it in not_built) or "none"
+    section_names = ", ".join(s["name"] for s in sections)
+    summary = (
+        f"SOPs built: {stats['built']} of {stats['total']} ({stats['pct_built']}%). "
+        f"By area: {by_area}. Not built yet: {not_built_names}. Sections: {section_names}."
+    )
+    text = ai.generate(
+        COO_SYSTEM,
+        f"Here's our current SOP status:\n{summary}\n\n"
+        "As our Fractional COO, what processes/SOPs should we organise or build next, "
+        "and how should we structure them?",
+        max_tokens=420,
+    )
+    return text or _coo_fallback(stats, not_built, sections)
 
 
 def run():

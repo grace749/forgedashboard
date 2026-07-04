@@ -1,5 +1,6 @@
 """Fetch membership snapshot + member intelligence from TeamUp (goteamup.com)."""
 import os, json, time, requests, datetime, urllib.request
+import ai
 from datetime import date
 from collections import Counter
 from pathlib import Path
@@ -318,41 +319,25 @@ def _rule_suggestion(stats):
 
 def _class_suggestion(stats):
     """AI suggestion on class scheduling; falls back to a rule-based tip."""
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if key:
-        try:
-            d90 = stats["last_90_days"]
-            d30 = stats["last_30_days"]
-            def pairs(items, k): return [(x[k], x["count"]) for x in items]
-            summary = (
-                f"Last 90 days — busiest days: {pairs(d90['top_days'][:3],'day')}; "
-                f"quietest days: {pairs(d90['bottom_days'][:3],'day')}; "
-                f"most popular classes: {pairs(d90['top_classes'][:5],'name')}; "
-                f"least popular classes: {pairs(d90['bottom_classes'][:5],'name')}. "
-                f"Last 30 days — most popular classes: {pairs(d30['top_classes'][:5],'name')}; "
-                f"least popular: {pairs(d30['bottom_classes'][:5],'name')}."
-            )
-            payload = json.dumps({
-                "model": "claude-haiku-4-5-20251001",
-                "max_tokens": 300,
-                "system": ("You are an operations advisor for The Forge, a women's fitness gym in "
-                           "Belfast. From class attendance data, give 2-3 short, specific, practical "
-                           "suggestions to improve attendance and optimise the timetable. Plain "
-                           "sentences, no preamble, no bullet characters."),
-                "messages": [{"role": "user", "content": f"Class attendance data:\n{summary}\n\nWhat should Grace do?"}],
-            }).encode()
-            req = urllib.request.Request(
-                "https://api.anthropic.com/v1/messages",
-                data=payload,
-                headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-            )
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                text = json.loads(resp.read())["content"][0]["text"].strip()
-                if text:
-                    return text
-        except Exception as ex:
-            print(f"[teamup] class suggestion AI error: {ex}")
-    return _rule_suggestion(stats)
+    d90 = stats["last_90_days"]
+    d30 = stats["last_30_days"]
+    def pairs(items, k): return [(x[k], x["count"]) for x in items]
+    summary = (
+        f"Last 90 days — busiest days: {pairs(d90['top_days'][:3],'day')}; "
+        f"quietest days: {pairs(d90['bottom_days'][:3],'day')}; "
+        f"most popular classes: {pairs(d90['top_classes'][:5],'name')}; "
+        f"least popular classes: {pairs(d90['bottom_classes'][:5],'name')}. "
+        f"Last 30 days — most popular classes: {pairs(d30['top_classes'][:5],'name')}; "
+        f"least popular: {pairs(d30['bottom_classes'][:5],'name')}."
+    )
+    text = ai.generate(
+        ("You are an operations advisor for The Forge, a women's fitness gym in Belfast. "
+         "From class attendance data, give 2-3 short, specific, practical suggestions to "
+         "improve attendance and optimise the timetable. Plain sentences, no preamble."),
+        f"Class attendance data:\n{summary}\n\nWhat should Grace do?",
+        max_tokens=300,
+    )
+    return text or _rule_suggestion(stats)
 
 
 def build_avg_tenure(cancelled, active_ids, first_seen):

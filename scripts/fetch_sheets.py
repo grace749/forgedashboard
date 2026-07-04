@@ -1,5 +1,6 @@
 """Fetch 30-day action plan from the private Google Sheet, with AI strategy advice per task."""
-import os, json, urllib.request, urllib.error
+import os, json
+import ai
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
@@ -31,42 +32,14 @@ def _fallback_advice(action):
 
 
 def _generate_advice(action):
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not key:
-        print("[sheets] ANTHROPIC_API_KEY not set — using fallback advice")
-        return _fallback_advice(action)
-    for attempt in range(2):
-        try:
-            payload = json.dumps({
-                "model": "claude-haiku-4-5-20251001",
-                "max_tokens": 350,
-                "system": SYSTEM_PROMPT,
-                "messages": [{
-                    "role": "user",
-                    "content": f"How should Grace execute this growth action? Give practical step-by-step advice:\n\n\"{action}\""
-                }]
-            }).encode()
-            req = urllib.request.Request(
-                "https://api.anthropic.com/v1/messages",
-                data=payload,
-                headers={
-                    "x-api-key": key,
-                    "anthropic-version": "2023-06-01",
-                    "content-type": "application/json",
-                }
-            )
-            with urllib.request.urlopen(req, timeout=40) as resp:
-                result = json.loads(resp.read())
-                text = result["content"][0]["text"].strip()
-                if text:
-                    return text
-        except urllib.error.HTTPError as ex:
-            body = ex.read().decode(errors="ignore")[:300]
-            print(f"[sheets] AI advice HTTP {ex.code} for '{action[:40]}': {body}")
-            break  # config/auth error won't fix on retry
-        except Exception as ex:
-            print(f"[sheets] AI advice error for '{action[:40]}': {ex}")
-    return _fallback_advice(action)
+    text = ai.generate(
+        SYSTEM_PROMPT,
+        f"How should Grace execute this specific growth action for The Forge? "
+        f"Give concrete, tailored advice for THIS task — not generic project-management "
+        f"steps. Reference what the task actually involves:\n\n\"{action}\"",
+        max_tokens=380,
+    )
+    return text or _fallback_advice(action)
 
 
 def run():
