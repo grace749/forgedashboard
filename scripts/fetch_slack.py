@@ -22,12 +22,17 @@ MAX_AGE_DAYS = 14         # …but ignore threads that have gone quiet for weeks
 
 
 def _is_noise_message(msg):
-    """Skip Slack system messages and emoji/one-word acknowledgements."""
-    if msg.get("subtype"):        # channel_join, invitation accepted, etc.
+    """Skip Slack system, bot/automated, and emoji/one-word messages."""
+    if msg.get("subtype"):        # channel_join, invitation accepted, bot_message…
+        return True
+    if msg.get("bot_id") or msg.get("app_id"):   # automated (e.g. Zapier)
         return True
     text = (msg.get("text") or "")
     low = text.lower()
     if "accepted your invitation" in low or "has joined" in low:
+        return True
+    # automated member messages sent via Zapier (e.g. body composition results)
+    if "body composition" in low or "inbody" in low or "zapier" in low:
         return True
     # strip :emoji: and whitespace — if almost nothing's left, it's a reaction/ack
     stripped = re.sub(r":[a-z0-9_+'-]+:", "", text).strip()
