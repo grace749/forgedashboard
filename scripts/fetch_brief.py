@@ -479,9 +479,14 @@ def _extract_goal(body):
     # look for a goal question label and grab the answer after it
     m = re.search(r"(?:goal|hoping to achieve|what.{0,30}achieve|why.{0,20}join)"
                   r"[^\n:?]*[:?]\s*(.+)", body, re.I)
-    if m:
-        return re.sub(r"\s+", " ", m.group(1)).strip()[:200]
-    return ""
+    if not m:
+        return ""
+    goal = re.sub(r"\s+", " ", m.group(1)).strip()
+    # Cut off trailing form metadata that runs into the answer on one line
+    goal = re.split(r"\b(?:Timezone|Submission Date|Submitted|GMT[+\-]|"
+                    r"Europe/|IP Address|Form Name|Page URL|http)\b",
+                    goal, maxsplit=1)[0].strip(" -–·.")
+    return goal[:200]
 
 
 def fetch_lifestyle_goals():
