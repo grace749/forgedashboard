@@ -410,8 +410,10 @@ function closeModal(e) {
   }
 }
 
-function showAdviceModal(action) {
-  const advice = (window._growthAdvice || {})[action] || "";
+function showAdviceModal(i) {
+  const item = (window._growthAdvice || [])[i] || {};
+  const action = item.action || "";
+  const advice = item.advice || "";
   document.getElementById("modal-title").innerHTML =
     `<span style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#7c3aed;display:block;margin-bottom:6px">Strategy Advice ✦</span>${action}`;
   const list = document.getElementById("modal-list");
@@ -1214,6 +1216,29 @@ function render(data) {
   const kpiData = data.kpi || {};
   const kpiCats = kpiData.categories || [];
 
+  // Finance AI adviser (UK accounting) at the top
+  if (kpiData.advice) {
+    const finHtml = kpiData.advice.split("\n").map(l => l.trim()).filter(Boolean).map(l => {
+      if (/^\*\*(.+)\*\*$/.test(l)) return `<div style="font-weight:700;color:#5b21b6;margin:2px 0 6px">${l.replace(/\*\*/g,'')}</div>`;
+      const text = l.replace(/^[•\-\*]\s*/, "").replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+      return /^[•\-\*]/.test(l)
+        ? `<li style="padding:5px 0;line-height:1.5;color:#1f2937;display:flex;gap:8px;list-style:none"><span style="color:#7c3aed;flex-shrink:0">▸</span><span>${text}</span></li>`
+        : `<div style="padding:3px 0;color:#374151;line-height:1.5">${text}</div>`;
+    }).join("");
+    push("finances", `
+      <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="font-size:1.4rem">💷</div>
+          <div>
+            <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">Finance Adviser ✦ · UK Ltd</div>
+            <div class="card-headline" style="margin-bottom:0">Financial Guidance — ${kpiData.period || ""}</div>
+          </div>
+        </div>
+        <ul style="margin:0;padding:0">${finHtml}</ul>
+      </div>
+    `);
+  }
+
   // Two stacked source cards: XERO on top, KPI Tracking below
   push("finances", `
     <div class="card col-12" style="margin-top:4px">
@@ -1269,6 +1294,29 @@ function render(data) {
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No KPI data — check the sheet is shared with the service account.</p>`}
     </div>
   `);
+
+  // Previous months (same year) as compact KPI cards — key figures each
+  const kpiMonths = (kpiData.months || []).slice(1, 7);   // skip latest (shown above)
+  if (kpiMonths.length) {
+    const pick = (cats, name) => {
+      for (const c of cats) for (const it of c.items)
+        if ((it.name||"").toLowerCase().includes(name)) return it.value;
+      return "—";
+    };
+    kpiMonths.forEach(mo => {
+      push("finances", `
+        <div class="card col-4">
+          <div class="card-title">KPI Tracking</div>
+          <div class="card-headline">${mo.period}</div>
+          <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-val">${pick(mo.categories,"revenue")}</span></div>
+          <div class="stat-row"><span class="stat-label">Total Profit</span><span class="stat-val">${pick(mo.categories,"total profit")}</span></div>
+          <div class="stat-row"><span class="stat-label">Profit %</span><span class="stat-val">${pick(mo.categories,"profit %")}</span></div>
+          <div class="stat-row"><span class="stat-label">Active Clients</span><span class="stat-val">${pick(mo.categories,"active client")}</span></div>
+          <div class="stat-row"><span class="stat-label">Churn %</span><span class="stat-val">${pick(mo.categories,"churn")}</span></div>
+          <div class="stat-row"><span class="stat-label">Owner's Comp</span><span class="stat-val">${pick(mo.categories,"total owner")}</span></div>
+        </div>`);
+    });
+  }
 
   push("finances", `
     <div class="card col-3">
@@ -1418,14 +1466,11 @@ function render(data) {
   if (!kpis.length) {
     push("growth", `<div class="card col-12"><div class="card-title">Google Sheets</div><div class="card-headline">30-Day Action Plan</div><p style="color:#ccc;font-size:.85rem">No data</p></div>`);
   } else {
-    // Store advice keyed by action for the modal
-    window._growthAdvice = {};
-    kpis.forEach(row => {
-      if (row["Action"] && row["advice"]) window._growthAdvice[row["Action"]] = row["advice"];
-    });
+    // Store advice by index for the modal (avoids fragile string escaping)
+    window._growthAdvice = kpis.map(row => ({ action: row["Action"] || "", advice: row["advice"] || "" }));
 
     const displayCols = ["Action","Owner","Deadline","Done"];
-    const rows = kpis.map(row => {
+    const rows = kpis.map((row, i) => {
       const v       = col => (row[col] || "");
       const isDone  = ["x","yes","✓"].includes(v("Done").trim().toLowerCase());
       const action  = v("Action");
@@ -1438,7 +1483,7 @@ function render(data) {
           : `<td><button class="ap-btn ap-btn-todo" onclick="event.stopPropagation();toggleDone(this,'${safeAct}',true,'${apScriptUrl}')">○ Mark done</button></td>`
         : isDone ? `<td class="ap-done">✓</td>` : `<td class="ap-todo">○</td>`;
 
-      return `<tr class="ap-row" onclick="showAdviceModal('${safeAct}')" style="cursor:pointer" title="Click for strategy advice">
+      return `<tr class="ap-row" onclick="showAdviceModal(${i})" style="cursor:pointer" title="Click for strategy advice">
         <td style="display:flex;align-items:center;gap:6px">
           ${action}
           ${advice ? `<span style="font-size:.6rem;background:#f5f3ff;color:#7c3aed;padding:1px 5px;border-radius:4px;white-space:nowrap">AI ✦</span>` : ""}

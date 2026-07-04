@@ -7,9 +7,54 @@ Layout: CAPTAIN | CATEGORY | MEASURABLES | YTD/AVG | GOAL | <month cols…>
 We read each measurable's goal and its latest month value, grouped by category.
 Updated monthly, so "last updated" = the sheet's Drive modified time.
 """
-import os, json, datetime
+import os, json, datetime, urllib.request, urllib.error
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+
+FINANCE_SYSTEM = (
+    "You are the finance adviser for The Forge, a women's-only fitness gym in Belfast "
+    "run as a UK limited company. You have expertise in UK small-business accounting: "
+    "corporation tax, director responsibilities, dividends vs salary, allowable expenses, "
+    "VAT thresholds, and limited-company obligations. From the month's KPIs (revenue, "
+    "profit, expenses, owner's comp, churn, LTV) give practical, specific advice to "
+    "improve the financial position and stay compliant/tax-efficient. 4-6 short bullet "
+    "points, plain UK English, no preamble, no disclaimers."
+)
+
+
+def _finance_advice(period, categories):
+    """UK-accounting finance adviser — AI with a rule-based fallback."""
+    facts = "; ".join(f"{it['name']}: {it['value']}"
+                      for cat in categories for it in cat["items"] if it.get("value"))
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if key and facts:
+        try:
+            payload = json.dumps({
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 420,
+                "system": FINANCE_SYSTEM,
+                "messages": [{"role": "user", "content":
+                    f"The Forge — {period} figures:\n{facts}\n\n"
+                    "As our UK finance adviser, how do we improve the financial position "
+                    "and stay tax-efficient/compliant as a limited company?"}],
+            }).encode()
+            req = urllib.request.Request(
+                "https://api.anthropic.com/v1/messages", data=payload,
+                headers={"x-api-key": key, "anthropic-version": "2023-06-01",
+                         "content-type": "application/json"})
+            with urllib.request.urlopen(req, timeout=40) as resp:
+                text = json.loads(resp.read())["content"][0]["text"].strip()
+                if text:
+                    return text
+        except Exception as ex:
+            print(f"[kpi] finance AI error: {ex}")
+    return ("**Finance adviser**\n"
+            "• Set aside ~19-25% of profit for corporation tax so it isn't a year-end shock.\n"
+            "• Review the salary/dividend split with your accountant — a small director's "
+            "salary to the NI threshold plus dividends is usually the tax-efficient route.\n"
+            "• Track non-people expenses against the 20-35% target; anything above needs a reason.\n"
+            "• Keep receipts for all allowable business expenses (kit, training, mileage, home office).\n"
+            "• If rolling 12-month turnover nears the £90k VAT threshold, plan registration early.")
 
 SPREADSHEET_ID = "1hnmdTnecyLu3WQBynvRgGxor1JnEGyJG9_7O4czWC90"
 TARGET_SHEET = "KPI Revenue"
@@ -78,26 +123,34 @@ def run():
     def cell(row, i):
         return row[i].strip() if i < len(row) and row[i] is not None else ""
 
-    groups = {}
-    for row in rows[hidx + 1:]:
-        meas = cell(row, c_meas)
-        if not meas:
-            continue
-        cat = cell(row, c_cat) or "Other"
-        val = cell(row, cur_col)
-        goal = cell(row, c_goal)
-        if not val and not goal:
-            continue
-        groups.setdefault(cat, []).append({
-            "name": meas.replace("\n", " ").strip(),
-            "value": val,
-            "goal": goal,
-        })
+    def build_categories(month_col):
+        groups = {}
+        for row in data_rows:
+            meas = cell(row, c_meas)
+            if not meas:
+                continue
+            cat = cell(row, c_cat) or "Other"
+            val = cell(row, month_col)
+            goal = cell(row, c_goal)
+            if not val and not goal:
+                continue
+            groups.setdefault(cat, []).append({
+                "name": meas.replace("\n", " ").strip(),
+                "value": val,
+                "goal": goal,
+            })
+        return [{"name": k, "items": v} for k, v in groups.items()]
+
+    # One entry per complete month (most recent first)
+    months = [{"period": str(headers[i]).strip(), "categories": build_categories(i)}
+              for i in reversed(month_cols)]
 
     return {
         "period": period,
         "last_updated": _last_updated(creds),
-        "categories": [{"name": k, "items": v} for k, v in groups.items()],
+        "categories": build_categories(cur_col),   # latest month (back-compat)
+        "months": months,
+        "advice": _finance_advice(period, build_categories(cur_col)),
     }
 
 

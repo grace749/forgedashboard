@@ -109,11 +109,13 @@ def run():
     mentions = []
     try:
         res = _call("search.messages", token, query=f"<@{GRACE_ID}>",
-                    sort="timestamp", sort_dir="desc", count=20)
+                    sort="timestamp", sort_dir="desc", count=100)
         matches = (res.get("messages") or {}).get("matches", [])
         for m in matches:
             ts = float(m.get("ts", 0))
             if ts < now - 14 * 86400:   # only last 2 weeks
+                continue
+            if _is_noise_message(m):     # skip bot/automated mentions
                 continue
             mentions.append({
                 "name": (m.get("username") or m.get("user") or "Someone"),
