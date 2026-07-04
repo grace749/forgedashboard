@@ -45,6 +45,9 @@
       margin: 0 auto;
       align-items: start;
     }
+    /* Members grid: cards in each row stretch to equal height for a clean, aligned layout */
+    #grid-members { align-items: stretch; }
+    #grid-members .card { overflow: hidden; }
 
     /* ── Card ───────────────────────────────────────────────── */
     .card {
@@ -116,11 +119,11 @@
     .brief-chevron { transition: transform .2s; flex-shrink: 0; }
     .brief-chevron.rotated { transform: rotate(180deg); }
     .brief-collapsed { display: none; }
-    .brief-panel { height: 360px; }
+    .brief-panel { height: 440px; }
     /* Home: brief and tasks cards match height, each scrolls internally */
     .brief-card { height: 600px; }
     .brief-card .brief-body { flex: 1; overflow-y: auto; }
-    .tasks-card { height: 600px; }
+    .tasks-card { height: 440px; }
     .tasks-card .task-list { flex: 1; overflow-y: auto; max-height: none !important; }
     .brief-body { border-top: 1px solid #f3f4f6; }
     .brief-body::-webkit-scrollbar { width: 3px; }
@@ -573,16 +576,20 @@ function render(data) {
         </div>
       </div>`);
 
-    // Four separate cards, equal height, each scrolls
-    const briefCard = (title, colour, html) => `
-      <div class="card col-3 brief-panel">
+    // Top row: Calendar + Needs your attention (Tasks pushed alongside below).
+    // Enquiries + WhatsApp go on the row underneath.
+    const briefCard = (title, colour, html, col) => `
+      <div class="card ${col || 'col-4'} brief-panel">
         <div class="brief-col-title brief-col-title--${colour}" style="margin-top:0">${title}</div>
         <div style="overflow-y:auto;flex:1">${html}</div>
       </div>`;
-    push("home", briefCard("Calendar today",        "purple", calHtml));
-    push("home", briefCard("Needs your attention",  "red",    emailHtml));
-    push("home", briefCard("New enquiries (email)", "green",  enquiryHtml));
-    push("home", briefCard("WhatsApp &amp; webchat","amber",  ghlHtml));
+    push("home", briefCard("Calendar today",       "purple", calHtml,  "col-4"));
+    push("home", briefCard("Needs your attention", "red",    emailHtml,"col-4"));
+    // stash the lower row to push after Tasks (so Tasks sits top-right)
+    window._briefLower = () => {
+      push("home", briefCard("New enquiries (email)", "green", enquiryHtml, "col-6"));
+      push("home", briefCard("WhatsApp &amp; webchat","amber", ghlHtml,     "col-6"));
+    };
   }
 
   // ── Membership ─────────────────────────────────────────────
@@ -1467,6 +1474,9 @@ function render(data) {
       <ul class="task-list">${taskHtml}</ul>
     </div>
   `);
+
+  // Enquiries + WhatsApp row goes below the Calendar / Attention / Tasks row
+  if (window._briefLower) window._briefLower();
 
   // ── Slack panel ────────────────────────────────────────────
   const slack = data.slack || {};

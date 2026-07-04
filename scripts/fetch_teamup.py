@@ -792,7 +792,8 @@ def run():
         m for m in cancelled_all
         if last_month_start.isoformat() <= (m.get("end_date") or m.get("expiration_date") or "") <= last_month_end.isoformat()
         and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
-        and m["customer"] not in all_active_ids   # exclude membership switches
+        and m["customer"] not in all_active_ids   # still active = a switch, not a leaver
+        and m["customer"] not in paused_ids       # on hold = still a member
     ]
     cancelled_ids = {m["customer"] for m in cancelled_last_month}
     name_map      = get_customer_names(cancelled_ids, existing=name_map)
@@ -809,9 +810,9 @@ def run():
     cancelled_by_month = {}
     for m in cancelled_recent:
         cid  = m["customer"]
-        # Not a real cancellation if they still have an active membership —
-        # they just switched/moved membership type.
-        if cid in all_active_ids:
+        # Not a real cancellation if they still hold an active or paused
+        # membership — they just switched/upgraded/downgraded or moved to annual.
+        if cid in all_active_ids or cid in paused_ids:
             continue
         nm   = name_map.get(cid, "")
         if not nm or nm.lower() in EXCLUDE_CUSTOMER_NAMES:
@@ -835,8 +836,8 @@ def run():
         cid = m["customer"]
         if not end or end < year_start or end > today.isoformat():
             continue
-        if cid in all_active_ids:
-            continue   # switched, not a real leaver
+        if cid in all_active_ids or cid in paused_ids:
+            continue   # switched or on hold, not a real leaver
         if m.get("name", "").strip().lower() in EXCLUDE_FROM_CHURN:
             continue
         if name_map.get(cid, "").lower() in EXCLUDE_CUSTOMER_NAMES:

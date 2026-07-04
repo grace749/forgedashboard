@@ -20,7 +20,13 @@ STAFF_SYSTEM = (
     "and 1:1s LAST MONTH, give practical suggestions on using the team better: where "
     "a coach is under-used or over-loaded, gaps in coverage (e.g. a popular class "
     "leaning on one person), and how to balance the timetable. 4-6 short bullet "
-    "points, plain UK English, no preamble."
+    "points, plain UK English, no preamble.\n"
+    "Hard constraints — respect these, do NOT suggest anything that breaks them:\n"
+    "- Grace (founder) ONLY coaches Mondays; she's focused on scaling the business, "
+    "so don't propose giving her more classes on other days.\n"
+    "- JoJo always coaches Tuesdays (a technically demanding day to coach).\n"
+    "- Eilis is not yet a strong enough coach to take Tuesdays, so never suggest "
+    "putting Eilis on a Tuesday."
 )
 
 
