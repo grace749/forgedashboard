@@ -25,21 +25,56 @@ FINANCE_SYSTEM = (
 )
 
 
-def _finance_advice(period, categories):
-    """Fractional CFO — grow revenue, cut costs, lift profit. AI with a fallback."""
-    facts = "; ".join(f"{it['name']}: {it['value']}"
-                      for cat in categories for it in cat["items"] if it.get("value"))
-    if facts:
-        text = ai.generate(
-            FINANCE_SYSTEM,
-            f"The Forge — {period} figures:\n{facts}\n\n"
-            "As our Fractional CFO, give me specific moves this month to increase "
-            "revenue, reduce expenses, and improve profitability — referencing these "
-            "numbers and what's off-target.",
-            max_tokens=500,
-        )
-        if text:
-            return text
+KEY_METRICS = ["Revenue", "Total Profit", "Profit %", "Expenses - People",
+               "Expenses - Non-People", "Active Clients", "Attrition (Churn) %", "AR/M"]
+
+
+def _metric(categories, name):
+    for cat in categories:
+        for it in cat["items"]:
+            if (it.get("name") or "").lower().startswith(name.lower()):
+                return it.get("value", "")
+    return ""
+
+
+def _finance_advice(period, months):
+    """Fractional CFO — data-driven advice from month/quarter/year trends."""
+    if not months:
+        return _finance_fallback()
+
+    # Build a compact month-by-month table of the key metrics (oldest→newest)
+    series = list(reversed(months))   # months is newest-first
+    header = "Month | " + " | ".join(KEY_METRICS)
+    rows = [header]
+    for m in series:
+        vals = [_metric(m["categories"], k) or "—" for k in KEY_METRICS]
+        rows.append(f"{m['period']} | " + " | ".join(vals))
+    table = "\n".join(rows)
+
+    latest = months[0]["period"]
+    prev   = months[1]["period"] if len(months) > 1 else None
+    q_note = ("Compare the most recent 3 months (a quarter) against the 3 before it. "
+              if len(months) >= 6 else "")
+    yoy_note = ("Where the same month a year earlier is present, comment on the "
+                "year-on-year change. " if len(months) >= 12 else "")
+
+    text = ai.generate(
+        FINANCE_SYSTEM,
+        f"The Forge — monthly KPIs (goals are in the KPI Tracking sheet):\n{table}\n\n"
+        f"Latest complete month is {latest}"
+        + (f", compare it to {prev} (month-on-month). " if prev else ". ")
+        + q_note + yoy_note +
+        "As our Fractional CFO, give specific, numbers-referenced moves to increase "
+        "revenue, reduce expenses and improve profitability. Call out trends "
+        "(improving/declining), what's off-target, and the single biggest priority.",
+        max_tokens=600,
+    )
+    if text:
+        return text
+    return _finance_fallback()
+
+
+def _finance_fallback():
     return ("**Grow revenue**\n"
             "• Fill your quietest class slots (see Members → Class Popularity) — a promo or "
             "format change there is revenue you're already paying the coach for.\n"
@@ -146,7 +181,7 @@ def run():
         "last_updated": _last_updated(creds),
         "categories": build_categories(cur_col),   # latest month (back-compat)
         "months": months,
-        "advice": _finance_advice(period, build_categories(cur_col)),
+        "advice": _finance_advice(period, months),
     }
 
 

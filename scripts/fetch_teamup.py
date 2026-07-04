@@ -792,6 +792,7 @@ def run():
         m for m in cancelled_all
         if last_month_start.isoformat() <= (m.get("end_date") or m.get("expiration_date") or "") <= last_month_end.isoformat()
         and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
+        and m["customer"] not in all_active_ids   # exclude membership switches
     ]
     cancelled_ids = {m["customer"] for m in cancelled_last_month}
     name_map      = get_customer_names(cancelled_ids, existing=name_map)
@@ -808,6 +809,10 @@ def run():
     cancelled_by_month = {}
     for m in cancelled_recent:
         cid  = m["customer"]
+        # Not a real cancellation if they still have an active membership —
+        # they just switched/moved membership type.
+        if cid in all_active_ids:
+            continue
         nm   = name_map.get(cid, "")
         if not nm or nm.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue

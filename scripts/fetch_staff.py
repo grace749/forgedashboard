@@ -13,15 +13,14 @@ import ai
 TEAMUP_API_KEY = os.environ["TEAMUP_API_KEY"]
 BASE = "https://goteamup.com/api/v2"
 HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
-LOOKBACK_DAYS = 60
 
 STAFF_SYSTEM = (
     "You are a fitness studio operations manager for The Forge, a women's-only gym "
-    "in Belfast. Looking at how the coaching team's time is spread across classes "
-    "and 1:1s over the last 60 days, give practical suggestions on using the team "
-    "better: where a coach is under-used or over-loaded, gaps in coverage (e.g. a "
-    "popular class leaning on one person), and how to balance the timetable. "
-    "4-6 short bullet points, plain UK English, no preamble."
+    "in Belfast. Looking at how the coaching team's time was spread across classes "
+    "and 1:1s LAST MONTH, give practical suggestions on using the team better: where "
+    "a coach is under-used or over-loaded, gaps in coverage (e.g. a popular class "
+    "leaning on one person), and how to balance the timetable. 4-6 short bullet "
+    "points, plain UK English, no preamble."
 )
 
 
@@ -50,15 +49,20 @@ def _get_all(endpoint, params=None):
 
 def run():
     instructors = _get_all("instructors", {"page_size": 50})
+    # Previous full calendar month
     today = date.today()
-    since = (today - timedelta(days=LOOKBACK_DAYS)).isoformat()
+    first_this = today.replace(day=1)
+    last_prev  = first_this - timedelta(days=1)
+    first_prev = last_prev.replace(day=1)
+    since, until = first_prev.isoformat(), last_prev.isoformat()
+    period = first_prev.strftime("%B %Y")
 
     coaches = []
     for ins in instructors:
         events = _get_all("events", {
             "instructors": ins["id"],
             "starts_at_gte": since,
-            "starts_at_lte": today.isoformat(),
+            "starts_at_lte": until,
             "page_size": 100,
         })
         counts = Counter()
@@ -81,12 +85,12 @@ def run():
     def _cls(c):
         return ", ".join(f"{x['name']} x{x['count']}" for x in c["classes"][:6])
     summary = "; ".join(
-        f"{c['name']} ({c['role']}): {c['sessions']} sessions in 60d — {_cls(c)}"
+        f"{c['name']} ({c['role']}): {c['sessions']} sessions in {period} — {_cls(c)}"
         for c in coaches if c["sessions"]
     )
     advice = ai.generate(
         STAFF_SYSTEM,
-        f"Coaching team over the last 60 days:\n{summary}\n\n"
+        f"Coaching team last month ({period}):\n{summary}\n\n"
         "How should Grace use the team better — where are people under-used, "
         "over-loaded, or is coverage too dependent on one coach?",
         max_tokens=420,
@@ -100,7 +104,7 @@ def run():
         "• Match your busiest class times to your strongest coaches."
     )
 
-    return {"coaches": coaches, "advice": advice, "lookback_days": LOOKBACK_DAYS}
+    return {"coaches": coaches, "advice": advice, "period": period}
 
 
 if __name__ == "__main__":
