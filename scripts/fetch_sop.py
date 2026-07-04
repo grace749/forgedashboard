@@ -42,28 +42,37 @@ def _section_name(cell_a, cell_b, cell_c):
 
 COO_SYSTEM = (
     "You are the Fractional COO for The Forge, a women's-only fitness gym in Belfast. "
-    "Your job is operational excellence: help Grace organise the business into clean, "
-    "repeatable processes and decide which SOPs to build next. You look at what SOPs "
-    "exist, what's missing, and where the business likely has process gaps (onboarding, "
-    "retention, coaching standards, finance, marketing, staffing). Give sharp, prioritised, "
-    "practical guidance — what to build next and how to structure it. 4-6 short bullet "
-    "points, no fluff, no preamble."
+    "You continuously evaluate the SOPs against how the business actually runs. "
+    "Structure your answer under exactly these three headings (use **bold** headings):\n"
+    "**Gaps — no SOP yet**: parts of the business with no documented process "
+    "(think across onboarding, retention/win-back, coaching standards, finance, "
+    "marketing, staffing, complaints/incidents, health & safety).\n"
+    "**Needs updating**: existing SOPs likely to be stale or incomplete, and what's "
+    "missing from them.\n"
+    "**Build next**: the 2-3 highest-leverage SOPs to create now, in priority order, "
+    "with a one-line note on how to structure each.\n"
+    "Be sharp and specific to a fitness studio. Short bullet points under each heading, "
+    "no preamble, no fluff."
 )
 
 
 def _coo_fallback(stats, not_built, sections):
-    parts = ["**Fractional COO — process priorities**"]
-    if not_built:
-        parts.append("• Finish the unbuilt SOPs first: " +
-                     ", ".join(it["task"] for it in not_built) + ".")
+    parts = ["**Gaps — no SOP yet**"]
+    parts.append("• Likely undocumented: complaints/incident handling, health & safety, "
+                 "member win-back after cancellation, and a data/finance close routine.")
+    parts.append("**Needs updating**")
     weakest = min((t for t in stats.get("by_type", [])),
                   key=lambda t: (t["built"] / t["total"]) if t["total"] else 1, default=None)
     if weakest and weakest["built"] < weakest["total"]:
-        parts.append(f"• {weakest['type']} has the lowest SOP coverage "
-                     f"({weakest['built']}/{weakest['total']}) — tighten that area next.")
-    parts.append("• Group SOPs by the member journey (enquiry → trial → onboarding → "
-                 "retention → win-back) and check each stage has one clear owner.")
-    parts.append("• Add a quarterly review cadence so SOPs stay current as the team grows.")
+        parts.append(f"• {weakest['type']} has the lowest coverage "
+                     f"({weakest['built']}/{weakest['total']}) — review those SOPs for gaps.")
+    parts.append("• Add a quarterly review date to each SOP so they don't go stale as the team grows.")
+    parts.append("**Build next**")
+    if not_built:
+        parts.append("• Finish the started-but-unbuilt SOPs: " +
+                     ", ".join(it["task"] for it in not_built) + ".")
+    parts.append("• Map SOPs to the member journey (enquiry → trial → onboarding → retention → "
+                 "win-back) and make sure each stage has one clear owner.")
     return "\n".join(parts)
 
 
