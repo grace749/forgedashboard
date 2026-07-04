@@ -1,16 +1,26 @@
 {
-  "generated_at": "2026-07-03T17:12:05.019319+00:00",
+  "generated_at": "2026-07-04T11:07:27.589186+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "event_count": 0,
-    "urgent_count": 1,
+    "urgent_count": 2,
     "enquiry_count": 0,
     "calendar": {
-      "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-03T00%3A00%3A00%2B00%3A00&timeMax=2026-07-03T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
+      "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-04T00%3A00%3A00%2B00%3A00&timeMax=2026-07-04T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
     },
     "urgent": [
+      {
+        "from": "Anna Morton",
+        "from_raw": "Anna Morton <anna@rainbow-project.org>",
+        "subject": "Run with Pride - Sunday 19th July - Event information",
+        "snippet": "Once again, thank you so much for registering to take part in our inaugural &#39;Run with Pride&#39; event on Sunday 19 th July, kindly sponsored by The Maverick and supported by Belfast Frontrunners",
+        "id": "19f2cb1109ceb86f",
+        "thread_id": "19f2cb1109ceb86f",
+        "msg_count": 1,
+        "draft_id": "r-5846301147245817978"
+      },
       {
         "from": "S Moore",
         "from_raw": "S Moore <smooremotors@btconnect.com>",
@@ -179,7 +189,7 @@
     "monthly": [
       {
         "month": "2026-07",
-        "completed": 1,
+        "completed": 2,
         "converted": 0,
         "conv_rate": 0
       },
@@ -198,38 +208,6 @@
     ],
     "active": [
       {
-        "name": "Emma Wilson",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-22",
-        "end": "2026-07-03",
-        "goal": "Get into good eating habits that work with feeding my kids who are picky eaters and I have limited time. I want to reduce belly size, back boob's and feel more confident",
-        "notes": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        "week_on": 6,
-        "days_left": 0,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
-      },
-      {
         "name": "Claire Walker",
         "cohort": "APR-MAY",
         "joined": "2026-05-23",
@@ -247,7 +225,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 1,
+        "days_left": 0,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -279,7 +257,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 3,
+        "days_left": 2,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -311,7 +289,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 7,
+        "days_left": 6,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -343,7 +321,7 @@
           false
         ],
         "week_on": 5,
-        "days_left": 11,
+        "days_left": 10,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -375,7 +353,7 @@
           false
         ],
         "week_on": 5,
-        "days_left": 13,
+        "days_left": 12,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -407,7 +385,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 21,
+        "days_left": 20,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -439,7 +417,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 24,
+        "days_left": 23,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -471,7 +449,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 24,
+        "days_left": 23,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -502,17 +480,17 @@
           false,
           false
         ],
-        "week_on": 2,
-        "days_left": 29,
+        "week_on": 3,
+        "days_left": 28,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
+        "missing_checkins": 2,
         "completed_checkins": 1,
-        "expected_checkins": 2,
+        "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
         "pause_reason": "n/a"
@@ -535,7 +513,7 @@
           false
         ],
         "week_on": 2,
-        "days_left": 30,
+        "days_left": 29,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -567,7 +545,7 @@
           false
         ],
         "week_on": 2,
-        "days_left": 35,
+        "days_left": 34,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -599,7 +577,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 39,
+        "days_left": 38,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -631,7 +609,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 40,
+        "days_left": 39,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -663,7 +641,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 97,
+        "days_left": 96,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -697,7 +675,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 18,
+        "days_left": 17,
         "is_active": true,
         "is_converted": false,
         "not_converted": true,
@@ -710,6 +688,38 @@
         "paused": false,
         "pink_red": true,
         "pause_reason": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED"
+      },
+      {
+        "name": "Emma Wilson",
+        "cohort": "APR-MAY",
+        "joined": "2026-05-22",
+        "end": "2026-07-03",
+        "goal": "Get into good eating habits that work with feeding my kids who are picky eaters and I have limited time. I want to reduce belly size, back boob's and feel more confident",
+        "notes": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -1,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 5,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
       },
       {
         "name": "Lesley Laverty",
@@ -729,7 +739,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -4,
+        "days_left": -5,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -761,7 +771,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -7,
+        "days_left": -8,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -793,7 +803,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -9,
+        "days_left": -10,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -825,7 +835,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -14,
+        "days_left": -15,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -857,7 +867,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -15,
+        "days_left": -16,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -889,7 +899,7 @@
           true
         ],
         "week_on": 5,
-        "days_left": -16,
+        "days_left": -17,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -921,7 +931,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -17,
+        "days_left": -18,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -953,7 +963,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -17,
+        "days_left": -18,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -985,7 +995,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -18,
+        "days_left": -19,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1017,7 +1027,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -19,
+        "days_left": -20,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1049,7 +1059,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -19,
+        "days_left": -20,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1081,7 +1091,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -19,
+        "days_left": -20,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1113,7 +1123,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -28,
+        "days_left": -29,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1145,7 +1155,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -28,
+        "days_left": -29,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1177,7 +1187,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -31,
+        "days_left": -32,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1209,7 +1219,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -33,
+        "days_left": -34,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1241,7 +1251,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -34,
+        "days_left": -35,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1273,7 +1283,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -36,
+        "days_left": -37,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1305,7 +1315,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -37,
+        "days_left": -38,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1337,7 +1347,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -39,
+        "days_left": -40,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1369,7 +1379,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -39,
+        "days_left": -40,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1401,7 +1411,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -42,
+        "days_left": -43,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1433,7 +1443,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -42,
+        "days_left": -43,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1465,7 +1475,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -42,
+        "days_left": -43,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1496,8 +1506,8 @@
           true,
           true
         ],
-        "week_on": null,
-        "days_left": -45,
+        "week_on": 1,
+        "days_left": -46,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1505,8 +1515,8 @@
         "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 0,
-        "completed_checkins": 0,
-        "expected_checkins": 0,
+        "completed_checkins": 1,
+        "expected_checkins": 1,
         "paused": false,
         "pink_red": false,
         "pause_reason": "I would say I probably have ADHD or ASD. Not diagnosed but my children have ASD and ADHD. Yes anxiety, I just close away, hide, I don't want to see or talk to anyone. I won't even go to the shop"
@@ -1529,7 +1539,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -48,
+        "days_left": -49,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1561,7 +1571,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -48,
+        "days_left": -49,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1593,7 +1603,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -49,
+        "days_left": -50,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1625,7 +1635,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -49,
+        "days_left": -50,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1657,7 +1667,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -49,
+        "days_left": -50,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1689,7 +1699,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -49,
+        "days_left": -50,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1723,7 +1733,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 4,
+        "days_left": 3,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -1755,7 +1765,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -3,
+        "days_left": -4,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1787,7 +1797,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 20,
+        "days_left": 19,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -1819,7 +1829,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -15,
+        "days_left": -16,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1836,26 +1846,16 @@
     ],
     "alerts": [
       {
-        "member": "Emma Wilson",
+        "member": "Claire Walker",
         "type": "missing_checkin",
         "detail": "Missing 1 check-in(s) (on week 6)"
       },
       {
-        "member": "Emma Wilson",
+        "member": "Claire Walker",
         "type": "conversion",
         "detail": "0d left \u2014 conversion chat not scheduled!"
       },
       {
-        "member": "Claire Walker",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 6)"
-      },
-      {
-        "member": "Claire Walker",
-        "type": "conversion",
-        "detail": "1d left \u2014 conversion chat not scheduled!"
-      },
-      {
         "member": "Victoria McCullough",
         "type": "missing_checkin",
         "detail": "Missing 1 check-in(s) (on week 6)"
@@ -1863,7 +1863,7 @@
       {
         "member": "Victoria McCullough",
         "type": "conversion",
-        "detail": "3d left \u2014 conversion chat not scheduled!"
+        "detail": "2d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Lesley Drake",
@@ -1873,7 +1873,7 @@
       {
         "member": "Lesley Drake",
         "type": "conversion",
-        "detail": "7d left \u2014 conversion chat not scheduled!"
+        "detail": "6d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Sharon Smyth",
@@ -1883,7 +1883,7 @@
       {
         "member": "Sharon Smyth",
         "type": "conversion",
-        "detail": "11d left \u2014 conversion chat not scheduled!"
+        "detail": "10d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Nuala O'neill",
@@ -1893,7 +1893,7 @@
       {
         "member": "Nuala O'neill",
         "type": "conversion",
-        "detail": "13d left \u2014 conversion chat not scheduled!"
+        "detail": "12d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Julie Lennox",
@@ -1913,7 +1913,7 @@
       {
         "member": "Leah Calvin",
         "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 2)"
+        "detail": "Missing 2 check-in(s) (on week 3)"
       },
       {
         "member": "Louise Farley",
@@ -1957,16 +1957,31 @@
       }
     ],
     "stats": {
-      "active_count": 15,
+      "active_count": 14,
       "paused_count": 4,
-      "conv_rate": 53,
+      "conv_rate": 52,
       "converted": 17,
       "not_converted": 10,
-      "total_complete": 32
+      "total_complete": 33
     }
   },
   "inbody": {
     "scans": [
+      {
+        "name": "065emmawilson",
+        "last_scan": "2026-07-04",
+        "scan_count": 1,
+        "weight": 219.3,
+        "smm": 58.4,
+        "pbf": 52.3,
+        "bmi": 42.8,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "next_due": "2026-08-15",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "096marymckenna",
         "last_scan": "2026-07-02",
@@ -1979,7 +1994,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-13",
-        "days_to_due": 41,
+        "days_to_due": 40,
         "overdue": false
       },
       {
@@ -1994,7 +2009,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-11",
-        "days_to_due": 39,
+        "days_to_due": 38,
         "overdue": false
       },
       {
@@ -2009,7 +2024,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-10",
-        "days_to_due": 38,
+        "days_to_due": 37,
         "overdue": false
       },
       {
@@ -2024,7 +2039,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": 36,
+        "days_to_due": 35,
         "overdue": false
       },
       {
@@ -2039,7 +2054,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": 36,
+        "days_to_due": 35,
         "overdue": false
       },
       {
@@ -2054,7 +2069,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-07",
-        "days_to_due": 35,
+        "days_to_due": 34,
         "overdue": false
       },
       {
@@ -2069,7 +2084,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-06",
-        "days_to_due": 34,
+        "days_to_due": 33,
         "overdue": false
       },
       {
@@ -2084,7 +2099,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-05",
-        "days_to_due": 33,
+        "days_to_due": 32,
         "overdue": false
       },
       {
@@ -2099,7 +2114,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": 32,
+        "days_to_due": 31,
         "overdue": false
       },
       {
@@ -2114,7 +2129,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": 32,
+        "days_to_due": 31,
         "overdue": false
       },
       {
@@ -2129,7 +2144,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": 32,
+        "days_to_due": 31,
         "overdue": false
       },
       {
@@ -2144,7 +2159,7 @@
         "smm_change": 2.0,
         "pbf_change": -1.6,
         "next_due": "2026-08-03",
-        "days_to_due": 31,
+        "days_to_due": 30,
         "overdue": false
       },
       {
@@ -2159,7 +2174,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-03",
-        "days_to_due": 31,
+        "days_to_due": 30,
         "overdue": false
       },
       {
@@ -2174,7 +2189,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": 29,
+        "days_to_due": 28,
         "overdue": false
       },
       {
@@ -2189,7 +2204,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": 29,
+        "days_to_due": 28,
         "overdue": false
       },
       {
@@ -2204,7 +2219,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -2219,7 +2234,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -2234,7 +2249,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -2249,7 +2264,7 @@
         "smm_change": 0.7,
         "pbf_change": -0.9,
         "next_due": "2026-07-30",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2264,7 +2279,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-30",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2279,7 +2294,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -2294,7 +2309,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -2309,7 +2324,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -2324,7 +2339,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": 25,
+        "days_to_due": 24,
         "overdue": false
       },
       {
@@ -2339,7 +2354,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": 25,
+        "days_to_due": 24,
         "overdue": false
       },
       {
@@ -2354,7 +2369,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2369,7 +2384,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2384,7 +2399,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2399,7 +2414,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2414,7 +2429,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2429,7 +2444,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2444,7 +2459,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2459,7 +2474,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-20",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2474,7 +2489,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2489,7 +2504,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2504,7 +2519,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2519,7 +2534,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-17",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2534,7 +2549,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": 13,
+        "days_to_due": 12,
         "overdue": false
       },
       {
@@ -2549,7 +2564,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": 13,
+        "days_to_due": 12,
         "overdue": false
       },
       {
@@ -2564,7 +2579,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-14",
-        "days_to_due": 11,
+        "days_to_due": 10,
         "overdue": false
       },
       {
@@ -2579,7 +2594,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2594,7 +2609,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2609,7 +2624,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2624,7 +2639,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2639,7 +2654,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2654,7 +2669,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2669,7 +2684,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 8,
+        "days_to_due": 7,
         "overdue": false
       },
       {
@@ -2684,7 +2699,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 8,
+        "days_to_due": 7,
         "overdue": false
       },
       {
@@ -2699,7 +2714,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 8,
+        "days_to_due": 7,
         "overdue": false
       },
       {
@@ -2714,7 +2729,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 8,
+        "days_to_due": 7,
         "overdue": false
       },
       {
@@ -2729,7 +2744,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": 6,
+        "days_to_due": 5,
         "overdue": false
       },
       {
@@ -2744,7 +2759,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": 6,
+        "days_to_due": 5,
         "overdue": false
       },
       {
@@ -2759,7 +2774,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-08",
-        "days_to_due": 5,
+        "days_to_due": 4,
         "overdue": false
       },
       {
@@ -2774,7 +2789,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-07",
-        "days_to_due": 4,
+        "days_to_due": 3,
         "overdue": false
       },
       {
@@ -2789,7 +2804,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2804,7 +2819,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2819,7 +2834,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2834,7 +2849,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2849,7 +2864,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2864,7 +2879,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2879,7 +2894,7 @@
         "smm_change": -0.2,
         "pbf_change": -0.4,
         "next_due": "2026-07-04",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2894,7 +2909,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2909,11 +2924,11 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-03",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       }
     ],
-    "total": 63,
+    "total": 64,
     "configured": true
   },
   "sop": {
@@ -3415,76 +3430,34 @@
     "configured": true,
     "unreplied_dms": [
       {
-        "user_id": "U0BBMUNCU9M",
-        "text": "Hi Leah, thanks for booking the Body Composition Scan! We're excited to see your next scan result.\n\nEnsure you have downloaded the InBody app and registered on ",
-        "hours": 287,
-        "name": "Leah Calvin"
-      },
-      {
-        "user_id": "U0B5F3WQ6EL",
-        "text": "Hi Lesley, thanks for booking the Body Composition Scan! We're excited to see your next scan result.\n\nEnsure you have downloaded the InBody app and registered o",
-        "hours": 269,
-        "name": "Lesley"
-      },
-      {
-        "user_id": "U07778QPS4E",
-        "text": "Hi Kiera, thanks for booking the Body Composition Scan! We're excited to see your next scan result.\n\nEnsure you have downloaded the InBody app and registered on",
-        "hours": 269,
-        "name": "Kiera Lawthers"
-      },
-      {
-        "user_id": "U0ADMNX20R3",
-        "text": "Hi Noleen, thanks for booking the Body Composition Scan! We're excited to see your next scan result.\n\nEnsure you have downloaded the InBody app and registered o",
-        "hours": 250,
-        "name": "Noleen McMullan"
-      },
-      {
-        "user_id": "U0B1G7ABCQL",
-        "text": "Hi Victoria, thanks for booking the Body Composition Scan! We're excited to see your next scan result.\n\nEnsure you have downloaded the InBody app and registered",
-        "hours": 248,
-        "name": "Victoria Thompson"
-      },
-      {
         "user_id": "U086J76UC3Y",
         "text": "Brilliant. Many thanks for getting this sorted Grace. All working now. Appreciate being allowed to use this reduced membership. :+1::muscle::skin-tone-2::purple",
-        "hours": 189,
+        "hours": 207,
         "name": "Alison Moffitt-Robinson"
-      },
-      {
-        "user_id": "U0BDFCBBTSA",
-        "text": "Hi Rosie,\n\nThanks for booking your No Sweat Intro! I'm Coach Grace and I'm excited to meet you in person! :dart:\n\nThis is a relaxed, pressure-free session, not ",
-        "hours": 142,
-        "name": "Rosie"
       },
       {
         "user_id": "U09DDQ1UETB",
         "text": "Apologies I'll have to cancel my 6pm class. I gave blood earlier and have been feeling lightheaded and queasy ever since. Sorry for late notice x",
-        "hours": 74,
+        "hours": 92,
         "name": "Claire Leeke"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Thanks Grace. Hopefully there will be some improvement at the end of my 6 weeks lol.",
-        "hours": 56,
+        "hours": 74,
         "name": "Lesley"
       },
       {
-        "user_id": "U0ALM0N736X",
-        "text": "Test week\nLat pull down 60kgs\n500m row 2 m 57 s\nFarmers hold 20kgs 1m 15s\nSeated bar press 15kgs \nAlt step ups 5kgs 30 reps\nSled push 80kgs\n\u201cGrace\u201d 7kgs 2m 22s\n",
-        "hours": 55,
-        "name": "Jackie Elliott"
-      },
-      {
-        "user_id": "U0AV56YE0N4",
-        "text": "Hi Megan, thanks for booking the Body Composition Scan! We're excited to see your next scan result.\n\nEnsure you have downloaded the InBody app and registered on",
-        "hours": 54,
-        "name": "Megan"
+        "user_id": "USLACK",
+        "text": "<@U0BFEFYKUFJ> joined via your invite link! If you need to disable the link or change your notification settings, you can <https://forgefemalefitness.slack.com/",
+        "hours": 61,
+        "name": "Slack"
       }
     ],
     "mentions": []
   },
   "kpi": {
-    "period": "January",
+    "period": "June",
     "last_updated": null,
     "categories": [
       {
@@ -3492,37 +3465,32 @@
         "items": [
           {
             "name": "Number of Terminations this Month",
-            "value": "7",
+            "value": "0",
             "goal": "0"
           },
           {
             "name": "Active Clients",
-            "value": "94",
+            "value": "147",
             "goal": "200"
           },
           {
             "name": "Trials",
-            "value": "34.00",
-            "goal": ""
-          },
-          {
-            "name": "Trial Conversion %",
-            "value": "0.47%",
+            "value": "11.00",
             "goal": ""
           },
           {
             "name": "Recurring",
-            "value": "84.00",
+            "value": "114.00",
             "goal": ""
           },
           {
             "name": "Attrition (Churn) %",
-            "value": "7.45%",
+            "value": "0.00%",
             "goal": "<3%"
           },
           {
             "name": "AR/M",
-            "value": "\u00a3160.67",
+            "value": "\u00a3120.48",
             "goal": ""
           }
         ]
@@ -3532,32 +3500,32 @@
         "items": [
           {
             "name": "Revenue",
-            "value": "\u00a315,103.19",
+            "value": "\u00a317,710.93",
             "goal": "\u00a320,000.00"
           },
           {
             "name": "Expenses - People",
-            "value": "\u00a33,037.00",
+            "value": "\u00a33,686.00",
             "goal": "25-40%"
           },
           {
             "name": "Expenses - Non-People",
-            "value": "\u00a38,165.74",
+            "value": "\u00a39,390.36",
             "goal": "20-35%"
           },
           {
             "name": "Owner Pay & Perks",
-            "value": "\u00a32,500.00",
+            "value": "\u00a33,700.00",
             "goal": "10-15%+"
           },
           {
             "name": "Total Profit",
-            "value": "\u00a31,400.45",
+            "value": "\u00a3934.57",
             "goal": "\u00a38,000.00"
           },
           {
             "name": "Profit %",
-            "value": "9.27%",
+            "value": "5.28%",
             "goal": "20%+"
           }
         ]
@@ -3567,12 +3535,12 @@
         "items": [
           {
             "name": "Total Owner's Comp.",
-            "value": "\u00a32,500.00",
+            "value": "\u00a33,700.00",
             "goal": ""
           },
           {
             "name": "TOC as % of Revenue",
-            "value": "16.55%",
+            "value": "20.89%",
             "goal": "20-40%"
           }
         ]
@@ -3658,7 +3626,7 @@
         "url": "https://app.asana.com/1/1211586132567259/task/1216229533593544",
         "project": null,
         "due_on": "2026-07-03",
-        "overdue": false,
+        "overdue": true,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -4412,6 +4380,368 @@
       {
         "id": 9188544,
         "name": "Zara McCaughan"
+      }
+    ],
+    "cancelled_by_month": [
+      {
+        "month": "2026-07",
+        "members": [
+          {
+            "name": "Rosemary McClenaghan",
+            "membership": "Empower",
+            "end": "2026-07-03"
+          },
+          {
+            "name": "Anna Richmond",
+            "membership": "4 PT Sessions",
+            "end": "2026-07-03"
+          },
+          {
+            "name": "Jackie McNeill",
+            "membership": "Elevate",
+            "end": "2026-07-03"
+          }
+        ]
+      },
+      {
+        "month": "2026-06",
+        "members": [
+          {
+            "name": "Mollie McGregor",
+            "membership": "Empower",
+            "end": "2026-06-30"
+          },
+          {
+            "name": "Mandy Mair",
+            "membership": "6 Week Jumpstart",
+            "end": "2026-06-30"
+          },
+          {
+            "name": "Jayne Scott",
+            "membership": "Empower",
+            "end": "2026-06-28"
+          },
+          {
+            "name": "Sorcha Gilmore",
+            "membership": "Empower",
+            "end": "2026-06-28"
+          },
+          {
+            "name": "Cindy McIntyre",
+            "membership": "Strongevity",
+            "end": "2026-06-17"
+          },
+          {
+            "name": "Alison Moffitt-Robinson",
+            "membership": "Elevate",
+            "end": "2026-06-14"
+          },
+          {
+            "name": "Kirsty Dunn",
+            "membership": "Strongevity",
+            "end": "2026-06-10"
+          },
+          {
+            "name": "Hilary McDowell",
+            "membership": "Empower",
+            "end": "2026-06-02"
+          },
+          {
+            "name": "Marbeth Barkley",
+            "membership": "Empower",
+            "end": "2026-06-02"
+          },
+          {
+            "name": "Courtney Elliott",
+            "membership": "4 PT Sessions",
+            "end": "2026-06-02"
+          }
+        ]
+      },
+      {
+        "month": "2026-05",
+        "members": [
+          {
+            "name": "Tracey Davies",
+            "membership": "Empower",
+            "end": "2026-05-31"
+          },
+          {
+            "name": "Kerrie MacKerracher",
+            "membership": "Empower",
+            "end": "2026-05-31"
+          },
+          {
+            "name": "Mandy Oliver",
+            "membership": "Strong Start 30 Day Trial",
+            "end": "2026-05-27"
+          },
+          {
+            "name": "Ashleen O'Kane",
+            "membership": "Elevate",
+            "end": "2026-05-26"
+          },
+          {
+            "name": "Marie O'Kane",
+            "membership": "Elevate",
+            "end": "2026-05-26"
+          },
+          {
+            "name": "Janet Beveridge",
+            "membership": "Elevate",
+            "end": "2026-05-25"
+          },
+          {
+            "name": "Alison Borland",
+            "membership": "Strongevity",
+            "end": "2026-05-19"
+          },
+          {
+            "name": "Sharon Sinclair",
+            "membership": "4 PT Sessions",
+            "end": "2026-05-18"
+          },
+          {
+            "name": "Pauline Reid",
+            "membership": "8 PT Sessions",
+            "end": "2026-05-18"
+          },
+          {
+            "name": "Annette Scott",
+            "membership": "Empower",
+            "end": "2026-05-12"
+          },
+          {
+            "name": "Stephanie Mcnally",
+            "membership": "6 Week Jumpstart",
+            "end": "2026-05-08"
+          },
+          {
+            "name": "Sharon Ferriby",
+            "membership": "4 PT Sessions",
+            "end": "2026-05-07"
+          },
+          {
+            "name": "Rachelle McDermott",
+            "membership": "Elevate",
+            "end": "2026-05-06"
+          },
+          {
+            "name": "Evelyn Sharpe",
+            "membership": "Empower",
+            "end": "2026-05-02"
+          },
+          {
+            "name": "Margaret. Ballantyne",
+            "membership": "8 PT Sessions",
+            "end": "2026-05-02"
+          }
+        ]
+      },
+      {
+        "month": "2026-04",
+        "members": [
+          {
+            "name": "Claire Leeke",
+            "membership": "Empower",
+            "end": "2026-04-29"
+          },
+          {
+            "name": "Julie Haslett",
+            "membership": "Empower",
+            "end": "2026-04-24"
+          },
+          {
+            "name": "Geraldine O'Neill",
+            "membership": "Empower",
+            "end": "2026-04-24"
+          },
+          {
+            "name": "Hazel Millar",
+            "membership": "Elevate",
+            "end": "2026-04-09"
+          },
+          {
+            "name": "Maureen McIlvar",
+            "membership": "Elevate",
+            "end": "2026-04-08"
+          },
+          {
+            "name": "Rachelle McDermott",
+            "membership": "Empower",
+            "end": "2026-04-05"
+          }
+        ]
+      },
+      {
+        "month": "2026-03",
+        "members": [
+          {
+            "name": "Sarah Boorman",
+            "membership": "Empower",
+            "end": "2026-03-31"
+          },
+          {
+            "name": "Melissa Traynor",
+            "membership": "Evolve",
+            "end": "2026-03-30"
+          },
+          {
+            "name": "Joan Taggart",
+            "membership": "Empower",
+            "end": "2026-03-26"
+          },
+          {
+            "name": "Joan Mcwilliams",
+            "membership": "Elevate",
+            "end": "2026-03-26"
+          },
+          {
+            "name": "Laura McClure",
+            "membership": "Elevate",
+            "end": "2026-03-24"
+          },
+          {
+            "name": "Melissa Traynor",
+            "membership": "Empower",
+            "end": "2026-03-24"
+          },
+          {
+            "name": "Joanne Holmes",
+            "membership": "Elevate",
+            "end": "2026-03-15"
+          },
+          {
+            "name": "Molly-rose Maguire",
+            "membership": "4 PT Sessions",
+            "end": "2026-03-10"
+          },
+          {
+            "name": "Carol Wilson",
+            "membership": "4 PT Sessions",
+            "end": "2026-03-02"
+          }
+        ]
+      },
+      {
+        "month": "2026-02",
+        "members": [
+          {
+            "name": "Shannon Campbell",
+            "membership": "Empower",
+            "end": "2026-02-28"
+          },
+          {
+            "name": "Dinah Evans",
+            "membership": "Empower",
+            "end": "2026-02-28"
+          },
+          {
+            "name": "Lynda Millar",
+            "membership": "Elevate",
+            "end": "2026-02-15"
+          },
+          {
+            "name": "sandra mccrea",
+            "membership": "Elevate",
+            "end": "2026-02-15"
+          },
+          {
+            "name": "Noreen Taylor",
+            "membership": "4 PT Sessions",
+            "end": "2026-02-12"
+          },
+          {
+            "name": "Carol Wilson",
+            "membership": "8 PT Sessions",
+            "end": "2026-02-02"
+          },
+          {
+            "name": "Olivia Newell",
+            "membership": "Empower",
+            "end": "2026-02-02"
+          },
+          {
+            "name": "Theresa McGreevy",
+            "membership": "Empower",
+            "end": "2026-02-02"
+          },
+          {
+            "name": "Megan McCombe",
+            "membership": "Elevate",
+            "end": "2026-02-01"
+          }
+        ]
+      },
+      {
+        "month": "2026-01",
+        "members": [
+          {
+            "name": "Catherine Gavin",
+            "membership": "4 PT Sessions",
+            "end": "2026-01-31"
+          },
+          {
+            "name": "Robynne Robinson",
+            "membership": "Elevate",
+            "end": "2026-01-26"
+          },
+          {
+            "name": "Cindy McIntyre",
+            "membership": "Accountability Package",
+            "end": "2026-01-23"
+          },
+          {
+            "name": "Lizzie Hogg",
+            "membership": "Elevate",
+            "end": "2026-01-15"
+          },
+          {
+            "name": "Sarah Gaston",
+            "membership": "Strong Start 30 Day Trial",
+            "end": "2026-01-04"
+          },
+          {
+            "name": "Ann Vance",
+            "membership": "Empower",
+            "end": "2026-01-02"
+          },
+          {
+            "name": "Sara Benetti",
+            "membership": "Empower",
+            "end": "2026-01-02"
+          },
+          {
+            "name": "Claire Green",
+            "membership": "Empower",
+            "end": "2026-01-02"
+          },
+          {
+            "name": "Zara Morrison",
+            "membership": "Empower",
+            "end": "2026-01-02"
+          },
+          {
+            "name": "Therese Charles",
+            "membership": "Empower",
+            "end": "2026-01-02"
+          },
+          {
+            "name": "Diana Grant",
+            "membership": "Strong Start 30 Day Trial",
+            "end": "2026-01-01"
+          }
+        ]
+      },
+      {
+        "month": "2025-12",
+        "members": [
+          {
+            "name": "Wendy McCullough",
+            "membership": "Empower",
+            "end": "2025-12-31"
+          }
+        ]
       }
     ],
     "churn_rate": 1.4,
@@ -5207,16 +5537,6 @@
         ]
       },
       {
-        "name": "30 Day Beginners Challenge",
-        "count": 1,
-        "members": [
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          }
-        ]
-      },
-      {
         "name": "Emerge",
         "count": 1,
         "members": [
@@ -5260,7 +5580,7 @@
           },
           {
             "day": "Friday",
-            "count": 397
+            "count": 414
           },
           {
             "day": "Thursday",
@@ -5274,7 +5594,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 189
+            "count": 203
           },
           {
             "day": "Monday",
@@ -5286,7 +5606,7 @@
           },
           {
             "day": "Friday",
-            "count": 397
+            "count": 414
           },
           {
             "day": "Tuesday",
@@ -5308,7 +5628,7 @@
           },
           {
             "name": "Elevate",
-            "count": 262
+            "count": 276
           },
           {
             "name": "Plate",
@@ -5316,7 +5636,7 @@
           },
           {
             "name": "Mobility",
-            "count": 203
+            "count": 206
           }
         ],
         "bottom_classes": [
@@ -5334,7 +5654,7 @@
           },
           {
             "name": "Mobility",
-            "count": 203
+            "count": 206
           },
           {
             "name": "Plate",
@@ -5342,7 +5662,7 @@
           },
           {
             "name": "Elevate",
-            "count": 262
+            "count": 276
           }
         ],
         "top_slots": [
@@ -5451,19 +5771,19 @@
             "day": "Saturday",
             "time": "10am",
             "name": "Elevate",
-            "count": 72,
+            "count": 76,
             "sessions": 9,
-            "avg": 8.0,
+            "avg": 8.4,
             "label": "Saturday 10am Elevate"
           }
         ],
-        "total_attended": 2358
+        "total_attended": 2389
       },
       "last_30_days": {
         "top_days": [
           {
-            "day": "Wednesday",
-            "count": 197
+            "day": "Friday",
+            "count": 178
           },
           {
             "day": "Tuesday",
@@ -5474,7 +5794,7 @@
             "count": 166
           },
           {
-            "day": "Friday",
+            "day": "Wednesday",
             "count": 161
           },
           {
@@ -5485,14 +5805,14 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 55
+            "count": 83
           },
           {
             "day": "Thursday",
             "count": 153
           },
           {
-            "day": "Friday",
+            "day": "Wednesday",
             "count": 161
           },
           {
@@ -5506,10 +5826,6 @@
         ],
         "top_classes": [
           {
-            "name": "Build: Full Body",
-            "count": 174
-          },
-          {
             "name": "Build: Upper",
             "count": 174
           },
@@ -5518,16 +5834,20 @@
             "count": 166
           },
           {
+            "name": "Build: Full Body",
+            "count": 155
+          },
+          {
+            "name": "Elevate",
+            "count": 108
+          },
+          {
             "name": "Plate",
             "count": 83
           },
           {
-            "name": "Circuits",
-            "count": 80
-          },
-          {
-            "name": "Elevate",
-            "count": 80
+            "name": "Mobility",
+            "count": 73
           }
         ],
         "bottom_classes": [
@@ -5540,20 +5860,20 @@
             "count": 13
           },
           {
+            "name": "Games Night",
+            "count": 14
+          },
+          {
+            "name": "Capacity",
+            "count": 22
+          },
+          {
             "name": "Engine",
             "count": 24
           },
           {
-            "name": "Capacity",
-            "count": 30
-          },
-          {
-            "name": "Mobility",
-            "count": 70
-          },
-          {
-            "name": "Elevate",
-            "count": 80
+            "name": "Circuits",
+            "count": 71
           }
         ],
         "top_slots": [
@@ -5585,6 +5905,15 @@
             "label": "Wednesday 6pm Plate"
           },
           {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 32,
+            "sessions": 3,
+            "avg": 10.7,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
             "day": "Monday",
             "time": "7pm",
             "name": "Build: Lower",
@@ -5592,15 +5921,6 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Monday 7pm Build: Lower"
-          },
-          {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
-            "label": "Wednesday 7am Build: Full Body"
           },
           {
             "day": "Friday",
@@ -5635,9 +5955,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 30,
-            "sessions": 4,
-            "avg": 7.5,
+            "count": 22,
+            "sessions": 3,
+            "avg": 7.3,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -5659,16 +5979,16 @@
             "label": "Thursday 7pm Engine"
           },
           {
-            "day": "Tuesday",
+            "day": "Friday",
             "time": "10am",
-            "name": "Build: Upper",
+            "name": "Mobility",
             "count": 33,
             "sessions": 4,
             "avg": 8.2,
-            "label": "Tuesday 10am Build: Upper"
+            "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 906
+        "total_attended": 915
       },
       "suggestion": "\u201cEngine\u201d is your least-attended class over 3 months (52). Try moving it to a busier time or promoting it \u2014 or swap it for a more popular format. Saturday is your quietest day. Consider trimming a class or running a popular format to lift attendance. \u201cBuild: Full Body\u201d is your most popular class (485) \u2014 adding another slot could capture unmet demand."
     },
@@ -5677,13 +5997,6 @@
         "id": 10057245,
         "name": "Alison Moffitt-Robinson",
         "membership": "4 Class Pass",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 8603158,
-        "name": "Ann Vance",
-        "membership": "Foundation PAID IN FULL",
         "days_absent": null,
         "last_seen": null
       },
@@ -5730,6 +6043,13 @@
         "last_seen": null
       },
       {
+        "id": 12484194,
+        "name": "Kerry Tweed",
+        "membership": "Elevate",
+        "days_absent": null,
+        "last_seen": null
+      },
+      {
         "id": 13149261,
         "name": "Khalida Ali",
         "membership": "4 PT Sessions",
@@ -5737,16 +6057,9 @@
         "last_seen": null
       },
       {
-        "id": 12852843,
-        "name": "Liz Houston",
-        "membership": "4 PT Sessions",
-        "days_absent": null,
-        "last_seen": null
-      },
-      {
-        "id": 7561270,
-        "name": "Mollie McGregor",
-        "membership": "Elevate",
+        "id": 4772999,
+        "name": "Kirsty Dunn",
+        "membership": "Empower",
         "days_absent": null,
         "last_seen": null
       },
@@ -5789,45 +6102,50 @@
     "celebrations": {
       "first_week": [
         {
+          "name": "Amy McWilliams",
+          "days_in": 0,
+          "start_date": "2026-07-04"
+        },
+        {
           "name": "Rosie Mc Fetridge",
-          "days_in": 4,
+          "days_in": 5,
           "start_date": "2026-06-29"
         },
         {
           "name": "Leah Calvin",
-          "days_in": 6,
+          "days_in": 7,
           "start_date": "2026-06-27"
         },
         {
           "name": "Louise Farley",
-          "days_in": 6,
+          "days_in": 7,
           "start_date": "2026-06-27"
         }
       ],
       "new_members": [
         {
           "name": "Laura Douglas",
-          "days_in": 0,
+          "days_in": 1,
           "start_date": "2026-07-03"
         },
         {
           "name": "Laura Fullerton",
-          "days_in": 4,
+          "days_in": 5,
           "start_date": "2026-06-29"
         },
         {
           "name": "Victoria Thompson",
-          "days_in": 6,
+          "days_in": 7,
           "start_date": "2026-06-27"
         },
         {
           "name": "Siobhan Honeyford",
-          "days_in": 7,
+          "days_in": 8,
           "start_date": "2026-06-26"
         },
         {
           "name": "Joanne Honeyford",
-          "days_in": 7,
+          "days_in": 8,
           "start_date": "2026-06-26"
         }
       ],
@@ -5836,63 +6154,56 @@
           "name": "Melissa McQuitty",
           "label": "18 months",
           "months": 18,
-          "days_until": 3,
+          "days_until": 2,
           "start_date": "2025-01-04"
         },
         {
           "name": "Christine Bartlett",
           "label": "1 year",
           "months": 12,
-          "days_until": -3,
+          "days_until": -4,
           "start_date": "2025-06-30"
         },
         {
           "name": "Christina Faulkner",
           "label": "1 year",
           "months": 12,
-          "days_until": 0,
+          "days_until": -1,
           "start_date": "2025-07-03"
         },
         {
           "name": "Lesley Greehy",
           "label": "1 year",
           "months": 12,
-          "days_until": 0,
+          "days_until": -1,
           "start_date": "2025-07-03"
-        },
-        {
-          "name": "Janeen Gilfillan",
-          "label": "9 months",
-          "months": 9,
-          "days_until": -4,
-          "start_date": "2025-09-28"
         },
         {
           "name": "Claire Leeke",
           "label": "9 months",
           "months": 9,
-          "days_until": 0,
+          "days_until": -1,
           "start_date": "2025-10-02"
         },
         {
           "name": "Kay Sweeney",
           "label": "6 months",
           "months": 6,
-          "days_until": 4,
+          "days_until": 3,
           "start_date": "2026-01-05"
         },
         {
           "name": "Jackie Elliott",
           "label": "3 months",
           "months": 3,
-          "days_until": -2,
+          "days_until": -3,
           "start_date": "2026-04-01"
         },
         {
           "name": "Heather McWilliams",
           "label": "3 months",
           "months": 3,
-          "days_until": -1,
+          "days_until": -2,
           "start_date": "2026-04-02"
         }
       ]
@@ -6953,7 +7264,7 @@
         "name": "Helen Traynor",
         "last_scan": "2026-05-29",
         "next_due": "2026-07-10",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       }
     ]
