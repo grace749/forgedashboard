@@ -64,6 +64,12 @@ def _finance_advice(period, months):
         f"Latest complete month is {latest}"
         + (f", compare it to {prev} (month-on-month). " if prev else ". ")
         + q_note + yoy_note +
+        "IMPORTANT CONTEXT: April 2026 was a STUDIO RELOCATION month — the gym "
+        "moved to a new studio roughly twice the size, with large one-off capital / "
+        "fit-out costs. Treat April as an anomaly (its huge expenses and loss are "
+        "one-time investment, not an operational problem); exclude it from expense "
+        "and profit trend judgements and don't recommend cutting costs based on it. "
+        "The bigger studio should now support more members/revenue — factor that in.\n"
         "As our Fractional CFO, give specific, numbers-referenced moves to increase "
         "revenue, reduce expenses and improve profitability. Call out trends "
         "(improving/declining), what's off-target, and the single biggest priority.",
