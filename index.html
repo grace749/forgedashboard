@@ -620,6 +620,35 @@ function render(data) {
     return d.toLocaleDateString("en-IE", { day:"numeric", month:"short" });
   }
 
+  // ── At-Risk Members (top of the board) ────────────────────────
+  // Exclude paused trials — they're not attending on purpose, not at-risk.
+  const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
+  const atRisk = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
+  push("members", `
+    <div class="card col-12" style="margin-top:4px">
+      <div class="card-title">Retention</div>
+      <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
+        At-Risk Members
+        <span style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444">${atRisk.length} absent 10+ days</span>
+      </div>
+      ${atRisk.length ? `
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;max-height:280px;overflow-y:auto">
+        ${atRisk.map(m => {
+          const days = m.days_absent;
+          const urgency = days == null ? "grey" : days >= 28 ? "red" : days >= 21 ? "amber" : "purple";
+          const label   = days != null ? `${days}d away` : "10+ days";
+          return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+              <div style="font-size:.72rem;color:#aaa;margin-top:1px">${m.membership || ""}</div>
+            </div>
+            <span class="pill ${urgency}" style="cursor:default;white-space:nowrap">${label}</span>
+          </div>`;
+        }).join("")}
+      </div>` : `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">All members attended recently 🎉</p>`}
+    </div>
+  `);
+
   // ── Member Directory ──────────────────────────────────────────
   const memberRows = tm.member_list || [];
   // Goal fallback from Jumpstart onboarding (by name)
@@ -804,35 +833,6 @@ function render(data) {
         </div>`);
     });
   }
-
-  // ── At-Risk Members ───────────────────────────────────────────
-  // Exclude paused trials — they're not attending on purpose, not at-risk.
-  const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
-  const atRisk = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
-  push("members", `
-    <div class="card col-4">
-      <div class="card-title">Retention</div>
-      <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
-        At-Risk Members
-        <span style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444">${atRisk.length} absent 10+ days</span>
-      </div>
-      ${atRisk.length ? `
-      <div style="overflow-y:auto;max-height:360px">
-        ${atRisk.map(m => {
-          const days = m.days_absent;
-          const urgency = days == null ? "grey" : days >= 28 ? "red" : days >= 21 ? "amber" : "purple";
-          const label   = days != null ? `${days}d away` : "No recent data";
-          return `<div class="stat-row" style="gap:10px">
-            <div style="flex:1;min-width:0">
-              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-              <div style="font-size:.72rem;color:#aaa;margin-top:1px">${m.membership || ""}</div>
-            </div>
-            <span class="pill ${urgency}" style="cursor:default;white-space:nowrap">${label}</span>
-          </div>`;
-        }).join("")}
-      </div>` : `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">All members attended in the last 14 days 🎉</p>`}
-    </div>
-  `);
 
   // ── Member Celebrations ───────────────────────────────────────
   const celeb    = tm.celebrations || {};
