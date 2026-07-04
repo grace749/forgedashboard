@@ -11,9 +11,10 @@ Secrets required in GitHub Actions:
   GMAIL_REFRESH_TOKEN          — long-lived refresh token (run setup_gmail_oauth.py once)
 """
 import os, json, re, base64, email as email_lib
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timezone, timedelta
 from email.mime.text import MIMEText
 
+import ai
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request as GoogleRequest
 from googleapiclient.discovery import build
@@ -51,26 +52,77 @@ def _fmt_time(raw):
     return "all day"
 
 
+def _day_label(start_raw, today):
+    """'Today' / 'Tomorrow' / weekday for an event start."""
+    try:
+        d = datetime.fromisoformat(start_raw.replace("Z", "+00:00")).date() if "T" in start_raw \
+            else date.fromisoformat(start_raw[:10])
+    except Exception:
+        return ""
+    delta = (d - today).days
+    if delta == 0:
+        return "Today"
+    if delta == 1:
+        return "Tomorrow"
+    return d.strftime("%A")
+
+
+def _calendar_prep(events):
+    """One AI call: a short 'what to prep' note per event (or blank if none)."""
+    real = [e for e in events if e.get("title")]
+    if not real:
+        return
+    lines = "\n".join(
+        f"{i+1}. {e['day']} {e['time']} — {e['title']}"
+        + (f" [{e['description'][:90]}]" if e.get("description") else "")
+        for i, e in enumerate(real)
+    )
+    text = ai.generate(
+        "You are the assistant to Grace, owner of The Forge, a women's gym in Belfast. "
+        "For each calendar event, give a ONE-line note on what she needs to prepare to "
+        "be ready (materials to bring/print, who to brief, questions to prep, things to "
+        "book/confirm, data to review). If it's a routine block or a class she just "
+        "coaches with nothing to prep, reply exactly '-'. Under 16 words each.",
+        f"Events over the next 2 days:\n{lines}\n\n"
+        f"Return exactly one line per event, numbered 1..{len(real)} in the same order, "
+        "as '<number>. <prep note or ->'.",
+        max_tokens=450,
+    )
+    prep = {}
+    for ln in (text or "").splitlines():
+        m = re.match(r"\s*(\d+)[.)]\s*(.+)", ln)
+        if m:
+            idx, note = int(m.group(1)) - 1, m.group(2).strip()
+            if 0 <= idx < len(real) and note not in ("-", "—", ""):
+                prep[idx] = note
+    for i, e in enumerate(real):
+        e["prep"] = prep.get(i, "")
+
+
 def fetch_calendar():
     if not SA_JSON:
         return {"error": "GOOGLE_SERVICE_ACCOUNT_JSON not set"}
     try:
         svc   = _calendar_service()
+        now   = datetime.now(timezone.utc)
         today = date.today()
-        t_min = datetime(today.year, today.month, today.day, 0,  0,  0,  tzinfo=timezone.utc).isoformat()
-        t_max = datetime(today.year, today.month, today.day, 23, 59, 59, tzinfo=timezone.utc).isoformat()
+        # From now through the end of the day-after-tomorrow (the next 2 days)
+        end   = today + timedelta(days=2)
+        t_min = now.isoformat()
+        t_max = datetime(end.year, end.month, end.day, 23, 59, 59, tzinfo=timezone.utc).isoformat()
         result = svc.events().list(
             calendarId=CALENDAR_ID,
             timeMin=t_min,
             timeMax=t_max,
             singleEvents=True,
             orderBy="startTime",
-            maxResults=20,
+            maxResults=40,
         ).execute()
 
         events = []
         for e in result.get("items", []):
             start = e.get("start", {})
+            start_raw = start.get("dateTime", start.get("date", ""))
             others = [
                 a.get("displayName") or a.get("email", "")
                 for a in e.get("attendees", [])
@@ -78,12 +130,15 @@ def fetch_calendar():
             ]
             events.append({
                 "title":       e.get("summary", "Untitled"),
-                "time":        _fmt_time(start.get("dateTime", start.get("date", ""))),
-                "start_raw":   start.get("dateTime", start.get("date", "")),
+                "time":        _fmt_time(start_raw),
+                "start_raw":   start_raw,
+                "day":         _day_label(start_raw, today),
                 "attendees":   others[:4],
                 "description": (e.get("description") or "")[:200].strip(),
                 "location":    e.get("location", ""),
+                "prep":        "",
             })
+        _calendar_prep(events)
         return events
     except Exception as ex:
         return {"error": str(ex)}

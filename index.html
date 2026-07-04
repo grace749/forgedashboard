@@ -496,17 +496,23 @@ function render(data) {
     const ghl       = Array.isArray(data.ghl)     ? data.ghl     : [];
 
     // Calendar column
+    // Group the next-2-days events by day (Today / Tomorrow / weekday)
+    const calByDay = {};
+    cal.forEach(e => { (calByDay[e.day || "Upcoming"] = calByDay[e.day || "Upcoming"] || []).push(e); });
     const calHtml = cal.length
-      ? cal.map(e => `
-          <div class="brief-row">
-            <div class="brief-time">${e.time || "all day"}</div>
-            <div>
-              <div class="brief-row-title">${e.title}</div>
-              ${e.attendees && e.attendees.length ? `<div class="brief-row-sub">with ${e.attendees.join(", ")}</div>` : ""}
-              ${e.location ? `<div class="brief-row-sub">${e.location}</div>` : ""}
-            </div>
-          </div>`).join("")
-      : `<div class="brief-empty">No events today</div>`;
+      ? Object.keys(calByDay).map(day => `
+          <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#a894c9;margin:8px 0 4px">${day}</div>
+          ${calByDay[day].map(e => `
+            <div class="brief-row">
+              <div class="brief-time">${e.time || "all day"}</div>
+              <div>
+                <div class="brief-row-title">${e.title}</div>
+                ${e.attendees && e.attendees.length ? `<div class="brief-row-sub">with ${e.attendees.join(", ")}</div>` : ""}
+                ${e.location ? `<div class="brief-row-sub">${e.location}</div>` : ""}
+                ${e.prep ? `<div style="font-size:.72rem;color:#7c3aed;margin-top:3px;display:flex;gap:5px"><span>📋</span><span>${e.prep}</span></div>` : ""}
+              </div>
+            </div>`).join("")}`).join("")
+      : `<div class="brief-empty">Nothing in the next 2 days</div>`;
 
     // Urgent email column — merged with important
     const allEmails = [
@@ -583,7 +589,7 @@ function render(data) {
         <div class="brief-col-title brief-col-title--${colour}" style="margin-top:0">${title}</div>
         <div style="overflow-y:auto;flex:1">${html}</div>
       </div>`;
-    push("home", briefCard("Calendar today",       "purple", calHtml,  "col-4"));
+    push("home", briefCard("Calendar · next 2 days", "purple", calHtml, "col-4"));
     push("home", briefCard("Needs your attention", "red",    emailHtml,"col-4"));
     // stash the lower row to push after Tasks (so Tasks sits top-right)
     window._briefLower = () => {
