@@ -827,6 +827,23 @@ def run():
         for mo, mem in sorted(cancelled_by_month.items(), reverse=True)
     ]
 
+    # ── Cancellations year-to-date (real leavers, excl. switches) ──
+    year_start = today.replace(month=1, day=1).isoformat()
+    ytd_leavers = set()
+    for m in cancelled_all:
+        end = (m.get("end_date") or m.get("expiration_date") or "")[:10]
+        cid = m["customer"]
+        if not end or end < year_start or end > today.isoformat():
+            continue
+        if cid in all_active_ids:
+            continue   # switched, not a real leaver
+        if m.get("name", "").strip().lower() in EXCLUDE_FROM_CHURN:
+            continue
+        if name_map.get(cid, "").lower() in EXCLUDE_CUSTOMER_NAMES:
+            continue
+        ytd_leavers.add(cid)
+    cancelled_ytd = len(ytd_leavers)
+
     # ── Churn rate ──────────────────────────────────────────────
     churn_base_ids = {
         cid for cid in all_active_ids
@@ -959,6 +976,7 @@ def run():
         "paused":                   len(paused_ids),
         "paused_members":           members_list(paused_ids, name_map),
         "cancelled_by_month":       cancelled_by_month,
+        "cancelled_ytd":            cancelled_ytd,
         "churn_rate":               churn_rate,
         "avg_member_price":         avg_member_price,
         "monthly_recurring_revenue": monthly_recurring_revenue,
