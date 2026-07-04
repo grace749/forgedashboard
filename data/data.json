@@ -1,26 +1,16 @@
 {
-  "generated_at": "2026-07-04T11:07:27.589186+00:00",
+  "generated_at": "2026-07-04T16:44:10.066821+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
     "date": "2026-07-04",
     "event_count": 0,
-    "urgent_count": 2,
+    "urgent_count": 1,
     "enquiry_count": 0,
     "calendar": {
       "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-04T00%3A00%3A00%2B00%3A00&timeMax=2026-07-04T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=20&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
     },
     "urgent": [
-      {
-        "from": "Anna Morton",
-        "from_raw": "Anna Morton <anna@rainbow-project.org>",
-        "subject": "Run with Pride - Sunday 19th July - Event information",
-        "snippet": "Once again, thank you so much for registering to take part in our inaugural &#39;Run with Pride&#39; event on Sunday 19 th July, kindly sponsored by The Maverick and supported by Belfast Frontrunners",
-        "id": "19f2cb1109ceb86f",
-        "thread_id": "19f2cb1109ceb86f",
-        "msg_count": 1,
-        "draft_id": "r-5846301147245817978"
-      },
       {
         "from": "S Moore",
         "from_raw": "S Moore <smooremotors@btconnect.com>",
@@ -3432,26 +3422,32 @@
       {
         "user_id": "U086J76UC3Y",
         "text": "Brilliant. Many thanks for getting this sorted Grace. All working now. Appreciate being allowed to use this reduced membership. :+1::muscle::skin-tone-2::purple",
-        "hours": 207,
+        "hours": 212,
         "name": "Alison Moffitt-Robinson"
       },
       {
         "user_id": "U09DDQ1UETB",
         "text": "Apologies I'll have to cancel my 6pm class. I gave blood earlier and have been feeling lightheaded and queasy ever since. Sorry for late notice x",
-        "hours": 92,
+        "hours": 97,
         "name": "Claire Leeke"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Thanks Grace. Hopefully there will be some improvement at the end of my 6 weeks lol.",
-        "hours": 74,
+        "hours": 79,
         "name": "Lesley"
       },
       {
         "user_id": "USLACK",
         "text": "<@U0BFEFYKUFJ> joined via your invite link! If you need to disable the link or change your notification settings, you can <https://forgefemalefitness.slack.com/",
-        "hours": 61,
+        "hours": 67,
         "name": "Slack"
+      },
+      {
+        "user_id": "U09K6AX2E6S",
+        "text": "Thanks so much! Whatever happened I was able to book in for last night so who knows what happened lol. Defos JoJo was giving me some pointers last night too whi",
+        "hours": 53,
+        "name": "Emma Hamilton"
       }
     ],
     "mentions": []
@@ -3545,7 +3541,930 @@
           }
         ]
       }
-    ]
+    ],
+    "months": [
+      {
+        "period": "June",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "0",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "147",
+                "goal": "200"
+              },
+              {
+                "name": "Trials",
+                "value": "11.00",
+                "goal": ""
+              },
+              {
+                "name": "Recurring",
+                "value": "114.00",
+                "goal": ""
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "0.00%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3120.48",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a317,710.93",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a33,686.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a39,390.36",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a33,700.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a3934.57",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "5.28%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a33,700.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "20.89%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "May",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "7",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "122",
+                "goal": "200"
+              },
+              {
+                "name": "Trials",
+                "value": "19.00",
+                "goal": ""
+              },
+              {
+                "name": "Recurring",
+                "value": "102.00",
+                "goal": ""
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "5.74%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3165.56",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a32,885.55",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a320,198.85",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a33,550.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a39,233.35",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a31,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a35,915.50",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "29.29%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a31,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "7.43%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "April",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "9",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "108",
+                "goal": "200"
+              },
+              {
+                "name": "Trials",
+                "value": "16.00",
+                "goal": ""
+              },
+              {
+                "name": "Trial Conversion %",
+                "value": "0.63%",
+                "goal": ""
+              },
+              {
+                "name": "Recurring",
+                "value": "97.00",
+                "goal": ""
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "8.33%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3171.81",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a32,061.70",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a318,555.27",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a33,500.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a330,511.03",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,000.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "-\u00a317,455.76",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "-94.07%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,000.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "10.78%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "March",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "7",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "106",
+                "goal": "200"
+              },
+              {
+                "name": "Trials",
+                "value": "6.00",
+                "goal": ""
+              },
+              {
+                "name": "Trial Conversion %",
+                "value": "0.67%",
+                "goal": ""
+              },
+              {
+                "name": "Recurring",
+                "value": "95.00",
+                "goal": ""
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "6.60%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3153.39",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a32,322.70",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a316,258.92",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a33,116.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a315,638.95",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,800.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "-\u00a35,296.03",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "-32.57%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,800.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "17.22%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "February",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "3",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "104",
+                "goal": "200"
+              },
+              {
+                "name": "Trials",
+                "value": "6.00",
+                "goal": ""
+              },
+              {
+                "name": "Trial Conversion %",
+                "value": "0.83%",
+                "goal": ""
+              },
+              {
+                "name": "Recurring",
+                "value": "93.00",
+                "goal": ""
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "2.88%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3151.80",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a35,262.40",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a315,787.19",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a33,108.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a310,916.51",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "-\u00a3737.32",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "-4.67%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "15.84%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "January",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "7",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "94",
+                "goal": "200"
+              },
+              {
+                "name": "Trials",
+                "value": "34.00",
+                "goal": ""
+              },
+              {
+                "name": "Trial Conversion %",
+                "value": "0.47%",
+                "goal": ""
+              },
+              {
+                "name": "Recurring",
+                "value": "84.00",
+                "goal": ""
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "7.45%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3160.67",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a315,103.19",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a33,037.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a38,165.74",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a31,400.45",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "9.27%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "16.55%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "December",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "1",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "124",
+                "goal": "200"
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "0.81%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3170.43",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a321,133.79",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a321,133.79",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a32,514.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "$5,651.00",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a310,468.79",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "49.54%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "11.83%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "November",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "2",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "107",
+                "goal": "200"
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "1.87%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3128.39",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a36,868.91",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a313,737.81",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a32,525.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a34,303.90",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a34,408.91",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "32.09%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "18.20%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "October",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "3",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "91",
+                "goal": "200"
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "3.30%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3145.29",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a34,407.08",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a313,221.25",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a32,707.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a34,533.03",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a33,481.22",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "26.33%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "18.91%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": "September",
+        "categories": [
+          {
+            "name": "Membership",
+            "items": [
+              {
+                "name": "Number of Terminations this Month",
+                "value": "2",
+                "goal": "0"
+              },
+              {
+                "name": "Active Clients",
+                "value": "85",
+                "goal": "200"
+              },
+              {
+                "name": "Attrition (Churn) %",
+                "value": "2.35%",
+                "goal": "<3%"
+              },
+              {
+                "name": "AR/M",
+                "value": "\u00a3162.33",
+                "goal": ""
+              },
+              {
+                "name": "Member LTV",
+                "value": "\u00a36,899.04",
+                "goal": ""
+              }
+            ]
+          },
+          {
+            "name": "P&L",
+            "items": [
+              {
+                "name": "Revenue",
+                "value": "\u00a313,798.07",
+                "goal": "\u00a320,000.00"
+              },
+              {
+                "name": "Expenses - People",
+                "value": "\u00a32,763.00",
+                "goal": "25-40%"
+              },
+              {
+                "name": "Expenses - Non-People",
+                "value": "\u00a34,884.06",
+                "goal": "20-35%"
+              },
+              {
+                "name": "Owner Pay & Perks",
+                "value": "\u00a32,500.00",
+                "goal": "10-15%+"
+              },
+              {
+                "name": "Total Profit",
+                "value": "\u00a33,651.01",
+                "goal": "\u00a38,000.00"
+              },
+              {
+                "name": "Profit %",
+                "value": "26.46%",
+                "goal": "20%+"
+              }
+            ]
+          },
+          {
+            "name": "TOC",
+            "items": [
+              {
+                "name": "Total Owner's Comp.",
+                "value": "\u00a32,500.00",
+                "goal": ""
+              },
+              {
+                "name": "TOC as % of Revenue",
+                "value": "18.12%",
+                "goal": "20-40%"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "advice": "**Finance adviser**\n\u2022 Set aside ~19-25% of profit for corporation tax so it isn't a year-end shock.\n\u2022 Review the salary/dividend split with your accountant \u2014 a small director's salary to the NI threshold plus dividends is usually the tax-efficient route.\n\u2022 Track non-people expenses against the 20-35% target; anything above needs a reason.\n\u2022 Keep receipts for all allowable business expenses (kit, training, mileage, home office).\n\u2022 If rolling 12-month turnover nears the \u00a390k VAT threshold, plan registration early."
   },
   "asana": {
     "tasks_today": [
