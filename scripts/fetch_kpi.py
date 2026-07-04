@@ -12,13 +12,14 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 FINANCE_SYSTEM = (
-    "You are the finance adviser for The Forge, a women's-only fitness gym in Belfast "
-    "run as a UK limited company. You have expertise in UK small-business accounting: "
-    "corporation tax, director responsibilities, dividends vs salary, allowable expenses, "
-    "VAT thresholds, and limited-company obligations. From the month's KPIs (revenue, "
-    "profit, expenses, owner's comp, churn, LTV) give practical, specific advice to "
-    "improve the financial position and stay compliant/tax-efficient. 4-6 short bullet "
-    "points, plain UK English, no preamble, no disclaimers."
+    "You are the Fractional CFO for The Forge, a women's-only fitness gym in Belfast "
+    "run as a UK limited company. You have expertise in UK small-business finance and "
+    "accounting: corporation tax, director responsibilities, dividends vs salary, "
+    "allowable expenses, VAT thresholds, cash flow, margins, and limited-company "
+    "obligations. From the month's KPIs (revenue, profit, expenses, owner's comp, "
+    "churn, LTV) give practical, specific advice to improve the financial position and "
+    "stay compliant/tax-efficient. 4-6 short bullet points, plain UK English, no "
+    "preamble, no disclaimers."
 )
 
 
@@ -48,7 +49,7 @@ def _finance_advice(period, categories):
                     return text
         except Exception as ex:
             print(f"[kpi] finance AI error: {ex}")
-    return ("**Finance adviser**\n"
+    return ("**Fractional CFO**\n"
             "• Set aside ~19-25% of profit for corporation tax so it isn't a year-end shock.\n"
             "• Review the salary/dividend split with your accountant — a small director's "
             "salary to the NI threshold plus dividends is usually the tax-efficient route.\n"

@@ -17,8 +17,7 @@ import os, re, time, json, urllib.parse, urllib.request
 
 SLACK_API = "https://slack.com/api/"
 GRACE_ID = os.environ.get("SLACK_USER_ID", "U05P1R84NKS")
-STALE_HOURS = 48          # unanswered this long → flag
-MAX_AGE_DAYS = 14         # …but ignore threads that have gone quiet for weeks
+WINDOW_HOURS = 48         # only show DMs / mentions from the last 48 hours
 
 
 def _is_noise_message(msg):
@@ -71,9 +70,9 @@ def run():
         return {"configured": False, "unreplied_dms": [], "mentions": []}
 
     now = time.time()
-    stale_before = now - STALE_HOURS * 3600
+    window_start = now - WINDOW_HOURS * 3600   # only the last 48 hours
 
-    # ── Unreplied DMs ───────────────────────────────────────────
+    # ── Unreplied DMs (last 48h) ────────────────────────────────
     unreplied = []
     try:
         ims = _call("conversations.list", token, types="im", limit=200).get("channels", [])
@@ -85,12 +84,10 @@ def run():
                 continue
             last = hist[0]
             ts = float(last.get("ts", 0))
-            # Flag when: last message is from the other person, it's been
-            # unanswered 48h+, it's not a system/emoji message, and the thread
-            # hasn't gone completely quiet (within the last 14 days).
+            # Genuine DM I still need to reply to, within the last 48h:
+            # last message is from the other person, recent, not automated/emoji.
             if (last.get("user") and last["user"] != GRACE_ID
-                    and ts < stale_before
-                    and ts > now - MAX_AGE_DAYS * 86400
+                    and ts >= window_start
                     and not _is_noise_message(last)):
                 other_ids.add(im.get("user"))
                 pending.append({
@@ -113,9 +110,9 @@ def run():
         matches = (res.get("messages") or {}).get("matches", [])
         for m in matches:
             ts = float(m.get("ts", 0))
-            if ts < now - 14 * 86400:   # only last 2 weeks
+            if ts < now - WINDOW_HOURS * 3600:   # only the last 48 hours
                 continue
-            if _is_noise_message(m):     # skip bot/automated mentions
+            if _is_noise_message(m):             # skip bot/automated mentions
                 continue
             mentions.append({
                 "name": (m.get("username") or m.get("user") or "Someone"),
