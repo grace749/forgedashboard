@@ -402,7 +402,7 @@ AT_RISK_GRACE_DAYS = 14   # brand-new members get a grace period before at-risk
 
 
 def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
-                  first_seen, ever_attended_ids):
+                  first_seen, ever_attended_ids, last_session_by_cid=None):
     """
     Active members with no attendance in the last 10 days — EXCLUDING brand-new
     members who haven't had their first class yet. A member is 'too new to flag'
@@ -421,7 +421,8 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
         if cid in recently_active_ids:
             continue
         name = name_map.get(cid, "")
-        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES or name.lower() in AT_RISK_EXCLUDE_NAMES:
+        norm_name = " ".join((name or "").lower().split())   # collapse double spaces
+        if not name or norm_name in EXCLUDE_CUSTOMER_NAMES or norm_name in AT_RISK_EXCLUDE_NAMES:
             continue
         membership = cust_membership.get(cid, "")
         if membership.lower() in EXCLUDE_FROM_CHURN or membership.lower() in EXCLUDE_FROM_BREAKDOWN:
@@ -438,12 +439,19 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
         if cid not in ever_attended_ids:
             continue  # never attended a class — they haven't started, not at-risk
 
+        last_session = (last_session_by_cid or {}).get(cid)
+        days_absent = None
+        if last_session:
+            try:
+                days_absent = (today - date.fromisoformat(last_session)).days
+            except Exception:
+                pass
         at_risk.append({
             "id":         cid,
             "name":       name,
             "membership": membership,
-            "days_absent": None,
-            "last_seen":  None,
+            "days_absent": days_absent,
+            "last_seen":  last_session,
         })
 
     at_risk.sort(key=lambda x: x["name"])
@@ -921,6 +929,17 @@ def run():
     events_30_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_30_ago}
     events_10_ids = {e["id"] for e in events_90 if (e.get("starts_at") or "")[:10] >= date_10_ago}
 
+    # Wider window (covers classes AND 1:1 PT sessions) so we can show each
+    # at-risk member's LAST session date, even if it was a couple of months ago.
+    date_240_ago  = (today - datetime.timedelta(days=240)).isoformat()
+    events_long   = fetch_events_in_range(date_240_ago, date_today)
+    event_date_long = {e["id"]: (e.get("starts_at") or "")[:10] for e in events_long}
+    last_session_by_cid = {}
+    for a in all_attended_raw:
+        cid = a.get("customer"); d = event_date_long.get(a.get("event"))
+        if cid and d and d > last_session_by_cid.get(cid, ""):
+            last_session_by_cid[cid] = d
+
     # ── Lifetime class counts (attended + past bookings) to match TeamUp ──
     # Cached and only recomputed every 2 weeks (the recompute pulls every
     # 'registered' record, which is slow). Fresh cache → skip the heavy fetch.
@@ -967,7 +986,7 @@ def run():
 
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids,
-                            first_seen, ever_attended_ids)
+                            first_seen, ever_attended_ids, last_session_by_cid)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
     class_milestones = build_class_milestones(all_active_ids, name_map, class_counts)

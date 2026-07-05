@@ -438,10 +438,13 @@ function renderAtRisk() {
     const actions = s.contactedBy
       ? `<button onclick="markResolved('${nm}')" style="font-size:.66rem;font-weight:600;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap">No longer at risk</button>`
       : `<button onclick="markContacted('${nm}')" style="font-size:.66rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap">Mark contacted</button>`;
+    const lastSess = m.last_seen
+      ? `Last session ${fmtShort(m.last_seen)}${m.days_absent != null ? ` · ${m.days_absent}d ago` : ""}`
+      : "No session on record";
     return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
       <div style="flex:1;min-width:0">
         <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-        <div style="font-size:.72rem;color:#aaa">${m.membership || ""}</div>
+        <div style="font-size:.72rem;color:#ef4444;font-weight:600">${lastSess}</div>
         ${contacted}
       </div>
       ${actions}
@@ -604,6 +607,7 @@ function render(data) {
     // Group the next-2-days events by day (Today / Tomorrow / weekday)
     const calByDay = {};
     cal.forEach(e => { (calByDay[e.day || "Upcoming"] = calByDay[e.day || "Upcoming"] || []).push(e); });
+    const calErr = (br.calendar && br.calendar.error) ? br.calendar.error : "";
     const calHtml = cal.length
       ? Object.keys(calByDay).map(day => `
           <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#a894c9;margin:8px 0 4px">${day}</div>
@@ -617,7 +621,9 @@ function render(data) {
                 ${e.prep ? `<div style="font-size:.72rem;color:#7c3aed;margin-top:3px;display:flex;gap:5px"><span>📋</span><span>${e.prep}</span></div>` : ""}
               </div>
             </div>`).join("")}`).join("")
-      : `<div class="brief-empty">Nothing in the next 2 days</div>`;
+      : calErr
+        ? `<div class="brief-empty" style="color:#d97706;line-height:1.5">Calendar not connected. Share your Google Calendar with<br><strong style="color:#7c3aed">forge-dashboard@forge-dashboard-473821.iam.gserviceaccount.com</strong><br>(“See all event details”), then it’ll appear here.</div>`
+        : `<div class="brief-empty">Nothing in the next 2 days</div>`;
 
     // Urgent email column — merged with important
     const allEmails = [
@@ -761,12 +767,24 @@ function render(data) {
   // Last InBody scan by normalised member name
   const inbodyScans = (data.inbody?.scans && data.inbody.scans.length) ? data.inbody.scans : (tm.inbody_scans || []);
   const inbodyByNorm = {};
-  inbodyScans.forEach(s => { if (s.name && s.last_scan) inbodyByNorm[(s.name||"").toLowerCase().replace(/[^a-z]/g,"")] = s.last_scan; });
+  inbodyScans.forEach(s => { if (s.name && s.last_scan) inbodyByNorm[(s.name||"").toLowerCase().replace(/[^a-z]/g,"")] = s; });
   const lastInbody = nm => {
     const norm = (nm||"").toLowerCase().replace(/[^a-z]/g,"");
     if (inbodyByNorm[norm]) return inbodyByNorm[norm];
     const hit = Object.keys(inbodyByNorm).find(k => k && norm.length > 4 && (k.includes(norm) || norm.includes(k)));
     return hit ? inbodyByNorm[hit] : null;
+  };
+  // Cell: last scan date + next-due status (overdue / soon / date)
+  const inbodyCell = nm => {
+    const s = lastInbody(nm);
+    if (!s) return `<span style="color:#9ca3af">—</span>`;
+    const last = fmtDateShort(s.last_scan);
+    let due;
+    if (s.overdue)               due = `<span style="color:#ef4444;font-weight:600">${Math.abs(s.days_to_due)}d overdue</span>`;
+    else if (s.days_to_due <= 7) due = `<span style="color:#d97706;font-weight:600">due soon</span>`;
+    else if (s.next_due)         due = `<span style="color:#9ca3af">due ${fmtDateShort(s.next_due)}</span>`;
+    else                         due = "";
+    return `<div>${last}</div><div style="font-size:.7rem;margin-top:1px">${due}</div>`;
   };
   push("members", `
     <div class="card col-12" style="margin-top:4px">
@@ -788,7 +806,7 @@ function render(data) {
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Membership</th>
                 <th style="text-align:right;padding:6px 10px;border-bottom:2px solid #f0f0f5">Classes</th>
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last check-in</th>
-                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last InBody</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last InBody / due</th>
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last momentum</th>
                 <th style="text-align:left;padding:6px 0 6px 10px;border-bottom:2px solid #f0f0f5">Goal</th>
               </tr>
@@ -797,14 +815,13 @@ function render(data) {
               ${memberRows.map(m => {
                 const goal = goalFor(m.email, m.name);
                 const ci = lastCheckin(m.email);
-                const ib = lastInbody(m.name);
                 return `<tr class="member-row" data-name="${(m.name||'').toLowerCase()}">
                   <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(m.join_date)}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc"><span class="pill purple" style="cursor:default;font-size:.7rem">${m.membership||"—"}</span></td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;text-align:right;font-weight:700;color:#7c3aed">${m.class_count ?? "—"}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${ci ? fmtDateShort(ci) : "—"}</td>
-                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${ib ? fmtDateShort(ib) : "—"}</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${inbodyCell(m.name)}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${m.last_momentum ? fmtDateShort(m.last_momentum) : "—"}</td>
                   <td style="padding:8px 0 8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:260px" title="${(goal||'').replace(/"/g,'&quot;')}">${goalCellHtml(m.name, goal)}</td>
                 </tr>`;
@@ -834,7 +851,7 @@ function render(data) {
     </div>`;
   const anyCeleb = firstWk.length || newFull.length || tenure.length;
   push("members", `
-    <div class="card col-12">
+    <div class="card col-9">
       <div class="card-title">Milestones</div>
       <div class="card-headline">Member Celebrations</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
@@ -855,6 +872,22 @@ function render(data) {
         </div>` : ""}
       </div>
       ${!anyCeleb ? `<div class="brief-empty" style="padding:6px 0">No celebrations today</div>` : ""}
+    </div>
+  `);
+
+  // ── Class Count Milestones (beside Member Celebrations) ───────
+  push("members", `
+    <div class="card col-3">
+      <div class="card-title">Milestones</div>
+      <div class="card-headline">Approaching a Class Milestone</div>
+      ${clsMs.length ? clsMs.map(m => celebRow(
+          m.name,
+          `${m.total_classes} classes done`,
+          `${m.classes_away} to ${m.next_milestone}`,
+          "purple"
+        )).join("")
+        : `<div class="brief-empty" style="padding:6px 0">No one within reach of 50 / 250 / 500 right now</div>`}
+      <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Counts attended classes + past bookings, to match TeamUp's overall total</div>
     </div>
   `);
 
@@ -965,8 +998,8 @@ function render(data) {
   // ── LAPSED FULL MEMBERS / LAPSED TRIALS (one searchable card each) ─
   const monthNameYr = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
   let _lapsedId = 0;
-  const lapsedSearchCard = (groups, title, subtitle, chip, emptyMsg) => {
-    if (!groups.length) return `<div class="card col-12"><div class="card-title">${title}</div><p style="color:#16a34a;font-size:.85rem;padding:4px 0">${emptyMsg}</p></div>`;
+  const lapsedSearchCard = (groups, title, subtitle, chip, emptyMsg, col = "col-6") => {
+    if (!groups.length) return `<div class="card ${col}"><div class="card-title">${title}</div><p style="color:#16a34a;font-size:.85rem;padding:4px 0">${emptyMsg}</p></div>`;
     const id = "lapsed" + (_lapsedId++);
     const total = groups.reduce((n, g) => n + g.members.length, 0);
     // newest month first
@@ -988,7 +1021,7 @@ function render(data) {
         </div>
       </div>`)).join("");
     return `
-    <div class="card col-12">
+    <div class="card ${col}">
       <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
         <div>
           <div class="card-title">${title}</div>
@@ -1009,31 +1042,13 @@ function render(data) {
   const lapsedFull   = tm.lapsed_full_by_month   || [];
   const lapsedTrials = tm.lapsed_trials_by_month || [];
 
-  memberSection("Lapsed Full Members");
-  push("members", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉"));
-
-  memberSection("Lapsed Trials");
-  push("members", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year"));
+  memberSection("Lapsed Members & Trials");
+  push("members", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-6"));
+  push("members", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year", "col-6"));
 
 
-  memberSection("Classes");
-  // ── Class Count Milestones (own card) ─────────────────────────
-  push("members", `
-    <div class="card col-4">
-      <div class="card-title">Milestones</div>
-      <div class="card-headline">Approaching a Class Milestone</div>
-      ${clsMs.length ? clsMs.map(m => celebRow(
-          m.name,
-          `${m.total_classes} classes done`,
-          `${m.classes_away} to ${m.next_milestone}`,
-          "purple"
-        )).join("")
-        : `<div class="brief-empty" style="padding:6px 0">No one within reach of 50 / 250 / 500 right now</div>`}
-      <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Counts attended classes + past bookings, to match TeamUp's overall total</div>
-    </div>
-  `);
-
-  // ── Attendance / Class Popularity (sits beside Class Milestones) ─
+  memberSection("Class Popularity");
+  // ── Attendance / Class Popularity ─────────────────────────────
   const cs   = tm.class_stats || {};
   const cs90 = cs.last_90_days || {};
   const cs30 = cs.last_30_days || {};
@@ -1068,7 +1083,7 @@ function render(data) {
     </div>`;
 
   push("members", `
-    <div class="card col-8">
+    <div class="card col-12">
       <div class="card-title">Attendance</div>
       <div class="card-headline">Class Popularity</div>
       <div style="display:flex;gap:24px;flex-wrap:wrap">
