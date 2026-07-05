@@ -1,8 +1,52 @@
 """Fetch ad spend, leads and sales from the Costing & Profit Indicator sheet."""
 import os, json, re
 from datetime import date
+import ai
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+
+ADS_SYSTEM = (
+    "You are a senior paid social advertising expert (Meta/Instagram & Facebook ads) "
+    "advising The Forge, a women's-only fitness gym in Belfast that runs lead-gen ads "
+    "for its 6-week trial. Analyse the last month's ad performance vs prior months and "
+    "give sharp, specific, actionable advice: what the trend in leads / cost-per-lead / "
+    "close rate is telling us, creative and targeting angles to test, budget guidance, "
+    "and the single biggest lever to pull now. Reference the actual numbers. "
+    "Structure as: **Insights** (2-3 bullets on what the data shows) then **Actions** "
+    "(3-4 specific things to do). Plain UK English, no preamble, no disclaimers."
+)
+
+
+def _ads_advice(summary, monthly):
+    if not summary:
+        return ""
+    table = " | ".join(
+        f"{m['month']}: spend £{m['spend']:.0f}, {m['leads']} leads, "
+        f"£{(m['spend']/m['leads']):.0f}/lead, {m['sales']} sales"
+        for m in monthly if m.get("leads")
+    )
+    text = ai.generate(
+        ADS_SYSTEM,
+        f"The Forge — Meta ads performance.\nLatest month ({summary['period']}): "
+        f"£{summary['ad_spend']:.0f} spend, {summary['leads']} leads, "
+        f"£{summary['cost_per_lead']:.0f} cost/lead, {summary['sales']} sales "
+        f"({summary['close_rate']:.0f}% close), £{summary['income_from_ads']:.0f} income, "
+        f"£{summary['profit']:.0f} profit.\nMonth by month: {table}\n\n"
+        "As our paid-social expert, what's happening and what should we do next month?",
+        max_tokens=500,
+    )
+    return text or (
+        "**Insights**\n"
+        "• Lead volume is the thing to watch month-to-month — a rising cost-per-lead "
+        "usually means creative fatigue or too-narrow targeting.\n"
+        "• Close rate matters as much as lead count: cheap leads that don't convert "
+        "waste spend.\n"
+        "**Actions**\n"
+        "• Refresh 2-3 new ad creatives (real member results, UGC-style video) to beat fatigue.\n"
+        "• Test a broader lookalike audience alongside your best-performing interest set.\n"
+        "• Hold budget steady and judge on cost-per-trial-started, not raw leads.\n"
+        "• Tighten the lead follow-up so more leads become booked trials."
+    )
 
 SPREADSHEET_ID = "1eQNAtON9ThPPr-IhwRMT-zfyrS9yRgjXlbUTboslha0"
 TARGET_SHEET   = "Costing & Profit Indicator"
@@ -131,7 +175,7 @@ def run():
     cost_per_lead = round(cur["spend"] / cur["leads"], 2) if cur.get("leads") else None
     close_rate    = round(cur["sales"] / cur["leads"] * 100, 1) if cur.get("leads") else None
 
-    return {
+    summary = {
         "period":           period,
         "ad_spend":         round(cur.get("spend", 0), 2),
         "leads":            cur.get("leads", 0),
@@ -149,6 +193,8 @@ def run():
             "profit": round(lifetime_profit, 2),
         },
     }
+    summary["advice"] = _ads_advice(summary, monthly)
+    return summary
 
 
 if __name__ == "__main__":

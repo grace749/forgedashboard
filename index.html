@@ -1414,6 +1414,30 @@ function render(data) {
   const mk = data.marketing || {};
   const mkMonthly = mk.monthly || [];
   const mkLife    = mk.lifetime || {};
+
+  // Social ads expert AI card
+  if (mk.advice) {
+    const adHtml = mk.advice.split("\n").map(l => l.trim()).filter(Boolean).map(l => {
+      if (/^\*\*(.+)\*\*$/.test(l)) return `<div style="font-weight:700;color:#5b21b6;margin:6px 0 4px">${l.replace(/\*\*/g,'')}</div>`;
+      const text = l.replace(/^[•\-\*]\s*/, "").replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+      return /^[•\-\*]/.test(l)
+        ? `<li style="padding:4px 0;line-height:1.5;color:#1f2937;display:flex;gap:8px;list-style:none"><span style="color:#7c3aed;flex-shrink:0">▸</span><span>${text}</span></li>`
+        : `<div style="padding:2px 0;color:#374151;line-height:1.5">${text}</div>`;
+    }).join("");
+    push("leads", `
+      <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="font-size:1.4rem">📣</div>
+          <div>
+            <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">Paid Social Expert ✦ · Meta Ads</div>
+            <div class="card-headline" style="margin-bottom:0">Advertising Insights — ${mk.period || ""}</div>
+          </div>
+        </div>
+        <ul style="margin:0;padding:0">${adHtml}</ul>
+      </div>
+    `);
+  }
+
   push("leads", `
     <div class="card col-3">
       <div class="card-title">Meta Ads</div>
