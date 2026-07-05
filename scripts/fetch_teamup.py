@@ -20,7 +20,7 @@ RECURRING_NAMES = ["elevate", "evolve", "empower"]
 
 # Any membership name that is a trial/intro offer (for lapsed-trial tracking)
 TRIAL_KEYWORDS = ["jumpstart", "trial", "strong start", "strongstart", "beginner",
-                  "new year", "30 day", "6 week", "kickstart", "emerge", "new you"]
+                  "new year", "30 day", "6 week", "kickstart", "new you"]
 
 
 def _is_trial_membership(name):
@@ -323,10 +323,11 @@ def _rule_suggestion(stats):
     if d90.get("bottom_classes"):
         bc = d90["bottom_classes"][0]
         parts.append(f"“{bc['name']}” is your least-attended class over 3 months ({bc['count']}). "
-                     f"Try moving it to a busier time or promoting it — or swap it for a more popular format.")
-    if d90.get("bottom_days"):
-        bd = d90["bottom_days"][0]
-        parts.append(f"{bd['day']} is your quietest day. Consider trimming a class or running a popular format to lift attendance.")
+                     f"Try a better time slot, a promo push or targeted invites to lift it — keep it as its own class.")
+    if d90.get("bottom_slots"):
+        bs = d90["bottom_slots"][0]
+        parts.append(f"The {bs['label']} slot is quiet ({bs['avg']} avg). Use that gap between PT and classes for "
+                     f"an open-gym block, a small-group session or a paid PT slot to earn from studio time you're already paying for.")
     if d90.get("top_classes"):
         tc = d90["top_classes"][0]
         parts.append(f"“{tc['name']}” is your most popular class ({tc['count']}) — adding another slot could capture unmet demand.")
@@ -348,9 +349,17 @@ def _class_suggestion(stats):
     )
     text = ai.generate(
         ("You are an operations advisor for The Forge, a women's fitness gym in Belfast. "
-         "From class attendance data, give 2-3 short, specific, practical suggestions to "
-         "improve attendance and optimise the timetable. Plain sentences, no preamble."),
-        f"Class attendance data:\n{summary}\n\nWhat should Grace do?",
+         "Every class on the timetable is its own distinct class — they CANNOT be merged, "
+         "combined or swapped with each other, so never suggest that. Instead give 2-3 "
+         "short, specific, practical suggestions that either (a) make better use of the "
+         "QUIET studio time between personal-training sessions and classes — e.g. adding "
+         "an open-gym slot, a small-group session, a paid PT block or a workshop in those "
+         "gaps — or (b) improve the quieter classes themselves (better time slot, "
+         "promotion, format tweak within that same class, targeted invites, incentives). "
+         "Plain sentences, no preamble."),
+        f"Class attendance data:\n{summary}\n\nEvery class is its own product and can't be "
+        "combined. How can Grace fill quiet studio time between PT and classes, and lift "
+        "the quieter classes?",
         max_tokens=300,
     )
     return text or _rule_suggestion(stats)

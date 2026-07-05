@@ -48,6 +48,7 @@
     /* Members grid: cards in each row stretch to equal height for a clean, aligned layout */
     #grid-members { align-items: stretch; }
     #grid-members .card { overflow: hidden; }
+    #grid-jumpstart { align-items: stretch; }
     /* Section divider headline (full width) */
     .sec-divider {
       grid-column: span 12; display: flex; align-items: center; gap: 12px;
@@ -402,6 +403,100 @@
 </div>
 
 <script>
+// ── Local persistence (survives refreshes, per browser) ───────
+function lsGet(key, def) { try { const v = localStorage.getItem(key); return v == null ? def : JSON.parse(v); } catch (e) { return def; } }
+function lsSet(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {} }
+const fmtShort = iso => { if(!iso) return ""; const d = new Date(iso + (iso.length<=10?"T12:00:00":"")); return d.toLocaleDateString("en-IE",{day:"numeric",month:"short"}); };
+
+// ── At-Risk: contacted / resolved (stored locally) ────────────
+window._atRiskData = [];
+function _atKey(name){ return "atrisk:" + (name||"").toLowerCase(); }
+function markContacted(name) {
+  const who = (prompt("Who contacted " + name + "? (e.g. Grace, JoJo, Eilis, Sarah)", "Grace") || "").trim();
+  if (!who) return;
+  const s = lsGet(_atKey(name), {}); s.contactedBy = who; s.contactedDate = new Date().toISOString().slice(0,10);
+  lsSet(_atKey(name), s); renderAtRisk();
+}
+function markResolved(name) {
+  const s = lsGet(_atKey(name), {}); s.resolved = true; s.resolvedDate = new Date().toISOString().slice(0,10);
+  lsSet(_atKey(name), s); renderAtRisk();
+}
+function undoAtRisk(name) { lsSet(_atKey(name), {}); renderAtRisk(); }
+function renderAtRisk() {
+  const body = document.getElementById("atRiskBody");
+  const count = document.getElementById("atRiskCount");
+  if (!body) return;
+  const rows = (window._atRiskData || []).filter(m => !(lsGet(_atKey(m.name), {}).resolved));
+  if (count) count.textContent = rows.length + " absent 10+ days";
+  if (!rows.length) { body.innerHTML = `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">No at-risk members right now 🎉</p>`; return; }
+  body.innerHTML = rows.map(m => {
+    const s = lsGet(_atKey(m.name), {});
+    const nm = (m.name||"").replace(/'/g,"\\'");
+    const contacted = s.contactedBy
+      ? `<div style="font-size:.7rem;color:#059669;margin-top:2px">✓ Contacted by ${s.contactedBy} · ${fmtShort(s.contactedDate)}</div>`
+      : "";
+    const actions = s.contactedBy
+      ? `<button onclick="markResolved('${nm}')" style="font-size:.66rem;font-weight:600;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap">No longer at risk</button>`
+      : `<button onclick="markContacted('${nm}')" style="font-size:.66rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap">Mark contacted</button>`;
+    return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
+      <div style="flex:1;min-width:0">
+        <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+        <div style="font-size:.72rem;color:#aaa">${m.membership || ""}</div>
+        ${contacted}
+      </div>
+      ${actions}
+    </div>`;
+  }).join("");
+}
+
+// ── Member directory: manual goal (stored locally) ────────────
+function addGoal(name) {
+  const g = (prompt("Goal for " + name + ":", "") || "").trim();
+  if (!g) return;
+  lsSet("goal:" + name.toLowerCase(), g);
+  const cell = document.querySelector(`.goal-cell[data-name="${name.toLowerCase()}"]`);
+  if (cell) { cell.textContent = g; cell.title = g; }
+}
+function goalCellHtml(name, goal) {
+  const manual = lsGet("goal:" + (name||"").toLowerCase(), "");
+  const g = goal || manual;
+  if (g) return `<span class="goal-cell" data-name="${(name||'').toLowerCase()}" title="${g.replace(/"/g,'&quot;')}">${g.substring(0,60)}${g.length>60?"…":""}</span>`;
+  return `<span class="goal-cell" data-name="${(name||'').toLowerCase()}"></span><button onclick="addGoal('${(name||'').replace(/'/g,"\\'")}')" style="font-size:.66rem;color:#7c3aed;background:none;border:1px dashed #ddd6fe;border-radius:6px;padding:2px 8px;cursor:pointer">＋ Add goal</button>`;
+}
+
+// ── Lapsed/cancelled card: filter by month chip or search text ──
+function filterLapsed(id, month, q) {
+  const wrap = document.getElementById(id + "-rows");
+  if (!wrap) return;
+  if (month != null) {
+    filterLapsed._month = filterLapsed._month || {};
+    filterLapsed._month[id] = month;
+    const s = document.getElementById(id + "-search"); if (s) s.value = "";
+    document.querySelectorAll(`#${id}-chips button`).forEach(b => {
+      const on = (b.getAttribute("data-month") || "") === (month || "");
+      b.style.background = on ? "#7c3aed" : (b.getAttribute("data-month") ? "#f7f7fb" : "#f5f3ff");
+      b.style.color = on ? "#fff" : (b.getAttribute("data-month") ? "#6b7280" : "#7c3aed");
+    });
+  }
+  const text = (q || "").toLowerCase().trim();
+  // Typing searches across all months — reset the month filter so results aren't hidden.
+  if (text) {
+    filterLapsed._month = filterLapsed._month || {}; filterLapsed._month[id] = "";
+    document.querySelectorAll(`#${id}-chips button`).forEach(b => {
+      const isAll = !b.getAttribute("data-month");
+      b.style.background = isAll ? "#f5f3ff" : "#f7f7fb";
+      b.style.color = isAll ? "#7c3aed" : "#6b7280";
+    });
+  }
+  const activeMonth = (filterLapsed._month && filterLapsed._month[id]) || "";
+  wrap.querySelectorAll(".lapsed-row").forEach(row => {
+    const okMonth = !activeMonth || row.getAttribute("data-month") === activeMonth;
+    const okText  = !text || row.getAttribute("data-name").includes(text) ||
+      (row.getAttribute("data-monthlabel") || "").includes(text);
+    row.style.display = (okMonth && okText) ? "" : "none";
+  });
+}
+
 // ── Member directory search ───────────────────────────────────
 function filterMembers(q) {
   q = (q || "").toLowerCase().trim();
@@ -636,29 +731,16 @@ function render(data) {
   // ── AT RISK ───────────────────────────────────────────────────
   memberSection("At Risk");
   const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
-  const atRisk = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
+  window._atRiskData = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
   push("members", `
     <div class="card col-12" style="margin-top:4px">
       <div class="card-title">Retention</div>
       <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
         At-Risk Members
-        <span style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444">${atRisk.length} absent 10+ days</span>
+        <span id="atRiskCount" style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444"></span>
       </div>
-      ${atRisk.length ? `
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;max-height:280px;overflow-y:auto">
-        ${atRisk.map(m => {
-          const days = m.days_absent;
-          const urgency = days == null ? "grey" : days >= 28 ? "red" : days >= 21 ? "amber" : "purple";
-          const label   = days != null ? `${days}d away` : "10+ days";
-          return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
-            <div style="flex:1;min-width:0">
-              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-              <div style="font-size:.72rem;color:#aaa;margin-top:1px">${m.membership || ""}</div>
-            </div>
-            <span class="pill ${urgency}" style="cursor:default;white-space:nowrap">${label}</span>
-          </div>`;
-        }).join("")}
-      </div>` : `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">All members attended recently 🎉</p>`}
+      <div id="atRiskBody" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px;max-height:320px;overflow-y:auto"></div>
+      <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Tick “Mark contacted” when a coach reaches out, then “No longer at risk” to clear them.</div>
     </div>
   `);
 
@@ -676,6 +758,16 @@ function render(data) {
   const goalByEmail    = (data.brief?.goals?.by_email) || {};
   const lastCheckin = em => checkinByEmail[(em||"").toLowerCase()] || null;
   const goalFor = (em, nm) => goalByEmail[(em||"").toLowerCase()] || goalByName[(nm||"").toLowerCase()] || "";
+  // Last InBody scan by normalised member name
+  const inbodyScans = (data.inbody?.scans && data.inbody.scans.length) ? data.inbody.scans : (tm.inbody_scans || []);
+  const inbodyByNorm = {};
+  inbodyScans.forEach(s => { if (s.name && s.last_scan) inbodyByNorm[(s.name||"").toLowerCase().replace(/[^a-z]/g,"")] = s.last_scan; });
+  const lastInbody = nm => {
+    const norm = (nm||"").toLowerCase().replace(/[^a-z]/g,"");
+    if (inbodyByNorm[norm]) return inbodyByNorm[norm];
+    const hit = Object.keys(inbodyByNorm).find(k => k && norm.length > 4 && (k.includes(norm) || norm.includes(k)));
+    return hit ? inbodyByNorm[hit] : null;
+  };
   push("members", `
     <div class="card col-12" style="margin-top:4px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
@@ -688,7 +780,7 @@ function render(data) {
       </div>
       ${memberRows.length ? `
         <div style="overflow-x:auto;overflow-y:auto;max-height:600px;margin-top:12px">
-          <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:820px">
+          <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:920px">
             <thead>
               <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:#bbb;position:sticky;top:0;background:#fff">
                 <th style="text-align:left;padding:6px 10px 6px 0;border-bottom:2px solid #f0f0f5">Member</th>
@@ -696,6 +788,7 @@ function render(data) {
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Membership</th>
                 <th style="text-align:right;padding:6px 10px;border-bottom:2px solid #f0f0f5">Classes</th>
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last check-in</th>
+                <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last InBody</th>
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last momentum</th>
                 <th style="text-align:left;padding:6px 0 6px 10px;border-bottom:2px solid #f0f0f5">Goal</th>
               </tr>
@@ -704,14 +797,16 @@ function render(data) {
               ${memberRows.map(m => {
                 const goal = goalFor(m.email, m.name);
                 const ci = lastCheckin(m.email);
+                const ib = lastInbody(m.name);
                 return `<tr class="member-row" data-name="${(m.name||'').toLowerCase()}">
                   <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(m.join_date)}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc"><span class="pill purple" style="cursor:default;font-size:.7rem">${m.membership||"—"}</span></td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;text-align:right;font-weight:700;color:#7c3aed">${m.class_count ?? "—"}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${ci ? fmtDateShort(ci) : "—"}</td>
+                  <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${ib ? fmtDateShort(ib) : "—"}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${m.last_momentum ? fmtDateShort(m.last_momentum) : "—"}</td>
-                  <td style="padding:8px 0 8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${(goal||'').replace(/"/g,'&quot;')}">${goal ? goal.substring(0,70) : "—"}</td>
+                  <td style="padding:8px 0 8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:260px" title="${(goal||'').replace(/"/g,'&quot;')}">${goalCellHtml(m.name, goal)}</td>
                 </tr>`;
               }).join("")}
             </tbody>
@@ -722,7 +817,8 @@ function render(data) {
     </div>
   `);
 
-  // ── Member Celebrations (under Active Full Members) ───────────
+  // ── MEMBER MILESTONES ─────────────────────────────────────────
+  memberSection("Member Milestones");
   const celeb    = tm.celebrations || {};
   const firstWk  = celeb.first_week  || [];
   const newFull  = celeb.new_members || [];
@@ -866,41 +962,61 @@ function render(data) {
     </div>
   `);
 
-  // ── LAPSED FULL MEMBERS / LAPSED TRIALS (per month) ───────────
+  // ── LAPSED FULL MEMBERS / LAPSED TRIALS (one searchable card each) ─
   const monthNameYr = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
-  const lapsedCard = (grp, title, chip) => `
-    <div class="card col-4">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+  let _lapsedId = 0;
+  const lapsedSearchCard = (groups, title, subtitle, chip, emptyMsg) => {
+    if (!groups.length) return `<div class="card col-12"><div class="card-title">${title}</div><p style="color:#16a34a;font-size:.85rem;padding:4px 0">${emptyMsg}</p></div>`;
+    const id = "lapsed" + (_lapsedId++);
+    const total = groups.reduce((n, g) => n + g.members.length, 0);
+    // newest month first
+    const sorted = [...groups].sort((a, b) => b.month.localeCompare(a.month));
+    const monthChips = sorted.map(g =>
+      `<button onclick="filterLapsed('${id}','${g.month}')" data-month="${g.month}"
+        style="font-size:.7rem;font-weight:600;color:#6b7280;background:#f7f7fb;border:1px solid #eee;border-radius:20px;padding:4px 11px;cursor:pointer">
+        ${monthNameYr(g.month)} <strong style="color:#7c3aed">${g.members.length}</strong></button>`).join("");
+    const rows = sorted.flatMap(g => g.members.map(m => `
+      <div class="lapsed-row" data-month="${g.month}" data-monthlabel="${monthNameYr(g.month).toLowerCase()}" data-name="${(m.name||'').toLowerCase()}"
+        style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid #f6f6fa">
+        <div style="min-width:0">
+          <div style="font-size:.84rem;font-weight:600;color:#111">${m.name}</div>
+          <div style="font-size:.7rem;color:#aaa">${m.membership || ""}</div>
+        </div>
+        <div style="text-align:right;white-space:nowrap">
+          <span style="font-size:.72rem;color:#9ca3af">${fmtDateShort(m.end)}</span>
+          <span class="brief-chip ${chip}" style="margin-left:6px">${monthNameYr(g.month).split(" ")[0].slice(0,3)}</span>
+        </div>
+      </div>`)).join("");
+    return `
+    <div class="card col-12">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
         <div>
           <div class="card-title">${title}</div>
-          <div class="card-headline" style="margin-bottom:0">${monthNameYr(grp.month)}</div>
+          <div class="card-headline" style="margin-bottom:0">${subtitle} <span style="font-size:.72rem;font-weight:600;color:#9ca3af">${total} in last year</span></div>
         </div>
-        <span class="brief-chip ${chip}">${grp.members.length}</span>
+        <input id="${id}-search" placeholder="Search name or month…" oninput="filterLapsed('${id}',null,this.value)"
+          style="font-size:.82rem;padding:6px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
       </div>
-      <div style="overflow-y:auto;max-height:300px">
-        ${grp.members.map(m => `
-          <div class="stat-row">
-            <div style="min-width:0">
-              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-              <div style="font-size:.7rem;color:#aaa">${m.membership} · ${fmtDateShort(m.end)}</div>
-            </div>
-          </div>`).join("")}
+      <div id="${id}-chips" style="display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 4px">
+        <button onclick="filterLapsed('${id}','')" data-month=""
+          style="font-size:.7rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:20px;padding:4px 11px;cursor:pointer">All</button>
+        ${monthChips}
       </div>
+      <div id="${id}-rows" style="overflow-y:auto;max-height:340px;margin-top:6px">${rows}</div>
     </div>`;
+  };
 
   const lapsedFull   = tm.lapsed_full_by_month   || [];
   const lapsedTrials = tm.lapsed_trials_by_month || [];
 
   memberSection("Lapsed Full Members");
-  if (lapsedFull.length) lapsedFull.forEach(grp => push("members", lapsedCard(grp, "Lapsed", "chip-red")));
-  else push("members", `<div class="card col-12"><p style="color:#16a34a;font-size:.85rem;padding:4px 0">No full members lapsed in the last year 🎉</p></div>`);
+  push("members", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉"));
 
   memberSection("Lapsed Trials");
-  if (lapsedTrials.length) lapsedTrials.forEach(grp => push("members", lapsedCard(grp, "Trials not converted", "chip-amber")));
-  else push("members", `<div class="card col-12"><p style="color:#9ca3af;font-size:.85rem;padding:4px 0">No lapsed trials in the last year</p></div>`);
+  push("members", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year"));
 
 
-  memberSection("Class Milestones");
+  memberSection("Classes");
   // ── Class Count Milestones (own card) ─────────────────────────
   push("members", `
     <div class="card col-4">
@@ -917,8 +1033,7 @@ function render(data) {
     </div>
   `);
 
-  memberSection("Class Popularity");
-  // ── Attendance / Class Popularity ─────────────────────────────
+  // ── Attendance / Class Popularity (sits beside Class Milestones) ─
   const cs   = tm.class_stats || {};
   const cs90 = cs.last_90_days || {};
   const cs30 = cs.last_30_days || {};
@@ -1969,6 +2084,7 @@ function render(data) {
     const grid = document.getElementById("grid-" + tab);
     if (grid) grid.innerHTML = cards.join("") || `<div class="card col-12"><p style="color:#ccc;font-size:.88rem;padding:8px 0">Nothing here yet</p></div>`;
   });
+  if (typeof renderAtRisk === "function") renderAtRisk();
 }
 
 function showTaskDetail(gid, name, notes, url, scriptUrl) {
