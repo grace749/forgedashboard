@@ -33,6 +33,7 @@ data = {
     "generated_at": datetime.now(timezone.utc).isoformat(),
     "apps_script_url": os.environ.get("APPS_SCRIPT_URL", ""),
     "asana_script_url": os.environ.get("ASANA_SCRIPT_URL", ""),
+    "atrisk_url": os.environ.get("ATRISK_SCRIPT_URL", ""),
     "brief":     safe_run("brief",     fetch_brief.run),
     "ghl":       safe_run("ghl",       fetch_ghl.run),
     "jumpstart": safe_run("jumpstart", fetch_jumpstart.run),

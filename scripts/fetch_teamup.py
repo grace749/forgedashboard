@@ -32,12 +32,21 @@ EXCLUDE_FROM_CHURN = {
     "new you next level", "fuel forward nutrition challenge",
     "dummy membership", "body composition scan",
 }
-EXCLUDE_CUSTOMER_NAMES = {"grace smith", "joan smith"}
-# Never flag as at-risk: coaches with test memberships + non-training account holders
-AT_RISK_EXCLUDE_NAMES = {
+def _norm_name(n):
+    """Lowercase and collapse repeated whitespace so 'Joanne  Hall' == 'joanne hall'."""
+    return " ".join((n or "").lower().split())
+
+# Coaches / staff — never counted as members anywhere on the dashboard.
+COACH_NAMES = {
     "grace smith", "joanne hall", "eilis kearns", "sarah lacey", "michelle mcknight",
+}
+# Excluded from ALL member data (coaches + test/non-training account holders)
+EXCLUDE_CUSTOMER_NAMES = COACH_NAMES | {
+    "joan smith",
     "donna mclean",   # parent managing a teen member's account, doesn't train herself
 }
+# Kept for back-compat; at-risk uses the same full exclusion set now
+AT_RISK_EXCLUDE_NAMES = EXCLUDE_CUSTOMER_NAMES
 EXCLUDE_FROM_BREAKDOWN = {"dummy membership", "body composition scan"}
 
 INBODY_INTERVAL_DAYS = 42   # 6 weeks between scans
@@ -422,7 +431,7 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
             continue
         name = name_map.get(cid, "")
         norm_name = " ".join((name or "").lower().split())   # collapse double spaces
-        if not name or norm_name in EXCLUDE_CUSTOMER_NAMES or norm_name in AT_RISK_EXCLUDE_NAMES:
+        if not name or norm_name in EXCLUDE_CUSTOMER_NAMES:
             continue
         membership = cust_membership.get(cid, "")
         if membership.lower() in EXCLUDE_FROM_CHURN or membership.lower() in EXCLUDE_FROM_BREAKDOWN:
@@ -533,7 +542,7 @@ def build_celebrations(active, name_map, first_seen, first_recurring):
 
     for cid, names in cust_current.items():
         name = name_map.get(cid, "")
-        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
+        if not name or _norm_name(name) in EXCLUDE_CUSTOMER_NAMES:
             continue
 
         is_jumpstart = any(t in n for n in names for t in TRIAL_NAMES)
@@ -628,7 +637,7 @@ def build_member_list(active, name_map, first_seen, class_counts, momentum_calls
             continue
         seen.add(cid)
         name = name_map.get(cid, "")
-        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES or name.lower() in MEMBER_LIST_EXCLUDE:
+        if not name or _norm_name(name) in EXCLUDE_CUSTOMER_NAMES:
             continue
         membership = _primary(cid)
         ml = membership.strip().lower()
@@ -659,7 +668,7 @@ def build_class_milestones(active_ids, name_map, class_counts):
     results = []
     for cid in active_ids:
         name = name_map.get(cid, "")
-        if not name or name.lower() in EXCLUDE_CUSTOMER_NAMES:
+        if not name or _norm_name(name) in EXCLUDE_CUSTOMER_NAMES:
             continue
         total = counts.get(cid, 0)
         for ms in MILESTONE_CLASSES:
@@ -774,7 +783,7 @@ def build_inbody_scans(all_memberships, name_map):
     scans = []
     for cid, last_scan_str in customer_scans.items():
         name = name_map.get(cid, f"Customer {cid}")
-        if name.lower() in EXCLUDE_CUSTOMER_NAMES:
+        if _norm_name(name) in EXCLUDE_CUSTOMER_NAMES:
             continue
         try:
             last_scan   = date.fromisoformat(last_scan_str)
@@ -833,6 +842,17 @@ def run():
     lapsed_trials = {}   # YYYY-MM -> [members]  (trials that lapsed / didn't convert)
     ytd_full_leavers = set()
 
+    # Anyone who EVER held a full (non-trial) membership = they converted at some
+    # point, so they are NOT a "lapsed trial" even if an old trial also expired.
+    ever_full_ids = set()
+    for m in (active + on_hold + cancelled_all):
+        nm2 = (m.get("name", "") or "").strip()
+        if not nm2 or nm2.lower() in EXCLUDE_FROM_BREAKDOWN:
+            continue
+        if not _is_trial_membership(nm2):
+            ever_full_ids.add(m["customer"])
+
+    seen_trial_ids = set()   # dedupe: list each lapsed-trial person once
     for m in cancelled_all:
         cid   = m["customer"]
         mname = m.get("name", "").strip()
@@ -843,10 +863,14 @@ def run():
         if cid in all_active_ids or cid in paused_ids:
             continue
         nm = name_map.get(cid, "")
-        if not nm or nm.lower() in EXCLUDE_CUSTOMER_NAMES:
+        if not nm or _norm_name(nm) in EXCLUDE_CUSTOMER_NAMES:
             continue
         row = {"name": nm, "membership": mname, "end": end}
         if _is_trial_membership(mname):
+            # Lapsed trial = did a trial, never bought a full membership
+            if cid in ever_full_ids or cid in seen_trial_ids:
+                continue
+            seen_trial_ids.add(cid)
             lapsed_trials.setdefault(end[:7], []).append(row)
         else:
             if mname.lower() in EXCLUDE_FROM_BREAKDOWN:
@@ -877,7 +901,7 @@ def run():
     # ── Churn rate ──────────────────────────────────────────────
     churn_base_ids = {
         cid for cid in all_active_ids
-        if name_map.get(cid, "").lower() not in EXCLUDE_CUSTOMER_NAMES
+        if _norm_name(name_map.get(cid, "")) not in EXCLUDE_CUSTOMER_NAMES
         and next((m.get("name","") for m in active if m["customer"]==cid), "").strip().lower() not in EXCLUDE_FROM_CHURN
     }
     churn_leaving = leaving_ids & churn_base_ids

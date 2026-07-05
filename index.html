@@ -408,29 +408,61 @@ function lsGet(key, def) { try { const v = localStorage.getItem(key); return v =
 function lsSet(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {} }
 const fmtShort = iso => { if(!iso) return ""; const d = new Date(iso + (iso.length<=10?"T12:00:00":"")); return d.toLocaleDateString("en-IE",{day:"numeric",month:"short"}); };
 
-// ── At-Risk: contacted / resolved (stored locally) ────────────
+// ── At-Risk: contacted / resolved ─────────────────────────────
+// Shared across machines/users via a Google Apps Script store (data.atrisk_url).
+// Falls back to this browser's localStorage when no shared URL is configured.
 window._atRiskData = [];
+window._atRiskUrl = "";
+window._atRiskState = {};   // { "<name lower>": {contactedBy, contactedDate, resolved, resolvedDate} }
 function _atKey(name){ return "atrisk:" + (name||"").toLowerCase(); }
-function markContacted(name) {
+function _atLower(name){ return (name||"").toLowerCase(); }
+// Read a member's state: shared store first, else local
+function atState(name) {
+  if (window._atRiskUrl) return window._atRiskState[_atLower(name)] || {};
+  return lsGet(_atKey(name), {});
+}
+// Persist a member's state to whichever store is active
+async function atSave(name, s) {
+  const key = _atLower(name);
+  if (window._atRiskUrl) {
+    window._atRiskState[key] = s;
+    try {
+      await fetch(window._atRiskUrl, { method: "POST",
+        body: JSON.stringify({ type: "atrisk", name: key, state: s }) });
+    } catch (e) { /* optimistic; will reconcile on next load */ }
+  } else {
+    lsSet(_atKey(name), s);
+  }
+}
+// Load the whole shared state map once at startup
+async function loadAtRiskState() {
+  if (!window._atRiskUrl) return;
+  try {
+    const res = await fetch(window._atRiskUrl + (window._atRiskUrl.includes("?") ? "&" : "?") + "type=atrisk");
+    const json = await res.json();
+    if (json && typeof json === "object") window._atRiskState = json.state || json || {};
+  } catch (e) { /* keep whatever we have */ }
+}
+async function markContacted(name) {
   const who = (prompt("Who contacted " + name + "? (e.g. Grace, JoJo, Eilis, Sarah)", "Grace") || "").trim();
   if (!who) return;
-  const s = lsGet(_atKey(name), {}); s.contactedBy = who; s.contactedDate = new Date().toISOString().slice(0,10);
-  lsSet(_atKey(name), s); renderAtRisk();
+  const s = { ...atState(name), contactedBy: who, contactedDate: new Date().toISOString().slice(0,10) };
+  await atSave(name, s); renderAtRisk();
 }
-function markResolved(name) {
-  const s = lsGet(_atKey(name), {}); s.resolved = true; s.resolvedDate = new Date().toISOString().slice(0,10);
-  lsSet(_atKey(name), s); renderAtRisk();
+async function markResolved(name) {
+  const s = { ...atState(name), resolved: true, resolvedDate: new Date().toISOString().slice(0,10) };
+  await atSave(name, s); renderAtRisk();
 }
-function undoAtRisk(name) { lsSet(_atKey(name), {}); renderAtRisk(); }
+async function undoAtRisk(name) { await atSave(name, {}); renderAtRisk(); }
 function renderAtRisk() {
   const body = document.getElementById("atRiskBody");
   const count = document.getElementById("atRiskCount");
   if (!body) return;
-  const rows = (window._atRiskData || []).filter(m => !(lsGet(_atKey(m.name), {}).resolved));
+  const rows = (window._atRiskData || []).filter(m => !(atState(m.name).resolved));
   if (count) count.textContent = rows.length + " absent 10+ days";
   if (!rows.length) { body.innerHTML = `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">No at-risk members right now 🎉</p>`; return; }
   body.innerHTML = rows.map(m => {
-    const s = lsGet(_atKey(m.name), {});
+    const s = atState(m.name);
     const nm = (m.name||"").replace(/'/g,"\\'");
     const contacted = s.contactedBy
       ? `<div style="font-size:.7rem;color:#059669;margin-top:2px">✓ Contacted by ${s.contactedBy} · ${fmtShort(s.contactedDate)}</div>`
@@ -738,6 +770,7 @@ function render(data) {
   memberSection("At Risk");
   const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
   window._atRiskData = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
+  window._atRiskUrl  = data.atrisk_url || "";
   push("members", `
     <div class="card col-12" style="margin-top:4px">
       <div class="card-title">Retention</div>
@@ -1098,13 +1131,13 @@ function render(data) {
     </div>
   `);
 
-  memberSection("Momentum Calls");
+  memberSection("Momentum Calls & InBody Data");
   // ── Momentum Calls ────────────────────────────────────────────
   const mc = tm.momentum_calls || {};
   const mcRecent   = mc.recent   || [];
   const mcUpcoming = mc.upcoming || [];
   push("members", `
-    <div class="card col-3">
+    <div class="card col-4">
       <div class="card-title">Check-ins</div>
       <div class="card-headline">Momentum Calls</div>
       ${mcUpcoming.length ? `
@@ -1129,8 +1162,7 @@ function render(data) {
     </div>
   `);
 
-  memberSection("InBody Data");
-  // ── InBody Scans ──────────────────────────────────────────────
+  // ── InBody Scans (sits beside Momentum Calls) ─────────────────
   // Prefer the full list from Lookin'Body; fall back to the TeamUp proxy.
   const inbodyData = data.inbody || {};
   const inbody = (inbodyData.scans && inbodyData.scans.length) ? inbodyData.scans : (tm.inbody_scans || []);
@@ -2099,7 +2131,10 @@ function render(data) {
     const grid = document.getElementById("grid-" + tab);
     if (grid) grid.innerHTML = cards.join("") || `<div class="card col-12"><p style="color:#ccc;font-size:.88rem;padding:8px 0">Nothing here yet</p></div>`;
   });
-  if (typeof renderAtRisk === "function") renderAtRisk();
+  if (typeof renderAtRisk === "function") {
+    renderAtRisk();                                   // paint immediately
+    loadAtRiskState().then(renderAtRisk);             // then reconcile with shared store
+  }
 }
 
 function showTaskDetail(gid, name, notes, url, scriptUrl) {

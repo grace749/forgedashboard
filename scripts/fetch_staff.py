@@ -22,11 +22,15 @@ STAFF_SYSTEM = (
     "leaning on one person), and how to balance the timetable. 4-6 short bullet "
     "points, plain UK English, no preamble.\n"
     "Hard constraints — respect these, do NOT suggest anything that breaks them:\n"
-    "- Grace (founder) ONLY coaches Mondays; she's focused on scaling the business, "
-    "so don't propose giving her more classes on other days.\n"
+    "- Grace is the FOUNDER and is stepping back from delivery. She takes NO classes "
+    "and NO personal training. Never suggest giving Grace any classes or PT — the goal "
+    "is to REDUCE her coaching load to zero and cover her hours with the other coaches.\n"
     "- JoJo always coaches Tuesdays (a technically demanding day to coach).\n"
     "- Eilis is not yet a strong enough coach to take Tuesdays, so never suggest "
-    "putting Eilis on a Tuesday."
+    "putting Eilis on a Tuesday.\n"
+    "- Body Composition (InBody) scans are just standing a member on a scale — ANY "
+    "coach can do them, they are not real coaching time, so don't treat them as PT "
+    "load or use them to balance the timetable."
 )
 
 
@@ -97,8 +101,10 @@ def run():
     advice = ai.generate(
         STAFF_SYSTEM,
         f"Coaching team last month ({period}):\n{summary}\n\n"
-        "How should Grace use the team better — where are people under-used, "
-        "over-loaded, or is coverage too dependent on one coach?",
+        "Grace (founder) is stepping back from delivery and should end up taking NO "
+        "classes and NO PT. How should the team cover her hours and be used better — "
+        "where are people under-used, over-loaded, or is coverage too dependent on one "
+        "coach? Do not propose any coaching or PT for Grace.",
         max_tokens=420,
     ) or (
         "**Team utilisation**\n"
