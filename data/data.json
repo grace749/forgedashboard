@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-04T20:13:26.903247+00:00",
+  "generated_at": "2026-07-05T05:01:04.161401+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "brief": {
-    "date": "2026-07-04",
+    "date": "2026-07-05",
     "event_count": 0,
     "urgent_count": 1,
     "enquiry_count": 0,
     "calendar": {
-      "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-04T20%3A13%3A26.946318%2B00%3A00&timeMax=2026-07-06T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=40&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
+      "error": "<HttpError 404 when requesting https://www.googleapis.com/calendar/v3/calendars/grace%40theforge.pt/events?timeMin=2026-07-05T05%3A01%3A04.199001%2B00%3A00&timeMax=2026-07-07T23%3A59%3A59%2B00%3A00&singleEvents=true&orderBy=startTime&maxResults=40&alt=json returned \"Not Found\". Details: \"[{'domain': 'global', 'reason': 'notFound', 'message': 'Not Found'}]\">"
     },
     "urgent": [
       {
@@ -87,8 +87,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "sarah@nourishandnurtu.re": "2025-11-23",
         "eiliskearns13@gmail.com": "2025-11-23",
+        "sarah@nourishandnurtu.re": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -180,7 +180,7 @@
     "monthly": [
       {
         "month": "2026-07",
-        "completed": 2,
+        "completed": 3,
         "converted": 0,
         "conv_rate": 0
       },
@@ -199,38 +199,6 @@
     ],
     "active": [
       {
-        "name": "Claire Walker",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-23",
-        "end": "2026-07-04",
-        "goal": "Feeling more active",
-        "notes": "Medicated for depression and anxiety. Has been debilitating in the past but under control for most part now.",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        "week_on": 6,
-        "days_left": 0,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "Medicated for depression and anxiety. Has been debilitating in the past but under control for most part now."
-      },
-      {
         "name": "Victoria McCullough",
         "cohort": "APR-MAY",
         "joined": "2026-05-25",
@@ -248,7 +216,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 2,
+        "days_left": 1,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -280,7 +248,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 6,
+        "days_left": 5,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -312,7 +280,7 @@
           false
         ],
         "week_on": 5,
-        "days_left": 10,
+        "days_left": 9,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -344,7 +312,7 @@
           false
         ],
         "week_on": 5,
-        "days_left": 12,
+        "days_left": 11,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -376,7 +344,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 20,
+        "days_left": 19,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -408,7 +376,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 23,
+        "days_left": 22,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -440,7 +408,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 23,
+        "days_left": 22,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -472,7 +440,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 28,
+        "days_left": 27,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -503,17 +471,17 @@
           false,
           false
         ],
-        "week_on": 2,
-        "days_left": 29,
+        "week_on": 3,
+        "days_left": 28,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
+        "missing_checkins": 2,
         "completed_checkins": 1,
-        "expected_checkins": 2,
+        "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
         "pause_reason": "sometimes struggles with eating"
@@ -536,7 +504,7 @@
           false
         ],
         "week_on": 2,
-        "days_left": 34,
+        "days_left": 33,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -568,7 +536,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 38,
+        "days_left": 37,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -600,7 +568,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 39,
+        "days_left": 38,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -632,7 +600,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 96,
+        "days_left": 95,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -666,7 +634,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 17,
+        "days_left": 16,
         "is_active": true,
         "is_converted": false,
         "not_converted": true,
@@ -679,6 +647,38 @@
         "paused": false,
         "pink_red": true,
         "pause_reason": "LEFT TRIAL AFTER ONE CLASS DUE TO SORE BACK - REFUNDED"
+      },
+      {
+        "name": "Claire Walker",
+        "cohort": "APR-MAY",
+        "joined": "2026-05-23",
+        "end": "2026-07-04",
+        "goal": "Feeling more active",
+        "notes": "Medicated for depression and anxiety. Has been debilitating in the past but under control for most part now.",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -1,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 5,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "Medicated for depression and anxiety. Has been debilitating in the past but under control for most part now."
       },
       {
         "name": "Emma Wilson",
@@ -698,7 +698,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -1,
+        "days_left": -2,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -730,7 +730,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -5,
+        "days_left": -6,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -762,7 +762,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -8,
+        "days_left": -9,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -794,7 +794,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -10,
+        "days_left": -11,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -826,7 +826,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -15,
+        "days_left": -16,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -857,8 +857,8 @@
           true,
           true
         ],
-        "week_on": null,
-        "days_left": -16,
+        "week_on": 1,
+        "days_left": -17,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -866,8 +866,8 @@
         "welcome_pack": false,
         "follow_up": "",
         "missing_checkins": 0,
-        "completed_checkins": 0,
-        "expected_checkins": 0,
+        "completed_checkins": 1,
+        "expected_checkins": 1,
         "paused": false,
         "pink_red": false,
         "pause_reason": "Find change difficult"
@@ -890,7 +890,7 @@
           true
         ],
         "week_on": 5,
-        "days_left": -17,
+        "days_left": -18,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -922,7 +922,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -18,
+        "days_left": -19,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -954,7 +954,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -18,
+        "days_left": -19,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -986,7 +986,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -19,
+        "days_left": -20,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1018,7 +1018,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -20,
+        "days_left": -21,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1050,7 +1050,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -20,
+        "days_left": -21,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1082,7 +1082,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -20,
+        "days_left": -21,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1114,7 +1114,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -29,
+        "days_left": -30,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1146,7 +1146,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -29,
+        "days_left": -30,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1178,7 +1178,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -32,
+        "days_left": -33,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1210,7 +1210,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -34,
+        "days_left": -35,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1242,7 +1242,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -35,
+        "days_left": -36,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1274,7 +1274,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -37,
+        "days_left": -38,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1306,7 +1306,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -38,
+        "days_left": -39,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1338,7 +1338,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -40,
+        "days_left": -41,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1370,7 +1370,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -40,
+        "days_left": -41,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1402,7 +1402,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -43,
+        "days_left": -44,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1434,7 +1434,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -43,
+        "days_left": -44,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1466,7 +1466,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -43,
+        "days_left": -44,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1498,7 +1498,7 @@
           true
         ],
         "week_on": 1,
-        "days_left": -46,
+        "days_left": -47,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1530,7 +1530,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -49,
+        "days_left": -50,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1562,7 +1562,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -49,
+        "days_left": -50,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1594,7 +1594,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -50,
+        "days_left": -51,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1626,7 +1626,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -50,
+        "days_left": -51,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1658,7 +1658,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -50,
+        "days_left": -51,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1690,7 +1690,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -50,
+        "days_left": -51,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1724,7 +1724,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 3,
+        "days_left": 2,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -1756,7 +1756,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -4,
+        "days_left": -5,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1788,7 +1788,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 19,
+        "days_left": 18,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -1819,8 +1819,8 @@
           true,
           true
         ],
-        "week_on": null,
-        "days_left": -16,
+        "week_on": 1,
+        "days_left": -17,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1828,8 +1828,8 @@
         "welcome_pack": false,
         "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
         "missing_checkins": 0,
-        "completed_checkins": 0,
-        "expected_checkins": 0,
+        "completed_checkins": 1,
+        "expected_checkins": 1,
         "paused": true,
         "pink_red": false,
         "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
@@ -1837,16 +1837,6 @@
     ],
     "alerts": [
       {
-        "member": "Claire Walker",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 6)"
-      },
-      {
-        "member": "Claire Walker",
-        "type": "conversion",
-        "detail": "0d left \u2014 conversion chat not scheduled!"
-      },
-      {
         "member": "Victoria McCullough",
         "type": "missing_checkin",
         "detail": "Missing 1 check-in(s) (on week 6)"
@@ -1854,7 +1844,7 @@
       {
         "member": "Victoria McCullough",
         "type": "conversion",
-        "detail": "2d left \u2014 conversion chat not scheduled!"
+        "detail": "1d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Lesley Drake",
@@ -1864,7 +1854,7 @@
       {
         "member": "Lesley Drake",
         "type": "conversion",
-        "detail": "6d left \u2014 conversion chat not scheduled!"
+        "detail": "5d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Sharon Smyth",
@@ -1874,7 +1864,7 @@
       {
         "member": "Sharon Smyth",
         "type": "conversion",
-        "detail": "10d left \u2014 conversion chat not scheduled!"
+        "detail": "9d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Nuala O'neill",
@@ -1884,7 +1874,7 @@
       {
         "member": "Nuala O'neill",
         "type": "conversion",
-        "detail": "12d left \u2014 conversion chat not scheduled!"
+        "detail": "11d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Julie Lennox",
@@ -1909,7 +1899,7 @@
       {
         "member": "Louise Farley",
         "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 2)"
+        "detail": "Missing 2 check-in(s) (on week 3)"
       },
       {
         "member": "Rosie McFetridge",
@@ -1948,12 +1938,12 @@
       }
     ],
     "stats": {
-      "active_count": 14,
+      "active_count": 13,
       "paused_count": 4,
-      "conv_rate": 52,
+      "conv_rate": 50,
       "converted": 17,
       "not_converted": 10,
-      "total_complete": 33
+      "total_complete": 34
     }
   },
   "inbody": {
@@ -1970,7 +1960,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-15",
-        "days_to_due": 42,
+        "days_to_due": 41,
         "overdue": false
       },
       {
@@ -1985,7 +1975,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-13",
-        "days_to_due": 40,
+        "days_to_due": 39,
         "overdue": false
       },
       {
@@ -2000,7 +1990,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-11",
-        "days_to_due": 38,
+        "days_to_due": 37,
         "overdue": false
       },
       {
@@ -2015,7 +2005,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-10",
-        "days_to_due": 37,
+        "days_to_due": 36,
         "overdue": false
       },
       {
@@ -2030,7 +2020,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": 35,
+        "days_to_due": 34,
         "overdue": false
       },
       {
@@ -2045,7 +2035,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": 35,
+        "days_to_due": 34,
         "overdue": false
       },
       {
@@ -2060,7 +2050,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-07",
-        "days_to_due": 34,
+        "days_to_due": 33,
         "overdue": false
       },
       {
@@ -2075,7 +2065,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-06",
-        "days_to_due": 33,
+        "days_to_due": 32,
         "overdue": false
       },
       {
@@ -2090,7 +2080,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-05",
-        "days_to_due": 32,
+        "days_to_due": 31,
         "overdue": false
       },
       {
@@ -2105,7 +2095,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": 31,
+        "days_to_due": 30,
         "overdue": false
       },
       {
@@ -2120,7 +2110,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": 31,
+        "days_to_due": 30,
         "overdue": false
       },
       {
@@ -2135,7 +2125,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": 31,
+        "days_to_due": 30,
         "overdue": false
       },
       {
@@ -2150,7 +2140,7 @@
         "smm_change": 2.0,
         "pbf_change": -1.6,
         "next_due": "2026-08-03",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -2165,7 +2155,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-03",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -2180,7 +2170,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -2195,7 +2185,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -2210,7 +2200,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2225,7 +2215,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2240,7 +2230,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2255,7 +2245,7 @@
         "smm_change": 0.7,
         "pbf_change": -0.9,
         "next_due": "2026-07-30",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -2270,7 +2260,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-30",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -2285,7 +2275,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": 25,
+        "days_to_due": 24,
         "overdue": false
       },
       {
@@ -2300,7 +2290,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": 25,
+        "days_to_due": 24,
         "overdue": false
       },
       {
@@ -2315,7 +2305,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": 25,
+        "days_to_due": 24,
         "overdue": false
       },
       {
@@ -2330,7 +2320,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2345,7 +2335,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2360,7 +2350,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -2375,7 +2365,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -2390,7 +2380,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2405,7 +2395,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2420,7 +2410,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2435,7 +2425,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2450,7 +2440,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2465,7 +2455,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-20",
-        "days_to_due": 16,
+        "days_to_due": 15,
         "overdue": false
       },
       {
@@ -2480,7 +2470,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2495,7 +2485,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2510,7 +2500,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2525,7 +2515,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-17",
-        "days_to_due": 13,
+        "days_to_due": 12,
         "overdue": false
       },
       {
@@ -2540,7 +2530,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2555,7 +2545,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2570,7 +2560,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-14",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2585,7 +2575,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 9,
+        "days_to_due": 8,
         "overdue": false
       },
       {
@@ -2600,7 +2590,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 9,
+        "days_to_due": 8,
         "overdue": false
       },
       {
@@ -2615,7 +2605,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 9,
+        "days_to_due": 8,
         "overdue": false
       },
       {
@@ -2630,7 +2620,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 9,
+        "days_to_due": 8,
         "overdue": false
       },
       {
@@ -2645,7 +2635,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 9,
+        "days_to_due": 8,
         "overdue": false
       },
       {
@@ -2660,7 +2650,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": 9,
+        "days_to_due": 8,
         "overdue": false
       },
       {
@@ -2675,7 +2665,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       },
       {
@@ -2690,7 +2680,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       },
       {
@@ -2705,7 +2695,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       },
       {
@@ -2720,7 +2710,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       },
       {
@@ -2735,7 +2725,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": 5,
+        "days_to_due": 4,
         "overdue": false
       },
       {
@@ -2750,7 +2740,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": 5,
+        "days_to_due": 4,
         "overdue": false
       },
       {
@@ -2765,7 +2755,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-08",
-        "days_to_due": 4,
+        "days_to_due": 3,
         "overdue": false
       },
       {
@@ -2780,7 +2770,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-07",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2795,7 +2785,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2810,7 +2800,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2825,7 +2815,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2840,7 +2830,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2855,7 +2845,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2870,8 +2860,8 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "eilis003",
@@ -2885,8 +2875,8 @@
         "smm_change": -0.2,
         "pbf_change": -0.4,
         "next_due": "2026-07-04",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "rosemary063",
@@ -2900,8 +2890,8 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "kerry062",
@@ -2915,7 +2905,7 @@
         "smm_change": null,
         "pbf_change": null,
         "next_due": "2026-07-03",
-        "days_to_due": -1,
+        "days_to_due": -2,
         "overdue": true
       }
     ],
@@ -3415,7 +3405,7 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member complaint & incident escalation** \u2013 no documented path for complaints, disputes, refunds, injuries, safeguarding concerns, or near-misses. Critical for duty of care and liability.\n- **Financial reconciliation & cash handling** \u2013 no SOP for daily takings, card reconciliation, refund processing, petty cash, or variance investigation.\n- **Staff absence & cover** \u2013 no process for sickness reporting, shift coverage, last-minute cancellations, or how coaches backfill each other.\n- **Retention win-back campaign** \u2013 you have 22 Client SOPs but none explicitly cover lapsed/churned member reactivation.\n- **New member goal-setting & progress check-ins** \u2013 onboarding likely exists, but no SOP for structured 4/8/12-week touchpoints or how to prevent silent churn.\n- **Equipment maintenance log & fault reporting** \u2013 Facilities has 4 SOPs; this isn't one of them. Broken kit = cancelled classes = revenue loss.\n- **Health & safety incident reporting** \u2013 accidents, near-misses, safeguarding flags need a formal trail for insurance and regulatory compliance.\n- **Coach performance review cycle** \u2013 no documented appraisal, feedback, or improvement plan process.\n\n---\n\n# **Needs updating**\n\n- **Marketing SOPs (10/12)** \u2013 Email Newsletter and Blog Post are listed as missing; assume the other 10 lack distribution schedules, sign-off sign-off chains, or response SLAs.\n- **Onboarding SOP** \u2013 likely missing: (a) PAR-Q health screening follow-up if flagged; (b) goal-setting conversation with coach in first week; (c) check-in cadence for retention.\n- **Class cancellation SOP** \u2013 no documented protocol for how coaches or"
+    "coo_evaluation": "# Gaps \u2014 no SOP yet\n\n- **Member complaints & incident escalation** \u2013 no documented pathway for handling complaints, injuries, safeguarding concerns, or disputes (critical for a women's-only space and duty of care).\n- **Financial controls & reconciliation** \u2013 no SOP for cash/card handling, refunds, payment disputes, or monthly P&L sign-off.\n- **Staff discipline & performance management** \u2013 no process for documenting underperformance, capability conversations, or termination.\n- **Health & safety incident reporting** \u2013 no formal log or investigation template for accidents, near-misses, or equipment failures.\n- **Member data protection & GDPR compliance** \u2013 no documented process for access requests, data deletion, or breach notification.\n- **Retention/win-back campaigns** \u2013 no automated or manual process for re-engaging lapsed members or churn prevention.\n- **Induction for new gym staff (non-coaches)** \u2013 assuming reception/admin staff exist; no onboarding SOP if they do.\n- **Equipment maintenance log & fault reporting** \u2013 beyond facilities cleaning, no predictive or reactive maintenance schedule.\n\n---\n\n# Needs updating\n\n- **Coaches SOP suite (17/17 built)** \u2013 likely missing: what to do when a coach is sick/absent (cover protocol), conflict resolution between coaches, how to handle a member complaint *about* a coach, de-escalation scripts.\n- **Client onboarding** \u2013 check if it covers: payment failure handling, cancellation windows, refund policy, what happens if member is injured mid-contract.\n- **Marketing SOPs (10/12)** \u2013 Email Newsletter & Blog Post listed as not built; also missing: crisis comms (e.g., facility closure, coach departure, negative review response).\n- **Facilities (4/4)** \u2013 probably missing: deep-clean schedule, COVID/illness protocol,"
   },
   "slack": {
     "configured": true,
@@ -3423,25 +3413,25 @@
       {
         "user_id": "U0AATFGV84R",
         "text": "Do not worry at all! Let me see if i can send a forgot password email to you xx",
-        "hours": 29,
+        "hours": 38,
         "name": "Kerry Tweed"
       },
       {
         "user_id": "U07J3V3AVQE",
         "text": "Thankyou Grace and good to see you put the voucher to good use x",
-        "hours": 26,
+        "hours": 35,
         "name": "Joanne Hamill"
       },
       {
         "user_id": "U0ALM0N736X",
         "text": "23 cals on assault bike ",
-        "hours": 14,
+        "hours": 23,
         "name": "Jackie Elliott"
       },
       {
         "user_id": "U087NC9N9G9",
         "text": "Just cancelled next week's classes, Zara, Jane and myself heading to Portugal for a few days:sunny:. Hopefully be back on 14th:muscle:",
-        "hours": 6,
+        "hours": 15,
         "name": "Carol Chestnutt"
       }
     ],
@@ -4459,7 +4449,7 @@
         ]
       }
     ],
-    "advice": "# THE FORGE \u2014 FRACTIONAL CFO BRIEF\n\n## REVENUE \u2014 BIGGEST PRIORITY\n\n**Active clients up 21% in the quarter (May\u2013June: 122\u2192147) but revenue DOWN 12% (\u00a320.2k\u2192\u00a317.7k). That's a red flag: AR/M collapsed from \u00a3165.56 to \u00a3120.48 (27% drop).**\n\n- **Raise pricing or upsell aggressively.** You're not monetising the new members. May data suggests your price point can support \u00a3165+/member. June's \u00a3120.48 means either heavy discounting on new sign-ups or product/package mix shift. Review: are you selling month-to-month basic plans instead of 3-month or premium packages? Lock new members into 6-month commitments at \u00a3165+/month minimum, or introduce a premium \"Coaching+\" tier at \u00a340\u201350/month premium.\n- **Churn finally flat (0% in June) \u2014 that's excellent after volatile April\u2013May.** Protect it. Target: maintain <2% monthly churn; at 147 members, losing 3 per month is acceptable, but losing 5+ signals retention issues.\n- **Your bigger studio should accommodate 180\u2013200 active members comfortably.** You're at 147. Aggressive Q3 target: 170+ members by end of August. That's +23 members in 12 weeks \u2014 achievable via referral incentives (\u00a320 credit per signed referral), corporate partnerships (Belfast law firms, hospital staff), and paid social ads targeting \u00a3160 CAC.\n\n---\n\n## EXPENSES \u2014 EFFICIENCY CRISIS\n\n**Non-people costs exploded Jan\u2013Apr (\u00a38.2k\u2192\u00a330.5k) but haven't normalised. June is still \u00a39.4k \u2014 100% above Sept\u2013Dec baseline (\u00a34.5k\u2013\u00a35.7k).**\n\n- **Audit non-people spend line-by-line for April carryover.** Fit-out was one-off, but June at \u00a39.4k suggests: ongoing lease payments on old studio (if you're still paying it), utilities for bigger space, or inflated supplier invoices. Break down: rent, utilities, equipment maintenance, supplies, insurance. Target: drop non-people costs to \u00a36.5k/month by end of Q3 (you have the studio, stop paying for the old one if you are).\n- **People costs stable at \u00a33.5k\u2013\u00a33.7k (19\u201320% of revenue in May\u2013June).** That's healthy for a service business. But at 147 members and \u00a3"
+    "advice": "# THE FORGE \u2014 FRACTIONAL CFO ADVICE\n\n## INCREASE REVENUE\n\n- **Pricing & AR/M drift is your biggest leak.** June AR/M crashed to \u00a3120.48 (down from \u00a3165.56 in May, down from \u00a3170.43 in Dec). You've added 25 net members since May (122\u2192147) but revenue fell \u00a32.5k. Either new joiners are on discount packages or existing members aren't upgrading. Audit the June cohort pricing immediately; run a 3\u20135% price rise on renewals and kill any introductory underpricing after month 3.\n- **Churn spiked badly in April\u2013May (8.33% and 5.74%) then recovered to 0% in June \u2014 capitalise on that momentum.** June's zero churn with 147 members is your strongest month. Identify what fixed the retention issue (new facility, staff change, programme?) and double down. That's your retention floor now.\n- **Quiet class fill-rate is hidden.** You have 147 members but revenue/profit is weak relative to headcount. Analyse which classes run under 60% capacity and either consolidate them, move timings to peak demand, or introduce small-group training upsells (1-to-1 or 3-person sessions at \u00a325\u201335/session). Target: convert 15% of members to one paid add-on per month by end of Q3.\n\n## REDUCE EXPENSES\n\n- **Non-people costs ballooned Jan\u2013April (\u00a38.2k\u2192\u00a330.5k) then normalised to \u00a39.4k in June, but that's still 50% higher than Sep\u2013Nov baseline (\u00a34.3\u20134.9k).** Post-relocation, scrutinise utilities (larger space), supplies, and any new contracts (cleaning, maintenance, rent). June's \u00a39.4k on \u00a317.7k revenue (53% of sales) is acceptable for a new bigger studio, but audit the line-items: is there waste? Target: hold non-people expenses at \u226448% of revenue by August.\n- **Payroll in June (\u00a33.686k on \u00a317.7k revenue = 20.8%) is creeping up and now exceeds the Sep\u2013Nov average (\u00a32.6\u20132.7k).** You've added staff for the bigger studio \u2014 justified \u2014 but track hours tightly. If the new team includes fixed contracts, confirm they scale with member growth. June's headcount should support \u00a322\u201325k revenue; you're at \u00a317.7k. Tighten scheduling to match demand peaks; aim for pay"
   },
   "staff": {
     "coaches": [
@@ -4635,7 +4625,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **JoJo is significantly overloaded at 133 sessions.** She's carrying 56% of the coaching load while also managing head coach duties. Redistribute her Personal Training (44 sessions) \u2014 move at least 15\u201320 to Eilis and Grace to free JoJo for higher-leverage work (classes and strategic coaching).\n\n\u2022 **Grace is under-utilised outside Mondays.** She's doing only 52 sessions monthly despite being founder and head coach. Expand her to Wednesday or Thursday evenings (even 2\u20133 classes) to shoulder more Build and Elevate classes, easing JoJo's load.\n\n\u2022 **Eilis has capacity and should take more PT and Elevate.** At 48 sessions, she's the lightest-loaded coach. She's skilled enough for both \u2014 assign her a dedicated PT slot (e.g. Wednesday/Thursday mornings) and add one Elevate class mid-week to boost her hours and reduce JoJo's 1:1 burden.\n\n\u2022 **Body Composition Scans are spread but clustered around JoJo.** Formalize a rota: Grace owns Mondays, Eilis owns Wednesdays, JoJo Fridays. This gives clients predictability and stops one person being the go-to.\n\n\u2022 **Circuits and Strongevity classes are under-represented or thin.** Only 6 Circuits and 3 Strongevity sessions last month \u2014 consider whether demand is low or if they're undersold. If demand exists, add Eilis to a weekly Circuits slot to build that offering without burdening JoJo.",
+    "advice": "\u2022 **JoJo is overloaded**: 133 sessions is unsustainable (roughly 31 per week). Redistribute her Personal Training load\u2014Eilis can take more 1:1s to ease pressure and develop her skillset, freeing JoJo for group classes where her technical expertise (Build: Upper, Circuits) is hardest to replace.\n\n\u2022 **Grace's Monday-only constraint is creating a bottleneck in Build: Lower**: She ran 17 in June alone. Consider rotating Build: Lower across other days with Eilis or a new hire so it's not dependent on one person and one day\u2014this improves member choice and resilience.\n\n\u2022 **Eilis is under-used and under-challenged**: She's at 48 sessions (11 per week) with capacity to grow. Increase her Elevate, Plate, and Capacity class allocation on Wed/Thu/Fri, and assign her more 1:1 Personal Training\u2014this builds her confidence and reduces JoJo's burden without breaking the Tuesday constraint.\n\n\u2022 **Body Composition Scans are fragmented across all three coaches**: Consolidate these into one or two people's responsibility to create clear ownership, reduce scheduling friction, and free up coaching time for group classes where demand seems stronger.\n\n\u2022 **Cover the No Sweat Intro gap**: Grace ran only 3 in June. Make this a scheduled weekly offering (assign to Eilis or rotate) to systematise onboarding and ensure new members aren't turned away or delayed.\n\n\u2022 **Hire or cross-train urgently**: With JoJo at breaking point and Grace restricted to Mondays, you need a third strong group coach, especially for technical classes (Build: Upper, Circuits, Mobility).",
     "period": "June 2026"
   },
   "asana": {
@@ -6720,7 +6710,7 @@
             "label": "Saturday 10am Elevate"
           }
         ],
-        "total_attended": 2389
+        "total_attended": 2388
       },
       "last_30_days": {
         "top_days": [
@@ -6742,7 +6732,7 @@
           },
           {
             "day": "Thursday",
-            "count": 153
+            "count": 112
           }
         ],
         "bottom_days": [
@@ -6752,7 +6742,7 @@
           },
           {
             "day": "Thursday",
-            "count": 153
+            "count": 112
           },
           {
             "day": "Wednesday",
@@ -6778,11 +6768,11 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 155
+            "count": 132
           },
           {
             "name": "Elevate",
-            "count": 108
+            "count": 99
           },
           {
             "name": "Plate",
@@ -6807,12 +6797,12 @@
             "count": 14
           },
           {
-            "name": "Capacity",
-            "count": 22
+            "name": "Engine",
+            "count": 15
           },
           {
-            "name": "Engine",
-            "count": 24
+            "name": "Capacity",
+            "count": 22
           },
           {
             "name": "Circuits",
@@ -6895,6 +6885,15 @@
             "label": "Thursday 11am Strongevity"
           },
           {
+            "day": "Thursday",
+            "time": "6pm",
+            "name": "Build: Full Body",
+            "count": 21,
+            "sessions": 3,
+            "avg": 7.0,
+            "label": "Thursday 6pm Build: Full Body"
+          },
+          {
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
@@ -6905,35 +6904,26 @@
           },
           {
             "day": "Thursday",
-            "time": "6pm",
-            "name": "Build: Full Body",
-            "count": 32,
-            "sessions": 4,
-            "avg": 8.0,
-            "label": "Thursday 6pm Build: Full Body"
-          },
-          {
-            "day": "Thursday",
             "time": "7pm",
             "name": "Engine",
-            "count": 24,
-            "sessions": 3,
-            "avg": 8.0,
+            "count": 15,
+            "sessions": 2,
+            "avg": 7.5,
             "label": "Thursday 7pm Engine"
           },
           {
-            "day": "Friday",
+            "day": "Thursday",
             "time": "10am",
-            "name": "Mobility",
-            "count": 33,
-            "sessions": 4,
-            "avg": 8.2,
-            "label": "Friday 10am Mobility"
+            "name": "Elevate",
+            "count": 16,
+            "sessions": 2,
+            "avg": 8.0,
+            "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 915
+        "total_attended": 874
       },
-      "suggestion": "**1. Consolidate low-attendance classes into peak days.** Move Engine, Capacity, and Barbelle to Wednesday or Tuesday slots where overall gym traffic is highest\u2014this gives these classes a better chance of reaching viable attendance numbers without requiring new members.\n\n**2. Add extra Build classes on Wednesday and Friday.** Your Build format (Full Body, Upper, Lower) consistently draws 155-174 attendees in the last 30 days. Duplicate one of these sessions on your quietest afternoons to capture demand and boost Monday/Thursday/Saturday totals.\n\n**3. Replace or rebrand underperforming specialist classes.** Barbelle, Strongevity, and Games Night are critically low (12-14 attendees). Test repositioning one as a beginner-friendly strength class or drop it entirely to free up instructor capacity for high-demand sessions."
+      "suggestion": "**1. Consolidate low-attendance classes.** Engine, Capacity, Barbelle, Strongevity, and Games Night are consistently underattended (12-52 attendees over 90 days). Consider removing these from the timetable or merging them into existing popular slots to free up instructor time and avoid scattered classes.\n\n**2. Boost Monday and Saturday attendance.** These quietest days have 150+ fewer attendees than Wednesday. Add a second \"Build: Upper\" or \"Build: Full Body\" session on Monday evening and a Saturday morning slot to capture members who prefer weekends or early-week workouts.\n\n**3. Shift Plate to a peak-time slot.** Plate shows growing interest (83 attendees in last 30 days vs. 226 over 90 days) but remains underutilized. Move it to Wednesday or Tuesday during prime hours to increase visibility and capture momentum from busier days."
     },
     "at_risk": [
       {
@@ -7046,49 +7036,39 @@
       "first_week": [
         {
           "name": "Amy McWilliams",
-          "days_in": 0,
+          "days_in": 1,
           "start_date": "2026-07-04"
         },
         {
           "name": "Rosie Mc Fetridge",
-          "days_in": 5,
+          "days_in": 6,
           "start_date": "2026-06-29"
-        },
-        {
-          "name": "Leah Calvin",
-          "days_in": 7,
-          "start_date": "2026-06-27"
-        },
-        {
-          "name": "Louise Farley",
-          "days_in": 7,
-          "start_date": "2026-06-27"
         }
       ],
       "new_members": [
         {
           "name": "Laura Douglas",
-          "days_in": 1,
+          "days_in": 2,
           "start_date": "2026-07-03"
         },
         {
           "name": "Laura Fullerton",
-          "days_in": 5,
+          "days_in": 6,
           "start_date": "2026-06-29"
         },
         {
           "name": "Victoria Thompson",
-          "days_in": 7,
+          "days_in": 8,
           "start_date": "2026-06-27"
         },
         {
           "name": "Siobhan Honeyford",
-          "days_in": 8,
+          "days_in": 9,
           "start_date": "2026-06-26"
         },
         {
           "name": "Joanne Honeyford",
-          "days_in": 8,
+          "days_in": 9,
           "start_date": "2026-06-26"
         }
       ],
@@ -7097,57 +7077,57 @@
           "name": "Melissa McQuitty",
           "label": "18 months",
           "months": 18,
-          "days_until": 2,
+          "days_until": 1,
           "start_date": "2025-01-04"
-        },
-        {
-          "name": "Christine Bartlett",
-          "label": "1 year",
-          "months": 12,
-          "days_until": -4,
-          "start_date": "2025-06-30"
         },
         {
           "name": "Christina Faulkner",
           "label": "1 year",
           "months": 12,
-          "days_until": -1,
+          "days_until": -2,
           "start_date": "2025-07-03"
         },
         {
           "name": "Lesley Greehy",
           "label": "1 year",
           "months": 12,
-          "days_until": -1,
+          "days_until": -2,
           "start_date": "2025-07-03"
         },
         {
           "name": "Claire Leeke",
           "label": "9 months",
           "months": 9,
-          "days_until": -1,
+          "days_until": -2,
           "start_date": "2025-10-02"
         },
         {
           "name": "Kay Sweeney",
           "label": "6 months",
           "months": 6,
-          "days_until": 3,
+          "days_until": 2,
           "start_date": "2026-01-05"
         },
         {
           "name": "Jackie Elliott",
           "label": "3 months",
           "months": 3,
-          "days_until": -3,
+          "days_until": -4,
           "start_date": "2026-04-01"
         },
         {
           "name": "Heather McWilliams",
           "label": "3 months",
           "months": 3,
-          "days_until": -2,
+          "days_until": -3,
           "start_date": "2026-04-02"
+        },
+        {
+          "name": "Noleen MCKILLOP",
+          "label": "3 months",
+          "months": 3,
+          "days_until": 4,
+          "start_date": "2026-04-09"
         }
       ]
     },
@@ -8207,7 +8187,7 @@
         "name": "Helen Traynor",
         "last_scan": "2026-05-29",
         "next_due": "2026-07-10",
-        "days_to_due": 6,
+        "days_to_due": 5,
         "overdue": false
       }
     ]
@@ -8241,119 +8221,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your actual revenue reality today**\nPull last month's transaction data. List every service/class/package members actually bought\u2014don't design from theory. Group by: group classes, 1-on-1 coaching, memberships, add-ons (nutrition plans, assessments). This becomes your baseline menu. You'll likely find 40% of revenue comes from 2-3 offerings\u2014those are your anchors.\n\n**2. Create two separate, brutally simple documents**\n- **Coach version**: Rate card + what's included in each service (e.g., \"1-on-1 PT = 45 min session + form check video within 24 hrs + weekly check-in message\"). Coaches need to know what they're selling and what they're accountable for delivering.\n- **Member version**: Pricing + benefits + what problem each solves. Use outcome language: not \"small group training\" but \"get stronger and meet your people (6-person max, weekly).\"\n\n**3. Price backwards from retention**\nDon't cost-plus. Ask: what would a member pay monthly to never feel lost at The Forge? What would a coach charge if they could only take 5 clients? Lock those numbers first, then build service design around them.\n\n**4. Test the menu internally this week**\nGive three coaches and five different member types your draft. Ask: \"Would you buy this? What's confusing?\" Kill anything that requires explanation. If you're defending a service tier, it's too complicated.\n\n**5. Publish it everywhere at once**\nWebsite, Instagram, in-gym poster, email to current members, coaching onboarding. Inconsistency"
+        "advice": "# Service Menu Build for The Forge\n\n**Get the pricing right first, then build backwards:**\n- Run a 20-minute survey with 10-15 active members asking: \"What would you pay for X?\" (1-to-1 coaching, class packs, nutrition add-ons). Price anchors to their willingness-to-pay, not your costs. This beats guessing.\n\n**Create TWO separate documents (not one):**\n- **Member-facing**: Clean, benefit-driven (\"Get stronger in 12 weeks\" not \"12 sessions\"). List tiers (e.g., \"Unlimited Classes + 1 Monthly Coaching Session = \u00a3X\"). Include what's *not* included to avoid refund requests.\n- **Coach-facing**: Operating specs\u2014which services coaches can sell, upsell rules, how to position each tier, commission/bonus structure if applicable. Coaches won't sell what confuses them.\n\n**Test the menu with your top 3 coaches before launch:**\n- Have them pitch it to a member in front of you. Watch where they stumble. That's where your language needs fixing. One awkward explanation = lost sales.\n\n**Make it live in two places simultaneously:**\n- On your website/booking system *and* printed at reception. Members see it when deciding; coaches reference it during conversations. No \"I'm not sure what we offer\" moments.\n\n**Set a quarterly review date:**\n- Document what sells, what doesn't. After 90 days, kill the duds and add what members are asking for. Live document, not a one-time project.\n\nWhat's your current pricing structure looking like?"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Landing Page Refinement \u2013 Execution Plan for The Forge\n\n\u2022 **Start with live data, not assumptions** \u2014 Pull your Google Analytics 4 to see where visitors drop off (which pages, how far down). Cross-reference with your support emails/DMs to identify actual questions. This is your real funnel friction, not guesswork. Spend 2 hours on this before writing a single word.\n\n\u2022 **Lead with \"women-only\" benefit in the first 3 seconds** \u2014 Your differentiator matters. Above the fold: \"No mansplaining. No judgment. Just results.\" Then immediately address the unspoken question: \"Is this for total beginners, or am I too unfit?\" Use a simple visual breakdown (e.g., \"Everything from zero gym experience to advanced athletes\").\n\n\u2022 **Create a FAQ block that mirrors your actual objections** \u2014 Don't guess what questions matter. Review your recent sales conversations: What made people hesitate? (\"Will I look stupid?\", \"Do I need to know anyone?\", \"What's the actual cost before I click?\"). Answer those 5-6 specific questions in collapsible sections, not lengthy paragraphs.\n\n\u2022 **Test one micro-conversion before they commit** \u2014 Instead of \"Book a Free Trial,\" add a lower-friction step: \"Download our Beginner's Week Schedule\" or \"Take the 2-Min Class Fit Quiz.\" Captures email, builds trust, reduces anxiety. Then retarget them with the trial offer.\n\n\u2022 **Audit competitor pages for language wins** \u2014 Spend 30 mins on 3-4 women's fitness brands (even outside Belfast). Steal their language structure, not their message. Notice how they handle pricing transparency, community angle"
+        "advice": "# Landing Page Refinement for The Forge\n\n**Audit your current drop-off points first** \u2014 Use Google Analytics to identify where visitors are bouncing hardest (homepage vs. pricing vs. membership tiers). Test a hypothesis: are they leaving because they don't understand *who* the gym is for, or because pricing/commitment questions aren't answered? That tells you what to fix.\n\n**Create a \"Women's-Only Gym for [Specific Type]\" headline test** \u2014 Your current messaging likely says \"women's fitness.\" Instead, test landing pages that lead with *who thrives there*: \"For women 40+ returning to fitness,\" \"For busy professionals who don't want gym politics,\" \"For women training for strength.\" Whichever messaging gets the highest click-to-booking rate wins\u2014use that across all pages.\n\n**Build a rapid FAQ section using your actual member questions** \u2014 Spend 1 hour reviewing recent member inquiries (emails, calls, messages). List the top 8 questions. Add these as expandable FAQs above the fold on your landing page. Example: \"Can I come if I'm completely new to lifting?\" Place this *before* the CTA button so objection-holders convert instead of bouncing.\n\n**A/B test one high-intent page element this week** \u2014 Pick either (1) your membership pricing display or (2) your \"what you get\" benefits list. Change one thing: reorder benefits by member value, simplify pricing tiers, or add social proof (member transformations). Run it for 5 days. Measure conversion rate shift.\n\n**Strip unnecessary options from your funnel** \u2014 If you have 4+ membership tiers or multiple CTAs, you're causing decision paralysis."
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Internal Member Feedback System - Execution Plan for The Forge\n\n\u2022 **Start stupidly small this week:** Create a single Google Form (2 questions max: \"What's working?\" and \"One thing to improve?\") and email it to your existing member list tomorrow. Don't wait for \"perfect.\" You'll learn more from 20 responses than 6 months of planning.\n\n\u2022 **Embed the check-in into existing touchpoints\u2014don't add a new one:** Have instructors spend 60 seconds after 2-3 classes per week asking members verbally, \"What would make your experience better?\" Capture responses in a shared spreadsheet. This costs zero extra time because it happens during your already-scheduled classes.\n\n\u2022 **Act visibly on at least ONE piece of feedback monthly:** When members see you've implemented something they mentioned (equipment adjustment, class timing, music choice), they'll give you honest feedback next time instead of ghosting. Announce it: \"Sarah mentioned we needed towels near the weights\u2014they're there now.\"\n\n\u2022 **Make responses anonymous for the form, but name-capture optional for 1-on-1s:** Members criticizing your brand new machine or instructor won't speak up if they're named. Anonymous form = brutal honesty. You'll catch real issues faster.\n\n\u2022 **Track trends, not just individual comments:** After 3 months, you'll see patterns (e.g., \"classes too crowded,\" \"want childcare options\"). That's your growth roadmap. One complaint is noise; three identical complaints are your next product."
+        "advice": "# Execute Member Feedback System for The Forge\n\n\u2022 **Skip the form\u2014use post-class capture instead.** Hand out a 3-question card (literally) after peak classes: \"What worked today? One thing to improve? Class you'd love to see?\" Takes 60 seconds, captures honest feedback when they're still in the zone. Forms get ignored; conversations don't.\n\n\u2022 **Make it reward-driven immediately.** Every 5th feedback form enters a monthly draw for \u00a320 off next month's membership or a free PT session. This drives participation from day one\u2014you'll actually get usable data instead of 12 responses from 200 members.\n\n\u2022 **Assign one person (you, or one trusted staff member) as the weekly synthesizer.** Every Friday, they spend 30 mins reading feedback and flagging patterns to your instructor team. Themes get discussed at weekly staff huddle. Without this *action step*, feedback dies in a pile and members notice nothing changed.\n\n\u2022 **Publicly close the loop monthly.** Post a 1-minute video or gym notice: \"You asked for...\" and \"We're now...\" Show 2-3 specific changes you've made from their feedback. This proves the system works and quadruples next month's participation.\n\n\u2022 **Track the conversion angle early.** Note which feedback comes from newer members (< 3 months) vs. long-term\u2014new member input is gold for your onboarding/stickiness problems.\n\nWhat's your peak class time? That's where to launch this."
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# SOP Execution Strategy for The Forge\n\n**Start with revenue impact, not alphabetical order.** Write SOPs for **Personal Training first** (highest lifetime value + most variable execution), then **Membership** (highest volume risk). Fuel Forward and wellness programs second. This ensures your biggest leakage points get locked down immediately.\n\n**Make SOPs *operational*, not literary.** Each should be a 1-page checklist/flowchart that your staff actually use daily\u2014not a 10-page manual. Format: Member enters \u2192 Step 1 (who, what, when) \u2192 Step 2 \u2192 Handoff point \u2192 Done. Include decision trees for common exceptions (\"If member asks about freezing membership, do X...\").\n\n**Reverse-engineer from your current chaos.** Before writing anything, shadow one PT session, one membership signup, one Fuel Forward order. Document what *actually* happens vs. what should happen. Your SOPs will be 10x more usable if they're rooted in real friction points.\n\n**Embed accountability into the SOP itself.** Include: who owns each step, what success looks like (measurable), and what happens if it fails. Example: \"PT induction = 3 movement assessments completed + logged in system within 24 hours; if not done = [consequence].\"\n\n**Lock it down in *one* place.** Use a shared Google Doc or Notion page, version-dated, with a \"who trained on this\" checklist. Not multiple documents. One source of truth prevents your team from following three different versions.\n\nWhat's your current biggest execution gap across these services?"
+        "advice": "# SOP Execution Strategy for The Forge\n\n**1. Start with your actual current process, not the ideal one**\nShadow your team for 2-3 days. Document what they're *actually* doing right now for each service\u2014not what you think should happen. This is your baseline. You'll spot where inconsistency kills member experience. Record common member questions for each service tier; these gaps become your SOP sections.\n\n**2. Create one SOP template, then batch-build them**\nDesign a single template with: Pre-service (what member does before arrival), During (exact steps your staff takes), Post-service (follow-up/retention). Use this for all five services so they look/feel cohesive. This takes 2-3 hours tops instead of reinventing for each one.\n\n**3. Assign ownership and set a hard deadline**\nPick one team member per service (the person who knows it best, not the busiest person). Give them the template + 5 days to draft their SOP. You then spend 1 hour per SOP editing for clarity and consistency. Make it tight\u2014SOPs should be 1-2 pages max or they won't get used.\n\n**4. Test with new members before finalizing**\nHave staff use draft SOPs with 2-3 new members in each category. You'll immediately see what's missing or unclear. Refine, then lock it in. This prevents wasted effort on unusable documents.\n\n**5. Make them live and trackable**\nStore in a shared doc (Google Drive/Notion). Assign one person to audit that staff are following them quarterly. SOPs that sit in a folder get ignored\u2014tie them to onboarding and spot-checks"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Social Media Calendar Execution for The Forge\n\n\u2022 **Use one tool, not many** \u2014 Set up a free Canva Teams account or Buffer. Grace plans content in 90-minute Sunday sessions (batch 4 weeks at once). This beats daily scrambling and costs zero if she uses Canva's free tier.\n\n\u2022 **Anchor posts to real gym moments** \u2014 Don't create generic fitness content. Structure: Monday = member transformation story (photo + 3-line quote), Wednesday = class highlight/schedule change, Friday = weekend motivation + link to book a trial. This ties content to actual business rhythms, not arbitrary themes.\n\n\u2022 **Pre-shoot content in bulk monthly** \u2014 Book one hour after a quiet class time. Get 8-10 photos of members mid-workout, doing weights, stretching. Upload to a shared folder. This kills the \"what do we post today?\" paralysis and removes the barrier of needing a phone every day.\n\n\u2022 **Tag 2\u20133 local Belfast businesses weekly** \u2014 Cross-post with complementary gyms, healthy cafes, or wellness spots. One tag per week. This costs nothing and builds the local network that actually drives trials in a city market.\n\n\u2022 **Measure what matters: trial bookings, not likes** \u2014 Add a UTM code to the trial link in her bio (buffer.com/library/utm-parameters). Check monthly: \"Which content drove bookings?\" Double down on *that* format next month. Everything else is guesswork."
+        "advice": "# Social Media Content Calendar Execution for The Forge\n\n**1. Use a template-based batching system, not daily posting**\n\u2014 Block 2 hours every other Sunday. Create 6-8 posts at once (mix: member transformations, class highlights, motivational quotes, behind-the-scenes gym life). Batch-shoot video content in one session. Use Buffer or Later to schedule everything in bulk rather than manually posting. This removes the \"daily discipline\" friction that kills calendars.\n\n**2. Create a repeating 4-post weekly formula**\n\u2014 Monday: Member win/transformation (builds community proof). Wednesday: Class/workout tip (drives signups). Friday: Weekend motivation or community event. Sunday: Behind-the-scenes or team spotlight. This structure removes the \"what do I post?\" paralysis and makes batching faster.\n\n**3. Source content directly from members (0% extra work)**\n\u2014 Ask members to film 10-15 second \"before I joined/after 3 months\" clips during their gym sessions. Offer a free class or branded water bottle. You get authentic testimonials without production time. Post 1-2 per week. This also increases member investment in your brand.\n\n**4. Assign ownership to your strongest staff member with a simple brief doc**\n\u2014 Don't do this yourself if someone on your team loves posting. Create a one-page \"content brief\" (tone, hashtags, posting times, theme days). Check-in monthly, not daily. Pay them an extra \u00a350-100/month if needed. This scales your consistency when you're busy.\n\n**5. Link posts to your weekly class schedule/promotions**\n\u2014 If you're running a \"new member week\" or pushing spin classes,"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing Regular Videography Sessions with Jordan\n\n**Lock it in NOW with a standing booking system:**\nCreate a recurring calendar invite with Jordan for the same day/time every 8 weeks (e.g., first Tuesday of cycle). Get payment sorted upfront\u2014monthly retainer or pre-paid packages. This removes friction and ensures he doesn't get booked elsewhere. Send him a Slack/WhatsApp reminder 10 days prior so he blocks it.\n\n**Build a content calendar around these sessions:**\nDon't show up to film \"something.\" Before each session, identify 3-4 specific content pieces you need: new member testimonial, equipment demo, class highlight, transformation story. Brief Jordan 48 hours ahead with shot list. This turns 2-3 hour sessions into 8+ usable pieces instead of scrambling for edits later.\n\n**Assign one person as content liaison:**\nYou or a staff member owns coordinating with Jordan, gathering footage requests from coaches, prepping members for interviews. One owner trying to juggle this during gym operations kills follow-through. Make someone accountable.\n\n**Repurpose aggressively across 8 weeks:**\nDon't dump all footage at once. Schedule 1-2 pieces weekly to Instagram/TikTok, email, website. Stretch those 8 weeks of content into 16 weeks of posting. This maximizes ad spend and keeps your feed consistently fresh without needing constant new shoots.\n\n**Track ROI by session:**\nTag each video piece in analytics. Which formats drive membership inquiries? Testimonials vs. fitness tips vs. member spotlights? Use this to brief Jordan differently in cycle 2."
+        "advice": "# Videography Sessions with Jordan - Execution Plan\n\n\u2022 **Lock it in NOW with a 12-month calendar invite** \u2014 Don't wing this. Send Jordan a recurring block (every 8 weeks, same day/time) with 3-4 specific content requirements per session. This removes the \"what do we film?\" friction that kills consistency.\n\n\u2022 **Pre-plan 2-3 content angles per session before Jordan arrives** \u2014 Have Grace or a team member list: 1 member transformation story to capture, 1 class/training moment, 1 \"behind-the-scenes\" bit. Assign a staff member to brief Jordan 48 hours prior so he's not improvising on-site.\n\n\u2022 **Designate one person as the \"content quarterback\"** \u2014 This person coordinates with Jordan, collects footage, and gets rough edits back within 1 week. Without a single owner, videos languish in limbo for months.\n\n\u2022 **Tie each session to a specific launch date** \u2014 Film in Week 1 of the 8-week cycle; commit to publishing across socials/website by Week 3. This deadline discipline prevents footage from becoming stale inventory.\n\n\u2022 **Batch-produce captions + hashtags the week videos drop** \u2014 Grace writes 3-4 caption variations per video for different platforms (Instagram Reels, TikTok, LinkedIn). Takes 20 mins if done as a batch, not scattered.\n\n**Bottom line:** The calendar invite + content brief + one owner + hard publish date = actually getting this done."
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Systemize Automations for 6-Week Trial Enquiries\n\n\u2022 **Map the current leakage first** \u2014 Before touching automation, track where trial enquiries actually stall (website form \u2192 email? \u2192 first contact? \u2192 booking?). Grace likely loses 30-40% between stages. Audit 20 recent enquiries manually to identify the exact friction point, then automate that bottleneck, not the whole funnel.\n\n\u2022 **Set up a 48-hour response trigger (not instant)** \u2014 Automated instant responses feel robotic to women considering fitness. Instead: automated email within 48 hours that addresses the *specific* trial type they enquired about (weights vs. cardio vs. classes), includes 2-3 social proof testimonials from similar members, and one clear CTA. This outperforms generic auto-replies by 60%+.\n\n\u2022 **Create 3 conditional automation paths** \u2014 If they enquire but don't book within 2 days \u2192 nurture sequence (value content, not pushy). If they book but don't show \u2192 pre-session reminder with \"what to bring\" + parking/access details (reduces no-shows by 25%). If they complete trial \u2192 immediate post-session feedback form + membership offer (while momentum is hot).\n\n\u2022 **Assign one person as \"trial conversion owner\"** \u2014 Automation handles distribution and timing, but someone in Grace's team must manually follow up if enquiries fall through cracks (automated sequences miss ~15% of edge cases). This person reviews automation stats weekly and adjusts copy based on what's actually converting.\n\n\u2022 **Test with 50 enquiries, measure 3 metrics** \u2014 Booking rate, show-up rate, conversion to paid membership. Track for"
+        "advice": "# Systemize Automations for 6-Week Trial Enquiries \u2014 Execution Plan\n\n\u2022 **Audit the current leakage first (today)** \u2014 Pull last month's trial enquiry data. Map where they drop off: initial contact \u2192 first class \u2192 week 3 \u2192 conversion. You'll likely find 40-60% abandon between enquiry and first class. This tells you *where* automation needs muscle, not everywhere.\n\n\u2022 **Build a 3-touch sequence, not 5** \u2014 Stop over-automating. Send: (1) Enquiry confirmation + specific class time link within 2 hours (human urgency), (2) Day-before-first-class reminder with locker/parking details (removes friction), (3) Post-class message from *staff member by name* asking how they felt. Automation kills relationships at the conversion point.\n\n\u2022 **Lock in the \"week 3 intervention\"** \u2014 This is where trials stall. Auto-send a progress check + 1-1 pairing offer (intro to a regular member for accountability) on day 15. Make this manual or Zapier-triggered based on attendance. This single touch likely moves your needle 15-20%.\n\n\u2022 **Use WhatsApp/SMS, not email** \u2014 Your demographic (women in Belfast) responds 3x faster to SMS. Set up Twilio or a tool like Klaviyo for SMS sequences. Emails go in the noise; texts feel personal and get opened within minutes.\n\n\u2022 **Measure the actual KPI weekly** \u2014 Track trial-to-paid conversion rate by cohort (which automation sequence = which result). Start with 30 days of data. If it moves from 25% to 35%, you've"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Role-Specific Weekly Checklists for The Forge\n\n**JoJo (assuming Member Experience/Retention):**\n- **The checklist itself:** 5-7 items max covering: member communication touchpoints (DMs/calls to at-risk members), class feedback collection, complaint resolution. Not tasks\u2014*accountabilities*.\n- **Her KPI:** Retention rate week-on-week + NPS from new members. Make her own a live spreadsheet she updates daily so it's friction-free.\n- **Document it as:** A Notion or Asana template she duplicates weekly\u2014not a PDF no one reads.\n\n**Eilis (assuming Sales/Growth):**\n- **The checklist:** Lead follow-ups (specific # and time window), referral outreach, trial-to-member conversion tracking. Tie each task to a *number*.\n- **Her KPI:** New member signups + referral source breakdown. She needs to see which efforts convert, not just activity.\n- **Lock it down:** Weekly Monday morning 15-min sync where she commits to targets; Friday review of what moved the needle.\n\n**Sarah (assuming Ops/Admin):**\n- **The checklist:** Staff scheduling accuracy, billing issues resolved, facility maintenance logged. The blocking work that kills growth if skipped.\n- **Her KPI:** Staff availability % (no last-minute cancellations), zero billing complaints, equipment uptime %.\n- **Make it visible:** A simple dashboard she shares with you weekly\u2014no surprises.\n\n**The execution move:** Do this *with them*, not to them. Spend 30 mins 1-to-1 with each asking \"What actually slows you down weekly?\" Their"
+        "advice": "# Execute Role-Based Action Checklists for The Forge\n\n**1. Start with output, work backwards**\nDon't list generic tasks. For each person (JoJo, Eilis, Sarah), define the ONE metric they own that moves revenue/retention, then itemize only the weekly actions that directly impact it. Example: If JoJo owns member acquisition, her checklist includes \"3 outreach calls to lapsed members\" + \"1 referral follow-up batch\" \u2014 not admin tasks.\n\n**2. Make KPIs defensible in 60 seconds**\nEach role needs 2-3 KPIs max, tied to a measurable outcome. \"JoJo: 5 trial bookings/week\" beats \"increase awareness.\" For Eilis (assuming operations), it might be \"staff punctuality 95%+ AND class utilization \u226575%.\" Sarah gets clarity on her number too. They need to know if they're winning by Friday.\n\n**3. Build the checklist as a shared Slack/Google Doc template**\nWeekly recurring format: [Name] | [KPI Target] | [Mon-Fri Actions] | [Completion checkbox] | [Weekly review slot (10 mins)]. Make it visible, not hidden in a spreadsheet. Post a screenshot of the template and circulate by end of this week \u2014 no \"coming soon.\"\n\n**4. Lock in accountability in a 15-min huddle**\nPresent each person's checklist to them 1-on-1, not as a group announcement. Ask: \"What do you need from me to hit this?\" and \"What would derail you?\" Document pushback \u2014 it tells you if the target is real or if you"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Vision Session Execution for The Forge\n\n**Before the session (do this today):**\n- Write your SSO (Slightly Stretched Objective) on ONE page max \u2014 what does The Forge look like in 12 months? Revenue target, member count, signature offering? Make it vivid enough your team can picture themselves in it.\n- Break the 90-day plan into 3 clear phases (Month 1 focus, Month 2 focus, Month 3 focus) \u2014 not 47 initiatives. Pick your 3-5 biggest revenue or retention levers only.\n\n**Run the actual session (60 mins, in-person if possible):**\n- Start by asking: \"What do you think we should be winning at this quarter?\" Listen first \u2014 you'll catch blind spots and build buy-in. *Then* reveal your plan.\n- Assign \"lanes\" by outcome, not job title. Example: \"Sarah owns member retention (she runs classes + community); Ciara owns new member acquisition (marketing + trials); you both report to me on Fridays.\" Make each person the *owner* of a revenue or retention metric, not a task list.\n- End with a single question per person: \"What's one blocker you need me to remove for your lane?\" Write these down and commit to solving them by next week.\n\n**After:**\n- Send a one-page recap with the SSO, the 90-day breakdown, each person's lane, and the blockers you're owning. No more than that.\n\nWhat's your current revenue target for 12 months out?"
+        "advice": "# Team Vision Session Execution for The Forge\n\n**Before the session (48 hours prior):**\n- Send each team member a 1-pager with the SSO, their specific role in the 90-day plan, and 2-3 metrics they directly own. No surprises in the room\u2014they've already processed it.\n\n**During the session (60 mins max):**\n- Start with *why* (member outcomes, revenue target, competitive position). Spend 10 mins here\u2014emotion + logic.\n- Go person-by-person: \"Here's your lane. Here's what success looks like for you. Here's where you intersect with Sarah/Emma/whoever.\" Make it granular\u2014not \"marketing\" but \"you're running 2 referral campaigns and one social push per week.\"\n- Call out one potential bottleneck everyone will face together and solve it live (e.g., \"we'll need X signups to hit target\u2014what blocks that?\"). Builds collective ownership.\n\n**The key move:**\n- End with written commitments. Each person writes down their top 3 priorities for the next 90 days and shares them aloud. 2 minutes of mild accountability beats weeks of assuming everyone's aligned.\n\n**After:**\n- Slack the recording + one-pager recap within 24 hours. Reference it in 1:1s monthly to track drift.\n\nThis isn't motivation theater\u2014it's removing ambiguity so people can actually execute."
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Workload Rebalancing for The Forge \u2014 30-Day Action Plan\n\n**Map actual time spend (not job titles) \u2014 TODAY:**\n- Have each team member (front desk, PTs, cleaners, admin) log tasks in 15-min blocks for 3 days this week using a simple Google Sheet. You'll see where bottlenecks live. Don't ask them to estimate \u2014 real data kills assumptions.\n\n**Identify the 3 \"time sinks\" stealing capacity:**\n- Look for repeatable, low-value work (e.g., manual member check-ins, admin emails, cleaning certain areas). These are your rebalancing goldmine \u2014 either automate, delegate differently, or drop them.\n\n**Create a \"capability inventory\" alongside workload:**\n- Who's frustrated because they're doing work *below* their skill level? Grace, a PT crushing admin tasks is money being left on the table. Swap high-skill people onto revenue-facing work; redistribute their grunt work to newer/junior staff.\n\n**Rebalance in visible, small wins (not one big reshuffle):**\n- Make 2-3 changes in week 1, check what breaks, iterate. If reception is buried on member inquiries, maybe a junior assistant handles form-filling and callbacks. If a PT is drowning in class admin, move that to reception. Show the team *why* \u2014 it builds buy-in.\n\n**Set one clear metric they own (not you):**\n- Give each role a weekly deliverable they can actually hit (e.g., \"3 new member onboardings,\" \"all classes templated\"). They'll self-correct workload faster than you can manage it.\n\nWhat's your biggest bottlen"
+        "advice": "# Workload Audit & Rebalance for The Forge\n\n**Get the real picture in 48 hours:**\n- Run a 15-min 1-on-1 with each team member asking: \"What takes 80% of your mental energy?\" and \"What should you be doing but aren't?\" Listen for resentment, not just tasks. You'll spot your bottlenecks faster than any spreadsheet.\n\n**Map the actual workload (not job titles):**\n- Create a simple table: each role down the left, every recurring task/responsibility across the top, time spent per week in each cell. You'll immediately see who's carrying three people's weight\u2014usually it's customer-facing staff doing admin, cleaning *and* sales.\n\n**Rebalance by removing, not just shuffling:**\n- Don't just reassign tasks\u2014ask \"Can this task die?\" (redundant social media posts, excessive reporting, over-complicated booking processes). Delete 2-3 tasks before moving anything. This saves time and morale more than shuffling deck chairs.\n\n**Assign one \"quick win\" task per person by day 10:**\n- Give someone drowning in PT admin a new responsibility they *want* (like class curation or member ambassador program). Visibility + autonomy beats complaint management.\n\n**Lock in the new rhythm with a simple weekly standup:**\n- 20 mins, every Monday\u2014each person says what's working/breaking. Catch rebalancing drift before it solidifies back into old patterns.\n\nWhat's your biggest team bottleneck right now?"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# 10% Cost Reduction \u2014 The Forge Action Plan\n\n\u2022 **Audit your top 3 expense categories NOW** \u2014 utilities, payroll, and equipment maintenance likely account for 60%+ of costs. Don't spread effort thin. Call 3 competitors' gyms (anonymously via LinkedIn) and ask what they pay for energy bills and cleaning contracts. You'll instantly spot if you're overpaying.\n\n\u2022 **Renegotiate supplier contracts THIS WEEK** \u2014 your cleaning company, equipment vendor, and utilities provider are all expecting to keep current rates. Get competing quotes (even soft ones) and use them as leverage. Most will drop 5-8% to keep your business. That's 3-5% of your 10% target with one round of calls.\n\n\u2022 **Shift one staff shift to part-time or restructure induction roles** \u2014 if you have a full-time admin/induction person, test whether a hybrid model (2 days full-time, 3 days part-time, or shared role) covers peak hours. Women-only gyms typically see 70% of traffic in specific windows. Payroll cuts hit hardest; identify if you're overstaffed in slow periods.\n\n\u2022 **Cut one underperforming service/class immediately** \u2014 if you offer 15 classes weekly, which 1-2 pull fewer than 8 members? Dropping them saves instructor fees AND utilities. Reinvest freed capacity into your top 3 revenue-driving classes.\n\n\u2022 **Set a 30-day deadline, measure weekly** \u2014 assign yourself to hit specific supplier calls by Friday. This isn't a \"nice to do\" \u2014 10% = real runway extension."
+        "advice": "# Cost Reduction Execution for The Forge\n\n\u2022 **Audit your top 3 expense categories right now** \u2014 utilities, staff payroll, and supplier contracts almost always hide 10-15% fat. Pull 6 months of P&L, rank by spend, and you'll find your 10% in 2-3 categories, not scattered across 20. Focus there first.\n\n\u2022 **Renegotiate supplier contracts this week** \u2014 call your equipment maintenance, cleaning supplies, and towel service providers. Tell them you're getting competitive quotes (even if you're not yet) and want their best price to keep the relationship. You'll typically get 8-12% off without switching vendors or disrupting service.\n\n\u2022 **Cut a staffing shift, not headcount** \u2014 instead of firing someone, eliminate your lowest-revenue day shift or late evening slot. Redeploy that person to peak hours (6-8am, 5-7pm) where member retention matters most. Keeps morale intact, improves member experience, cuts costs.\n\n\u2022 **Switch to LED lighting + programmable thermostats** \u2014 gyms waste thousands on 24/7 full lighting and climate control. Install motion sensors and drop temps 1-2 degrees during off-peak hours. Initial investment ~\u00a31,200-1,500; payback in 6 months; 12-15% utility savings ongoing.\n\n\u2022 **Bundle membership billing** \u2014 offer a 15% discount for annual upfront payment instead of monthly. Improves cash flow, reduces payment processing fees (currently eating 2-3%), and drops churn. This alone gets you 3-5% cost reduction without cutting a penny.\n\nWhich one starts this week?"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Updating Monthly Finance KPIs \u2014 Execution Blueprint for Grace\n\n\u2022 **Set a hard deadline today**: Block 2 hours this Friday to pull actuals. Don't let this drag into next week. Use your gym's POS system + bank feed directly \u2014 no recreating data from scratch. Assign yourself the job; don't outsource the thinking.\n\n\u2022 **Track these 3 metrics only** (not a dozen): (1) Member revenue vs. forecast, (2) Cost per acquisition vs. last month, (3) Cash position & runway. If you're tracking more than 5 KPIs monthly, you're diluting focus. Everything else is noise.\n\n\u2022 **Create a one-page dashboard** (Google Sheet or Notion): YTD actuals, month-on-month % change, one red/amber/green indicator per metric. 10 seconds to glance. This becomes your weekly conversation starter \u2014 not a report you file away.\n\n\u2022 **Identify ONE variance to act on immediately**: When you see a miss (e.g., CPA spiked 15%), don't just log it. Write down what you'll test next week to fix it \u2014 a specific ad tweak, referral push, or class pivot. KPIs only matter if they trigger action.\n\n\u2022 **Schedule 15-min monthly review with yourself**: Same time every month (e.g., first Friday, 9am). You alone. Brutal honesty. What worked, what didn't, what changes this month. This discipline is what separates growing gyms from plateauing ones.\n\nWhat's your biggest KPI blind spot right now?"
+        "advice": "# Updating Monthly Finance KPIs \u2014 The Forge\n\n**Make it a 90-minute Friday routine, not a wandering admin task:**\n- Block 9-10:30am every Friday to pull data (bank feeds, membership software, PT booking system). Batch it once weekly so it doesn't drag across the month.\n\n**Track the 4 metrics that actually move gym growth decisions:**\n- Monthly Recurring Revenue (MRR from memberships) vs. target \u2014 shows if you're losing members or growing\n- Member Acquisition Cost vs. Lifetime Value \u2014 tells you if your marketing spend is profitable (if CAC > LTV, your referral/discount strategy is broken)\n- Class utilization % (booked spots \u00f7 available spots) \u2014 unused capacity = wasted PT/class revenue potential\n- Cash runway (cash balance \u00f7 monthly burn rate) \u2014 how many months can you survive without new income?\n\n**Stop reporting vanity metrics:**\n- Ditch \"total members\" or \"total revenue.\" These hide the real story (members acquired \u2260 retained; one-off PT sales \u2260 sustainable income). The 4 above tell you where to act.\n\n**Link each KPI to ONE decision it unlocks:**\n- MRR trending down? \u2192 Retention crisis \u2014 audit cancellations this week.\n- Class utilization <70%? \u2192 Reprogram class times or boost marketing to specific slots.\n- CAC too high? \u2192 Pause paid ads; double down on member referral rewards instead.\n\n**Set the threshold now:** Decide right now what number triggers action (e.g., \"if MRR drops 5%, we pause new hires; if utilization <65%,"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Financial Forecasting for The Forge \u2014 Execution Plan\n\n\u2022 **Start with 12-month cash flow, not profit & loss.** Grace needs to know when money hits the bank and leaves it\u2014membership payments, class pack sales, PT fees in vs. rent, wages, utilities out. Use her last 3 months of actual bank statements to build the baseline. This catches the real cash crunch (likely January slump post-Christmas).\n\n\u2022 **Build three scenarios: conservative (10% member drop), expected (current trajectory), aggressive (20% growth).** Don't waste time on one \"accurate\" forecast\u2014Grace needs to see the range. Conservative scenario shows her runway if something breaks; aggressive shows what hiring/expansion requires. Each takes 90 minutes max in a spreadsheet.\n\n\u2022 **Lock in fixed costs first; model variable costs as % of revenue.** The Forge has predictable rent/insurance/staff base\u2014pin those down exactly. Then set PT commissions, cleaning, and class instructor costs as percentages of monthly revenue. This scales the forecast automatically if membership changes.\n\n\u2022 **Identify the ONE metric that drives everything.** For a gym, it's likely active members \u00d7 average revenue per member (classes + PT + retail). Grace should update this metric weekly from her booking system\u2014it's her early warning system, not a quarterly accounting exercise.\n\n\u2022 **Use forecasting to make one decision this week.** Should she hire that extra instructor? When can she afford it? Forecast shows if Q2 growth funds it or if she needs to wait. Action beats perfection."
+        "advice": "# Financial Forecasting for The Forge \u2014 Action Plan\n\n\u2022 **Pull 12 months of actual data NOW** \u2014 membership fees, class pack sales, PT sessions, cancellations, seasonal dips. Don't forecast from assumptions. Grace likely has this in her bank statements and membership software already. Spend 2 hours max extracting it into a simple spreadsheet.\n\n\u2022 **Build a \"three scenario\" model** \u2014 conservative (10% growth), realistic (25% growth based on her pipeline), aggressive (40%). Each should show monthly revenue impact and the specific activities driving it (e.g., \"add 15 members at \u00a345/month\" or \"launch corporate packages at \u00a32k/month\"). This forces clarity on what growth actually requires.\n\n\u2022 **Identify the 2-3 cash constraints first** \u2014 What stops The Forge from hitting her target? Staffing capacity? Studio space? Marketing budget? Her forecast should highlight THIS bottleneck, not just pretty numbers. That's where strategy lives.\n\n\u2022 **Link forecast to operating costs ruthlessly** \u2014 For every revenue line item, immediately add the cost impact (e.g., more members = more cleaning, utilities, staff hours). Too many gyms forecast revenue without nailing the margin collapse at scale.\n\n\u2022 **Set a monthly review cadence** \u2014 Forecast is worthless if it's not a living document. Grace should review actual vs. forecast the first Friday of each month for 20 minutes. Adjust next month's actions based on what's tracking/missing.\n\nWhat's her current monthly revenue range? That changes whether she's pre-revenue testing or optimizing an existing base."
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Profitability Mapping for The Forge \u2014 Execution Plan\n\n**1. Start with revenue buckets TODAY (not perfect data)**\nPull last 3 months of transactions and sort into: Group Classes | PT Sessions | Add-ons (supplements, merchandise, recovery services). Don't wait for perfect categorization\u2014use your POS system's existing tags. You'll spot the 80/20 immediately. Assign one person 2 hours to do this, not a consultant.\n\n**2. Calculate TRUE per-unit margins, not just gross**\nFor **group classes**: Take monthly class revenue \u00f7 total instructor hours paid (including prep/admin). That's your real cost per class slot. For **PT**: Hourly rate minus trainer cost (salary % + payroll tax). For **add-ons**: COGS + time to fulfill (even if it's 10 mins of admin). Most gym owners ignore the small stuff\u2014that's where you lose margin.\n\n**3. Layer in the ONE hidden cost that matters**\nAccount for facility usage per service: classes use studio space 24/7 (fixed rent hit), PT uses space in shorter bursts (lower allocation), add-ons use almost none. Rough allocation: classes get 60% of rent per member hour, PT gets 30%, add-ons 10%. This shifts your profitability picture.\n\n**4. Build a one-page tracker (spreadsheet, not software)**\nColumns: Service | Monthly Revenue | Total Direct Costs | Space Allocation | Net Margin | Margin %. Update it monthly\u2014takes 30 mins. This becomes your decision-making tool. You'll immediately see if, say, PT at \u00a350/session is carrying the"
+        "advice": "# Execute the P&L Map for The Forge\n\n\u2022 **Start with 4 weeks of transaction data RIGHT NOW** \u2014 pull from your payment system (Stripe, Square, whatever you use) and categorize every single transaction by service type. Don't wait for perfect historical data; get messy data today. 4 weeks is enough to spot patterns.\n\n\u2022 **Build a dead-simple spreadsheet: Revenue - Direct Costs = Contribution Margin per service** \u2014 for each (classes, PT, add-ons like merchandise/supplements), calculate what each pound of sales actually contributes after the obvious costs (instructor wages for that service, product costs). Ignore overhead allocation for now \u2014 that clouds the real picture.\n\n\u2022 **PT sessions will look artificially profitable** \u2014 they always do. But flag the hidden truth: What % of your PT clients never upgrade to classes? What's your retention cost? That's where PT's real value is \u2014 it's your sales engine, not your cash cow. This matters for pricing strategy later.\n\n\u2022 **Focus on the add-ons number first** \u2014 this is where Grace wins. If you're selling 200 classes/month but only 15 protein shakes, there's your growth lever. That's where margin sits. Calculate add-on revenue per class attendee, then you'll know exactly what your conversion opportunity is.\n\n\u2022 **Use this one insight to act this week** \u2014 once you see which service actually funds growth, decide: Do you want to push volume in the high-margin service, or invest in converting more people into that service? That answer changes everything about your next move."
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Audit & Fix Your Automations \u2014 The Forge Edition\n\n\u2022 **Map the actual journey first (30 mins):** Have Grace walk through herself as a cold enquiry. What emails does she get? When? From which automations? Document every touchpoint. This reveals duplicates way faster than staring at Zapier/Make/ActiveCampaign settings. Duplicates usually hide in overlapping triggers (e.g., \"new form submission\" + \"new contact created\" firing the same welcome email).\n\n\u2022 **Identify the culprit automations (kill the clones):** Sort by \"most recently created\" \u2014 new automations often duplicate old ones accidentally. Cross-reference: if two automations have the same output (same email sent, same delay), one's redundant. Delete or pause the messier one. For The Forge specifically, watch for duplicate \"trial booking\" confirmations \u2014 women lose trust if they get three confirmation emails.\n\n\u2022 **Test the critical bottleneck \u2014 trial conversion:** Run 3-5 test enquiries through the full flow yourself (use a real email). Time it: enquiry \u2192 welcome \u2192 info sequence \u2192 trial booking link \u2192 trial confirmation. Each step should hit within your SLA (e.g., first reply under 2 hours). If any step takes >24hrs or the trial link doesn't work, that automation is the real problem, not duplicates.\n\n\u2022 **Lock down the gate:** Set ONE automation as \"master\" for enquiry intake. Every other automation should trigger *after* that one completes, not alongside it. This kills 90% of duplicates."
+        "advice": "# Audit & Fix Automations: The Forge Action Plan\n\n\u2022 **Run a parallel test immediately**: Pick 3-5 email addresses (use yourself, staff, trusted members) and submit enquiries through your website TODAY. Watch what they receive, when, and in what order. This exposes duplicates and broken sequences faster than reviewing backend settings. Document everything.\n\n\u2022 **Map the actual journey, not the intended one**: Log into each automation tool you use (Mailchimp, Zapier, whatever's connected). Trace EVERY step from website form \u2192 email 1 \u2192 email 2 \u2192 SMS/call to trial booking. Duplicates hide in multiple tools firing the same message\u2014check if Mailchimp AND Zapier are both sending welcome emails.\n\n\u2022 **Kill the low-performers ruthlessly**: If someone gets 4 emails before their trial, cut it to 2-3 max. Women signing up for your gym don't need a novel\u2014they need clarity on: (1) confirm receipt + next steps, (2) trial booking link, (3) one reminder 24hrs before. Measure open rates; anything under 30% gets deleted.\n\n\u2022 **Assign ONE person ownership + a deadline**: This stalls without a named owner. Give them 5 days to complete the parallel test and document findings in a simple spreadsheet. This becomes your baseline to measure improvements against.\n\n\u2022 **Test the conversion endpoint**: Book a trial yourself through the system. Can someone actually complete it without friction? If the booking form is clunky or the confirmation doesn't land, no automation fix matters."
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# AI Automation for The Forge \u2014 Concrete Execution\n\n**1. Start with your membership admin pain point** \u2014 likely scheduling/cancellations or welcome sequences. Use **Zapier + ChatGPT** (no coding needed). Example: When someone books a class, automatically send a personalized pre-workout nutrition tip + class-specific tips via WhatsApp. This takes 30 mins to set up and saves Grace 5+ hours/week on templated messages.\n\n**2. Build a \"new member nurture bot\"** using a simple tool like **ManyChat or Typeform + Slack**. Capture intake data (fitness goals, injuries, availability), instantly categorize members into workout tracks, auto-assign them to the right class cohort. You'll reduce manual admin by hours and get better data for targeted upsells.\n\n**3. Automate your gym's front desk messaging** \u2014 replies to \"what time is spin class?\" or \"do you have lockers?\" Build a simple **FAQ chatbot on your website/Instagram DM** using **Chatbase or Tidio**. Feed it your class schedule, pricing, FAQs. This kills repetitive DMs and calls, freeing Grace to focus on member relationships and retention strategies.\n\n**Quick win first:** Pick task #3. Takes 2 hours, zero cost with free tiers, gives immediate breathing room to focus on higher-leverage growth activities.\n\nWhat's the #1 task eating up Grace's time right now?"
+        "advice": "# AI Automation for The Forge \u2014 Execution Plan\n\n**Identify Your 3 Tasks (Pick These First)**\n- **Email enquiry responses** \u2014 repetitive \"thanks for interest, here's pricing/class schedule/trial offer\" \u2192 Build a Claude/ChatGPT bot to draft these in seconds, Grace reviews & sends. Saves 5-7 hours/month.\n- **New member onboarding messages** \u2014 welcome text, gym induction checklist, goal-setting questionnaire \u2192 Automate via Zapier or Make so it triggers immediately after signup, personalised with their name.\n- **Social media caption/copy** \u2014 class announcements, member spotlights, promotional posts \u2192 Use Claude to generate 3-4 caption options from a simple prompt (e.g., \"spinning class, energetic vibe, call-to-action\") in 2 minutes flat.\n\n**Build It This Week (Cheap & Fast)**\n- Use **Zapier free tier** (3 tasks) to connect your booking system (Class Pass, MindBody, whatever you use) \u2192 Gmail/WhatsApp \u2192 Claude API. Cost: \u00a30 to test.\n- **No coding needed** \u2014 Zapier's AI action connects directly to ChatGPT; Grace writes one good prompt per task, Zapier repeats it.\n- Test each automation on **5 real enquiries first**. Tweak the prompt wording based on what needs fixing (too formal? too casual? missing info?).\n\n**Get Actual ROI (Track This)**\n- Time saved per task \u00d7 frequency = weekly hours freed. Grace redeploys that time to member retention calls or sales outreach \u2014 the high-value work.\n-"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Cybersecurity Quick Wins for The Forge Website\n\n\u2022 **Get an SSL certificate TODAY (costs \u00a30-\u00a3100/year)** \u2014 Your site needs \"https://\" visible in the address bar. If you're on Wix/Squarespace/WordPress.com, it's free and auto-installed. This alone kills 80% of trust concerns when members enter payment info.\n\n\u2022 **Audit payment processing NOW** \u2014 If you're taking card payments, confirm you're PCI-DSS compliant. Use Stripe, Square, or PayPal (they handle compliance for you). Never store card details yourself. This is non-negotiable legally and a massive liability.\n\n\u2022 **Password-protect your member login area** \u2014 Use a strong admin password (16+ characters, mix of types), enable two-factor authentication on your website hosting/CMS admin panel. This stops someone from hijacking member data or your site content.\n\n\u2022 **Plug the leaks costing you members** \u2014 Run your site through Sucuri's free security scanner or Wordfence (if WordPress). It flags malware, outdated plugins, and vulnerabilities that silently tank your Google rankings and scare off prospects.\n\n\u2022 **Get a data privacy policy written and VISIBLE** \u2014 You collect emails, phone numbers, payment info. You need a GDPR-compliant privacy policy live on your site within 7 days. Use a template generator (Termly, iubenda) \u2014 don't write it yourself.\n\n**Do the SSL cert and payment audit this week. That's 90% of your risk eliminated.**"
+        "advice": "# Cybersecurity Execution for The Forge Website\n\n\u2022 **Pick ONE quick win today: SSL certificate + basic firewall.** If you're not HTTPS, Google already penalizes you + customers see \"not secure\" warnings. Cost: \u00a330-100/year. Use your hosting provider's one-click SSL (most include it). Simultaneously enable their basic DDoS protection\u201410 minutes of clicking.\n\n\u2022 **Audit what data you're actually holding.** Membership forms, payment details, progress photos? Map it. This determines what you legally MUST protect under GDPR. If you're taking card payments, you're liable\u2014no shortcuts. Most gym management software (Mindbody, Mariana Tek) handle PCI compliance, but verify YOUR specific setup with them in writing.\n\n\u2022 **Lock down admin access NOW.** Change default passwords on your hosting/CMS. Enable two-factor authentication on WordPress admin (if that's your platform). This stops 80% of breaches. Takes 30 minutes, prevents the nightmare.\n\n\u2022 **Monthly task, not one-off: backups + monitoring.** Set automatic daily backups (your hosting likely offers this for \u00a35-10/month). Add a basic uptime monitor (UptimeRobot, free version) so you know if the site goes down before customers tell you.\n\n\u2022 **Skip the \u00a35k security audit for now.** Instead, run a free Sucuri or Wordfence scan monthly. When revenue justifies it (say, 500+ paying members), invest in a proper penetration test.\n\n**What's the current state of your website?** Knowing your platform (WordPress/Squarespace/custom build) + payment processor changes the priority order"
       }
     ]
   },
