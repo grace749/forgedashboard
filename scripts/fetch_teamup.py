@@ -18,6 +18,15 @@ HEADERS = {"Authorization": f"Token {TEAMUP_API_KEY}"}
 TRIAL_NAMES     = ["6 week jumpstart"]
 RECURRING_NAMES = ["elevate", "evolve", "empower"]
 
+# Any membership name that is a trial/intro offer (for lapsed-trial tracking)
+TRIAL_KEYWORDS = ["jumpstart", "trial", "strong start", "strongstart", "beginner",
+                  "new year", "30 day", "6 week", "kickstart", "emerge", "new you"]
+
+
+def _is_trial_membership(name):
+    n = (name or "").lower()
+    return any(k in n for k in TRIAL_KEYWORDS)
+
 EXCLUDE_FROM_CHURN = {
     "30 day beginners challenge", "emerge", "30 day challenge",
     "new you next level", "fuel forward nutrition challenge",
@@ -83,16 +92,20 @@ def get_customer_names(customer_ids, existing=None):
     return names
 
 
-def get_all_customer_emails():
-    """Map customer_id -> lowercased email, from the customers list endpoint."""
-    emails = {}
+def get_all_customer_profiles():
+    """Return (names, emails) maps for all customers, from the customers list."""
+    names, emails = {}, {}
     try:
         for c in get_all("customers", {"page_size": 200}):
+            cid = c["id"]
+            nm = f"{c.get('first_name','')} {c.get('last_name','')}".strip()
+            if nm:
+                names[cid] = nm
             if c.get("email"):
-                emails[c["id"]] = c["email"].strip().lower()
+                emails[cid] = c["email"].strip().lower()
     except Exception as ex:
-        print(f"[teamup] email map error: {ex}")
-    return emails
+        print(f"[teamup] profiles error: {ex}")
+    return names, emails
 
 
 def members_list(ids, name_map):
@@ -789,64 +802,60 @@ def run():
     paused_ids = {m["customer"] for m in on_hold}
     name_map   = get_customer_names(paused_ids, existing=name_map)
 
-    # ── Cancelled last month ────────────────────────────────────
-    cancelled_all        = get_all("customermemberships", {"status": "cancelled"})
-    cancelled_last_month = [
-        m for m in cancelled_all
-        if last_month_start.isoformat() <= (m.get("end_date") or m.get("expiration_date") or "") <= last_month_end.isoformat()
-        and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
-        and m["customer"] not in all_active_ids   # still active = a switch, not a leaver
-        and m["customer"] not in paused_ids       # on hold = still a member
-    ]
-    cancelled_ids = {m["customer"] for m in cancelled_last_month}
-    name_map      = get_customer_names(cancelled_ids, existing=name_map)
+    # ── Cancellations: split into lapsed FULL members vs lapsed TRIALS ──
+    cancelled_all = get_all("customermemberships", {"status": "cancelled"})
+    # Full name map for everyone (one cheap pass over the customers list)
+    profile_names, email_map = get_all_customer_profiles()
+    name_map = {**profile_names, **name_map}
 
-    # ── Cancellations grouped by month (last 6 months) ──────────
-    six_months_ago = (first_of_this_month - datetime.timedelta(days=185)).isoformat()
-    cancelled_recent = [
-        m for m in cancelled_all
-        if (m.get("end_date") or m.get("expiration_date") or "") >= six_months_ago
-        and m.get("name", "").strip().lower() not in EXCLUDE_FROM_CHURN
-    ]
-    cancel_name_ids = {m["customer"] for m in cancelled_recent}
-    name_map = get_customer_names(cancel_name_ids, existing=name_map)
-    cancelled_by_month = {}
-    for m in cancelled_recent:
-        cid  = m["customer"]
-        # Not a real cancellation if they still hold an active or paused
-        # membership — they just switched/upgraded/downgraded or moved to annual.
+    today_iso  = today.isoformat()
+    year_ago   = (today - datetime.timedelta(days=365)).isoformat()
+    year_start = today.replace(month=1, day=1).isoformat()
+
+    lapsed_full   = {}   # YYYY-MM -> [members]  (full memberships that lapsed)
+    lapsed_trials = {}   # YYYY-MM -> [members]  (trials that lapsed / didn't convert)
+    ytd_full_leavers = set()
+
+    for m in cancelled_all:
+        cid   = m["customer"]
+        mname = m.get("name", "").strip()
+        end   = (m.get("end_date") or m.get("expiration_date") or "")[:10]
+        if not end or end < year_ago or end > today_iso:
+            continue
+        # Still a member (switch/upgrade/downgrade/annual) or on hold → not lapsed
         if cid in all_active_ids or cid in paused_ids:
             continue
-        nm   = name_map.get(cid, "")
+        nm = name_map.get(cid, "")
         if not nm or nm.lower() in EXCLUDE_CUSTOMER_NAMES:
             continue
-        end  = (m.get("end_date") or m.get("expiration_date") or "")[:10]
-        if not end:
-            continue
-        cancelled_by_month.setdefault(end[:7], []).append({
-            "name": nm, "membership": m.get("name", ""), "end": end,
-        })
-    cancelled_by_month = [
-        {"month": mo, "members": sorted(mem, key=lambda x: x["end"], reverse=True)}
-        for mo, mem in sorted(cancelled_by_month.items(), reverse=True)
-    ]
+        row = {"name": nm, "membership": mname, "end": end}
+        if _is_trial_membership(mname):
+            lapsed_trials.setdefault(end[:7], []).append(row)
+        else:
+            if mname.lower() in EXCLUDE_FROM_BREAKDOWN:
+                continue   # scans / dummy aren't memberships
+            lapsed_full.setdefault(end[:7], []).append(row)
+            if end >= year_start:
+                ytd_full_leavers.add(cid)
 
-    # ── Cancellations year-to-date (real leavers, excl. switches) ──
-    year_start = today.replace(month=1, day=1).isoformat()
-    ytd_leavers = set()
-    for m in cancelled_all:
-        end = (m.get("end_date") or m.get("expiration_date") or "")[:10]
-        cid = m["customer"]
-        if not end or end < year_start or end > today.isoformat():
-            continue
-        if cid in all_active_ids or cid in paused_ids:
-            continue   # switched or on hold, not a real leaver
-        if m.get("name", "").strip().lower() in EXCLUDE_FROM_CHURN:
-            continue
-        if name_map.get(cid, "").lower() in EXCLUDE_CUSTOMER_NAMES:
-            continue
-        ytd_leavers.add(cid)
-    cancelled_ytd = len(ytd_leavers)
+    def _by_month(d):
+        return [
+            {"month": mo, "members": sorted(mem, key=lambda x: x["end"], reverse=True)}
+            for mo, mem in sorted(d.items(), reverse=True)
+        ]
+
+    cancelled_by_month     = _by_month({k: v for k, v in lapsed_full.items()
+                                        if k >= (first_of_this_month - datetime.timedelta(days=185)).isoformat()[:7]})
+    lapsed_full_by_month   = _by_month(lapsed_full)
+    lapsed_trials_by_month = _by_month(lapsed_trials)
+    cancelled_ytd          = len(ytd_full_leavers)
+
+    # Last-month full-member leavers (for the snapshot pill)
+    cancelled_last_month = [
+        r for grp in lapsed_full_by_month if grp["month"] == last_month_start.isoformat()[:7]
+        for r in grp["members"]
+    ]
+    cancelled_ids = set()   # (kept for compatibility; names already resolved)
 
     # ── Churn rate ──────────────────────────────────────────────
     churn_base_ids = {
@@ -961,7 +970,6 @@ def run():
     momentum_calls = fetch_momentum_calls(name_map)
 
     # ── Full member directory ───────────────────────────────────
-    email_map = get_all_customer_emails()
     member_list = build_member_list(active, name_map, first_seen, class_counts, momentum_calls, email_map)
 
     # ── InBody scans ────────────────────────────────────────────
@@ -980,13 +988,15 @@ def run():
         "paused":                   len(paused_ids),
         "paused_members":           members_list(paused_ids, name_map),
         "cancelled_by_month":       cancelled_by_month,
+        "lapsed_full_by_month":     lapsed_full_by_month,
+        "lapsed_trials_by_month":   lapsed_trials_by_month,
         "cancelled_ytd":            cancelled_ytd,
         "churn_rate":               churn_rate,
         "avg_member_price":         avg_member_price,
         "monthly_recurring_revenue": monthly_recurring_revenue,
         "avg_tenure_months":        avg_tenure_months,
-        "cancelled_last_month":     len([c for c in cancelled_ids if name_map.get(c,"").lower() not in EXCLUDE_CUSTOMER_NAMES]),
-        "cancelled_members":        [m for m in members_list(cancelled_ids, name_map) if m["name"].lower() not in EXCLUDE_CUSTOMER_NAMES],
+        "cancelled_last_month":     len(cancelled_last_month),
+        "cancelled_members":        cancelled_last_month,
         "breakdown":                breakdown,
         "class_stats":              class_stats,
         "at_risk":                  at_risk,

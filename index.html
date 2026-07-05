@@ -48,6 +48,16 @@
     /* Members grid: cards in each row stretch to equal height for a clean, aligned layout */
     #grid-members { align-items: stretch; }
     #grid-members .card { overflow: hidden; }
+    /* Section divider headline (full width) */
+    .sec-divider {
+      grid-column: span 12; display: flex; align-items: center; gap: 12px;
+      margin: 14px 2px 0; color: #fff;
+    }
+    .sec-divider .sec-label {
+      font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+      color: #d6c9ef; white-space: nowrap;
+    }
+    .sec-divider .sec-line { flex: 1; height: 1px; background: #4a2f75; }
 
     /* ── Card ───────────────────────────────────────────────── */
     .card {
@@ -620,8 +630,11 @@ function render(data) {
     return d.toLocaleDateString("en-IE", { day:"numeric", month:"short" });
   }
 
-  // ── At-Risk Members (top of the board) ────────────────────────
-  // Exclude paused trials — they're not attending on purpose, not at-risk.
+  // Members-page section divider helper
+  const memberSection = (label) => push("members", `<div class="sec-divider"><span class="sec-label">${label}</span><span class="sec-line"></span></div>`);
+
+  // ── AT RISK ───────────────────────────────────────────────────
+  memberSection("At Risk");
   const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
   const atRisk = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
   push("members", `
@@ -648,6 +661,9 @@ function render(data) {
       </div>` : `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">All members attended recently 🎉</p>`}
     </div>
   `);
+
+  // ── ACTIVE FULL MEMBERS ───────────────────────────────────────
+  memberSection("Active Full Members");
 
   // ── Member Directory ──────────────────────────────────────────
   const memberRows = tm.member_list || [];
@@ -705,6 +721,49 @@ function render(data) {
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No member data yet.</p>`}
     </div>
   `);
+
+  // ── Member Celebrations (under Active Full Members) ───────────
+  const celeb    = tm.celebrations || {};
+  const firstWk  = celeb.first_week  || [];
+  const newFull  = celeb.new_members || [];
+  const tenure   = celeb.tenure      || [];
+  const clsMs    = tm.class_milestones || [];
+  const celebRow = (name, sub, pill, pillClass) => `
+    <div class="stat-row">
+      <div style="min-width:0">
+        <div style="font-size:.85rem;font-weight:600;color:#111">${name}</div>
+        <div style="font-size:.72rem;color:#aaa">${sub}</div>
+      </div>
+      <span class="pill ${pillClass}" style="cursor:default;white-space:nowrap">${pill}</span>
+    </div>`;
+  const anyCeleb = firstWk.length || newFull.length || tenure.length;
+  push("members", `
+    <div class="card col-12">
+      <div class="card-title">Milestones</div>
+      <div class="card-headline">Member Celebrations</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+        ${newFull.length ? `<div>
+          <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">Just joined as a full member</div>
+          ${newFull.map(m => celebRow(m.name, `Started ${fmtDateShort(m.start_date)}`, "⭐ New member!", "green")).join("")}
+        </div>` : ""}
+        ${firstWk.length ? `<div>
+          <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">First week (Jumpstart)</div>
+          ${firstWk.map(m => celebRow(m.name, `Day ${m.days_in} of week 1`, "🎉 1st week!", "green")).join("")}
+        </div>` : ""}
+        ${tenure.length ? `<div>
+          <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">Anniversaries</div>
+          ${tenure.map(m => {
+            const when = m.days_until > 0 ? `in ${m.days_until}d` : m.days_until === 0 ? "today" : `${-m.days_until}d ago`;
+            return celebRow(m.name, `Joined ${fmtDateShort(m.start_date)}`, `🏆 ${m.label} (${when})`, "purple");
+          }).join("")}
+        </div>` : ""}
+      </div>
+      ${!anyCeleb ? `<div class="brief-empty" style="padding:6px 0">No celebrations today</div>` : ""}
+    </div>
+  `);
+
+  // ── MEMBER DATA ───────────────────────────────────────────────
+  memberSection("Member Data");
 
   // ── Membership Snapshot ───────────────────────────────────────
   push("members", `
@@ -807,75 +866,41 @@ function render(data) {
     </div>
   `);
 
-  // ── Cancellations by month ────────────────────────────────────
-  const cancByMonth = tm.cancelled_by_month || [];
-  const cancMonthName = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
-  if (cancByMonth.length) {
-    cancByMonth.forEach(grp => {
-      push("members", `
-        <div class="card col-4">
-          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px">
-            <div>
-              <div class="card-title">Cancelled</div>
-              <div class="card-headline" style="margin-bottom:0">${cancMonthName(grp.month)}</div>
-            </div>
-            <span class="brief-chip chip-red">${grp.members.length}</span>
-          </div>
-          <div style="overflow-y:auto;max-height:320px">
-            ${grp.members.map(m => `
-              <div class="stat-row">
-                <div style="min-width:0">
-                  <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-                  <div style="font-size:.7rem;color:#aaa">${m.membership} · ${fmtDateShort(m.end)}</div>
-                </div>
-              </div>`).join("")}
-          </div>
-        </div>`);
-    });
-  }
-
-  // ── Member Celebrations ───────────────────────────────────────
-  const celeb    = tm.celebrations || {};
-  const firstWk  = celeb.first_week  || [];
-  const newFull  = celeb.new_members || [];
-  const tenure   = celeb.tenure      || [];
-  const clsMs    = tm.class_milestones || [];
-  const celebRow = (name, sub, pill, pillClass) => `
-    <div class="stat-row">
-      <div style="min-width:0">
-        <div style="font-size:.85rem;font-weight:600;color:#111">${name}</div>
-        <div style="font-size:.72rem;color:#aaa">${sub}</div>
-      </div>
-      <span class="pill ${pillClass}" style="cursor:default;white-space:nowrap">${pill}</span>
-    </div>`;
-  const anyCeleb = firstWk.length || newFull.length || tenure.length;
-  push("members", `
+  // ── LAPSED FULL MEMBERS / LAPSED TRIALS (per month) ───────────
+  const monthNameYr = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
+  const lapsedCard = (grp, title, chip) => `
     <div class="card col-4">
-      <div class="card-title">Milestones</div>
-      <div class="card-headline">Member Celebrations</div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+        <div>
+          <div class="card-title">${title}</div>
+          <div class="card-headline" style="margin-bottom:0">${monthNameYr(grp.month)}</div>
+        </div>
+        <span class="brief-chip ${chip}">${grp.members.length}</span>
+      </div>
+      <div style="overflow-y:auto;max-height:300px">
+        ${grp.members.map(m => `
+          <div class="stat-row">
+            <div style="min-width:0">
+              <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+              <div style="font-size:.7rem;color:#aaa">${m.membership} · ${fmtDateShort(m.end)}</div>
+            </div>
+          </div>`).join("")}
+      </div>
+    </div>`;
 
-      ${newFull.length ? `
-        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">Just joined as a full member</div>
-        ${newFull.map(m => celebRow(m.name, `Started ${fmtDateShort(m.start_date)}`, "⭐ New member!", "green")).join("")}
-      ` : ""}
+  const lapsedFull   = tm.lapsed_full_by_month   || [];
+  const lapsedTrials = tm.lapsed_trials_by_month || [];
 
-      ${firstWk.length ? `
-        <div class="inner-divider" ${!newFull.length ? 'style="margin-top:0;padding-top:0;border-top:none"' : ""}>First week (Jumpstart)</div>
-        ${firstWk.map(m => celebRow(m.name, `Day ${m.days_in} of week 1`, "🎉 1st week!", "green")).join("")}
-      ` : ""}
+  memberSection("Lapsed Full Members");
+  if (lapsedFull.length) lapsedFull.forEach(grp => push("members", lapsedCard(grp, "Lapsed", "chip-red")));
+  else push("members", `<div class="card col-12"><p style="color:#16a34a;font-size:.85rem;padding:4px 0">No full members lapsed in the last year 🎉</p></div>`);
 
-      ${tenure.length ? `
-        <div class="inner-divider" ${!newFull.length && !firstWk.length ? 'style="margin-top:0;padding-top:0;border-top:none"' : ""}>Anniversaries</div>
-        ${tenure.map(m => {
-          const when = m.days_until > 0 ? `in ${m.days_until}d` : m.days_until === 0 ? "today" : `${-m.days_until}d ago`;
-          return celebRow(m.name, `Joined ${fmtDateShort(m.start_date)}`, `🏆 ${m.label} (${when})`, "purple");
-        }).join("")}
-      ` : ""}
+  memberSection("Lapsed Trials");
+  if (lapsedTrials.length) lapsedTrials.forEach(grp => push("members", lapsedCard(grp, "Trials not converted", "chip-amber")));
+  else push("members", `<div class="card col-12"><p style="color:#9ca3af;font-size:.85rem;padding:4px 0">No lapsed trials in the last year</p></div>`);
 
-      ${!anyCeleb ? `<div class="brief-empty" style="padding:6px 0">No celebrations today</div>` : ""}
-    </div>
-  `);
 
+  memberSection("Class Milestones");
   // ── Class Count Milestones (own card) ─────────────────────────
   push("members", `
     <div class="card col-4">
@@ -892,6 +917,7 @@ function render(data) {
     </div>
   `);
 
+  memberSection("Class Popularity");
   // ── Attendance / Class Popularity ─────────────────────────────
   const cs   = tm.class_stats || {};
   const cs90 = cs.last_90_days || {};
@@ -942,6 +968,7 @@ function render(data) {
     </div>
   `);
 
+  memberSection("Momentum Calls");
   // ── Momentum Calls ────────────────────────────────────────────
   const mc = tm.momentum_calls || {};
   const mcRecent   = mc.recent   || [];
@@ -972,6 +999,7 @@ function render(data) {
     </div>
   `);
 
+  memberSection("InBody Data");
   // ── InBody Scans ──────────────────────────────────────────────
   // Prefer the full list from Lookin'Body; fall back to the TeamUp proxy.
   const inbodyData = data.inbody || {};
