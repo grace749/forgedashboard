@@ -144,6 +144,60 @@ def fetch_calendar():
         return {"error": str(ex)}
 
 
+def fetch_appointments():
+    """
+    Booked discovery calls from 'Appointment Confirmation of <Name> on <Date>'
+    emails. These are potential members booking a call — treated as leads AND
+    added to the calendar for the day they're booked.
+    """
+    svc = _gmail_service()
+    if not svc:
+        return []
+    try:
+        q = 'subject:"Appointment Confirmation" newer_than:21d'
+        res = svc.users().messages().list(userId="me", q=q, maxResults=60).execute()
+        today = date.today()
+        out, seen = [], set()
+        for msg in res.get("messages", []):
+            hdrs, _ = _get_headers(svc, msg["id"])
+            subject = hdrs.get("Subject", "")
+            m = re.search(
+                r"Appointment Confirmation of (.+?) on "
+                r"([A-Za-z]+,\s*[A-Za-z]+\s+\d+,\s*\d{4}\s+\d{1,2}:\d{2}\s*[AP]M)",
+                subject, re.I)
+            if not m:
+                continue
+            name = m.group(1).strip()
+            dt = None
+            for fmt in ("%A, %B %d, %Y %I:%M %p", "%A,%B %d,%Y %I:%M %p"):
+                try:
+                    dt = datetime.strptime(re.sub(r"\s+", " ", m.group(2).strip()), fmt)
+                    break
+                except ValueError:
+                    pass
+            if not dt:
+                continue
+            d = dt.date()
+            if d < today or (d - today).days > 3:
+                continue   # only the next couple of days
+            key = (name.lower(), d.isoformat())
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append({
+                "name": name,
+                "date": d.isoformat(),
+                "day":  _day_label(d.isoformat(), today),
+                "time": dt.strftime("%-I:%M%p").lower(),
+                "start_raw": dt.isoformat(),
+            })
+        out.sort(key=lambda x: x["start_raw"])
+        return out
+    except Exception as ex:
+        print(f"[brief] appointments error: {ex}")
+        return []
+
+
 # ── Gmail ──────────────────────────────────────────────────────────────────
 
 def _gmail_service():
@@ -573,6 +627,29 @@ def run():
     enquiries = fetch_gmail_enquiries()
     checkins  = fetch_checkins()
     goals     = fetch_lifestyle_goals()
+    appointments = fetch_appointments()
+
+    # Booked calls are potential members → add to calendar AND to leads/enquiries
+    if isinstance(appointments, list) and appointments:
+        if isinstance(calendar, list):
+            for a in appointments:
+                calendar.append({
+                    "title": f"📞 Call: {a['name']}",
+                    "time": a["time"], "start_raw": a["start_raw"], "day": a["day"],
+                    "attendees": [a["name"]], "description": "Booked discovery call",
+                    "location": "",
+                    "prep": "Review their enquiry; have trial offer, pricing and class times ready.",
+                })
+            calendar.sort(key=lambda e: e.get("start_raw", ""))
+        if isinstance(enquiries, list):
+            for a in appointments:
+                label = f"📞 Booked a call · {a['day']} {a['time']}"
+                enquiries.append({
+                    "name": a["name"], "channel": "Booked call",
+                    "subject": label, "path": label,
+                    "snippet": f"Booked a call for {a['day']} {a['time']} — potential member",
+                    "age": "", "unread": 0,
+                })
 
     event_count   = len(calendar) if isinstance(calendar, list) else 0
     urgent_count  = len(urgent)   if isinstance(urgent, list)   else 0

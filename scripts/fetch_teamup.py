@@ -24,8 +24,11 @@ EXCLUDE_FROM_CHURN = {
     "dummy membership", "body composition scan",
 }
 EXCLUDE_CUSTOMER_NAMES = {"grace smith", "joan smith"}
-# Staff / coaches — never flag as at-risk members
-AT_RISK_EXCLUDE_NAMES = {"joanne hall", "eilis kearns", "michelle mcknight"}
+# Never flag as at-risk: coaches with test memberships + non-training account holders
+AT_RISK_EXCLUDE_NAMES = {
+    "grace smith", "joanne hall", "eilis kearns", "sarah lacey", "michelle mcknight",
+    "donna mclean",   # parent managing a teen member's account, doesn't train herself
+}
 EXCLUDE_FROM_BREAKDOWN = {"dummy membership", "body composition scan"}
 
 INBODY_INTERVAL_DAYS = 42   # 6 weeks between scans
