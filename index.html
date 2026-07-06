@@ -370,6 +370,7 @@
   <button class="tab-btn active" onclick="switchTab('home',this)">Home</button>
   <button class="tab-btn" onclick="switchTab('finances',this)">Finances</button>
   <button class="tab-btn" onclick="switchTab('members',this)">Members</button>
+  <button class="tab-btn" onclick="switchTab('retention',this)">Retention</button>
   <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
@@ -385,6 +386,9 @@
 </div>
 <div class="tab-panel" id="tab-members">
   <div class="grid" id="grid-members"></div>
+</div>
+<div class="tab-panel" id="tab-retention">
+  <div class="grid" id="grid-retention"></div>
 </div>
 <div class="tab-panel" id="tab-jumpstart">
   <div class="grid" id="grid-jumpstart"></div>
@@ -473,10 +477,14 @@ function renderAtRisk() {
     const lastSess = m.last_seen
       ? `Last session ${fmtShort(m.last_seen)}${m.days_absent != null ? ` · ${m.days_absent}d ago` : ""}`
       : "No session on record";
-    return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
+    const outreach = m.outreach
+      ? `<div style="font-size:.72rem;color:#7c3aed;margin-top:4px;display:flex;gap:5px"><span>💡</span><span>${m.outreach}</span></div>`
+      : "";
+    return `<div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
       <div style="flex:1;min-width:0">
         <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
         <div style="font-size:.72rem;color:#ef4444;font-weight:600">${lastSess}</div>
+        ${outreach}
         ${contacted}
       </div>
       ${actions}
@@ -629,7 +637,7 @@ function render(data) {
   const asanaScriptUrl = data.asana_script_url || "";
 
   // Each tab gets its own cards array
-  const tabs = { home: [], finances: [], members: [], jumpstart: [], leads: [], growth: [], staff: [], sop: [] };
+  const tabs = { home: [], finances: [], members: [], retention: [], jumpstart: [], leads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
 
   // ── "Today" hub — the single most urgent thing from every tab ──
@@ -643,7 +651,7 @@ function render(data) {
     // At-risk members (respecting contacted/resolved state)
     const atAll = (tmH.at_risk || []).filter(m => !(atState(m.name).resolved));
     const atUncontacted = atAll.filter(m => !atState(m.name).contactedBy);
-    if (atUncontacted.length) items.push({ sev: 1, tab: "members",
+    if (atUncontacted.length) items.push({ sev: 1, tab: "retention",
       icon: "⚠️", label: `${atUncontacted.length} at-risk member${atUncontacted.length>1?"s":""} not yet contacted`,
       detail: atUncontacted.slice(0,3).map(m => m.name).join(", ") + (atUncontacted.length>3?"…":"") });
 
@@ -672,7 +680,7 @@ function render(data) {
     items.sort((a,b) => a.sev - b.sev);
     const sevColor = s => s===1 ? "#ef4444" : s===2 ? "#d97706" : "#7c3aed";
     const sevBg    = s => s===1 ? "#fef2f2" : s===2 ? "#fffbeb" : "#f5f3ff";
-    const tabName  = { home:"Home", members:"Members", leads:"Leads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
+    const tabName  = { home:"Home", members:"Members", retention:"Retention", leads:"Leads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
 
     const rows = items.length ? items.map(it => `
       <button onclick="goTab('${it.tab}')" style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;padding:11px 14px;background:${sevBg(it.sev)};border:1px solid ${sevColor(it.sev)}22;border-left:3px solid ${sevColor(it.sev)};border-radius:10px;cursor:pointer;margin-bottom:8px">
@@ -838,22 +846,75 @@ function render(data) {
   // Members-page section divider helper
   const memberSection = (label) => push("members", `<div class="sec-divider"><span class="sec-label">${label}</span><span class="sec-line"></span></div>`);
 
-  // ── AT RISK ───────────────────────────────────────────────────
-  memberSection("At Risk");
-  const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
-  window._atRiskData = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
-  window._atRiskUrl  = data.atrisk_url || "";
-  push("members", `
-    <div class="card col-12" style="margin-top:4px">
-      <div class="card-title">Retention</div>
-      <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
-        At-Risk Members
-        <span id="atRiskCount" style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444"></span>
-      </div>
-      <div id="atRiskBody" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px;max-height:320px;overflow-y:auto"></div>
-      <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Tick “Mark contacted” when a coach reaches out, then “No longer at risk” to clear them.</div>
-    </div>
-  `);
+  // ══ RETENTION TAB ═════════════════════════════════════════════
+  (function retentionTab() {
+    const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
+    window._atRiskData = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
+    window._atRiskUrl  = data.atrisk_url || "";
+
+    // Build monthly series from the KPI sheet (oldest → newest)
+    const kMonths = [...((data.kpi && data.kpi.months) || [])].reverse();
+    const kMetric = (mo, name) => {
+      for (const cat of (mo.categories || []))
+        for (const it of (cat.items || []))
+          if ((it.name||"").toLowerCase().startsWith(name.toLowerCase())) return it.value;
+      return "";
+    };
+    const numify = v => { const n = parseFloat(String(v).replace(/[^0-9.\-]/g,"")); return isNaN(n) ? null : n; };
+    const activeSeries = kMonths.map(mo => ({ label: mo.period, v: numify(kMetric(mo, "Active Clients")) }));
+    const churnSeries  = kMonths.map(mo => ({ label: mo.period, v: numify(kMetric(mo, "Attrition")) }));
+
+    const miniBars = (series, colour, suffix) => {
+      const vals = series.filter(s => s.v != null);
+      if (!vals.length) return `<div class="brief-empty" style="padding:8px 0">No monthly data in the KPI sheet yet</div>`;
+      const max = Math.max(...vals.map(s => s.v)) || 1;
+      return `<div style="display:flex;align-items:flex-end;gap:6px;height:120px;margin-top:8px">
+        ${series.map(s => {
+          const h = s.v == null ? 0 : Math.max(4, Math.round(s.v / max * 108));
+          const mth = (s.label||"").split(" ")[0].slice(0,3);
+          return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0">
+            <div style="font-size:.6rem;font-weight:700;color:#374151">${s.v == null ? "" : (Math.round(s.v*10)/10)+(suffix||"")}</div>
+            <div style="width:100%;height:${h}px;background:${colour};border-radius:4px 4px 0 0"></div>
+            <div style="font-size:.58rem;color:#9ca3af">${mth}</div>
+          </div>`;
+        }).join("")}
+      </div>`;
+    };
+
+    const curActive = [...activeSeries].reverse().find(s => s.v != null);
+    const curChurn  = [...churnSeries].reverse().find(s => s.v != null);
+
+    push("retention", `<div class="sec-divider"><span class="sec-label">Retention Health</span><span class="sec-line"></span></div>`);
+    push("retention", `
+      <div class="card col-6">
+        <div class="card-title">Members</div>
+        <div class="card-headline">Active Member Trend</div>
+        <div class="big-kpi" style="margin:4px 0"><div class="number">${curActive ? Math.round(curActive.v) : (tm.total_members ?? "—")}</div><div class="sublabel">Active members now</div></div>
+        ${miniBars(activeSeries, "#7c3aed", "")}
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">From the monthly KPI sheet (Active Clients)</div>
+      </div>`);
+    push("retention", `
+      <div class="card col-6">
+        <div class="card-title">Churn</div>
+        <div class="card-headline">Churn Rate Over Time</div>
+        <div class="big-kpi" style="margin:4px 0"><div class="number">${curChurn != null ? curChurn.v + "%" : (tm.churn_rate ?? "—") + "%"}</div><div class="sublabel">Latest monthly attrition</div></div>
+        ${miniBars(churnSeries, "#ef4444", "%")}
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">From the monthly KPI sheet (Attrition/Churn %)</div>
+      </div>`);
+
+    // At-risk members with per-member outreach action (AI retention agent)
+    push("retention", `<div class="sec-divider"><span class="sec-label">At-Risk Members</span><span class="sec-line"></span></div>`);
+    push("retention", `
+      <div class="card col-12" style="margin-top:4px">
+        <div class="card-title">Retention agent</div>
+        <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
+          Members at risk — reach out
+          <span id="atRiskCount" style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444"></span>
+        </div>
+        <div id="atRiskBody" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:6px;max-height:420px;overflow-y:auto"></div>
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Flagged after 10+ days with no class/PT. Tick “Mark contacted” when a coach reaches out, then “No longer at risk” to clear them — synced across all coaches.</div>
+      </div>`);
+  })();
 
   // ── ACTIVE FULL MEMBERS ───────────────────────────────────────
   memberSection("Active Full Members");

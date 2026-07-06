@@ -1,5 +1,5 @@
 """Fetch membership snapshot + member intelligence from TeamUp (goteamup.com)."""
-import os, json, time, requests, datetime, urllib.request
+import os, json, time, re, requests, datetime, urllib.request
 import ai
 from datetime import date
 from collections import Counter
@@ -465,6 +465,49 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
 
     at_risk.sort(key=lambda x: x["name"])
     return at_risk[:25]
+
+
+def _outreach_fallback(m):
+    d = m.get("days_absent")
+    if d is None:
+        return "No sessions logged yet — check they were onboarded and invite them to their first class."
+    if d >= 30:
+        return f"Absent {d} days — call personally, ask if anything's changed and offer to rebook them in."
+    if d >= 20:
+        return f"Absent {d} days — send a warm personal message and suggest 2-3 class times that suit them."
+    return f"Absent {d} days — a quick friendly check-in now keeps them from drifting."
+
+
+def add_retention_outreach(at_risk):
+    """AI retention agent: a specific one-line outreach action per at-risk member."""
+    if not at_risk:
+        return at_risk
+    lines = "\n".join(
+        f"{i+1}. {m['name']} — {m.get('membership') or 'member'}, "
+        + (f"absent {m['days_absent']} days" if m.get("days_absent") is not None
+           else "no sessions on record")
+        for i, m in enumerate(at_risk)
+    )
+    text = ai.generate(
+        "You are the retention coach for The Forge, a women's-only gym in Belfast. "
+        "For each at-risk member, write ONE short, specific, warm outreach action the "
+        "team should take to win them back — reference how long they've been absent and "
+        "vary the approach (message, call, class invite, catch-up). Under 18 words each. "
+        "Plain UK English, no preamble.",
+        f"At-risk members:\n{lines}\n\n"
+        f"Return exactly one line per member, numbered 1..{len(at_risk)} in the same order.",
+        max_tokens=500,
+    )
+    parsed = {}
+    for ln in (text or "").splitlines():
+        mt = re.match(r"\s*(\d+)[.)]\s*(.+)", ln)
+        if mt:
+            idx, note = int(mt.group(1)) - 1, mt.group(2).strip()
+            if 0 <= idx < len(at_risk) and note:
+                parsed[idx] = note
+    for i, m in enumerate(at_risk):
+        m["outreach"] = parsed.get(i) or _outreach_fallback(m)
+    return at_risk
 
 
 # ── New member milestones ───────────────────────────────────────────────────
@@ -1011,6 +1054,7 @@ def run():
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids,
                             first_seen, ever_attended_ids, last_session_by_cid)
+    add_retention_outreach(at_risk)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
     class_milestones = build_class_milestones(all_active_ids, name_map, class_counts)
