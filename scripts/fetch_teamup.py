@@ -247,6 +247,47 @@ def _is_non_class(name):
     return False
 
 
+def build_class_capacity(events):
+    """
+    Fill rate per class over the given events: how full each class runs vs its
+    capacity. Uses TeamUp's attending_count / max_occupancy. Flags classes that
+    are consistently full (room for a second slot) vs quiet (spare capacity).
+    Excludes 1:1 PT / appointments / scans (capacity 1) — those aren't classes.
+    """
+    agg = {}   # name -> {sessions, attended, capacity}
+    for e in events:
+        name = (e.get("name") or "").strip()
+        cap  = e.get("max_occupancy")
+        att  = e.get("attending_count")
+        if not name or not isinstance(cap, int) or cap <= 1:
+            continue   # skip PT/scans (cap 1) and anything without a real class cap
+        if e.get("is_appointment") or "personal training" in name.lower():
+            continue   # 1:1 / small-group PT isn't a group class
+        if name.lower() in EXCLUDE_FROM_BREAKDOWN:
+            continue
+        d = agg.setdefault(name, {"sessions": 0, "attended": 0, "capacity": 0, "cap": cap})
+        d["sessions"] += 1
+        d["attended"] += (att or 0)
+        d["capacity"] += cap
+        d["cap"] = max(d["cap"], cap)
+
+    out = []
+    for name, d in agg.items():
+        if d["capacity"] <= 0:
+            continue
+        fill = round(d["attended"] / d["capacity"] * 100)
+        out.append({
+            "name": name,
+            "sessions": d["sessions"],
+            "cap": d["cap"],
+            "avg_attending": round(d["attended"] / d["sessions"], 1),
+            "fill_rate": fill,
+            "status": "full" if fill >= 85 else "healthy" if fill >= 50 else "quiet",
+        })
+    out.sort(key=lambda x: x["fill_rate"], reverse=True)
+    return out
+
+
 def build_class_stats(bookings):
     """
     Class popularity from a set of attended bookings.
@@ -348,13 +389,20 @@ def _class_suggestion(stats):
     d90 = stats["last_90_days"]
     d30 = stats["last_30_days"]
     def pairs(items, k): return [(x[k], x["count"]) for x in items]
+    cap = stats.get("capacity") or []
+    full = [f"{c['name']} {c['fill_rate']}%" for c in cap if c["status"] == "full"][:4]
+    quiet = [f"{c['name']} {c['fill_rate']}%" for c in cap if c["status"] == "quiet"][:4]
+    cap_line = ""
+    if full or quiet:
+        cap_line = (f" Fill rates — consistently FULL (could support a second slot): {full}; "
+                    f"running QUIET (spare capacity): {quiet}.")
     summary = (
         f"Last 90 days — busiest days: {pairs(d90['top_days'][:3],'day')}; "
         f"quietest days: {pairs(d90['bottom_days'][:3],'day')}; "
         f"most popular classes: {pairs(d90['top_classes'][:5],'name')}; "
         f"least popular classes: {pairs(d90['bottom_classes'][:5],'name')}. "
         f"Last 30 days — most popular classes: {pairs(d30['top_classes'][:5],'name')}; "
-        f"least popular: {pairs(d30['bottom_classes'][:5],'name')}."
+        f"least popular: {pairs(d30['bottom_classes'][:5],'name')}." + cap_line
     )
     text = ai.generate(
         ("You are an operations advisor for The Forge, a women's fitness gym in Belfast. "
@@ -1050,6 +1098,10 @@ def run():
         "last_30_days": build_class_stats(bookings_30),
     }
     class_stats["suggestion"] = _class_suggestion(class_stats)
+
+    # ── Class capacity & utilisation (fill rate vs cap, last 90d) ──
+    class_capacity = build_class_capacity(events_90)
+    class_stats["capacity"] = class_capacity
 
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids,

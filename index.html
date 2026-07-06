@@ -1213,11 +1213,41 @@ function render(data) {
   push("members", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year", "col-6"));
 
 
-  memberSection("Class Popularity");
+  memberSection("Class Capacity & Popularity");
   // ── Attendance / Class Popularity ─────────────────────────────
   const cs   = tm.class_stats || {};
   const cs90 = cs.last_90_days || {};
   const cs30 = cs.last_30_days || {};
+
+  // ── Class capacity & utilisation (fill rate vs cap) ───────────
+  const cap = cs.capacity || [];
+  if (cap.length) {
+    const statusColor = s => s==="full" ? "#ef4444" : s==="quiet" ? "#d97706" : "#059669";
+    const statusBg    = s => s==="full" ? "#fef2f2" : s==="quiet" ? "#fffbeb" : "#f0fdf4";
+    const statusLabel = s => s==="full" ? "Full — add a slot?" : s==="quiet" ? "Spare capacity" : "Healthy";
+    const capRow = c => `
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #f6f6fa">
+        <div style="flex:1;min-width:0">
+          <div style="font-size:.84rem;font-weight:600;color:#111">${c.name}</div>
+          <div style="font-size:.7rem;color:#9ca3af">${c.avg_attending} avg of ${c.cap} · ${c.sessions} sessions</div>
+        </div>
+        <div style="width:130px;flex-shrink:0">
+          <div style="height:8px;background:#f0f0f5;border-radius:4px;overflow:hidden">
+            <div style="height:100%;width:${Math.min(100,c.fill_rate)}%;background:${statusColor(c.status)}"></div>
+          </div>
+        </div>
+        <div style="width:46px;text-align:right;font-weight:800;font-size:.9rem;color:${statusColor(c.status)}">${c.fill_rate}%</div>
+        <span style="width:120px;text-align:center;font-size:.62rem;font-weight:700;color:${statusColor(c.status)};background:${statusBg(c.status)};border-radius:6px;padding:4px 6px;flex-shrink:0">${statusLabel(c.status)}</span>
+      </div>`;
+    push("members", `
+      <div class="card col-12">
+        <div class="card-title">Attendance</div>
+        <div class="card-headline">Class Capacity &amp; Utilisation <span style="font-size:.72rem;font-weight:600;color:#9ca3af">last 90 days</span></div>
+        <div style="margin-top:8px">${cap.map(capRow).join("")}</div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Fill rate = attended ÷ capacity. <span style="color:#ef4444;font-weight:700">Full</span> classes could support a second slot; <span style="color:#d97706;font-weight:700">quiet</span> ones have room to promote. PT &amp; scans excluded.</div>
+      </div>
+    `);
+  }
 
   const chipRow = (items, key, colour) => items && items.length
     ? `<div style="display:flex;gap:6px;flex-wrap:wrap">
