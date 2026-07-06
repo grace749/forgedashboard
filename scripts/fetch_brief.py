@@ -67,6 +67,53 @@ def _day_label(start_raw, today):
     return d.strftime("%A")
 
 
+def fetch_teamup_schedule(today, days=2):
+    """The studio timetable (classes + PT + scans) for the next `days`, from TeamUp,
+    shaped like calendar events so it can be merged with the Google Calendar."""
+    key = os.environ.get("TEAMUP_API_KEY")
+    if not key:
+        return []
+    try:
+        import requests
+        end = today + timedelta(days=days)
+        r = requests.get(
+            "https://goteamup.com/api/v2/events",
+            headers={"Authorization": f"Token {key}"},
+            params={"starts_at_gte": today.isoformat(),
+                    "starts_at_lte": end.isoformat(), "page_size": 500},
+            timeout=30,
+        )
+        r.raise_for_status()
+        out = []
+        for e in r.json().get("results", []):
+            starts = e.get("starts_at", "")
+            if not starts:
+                continue
+            name = (e.get("name") or "Class").strip()
+            booked = e.get("attending_count")
+            cap    = e.get("max_occupancy")
+            sub = ""
+            if isinstance(booked, int) and isinstance(cap, int) and cap > 0:
+                sub = f"{booked}/{cap} booked"
+            elif isinstance(booked, int) and booked:
+                sub = f"{booked} booked"
+            out.append({
+                "title": name,
+                "time": _fmt_time(starts),
+                "start_raw": starts,
+                "day": _day_label(starts, today),
+                "attendees": [],
+                "description": "",
+                "location": sub,
+                "prep": "",
+                "source": "teamup",
+            })
+        return out
+    except Exception as ex:
+        print(f"[brief] teamup schedule error: {ex}")
+        return []
+
+
 def _calendar_prep(events):
     """One AI call: a short 'what to prep' note per event (or blank if none)."""
     real = [e for e in events if e.get("title")]
@@ -622,6 +669,10 @@ def run():
     today = date.today()
 
     calendar  = fetch_calendar()
+    # Merge the TeamUp studio timetable (classes, PT, scans) into the calendar
+    if isinstance(calendar, list):
+        calendar.extend(fetch_teamup_schedule(today))
+        calendar.sort(key=lambda e: e.get("start_raw", ""))
     urgent    = fetch_gmail_urgent()
     important = fetch_gmail_important()
     enquiries = fetch_gmail_enquiries()

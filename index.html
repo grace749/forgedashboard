@@ -647,7 +647,7 @@ function render(data) {
             <div class="brief-row">
               <div class="brief-time">${e.time || "all day"}</div>
               <div>
-                <div class="brief-row-title">${e.title}</div>
+                <div class="brief-row-title">${e.title}${e.source === "teamup" ? ` <span style="font-size:.6rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border-radius:4px;padding:1px 5px;vertical-align:middle">STUDIO</span>` : ""}</div>
                 ${e.attendees && e.attendees.length ? `<div class="brief-row-sub">with ${e.attendees.join(", ")}</div>` : ""}
                 ${e.location ? `<div class="brief-row-sub">${e.location}</div>` : ""}
                 ${e.prep ? `<div style="font-size:.72rem;color:#7c3aed;margin-top:3px;display:flex;gap:5px"><span>📋</span><span>${e.prep}</span></div>` : ""}
