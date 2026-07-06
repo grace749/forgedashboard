@@ -73,6 +73,35 @@ def extract_pl_sum(report, *keywords):
     return total if found else None
 
 
+def get_cash_position(access_token, tenant_id):
+    """Sum the closing balance of every bank account (Xero BankSummary report).
+    Returns (total_cash, [{name, balance}]) or (None, []) on any problem."""
+    try:
+        rep = get_report(access_token, tenant_id, "BankSummary")
+        accounts = []
+        for section in rep.get("Reports", [{}])[0].get("Rows", []):
+            for row in section.get("Rows", []):
+                if row.get("RowType") != "Row":
+                    continue
+                cells = row.get("Cells", [])
+                if len(cells) < 2:
+                    continue
+                name = cells[0].get("Value", "").strip()
+                if not name or name.lower().startswith("total"):
+                    continue
+                try:
+                    bal = float(cells[-1]["Value"].replace(",", ""))
+                except (ValueError, KeyError, IndexError):
+                    continue
+                accounts.append({"name": name, "balance": round(bal, 2)})
+        if not accounts:
+            return None, []
+        return round(sum(a["balance"] for a in accounts), 2), accounts
+    except Exception as ex:
+        print(f"[xero] cash position error: {ex}")
+        return None, []
+
+
 def dump_pl_rows(report):
     """Print all P&L row labels — helps identify exact Xero account names."""
     for section in report.get("Reports", [{}])[0].get("Rows", []):
@@ -132,8 +161,12 @@ def run():
     # Wages: sum all rows containing wage/salary/payroll/staff cost keywords
     total_wages = extract_pl_sum(pl, "wage", "salary", "salaries", "payroll", "staff cost")
 
+    cash_total, cash_accounts = get_cash_position(access_token, tenant_id)
+
     return {
         "period":           last_month_start.strftime("%B %Y"),
+        "cash_position":    cash_total,
+        "cash_accounts":    cash_accounts,
         "revenue":          extract_pl_value(pl, "Total Income"),
         "direct_wages":     total_wages,
         "gross_profit":     extract_pl_value(pl, "Gross Profit"),

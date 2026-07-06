@@ -1620,6 +1620,68 @@ function render(data) {
     `);
   }
 
+  // ── Cash flow / runway forecast (30/60/90) ────────────────────
+  (function cashFlow() {
+    const months = kpiData.months || [];   // newest-first
+    const mval = (mo, name) => {
+      for (const cat of (mo.categories || []))
+        for (const it of (cat.items || []))
+          if ((it.name||"").toLowerCase().startsWith(name.toLowerCase())) {
+            const n = parseFloat(String(it.value).replace(/[^0-9.\-]/g,"")); return isNaN(n)?null:n;
+          }
+      return null;
+    };
+    // Net cash per month = revenue − people − non-people − owner pay
+    const nets = months.map(mo => {
+      const rev = mval(mo, "Revenue"); if (rev == null) return null;
+      const p = mval(mo,"Expenses - People")||0, np = mval(mo,"Expenses - Non-People")||0, op = mval(mo,"Owner Pay")||0;
+      return rev - p - np - op;
+    }).filter(v => v != null);
+    // Average recent months, dropping the worst outlier (e.g. April studio move)
+    let avgNet = null;
+    if (nets.length) {
+      const recent = nets.slice(0, 4);
+      const trimmed = recent.length >= 3 ? recent.filter(v => v !== Math.min(...recent)) : recent;
+      avgNet = trimmed.reduce((a,b)=>a+b,0) / trimmed.length;
+    }
+    const cash = (xr.cash_position != null) ? xr.cash_position : null;
+    const gbp = v => (v<0?"-£":"£") + Math.abs(Math.round(v)).toLocaleString("en-IE");
+    const proj = n => cash != null ? gbp(cash + avgNet*n) : (avgNet!=null ? (avgNet*n>=0?"+":"") + gbp(avgNet*n) : "—");
+    const runwayMonths = (cash != null && avgNet != null && avgNet < 0) ? (cash / -avgNet) : null;
+
+    const box = (label, val, sub) => `
+      <div style="flex:1;min-width:120px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+        <div style="font-size:1.3rem;font-weight:800;letter-spacing:-.02em;color:#111">${val}</div>
+        <div style="font-size:.66rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">${label}</div>
+        ${sub?`<div style="font-size:.66rem;color:#c4b5fd;margin-top:2px">${sub}</div>`:""}
+      </div>`;
+
+    push("finances", `
+      <div class="card col-12" style="margin-top:4px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+          <div>
+            <div class="card-title">Cash flow</div>
+            <div class="card-headline" style="margin-bottom:0">Cash Position &amp; Runway</div>
+          </div>
+          ${runwayMonths != null
+            ? `<span class="pill ${runwayMonths<3?'red':runwayMonths<6?'amber':'green'}" style="cursor:default">${runwayMonths.toFixed(1)} months runway</span>`
+            : (avgNet!=null && avgNet>=0 ? `<span class="pill green" style="cursor:default">Cash-positive</span>` : "")}
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 4px">
+          ${box(cash!=null?"Cash now":"Avg monthly net", cash!=null?gbp(cash):(avgNet!=null?(avgNet>=0?"+":"")+gbp(avgNet):"—"), cash!=null? (xr.cash_accounts&&xr.cash_accounts.length? xr.cash_accounts.length+" account"+(xr.cash_accounts.length>1?"s":""):"") : "typical month")}
+          ${box("In 30 days", proj(1), "")}
+          ${box("In 60 days", proj(2), "")}
+          ${box("In 90 days", proj(3), "")}
+        </div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">
+          ${cash!=null
+            ? `Actual bank balance from Xero, projected using recent average monthly net cash (${avgNet!=null?gbp(avgNet)+"/mo":"—"}, April studio-move month excluded). Distinct from paper profit.`
+            : `Showing projected net cash change per period from the KPI sheet. Connect Xero bank balance (BankSummary) to anchor this to your actual cash and get a runway figure.`}
+        </div>
+      </div>
+    `);
+  })();
+
   // Two stacked source cards: XERO on top, KPI Tracking below
   push("finances", `
     <div class="card col-12" style="margin-top:4px">
