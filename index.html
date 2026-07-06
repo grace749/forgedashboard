@@ -87,6 +87,7 @@
     .col-4  { grid-column: span 4; }
     .col-6  { grid-column: span 6; }
     .col-8  { grid-column: span 8; }
+    .col-9  { grid-column: span 9; }
     .col-12 { grid-column: span 12; }
 
     /* ── Tabs ───────────────────────────────────────────────── */
@@ -339,7 +340,7 @@
     .modal-close:hover { background: #3d2464; }
 
     @media (max-width: 960px) {
-      .col-3, .col-4, .col-6, .col-8 { grid-column: span 12; }
+      .col-3, .col-4, .col-6, .col-8, .col-9 { grid-column: span 12; }
     }
   </style>
 </head>
@@ -446,6 +447,79 @@ async function loadAtRiskState() {
     const json = await res.json();
     if (json && typeof json === "object") window._atRiskState = json.state || json || {};
   } catch (e) { /* keep whatever we have */ }
+}
+// ── Generic shared flag store (same endpoint/localStorage as at-risk) ──
+// Used for "Slack replied" ticks and dismissing "Today" hub items, so they
+// sync across coaches when the shared store is configured.
+function sharedGet(key, def) {
+  if (window._atRiskUrl) { const v = window._atRiskState[key]; return v === undefined ? def : v; }
+  return lsGet(key, def);
+}
+async function sharedSet(key, val) {
+  if (window._atRiskUrl) {
+    window._atRiskState[key] = val;
+    try { await fetch(window._atRiskUrl, { method: "POST", body: JSON.stringify({ type: "flag", name: key, state: val }) }); }
+    catch (e) {}
+  } else { lsSet(key, val); }
+}
+// Slack: mark a DM as replied → drops it from the unanswered list
+async function markSlackReplied(id) { await sharedSet("slack:" + id, { replied: true }); renderSlack(); }
+function slackReplied(id) { return !!(sharedGet("slack:" + id, {}) || {}).replied; }
+// Today hub: dismiss an item so it drops off the list
+async function dismissToday(key) { await sharedSet("today:" + key, { done: true }); renderTodayHub(); }
+function todayDismissed(key) { return !!(sharedGet("today:" + key, {}) || {}).done; }
+function renderTodayHub() {
+  const body = document.getElementById("todayBody");
+  if (!body) return;
+  const all = window._todayItems || [];
+  const items = all.filter(it => !todayDismissed(it.key));
+  const head = document.getElementById("todayHeadline");
+  if (head) head.innerHTML = `What needs you right now ${items.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${items.length}</span>` : ""}`;
+  const sevColor = s => s===1 ? "#ef4444" : s===2 ? "#d97706" : "#7c3aed";
+  const sevBg    = s => s===1 ? "#fef2f2" : s===2 ? "#fffbeb" : "#f5f3ff";
+  const tabName  = { home:"Home", members:"Members", retention:"Retention", leads:"Leads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
+  body.innerHTML = items.length ? items.map(it => `
+    <div style="display:flex;align-items:center;gap:10px;padding:11px 14px;background:${sevBg(it.sev)};border:1px solid ${sevColor(it.sev)}22;border-left:3px solid ${sevColor(it.sev)};border-radius:10px;margin-bottom:8px">
+      <button title="Mark done" onclick="dismissToday('${it.key}')" style="flex-shrink:0;width:22px;height:22px;border-radius:6px;border:1.5px solid ${sevColor(it.sev)}66;background:#fff;color:${sevColor(it.sev)};cursor:pointer;font-size:.8rem;line-height:1">✓</button>
+      <button onclick="goTab('${it.tab}')" style="flex:1;min-width:0;text-align:left;display:flex;align-items:center;gap:12px;background:none;border:none;cursor:pointer;padding:0">
+        <span style="font-size:1.05rem">${it.icon}</span>
+        <span style="flex:1;min-width:0">
+          <span style="display:block;font-size:.9rem;font-weight:600;color:#111">${it.label}</span>
+          ${it.detail ? `<span style="display:block;font-size:.74rem;color:#8a8a8a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${it.detail}</span>` : ""}
+        </span>
+        <span style="font-size:.72rem;font-weight:700;color:${sevColor(it.sev)};white-space:nowrap">${tabName[it.tab]||it.tab} →</span>
+      </button>
+    </div>`).join("")
+    : `<div class="brief-empty" style="padding:10px 0;color:#16a34a">Nothing urgent right now — you're on top of it 🎉</div>`;
+}
+// Slack panel — DMs 48h+ and mentions, each tickable as "replied"
+function renderSlack() {
+  const body = document.getElementById("slackBody");
+  if (!body) return;
+  const slack = window._slackData || {};
+  const chip = document.getElementById("slackChip");
+  if (slack.configured === false) {
+    if (chip) chip.innerHTML = "";
+    body.innerHTML = `<p style="color:#ccc;font-size:.8rem;padding:6px 0">Slack not connected — add a <b>SLACK_USER_TOKEN</b> secret.</p>`;
+    return;
+  }
+  const skey = (prefix, x, i) => prefix + ":" + (x.user_id || x.name || "") + ":" + i;
+  const dms = (slack.unreplied_dms || []).map((d,i) => ({ ...d, _k: skey("dm", d, i) })).filter(d => !slackReplied(d._k));
+  const mentions = (slack.mentions || []).map((m,i) => ({ ...m, _k: skey("mn", m, i) })).filter(m => !slackReplied(m._k));
+  const total = dms.length + mentions.length;
+  if (chip) chip.innerHTML = total ? `<span class="brief-chip chip-red">${total}</span>` : `<span class="brief-chip chip-green">clear</span>`;
+  const row = (x, isMention) => `
+    <div style="padding:8px 10px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;margin-bottom:6px">
+      <div style="display:flex;align-items:baseline;gap:6px">
+        <div style="flex:1;min-width:0;font-size:.82rem;font-weight:700;color:#111">${x.name}${isMention && x.channel ? ` <span style="font-size:.68rem;font-weight:500;color:#9ca3af">#${x.channel}</span>` : ""} <span style="font-size:.68rem;font-weight:500;color:#dc2626">${x.hours}h ago</span></div>
+        <button onclick="markSlackReplied('${x._k}')" title="Mark replied" style="flex-shrink:0;font-size:.62rem;font-weight:700;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:3px 7px;cursor:pointer;white-space:nowrap">✓ Replied</button>
+      </div>
+      <div style="font-size:.76rem;color:#6b7280;margin-top:3px">${x.text || ""}</div>
+    </div>`;
+  body.innerHTML = `
+    ${dms.length ? `<div style="font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#ef4444;margin-bottom:5px">DMs unanswered 48h+</div>${dms.map(d => row(d,false)).join("")}` : ""}
+    ${mentions.length ? `<div style="font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#ef4444;margin:8px 0 5px">Mentions of you</div>${mentions.map(m => row(m,true)).join("")}` : ""}
+    ${!total ? `<div style="font-size:.84rem;color:#16a34a;padding:6px 0">✓ All caught up</div>` : ""}`;
 }
 async function markContacted(name) {
   const who = (prompt("Who contacted " + name + "? (e.g. Grace, JoJo, Eilis, Sarah)", "Grace") || "").trim();
@@ -678,30 +752,18 @@ function render(data) {
     if (nb) items.push({ sev: 3, tab: "sop", icon: "📋", label: `${nb} SOP${nb>1?"s":""} still to build`, detail: (sopH.not_built_list||[]).slice(0,2).map(s=>s.task).join(", ") });
 
     items.sort((a,b) => a.sev - b.sev);
-    const sevColor = s => s===1 ? "#ef4444" : s===2 ? "#d97706" : "#7c3aed";
-    const sevBg    = s => s===1 ? "#fef2f2" : s===2 ? "#fffbeb" : "#f5f3ff";
-    const tabName  = { home:"Home", members:"Members", retention:"Retention", leads:"Leads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
-
-    const rows = items.length ? items.map(it => `
-      <button onclick="goTab('${it.tab}')" style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;padding:11px 14px;background:${sevBg(it.sev)};border:1px solid ${sevColor(it.sev)}22;border-left:3px solid ${sevColor(it.sev)};border-radius:10px;cursor:pointer;margin-bottom:8px">
-        <span style="font-size:1.05rem">${it.icon}</span>
-        <span style="flex:1;min-width:0">
-          <span style="display:block;font-size:.9rem;font-weight:600;color:#111">${it.label}</span>
-          ${it.detail ? `<span style="display:block;font-size:.74rem;color:#8a8a8a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${it.detail}</span>` : ""}
-        </span>
-        <span style="font-size:.72rem;font-weight:700;color:${sevColor(it.sev)};white-space:nowrap">${tabName[it.tab]||it.tab} →</span>
-      </button>`).join("")
-      : `<div class="brief-empty" style="padding:10px 0;color:#16a34a">Nothing urgent right now — you're on top of it 🎉</div>`;
+    items.forEach(it => { it.key = it.label.toLowerCase().replace(/[^a-z0-9]+/g,"-"); });
+    window._todayItems = items;
 
     push("home", `
       <div class="card col-12" style="border:1px solid #ede9fe;background:linear-gradient(180deg,#faf9ff,#fff)">
         <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px">
           <div>
             <div class="card-title" style="color:#7c3aed">Today</div>
-            <div class="card-headline" style="margin-bottom:0">What needs you right now ${items.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${items.length}</span>` : ""}</div>
+            <div class="card-headline" style="margin-bottom:0" id="todayHeadline">What needs you right now</div>
           </div>
         </div>
-        ${rows}
+        <div id="todayBody"></div>
       </div>
     `);
   })();
@@ -815,9 +877,19 @@ function render(data) {
     push("home", briefCard("Calendar · next 2 days", "purple", calHtml, "col-4"));
     push("home", briefCard("Needs your attention", "red",    emailHtml,"col-4"));
     // stash the lower row to push after Tasks (so Tasks sits top-right)
+    // Three on one line: New enquiries · Slack · WhatsApp & webchat
+    window._slackData = data.slack || {};
+    window._atRiskUrl = window._atRiskUrl || data.atrisk_url || "";
     window._briefLower = () => {
-      push("home", briefCard("New enquiries (email)", "green", enquiryHtml, "col-6"));
-      push("home", briefCard("WhatsApp &amp; webchat","amber", ghlHtml,     "col-6"));
+      push("home", briefCard("New enquiries (email)", "green", enquiryHtml, "col-4"));
+      push("home", `
+        <div class="card col-4 brief-panel">
+          <div class="brief-col-title brief-col-title--red" style="margin-top:0;display:flex;align-items:center;gap:8px">
+            Slack — needs your reply <span id="slackChip"></span>
+          </div>
+          <div id="slackBody" style="overflow-y:auto;flex:1"></div>
+        </div>`);
+      push("home", briefCard("WhatsApp &amp; webchat","amber", ghlHtml,     "col-4"));
     };
   }
 
@@ -1923,41 +1995,6 @@ function render(data) {
   // Enquiries + WhatsApp row goes below the Calendar / Attention / Tasks row
   if (window._briefLower) window._briefLower();
 
-  // ── Slack panel ────────────────────────────────────────────
-  const slack = data.slack || {};
-  const slackDms = slack.unreplied_dms || [];
-  const slackMentions = slack.mentions || [];
-  const slackTotal = slackDms.length + slackMentions.length;
-  push("home", `
-    <div class="card col-12">
-      <div class="card-headline" style="display:flex;align-items:center;gap:8px">
-        Slack — Needs Your Reply
-        ${slackTotal ? `<span class="brief-chip chip-red">${slackTotal}</span>` : `<span class="brief-chip chip-green">all clear</span>`}
-      </div>
-      ${slack.configured === false ? `
-        <p style="color:#ccc;font-size:.85rem;padding:8px 0">Slack not connected — add a <b>SLACK_USER_TOKEN</b> secret (scopes: im:read, im:history, users:read, search:read).</p>
-      ` : `
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-          <div>
-            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#ef4444;margin-bottom:6px">DMs unanswered 48h+</div>
-            ${slackDms.length ? slackDms.map(d => `
-              <div style="padding:8px 12px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;margin-bottom:6px">
-                <div style="font-size:.85rem;font-weight:700;color:#111">${d.name} <span style="font-size:.7rem;font-weight:500;color:#dc2626">${d.hours}h ago</span></div>
-                <div style="font-size:.78rem;color:#6b7280;margin-top:2px">${d.text}</div>
-              </div>`).join("") : `<div style="font-size:.85rem;color:#16a34a;padding:4px 0">✓ No unanswered DMs</div>`}
-          </div>
-          <div>
-            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#ef4444;margin-bottom:6px">Mentions of you</div>
-            ${slackMentions.length ? slackMentions.map(m => `
-              <div style="padding:8px 12px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;margin-bottom:6px">
-                <div style="font-size:.85rem;font-weight:700;color:#111">${m.name} ${m.channel ? `<span style="font-size:.7rem;font-weight:500;color:#9ca3af">#${m.channel}</span>` : ""} <span style="font-size:.7rem;font-weight:500;color:#dc2626">${m.hours}h ago</span></div>
-                <div style="font-size:.78rem;color:#6b7280;margin-top:2px">${m.text}</div>
-              </div>`).join("") : `<div style="font-size:.85rem;color:#16a34a;padding:4px 0">✓ No recent mentions</div>`}
-          </div>
-        </div>
-      `}
-    </div>
-  `);
 
   // ── 30-Day Action Plan ─────────────────────────────────────
   const kpis = data.growth_sprint?.kpis ?? [];
@@ -2356,10 +2393,13 @@ function render(data) {
     const grid = document.getElementById("grid-" + tab);
     if (grid) grid.innerHTML = cards.join("") || `<div class="card col-12"><p style="color:#ccc;font-size:.88rem;padding:8px 0">Nothing here yet</p></div>`;
   });
-  if (typeof renderAtRisk === "function") {
-    renderAtRisk();                                   // paint immediately
-    loadAtRiskState().then(renderAtRisk);             // then reconcile with shared store
-  }
+  const paintDynamic = () => {
+    if (typeof renderAtRisk === "function")   renderAtRisk();
+    if (typeof renderTodayHub === "function") renderTodayHub();
+    if (typeof renderSlack === "function")    renderSlack();
+  };
+  paintDynamic();                          // paint immediately
+  loadAtRiskState().then(paintDynamic);    // then reconcile with the shared store
 }
 
 function showTaskDetail(gid, name, notes, url, scriptUrl) {

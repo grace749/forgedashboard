@@ -75,7 +75,8 @@ function doGet(e) {
 function doPost(e) {
   try {
     var body = JSON.parse((e && e.postData && e.postData.contents) || '{}');
-    if (body.type === 'atrisk' && body.name) {
+    // Any keyed flag: at-risk ticks, Slack "replied", dismissed "Today" items.
+    if (body.name) {
       _write(String(body.name).trim(), body.state || {});
     }
     return _json({ ok: true });
