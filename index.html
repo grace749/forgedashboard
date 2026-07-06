@@ -610,6 +610,12 @@ function switchTab(name, btn) {
   document.getElementById("tab-" + name).classList.add("active");
   btn.classList.add("active");
 }
+// Jump to a tab from the Today hub (finds the matching tab button)
+function goTab(name) {
+  const btn = [...document.querySelectorAll(".tab-btn")]
+    .find(b => (b.getAttribute("onclick") || "").includes(`switchTab('${name}'`));
+  if (btn) { switchTab(name, btn); window.scrollTo({ top: 0, behavior: "smooth" }); }
+}
 
 // ── Render ────────────────────────────────────────────────────
 function render(data) {
@@ -625,6 +631,72 @@ function render(data) {
   // Each tab gets its own cards array
   const tabs = { home: [], finances: [], members: [], jumpstart: [], leads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
+
+  // ── "Today" hub — the single most urgent thing from every tab ──
+  (function todayHub() {
+    const items = [];
+    const tmH = data.teamup || {};
+    const slk = data.slack || {};
+    const sopH = data.sop || {};
+    const briefH = data.brief || {};
+
+    // At-risk members (respecting contacted/resolved state)
+    const atAll = (tmH.at_risk || []).filter(m => !(atState(m.name).resolved));
+    const atUncontacted = atAll.filter(m => !atState(m.name).contactedBy);
+    if (atUncontacted.length) items.push({ sev: 1, tab: "members",
+      icon: "⚠️", label: `${atUncontacted.length} at-risk member${atUncontacted.length>1?"s":""} not yet contacted`,
+      detail: atUncontacted.slice(0,3).map(m => m.name).join(", ") + (atUncontacted.length>3?"…":"") });
+
+    // Slack — unanswered DMs 48h+ and @mentions
+    const dms = (slk.unreplied_dms || []).length;
+    const mentions = (slk.mentions || []).length;
+    if (dms)      items.push({ sev: 1, tab: "home", icon: "💬", label: `${dms} Slack DM${dms>1?"s":""} unanswered 48h+`, detail: (slk.unreplied_dms||[]).slice(0,2).map(m=>m.name).join(", ") });
+    if (mentions) items.push({ sev: 1, tab: "home", icon: "@", label: `${mentions} Slack mention${mentions>1?"s":""} of you`, detail: "" });
+
+    // Urgent emails
+    const ue = (briefH.urgent || []).length;
+    if (ue) items.push({ sev: 2, tab: "home", icon: "✉️", label: `${ue} urgent email${ue>1?"s":""} to handle`, detail: (briefH.urgent||[]).slice(0,2).map(e=>e.subject||e.from).join(" · ") });
+
+    // New enquiries waiting
+    const enq = (briefH.enquiries || []).length;
+    if (enq) items.push({ sev: 2, tab: "leads", icon: "🌱", label: `${enq} new enquir${enq>1?"ies":"y"} to follow up`, detail: (briefH.enquiries||[]).slice(0,2).map(e=>e.name).join(", ") });
+
+    // Cancellations this month (retention concern)
+    const cx = tmH.cancellations_this_month || 0;
+    if (cx) items.push({ sev: 2, tab: "members", icon: "📉", label: `${cx} member${cx>1?"s":""} leaving this month`, detail: `Churn ${tmH.churn_rate ?? "—"}%` });
+
+    // SOPs not built
+    const nb = (sopH.stats && sopH.stats.not_built) || (sopH.not_built_list || []).length;
+    if (nb) items.push({ sev: 3, tab: "sop", icon: "📋", label: `${nb} SOP${nb>1?"s":""} still to build`, detail: (sopH.not_built_list||[]).slice(0,2).map(s=>s.task).join(", ") });
+
+    items.sort((a,b) => a.sev - b.sev);
+    const sevColor = s => s===1 ? "#ef4444" : s===2 ? "#d97706" : "#7c3aed";
+    const sevBg    = s => s===1 ? "#fef2f2" : s===2 ? "#fffbeb" : "#f5f3ff";
+    const tabName  = { home:"Home", members:"Members", leads:"Leads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
+
+    const rows = items.length ? items.map(it => `
+      <button onclick="goTab('${it.tab}')" style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;padding:11px 14px;background:${sevBg(it.sev)};border:1px solid ${sevColor(it.sev)}22;border-left:3px solid ${sevColor(it.sev)};border-radius:10px;cursor:pointer;margin-bottom:8px">
+        <span style="font-size:1.05rem">${it.icon}</span>
+        <span style="flex:1;min-width:0">
+          <span style="display:block;font-size:.9rem;font-weight:600;color:#111">${it.label}</span>
+          ${it.detail ? `<span style="display:block;font-size:.74rem;color:#8a8a8a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${it.detail}</span>` : ""}
+        </span>
+        <span style="font-size:.72rem;font-weight:700;color:${sevColor(it.sev)};white-space:nowrap">${tabName[it.tab]||it.tab} →</span>
+      </button>`).join("")
+      : `<div class="brief-empty" style="padding:10px 0;color:#16a34a">Nothing urgent right now — you're on top of it 🎉</div>`;
+
+    push("home", `
+      <div class="card col-12" style="border:1px solid #ede9fe;background:linear-gradient(180deg,#faf9ff,#fff)">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+          <div>
+            <div class="card-title" style="color:#7c3aed">Today</div>
+            <div class="card-headline" style="margin-bottom:0">What needs you right now ${items.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${items.length}</span>` : ""}</div>
+          </div>
+        </div>
+        ${rows}
+      </div>
+    `);
+  })();
 
   // ── Daily Brief ────────────────────────────────────────────
   const br = data.brief || {};
