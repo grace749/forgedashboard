@@ -70,14 +70,22 @@ def _pretty_cat(cat):
     return {"Diy": "DIY", "Tv": "TV", "Atm": "ATM"}.get(name, name)
 
 
+# Months (newest first) that carry a full per-transaction list in data.json so
+# the dashboard can drill into every category and re-categorise. Older months
+# keep just the category totals to hold file size down.
+_TX_DETAIL_MONTHS = 7
+
+
 def _monthly_series(session, acc_uid, cat_uid, months=13):
-    """Monthly revenue (money IN), expenses (money OUT), profit and a full
-    per-category breakdown from the Starling transaction feed. One query per
-    month keeps ranges small/reliable. Needs transaction:read; months whose
-    query fails (e.g. history beyond the token's reach) are skipped rather
-    than sinking the whole series."""
+    """Monthly revenue (money IN), expenses (money OUT), profit, a full
+    per-category breakdown, and (recent months) every transaction from the
+    Starling feed. One query per month keeps ranges small/reliable. Needs
+    transaction:read; months whose query fails (e.g. history beyond the
+    token's reach) are skipped rather than sinking the whole series."""
     series = []
-    for label, start, end in _month_starts(months):
+    month_list = _month_starts(months)
+    detail_from = len(month_list) - _TX_DETAIL_MONTHS   # last N months get tx lists
+    for idx, (label, start, end) in enumerate(month_list):
         frm = start.strftime("%Y-%m-%dT%H:%M:%S.000Z")
         to  = end.strftime("%Y-%m-%dT%H:%M:%S.000Z")
         try:
@@ -88,13 +96,26 @@ def _monthly_series(session, acc_uid, cat_uid, months=13):
             continue
         ins = outs = 0.0
         cats_in, cats_out = {}, {}
+        txs = []
         for it in feed.get("feedItems", []):
             if it.get("status") == "DECLINED":
                 continue
-            if it.get("source") in _NON_TRADING_SOURCES:   # savings/own-account transfers aren't income/expense
-                continue
+            internal = it.get("source") in _NON_TRADING_SOURCES   # own-money moves (Spaces etc.)
             amt = _pounds(it.get("amount"))
             cat = _pretty_cat(it.get("spendingCategory"))
+            if idx >= detail_from:
+                txs.append({
+                    "uid":       it.get("feedItemUid"),
+                    "date":      (it.get("transactionTime") or "")[:10],
+                    "name":      it.get("counterPartyName") or it.get("reference") or "—",
+                    "ref":       (it.get("reference") or "")[:60],
+                    "amount":    amt,
+                    "direction": it.get("direction"),
+                    "category":  cat,
+                    "internal":  internal,   # excluded from totals (savings/own-account transfer)
+                })
+            if internal:
+                continue
             if it.get("direction") == "IN":
                 ins += amt
                 cats_in[cat] = cats_in.get(cat, 0.0) + amt
@@ -103,7 +124,7 @@ def _monthly_series(session, acc_uid, cat_uid, months=13):
                 cats_out[cat] = cats_out.get(cat, 0.0) + amt
         rev, exp = round(ins, 2), round(outs, 2)
         profit = round(rev - exp, 2)
-        series.append({
+        entry = {
             "month":      label,
             "revenue":    rev,
             "expenses":   exp,
@@ -113,7 +134,10 @@ def _monthly_series(session, acc_uid, cat_uid, months=13):
                 "in":  sorted(([{"name": k, "amount": round(v, 2)} for k, v in cats_in.items()]),  key=lambda x: -x["amount"]),
                 "out": sorted(([{"name": k, "amount": round(v, 2)} for k, v in cats_out.items()]), key=lambda x: -x["amount"]),
             },
-        })
+        }
+        if idx >= detail_from:
+            entry["transactions"] = sorted(txs, key=lambda t: t["date"], reverse=True)
+        series.append(entry)
     return series
 
 
