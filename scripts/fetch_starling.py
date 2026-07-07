@@ -41,6 +41,57 @@ def _monthly_equivalent(so):
     return amt / interval   # MONTHLY (or unknown → treat as monthly)
 
 
+def _month_starts(months):
+    """Return [(YYYY-MM, start_dt, end_dt), …] for the last `months` calendar months."""
+    now = datetime.datetime.now(datetime.timezone.utc)
+    y, m = now.year, now.month
+    out = []
+    for _ in range(months):
+        start = datetime.datetime(y, m, 1, tzinfo=datetime.timezone.utc)
+        ny, nm = (y + 1, 1) if m == 12 else (y, m + 1)
+        end = datetime.datetime(ny, nm, 1, tzinfo=datetime.timezone.utc)
+        out.append((f"{y:04d}-{m:02d}", start, min(end, now)))
+        m -= 1
+        if m == 0:
+            m = 12; y -= 1
+    return list(reversed(out))   # oldest → newest
+
+
+def _monthly_series(session, acc_uid, cat_uid, months=13):
+    """Monthly revenue (money IN), expenses (money OUT) and profit from the
+    Starling transaction feed. One query per month keeps ranges small/reliable.
+    Needs transaction:read; returns [] if the scope is missing."""
+    series = []
+    for label, start, end in _month_starts(months):
+        frm = start.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        to  = end.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        try:
+            feed = _get(session, f"/api/v2/feed/account/{acc_uid}/category/{cat_uid}/transactions-between",
+                        {"minTransactionTimestamp": frm, "maxTransactionTimestamp": to})
+        except Exception as ex:
+            print(f"[starling] monthly feed unavailable (scope?): {ex}")
+            return []
+        ins = outs = 0.0
+        for it in feed.get("feedItems", []):
+            if it.get("status") == "DECLINED":
+                continue
+            amt = _pounds(it.get("amount"))
+            if it.get("direction") == "IN":
+                ins += amt
+            elif it.get("direction") == "OUT":
+                outs += amt
+        rev, exp = round(ins, 2), round(outs, 2)
+        profit = round(rev - exp, 2)
+        series.append({
+            "month":      label,
+            "revenue":    rev,
+            "expenses":   exp,
+            "profit":     profit,
+            "profit_pct": round(profit / rev * 100, 1) if rev else None,
+        })
+    return series
+
+
 def run():
     token = os.environ.get("STARLING_ACCESS_TOKEN")
     if not token:
@@ -110,10 +161,14 @@ def run():
 
         net_30 = round(cash_in_30 - cash_out_30, 2) if cash_in_30 is not None else None
 
+        # Monthly revenue/expenses/profit history (replaces the manual KPI sheet)
+        monthly = _monthly_series(s, acc_uid, cat_uid) if cash_in_30 is not None else []
+
         # In Starling, money in Spaces/pots is held SEPARATELY from the main
         # balance, so working cash = main balance, and total = main + pots.
         return {
             "configured":        True,
+            "monthly":           monthly,
             "account_name":      acc.get("name", "Main"),
             "cash_position":     cash,          # working cash (main balance, excl. pots)
             "available":         available,

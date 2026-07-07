@@ -1938,18 +1938,38 @@ function render(data) {
     </div>
   `);
 
-  // Previous months (same year) as compact KPI cards — key figures each
-  const kpiMonths = (kpiData.months || []).slice(1, 7);   // skip latest (shown above)
-  if (kpiMonths.length) {
-    const pick = (cats, name) => {
-      for (const c of cats) for (const it of c.items)
-        if ((it.name||"").toLowerCase().includes(name)) return it.value;
-      return "—";
-    };
+  // Monthly KPI cards — LIVE from Starling (revenue/profit) + TeamUp (active/churn),
+  // replacing the manual KPI sheet. Falls back to the sheet only if Starling is off.
+  const stMonthly = (data.starling && data.starling.monthly) || [];
+  const histByMonth = {}; (tm.member_history || []).forEach(h => { histByMonth[h.month] = h; });
+  const thisYm = new Date().toISOString().slice(0,7);
+  const monLong = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month:"long", year:"numeric" });
+  if (stMonthly.length) {
+    // newest first, exclude the current (incomplete) month
+    const live = [...stMonthly].filter(m => m.month !== thisYm).sort((a,b)=>b.month.localeCompare(a.month)).slice(0,6);
+    live.forEach(m => {
+      const h = histByMonth[m.month] || {};
+      const profitCol = (m.profit||0) >= 0 ? "green" : "red";
+      push("finances", `
+        <div class="card col-4">
+          <div class="card-title">Live · Starling + TeamUp</div>
+          <div class="card-headline">${monLong(m.month)}</div>
+          <div class="stat-row"><span class="stat-label">Revenue (money in)</span><span class="stat-val">${fmtGbp(Math.round(m.revenue))}</span></div>
+          <div class="stat-row"><span class="stat-label">Expenses (money out)</span><span class="stat-val">${fmtGbp(Math.round(m.expenses))}</span></div>
+          <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-val ${profitCol}">${fmtGbp(Math.round(m.profit))}</span></div>
+          <div class="stat-row"><span class="stat-label">Profit %</span><span class="stat-val ${profitCol}">${m.profit_pct != null ? m.profit_pct + "%" : "—"}</span></div>
+          <div class="stat-row"><span class="stat-label">Active clients</span><span class="stat-val">${h.active ?? "—"}</span></div>
+          <div class="stat-row"><span class="stat-label">Churn %</span><span class="stat-val ${(h.churn||0)>3?'red':'green'}">${h.churn != null ? h.churn + "%" : "—"}</span></div>
+        </div>`);
+    });
+  } else {
+    // Fallback: manual KPI sheet (until Starling transaction history is available)
+    const kpiMonths = (kpiData.months || []).slice(1, 7);
+    const pick = (cats, name) => { for (const c of cats) for (const it of c.items) if ((it.name||"").toLowerCase().includes(name)) return it.value; return "—"; };
     kpiMonths.forEach(mo => {
       push("finances", `
         <div class="card col-4">
-          <div class="card-title">KPI Tracking</div>
+          <div class="card-title">KPI Tracking · sheet</div>
           <div class="card-headline">${mo.period}</div>
           <div class="stat-row"><span class="stat-label">Revenue</span><span class="stat-val">${pick(mo.categories,"revenue")}</span></div>
           <div class="stat-row"><span class="stat-label">Total Profit</span><span class="stat-val">${pick(mo.categories,"total profit")}</span></div>
