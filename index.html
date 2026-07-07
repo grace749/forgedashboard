@@ -538,18 +538,34 @@ async function markContacted(name) {
   await atSave(name, s); renderAtRisk();
 }
 async function markResolved(name) {
-  const s = { ...atState(name), resolved: true, resolvedDate: new Date().toISOString().slice(0,10) };
+  // Scope the resolve to THIS absence episode (their current last session), so if
+  // they come back and lapse again later they reappear rather than being hidden forever.
+  const mem = (window._atRiskData || []).find(x => (x.name||"").toLowerCase() === (name||"").toLowerCase());
+  const s = { ...atState(name), resolved: true, resolvedSeen: mem ? mem.last_seen : null, resolvedDate: new Date().toISOString().slice(0,10) };
   await atSave(name, s); renderAtRisk();
 }
 async function undoAtRisk(name) { await atSave(name, {}); renderAtRisk(); }
+function _isJumpstartMember(m) { return /jumpstart|trial|strong ?start|30 ?day|new you/i.test(m.membership || ""); }
+// Hide only if resolved FOR THIS episode (matching current last session) — old
+// permanent resolves (no resolvedSeen) and new episodes reappear.
+function _atResolved(m) { const s = atState(m.name); return s.resolved && s.resolvedSeen === m.last_seen; }
 function renderAtRisk() {
-  const body = document.getElementById("atRiskBody");
-  const count = document.getElementById("atRiskCount");
-  if (!body) return;
-  const rows = (window._atRiskData || []).filter(m => !(atState(m.name).resolved));
-  if (count) count.textContent = rows.length + " absent 10+ days";
-  if (!rows.length) { body.innerHTML = `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">No at-risk members right now 🎉</p>`; return; }
-  body.innerHTML = rows.map(m => {
+  const all = (window._atRiskData || []).filter(m => !_atResolved(m));
+  const paint = (bodyId, countId, rows, emptyMsg) => {
+    const body = document.getElementById(bodyId);
+    if (!body) return;
+    const count = document.getElementById(countId);
+    if (count) count.textContent = rows.length;
+    if (!rows.length) { body.innerHTML = `<p style="color:#16a34a;font-size:.85rem;padding:8px 0">${emptyMsg}</p>`; return; }
+    body.innerHTML = rows.map(_atCard).join("");
+  };
+  paint("atRiskBodyFull", "atRiskCountFull", all.filter(m => !_isJumpstartMember(m)), "No full members at risk 🎉");
+  paint("atRiskBodyJs",   "atRiskCountJs",   all.filter(_isJumpstartMember), "No Jumpstarters at risk 🎉");
+  // legacy single container (if present)
+  const legacy = document.getElementById("atRiskBody");
+  if (legacy) { const c = document.getElementById("atRiskCount"); if (c) c.textContent = all.length + " absent 10+ days"; legacy.innerHTML = all.length ? all.map(_atCard).join("") : `<p style="color:#16a34a;font-size:.88rem;padding:8px 0">No at-risk members right now 🎉</p>`; }
+}
+function _atCard(m) {
     const s = atState(m.name);
     const nm = (m.name||"").replace(/'/g,"\\'");
     const contacted = s.contactedBy
@@ -575,7 +591,6 @@ function renderAtRisk() {
       </div>
       <div onclick="event.stopPropagation()">${actions}</div>
     </div>`;
-  }).join("");
 }
 // Add / edit the reason a member is at risk (e.g. "On holiday 14 days", "Foot injury")
 async function setAtRiskReason(name) {
@@ -827,7 +842,7 @@ function render(data) {
     const briefH = data.brief || {};
 
     // At-risk members (respecting contacted/resolved state)
-    const atAll = (tmH.at_risk || []).filter(m => !(atState(m.name).resolved));
+    const atAll = (tmH.at_risk || []).filter(m => !(typeof _atResolved === "function" ? _atResolved(m) : atState(m.name).resolved));
     const atUncontacted = atAll.filter(m => !atState(m.name).contactedBy);
     if (atUncontacted.length) items.push({ sev: 1, tab: "retention",
       icon: "⚠️", label: `${atUncontacted.length} at-risk member${atUncontacted.length>1?"s":""} not yet contacted`,
@@ -1113,18 +1128,20 @@ function render(data) {
         <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">${srcLabel} — members lost (incl. trials that didn't convert) · target &lt;3%</div>
       </div>`);
 
-    // At-risk members with per-member outreach action (AI retention agent)
+    // At-risk members — split into full members and Jumpstarters
     push("retention", `<div class="sec-divider"><span class="sec-label">At-Risk Members</span><span class="sec-line"></span></div>`);
-    push("retention", `
-      <div class="card col-12" style="margin-top:4px">
-        <div class="card-title">Retention agent</div>
+    const atCard = (title, bodyId, countId, chipBg, chipCol) => `
+      <div class="card col-6" style="margin-top:4px">
+        <div class="card-title">Retention</div>
         <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
-          Members at risk — reach out
-          <span id="atRiskCount" style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:#fef2f2;color:#ef4444"></span>
+          ${title}
+          <span id="${countId}" style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:${chipBg};color:${chipCol}"></span>
         </div>
-        <div id="atRiskBody" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:6px;max-height:420px;overflow-y:auto"></div>
-        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Flagged after 10+ days with no class/PT. Tick “Mark contacted” when a coach reaches out, then “No longer at risk” to clear them — synced across all coaches.</div>
-      </div>`);
+        <div id="${bodyId}" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;max-height:460px;overflow-y:auto"></div>
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Click a card to open the profile · tick “Mark contacted”, then “No longer at risk” to clear · add a “Why at risk?” reason.</div>
+      </div>`;
+    push("retention", atCard("At-Risk Full Members", "atRiskBodyFull", "atRiskCountFull", "#fef2f2", "#ef4444"));
+    push("retention", atCard("At-Risk Jumpstarters", "atRiskBodyJs", "atRiskCountJs", "#fffbeb", "#d97706"));
   })();
 
   // ── ACTIVE FULL MEMBERS ───────────────────────────────────────
