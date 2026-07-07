@@ -653,7 +653,7 @@ function showMemberDetail(name) {
     const parts = [`last ${dt(ib.last_scan)}`];
     if (ib.overdue) parts.push(`<span style="color:#ef4444">${Math.abs(ib.days_to_due)}d overdue</span>`);
     else if (ib.next_due) parts.push(`due ${dt(ib.next_due)}`);
-    if (ib.weight != null) parts.push(`${ib.weight}kg`);
+    if (ib.weight != null) parts.push(`${ib.weight} lb`);
     if (ib.pbf != null) parts.push(`${ib.pbf}% fat`);
     ibVal = parts.join(" · ");
   }
@@ -1482,8 +1482,8 @@ function render(data) {
               <tr style="font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:#bbb;position:sticky;top:0;background:#fff">
                 <th style="text-align:left;padding:6px 8px 6px 0;border-bottom:2px solid #f0f0f5">Member</th>
                 <th style="text-align:left;padding:6px 8px;border-bottom:2px solid #f0f0f5">Last scan</th>
-                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Weight</th>
-                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Muscle (SMM)</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Weight (lb)</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Muscle SMM (lb)</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Body fat %</th>
                 <th style="text-align:right;padding:6px 0 6px 8px;border-bottom:2px solid #f0f0f5">Next due</th>
               </tr>
