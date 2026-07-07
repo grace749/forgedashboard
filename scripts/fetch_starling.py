@@ -14,6 +14,13 @@ import os, datetime, requests
 
 BASE = "https://api.starlingbank.com"
 
+# Feed sources that are NOT trading income/expense — money moved between the
+# business's own accounts/savings pots. Excluded from cash-in/out figures so a
+# transfer from savings (e.g. funding the April studio move) isn't counted as
+# revenue. NOTE: transfers in from a personal/other account still can't be told
+# apart from customer income here — true revenue comes from GoCardless/Stripe.
+_NON_TRADING_SOURCES = {"INTERNAL_TRANSFER"}
+
 
 def _get(session, path, params=None):
     r = session.get(f"{BASE}{path}", params=params or {}, timeout=30)
@@ -74,6 +81,8 @@ def _monthly_series(session, acc_uid, cat_uid, months=13):
         ins = outs = 0.0
         for it in feed.get("feedItems", []):
             if it.get("status") == "DECLINED":
+                continue
+            if it.get("source") in _NON_TRADING_SOURCES:   # savings/own-account transfers aren't income/expense
                 continue
             amt = _pounds(it.get("amount"))
             if it.get("direction") == "IN":
@@ -149,6 +158,8 @@ def run():
             ins = outs = 0.0
             for it in feed.get("feedItems", []):
                 if it.get("status") == "DECLINED":
+                    continue
+                if it.get("source") in _NON_TRADING_SOURCES:
                     continue
                 amt = _pounds(it.get("amount"))
                 if it.get("direction") == "IN":

@@ -1954,12 +1954,12 @@ function render(data) {
         <div class="card col-4">
           <div class="card-title">Live · Starling + TeamUp</div>
           <div class="card-headline">${monLong(m.month)}</div>
-          <div class="stat-row"><span class="stat-label">Revenue (money in)</span><span class="stat-val">${fmtGbp(Math.round(m.revenue))}</span></div>
-          <div class="stat-row"><span class="stat-label">Expenses (money out)</span><span class="stat-val">${fmtGbp(Math.round(m.expenses))}</span></div>
-          <div class="stat-row"><span class="stat-label">Net profit</span><span class="stat-val ${profitCol}">${fmtGbp(Math.round(m.profit))}</span></div>
-          <div class="stat-row"><span class="stat-label">Profit %</span><span class="stat-val ${profitCol}">${m.profit_pct != null ? m.profit_pct + "%" : "—"}</span></div>
+          <div class="stat-row"><span class="stat-label">Cash in</span><span class="stat-val">${fmtGbp(Math.round(m.revenue))}</span></div>
+          <div class="stat-row"><span class="stat-label">Cash out</span><span class="stat-val">${fmtGbp(Math.round(m.expenses))}</span></div>
+          <div class="stat-row"><span class="stat-label">Net cash</span><span class="stat-val ${profitCol}">${fmtGbp(Math.round(m.profit))}</span></div>
           <div class="stat-row"><span class="stat-label">Active clients</span><span class="stat-val">${h.active ?? "—"}</span></div>
           <div class="stat-row"><span class="stat-label">Churn %</span><span class="stat-val ${(h.churn||0)>3?'red':'green'}">${h.churn != null ? h.churn + "%" : "—"}</span></div>
+          <div style="font-size:.64rem;color:#c4b5fd;margin-top:6px">Bank cash flow, savings transfers excluded · true membership revenue → GoCardless/Stripe next</div>
         </div>`);
     });
   } else {
