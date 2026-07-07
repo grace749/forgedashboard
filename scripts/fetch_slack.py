@@ -50,6 +50,23 @@ def _call(method, token, **params):
         return json.loads(resp.read())
 
 
+def _grace_replied_after(token, channel_id, after_ts, thread_ts=None):
+    """True if Grace has posted in this channel/thread AFTER the given message."""
+    try:
+        if thread_ts:
+            r = _call("conversations.replies", token, channel=channel_id,
+                      ts=thread_ts, oldest=after_ts, limit=50)
+        else:
+            r = _call("conversations.history", token, channel=channel_id,
+                      oldest=after_ts, limit=30)
+        for m in r.get("messages", []):
+            if float(m.get("ts", 0)) > float(after_ts) and m.get("user") == GRACE_ID:
+                return True
+    except Exception as ex:
+        print(f"[slack] reply-check error: {ex}")
+    return False
+
+
 def _user_names(token, ids):
     names = {}
     for uid in ids:
@@ -89,6 +106,11 @@ def run():
             if (last.get("user") and last["user"] != GRACE_ID
                     and ts >= window_start
                     and not _is_noise_message(last)):
+                # If Grace replied in a thread on that last message, it's handled
+                if (last.get("thread_ts") or last.get("reply_count")) and \
+                        _grace_replied_after(token, im["id"], last["ts"],
+                                             last.get("thread_ts") or last["ts"]):
+                    continue
                 other_ids.add(im.get("user"))
                 pending.append({
                     "user_id": im.get("user"),
@@ -113,6 +135,12 @@ def run():
             if ts < now - WINDOW_HOURS * 3600:   # only the last 48 hours
                 continue
             if _is_noise_message(m):             # skip bot/automated mentions
+                continue
+            if m.get("user") == GRACE_ID:        # her own message mentioning herself
+                continue
+            chan_id = (m.get("channel") or {}).get("id", "")
+            # Skip if Grace has already replied after this mention (in-channel or in-thread)
+            if chan_id and _grace_replied_after(token, chan_id, m.get("ts", 0), m.get("thread_ts")):
                 continue
             mentions.append({
                 "name": (m.get("username") or m.get("user") or "Someone"),
