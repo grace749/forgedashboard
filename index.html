@@ -561,15 +561,29 @@ function renderAtRisk() {
     const lastSess = m.last_seen
       ? `Last session ${fmtShort(m.last_seen)}${m.days_absent != null ? ` · ${m.days_absent}d ago` : ""}`
       : "No session on record";
-    return `<div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
+    const reason = s.reason
+      ? `<div style="font-size:.72rem;color:#b45309;background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:4px 8px;margin-top:5px;display:flex;gap:6px;align-items:flex-start">
+           <span>ℹ️</span><span style="flex:1">${s.reason}</span>
+           <button onclick="event.stopPropagation();setAtRiskReason('${nm}')" style="font-size:.6rem;color:#b45309;background:none;border:none;cursor:pointer;text-decoration:underline;flex-shrink:0">edit</button></div>`
+      : `<button onclick="event.stopPropagation();setAtRiskReason('${nm}')" style="font-size:.64rem;font-weight:600;color:#d97706;background:#fffbeb;border:1px dashed #fde68a;border-radius:6px;padding:3px 9px;cursor:pointer;margin-top:5px">＋ Why at risk?</button>`;
+    return `<div onclick="showMemberDetail('${nm}')" style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;cursor:pointer" title="Open ${m.name}'s profile">
       <div style="flex:1;min-width:0">
-        <div style="font-size:.85rem;font-weight:600;color:#7c3aed;cursor:pointer" onclick="showMemberDetail('${nm}')" title="Open profile">${m.name}</div>
+        <div style="font-size:.85rem;font-weight:600;color:#7c3aed">${m.name}</div>
         <div style="font-size:.72rem;color:#ef4444;font-weight:600">${lastSess}</div>
+        ${reason}
         ${contacted}
       </div>
-      ${actions}
+      <div onclick="event.stopPropagation()">${actions}</div>
     </div>`;
   }).join("");
+}
+// Add / edit the reason a member is at risk (e.g. "On holiday 14 days", "Foot injury")
+async function setAtRiskReason(name) {
+  const cur = atState(name).reason || "";
+  const r = (prompt("Why is " + name + " at risk / absent?\ne.g. \"On holiday 14 days\" · \"Foot injury — physio, back in 10 days\"", cur) || "").trim();
+  const s = { ...atState(name) };
+  if (r) s.reason = r; else delete s.reason;
+  await atSave(name, s); renderAtRisk();
 }
 
 // ── Member directory: manual goal (stored locally) ────────────
