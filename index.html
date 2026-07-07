@@ -1050,10 +1050,19 @@ function render(data) {
     push("retention", `
       <div class="card col-6">
         <div class="card-title">Churn</div>
-        <div class="card-headline">Churn Rate Over Time</div>
-        <div class="big-kpi" style="margin:4px 0"><div class="number">${curChurn != null ? curChurn.v + "%" : (tm.churn_rate ?? "—") + "%"}</div><div class="sublabel">Latest monthly attrition</div></div>
+        <div class="card-headline">Churn &amp; Cancellations</div>
+        <div style="display:flex;gap:10px;margin:8px 0 4px">
+          <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+            <div style="font-size:1.6rem;font-weight:800;color:#dc2626;letter-spacing:-.02em">${tm.cancelled_ytd ?? "—"}</div>
+            <div style="font-size:.65rem;color:#9ca3af;font-weight:600;text-transform:uppercase">Cancellations · year to date</div>
+          </div>
+          <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+            <div style="font-size:1.6rem;font-weight:800;color:${(tm.churn_rate||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</div>
+            <div style="font-size:.65rem;color:#9ca3af;font-weight:600;text-transform:uppercase">Set to cancel now</div>
+          </div>
+        </div>
         ${miniBars(churnSeries, "#ef4444", "%")}
-        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">${srcLabel} — members lost (incl. trials that didn't convert)</div>
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">${srcLabel} — members lost (incl. trials that didn't convert) · target &lt;3%</div>
       </div>`);
 
     // At-risk members with per-member outreach action (AI retention agent)
@@ -1231,7 +1240,7 @@ function render(data) {
 
   // ── Membership Snapshot ───────────────────────────────────────
   push("members", `
-    <div class="card col-3">
+    <div class="card col-6">
       <div class="card-title">Members</div>
       <div class="card-headline">Membership Snapshot</div>
       <div class="big-kpi">
@@ -1271,50 +1280,10 @@ function render(data) {
     </div>
   `);
 
-  // ── Churn & Cancellations (YTD total + month-to-month) ────────
-  // Monthly churn comes from the KPI sheet's Attrition % (real tracked data).
-  const kpiMonthsForChurn = (data.kpi?.months || []);
-  const churnSeries = kpiMonthsForChurn.map(mo => {
-    let v = "";
-    (mo.categories || []).forEach(c => c.items.forEach(it => {
-      if ((it.name||"").toLowerCase().includes("churn") || (it.name||"").toLowerCase().includes("attrition")) v = it.value;
-    }));
-    const num = parseFloat((v||"").replace("%","")) || 0;
-    return { month: mo.period, value: v || "—", num };
-  }).slice(0, 8).reverse();   // oldest → newest, last 8
-  const maxChurn = Math.max(...churnSeries.map(c => c.num), 1);
-  push("members", `
-    <div class="card col-4">
-      <div class="card-title">Retention</div>
-      <div class="card-headline">Churn & Cancellations</div>
-      <div style="display:flex;gap:10px;margin-bottom:14px">
-        <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-          <div style="font-size:1.6rem;font-weight:800;color:#dc2626;letter-spacing:-.02em">${tm.cancelled_ytd ?? "—"}</div>
-          <div style="font-size:.65rem;color:#9ca3af;font-weight:600;text-transform:uppercase">Cancellations · year to date</div>
-        </div>
-        <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-          <div style="font-size:1.6rem;font-weight:800;color:${(tm.churn_rate||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</div>
-          <div style="font-size:.65rem;color:#9ca3af;font-weight:600;text-transform:uppercase">Current churn</div>
-        </div>
-      </div>
-      ${churnSeries.length ? `
-        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none">Churn month to month</div>
-        ${churnSeries.map(c => `
-          <div style="display:flex;align-items:center;gap:8px;padding:3px 0">
-            <div style="min-width:64px;font-size:.78rem;color:#374151">${c.month.split(" ")[0]}</div>
-            <div style="flex:1;height:8px;background:#f3f4f6;border-radius:4px;overflow:hidden">
-              <div style="height:100%;width:${Math.round(c.num/maxChurn*100)}%;background:${c.num>3?'#ef4444':'#f59e0b'};border-radius:4px"></div>
-            </div>
-            <div style="min-width:44px;text-align:right;font-size:.78rem;font-weight:700;color:${c.num>3?'#dc2626':'#6b7280'}">${c.value}</div>
-          </div>`).join("")}
-        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Monthly churn from your KPI sheet · target &lt;3%</div>
-      ` : `<div class="brief-empty" style="padding:6px 0">No monthly churn data — check the KPI sheet</div>`}
-    </div>
-  `);
-
-  // ── Paused Members ────────────────────────────────────────────
+  // ── Paused Members (moved to Retention tab) ───────────────────
+  push("retention", `<div class="sec-divider"><span class="sec-label">Membership Status</span><span class="sec-line"></span></div>`);
   const pausedMembers = tm.paused_members || [];
-  push("members", `
+  push("retention", `
     <div class="card col-4">
       <div class="card-title">Membership status</div>
       <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
@@ -1377,9 +1346,9 @@ function render(data) {
   const lapsedFull   = tm.lapsed_full_by_month   || [];
   const lapsedTrials = tm.lapsed_trials_by_month || [];
 
-  memberSection("Lapsed Members & Trials");
-  push("members", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-6"));
-  push("members", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year", "col-6"));
+  push("retention", `<div class="sec-divider"><span class="sec-label">Lapsed Members &amp; Trials</span><span class="sec-line"></span></div>`);
+  push("retention", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-6"));
+  push("retention", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year", "col-6"));
 
 
   memberSection("Class Capacity & Popularity");
