@@ -511,16 +511,18 @@ function renderSlack() {
     body.innerHTML = `<p style="color:#ccc;font-size:.8rem;padding:6px 0">Slack not connected — add a <b>SLACK_USER_TOKEN</b> secret.</p>`;
     return;
   }
-  const skey = (prefix, x, i) => prefix + ":" + (x.user_id || x.name || "") + ":" + i;
-  const dms = (slack.unreplied_dms || []).map((d,i) => ({ ...d, _k: skey("dm", d, i) })).filter(d => !slackReplied(d._k));
-  const mentions = (slack.mentions || []).map((m,i) => ({ ...m, _k: skey("mn", m, i) })).filter(m => !slackReplied(m._k));
+  // Stable key from sender + message text (NOT list position) so a dismissal sticks across refreshes
+  const _hash = s => { let h = 0; s = String(s||""); for (let i=0;i<s.length;i++){ h = (h*31 + s.charCodeAt(i))|0; } return Math.abs(h).toString(36); };
+  const skey = (prefix, x) => prefix + ":" + (x.user_id || x.name || "") + ":" + _hash((x.text||"").slice(0,60));
+  const dms = (slack.unreplied_dms || []).map(d => ({ ...d, _k: skey("dm", d) })).filter(d => !slackReplied(d._k));
+  const mentions = (slack.mentions || []).map(m => ({ ...m, _k: skey("mn", m) })).filter(m => !slackReplied(m._k));
   const total = dms.length + mentions.length;
   if (chip) chip.innerHTML = total ? `<span class="brief-chip chip-red">${total}</span>` : `<span class="brief-chip chip-green">clear</span>`;
   const row = (x, isMention) => `
     <div style="padding:8px 10px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;margin-bottom:6px">
       <div style="display:flex;align-items:baseline;gap:6px">
         <div style="flex:1;min-width:0;font-size:.82rem;font-weight:700;color:#111">${x.name}${isMention && x.channel ? ` <span style="font-size:.68rem;font-weight:500;color:#9ca3af">#${x.channel}</span>` : ""} <span style="font-size:.68rem;font-weight:500;color:#dc2626">${x.hours}h ago</span></div>
-        <button onclick="markSlackReplied('${x._k}')" title="Mark replied" style="flex-shrink:0;font-size:.62rem;font-weight:700;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:3px 7px;cursor:pointer;white-space:nowrap">✓ Replied</button>
+        <button onclick="markSlackReplied('${x._k}')" title="I've replied — remove this" style="flex-shrink:0;font-size:.62rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:6px;padding:3px 8px;cursor:pointer;white-space:nowrap">Done · hide</button>
       </div>
       <div style="font-size:.76rem;color:#6b7280;margin-top:3px">${x.text || ""}</div>
     </div>`;

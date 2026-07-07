@@ -28,7 +28,9 @@ def _is_noise_message(msg):
         return True
     text = (msg.get("text") or "")
     low = text.lower()
-    if "accepted your invitation" in low or "has joined" in low:
+    if ("accepted your invitation" in low or "has joined" in low
+            or "joined via" in low or "invite link" in low
+            or "set up your notification" in low):
         return True
     # automated member messages sent via Zapier (e.g. body composition results)
     if "body composition" in low or "inbody" in low or "zapier" in low:
