@@ -1711,11 +1711,14 @@ function render(data) {
   // the real name by matching against the member directory.
   const memberNorm = {};
   (tm.member_list || []).forEach(m => { memberNorm[(m.name||"").toLowerCase().replace(/[^a-z]/g,"")] = m.name; });
+  // Returns {name, resolved} — resolved=true only when the InBody username maps
+  // to a real member in the directory, so we only make a clickable profile link
+  // when there's actually a profile to open (many InBody ids are coded usernames).
   const resolveName = raw => {
     const norm = (raw||"").toLowerCase().replace(/[^a-z]/g,"");
-    if (memberNorm[norm]) return memberNorm[norm];
+    if (memberNorm[norm]) return { name: memberNorm[norm], resolved: true };
     const hit = Object.keys(memberNorm).find(k => k && (k.includes(norm) || norm.includes(k)) && norm.length > 4);
-    return hit ? memberNorm[hit] : raw;
+    return hit ? { name: memberNorm[hit], resolved: true } : { name: raw, resolved: false };
   };
   const delta = v => v == null ? "" : (v > 0 ? `<span style="color:#059669">▲${v}</span>` : v < 0 ? `<span style="color:#dc2626">▼${Math.abs(v)}</span>` : "—");
   push("inbody", `
@@ -1742,8 +1745,13 @@ function render(data) {
                   : s.days_to_due <= 7
                   ? `<span class="pill amber" style="cursor:default;font-size:.62rem">soon</span>`
                   : `<span style="color:#aaa">${fmtDateShort(s.next_due)}</span>`;
+                const _r = resolveName(s.name);
+                const _rn = _r.name;
+                const _nameCell = _r.resolved
+                  ? `<td onclick="showMemberDetail('${(_rn||'').replace(/'/g,"\\'")}')" style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#7c3aed;cursor:pointer" title="Open ${_rn}'s profile">${_rn}`
+                  : `<td style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111" title="No matching member profile">${_rn}`;
                 return `<tr>
-                  <td style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${resolveName(s.name)}${s.scan_count>1?` <span style="font-size:.66rem;color:#c4b5fd">${s.scan_count} scans</span>`:""}</td>
+                  ${_nameCell}${s.scan_count>1?` <span style="font-size:.66rem;color:#c4b5fd">${s.scan_count} scans</span>`:""}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.last_scan)}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.weight ?? "—"} <span style="font-size:.7rem">${delta(s.weight_change)}</span></td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.smm ?? "—"} <span style="font-size:.7rem">${delta(s.smm_change)}</span></td>
