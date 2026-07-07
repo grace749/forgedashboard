@@ -5,7 +5,8 @@ from pathlib import Path
 
 import fetch_asana
 import fetch_brief
-import fetch_ghl_sheet as fetch_ghl
+import fetch_ghl          # direct GoHighLevel API (all channels: WhatsApp/webchat/SMS/Instagram/Facebook)
+import fetch_ghl_sheet    # Zapier-fed sheet fallback
 import fetch_inbody
 import fetch_jumpstart
 import fetch_kpi
@@ -30,13 +31,28 @@ def safe_run(name, fn):
         return None
 
 
+def fetch_ghl_leads():
+    """Prefer the direct GoHighLevel API (includes Instagram & Facebook DMs).
+    Fall back to the Zapier-fed sheet if the API errors or returns nothing."""
+    api = safe_run("ghl-api", fetch_ghl.run)
+    if isinstance(api, list) and api:
+        print(f"[ghl] using live API ({len(api)} conversations)")
+        return api
+    sheet = safe_run("ghl-sheet", fetch_ghl_sheet.run)
+    if isinstance(sheet, list) and sheet:
+        print(f"[ghl] using Zapier sheet ({len(sheet)} conversations)")
+        return sheet
+    # neither had data — return whichever is a list (so the tab isn't broken)
+    return api if isinstance(api, list) else (sheet if isinstance(sheet, list) else [])
+
+
 data = {
     "generated_at": datetime.now(timezone.utc).isoformat(),
     "apps_script_url": os.environ.get("APPS_SCRIPT_URL", ""),
     "asana_script_url": os.environ.get("ASANA_SCRIPT_URL", ""),
     "atrisk_url": os.environ.get("ATRISK_SCRIPT_URL", ""),
     "brief":     safe_run("brief",     fetch_brief.run),
-    "ghl":       safe_run("ghl",       fetch_ghl.run),
+    "ghl":       fetch_ghl_leads(),
     "jumpstart": safe_run("jumpstart", fetch_jumpstart.run),
     "inbody": safe_run("inbody", fetch_inbody.run),
     "sop": safe_run("sop", fetch_sop.run),
