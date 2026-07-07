@@ -1030,6 +1030,9 @@ function chatCard(tab) {
         </div>
       </div>
       <div id="chat-thread-${tab}" style="max-height:360px;overflow-y:auto;margin:6px 0;display:none;flex-direction:column;gap:8px"></div>
+      ${(AGENT_STARTERS[tab]||[]).length ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin:0 0 8px">
+        ${(AGENT_STARTERS[tab]||[]).map(s => `<button onclick="askQuick('${tab}', this.textContent)" style="font-size:.72rem;color:#6b7280;background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:5px 11px;cursor:pointer">${s}</button>`).join("")}
+      </div>` : ""}
       <div style="display:flex;gap:8px">
         <input id="chat-input-${tab}" placeholder="${a.placeholder}" onkeydown="if(event.key==='Enter')askAgent('${tab}')"
           style="flex:1;font-size:.85rem;padding:9px 12px;border:1px solid #e5e7eb;border-radius:9px;outline:none">
@@ -1082,6 +1085,36 @@ const AGENT_SKILLS = {
   home:      { benchmarks:"Owner's time is the scarce resource.", lens:"Cut to the 1-3 things that actually need Grace today." }
 };
 
+// Quick-tap starter questions per tab (discoverability + speed).
+const AGENT_STARTERS = {
+  finances:  ["What's my cash runway?", "Which costs grew most vs last month?", "Is revenue per member falling?"],
+  retention: ["Who's most at risk this week?", "How's trial conversion trending?", "Which lapsed members should I win back?"],
+  members:   ["Which membership type is growing fastest?", "Where am I over-concentrated?"],
+  inbody:    ["Who's overdue a scan?", "Who's progressed the most?"],
+  jumpstart: ["Who needs a conversion chat now?", "Who's missing check-ins?"],
+  leads:     ["Who should I contact first?", "Any enquiries going stale?"],
+  ads:       ["Is my cost per lead rising?", "Is ad spend paying off?"],
+  growth:    ["What should I focus on this sprint?"],
+  staff:     ["Any class coverage gaps?", "Which classes are under-used?"],
+  sop:       ["What's the new-member process?"],
+  home:      ["What needs my attention today?", "What's the single most important thing?"]
+};
+
+// Compact whole-business snapshot every agent sees, so answers connect the dots
+// across finance, members, retention, marketing and leads — not just one tab.
+function _businessSnapshot(){
+  const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {}, mk = d.marketing || {};
+  const thisYm = new Date().toISOString().slice(0,7);
+  const lastFull = ((st.monthly||[]).filter(m => m.month !== thisYm).sort((a,b)=>b.month.localeCompare(a.month))[0]) || {};
+  return {
+    members:   { active:tm.active, recurring:tm.recurring, trials:tm.trial, paused:tm.paused, joined_this_month:tm.joined_this_month, churn_pct:tm.churn },
+    money:     { cash_now:st.cash_position, net_last_30:st.net_30, last_full_month:{ month:lastFull.month, in:lastFull.revenue, out:lastFull.expenses, net:lastFull.profit } },
+    marketing: { lifetime_cpl:(mk.lifetime||{}).cpl, latest_month_spend:((mk.monthly||[])[0]||{}).spend },
+    open_leads:      (d.ghl||[]).length,
+    jumpstart_active:((d.jumpstart||{}).active||[]).length
+  };
+}
+
 function _agentData(tab){
   const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {};
   const slim = m => ({ month:m.month, revenue:m.revenue, expenses:m.expenses, profit:m.profit, categories:m.categories });
@@ -1106,6 +1139,7 @@ function _agentContext(tab){
   const payload = {
     forge_context: FORGE_FACTS,
     expertise: AGENT_SKILLS[tab] || {},
+    whole_business: _businessSnapshot(),   // cross-tab awareness
     data: _agentData(tab)
   };
   let s = JSON.stringify(payload);
@@ -1159,6 +1193,9 @@ async function askAgent(tab){
   inp.value = "";
   await _agentSend(tab, q, q);
 }
+
+// Quick-tap starter question
+function askQuick(tab, text){ _agentSend(tab, text, text); }
 
 // One-click proactive insights for the tab.
 async function agentInsights(tab){
