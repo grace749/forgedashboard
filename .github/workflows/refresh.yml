@@ -5,12 +5,11 @@ on:
     # Aim for ~6am Belfast time year-round. GitHub cron is UTC and has no
     # timezone support, and BST (summer) is UTC+1 while GMT (winter) is UTC+0,
     # so we schedule both: 05:12 UTC hits 06:12 BST, 06:12 UTC hits 06:12 GMT.
-    # The "off day" just does one harmless extra refresh. Minute :12 (not :00)
-    # avoids the top-of-hour queue where GitHub most often delays/drops runs.
-    - cron: "12 5 * * *"
+    # Minute :12 (not :00) avoids the top-of-hour queue where GitHub delays runs.
+    # AI advice is cached ~20h (scripts/ai.py) so extra refreshes cost ~nothing.
+    # Morning refresh ~6-7am Belfast:
     - cron: "12 6 * * *"
-    # Afternoon refresh ~3pm Belfast (14:12 UTC in summer / 15:12 in winter)
-    - cron: "12 14 * * *"
+    # Afternoon refresh ~3-4pm Belfast:
     - cron: "12 15 * * *"
   workflow_dispatch: # allow manual trigger from GitHub UI
 
@@ -70,7 +69,7 @@ jobs:
         run: |
           git config user.name "forge-dashboard-bot"
           git config user.email "bot@theforge.pt"
-          git add data/data.json data/class_counts.json
+          git add data/data.json data/class_counts.json data/ai_cache.json
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: refresh dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           # Retry the pull-rebase-push in case another run pushed meanwhile
