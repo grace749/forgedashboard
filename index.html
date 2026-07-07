@@ -545,12 +545,33 @@ async function markResolved(name) {
   await atSave(name, s); renderAtRisk();
 }
 async function undoAtRisk(name) { await atSave(name, {}); renderAtRisk(); }
+// Manually flag / unflag a member as at risk (from the directory or jumpstart list)
+async function toggleManualRisk(name) {
+  const s = { ...atState(name) };
+  if (s.manual) delete s.manual; else { s.manual = true; delete s.resolved; delete s.resolvedSeen; }
+  await atSave(name, s);
+  renderAtRisk();
+  document.querySelectorAll(`[data-risktoggle="${(name||'').toLowerCase()}"]`).forEach(b => {
+    const on = !!atState(name).manual;
+    b.textContent = on ? "⚠ At risk ✓" : "⚠ Flag at risk";
+    b.style.background = on ? "#fef2f2" : "#fff"; b.style.color = on ? "#dc2626" : "#9ca3af";
+  });
+}
+function manualRiskBtn(name) {
+  const on = !!atState(name).manual;
+  return `<button data-risktoggle="${(name||'').toLowerCase()}" onclick="event.stopPropagation();toggleManualRisk('${(name||'').replace(/'/g,"\\'")}')" title="Flag this member as at risk" style="font-size:.62rem;font-weight:600;color:${on?'#dc2626':'#9ca3af'};background:${on?'#fef2f2':'#fff'};border:1px solid #f0f0f5;border-radius:6px;padding:3px 7px;cursor:pointer;white-space:nowrap">${on?"⚠ At risk ✓":"⚠ Flag at risk"}</button>`;
+}
 function _isJumpstartMember(m) { return /jumpstart|trial|strong ?start|30 ?day|new you/i.test(m.membership || ""); }
 // Hide only if resolved FOR THIS episode (matching current last session) — old
 // permanent resolves (no resolvedSeen) and new episodes reappear.
 function _atResolved(m) { const s = atState(m.name); return s.resolved && s.resolvedSeen === m.last_seen; }
 function renderAtRisk() {
-  const all = (window._atRiskData || []).filter(m => !_atResolved(m));
+  const auto = window._atRiskData || [];
+  const autoNames = new Set(auto.map(m => (m.name||"").toLowerCase()));
+  const manual = Object.values(window._riskCandidates || {})
+    .filter(c => atState(c.name).manual && !autoNames.has((c.name||"").toLowerCase()))
+    .map(c => ({ ...c, _manual: true }));
+  const all = [...auto, ...manual].filter(m => !_atResolved(m));
   const paint = (bodyId, countId, rows, emptyMsg) => {
     const body = document.getElementById(bodyId);
     if (!body) return;
@@ -574,9 +595,11 @@ function _atCard(m) {
     const actions = s.contactedBy
       ? `<button onclick="markResolved('${nm}')" style="font-size:.66rem;font-weight:600;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap">No longer at risk</button>`
       : `<button onclick="markContacted('${nm}')" style="font-size:.66rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:6px;padding:4px 8px;cursor:pointer;white-space:nowrap">Mark contacted</button>`;
-    const lastSess = m.last_seen
-      ? `Last session ${fmtShort(m.last_seen)}${m.days_absent != null ? ` · ${m.days_absent}d ago` : ""}`
-      : "No session on record";
+    const lastSess = m._manual
+      ? `⚑ Manually flagged${m.last_seen ? ` · last session ${fmtShort(m.last_seen)}` : ""}`
+      : (m.last_seen
+          ? `Last session ${fmtShort(m.last_seen)}${m.days_absent != null ? ` · ${m.days_absent}d ago` : ""}`
+          : "No session on record");
     const reason = s.reason
       ? `<div style="font-size:.72rem;color:#b45309;background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:4px 8px;margin-top:5px;display:flex;gap:6px;align-items:flex-start">
            <span>ℹ️</span><span style="flex:1">${s.reason}</span>
@@ -712,9 +735,12 @@ function showMemberDetail(name) {
        </li>`
     : "";
 
+  const riskToggle = `<li style="list-style:none;padding:2px 0 8px;display:flex;justify-content:flex-end">${manualRiskBtn(d.name)}</li>`;
+
   document.getElementById("modal-title").textContent = d.name;
   document.getElementById("modal-list").innerHTML =
     slackBtn +
+    riskToggle +
     row("Status", risk) +
     row("Membership", d.membership || "—") +
     row("Joined", dt(d.join_date)) +
@@ -1047,6 +1073,13 @@ function render(data) {
     const pausedNames = new Set((data.jumpstart?.paused || []).map(m => (m.name||"").toLowerCase()));
     window._atRiskData = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
     window._atRiskUrl  = data.atrisk_url || "";
+    // Everyone who can be manually flagged as at risk (full members + jumpstarters)
+    window._riskCandidates = {};
+    (tm.member_list || []).forEach(m => { window._riskCandidates[(m.name||"").toLowerCase()] = { name: m.name, membership: m.membership, last_seen: null }; });
+    [...(data.jumpstart?.active||[]), ...(data.jumpstart?.paused||[])].forEach(m => {
+      const k = (m.name||"").toLowerCase();
+      if (k && !window._riskCandidates[k]) window._riskCandidates[k] = { name: m.name, membership: "6 Week Jumpstart", last_seen: null };
+    });
 
     // Monthly series — reconstructed live from TeamUp memberships (preferred),
     // falling back to the manual KPI sheet only if TeamUp history is unavailable.
@@ -1219,6 +1252,7 @@ function render(data) {
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last InBody / due</th>
                 <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #f0f0f5">Last momentum</th>
                 <th style="text-align:left;padding:6px 0 6px 10px;border-bottom:2px solid #f0f0f5">Goal</th>
+                <th style="text-align:left;padding:6px 0 6px 8px;border-bottom:2px solid #f0f0f5">At risk</th>
               </tr>
             </thead>
             <tbody id="memberTableBody">
@@ -1234,6 +1268,7 @@ function render(data) {
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${inbodyCell(m.name)}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${m.last_momentum ? fmtDateShort(m.last_momentum) : "—"}</td>
                   <td style="padding:8px 0 8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280;max-width:260px" title="${(goal||'').replace(/"/g,'&quot;')}">${goalCellHtml(m.name, goal)}</td>
+                  <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc">${manualRiskBtn(m.name)}</td>
                 </tr>`;
               }).join("")}
             </tbody>
@@ -1817,7 +1852,7 @@ function render(data) {
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;white-space:nowrap;color:${daysLeft!=null&&daysLeft<=7?"#ef4444":daysLeft!=null&&daysLeft<=14?"#d97706":"#6b7280"};font-weight:${daysLeft!=null&&daysLeft<=14?"700":"400"}">
                     ${m.end ? fmtDateShort(m.end) : "—"}${daysLeft != null ? ` <span style="font-size:.7rem">(${daysLeft}d)</span>` : ""}
                   </td>
-                  <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc">${statusTag}</td>
+                  <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc"><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">${statusTag} ${manualRiskBtn(m.name)}</div></td>
                 </tr>`;
               }).join("")}
             </tbody>
