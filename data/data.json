@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T17:39:37.833321+00:00",
+  "generated_at": "2026-07-07T21:09:21.172595+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbyCz9nF__d6b1ECkuayLqilHLCTCfDljaNmJWNVaYIraFTQWrWz6ceAolLDdu7Tjb3cSQ/exec",
   "brief": {
     "date": "2026-07-07",
-    "event_count": 8,
-    "urgent_count": 2,
+    "event_count": 7,
+    "urgent_count": 3,
     "enquiry_count": 1,
     "calendar": [
       {
@@ -22,18 +22,6 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
-        "title": "Montessori Zoom",
-        "time": "7:00pm",
-        "start_raw": "2026-07-07T19:00:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "danielle_boyd_3@hotmail.com"
-        ],
-        "description": "<br>Please find below the link to the independence video we will be looking at together during our third session together:<br><br>Independence \u2013\u00a0<a href=\"https://montessori-ami.hosted.panopto.com/Pano",
-        "location": "",
-        "prep": "Test Zoom link, review independence video beforehand, prepare discussion questions."
-      },
-      {
         "title": "Upper - Shoulders/Biceps",
         "time": "all day",
         "start_raw": "2026-07-08",
@@ -41,7 +29,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Test Zoom link, review independence video beforehand, prepare discussion questions."
       },
       {
         "title": "Mum Specsavers",
@@ -63,7 +51,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm delivery time window, clear gym floor space, arrange access."
+        "prep": ""
       },
       {
         "title": "Lower Two",
@@ -73,7 +61,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm delivery time window, clear gym floor space, arrange access."
       },
       {
         "title": "Upper - Back/Triceps",
@@ -93,7 +81,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Gather Dan's house bills documentation, prepare payment details/transfers."
+        "prep": ""
       }
     ],
     "urgent": [
@@ -105,6 +93,15 @@
         "id": "19f37026a012366c",
         "thread_id": "19f1dff910b90d31",
         "msg_count": 7
+      },
+      {
+        "from": "jordan swain",
+        "from_raw": "jordan swain <jordanswain23@gmail.com>",
+        "subject": "Ad scripts",
+        "snippet": "Hey Grace, Link below for the 60+ video https://www.dropbox.com/scl/fi/hkn20cqbeil3xm0nqcrva/test-reel.mp4?rlkey=dg0jsxglnecga3wfmkbbuniw1&amp;st=56qotwyh&amp;dl=0\ufffc test reel .mp4 dropbox.com &gt; On 7",
+        "id": "19f3dd9ee40198cd",
+        "thread_id": "19edb7e086571982",
+        "msg_count": 13
       },
       {
         "from": "S Moore",
@@ -179,8 +176,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "sarah@nourishandnurtu.re": "2025-11-23",
         "eiliskearns13@gmail.com": "2025-11-23",
+        "sarah@nourishandnurtu.re": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -3610,17 +3607,18 @@
   },
   "slack": {
     "configured": true,
+    "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
         "user_id": "U09DDQ1UETB",
         "text": "Thanks Grace I've paid for the two sessions. Please book her in for 15th a July and 5th August. Thank you. ",
-        "hours": 25,
+        "hours": 28,
         "name": "Claire Leeke"
       },
       {
         "user_id": "U086M7J0X4N",
         "text": "What a relief it's not anything sinister. Still worrying for you all I know but I'm so glad she's ok, and it's good they're keeping an eye on it xx ",
-        "hours": 1,
+        "hours": 5,
         "name": "Helen Traynor"
       }
     ],
@@ -7416,7 +7414,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 462
+            "count": 478
           },
           {
             "day": "Friday",
@@ -7450,7 +7448,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 462
+            "count": 478
           }
         ],
         "top_classes": [
@@ -7460,7 +7458,7 @@
           },
           {
             "name": "Build: Upper",
-            "count": 462
+            "count": 478
           },
           {
             "name": "Build: Lower",
@@ -7552,13 +7550,13 @@
             "label": "Wednesday 6pm Plate"
           },
           {
-            "day": "Monday",
-            "time": "7pm",
-            "name": "Build: Lower",
-            "count": 94,
-            "sessions": 9,
+            "day": "Tuesday",
+            "time": "6pm",
+            "name": "Build: Upper",
+            "count": 104,
+            "sessions": 10,
             "avg": 10.4,
-            "label": "Monday 7pm Build: Lower"
+            "label": "Tuesday 6pm Build: Upper"
           }
         ],
         "bottom_slots": [
@@ -7617,13 +7615,13 @@
             "label": "Friday 6pm Circuits"
           }
         ],
-        "total_attended": 2415
+        "total_attended": 2431
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 213
+            "count": 229
           },
           {
             "day": "Monday",
@@ -7667,7 +7665,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 213
+            "count": 229
           },
           {
             "name": "Build: Lower",
@@ -7766,9 +7764,9 @@
             "day": "Tuesday",
             "time": "6pm",
             "name": "Build: Upper",
-            "count": 50,
+            "count": 51,
             "sessions": 5,
-            "avg": 10.0,
+            "avg": 10.2,
             "label": "Tuesday 6pm Build: Upper"
           }
         ],
@@ -7828,7 +7826,7 @@
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 891
+        "total_attended": 907
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Launch a \"Build Accessory\" open-gym block** on Thursday and Monday mornings (your quietest days) between PT slots \u2014 members doing Build classes often want extra arm/core work, so this fills natural demand without cannibalizing class bookings.\n\n2. **Run a paid \"Strength Foundations\" workshop** Saturday mornings (lowest attendance day) \u2014 45 mins for 6-8 members on technique for deadlifts/squats; price as premium add-on; targets newer members who might fear the Build classes.\n\n**For quieter classes:**\n\n3. **Move Engine to Tuesday or Wednesday at 6:30am** (test 2 weeks) \u2014 it's a cardio/conditioning class competing against strength on quiet days; your busiest days have proven traffic, and early slots often suit commuters; pair with a targeted email: \"New time: Engine now Tuesday mornings\u2014hit conditioning before work.\"\n\n4. **Rebrand Capacity as \"Metabolic Finisher\"** and position it as a 20-min add-on *after* Build classes (same studio, back-to-back slots) \u2014 removes it from competing as standalone; members already warmed up; frames it as intensity booster rather than standalone commitment.",
       "capacity": [
@@ -8052,13 +8050,6 @@
         "id": 9196376,
         "name": "Nerys Young",
         "membership": "Empower",
-        "days_absent": 11,
-        "last_seen": "2026-06-26"
-      },
-      {
-        "id": 10726245,
-        "name": "Nichola McAuley",
-        "membership": "Elevate",
         "days_absent": 11,
         "last_seen": "2026-06-26"
       },
@@ -9368,95 +9359,1013 @@
         "revenue": 17773.16,
         "expenses": 24559.97,
         "profit": -6786.81,
-        "profit_pct": -38.2
+        "profit_pct": -38.2,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 17773.16
+            }
+          ],
+          "out": [
+            {
+              "name": "None",
+              "amount": 7100.0
+            },
+            {
+              "name": "Transfers",
+              "amount": 5900.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 3500.0
+            },
+            {
+              "name": "Staff",
+              "amount": 2532.0
+            },
+            {
+              "name": "Other",
+              "amount": 1447.86
+            },
+            {
+              "name": "Travel",
+              "amount": 1095.87
+            },
+            {
+              "name": "Marketing",
+              "amount": 764.0
+            },
+            {
+              "name": "Admin",
+              "amount": 712.29
+            },
+            {
+              "name": "Workplace",
+              "amount": 516.79
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 392.87
+            },
+            {
+              "name": "Professional Services",
+              "amount": 271.82
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 147.88
+            },
+            {
+              "name": "Equipment",
+              "amount": 116.83
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 51.47
+            },
+            {
+              "name": "Vehicles",
+              "amount": 10.29
+            }
+          ]
+        }
       },
       {
         "month": "2025-08",
         "revenue": 17165.8,
         "expenses": 19488.0,
         "profit": -2322.2,
-        "profit_pct": -13.5
+        "profit_pct": -13.5,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 17165.8
+            }
+          ],
+          "out": [
+            {
+              "name": "Transfers",
+              "amount": 5300.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 3500.0
+            },
+            {
+              "name": "Vat",
+              "amount": 2929.04
+            },
+            {
+              "name": "Staff",
+              "amount": 2796.0
+            },
+            {
+              "name": "Other",
+              "amount": 1500.93
+            },
+            {
+              "name": "Admin",
+              "amount": 697.04
+            },
+            {
+              "name": "Workplace",
+              "amount": 604.41
+            },
+            {
+              "name": "Equipment",
+              "amount": 598.94
+            },
+            {
+              "name": "Travel",
+              "amount": 564.01
+            },
+            {
+              "name": "Marketing",
+              "amount": 509.89
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 175.0
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 120.4
+            },
+            {
+              "name": "Professional Services",
+              "amount": 93.37
+            },
+            {
+              "name": "Software And Subscriptions",
+              "amount": 50.4
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 41.48
+            },
+            {
+              "name": "Vehicles",
+              "amount": 7.09
+            }
+          ]
+        }
       },
       {
         "month": "2025-09",
         "revenue": 14871.84,
         "expenses": 12563.59,
         "profit": 2308.25,
-        "profit_pct": 15.5
+        "profit_pct": 15.5,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 14701.21
+            },
+            {
+              "name": "Equipment",
+              "amount": 80.39
+            },
+            {
+              "name": "Travel",
+              "amount": 80.1
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 10.14
+            }
+          ],
+          "out": [
+            {
+              "name": "Staff",
+              "amount": 3813.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 3500.0
+            },
+            {
+              "name": "Other",
+              "amount": 1784.4
+            },
+            {
+              "name": "Admin",
+              "amount": 820.95
+            },
+            {
+              "name": "Workplace",
+              "amount": 709.31
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 511.79
+            },
+            {
+              "name": "Travel",
+              "amount": 482.03
+            },
+            {
+              "name": "Marketing",
+              "amount": 339.8
+            },
+            {
+              "name": "Equipment",
+              "amount": 274.99
+            },
+            {
+              "name": "Professional Services",
+              "amount": 234.97
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 63.46
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 22.0
+            },
+            {
+              "name": "Vehicles",
+              "amount": 5.99
+            },
+            {
+              "name": "Vat",
+              "amount": 0.9
+            }
+          ]
+        }
       },
       {
         "month": "2025-10",
         "revenue": 13664.82,
         "expenses": 9932.34,
         "profit": 3732.48,
-        "profit_pct": 27.3
+        "profit_pct": 27.3,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 13625.32
+            },
+            {
+              "name": "Equipment",
+              "amount": 39.5
+            }
+          ],
+          "out": [
+            {
+              "name": "Staff",
+              "amount": 2757.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2000.0
+            },
+            {
+              "name": "Marketing",
+              "amount": 1130.65
+            },
+            {
+              "name": "Other",
+              "amount": 918.49
+            },
+            {
+              "name": "Workplace",
+              "amount": 614.72
+            },
+            {
+              "name": "Admin",
+              "amount": 606.52
+            },
+            {
+              "name": "Professional Services",
+              "amount": 520.25
+            },
+            {
+              "name": "Travel",
+              "amount": 434.15
+            },
+            {
+              "name": "Equipment",
+              "amount": 392.52
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 252.0
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 230.23
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 9.84
+            }
+          ]
+        }
       },
       {
         "month": "2025-11",
         "revenue": 14189.4,
         "expenses": 16940.35,
         "profit": -2750.95,
-        "profit_pct": -19.4
+        "profit_pct": -19.4,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 14189.4
+            }
+          ],
+          "out": [
+            {
+              "name": "Vat",
+              "amount": 3479.21
+            },
+            {
+              "name": "Staff",
+              "amount": 3043.0
+            },
+            {
+              "name": "Transfers",
+              "amount": 2700.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2500.0
+            },
+            {
+              "name": "Other",
+              "amount": 1095.2
+            },
+            {
+              "name": "Marketing",
+              "amount": 757.0
+            },
+            {
+              "name": "Training",
+              "amount": 750.0
+            },
+            {
+              "name": "Admin",
+              "amount": 718.25
+            },
+            {
+              "name": "Travel",
+              "amount": 556.03
+            },
+            {
+              "name": "Workplace",
+              "amount": 546.79
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 351.02
+            },
+            {
+              "name": "Professional Services",
+              "amount": 252.57
+            },
+            {
+              "name": "Equipment",
+              "amount": 101.31
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 24.0
+            }
+          ]
+        }
       },
       {
         "month": "2025-12",
         "revenue": 21273.54,
         "expenses": 17789.52,
         "profit": 3484.02,
-        "profit_pct": 16.4
+        "profit_pct": 16.4,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 21273.54
+            }
+          ],
+          "out": [
+            {
+              "name": "Transfers",
+              "amount": 6000.0
+            },
+            {
+              "name": "Staff",
+              "amount": 2664.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2500.0
+            },
+            {
+              "name": "Other",
+              "amount": 1983.57
+            },
+            {
+              "name": "Marketing",
+              "amount": 1069.15
+            },
+            {
+              "name": "Professional Services",
+              "amount": 945.96
+            },
+            {
+              "name": "Admin",
+              "amount": 811.96
+            },
+            {
+              "name": "Workplace",
+              "amount": 583.86
+            },
+            {
+              "name": "Equipment",
+              "amount": 411.84
+            },
+            {
+              "name": "Training",
+              "amount": 375.0
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 196.12
+            },
+            {
+              "name": "Vehicles",
+              "amount": 89.74
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 57.4
+            },
+            {
+              "name": "Travel",
+              "amount": 34.95
+            }
+          ]
+        }
       },
       {
         "month": "2026-01",
         "revenue": 15103.19,
         "expenses": 15302.74,
         "profit": -199.55,
-        "profit_pct": -1.3
+        "profit_pct": -1.3,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 15103.19
+            }
+          ],
+          "out": [
+            {
+              "name": "Staff",
+              "amount": 3037.0
+            },
+            {
+              "name": "Admin",
+              "amount": 2615.35
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2500.0
+            },
+            {
+              "name": "Other",
+              "amount": 2205.68
+            },
+            {
+              "name": "Transfers",
+              "amount": 1844.4
+            },
+            {
+              "name": "Professional Services",
+              "amount": 869.64
+            },
+            {
+              "name": "Marketing",
+              "amount": 668.5
+            },
+            {
+              "name": "Workplace",
+              "amount": 516.79
+            },
+            {
+              "name": "Training",
+              "amount": 375.0
+            },
+            {
+              "name": "Travel",
+              "amount": 321.22
+            },
+            {
+              "name": "Equipment",
+              "amount": 97.1
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 80.0
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 58.19
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 47.9
+            }
+          ]
+        }
       },
       {
         "month": "2026-02",
         "revenue": 20087.19,
         "expenses": 16509.61,
         "profit": 3577.58,
-        "profit_pct": 17.8
+        "profit_pct": 17.8,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 20087.19
+            }
+          ],
+          "out": [
+            {
+              "name": "Other",
+              "amount": 4322.0
+            },
+            {
+              "name": "Staff",
+              "amount": 3108.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2500.0
+            },
+            {
+              "name": "Inventory",
+              "amount": 2040.0
+            },
+            {
+              "name": "Admin",
+              "amount": 1053.67
+            },
+            {
+              "name": "Workplace",
+              "amount": 683.59
+            },
+            {
+              "name": "Repairs And Maintenance",
+              "amount": 666.67
+            },
+            {
+              "name": "Professional Services",
+              "amount": 655.36
+            },
+            {
+              "name": "Training",
+              "amount": 375.0
+            },
+            {
+              "name": "Corporation Tax",
+              "amount": 307.31
+            },
+            {
+              "name": "Marketing",
+              "amount": 266.0
+            },
+            {
+              "name": "Equipment",
+              "amount": 235.93
+            },
+            {
+              "name": "Travel",
+              "amount": 136.62
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 61.89
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 31.6
+            }
+          ]
+        }
       },
       {
         "month": "2026-03",
         "revenue": 18021.17,
         "expenses": 23327.83,
         "profit": -5306.66,
-        "profit_pct": -29.4
+        "profit_pct": -29.4,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 17958.92
+            },
+            {
+              "name": "Other",
+              "amount": 62.25
+            }
+          ],
+          "out": [
+            {
+              "name": "Vat",
+              "amount": 4162.04
+            },
+            {
+              "name": "Equipment",
+              "amount": 4035.38
+            },
+            {
+              "name": "Staff",
+              "amount": 3116.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2800.0
+            },
+            {
+              "name": "Other",
+              "amount": 2719.14
+            },
+            {
+              "name": "Professional Services",
+              "amount": 2543.19
+            },
+            {
+              "name": "Repairs And Maintenance",
+              "amount": 887.85
+            },
+            {
+              "name": "Marketing",
+              "amount": 844.51
+            },
+            {
+              "name": "Admin",
+              "amount": 830.8
+            },
+            {
+              "name": "Workplace",
+              "amount": 500.0
+            },
+            {
+              "name": "Training",
+              "amount": 375.0
+            },
+            {
+              "name": "Utilities",
+              "amount": 250.0
+            },
+            {
+              "name": "Travel",
+              "amount": 89.49
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 88.2
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 50.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 35.26
+            }
+          ]
+        }
       },
       {
         "month": "2026-04",
         "revenue": 32196.35,
         "expenses": 39015.05,
         "profit": -6818.7,
-        "profit_pct": -21.2
+        "profit_pct": -21.2,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 31655.27
+            },
+            {
+              "name": "Other",
+              "amount": 299.39
+            },
+            {
+              "name": "Equipment",
+              "amount": 241.69
+            }
+          ],
+          "out": [
+            {
+              "name": "Professional Services",
+              "amount": 12666.02
+            },
+            {
+              "name": "Corporation Tax",
+              "amount": 7003.21
+            },
+            {
+              "name": "Transfers",
+              "amount": 4200.0
+            },
+            {
+              "name": "Other",
+              "amount": 3494.55
+            },
+            {
+              "name": "Staff",
+              "amount": 3400.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2000.0
+            },
+            {
+              "name": "Equipment",
+              "amount": 1636.36
+            },
+            {
+              "name": "Training",
+              "amount": 1125.0
+            },
+            {
+              "name": "Marketing",
+              "amount": 884.65
+            },
+            {
+              "name": "Admin",
+              "amount": 807.78
+            },
+            {
+              "name": "Workplace",
+              "amount": 598.96
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 507.02
+            },
+            {
+              "name": "Repairs And Maintenance",
+              "amount": 331.77
+            },
+            {
+              "name": "Travel",
+              "amount": 228.71
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 70.0
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 50.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 10.05
+            }
+          ]
+        }
       },
       {
         "month": "2026-05",
         "revenue": 20271.96,
         "expenses": 16639.35,
         "profit": 3632.61,
-        "profit_pct": 17.9
+        "profit_pct": 17.9,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 20198.85
+            },
+            {
+              "name": "Other",
+              "amount": 73.11
+            }
+          ],
+          "out": [
+            {
+              "name": "Other",
+              "amount": 5719.57
+            },
+            {
+              "name": "Staff",
+              "amount": 3550.0
+            },
+            {
+              "name": "Professional Services",
+              "amount": 1817.22
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 1500.0
+            },
+            {
+              "name": "Admin",
+              "amount": 946.21
+            },
+            {
+              "name": "Marketing",
+              "amount": 852.93
+            },
+            {
+              "name": "Workplace",
+              "amount": 686.35
+            },
+            {
+              "name": "Equipment",
+              "amount": 590.81
+            },
+            {
+              "name": "Inventory",
+              "amount": 360.0
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 342.19
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 143.96
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 50.97
+            },
+            {
+              "name": "Travel",
+              "amount": 41.95
+            },
+            {
+              "name": "Repairs And Maintenance",
+              "amount": 24.0
+            },
+            {
+              "name": "Vehicles",
+              "amount": 13.19
+            }
+          ]
+        }
       },
       {
         "month": "2026-06",
         "revenue": 18123.56,
         "expenses": 20644.36,
         "profit": -2520.8,
-        "profit_pct": -13.9
+        "profit_pct": -13.9,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 18123.56
+            }
+          ],
+          "out": [
+            {
+              "name": "Transfers",
+              "amount": 3750.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 3700.0
+            },
+            {
+              "name": "Staff",
+              "amount": 3686.0
+            },
+            {
+              "name": "Vat",
+              "amount": 3582.34
+            },
+            {
+              "name": "Professional Services",
+              "amount": 1808.03
+            },
+            {
+              "name": "Other",
+              "amount": 1018.99
+            },
+            {
+              "name": "Workplace",
+              "amount": 722.06
+            },
+            {
+              "name": "Admin",
+              "amount": 637.85
+            },
+            {
+              "name": "Marketing",
+              "amount": 594.04
+            },
+            {
+              "name": "Equipment",
+              "amount": 481.22
+            },
+            {
+              "name": "Travel",
+              "amount": 282.77
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 221.76
+            },
+            {
+              "name": "Repairs And Maintenance",
+              "amount": 108.33
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 28.99
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 21.98
+            }
+          ]
+        }
       },
       {
         "month": "2026-07",
         "revenue": 7299.73,
-        "expenses": 2224.27,
-        "profit": 5075.46,
-        "profit_pct": 69.5
+        "expenses": 2234.83,
+        "profit": 5064.9,
+        "profit_pct": 69.4,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 7225.11
+            },
+            {
+              "name": "Admin",
+              "amount": 74.62
+            }
+          ],
+          "out": [
+            {
+              "name": "Admin",
+              "amount": 758.32
+            },
+            {
+              "name": "Other",
+              "amount": 662.63
+            },
+            {
+              "name": "Professional Services",
+              "amount": 646.0
+            },
+            {
+              "name": "Marketing",
+              "amount": 104.93
+            },
+            {
+              "name": "Staff",
+              "amount": 50.0
+            },
+            {
+              "name": "Equipment",
+              "amount": 12.95
+            }
+          ]
+        }
       }
     ],
     "account_name": "Main",
-    "cash_position": 5177.81,
+    "cash_position": 5167.25,
     "available": 0.0,
     "reserves": [
       {
@@ -9477,7 +10386,7 @@
       }
     ],
     "earmarked": 8777.0,
-    "total_cash": 13954.81,
+    "total_cash": 13944.25,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -9506,8 +10415,8 @@
       }
     ],
     "cash_in_30": 19470.47,
-    "cash_out_30": 17017.84,
-    "net_30": 2452.63,
+    "cash_out_30": 17028.4,
+    "net_30": 2442.07,
     "as_of": "2026-07-07"
   },
   "gocardless": {
