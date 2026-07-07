@@ -1805,10 +1805,18 @@ function render(data) {
       const trimmed = recent.length >= 3 ? recent.filter(v => v !== Math.min(...recent)) : recent;
       avgNet = trimmed.reduce((a,b)=>a+b,0) / trimmed.length;
     }
-    const cash = (xr.cash_position != null) ? xr.cash_position : null;
+    // Prefer live Starling; fall back to Xero BankSummary, then KPI-only.
+    const st = data.starling || {};
+    const useStarling = st.configured && st.cash_position != null;
+    const cash = useStarling ? st.cash_position
+               : (xr.cash_position != null ? xr.cash_position : null);
+    // Monthly net cash: Starling's actual last-30-day net if we have it, else KPI avg
+    const monthlyNet = (st.net_30 != null) ? st.net_30 : avgNet;
     const gbp = v => (v<0?"-£":"£") + Math.abs(Math.round(v)).toLocaleString("en-IE");
-    const proj = n => cash != null ? gbp(cash + avgNet*n) : (avgNet!=null ? (avgNet*n>=0?"+":"") + gbp(avgNet*n) : "—");
-    const runwayMonths = (cash != null && avgNet != null && avgNet < 0) ? (cash / -avgNet) : null;
+    const proj = n => cash != null ? gbp(cash + (monthlyNet||0)*n)
+               : (monthlyNet!=null ? (monthlyNet*n>=0?"+":"") + gbp(monthlyNet*n) : "—");
+    const runwayMonths = (cash != null && monthlyNet != null && monthlyNet < 0) ? (cash / -monthlyNet) : null;
+    const src = useStarling ? "Starling (live)" : (cash!=null ? "Xero" : "KPI sheet");
 
     const box = (label, val, sub) => `
       <div style="flex:1;min-width:120px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
@@ -1817,27 +1825,42 @@ function render(data) {
         ${sub?`<div style="font-size:.66rem;color:#c4b5fd;margin-top:2px">${sub}</div>`:""}
       </div>`;
 
+    // Reserves (pots) breakdown — only when Starling is connected
+    const reservesHtml = (useStarling && (st.reserves||[]).length) ? `
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid #f3f4f6">
+        <div style="font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9ca3af;margin-bottom:8px">
+          Earmarked in pots — ${gbp(st.earmarked)} set aside · ${gbp(st.total_cash)} total in bank
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          ${st.reserves.map(r => `<span class="pill purple" style="cursor:default">${r.name} <strong>${gbp(r.amount)}</strong></span>`).join("")}
+        </div>
+        ${st.committed_monthly ? `<div style="font-size:.68rem;color:#9ca3af;margin-top:10px">Committed monthly outgoings (standing orders): <strong style="color:#374151">${gbp(st.committed_monthly)}</strong></div>` : ""}
+      </div>` : "";
+
     push("finances", `
       <div class="card col-12" style="margin-top:4px">
         <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
           <div>
-            <div class="card-title">Cash flow</div>
+            <div class="card-title">Cash flow · ${src}</div>
             <div class="card-headline" style="margin-bottom:0">Cash Position &amp; Runway</div>
           </div>
           ${runwayMonths != null
             ? `<span class="pill ${runwayMonths<3?'red':runwayMonths<6?'amber':'green'}" style="cursor:default">${runwayMonths.toFixed(1)} months runway</span>`
-            : (avgNet!=null && avgNet>=0 ? `<span class="pill green" style="cursor:default">Cash-positive</span>` : "")}
+            : (monthlyNet!=null && monthlyNet>=0 ? `<span class="pill green" style="cursor:default">Cash-positive</span>` : "")}
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 4px">
-          ${box(cash!=null?"Cash now":"Avg monthly net", cash!=null?gbp(cash):(avgNet!=null?(avgNet>=0?"+":"")+gbp(avgNet):"—"), cash!=null? (xr.cash_accounts&&xr.cash_accounts.length? xr.cash_accounts.length+" account"+(xr.cash_accounts.length>1?"s":""):"") : "typical month")}
+          ${box(cash!=null?"Working cash now":"Avg monthly net", cash!=null?gbp(cash):(monthlyNet!=null?(monthlyNet>=0?"+":"")+gbp(monthlyNet):"—"), cash!=null? (useStarling?"main account, excl. pots":(xr.cash_accounts&&xr.cash_accounts.length? xr.cash_accounts.length+" account"+(xr.cash_accounts.length>1?"s":""):"")) : "typical month")}
           ${box("In 30 days", proj(1), "")}
           ${box("In 60 days", proj(2), "")}
           ${box("In 90 days", proj(3), "")}
         </div>
-        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">
-          ${cash!=null
-            ? `Actual bank balance from Xero, projected using recent average monthly net cash (${avgNet!=null?gbp(avgNet)+"/mo":"—"}, April studio-move month excluded). Distinct from paper profit.`
-            : `Showing projected net cash change per period from the KPI sheet. Connect Xero bank balance (BankSummary) to anchor this to your actual cash and get a runway figure.`}
+        ${reservesHtml}
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">
+          ${useStarling
+            ? `Live from your Starling business account${st.net_30!=null?`, projected on actual last-30-day net cash (${gbp(st.net_30)})`:`, projected on recent KPI net (${monthlyNet!=null?gbp(monthlyNet)+"/mo":"—"})`}. Real cash — distinct from paper profit.`
+            : cash!=null
+            ? `Actual bank balance from Xero, projected using recent average monthly net cash (${avgNet!=null?gbp(avgNet)+"/mo":"—"}, April excluded).`
+            : `Projected net cash change from the KPI sheet. Connect Starling (STARLING_ACCESS_TOKEN) for a live balance and real runway.`}
         </div>
       </div>
     `);

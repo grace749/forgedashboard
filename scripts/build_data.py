@@ -14,6 +14,7 @@ import fetch_sop
 import fetch_staff
 import fetch_teamup
 import fetch_xero
+import fetch_starling
 import fetch_sheets
 import fetch_marketing
 
@@ -45,6 +46,7 @@ data = {
     "asana": safe_run("asana", fetch_asana.run),
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),
+    "starling": safe_run("starling", fetch_starling.run),
     "growth_sprint": safe_run("sheets", fetch_sheets.run),
     "marketing": safe_run("marketing", fetch_marketing.run),
 }
