@@ -67,21 +67,44 @@ def _day_label(start_raw, today):
     return d.strftime("%A")
 
 
+def _teamup_instructor_id(key, name_contains="grace"):
+    """TeamUp instructor id whose name matches (default: Grace). None if not found."""
+    try:
+        import requests
+        r = requests.get(
+            "https://goteamup.com/api/v2/instructors",
+            headers={"Authorization": f"Token {key}"},
+            params={"page_size": 100}, timeout=30,
+        )
+        r.raise_for_status()
+        for i in r.json().get("results", []):
+            nm = (i.get("name") or f"{i.get('first_name','')} {i.get('last_name','')}").lower()
+            if name_contains in nm:
+                return i.get("id")
+    except Exception as ex:
+        print(f"[brief] instructor lookup error: {ex}")
+    return None
+
+
 def fetch_teamup_schedule(today, days=2):
-    """The studio timetable (classes + PT + scans) for the next `days`, from TeamUp,
-    shaped like calendar events so it can be merged with the Google Calendar."""
+    """The sessions GRACE is coaching over the next `days`, from TeamUp, shaped like
+    calendar events so they can be merged with the Google Calendar."""
     key = os.environ.get("TEAMUP_API_KEY")
     if not key:
         return []
     try:
         import requests
         end = today + timedelta(days=days)
+        params = {"starts_at_gte": today.isoformat(),
+                  "starts_at_lte": end.isoformat(), "page_size": 500}
+        # Only bring in what Grace is coaching (her instructor id)
+        grace_id = _teamup_instructor_id(key, "grace")
+        if grace_id:
+            params["instructors"] = grace_id
         r = requests.get(
             "https://goteamup.com/api/v2/events",
             headers={"Authorization": f"Token {key}"},
-            params={"starts_at_gte": today.isoformat(),
-                    "starts_at_lte": end.isoformat(), "page_size": 500},
-            timeout=30,
+            params=params, timeout=30,
         )
         r.raise_for_status()
         out = []
@@ -92,11 +115,11 @@ def fetch_teamup_schedule(today, days=2):
             name = (e.get("name") or "Class").strip()
             booked = e.get("attending_count")
             cap    = e.get("max_occupancy")
+            # Upcoming events report 0 attended (there's no signup count on the
+            # events feed), so only show a count once there's real attendance.
             sub = ""
-            if isinstance(booked, int) and isinstance(cap, int) and cap > 0:
-                sub = f"{booked}/{cap} booked"
-            elif isinstance(booked, int) and booked:
-                sub = f"{booked} booked"
+            if isinstance(booked, int) and booked > 0:
+                sub = f"{booked}/{cap} booked" if (isinstance(cap, int) and cap > 0) else f"{booked} booked"
             out.append({
                 "title": name,
                 "time": _fmt_time(starts),
