@@ -561,14 +561,10 @@ function renderAtRisk() {
     const lastSess = m.last_seen
       ? `Last session ${fmtShort(m.last_seen)}${m.days_absent != null ? ` · ${m.days_absent}d ago` : ""}`
       : "No session on record";
-    const outreach = m.outreach
-      ? `<div style="font-size:.72rem;color:#7c3aed;margin-top:4px;display:flex;gap:5px"><span>💡</span><span>${m.outreach}</span></div>`
-      : "";
     return `<div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px">
       <div style="flex:1;min-width:0">
-        <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+        <div style="font-size:.85rem;font-weight:600;color:#7c3aed;cursor:pointer" onclick="showMemberDetail('${nm}')" title="Open profile">${m.name}</div>
         <div style="font-size:.72rem;color:#ef4444;font-weight:600">${lastSess}</div>
-        ${outreach}
         ${contacted}
       </div>
       ${actions}
@@ -675,8 +671,21 @@ function showMemberDetail(name) {
   const note = sharedGet(noteKey, "") || "";
   const esc = t => String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 
+  // Slack DM deep-link — match member name to a Slack user id
+  const slackUsers = (window._slackData && window._slackData.users) || {};
+  const _nrm = (d.name||"").toLowerCase().split(/\s+/).filter(Boolean).join(" ");
+  const slackId = slackUsers[_nrm];
+  const slackBtn = slackId
+    ? `<li style="list-style:none;padding:6px 0 10px">
+         <a href="https://slack.com/app_redirect?channel=${slackId}" target="_blank"
+            style="display:flex;align-items:center;justify-content:center;gap:8px;padding:9px;background:#4a154b;color:#fff;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none">
+            💬 Message ${esc((d.name||'').split(' ')[0])} on Slack</a>
+       </li>`
+    : "";
+
   document.getElementById("modal-title").textContent = d.name;
   document.getElementById("modal-list").innerHTML =
+    slackBtn +
     row("Status", risk) +
     row("Membership", d.membership || "—") +
     row("Joined", dt(d.join_date)) +
@@ -1048,6 +1057,12 @@ function render(data) {
     const curActive = [...activeSeries].reverse().find(s => s.v != null);
     const curChurn  = [...churnSeries].reverse().find(s => s.v != null);
 
+    // Average monthly churn across the completed months of the current year so far
+    const _thisYm = new Date().toISOString().slice(0,7);
+    const _yr = _thisYm.slice(0,4);
+    const ytdChurn = hist.filter(h => h.month.startsWith(_yr) && h.month !== _thisYm && h.churn != null);
+    const avgChurnYtd = ytdChurn.length ? Math.round(ytdChurn.reduce((a,h)=>a+h.churn,0)/ytdChurn.length*10)/10 : null;
+
     push("retention", `<div class="sec-divider"><span class="sec-label">Retention Health</span><span class="sec-line"></span></div>`);
     push("retention", `
       <div class="card col-6">
@@ -1061,14 +1076,18 @@ function render(data) {
       <div class="card col-6">
         <div class="card-title">Churn</div>
         <div class="card-headline">Churn &amp; Cancellations</div>
-        <div style="display:flex;gap:10px;margin:8px 0 4px">
-          <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-            <div style="font-size:1.6rem;font-weight:800;color:#dc2626;letter-spacing:-.02em">${tm.cancelled_ytd ?? "—"}</div>
-            <div style="font-size:.65rem;color:#9ca3af;font-weight:600;text-transform:uppercase">Cancellations · year to date</div>
+        <div style="display:flex;gap:8px;margin:8px 0 4px">
+          <div style="flex:1;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:12px 14px">
+            <div style="font-size:1.7rem;font-weight:800;color:${(avgChurnYtd||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${avgChurnYtd != null ? avgChurnYtd + "%" : "—"}</div>
+            <div style="font-size:.63rem;color:#9ca3af;font-weight:700;text-transform:uppercase">Avg churn · year to date</div>
           </div>
           <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-            <div style="font-size:1.6rem;font-weight:800;color:${(tm.churn_rate||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</div>
-            <div style="font-size:.65rem;color:#9ca3af;font-weight:600;text-transform:uppercase">Set to cancel now</div>
+            <div style="font-size:1.7rem;font-weight:800;color:#dc2626;letter-spacing:-.02em">${tm.cancelled_ytd ?? "—"}</div>
+            <div style="font-size:.63rem;color:#9ca3af;font-weight:700;text-transform:uppercase">Cancellations YTD</div>
+          </div>
+          <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
+            <div style="font-size:1.7rem;font-weight:800;color:${(tm.churn_rate||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</div>
+            <div style="font-size:.63rem;color:#9ca3af;font-weight:700;text-transform:uppercase">Set to cancel</div>
           </div>
         </div>
         ${miniBars(churnSeries, "#ef4444", "%")}

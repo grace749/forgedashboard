@@ -82,6 +82,29 @@ def _user_names(token, ids):
     return names
 
 
+def _all_users(token):
+    """Map normalised full name → Slack user id (for deep-linking a DM to a member)."""
+    users, cursor = {}, ""
+    for _ in range(25):
+        try:
+            r = _call("users.list", token, limit=200, cursor=cursor)
+        except Exception:
+            break
+        if not r.get("ok"):
+            break
+        for m in r.get("members", []):
+            if m.get("deleted") or m.get("is_bot") or m.get("id") == "USLACKBOT":
+                continue
+            p = m.get("profile", {})
+            nm = " ".join((m.get("real_name") or p.get("real_name") or p.get("display_name") or "").lower().split())
+            if nm:
+                users.setdefault(nm, m["id"])
+        cursor = (r.get("response_metadata") or {}).get("next_cursor", "")
+        if not cursor:
+            break
+    return users
+
+
 def run():
     token = os.environ.get("SLACK_USER_TOKEN", "")
     if not token:
@@ -158,6 +181,7 @@ def run():
         "configured": True,
         "unreplied_dms": unreplied,
         "mentions": mentions,
+        "users": _all_users(token),   # name → id, for DM deep-links from a member profile
     }
 
 

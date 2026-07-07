@@ -1186,7 +1186,7 @@ def run():
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids,
                             first_seen, ever_attended_ids, last_session_by_cid)
-    add_retention_outreach(at_risk)
+    # (AI outreach suggestions removed — coaches found them unhelpful)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
     class_milestones = build_class_milestones(all_active_ids, name_map, class_counts)
