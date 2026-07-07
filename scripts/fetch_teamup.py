@@ -742,13 +742,14 @@ def build_member_history(all_memberships, name_map, months=12):
     for _ in range(months):
         mstart, mend = month_bounds(y, m)
         active   = {cid for cid, s, e, full in parsed if s <= mend and (e is None or e >= mstart)}
-        # Churn measured on FULL (paying) members only — a trial ending isn't churn
-        full_at_start = {cid for cid, s, e, full in parsed
-                         if full and s < mstart and (e is None or e >= mstart)}
-        still_after = {cid for cid, s, e, full in parsed if full and (e is None or e > mend) and s <= mend}
+        # Churn = a member whose membership ended this month and who has NOTHING
+        # active afterwards. A trial that converts to full stays (has a later
+        # membership) → not churn; a trial that just ends and doesn't convert → churn.
+        at_start    = {cid for cid, s, e, full in parsed if s < mstart and (e is None or e >= mstart)}
+        still_after = {cid for cid, s, e, full in parsed if (e is None or e > mend) and s <= mend}
         left = {cid for cid, s, e, full in parsed
-                if full and e is not None and mstart <= e <= mend and cid not in still_after}
-        churn = round(len(left) / len(full_at_start) * 100, 1) if full_at_start else 0.0
+                if e is not None and mstart <= e <= mend and cid not in still_after}
+        churn = round(len(left) / len(at_start) * 100, 1) if at_start else 0.0
         series.append({
             "month":  f"{y:04d}-{m:02d}",
             "active": len(active),
