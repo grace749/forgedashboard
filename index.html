@@ -1140,6 +1140,7 @@ function _agentContext(tab){
     forge_context: FORGE_FACTS,
     expertise: AGENT_SKILLS[tab] || {},
     whole_business: _businessSnapshot(),   // cross-tab awareness
+    agent_protocol: "You can take actions, not just answer. ONLY when the user clearly asks you to do one, END your reply with a fenced ```action block containing one JSON object. Types: {\"type\":\"flag_risk\",\"member\":\"Full Name\",\"reason\":\"...\"}; {\"type\":\"unflag_risk\",\"member\":\"Full Name\"}; {\"type\":\"add_note\",\"member\":\"Full Name\",\"note\":\"...\"}; {\"type\":\"draft_message\",\"member\":\"Full Name\",\"text\":\"the drafted message\"}. Use members' real names from the data. Grace approves every action with a button, so propose freely but never claim it's already done. If the user is just asking a question, do NOT include an action block.",
     data: _agentData(tab)
   };
   let s = JSON.stringify(payload);
@@ -1182,9 +1183,56 @@ async function _agentSend(tab, question, showAsYou){
       ? "⚠️ The chat endpoint asked for a Google login — its deployment may have reverted to domain-only. Re-deploy the chat script with access set to \"Anyone\"."
       : "⚠️ The AI service returned an error page (a temporary Google/Apps Script hiccup). Please tap Ask again — it usually works on the next try.";
   }
-  bubble.innerHTML = _chatFmt(ans);
-  if (!ans.startsWith("⚠️")) hist[tab].push({ role:"user", content:question }, { role:"assistant", content:ans });
+  if (ans.startsWith("⚠️")) bubble.innerHTML = _chatFmt(ans);
+  else { _renderAgentReply(tab, bubble, ans); hist[tab].push({ role:"user", content:question }, { role:"assistant", content:ans }); }
   document.getElementById("chat-thread-" + tab).scrollTop = 1e9;
+}
+
+// Render the agent's reply, pulling out any ```action blocks into approve cards.
+window._agentActions = [];
+function _renderAgentReply(tab, bubble, ans){
+  const actions = [];
+  const text = ans.replace(/```action\s*([\s\S]*?)```/g, (m, body) => {
+    try { const a = JSON.parse(body.trim()); if (a && a.type) actions.push(a); } catch (_) {}
+    return "";
+  }).trim();
+  bubble.innerHTML = _chatFmt(text || "…");
+  const thread = document.getElementById("chat-thread-" + tab);
+  actions.forEach(a => {
+    const idx = window._agentActions.push(a) - 1;
+    const card = document.createElement("div");
+    card.className = "agent-action-card";
+    if (a.type === "draft_message") {
+      card.style.cssText = "align-self:flex-start;max-width:95%;background:#fff;border:1px dashed #ddd6fe;border-radius:12px;padding:10px 12px;margin-top:2px";
+      card.innerHTML = `<div style="font-weight:700;color:#7c3aed;font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Draft${a.member?` · ${_chatEsc(a.member)}`:""}</div>
+        <div id="draft-${idx}" style="white-space:pre-wrap;color:#1f2937;font-size:.84rem;line-height:1.5">${_chatEsc(a.text||"")}</div>
+        <button onclick="_copyDraft(${idx},this)" style="margin-top:8px;font-size:.72rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:5px 12px;cursor:pointer">Copy</button>`;
+    } else if (a.type === "flag_risk" || a.type === "unflag_risk" || a.type === "add_note") {
+      const label = a.type === "flag_risk" ? `Flag ${a.member} as at-risk`
+                  : a.type === "unflag_risk" ? `Remove at-risk flag from ${a.member}`
+                  : `Add a note to ${a.member}`;
+      card.style.cssText = "align-self:flex-start;max-width:95%;background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:10px 12px;margin-top:2px;font-size:.84rem";
+      card.innerHTML = `<div style="color:#111;margin-bottom:7px">🛠 <b>${_chatEsc(label)}</b>${a.note?`<div style="color:#6b7280;margin-top:3px">"${_chatEsc(a.note)}"</div>`:""}${a.reason?`<div style="color:#6b7280;margin-top:3px">${_chatEsc(a.reason)}</div>`:""}</div>
+        <div style="display:flex;gap:8px">
+          <button onclick="applyAgentAction(${idx},this)" style="font-size:.74rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:5px 13px;cursor:pointer">Apply</button>
+          <button onclick="this.closest('.agent-action-card').remove()" style="font-size:.74rem;color:#9ca3af;background:#fff;border:1px solid #eee;border-radius:7px;padding:5px 13px;cursor:pointer">Dismiss</button>
+        </div>`;
+    } else { return; }
+    thread.appendChild(card);
+  });
+  thread.scrollTop = 1e9;
+}
+function _copyDraft(idx, btn){ const el = document.getElementById("draft-"+idx); if (el && navigator.clipboard){ navigator.clipboard.writeText(el.textContent); btn.textContent = "Copied ✓"; } }
+async function applyAgentAction(idx, btn){
+  const a = window._agentActions[idx]; if (!a) return;
+  const name = a.member || "";
+  btn.disabled = true; btn.textContent = "Applying…";
+  try {
+    if (a.type === "flag_risk")   { const s = { ...atState(name) }; s.manual = true; delete s.resolved; delete s.resolvedSeen; await atSave(name, s); if (typeof renderAtRisk === "function") renderAtRisk(); }
+    else if (a.type === "unflag_risk") { const s = { ...atState(name) }; delete s.manual; await atSave(name, s); if (typeof renderAtRisk === "function") renderAtRisk(); }
+    else if (a.type === "add_note") { const k = "note:" + name.toLowerCase(); const ex = sharedGet(k, "") || ""; await sharedSet(k, ex ? ex + "\n" + a.note : a.note); }
+    btn.closest(".agent-action-card").innerHTML = `<div style="color:#059669;font-weight:600;font-size:.84rem">✓ Done${a.type==="add_note"?" — note saved":a.type==="flag_risk"?" — flagged at-risk":" — flag removed"} · syncs to JoJo</div>`;
+  } catch (e) { btn.disabled = false; btn.textContent = "Retry"; }
 }
 
 async function askAgent(tab){
