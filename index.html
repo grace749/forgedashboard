@@ -968,17 +968,28 @@ function render(data) {
     window._atRiskData = (tm.at_risk || []).filter(m => !pausedNames.has((m.name||"").toLowerCase()));
     window._atRiskUrl  = data.atrisk_url || "";
 
-    // Build monthly series from the KPI sheet (oldest → newest)
-    const kMonths = [...((data.kpi && data.kpi.months) || [])].reverse();
-    const kMetric = (mo, name) => {
-      for (const cat of (mo.categories || []))
-        for (const it of (cat.items || []))
-          if ((it.name||"").toLowerCase().startsWith(name.toLowerCase())) return it.value;
-      return "";
-    };
-    const numify = v => { const n = parseFloat(String(v).replace(/[^0-9.\-]/g,"")); return isNaN(n) ? null : n; };
-    const activeSeries = kMonths.map(mo => ({ label: mo.period, v: numify(kMetric(mo, "Active Clients")) }));
-    const churnSeries  = kMonths.map(mo => ({ label: mo.period, v: numify(kMetric(mo, "Attrition")) }));
+    // Monthly series — reconstructed live from TeamUp memberships (preferred),
+    // falling back to the manual KPI sheet only if TeamUp history is unavailable.
+    const hist = tm.member_history || [];
+    const monLabel = ym => { const [y,m] = (ym||"").split("-"); return ["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][parseInt(m)||0] || ym; };
+    let activeSeries, churnSeries, srcLabel;
+    if (hist.length) {
+      activeSeries = hist.map(h => ({ label: monLabel(h.month), v: h.active }));
+      churnSeries  = hist.map(h => ({ label: monLabel(h.month), v: h.churn }));
+      srcLabel = "Live from TeamUp memberships";
+    } else {
+      const kMonths = [...((data.kpi && data.kpi.months) || [])].reverse();
+      const kMetric = (mo, name) => {
+        for (const cat of (mo.categories || []))
+          for (const it of (cat.items || []))
+            if ((it.name||"").toLowerCase().startsWith(name.toLowerCase())) return it.value;
+        return "";
+      };
+      const numify = v => { const n = parseFloat(String(v).replace(/[^0-9.\-]/g,"")); return isNaN(n) ? null : n; };
+      activeSeries = kMonths.map(mo => ({ label: mo.period, v: numify(kMetric(mo, "Active Clients")) }));
+      churnSeries  = kMonths.map(mo => ({ label: mo.period, v: numify(kMetric(mo, "Attrition")) }));
+      srcLabel = "From the monthly KPI sheet";
+    }
 
     const miniBars = (series, colour, suffix) => {
       const vals = series.filter(s => s.v != null);
@@ -1007,7 +1018,7 @@ function render(data) {
         <div class="card-headline">Active Member Trend</div>
         <div class="big-kpi" style="margin:4px 0"><div class="number">${curActive ? Math.round(curActive.v) : (tm.total_members ?? "—")}</div><div class="sublabel">Active members now</div></div>
         ${miniBars(activeSeries, "#7c3aed", "")}
-        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">From the monthly KPI sheet (Active Clients)</div>
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">${srcLabel}</div>
       </div>`);
     push("retention", `
       <div class="card col-6">
@@ -1015,7 +1026,7 @@ function render(data) {
         <div class="card-headline">Churn Rate Over Time</div>
         <div class="big-kpi" style="margin:4px 0"><div class="number">${curChurn != null ? curChurn.v + "%" : (tm.churn_rate ?? "—") + "%"}</div><div class="sublabel">Latest monthly attrition</div></div>
         ${miniBars(churnSeries, "#ef4444", "%")}
-        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">From the monthly KPI sheet (Attrition/Churn %)</div>
+        <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">${srcLabel} (full members)</div>
       </div>`);
 
     // At-risk members with per-member outreach action (AI retention agent)

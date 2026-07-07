@@ -699,6 +699,68 @@ def build_celebrations(active, name_map, first_seen, first_recurring):
     return {"first_week": first_week, "new_members": new_members, "tenure": tenure}
 
 
+def build_member_history(all_memberships, name_map, months=12):
+    """
+    Reconstruct a monthly active-member count and churn % from raw TeamUp
+    memberships (replaces the manually-typed KPI sheet). For each of the last
+    `months` months: active = distinct customers whose non-trial, non-excluded
+    membership overlapped that month; churn % = distinct members whose membership
+    ended that month (and who had nothing active after) ÷ active at month start.
+    """
+    today = date.today()
+
+    def month_bounds(y, m):
+        start = date(y, m, 1)
+        end = date(y + (m == 12), (m % 12) + 1, 1) - datetime.timedelta(days=1)
+        return start, end
+
+    # Pre-parse memberships once. `full` = non-trial paying membership (used for
+    # churn); the active count includes everyone (to match the headline total).
+    parsed = []
+    for mm in all_memberships:
+        cid = mm.get("customer")
+        nm  = (mm.get("name", "") or "").strip()
+        if not cid or not nm:
+            continue
+        if nm.lower() in EXCLUDE_FROM_BREAKDOWN:
+            continue
+        if _norm_name(name_map.get(cid, "")) in EXCLUDE_CUSTOMER_NAMES:
+            continue
+        try:
+            s = date.fromisoformat((mm.get("start_date") or "")[:10])
+        except Exception:
+            continue
+        e_raw = (mm.get("end_date") or mm.get("expiration_date") or "")[:10]
+        try:
+            e = date.fromisoformat(e_raw) if e_raw else None
+        except Exception:
+            e = None
+        parsed.append((cid, s, e, not _is_trial_membership(nm)))
+
+    series = []
+    y, m = today.year, today.month
+    for _ in range(months):
+        mstart, mend = month_bounds(y, m)
+        active   = {cid for cid, s, e, full in parsed if s <= mend and (e is None or e >= mstart)}
+        # Churn measured on FULL (paying) members only — a trial ending isn't churn
+        full_at_start = {cid for cid, s, e, full in parsed
+                         if full and s < mstart and (e is None or e >= mstart)}
+        still_after = {cid for cid, s, e, full in parsed if full and (e is None or e > mend) and s <= mend}
+        left = {cid for cid, s, e, full in parsed
+                if full and e is not None and mstart <= e <= mend and cid not in still_after}
+        churn = round(len(left) / len(full_at_start) * 100, 1) if full_at_start else 0.0
+        series.append({
+            "month":  f"{y:04d}-{m:02d}",
+            "active": len(active),
+            "churn":  churn,
+        })
+        m -= 1
+        if m == 0:
+            m = 12; y -= 1
+    series.reverse()   # oldest → newest
+    return series
+
+
 # ── Full member directory ───────────────────────────────────────────────────
 
 # Coaches with test memberships — never show in the member directory
@@ -1101,6 +1163,7 @@ def run():
     first_seen      = build_first_seen_map(all_memberships)
     first_recurring = build_first_recurring_map(all_memberships)
     celebrations    = build_celebrations(active, name_map, first_seen, first_recurring)
+    member_history  = build_member_history(all_memberships, name_map)
 
     # ── Class stats (3-month + 30-day, most & least popular) ────
     class_stats = {
@@ -1157,6 +1220,7 @@ def run():
         "cancelled_members":        cancelled_last_month,
         "breakdown":                breakdown,
         "class_stats":              class_stats,
+        "member_history":           member_history,
         "at_risk":                  at_risk,
         "celebrations":             celebrations,
         "class_milestones":         class_milestones,
