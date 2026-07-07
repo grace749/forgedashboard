@@ -1033,18 +1033,22 @@ function chatCard(tab) {
       <div style="display:flex;gap:8px">
         <input id="chat-input-${tab}" placeholder="${a.placeholder}" onkeydown="if(event.key==='Enter')askAgent('${tab}')"
           style="flex:1;font-size:.85rem;padding:9px 12px;border:1px solid #e5e7eb;border-radius:9px;outline:none">
+        <button onclick="agentInsights('${tab}')" title="Get the agent's top insights on this tab" style="font-size:.85rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:9px;padding:9px 14px;cursor:pointer;white-space:nowrap">✨ Insights</button>
         <button onclick="askAgent('${tab}')" style="font-size:.85rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:9px;padding:9px 16px;cursor:pointer">Ask</button>
       </div>
-      <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">${a.hint} It reads this tab's live data to answer.</div>
+      <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">${a.hint} It knows gym benchmarks and your Forge setup, and reads this tab's live data.</div>
     </div>`;
 }
 
 function _chatEsc(t){ return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 function _chatFmt(t){
-  return _chatEsc(t)
-    .replace(/\*\*(.+?)\*\*/g,"<b>$1</b>")
-    .replace(/^[•\-\*]\s+(.*)$/gm,"<div style='display:flex;gap:6px'><span style='color:#7c3aed'>▸</span><span>$1</span></div>")
-    .replace(/\n/g,"<br>");
+  return _chatEsc(t).split(/\n/).map(l => l.trim()).filter(l => l.length).map(l => {
+    l = l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    if (/^#{1,4}\s+/.test(l))    return `<div style="font-weight:700;color:#5b21b6;margin:3px 0 4px">${l.replace(/^#{1,4}\s+/,"")}</div>`;
+    if (/^[•\-\*]\s+/.test(l))    return `<div style="display:flex;gap:6px;margin:2px 0"><span style="color:#7c3aed">▸</span><span>${l.replace(/^[•\-\*]\s+/,"")}</span></div>`;
+    if (/^do this:/i.test(l))     return `<div style="margin-top:6px;font-weight:600;color:#7c3aed">${l}</div>`;
+    return `<div style="margin:2px 0">${l}</div>`;
+  }).join("");
 }
 function _chatBubble(tab, who, html){
   const thread = document.getElementById("chat-thread-" + tab);
@@ -1057,35 +1061,61 @@ function _chatBubble(tab, who, html){
   return wrap;
 }
 
-// Compact per-tab data slice sent as context (kept small to bound cost).
-function _agentContext(tab){
+// Business facts every agent should know (so answers are Forge-specific, not generic).
+const FORGE_FACTS = {
+  business: "The Forge is a boutique strength & conditioning gym in Northern Ireland, run as a UK limited company. Owner: Grace. Coaches include JoJo and Eilis. Memberships: Empower, Elevate, Evolve, Well75, plus a 6-week 'Jumpstart' trial that should convert to a full membership.",
+  data_truth: "Revenue truth = Starling bank money-IN (captures cash + card + Direct Debit); GoCardless/Stripe explain the breakdown. Members & churn come from TeamUp. P&L categories are Starling's own transaction tags. Money is GBP (£).",
+  watch_outs: "April 2026 is a ONE-OFF (studio relocation to ~2x size) — exclude April when judging trends or it looks like a disaster. Transfers to savings pots are NOT expenses. Grace is stepping back from delivering classes/PT; JoJo works Tuesdays; Eilis never works Tuesdays."
+};
+// Per-tab expert lens: what "good" looks like + how to reason about the data.
+const AGENT_SKILLS = {
+  finances:  { benchmarks:"Healthy gym net margin ~15-25%. Keep >3 months cash runway. Watch revenue-per-member trend (falling = pricing/upsell leak even if headcount grows). A failed DD/card is the earliest churn+cash warning.", lens:"Separate one-offs (April move) from the underlying trend. Tie cash movements to categories. Flag anything that threatens payroll or rent." },
+  retention: { benchmarks:"Monthly churn <3% is good, >5% is a problem. Trial→member conversion target ~50%+. At-risk = a member absent 10+ days. Lapsed members are recoverable if contacted within ~30 days.", lens:"Find WHO is at risk and WHY, and what single action recovers the most members/revenue this week. Distinguish full members from trials." },
+  members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"Explain the mix and where growth or shrinkage is really coming from." },
+  inbody:    { benchmarks:"Rescan cadence ~6 weeks. Progress = skeletal muscle up and/or body-fat % down. Overdue scans are a re-engagement opportunity.", lens:"Spot who's progressing (celebrate/case-study) and who's overdue or stalling (nudge)." },
+  jumpstart: { benchmarks:"6-week programme. Have the conversion conversation by week 4-5, not week 6. Missed check-ins predict non-conversion.", lens:"Who needs a conversion chat now, who's drifting, and what to do before their 6 weeks end." },
+  leads:     { benchmarks:"Speed-to-lead matters most — reply within minutes, not hours. Every un-actioned enquiry is lost revenue.", lens:"Rank who to contact first and flag anything going stale." },
+  ads:       { benchmarks:"Judge on cost-per-lead trend and lead→trial→member, not vanity metrics. Rising CPL with flat leads = creative/fatigue issue.", lens:"Say whether spend is working and what to change." },
+  growth:    { benchmarks:"Focus beats breadth — one or two levers per sprint.", lens:"Recommend the highest-leverage focus from the data." },
+  staff:     { benchmarks:"Watch class coverage and utilisation vs capacity. Remember Grace is stepping back; JoJo=Tue, Eilis≠Tue.", lens:"Flag coverage gaps and over/under-used classes." },
+  sop:       { benchmarks:"Good SOPs are specific and current.", lens:"Answer procedure questions precisely from the SOPs; flag anything missing." },
+  home:      { benchmarks:"Owner's time is the scarce resource.", lens:"Cut to the 1-3 things that actually need Grace today." }
+};
+
+function _agentData(tab){
   const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {};
   const slim = m => ({ month:m.month, revenue:m.revenue, expenses:m.expenses, profit:m.profit, categories:m.categories });
-  let ctx;
   switch (tab) {
-    case "finances":  ctx = { starling_monthly:(st.monthly||[]).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly }; break;
-    case "retention": ctx = { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } }; break;
-    case "members":   ctx = { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, by_type:tm.by_membership_type, joined_this_month:tm.joined_this_month, churn:tm.churn } }; break;
-    case "inbody":    ctx = { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) }; break;
-    case "jumpstart": ctx = d.jumpstart || {}; break;
-    case "leads":     ctx = { leads:d.ghl }; break;
-    case "ads":       ctx = d.marketing || {}; break;
-    case "growth":    ctx = d.growth_sprint || {}; break;
-    case "staff":     ctx = d.staff || {}; break;
-    case "sop":       ctx = d.sop || {}; break;
-    case "home":      ctx = { brief:d.brief, enquiries:d.ghl, slack:{ dms:(d.slack||{}).unreplied_dms } }; break;
-    default:          ctx = { snapshot:{ active:tm.active, recurring:tm.recurring } };
+    case "finances":  return { starling_monthly:(st.monthly||[]).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly };
+    case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } };
+    case "members":   return { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, by_type:tm.by_membership_type, joined_this_month:tm.joined_this_month, churn:tm.churn } };
+    case "inbody":    return { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) };
+    case "jumpstart": return d.jumpstart || {};
+    case "leads":     return { leads:d.ghl };
+    case "ads":       return d.marketing || {};
+    case "growth":    return d.growth_sprint || {};
+    case "staff":     return d.staff || {};
+    case "sop":       return d.sop || {};
+    case "home":      return { brief:d.brief, enquiries:d.ghl, slack:{ dms:(d.slack||{}).unreplied_dms } };
+    default:          return { snapshot:{ active:tm.active, recurring:tm.recurring } };
   }
-  let s = JSON.stringify(ctx);
-  return s.length > 11000 ? s.slice(0, 11000) + "…(truncated)" : s;
 }
 
-async function askAgent(tab){
-  const inp = document.getElementById("chat-input-" + tab);
-  const q = (inp.value || "").trim(); if (!q) return;
+// Full context = Forge facts + this agent's expert lens + the live tab data.
+function _agentContext(tab){
+  const payload = {
+    forge_context: FORGE_FACTS,
+    expertise: AGENT_SKILLS[tab] || {},
+    data: _agentData(tab)
+  };
+  let s = JSON.stringify(payload);
+  return s.length > 13000 ? s.slice(0, 13000) + "…(truncated)" : s;
+}
+
+// Shared send path for both a typed question and the Insights button.
+async function _agentSend(tab, question, showAsYou){
   document.getElementById("chat-thread-" + tab).style.display = "flex";
-  inp.value = "";
-  _chatBubble(tab, "you", _chatEsc(q));
+  if (showAsYou) _chatBubble(tab, "you", _chatEsc(showAsYou));
   const hist = (window._chatHist = window._chatHist || {});
   const prior = (hist[tab] = hist[tab] || []).slice(-8);   // prior turns only
   if (!window._chatUrl) {
@@ -1095,15 +1125,30 @@ async function askAgent(tab){
   const bubble = _chatBubble(tab, "agent", "<span style='color:#a78bda'>thinking…</span>");
   try {
     const res = await fetch(window._chatUrl, { method:"POST", body: JSON.stringify({
-      tab, question:q, history:prior, context:_agentContext(tab) }) });
+      tab, question, history:prior, context:_agentContext(tab) }) });
     const j = await res.json();
     const ans = j.answer || j.error || "No answer returned.";
     bubble.innerHTML = _chatFmt(ans);
-    hist[tab].push({ role:"user", content:q }, { role:"assistant", content:ans });
+    hist[tab].push({ role:"user", content:question }, { role:"assistant", content:ans });
   } catch (e) {
     bubble.innerHTML = "⚠️ Couldn't reach the agent (" + _chatEsc(String(e)) + ").";
   }
   document.getElementById("chat-thread-" + tab).scrollTop = 1e9;
+}
+
+async function askAgent(tab){
+  const inp = document.getElementById("chat-input-" + tab);
+  const q = (inp.value || "").trim(); if (!q) return;
+  inp.value = "";
+  await _agentSend(tab, q, q);
+}
+
+// One-click proactive insights for the tab.
+async function agentInsights(tab){
+  const q = "Give me your sharpest insights on this tab right now. Use the gym benchmarks and Forge context. "
+    + "Reply in this shape: one-line headline of what matters most; then 2-4 bullets of specific observations WITH the numbers; "
+    + "then a line starting 'Do this: ' with the single highest-leverage action this week. Exclude the April 2026 one-off from any trend. Be concrete, no fluff.";
+  await _agentSend(tab, q, "✨ Give me your top insights");
 }
 
 // ── Render ────────────────────────────────────────────────────
