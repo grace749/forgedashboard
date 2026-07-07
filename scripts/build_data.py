@@ -16,6 +16,8 @@ import fetch_staff
 import fetch_teamup
 import fetch_xero
 import fetch_starling
+import fetch_gocardless
+import fetch_stripe
 import fetch_sheets
 import fetch_marketing
 
@@ -63,6 +65,8 @@ data = {
     "teamup": safe_run("teamup", fetch_teamup.run),
     "xero": safe_run("xero", fetch_xero.run),
     "starling": safe_run("starling", fetch_starling.run),
+    "gocardless": safe_run("gocardless", fetch_gocardless.run),
+    "stripe": safe_run("stripe", fetch_stripe.run),
     "growth_sprint": safe_run("sheets", fetch_sheets.run),
     "marketing": safe_run("marketing", fetch_marketing.run),
 }

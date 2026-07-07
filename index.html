@@ -833,9 +833,14 @@ function render(data) {
     const enq = (briefH.enquiries || []).length;
     if (enq) items.push({ sev: 2, tab: "leads", icon: "🌱", label: `${enq} new enquir${enq>1?"ies":"y"} to follow up`, detail: (briefH.enquiries||[]).slice(0,2).map(e=>e.name).join(", ") });
 
+    // Failed payments (GoCardless + Stripe) — top-priority cash/churn warning
+    const fpAll = [ ...(((data.gocardless||{}).failed)||[]), ...(((data.stripe||{}).failed)||[]) ];
+    const fpCount = (((data.gocardless||{}).failed_count)||0) + (((data.stripe||{}).failed_count)||0);
+    if (fpCount) items.push({ sev: 1, tab: "finances", icon: "💳", label: `${fpCount} failed payment${fpCount>1?"s":""} to chase`, detail: fpAll.slice(0,3).map(f=>f.name).join(", ") });
+
     // Cancellations this month (retention concern)
     const cx = tmH.cancellations_this_month || 0;
-    if (cx) items.push({ sev: 2, tab: "members", icon: "📉", label: `${cx} member${cx>1?"s":""} leaving this month`, detail: `Churn ${tmH.churn_rate ?? "—"}%` });
+    if (cx) items.push({ sev: 2, tab: "retention", icon: "📉", label: `${cx} member${cx>1?"s":""} leaving this month`, detail: `Churn ${tmH.churn_rate ?? "—"}%` });
 
     // SOPs not built
     const nb = (sopH.stats && sopH.stats.not_built) || (sopH.not_built_list || []).length;
@@ -1903,6 +1908,37 @@ function render(data) {
     `);
   })();
 
+  // ── Failed payments (GoCardless + Stripe) — cash & churn early warning ──
+  (function failedPayments() {
+    const fails = [
+      ...(((data.gocardless||{}).failed)||[]).map(f => ({...f, src:"GoCardless"})),
+      ...(((data.stripe||{}).failed)||[]).map(f => ({...f, src:"Stripe"})),
+    ].sort((a,b) => (b.date||"").localeCompare(a.date||""));
+    const total = (((data.gocardless||{}).failed_count)||0) + (((data.stripe||{}).failed_count)||0);
+    if (!(data.gocardless || data.stripe)) return;   // not connected
+    push("finances", `
+      <div class="card col-12" style="margin-top:4px;${total?'border:1px solid #fecaca':''}">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
+          <div>
+            <div class="card-title" style="color:${total?'#dc2626':'#059669'}">Payments</div>
+            <div class="card-headline" style="margin-bottom:0">Failed Payments <span style="font-size:.72rem;font-weight:600;color:#9ca3af">last 45 days</span></div>
+          </div>
+          <span class="pill ${total?'red':'green'}" style="cursor:default">${total} failed</span>
+        </div>
+        ${fails.length ? `
+          <div style="margin-top:12px">
+            ${fails.map(f => `
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f6f6fa">
+                <div style="min-width:0"><div style="font-size:.85rem;font-weight:600;color:#111">${f.name}</div>
+                  <div style="font-size:.7rem;color:#aaa">${f.src}${f.reason?` · ${f.reason}`:""} · ${fmtDateShort(f.date)}</div></div>
+                <span style="font-weight:700;color:#dc2626;white-space:nowrap">${fmtGbp(Math.round(f.amount))}</span>
+              </div>`).join("")}
+          </div>
+          <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">A failed collection is your earliest churn + cash warning — chase these before they lapse.</div>
+        ` : `<p style="color:#16a34a;font-size:.85rem;padding:8px 0">No failed payments — all collections clean 🎉</p>`}
+      </div>`);
+  })();
+
   // Two stacked source cards: XERO on top, KPI Tracking below
   push("finances", `
     <div class="card col-12" style="margin-top:4px">
@@ -1965,22 +2001,30 @@ function render(data) {
   const histByMonth = {}; (tm.member_history || []).forEach(h => { histByMonth[h.month] = h; });
   const thisYm = new Date().toISOString().slice(0,7);
   const monLong = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month:"long", year:"numeric" });
+  // Real revenue by month = GoCardless + Stripe collections (clean customer money)
+  const revByMonth = {};
+  const addRev = arr => (arr||[]).forEach(m => { revByMonth[m.month] = (revByMonth[m.month]||0) + (m.collected||0); });
+  addRev(data.gocardless && data.gocardless.monthly);
+  addRev(data.stripe && data.stripe.monthly);
+  const haveRev = Object.keys(revByMonth).length > 0;
   if (stMonthly.length) {
     // newest first, exclude the current (incomplete) month
     const live = [...stMonthly].filter(m => m.month !== thisYm).sort((a,b)=>b.month.localeCompare(a.month)).slice(0,6);
     live.forEach(m => {
       const h = histByMonth[m.month] || {};
       const profitCol = (m.profit||0) >= 0 ? "green" : "red";
+      const rev = revByMonth[m.month];
       push("finances", `
         <div class="card col-4">
-          <div class="card-title">Live · Starling + TeamUp</div>
+          <div class="card-title">Live · ${haveRev ? "GoCardless/Stripe + " : ""}Starling + TeamUp</div>
           <div class="card-headline">${monLong(m.month)}</div>
-          <div class="stat-row"><span class="stat-label">Cash in</span><span class="stat-val">${fmtGbp(Math.round(m.revenue))}</span></div>
-          <div class="stat-row"><span class="stat-label">Cash out</span><span class="stat-val">${fmtGbp(Math.round(m.expenses))}</span></div>
+          ${haveRev ? `<div class="stat-row"><span class="stat-label">Revenue (memberships + cards)</span><span class="stat-val green">${rev != null ? fmtGbp(Math.round(rev)) : "—"}</span></div>` : ""}
+          <div class="stat-row"><span class="stat-label">Cash in (bank)</span><span class="stat-val">${fmtGbp(Math.round(m.revenue))}</span></div>
+          <div class="stat-row"><span class="stat-label">Cash out (bank)</span><span class="stat-val">${fmtGbp(Math.round(m.expenses))}</span></div>
           <div class="stat-row"><span class="stat-label">Net cash</span><span class="stat-val ${profitCol}">${fmtGbp(Math.round(m.profit))}</span></div>
           <div class="stat-row"><span class="stat-label">Active clients</span><span class="stat-val">${h.active ?? "—"}</span></div>
           <div class="stat-row"><span class="stat-label">Churn %</span><span class="stat-val ${(h.churn||0)>3?'red':'green'}">${h.churn != null ? h.churn + "%" : "—"}</span></div>
-          <div style="font-size:.64rem;color:#c4b5fd;margin-top:6px">Bank cash flow, savings transfers excluded · true membership revenue → GoCardless/Stripe next</div>
+          <div style="font-size:.64rem;color:#c4b5fd;margin-top:6px">${haveRev ? "Revenue from GoCardless + Stripe · " : ""}Cash from Starling (savings transfers excluded)</div>
         </div>`);
     });
   } else {
