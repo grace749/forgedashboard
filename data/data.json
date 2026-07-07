@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T12:06:35.656727+00:00",
+  "generated_at": "2026-07-07T13:28:27.056418+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "",
   "brief": {
     "date": "2026-07-07",
     "event_count": 8,
-    "urgent_count": 3,
+    "urgent_count": 7,
     "enquiry_count": 1,
     "calendar": [
       {
@@ -29,7 +29,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm event details and purpose with Grace immediately."
+        "prep": "Confirm details and purpose of this meeting with relevant attendee."
       },
       {
         "title": "Montessori Zoom",
@@ -41,7 +41,7 @@
         ],
         "description": "<br>Please find below the link to the independence video we will be looking at together during our third session together:<br><br>Independence \u2013\u00a0<a href=\"https://montessori-ami.hosted.panopto.com/Pano",
         "location": "",
-        "prep": "Test Zoom link and have independence video ready to share."
+        "prep": "Test Zoom link and video before 7pm; have notes ready."
       },
       {
         "title": "Upper - Shoulders/Biceps",
@@ -63,7 +63,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Arrange access, confirm delivery time, prepare gym space for installation."
+        "prep": "Confirm delivery time window; prepare gym access and installation space."
       },
       {
         "title": "Lower Two",
@@ -93,10 +93,50 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Gather Dan House bills documentation and process payment."
+        "prep": "Gather Dan's house bill documents and payment information beforehand."
       }
     ],
     "urgent": [
+      {
+        "from": "Burnside, Gabriella(Entrepreneur Acceleration Manager)",
+        "from_raw": "\"Burnside, Gabriella(Entrepreneur Acceleration Manager)\" <Gabriella.Burnside@natwest.com>",
+        "subject": "Ulster Bank Accelerator - July Newsletter",
+        "snippet": "Good afternoon! Welcome to the July Ulster Bank Accelerator Newsletter! Hope you all can take a nice break at some stage over the summer..but for those of you still here, we have plenty going on for",
+        "id": "19f3cc32ed44a06d",
+        "thread_id": "19f3cc32ed44a06d",
+        "msg_count": 1,
+        "draft_id": "r-700404138088826497"
+      },
+      {
+        "from": "Starling Developers",
+        "from_raw": "Starling Developers <developer@starlingbank.com>",
+        "subject": "Starling Developers - Password Reset",
+        "snippet": "Starling Developers Reset your Password Hit the button below to confirm your identity and continue with the password reset process. Reset Password Please ignore this email if you did not request a",
+        "id": "19f3cc31d1c970d5",
+        "thread_id": "19f3cc31d1c970d5",
+        "msg_count": 1,
+        "draft_id": "r7822012599506459345"
+      },
+      {
+        "from": "developer shared mailbox",
+        "from_raw": "developer shared mailbox <developer@starlingbank.com>",
+        "subject": "No registration link",
+        "snippet": "Hi Grace, It appears there is already an account set up under this email address, created on 15th May. You can request a password reset if you no longer have the login credentials. Best regards, Josh",
+        "id": "19f3cb4344747e54",
+        "thread_id": "19f3c20102a9a03e",
+        "msg_count": 2,
+        "draft_id": "r-6311081867041686979"
+      },
+      {
+        "from": "Chris Thompson (CThompson)",
+        "from_raw": "\"Chris Thompson (CThompson)\" <CThompson@belfastmet.ac.uk>",
+        "subject": "Belfast Met Summer Courses",
+        "snippet": "Happy Summer! As we head into the summer months, it&#39;s the perfect time to invest in professional development and learn something new. We&#39;re delighted to share details of our upcoming short",
+        "id": "19f3ca63cbb2fb9b",
+        "thread_id": "19f3ca63cbb2fb9b",
+        "msg_count": 1,
+        "draft_id": "r7463967375083440632"
+      },
       {
         "from": "Alexandra from TeamUp",
         "from_raw": "Alexandra from TeamUp <support@goteamup.com>",
@@ -126,12 +166,6 @@
       }
     ],
     "important": [
-      {
-        "from": "Willow FitProLeadGen",
-        "subject": "Invitation: Grace Smith - Chat with Willow @ Tue Jul 7, 2026 9:30am - 10am (BST) (grace@theforge.pt)",
-        "snippet": "Grace Smith - Chat with Willow ========== Phone:- 07961 814812 Email:- grace@theforge.pt Need to make a change to this event? Reschedule:- https://link.leaddec.com/widget/booking/0WRVA3emzrF4opM1ss70?",
-        "id": "19f381376ed503a9"
-      },
       {
         "from": "AwakenClub Newsletter",
         "subject": "Invitation to The SheVentures Effect online Wednesday 8th July at 5pm.",
@@ -3630,39 +3664,33 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member complaints & incident escalation** \u2013 no documented process for handling injuries, billing disputes, harassment, or facility safety issues; critical for liability & retention\n- **Financial close & reporting** \u2013 no SOP for monthly/quarterly reconciliation, churn analysis, or P&L review (assumed buried in General)\n- **Coach performance management & underperformance** \u2013 no formal review cadence, coaching feedback loops, or removal procedures\n- **Member win-back / lapsed reactivation** \u2013 no documented outreach campaign or criteria for who/when to target\n- **Duty of care & health screening** \u2013 no SOP for medical questionnaires, contraindications, or when to refer members to professionals\n- **New member onboarding experience** \u2013 likely exists but probably fragmented (induction, goal-setting, buddy system unclear)\n- **Class cancellation & substitute protocols** \u2013 no clear SOP when a coach is sick or no-shows; member comms timing\n- **Data retention & GDPR compliance** \u2013 no documented deletion/archival schedule for member data, contracts, or incident files\n\n---\n\n# **Needs updating**\n\n- **Coach SOPs (17/17)** \u2013 likely missing: conflict resolution between coaches, social media conduct, appearance standards, off-hours client interaction boundaries\n- **Client SOPs (22/22)** \u2013 check if these cover: contract renewal/non-renewal decisions, member tier upgrades/downgrades, platinum/VIP paths; likely thin on retention mechanics\n- **Marketing (10/12)** \u2013 Email Newsletter & Blog Post are missing; also likely missing: retargeting lapsed members, referral incentive mechanics, seasonal campaign templates\n- **General (3/3)** \u2013 almost certainly incomplete; review: crisis comms (injury, closure), staffing contingency, pricing/discount approval authority\n- **Facilities (4/"
+    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member complaint & incident escalation** \u2013 no documented path for complaints (class quality, billing, conduct, injury), investigation, resolution, or when to involve leadership/legal\n- **Financial reconciliation & discrepancies** \u2013 no SOP for daily/weekly cash/card reconciliation, refund authorization, or chargeback handling\n- **Coach performance management & improvement plans** \u2013 no formal process for tracking attendance, member feedback, underperformance flags, or remedial coaching\n- **Health & safety incident reporting** \u2013 no documented protocol for falls, injuries, equipment failure, near-misses, accident book entry, or insurance notification\n- **Member win-back/churn prevention** \u2013 no systematic process for identifying at-risk members, outreach cadence, or re-engagement offers\n- **Staff scheduling conflicts & callout procedures** \u2013 no SOP for managing sickness, emergency cover, or last-minute class cancellations\n- **Onboarding post-sign-up** \u2013 no documented member experience from payment through first class (email sequence, studio arrival, induction, buddy assignment)\n- **Data privacy & GDPR compliance** \u2013 no process for member data requests, deletion, consent management, or breach reporting\n- **Supplier/vendor management** \u2013 no SOP for equipment maintenance contracts, ordering, payment terms, or issue escalation\n\n---\n\n# **Needs updating**\n\n- **Coach SOPs (17/17)** \u2013 likely missing: attendance expectations, lateness policy, social media conduct, how to handle member complaints directed at them, safeguarding/welfare concerns, and progression criteria\n- **Client SOPs (22/22)** \u2013 review for gaps: membership pause/freeze process, billing dispute handling, class cancellation/refund policy, and member conduct/banning thresholds\n- **Marketing SOPs (10/12)** \u2013 Email Newsletter & Blog Post exist as gaps;"
   },
   "slack": {
     "configured": true,
     "unreplied_dms": [
       {
-        "user_id": "U09CYACSUE9",
-        "text": "Superb - thank you! \nI got 4 emails about the changes (2 refunds, 2 receipts for 119) :+1::skin-tone-3:",
-        "hours": 47,
-        "name": "Kerrie"
-      },
-      {
         "user_id": "U09HG60QR7C",
         "text": "Moving house is one of the most stressful things you'll do, even for the strongest couples. Dan and I found the first few 3-4 months really difficult, it took u",
-        "hours": 45,
+        "hours": 46,
         "name": "Melissa Traynor"
       },
       {
         "user_id": "USLACK",
         "text": "<@U0BG7GH3S72> joined via your invite link! If you need to disable the link or change your notification settings, you can <https://forgefemalefitness.slack.com/",
-        "hours": 26,
+        "hours": 27,
         "name": "Slack"
       },
       {
         "user_id": "U09DDQ1UETB",
         "text": "Thanks Grace I've paid for the two sessions. Please book her in for 15th a July and 5th August. Thank you. ",
-        "hours": 19,
+        "hours": 21,
         "name": "Claire Leeke"
       },
       {
         "user_id": "U086M7J0X4N",
         "text": "Awh Helen I totally understand. Thinking of you all and hoping little Rita is ok. Keep me updated xx ",
-        "hours": 14,
+        "hours": 16,
         "name": "Helen Traynor"
       }
     ],
@@ -4680,7 +4708,7 @@
         ]
       }
     ],
-    "advice": "# The Forge \u2014 Fractional CFO Action Plan\n\n## INCREASE REVENUE\n\n- **Pricing review overdue.** AR/M (average revenue per member) has collapsed from \u00a3170.43 (December) to \u00a3120.48 (June) \u2014 a 29% drop despite member count growing from 124 to 147. You've either discounted heavily post-relocation or onboarded price-sensitive cohorts. Audit your current pricing tier mix; increase base membership by \u00a32\u20135/month and push higher-margin class packs or PT bundles to new 147-member base. Target: restore AR/M to \u00a3155+ by September.\n- **Churn control critical.** June showed 0% attrition (good), but May was 5.74% and April was 8.33% \u2014 the relocation disrupted retention. Implement 30-day post-move check-ins and a referral incentive (\u00a320 credit per referral) to lock in the 147 members and grow to 165+ by Q3.\n- **Upsell aggressively to the bigger space.** Your studio is now 2x capacity but revenue June (\u00a317.7k) barely exceeds May (\u00a320.2k) \u2014 you've *lost* \u00a32.5k month-on-month despite gaining 25 members. Premium class slots (peak hours), small-group training, and locker/towel add-ons should be pushed hard. Target: 5% of members on a paid add-on by August.\n\n## REDUCE EXPENSES\n\n- **Non-people costs are the crisis.** June non-people expenses \u00a39,390 are **2x the September\u2013November average (\u00a34.5k)**. Even excluding April's relocation fit-out, Jan\u2013June averages \u00a39.3k \u2014 unsustainable against \u00a317.7k revenue. Audit utilities, rent, equipment maintenance, insurance, and supplies line-by-line. Identify \u00a32\u20133k of overspend and negotiate supplier terms; rent on the bigger space may be higher but should not alone account for a 100% increase.\n- **Staffing creep.** People costs rose from \u00a32.5k (November peak efficiency) to \u00a33.7k (June). You've added headcount for the bigger studio \u2014 necessary \u2014 but June's \u00a33,686 against \u00a317.7k revenue (20.8% of revenue) is above target. Benchmark: aim for 18% people-cost ratio. Review rota efficiency; shift to part-time or contractor model if full-time headcount exceeds needs.\n\n## IMPROVE PROFITABILITY & TAX"
+    "advice": "# THE FORGE \u2014 FRACTIONAL CFO ACTION PLAN\n\n## REVENUE GROWTH (Priority 1: Fix the leakage)\n\n\u2022 **Churn is killing momentum.** June hit 0% attrition (excellent), but May was 5.74% and Mar\u2013Apr averaged 7.5%. You added 25 net members Sep\u2013Dec, then lost 30 in Jan\u2013Apr despite the bigger studio. Target: hold churn below 2% consistently. Audit why Jan\u2013Mar saw 7.45%, 2.88%, 6.60%\u2014likely post-Christmas drop-off and relocation disruption. Implement exit interviews and a \"at-risk\" retention call programme now.\n\n\u2022 **AR/M (revenue per active member) has collapsed.** June was \u00a3120.48; September\u2013December averaged \u00a3151\u2013170. You're bringing members through the door but charging less or losing premium upsells. Audit: are class packages/PT sessions being offered? Test a price increase of 5\u20137% on new sign-ups (from approx \u00a3200/month standard rate implied by 85 \u00d7 \u00a3162.33 = \u00a313.8k) and bundle ancillaries (nutrition coaching, merchandise, guest passes). Target: \u00a3160+ AR/M by August.\n\n\u2022 **December spiked to \u00a321.1k (49.5% margin)\u2014why?** Reverse-engineer: seasonal gift memberships, New Year resolutions, or one-off event revenue. Replicate in June\u2013July (summer body season) with a June campaign: introduce discounted 3-month blocks (paid upfront) and corporate team memberships. Your 147 active members in June is your highest base; don't leave that on the table.\n\n---\n\n## EXPENSE CONTROL (Biggest red flag: non-people costs)\n\n\u2022 **Non-people expenses surged Jan\u2013Apr (avg \u00a311.1k/month vs Sep\u2013Dec avg \u00a34.9k) and remain elevated in May\u2013June (\u00a39.2\u20139.4k).** This is 50\u201360% of revenue in recent months vs 33\u201335% in Q4. Excluding April's relocation, you're still running \u00a38\u20139k/month. Drill into line items: rent (new studio larger?), utilities, insurance, supplies, software. Negotiate with landlord for a fixed rent cap; audit utilities (LED lighting, smart thermostats); challenge vendor contracts monthly. **Target: reduce to \u00a36.5k/month within 90 days (32% of revenue).**\n\n\u2022 **People costs are stable at \u00a33.1\u20133.7k/month (17\u201320% of revenue)."
   },
   "staff": {
     "coaches": [
@@ -4856,7 +4884,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: her Build: Lower (17), Build: Upper (9), Elevate (6) and Strongevity (3) must move to JoJo and Eilis. This is the priority \u2014 Grace should do zero delivery coaching by next month.\n\n\u2022 **JoJo is carrying too much**: 133 sessions (44 PT + 20 scans + 69 classes) makes her a bottleneck. Shift 6\u20138 of her Circuits and Mobility classes to Eilis, and move 4\u20135 Build: Upper to Eilis to free JoJo for PT and higher-value work.\n\n\u2022 **Eilis is under-used and ready**: she's at 48 sessions with good class variety (Elevate, Build, Plate, Capacity). She can safely absorb Grace's Build: Lower, some of JoJo's Circuits, and take on more PT (she currently has 11; capacity exists to grow toward 18\u201320).\n\n\u2022 **Cover Grace's No Sweat Intro and PT**: assign her 3\u00d7 No Sweat Intros to JoJo (1) and Eilis (2), and her 0 PT load is naturally gone. Her 9 Body Composition Scans are not real coaching \u2014 strip these out and any coach can do them in 5 minutes.\n\n\u2022 **Stabilise the Tuesday constraint**: JoJo owns Tuesdays \u2014 confirm which specific Tuesday classes she must keep, then map Grace's Elevate and Strongevity to other days so Eilis can take them without collision.\n\n\u2022 **Target for next month**: JoJo ~100\u2013110 sessions (PT + core classes), Eilis ~65\u201375 sessions (classes + growing PT), Grace = 0 delivery.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately:** Her Build: Lower (17 sessions), Build: Upper (9), Elevate (6) and Strongevity (3) total 35 class slots. Assign Build: Lower to Eilis (she needs lower-intensity reps to build confidence before tackling Tuesdays) and split Build: Upper + Elevate + Strongevity between JoJo and Eilis based on existing strengths. This removes Grace from delivery.\n\n\u2022 **Move Grace's 9 Body Composition Scans to admin or rotating duty:** These aren't real coaching\u2014any staff member can conduct them. Free up ~3 hours of Grace's time and stop treating them as coaching load across the team.\n\n\u2022 **Rebalance JoJo's PT load:** At 44 PTs last month, JoJo is carrying almost all 1:1 work. Target 25\u201330 PTs for JoJo (keeping her as lead), assign 8\u201312 to Eilis (in smaller batches to build her client book and confidence), and reassign any of Grace's PT clients proportionally. This prevents burnout and develops Eilis.\n\n\u2022 **Assign Eilis \"Build: Lower\" as her signature class:** Give her 2\u20133 recurring slots per week. It's lower-skill than Build: Upper or Tuesdays, builds her coaching reputation, and fills the gap Grace leaves without overloading her before Tuesdays readiness.\n\n\u2022 **Audit class demand vs. coverage:** If any class (e.g. Circuits, Mobility, Plate) is light or runs sporadically, consolidate or shift to Eilis to give her more floor time. Avoid creating new single-coach dependencies\u2014every class should have a backup coach trained and ready.\n\n\u2022 **Cap Grace's admin at 3 hours/week",
     "period": "June 2026"
   },
   "asana": {
@@ -7708,7 +7736,7 @@
         ],
         "total_attended": 875
       },
-      "suggestion": "**For quiet studio time gaps:**\n\n1. Add a paid 30-min \"Open Gym + Coach\" block on Thursday and Monday evenings (your quietest days) \u2014 members book a PT-style slot for unstructured lifting with coach feedback, filling dead time and converting open-gym interest into revenue.\n\n2. Run a weekly \"Mobility + Coffee\" workshop Saturday mornings before your quietest day picks up \u2014 45 mins of guided mobility work followed by informal coffee chat; low overhead, builds Saturday attendance habit, pairs well with Mobility class promotion.\n\n**For quieter classes themselves:**\n\n3. Move Engine (52 attendees) to Tuesday or Wednesday morning and rebrand it as a 20-min \"Pre-Build warm-up\" or \"Lunchtime cardio burner\" \u2014 give it a time-slot advantage on your busiest days and a function-focused identity, then offer a discounted \"Build + Engine bundle\" to Build class regulars to drive crossover.",
+      "suggestion": "**For quiet studio gaps between PT and classes:**\n\n1. Launch a \"Open Studio\" slot on Thursday and Monday evenings (your quietest days) where members can book 30-min paid PT blocks or small-group sessions (2-3 people) at a lower rate than full PT \u2014 this captures demand without needing a scheduled class and uses dead time.\n\n2. Run a monthly Saturday morning \"Strength Workshop\" (45 mins, ticketed \u00a38-12) focusing on one movement pattern each month \u2014 deadlift, squat, bench \u2014 targeting Build class members who might want technique depth; Saturday is quiet so this adds revenue without competing with busy days.\n\n**For the quieter classes themselves:**\n\n3. Move **Engine** and **Capacity** to Wednesday or Tuesday (your peak days) to ride higher foot traffic, and offer first-timers a free trial week on these two classes specifically \u2014 position them as \"conditioning foundations\" for Build class graduates in promotional posts on class booking or in-gym signage.",
       "capacity": [
         {
           "name": "Build: Lower",
@@ -7869,7 +7897,7 @@
         "membership": "4 Class Pass",
         "days_absent": 21,
         "last_seen": "2026-06-16",
-        "outreach": "Message Alison: \"Missing you after 3 weeks! Free class this Thursday?\""
+        "outreach": "Text Alison: \"Missing you! Quick 20-min class this week? Let's get you back on track.\""
       },
       {
         "id": 12292932,
@@ -7877,7 +7905,7 @@
         "membership": "Elevate",
         "days_absent": 11,
         "last_seen": "2026-06-26",
-        "outreach": "Call Ashley to check in after fortnight away."
+        "outreach": "Call Ashley: \"How are you? We've a new Elevate class Friday\u2014fancy rejoining?\""
       },
       {
         "id": 13067175,
@@ -7885,7 +7913,7 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 57,
         "last_seen": "2026-05-11",
-        "outreach": "Invite Carrie back with \"Two months away\u2014let's restart together next week.\""
+        "outreach": "Personal call to Carrie: \"Nearly two months\u2014let's chat about barriers and get you back.\""
       },
       {
         "id": 7209125,
@@ -7893,7 +7921,7 @@
         "membership": "Evolve",
         "days_absent": 11,
         "last_seen": "2026-06-26",
-        "outreach": "Text Christine: \"11 days gone\u2014fancy Friday morning class with us?\""
+        "outreach": "Invite Christine to tomorrow's class: \"We've missed you. One session to restart?\""
       },
       {
         "id": 12289714,
@@ -7901,7 +7929,7 @@
         "membership": "Elevate",
         "days_absent": 28,
         "last_seen": "2026-06-09",
-        "outreach": "Catch-up call with Diane about what's been keeping her away."
+        "outreach": "Message Diane: \"Month away\u2014fancy a catch-up coffee before jumping back in?\""
       },
       {
         "id": 13216673,
@@ -7909,7 +7937,7 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 32,
         "last_seen": "2026-06-05",
-        "outreach": "Message Heather: \"Month away! New class schedule might suit better\u2014let's chat.\""
+        "outreach": "Invite Heather to Saturday morning class: \"Fresh start this weekend? We're here for you.\""
       },
       {
         "id": 10673854,
@@ -7917,7 +7945,7 @@
         "membership": "Empower",
         "days_absent": 15,
         "last_seen": "2026-06-22",
-        "outreach": "Invite Karen to complimentary PT session to reignite motivation."
+        "outreach": "Text Karen: \"Noticed you're quiet. Any support needed to get back?\""
       },
       {
         "id": 7840911,
@@ -7925,7 +7953,7 @@
         "membership": "Elevate",
         "days_absent": 11,
         "last_seen": "2026-06-26",
-        "outreach": "Text Kathryn: \"Haven't seen you in eleven days\u2014coffee catch-up soon?\""
+        "outreach": "Call Kathryn: \"Just checking in\u2014fancy your next Elevate session this week?\""
       },
       {
         "id": 12484194,
@@ -7933,7 +7961,7 @@
         "membership": "Elevate",
         "days_absent": 14,
         "last_seen": "2026-06-23",
-        "outreach": "Call Kerry: \"Two weeks is enough\u2014let's get you back this week.\""
+        "outreach": "Message Kerry: \"Two weeks\u2014ready for a confidence-boosting class with us?\""
       },
       {
         "id": 13149261,
@@ -7941,7 +7969,7 @@
         "membership": "4 PT Sessions",
         "days_absent": 20,
         "last_seen": "2026-06-17",
-        "outreach": "Message Khalida: \"Your PT sessions are waiting\u2014book your next one today?\""
+        "outreach": "Text Khalida: \"Missing your PT energy! Book your next session this week?\""
       },
       {
         "id": 4772999,
@@ -7949,7 +7977,7 @@
         "membership": "Empower",
         "days_absent": 14,
         "last_seen": "2026-06-23",
-        "outreach": "Invite Kirsty to Empower class this week, let's reconnect properly."
+        "outreach": "Call Kirsty: \"Fancy a chat about how we can support your goals?\""
       },
       {
         "id": 9196376,
@@ -7957,7 +7985,7 @@
         "membership": "Empower",
         "days_absent": 11,
         "last_seen": "2026-06-26",
-        "outreach": "Text Nerys: \"Eleven days\u2014fancy Thursday evening class? We've missed you!\""
+        "outreach": "Message Nerys: \"We've missed you. One class to reignite your routine?\""
       },
       {
         "id": 10726245,
@@ -7965,7 +7993,7 @@
         "membership": "Elevate",
         "days_absent": 11,
         "last_seen": "2026-06-26",
-        "outreach": "Call Nichola for quick chat about barriers and next steps."
+        "outreach": "Text Nichola: \"Just checking in\u2014ready for Elevate this week?\""
       },
       {
         "id": 9166511,
@@ -7973,7 +8001,7 @@
         "membership": "Empower",
         "days_absent": 98,
         "last_seen": "2026-03-31",
-        "outreach": "Personal visit to Nicole\u2014nearly 100 days away, needs warm reconnection."
+        "outreach": "Personal call Nicole: \"Three months away\u2014would love to understand what happened.\""
       },
       {
         "id": 6086046,
@@ -7981,7 +8009,7 @@
         "membership": "4 PT Sessions",
         "days_absent": 26,
         "last_seen": "2026-06-11",
-        "outreach": "Message Rose: \"Month without PT? Let's book your session back.\""
+        "outreach": "Text Rose: \"Your PT sessions are waiting. Ready to book your next?\""
       },
       {
         "id": 7775785,
@@ -7989,7 +8017,7 @@
         "membership": "Empower",
         "days_absent": 20,
         "last_seen": "2026-06-17",
-        "outreach": "Text Sarah: \"Three weeks away\u2014how about a catch-up class Tuesday?\""
+        "outreach": "Message Sarah: \"Three weeks\u2014fancy a lunchtime class to ease back in?\""
       },
       {
         "id": 10244264,
@@ -7997,7 +8025,7 @@
         "membership": "Empower",
         "days_absent": 19,
         "last_seen": "2026-06-18",
-        "outreach": "Invite Sharon to social meet-up before next Empower session."
+        "outreach": "Call Sharon: \"How's things? Let's get you back for a feel-good class.\""
       },
       {
         "id": 12672618,
@@ -8005,7 +8033,7 @@
         "membership": "Empower",
         "days_absent": 12,
         "last_seen": "2026-06-25",
-        "outreach": "Message Hazel: \"Two weeks missing you\u2014fancy Saturday morning class?\""
+        "outreach": "Text Hazel: \"Missed you this fortnight. Quick class this week?\""
       }
     ],
     "celebrations": {
@@ -9273,119 +9301,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Build \u2014 The Forge\n\n**1. Audit first, then structure**\nPull your last 3 months of booking/enquiry data. What are members actually paying for? What do coaches keep selling? Build the menu around *what's working*, not what you think should exist. You'll spot the gaps (e.g., \"people want 4-week body recomp packages but you're only selling monthly\").\n\n**2. Create two separate documents \u2014 don't try one menu that serves both**\n*Coach version:* Pricing, margins, what they can upsell, commission structure, how to position each tier. *Member version:* Benefits-focused (not cost), what each tier unlocks, social proof (\"X women per month choose this\"). Your coaches sell differently than your website does.\n\n**3. Price in tiers with a deliberate anchor**\nDon't list every option. Offer 3 tiers max (Good/Better/Best). Make the middle tier 15-20% cheaper than \"\u00e0 la carte\" pricing so it looks like the obvious choice. Test this: if nobody's buying your top tier after 2 weeks, it's priced wrong or positioned wrong \u2014 fix fast.\n\n**4. Embed decision-friction removers**\nAdd a \"starter package\" (first session + 2-week trial rate) so new members don't have to commit to a full program immediately. Coaches hate this? Train them to see it as a *conversion tool*, not a discount. Track who converts from trial to full package.\n\n**5. Live-test immediately, don't perfect first**\nSend the draft to your 3-4 most vocal members and your top coach this week. Get feedback in 48 hours."
+        "advice": "# Service Menu Build \u2014 The Forge\n\n**Cut the guessing game fast:**\n- **Do this today:** List every service you currently offer (gym access tiers, PT sessions, classes, nutrition coaching, etc.). Assign each a price and what's bundled. Don't overthink\u2014write what's real now, not what \"should\" exist. This becomes your baseline.\n\n**Make it coach-facing first:**\n- **Internal menu for staff:** Create a one-pager (literally one sheet) showing coaches *exactly* what they can sell, at what price point, and what they're responsible for delivering. Include commission/cut so they're incentivized to upsell correctly. Without this, coaches either undersell or promise things you can't deliver.\n\n**Design for member clarity (conversion):**\n- **External menu logic:** Structure by *outcome, not service type*. Instead of \"Small Group PT \u2013 \u00a345/session,\" try \"8-week strength foundation \u2013 \u00a3320\" or \"Unlimited gym + 2 PT sessions/month \u2013 \u00a389.\" Price anchoring matters\u2014put premium packages visibly to make mid-tier packages feel like the \"smart choice.\"\n\n**Test it immediately:**\n- **Run this on 5 current members this week:** Show them your menu, ask which package they'd buy if starting fresh, where they're confused. One round of feedback kills assumptions. Update based on what they actually respond to.\n\n**Lock it into systems:**\n- **Integrate into booking/payment NOW:** Get it live in your app/system before coaches start pitching alternatives. Friction in implementation = pricing chaos within a month.\n\nWhat's your highest-priced offering currently, and what's it bundled with?"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Landing Page Refinement for The Forge\n\n**Immediate actions:**\n\n\u2022 **Mine your actual customers for FAQs** \u2014 Don't guess. Pull your last 50 enquiries/calls/emails. What questions do women ask *before* committing? (\"Do I need to be fit already?\" \"What's the changing room situation?\" \"Is it intimidating?\"). Build your landing copy around *those* specific objections, not what you think matters.\n\n\u2022 **Lead with your differentiation in the first 8 seconds** \u2014 Women's-only gym isn't a feature, it's your moat. But spell out the *actual benefit* immediately: safety, no male gaze anxiety, community vibe, whatever resonates with YOUR ideal member. Test two versions: one emphasizing that benefit vs. one that doesn't. Measure which converts better.\n\n\u2022 **Create a micro-funnel by membership type** \u2014 Don't make beginner and advanced lifters click through the same landing page. Segment: \"Getting fit for the first time?\" \u2192 one page. \"Already train, looking for women's space?\" \u2192 different page. Different objections, different copy.\n\n\u2022 **Add a simple objection-killer section** \u2014 Format: \"Common concern | The reality at The Forge.\" Visuals help (before/afters, member testimonials answering those real questions). Keep it to 3-4 objections max.\n\n\u2022 **A/B test urgency/scarcity tactically** \u2014 Limited spots? Introductory rates ending? Test whether adding this (if true) moves the needle. Measure conversion rate before/after\u2014don't assume it helps.\n\nWhat's your current landing page conversion rate (visitor to trial/inquiry)?"
+        "advice": "# Landing Page Execution for The Forge\n\n**1. Mine your actual customer conversations NOW**\n- Pull the last 50 enquiry emails, Instagram DMs, and trial sign-up forms. What questions do they ask? (\"Do you have childcare?\" \"What if I'm not fit enough?\" \"Is it judgment-free?\") These ARE your landing page headlines and FAQs \u2014 not guesses.\n- Record 3-5 existing members answering \"Why did you choose The Forge?\" \u2014 use their exact language as social proof on the page.\n\n**2. Create a \"clarity ladder\" specific to your positioning**\n- Above the fold: One sentence that stops scrolling. For a women's-only gym, this might be \"Strength training without the ego\" or \"Built BY women, FOR women\" \u2014 test which one your ideal member responds to.\n- Then answer in order: *What is it? Who's it for? What will I actually DO? How much? How do I start?* \u2014 each as its own section, scannable in 10 seconds.\n\n**3. Ruthlessly test \"common objections\" as page sections**\n- Add a dedicated section: \"Starting from zero?\" / \"Worried about judgment?\" / \"Unsure if it's for you?\" \u2014 answer these directly with member testimonials or before/after context, not gym-speak.\n- Embed a 60-second walkthrough video of a real session. Removes mystery faster than any copy.\n\n**4. A/B test your CTA by friction level**\n- Test \"Book Free Trial\" vs. \"Quick Question? Message Us\" vs. \"See Our Schedule\" \u2014 different messaging attracts different confidence levels. Track which converts by member quality,"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Internal Feedback System for The Forge\n\n**Right now, today:**\n- **Skip the form.** Use what you already have: Google Forms embedded on your app/website with ONE question rotating monthly (\"What should we add?\" / \"Rate your experience\" / \"What class do you want?\"). Takes 30 seconds to complete. Forms get ignored; you need friction-free capture.\n\n**Quick implementation (this week):**\n- **Attach feedback to natural touchpoints.** Train your front desk to verbally ask 2-3 members per shift: \"What's working? What isn't?\" Capture answers in a shared Slack channel. This works better than a form because people talk more freely, and *you hear the tone* \u2014 frustration vs. enthusiasm.\n\n**Make it actually useful:**\n- **Create a visible \"We listened\" loop.** Post monthly: \"5 members asked for X. Here's what we're doing.\" (even if it's \"we're testing it\"). Members give more feedback when they see action. This is your competitive advantage vs. big gyms.\n\n**Revenue angle:**\n- **Mine upsell opportunities during check-ins.** When someone says \"I'd love a nutrition program,\" you now have permission to pitch your nutrition coaching add-on. Feedback = qualified sales intel.\n\n**Avoid this mistake:**\n- **Don't make it anonymous.** You need names so you can follow up with advocates (expansion recruitment), spot churn risks early, and verify if feedback is from your power users or occasional visitors.\n\nWhat's your current member communication channel? (App, email, WhatsApp group?)"
+        "advice": "# Execute Member Feedback System at The Forge\n\n\u2022 **Start stupidly small this week**: Create a 4-question Google Form (takes 20 mins). Post the link in your WhatsApp group, email blast, and print it at reception. Don't overthink it\u2014\"What class do you want?\", \"What's not working?\", \"Rate your experience 1-10\", \"Refer a friend?\" Done. You'll get 15-20 responses and actual data within 7 days.\n\n\u2022 **Make it a post-class ritual, not an admin task**: Assign ONE staff member to hand out printed post-it feedback cards during peak hours (say, Thu-Sat evenings). Takes 30 seconds per member. You'll capture feedback when emotions are fresh and get higher participation than a form link ever will.\n\n\u2022 **Turn one piece of feedback into visible action monthly**: Pick the single most-mentioned complaint or request (e.g., \"need more morning classes\" or \"change shower schedule\"). Announce the fix in your next member email with *why* you made it. This proves you're listening and dramatically increases future feedback submissions.\n\n\u2022 **Use this as a sales tool, not just improvement**: When touring prospects, casually mention \"our members literally shaped our schedule\"\u2014it's differentiation. You'll convert better because women want to be heard, not sold to.\n\n\u2022 **Set a hard deadline**: Results review + action plan on the 25th of each month. 15-minute team huddle. Otherwise the feedback pile grows and nothing changes, killing trust."
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# SOP Execution Plan for The Forge\n\n**1. Reverse-engineer from your actual member journey first**\nDon't start writing. Spend 2 hours this week shadowing/recording ONE member through each service type. What actually happens? What confuses them? What takes longest? This is your SOP skeleton\u2014now you're documenting reality, not guessing.\n\n**2. Create a single template that mirrors your sales process**\nEach SOP follows this structure: (1) Pre-purchase expectations \u2192 (2) Day 1 onboarding steps \u2192 (3) Weekly/ongoing experience \u2192 (4) Escalation protocol. This isn't busywork\u2014it's how members *actually* move through each service. Fuel Forward SOP looks different from Strongevity because the member journey is different.\n\n**3. Assign one SOP per revenue stream owner, with 1-week deadlines**\nWho's responsible for Fuel Forward success? That person writes that SOP. 500-word max. Video-record them walking through it (3 mins) instead of just text\u2014members and staff learn faster. Due dates: Next 5 weeks, one SOP/week.\n\n**4. Test SOPs with 3 members before finalizing**\nHand each SOP to a new member in that category. Watch them follow it without help. Where do they get stuck? Fix those gaps. A SOP that doesn't work with actual humans isn't an SOP\u2014it's a filing exercise.\n\n**5. Link SOPs directly to retention metrics you're tracking**\nOnce live, each SOP owns a specific metric (Strongevity = 90-day retention %, Fuel Forward = weekly engagement %). Review monthly. If a"
+        "advice": "# SOP Execution Strategy for The Forge\n\n**1. Reverse-engineer from complaints & bottlenecks first**\nBefore writing anything, spend 2 hours interviewing your staff asking: \"What question do members ask repeatedly? Where do people get confused?\" This prevents writing SOPs nobody needs. Your actual problem areas (fuel forward ordering delays? well75 booking chaos?) get priority\u2014write those SOPs first, not in alphabetical order.\n\n**2. Use a dead-simple template & assign ONE person per SOP**\nDon't try to write all five yourself. Create a one-page template (member journey \u2192 decision points \u2192 exact steps \u2192 who to contact). Assign each SOP to the staff member who *actually does that job daily*\u2014your PT coordinator writes the PT SOP, not you. They know the real friction points. You review & edit for clarity only.\n\n**3. Test SOPs with a real member before finalizing**\nHand the draft SOP to an actual new member in that category and watch them follow it without help. Where they hesitate = where your SOP is broken. Revise, then it goes live. This takes 1 hour per SOP but saves weeks of misunderstanding.\n\n**4. Make them *scannable*, not readable**\nFormat as: \"Your first session: \u2460 Book here [link] \u2461 Arrive 15 mins early \u2462 Meet [name] at desk.\" Bullet points. One page max. Members won't read paragraphs. If it's longer than one page, you've overcomplicated it.\n\n**5. Build a living SOP tracker**\nCreate a simple spreadsheet: SOP name | owner | last updated | next review date. Review quarterly and update based on"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Social Media Content Calendar \u2014 Execution Plan for Grace\n\n**Pick ONE platform first, own it, then expand**\nDon't spread thin across Instagram, TikTok, and Facebook simultaneously. Start with Instagram (best for fitness community engagement). Post 3x/week there for 90 days, measure what sticks, *then* add a second platform. This prevents the \"I created a calendar I can't maintain\" trap.\n\n**Use a stupidly simple batching system \u2014 one 90-min session per month**\nSchedule a monthly \"content shoot day\" where Grace (or a staff member) films 12\u201315 short clips in one go: member transformations, class highlights, quick form tips, behind-the-scenes. Then drag them into a free tool like Buffer or Later, and schedule them across the month. Calendar done before month starts. No daily pressure.\n\n**Make the calendar about YOUR competitive advantage, not generic fitness content**\n\"Women-only space\" and \"Belfast community\" are your edges. Posts should showcase: member wins specific to women (strength gains, confidence shifts), local partnerships, what makes The Forge different from mixed gyms. Avoid copying big global fitness accounts\u2014you'll lose that fight. Instead, become the go-to local authority.\n\n**Tie calendar posts to revenue drivers**\nEvery 4th post should soft-promote (class sign-ups, referral program, membership tier upgrade). Not salesy\u2014just \"3 spots left in Thursday's power class.\" This turns followers into members, not just engagement vanity metrics.\n\n**Automate the scheduling, not the thinking**\nUse Buffer or Later (free versions work fine). But Grace still writes captions weekly (15 mins). Automation handles posting time, not creativity."
+        "advice": "# Social Media Content Calendar \u2014 Execute This Week\n\n\u2022 **Start with a 4-week template, not a year's worth.** Use a simple Google Sheet with columns: Date | Platform | Content Type | Hook | Asset Status. Fill only 4 weeks at a time\u2014this prevents overwhelm and lets you adjust based on what actually drives engagement at The Forge. Review metrics Friday afternoon, tweak Monday's plan.\n\n\u2022 **Batch-create content in a single 90-minute session bi-weekly.** Film 8 short videos (transformations, quick workouts, member spotlights, behind-the-scenes) on Day 1. Shoot photos on Day 2. This beats daily scrambling and gives you a visual consistency your audience will recognize.\n\n\u2022 **Assign content pillars tied to *why* women join you:** Strength Progress (40% of posts\u2014transformation clips, PRs), Community/Belonging (35%\u2014member stories, group energy), Education (25%\u2014form tips, nutrition). This forces relevance and stops random posting.\n\n\u2022 **Use scheduling tool TODAY** (Buffer, Later, or Meta Business Suite\u2014all free-tier sufficient). This removes the friction of remembering to post and lets you batch uploads. Schedule the full 4 weeks every other Friday morning in 20 minutes.\n\n\u2022 **Make one member your \"content champion\" this month.** Offer free month or merchandise in exchange for letting you film short clips of her journey 2x/week. Authentic member stories outperform any branded content and build tribal loyalty.\n\nWhat's your biggest blocker right now\u2014creating content ideas, or the time to actually film?"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing Videography Sessions with Jordan\n\n\u2022 **Lock it in NOW with a standing booking** \u2014 Contact Jordan today and book 8-week slots 6 months ahead (not ad-hoc). This removes the \"when should we do this?\" friction that kills consistency. Treat it like a recurring client appointment that can't be moved.\n\n\u2022 **Define the output upfront, not on shoot day** \u2014 Before Jordan arrives, give her a shot list: 60-second transformation testimonial with [specific member], 30-second class highlight reel, 3-5 social clips from peak energy class times. She knows exactly what to capture; no wasted time figuring it out on camera.\n\n\u2022 **Schedule shoots during your busiest class times** \u2014 6:30pm weekday classes = full gym, high energy, authentic footage. Boring empty gym footage kills engagement. Pick the 90-minute window when your studio looks most alive.\n\n\u2022 **Assign one person (you or staff) as \"Jordan's handler\"** \u2014 They brief her on the day's focus, introduce her to the testimonial member beforehand, manage class flow so she's not disruptive. One point of contact = faster shoots, better content.\n\n\u2022 **Batch-repurpose immediately** \u2014 Within 48 hours, you have a bank of clips. Don't wait. Post 2-3 pieces that week across Instagram/TikTok/Facebook. Momentum compounds; sporadic posting kills reach.\n\nWhat's your busiest class time currently?"
+        "advice": "# Videography Sessions: Execution Plan for Grace\n\n\u2022 **Lock in the first 3 sessions NOW** \u2014 Don't book \"regularly\" vaguely. Call Jordan today, pick fixed dates (e.g., every 8 weeks on a Tuesday morning), add to both calendars. This removes the friction that kills follow-through.\n\n\u2022 **Assign a content calendar to yourself** \u2014 Before each session, decide what 3-4 specific moments/outcomes you want captured (new class launch, member transformation story, equipment tour). Brief Jordan 48 hours prior. This turns raw footage into usable assets instead of hours of unusable video.\n\n\u2022 **Repurpose aggressively from day one** \u2014 One 2-hour shoot = 8-10 reels/TikToks, 2-3 Instagram posts, 1 testimonial video, email content. Map where each piece goes *before* filming. Otherwise footage sits unused.\n\n\u2022 **Tie it to revenue** \u2014 Track which video type drives inquiries/sign-ups (usually testimonials and transformations beat facility tours). Double down on what converts. After 3 sessions, you'll have data to justify the spend.\n\n\u2022 **Make Jordan your go-to, not a vendor** \u2014 Build a relationship. Give him early access to new class formats or member stories. Familiarity = faster turnaround, better creative instincts, and he'll prioritize your bookings.\n\nWhat's your biggest bottleneck right now \u2014 getting the actual filming done, or turning footage into content?"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Automating 6-Week Trial Enquiries for The Forge\n\n\u2022 **Map the current manual bottleneck first** \u2014 Have Grace (or whoever handles trials) document exactly what happens NOW from enquiry to trial start: emails sent, follow-ups, payment collection, onboarding docs. This takes 30 mins but reveals where automation actually saves time vs. looks good on paper.\n\n\u2022 **Set up a Zapier/Make workflow that auto-triggers on form submission** \u2014 Route enquiry \u2192 auto-email with trial welcome pack + booking link (Calendly) + payment link (Stripe) \u2192 auto-tag in CRM \u2192 reminder email 2 days before session. This cuts manual back-and-forth from 4-5 touches to 1.\n\n\u2022 **Create ONE dead-simple booking/payment step** \u2014 Don't make it \"enquire \u2192 email sequence \u2192 call \u2192 payment \u2192 booking.\" Make it enquire \u2192 instant Calendly + Stripe link in the first auto-response. Fewer steps = higher conversion on trials (which feeds membership sign-ups).\n\n\u2022 **Pre-load the automation with The Forge's trial specifics** \u2014 Emails should mention women-only environment + beginner-friendly sessions + specific class times (not generic copy). This filter-qualifies enquiries and reduces no-shows.\n\n\u2022 **Set a 6-week review checkpoint** \u2014 Track conversion rate (enquiry \u2192 trial attendance \u2192 membership), no-show rate, and time saved. If it's not hitting 50%+ trial-to-membership conversion, the automation isn't the problem \u2014 the trial experience itself needs fixing.\n\nWhat's your current trial-to-membership conversion rate?"
+        "advice": "# Automating Trial Enquiry Follow-ups for The Forge\n\n\u2022 **Set up conditional email sequences in Mailchimp (free tier works):** Create ONE core sequence triggered on \"trial enquiry submitted\" \u2192 Day 1 (welcome + gym tour booking link), Day 3 (social proof from current members), Day 6 (limited-time offer to convert). Skip generic reminders; each email has ONE job.\n\n\u2022 **Use Calendly + Zapier ($20/month) to auto-book gym tours:** When someone books a trial, Zapier automatically adds them to a shared calendar view AND sends Grace a text alert. Kills the \"someone forgets to follow up\" problem that tanks conversions.\n\n\u2022 **Build a simple tracking checklist in Airtable (free):** Each enquiry shows: name \u2192 email sent \u2192 tour booked \u2192 attended \u2192 converted. Takes 90 seconds to build. Grace glances at it weekly to spot drop-off points (if 60% never book the tour, that's your real problem, not email).\n\n\u2022 **Test ONE friction point this week:** Go back 10 trial enquiries from last month. Where did they disappear? Was it the initial response time? No clear tour booking option? Fix that one thing, not everything. Re-run the system for 2 weeks, measure conversions.\n\n\u2022 **Automate the \"show up\" reminder:** SMS (Twilio) 24 hours before booked tour with a \"reply YES to confirm\" option. Cuts no-shows by 30-40%. If they don't confirm, auto-trigger a same-day call from Grace or a staff member.\n\n**What's the actual current drop-off rate from enquiry \u2192"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Role-Specific Action Checklists for The Forge\n\n**For JoJo (assume front desk/ops):**\n\u2022 **Daily checklist:** Member check-ins logged, class capacity verified by 8am, payment issues flagged. **KPI owner:** 95%+ daily member satisfaction (pulse survey at sign-out), zero missed class bookings due to system error\n\u2022 **Weekly:** Cash reconciliation, member retention calls on lapsed 7-14 day users, class schedule accuracy check. **KPI:** <2% payment discrepancies, contact 100% of lapsed members\n\n**For Eilis (assume fitness/programming):**\n\u2022 **Daily checklist:** Class delivery logged, 1:1 form checks on 3-5 members, program progression notes. **KPI owner:** Member strength progression (measured monthly\u2014avg +5% lift improvement), class attendance rate >75% week-on-week\n\u2022 **Weekly:** New program rollout testing, coach feedback synthesis, injury prevention audit. **KPI:** Zero safety incidents, 85%+ class NPS score\n\n**For Sarah (assume marketing/growth):**\n\u2022 **Daily checklist:** Social content posting (3x), inbound lead logging, retention email send. **KPI owner:** Lead volume (baseline first\u2014set realistic target), email open rate >30%\n\u2022 **Weekly:** Conversion funnel audit (visits\u2192trials\u2192members), competitor intel, 1 partnership outreach. **KPI:** Trial-to-member conversion >40%, cost-per-acquisition trending down\n\n**Execution move:** Print these as **laminated desk cards** this week. Have each person tick daily. Review Fridays in 15-min huddles. Kill tasks"
+        "advice": "# Weekly Action Checklist + KPI Documentation for The Forge\n\n**1. Role-specific anchor metrics (not generic ones)**\n- **JoJo (likely ops/classes):** New member attendance conversion rate (%) + class utilization rate (%) + retention month-on-month\n- **Eilis (likely sales/growth):** Trial-to-paid conversion + cost-per-acquisition + member referral rate\n- **Sarah (likely community/retention):** Active engagement rate (check-ins/month) + churn rate + upsell revenue per member\n- Map 2-3 metrics MAX per person so they're not drowning\n\n**2. Build the checklist backwards from KPI targets**\n- Write what each person *must do weekly* to move their KPI (not random tasks)\n- Example for JoJo: \"Analyze last week's attendance data Tuesday AM \u2192 identify low-performing class times \u2192 adjust schedule by Wednesday\" (directly impacts utilization KPI)\n- This forces accountability: they can't claim they \"tried\" if the action is specific\n\n**3. Format it as a simple shared doc with weekly columns**\n- Google Sheet: role name | 3-4 weekly actions | owner KPI | status (green/amber/red) | actual result\n- Review together every Monday morning (10 mins max) \u2014 talk only about red/amber items\n- This becomes your weekly standup agenda, not a separate meeting\n\n**4. Gate it with one monthly review**\n- After 4 weeks, pull the data. Did their actions move the KPI? If not, the action list is wrong \u2014 not them\n- Adjust the checklist in week 5 based on what actually moved the needle"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# How Grace Executes This Vision Session (Not Generic Workshop Stuff)\n\n\u2022 **Pre-session: Send the SSO + 90-day plan 48 hours ahead.** Grace should email the single-sentence objective and specific 90-day targets (e.g., \"Add 40 members, hit \u00a3X revenue, launch referral program\") to staff before the meeting. This kills the \"deer in headlights\" moment and lets them process. The session isn't explaining\u2014it's *clarifying and aligning*.\n\n\u2022 **Flip the standard agenda: Lead with \"Here's your lane\" first, then why it matters.** Start by assigning each person's exact responsibility (e.g., \"Sarah owns member retention touchpoints, Jamie owns class scheduling for capacity,\" etc.). Then show *how their lane feeds the 90-day target*. People engage when they see their role's direct impact, not when drowning in company vision.\n\n\u2022 **Use a one-page visual: SSO at top, three 90-day goals in the middle, each person's lane listed below with 2-3 KPIs they own.** Post it. Reference it constantly. Staff should leave knowing the three numbers they're chasing and whether they're hitting them weekly.\n\n\u2022 **Close with accountability questions, not motivational speeches.** Ask each person: \"What blockers do you hit this week doing your lane? What do you need from me?\" This surfaces real friction *immediately* instead of discovering issues in week 5.\n\n\u2022 **Schedule 15-min 1-on-1s with each team member within 2 days after.** Reinforce their lane, hear doubts privately, adjust if needed. The group session plants seeds; the 1-"
+        "advice": "# Team Vision Session Execution for The Forge\n\n**Before the session (do this NOW):**\n- **Write a 1-pager on SSO + 90-day plan** \u2014 not a PowerPoint. One page forces clarity. Include: what success looks like in 90 days (e.g., \"250 active members,\" \"\u00a3X revenue\"), the 3-4 key moves to get there, and why it matters to *them personally* (pay rises, quieter chaos, portfolio-building).\n\n**During the session (2 hours max):**\n- **Start with personal asks** \u2014 go around the room: \"What's one thing you want from The Forge in the next 90 days?\" (development, flexibility, recognition). Write them down. Then show how the plan makes *that* possible. Trust builds here.\n- **Assign ownership, not tasks** \u2014 don't say \"Janet handles marketing.\" Say \"Janet: you own member acquisition funnels. You decide the *how*. Here's the budget/tools. Success = X new signups by Day 90.\" Give her decision-making power.\n- **Create visible accountability** \u2014 on a whiteboard in the gym, map each person's 90-day lane (3 measurable outcomes each). Leave it up. Weekly 10-min huddles reviewing it. She sees her impact.\n\n**Right after:**\n- **Send a 5-sentence recap email** \u2014 their name, their lane, the 1-2 metrics they own, and one specific decision they now have autonomy over. Make it feel different from \"another meeting.\"\n\nGrace needs her team *running toward something*, not following orders. This session is where that happens."
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Workload Audit & Rebalance for The Forge (30-day execution)\n\n**Week 1: Get the brutal truth**\n- Have Grace spend 3 days shadowing each team member during their actual shifts (don't ask them to report it\u2014watch it). Note: interruptions, admin tasks stealing time, bottlenecks where one person is the single point of failure.\n- Use a simple Google Sheet: log every task each person does hourly. You'll spot patterns (e.g., front desk person doing all social media uploads at close of business = rush job, burned out).\n\n**Week 2: Identify the specific pain points**\n- One-on-one 20-min chats with each staff member\u2014ask: \"What takes the most time?\" and \"What would you hand off today if you could?\" Listen for resentment (tells you who's drowning) and hidden skills (tells you rebalancing options).\n- Flag tasks that *only* one person can do\u2014these are your leverage points for delegation/training.\n\n**Weeks 3-4: Rebalance with friction in mind**\n- Don't just redistribute tasks. Pair overloaded person with someone underutilized for 2-3 shifts so knowledge transfers happen live, not via email.\n- Give the newly-trained person one task fully, track for 2 weeks, then add the next. Gradual prevents resentment and errors.\n- Make ONE person explicitly accountable for each task going forward\u2014no ambiguity = no bottlenecks rebuilding.\n\n**Measure it**: Same hourly log in week 4. If overtime hours dropped and task completion stayed consistent, you've won."
+        "advice": "# Workload Audit + Rebalance for The Forge (30 Days)\n\n**Week 1 \u2014 Map actual vs. perceived work:**\n- Have each team member (instructors, admin, PT staff) log their hours by task category for 5 days using a simple spreadsheet \u2014 you'll spot if someone's doing unpaid admin while another runs one class daily. Don't ask \"are you busy?\" \u2014 the data doesn't lie.\n\n**Week 2 \u2014 Find the bottlenecks:**\n- Pull your revenue data and match it to who owns each income stream (class bookings, PT sales, member retention calls, billing issues). You'll likely find one person is the single point of failure for something critical. That's your overstretch zone.\n\n**Week 3 \u2014 Create the swap:**\n- Identify 2-3 specific tasks the stretched person can hand off (not vague delegation \u2014 concrete tasks: \"Friday admin reports go to X,\" \"new member check-ins go to Y\"). Cross-train one backup for each so you're never dependent on one person again.\n\n**Week 4 \u2014 Implement + anchor it:**\n- Roll out the new structure, but also block time in *your* calendar to do one task from the rebalanced person's old list for 2 weeks. You'll see friction points they didn't mention and prove it's actually doable differently.\n\n**The real win:** By day 30, you should see reduced sick days and turnover, plus one team member visibly more available for revenue-generating work (PT sales, member experience, retention).\n\nWhat's the biggest bottleneck you already suspect?"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Concrete Cost Cuts for The Forge (10% Target)\n\n**1. Audit your membership software & utilities first** \u2014 These are usually quick wins. Call your gym software provider today and ask for a loyalty program discount or negotiate a lower per-member rate. Same with your energy supplier \u2014 most small businesses overpay. One call could save 2-3% alone.\n\n**2. Negotiate supplier contracts with specifics** \u2014 Don't ask for \"a better deal.\" Call your cleaning, laundry, and equipment maintenance providers with this: \"I'm comparing three quotes for the next 12 months. What's your absolute best price?\" Most will drop 5-10% to keep recurring revenue. Get written quotes before committing.\n\n**3. Right-size your staffing hours** \u2014 Analyze your busiest hours by zone (classes vs. open floor). You're probably overstaffed during dead times. Shift 4-6 hours/week from quiet periods to peak hours. That's real money, no service hit.\n\n**4. Renegotiate your lease or reduce square footage** \u2014 If you're 3+ years in, your landlord knows losing you is expensive. Ask about a 10% reduction in exchange for a 3-year renewal. Or genuinely explore smaller premises\u2014sometimes downsizing actually improves member experience (tighter community feel).\n\n**Quick math check:** Software/utilities (-2%), suppliers (-3%), staffing (-3%), lease (-2%) = 10%. Pick your best two and execute this week.\n\nWhat's your current biggest expense category?"
+        "advice": "# Cost Reduction Playbook for The Forge (10% Target)\n\n**Audit your fixed costs ruthlessly:**\n- Pull your last 3 months of invoices. You're likely overpaying on something \u2014 utilities, insurance, or cleaning contracts. Call vendors and ask them directly: \"What's your best rate for annual commitment?\" Most will drop 5-15% without negotiation resistance. Start with your top 3 expense lines.\n\n**Renegotiate supplier terms, not just price:**\n- Don't just ask for discounts \u2014 shift to quarterly payments instead of monthly (better for their cash flow = leverage for you). Or bulk-buy cleaning supplies/equipment maintenance at 20% savings. This feels less painful than rate cuts and suppliers prefer it.\n\n**Cut the membership \"leakage\" destroying margins:**\n- How many inactive members are still paying? Identify anyone who hasn't checked in 60+ days and either win them back (one personal outreach call = often 50% re-activation) or let them go. Dead weight kills profitability silently. Target: 8-12% member churn reduction = instant margin gain.\n\n**Optimize staffing without cutting hours members see:**\n- Consolidate your lowest-attendance class times. If your 6am Tuesday slot has 3 people, merge it with another class. Redeploy that trainer to peak hours or 1-on-1 premium sessions (higher margin). Keep what sells, cut what doesn't.\n\n**Quick win \u2014 review your payment processing fees:**\n- You're bleeding 2-3% on card fees. Switch to a loyalty/app-based payment system or negotiate tiered rates with your processor. Small shift, real money.\n\n**Target: Hit"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Updating Monthly Finance KPIs at The Forge\n\n**Lock in a 90-minute monthly block (same day every month)** \u2014 Thursday morning after you close books. Non-negotiable. Prevents it slipping and ensures data's fresh. Assign one person as \"backup owner\" so you're not the single point of failure.\n\n**Pull only 7 KPIs max, not 20** \u2014 for a gym your size: (1) Monthly recurring revenue by membership tier, (2) Churn rate, (3) New member acquisition cost, (4) Class utilization %, (5) Personal training revenue, (6) Cash position, (7) Member lifetime value. Anything else is noise that distracts from decisions.\n\n**Compare month-on-month AND vs. annual target in one visual** \u2014 one simple spreadsheet or dashboard tile. You need to spot trends (churn creeping up?) AND whether you're on track to hit annual goals. This is where growth decisions live.\n\n**Share a 1-page summary with your team within 48 hours** \u2014 specific wins (\"PT revenue +12%\") and one thing you're fixing (\"churn up 2%, running retention offer next week\"). Transparency keeps everyone aligned on what matters and makes them notice patterns you might miss.\n\n**Use it to trigger ONE decision monthly** \u2014 if CAC is climbing, pause paid ads and test referral incentives. If utilization dips, adjust class times. The KPIs only matter if they change what you *do* next.\n\nWhat's your current reporting setup looking like?"
+        "advice": "# Executing: Update Monthly Finance KPIs for The Forge\n\n\u2022 **Pull actuals NOW, not end-of-month** \u2014 Don't wait for clean data. Export bank statements + membership software today (even if messy) and map: MRR by membership tier, churn rate, class utilization %, cost per acquisition (ad spend \u00f7 new members). Raw numbers beat perfect delays.\n\n\u2022 **Flag the 2-3 metrics that actually drive decisions** \u2014 Grace doesn't need 15 KPIs. Identify: What makes/loses money fastest? (Likely: monthly recurring revenue, churn %, and class capacity %). Build a one-page dashboard comparing this month vs. last month vs. target. Everything else is noise.\n\n\u2022 **Spot the action signal immediately** \u2014 When you update, don't just log it. Ask: *Is churn up? Cancel a marketing channel.* *MRR down? Push 3-month memberships this week.* *Underutilized class? Kill it and reallocate that trainer.* Update = decision trigger, not admin task.\n\n\u2022 **Automate this so it takes 15 minutes next month** \u2014 If this took 2 hours, you're doing it manually. Set up Zapier/Make to pull membership data weekly into a Google Sheet template. Grace should spend time *interpreting*, not data-gathering.\n\n\u2022 **Share with your team Friday AM** \u2014 Post the KPIs (and what they mean) in a Slack channel. One sentence per metric. Creates accountability and catches problems early.\n\nWhat's the biggest friction point in pulling your numbers right now?"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Financial Forecasting Execution for The Forge\n\n**Build a 3-statement model in Excel (or use Stripe/accounting software templates) in the next 2 hours:**\n- Pull last 12 months of actual revenue (membership fees, class packages, PT sessions) and segment by source\n- List fixed costs (rent, staff salaries, insurance) and variable costs (cleaning supplies, equipment maintenance)\n- Don't overthink \u2014 you need: monthly revenue projection for next 12 months, break-even membership count, and cash runway if revenue dips 20%\n\n**Use your existing member data to stress-test assumptions:**\n- What's your actual churn rate? Check: How many members joined vs. left last month\n- If it's 5% monthly churn, factor that into membership forecasts \u2014 don't assume growth continues flat\n- Cross-reference this against your current pipeline (free trials booked, referrals pending) to validate next quarter's intake targets\n\n**Identify your ONE financial constraint right now:**\n- Is it cash flow timing (revenue comes in weekly but rent's due monthly)? Or do you need X new memberships to hit breakeven? Or is equipment investment blocking growth?\n- Your forecast should highlight this immediately \u2014 that's your growth bottleneck to solve next\n\n**Make it a live document, not a static report:**\n- Update it monthly with actuals vs. forecast \u2014 you'll spot revenue trends 4 weeks before they become problems\n- Share the 3-5 key metrics with your team (breakeven point, monthly growth target) so everyone knows what \"winning\" looks like\n\n**Action this week:** Do the model. You'll likely discover you're leaving 10-15% of potential revenue on the table somewhere"
+        "advice": "# Financial Forecasting Execution for The Forge\n\n\u2022 **Build a 24-month cash-flow model in a spreadsheet TODAY** \u2014 not a fancy system. Columns: membership revenue (segment by tier), class pack sales, PT sessions, operating costs (rent, staff, utilities), seasonal dips (January peak, summer slump). Start with last 3 months of actual data to validate assumptions. This becomes your decision-making backbone.\n\n\u2022 **Reverse-engineer your break-even number** \u2014 Calculate: fixed monthly costs \u00f7 average member LTV (lifetime value). If it's 80 members at \u00a340/month, you know exactly what growth target matters. Grace can then pressure-test: \"Can we realistically hit 100 members in 6 months?\" If yes, forecast shows profit. If no, something needs cutting or pricing needs shifting.\n\n\u2022 **Run 3 scenarios: conservative, realistic, stretch** \u2014 Not to predict the future, but to expose risks. Conservative: 5% monthly churn, realistic: 2%, stretch: 0.5%. Show Grace what her decision about staff hiring *actually costs* under each scenario. This stops her making commitments based on hope.\n\n\u2022 **Update monthly, 30 minutes only** \u2014 Actual revenue in, adjust assumptions, compare vs forecast. The forecast only matters if it's maintained. Grace spots revenue pattern breakdowns or cost overruns within weeks, not quarterly surprises.\n\n\u2022 **Use forecasts to negotiate** \u2014 When talking to landlord about expansion or staff about raises, forecasts show what's affordable. Data kills emotional arguments."
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Build Your Service P&L \u2014 Here's the Exact Move\n\n**Track the three cost buckets that actually matter:**\n- **Direct costs**: Instructor pay per class/PT session, music licensing, equipment replacement (depreciate monthly). For PT, include any commission/splits.\n- **Allocated overhead**: Rent + utilities + insurance split proportionally (if classes run 10 hrs/week and gym is open 60 hrs/week, classes get ~17% of overhead). Add staff salary only where it's genuinely tied to that service.\n- **Add-ons separately**: Supplements, merchandise, branded apparel \u2014 track COGS and actual margin separately from service delivery.\n\n**Do this in a single spreadsheet \u2014 not separate P&Ls:**\n- Revenue row: Monthly revenue per service (classes @ \u00a3X per member, PT @ \u00a3X per session, add-ons @ gross sales).\n- Subtract direct costs. That's your contribution margin \u2014 the real number that matters.\n- Allocated overhead on a line below so you see which services truly cover their share.\n- **Quick win**: Pull 3 months of data this week. Don't wait for perfect data; actual messy numbers beat no numbers.\n\n**The insight you're actually hunting for:**\nYou'll likely find PT has the fattest margin but lowest volume. Classes have thin margins but sticky members who buy add-ons. That changes your pricing and marketing strategy *immediately*.\n\n**Action today**: List your 5 biggest service revenue sources and their instructor/delivery costs. That's your starting row."
+        "advice": "# Build Your Service P&L \u2014 The Forge Edition\n\n**Get messy with actual numbers first (today):**\n- Pull last 3 months of invoices/POS data and categorize every pound by service type. Don't aim for perfection\u2014assign classes to \"group fitness,\" PT sessions to \"1:1 coaching,\" protein shakes to \"add-ons.\" This takes 90 minutes max and beats waiting for a \"perfect system.\"\n\n**Calculate true unit economics (not just revenue):**\n- For *classes*: Divide total monthly class instructor costs by total class attendances to find cost-per-spot. Then multiply average class size \u00d7 membership fee allocated to classes. The gap = your margin per class offered. Classes likely look better than they are because fixed costs hide low attendance classes dragging profit.\n- For *PT*: Revenue is straightforward; subtract PT trainer cost (hourly rate \u00d7 actual hours booked) + any equipment/facility allocation. PT probably crushes classes on margins but moves fewer units\u2014this matters for cash flow.\n- For *add-ons*: Track what women actually buy (protein, merch, supplements). Cost is easy; attach realistic retail markup\u2014don't use manufacturer suggestions.\n\n**Spot your cash trap immediately:**\n- Look for low-attendance classes running on fixed instructor schedules. These are profit killers that feel \"free\" because they're grouped with memberships. Cut or consolidate the bottom 2 by next week.\n\n**Test one pricing move based on findings:**\n- If add-ons margin is 40%+, reposition them hard at checkout (POS display, trainer recommendations). If PT margin vastly exceeds classes, run one promoted PT package offer next month to shift mix."
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# The Forge: Automation Audit Execution\n\n**1. Run a 2-hour manual trace NOW**\nPull your last 10 enquiries. Actually walk through each one: email received \u2192 system tag \u2192 follow-up trigger \u2192 trial booking. Document where they got stuck or duplicated. You'll spot the real breakdowns faster than reviewing automation logic in isolation.\n\n**2. Kill the low-hanging duplicates immediately**\nBet money you have 2-3 automations firing the same \"welcome\" or \"trial reminder\" email. Search your automation dashboard for any rule that has the same trigger (e.g., \"new lead from website form\") firing to the same audience twice. Delete one copy today\u2014don't overthink it.\n\n**3. Test the critical path with a fake account**\nCreate a dummy Gmail address, submit an enquiry through your website, and see what you actually receive in what order. Check timing gaps (are reminders too bunched?), message quality, and whether the trial booking link is actually clickable. This takes 15 minutes and beats any theory.\n\n**4. Fix the ONE biggest leak**\nYou probably have one step where women drop off (likely the trial booking confirmation or payment link). Once you identify it in step 1, prioritize fixing that instead of perfecting everything. One unbroken flow beats ten partially working ones.\n\n**5. Document and assign**\nWrite a one-page SOP showing: trigger \u2192 action \u2192 expected delay \u2192 next step. Assign someone (you or staff) to check this weekly for 4 weeks\u2014drift happens fast.\n\nWhat's your biggest suspicion about where enquiries currently get lost?"
+        "advice": "# Audit Execution for The Forge Automations\n\n\u2022 **Run a parallel test first** \u2014 pick 3-5 dummy email addresses and submit them through your enquiry form today. Track exactly what they receive and when. This reveals duplicates immediately (e.g., same welcome email sent twice) and dead-ends in your flow before you touch anything live.\n\n\u2022 **Map your actual conversion funnel on paper** \u2014 list every automation that fires between enquiry submission and first trial class attendance (welcome emails, payment reminders, class booking confirmations, etc.). Duplicates usually live here. Use your Zapier/Automations dashboard to visually connect the triggers and actions\u2014you'll spot redundant steps fast.\n\n\u2022 **Check your payment gateway integration** \u2014 if trial bookings flow through Stripe or similar, confirm the \"trial booked\" signal actually triggers your follow-up sequence. Broken integrations here are the #1 reason enquiries go dark. Test one live transaction yourself if needed.\n\n\u2022 **Audit unsubscribe/bounce data** \u2014 log into your email platform (likely Mailchimp, ActiveCampaign, etc.) and filter for bounces in the last 30 days. High bounces = broken email fields in your form. Fix the data capture, not just the automation.\n\n\u2022 **Create a simple decision tree document** \u2014 once you've removed duplicates, document the exact sequence: Enquiry \u2192 Welcome Email (Day 0) \u2192 Trial Booking Link (Day 1) \u2192 Pre-Class Reminder (Day before). Share it with whoever manages memberships. This is your audit record and prevents future chaos.\n\n**Timeline: 4-6 hours max. Do this this week.**"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# AI Automation for The Forge \u2014 Concrete Action Plan\n\n\u2022 **Task 1: Automate member onboarding emails** \u2014 Set up a Zapier workflow that triggers when a new member joins (via your booking system). Have it auto-send a welcome email, gym orientation guide, and class schedule. Then Slack yourself their name so you personally call within 24hrs. *Result: 3-4 hours/week saved, retention improves because they feel welcomed.*\n\n\u2022 **Task 2: Build a ChatGPT-powered class inquiry responder** \u2014 Embed a simple chatbot on your website (or use a tool like Tidio) trained on your class times, pricing, and FAQs. It answers \"What time is spin class?\" or \"Do you offer trials?\" instantly. Captures leads automatically. *Result: You stop answering the same 10 questions daily \u2014 frees you to focus on sales calls.*\n\n\u2022 **Task 3: Automate member re-engagement texts** \u2014 Use Twilio + Zapier to send a \"We miss you\" text to anyone who hasn't booked a class in 14 days, with a 1-click booking link. Personalize with their preferred class type. *Result: Catches churn before it happens; 5-10 min/week vs. manual follow-ups.*\n\n**Start with #2 this week** \u2014 highest ROI. Takes 2 hours to set up, immediately stops wasting your time on repetitive DMs.\n\nWhat's your biggest repetitive pain point right now?"
+        "advice": "# AI Automation for The Forge \u2013 Concrete Execution\n\n**Task 1: Member Check-in & Attendance Reminders**\n- Use Zapier to connect your gym management software (Mindbody, Zen Planner, etc.) \u2192 WhatsApp/SMS via Twilio. Set it to auto-send 24-hour class reminders to members who've booked but have a cancellation history. This recaptures 8-12% of no-shows with zero manual effort. Cost: ~\u00a320/month.\n\n**Task 2: Email Member Onboarding Sequence**\n- Build a 5-email drip campaign in Mailchimp triggered by \"new member signup.\" Each email guides them through induction schedule \u2192 gym etiquette \u2192 class booking \u2192 referral incentive. Grace reviews and personalizes once, then it runs forever. You'll need 2-3 hours upfront. Result: Higher retention + referrals baked into Day 1.\n\n**Task 3: Instagram Caption & Story Generation**\n- Use ChatGPT (or Jasper) with a simple prompt template: \"Write an energetic 150-char Instagram caption about [class type], include [location hashtag], end with [call-to-action].\" Store templates in a Google Doc. Record voice notes of your best captions, feed them to the AI as a style guide. Saves 30 mins/week. Post consistency = algorithm boost.\n\n**Start here:** Pick Task 1 (highest ROI), spend 1 hour mapping your current system, then configure the Zapier automation. You'll see impact in 2 weeks."
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Cybersecurity for The Forge Website \u2013 Execution Plan\n\n\u2022 **Get an SSL certificate TODAY** (not tomorrow). Use Let's Encrypt (free) or GoDaddy ($70/year). This takes 30 mins and shows \"https://\" \u2014 critical for member trust when they're entering payment info. No cert = members won't complete signups.\n\n\u2022 **Fix your payment handling immediately.** If you're currently storing card details yourself, STOP. Switch to Stripe or Square (both handle PCI compliance for you). Grace, this single decision removes 90% of your legal/breach risk and is non-negotiable for a membership business.\n\n\u2022 **Add a basic password policy to member accounts** \u2014 force 8+ characters, require password resets every 90 days. Implement via your website platform (Wix, WordPress, Squarespace all have built-in tools). Takes 1 hour, prevents member account takeovers.\n\n\u2022 **Enable two-factor authentication on YOUR admin access** (Gmail, hosting account, payment dashboard). This is where attackers actually get in \u2014 not the website itself. Takes 15 mins, blocks 99% of account breaches.\n\n\u2022 **Audit who has backend access right now.** Delete old staff logins, document current ones. One former employee with access = ransomware risk. Do this this week \u2014 it's free and takes 30 mins.\n\n**Skip expensive consultants for now.** These four steps kill your biggest vulnerabilities. Revisit penetration testing once you're scaling to 500+ members."
+        "advice": "# Cyber Security for The Forge Website \u2014 Execution Plan\n\n\u2022 **Get an SSL certificate TODAY** \u2014 non-negotiable. Use Let's Encrypt (free) or Cloudflare (\u00a315/month). If your site shows \"not secure,\" potential members bounce immediately and Google ranks you lower. This takes 30 mins max.\n\n\u2022 **Audit payment processing NOW** \u2014 if you take card details (memberships, classes), you need PCI compliance. Use Stripe or Square (they handle most compliance for you). Don't store card data yourself. Check your current setup in the next 48 hours.\n\n\u2022 **Password-protect your admin areas properly** \u2014 change default login URLs, use strong passwords (12+ characters), enable two-factor authentication on WordPress/Shopify/whatever platform you use. Most breaches happen here, not through fancy hacking.\n\n\u2022 **Backup your site weekly to a separate location** \u2014 use Updraft Plus (WordPress) or your hosting's built-in backup tool. If you get ransomwared, you recover in hours instead of losing everything. Set it and forget it (literally automate it).\n\n\u2022 **Get basic liability coverage clarity** \u2014 contact your business insurance provider TODAY and confirm you're covered if customer data gets compromised. One cyber incident can tank a fitness business; make sure you're protected legally.\n\n**Why this matters for Grace:** Members trust you with payment info AND personal fitness goals. A breach = lost members + legal headaches. This isn't optional."
       }
     ]
   },
@@ -9439,6 +9467,6 @@
       "income": 9851.0,
       "profit": 8368.64
     },
-    "advice": "# The Forge \u2014 Ad Performance Analysis & Recommendations\n\n## Insights\n\n**Your cost-per-lead has quadrupled (\u00a36 \u2192 \u00a327) whilst lead volume has collapsed 94% in four months.** This isn't a budget cut problem\u2014it's a creative or targeting decay problem. You've gone from \u00a3435 spend generating 69 leads to \u00a3109 generating 4. The efficiency has tanked so badly that even your strong 75% close rate in July can't rescue the unit economics.\n\n**Audience fatigue and creative staleness are the culprits.** April's performance suggests you had a working formula. By June, cost-per-lead had already tripled before July's implosion. Meta's algorithm is either showing your ads to increasingly poor-fit audiences (lookalike drift, interest overlap, frequency saturation) or your creative has stopped resonating. The fact that July's leads still converted well (75%) tells you the audience *quality* remains decent when you do reach them\u2014you're just not reaching enough people who engage.\n\n**You're massively underfunded relative to what the data says you should spend.** April proved you can profitably spend \u00a3435/month at \u00a36/lead with a 29% close rate. July's \u00a3109 is survival mode, not growth. Your profit is propped up only by small sample size luck (3 sales). You need to restart with fresh creative and targeting *at scale* to rebuild lead volume.\n\n---\n\n## Actions\n\n**1. Pause all current campaigns immediately and audit creative.** Pull your top 3 ad creatives from April. What was the hook? Single image vs. carousel? Copy tone? Testimonial-led? Pain-point led? Rebuild 4\u20135 entirely new creatives for August\u2014test different angles: \"6 weeks to feel strong\" vs. \"no scales, no ego\" vs. before/afters from real members vs. a quick win (mobility/first session vibe). Launch these as fresh ad sets, not refreshes of old ones.\n\n**2. Segment your audience ruthlessly.** Your April audiences were likely tighter. Test separately: (a) cold traffic aged 25\u201340 interested in fitness/wellness (broad but fresh); (b) lookalike audience built"
+    "advice": "**Insights**\n\n1. **You've fallen off a cliff.** July's \u00a327 CPL is 4.5x April's \u00a36, and you're getting 17x fewer leads despite spending only 75% less. This isn't efficiency loss\u2014it's campaign collapse. The ad account or creative is likely broken, not optimised.\n\n2. **Close rate is actually your bright spot.** July hit 75% (3 of 4 sales), which is elite for fitness trial lead-gen. April was 29%, May was 61%, June was 65%. Something in your nurture or sales process improved\u2014hold that tight.\n\n3. **The spend cliff started in May.** CPL doubled May-to-June even as you cut spend by \u00a3105. This suggests audience saturation, creative fatigue, or the algorithm struggling with shrinking budget. July's tiny spend (\u00a3109) probably triggered Meta's learning phase without enough daily budget to complete it.\n\n**Actions**\n\n1. **Rebuild budget to \u00a3300\u2013350/month minimum immediately.** You need \u00a310\u201315/day to keep Meta's algorithm in stable delivery. At \u00a3109, you're undershooting the threshold. Allocate this across 2\u20133 fresh audience segments (lookalikes of your best closers, women 25\u201345 interested in fitness + wellness, retargeting website visitors from past 180 days).\n\n2. **Audit and refresh creative NOW.** You're likely hitting ad fatigue hard. Pull last month's top 3 performing creatives and rebuild 4\u20135 new variations: test user-generated content (client testimonials/transformations), before/afters, a \"6-week reset\" angle, and a pain-point opener (\"tired of gyms full of\u2026\"). Pause anything running >3 weeks.\n\n3. **Test a higher-ticket angle to protect margin.** Your profit per sale is ~\u00a3189 (\u00a3567\u00f73). If close rate holds at 75%, pushing the trial price up by \u00a310\u201320 or bundling a nutrition plan might improve profit without hitting lead volume. Run a small test (\u00a350/week) on a \"premium trial\" audience.\n\n4. **Single biggest lever: Turn July's 75% close rate"
   }
 }
