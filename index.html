@@ -835,6 +835,23 @@ function closeModal(e) {
 }
 
 // Rich member profile popup (click a member name in the directory)
+// Link an unmatched InBody record (e.g. "amy102") to a real member. Saved to the
+// shared store so the mapping sticks and syncs to every coach; then re-render.
+async function linkInbody(handle, current) {
+  const names = window._inbodyNames || [];
+  const q = (prompt(`Which member is the InBody record “${current}”?\nType part of their name:`) || "").trim().toLowerCase();
+  if (!q) return;
+  const matches = names.filter(n => (n||"").toLowerCase().includes(q));
+  if (!matches.length) { alert(`No member matches “${q}”.`); return; }
+  let name = matches[0];
+  if (matches.length > 1) {
+    name = (prompt(`Several matches — type the exact name:\n\n${matches.join("\n")}`) || "").trim();
+    if (!name || !names.includes(name)) return;
+  }
+  await sharedSet("inbodymap:" + handle, name);
+  if (window._data) render(window._data);   // rebuild so the row resolves now
+}
+
 function showMemberDetail(name) {
   const d = (window._memberDetail || {})[(name||"").toLowerCase()];
   if (!d) return;
@@ -981,6 +998,112 @@ function goTab(name) {
   const btn = [...document.querySelectorAll(".tab-btn")]
     .find(b => (b.getAttribute("onclick") || "").includes(`switchTab('${name}'`));
   if (btn) { switchTab(name, btn); window.scrollTo({ top: 0, behavior: "smooth" }); }
+}
+
+// ── Per-tab AI chat agents ────────────────────────────────────
+// Each content tab gets an agent you can ask questions. The dashboard is a
+// static page, so questions go to an Apps Script proxy (window._chatUrl) that
+// holds the Anthropic key and calls the API — see docs/chat_apps_script.gs.
+const AGENT_TABS = {
+  home:      { emoji:"🧭", name:"Studio Assistant",  short:"studio",      placeholder:"e.g. what needs my attention today?",          hint:"Knows today's brief, enquiries and alerts." },
+  finances:  { emoji:"💷", name:"Fractional CFO",     short:"finance",     placeholder:"e.g. why was net cash down in June?",           hint:"Knows your Starling P&L, categories, cash and revenue." },
+  members:   { emoji:"👥", name:"Membership Analyst", short:"membership",  placeholder:"e.g. which membership type is growing fastest?", hint:"Knows your membership snapshot and mix." },
+  retention: { emoji:"🔗", name:"Retention Coach",    short:"retention",   placeholder:"e.g. who's most at risk and why?",              hint:"Knows churn history, at-risk members, lapsed and trial conversion." },
+  inbody:    { emoji:"📊", name:"Body-Comp Analyst",  short:"InBody",      placeholder:"e.g. who's overdue a scan?",                    hint:"Knows recent InBody scans and trends." },
+  jumpstart: { emoji:"🚀", name:"Jumpstart Coach",    short:"Jumpstart",   placeholder:"e.g. who needs a conversion chat this week?",    hint:"Knows the 6-week Jumpstart cohort and check-ins." },
+  leads:     { emoji:"📥", name:"Sales Assistant",    short:"leads",       placeholder:"e.g. which enquiries haven't been followed up?", hint:"Knows open leads and enquiry sources." },
+  ads:       { emoji:"📣", name:"Paid Social Expert", short:"ads",         placeholder:"e.g. is my cost per lead trending up?",         hint:"Knows your Meta ad spend, leads and CPL." },
+  growth:    { emoji:"🌱", name:"Growth Strategist",  short:"growth",      placeholder:"e.g. what should we focus on this sprint?",      hint:"Knows your growth sprint data." },
+  staff:     { emoji:"🧑‍🏫", name:"Team Assistant",    short:"staff",       placeholder:"e.g. who's taking the most classes?",           hint:"Knows staff and class coverage." },
+  sop:       { emoji:"📋", name:"SOP Assistant",      short:"SOP",         placeholder:"e.g. what's the process for a new member?",      hint:"Knows your standard operating procedures." },
+};
+
+function chatCard(tab) {
+  const a = AGENT_TABS[tab]; if (!a) return "";
+  return `
+    <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="font-size:1.3rem">${a.emoji}</div>
+        <div>
+          <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">${a.name} ✦ · ask &amp; chat</div>
+          <div class="card-headline" style="margin-bottom:0">Ask the ${a.short} agent</div>
+        </div>
+      </div>
+      <div id="chat-thread-${tab}" style="max-height:360px;overflow-y:auto;margin:6px 0;display:none;flex-direction:column;gap:8px"></div>
+      <div style="display:flex;gap:8px">
+        <input id="chat-input-${tab}" placeholder="${a.placeholder}" onkeydown="if(event.key==='Enter')askAgent('${tab}')"
+          style="flex:1;font-size:.85rem;padding:9px 12px;border:1px solid #e5e7eb;border-radius:9px;outline:none">
+        <button onclick="askAgent('${tab}')" style="font-size:.85rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:9px;padding:9px 16px;cursor:pointer">Ask</button>
+      </div>
+      <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px">${a.hint} It reads this tab's live data to answer.</div>
+    </div>`;
+}
+
+function _chatEsc(t){ return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function _chatFmt(t){
+  return _chatEsc(t)
+    .replace(/\*\*(.+?)\*\*/g,"<b>$1</b>")
+    .replace(/^[•\-\*]\s+(.*)$/gm,"<div style='display:flex;gap:6px'><span style='color:#7c3aed'>▸</span><span>$1</span></div>")
+    .replace(/\n/g,"<br>");
+}
+function _chatBubble(tab, who, html){
+  const thread = document.getElementById("chat-thread-" + tab);
+  const mine = who === "you";
+  const wrap = document.createElement("div");
+  wrap.style.cssText = `align-self:${mine?"flex-end":"flex-start"};max-width:85%;background:${mine?"#7c3aed":"#f5f3ff"};color:${mine?"#fff":"#1f2937"};border:1px solid ${mine?"#7c3aed":"#ede9fe"};border-radius:12px;padding:8px 12px;font-size:.85rem;line-height:1.5`;
+  wrap.innerHTML = html;
+  thread.appendChild(wrap);
+  thread.scrollTop = thread.scrollHeight;
+  return wrap;
+}
+
+// Compact per-tab data slice sent as context (kept small to bound cost).
+function _agentContext(tab){
+  const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {};
+  const slim = m => ({ month:m.month, revenue:m.revenue, expenses:m.expenses, profit:m.profit, categories:m.categories });
+  let ctx;
+  switch (tab) {
+    case "finances":  ctx = { starling_monthly:(st.monthly||[]).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly }; break;
+    case "retention": ctx = { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } }; break;
+    case "members":   ctx = { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, by_type:tm.by_membership_type, joined_this_month:tm.joined_this_month, churn:tm.churn } }; break;
+    case "inbody":    ctx = { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) }; break;
+    case "jumpstart": ctx = d.jumpstart || {}; break;
+    case "leads":     ctx = { leads:d.ghl }; break;
+    case "ads":       ctx = d.marketing || {}; break;
+    case "growth":    ctx = d.growth_sprint || {}; break;
+    case "staff":     ctx = d.staff || {}; break;
+    case "sop":       ctx = d.sop || {}; break;
+    case "home":      ctx = { brief:d.brief, enquiries:d.ghl, slack:{ dms:(d.slack||{}).unreplied_dms } }; break;
+    default:          ctx = { snapshot:{ active:tm.active, recurring:tm.recurring } };
+  }
+  let s = JSON.stringify(ctx);
+  return s.length > 11000 ? s.slice(0, 11000) + "…(truncated)" : s;
+}
+
+async function askAgent(tab){
+  const inp = document.getElementById("chat-input-" + tab);
+  const q = (inp.value || "").trim(); if (!q) return;
+  document.getElementById("chat-thread-" + tab).style.display = "flex";
+  inp.value = "";
+  _chatBubble(tab, "you", _chatEsc(q));
+  const hist = (window._chatHist = window._chatHist || {});
+  const prior = (hist[tab] = hist[tab] || []).slice(-8);   // prior turns only
+  if (!window._chatUrl) {
+    _chatBubble(tab, "agent", "⚠️ Chat isn't connected yet. Deploy <b>docs/chat_apps_script.gs</b> and add its URL as the <b>CHAT_SCRIPT_URL</b> secret — then I can answer from live data.");
+    return;
+  }
+  const bubble = _chatBubble(tab, "agent", "<span style='color:#a78bda'>thinking…</span>");
+  try {
+    const res = await fetch(window._chatUrl, { method:"POST", body: JSON.stringify({
+      tab, question:q, history:prior, context:_agentContext(tab) }) });
+    const j = await res.json();
+    const ans = j.answer || j.error || "No answer returned.";
+    bubble.innerHTML = _chatFmt(ans);
+    hist[tab].push({ role:"user", content:q }, { role:"assistant", content:ans });
+  } catch (e) {
+    bubble.innerHTML = "⚠️ Couldn't reach the agent (" + _chatEsc(String(e)) + ").";
+  }
+  document.getElementById("chat-thread-" + tab).scrollTop = 1e9;
 }
 
 // ── Render ────────────────────────────────────────────────────
@@ -1168,6 +1291,9 @@ function render(data) {
     // stash the lower row to push after Tasks (so Tasks sits top-right)
     // Three on one line: New enquiries · Slack · WhatsApp & webchat
     window._slackData = data.slack || {};
+    window._data = data;                       // full dataset, for the tab chat agents
+    window._chatUrl = data.chat_url || "";     // Apps Script AI-chat proxy (set via CHAT_SCRIPT_URL)
+    window._inbodyNames = ((data.teamup||{}).member_list || []).map(m => m.name).filter(Boolean);
     window._atRiskUrl = window._atRiskUrl || data.atrisk_url || "";
     window._briefLower = () => {
       push("home", briefCard("New enquiries (email)", "green", enquiryHtml, "col-4"));
@@ -1711,14 +1837,17 @@ function render(data) {
   // the real name by matching against the member directory.
   const memberNorm = {};
   (tm.member_list || []).forEach(m => { memberNorm[(m.name||"").toLowerCase().replace(/[^a-z]/g,"")] = m.name; });
-  // Returns {name, resolved} — resolved=true only when the InBody username maps
-  // to a real member in the directory, so we only make a clickable profile link
-  // when there's actually a profile to open (many InBody ids are coded usernames).
+  // Returns {name, resolved, handle}. Order: a manual mapping saved by a coach
+  // wins (InBody ids like "amy102" are real members but can't be matched to a
+  // directory name automatically), then exact/fuzzy name match.
   const resolveName = raw => {
-    const norm = (raw||"").toLowerCase().replace(/[^a-z]/g,"");
-    if (memberNorm[norm]) return { name: memberNorm[norm], resolved: true };
-    const hit = Object.keys(memberNorm).find(k => k && (k.includes(norm) || norm.includes(k)) && norm.length > 4);
-    return hit ? { name: memberNorm[hit], resolved: true } : { name: raw, resolved: false };
+    const handle = (raw||"").toLowerCase().replace(/[^a-z0-9]/g,"");   // keep digits so "amy102" stays distinct
+    const mapped = sharedGet("inbodymap:" + handle, null);
+    if (mapped) return { name: mapped, resolved: true, handle };
+    const alpha = handle.replace(/[0-9]/g,"");
+    if (memberNorm[alpha]) return { name: memberNorm[alpha], resolved: true, handle };
+    const hit = Object.keys(memberNorm).find(k => k && (k.includes(alpha) || alpha.includes(k)) && alpha.length > 4);
+    return hit ? { name: memberNorm[hit], resolved: true, handle } : { name: raw, resolved: false, handle };
   };
   const delta = v => v == null ? "" : (v > 0 ? `<span style="color:#059669">▲${v}</span>` : v < 0 ? `<span style="color:#dc2626">▼${Math.abs(v)}</span>` : "—");
   push("inbody", `
@@ -1749,7 +1878,7 @@ function render(data) {
                 const _rn = _r.name;
                 const _nameCell = _r.resolved
                   ? `<td onclick="showMemberDetail('${(_rn||'').replace(/'/g,"\\'")}')" style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#7c3aed;cursor:pointer" title="Open ${_rn}'s profile">${_rn}`
-                  : `<td style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111" title="No matching member profile">${_rn}`;
+                  : `<td onclick="linkInbody('${_r.handle}','${(_rn||'').replace(/'/g,"\\'")}')" style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#b45309;cursor:pointer" title="Click to link this InBody record to a member">${_rn} <span style="font-size:.62rem;font-weight:600;color:#d97706;background:#fffbeb;border:1px solid #fde68a;border-radius:5px;padding:1px 5px">link ↗</span>`;
                 return `<tr>
                   ${_nameCell}${s.scan_count>1?` <span style="font-size:.66rem;color:#c4b5fd">${s.scan_count} scans</span>`:""}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.last_scan)}</td>
@@ -2721,6 +2850,9 @@ function render(data) {
         </div>` : `<p style="color:#ccc;font-size:.85rem">No open leads right now. Sources: WhatsApp &amp; webchat (via GoHighLevel) and email enquiries. Connect Instagram &amp; Facebook in GoHighLevel to pull those DMs in here too.</p>`}
     </div>
   `);
+
+  // Give each content tab its AI chat agent, pinned at the top.
+  Object.keys(tabs).forEach(tab => { if (AGENT_TABS[tab]) tabs[tab].unshift(chatCard(tab)); });
 
   // ── Render each tab ─────────────────────────────────────────
   Object.entries(tabs).forEach(([tab, cards]) => {
