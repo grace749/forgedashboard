@@ -474,14 +474,15 @@ AT_RISK_GRACE_DAYS = 14   # brand-new members get a grace period before at-risk
 
 
 def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
-                  first_seen, ever_attended_ids, last_session_by_cid=None):
+                  first_seen, ever_attended_ids, last_session_by_cid=None, paused_ids=None):
     """
     Active members with no attendance in the last 10 days — EXCLUDING brand-new
-    members who haven't had their first class yet. A member is 'too new to flag'
-    if they joined within the grace period, or have no attendance on record at
-    all (e.g. a fresh 6-week trial or PT signup who hasn't started).
+    members who haven't had their first class yet, and anyone on a PAUSED / on-hold
+    membership (they're deliberately away, not at risk). A member is 'too new to
+    flag' if they joined within the grace period, or have no attendance on record.
     """
     today = date.today()
+    paused_ids = paused_ids or set()
     cust_membership = {}
     for m in active_memberships:
         cid = m["customer"]
@@ -490,7 +491,7 @@ def build_at_risk(active_ids, name_map, active_memberships, recently_active_ids,
 
     at_risk = []
     for cid in active_ids:
-        if cid in recently_active_ids:
+        if cid in recently_active_ids or cid in paused_ids:
             continue
         name = name_map.get(cid, "")
         norm_name = " ".join((name or "").lower().split())   # collapse double spaces
@@ -856,6 +857,56 @@ def build_class_milestones(active_ids, name_map, class_counts):
 
 # ── Momentum calls ──────────────────────────────────────────────────────────
 
+LEAD_EVENT_KEYWORDS = ["meet a coach", "meet the coach", "meet your coach",
+                       "personal training sales", "pt sales", "sales call", "discovery call"]
+
+
+def fetch_lead_bookings(name_map):
+    """TeamUp 'Meet a Coach' / PT-sales-call bookings — these ARE incoming leads
+    (a prospect booking in to see a coach). Returns recent + upcoming, newest first."""
+    today = date.today()
+    date_past   = (today - datetime.timedelta(days=21)).isoformat()
+    date_future = (today + datetime.timedelta(days=30)).isoformat()
+    try:
+        events = get_all("events", {"starts_at_gte": date_past, "starts_at_lte": date_future})
+        lead_events = {e["id"]: e for e in events
+                       if any(k in (e.get("name") or "").lower() for k in LEAD_EVENT_KEYWORDS)}
+        if not lead_events:
+            return []
+        out, seen = [], set()
+        for ev_id, ev in lead_events.items():
+            ev_start = (ev.get("starts_at") or "")[:10]
+            ev_name  = (ev.get("name") or "").strip()
+            for a in get_all("attendances", {"event": ev_id, "page_size": 100}):
+                cid = a.get("customer")
+                nm  = name_map.get(cid, "") if cid else ""
+                if not nm and cid:
+                    try:
+                        r = _get(f"{BASE}/customers/{cid}")
+                        if r.ok:
+                            d = r.json()
+                            nm = f"{d.get('first_name','')} {d.get('last_name','')}".strip()
+                            name_map[cid] = nm
+                    except Exception:
+                        pass
+                nm = nm or "New lead"
+                key = f"{cid}_{ev_start}"
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append({
+                    "name":     nm,
+                    "type":     ev_name,
+                    "date":     ev_start,
+                    "upcoming": ev_start >= today.isoformat(),
+                })
+        out.sort(key=lambda x: x["date"], reverse=True)
+        return out[:30]
+    except Exception as ex:
+        print(f"[teamup] lead_bookings error: {ex}")
+        return []
+
+
 def fetch_momentum_calls(name_map):
     """Events named 'momentum call' — past attendees + upcoming bookings."""
     today = date.today()
@@ -1185,7 +1236,7 @@ def run():
 
     # ── At-risk members ─────────────────────────────────────────
     at_risk = build_at_risk(all_active_ids, name_map, active, recently_active_ids,
-                            first_seen, ever_attended_ids, last_session_by_cid)
+                            first_seen, ever_attended_ids, last_session_by_cid, paused_ids)
     # (AI outreach suggestions removed — coaches found them unhelpful)
 
     # ── Class milestones (lifetime 50/250/500) ──────────────────
@@ -1196,6 +1247,7 @@ def run():
 
     # ── Momentum calls ──────────────────────────────────────────
     momentum_calls = fetch_momentum_calls(name_map)
+    lead_bookings  = fetch_lead_bookings(name_map)
 
     # ── Full member directory ───────────────────────────────────
     member_list = build_member_list(active, name_map, first_seen, class_counts, momentum_calls, email_map)
@@ -1232,6 +1284,7 @@ def run():
         "celebrations":             celebrations,
         "class_milestones":         class_milestones,
         "momentum_calls":           momentum_calls,
+        "lead_bookings":            lead_bookings,
         "member_list":              member_list,
         "inbody_scans":             inbody_scans,
     }

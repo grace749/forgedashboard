@@ -1128,20 +1128,21 @@ function render(data) {
         <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">${srcLabel} — members lost (incl. trials that didn't convert) · target &lt;3%</div>
       </div>`);
 
-    // At-risk members — split into full members and Jumpstarters
-    push("retention", `<div class="sec-divider"><span class="sec-label">At-Risk Members</span><span class="sec-line"></span></div>`);
-    const atCard = (title, bodyId, countId, chipBg, chipCol) => `
-      <div class="card col-6" style="margin-top:4px">
-        <div class="card-title">Retention</div>
+    // At-risk: full members on Retention; Jumpstarters on the Jumpstart tab
+    const atCard = (label, title, bodyId, countId, chipBg, chipCol) => `
+      <div class="card col-12" style="margin-top:4px">
+        <div class="card-title">${label}</div>
         <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
           ${title}
           <span id="${countId}" style="font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:12px;background:${chipBg};color:${chipCol}"></span>
         </div>
-        <div id="${bodyId}" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;max-height:460px;overflow-y:auto"></div>
+        <div id="${bodyId}" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px;max-height:460px;overflow-y:auto"></div>
         <div style="font-size:.66rem;color:#c4b5fd;margin-top:8px">Click a card to open the profile · tick “Mark contacted”, then “No longer at risk” to clear · add a “Why at risk?” reason.</div>
       </div>`;
-    push("retention", atCard("At-Risk Full Members", "atRiskBodyFull", "atRiskCountFull", "#fef2f2", "#ef4444"));
-    push("retention", atCard("At-Risk Jumpstarters", "atRiskBodyJs", "atRiskCountJs", "#fffbeb", "#d97706"));
+    push("retention", `<div class="sec-divider"><span class="sec-label">At-Risk Members</span><span class="sec-line"></span></div>`);
+    push("retention", atCard("Retention", "At-Risk Full Members", "atRiskBodyFull", "atRiskCountFull", "#fef2f2", "#ef4444"));
+    push("jumpstart", `<div class="sec-divider"><span class="sec-label">At-Risk Jumpstarters</span><span class="sec-line"></span></div>`);
+    push("jumpstart", atCard("Jumpstart", "At-Risk Jumpstarters — absent 10+ days", "atRiskBodyJs", "atRiskCountJs", "#fffbeb", "#d97706"));
   })();
 
   // ── ACTIVE FULL MEMBERS ───────────────────────────────────────
@@ -2434,7 +2435,14 @@ function render(data) {
   // ── Leads ──────────────────────────────────────────────────
   const ghlConvos      = Array.isArray(data.ghl)              ? data.ghl              : [];
   const briefEnquiries = Array.isArray(data.brief?.enquiries) ? data.brief.enquiries : [];
+  const leadBookings   = Array.isArray(tm.lead_bookings)      ? tm.lead_bookings      : [];
   const allLeads       = [
+    ...leadBookings.map(b => ({
+      name: b.name,
+      message: `${b.upcoming ? "Booked in for" : "Came in for"} ${b.type} · ${fmtDateShort(b.date)}`,
+      source: /sales|personal training|pt/i.test(b.type) ? "PT sales call" : "Meet a Coach",
+      age: b.upcoming ? "upcoming" : "",
+    })),
     ...ghlConvos.map(c => ({...c, source: c.channel || "WhatsApp"})),
     ...briefEnquiries.map(e => ({name: e.name, message: e.snippet, source: "Email", age: ""})),
   ];
