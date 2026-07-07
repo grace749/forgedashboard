@@ -263,6 +263,8 @@ def build_class_capacity(events):
             continue   # skip PT/scans (cap 1) and anything without a real class cap
         if e.get("is_appointment") or "personal training" in name.lower():
             continue   # 1:1 / small-group PT isn't a group class
+        if "no sweat intro" in name.lower():
+            continue   # private 1:1 intro for new members, not a group class
         if name.lower() in EXCLUDE_FROM_BREAKDOWN:
             continue
         d = agg.setdefault(name, {"sessions": 0, "attended": 0, "capacity": 0, "cap": cap})
