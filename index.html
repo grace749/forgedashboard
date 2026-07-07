@@ -1091,7 +1091,7 @@ function render(data) {
       last_checkin: lastCheckin(m.email),
       inbody:       lastInbody(m.name),
       atrisk:       atRiskByName[key] || null,
-      teamup_url:   m.id ? `https://goteamup.com/dashboard/#/customers/${m.id}` : "",
+      teamup_url:   m.id ? `https://goteamup.com/providers/customers/${m.id}/` : "",
     };
   });
   push("members", `
