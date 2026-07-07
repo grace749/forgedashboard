@@ -1113,6 +1113,9 @@ function _agentContext(tab){
 }
 
 // Shared send path for both a typed question and the Insights button.
+// Apps Script occasionally returns an HTML page instead of JSON (cold start /
+// transient Google hiccup), so we read as text, parse defensively, and retry
+// once before surfacing a friendly message — never a raw SyntaxError.
 async function _agentSend(tab, question, showAsYou){
   document.getElementById("chat-thread-" + tab).style.display = "flex";
   if (showAsYou) _chatBubble(tab, "you", _chatEsc(showAsYou));
@@ -1123,16 +1126,30 @@ async function _agentSend(tab, question, showAsYou){
     return;
   }
   const bubble = _chatBubble(tab, "agent", "<span style='color:#a78bda'>thinking…</span>");
-  try {
-    const res = await fetch(window._chatUrl, { method:"POST", body: JSON.stringify({
-      tab, question, history:prior, context:_agentContext(tab) }) });
-    const j = await res.json();
-    const ans = j.answer || j.error || "No answer returned.";
-    bubble.innerHTML = _chatFmt(ans);
-    hist[tab].push({ role:"user", content:question }, { role:"assistant", content:ans });
-  } catch (e) {
-    bubble.innerHTML = "⚠️ Couldn't reach the agent (" + _chatEsc(String(e)) + ").";
+  const payload = JSON.stringify({ tab, question, history:prior, context:_agentContext(tab) });
+  let ans = null, sawLogin = false;
+  for (let attempt = 0; attempt < 2 && ans === null; attempt++) {
+    try {
+      const res = await fetch(window._chatUrl, { method:"POST", body: payload });
+      const txt = await res.text();
+      let j = null; try { j = JSON.parse(txt); } catch (_) {}
+      if (j) { ans = j.answer || j.error || "No answer returned."; }
+      else {
+        if (/ServiceLogin|AccountChooser|accounts\.google/.test(txt)) sawLogin = true;
+        if (attempt === 0) { bubble.innerHTML = "<span style='color:#a78bda'>the AI hiccuped — retrying…</span>"; await new Promise(r => setTimeout(r, 1500)); }
+      }
+    } catch (e) {
+      if (attempt === 0) { await new Promise(r => setTimeout(r, 1500)); }
+      else { ans = "⚠️ Couldn't reach the agent (" + _chatEsc(String(e)) + ")."; }
+    }
   }
+  if (ans === null) {
+    ans = sawLogin
+      ? "⚠️ The chat endpoint asked for a Google login — its deployment may have reverted to domain-only. Re-deploy the chat script with access set to \"Anyone\"."
+      : "⚠️ The AI service returned an error page (a temporary Google/Apps Script hiccup). Please tap Ask again — it usually works on the next try.";
+  }
+  bubble.innerHTML = _chatFmt(ans);
+  if (!ans.startsWith("⚠️")) hist[tab].push({ role:"user", content:question }, { role:"assistant", content:ans });
   document.getElementById("chat-thread-" + tab).scrollTop = 1e9;
 }
 
