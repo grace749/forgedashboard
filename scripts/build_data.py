@@ -71,5 +71,19 @@ data = {
     "marketing": safe_run("marketing", fetch_marketing.run),
 }
 
+# Fractional CFO advice now reasons over LIVE sources (GoCardless/Stripe revenue,
+# Starling cash flow, TeamUp members) instead of the manual KPI sheet.
+try:
+    live_advice = fetch_kpi.finance_advice_live(
+        data.get("gocardless"), data.get("stripe"), data.get("starling"), data.get("teamup"))
+    if live_advice:
+        if not isinstance(data.get("kpi"), dict):
+            data["kpi"] = {}
+        data["kpi"]["advice"] = live_advice
+        data["kpi"]["advice_source"] = "live"
+        print("[cfo] using live-sourced advice")
+except Exception as ex:
+    print(f"[cfo] live advice failed, keeping sheet advice: {ex}")
+
 OUTPUT.write_text(json.dumps(data, indent=2))
 print(f"Wrote {OUTPUT}")

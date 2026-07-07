@@ -82,6 +82,65 @@ def _finance_advice(period, months):
     return _finance_fallback()
 
 
+def finance_advice_live(gocardless, stripe, starling, teamup):
+    """Fractional CFO advice from LIVE sources — real revenue (GoCardless+Stripe),
+    bank cash flow (Starling), members/churn (TeamUp) — replacing the manual sheet."""
+    gc = (gocardless or {}).get("monthly") or []
+    sp = (stripe or {}).get("monthly") or []
+    stg = (starling or {}).get("monthly") or []
+    hist = (teamup or {}).get("member_history") or []
+    if not (gc or sp or stg):
+        return ""
+
+    rev = {}
+    for m in gc: rev[m["month"]] = rev.get(m["month"], 0) + (m.get("collected") or 0)
+    for m in sp: rev[m["month"]] = rev.get(m["month"], 0) + (m.get("collected") or 0)
+    cash = {m["month"]: m for m in stg}
+    mem  = {h["month"]: h for h in hist}
+
+    import datetime as _dt
+    this_month = _dt.date.today().strftime("%Y-%m")
+    months = sorted({*rev, *cash, *mem})
+    months = [mo for mo in months if mo != this_month][-8:]   # completed months, last 8
+
+    rows = ["Month | Revenue(memberships+cards) | Cash in(bank) | Cash out(bank) | Net cash | Active | Churn% | Rev/member"]
+    for mo in months:
+        r = rev.get(mo)
+        c = cash.get(mo, {})
+        h = mem.get(mo, {})
+        active = h.get("active")
+        arm = round(r / active) if (r and active) else None
+        rows.append(" | ".join([
+            mo,
+            f"£{round(r):,}" if r is not None else "—",
+            f"£{round(c['revenue']):,}" if c.get("revenue") is not None else "—",
+            f"£{round(c['expenses']):,}" if c.get("expenses") is not None else "—",
+            f"£{round(c['profit']):,}" if c.get("profit") is not None else "—",
+            str(active) if active is not None else "—",
+            f"{h['churn']}%" if h.get("churn") is not None else "—",
+            f"£{arm}" if arm is not None else "—",
+        ]))
+    table = "\n".join(rows)
+
+    text = ai.generate(
+        FINANCE_SYSTEM + "  You are reasoning over LIVE real-time financial data.",
+        "The Forge — LIVE monthly finances (revenue from GoCardless + Stripe = real "
+        "customer collections; cash in/out from the Starling business account; active "
+        "members & churn from TeamUp):\n" + table + "\n\n"
+        "Note: 'Cash in (bank)' includes non-trading transfers so it runs higher than "
+        "real Revenue — judge trading performance on the Revenue column, and cash health "
+        "on Net cash. April 2026 was a PLANNED studio relocation funded from savings — a "
+        "successful launch of a bigger space, NOT a trading loss; exclude it from trend "
+        "judgements and don't recommend cost-cutting because of it.\n"
+        "As our Fractional CFO, compare the most recent months month-on-month (and the "
+        "last 3 vs the prior 3), and give specific, numbers-referenced moves to grow "
+        "revenue, reduce expenses and improve profitability. Call out trends, what's "
+        "off-track, and the single biggest priority now.",
+        max_tokens=600,
+    )
+    return text or _finance_fallback()
+
+
 def _finance_fallback():
     return ("**Grow revenue**\n"
             "• Fill your quietest class slots (see Members → Class Popularity) — a promo or "
