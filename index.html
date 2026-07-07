@@ -375,6 +375,7 @@
   <button class="tab-btn" onclick="switchTab('inbody',this)">InBody</button>
   <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
+  <button class="tab-btn" onclick="switchTab('ads',this)">Ads</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
   <button class="tab-btn" onclick="switchTab('staff',this)">Staff</button>
   <button class="tab-btn" onclick="switchTab('sop',this)">SOPs</button>
@@ -400,6 +401,9 @@
 </div>
 <div class="tab-panel" id="tab-leads">
   <div class="grid" id="grid-leads"></div>
+</div>
+<div class="tab-panel" id="tab-ads">
+  <div class="grid" id="grid-ads"></div>
 </div>
 <div class="tab-panel" id="tab-growth">
   <div class="grid" id="grid-growth"></div>
@@ -481,7 +485,7 @@ function renderTodayHub() {
   if (head) head.innerHTML = `What needs you right now ${items.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${items.length}</span>` : ""}`;
   const sevColor = s => s===1 ? "#ef4444" : s===2 ? "#d97706" : "#7c3aed";
   const sevBg    = s => s===1 ? "#fef2f2" : s===2 ? "#fffbeb" : "#f5f3ff";
-  const tabName  = { home:"Home", members:"Members", retention:"Retention", leads:"Leads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
+  const tabName  = { home:"Home", members:"Members", retention:"Retention", leads:"Leads", ads:"Ads", sop:"SOPs", growth:"Growth", finances:"Finances", staff:"Staff" };
   body.innerHTML = items.length ? items.map(it => `
     <div style="display:flex;align-items:center;gap:10px;padding:11px 14px;background:${sevBg(it.sev)};border:1px solid ${sevColor(it.sev)}22;border-left:3px solid ${sevColor(it.sev)};border-radius:10px;margin-bottom:8px">
       <button title="Mark done" onclick="dismissToday('${it.key}')" style="flex-shrink:0;width:22px;height:22px;border-radius:6px;border:1.5px solid ${sevColor(it.sev)}66;background:#fff;color:${sevColor(it.sev)};cursor:pointer;font-size:.8rem;line-height:1">✓</button>
@@ -786,7 +790,7 @@ function render(data) {
   const asanaScriptUrl = data.asana_script_url || "";
 
   // Each tab gets its own cards array
-  const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], leads: [], growth: [], staff: [], sop: [] };
+  const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
 
   // ── "Today" hub — the single most urgent thing from every tab ──
@@ -2005,7 +2009,7 @@ function render(data) {
         ? `<li style="padding:4px 0;line-height:1.5;color:#1f2937;display:flex;gap:8px;list-style:none"><span style="color:#7c3aed;flex-shrink:0">▸</span><span>${text}</span></li>`
         : `<div style="padding:2px 0;color:#374151;line-height:1.5">${text}</div>`;
     }).join("");
-    push("leads", `
+    push("ads", `
       <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
           <div style="font-size:1.4rem">📣</div>
@@ -2019,7 +2023,7 @@ function render(data) {
     `);
   }
 
-  push("leads", `
+  push("ads", `
     <div class="card col-3">
       <div class="card-title">Meta Ads</div>
       <div class="card-headline">Social Media Ads</div>
@@ -2354,7 +2358,7 @@ function render(data) {
     return `<div style="text-align:center;color:#d1d5db;font-size:1.1rem;padding:2px 0">↓</div>`;
   }
 
-  push("leads", `
+  push("ads", `
     <div class="card col-4">
       <div class="card-title">Conversion</div>
       <div class="card-headline">Member Funnel</div>
@@ -2412,7 +2416,7 @@ function render(data) {
   `);
 
   // ── Lifetime Value ─────────────────────────────────────────
-  push("leads", `
+  push("ads", `
     <div class="card col-4">
       <div class="card-title">Revenue Intelligence</div>
       <div class="card-headline">Customer Lifetime Value</div>
@@ -2458,11 +2462,11 @@ function render(data) {
     </div>
   `);
 
-  // ── Open Conversations ─────────────────────────────────────
+  // ── Open Conversations (new Leads tab) ─────────────────────
   push("leads", `
     <div class="card col-12">
-      <div class="card-title">Leads & Enquiries</div>
-      <div class="card-headline">Open Conversations</div>
+      <div class="card-title">Leads &amp; Enquiries</div>
+      <div class="card-headline">Incoming Leads</div>
       ${Object.keys(sourceCounts).length ? `
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">
           ${Object.entries(sourceCounts).map(([s,n]) => `<span class="brief-chip chip-amber">${n} via ${s}</span>`).join("")}
@@ -2478,7 +2482,7 @@ function render(data) {
               </div>
               ${l.age ? `<div style="font-size:.68rem;color:#ccc;white-space:nowrap">${l.age}</div>` : ""}
             </div>`).join("")}
-        </div>` : `<p style="color:#ccc;font-size:.85rem">No open leads — set up Zapier to pull WhatsApp & webchat conversations here</p>`}
+        </div>` : `<p style="color:#ccc;font-size:.85rem">No open leads right now. Sources: WhatsApp &amp; webchat (via GoHighLevel) and email enquiries. Connect Instagram &amp; Facebook in GoHighLevel to pull those DMs in here too.</p>`}
     </div>
   `);
 

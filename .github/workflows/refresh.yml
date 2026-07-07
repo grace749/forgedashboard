@@ -60,7 +60,7 @@ jobs:
           SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
           STARLING_ACCESS_TOKEN: ${{ secrets.STARLING_ACCESS_TOKEN }}
           GOCARDLESS_ACCESS_TOKEN: ${{ secrets.GOCARDLESS_ACCESS_TOKEN }}
-          STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+          STRIPE_ACCESS_TOKEN: ${{ secrets.STRIPE_ACCESS_TOKEN }}
           ATRISK_SCRIPT_URL: ${{ secrets.ATRISK_SCRIPT_URL }}
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
           GITHUB_REPOSITORY: ${{ github.repository }}
