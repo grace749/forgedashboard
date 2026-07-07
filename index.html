@@ -372,6 +372,7 @@
   <button class="tab-btn" onclick="switchTab('finances',this)">Finances</button>
   <button class="tab-btn" onclick="switchTab('members',this)">Members</button>
   <button class="tab-btn" onclick="switchTab('retention',this)">Retention</button>
+  <button class="tab-btn" onclick="switchTab('inbody',this)">InBody</button>
   <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
@@ -390,6 +391,9 @@
 </div>
 <div class="tab-panel" id="tab-retention">
   <div class="grid" id="grid-retention"></div>
+</div>
+<div class="tab-panel" id="tab-inbody">
+  <div class="grid" id="grid-inbody"></div>
 </div>
 <div class="tab-panel" id="tab-jumpstart">
   <div class="grid" id="grid-jumpstart"></div>
@@ -782,7 +786,7 @@ function render(data) {
   const asanaScriptUrl = data.asana_script_url || "";
 
   // Each tab gets its own cards array
-  const tabs = { home: [], finances: [], members: [], retention: [], jumpstart: [], leads: [], growth: [], staff: [], sop: [] };
+  const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], leads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
 
   // ── "Today" hub — the single most urgent thing from every tab ──
@@ -1360,9 +1364,9 @@ function render(data) {
   // ── Class capacity & utilisation (fill rate vs cap) ───────────
   const cap = cs.capacity || [];
   if (cap.length) {
-    const statusColor = s => s==="full" ? "#ef4444" : s==="quiet" ? "#d97706" : "#059669";
-    const statusBg    = s => s==="full" ? "#fef2f2" : s==="quiet" ? "#fffbeb" : "#f0fdf4";
-    const statusLabel = s => s==="full" ? "Full — add a slot?" : s==="quiet" ? "Spare capacity" : "Healthy";
+    const statusColor = s => s==="full" ? "#7c3aed" : s==="attention" ? "#d97706" : "#059669";
+    const statusBg    = s => s==="full" ? "#f5f3ff" : s==="attention" ? "#fffbeb" : "#f0fdf4";
+    const statusLabel = s => s==="full" ? "Near capacity — add a slot?" : s==="attention" ? "Needs attention" : "Healthy";
     const capRow = c => `
       <div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #f6f6fa">
         <div style="flex:1;min-width:0">
@@ -1382,7 +1386,7 @@ function render(data) {
         <div class="card-title">Attendance</div>
         <div class="card-headline">Class Capacity &amp; Utilisation <span style="font-size:.72rem;font-weight:600;color:#9ca3af">last 90 days</span></div>
         <div style="margin-top:8px">${cap.map(capRow).join("")}</div>
-        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Fill rate = attended ÷ capacity. <span style="color:#ef4444;font-weight:700">Full</span> classes could support a second slot; <span style="color:#d97706;font-weight:700">quiet</span> ones have room to promote. PT &amp; scans excluded.</div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Fill rate = attended ÷ capacity. <span style="color:#059669;font-weight:700">Healthy</span> ≥75% · <span style="color:#d97706;font-weight:700">Needs attention</span> under 75% · <span style="color:#7c3aed;font-weight:700">Near capacity</span> ≥90% (add a slot). PT &amp; scans excluded.</div>
       </div>
     `);
   }
@@ -1432,13 +1436,13 @@ function render(data) {
     </div>
   `);
 
-  memberSection("Momentum Calls & InBody Data");
+  memberSection("Momentum Calls");
   // ── Momentum Calls ────────────────────────────────────────────
   const mc = tm.momentum_calls || {};
   const mcRecent   = mc.recent   || [];
   const mcUpcoming = mc.upcoming || [];
   push("members", `
-    <div class="card col-4">
+    <div class="card col-6">
       <div class="card-title">Check-ins</div>
       <div class="card-headline">Momentum Calls</div>
       ${mcUpcoming.length ? `
@@ -1463,7 +1467,8 @@ function render(data) {
     </div>
   `);
 
-  // ── InBody Scans (sits beside Momentum Calls) ─────────────────
+  // ── InBody Scans (own tab) ────────────────────────────────────
+  push("inbody", `<div class="sec-divider"><span class="sec-label">Body Composition</span><span class="sec-line"></span></div>`);
   // Prefer the full list from Lookin'Body; fall back to the TeamUp proxy.
   const inbodyData = data.inbody || {};
   const inbody = (inbodyData.scans && inbodyData.scans.length) ? inbodyData.scans : (tm.inbody_scans || []);
@@ -1478,8 +1483,8 @@ function render(data) {
     return hit ? memberNorm[hit] : raw;
   };
   const delta = v => v == null ? "" : (v > 0 ? `<span style="color:#059669">▲${v}</span>` : v < 0 ? `<span style="color:#dc2626">▼${Math.abs(v)}</span>` : "—");
-  push("members", `
-    <div class="card col-8">
+  push("inbody", `
+    <div class="card col-12">
       <div class="card-title">Body Composition</div>
       <div class="card-headline" style="display:flex;align-items:baseline;gap:8px">InBody Scans ${inbody.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${inbody.length} members</span>` : ""}</div>
       ${inbody.length ? `

@@ -296,7 +296,8 @@ def build_class_capacity(events):
             "cap": d["cap"],
             "avg_attending": round(d["attended"] / d["sessions"], 1),
             "fill_rate": fill,
-            "status": "full" if fill >= 85 else "healthy" if fill >= 50 else "quiet",
+            # ≥90% = near capacity (add a slot); 75-89% = healthy; <75% = needs attention
+            "status": "full" if fill >= 90 else "healthy" if fill >= 75 else "attention",
         })
     out.sort(key=lambda x: x["fill_rate"], reverse=True)
     return out
@@ -405,11 +406,11 @@ def _class_suggestion(stats):
     def pairs(items, k): return [(x[k], x["count"]) for x in items]
     cap = stats.get("capacity") or []
     full = [f"{c['name']} {c['fill_rate']}%" for c in cap if c["status"] == "full"][:4]
-    quiet = [f"{c['name']} {c['fill_rate']}%" for c in cap if c["status"] == "quiet"][:4]
+    quiet = [f"{c['name']} {c['fill_rate']}%" for c in cap if c["status"] == "attention"][:4]
     cap_line = ""
     if full or quiet:
-        cap_line = (f" Fill rates — consistently FULL (could support a second slot): {full}; "
-                    f"running QUIET (spare capacity): {quiet}.")
+        cap_line = (f" Fill rates — near capacity (could support a second slot): {full}; "
+                    f"UNDER 75% and needing attention: {quiet}.")
     summary = (
         f"Last 90 days — busiest days: {pairs(d90['top_days'][:3],'day')}; "
         f"quietest days: {pairs(d90['bottom_days'][:3],'day')}; "
