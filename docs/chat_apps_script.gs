@@ -6,12 +6,11 @@
  * { tab, question, history, context } and gets back { answer }. The API key
  * lives in Script Properties and is never exposed to the browser.
  *
- * SETUP (one time, ~5 minutes):
+ * SETUP (one time):
  *  1. Go to https://script.google.com  →  New project.
  *  2. Delete the sample code, paste ALL of this file, Save.
- *  3. Project Settings (gear) ▸ Script properties ▸ Add script property:
- *       name:  ANTHROPIC_API_KEY
- *       value: your Anthropic API key (the same one in your GitHub secrets)
+ *  3. On the line below that says API_KEY, paste your Anthropic key between
+ *     the quotes. Save again.
  *  4. Deploy ▸ New deployment ▸ type "Web app".
  *       - Execute as:  Me
  *       - Who has access:  Anyone
@@ -23,6 +22,10 @@
  * Cost note: each question is one Haiku call over a small slice of that tab's
  * data — pennies. Nothing runs unless someone actually asks a question.
  */
+
+// ── PASTE YOUR ANTHROPIC KEY HERE (between the quotes) ──────────────
+var API_KEY = "";
+// ───────────────────────────────────────────────────────────────────
 
 var MODEL = "claude-haiku-4-5-20251001";
 
@@ -53,8 +56,8 @@ function doGet(e) {
 function doPost(e) {
   try {
     var b = JSON.parse((e && e.postData && e.postData.contents) || "{}");
-    var key = PropertiesService.getScriptProperties().getProperty("ANTHROPIC_API_KEY");
-    if (!key) return _json({ error: "ANTHROPIC_API_KEY is not set in this script's Script Properties." });
+    var key = API_KEY || PropertiesService.getScriptProperties().getProperty("ANTHROPIC_API_KEY");
+    if (!key) return _json({ error: "No Anthropic key — paste it into the API_KEY line at the top of the script." });
     if (!b.question) return _json({ error: "No question." });
 
     var system = (PERSONAS[b.tab] || PERSONAS._default) +
