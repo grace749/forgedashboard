@@ -640,6 +640,19 @@ function goalCellHtml(name, goal) {
 }
 
 // ── Lapsed/cancelled card: filter by month chip or search text ──
+// P&L breakdown card: switch the visible month
+function showPlMonth(month, btn) {
+  document.querySelectorAll("#plBreakdown .pl-month").forEach(el =>
+    el.style.display = el.getAttribute("data-plmonth") === month ? "block" : "none");
+  document.querySelectorAll("#plChips button").forEach(b => {
+    const on = b === btn;
+    b.style.background = on ? "#f5f3ff" : "#f7f7fb";
+    b.style.color = on ? "#7c3aed" : "#6b7280";
+    b.style.borderColor = on ? "#ddd6fe" : "#eee";
+    b.style.fontWeight = on ? "700" : "600";
+  });
+}
+
 function filterLapsed(id, month, q) {
   const wrap = document.getElementById(id + "-rows");
   if (!wrap) return;
@@ -723,13 +736,15 @@ function showMemberDetail(name) {
   const note = sharedGet(noteKey, "") || "";
   const esc = t => String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 
-  // Slack DM deep-link — match member name to a Slack user id
+  // Slack DM deep-link — match member name to a Slack user id.
+  // app_redirect needs the team id or Slack shows a blank page.
   const slackUsers = (window._slackData && window._slackData.users) || {};
+  const slackTeam = (window._slackData && window._slackData.team_id) || "";
   const _nrm = (d.name||"").toLowerCase().split(/\s+/).filter(Boolean).join(" ");
   const slackId = slackUsers[_nrm];
   const slackBtn = slackId
     ? `<li style="list-style:none;padding:6px 0 10px">
-         <a href="https://slack.com/app_redirect?channel=${slackId}" target="_blank"
+         <a href="https://slack.com/app_redirect?${slackTeam ? `team=${slackTeam}&` : ""}channel=${slackId}" target="_blank"
             style="display:flex;align-items:center;justify-content:center;gap:8px;padding:9px;background:#4a154b;color:#fff;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none">
             💬 Message ${esc((d.name||'').split(' ')[0])} on Slack</a>
        </li>`
@@ -1447,9 +1462,8 @@ function render(data) {
   const lapsedFull   = tm.lapsed_full_by_month   || [];
   const lapsedTrials = tm.lapsed_trials_by_month || [];
 
-  push("retention", `<div class="sec-divider"><span class="sec-label">Lapsed Members &amp; Trials</span><span class="sec-line"></span></div>`);
-  push("retention", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-6"));
-  push("retention", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year", "col-6"));
+  push("retention", `<div class="sec-divider"><span class="sec-label">Lapsed Members</span><span class="sec-line"></span></div>`);
+  push("retention", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-12"));
 
 
   memberSection("Class Capacity & Popularity");
@@ -1862,6 +1876,10 @@ function render(data) {
     </div>
   `);
 
+  // ── Jumpstart: Trials Not Converted ────────────────────────
+  push("jumpstart", `<div class="sec-divider"><span class="sec-label">Trials Not Converted</span><span class="sec-line"></span></div>`);
+  push("jumpstart", lapsedSearchCard(lapsedTrials, "Lapsed Trials", "Trials Not Converted", "chip-amber", "No lapsed trials in the last year", "col-12"));
+
   // ── Financials ─────────────────────────────────────────────
   const xr = data.xero || {};
   const kpiData = data.kpi || {};
@@ -2006,31 +2024,38 @@ function render(data) {
       </div>`);
   })();
 
-  // Two stacked source cards: XERO on top, KPI Tracking below
+  // P&L now comes from Starling (live bank data) instead of Xero, which only
+  // reconciles on the accountant's ~6-week cycle. Savings transfers excluded.
+  const monLbl = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "long", year: "numeric" });
+  const _plMonths = ((data.starling||{}).monthly || [])
+    .filter(m => m.categories && m.month !== new Date().toISOString().slice(0,7))
+    .sort((a,b) => b.month.localeCompare(a.month));
+  const _pl = _plMonths[0];
+  const _st = data.starling || {};
   push("finances", `
     <div class="card col-12" style="margin-top:4px">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
         <div>
-          <div class="card-title">Xero</div>
-          <div class="card-headline" style="margin-bottom:0">Profit &amp; Loss — Accountant</div>
+          <div class="card-title">Starling</div>
+          <div class="card-headline" style="margin-bottom:0">Profit &amp; Loss — Live from the bank</div>
         </div>
-        <span style="font-size:.68rem;font-weight:600;color:#9ca3af;background:#f3f4f6;padding:4px 9px;border-radius:6px;white-space:nowrap">Updated ~6-weekly · ${xr.period || "—"}</span>
+        <span style="font-size:.68rem;font-weight:600;color:#059669;background:#f0fdf4;border:1px solid #bbf7d0;padding:4px 9px;border-radius:6px;white-space:nowrap">Up to date · ${_pl ? monLbl(_pl.month) : "last 30 days"}</span>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 4px">
         <div style="flex:1;min-width:100px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-          <div style="font-size:1.5rem;font-weight:800;color:#059669;letter-spacing:-.02em">${fmtGbp(xr.revenue)}</div>
-          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Revenue</div>
+          <div style="font-size:1.5rem;font-weight:800;color:#059669;letter-spacing:-.02em">${fmtGbp(Math.round(_pl ? _pl.revenue : _st.cash_in_30))}</div>
+          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Money in</div>
         </div>
         <div style="flex:1;min-width:100px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-          <div style="font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-.02em">${fmtGbp(xr.gross_profit)}</div>
-          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Gross profit</div>
+          <div style="font-size:1.5rem;font-weight:800;color:#111;letter-spacing:-.02em">${fmtGbp(Math.round(_pl ? _pl.expenses : _st.cash_out_30))}</div>
+          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Money out</div>
         </div>
         <div style="flex:1;min-width:100px;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-          <div style="font-size:1.5rem;font-weight:800;color:${(xr.net_profit||0)>=0?'#059669':'#dc2626'};letter-spacing:-.02em">${fmtGbp(xr.net_profit)}</div>
-          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Net profit</div>
+          <div style="font-size:1.5rem;font-weight:800;color:${((_pl ? _pl.profit : _st.net_30)||0)>=0?'#059669':'#dc2626'};letter-spacing:-.02em">${fmtGbp(Math.round(_pl ? _pl.profit : _st.net_30))}</div>
+          <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">Net cash</div>
         </div>
       </div>
-      <div style="font-size:.7rem;color:#c4b5fd;margin-top:8px">Full breakdown below · from your accountant's Xero</div>
+      <div style="font-size:.7rem;color:#c4b5fd;margin-top:8px">Real cash in/out from the business account, savings transfers excluded · ${_pl ? "full category breakdown below" : "category breakdown appears after the next data refresh"}</div>
     </div>
   `);
 
@@ -2113,39 +2138,42 @@ function render(data) {
     });
   }
 
-  push("finances", `
-    <div class="card col-3">
-      <div class="card-title">Xero · Full breakdown</div>
-      <div class="card-headline">Profit & Loss — ${xr.period || "Last Month"}</div>
-      <div class="big-kpi">
-        <div class="number green">${fmtGbp(xr.revenue)}</div>
-        <div class="sublabel">Revenue</div>
+  // Full P&L breakdown — every Starling category, switchable by month
+  if (_plMonths.length) {
+    const shortLbl = ym => new Date(ym + "-15").toLocaleDateString("en-IE", { month: "short", year: "2-digit" });
+    const catRows = list => (list||[]).map(c => `
+      <div class="stat-row pl-sub"><span class="stat-label">${c.name}</span><span class="stat-val">${fmtGbp(Math.round(c.amount))}</span></div>`).join("")
+      || `<div style="font-size:.8rem;color:#ccc;padding:4px 0">Nothing this month</div>`;
+    const blocks = _plMonths.slice(0, 12).map((m, i) => `
+      <div class="pl-month" data-plmonth="${m.month}" style="display:${i ? "none" : "block"}">
+        <div class="big-kpi">
+          <div class="number green">${fmtGbp(Math.round(m.revenue))}</div>
+          <div class="sublabel">Money in — ${monLbl(m.month)}</div>
+        </div>
+        <div class="inner-divider">Money in — by category</div>
+        ${catRows((m.categories||{}).in)}
+        <div class="inner-divider">Money out — by category</div>
+        ${catRows((m.categories||{}).out)}
+        <div class="stat-row pl-sub" style="margin-top:4px"><span class="stat-label">Total out</span><span class="stat-val">${fmtGbp(Math.round(m.expenses))}</span></div>
+        <div class="stat-row pl-highlight" style="margin-top:6px;border-top:1px solid #f3f4f6;padding-top:8px">
+          <span class="stat-label">Net cash</span>
+          <span class="stat-val ${(m.profit||0) >= 0 ? 'green' : 'red'}">${fmtGbp(Math.round(m.profit))}</span>
+        </div>
+      </div>`).join("");
+    const chips = _plMonths.slice(0, 12).map((m, i) => `
+      <button onclick="showPlMonth('${m.month}',this)"
+        style="font-size:.7rem;font-weight:${i?600:700};color:${i?'#6b7280':'#7c3aed'};background:${i?'#f7f7fb':'#f5f3ff'};border:1px solid ${i?'#eee':'#ddd6fe'};border-radius:20px;padding:4px 11px;cursor:pointer">
+        ${shortLbl(m.month)}</button>`).join("");
+    push("finances", `
+      <div class="card col-6" id="plBreakdown">
+        <div class="card-title">Starling · Full breakdown</div>
+        <div class="card-headline">Profit &amp; Loss — All Categories</div>
+        <div id="plChips" style="display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px">${chips}</div>
+        ${blocks}
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Categories are Starling's own transaction tags — re-tag a payment in the Starling app and it moves here on the next refresh.</div>
       </div>
-      <div class="inner-divider">Cost of Sales</div>
-      <div class="stat-row pl-sub"><span class="stat-label">Wages</span><span class="stat-val">${fmtGbp(xr.direct_wages)}</span></div>
-      <div class="stat-row pl-highlight"><span class="stat-label">Gross profit</span><span class="stat-val">${fmtGbp(xr.gross_profit)}</span></div>
-      <div class="inner-divider">Operating Expenses</div>
-      <div class="stat-row pl-sub"><span class="stat-label">Rent</span><span class="stat-val">${fmtGbp(xr.rent)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Rates (LPS)</span><span class="stat-val">${fmtGbp(xr.rates)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Marketing</span><span class="stat-val">${fmtGbp(xr.marketing)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Subscriptions</span><span class="stat-val">${fmtGbp(xr.subscriptions)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">IT & Software</span><span class="stat-val">${fmtGbp(xr.it_software)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Electricity</span><span class="stat-val">${fmtGbp(xr.electricity)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Telephone</span><span class="stat-val">${fmtGbp(xr.telephone)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Cleaning</span><span class="stat-val">${fmtGbp(xr.cleaning)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Insurance</span><span class="stat-val">${fmtGbp(xr.insurance)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Kit & Equipment</span><span class="stat-val">${fmtGbp(xr.kit)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Entertainment</span><span class="stat-val">${fmtGbp(xr.entertainment)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Accountancy</span><span class="stat-val">${fmtGbp(xr.accountancy)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Miscellaneous</span><span class="stat-val">${fmtGbp(xr.miscellaneous)}</span></div>
-      <div class="stat-row pl-sub" style="opacity:.6"><span class="stat-label">General Expenses</span><span class="stat-val">${fmtGbp(xr.general_expenses)}</span></div>
-      <div class="stat-row pl-sub"><span class="stat-label">Total op. expenses</span><span class="stat-val">${fmtGbp(xr.total_expenses)}</span></div>
-      <div class="stat-row pl-highlight" style="margin-top:6px;border-top:1px solid #f3f4f6;padding-top:8px">
-        <span class="stat-label">Net profit</span>
-        <span class="stat-val ${(xr.net_profit||0) >= 0 ? 'green' : 'red'}">${fmtGbp(xr.net_profit)}</span>
-      </div>
-    </div>
-  `);
+    `);
+  }
 
   // ── Marketing ──────────────────────────────────────────────
   const mk = data.marketing || {};

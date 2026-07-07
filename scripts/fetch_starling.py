@@ -64,10 +64,18 @@ def _month_starts(months):
     return list(reversed(out))   # oldest → newest
 
 
+def _pretty_cat(cat):
+    """Starling spending categories are SHOUTY_SNAKE; make them readable."""
+    name = (cat or "GENERAL").replace("_", " ").title()
+    return {"Diy": "DIY", "Tv": "TV", "Atm": "ATM"}.get(name, name)
+
+
 def _monthly_series(session, acc_uid, cat_uid, months=13):
-    """Monthly revenue (money IN), expenses (money OUT) and profit from the
-    Starling transaction feed. One query per month keeps ranges small/reliable.
-    Needs transaction:read; returns [] if the scope is missing."""
+    """Monthly revenue (money IN), expenses (money OUT), profit and a full
+    per-category breakdown from the Starling transaction feed. One query per
+    month keeps ranges small/reliable. Needs transaction:read; months whose
+    query fails (e.g. history beyond the token's reach) are skipped rather
+    than sinking the whole series."""
     series = []
     for label, start, end in _month_starts(months):
         frm = start.strftime("%Y-%m-%dT%H:%M:%S.000Z")
@@ -76,19 +84,23 @@ def _monthly_series(session, acc_uid, cat_uid, months=13):
             feed = _get(session, f"/api/v2/feed/account/{acc_uid}/category/{cat_uid}/transactions-between",
                         {"minTransactionTimestamp": frm, "maxTransactionTimestamp": to})
         except Exception as ex:
-            print(f"[starling] monthly feed unavailable (scope?): {ex}")
-            return []
+            print(f"[starling] monthly feed unavailable for {label}: {ex}")
+            continue
         ins = outs = 0.0
+        cats_in, cats_out = {}, {}
         for it in feed.get("feedItems", []):
             if it.get("status") == "DECLINED":
                 continue
             if it.get("source") in _NON_TRADING_SOURCES:   # savings/own-account transfers aren't income/expense
                 continue
             amt = _pounds(it.get("amount"))
+            cat = _pretty_cat(it.get("spendingCategory"))
             if it.get("direction") == "IN":
                 ins += amt
+                cats_in[cat] = cats_in.get(cat, 0.0) + amt
             elif it.get("direction") == "OUT":
                 outs += amt
+                cats_out[cat] = cats_out.get(cat, 0.0) + amt
         rev, exp = round(ins, 2), round(outs, 2)
         profit = round(rev - exp, 2)
         series.append({
@@ -97,6 +109,10 @@ def _monthly_series(session, acc_uid, cat_uid, months=13):
             "expenses":   exp,
             "profit":     profit,
             "profit_pct": round(profit / rev * 100, 1) if rev else None,
+            "categories": {
+                "in":  sorted(([{"name": k, "amount": round(v, 2)} for k, v in cats_in.items()]),  key=lambda x: -x["amount"]),
+                "out": sorted(([{"name": k, "amount": round(v, 2)} for k, v in cats_out.items()]), key=lambda x: -x["amount"]),
+            },
         })
     return series
 

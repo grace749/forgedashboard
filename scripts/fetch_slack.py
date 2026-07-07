@@ -177,8 +177,18 @@ def run():
     except Exception as ex:
         print(f"[slack] mention search error: {ex}")
 
+    # Workspace team id — app_redirect deep-links open a blank page without it
+    team_id = ""
+    try:
+        auth = _call("auth.test", token)
+        if auth.get("ok"):
+            team_id = auth.get("team_id", "")
+    except Exception as ex:
+        print(f"[slack] auth.test error: {ex}")
+
     return {
         "configured": True,
+        "team_id": team_id,
         "unreplied_dms": unreplied,
         "mentions": mentions,
         "users": _all_users(token),   # name → id, for DM deep-links from a member profile
