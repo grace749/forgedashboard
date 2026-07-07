@@ -661,6 +661,10 @@ function showMemberDetail(name) {
     ? `<span style="color:#ef4444">At risk — last session ${dt(d.atrisk.last_seen)}${d.atrisk.days_absent!=null?` (${d.atrisk.days_absent}d ago)`:""}</span>`
     : `<span style="color:#16a34a">Active / recently in</span>`;
 
+  const noteKey = "note:" + (d.name||"").toLowerCase();
+  const note = sharedGet(noteKey, "") || "";
+  const esc = t => String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
   document.getElementById("modal-title").textContent = d.name;
   document.getElementById("modal-list").innerHTML =
     row("Status", risk) +
@@ -671,7 +675,18 @@ function showMemberDetail(name) {
     row("Last momentum call", dt(d.last_momentum)) +
     row("Last InBody", ibVal) +
     row("Goal", d.goal ? `<span style="max-width:260px;display:inline-block">${d.goal}</span>` : "—") +
-    row("Email", d.email || "—");
+    row("Email", d.email || "—") +
+    `<li style="list-style:none;padding-top:14px">
+       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+         <span style="color:#9ca3af;font-size:.8rem">Notes</span>
+         <span id="memberNoteSaved" style="font-size:.7rem;color:#16a34a"></span>
+       </div>
+       <textarea id="memberNoteBox" placeholder="Add a note about ${esc(d.name)}… (injuries, preferences, conversations)"
+         oninput="document.getElementById('memberNoteSaved').textContent=''"
+         style="width:100%;min-height:80px;box-sizing:border-box;font-family:inherit;font-size:.84rem;color:#111;border:1px solid #e5e7eb;border-radius:8px;padding:8px 10px;resize:vertical;outline:none">${esc(note)}</textarea>
+       <button onclick="saveMemberNote('${(d.name||'').replace(/'/g,"\\'")}')"
+         style="margin-top:8px;font-size:.78rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:8px;padding:6px 12px;cursor:pointer">Save note</button>
+     </li>`;
 
   const link = document.getElementById("modal-asana-link");
   if (d.teamup_url) {
@@ -681,6 +696,18 @@ function showMemberDetail(name) {
   } else { link.style.display = "none"; }
   document.getElementById("modal-task-done").style.display = "none";
   document.getElementById("modal-overlay").classList.add("open");
+}
+
+// Save a member note (shared store when configured, else this browser)
+async function saveMemberNote(name) {
+  const box = document.getElementById("memberNoteBox");
+  if (!box) return;
+  await sharedSet("note:" + (name||"").toLowerCase(), box.value.trim());
+  const msg = document.getElementById("memberNoteSaved");
+  if (msg) { msg.textContent = "✓ Saved"; }
+  // keep the in-memory copy fresh so the 📝 marker shows without a refresh
+  const d = (window._memberDetail || {})[(name||"").toLowerCase()];
+  if (d) d._hasNote = !!box.value.trim();
 }
 
 function showAdviceModal(i) {
