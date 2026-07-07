@@ -746,6 +746,7 @@ def build_member_list(active, name_map, first_seen, class_counts, momentum_calls
         if ml in TRIAL_NAMES:       # don't list trials in the member directory
             continue
         rows.append({
+            "id":            cid,
             "name":          name,
             "email":         email_map.get(cid, ""),
             "join_date":     first_seen.get(cid),

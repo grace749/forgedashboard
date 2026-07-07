@@ -639,6 +639,50 @@ function closeModal(e) {
   }
 }
 
+// Rich member profile popup (click a member name in the directory)
+function showMemberDetail(name) {
+  const d = (window._memberDetail || {})[(name||"").toLowerCase()];
+  if (!d) return;
+  const dt = iso => { if (!iso) return "—"; const x = new Date(iso + (iso.length<=10?"T12:00:00":"")); return x.toLocaleDateString("en-IE",{day:"numeric",month:"short",year:"numeric"}); };
+  const row = (label, value) => `<li style="display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid #f3f4f6;list-style:none">
+    <span style="color:#9ca3af;font-size:.8rem">${label}</span>
+    <span style="color:#111;font-weight:600;font-size:.84rem;text-align:right">${value}</span></li>`;
+  const ib = d.inbody;
+  let ibVal = "—";
+  if (ib) {
+    const parts = [`last ${dt(ib.last_scan)}`];
+    if (ib.overdue) parts.push(`<span style="color:#ef4444">${Math.abs(ib.days_to_due)}d overdue</span>`);
+    else if (ib.next_due) parts.push(`due ${dt(ib.next_due)}`);
+    if (ib.weight != null) parts.push(`${ib.weight}kg`);
+    if (ib.pbf != null) parts.push(`${ib.pbf}% fat`);
+    ibVal = parts.join(" · ");
+  }
+  const risk = d.atrisk
+    ? `<span style="color:#ef4444">At risk — last session ${dt(d.atrisk.last_seen)}${d.atrisk.days_absent!=null?` (${d.atrisk.days_absent}d ago)`:""}</span>`
+    : `<span style="color:#16a34a">Active / recently in</span>`;
+
+  document.getElementById("modal-title").textContent = d.name;
+  document.getElementById("modal-list").innerHTML =
+    row("Status", risk) +
+    row("Membership", d.membership || "—") +
+    row("Joined", dt(d.join_date)) +
+    row("Lifetime classes", d.class_count ?? "—") +
+    row("Last check-in", dt(d.last_checkin)) +
+    row("Last momentum call", dt(d.last_momentum)) +
+    row("Last InBody", ibVal) +
+    row("Goal", d.goal ? `<span style="max-width:260px;display:inline-block">${d.goal}</span>` : "—") +
+    row("Email", d.email || "—");
+
+  const link = document.getElementById("modal-asana-link");
+  if (d.teamup_url) {
+    link.href = d.teamup_url;
+    link.innerHTML = "View in TeamUp ↗";
+    link.style.display = "flex";
+  } else { link.style.display = "none"; }
+  document.getElementById("modal-task-done").style.display = "none";
+  document.getElementById("modal-overlay").classList.add("open");
+}
+
 function showAdviceModal(i) {
   const item = (window._growthAdvice || [])[i] || {};
   const action = item.action || "";
@@ -1024,6 +1068,21 @@ function render(data) {
     else                         due = "";
     return `<div>${last}</div><div style="font-size:.7rem;margin-top:1px">${due}</div>`;
   };
+  // Full detail per member, for the click-through profile popup
+  const atRiskByName = {};
+  (tm.at_risk || []).forEach(m => { atRiskByName[(m.name||"").toLowerCase()] = m; });
+  window._memberDetail = {};
+  memberRows.forEach(m => {
+    const key = (m.name||"").toLowerCase();
+    window._memberDetail[key] = {
+      ...m,
+      goal:         goalFor(m.email, m.name),
+      last_checkin: lastCheckin(m.email),
+      inbody:       lastInbody(m.name),
+      atrisk:       atRiskByName[key] || null,
+      teamup_url:   m.id ? `https://goteamup.com/dashboard/#/customers/${m.id}` : "",
+    };
+  });
   push("members", `
     <div class="card col-12" style="margin-top:4px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px">
@@ -1054,7 +1113,7 @@ function render(data) {
                 const goal = goalFor(m.email, m.name);
                 const ci = lastCheckin(m.email);
                 return `<tr class="member-row" data-name="${(m.name||'').toLowerCase()}">
-                  <td style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${m.name}</td>
+                  <td onclick="showMemberDetail('${(m.name||'').replace(/'/g,"\\'")}')" style="padding:8px 10px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#7c3aed;cursor:pointer" title="View profile">${m.name}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(m.join_date)}</td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc"><span class="pill purple" style="cursor:default;font-size:.7rem">${m.membership||"—"}</span></td>
                   <td style="padding:8px 10px;border-bottom:1px solid #f9f9fc;text-align:right;font-weight:700;color:#7c3aed">${m.class_count ?? "—"}</td>
