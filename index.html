@@ -818,15 +818,42 @@ function filterMembers(q) {
 }
 
 // ── Modal ─────────────────────────────────────────────────────
-function showModal(title, members) {
+function showModal(title, members, opts) {
+  opts = opts || {};
   document.getElementById("modal-title").textContent = title;
   const list = document.getElementById("modal-list");
-  list.innerHTML = members.length
-    ? members.map(m => `<li>${m.name}</li>`).join("")
-    : "<li style='color:#aaa'>None</li>";
+  if (!members.length) {
+    list.innerHTML = "<li style='color:#aaa'>None</li>";
+  } else if (opts.editReason) {
+    // Paused members: each row gets an editable "why paused" note (syncs to all coaches).
+    list.innerHTML = members.map((m, i) => {
+      const nm = m.name || "";
+      const reason = sharedGet("pausereason:" + nm.toLowerCase(), "") || "";
+      return `<li style="list-style:none;padding:9px 0;border-bottom:1px solid #f3f4f6">
+        <div style="font-weight:600;color:#111;font-size:.86rem">${_plEsc(nm)}${m.membership?` <span style="color:#aaa;font-weight:400;font-size:.72rem">${_plEsc(m.membership)}</span>`:""}${m.since?` <span style="color:#c4b5fd;font-size:.72rem">since ${_plEsc(m.since)}</span>`:""}</div>
+        <div style="display:flex;gap:6px;margin-top:5px">
+          <input id="pause-${i}" value="${_plEsc(reason)}" placeholder="Why are they paused? (injury, travel, cost…)"
+            onkeydown="if(event.key==='Enter')savePauseReason('${nm.replace(/'/g,"\\'")}','pause-${i}',this.nextElementSibling)"
+            style="flex:1;font-size:.8rem;padding:6px 9px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+          <button onclick="savePauseReason('${nm.replace(/'/g,"\\'")}','pause-${i}',this)"
+            style="font-size:.74rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:6px 13px;cursor:pointer">Save</button>
+        </div>
+      </li>`;
+    }).join("");
+  } else {
+    list.innerHTML = members.map(m => `<li>${m.name}</li>`).join("");
+  }
   document.getElementById("modal-task-done").style.display = "none";
   document.getElementById("modal-asana-link").style.display = "none";
   document.getElementById("modal-overlay").classList.add("open");
+}
+async function savePauseReason(name, inputId, btn){
+  const el = document.getElementById(inputId); if (!el) return;
+  const v = (el.value || "").trim();
+  btn.disabled = true; btn.textContent = "Saving…";
+  await sharedSet("pausereason:" + (name||"").toLowerCase(), v);
+  btn.textContent = "Saved ✓";
+  setTimeout(() => { btn.textContent = "Save"; btn.disabled = false; }, 1500);
 }
 function closeModal(e) {
   if (!e || e.target === document.getElementById("modal-overlay")) {
@@ -1816,7 +1843,7 @@ function render(data) {
           ? `<div class="pill red" onclick="showModal('Pending Cancellations',window._members.leaving)">${tm.cancellations_this_month} Leaving ↗</div>`
           : `<div class="pill grey">0 Leaving</div>`}
         ${(tm.paused||0) > 0
-          ? `<div class="pill grey" onclick="showModal('Paused Members',window._members.paused)">${tm.paused} Paused ↗</div>`
+          ? `<div class="pill grey" onclick="showModal('Paused Members',window._members.paused,{editReason:true})" style="cursor:pointer">${tm.paused} Paused ↗</div>`
           : ""}
         ${(tm.cancelled_last_month||0) > 0
           ? `<div class="pill purple" onclick="showModal('Cancelled Last Month',window._members.cancelled)">${tm.cancelled_last_month} Cancelled ↗</div>`
