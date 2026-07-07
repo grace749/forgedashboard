@@ -992,6 +992,18 @@ function switchTab(name, btn) {
   document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("tab-" + name).classList.add("active");
   btn.classList.add("active");
+  _maybeAutoInsights(name);
+}
+// Auto-run a tab's Insights the first time it's opened in a session (once per
+// tab, only if chat is connected and you haven't already started a conversation).
+function _maybeAutoInsights(tab){
+  if (typeof AGENT_TABS === "undefined" || !AGENT_TABS[tab] || !window._chatUrl) return;
+  window._autoInsight = window._autoInsight || {};
+  if (window._autoInsight[tab]) return;
+  const thread = document.getElementById("chat-thread-" + tab);
+  if (!thread || thread.children.length) return;   // don't interrupt an existing chat
+  window._autoInsight[tab] = true;
+  agentInsights(tab);
 }
 // Jump to a tab from the Today hub (finds the matching tab button)
 function goTab(name) {
@@ -1115,11 +1127,47 @@ function _businessSnapshot(){
   };
 }
 
+// Pre-computed trends & simple forecasts, so agents reason about DIRECTION
+// accurately instead of eyeballing the raw series. April (studio move) and the
+// current partial month are excluded from trend maths.
+function _derived(tab){
+  const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {};
+  const thisYm = new Date().toISOString().slice(0,7);
+  const mons = (st.monthly||[]).filter(m => m.month !== thisYm && m.month !== "2026-04" && typeof m.profit === "number").sort((a,b)=>a.month.localeCompare(b.month));
+  const nets = mons.map(m => m.profit);
+  const avgNet = nets.length ? nets.slice(-4).reduce((a,b)=>a+b,0)/Math.min(4,nets.length) : null;
+  const cash = st.cash_position;
+  if (tab === "finances") {
+    const last = mons[mons.length-1] || {};
+    const runway = (cash!=null && avgNet!=null && avgNet<0) ? +(cash/-avgNet).toFixed(1) : (avgNet!=null && avgNet>=0 ? "cash-positive" : null);
+    return {
+      excludes: "April 2026 (studio move) + current partial month",
+      avg_monthly_net_recent: avgNet!=null ? Math.round(avgNet) : null,
+      runway_months: runway,
+      last_3_months_net: mons.slice(-3).map(m => ({ month:m.month, net:Math.round(m.profit) })),
+      revenue_per_member_last_month: (last.revenue!=null && tm.active) ? Math.round(last.revenue/tm.active) : null,
+      cash_projection: (cash!=null && avgNet!=null) ? [1,2,3].map(n => ({ in_months:n, projected_cash:Math.round(cash + avgNet*n) })) : null
+    };
+  }
+  if (tab === "retention" || tab === "members") {
+    const series = (tm.member_history||[]).map(h => ({ month:h.month, active:h.active, churn_pct:h.churn })).slice(-6);
+    const churns = series.map(h => h.churn_pct).filter(v => typeof v === "number");
+    const actives = series.map(h => h.active).filter(v => typeof v === "number");
+    return {
+      last_6_months: series,
+      avg_churn_pct: churns.length ? +(churns.reduce((a,b)=>a+b,0)/churns.length).toFixed(1) : null,
+      active_change_6mo: actives.length>=2 ? actives[actives.length-1]-actives[0] : null,
+      note: "churn >5% is concerning, <3% good; judge the trend not one month"
+    };
+  }
+  return null;
+}
+
 function _agentData(tab){
   const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {};
   const slim = m => ({ month:m.month, revenue:m.revenue, expenses:m.expenses, profit:m.profit, categories:m.categories });
   switch (tab) {
-    case "finances":  return { starling_monthly:(st.monthly||[]).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly };
+    case "finances":  return { starling_monthly:(st.monthly||[]).slice(-8).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly };
     case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } };
     case "members":   return { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, by_type:tm.by_membership_type, joined_this_month:tm.joined_this_month, churn:tm.churn } };
     case "inbody":    return { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) };
@@ -1140,11 +1188,12 @@ function _agentContext(tab){
     forge_context: FORGE_FACTS,
     expertise: AGENT_SKILLS[tab] || {},
     whole_business: _businessSnapshot(),   // cross-tab awareness
+    computed_metrics: _derived(tab),       // trends + simple forecasts
     agent_protocol: "You can take actions, not just answer. ONLY when the user clearly asks you to do one, END your reply with a fenced ```action block containing one JSON object. Types: {\"type\":\"flag_risk\",\"member\":\"Full Name\",\"reason\":\"...\"}; {\"type\":\"unflag_risk\",\"member\":\"Full Name\"}; {\"type\":\"add_note\",\"member\":\"Full Name\",\"note\":\"...\"}; {\"type\":\"draft_message\",\"member\":\"Full Name\",\"text\":\"the drafted message\"}. Use members' real names from the data. Grace approves every action with a button, so propose freely but never claim it's already done. If the user is just asking a question, do NOT include an action block.",
     data: _agentData(tab)
   };
   let s = JSON.stringify(payload);
-  return s.length > 13000 ? s.slice(0, 13000) + "…(truncated)" : s;
+  return s.length > 18000 ? s.slice(0, 18000) + "…(truncated)" : s;
 }
 
 // Shared send path for both a typed question and the Insights button.
