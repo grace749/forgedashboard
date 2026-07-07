@@ -48,6 +48,9 @@ EXCLUDE_CUSTOMER_NAMES = COACH_NAMES | {
 # Kept for back-compat; at-risk uses the same full exclusion set now
 AT_RISK_EXCLUDE_NAMES = EXCLUDE_CUSTOMER_NAMES
 EXCLUDE_FROM_BREAKDOWN = {"dummy membership", "body composition scan"}
+# One-off / social events that aren't regular classes (excluded from capacity view)
+CAPACITY_EXCLUDE_KEYWORDS = ["games night", "social", "party", "quiz", "christmas",
+                             "xmas", "halloween", "celebration", "open day", "night out"]
 
 INBODY_INTERVAL_DAYS = 42   # 6 weeks between scans
 MILESTONE_CLASSES    = [50, 250, 500]
@@ -265,6 +268,8 @@ def build_class_capacity(events):
             continue   # 1:1 / small-group PT isn't a group class
         if "no sweat intro" in name.lower():
             continue   # private 1:1 intro for new members, not a group class
+        if any(k in name.lower() for k in CAPACITY_EXCLUDE_KEYWORDS):
+            continue   # one-off social events (games night, socials, etc.)
         if name.lower() in EXCLUDE_FROM_BREAKDOWN:
             continue
         d = agg.setdefault(name, {"sessions": 0, "attended": 0, "capacity": 0, "cap": cap})
@@ -277,6 +282,8 @@ def build_class_capacity(events):
     for name, d in agg.items():
         if d["capacity"] <= 0:
             continue
+        if d["sessions"] < 3:
+            continue   # ran only once or twice in 90 days → a one-off, not a regular class
         fill = round(d["attended"] / d["capacity"] * 100)
         out.append({
             "name": name,
