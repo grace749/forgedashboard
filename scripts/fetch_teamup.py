@@ -40,8 +40,13 @@ def _norm_name(n):
 COACH_NAMES = {
     "grace smith", "joanne hall", "eilis kearns", "sarah lacey", "michelle mcknight",
 }
-# Excluded from ALL member data (coaches + test/non-training account holders)
-EXCLUDE_CUSTOMER_NAMES = COACH_NAMES | {
+# Cancelled members whose TeamUp record still shows an active package (data lag) —
+# manually removed from the dashboard until TeamUp catches up.
+MANUAL_REMOVE_NAMES = {
+    "wilma reid",   # cancelled; lingering "4 PT Sessions" package still active in TeamUp
+}
+# Excluded from ALL member data (coaches + test/non-training account holders + manual removals)
+EXCLUDE_CUSTOMER_NAMES = COACH_NAMES | MANUAL_REMOVE_NAMES | {
     "joan smith",
     "donna mclean",   # parent managing a teen member's account, doesn't train herself
 }
