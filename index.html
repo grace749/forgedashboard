@@ -1023,18 +1023,6 @@ function switchTab(name, btn) {
   document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
   document.getElementById("tab-" + name).classList.add("active");
   btn.classList.add("active");
-  _maybeAutoInsights(name);
-}
-// Auto-run a tab's Insights the first time it's opened in a session (once per
-// tab, only if chat is connected and you haven't already started a conversation).
-function _maybeAutoInsights(tab){
-  if (typeof AGENT_TABS === "undefined" || !AGENT_TABS[tab] || !window._chatUrl) return;
-  window._autoInsight = window._autoInsight || {};
-  if (window._autoInsight[tab]) return;
-  const thread = document.getElementById("chat-thread-" + tab);
-  if (!thread || thread.children.length) return;   // don't interrupt an existing chat
-  window._autoInsight[tab] = true;
-  agentInsights(tab);
 }
 // Jump to a tab from the Today hub (finds the matching tab button)
 function goTab(name) {
@@ -1089,8 +1077,9 @@ function chatCard(tab) {
 
 function _chatEsc(t){ return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 function _chatFmt(t){
+  const linkify = s => s.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener" style="color:#7c3aed;text-decoration:underline;word-break:break-all">$1</a>');
   return _chatEsc(t).split(/\n/).map(l => l.trim()).filter(l => l.length).map(l => {
-    l = l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    l = linkify(l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>"));
     if (/^#{1,4}\s+/.test(l))    return `<div style="font-weight:700;color:#5b21b6;margin:3px 0 4px">${l.replace(/^#{1,4}\s+/,"")}</div>`;
     if (/^[•\-\*]\s+/.test(l))    return `<div style="display:flex;gap:6px;margin:2px 0"><span style="color:#7c3aed">▸</span><span>${l.replace(/^[•\-\*]\s+/,"")}</span></div>`;
     if (/^do this:/i.test(l))     return `<div style="margin-top:6px;font-weight:600;color:#7c3aed">${l}</div>`;
@@ -1121,7 +1110,7 @@ const AGENT_SKILLS = {
   members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"Explain the mix and where growth or shrinkage is really coming from." },
   inbody:    { benchmarks:"Rescan cadence ~6 weeks. Progress = skeletal muscle up and/or body-fat % down. Overdue scans are a re-engagement opportunity.", lens:"Spot who's progressing (celebrate/case-study) and who's overdue or stalling (nudge)." },
   jumpstart: { benchmarks:"6-week programme. Have the conversion conversation by week 4-5, not week 6. Missed check-ins predict non-conversion.", lens:"Who needs a conversion chat now, who's drifting, and what to do before their 6 weeks end." },
-  programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked, draft a full session in that style: pods/sections with a main move + 2–3 accessories, then the class's complex/workout/mobility finisher, each move with reps and a note. Match the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press)." },
+  programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked to draft a session, ACTUALLY WRITE IT — do not refuse for lack of a move library. You know strength & conditioning, so choose appropriate real exercises yourself (barbell/dumbbell/machine/cable moves) to fill each slot, matched to the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press) with reps in the right range. Lay it out in the class's structure: pods/sections, main move + 2–3 accessories per section, then the complex/workout/mobility finisher. Only ask a clarifying question if genuinely essential; otherwise assume sensible defaults and deliver the full session. For EVERY exercise, add a tappable demo link in the form https://www.youtube.com/results?search_query=EXERCISE+NAME+form (spaces as +) so the coach/member can see the movement — these are YouTube search links (not the Forge's own clips) so they always work." },
   leads:     { benchmarks:"Speed-to-lead matters most — reply within minutes, not hours. Every un-actioned enquiry is lost revenue.", lens:"Rank who to contact first and flag anything going stale." },
   ads:       { benchmarks:"Judge on cost-per-lead trend and lead→trial→member, not vanity metrics. Rising CPL with flat leads = creative/fatigue issue.", lens:"Say whether spend is working and what to change." },
   growth:    { benchmarks:"Focus beats breadth — one or two levers per sprint.", lens:"Recommend the highest-leverage focus from the data." },
