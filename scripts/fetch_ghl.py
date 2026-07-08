@@ -35,8 +35,10 @@ def run():
             f"{BASE}/conversations/search",
             headers=HEADERS,
             params={
+                # No status filter — this location doesn't mark convs "open", so
+                # status=open returned nothing. The recency + direction filters
+                # below do the narrowing instead.
                 "locationId": LOCATION_ID,
-                "status":     "open",
                 "limit":      40,
                 "sortBy":     "last_message_date",
                 "sortOrder":  "desc",

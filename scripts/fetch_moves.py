@@ -120,22 +120,36 @@ def _infer_part(name):
     return "Full Body"
 
 
+# Leading labels/prefixes that sit in front of the actual move name.
+_PREFIX = re.compile(
+    r"^\s*(main move|accessory\s*\d*|move\s*\d*|min\s*\d+|superset\s*\d*|level\s*\d+|"
+    r"partner\s*(?:one|two|three|\d)|\d+\s*reps?|\d+\s*[xX]|\d+s(?=\s)|\d+)\s*[:.)\-]?\s*",
+    re.I)
+
+
 def _clean_name(raw):
     """Strip labels, rep counts, video refs, markdown → a clean move name."""
     n = (raw or "").strip()
-    n = _LABELS.sub("", n)
     n = re.sub(r"\*+", "", n)                                   # markdown bold
-    n = re.sub(r"\(?\b(slide|video|vid|move|min)\s*\d+\b\)?", "", n, flags=re.I)
-    n = re.sub(r"\bimg[_ ]?index=?\d*\b", "", n, flags=re.I)
-    n = re.sub(r"\b\d+\s*(reps?|cals?|m|min|sec|secs|kg|rounds?)\b.*$", "", n, flags=re.I)  # trailing rep/dose text
-    n = re.sub(r"^\d+\s*[xX]\s*", "", n)                        # leading "3x"
-    n = re.sub(r"^\d+\s+(?=[A-Za-z])", "", n)                   # leading rep count "15 Cable…"
-    n = re.sub(r"\s*[xX]\s*\d+\b", "", n)                       # "x2"
     n = re.sub(r"https?://\S+", "", n)                          # any stray url
-    n = re.sub(r"[\(\[][^)\]]*[\)\]]\s*$", "", n).strip()       # trailing parenthetical
+    n = re.sub(r"\b(img[_ ]?index|slide|video|vid|move|min)\s*=?\s*\d*\b", "", n, flags=re.I)
+    # Peel leading labels/rep prefixes repeatedly (e.g. "Level 1: 8 Reps Zercher Squat")
+    for _ in range(4):
+        n2 = _PREFIX.sub("", n, count=1)
+        if n2 == n:
+            break
+        n = n2
+    # Trailing: unbalanced "(…" to end, then any balanced parenthetical
+    if n.count("(") > n.count(")"):
+        n = n[:n.rindex("(")]
+    n = re.sub(r"[\(\[][^)\]]*[\)\]]\s*$", "", n)
+    # Trailing rep/dose text ("… 12 reps", "… 500m")
+    n = re.sub(r"\s+\d+\s*(reps?|cals?|secs?|min|rounds?|kg|m)\b.*$", "", n, flags=re.I)
+    # Trailing bare rep scheme ("… 5/5 -3/3", "… x2")
+    if re.search(r"\d\s*/\s*\d|\b[xX]\s*\d", n):
+        n = re.sub(r"[\s\d/xX\-]+$", "", n)
     n = re.sub(r"\s{2,}", " ", n).strip(" -–—:·")
-    # Normalise ALL-CAPS to Title Case for readability
-    if n and n == n.upper():
+    if n and n == n.upper():                                    # ALL-CAPS → Title Case
         n = n.title()
     return n.strip()
 
