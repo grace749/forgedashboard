@@ -375,6 +375,8 @@
   <button class="tab-btn" onclick="switchTab('inbody',this)">InBody</button>
   <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('programming',this)">Programming</button>
+  <button class="tab-btn" onclick="switchTab('calendar',this)">Calendar</button>
+  <button class="tab-btn" onclick="switchTab('operations',this)">Operations</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
   <button class="tab-btn" onclick="switchTab('ads',this)">Ads</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
@@ -402,6 +404,12 @@
 </div>
 <div class="tab-panel" id="tab-programming">
   <div class="grid" id="grid-programming"></div>
+</div>
+<div class="tab-panel" id="tab-calendar">
+  <div class="grid" id="grid-calendar"></div>
+</div>
+<div class="tab-panel" id="tab-operations">
+  <div class="grid" id="grid-operations"></div>
 </div>
 <div class="tab-panel" id="tab-leads">
   <div class="grid" id="grid-leads"></div>
@@ -1312,6 +1320,132 @@ function ytFindFor(name){
   if (el) { el.value = name; el.focus(); el.scrollIntoView({ block:"center" }); }
   ytPopup(name);
 }
+// ── Shared editable lists (Calendar + Operations) ─────────────
+// Items live in the shared store keyed "<prefix>:<id>", so they sync to every
+// coach. Empty {} = deleted (filtered out).
+function _shList(prefix){
+  const out = [], add = (k,v) => { if (k.indexOf(prefix+":")===0 && v && (v.title||v.text)) out.push({ ...v, _key:k }); };
+  if (window._atRiskUrl) { const st = window._atRiskState || {}; Object.keys(st).forEach(k => add(k, st[k])); }
+  else { for (let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if (k && k.indexOf(prefix+":")===0){ try{ add(k, JSON.parse(localStorage.getItem(k))); }catch(_){} } } }
+  return out;
+}
+async function _shAdd(prefix, obj){ await sharedSet(prefix + ":" + Date.now().toString(36) + Math.random().toString(36).slice(2,6), obj); }
+async function _shDel(key){ await sharedSet(key, {}); }
+function _val(id){ const e = document.getElementById(id); return e ? e.value.trim() : ""; }
+
+// ── Calendar tab ──────────────────────────────────────────────
+window._calFilter = "";
+async function addCal(){
+  const title = _val("cal-title"); if (!title) { document.getElementById("cal-title").focus(); return; }
+  await _shAdd("cal", { date: _val("cal-date"), title, type: _val("cal-type") || "External" });
+  document.getElementById("cal-title").value = ""; renderCalendar();
+}
+async function delCal(key){ await _shDel(key); renderCalendar(); }
+function setCalFilter(f){ window._calFilter = f; renderCalendar(); }
+function renderCalendar(){
+  const el = document.getElementById("calBody"); if (!el) return;
+  const fmtD = d => { if (!d) return "No date"; const x = new Date(d + "T12:00:00"); return isNaN(x) ? d : x.toLocaleDateString("en-IE",{weekday:"short",day:"numeric",month:"short",year:"numeric"}); };
+  let items = _shList("cal").sort((a,b) => (a.date||"9999").localeCompare(b.date||"9999"));
+  const filt = window._calFilter;
+  if (filt) items = items.filter(i => (i.type||"") === filt);
+  const chip = (label,f) => `<button onclick="setCalFilter('${f}')" style="font-size:.72rem;font-weight:${(window._calFilter||'')===f?700:600};color:${(window._calFilter||'')===f?'#fff':'#6b7280'};background:${(window._calFilter||'')===f?'#7c3aed':'#f7f7fb'};border:1px solid ${(window._calFilter||'')===f?'#7c3aed':'#eee'};border-radius:20px;padding:4px 11px;cursor:pointer">${label}</button>`;
+  const typeChip = t => `<span class="brief-chip ${t==='Internal'?'chip-purple':'chip-amber'}">${t||'External'}</span>`;
+  el.className = "card col-12";
+  el.innerHTML = `
+    <div class="card-title">Calendar</div>
+    <div class="card-headline">Key dates — marketing &amp; events</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 6px">
+      <input id="cal-date" type="date" style="font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      <input id="cal-title" placeholder="What's happening? (e.g. Summer challenge launch)" onkeydown="if(event.key==='Enter')addCal()" style="flex:1;min-width:200px;font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      <select id="cal-type" style="font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none"><option>External</option><option>Internal</option></select>
+      <button onclick="addCal()" style="font-size:.82rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:7px 16px;cursor:pointer">Add</button>
+    </div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${chip("All","")}${chip("External","External")}${chip("Internal","Internal")}</div>
+    <div style="border-top:1px solid #f3f4f6;padding-top:6px">
+      ${items.length ? items.map(i => `
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f6f6fa">
+          <div style="min-width:0"><div style="font-weight:600;color:#111;font-size:.86rem">${_plEsc(i.title)} ${typeChip(i.type)}</div>
+            <div style="font-size:.72rem;color:#9ca3af">${fmtD(i.date)}</div></div>
+          <button onclick="delCal('${i._key}')" title="Remove" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+        </div>`).join("") : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No dates yet — add your marketing dates and key events above.</p>`}
+    </div>
+    <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Shared with all coaches. External = member-facing / marketing; Internal = team / behind-the-scenes.</div>`;
+}
+
+// ── Operations tab ────────────────────────────────────────────
+async function opAdd(prefix, textId, dateId){
+  const text = _val(textId); if (!text) { document.getElementById(textId).focus(); return; }
+  const obj = { title: text }; if (dateId) obj.date = _val(dateId);
+  await _shAdd(prefix, obj);
+  document.getElementById(textId).value = ""; if (dateId && document.getElementById(dateId)) document.getElementById(dateId).value = "";
+  renderOps();
+}
+async function opDel(key){ await _shDel(key); renderOps(); }
+async function opToggle(key){
+  const cur = sharedGet(key, null); if (!cur || !cur.title) return;
+  cur.done = !cur.done; await sharedSet(key, cur); renderOps();
+}
+function _opChecklist(title, prefix, placeholder){
+  const items = _shList(prefix);
+  return `
+    <div class="card col-6">
+      <div class="card-title">${title}</div>
+      <div style="display:flex;gap:6px;margin:10px 0 8px">
+        <input id="${prefix}-in" placeholder="${placeholder}" onkeydown="if(event.key==='Enter')opAdd('${prefix}','${prefix}-in')" style="flex:1;font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+        <button onclick="opAdd('${prefix}','${prefix}-in')" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:7px 13px;cursor:pointer">Add</button>
+      </div>
+      ${items.length ? items.map(i => `
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
+          <input type="checkbox" ${i.done?"checked":""} onchange="opToggle('${i._key}')" style="width:16px;height:16px;cursor:pointer">
+          <span style="flex:1;font-size:.85rem;color:${i.done?'#c4b5fd':'#111'};text-decoration:${i.done?'line-through':'none'}">${_plEsc(i.title)}</span>
+          <button onclick="opDel('${i._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+        </div>`).join("") : `<p style="color:#ccc;font-size:.82rem;padding:4px 0">Nothing to order right now.</p>`}
+    </div>`;
+}
+function _opDated(title, prefix, placeholder){
+  const items = _shList(prefix).sort((a,b) => (a.date||"9999").localeCompare(b.date||"9999"));
+  const fmtD = d => { if (!d) return "—"; const x = new Date(d+"T12:00:00"); return isNaN(x)?d:x.toLocaleDateString("en-IE",{day:"numeric",month:"short"}); };
+  return `
+    <div class="card col-6">
+      <div class="card-title">${title}</div>
+      <div style="display:flex;gap:6px;margin:10px 0 8px">
+        <input id="${prefix}-date" type="date" style="font-size:.82rem;padding:7px 8px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+        <input id="${prefix}-in" placeholder="${placeholder}" onkeydown="if(event.key==='Enter')opAdd('${prefix}','${prefix}-in','${prefix}-date')" style="flex:1;font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+        <button onclick="opAdd('${prefix}','${prefix}-in','${prefix}-date')" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:7px 13px;cursor:pointer">Add</button>
+      </div>
+      ${items.length ? items.map(i => `
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
+          <div style="min-width:0"><span style="font-size:.85rem;color:#111">${_plEsc(i.title)}</span></div>
+          <span style="display:flex;align-items:center;gap:8px;white-space:nowrap"><span style="font-size:.72rem;color:#9ca3af">${fmtD(i.date)}</span>
+          <button onclick="opDel('${i._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button></span>
+        </div>`).join("") : `<p style="color:#ccc;font-size:.82rem;padding:4px 0">Nothing scheduled.</p>`}
+    </div>`;
+}
+function renderOps(){
+  const el = document.getElementById("opsBody"); if (!el) return;
+  el.className = "";  // it's a wrapper, not a card
+  el.style.cssText = "display:contents";
+  el.innerHTML =
+      _opChecklist("Supplies &amp; sundries to order", "opsupply", "Add an item to order (e.g. blue roll, chalk)")
+    + _opChecklist("Clothing orders", "opcloth", "Add a clothing item / order")
+    + _opDated("Head coaches' meetings", "opmtghead", "Agenda / notes")
+    + _opDated("Studio coaches' meetings", "opmtgstudio", "Agenda / notes")
+    + _opDated("1:1 meetings", "opmtg121", "Who + topic")
+    + _opDated("Events", "opevent", "Event name");
+}
+
+// Milestone t-shirt tracker spreadsheet — first click asks for the link, saves
+// it to the shared store (syncs to all coaches), then opens it every time after.
+function openMilestoneSheet(){
+  let url = sharedGet("setting:milestone_sheet", "") || "";
+  if (!url) {
+    url = (prompt("Paste the link to your milestone t-shirt tracker spreadsheet:") || "").trim();
+    if (!url) return;
+    if (!/^https?:\/\//.test(url)) url = "https://" + url;
+    sharedSet("setting:milestone_sheet", url);
+  }
+  window.open(url, "_blank", "noopener");
+}
 async function saveMove(){
   const name = (document.getElementById("mv-name").value||"").trim();
   const part = document.getElementById("mv-part").value;
@@ -1667,7 +1801,7 @@ function render(data) {
   }
 
   // Each tab gets its own cards array
-  const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], programming: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
+  const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], programming: [], calendar: [], operations: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
 
   // ── "Today" hub — the single most urgent thing from every tab ──
@@ -2140,8 +2274,12 @@ function render(data) {
   // ── Class Count Milestones (beside Member Celebrations) ───────
   push("members", `
     <div class="card col-3">
-      <div class="card-title">Milestones</div>
-      <div class="card-headline">Approaching a Class Milestone</div>
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+        <div><div class="card-title">Milestones</div>
+          <div class="card-headline" style="margin-bottom:0">Approaching a Class Milestone</div></div>
+        <button onclick="openMilestoneSheet()" title="Open the milestone t-shirt tracker spreadsheet" style="font-size:.68rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:5px 9px;cursor:pointer;white-space:nowrap">👕 Tracker ↗</button>
+      </div>
+      <div style="margin-top:10px">
       ${clsMs.length ? clsMs.map(m => celebRow(
           m.name,
           `${m.total_classes} classes done`,
@@ -2149,6 +2287,7 @@ function render(data) {
           "purple"
         )).join("")
         : `<div class="brief-empty" style="padding:6px 0">No one within reach of 50 / 250 / 500 right now</div>`}
+      </div>
       <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Counts attended classes + past bookings, to match TeamUp's overall total</div>
     </div>
   `);
@@ -2195,6 +2334,36 @@ function render(data) {
           </div>`;
         }).join("")}
       </div>
+    </div>
+  `);
+
+  // ── Momentum Calls (beside Membership Snapshot) ───────────────
+  const mc = tm.momentum_calls || {};
+  const mcRecent   = mc.recent   || [];
+  const mcUpcoming = mc.upcoming || [];
+  push("members", `
+    <div class="card col-6">
+      <div class="card-title">Check-ins</div>
+      <div class="card-headline">Momentum Calls</div>
+      ${mcUpcoming.length ? `
+        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none;color:#059669">Upcoming</div>
+        ${mcUpcoming.map(m => `
+          <div class="stat-row">
+            <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+            <span style="font-size:.75rem;font-weight:700;color:#059669">${fmtDateShort(m.date)}</span>
+          </div>`).join("")}
+      ` : ""}
+      ${mcRecent.length ? `
+        <div class="inner-divider">Recently had one</div>
+        ${mcRecent.map(m => `
+          <div class="stat-row">
+            <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
+            <span style="font-size:.75rem;color:#aaa">${fmtDateShort(m.date)}</span>
+          </div>`).join("")}
+      ` : ""}
+      ${!mcUpcoming.length && !mcRecent.length ? `
+        <p style="color:#ccc;font-size:.85rem;padding:8px 0">No momentum calls found — make sure TeamUp events are named "Momentum Call"</p>
+      ` : ""}
     </div>
   `);
 
@@ -2341,42 +2510,6 @@ function render(data) {
         ${rangeBlock(cs90, "Last 3 months")}
         ${rangeBlock(cs30, "Last 30 days")}
       </div>
-      ${cs.suggestion ? `
-        <div style="margin-top:16px;background:#f5f3ff;border:1px solid #ede9fe;border-radius:10px;padding:12px 14px">
-          <div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#7c3aed;margin-bottom:6px">AI Suggestion ✦</div>
-          <div style="font-size:.85rem;color:#374151;line-height:1.55">${cs.suggestion}</div>
-        </div>` : ""}
-    </div>
-  `);
-
-  memberSection("Momentum Calls");
-  // ── Momentum Calls ────────────────────────────────────────────
-  const mc = tm.momentum_calls || {};
-  const mcRecent   = mc.recent   || [];
-  const mcUpcoming = mc.upcoming || [];
-  push("members", `
-    <div class="card col-6">
-      <div class="card-title">Check-ins</div>
-      <div class="card-headline">Momentum Calls</div>
-      ${mcUpcoming.length ? `
-        <div class="inner-divider" style="margin-top:0;padding-top:0;border-top:none;color:#059669">Upcoming</div>
-        ${mcUpcoming.map(m => `
-          <div class="stat-row">
-            <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-            <span style="font-size:.75rem;font-weight:700;color:#059669">${fmtDateShort(m.date)}</span>
-          </div>`).join("")}
-      ` : ""}
-      ${mcRecent.length ? `
-        <div class="inner-divider">Recently had one</div>
-        ${mcRecent.map(m => `
-          <div class="stat-row">
-            <div style="font-size:.85rem;font-weight:600;color:#111">${m.name}</div>
-            <span style="font-size:.75rem;color:#aaa">${fmtDateShort(m.date)}</span>
-          </div>`).join("")}
-      ` : ""}
-      ${!mcUpcoming.length && !mcRecent.length ? `
-        <p style="color:#ccc;font-size:.85rem;padding:8px 0">No momentum calls found — make sure TeamUp events are named "Momentum Call"</p>
-      ` : ""}
     </div>
   `);
 
@@ -3480,6 +3613,10 @@ function render(data) {
     push("programming", `<div class="card col-12" id="moveLibrary"></div>`);
   })();
 
+  // Calendar + Operations tabs (editable lists, rendered dynamically from the shared store)
+  push("calendar", `<div class="card col-12" id="calBody"></div>`);
+  push("operations", `<div class="card col-12" id="opsBody"></div>`);
+
   // Coach view: replace the owner home with a coaching-focused homepage.
   if (ROLE === "coach") {
     const j = data.jumpstart || {}, js = j.stats || {};
@@ -3567,6 +3704,8 @@ function render(data) {
     if (typeof renderStarlingPl === "function") renderStarlingPl();
     if (typeof renderMoveLibrary === "function") renderMoveLibrary();
     if (typeof renderSopDrafts === "function")  renderSopDrafts();
+    if (typeof renderCalendar === "function")   renderCalendar();
+    if (typeof renderOps === "function")        renderOps();
   };
   paintDynamic();                          // paint immediately
   loadAtRiskState().then(paintDynamic);    // then reconcile with the shared store
