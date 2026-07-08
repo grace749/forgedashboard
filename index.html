@@ -1245,6 +1245,61 @@ function ytPopup(q){
   if (w) { try { w.opener = null; w.focus(); } catch(e){} }
   else alert("Allow pop-ups for this site to open YouTube.");
 }
+// ── Draft SOPs (SOP tab) ──────────────────────────────────────
+// A shared queue of SOPs to write. Suggestions (COO gaps) → "Add to drafts";
+// each draft → "Help draft" hands it to the SOP agent to write.
+function _sopSlug(t){ return (t||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,60); }
+function _allSopDrafts(){
+  const out = [], add = (k,v) => { if (k.indexOf("sopdraft:")===0 && v && v.title) out.push({ ...v, _key:k }); };
+  if (window._atRiskUrl) { const st = window._atRiskState || {}; Object.keys(st).forEach(k => add(k, st[k])); }
+  else { for (let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if (k && k.indexOf("sopdraft:")===0){ try{ add(k, JSON.parse(localStorage.getItem(k))); }catch(_){} } } }
+  return out.sort((a,b) => (a.title||"").localeCompare(b.title||""));
+}
+async function addSopDraft(title){
+  title = (title||"").trim(); if (!title) return;
+  await sharedSet("sopdraft:" + _sopSlug(title), { title, updated: Date.now() });
+  renderSopDrafts();
+}
+async function removeSopDraft(key){ await sharedSet(key, {}); renderSopDrafts(); }
+function helpDraftSop(title){
+  const q = "Help me draft a full SOP titled \"" + title + "\" for The Forge (a boutique strength gym in Northern Ireland). "
+    + "Structure it with: Purpose, Scope, Roles & Responsibilities, Step-by-step Procedure, Escalation/exceptions, and Review cadence. Be specific and practical for the coaches to follow.";
+  _agentSend("sop", q, "🪄 Help draft SOP: " + title);
+  const card = document.querySelector("#grid-sop .card"); if (card) card.scrollIntoView({ block:"start" });
+}
+function renderSopDrafts(){
+  const el = document.getElementById("sopDrafts"); if (!el) return;
+  const drafts = _allSopDrafts();
+  const have = new Set(drafts.map(d => (d.title||"").toLowerCase()));
+  const gaps = (window._sopGaps || []).filter(g => !have.has(g.toLowerCase()));
+  el.innerHTML = `
+    <div class="card-title">Draft SOPs</div>
+    <div class="card-headline">Turn suggestions into SOPs</div>
+    ${gaps.length ? `
+      <div style="margin-top:12px">
+        <div style="font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#9ca3af;margin-bottom:4px">Suggested — gaps with no SOP yet</div>
+        ${gaps.map(g => `<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
+          <span style="font-size:.84rem;color:#374151;min-width:0">${_plEsc(g)}</span>
+          <button onclick="addSopDraft('${g.replace(/'/g,"\\'")}')" style="font-size:.72rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:4px 10px;cursor:pointer;white-space:nowrap">➕ Add to drafts</button>
+        </div>`).join("")}
+      </div>` : ""}
+    <div style="margin-top:14px">
+      <div style="font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#9ca3af;margin-bottom:4px">Draft queue (${drafts.length})</div>
+      ${drafts.length ? drafts.map(d => `<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid #f6f6fa">
+        <span style="font-size:.85rem;font-weight:600;color:#111;min-width:0">${_plEsc(d.title)}</span>
+        <span style="display:flex;gap:6px;white-space:nowrap">
+          <button onclick="helpDraftSop('${(d.title||'').replace(/'/g,"\\'")}')" style="font-size:.72rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:4px 11px;cursor:pointer">🪄 Help draft</button>
+          <button onclick="removeSopDraft('${d._key}')" title="Remove from drafts" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+        </span>
+      </div>`).join("") : `<p style="color:#ccc;font-size:.84rem;padding:4px 0">No drafts yet — add a suggestion above, or type your own below.</p>`}
+      <div style="display:flex;gap:6px;margin-top:10px">
+        <input id="sopdraft-new" placeholder="Or add your own SOP to draft…" onkeydown="if(event.key==='Enter'){addSopDraft(this.value);this.value='';}" style="flex:1;font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+        <button onclick="var i=document.getElementById('sopdraft-new');addSopDraft(i.value);i.value='';" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:7px 14px;cursor:pointer">Add</button>
+      </div>
+    </div>
+    <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Drafts sync to every coach. "🪄 Help draft" asks the SOP agent to write it — then Edit inline and save as Word/PDF.</div>`;
+}
+
 // Row "🔎 YT": prefill the add form with this move's name (so pasting the found
 // link + Add updates this move), then open a YouTube search popup for it.
 function ytFindFor(name){
@@ -3081,6 +3136,7 @@ function render(data) {
   const sopAdjPct = sopAdjTot ? Math.round((sopStats.built || 0) / sopAdjTot * 100) : (sopStats.pct_built || 0);
   const sopOutstanding = (sopStats.not_built || 0) + sopGapN;
   const sopPctColour = sopAdjPct >= 80 ? "#059669" : sopAdjPct >= 50 ? "#d97706" : "#dc2626";
+  window._sopGaps = sopGaps;   // used by the Draft SOPs card (rendered dynamically)
 
   // Fractional COO AI agent (top of the tab)
   if (sop.coo_evaluation) {
@@ -3106,6 +3162,9 @@ function render(data) {
       </div>
     `);
   }
+
+  // Draft SOPs — turn COO suggestions into a draft queue, then "Help draft"
+  push("sop", `<div class="card col-12" id="sopDrafts" style="margin-top:4px"></div>`);
 
   // Overview card
   push("sop", `
@@ -3397,6 +3456,7 @@ function render(data) {
     if (typeof renderSlack === "function")      renderSlack();
     if (typeof renderStarlingPl === "function") renderStarlingPl();
     if (typeof renderMoveLibrary === "function") renderMoveLibrary();
+    if (typeof renderSopDrafts === "function")  renderSopDrafts();
   };
   paintDynamic();                          // paint immediately
   loadAtRiskState().then(paintDynamic);    // then reconcile with the shared store
