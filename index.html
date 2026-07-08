@@ -1086,18 +1086,29 @@ function _chatFmt(t){
     return `<div style="margin:2px 0">${l}</div>`;
   }).join("");
 }
+function _exportStamp(){ return new Date().toLocaleDateString("en-IE", { day:"numeric", month:"long", year:"numeric" }); }
 // Export an agent reply (HTML) as a Word-openable .doc file.
 function _downloadWord(title, htmlBody){
-  const stamp = new Date().toLocaleDateString("en-IE", { day:"numeric", month:"long", year:"numeric" });
   const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${_chatEsc(title)}</title></head>
     <body style="font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#111">
-    <h2 style="color:#5b21b6">${_chatEsc(title)}</h2><div style="color:#888;font-size:9pt;margin-bottom:12px">The Forge · ${stamp}</div>${htmlBody}</body></html>`;
+    <h2 style="color:#5b21b6">${_chatEsc(title)}</h2><div style="color:#888;font-size:9pt;margin-bottom:12px">The Forge · ${_exportStamp()}</div>${htmlBody}</body></html>`;
   const blob = new Blob(["﻿", html], { type:"application/msword" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
-  a.href = url; a.download = (title||"programme").replace(/[^a-z0-9]+/gi,"_") + "_" + new Date().toISOString().slice(0,10) + ".doc";
+  a.href = url; a.download = (title||"answer").replace(/[^a-z0-9]+/gi,"_") + "_" + new Date().toISOString().slice(0,10) + ".doc";
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+// Export an agent reply (HTML) as a PDF via the browser's print-to-PDF.
+function _downloadPdf(title, htmlBody){
+  const w = window.open("", "_blank");
+  if (!w) { alert("Allow pop-ups for this site to save as PDF."); return; }
+  w.document.write(`<html><head><meta charset="utf-8"><title>${_chatEsc(title)}</title>
+    <style>body{font-family:-apple-system,Segoe UI,Arial,sans-serif;font-size:12pt;color:#111;line-height:1.5;padding:28px;max-width:720px;margin:auto}
+    h2{color:#5b21b6;margin:0 0 2px} .meta{color:#888;font-size:9pt;margin-bottom:16px} b{color:#111}</style></head>
+    <body><h2>${_chatEsc(title)}</h2><div class="meta">The Forge · ${_exportStamp()}</div>${htmlBody}</body></html>`);
+  w.document.close();
+  setTimeout(() => { try { w.focus(); w.print(); } catch(e){} }, 350);
 }
 function _chatBubble(tab, who, html){
   const thread = document.getElementById("chat-thread-" + tab);
@@ -1449,13 +1460,17 @@ function _renderAgentReply(tab, bubble, ans){
   }).trim();
   bubble.innerHTML = _chatFmt(text || "…");
   const thread = document.getElementById("chat-thread-" + tab);
-  // Programme Designer replies get a "Download as Word" button
-  if (tab === "programming" && text.length > 120) {
-    const dl = document.createElement("button");
-    dl.textContent = "⬇ Download as Word";
-    dl.style.cssText = "align-self:flex-start;margin-top:2px;font-size:.74rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:6px 13px;cursor:pointer";
-    dl.onclick = () => _downloadWord("Forge Programme", bubble.innerHTML);
-    thread.appendChild(dl);
+  // Every substantive agent reply gets Word + PDF export buttons.
+  if (text.length > 60) {
+    const title = tab === "programming" ? "Forge Programme"
+                : ((AGENT_TABS[tab] && AGENT_TABS[tab].name) || "Forge") + " — answer";
+    const bar = document.createElement("div");
+    bar.style.cssText = "align-self:flex-start;display:flex;gap:6px;margin-top:1px";
+    const mk = (label, fn) => { const b = document.createElement("button"); b.textContent = label;
+      b.style.cssText = "font-size:.7rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:4px 10px;cursor:pointer"; b.onclick = fn; return b; };
+    bar.appendChild(mk("⬇ Word", () => _downloadWord(title, bubble.innerHTML)));
+    bar.appendChild(mk("⬇ PDF",  () => _downloadPdf(title, bubble.innerHTML)));
+    thread.appendChild(bar);
   }
   actions.forEach(a => {
     const idx = window._agentActions.push(a) - 1;
