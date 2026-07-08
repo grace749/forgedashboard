@@ -20,7 +20,8 @@ BASE = "https://gbr.lookinbody.com"
 SCAN_INTERVAL_DAYS = 42   # recommended every ~6 weeks
 
 # Columns to export: (table, field, header)
-EXPORT_COLS = [
+# Proven column set (always works).
+BASE_COLS = [
     ("USER_INFO1_TBL", "NAME",      "Name"),
     ("USER_INFO1_TBL", "USER_ID",   "ID"),
     ("BCA_TBL",        "DATETIMES", "TestDate"),
@@ -29,6 +30,17 @@ EXPORT_COLS = [
     ("MFA_TBL",        "PBF",       "PBF"),
     ("MFA_TBL",        "BMI",       "BMI"),
 ]
+# Extra InBody metrics (field codes are best-effort Lookin'Body names; if any come
+# back blank after a refresh the exact code needs tweaking — the fallback below
+# means a bad code never loses the base data).
+EXTRA_COLS = [
+    ("BCA_TBL",        "TBW",        "TBW"),          # total body water (hydration)
+    ("BCA_TBL",        "PROTEIN",    "Protein"),
+    ("BCA_TBL",        "MINERAL",    "Mineral"),
+    ("MFA_TBL",        "VFL",        "VFL"),           # visceral fat level
+    ("BCA_TBL",        "INBODY_AGE", "InBodyAge"),
+]
+EXPORT_COLS = BASE_COLS + EXTRA_COLS
 
 
 def _login(session):
@@ -68,10 +80,10 @@ def _fetch_uids(session, page_size=200, max_pages=20):
     return uids
 
 
-def _export_scans(session, uids):
+def _export_scans(session, uids, cols=EXPORT_COLS):
     data = {"StartDate": "2019-01-01", "EndDate": "2100-01-01", "DownloadType": "0"}
     data["LUIDS[]"] = uids
-    for i, (tbl, field, name) in enumerate(EXPORT_COLS):
+    for i, (tbl, field, name) in enumerate(cols):
         data[f"Columns[{i}][TABLENAME]"] = tbl
         data[f"Columns[{i}][FieldName]"] = field
         data[f"Columns[{i}][Name]"] = name
@@ -80,7 +92,7 @@ def _export_scans(session, uids):
     return r.json().get("Data", "")
 
 
-def _parse_export(xml_text):
+def _parse_export(xml_text, ncols=None):
     """Parse the SpreadsheetML export into a list of row dicts, honouring
     ss:Index (empty cells are skipped in the XML)."""
     rows = []
@@ -100,9 +112,9 @@ def _parse_export(xml_text):
         rows.append(cells)
     if not rows:
         return []
-    # Return each data row as a positional list matching EXPORT_COLS order.
+    # Return each data row as a positional list matching the column order.
     # (The header row is dropped; export headers are numbered like "1. Name".)
-    n = len(EXPORT_COLS)
+    n = ncols if ncols else len(EXPORT_COLS)
     return [[r.get(i + 1, "") for i in range(n)] for r in rows[1:]]
 
 
@@ -134,10 +146,17 @@ def run():
     if not uids:
         return {"scans": [], "total": 0, "configured": True}
 
-    rows = _parse_export(session and _export_scans(session, uids))
+    # Try the extended column set; if it yields nothing (e.g. an unknown field
+    # code), fall back to the proven base columns so data is never lost.
+    rows = _parse_export(_export_scans(session, uids, EXPORT_COLS), len(EXPORT_COLS))
+    if not rows:
+        print("[inbody] extended export empty — falling back to base columns")
+        rows = _parse_export(_export_scans(session, uids, BASE_COLS), len(BASE_COLS))
 
-    # Group scans by member. Columns are positional (see EXPORT_COLS):
-    # 0 Name, 1 ID, 2 TestDate, 3 Weight, 4 SMM, 5 PBF, 6 BMI
+    # Columns are positional: 0 Name,1 ID,2 TestDate,3 WT,4 SMM,5 PBF,6 BMI,
+    # then (extended) 7 TBW,8 PROTEIN,9 MINERAL,10 VFL,11 InBodyAge
+    def _col(r, i):
+        return r[i] if len(r) > i else None
     by_member = {}
     for r in rows:
         name = (r[0] or "").strip()
@@ -147,11 +166,16 @@ def run():
         if not name or not d:
             continue
         entry = {
-            "date":   d,
-            "weight": _num(r[3] if len(r) > 3 else None),
-            "smm":    _num(r[4] if len(r) > 4 else None),
-            "pbf":    _num(r[5] if len(r) > 5 else None),
-            "bmi":    _num(r[6] if len(r) > 6 else None),
+            "date":     d,
+            "weight":   _num(_col(r, 3)),
+            "smm":      _num(_col(r, 4)),
+            "pbf":      _num(_col(r, 5)),
+            "bmi":      _num(_col(r, 6)),
+            "tbw":      _num(_col(r, 7)),
+            "protein":  _num(_col(r, 8)),
+            "mineral":  _num(_col(r, 9)),
+            "vfl":      _num(_col(r, 10)),
+            "inbody_age": _num(_col(r, 11)),
         }
         by_member.setdefault(name, []).append(entry)
 
@@ -176,6 +200,11 @@ def run():
             "smm":         latest["smm"],
             "pbf":         latest["pbf"],
             "bmi":         latest["bmi"],
+            "tbw":         latest.get("tbw"),
+            "protein":     latest.get("protein"),
+            "mineral":     latest.get("mineral"),
+            "vfl":         latest.get("vfl"),
+            "inbody_age":  latest.get("inbody_age"),
             "weight_change": change("weight"),
             "smm_change":    change("smm"),
             "pbf_change":    change("pbf"),

@@ -1003,7 +1003,7 @@ function showAdviceModal(i) {
 // Role: the head coach opens the dashboard with ?coach — she loads the redacted
 // coach-data.json (no finance/leads/ads/growth/sop) and those tabs are hidden.
 const ROLE = /[?&]coach\b/i.test(location.search) ? "coach" : "owner";
-const COACH_HIDDEN_TABS = ["finances", "leads", "ads", "growth", "sop"];
+const COACH_HIDDEN_TABS = ["finances", "leads", "ads", "growth", "sop", "staff"];
 async function loadData() {
   const file = ROLE === "coach" ? "./data/coach-data.json" : "./data/data.json";
   const res = await fetch(file + "?t=" + Date.now());
@@ -2422,6 +2422,11 @@ function render(data) {
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Weight (lb)</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Muscle SMM (lb)</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Body fat %</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Visceral fat</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Protein</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Hydration (TBW)</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Mineral</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">InBody age</th>
                 <th style="text-align:right;padding:6px 0 6px 8px;border-bottom:2px solid #f0f0f5">Next due</th>
               </tr>
             </thead>
@@ -2439,6 +2444,11 @@ function render(data) {
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.weight ?? "—"} <span style="font-size:.7rem">${delta(s.weight_change)}</span></td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.smm ?? "—"} <span style="font-size:.7rem">${delta(s.smm_change)}</span></td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.pbf ?? "—"}% <span style="font-size:.7rem">${delta(s.pbf_change)}</span></td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.vfl ?? "—"}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.protein ?? "—"}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.tbw ?? "—"}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.mineral ?? "—"}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.inbody_age ?? "—"}</td>
                   <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc;text-align:right">${due}</td>
                 </tr>`;
               }).join("")}
@@ -3472,29 +3482,72 @@ function render(data) {
 
   // Coach view: replace the owner home with a coaching-focused homepage.
   if (ROLE === "coach") {
-    const j = data.jumpstart || {};
+    const j = data.jumpstart || {}, js = j.stats || {};
     const jsAttention = (j.alerts || []).length;
+    const jsActive = (j.active || []).length;
+    const jsPaused = (j.paused || []).length;
     const ibOverdue = ((data.inbody && data.inbody.scans) || []).filter(s => s.overdue).length;
+    const today = new Date().toLocaleDateString("en-IE", { weekday: "long", day: "numeric", month: "long" });
     const stat = (n, label, colour, tab) => `
-      <div onclick="goTab('${tab}')" style="flex:1;min-width:150px;background:#fafafa;border:1px solid #f0f0f5;border-radius:12px;padding:16px;cursor:pointer">
-        <div style="font-size:2rem;font-weight:800;letter-spacing:-.02em;color:${colour}">${n}</div>
-        <div style="font-size:.7rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">${label}</div>
+      <div onclick="goTab('${tab}')" style="flex:1;min-width:130px;background:#fafafa;border:1px solid #f0f0f5;border-radius:12px;padding:14px;cursor:pointer">
+        <div style="font-size:1.7rem;font-weight:800;letter-spacing:-.02em;color:${colour}">${n}</div>
+        <div style="font-size:.68rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">${label}</div>
       </div>`;
+    const needs = [];
+    if (jsAttention) needs.push({ n: jsAttention, txt: `Jumpstarter${jsAttention>1?"s":""} need attention (check-ins / conversion)`, tab: "jumpstart", c: "#d97706" });
+    if (ibOverdue)   needs.push({ n: ibOverdue, txt: `InBody scan${ibOverdue>1?"s":""} overdue — book a re-test`, tab: "inbody", c: "#dc2626" });
+    if (tm.cancellations_this_month) needs.push({ n: tm.cancellations_this_month, txt: `member${tm.cancellations_this_month>1?"s":""} leaving this month`, tab: "retention", c: "#dc2626" });
+    if (jsPaused)    needs.push({ n: jsPaused, txt: `paused Jumpstart trial${jsPaused>1?"s":""}`, tab: "jumpstart", c: "#6b7280" });
+
     tabs.home = [
-      `<div class="card col-12" style="background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
-        <div class="card-title">The Forge · Coach</div>
-        <div class="card-headline" style="margin-bottom:2px">Coaching Home</div>
-        <p style="color:#6b7280;font-size:.85rem;margin:2px 0 0">Members, retention, InBody, Jumpstart, Programming and staff — your day at a glance.</p>
-      </div>`,
-      `<div class="card col-12">
-        <div class="card-title">Today's coaching focus</div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
-          ${stat(jsAttention, "Jumpstarters need attention", jsAttention ? "#d97706" : "#059669", "jumpstart")}
-          ${stat(ibOverdue, "InBody scans overdue", ibOverdue ? "#dc2626" : "#059669", "inbody")}
-          ${stat(tm.active != null ? tm.active : "—", "Active members", "#111", "members")}
-          ${stat(tm.churn != null ? tm.churn + "%" : "—", "Monthly churn", (tm.churn || 0) > 3 ? "#dc2626" : "#059669", "retention")}
+      // Daily brief banner (top) — personal feeds slot in once her accounts connect
+      `<div class="card col-12" style="flex-direction:row;align-items:center;gap:14px;padding:14px 20px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+        <div style="font-size:1.6rem">🏋️</div>
+        <div style="flex:1">
+          <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">The Forge · Coach</div>
+          <div class="card-headline" style="margin-bottom:0">Good morning — ${today}</div>
         </div>
-        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Tap a number to jump to that tab. Ask any tab's agent for detail.</div>
+      </div>`,
+      // What needs you now
+      `<div class="card col-6">
+        <div class="card-title" style="color:#dc2626">What needs you now</div>
+        <div class="card-headline" style="margin-bottom:8px">Today's priorities</div>
+        ${needs.length ? needs.map(x => `
+          <div onclick="goTab('${x.tab}')" style="display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #f6f6fa;cursor:pointer">
+            <div style="font-size:1.3rem;font-weight:800;color:${x.c};min-width:34px">${x.n}</div>
+            <div style="font-size:.86rem;color:#374151">${x.txt}</div>
+          </div>`).join("") : `<p style="color:#16a34a;font-size:.9rem;padding:8px 0">All clear — nothing urgent right now 🎉</p>`}
+      </div>`,
+      // Jumpstart rundown
+      `<div class="card col-6">
+        <div class="card-title">Jumpstart</div>
+        <div class="card-headline" style="margin-bottom:8px">Trial programme</div>
+        <div class="stat-row"><span class="stat-label">Active trials</span><span class="stat-val">${jsActive}</span></div>
+        <div class="stat-row"><span class="stat-label">Need attention</span><span class="stat-val ${jsAttention?'red':'green'}">${jsAttention}</span></div>
+        <div class="stat-row"><span class="stat-label">Paused</span><span class="stat-val">${jsPaused}</span></div>
+        <div class="stat-row"><span class="stat-label">Conversion rate</span><span class="stat-val">${js.conv_rate != null ? js.conv_rate + "%" : "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Converted (all time)</span><span class="stat-val">${js.converted ?? "—"}</span></div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px"><span onclick="goTab('jumpstart')" style="color:#7c3aed;cursor:pointer;font-weight:600">Open Jumpstart tab →</span></div>
+      </div>`,
+      // Full member rundown
+      `<div class="card col-6">
+        <div class="card-title">Members</div>
+        <div class="card-headline" style="margin-bottom:8px">Full membership</div>
+        <div class="stat-row"><span class="stat-label">Active members</span><span class="stat-val">${tm.active ?? "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Recurring</span><span class="stat-val">${tm.recurring ?? "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Joined this month</span><span class="stat-val green">${tm.joined_this_month != null ? "+" + tm.joined_this_month : "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Paused</span><span class="stat-val">${tm.paused ?? "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Monthly churn</span><span class="stat-val ${(tm.churn||0)>3?'red':'green'}">${tm.churn != null ? tm.churn + "%" : "—"}</span></div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px"><span onclick="goTab('members')" style="color:#7c3aed;cursor:pointer;font-weight:600">Open Members tab →</span></div>
+      </div>`,
+      // At-a-glance tiles
+      `<div class="card col-6">
+        <div class="card-title">At a glance</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+          ${stat(jsAttention, "Need attention", jsAttention ? "#d97706" : "#059669", "jumpstart")}
+          ${stat(ibOverdue, "InBody overdue", ibOverdue ? "#dc2626" : "#059669", "inbody")}
+          ${stat(tm.active != null ? tm.active : "—", "Active", "#111", "members")}
+        </div>
       </div>`
     ];
   }
