@@ -73,9 +73,13 @@ jobs:
           git add data/data.json data/class_counts.json data/ai_cache.json
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: refresh dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          # Retry the pull-rebase-push in case another run pushed meanwhile
+          # Retry in case another run pushed meanwhile. data/* are GENERATED files,
+          # so on any conflict keep OUR freshly built version (-X theirs during a
+          # rebase = the commit being replayed, i.e. this run's data). Abort a
+          # stuck rebase before retrying so the working tree is clean.
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
             echo "push attempt $i failed, retrying…"; sleep 5
           done
           exit 1
