@@ -20,6 +20,7 @@ import fetch_gocardless
 import fetch_stripe
 import fetch_sheets
 import fetch_marketing
+import fetch_moves
 
 OUTPUT = Path(__file__).parent.parent / "data" / "data.json"
 
@@ -70,6 +71,7 @@ data = {
     "stripe": safe_run("stripe", fetch_stripe.run),
     "growth_sprint": safe_run("sheets", fetch_sheets.run),
     "marketing": safe_run("marketing", fetch_marketing.run),
+    "moves": safe_run("moves", fetch_moves.run),
 }
 
 # Fractional CFO advice now reasons over LIVE sources (GoCardless/Stripe revenue,

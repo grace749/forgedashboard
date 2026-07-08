@@ -1195,11 +1195,18 @@ function _allCustomMoves(){
   else { for (let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if (k && k.indexOf("move:")===0){ try { add(k, JSON.parse(localStorage.getItem(k))); } catch(_){} } } }
   return out;
 }
+// Base library = moves extracted from the programme docs (data.moves) if present,
+// otherwise the built-in starter set. Coach-added moves merge on top.
+function _baseMoves(){
+  const lib = window._moveLibrary;
+  if (Array.isArray(lib) && lib.length) return lib.map(m => ({ name:m.name, part:m.part||"", video:(m.video||_ytSearch(m.name)) }));
+  return MOVE_SEED.map(m => ({ name:m[0], part:m[1], video:_ytSearch(m[0]) }));
+}
 function _allMoves(){
   const custom = _allCustomMoves();
   const taken = new Set(custom.map(m => (m.name||"").toLowerCase()));
-  const seed = MOVE_SEED.filter(m => !taken.has(m[0].toLowerCase())).map(m => ({ name:m[0], part:m[1], video:_ytSearch(m[0]), seed:true }));
-  return [...custom.map(m => ({ name:m.name, part:m.part, video:(m.video||_ytSearch(m.name)), _key:m._key })), ...seed]
+  const base = _baseMoves().filter(m => !taken.has((m.name||"").toLowerCase()));
+  return [...custom.map(m => ({ name:m.name, part:m.part, video:(m.video||_ytSearch(m.name)), _key:m._key })), ...base]
     .sort((a,b) => a.name.localeCompare(b.name));
 }
 async function saveMove(){
@@ -1667,6 +1674,7 @@ function render(data) {
     window._data = data;                       // full dataset, for the tab chat agents
     window._chatUrl = data.chat_url || "";     // Apps Script AI-chat proxy (set via CHAT_SCRIPT_URL)
     window._inbodyNames = ((data.teamup||{}).member_list || []).map(m => m.name).filter(Boolean);
+    window._moveLibrary = Array.isArray(data.moves) ? data.moves : [];   // extracted from programme docs
     window._atRiskUrl = window._atRiskUrl || data.atrisk_url || "";
     window._briefLower = () => {
       push("home", briefCard("New enquiries (email)", "green", enquiryHtml, "col-4"));
