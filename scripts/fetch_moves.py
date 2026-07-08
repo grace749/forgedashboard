@@ -24,8 +24,15 @@ DOC_IDS = [
     ("Q3 2026", "1N7tw8Wt_Y7PebIu-KCYm5tEkNORWorb2YRd8zIJkBWA"),  # "Q3 2026"
     ("Q2 2026", "12xgn_rp3gK0uMtJKjn27wNoSTWbre0tF41WaIqHKe5k"),  # "Q2 2026"
     ("RenewYou 12-Week", "1LTBJj7Nzymrt-SAIVHguw05HbFsRKuIPa7hpPLQfUtw"),  # "RenewYou_12Week_Training_Programmes"
+    ("Strongevity", "10IoijPaP7_nVdZrJRTIHrf12FlcdxnavKSAUoaO4fwk"),  # "Strongevity Programme"
 ]
-SCOPES = ["https://www.googleapis.com/auth/documents.readonly"]
+# PDF programmes (older cycles) — text only, NO embedded demo links, so these
+# contribute move NAMES (with a YouTube-search fallback), not the Forge's clips.
+PDF_IDS = [
+    ("Q1 2026", "1QNCCpoqVZQmnoPJ6WaayehkJVv6r5D5T"),  # "_Forge Program Q1 2026.pdf"
+]
+SCOPES = ["https://www.googleapis.com/auth/documents.readonly",
+          "https://www.googleapis.com/auth/drive.readonly"]
 
 # Keyword → body part. First match wins (order matters: specific before general).
 _PART_RULES = [
@@ -48,11 +55,61 @@ _HEADINGS = re.compile(r"^(LOWER|UPPER|FULL BODY|ELEVATE|PLATE|CIRCUITS|CIRCUIT|
 _LABELS = re.compile(r"^\s*(MAIN MOVE|ACCESSORY\s*\d*|MOVE\s*\d*|MIN\s*\d+|\d+[.)]|SUPERSET\s*\d*|PARTNER (ONE|TWO|THREE)[^:]*)\s*[:.\-]?\s*", re.I)
 
 
-def _svc(creds_info):
+def _creds(creds_info):
     from google.oauth2 import service_account
+    return service_account.Credentials.from_service_account_info(creds_info, scopes=SCOPES)
+
+
+def _svc(creds):
     from googleapiclient.discovery import build
-    creds = service_account.Credentials.from_service_account_info(creds_info, scopes=SCOPES)
     return build("docs", "v1", credentials=creds, cache_discovery=False)
+
+
+def _pdf_extract(text, source):
+    """Best-effort NAME extraction from a flattened programme PDF (no links).
+    Pulls numbered circuit/plate/mobility list items and MAIN MOVE/ACCESSORY
+    lines; skips the rep-scheme noise."""
+    moves = []
+    for line in text.split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        m = re.match(r"^(MAIN MOVE|ACCESSORY\s*\d*)\s*[:\-]\s*(.+)$", line, re.I)
+        if m:
+            nm = _clean_name(m.group(2))
+            if _looks_like_move(nm) and len(nm.split()) <= 6:
+                moves.append({"name": nm, "video": "", "source": source})
+            continue
+        # numbered exercise list on one line: "1 C2 BIKE 2 DB STEP OVERS 3 …"
+        if re.match(r"^\d+[.)\s]", line) and len(re.findall(r"\b\d+[.)\s]", line)) >= 2:
+            for seg in re.split(r"\s*\b\d+[.)\s]+", " " + line):
+                nm = _clean_name(seg)
+                if _looks_like_move(nm) and 1 <= len(nm.split()) <= 5 and not re.search(r"\b(rep|sec|min|round|set|level|cal)\b", nm, re.I):
+                    moves.append({"name": nm, "video": "", "source": source})
+    return moves
+
+
+def _pdf_moves(creds):
+    from googleapiclient.discovery import build
+    try:
+        from pypdf import PdfReader
+    except Exception as ex:
+        print(f"[moves] pypdf not available: {ex}")
+        return []
+    import io
+    drive = build("drive", "v3", credentials=creds, cache_discovery=False)
+    out = []
+    for source, fid in PDF_IDS:
+        try:
+            data = drive.files().get_media(fileId=fid).execute()
+            reader = PdfReader(io.BytesIO(data))
+            text = "\n".join((p.extract_text() or "") for p in reader.pages)
+            found = _pdf_extract(text, source)
+            print(f"[moves] {source} (PDF): {len(found)} name candidates")
+            out.extend(found)
+        except Exception as ex:
+            print(f"[moves] could not read {source} PDF ({fid}) — shared with the service account? {ex}")
+    return out
 
 
 def _infer_part(name):
@@ -90,7 +147,10 @@ def _looks_like_move(name):
         return False
     if not re.search(r"[A-Za-z]{3}", name):
         return False
-    if name.lower() in {"rest", "coaches choice", "off rack", "reps", "video", "movement"}:
+    if name.lower() in {"rest", "coaches choice", "off rack", "reps", "video", "movement",
+                        "follow reps", "max reps", "follow coach for sets", "work in your pods",
+                        "use challenging weight", "team workout", "partner workout", "pod workout",
+                        "work at your own pace", "mobility to finish", "strength"}:
         return False
     return True
 
@@ -150,7 +210,8 @@ def run():
         print("[moves] GOOGLE_SERVICE_ACCOUNT_JSON not set — skipping")
         return []
     try:
-        svc = _svc(json.loads(raw))
+        creds = _creds(json.loads(raw))
+        svc = _svc(creds)
     except Exception as ex:
         print(f"[moves] auth failed: {ex}")
         return []
@@ -164,6 +225,8 @@ def run():
             all_moves.extend(found)
         except Exception as ex:
             print(f"[moves] could not read {source} ({doc_id}) — is it shared with the service account? {ex}")
+
+    all_moves.extend(_pdf_moves(creds))   # older PDF programmes (names only)
 
     # De-dupe by normalised name, keep the first demo link seen, add body part.
     seen, out = set(), []
