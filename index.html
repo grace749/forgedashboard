@@ -2124,7 +2124,7 @@ function render(data) {
   push("retention", `<div class="sec-divider"><span class="sec-label">Membership Status</span><span class="sec-line"></span></div>`);
   const pausedMembers = tm.paused_members || [];
   push("retention", `
-    <div class="card col-4">
+    <div class="card col-6">
       <div class="card-title">Membership status</div>
       <div class="card-headline" style="display:flex;align-items:center;justify-content:space-between">
         Paused Members
@@ -2186,8 +2186,8 @@ function render(data) {
   const lapsedFull   = tm.lapsed_full_by_month   || [];
   const lapsedTrials = tm.lapsed_trials_by_month || [];
 
-  push("retention", `<div class="sec-divider"><span class="sec-label">Lapsed Members</span><span class="sec-line"></span></div>`);
-  push("retention", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-12"));
+  // Paused (above) + Cancelled sit side by side on one full-width row.
+  push("retention", lapsedSearchCard(lapsedFull, "Lapsed Members", "Cancelled Full Memberships", "chip-red", "No full members lapsed in the last year 🎉", "col-6"));
 
 
   memberSection("Class Capacity & Popularity");
