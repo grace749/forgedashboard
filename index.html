@@ -1000,8 +1000,13 @@ function showAdviceModal(i) {
 }
 
 // ── Data ──────────────────────────────────────────────────────
+// Role: the head coach opens the dashboard with ?coach — she loads the redacted
+// coach-data.json (no finance/leads/ads/growth/sop) and those tabs are hidden.
+const ROLE = /[?&]coach\b/i.test(location.search) ? "coach" : "owner";
+const COACH_HIDDEN_TABS = ["finances", "leads", "ads", "growth", "sop"];
 async function loadData() {
-  const res = await fetch("./data/data.json?t=" + Date.now());
+  const file = ROLE === "coach" ? "./data/coach-data.json" : "./data/data.json";
+  const res = await fetch(file + "?t=" + Date.now());
   return res.json();
 }
 
@@ -1645,6 +1650,22 @@ function render(data) {
   const today = new Date().toISOString().split("T")[0];
   const asanaScriptUrl = data.asana_script_url || "";
 
+  // Coach view: the redacted file omits owner-only keys. Backfill empty defaults
+  // so the (hidden) owner sections don't throw, and hide those tabs entirely.
+  if (ROLE === "coach") {
+    ["xero","starling","kpi","gocardless","stripe","marketing","growth_sprint","sop","brief"].forEach(k => { if (data[k] == null) data[k] = {}; });
+    if (data.ghl == null) data.ghl = [];
+    COACH_HIDDEN_TABS.forEach(t => {
+      const btn = [...document.querySelectorAll(".tab-btn")].find(b => (b.getAttribute("onclick")||"").includes(`switchTab('${t}'`));
+      if (btn) btn.style.display = "none";
+      const panel = document.getElementById("tab-" + t);
+      if (panel) panel.style.display = "none";
+    });
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    const homeBtn = [...document.querySelectorAll(".tab-btn")].find(b => (b.getAttribute("onclick")||"").includes("switchTab('home'"));
+    if (homeBtn) homeBtn.classList.add("active");
+  }
+
   // Each tab gets its own cards array
   const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], programming: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
@@ -1710,6 +1731,14 @@ function render(data) {
 
   // ── Daily Brief ────────────────────────────────────────────
   const br = data.brief || {};
+  // Globals the whole app needs — set unconditionally (the coach view has no
+  // brief, so these must not live inside the brief block below).
+  window._slackData = data.slack || {};
+  window._data = data;                       // dataset for the tab chat agents
+  window._chatUrl = data.chat_url || "";     // Apps Script AI-chat proxy
+  window._inbodyNames = ((data.teamup||{}).member_list || []).map(m => m.name).filter(Boolean);
+  window._moveLibrary = Array.isArray(data.moves) ? data.moves : [];
+  window._atRiskUrl = window._atRiskUrl || data.atrisk_url || "";
   if (br.date) {
     const cal       = Array.isArray(br.calendar)  ? br.calendar  : [];
     const urgent    = Array.isArray(br.urgent)    ? br.urgent    : [];
@@ -1818,12 +1847,6 @@ function render(data) {
     push("home", briefCard("Needs your attention", "red",    emailHtml,"col-4"));
     // stash the lower row to push after Tasks (so Tasks sits top-right)
     // Three on one line: New enquiries · Slack · WhatsApp & webchat
-    window._slackData = data.slack || {};
-    window._data = data;                       // full dataset, for the tab chat agents
-    window._chatUrl = data.chat_url || "";     // Apps Script AI-chat proxy (set via CHAT_SCRIPT_URL)
-    window._inbodyNames = ((data.teamup||{}).member_list || []).map(m => m.name).filter(Boolean);
-    window._moveLibrary = Array.isArray(data.moves) ? data.moves : [];   // extracted from programme docs
-    window._atRiskUrl = window._atRiskUrl || data.atrisk_url || "";
     window._briefLower = () => {
       push("home", briefCard("New enquiries (email)", "green", enquiryHtml, "col-4"));
       push("home", `
@@ -3446,6 +3469,35 @@ function render(data) {
     // Move library (add / search / filter by body part) — rendered by renderMoveLibrary
     push("programming", `<div class="card col-12" id="moveLibrary"></div>`);
   })();
+
+  // Coach view: replace the owner home with a coaching-focused homepage.
+  if (ROLE === "coach") {
+    const j = data.jumpstart || {};
+    const jsAttention = (j.alerts || []).length;
+    const ibOverdue = ((data.inbody && data.inbody.scans) || []).filter(s => s.overdue).length;
+    const stat = (n, label, colour, tab) => `
+      <div onclick="goTab('${tab}')" style="flex:1;min-width:150px;background:#fafafa;border:1px solid #f0f0f5;border-radius:12px;padding:16px;cursor:pointer">
+        <div style="font-size:2rem;font-weight:800;letter-spacing:-.02em;color:${colour}">${n}</div>
+        <div style="font-size:.7rem;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:2px">${label}</div>
+      </div>`;
+    tabs.home = [
+      `<div class="card col-12" style="background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+        <div class="card-title">The Forge · Coach</div>
+        <div class="card-headline" style="margin-bottom:2px">Coaching Home</div>
+        <p style="color:#6b7280;font-size:.85rem;margin:2px 0 0">Members, retention, InBody, Jumpstart, Programming and staff — your day at a glance.</p>
+      </div>`,
+      `<div class="card col-12">
+        <div class="card-title">Today's coaching focus</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+          ${stat(jsAttention, "Jumpstarters need attention", jsAttention ? "#d97706" : "#059669", "jumpstart")}
+          ${stat(ibOverdue, "InBody scans overdue", ibOverdue ? "#dc2626" : "#059669", "inbody")}
+          ${stat(tm.active != null ? tm.active : "—", "Active members", "#111", "members")}
+          ${stat(tm.churn != null ? tm.churn + "%" : "—", "Monthly churn", (tm.churn || 0) > 3 ? "#dc2626" : "#059669", "retention")}
+        </div>
+        <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Tap a number to jump to that tab. Ask any tab's agent for detail.</div>
+      </div>`
+    ];
+  }
 
   // Give each content tab its AI chat agent, pinned at the top.
   Object.keys(tabs).forEach(tab => { if (AGENT_TABS[tab]) tabs[tab].unshift(chatCard(tab)); });

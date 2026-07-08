@@ -90,3 +90,18 @@ except Exception as ex:
 
 OUTPUT.write_text(json.dumps(data, indent=2))
 print(f"Wrote {OUTPUT}")
+
+# ── Head-coach view: a REDACTED copy with owner-only data removed ──────────
+# The coach dashboard (index.html?coach) loads this file, so finance / leads /
+# ads / growth / SOP data never reaches her browser. Same build → single update.
+COACH_STRIP = ["xero", "starling", "kpi", "gocardless", "stripe",   # finance
+               "ghl",                                               # leads
+               "marketing",                                         # ads
+               "growth_sprint",                                     # growth
+               "sop",                                               # SOPs
+               "brief"]                                             # owner home hub (has enquiries)
+coach = {k: v for k, v in data.items() if k not in COACH_STRIP}
+coach["role"] = "coach"
+COACH_OUTPUT = OUTPUT.parent / "coach-data.json"
+COACH_OUTPUT.write_text(json.dumps(coach, indent=2))
+print(f"Wrote {COACH_OUTPUT} (redacted: {', '.join(COACH_STRIP)})")
