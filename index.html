@@ -1204,8 +1204,39 @@ const PROGRAMMING = {
   equipment: "The Forge has NO pin-loaded/selectorised machines. Available kit: 3 squat racks each with 2 built-in cable machines (so cable moves ARE fine — pulldowns, rows, curls, pushdowns, face pulls, wood-chops); plyo boxes; a sled track; ski erg; rower; Concept2 bike; assault bike; barbells + plates; dumbbells; kettlebells; sandbags; slam balls; wall balls; resistance bands. Only programme movements possible with THIS kit — never leg press, hamstring-curl machine, pec deck, or any fixed machine; use barbell / dumbbell / kettlebell / cable / band / bodyweight / plyo-box / conditioning-machine alternatives instead."
 };
 
+// ── Programme documents (feed the move library monthly) ───────
+// Paste a Google Doc link → stored in the shared store as progdoc:<id>. The
+// data build (fetch_moves) reads these each refresh and extracts their moves.
+async function addProgDoc(){
+  let url = (document.getElementById("progdoc-in").value || "").trim(); if (!url) return;
+  const m = url.match(/\/d\/([A-Za-z0-9_-]{20,})/) || url.match(/[?&]id=([A-Za-z0-9_-]{20,})/) || url.match(/^([A-Za-z0-9_-]{25,})$/);
+  if (!m) { alert("Paste a Google Doc link (or its ID)."); return; }
+  await sharedSet("progdoc:" + m[1], { id: m[1], url, title: url, added: Date.now() });
+  document.getElementById("progdoc-in").value = ""; renderProgDocs();
+}
+async function delProgDoc(key){ await sharedSet(key, {}); renderProgDocs(); }
+function renderProgDocs(){
+  const el = document.getElementById("progDocs"); if (!el) return;
+  const docs = _shList("progdoc");
+  el.className = "card col-12";
+  el.innerHTML = `
+    <div class="card-title">Programme documents</div>
+    <div class="card-headline">Feed the library each month</div>
+    <p style="color:#6b7280;font-size:.82rem;margin:6px 0 10px">Paste a Google Doc link to a new programme. Share it with the service account (viewer), then it's extracted into the move library on the next data refresh.</p>
+    <div style="display:flex;gap:6px">
+      <input id="progdoc-in" placeholder="Paste Google Doc link…" onkeydown="if(event.key==='Enter')addProgDoc()" style="flex:1;font-size:.82rem;padding:8px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      <button onclick="addProgDoc()" style="font-size:.82rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:8px 16px;cursor:pointer">Add</button>
+    </div>
+    ${docs.length ? `<div style="margin-top:10px">${docs.map(d => `
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
+        <a href="${_plEsc(d.url)}" target="_blank" rel="noopener" style="font-size:.82rem;color:#7c3aed;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${_plEsc(d.url)}</a>
+        <button onclick="delProgDoc('${d._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+      </div>`).join("")}</div>` : ""}
+    <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Service account: forge-dashboard@forge-dashboard-473821.iam.gserviceaccount.com</div>`;
+}
+
 // ── Move library ──────────────────────────────────────────────
-const BODY_PARTS = ["Back","Chest","Shoulders","Biceps","Triceps","Quads","Hamstrings","Glutes","Calves","Core","Cardio","Full Body"];
+const BODY_PARTS =["Back","Chest","Shoulders","Biceps","Triceps","Quads","Hamstrings","Glutes","Calves","Core","Cardio","Full Body"];
 // Starter set so search + body-part filter work immediately (video = YouTube
 // search link). Coach-added moves (with real demo links) merge on top and sync.
 // Seed set aligned to The Forge's kit (racks + cables, barbell, DB, KB, sandbag,
@@ -3610,6 +3641,7 @@ function render(data) {
         <ol style="margin:0;padding-left:18px;color:#1f2937;font-size:.84rem;line-height:1.6">${tw.example.map(t => `<li style="padding:1px 0">${t}</li>`).join("")}</ol>
       </div>`);
     // Move library (add / search / filter by body part) — rendered by renderMoveLibrary
+    push("programming", `<div class="card col-12" id="progDocs"></div>`);
     push("programming", `<div class="card col-12" id="moveLibrary"></div>`);
   })();
 
@@ -3706,6 +3738,7 @@ function render(data) {
     if (typeof renderSopDrafts === "function")  renderSopDrafts();
     if (typeof renderCalendar === "function")   renderCalendar();
     if (typeof renderOps === "function")        renderOps();
+    if (typeof renderProgDocs === "function")   renderProgDocs();
   };
   paintDynamic();                          // paint immediately
   loadAtRiskState().then(paintDynamic);    // then reconcile with the shared store
@@ -3788,7 +3821,39 @@ async function toggleDone(btn, action, markDone, scriptUrl) {
   btn.disabled = false;
 }
 
-loadData().then(render).catch(err => {
+// Admin password gate (owner view only). Self-service: the first visit sets the
+// password (stored hashed in the shared store, so it syncs); later visits must
+// enter it. The coach view (?coach) is not gated. NOTE: soft gate — data.json is
+// still at a public URL; this stops casual access, not a determined fetch.
+async function _sha256(s){
+  const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join("");
+}
+function _lock(msg){
+  (document.getElementById("dashboard") || document.body).innerHTML =
+    `<div class="card col-12" style="text-align:center;padding:48px"><div class="card-headline">🔒 Locked</div>
+     <p style="color:#6b7280;font-size:.9rem">${msg || "Admin access only."}</p>
+     <button onclick="location.reload()" style="margin-top:12px;font-size:.85rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:9px 18px;cursor:pointer">Try again</button></div>`;
+}
+async function _adminGate(){
+  if (ROLE !== "owner") return true;                       // coach view is open
+  if (localStorage.getItem("forge_admin_ok") === "1") return true;
+  await loadAtRiskState();                                 // load the shared store to read/set the hash
+  let stored = sharedGet("setting:admin_pw", "") || "";
+  if (!stored) {                                           // first-time setup
+    const set = prompt("Set an admin password for the dashboard (you'll enter this each new device):");
+    if (!set) { _lock("No password set."); return false; }
+    await sharedSet("setting:admin_pw", await _sha256(set));
+    localStorage.setItem("forge_admin_ok", "1");
+    return true;
+  }
+  const pw = prompt("Enter the admin password:");
+  if (pw == null) { _lock(); return false; }
+  if (await _sha256(pw) === stored) { localStorage.setItem("forge_admin_ok", "1"); return true; }
+  _lock("Wrong password."); return false;
+}
+
+_adminGate().then(ok => { if (!ok) return; return loadData().then(render); }).catch(err => {
   document.getElementById("dashboard").innerHTML =
     `<div class="card col-12"><div class="card-headline">Error</div><p style="color:#dc2626;font-size:.88rem">${err.message}</p></div>`;
 });

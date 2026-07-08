@@ -15,7 +15,30 @@ return [] and the dashboard falls back to its built-in starter set.
 
 Add more docs by extending DOC_IDS.
 """
-import os, re, json
+import os, re, json, urllib.request
+
+
+def _added_doc_ids():
+    """Programme docs a coach added via the dashboard live in the shared store
+    (keys 'progdoc:<id>'). Pull them so new programmes feed the library without a
+    code change. Needs ATRISK_SCRIPT_URL (the shared-store web app)."""
+    url = os.environ.get("ATRISK_SCRIPT_URL")
+    if not url:
+        return []
+    try:
+        sep = "&" if "?" in url else "?"
+        with urllib.request.urlopen(url + sep + "type=atrisk", timeout=20) as resp:
+            state = (json.loads(resp.read()) or {}).get("state", {}) or {}
+        out = []
+        for k, v in state.items():
+            if k.startswith("progdoc:") and isinstance(v, dict) and v.get("id"):
+                out.append((v.get("title") or "Added doc", v["id"]))
+        if out:
+            print(f"[moves] {len(out)} coach-added programme doc(s) from shared store")
+        return out
+    except Exception as ex:
+        print(f"[moves] could not read added docs: {ex}")
+        return []
 
 # The programme movement Google Docs (each move has an Instagram/YouTube demo
 # link). All must be shared (viewer) with the service-account email.
@@ -231,7 +254,11 @@ def run():
         return []
 
     all_moves = []
-    for source, doc_id in DOC_IDS:
+    seen_ids = set()
+    for source, doc_id in DOC_IDS + _added_doc_ids():
+        if doc_id in seen_ids:
+            continue
+        seen_ids.add(doc_id)
         try:
             doc = svc.documents().get(documentId=doc_id).execute()
             found = _extract(doc, source)
