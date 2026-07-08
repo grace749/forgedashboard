@@ -1007,10 +1007,13 @@ function showAdviceModal(i) {
   document.getElementById("modal-overlay").classList.add("open");
 }
 
-// ── Data ──────────────────────────────────────────────────────
-// Role: the head coach opens the dashboard with ?coach — she loads the redacted
-// coach-data.json (no finance/leads/ads/growth/sop) and those tabs are hidden.
-const ROLE = /[?&]coach\b/i.test(location.search) ? "coach" : "owner";
+// ── Accounts & role ───────────────────────────────────────────
+// Each person logs in; their account decides their role + which data file they
+// load. Owner = full dashboard (data.json); coach = redacted (coach-data.json)
+// with finance/leads/ads/growth/sop/staff hidden. Add coaches here as needed.
+const ACCOUNTS = { "grace@theforge.pt": "owner", "jojo@theforge.pt": "coach" };
+let ROLE = "owner";                                        // set on login
+window._coachEmail = "";                                   // logged-in coach's email (for her Asana feed)
 const COACH_HIDDEN_TABS = ["finances", "leads", "ads", "growth", "sop", "staff"];
 async function loadData() {
   const file = ROLE === "coach" ? "./data/coach-data.json" : "./data/data.json";
@@ -1815,6 +1818,9 @@ function render(data) {
   const today = new Date().toISOString().split("T")[0];
   const asanaScriptUrl = data.asana_script_url || "";
 
+  // Reset tab visibility first (so switching to owner shows everything again).
+  document.querySelectorAll(".tab-btn").forEach(b => b.style.display = "");
+  document.querySelectorAll(".tab-panel").forEach(p => p.style.display = "");
   // Coach view: the redacted file omits owner-only keys. Backfill empty defaults
   // so the (hidden) owner sections don't throw, and hide those tabs entirely.
   if (ROLE === "coach") {
@@ -3821,42 +3827,84 @@ async function toggleDone(btn, action, markDone, scriptUrl) {
   btn.disabled = false;
 }
 
-// Admin password gate (owner view only). Self-service: the first visit sets the
-// password (stored hashed in the shared store, so it syncs); later visits must
-// enter it. The coach view (?coach) is not gated. NOTE: soft gate — data.json is
-// still at a public URL; this stops casual access, not a determined fetch.
+// ── Login ─────────────────────────────────────────────────────
+// Each person signs in; their ACCOUNTS entry sets role → data file → view.
+// Passwords are set on first sign-in and stored hashed in the shared store
+// (key "user:<email>"), so they sync across devices. NOTE: soft gate — the raw
+// data.json is still at a public URL; login controls the UI and which file each
+// role loads, not the file's public reachability.
 async function _sha256(s){
   const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
   return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join("");
 }
-function _lock(msg){
-  (document.getElementById("dashboard") || document.body).innerHTML =
-    `<div class="card col-12" style="text-align:center;padding:48px"><div class="card-headline">🔒 Locked</div>
-     <p style="color:#6b7280;font-size:.9rem">${msg || "Admin access only."}</p>
-     <button onclick="location.reload()" style="margin-top:12px;font-size:.85rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:9px 18px;cursor:pointer">Try again</button></div>`;
-}
-async function _adminGate(){
-  if (ROLE !== "owner") return true;                       // coach view is open
-  if (localStorage.getItem("forge_admin_ok") === "1") return true;
-  await loadAtRiskState();                                 // load the shared store to read/set the hash
-  let stored = sharedGet("setting:admin_pw", "") || "";
-  if (!stored) {                                           // first-time setup
-    const set = prompt("Set an admin password for the dashboard (you'll enter this each new device):");
-    if (!set) { _lock("No password set."); return false; }
-    await sharedSet("setting:admin_pw", await _sha256(set));
-    localStorage.setItem("forge_admin_ok", "1");
-    return true;
+function _loginScreen(msg){
+  let el = document.getElementById("login-screen");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "login-screen";
+    el.style.cssText = "position:fixed;inset:0;z-index:9999;background:#1a1236;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:20px";
+    el.innerHTML = `<div style="background:#fff;border-radius:16px;padding:30px;width:330px;max-width:92vw;box-shadow:0 20px 60px rgba(0,0,0,.35)">
+        <div style="font-size:1.3rem;font-weight:800;color:#111">The Forge</div>
+        <div style="font-size:.85rem;color:#6b7280;margin-bottom:18px">Sign in to your dashboard</div>
+        <input id="login-email" type="email" placeholder="Email" autocomplete="username" style="width:100%;box-sizing:border-box;font-size:.9rem;padding:10px 12px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:10px;outline:none">
+        <input id="login-pw" type="password" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()" style="width:100%;box-sizing:border-box;font-size:.9rem;padding:10px 12px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:12px;outline:none">
+        <button onclick="doLogin()" style="width:100%;font-size:.9rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:11px;cursor:pointer">Sign in</button>
+        <div id="login-msg" style="color:#dc2626;font-size:.8rem;margin-top:10px;min-height:1em"></div>
+        <div style="font-size:.7rem;color:#c4b5fd;margin-top:8px">First time? Enter your email and choose a password — it's saved for next time.</div>
+      </div>`;
+    document.body.appendChild(el);
   }
-  const pw = prompt("Enter the admin password:");
-  if (pw == null) { _lock(); return false; }
-  if (await _sha256(pw) === stored) { localStorage.setItem("forge_admin_ok", "1"); return true; }
-  _lock("Wrong password."); return false;
+  el.style.display = "flex";
+  if (msg) document.getElementById("login-msg").textContent = msg;
 }
-
-_adminGate().then(ok => { if (!ok) return; return loadData().then(render); }).catch(err => {
-  document.getElementById("dashboard").innerHTML =
-    `<div class="card col-12"><div class="card-headline">Error</div><p style="color:#dc2626;font-size:.88rem">${err.message}</p></div>`;
-});
+async function doLogin(){
+  const email = (document.getElementById("login-email").value || "").trim().toLowerCase();
+  const pw = document.getElementById("login-pw").value || "";
+  const role = ACCOUNTS[email];
+  const setMsg = m => { document.getElementById("login-msg").textContent = m; };
+  if (!role) return setMsg("That email isn't set up for the dashboard.");
+  if (!pw)   return setMsg("Enter a password.");
+  await loadAtRiskState();
+  const key = "user:" + email, hash = await _sha256(pw), rec = sharedGet(key, null);
+  if (!rec || !rec.pw) { await sharedSet(key, { pw: hash }); }   // first sign-in sets the password
+  else if (rec.pw !== hash) return setMsg("Wrong password.");
+  localStorage.setItem("forge_user", JSON.stringify({ email, role }));
+  _startApp(email, role);
+}
+function logout(){ localStorage.removeItem("forge_user"); location.reload(); }
+function _startApp(email, role){
+  ROLE = role;
+  window._coachEmail = role === "coach" ? email : "";
+  const ls = document.getElementById("login-screen"); if (ls) ls.style.display = "none";
+  loadData().then(render).then(() => {
+    // add a logout control to the header
+    const bar = document.querySelector(".tabs") || document.body;
+    if (bar && !document.getElementById("logout-btn")) {
+      const b = document.createElement("button");
+      b.id = "logout-btn"; b.textContent = "Log out";
+      b.title = "Signed in as " + email;
+      b.style.cssText = "position:fixed;top:10px;right:14px;z-index:50;font-size:.68rem;font-weight:700;color:#c4b5fd;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:7px;padding:5px 10px;cursor:pointer";
+      b.onclick = logout;
+      document.body.appendChild(b);
+    }
+  }).catch(err => {
+    document.body.insertAdjacentHTML("beforeend", `<div style="padding:24px;color:#dc2626;font-family:sans-serif">Error: ${err.message}</div>`);
+  });
+}
+// Boot: preload the shared-store URL from the redacted (safe, public) file so
+// login passwords sync across devices, then resume a session or show the login.
+(function boot(){
+  const go = () => {
+    let u = null; try { u = JSON.parse(localStorage.getItem("forge_user") || "null"); } catch (e) {}
+    if (u && u.email && ACCOUNTS[u.email]) _startApp(u.email, ACCOUNTS[u.email]);
+    else _loginScreen();
+  };
+  fetch("./data/coach-data.json?t=" + Date.now())
+    .then(r => r.json())
+    .then(d => { window._atRiskUrl = window._atRiskUrl || d.atrisk_url || ""; })
+    .catch(() => {})
+    .finally(go);
+})();
 </script>
 </body>
 </html>

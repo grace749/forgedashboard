@@ -143,10 +143,12 @@ def _infer_part(name):
     return "Full Body"
 
 
-# Leading labels/prefixes that sit in front of the actual move name.
+# Leading labels/prefixes that sit in front of the actual move name. A bare
+# number is only stripped when it's a label ("1:") or a rep count followed by a
+# space ("15 Cable Row") — NOT when it's part of the move like "90/90 Switches".
 _PREFIX = re.compile(
     r"^\s*(main move|accessory\s*\d*|move\s*\d*|min\s*\d+|superset\s*\d*|level\s*\d+|"
-    r"partner\s*(?:one|two|three|\d)|\d+\s*reps?|\d+\s*[xX]|\d+s(?=\s)|\d+)\s*[:.)\-]?\s*",
+    r"partner\s*(?:one|two|three|\d)|\d+\s*reps?|\d+\s*[xX]|\d+s(?=\s)|\d+[:.)]|\d+(?=\s))\s*[:.)\-]?\s*",
     re.I)
 
 
