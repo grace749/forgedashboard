@@ -1110,7 +1110,7 @@ const AGENT_SKILLS = {
   members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"Explain the mix and where growth or shrinkage is really coming from." },
   inbody:    { benchmarks:"Rescan cadence ~6 weeks. Progress = skeletal muscle up and/or body-fat % down. Overdue scans are a re-engagement opportunity.", lens:"Spot who's progressing (celebrate/case-study) and who's overdue or stalling (nudge)." },
   jumpstart: { benchmarks:"6-week programme. Have the conversion conversation by week 4-5, not week 6. Missed check-ins predict non-conversion.", lens:"Who needs a conversion chat now, who's drifting, and what to do before their 6 weeks end." },
-  programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked to draft a session, ACTUALLY WRITE IT — do not refuse for lack of a move library. You know strength & conditioning, so choose appropriate real exercises yourself (barbell/dumbbell/machine/cable moves) to fill each slot, matched to the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press) with reps in the right range. Lay it out in the class's structure: pods/sections, main move + 2–3 accessories per section, then the complex/workout/mobility finisher. Only ask a clarifying question if genuinely essential; otherwise assume sensible defaults and deliver the full session. For EVERY exercise, add a tappable demo link in the form https://www.youtube.com/results?search_query=EXERCISE+NAME+form (spaces as +) so the coach/member can see the movement — these are YouTube search links (not the Forge's own clips) so they always work." },
+  programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked to draft a session, ACTUALLY WRITE IT — do not refuse for lack of a move library. You know strength & conditioning, so choose appropriate real exercises yourself (barbell/dumbbell/machine/cable moves) to fill each slot, matched to the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press) with reps in the right range. Lay it out in the class's structure: pods/sections, main move + 2–3 accessories per section, then the complex/workout/mobility finisher. Only ask a clarifying question if genuinely essential; otherwise assume sensible defaults and deliver the full session. CRITICAL: only ever programme movements possible with The Forge's actual equipment (see programming_system.equipment) — NO fixed/pin-loaded machines (no leg press, hamstring-curl machine, pec deck). Cable moves are fine (racks have built-in cables); otherwise use barbell/dumbbell/kettlebell/sandbag/slam-ball/wall-ball/band/bodyweight and the sled, ski erg, rower, Concept2 bike and assault bike. For EVERY exercise, add a tappable demo link in the form https://www.youtube.com/results?search_query=EXERCISE+NAME+form (spaces as +) so the coach/member can see the movement — these are YouTube search links (not the Forge's own clips) so they always work." },
   leads:     { benchmarks:"Speed-to-lead matters most — reply within minutes, not hours. Every un-actioned enquiry is lost revenue.", lens:"Rank who to contact first and flag anything going stale." },
   ads:       { benchmarks:"Judge on cost-per-lead trend and lead→trial→member, not vanity metrics. Rising CPL with flat leads = creative/fatigue issue.", lens:"Say whether spend is working and what to change." },
   growth:    { benchmarks:"Focus beats breadth — one or two levers per sprint.", lens:"Recommend the highest-leverage focus from the data." },
@@ -1163,26 +1163,29 @@ const PROGRAMMING = {
       "+ FOR TIME: KB farmers hold (12/16/20kg)"
     ]
   },
-  sources: "Q1/Q2/Q3/Q4 2026 programme Google Docs (Q4 current) + Q1–Q3 PDFs (the TV-card layouts)."
+  sources: "Q1/Q2/Q3/Q4 2026 programme Google Docs (Q4 current) + Q1–Q3 PDFs (the TV-card layouts).",
+  equipment: "The Forge has NO pin-loaded/selectorised machines. Available kit: 3 squat racks each with 2 built-in cable machines (so cable moves ARE fine — pulldowns, rows, curls, pushdowns, face pulls, wood-chops); a sled track; ski erg; rower; Concept2 bike; assault bike; barbells + plates; dumbbells; kettlebells; sandbags; slam balls; wall balls; resistance bands. Only programme movements possible with THIS kit — never leg press, hamstring-curl machine, pec deck, or any fixed machine; use barbell / dumbbell / kettlebell / cable / band / bodyweight / conditioning-machine alternatives instead."
 };
 
 // ── Move library ──────────────────────────────────────────────
 const BODY_PARTS = ["Back","Chest","Shoulders","Biceps","Triceps","Quads","Hamstrings","Glutes","Calves","Core","Cardio","Full Body"];
 // Starter set so search + body-part filter work immediately (video = YouTube
 // search link). Coach-added moves (with real demo links) merge on top and sync.
+// Seed set aligned to The Forge's kit (racks + cables, barbell, DB, KB, sandbag,
+// slam/wall ball, bands, sled, ski, rower, bikes) — NO fixed machines.
 const MOVE_SEED = [
-  ["Lat pulldown (wide grip)","Back"],["Barbell bent-over row","Back"],["Single-arm cable row","Back"],["Seal row","Back"],["Face pull","Back"],["Dumbbell pullover","Back"],["Inverted row","Back"],
-  ["Barbell bench press","Chest"],["Incline dumbbell press","Chest"],["Cable fly","Chest"],["Push-up","Chest"],
-  ["Seated dumbbell shoulder press","Shoulders"],["Lateral raise","Shoulders"],["Arnold press","Shoulders"],["Band pull-apart","Shoulders"],
-  ["Dumbbell bicep curl","Biceps"],["Cable curl","Biceps"],["Hammer curl","Biceps"],
-  ["Tricep rope pushdown","Triceps"],["Overhead dumbbell extension","Triceps"],["Bench dip","Triceps"],
-  ["Back squat","Quads"],["Goblet squat","Quads"],["Leg press","Quads"],["Walking lunge","Quads"],
-  ["Romanian deadlift","Hamstrings"],["Hamstring curl","Hamstrings"],["Barbell deadlift","Hamstrings"],
-  ["Hip thrust","Glutes"],["Glute bridge","Glutes"],["Cable kickback","Glutes"],
-  ["Standing calf raise","Calves"],
-  ["Dead bug","Core"],["Plank","Core"],["Hanging leg raise","Core"],["Cable woodchop","Core"],["Ab wheel rollout","Core"],
-  ["Assault bike","Cardio"],["Row (Concept2)","Cardio"],["Sled push","Cardio"],["Ski erg","Cardio"],
-  ["Clean & push press","Full Body"],["Kettlebell swing","Full Body"],["Box step-over","Full Body"]
+  ["Cable lat pulldown (wide)","Back"],["Barbell bent-over row","Back"],["Single-arm cable row","Back"],["Seal row (dumbbell)","Back"],["Cable face pull","Back"],["Dumbbell pullover","Back"],["Inverted row (rack bar)","Back"],["Kettlebell single-arm row","Back"],
+  ["Barbell bench press","Chest"],["Incline dumbbell press","Chest"],["Cable fly","Chest"],["Push-up","Chest"],["Floor press (dumbbell)","Chest"],
+  ["Seated dumbbell shoulder press","Shoulders"],["Dumbbell lateral raise","Shoulders"],["Arnold press","Shoulders"],["Band pull-apart","Shoulders"],["Barbell push press","Shoulders"],["Wall ball shot","Shoulders"],
+  ["Dumbbell bicep curl","Biceps"],["Cable curl","Biceps"],["Hammer curl","Biceps"],["Band curl","Biceps"],
+  ["Cable rope pushdown","Triceps"],["Overhead dumbbell extension","Triceps"],["Bench dip","Triceps"],["Close-grip push-up","Triceps"],
+  ["Back squat","Quads"],["Front squat","Quads"],["Goblet squat","Quads"],["Bulgarian split squat","Quads"],["Walking lunge","Quads"],["Wall ball squat","Quads"],
+  ["Romanian deadlift","Hamstrings"],["Single-leg RDL (dumbbell)","Hamstrings"],["Barbell deadlift","Hamstrings"],["Nordic hamstring curl (band)","Hamstrings"],["Kettlebell swing","Hamstrings"],
+  ["Barbell hip thrust","Glutes"],["Glute bridge","Glutes"],["Cable glute kickback","Glutes"],["Banded lateral walk","Glutes"],
+  ["Standing calf raise","Calves"],["Dumbbell calf raise","Calves"],
+  ["Dead bug","Core"],["Plank","Core"],["Hanging leg raise (rack bar)","Core"],["Cable woodchop","Core"],["Slam ball slam","Core"],["Sandbag rotational lift","Core"],
+  ["Assault bike","Cardio"],["Rower (Concept2)","Cardio"],["Sled push","Cardio"],["Sled pull","Cardio"],["Ski erg","Cardio"],["Concept2 bike","Cardio"],
+  ["Clean & push press (dumbbell)","Full Body"],["Sandbag clean","Full Body"],["Sandbag carry","Full Body"],["Kettlebell snatch","Full Body"],["Turkish get-up","Full Body"],["Farmers carry","Full Body"],["Wall ball","Full Body"]
 ];
 function _ytSearch(name){ return "https://www.youtube.com/results?search_query=" + encodeURIComponent((name||"") + " form").replace(/%20/g,"+"); }
 function _moveSlug(name){ return (name||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); }
@@ -3233,6 +3236,11 @@ function render(data) {
         <p style="color:#374151;font-size:.9rem;line-height:1.55;margin:2px 0 10px">${P.cycle}</p>
         <div class="inner-divider">Rules of thumb</div>
         <ul style="margin:0;padding:0">${li(P.rules)}</ul>
+        <div class="inner-divider">Our kit</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          ${["3 racks (2 cables each)","Sled track","Ski erg","Rower","Concept2 bike","Assault bike","Barbells + plates","Dumbbells","Kettlebells","Sandbags","Slam balls","Wall balls","Resistance bands"].map(k=>`<span style="font-size:.72rem;color:#374151;background:#fafafa;border:1px solid #f0f0f5;border-radius:20px;padding:3px 10px">${k}</span>`).join("")}
+        </div>
+        <div style="font-size:.7rem;color:#9ca3af;margin-top:8px">No fixed/pin-loaded machines — the Programme Designer only programmes moves possible with this kit.</div>
       </div>`);
     // Test week — current quarter + this cycle's test/retest dates
     const tw = P.testWeek;
