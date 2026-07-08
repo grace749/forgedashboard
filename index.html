@@ -1130,7 +1130,7 @@ const FORGE_FACTS = {
 // Per-tab expert lens: what "good" looks like + how to reason about the data.
 const AGENT_SKILLS = {
   finances:  { benchmarks:"Healthy gym net margin ~15-25%. Keep >3 months cash runway. Watch revenue-per-member trend (falling = pricing/upsell leak even if headcount grows). A failed DD/card is the earliest churn+cash warning.", lens:"Separate one-offs (April move) from the underlying trend. Tie cash movements to categories. Flag anything that threatens payroll or rent." },
-  retention: { benchmarks:"Monthly churn <3% is good, >5% is a problem. Trial→member conversion target ~50%+. At-risk = a member absent 10+ days. Lapsed members are recoverable if contacted within ~30 days.", lens:"Find WHO is at risk and WHY, and what single action recovers the most members/revenue this week. Distinguish full members from trials." },
+  retention: { benchmarks:"Monthly churn <3% is good, >5% is a problem. Trial→member conversion target ~50%+. At-risk = a member absent 10+ days. Lapsed members are recoverable if contacted within ~30 days.", lens:"Find WHO is at risk and WHY, and what single action recovers the most members/revenue this week. Distinguish full members from trials. TRIAL CONVERSION: the ONLY correct source is data.trial_conversion (conv_rate %, converted, not_converted, total_complete from the Jumpstart tracker). Quote those exact figures. NEVER estimate or infer a conversion rate from lapsed_trials — lapsed_trials only lists trials that ended without renewing, it is NOT the conversion rate and using it will badly understate conversion." },
   members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"Explain the mix and where growth or shrinkage is really coming from." },
   inbody:    { benchmarks:"Rescan cadence ~6 weeks. Progress = skeletal muscle up and/or body-fat % down. Overdue scans are a re-engagement opportunity.", lens:"Spot who's progressing (celebrate/case-study) and who's overdue or stalling (nudge)." },
   jumpstart: { benchmarks:"6-week programme. Have the conversion conversation by week 4-5, not week 6. Missed check-ins predict non-conversion.", lens:"Who needs a conversion chat now, who's drifting, and what to do before their 6 weeks end." },
@@ -1453,7 +1453,7 @@ function _agentData(tab){
   const slim = m => ({ month:m.month, revenue:m.revenue, expenses:m.expenses, profit:m.profit, categories:m.categories });
   switch (tab) {
     case "finances":  return { starling_monthly:(st.monthly||[]).slice(-8).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly };
-    case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } };
+    case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, trial_conversion:(d.jumpstart||{}).stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } };
     case "members":   return { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, by_type:tm.by_membership_type, joined_this_month:tm.joined_this_month, churn:tm.churn } };
     case "inbody":    return { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) };
     case "jumpstart": return d.jumpstart || {};
@@ -2381,8 +2381,14 @@ function render(data) {
   const delta = v => v == null ? "" : (v > 0 ? `<span style="color:#059669">▲${v}</span>` : v < 0 ? `<span style="color:#dc2626">▼${Math.abs(v)}</span>` : "—");
   push("inbody", `
     <div class="card col-12">
-      <div class="card-title">Body Composition</div>
-      <div class="card-headline" style="display:flex;align-items:baseline;gap:8px">InBody Scans ${inbody.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${inbody.length} members</span>` : ""}</div>
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div>
+          <div class="card-title">Body Composition</div>
+          <div class="card-headline" style="display:flex;align-items:baseline;gap:8px;margin-bottom:0">InBody Scans ${inbody.length ? `<span style="font-size:.72rem;font-weight:600;color:#9ca3af">${inbody.length} members</span>` : ""}</div>
+        </div>
+        <a href="https://gbr.lookinbody.com" target="_blank" rel="noopener"
+           style="font-size:.78rem;font-weight:700;color:#fff;background:#7c3aed;border-radius:8px;padding:8px 14px;text-decoration:none;white-space:nowrap">InBody Admin ↗</a>
+      </div>
       ${inbody.length ? `
         <div style="overflow-x:auto;overflow-y:auto;max-height:520px">
           <table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:640px">
@@ -2403,13 +2409,9 @@ function render(data) {
                   : s.days_to_due <= 7
                   ? `<span class="pill amber" style="cursor:default;font-size:.62rem">soon</span>`
                   : `<span style="color:#aaa">${fmtDateShort(s.next_due)}</span>`;
-                const _r = resolveName(s.name);
-                const _rn = _r.name;
-                const _nameCell = _r.resolved
-                  ? `<td onclick="showMemberDetail('${(_rn||'').replace(/'/g,"\\'")}')" style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#7c3aed;cursor:pointer" title="Open ${_rn}'s profile">${_rn}`
-                  : `<td onclick="linkInbody('${_r.handle}','${(_rn||'').replace(/'/g,"\\'")}')" style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#b45309;cursor:pointer" title="Click to link this InBody record to a member">${_rn} <span style="font-size:.62rem;font-weight:600;color:#d97706;background:#fffbeb;border:1px solid #fde68a;border-radius:5px;padding:1px 5px">link ↗</span>`;
+                const _rn = resolveName(s.name).name;
                 return `<tr>
-                  ${_nameCell}${s.scan_count>1?` <span style="font-size:.66rem;color:#c4b5fd">${s.scan_count} scans</span>`:""}</td>
+                  <td style="padding:8px 8px 8px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${_rn}${s.scan_count>1?` <span style="font-size:.66rem;color:#c4b5fd">${s.scan_count} scans</span>`:""}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;color:#6b7280">${fmtDateShort(s.last_scan)}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.weight ?? "—"} <span style="font-size:.7rem">${delta(s.weight_change)}</span></td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.smm ?? "—"} <span style="font-size:.7rem">${delta(s.smm_change)}</span></td>
@@ -3391,15 +3393,18 @@ function render(data) {
         </div>` : ""}
       ${allLeads.length ? `
         <div style="display:flex;flex-direction:column;gap:0">
-          ${allLeads.map(l => `
-            <div class="brief-row" style="align-items:center">
+          ${allLeads.map(l => {
+            const ghlUrl = l.conv_id ? `https://app.gohighlevel.com/v2/location/eJ81HuWlVVSQQQaqsZ6X/conversations/conversations/${l.conv_id}`
+                         : l.contact_id ? `https://app.gohighlevel.com/v2/location/eJ81HuWlVVSQQQaqsZ6X/contacts/detail/${l.contact_id}` : "";
+            return `
+            <div class="brief-row" style="align-items:center${ghlUrl?';cursor:pointer':''}" ${ghlUrl?`onclick="window.open('${ghlUrl}','_blank','noopener')" title="Open ${(l.name||'this lead').replace(/'/g,"")} in GoHighLevel"`:""}>
               <div class="brief-avatar" style="background:#fef9c3;color:#a16207">${(l.name||"?")[0].toUpperCase()}</div>
               <div style="min-width:0;flex:1">
-                <div class="brief-row-title">${l.name} <span style="font-size:.68rem;color:#aaa;font-weight:400">${l.source}</span></div>
+                <div class="brief-row-title">${l.name} <span style="font-size:.68rem;color:#aaa;font-weight:400">${l.source}</span>${ghlUrl?` <span style="font-size:.62rem;color:#7c3aed;font-weight:700">GHL ↗</span>`:""}</div>
                 <div class="brief-row-sub">${(l.message||"").substring(0,120)}</div>
               </div>
               ${l.age ? `<div style="font-size:.68rem;color:#ccc;white-space:nowrap">${l.age}</div>` : ""}
-            </div>`).join("")}
+            </div>`;}).join("")}
         </div>` : `<p style="color:#ccc;font-size:.85rem">No open leads right now. Sources: WhatsApp &amp; webchat (via GoHighLevel) and email enquiries. Connect Instagram &amp; Facebook in GoHighLevel to pull those DMs in here too.</p>`}
     </div>
   `);
