@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T14:01:20.702145+00:00",
+  "generated_at": "2026-07-08T15:09:19.048516+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,7 +7,7 @@
   "brief": {
     "date": "2026-07-08",
     "event_count": 7,
-    "urgent_count": 5,
+    "urgent_count": 4,
     "enquiry_count": 0,
     "calendar": [
       {
@@ -86,16 +86,6 @@
       }
     ],
     "urgent": [
-      {
-        "from": "causewaydental",
-        "from_raw": "causewaydental@soegateway.com",
-        "subject": "Causeway Dental Clinic Appointment Reminder",
-        "snippet": "Dear Mrs Grace Boyd, This is a gentle reminder of your appointment you have with us on Wednesday 15/07/26 at 14:30 with Eimear Laverty. It&#39;s important we keep up to date information about you, your",
-        "id": "19f41aeb48cc117d",
-        "thread_id": "19f41aeb48cc117d",
-        "msg_count": 1,
-        "draft_id": "r7264780945640066979"
-      },
       {
         "from": "Alexandra from TeamUp",
         "from_raw": "Alexandra from TeamUp <support@goteamup.com>",
@@ -186,8 +176,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
         "sarah@nourishandnurtu.re": "2025-11-23",
+        "eiliskearns13@gmail.com": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -3123,67 +3113,13 @@
   "sop": {
     "sections": [
       {
-        "name": "FOR ALL COACHES",
+        "name": "General",
         "items": [
-          {
-            "task": "All Services SOP",
-            "type": "Facilities",
-            "sop": "Forge Female Fitness \u2014 Internal Service Menu",
-            "owner": "",
-            "built": true
-          }
-        ]
-      },
-      {
-        "name": "Daily",
-        "items": [
-          {
-            "task": "Cleaning",
-            "type": "Facilities",
-            "sop": "Forge Cleaning Checklist",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Studio Open and Close",
-            "type": "Facilities",
-            "sop": "Forge Open/Close Checklist",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Being a great Coach",
-            "type": "Coaches",
-            "sop": "How to be a Great Coach Masterlist SOP",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Current Quarter Programming",
-            "type": "Coaches",
-            "sop": "Q4 Program Movements Q1 2026 Q2 2026 Q3 2026 Strongevity Programme",
-            "owner": "GS / JH",
-            "built": true
-          },
-          {
-            "task": "Cardio Machine Technique Guide",
-            "type": "Coaches",
-            "sop": "Cardio Machine Technique SOP",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
           {
             "task": "Instagram DM & Lead Followup",
             "type": "Marketing",
             "sop": "Instagram DM SOP",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Daily Social Story Upload",
-            "type": "Marketing",
-            "sop": "Instagram Daily Story SOP",
-            "owner": "GS /JH / EK",
+            "owner": "GS",
             "built": true
           },
           {
@@ -3194,6 +3130,34 @@
             "built": true
           },
           {
+            "task": "Jumpstart Sales Calls",
+            "type": "Marketing",
+            "sop": "Jumpstart Sales Call SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Schedule PT Sales Calls",
+            "type": "Marketing",
+            "sop": "Schedule PT Sales Call",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Personal Training Sales Call & Post Call Msg",
+            "type": "Marketing",
+            "sop": "PT Sales Call & Follow Message",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Prospect Tracker",
+            "type": "Marketing",
+            "sop": "Forge Prospect Tracker",
+            "owner": "GS",
+            "built": true
+          },
+          {
             "task": "No Sweat Intro",
             "type": "Clients",
             "sop": "No Sweat Intro SOP",
@@ -3201,120 +3165,45 @@
             "built": true
           },
           {
-            "task": "Full Member Welcome Pack",
+            "task": "Trial Tracker Walkthrough",
+            "type": "Clients",
+            "sop": "Trial Tracker SOP",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Trials Tracker Sheet",
+            "type": "Clients",
+            "sop": "Trial Tracker",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Trial to Full Member Conversion",
+            "type": "Clients",
+            "sop": "Trial to Full Member Conversion",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Slack - Trial to Full Member",
+            "type": "Clients",
+            "sop": "Slack - Trial to Full Member",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Trial to Full Member Pack",
+            "type": "Clients",
+            "sop": "Full Member Swag Bag",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Full Member Welcome Pack SOP",
             "type": "Clients",
             "sop": "Full Member Welcome Pack",
             "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Warmups & Cooldown Sheets",
-            "type": "Coaches",
-            "sop": "Warmups and Cooldowns SOP https://canva.link/rdamphvgb76et2s FOR Q3",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Forge InBody 270 Member Guide",
-            "type": "Clients",
-            "sop": "Forge InBody 270 Info.pdf",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Forge InBody Coaches Guide",
-            "type": "Coaches",
-            "sop": "Forge InBody 270 SOP",
-            "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "InBody Admin Dashboard",
-            "type": "Clients",
-            "sop": "InBody Admin Dashboard SOP",
-            "owner": "GS /JH",
-            "built": true
-          }
-        ]
-      },
-      {
-        "name": "Weekly (More Than Once per Month)",
-        "items": [
-          {
-            "task": "KPI Dashboard Update",
-            "type": "General",
-            "sop": "Mission Control Forge",
-            "owner": "GS",
-            "built": true
-          },
-          {
-            "task": "Update Member Mastersheet Tracker",
-            "type": "Clients",
-            "sop": "Forge Master Member Tracker",
-            "owner": "JH / GS",
-            "built": true
-          },
-          {
-            "task": "Update Prospect & Lead Tracker",
-            "type": "Marketing",
-            "sop": "Forge Prospect & Onboarding Tracker",
-            "owner": "GS",
-            "built": true
-          },
-          {
-            "task": "Social Media Posts",
-            "type": "Marketing",
-            "sop": "Social Media Posting SOP",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Mission Control Meeting Notes",
-            "type": "General",
-            "sop": "Mission Control Forge",
-            "owner": "GS",
-            "built": true
-          },
-          {
-            "task": "2 Referral Requests per week",
-            "type": "Clients",
-            "sop": "Client Referral Ask SOP Referral Form Link",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Email Newsletter",
-            "type": "Marketing",
-            "sop": "",
-            "owner": "JH",
-            "built": false
-          },
-          {
-            "task": "Blog Post",
-            "type": "Marketing",
-            "sop": "",
-            "owner": "JH",
-            "built": false
-          },
-          {
-            "task": "Momentum Sessions",
-            "type": "Clients",
-            "sop": "Momentum Session SOP   Book Momentum Call Teamup.mp4",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Weekly Client Wins (SLACK)",
-            "type": "Clients",
-            "sop": "Weekly Wins SOP",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Personal Training Sales Calls",
-            "type": "Marketing",
-            "sop": "Jumpstart Sales Call SOP",
-            "owner": "JH",
             "built": true
           },
           {
@@ -3346,38 +3235,52 @@
             "built": true
           },
           {
-            "task": "Personal Training Guide",
+            "task": "Personal Training Tracker JoJo",
+            "type": "Clients",
+            "sop": "PT Members - JoJo",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Personal Training Tracker Eilis",
+            "type": "Clients",
+            "sop": "PT Members - Eilis",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "All Services SOP",
+            "type": "Facilities",
+            "sop": "Forge Female Fitness \u2014 Internal Service Menu",
+            "owner": "ALL",
+            "built": true
+          },
+          {
+            "task": "Key Programme Resources",
+            "type": "Facilities",
+            "sop": "Key Programmes",
+            "owner": "ALL",
+            "built": true
+          },
+          {
+            "task": "Being a great Coach",
             "type": "Coaches",
-            "sop": "Personal Training Clients SOP",
-            "owner": "JH / EK",
+            "sop": "How to be a Great Coach Masterlist SOP",
+            "owner": "GS /JH / EK",
             "built": true
           },
           {
-            "task": "Schedule PT Sales Calls",
-            "type": "Marketing",
-            "sop": "Schedule PT Sales Call",
+            "task": "Key Coach Tasks",
+            "type": "Coaches",
+            "sop": "",
             "owner": "",
-            "built": true
+            "built": false
           },
           {
-            "task": "Personal Training Sales Call & Post Call Msg",
-            "type": "Marketing",
-            "sop": "PT Sales Call & Follow Message",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Trial to Full Member Conversion",
+            "task": "Update Member Mastersheet Tracker",
             "type": "Clients",
-            "sop": "Trial to Full Member Conversion",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Remove member from class",
-            "type": "Clients",
-            "sop": "Remove Member from Class.mp4",
-            "owner": "JH / EK",
+            "sop": "Forge Master Member Tracker",
+            "owner": "JH / GS",
             "built": true
           },
           {
@@ -3385,67 +3288,6 @@
             "type": "Clients",
             "sop": "No Social Members",
             "owner": "GS /JH / EK",
-            "built": true
-          },
-          {
-            "task": "Trial Lead",
-            "type": "Clients",
-            "sop": "Trial Lead SOP",
-            "owner": "EK",
-            "built": true
-          },
-          {
-            "task": "Trials Tracker",
-            "type": "Clients",
-            "sop": "Trial Tracker",
-            "owner": "EK",
-            "built": true
-          },
-          {
-            "task": "Ordering T-Shirts",
-            "type": "Facilities",
-            "sop": "Ordering Clothing SOP",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Slack - Trial to Full Member",
-            "type": "Clients",
-            "sop": "Slack - Trial to Full Member",
-            "owner": "JH",
-            "built": true
-          },
-          {
-            "task": "Trial to Full Member Swag Bag",
-            "type": "Clients",
-            "sop": "Full Member Swag Bag",
-            "owner": "JH / EK",
-            "built": true
-          }
-        ]
-      },
-      {
-        "name": "Monthly (Once Per Month)",
-        "items": [
-          {
-            "task": "Marketing KPI Dashboard",
-            "type": "Marketing",
-            "sop": "Monthly Marketing KPI",
-            "owner": "GS",
-            "built": true
-          },
-          {
-            "task": "Marketing Calendar",
-            "type": "Marketing",
-            "sop": "Monthly Marketing KPI (sheet 1)",
-            "owner": "GS",
-            "built": true
-          },
-          {
-            "task": "Corporate / Studio Partner Outreach",
-            "type": "Marketing",
-            "sop": "Forge Corporate Partnership Tracker",
-            "owner": "GS",
             "built": true
           },
           {
@@ -3463,17 +3305,103 @@
             "built": true
           },
           {
+            "task": "Annual Member Awards",
+            "type": "Clients",
+            "sop": "Forge Awards",
+            "owner": "GS/JH",
+            "built": true
+          },
+          {
+            "task": "Momentum Sessions",
+            "type": "Clients",
+            "sop": "Momentum Session SOP   Book Momentum Call Teamup.mp4",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Weekly Client Wins (SLACK)",
+            "type": "Clients",
+            "sop": "Weekly Wins SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Cleaning",
+            "type": "Facilities",
+            "sop": "Forge Cleaning Checklist",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Studio Open and Close",
+            "type": "Facilities",
+            "sop": "Forge Open/Close Checklist",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Remove member from class",
+            "type": "Clients",
+            "sop": "Remove Member from Class.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Current Quarter Programming",
+            "type": "Coaches",
+            "sop": "Q4 Program Movements Q1 2026 Q2 2026 Q3 2026 Strongevity Programme",
+            "owner": "GS / JH",
+            "built": true
+          },
+          {
+            "task": "Cardio Machine Technique Guide",
+            "type": "Coaches",
+            "sop": "Cardio Machine Technique SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Warmups & Cooldown Sheets",
+            "type": "Coaches",
+            "sop": "Warmups and Cooldowns SOP https://canva.link/rdamphvgb76et2s FOR Q3",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Forge InBody 270 Member Guide",
+            "type": "Clients",
+            "sop": "Forge InBody 270 Info.pdf",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Forge InBody Coaches Guide",
+            "type": "Coaches",
+            "sop": "Forge InBody 270 SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "InBody Admin Dashboard",
+            "type": "Clients",
+            "sop": "InBody Admin Dashboard SOP",
+            "owner": "GS /JH",
+            "built": true
+          },
+          {
+            "task": "Personal Training Guide",
+            "type": "Coaches",
+            "sop": "Personal Training Clients SOP",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
             "task": "Team Meetings",
             "type": "Coaches",
             "sop": "Team Meetings SOP",
             "owner": "GS / JH / EK",
             "built": true
-          }
-        ]
-      },
-      {
-        "name": "Quarterly",
-        "items": [
+          },
           {
             "task": "Head Coach Peformance Review",
             "type": "Coaches",
@@ -3515,18 +3443,6 @@
             "sop": "Coach Audit Template",
             "owner": "GS / JH / EK",
             "built": true
-          }
-        ]
-      },
-      {
-        "name": "Yearly",
-        "items": [
-          {
-            "task": "Annual Member Awards",
-            "type": "Clients",
-            "sop": "Forge Awards",
-            "owner": "GS/JH",
-            "built": true
           },
           {
             "task": "Coach Annual Review",
@@ -3534,12 +3450,7 @@
             "sop": "Coach Annual Review Template",
             "owner": "GS / JH / EK",
             "built": true
-          }
-        ]
-      },
-      {
-        "name": "Coach HQ's",
-        "items": [
+          },
           {
             "task": "JoJo",
             "type": "Coaches",
@@ -3560,44 +3471,107 @@
             "sop": "Grace Forge HQ",
             "owner": "GS",
             "built": true
+          },
+          {
+            "task": "Daily Social Story Upload",
+            "type": "Marketing",
+            "sop": "Instagram Daily Story SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "2 Referral Requests per week",
+            "type": "Clients",
+            "sop": "Client Referral Ask SOP Referral Form Link",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Email Newsletter",
+            "type": "Marketing",
+            "sop": "",
+            "owner": "JH",
+            "built": false
+          },
+          {
+            "task": "Blog Post",
+            "type": "Marketing",
+            "sop": "",
+            "owner": "JH",
+            "built": false
+          },
+          {
+            "task": "Marketing Calendar",
+            "type": "Marketing",
+            "sop": "Monthly Marketing KPI (sheet 1)",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Corporate / Studio Partner Outreach",
+            "type": "Marketing",
+            "sop": "Forge Corporate Partnership Tracker",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Mission Control Meeting Notes",
+            "type": "General",
+            "sop": "Mission Control Forge",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Ordering T-Shirts",
+            "type": "Facilities",
+            "sop": "Ordering Clothing SOP",
+            "owner": "JH",
+            "built": true
           }
         ]
       }
     ],
     "stats": {
-      "total": 58,
+      "total": 59,
       "built": 56,
-      "not_built": 2,
-      "pct_built": 97,
+      "not_built": 3,
+      "pct_built": 95,
       "by_type": [
         {
           "type": "Clients",
-          "total": 22,
-          "built": 22
+          "total": 24,
+          "built": 24
         },
         {
           "type": "Coaches",
-          "total": 17,
+          "total": 18,
           "built": 17
         },
         {
           "type": "Facilities",
-          "total": 4,
-          "built": 4
+          "total": 5,
+          "built": 5
         },
         {
           "type": "General",
-          "total": 3,
-          "built": 3
+          "total": 2,
+          "built": 2
         },
         {
           "type": "Marketing",
-          "total": 12,
-          "built": 10
+          "total": 10,
+          "built": 8
         }
       ]
     },
     "not_built_list": [
+      {
+        "task": "Key Coach Tasks",
+        "type": "Coaches",
+        "sop": "",
+        "owner": "",
+        "built": false
+      },
       {
         "task": "Email Newsletter",
         "type": "Marketing",
@@ -3618,20 +3592,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U09DDQ1UETB",
-        "text": "Thanks Grace I've paid for the two sessions. Please book her in for 15th a July and 5th August. Thank you. ",
-        "hours": 45,
-        "name": "Claire Leeke"
-      },
-      {
-        "user_id": "U086M7J0X4N",
-        "text": "What a relief it's not anything sinister. Still worrying for you all I know but I'm so glad she's ok, and it's good they're keeping an eye on it xx ",
-        "hours": 21,
-        "name": "Helen Traynor"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -3799,7 +3760,7 @@
   },
   "kpi": {
     "period": "June",
-    "last_updated": null,
+    "last_updated": "2026-07-03",
     "categories": [
       {
         "name": "Membership",
@@ -7835,7 +7796,7 @@
           "name": "Plate",
           "sessions": 26,
           "cap": 15,
-          "avg_attending": 10.0,
+          "avg_attending": 9.9,
           "fill_rate": 82,
           "status": "healthy"
         },
@@ -11178,6 +11139,1339 @@
           {
             "uid": "6dc5152b-b18a-4877-80ef-954f2bd104f5",
             "date": "2026-01-01",
+            "name": "Leedstrinity.Ac",
+            "ref": "WWW.LEEDSTRINITY.AC.UK",
+            "amount": 375.0,
+            "direction": "OUT",
+            "category": "Training",
+            "internal": false
+          }
+        ]
+      },
+      {
+        "month": "2026-02",
+        "revenue": 20087.19,
+        "expenses": 16509.61,
+        "profit": 3577.58,
+        "profit_pct": 17.8,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 20087.19
+            }
+          ],
+          "out": [
+            {
+              "name": "Other",
+              "amount": 4322.0
+            },
+            {
+              "name": "Staff",
+              "amount": 3108.0
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2500.0
+            },
+            {
+              "name": "Inventory",
+              "amount": 2040.0
+            },
+            {
+              "name": "Admin",
+              "amount": 1053.67
+            },
+            {
+              "name": "Workplace",
+              "amount": 683.59
+            },
+            {
+              "name": "Repairs And Maintenance",
+              "amount": 666.67
+            },
+            {
+              "name": "Professional Services",
+              "amount": 655.36
+            },
+            {
+              "name": "Training",
+              "amount": 375.0
+            },
+            {
+              "name": "Corporation Tax",
+              "amount": 307.31
+            },
+            {
+              "name": "Marketing",
+              "amount": 266.0
+            },
+            {
+              "name": "Equipment",
+              "amount": 235.93
+            },
+            {
+              "name": "Travel",
+              "amount": 136.62
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 61.89
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 31.6
+            }
+          ]
+        },
+        "transactions": [
+          {
+            "uid": "b79e3e67-fcca-411e-bee7-cd747afd587a",
+            "date": "2026-02-28",
+            "name": "Captions App",
+            "ref": "MIRAGE (CAPTIONS)",
+            "amount": 7.44,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b6cbf883-3633-4e1a-b29d-2e695df66463",
+            "date": "2026-02-28",
+            "name": "Johnstones Dec Centre Coleraine",
+            "ref": "JOHNSTONES DEC CENTRE",
+            "amount": 8.11,
+            "direction": "OUT",
+            "category": "Repairs And Maintenance",
+            "internal": false
+          },
+          {
+            "uid": "b68b3c7a-7a57-4c4a-bd4b-f151a780b701",
+            "date": "2026-02-28",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 44.66,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b63ec49c-3376-4c31-b2f5-cea03aa8776b",
+            "date": "2026-02-28",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 7.44,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b633fca4-1246-4276-a34d-0c5b8d0c213c",
+            "date": "2026-02-28",
+            "name": "Smyths Home And Hardwa",
+            "ref": "SMYTHS HOME AND HARDWA",
+            "amount": 24.89,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "b628e742-015e-44bf-b931-9b5107c7dcda",
+            "date": "2026-02-28",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 7.44,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b49b2d55-1767-4c5a-8614-c4e49e6d9d63",
+            "date": "2026-02-28",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 19.0,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "ae67060f-dfc6-43b3-ac62-6a0fe6d8a102",
+            "date": "2026-02-28",
+            "name": "Next Level Impact",
+            "ref": "CIPDDiploma",
+            "amount": 166.59,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b3c5cb11-84f2-4b47-99e1-66c936255e52",
+            "date": "2026-02-27",
+            "name": "Botdog Llc",
+            "ref": "BOTDOG, LLC",
+            "amount": 62.5,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b3905762-a16f-43d8-9dc4-175a69b32c84",
+            "date": "2026-02-27",
+            "name": "LinkedIn",
+            "ref": "LinkedIn SN P114079781",
+            "amount": 66.66,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b13a61f8-06da-417b-b473-41731d233610",
+            "date": "2026-02-27",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-FGZPR",
+            "amount": 1047.28,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "b047cb0b-f82a-41d8-a3d4-f2ca8569d7e3",
+            "date": "2026-02-27",
+            "name": "Microsoft",
+            "ref": "Microsoft*Microsoft 36",
+            "amount": 8.49,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "a6b972d5-3483-4387-8d41-c4ee1432a11c",
+            "date": "2026-02-25",
+            "name": "Gymownr",
+            "ref": "GYMOWNR",
+            "amount": 86.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "a5edf104-4517-4170-8705-8e1dcf8d044d",
+            "date": "2026-02-25",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-TNMFB",
+            "amount": 95.35,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "a50e559c-b8ad-4769-995f-48f970b5552e",
+            "date": "2026-02-25",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 99.28,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9d8c0b80-a4a8-4143-967b-21522b353d02",
+            "date": "2026-02-25",
+            "name": "GoCardless",
+            "ref": "NICHAMBER-MZDRXEJM",
+            "amount": 63.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "a2cefb98-bdc5-4efa-a56b-2da837f00cd2",
+            "date": "2026-02-24",
+            "name": "Unified Fitness Ltd",
+            "ref": "Inbodypanels",
+            "amount": 2946.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "a1cfa389-abfb-4a25-899b-75d50b7a913f",
+            "date": "2026-02-24",
+            "name": "Killeavy Castle Estate",
+            "ref": "KILLEAVY CASTLE ESTATE",
+            "amount": 17.0,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "a050ec51-c34a-4dca-9456-0d3e233bbb64",
+            "date": "2026-02-24",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-C3GQ9",
+            "amount": 262.17,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9fe161eb-437a-45f6-96b6-d4592490c125",
+            "date": "2026-02-24",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 94.25,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "9fc7f351-8e73-4bcf-b1ef-e8537580b551",
+            "date": "2026-02-24",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 185.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "9f8471f6-231b-4136-8071-0fd6c162349d",
+            "date": "2026-02-24",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 309.87,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9c9cd929-71af-42e3-8818-73d95a8798af",
+            "date": "2026-02-23",
+            "name": "Walter Ai",
+            "ref": "WALTER AI",
+            "amount": 14.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "9ad3e341-4406-4308-989b-2c8c1a7e6f80",
+            "date": "2026-02-23",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-Z85E3",
+            "amount": 185.23,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "99ff6c6e-b378-4599-91e4-967f3b84ae3b",
+            "date": "2026-02-23",
+            "name": "David Boyd",
+            "ref": "Studiobuild",
+            "amount": 193.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "99d6b874-2ddc-474b-8138-db87b6b78a76",
+            "date": "2026-02-23",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 194.62,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "96b006e4-c9bc-4a88-8ef8-b23f66aa8b79",
+            "date": "2026-02-22",
+            "name": "Loom Subscription",
+            "ref": "LOOM SUBSCRIPTION",
+            "amount": 17.87,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "90378185-349e-4faa-956d-7fef86f9044f",
+            "date": "2026-02-21",
+            "name": "United Kingdom",
+            "ref": "LLP GOLD MONTHLY",
+            "amount": 18.95,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "8ffdd103-d672-4c13-b268-45712b30018f",
+            "date": "2026-02-21",
+            "name": "B&Q",
+            "ref": "B & Q 1211",
+            "amount": 233.0,
+            "direction": "OUT",
+            "category": "Repairs And Maintenance",
+            "internal": false
+          },
+          {
+            "uid": "8c2ec5ad-b1d1-456f-aac1-47b7ef5a8a22",
+            "date": "2026-02-20",
+            "name": "Forge Female Fitness Ltd",
+            "ref": "Studioinbody",
+            "amount": 2500.0,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "8a206a32-e457-4fd8-a320-537f46d6e25b",
+            "date": "2026-02-20",
+            "name": "GoDaddy",
+            "ref": "DNHGODADDY  *#21617445",
+            "amount": 85.45,
+            "direction": "OUT",
+            "category": "Workplace",
+            "internal": false
+          },
+          {
+            "uid": "89d33dc4-55a0-47f3-b8a1-ce1685908718",
+            "date": "2026-02-20",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-MR6Y6",
+            "amount": 865.83,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "8369b11d-0746-4565-8736-d1047b631810",
+            "date": "2026-02-19",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 194.62,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "8369fe4e-39f4-4649-9bf7-2693a5b0c3ab",
+            "date": "2026-02-19",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 97.31,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "80cc6834-80e5-4b32-bb68-e98b4c952bec",
+            "date": "2026-02-18",
+            "name": "PayPal",
+            "ref": "PAYPAL *DROPBOXINTE",
+            "amount": 9.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "7e8f8ba4-3a39-4401-b088-16c7fd11a233",
+            "date": "2026-02-18",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-FWCSX",
+            "amount": 126.57,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "7dc3f097-9ff6-462d-926f-838a4f3b634d",
+            "date": "2026-02-18",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 166.26,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "7db97c09-7417-420e-9800-b8e8427f92b4",
+            "date": "2026-02-18",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 156.07,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "762d2fe5-0cf2-486e-95fb-258149f919cd",
+            "date": "2026-02-18",
+            "name": "GoCardless",
+            "ref": "COACHACCOUNT-YMPCV",
+            "amount": 199.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "7aa79bed-5ee4-41f9-af83-678f1554d814",
+            "date": "2026-02-17",
+            "name": "Zoom",
+            "ref": "ZOOM.COM 888-799-9666",
+            "amount": 16.79,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "797159cc-046a-4cbc-b271-e287174a382c",
+            "date": "2026-02-17",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 7.33,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "78e9a91e-3839-46e0-bbd5-818c88246d59",
+            "date": "2026-02-17",
+            "name": "Haldane Fisher Ballyme",
+            "ref": "HALDANE FISHER BALLYME",
+            "amount": 30.75,
+            "direction": "OUT",
+            "category": "Repairs And Maintenance",
+            "internal": false
+          },
+          {
+            "uid": "78e752d6-7773-411a-9546-696f98289cc3",
+            "date": "2026-02-17",
+            "name": "Haldane Fisher Ballyme",
+            "ref": "HALDANE FISHER BALLYME",
+            "amount": 394.81,
+            "direction": "OUT",
+            "category": "Repairs And Maintenance",
+            "internal": false
+          },
+          {
+            "uid": "78e51439-10af-4860-b7b6-9bb2eb1d23da",
+            "date": "2026-02-17",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 100.0,
+            "direction": "IN",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "7695d4f4-997b-4e65-9dab-a44119cf6853",
+            "date": "2026-02-17",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 24.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "62ff6f19-5173-45b0-b0db-08b58a443db0",
+            "date": "2026-02-17",
+            "name": "Stripe",
+            "ref": "STRIPE-OEMX5T0RDGL",
+            "amount": 25.57,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "7369b584-c44c-4afb-8ca3-5148cc2c929c",
+            "date": "2026-02-16",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-M4GPJ",
+            "amount": 171.13,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "72d7aeef-02c5-4f2a-9b9d-f20ed70af9b6",
+            "date": "2026-02-16",
+            "name": "Woodside Distribution Ballyclare",
+            "ref": "WOODSIDE DISTRIBUTION ",
+            "amount": 42.19,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "72c994ab-ee5a-438b-93b3-c49aa7027edc",
+            "date": "2026-02-16",
+            "name": "OpenAI",
+            "ref": "OPENAI *CHATGPT SUBSCR",
+            "amount": 17.66,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "728e13d9-9fc4-4da9-8fe8-0ecf654276cc",
+            "date": "2026-02-16",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 120.84,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "718fddd7-81c6-4ad1-ae35-5414a8af8a82",
+            "date": "2026-02-16",
+            "name": "Facebook",
+            "ref": "FACEBK *ARSLKF5NW2",
+            "amount": 266.0,
+            "direction": "OUT",
+            "category": "Marketing",
+            "internal": false
+          },
+          {
+            "uid": "5df1d32e-bd6a-45b3-9ac1-b9ca59ff8aab",
+            "date": "2026-02-16",
+            "name": "Daisy",
+            "ref": "QRO49404",
+            "amount": 47.92,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "6d3467a0-c3c0-4a05-bcdd-acb14a37d051",
+            "date": "2026-02-15",
+            "name": "PayPal",
+            "ref": "PAYPAL *ZWIFT",
+            "amount": 17.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "6d0ab037-24a2-406e-a32c-a1c665624404",
+            "date": "2026-02-15",
+            "name": "easyJet",
+            "ref": "easyJetKC4B4GG",
+            "amount": 58.48,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "6b8dc4d2-924c-4f41-9941-84cef6c4b9d2",
+            "date": "2026-02-15",
+            "name": "Adobe",
+            "ref": "Illustrator",
+            "amount": 32.98,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "69a14a34-4c2d-46f0-af55-78501b083459",
+            "date": "2026-02-14",
+            "name": "PayPal",
+            "ref": "PAYPAL *DROPBOXINTE XK",
+            "amount": 9.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "6929b3e1-29bc-4c0e-a644-bc1e4795c6bd",
+            "date": "2026-02-14",
+            "name": "Fbp 90 Day Accelerator",
+            "ref": "FITNESS BUSINESS PROFI",
+            "amount": 116.4,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "6780d5f6-1553-46da-838a-7453e63697b9",
+            "date": "2026-02-14",
+            "name": "Milk Parlour",
+            "ref": "GROUND MILLTOWN",
+            "amount": 11.85,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "673050ec-878d-45e3-a365-8d37e586e7fc",
+            "date": "2026-02-14",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 9.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "639d808f-007a-42e7-ae99-0e081f99694b",
+            "date": "2026-02-13",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 23.82,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "6288b9a4-336c-4be6-8d56-d32cdc5447ba",
+            "date": "2026-02-13",
+            "name": "Milk Parlour",
+            "ref": "GROUND MILLTOWN",
+            "amount": 11.85,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "6278211b-9126-460b-8eef-c40657d1474f",
+            "date": "2026-02-13",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-ASTRW",
+            "amount": 776.63,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "624c511d-8f80-4408-8d05-c205ed11d9ed",
+            "date": "2026-02-13",
+            "name": "HMRC CUMBERNAULD",
+            "ref": "120PP03217672",
+            "amount": 307.31,
+            "direction": "OUT",
+            "category": "Corporation Tax",
+            "internal": false
+          },
+          {
+            "uid": "61b7832f-82ee-4d75-98a7-dd2408f8b4bd",
+            "date": "2026-02-13",
+            "name": "PayPal",
+            "ref": "PAYPAL *SPOTIFY*P3F4EC",
+            "amount": 17.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "6190226a-75e5-48c8-b0d4-8a0ce7597402",
+            "date": "2026-02-13",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 332.52,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "5fef33b0-dbed-4d46-84de-5f7a959b2f06",
+            "date": "2026-02-13",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 800.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "5d3e72ff-d4fe-4997-9f6d-f8f21b6a39e9",
+            "date": "2026-02-12",
+            "name": "Unified Fitness Ltd",
+            "ref": "FlooringForge",
+            "amount": 2040.0,
+            "direction": "OUT",
+            "category": "Inventory",
+            "internal": false
+          },
+          {
+            "uid": "5cabd026-99ea-40e3-9e6e-37954fa4c723",
+            "date": "2026-02-12",
+            "name": "Gym Owner Network",
+            "ref": "GYM OWNER NETWORK LTD",
+            "amount": 50.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "5c98d4c7-a08a-489d-b936-bb004ce9eed3",
+            "date": "2026-02-12",
+            "name": "Forge Female Fitness Ltd",
+            "ref": "Studiomats",
+            "amount": 1800.0,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "5c09d23d-570a-40db-b9fa-21b1cea5cd6f",
+            "date": "2026-02-12",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 498.78,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "5bee16a6-86c6-46e5-974b-52b744c70573",
+            "date": "2026-02-12",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 85.74,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "5ae67c16-55d6-4a28-8bed-867a102d15ba",
+            "date": "2026-02-12",
+            "name": "MARGARET ANN IRENE ROBINSON",
+            "ref": "Irene Robinson",
+            "amount": 160.0,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "5a4c3a14-ff36-416a-ba33-dfc6f700d09f",
+            "date": "2026-02-12",
+            "name": "Staff Bonuses",
+            "ref": "",
+            "amount": 200.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "59f20364-b8c2-45dd-8c5e-c75dd8d1243b",
+            "date": "2026-02-11",
+            "name": "Cleverbridge Gmbh",
+            "ref": "CBA*AOMEI",
+            "amount": 7.35,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "58ac0b11-c91b-4c98-956f-5d8c495e07fb",
+            "date": "2026-02-11",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 16.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "58a6e2a8-e1df-4ae5-b4e9-4e5fb4eeb07b",
+            "date": "2026-02-11",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 274.1,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "532210d3-826b-42c0-9c1b-51f172abad57",
+            "date": "2026-02-10",
+            "name": "Temu",
+            "ref": "Temu.com",
+            "amount": 106.4,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "51982081-7d17-4b44-9806-bb15b0962602",
+            "date": "2026-02-10",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-MCG67",
+            "amount": 51.7,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "51735ef3-7c01-4ff5-aa2b-5cb797b63793",
+            "date": "2026-02-10",
+            "name": "Grace Smith",
+            "ref": "JanForge",
+            "amount": 2500.0,
+            "direction": "OUT",
+            "category": "Directors Wages",
+            "internal": false
+          },
+          {
+            "uid": "5140e1f0-828d-43cf-8518-4cb536264f71",
+            "date": "2026-02-10",
+            "name": "Womeninbusinessni.",
+            "ref": "WOMEN IN BUSINESS NI",
+            "amount": 180.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "513d3fe8-d97c-4526-a46c-ae28565207c3",
+            "date": "2026-02-10",
+            "name": "Womeninbusinessni.",
+            "ref": "WOMEN IN BUSINESS NI",
+            "amount": 144.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "50b975e0-2daa-4aeb-9151-e45f64828064",
+            "date": "2026-02-10",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 97.31,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "4e81f258-abdc-4c77-9da7-41b4e706ba66",
+            "date": "2026-02-09",
+            "name": "Zapier",
+            "ref": "ZAPIER.COM/CHARGE",
+            "amount": 26.98,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "4c1ca9a9-f7a6-4df3-8580-89161e6ae595",
+            "date": "2026-02-09",
+            "name": "Milk Parlour",
+            "ref": "GROUND MILLTOWN",
+            "amount": 7.9,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "4c15e597-8f02-4cd0-9ada-12edf4e879ea",
+            "date": "2026-02-09",
+            "name": "Milton Service Station Ballymoney",
+            "ref": "MILTON SERVICE STATION",
+            "amount": 30.51,
+            "direction": "OUT",
+            "category": "Vehicles",
+            "internal": false
+          },
+          {
+            "uid": "4bf25691-59ce-4858-bc82-64fca8567aef",
+            "date": "2026-02-09",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-MN5JY",
+            "amount": 165.84,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "4bcabfc8-2cd7-4692-a0e4-734bcdaebfae",
+            "date": "2026-02-09",
+            "name": "Pet And Country",
+            "ref": "PET AND COUNTRY",
+            "amount": 0.75,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "4bbf4954-9831-483a-be48-7e456ccb2e27",
+            "date": "2026-02-09",
+            "name": "Joanne Hall",
+            "ref": "ForgeJan",
+            "amount": 2200.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "4b13f7b5-cc57-4208-87e2-2fbb1d1f7cd1",
+            "date": "2026-02-09",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 49.05,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "4aebdf00-f0c6-48cf-9996-ed327ff2e341",
+            "date": "2026-02-09",
+            "name": "The Phoenix Ballymena Ballymena",
+            "ref": "PHOENIX",
+            "amount": 9.64,
+            "direction": "OUT",
+            "category": "Vehicles",
+            "internal": false
+          },
+          {
+            "uid": "4ad12d5f-805d-40b3-a481-c67f42c0b851",
+            "date": "2026-02-09",
+            "name": "Sarah Lacey",
+            "ref": "JanForge",
+            "amount": 250.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "4ad0f19e-84f4-44c4-8950-1322faa765b1",
+            "date": "2026-02-09",
+            "name": "Eilis Kearns",
+            "ref": "JanForge",
+            "amount": 608.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "4a5183f2-c7a3-4476-87ad-a7825a7b06a3",
+            "date": "2026-02-09",
+            "name": "Teamup Software",
+            "ref": "TEAMUP SOFTWARE",
+            "amount": 141.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "49f47441-017c-4ea1-9128-072a60e15e75",
+            "date": "2026-02-09",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 11.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "49774a3f-3746-4752-94b4-ba087f69340b",
+            "date": "2026-02-09",
+            "name": "VAT",
+            "ref": "",
+            "amount": 1300.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "368e8ecd-fb2c-498e-9664-e9c4aca6e095",
+            "date": "2026-02-09",
+            "name": "O2",
+            "ref": "D24839001",
+            "amount": 64.38,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "352f34ce-983b-4aaf-b502-572f7831ea0d",
+            "date": "2026-02-09",
+            "name": "SSE Airtricity",
+            "ref": "030300790353375634",
+            "amount": 98.14,
+            "direction": "OUT",
+            "category": "Workplace",
+            "internal": false
+          },
+          {
+            "uid": "368e5f75-ca4d-4af8-be73-00a85ca6c8d5",
+            "date": "2026-02-09",
+            "name": "O2",
+            "ref": "D7123920",
+            "amount": 16.8,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "4380bcf1-534f-410f-94b3-5d4240284a8f",
+            "date": "2026-02-09",
+            "name": "Mr Mark David Smith",
+            "ref": "Forgecleaning",
+            "amount": 50.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "4380e049-3721-4cf6-b010-ffc33020000e",
+            "date": "2026-02-09",
+            "name": "TAGGART ESTATES LTD",
+            "ref": "UNIT5FORGE",
+            "amount": 500.0,
+            "direction": "OUT",
+            "category": "Workplace",
+            "internal": false
+          },
+          {
+            "uid": "352f4f28-e6f1-4b7e-bc2e-41c07e229351",
+            "date": "2026-02-09",
+            "name": "Stripe",
+            "ref": "STRIPE-QNEWMZ0OOOF",
+            "amount": 160.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "3c9b935b-062f-43ed-968e-fec3423d1b5e",
+            "date": "2026-02-06",
+            "name": "Squarespace",
+            "ref": "SQSP* WEBSIT#220384200",
+            "amount": 24.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "3c430c26-77b2-4500-a8fc-86c83ad38148",
+            "date": "2026-02-06",
+            "name": "Techfoundher",
+            "ref": "TECHFOUNDHER",
+            "amount": 13.08,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "3c120e99-f73b-41e3-ba46-a6cc97d0dd41",
+            "date": "2026-02-06",
+            "name": "Asana",
+            "ref": "ASANA.COM",
+            "amount": 23.18,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "3b7d6cc0-efe7-4838-8e89-8709249c9e4a",
+            "date": "2026-02-06",
+            "name": "Hendersons Doagh",
+            "ref": "HENDERSONS DOAGH",
+            "amount": 21.74,
+            "direction": "OUT",
+            "category": "Vehicles",
+            "internal": false
+          },
+          {
+            "uid": "3b235822-9cb9-44ce-b06c-7eb184b37b60",
+            "date": "2026-02-06",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-XYX7J",
+            "amount": 9086.81,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "3a2def5f-7382-40f9-ab2b-fe0c5726cd5f",
+            "date": "2026-02-06",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 97.31,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "389233a9-569a-452f-bef2-e945a77c3dc6",
+            "date": "2026-02-06",
+            "name": "Ring",
+            "ref": "RING SOLO PLAN",
+            "amount": 14.97,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "36faa902-ab84-41b9-8225-a1caf48efb89",
+            "date": "2026-02-05",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 135.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "36595771-ae48-44e4-b601-6867defc0968",
+            "date": "2026-02-05",
+            "name": "SumUp Payments Account",
+            "ref": "MRC PID1101984",
+            "amount": 10.24,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "30b4d022-fd16-41c2-95c8-377fcdf8a6db",
+            "date": "2026-02-04",
+            "name": "Thegrowthcompany.Ie",
+            "ref": "THEGROWTHCOMPANY.IE",
+            "amount": 40.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "2fdca762-8ab3-46cd-8f20-e3bf276cb166",
+            "date": "2026-02-04",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-KRPMN",
+            "amount": 14.5,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "2ef6317a-061d-49bf-8240-8cda3198e488",
+            "date": "2026-02-04",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 157.4,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "2c66acf1-11ee-4fd3-9ac2-fcd385f3e025",
+            "date": "2026-02-03",
+            "name": "Amazon",
+            "ref": "AMAZON UK* C648V76V5",
+            "amount": 25.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "2b61ec3c-42af-4985-a382-f268a5932679",
+            "date": "2026-02-03",
+            "name": "Scoreapp",
+            "ref": "SCOREAPP",
+            "amount": 90.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "2af939e8-a048-47a2-a11c-1c0903ad4e10",
+            "date": "2026-02-03",
+            "name": "Adobe",
+            "ref": "Phtoshp Lightrm Bndl",
+            "amount": 14.99,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "2a55df68-7dea-4be8-b1ed-2f6e4f212fb6",
+            "date": "2026-02-03",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-A38GR",
+            "amount": 73.39,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "13533301-dbc6-4007-acb1-e1fde5293c8e",
+            "date": "2026-02-03",
+            "name": "Women In Business Ni",
+            "ref": "WIB-8542076",
+            "amount": 8.4,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "258fc699-4ad7-4976-a37d-b25777461e2a",
+            "date": "2026-02-02",
+            "name": "SumUp Payments Account",
+            "ref": "MRC PID1098651",
+            "amount": 37.54,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "2574c530-89d9-48b0-aaf8-cc84c1f6ba61",
+            "date": "2026-02-02",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 97.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "25745f5c-ddf8-44d2-8eca-db2cdff26a30",
+            "date": "2026-02-02",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 200.0,
+            "direction": "IN",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "1ee9d59b-d732-462d-a053-17ff73733d14",
+            "date": "2026-02-01",
+            "name": "Google Cloud",
+            "ref": "Google Workspace_workf",
+            "amount": 22.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "1e497ff1-228e-4197-acc4-3479ef855d49",
+            "date": "2026-02-01",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 20.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "1e36367a-9d0d-45e2-b604-db89a52403e6",
+            "date": "2026-02-01",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 11.42,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "1c275409-5d89-42d4-8269-590cffc9ed83",
+            "date": "2026-02-01",
             "name": "Leedstrinity.Ac",
             "ref": "WWW.LEEDSTRINITY.AC.UK",
             "amount": 375.0,
@@ -18773,10 +20067,10 @@
       },
       {
         "month": "2026-07",
-        "revenue": 11794.21,
-        "expenses": 2716.28,
-        "profit": 9077.93,
-        "profit_pct": 77.0,
+        "revenue": 11798.21,
+        "expenses": 2727.46,
+        "profit": 9070.75,
+        "profit_pct": 76.9,
         "categories": {
           "in": [
             {
@@ -18785,7 +20079,7 @@
             },
             {
               "name": "Admin",
-              "amount": 74.62
+              "amount": 78.62
             }
           ],
           "out": [
@@ -18795,7 +20089,7 @@
             },
             {
               "name": "Admin",
-              "amount": 866.15
+              "amount": 877.33
             },
             {
               "name": "Professional Services",
@@ -18820,6 +20114,296 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "92c43af3-b63d-42f9-a779-b0e1d2d2f666",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 11.18,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c3969cd-5e22-4ac7-9b3f-01c228f17bb2",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "CLAUDE.AI SUBSCRIPTION",
+            "amount": 3.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c39486f-eb3f-40c8-a1ae-8671f396353c",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c3997f1-7e6e-4492-9142-b66a209c78d2",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c38866d-ed50-4e94-b34b-3ab65b3b8889",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.34,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c39ec26-a17c-4bf9-b181-2638bef04c02",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c38baf5-c360-44aa-ae71-472e0337162e",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.21,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c386ef5-171b-42fe-ad49-d56b499c7cce",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.14,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c385c20-9e7d-41ce-b5a2-f11b233faa04",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.1,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c380d92-018e-4240-868d-d0687c311791",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.73,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c381c48-cf61-48e9-b570-f2eb09efe4a9",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.45,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c393565-bde0-4227-abac-c594ced7fda0",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c392d20-ec7f-4d36-8e8e-d7cb936109d8",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c395fb2-9698-4143-bda4-c424c8bfc1c2",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c39219b-157b-41c6-8ef3-2ad69b6dcaf8",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c39de0d-95ef-44c0-96c4-13500000d9df",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 4.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c385862-e038-4ce3-acd9-3c6702a4b770",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.18,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c38019c-9ee3-40a0-ba71-79ab5c00aeec",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.02,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c380e9e-e42d-43a4-a0bb-d9ed5105c099",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.09,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c3950cb-7811-4be6-b2b1-2d408cd65835",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.16,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c382fa2-b81a-4d27-987b-936d676c6d65",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.87,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c37c6a8-836c-4d9b-a550-110361625de2",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.24,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c37e2bb-4328-4850-8fcc-3599d3d6e9d7",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.13,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c374e64-bb60-4152-9444-8f416ec8269d",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.18,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c37af84-04b1-425f-9d09-2a36433f61ea",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.17,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c37f646-21ce-400c-98f8-09c75c42443b",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.01,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c373a35-f8fd-4c3e-ac14-2d999febc0b8",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.03,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c371cb5-b601-4eb9-a6d5-62b3357c37d3",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 2.57,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8c399234-6262-49d9-96d5-fbcca3e39310",
+            "date": "2026-07-08",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC* CLAUDE SUB",
+            "amount": 3.0,
+            "direction": "IN",
+            "category": "Admin",
+            "internal": false
+          },
           {
             "uid": "92239634-90f3-4136-bfff-bab3cfda9562",
             "date": "2026-07-08",
@@ -18884,7 +20468,7 @@
             "uid": "9180a6e3-cb58-4449-adc6-45492939d38d",
             "date": "2026-07-08",
             "name": "Barn Door Kitchen",
-            "ref": "SQ *BARN DOOR KITCHEN",
+            "ref": "SQ *BARN DOOR KITCHEN ",
             "amount": 12.6,
             "direction": "OUT",
             "category": "Food And Drink",
@@ -19187,276 +20771,6 @@
             "ref": "ANTHROPIC",
             "amount": 10.21,
             "direction": "OUT",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c39486f-eb3f-40c8-a1ae-8671f396353c",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c393565-bde0-4227-abac-c594ced7fda0",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c3969cd-5e22-4ac7-9b3f-01c228f17bb2",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "CLAUDE.AI SUBSCRIPTION",
-            "amount": 3.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c392d20-ec7f-4d36-8e8e-d7cb936109d8",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c39219b-157b-41c6-8ef3-2ad69b6dcaf8",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c3997f1-7e6e-4492-9142-b66a209c78d2",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c399234-6262-49d9-96d5-fbcca3e39310",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC* CLAUDE SUB",
-            "amount": 3.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c39de0d-95ef-44c0-96c4-13500000d9df",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c39ec26-a17c-4bf9-b181-2638bef04c02",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 4.0,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c3950cb-7811-4be6-b2b1-2d408cd65835",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.16,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c38866d-ed50-4e94-b34b-3ab65b3b8889",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.34,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c385862-e038-4ce3-acd9-3c6702a4b770",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.18,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c38baf5-c360-44aa-ae71-472e0337162e",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.21,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c386ef5-171b-42fe-ad49-d56b499c7cce",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.14,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c385c20-9e7d-41ce-b5a2-f11b233faa04",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.1,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c38019c-9ee3-40a0-ba71-79ab5c00aeec",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.02,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c380e9e-e42d-43a4-a0bb-d9ed5105c099",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.09,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c380d92-018e-4240-868d-d0687c311791",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.73,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c381c48-cf61-48e9-b570-f2eb09efe4a9",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.45,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c382fa2-b81a-4d27-987b-936d676c6d65",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.87,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c37e2bb-4328-4850-8fcc-3599d3d6e9d7",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.13,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c37c6a8-836c-4d9b-a550-110361625de2",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.24,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c37f646-21ce-400c-98f8-09c75c42443b",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.01,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c371cb5-b601-4eb9-a6d5-62b3357c37d3",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.57,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c374e64-bb60-4152-9444-8f416ec8269d",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.18,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c373a35-f8fd-4c3e-ac14-2d999febc0b8",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.03,
-            "direction": "IN",
-            "category": "Admin",
-            "internal": false
-          },
-          {
-            "uid": "8c37af84-04b1-425f-9d09-2a36433f61ea",
-            "date": "2026-07-07",
-            "name": "Anthropic",
-            "ref": "ANTHROPIC",
-            "amount": 2.17,
-            "direction": "IN",
             "category": "Admin",
             "internal": false
           },
@@ -20024,7 +21338,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 9180.28,
+    "cash_position": 9247.72,
     "available": 0.0,
     "reserves": [
       {
@@ -20045,7 +21359,7 @@
       }
     ],
     "earmarked": 8777.0,
-    "total_cash": 17957.28,
+    "total_cash": 18024.72,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -20073,9 +21387,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 20014.09,
-    "cash_out_30": 17194.35,
-    "net_30": 2819.74,
+    "cash_in_30": 20018.09,
+    "cash_out_30": 17205.53,
+    "net_30": 2812.56,
     "as_of": "2026-07-08"
   },
   "gocardless": {
@@ -20428,5 +21742,2706 @@
     },
     "advice": "**INSIGHTS**\n\nYour cost-per-lead has ballooned 350% (\u00a36 to \u00a327) while lead volume has collapsed 94% (69 to 4) across four months\u2014this is a clear sign of creative fatigue, audience saturation, or both. Your close rate is holding steady (60\u201375%), so the sales conversion funnel isn't broken; you're simply not getting prospects into it. July's low spend (\u00a3109) suggests you've already throttled budget defensively, but you're now underfeeding a channel that still converts at 75% and delivers profit.\n\nThe real problem: you're running the same ads to the same small audience repeatedly, and that audience is exhausted. April's \u00a36/lead came from fresh creative and broad reach. By July, Meta's algorithm has shown your ads to everyone remotely interested in women's fitness in Belfast\u2014multiple times\u2014and the remaining 4 leads are bargain-hunted stragglers or repeat clickers.\n\n**ACTIONS**\n\n1. **Pause current creative and test 3 new ad variants immediately.** One should be testimonial/transformation video (before-after or member story); one should be outcome-focused (confidence, strength, community\u2014not just \"6-week trial\"); one should be objection-crushing (fear of judgment, newbie anxiety, time constraints). If you haven't refreshed creative in 6+ weeks, this alone will cut cost-per-lead back to \u00a312\u201315.\n\n2. **Rebuild audience intent layers.** Stop relying on broad \"women interested in fitness\" targeting. Create three separate ad sets: (a) Detailed targeting: women 25\u201345 interested in Weight Loss + Health + Women's Fitness (narrow, but intent-rich); (b) Lookalike audience based on your best 10 trial customers (April's 69 leads likely contained them); (c) Retargeting website visitors from the last 90 days\u2014these are warm and cheap to reactivate. Split budget 50% / 30% / 20%.\n\n3. **Reset budget to \u00a3300\u2013350 for August with the new creative.** You're sitting at profit on 75% close rate; you can afford \u00a318\u201320 cost-per-lead and"
   },
-  "moves": []
+  "moves": [
+    {
+      "name": "1: Kettlebell Squat With Leg Lift",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DFpjpu9zJn2/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "2 5 Pulse Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=QV0KBKANprw",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "30s Figure 4 Stretch each side",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/b8O0u9qnRS4",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "30s Hamstring Stretch each side",
+      "part": "Hamstrings",
+      "video": "https://www.youtube.com/shorts/b8O0u9qnRS4",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "90/90 Switches",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DBv9AqhoBcV/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Accessory 2: Double Db Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/C-S02DARQjC/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Alt Plate Jumps",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/1gueyO4KI9o",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Alt Single Leg Step up (use 2 20/",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DZD10Ixo6Aw/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Alternating Db Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/CMcakX4jd3d/?img_index=2",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Alternating Shoulder Press 5/5 -3/3 - 3",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DLX5RT7MWsA/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Alternating Side Lunges",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/Cg1iCYEAX41/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Alternating Switch Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DAv8Rj5Rjoc/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Around The World Knee Drive",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DGN49bdxycR/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Around The Worlds",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DVxB6aBkSvr/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "B Stance Kb Deadlift",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/8-mW9b4WbRo",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "B Stance Rdl Modification In Right Corner",
+      "part": "Hamstrings",
+      "video": "https://www.instagram.com/p/DJaFEmqz4u-/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "B stance Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DJpJCSsTvrn/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ball 1. Ball Foot Stamps",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DYNpdMQSj9n/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Ball Lateral circles",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNf7pO8TRB0/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Ball Leg Raises",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DR2I6ZfDWsd/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Ball Slams Or",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CT2TXWLrWdH/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ball to high knee each side",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNf7pO8TRB0/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Band Monster Walks",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/uA9zEX3gL8U",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Band Pull Aparts",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/SuvO4TBwSu4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Band Rows Second Movement Sitting Bands Around Mid Foot",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/ougmaC9HTmM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Band Single Arm Lat Pulldown",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DQZoy0AkX8m/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Band Top Middle Bottom",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DLNrwYbyWby/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Butterfly Band Above Knees",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DMufmMeOvS8/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Diagonal Raises",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CuRmFcRyrjR/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Floor Rows",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=oiP_S1jwHvE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Kb Farmers March",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DYveno-P-ay/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Banded Kickbacks Band Mid Foot",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DPuFsHBkT8i/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Lateral Raises",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DOy2l9KAXP_/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Reverse Lunge With Knee Raise",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DU-8FPoEfc3/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Banded Seated Hip Abduction",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/shorts/9UGzMsHINjo",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Banded Side Walks (In Front Of The Machines To Keep Other Side Clear) 2Nd Movement - Think They Are Under Sink",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DXPKKkJCYxP/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Banded Thread The Needle",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/WvtKs43UjtI",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded Wall Sit Abduction",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/shorts/rZwHlJwzE4M",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Banded glute bridge march",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/shorts/hNSV3mfPbNo",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Barbell Good Mornings",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=nWyx81AfTos",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Barbell Hip Thrust",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/watch?v=xDmFkJxPzeM&t=119s",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Barbell Push Up Off Rack",
+      "part": "Chest",
+      "video": "https://www.youtube.com/watch?v=3R-4NddvHIQ",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Barbell Rack Pulls",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/BnAfriADDXj/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Barbell Seated Good Mornings",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DTSnZ3MDVqU/?img_index=1",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Barbell Shrugs Heavy Use Jammers",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=larn3Asl6oM",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Barbell Shrugs Off Rack",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=M_MjF5Nm_h4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Barbell Warmup",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/RGt4fn14ssA",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Barbell back squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=aOzrA4FgnM0",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Barbell/Db Hip Thrust",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/shorts/W86oVlnLqY4",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Battlerope criss cross",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/oDtywh6VfqE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bearl Crawl Pull Through",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/i3fiG9LELLQ",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Behind Back Stretch",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DLCFwEupVyN/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Behind The Back Tricep Raises",
+      "part": "Triceps",
+      "video": "https://www.youtube.com/watch?v=J0oivCBzZIc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bench Banded Kickbacks Lean Off Rower Or Reception",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DK613YGxrX0/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bench Chest supported DB Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/oNsqMW1gPiU",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Bench Supported Lateral Jump",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DCQlUB9xrGw/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Bench Supported Sa Cable Chest Fly",
+      "part": "Chest",
+      "video": "https://www.instBagram.com/p/DV4pJOuDYLC/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Bent Over Front Raise",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=ZrFCvo9aEeo",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bent Over Kb Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DTpRZOeCKa7/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Bent Over Row To Overhead Press Third Move",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DPG2QERkaQn/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bird Dog Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/CQ33WoIiA8U/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Bow & Arrow",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/CtEv5-Fskin/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Box Push Ups",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/B3xsPoaF23H/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bradford Press - Use Dumbbells If Mobility Is Poor And Use Technique Bar If Weight Is A Issue",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CSsxdJyjUuj/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Bridge Knee Raise",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/DOjNeVuksq4/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bridge Straight Leg Lift",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/CuktcGxAW6z/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Burgener Clean Warmup With Stick",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/GilRRtaRETo",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Burpee Deadlift",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/AGufhvv3-no",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Burpee Plank Jack To Sumo Deadlift",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DFiDBILoZ4_/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Butterfly Twist",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DP3ulUIAPcK/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bw Deadbugs",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=KmfsuDInwmM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bw Plank Rows",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/lUXkDEbKLH0",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Bw Squat Hold",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=_izLJ0giePc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Cable Glute Kickback",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DXOJEfiD54H/?hl=en",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Hack Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/6YvXOvWMtgk?t=5&feature=share",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Hip Abductions (Glutes): ACCESSORY\u000b1. Front front elevated cable lunge",
+      "part": "Glutes",
+      "video": "https://youtu.be/bKV-0YBtE4A?t=860",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Lateral Raises",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DRpxYkjk0pr/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Plank Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/Bd8AWalAhkq/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Pullover",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/BuRidNaB-CB/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Rear Delts",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DOCNpCkkiZx/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Rope Pullover",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/FCd43udJ6Rg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Cable Rows Sit On Box",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=lJoozxC0Rns",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Single Arm Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DNlPk8cPqkn/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Single leg extension",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=x6pugyBrmMM",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Squats (Straight bar) Heel Elevated",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/O5wPjTLBenM",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Cable Straight Bar Curl",
+      "part": "Biceps",
+      "video": "https://www.instagram.com/p/BxIQnO0Hr_a/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Sumo Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/O6b6ioDSu3Y",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Upright Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=WNz7O59GORA",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable Wood Chop",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=gcGNypjIQDo",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cable lying pull over",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=gwtgTh1i0j0",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Canva",
+      "part": "Full Body",
+      "video": "https://canva.link/zuing81yz7zplgw",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Cat / Cow Waves",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CrrjegMucqV/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Cat cow sit back",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/TdPWLYA96j0",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Cat/Cow",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=LIVJZZyZ2qM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Catalyst Warmup and drills",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/6NTz3RPeKH4",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Chest Expansion vide 2",
+      "part": "Chest",
+      "video": "https://www.youtube.com/shorts/NAaontgB8S4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Chest Supported Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=DIS839guYUk",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Clam shell right side",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=EG5_gXcfozw",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Clamshell left side",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=EG5_gXcfozw",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Clean Pulls",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=RnbJcrtOaB0",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cobra",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=Nd3j6Avtv6Q",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Cobra Stretch",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=JDcdhTuycOI",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Cobra To Child Pose",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DH2syMJsrVt/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "ColI",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/6h_nPeXColI",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Commando/ Goblet Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/KA_jQ3_BBGs",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Commandos / Squats",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/89FvKU7nXls",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Cross Body Deadlift .30",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=9jJ68LrReBc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Crossbody Floor To Press",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/mEVSYd18bbc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Crunch To Hollow Hold",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DJeU5ethqWB/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Curtsy Lunge",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/-i1G2YuuDW0",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "D Handle Lat Pulldowns",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/w6-QYF-0W18",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "DB Box Step up",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=tCqkKCxXzec",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "DB Plank pull through",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/zJlfYW6ATHE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "DB Slam Ball over the shoulder",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=Nwd-5fuLm3k",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "DB Zercher",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/9CdnCxmd-h4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Alt Kickbacks Standing",
+      "part": "Triceps",
+      "video": "https://www.youtube.com/watch?v=JPmbMOu4IYw",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Alt Push Press",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=Kn3oZ9MNAhg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Alt Snatches",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=Q_EC5YNrXVo",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Arnold Press",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/BhF664pDbod/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Db Atlas Press \u200b\u200b",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=90BkeEuqqn4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Bear Crawl",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/BxDLo1AlMku/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Bent Over Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/IOOLhrkN_NI",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Db Bicep Curls",
+      "part": "Biceps",
+      "video": "https://www.youtube.com/watch?v=HnHuhf4hEWY",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Cluster",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=2EvVJaRawp4&t=5s",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Deadlifts",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=plb5jEO4Unw",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Flies On Floor",
+      "part": "Chest",
+      "video": "https://www.youtube.com/watch?v=bgC53-J-6gA",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Floor Press",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/C2nsdOks9Y6/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Db Front Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=rotBMUQHdZk",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Jump Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/Vvu_JjZ31L4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Lateral Raise",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DM0KzeYO9kW/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Db Lunges Coaches Choice",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/1mHlkUC5rGY",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Neutral Grip Press",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Cdg4QgZJmhd/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Db Overhead Hold \u200b\u200b",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/q6qNFYEDVWs",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Power Clean & Push Press",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=sQHS3A2g-M8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Preacher Curl",
+      "part": "Biceps",
+      "video": "https://www.instagram.com/p/DKzSoiIOapW/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Db Push Press",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=4tCaD42ghlc",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Db Reverse Crunch",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DN5NJT-jcTH/?img_index=6",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Reverse Lunge",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=Q2k3kYbtOcI",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=6gvmcqr226U",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Ski",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/G8RfnBdMjzc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Snatches",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=-px4XoSZr1g",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Suitcase Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DDqC25mAN74/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Db Thruster",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=u3wKkZjE8QM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Thrusters",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CMfN8DGBiSs/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Db Wide Bent Over Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/IHaIPzXCKa8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Dead stop Halos",
+      "part": "Shoulders",
+      "video": "https://www.facebook.com/reel/586252944511056",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Deadball 2 The Shoulder",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/DcwKLC1jkbg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Deadbug Single, Single, Double",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DBl4ZuQJv0T/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Degree Lunge Taps",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DXakCUHiYee/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Devils Press",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=zlqEtAUds-I",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Door Frame Side Bend Stretch",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/CgAcsL1JGtB/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Double Handle Split Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=0kdNkOeiJes",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Double Row To Rdl",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DQR4dpCkXrP/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Double leg lift",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DHf5UXTTDHw/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Downdog Heel Pulses",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNk-nCggIMt/?img_index=8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Downdog Taps",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/11CmTQIxfHw",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Downdog To Plank",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/_muYU7ak8gE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Drivers",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/Qd80iGFerH4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Dumbbell Gorilla Lunge",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DO3rx5TDVW8/?hl=en",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Dumbbell Hex Press",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/BS1dm8MFYmt/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Dumbbell Incline Front Raises",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DFgKwHpyXfI/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Elbow Plank Push And Pull",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/65ObS2M5sWM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Elevated Goblet Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=3dLIa1YljLs",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "External Banded Rotations - Last Video Light Grey Band",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DXwtaT9DAtF/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "External D Handle Forearm Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DZkKgBFityb/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "FFE Lunge",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/JRgDkNQWdGc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Farmers Carries",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DJjaCAnx5Y6/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Farmers Carry Split Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=ViCN351zFVw",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Feet Up Russian Twists",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DM0abn5OzPY/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Figure 4 Distraction",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DP79aYMDGMt/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Figure Four Rotations",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/9nx69WPf-sA",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "First Move",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DQClFRsAF3M/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "First Movement",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DUhRjlSCixY/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Floor Angels",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=chh8hQxAPAs",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Floor Crush Press",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/GnX3ak79Ptg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Foam Roller Extension",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DMxbuqRMIm1/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Foot elevated sumo KB Squats",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/Mz40WVnIyGs?t=2&feature=share",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Forearm Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DLSMMHpsA0S/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Forward Fold Heel Raise",
+      "part": "Calves",
+      "video": "https://www.instagram.com/p/DPgk6r4gLjy/?img_index=7",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Front Squat 3 1-2-1 Tempo\u000bWrist straps for those that struggle with wrist flexibility",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/HTDba9P2YLg",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Front foot raised",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DWjQasADkHz/?hl=en",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Gate Rocks",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DRChQokgEtC/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Get them to sit on block",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DHf5UXTTDHw/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Glute Bridge Walk Outs",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/shorts/6tC8chVZanA",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Glute Bridge press",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/DQR4dpCkXrP/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Good Morning",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=5DOJ6qkfyNY",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Good Morning Rocks .45",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=q6DeEtkgAH8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Gorilla Uppercut",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DQE5zUijQ4X/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Goth",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=r003a54QVw4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Gtoh",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=r003a54QVw4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Half Kneeking Halos",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DHLzOAZJgOz/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Half Kneeling Kb Switch",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DN5NJT-jcTH/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Half Kneeling Leg Raises Over Dumbbell",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=NjZ2uBhV_vY",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Half Kneeling Swings",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DW01rFOEu8f/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Half Kneeling T Spine Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DFqeKbrMsiZ/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Half Kneeling Wood Chops",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/qbmVo8eDtjg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Hamstring Stretch",
+      "part": "Hamstrings",
+      "video": "https://www.youtube.com/watch?v=RxEd4pN7CDs",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Hands On Head Prone Tilt",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DO5qEUmjOrY/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Hanging Knee Raises/ Sl Knee Raises/ Deadbug",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=p9hhX_Sx5v0",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Heaven Reach",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DO011eIANeH/?img_index=8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Heel Raise with Squeeze",
+      "part": "Calves",
+      "video": "https://www.youtube.com/shorts/NAaontgB8S4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "High Pulls",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/shorts/05oMy4HA86s",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Hip Circle Sliders",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNBaR81pktZ/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Hollow Hold Flutter Kicks",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/CtWh6HoupjH/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ideas for future warmups",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=ihrumTBD3uo",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "If They Cant Do This",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CmEfYEFjVFp/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "In Out Squats",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DI6qn_XJR9C/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Incline Cable Chest Fly",
+      "part": "Chest",
+      "video": "https://www.youtube.com/shorts/H_4EqUNX5z0",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Incline Chest Presss",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DGwtOwSMAJh/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Inverted Ring Rows",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/n21Q-eLlhuo",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Jane Fonda Step over Lunges",
+      "part": "Quads",
+      "video": "https://www.instagram.com/reel/DPvFslOgPyQ/?igsh=MXB1a3Bndms2enA%3D",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Jefferson Curls",
+      "part": "Biceps",
+      "video": "https://www.youtube.com/watch?v=YGlAdtSKQaU",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Jumping Pullups",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/BLX0O9t51oQ",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "KB Asymmetrical Farmers Carry",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/ZapT1pafnCI",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "KB Deadbug",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=Nq2OfADWRYE",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "KB Single Leg Deadlift",
+      "part": "Hamstrings",
+      "video": "https://www.youtube.com/shorts/s32cCgmRV3I",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "KB Single leg around world",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/XemHd4qzqKk",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "KNEELING WITH DBs",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CnP5XJNAuBx/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Kb Deadlift With Rotation",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/A5NsoMFuF8o",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kb Gorrila Row Stack 2-3",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/fwFANgbYah4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kb High Pulls",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=E21F3Oh7A60",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kb Shrugs",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/WZaQV4BFPVk",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kb Tall Kneeling Hip To Halo",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/shorts/2-grmRN2SbA",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Keep Movement Fluid",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CyQ00Qius7N/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Kettlebell Banded High Pull",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DH_-6uPu01A/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Kettlebell Calf Raise",
+      "part": "Calves",
+      "video": "https://www.youtube.com/shorts/VvVYByY_kmA",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kettlebell Hip Opener",
+      "part": "Glutes",
+      "video": "https://www.youtube.com/shorts/gqXDD28ejws",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kettlebell Windmill",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DNfm9H1RsVC/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Knee Taps Fire Hydrants",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/DPBsdm2gMsk/?img_index=8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kneeling Back Squeezes",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DKR7qH0zFNb/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kneeling Halo",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DJaFEmqz4u-/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kneeling Reach Backs",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DQO8N1-AERX/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kneeling Side Bends",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/C_-SuLwTedO/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Kneeling Straight Arm Band Stretch",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DJ4rIH4IY4i/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Landmine Back Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DW63a7OCMYV/?hl=en",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Landmine Belt Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DWjIwU3lOik/?hl=en",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Landmine Press",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DWlbtKLkl8g/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Landmine Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DXP8At_ke4p/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Landmine Sumo Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=BqXp5kngmlg",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Landmine/ Db Squat To Press",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=G9RpZXJcg10",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Last Video",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DDhWN_JPbSi/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lat Lean Cat Cow",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DH2syMJsrVt/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lat Pulldowns",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/w6-QYF-0W18",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lateral Step Over AND Forward Step Over",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DWy1gf_CCi5/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Lateral Toe Taps Banded",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DPwEaaAkSe7/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Leg 90 Push Up",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DFYTEImNDv7/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Leg lift 100s",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DKKuZtZAjie/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Level 2",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNivPRlKOO5/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Lunge Halo",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/CrV0xpiNGW2/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lunge Plate Hops",
+      "part": "Quads",
+      "video": "https://www.instagram.com/reel/DPpUsI-EcAs/?igsh=MWx5M3RkeHIwaDlsZA%3D%3D",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lunge Rotations",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DHLzOAZJgOz/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lying 90/90 Switches",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DBv9AqhoBcV/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lying Butterfly",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DPgk6r4gLjy/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lying Figure 4",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=Xb5gHdYtHnk",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lying Internal/ External Hip Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DPBsdm2gMsk/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lying Leg Stetch To Knee Tap",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DRPdQMHgAiC/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Lying Thoracic Side to Side",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/b8O0u9qnRS4",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "MAIN: Gladiator Deadlifts",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DZn33e3PxMw/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Main: Cable Archer To Overhead Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DCCFMPatg3B/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Main: Supinated D- Handle Upright Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DaD4Tikvek3/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Main: Tricep D Handles",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DYPN5apjdWp/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Make Sure To Have Regressions Here Ie Step Back And Step Up/ Half Burpee",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=NE1sENZASmY",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Marching Glute Bridge With Press",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/DJaFEmqz4u-/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Med Ball Slams",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DXKShn7lmwy/?img_index=5",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Ment 1",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Cv91NFuAbJH/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Minute 27.31",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=vJKt86ayWxk",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Minute 3.43",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=lF1tvW1PFTg",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Minute 9.35",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=lF1tvW1PFTg",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Modified Sissy Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/reel/DP34jbyjh5s/?igsh=MXBxeWhrYmx1OWg2Ng%3D%3D",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Mountain Climbers",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DDKn5C2yRP3/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Mountain Climbers/ Knee Highs",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=DfjpR6dzLVg",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "NARROW LAT PULLDOWN off floor",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DNB7WuPSAjm/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Narrow Chest Press",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/HSBQV42cYkw",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "No Weight If Tight",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DaOdAndCkgb/?img_index=2",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Off Wedge - Use Black/ Orange/ Grey Band - Under Sink",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/BrS6DDIFRvn/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "On Floor For Beginners",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Cvhtk_9uCg5/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Only Add Kb If Shoulder Allows",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DTOiYCFkZjY/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Overhead Hold",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/PdDmH_WnIdE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Overhead March",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DJaFEmqz4u-/?img_index=7",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Overhead Plate Lunges",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/qeOvQ0xULcQ",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Pendulum Lunge",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=Ew8b8FeFG1U",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Pendulum Lunges",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/aLQeCQgHuLw",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Pendulum Swings",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DOXndJnDBwA/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Pilates Ring Back Extension",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/ClgCkMiAWip/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Pilates Ring Push Ups/ Elevated Push Ups/ Full Pushups",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DT-rugFCqmG/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Plank Band 3 Way Tap",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DHEb6IapJYD/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank Jacks",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=3VpkyIcnT64",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank Knee Taps",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DHJTzWbJu8G/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank Leg Raises",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=L1JVzNBfNcA",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank Plate Tap",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/H44UxR43oSU",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DQCEte1EZ2L/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DOtGm5lALjT/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Plank To Childs Pose",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DKKbMhhRNfq/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Pop Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/mtAH5KuRGQw",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Posterior Sling Staggered Stance Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DJg6dYbxjQt/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone 90 Leg Push Ups",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DM5W40vIqEk/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone Banded Step Outs",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNBaR81pktZ/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone Db Alternating Overhead Raise Per Side",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DMD8mdOtkDJ/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone Lying Lumber Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DPjs8Y_CelI/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone Plate Tricep Press",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DJebZfZzcrY/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone Roller Db Shoulder Raise",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/CEafRzNHe9O/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone Shoulder Lift Off Left",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/hhKG1YOkdeM",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Prone Shoulder Lift Off Right",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/hhKG1YOkdeM",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Prone Single Leg Raise Band Below Knee Last Video",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DMufmMeOvS8/?img_index=10",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Prone W Raises",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DMD8mdOtkDJ/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Pull technique for coaching",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=8wQis3XVZwo",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Puppy Dog Stretch",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CQijd8knIks/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Push Press",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/watch?v=KPintlmBHEE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Quadruped Hip Cars .45",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=cy6O3g7gV6A",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Raised Heel Squats",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/C6tKuwULC1V/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Rear Delt Cable Flies",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DTIiEtWjd1-/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Renegade Rows",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=l-5apQSMui4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Reverse Grip DB Thrusters",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DPt1Nb2EeCw/?igsh=aW5tOXdxOGQwOGYx&img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Reverse To Curtsy Lunge",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/2Fzv_XHB_YU",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ring Bicep",
+      "part": "Biceps",
+      "video": "https://www.youtube.com/shorts/rLZ7Mh-TMsE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ring Rows",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/CV5D5o3LMXE/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ring Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=ja95GT3BgLM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Ring pistol Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/xckGEBu-Ylc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Rotational DL into High Pull first move",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DQHk7gGDEG8/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Rotational Hang Cleans 2nd Rotational Rows 3rd Titan Press 4th video",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DPt1Nb2EeCw/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Rotational Jeffersons Curl",
+      "part": "Biceps",
+      "video": " https://www.instagram.com/reel/DLDUh4EC8W5/?igsh=MXVucmc0Y2JmaXoyMw%3D%3D",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "SL Deadlift to knee drive",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DJaFEmqz4u-/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Sa Alt Kb Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DN_ETHqDT4Z/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Sa Landmine Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DSnjVhkEeIo/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Sandbag Lunges",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=uU831yLwBkY",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Band Step Outs Band Over Mid Foot",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DMufmMeOvS8/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Bear Hug T Spine Roll",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DGeXUMDyYYU/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Butterfly Pose",
+      "part": "Chest",
+      "video": "https://www.youtube.com/watch?v=hqIu74YRwIE",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Cable Hamstring",
+      "part": "Hamstrings",
+      "video": "https://www.youtube.com/watch?v=zNROHHnqCNk",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Dumbbell 6 Ways",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/results?search_query=DUMBBELL+6+WAYS",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Seated Front Rack Rotation Press Alt",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DPEmMV1Ddte/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Front Raise",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DPEmMV1Ddte/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Goblet Overhead Press",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DQR4dpCkXrP/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Good Mornings",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=r-FXb16bh8k",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Lateral Lunge",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DWUD6sigLrA/?hl=en",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Leg Opener",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DNLOFqcAlMY/?img_index=7",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Pigeon Pose",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DYMC_oojEDy/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Push/ Pull",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DXAHE3AJKR6/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Reverse Db Flies",
+      "part": "Chest",
+      "video": "https://www.youtube.com/shorts/qrrGz0jlQhU",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Revolved Forward Fold",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DYMC_oojEDy/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Ski Accessory 2:Archer Ring Rows",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/C-WyKnjSGOx/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Sled Push 4/6 Lengths",
+      "part": "Cardio",
+      "video": "https://www.instagram.com/p/DXPKGSdDJ7s/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Sumo Band Good Mornings",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DFqeKbrMsiZ/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Thumbs Up Pulses",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DOgPFTegEsQ/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Seated Twists",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DYMC_oojEDy/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Seated Weighted Calf Raises",
+      "part": "Calves",
+      "video": "https://www.instagram.com/p/BvUDeveF8id/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Second Movement",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Cc3EOe4uGcJ/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Shoulder Internal/ External Standing",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=41RvmL4Majc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Shoulder Press \u200b\u200b",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/shorts/cP8nsUQ7OWc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Side Lunge Halo Side Lunge",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/ClB3pLgpZ8f/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Side Lying Internal/ External Rotation",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DPBsdm2gMsk/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Side Plank DB Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/q8Qq2X8OIIc",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Side Step Goblet Squats",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DWG4YmglF0w/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Side To Front Bend With Suzy Stick",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DO59TotgB-N/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Side lying leg extension left side",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/TdfRsUbODlM",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Side lying leg extension right side",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/TdfRsUbODlM",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Single Arm Delt Row",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DQPngAdEVbc/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Single Arm Lat Pullover",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DP_EfN-kx0F/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Single Leg Bench to Stand",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DPMGUV3jpXB/?igsh=cjBsbGNmeXNsN3Zj",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Single Leg Circle",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CNi4bdTAeLL/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Single Leg Slam",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/reel/DNx1nvy3MU8/?igsh=dDkwcjkweXI5amZw",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Single Side Deep Squat Alt",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DP1jmMDERdW/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Single leg deadlift",
+      "part": "Hamstrings",
+      "video": "https://www.youtube.com/shorts/vGuyEm2KWSI",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Sit To Stand Ball Between Knees",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/cUz_TSy7_fw",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Sit to stand with stomp",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DXdI24nDxfY/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Sitting Spinal twist",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DHf5UXTTDHw/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Sl Glute Bridges Or Normal If New",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/DXCRH25DkeK/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Sled Drag",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/CkjlvBEDlfQ",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Slider Knee Tuck to Pike",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/bd0-qlAnI4Q",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Slider lateral lunge (first move using the hamstring slider): Accessory 2: Cable Glute Kickbacks",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DW9sXHUlvA_/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Small Plate",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=JdDBaijAfr4",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Small Plates",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/-QdOhKhHdUk",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Spanish Squats",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DBbIf0dy1Ea/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Sphinx Opening",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DOtGm5lALjT/?img_index=7",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Sphinx Twists",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DOtGm5lALjT/?img_index=7",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Split Squat Hold",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=zzUZOMiE-mg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat And Front Raise",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/shorts/1cSOwbO9vzc",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Squat Chest Press",
+      "part": "Chest",
+      "video": "https://www.youtube.com/watch?v=RoliZVScdU8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat Front Press",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/ClB3pLgpZ8f/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat Front Raise",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DZISu5XFI4C/?img_index=1",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Squat Hold",
+      "part": "Quads",
+      "video": "https://www.youtube.com/results?search_query=SQUAT+HOLD+PLATE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat Rotational Front Raise",
+      "part": "Shoulders",
+      "video": "https://www.instagram.com/p/DZISu5XFI4C/?img_index=1",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Squat To Bicep Curl",
+      "part": "Biceps",
+      "video": "https://www.instagram.com/p/DPev2vYCN5q/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat To Pivot Overhead",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/C7mCW-PxVEK/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat With Knee Drive",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DQEFTbkiHle/?img_index=2",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat/ GM/ Squat Stand PLATE HELD AT CHEST",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DP_xiEuDbCV/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Squat/ Good morning/ Squat Stand",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DP_xiEuDbCV/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Staggered Hip Cat/Cow",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DPjs8Y_CelI/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Stand Away From The Cable Machine But Close Or You Will Know About It",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DabRscOTQwy/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Standing Curl Pendulum .13",
+      "part": "Biceps",
+      "video": "https://www.youtube.com/watch?v=q6DeEtkgAH8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Standing Dual Kettlebell calf raises",
+      "part": "Calves",
+      "video": "https://www.youtube.com/watch?v=gI-GqUg47UU",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Standing Skull Crusher",
+      "part": "Triceps",
+      "video": "https://www.youtube.com/shorts/h2jtMAr8MPM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Star Balance Leg",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DPMVaVOjSko/?img_index=6",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Start With Tech Bar In Pt Room And Get Them To Sit If Standing Is Easy",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CVS26jvBgz9/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Straight Arm Torso Rotations",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DZK0iaKConK/?img_index=3",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Straight Arm Twist",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DO011eIANeH/?img_index=10",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Straight Leg Lift",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/BVB2dIf5T2E",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Suitcase KB Toe squats",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/0msVxLUZkas?t=1&feature=share",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Sumo Deadlift",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/JF3iwfK5WI0",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Sumo Stance Rotation Windmills",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DMxqKGBIYdg/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Super Man Thumps Up",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/IfU8mVzrfv4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Supinated Front Raise",
+      "part": "Shoulders",
+      "video": "https://www.youtube.com/shorts/Vk6cSiMNDuE",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Supinated Rows",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/3I-9p4jbuQg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "T Spinal Twist",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/cncdlzYmbxg",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "T Spine Thread The Needle",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DRUmBdTAMal/?img_index=9",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Table Top Toe Taps",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=A5H4t2ZMos8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Table top leg lift with push up",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DKRgmUwooyV/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Tall Kneeling Wood Chops Into Middle",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DGEWLk5x9YE/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Thoracic Rotation",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DQO8N1-AERX/?img_index=9",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Thread The Needle",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DFnwg99o4am/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Thruster",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/e7fUcp3sm9w",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Toe Taps",
+      "part": "Core",
+      "video": "https://www.youtube.com/watch?v=grwzM4Ibrhk",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Top Down Dumbbell Row",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=fL460UfB6iw",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Top Middle Video",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DJPNl75JIfr/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Triangle Lat Pulldowns",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/w6-QYF-0W18",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Triangle Leg Hip Flexor :09",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=q6DeEtkgAH8",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Tricep Cable Pushdown",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/DPjXrbSjGPF/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Unilateral KB Swing",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DV_0PeHCOqO/?hl=en",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Use Band Around Top Ankle For More Flexibilty",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/C7wmOSnIn7x/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Use Tricep Handle",
+      "part": "Triceps",
+      "video": "https://www.instagram.com/p/C84YwobJZ_d/?hl=en",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "VUk_WrQ",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/3q1tVUk_WrQ",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wall Back Stretch Second Video",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DHD1-hSyiWk/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wall Ball Mountain Climbers",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DMDL312zh_l/",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wall Ball Side to Side",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DPMGUV3jpXB/?igsh=cjBsbGNmeXNsN3Zj&img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wall Ball Squat And Throw",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/A-edIJIDn2E",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Wall Hip Dips",
+      "part": "Glutes",
+      "video": "https://www.instagram.com/p/DObH4ZcjTL4/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wall facing thoracic squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/XnroUF5mzg0",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Wedge KB Hinge Squat",
+      "part": "Hamstrings",
+      "video": "https://www.instagram.com/p/DPfB7RICKeh/?hl=en",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Weighted Wall Sit",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=3pf2ZQEAKyM",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Weighted Wipers",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DOtLhWFgDx3/?img_index=3",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wide Forward Fold Twists",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DMiXU4IAwPF/?img_index=4",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wide Grip Pull Down Per Side",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DP_EfN-kx0F/?img_index=6",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Wide Lat Pulldown",
+      "part": "Back",
+      "video": "https://www.instagram.com/p/DUS0t6cjIK3/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Wide Stance Good Morning Plate At Chest",
+      "part": "Back",
+      "video": "https://www.youtube.com/watch?v=bVPGQJdtkmk",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Window wipers",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/nayNurlGMTU",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "With Small Plates",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=r5XXhbSs_PI",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "With/Without Band",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DKZTa2HSQ_a/",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "Without Stand Up",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/B8OnUpEDOSy/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Worlds Greatest Stretch",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/kSPS_HIQv8E",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "Y T W Raises",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/HvdLRWBprws",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "You Can Use Whatever Variation You Want From Video Depending Whos In",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DT-1SBNEar1/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Zercher Bar Front Squat",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/jLtn9BDLG64",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "ment 4",
+      "part": "Full Body",
+      "video": "https://www.facebook.com/reel/1164306242245754",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "om/p/DObH4ZcjTL4/?",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DObH4ZcjTL4/?img_index=5",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "outube.com/shorts/JqDrU_z1K2Q",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/JqDrU_z1K2Q",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "overhead lunge",
+      "part": "Quads",
+      "video": "https://www.youtube.com/shorts/nZYZKQBEdm8",
+      "source": "Q2 2026"
+    },
+    {
+      "name": "www.instagram.com/p/DQIYkBIiSUq/?",
+      "part": "Full Body",
+      "video": "http://www.instagram.com/p/DQIYkBIiSUq/?img_index=1",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "www.youtube.com/shorts/A3Lql7uRKvc",
+      "part": "Full Body",
+      "video": "http://www.youtube.com/shorts/A3Lql7uRKvc",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "www.youtube.com/watch?v=xA_DpewzL7c",
+      "part": "Full Body",
+      "video": "http://www.youtube.com/watch?v=xA_DpewzL7c",
+      "source": "Q4 2026"
+    },
+    {
+      "name": "\u00bd Kneeling Wood Chops",
+      "part": "Core",
+      "video": "https://www.youtube.com/shorts/9WIxNGEXrCA",
+      "source": "Q4 2026"
+    }
+  ]
 }
