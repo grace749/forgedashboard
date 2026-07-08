@@ -1466,9 +1466,23 @@ function _renderAgentReply(tab, bubble, ans){
     const title = tab === "programming" ? "Forge Programme"
                 : ((AGENT_TABS[tab] && AGENT_TABS[tab].name) || "Forge") + " — answer";
     const bar = document.createElement("div");
-    bar.style.cssText = "align-self:flex-start;display:flex;gap:6px;margin-top:1px";
+    bar.style.cssText = "align-self:flex-start;display:flex;gap:6px;margin-top:1px;flex-wrap:wrap";
     const mk = (label, fn) => { const b = document.createElement("button"); b.textContent = label;
       b.style.cssText = "font-size:.7rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:4px 10px;cursor:pointer"; b.onclick = fn; return b; };
+    // Edit inline (contenteditable) — tweak the answer with no extra AI call, then save.
+    const editBtn = mk("✏️ Edit", null);
+    editBtn.onclick = () => {
+      const editing = bubble.getAttribute("contenteditable") === "true";
+      bubble.setAttribute("contenteditable", editing ? "false" : "true");
+      bubble.style.outline = editing ? "" : "2px dashed #a78bda";
+      bubble.style.background = editing ? "" : "#fffdf5";
+      bubble.style.cursor = editing ? "" : "text";
+      editBtn.textContent = editing ? "✏️ Edit" : "✓ Done — now tap Word/PDF";
+      editBtn.style.color = editing ? "#7c3aed" : "#fff";
+      editBtn.style.background = editing ? "#f5f3ff" : "#7c3aed";
+      if (!editing) bubble.focus();
+    };
+    bar.appendChild(editBtn);
     bar.appendChild(mk("⬇ Word", () => _downloadWord(title, bubble.innerHTML)));
     bar.appendChild(mk("⬇ PDF",  () => _downloadPdf(title, bubble.innerHTML)));
     thread.appendChild(bar);
