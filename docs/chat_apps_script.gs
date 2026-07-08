@@ -60,8 +60,12 @@ function doPost(e) {
     if (!key) return _json({ error: "No Anthropic key — paste it into the API_KEY line at the top of the script." });
     if (!b.question) return _json({ error: "No question." });
 
+    // The programming agent writes full sessions; every other agent stays concise.
+    var brevity = (b.tab === "programming")
+      ? " Write the FULL session in detail — every section, move, reps and the finisher. Do not truncate or summarise; finish the whole programme."
+      : " Prefer a short direct answer, then at most 3 bullet points.";
     var system = (PERSONAS[b.tab] || PERSONAS._default) +
-      " Answer a busy gym owner concisely and specifically, in British English. Use ONLY the DATA provided below; if it doesn't contain the answer, say so plainly rather than guessing. Money is GBP (£). Prefer a short direct answer, then at most 3 bullet points.";
+      " Answer a busy gym owner specifically, in British English. Use ONLY the DATA provided below; if it doesn't contain the answer, say so plainly rather than guessing. Money is GBP (£)." + brevity;
 
     var messages = [];
     (b.history || []).forEach(function (m) {
@@ -69,12 +73,14 @@ function doPost(e) {
     });
     messages.push({ role: "user", content: "DATA (JSON) for the " + (b.tab || "dashboard") + " tab:\n" + (b.context || "{}") + "\n\nQUESTION: " + b.question });
 
+    // max_tokens is set by the client per tab (programming needs a lot); capped for safety.
+    var maxTok = Math.min(parseInt(b.max_tokens, 10) || 900, 4096);
     var res = UrlFetchApp.fetch("https://api.anthropic.com/v1/messages", {
       method: "post",
       contentType: "application/json",
       muteHttpExceptions: true,
       headers: { "x-api-key": key, "anthropic-version": "2023-06-01" },
-      payload: JSON.stringify({ model: MODEL, max_tokens: 700, system: system, messages: messages })
+      payload: JSON.stringify({ model: MODEL, max_tokens: maxTok, system: system, messages: messages })
     });
     var data = JSON.parse(res.getContentText());
     if (data && data.content && data.content[0] && data.content[0].text) {

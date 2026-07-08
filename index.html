@@ -1423,7 +1423,8 @@ async function _agentSend(tab, question, showAsYou){
     return;
   }
   const bubble = _chatBubble(tab, "agent", "<span style='color:#a78bda'>thinking…</span>");
-  const payload = JSON.stringify({ tab, question, history:prior, context:_agentContext(tab) });
+  const maxTokens = tab === "programming" ? 4096 : 900;   // programmes need room to finish
+  const payload = JSON.stringify({ tab, question, history:prior, context:_agentContext(tab), max_tokens:maxTokens });
   let ans = null, sawLogin = false;
   for (let attempt = 0; attempt < 2 && ans === null; attempt++) {
     try {
