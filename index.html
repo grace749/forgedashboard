@@ -1086,6 +1086,19 @@ function _chatFmt(t){
     return `<div style="margin:2px 0">${l}</div>`;
   }).join("");
 }
+// Export an agent reply (HTML) as a Word-openable .doc file.
+function _downloadWord(title, htmlBody){
+  const stamp = new Date().toLocaleDateString("en-IE", { day:"numeric", month:"long", year:"numeric" });
+  const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${_chatEsc(title)}</title></head>
+    <body style="font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#111">
+    <h2 style="color:#5b21b6">${_chatEsc(title)}</h2><div style="color:#888;font-size:9pt;margin-bottom:12px">The Forge · ${stamp}</div>${htmlBody}</body></html>`;
+  const blob = new Blob(["﻿", html], { type:"application/msword" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = (title||"programme").replace(/[^a-z0-9]+/gi,"_") + "_" + new Date().toISOString().slice(0,10) + ".doc";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
 function _chatBubble(tab, who, html){
   const thread = document.getElementById("chat-thread-" + tab);
   const mine = who === "you";
@@ -1164,7 +1177,7 @@ const PROGRAMMING = {
     ]
   },
   sources: "Q1/Q2/Q3/Q4 2026 programme Google Docs (Q4 current) + Q1–Q3 PDFs (the TV-card layouts).",
-  equipment: "The Forge has NO pin-loaded/selectorised machines. Available kit: 3 squat racks each with 2 built-in cable machines (so cable moves ARE fine — pulldowns, rows, curls, pushdowns, face pulls, wood-chops); a sled track; ski erg; rower; Concept2 bike; assault bike; barbells + plates; dumbbells; kettlebells; sandbags; slam balls; wall balls; resistance bands. Only programme movements possible with THIS kit — never leg press, hamstring-curl machine, pec deck, or any fixed machine; use barbell / dumbbell / kettlebell / cable / band / bodyweight / conditioning-machine alternatives instead."
+  equipment: "The Forge has NO pin-loaded/selectorised machines. Available kit: 3 squat racks each with 2 built-in cable machines (so cable moves ARE fine — pulldowns, rows, curls, pushdowns, face pulls, wood-chops); plyo boxes; a sled track; ski erg; rower; Concept2 bike; assault bike; barbells + plates; dumbbells; kettlebells; sandbags; slam balls; wall balls; resistance bands. Only programme movements possible with THIS kit — never leg press, hamstring-curl machine, pec deck, or any fixed machine; use barbell / dumbbell / kettlebell / cable / band / bodyweight / plyo-box / conditioning-machine alternatives instead."
 };
 
 // ── Move library ──────────────────────────────────────────────
@@ -1206,9 +1219,12 @@ function _allMoves(){
   const custom = _allCustomMoves();
   const taken = new Set(custom.map(m => (m.name||"").toLowerCase()));
   const base = _baseMoves().filter(m => !taken.has((m.name||"").toLowerCase()));
-  return [...custom.map(m => ({ name:m.name, part:m.part, video:(m.video||_ytSearch(m.name)), _key:m._key })), ...base]
-    .sort((a,b) => a.name.localeCompare(b.name));
+  const merged = [...custom.map(m => ({ name:m.name, part:m.part, video:(m.video||_ytSearch(m.name)), _key:m._key })), ...base];
+  // apply any coach body-part relabels (shared store), then sort
+  merged.forEach(m => { const ov = sharedGet("movepart:" + _moveSlug(m.name), null); if (ov) m.part = ov; });
+  return merged.sort((a,b) => a.name.localeCompare(b.name));
 }
+async function setMovePart(name, part){ await sharedSet("movepart:" + _moveSlug(name), part); renderMoveResults(); }
 async function saveMove(){
   const name = (document.getElementById("mv-name").value||"").trim();
   const part = document.getElementById("mv-part").value;
@@ -1239,7 +1255,9 @@ function renderMoveResults(){
     <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f6f6fa">
       <div style="min-width:0">
         <div style="font-weight:600;color:#111;font-size:.86rem">${_plEsc(m.name)}${m._key?` <span style="font-size:.6rem;color:#7c3aed">★ yours</span>`:""}</div>
-        <span style="font-size:.64rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:20px;padding:1px 8px">${_plEsc(m.part||"—")}</span>
+        <select onchange="setMovePart('${(m.name||'').replace(/'/g,"\\'")}',this.value)" title="Change body part" style="margin-top:2px;font-size:.64rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:20px;padding:2px 6px;cursor:pointer;outline:none">
+          ${BODY_PARTS.map(p => `<option value="${p}"${p===(m.part||"")?" selected":""}>${p}</option>`).join("")}${(m.part && !BODY_PARTS.includes(m.part))?`<option selected>${_plEsc(m.part)}</option>`:""}
+        </select>
       </div>
       <div style="display:flex;align-items:center;gap:12px;white-space:nowrap">
         <a href="${m.video}" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:700;color:#7c3aed;text-decoration:none">▶ Demo</a>
@@ -1431,6 +1449,14 @@ function _renderAgentReply(tab, bubble, ans){
   }).trim();
   bubble.innerHTML = _chatFmt(text || "…");
   const thread = document.getElementById("chat-thread-" + tab);
+  // Programme Designer replies get a "Download as Word" button
+  if (tab === "programming" && text.length > 120) {
+    const dl = document.createElement("button");
+    dl.textContent = "⬇ Download as Word";
+    dl.style.cssText = "align-self:flex-start;margin-top:2px;font-size:.74rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:7px;padding:6px 13px;cursor:pointer";
+    dl.onclick = () => _downloadWord("Forge Programme", bubble.innerHTML);
+    thread.appendChild(dl);
+  }
   actions.forEach(a => {
     const idx = window._agentActions.push(a) - 1;
     const card = document.createElement("div");
@@ -2971,6 +2997,24 @@ function render(data) {
   const sopSections = sop.sections || [];
   const typeColour = { Facilities:"#0891b2", Coaches:"#7c3aed", Marketing:"#db2777", Clients:"#059669", General:"#64748b" };
 
+  // The COO agent flags SOP GAPS (processes with no SOP in the sheet at all).
+  // Fold those into the completion metric so it reflects the real work left —
+  // not just the % of the rows that happen to be listed in the sheet.
+  const sopGaps = [];
+  if (sop.coo_evaluation) {
+    let inGaps = false;
+    sop.coo_evaluation.split("\n").map(l => l.trim()).forEach(l => {
+      const h = /^\*\*(.+?)\*\*/.exec(l);
+      if (h) { inGaps = /gap/i.test(h[1]); return; }
+      if (inGaps && /^[•\-\*]/.test(l)) sopGaps.push(l.replace(/^[•\-\*]\s*/, "").replace(/\*\*/g, "").split(":")[0].trim());
+    });
+  }
+  const sopGapN   = sopGaps.length;
+  const sopAdjTot = (sopStats.total || 0) + sopGapN;
+  const sopAdjPct = sopAdjTot ? Math.round((sopStats.built || 0) / sopAdjTot * 100) : (sopStats.pct_built || 0);
+  const sopOutstanding = (sopStats.not_built || 0) + sopGapN;
+  const sopPctColour = sopAdjPct >= 80 ? "#059669" : sopAdjPct >= 50 ? "#d97706" : "#dc2626";
+
   // Fractional COO AI agent (top of the tab)
   if (sop.coo_evaluation) {
     const cooHtml = sop.coo_evaluation.split("\n").map(l => l.trim()).filter(Boolean).map(l => {
@@ -3009,24 +3053,26 @@ function render(data) {
       </div>
       ${sopStats.total ? `
         <div style="display:flex;align-items:center;gap:16px;margin:16px 0 6px;flex-wrap:wrap">
-          <div style="font-size:2.4rem;font-weight:800;letter-spacing:-.03em;color:#059669">${sopStats.pct_built}%</div>
+          <div style="font-size:2.4rem;font-weight:800;letter-spacing:-.03em;color:${sopPctColour}">${sopAdjPct}%</div>
           <div style="flex:1;min-width:200px">
             <div style="height:12px;background:#f3f4f6;border-radius:6px;overflow:hidden">
-              <div style="height:100%;width:${sopStats.pct_built}%;background:#059669;border-radius:6px"></div>
+              <div style="height:100%;width:${sopAdjPct}%;background:${sopPctColour};border-radius:6px"></div>
             </div>
-            <div style="font-size:.8rem;color:#6b7280;margin-top:6px">${sopStats.built} of ${sopStats.total} SOPs built · ${sopStats.not_built} outstanding</div>
+            <div style="font-size:.8rem;color:#6b7280;margin-top:6px">${sopStats.built} built · <strong style="color:#b45309">${sopOutstanding} still to do</strong>${sopGapN?` (${sopStats.not_built} listed + ${sopGapN} gaps with no SOP yet)`:""}</div>
           </div>
         </div>
+        <div style="font-size:.68rem;color:#9ca3af;margin-bottom:6px">% of all identified SOPs — the ${sopStats.total} in your sheet plus the ${sopGapN} gap${sopGapN!==1?"s":""} the COO agent flagged above.</div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
           ${(sopStats.by_type||[]).map(t => `
             <span style="font-size:.75rem;font-weight:600;padding:4px 10px;border-radius:8px;background:#fafafa;border:1px solid #f0f0f5;color:${typeColour[t.type]||'#64748b'}">
               ${t.type} ${t.built}/${t.total}
             </span>`).join("")}
         </div>
-        ${sop.not_built_list && sop.not_built_list.length ? `
+        ${(sop.not_built_list && sop.not_built_list.length) || sopGapN ? `
           <div style="margin-top:14px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:10px 14px">
-            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#b45309;margin-bottom:4px">Not built yet</div>
-            <div style="font-size:.85rem;color:#374151">${sop.not_built_list.map(it => `${it.task} <span style="color:#aaa">(${it.type})</span>`).join(" · ")}</div>
+            <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#b45309;margin-bottom:4px">Still to build</div>
+            ${sop.not_built_list && sop.not_built_list.length ? `<div style="font-size:.85rem;color:#374151">${sop.not_built_list.map(it => `${it.task} <span style="color:#aaa">(${it.type})</span>`).join(" · ")}</div>` : ""}
+            ${sopGapN ? `<div style="font-size:.85rem;color:#374151;margin-top:${sop.not_built_list && sop.not_built_list.length?"6px":"0"}"><span style="font-size:.66rem;font-weight:700;color:#b45309">GAPS (no SOP yet): </span>${sopGaps.map(g => _plEsc(g)).join(" · ")}</div>` : ""}
           </div>` : ""}
       ` : `<p style="color:#ccc;font-size:.85rem;padding:8px 0">No SOP data — check the sheet is shared with the service account.</p>`}
     </div>
@@ -3246,7 +3292,7 @@ function render(data) {
         <ul style="margin:0;padding:0">${li(P.rules)}</ul>
         <div class="inner-divider">Our kit</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap">
-          ${["3 racks (2 cables each)","Sled track","Ski erg","Rower","Concept2 bike","Assault bike","Barbells + plates","Dumbbells","Kettlebells","Sandbags","Slam balls","Wall balls","Resistance bands"].map(k=>`<span style="font-size:.72rem;color:#374151;background:#fafafa;border:1px solid #f0f0f5;border-radius:20px;padding:3px 10px">${k}</span>`).join("")}
+          ${["3 racks (2 cables each)","Plyo boxes","Sled track","Ski erg","Rower","Concept2 bike","Assault bike","Barbells + plates","Dumbbells","Kettlebells","Sandbags","Slam balls","Wall balls","Resistance bands"].map(k=>`<span style="font-size:.72rem;color:#374151;background:#fafafa;border:1px solid #f0f0f5;border-radius:20px;padding:3px 10px">${k}</span>`).join("")}
         </div>
         <div style="font-size:.7rem;color:#9ca3af;margin-top:8px">No fixed/pin-loaded machines — the Programme Designer only programmes moves possible with this kit.</div>
       </div>`);

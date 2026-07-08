@@ -17,9 +17,13 @@ Add more docs by extending DOC_IDS.
 """
 import os, re, json
 
-# "Q4 Program Movements" — the current cycle. (Q1–Q3 are PDFs; add later.)
+# The programme movement Google Docs (each move has an Instagram/YouTube demo
+# link). All must be shared (viewer) with the service-account email.
 DOC_IDS = [
-    ("Q4 2026", "15MqmvBJ4eRchsyEMl9SITiFz54QDb0FgDzVnRabI3_o"),
+    ("Q4 2026", "15MqmvBJ4eRchsyEMl9SITiFz54QDb0FgDzVnRabI3_o"),  # "Q4 Program Movements"
+    ("Q3 2026", "1N7tw8Wt_Y7PebIu-KCYm5tEkNORWorb2YRd8zIJkBWA"),  # "Q3 2026"
+    ("Q2 2026", "12xgn_rp3gK0uMtJKjn27wNoSTWbre0tF41WaIqHKe5k"),  # "Q2 2026"
+    ("RenewYou 12-Week", "1LTBJj7Nzymrt-SAIVHguw05HbFsRKuIPa7hpPLQfUtw"),  # "RenewYou_12Week_Training_Programmes"
 ]
 SCOPES = ["https://www.googleapis.com/auth/documents.readonly"]
 
