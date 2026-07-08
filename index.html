@@ -1245,6 +1245,13 @@ function ytPopup(q){
   if (w) { try { w.opener = null; w.focus(); } catch(e){} }
   else alert("Allow pop-ups for this site to open YouTube.");
 }
+// Row "🔎 YT": prefill the add form with this move's name (so pasting the found
+// link + Add updates this move), then open a YouTube search popup for it.
+function ytFindFor(name){
+  const el = document.getElementById("mv-name");
+  if (el) { el.value = name; el.focus(); el.scrollIntoView({ block:"center" }); }
+  ytPopup(name);
+}
 async function saveMove(){
   const name = (document.getElementById("mv-name").value||"").trim();
   const part = document.getElementById("mv-part").value;
@@ -1279,8 +1286,9 @@ function renderMoveResults(){
           ${BODY_PARTS.map(p => `<option value="${p}"${p===(m.part||"")?" selected":""}>${p}</option>`).join("")}${(m.part && !BODY_PARTS.includes(m.part))?`<option selected>${_plEsc(m.part)}</option>`:""}
         </select>
       </div>
-      <div style="display:flex;align-items:center;gap:12px;white-space:nowrap">
+      <div style="display:flex;align-items:center;gap:10px;white-space:nowrap">
         <a href="${m.video}" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:700;color:#7c3aed;text-decoration:none">▶ Demo</a>
+        <button onclick="ytFindFor('${(m.name||'').replace(/'/g,"\\'")}')" title="Search YouTube for a demo clip for this move" style="font-size:.72rem;color:#c00;background:#fff5f5;border:1px solid #fecaca;border-radius:6px;padding:2px 7px;cursor:pointer">🔎 YT</button>
         ${m._key?`<button onclick="deleteMove('${m._key}')" title="Remove this move" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>`:""}
       </div>
     </div>`).join("") : `<p style="color:#ccc;font-size:.85rem;padding:10px 0">No moves match — add one above.</p>`;
