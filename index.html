@@ -1147,6 +1147,9 @@ const PROGRAMMING = {
     { name:"Strongevity",focus:"60+ · mostly seated", format:"Fall protection, light strength, flexibility, core. Warm-up (4) → Ball (4) → Dumbbell & Block (3–4) → Cooldown (3); ~1 min each; monthly blocks; every move has a video demo. forgefemalefitness.com/strongevity" }
   ],
   testWeek: {
+    current_quarter: "Quarter 3",
+    test_dates: "29 June – 2 July 2026",
+    retest_dates: "7 – 10 September 2026",
     intro: "Weeks 1 & 12. ~8 strength & fitness tests, recorded on members' phones + sent to coaches on Slack. Pods-of-4 test format; 'Program 1/2/3' run alongside for non-testers.",
     example: [
       "3-min max Assault Bike cals",
@@ -1162,6 +1165,104 @@ const PROGRAMMING = {
   },
   sources: "Q1/Q2/Q3/Q4 2026 programme Google Docs (Q4 current) + Q1–Q3 PDFs (the TV-card layouts)."
 };
+
+// ── Move library ──────────────────────────────────────────────
+const BODY_PARTS = ["Back","Chest","Shoulders","Biceps","Triceps","Quads","Hamstrings","Glutes","Calves","Core","Cardio","Full Body"];
+// Starter set so search + body-part filter work immediately (video = YouTube
+// search link). Coach-added moves (with real demo links) merge on top and sync.
+const MOVE_SEED = [
+  ["Lat pulldown (wide grip)","Back"],["Barbell bent-over row","Back"],["Single-arm cable row","Back"],["Seal row","Back"],["Face pull","Back"],["Dumbbell pullover","Back"],["Inverted row","Back"],
+  ["Barbell bench press","Chest"],["Incline dumbbell press","Chest"],["Cable fly","Chest"],["Push-up","Chest"],
+  ["Seated dumbbell shoulder press","Shoulders"],["Lateral raise","Shoulders"],["Arnold press","Shoulders"],["Band pull-apart","Shoulders"],
+  ["Dumbbell bicep curl","Biceps"],["Cable curl","Biceps"],["Hammer curl","Biceps"],
+  ["Tricep rope pushdown","Triceps"],["Overhead dumbbell extension","Triceps"],["Bench dip","Triceps"],
+  ["Back squat","Quads"],["Goblet squat","Quads"],["Leg press","Quads"],["Walking lunge","Quads"],
+  ["Romanian deadlift","Hamstrings"],["Hamstring curl","Hamstrings"],["Barbell deadlift","Hamstrings"],
+  ["Hip thrust","Glutes"],["Glute bridge","Glutes"],["Cable kickback","Glutes"],
+  ["Standing calf raise","Calves"],
+  ["Dead bug","Core"],["Plank","Core"],["Hanging leg raise","Core"],["Cable woodchop","Core"],["Ab wheel rollout","Core"],
+  ["Assault bike","Cardio"],["Row (Concept2)","Cardio"],["Sled push","Cardio"],["Ski erg","Cardio"],
+  ["Clean & push press","Full Body"],["Kettlebell swing","Full Body"],["Box step-over","Full Body"]
+];
+function _ytSearch(name){ return "https://www.youtube.com/results?search_query=" + encodeURIComponent((name||"") + " form").replace(/%20/g,"+"); }
+function _moveSlug(name){ return (name||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); }
+function _allCustomMoves(){
+  const out = [], add = (k,v) => { if (k.indexOf("move:")===0 && v && v.name) out.push({ ...v, _key:k }); };
+  if (window._atRiskUrl) { const st = window._atRiskState || {}; Object.keys(st).forEach(k => add(k, st[k])); }
+  else { for (let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if (k && k.indexOf("move:")===0){ try { add(k, JSON.parse(localStorage.getItem(k))); } catch(_){} } } }
+  return out;
+}
+function _allMoves(){
+  const custom = _allCustomMoves();
+  const taken = new Set(custom.map(m => (m.name||"").toLowerCase()));
+  const seed = MOVE_SEED.filter(m => !taken.has(m[0].toLowerCase())).map(m => ({ name:m[0], part:m[1], video:_ytSearch(m[0]), seed:true }));
+  return [...custom.map(m => ({ name:m.name, part:m.part, video:(m.video||_ytSearch(m.name)), _key:m._key })), ...seed]
+    .sort((a,b) => a.name.localeCompare(b.name));
+}
+async function saveMove(){
+  const name = (document.getElementById("mv-name").value||"").trim();
+  const part = document.getElementById("mv-part").value;
+  const video = (document.getElementById("mv-link").value||"").trim();
+  if (!name) { document.getElementById("mv-name").focus(); return; }
+  await sharedSet("move:" + _moveSlug(name), { name, part, video });
+  document.getElementById("mv-name").value = ""; document.getElementById("mv-link").value = "";
+  renderMoveResults();
+  const s = document.getElementById("mv-saved"); if (s) { s.textContent = "Saved “" + name + "” ✓"; setTimeout(() => s.textContent = "", 2500); }
+}
+async function deleteMove(key){ await sharedSet(key, {}); renderMoveResults(); }
+function setMoveFilter(part){
+  window._moveFilter = part;
+  document.querySelectorAll("#mv-filters button").forEach(b => {
+    const on = b.getAttribute("data-part") === part;
+    b.style.background = on ? "#7c3aed" : "#f7f7fb"; b.style.color = on ? "#fff" : "#6b7280";
+    b.style.borderColor = on ? "#7c3aed" : "#eee"; b.style.fontWeight = on ? 700 : 600;
+  });
+  renderMoveResults();
+}
+function renderMoveResults(){
+  const wrap = document.getElementById("moveResults"); if (!wrap) return;
+  const q = (window._moveSearch||"").toLowerCase().trim(), part = window._moveFilter||"";
+  let moves = _allMoves();
+  if (part) moves = moves.filter(m => (m.part||"") === part);
+  if (q)    moves = moves.filter(m => m.name.toLowerCase().includes(q) || (m.part||"").toLowerCase().includes(q));
+  wrap.innerHTML = moves.length ? moves.map(m => `
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f6f6fa">
+      <div style="min-width:0">
+        <div style="font-weight:600;color:#111;font-size:.86rem">${_plEsc(m.name)}${m._key?` <span style="font-size:.6rem;color:#7c3aed">★ yours</span>`:""}</div>
+        <span style="font-size:.64rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:20px;padding:1px 8px">${_plEsc(m.part||"—")}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;white-space:nowrap">
+        <a href="${m.video}" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:700;color:#7c3aed;text-decoration:none">▶ Demo</a>
+        ${m._key?`<button onclick="deleteMove('${m._key}')" title="Remove this move" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>`:""}
+      </div>
+    </div>`).join("") : `<p style="color:#ccc;font-size:.85rem;padding:10px 0">No moves match — add one above.</p>`;
+  const cnt = document.getElementById("mv-count"); if (cnt) cnt.textContent = moves.length + " move" + (moves.length!==1?"s":"");
+}
+function renderMoveLibrary(){
+  const el = document.getElementById("moveLibrary"); if (!el) return;
+  const filterBtns = ["", ...BODY_PARTS].map(p => {
+    const on = (window._moveFilter||"") === p;
+    return `<button data-part="${p}" onclick="setMoveFilter('${p}')" style="font-size:.72rem;font-weight:${on?700:600};color:${on?'#fff':'#6b7280'};background:${on?'#7c3aed':'#f7f7fb'};border:1px solid ${on?'#7c3aed':'#eee'};border-radius:20px;padding:4px 11px;cursor:pointer">${p||"All"}</button>`;
+  }).join("");
+  el.innerHTML = `
+    <div class="card-title">Move Library</div>
+    <div class="card-headline">Add, search &amp; find demos</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 6px;align-items:center">
+      <input id="mv-name" placeholder="Movement name (e.g. Barbell bent-over row)" onkeydown="if(event.key==='Enter')saveMove()" style="flex:2;min-width:180px;font-size:.82rem;padding:8px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      <select id="mv-part" style="font-size:.82rem;padding:8px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">${BODY_PARTS.map(p=>`<option value="${p}">${p}</option>`).join("")}</select>
+      <input id="mv-link" placeholder="Demo link (Instagram / YouTube)" onkeydown="if(event.key==='Enter')saveMove()" style="flex:2;min-width:180px;font-size:.82rem;padding:8px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      <button onclick="saveMove()" style="font-size:.82rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:8px 16px;cursor:pointer">Add</button>
+      <span id="mv-saved" style="font-size:.72rem;color:#059669;font-weight:600"></span>
+    </div>
+    <div style="border-top:1px solid #f3f4f6;margin-top:8px;padding-top:12px">
+      <input id="mv-search" value="${_plEsc(window._moveSearch||"")}" oninput="window._moveSearch=this.value;renderMoveResults()" placeholder="Search any move…" style="width:100%;box-sizing:border-box;font-size:.85rem;padding:9px 12px;border:1px solid #e5e7eb;border-radius:8px;outline:none;margin-bottom:10px">
+      <div id="mv-filters" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">${filterBtns}</div>
+      <div style="font-size:.7rem;color:#9ca3af;margin:4px 0"><span id="mv-count"></span></div>
+      <div id="moveResults" style="max-height:440px;overflow-y:auto"></div>
+    </div>
+    <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Moves you add sync to every coach and are saved for reuse. Pasted demo links are used as-is; starter moves link to a YouTube search.</div>`;
+  renderMoveResults();
+}
 
 // Quick-tap starter questions per tab (discoverability + speed).
 const AGENT_STARTERS = {
@@ -3133,40 +3234,24 @@ function render(data) {
         <div class="inner-divider">Rules of thumb</div>
         <ul style="margin:0;padding:0">${li(P.rules)}</ul>
       </div>`);
-    // Weekly rotation
-    push("programming", `
-      <div class="card col-6">
-        <div class="card-title">Weekly Rotation</div>
-        <div class="card-headline">Alternating A / B weeks</div>
-        <div class="stat-row"><span class="stat-label">Week A</span><span class="stat-val" style="font-size:.82rem;text-align:right;max-width:60%">${P.rotation.weekA}</span></div>
-        <div class="stat-row"><span class="stat-label">Week B</span><span class="stat-val" style="font-size:.82rem;text-align:right;max-width:60%">${P.rotation.weekB}</span></div>
-        <div style="font-size:.8rem;color:#6b7280;margin-top:10px;line-height:1.5">${P.rotation.weekly}<br>${P.rotation.capacity}</div>
-      </div>`);
-    // Test week
-    push("programming", `
-      <div class="card col-6">
-        <div class="card-title">Test Week</div>
-        <div class="card-headline">Weeks 1 &amp; 12</div>
-        <p style="color:#6b7280;font-size:.8rem;line-height:1.5;margin:2px 0 8px">${P.testWeek.intro}</p>
-        <div class="inner-divider">Example test set (Q3)</div>
-        <ol style="margin:0;padding-left:18px;color:#1f2937;font-size:.84rem;line-height:1.6">${P.testWeek.example.map(t => `<li style="padding:1px 0">${t}</li>`).join("")}</ol>
-      </div>`);
-    // Class formats grid
-    const classCards = P.classes.map(c => `
-      <div style="background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap">
-          <div style="font-weight:800;color:#111;font-size:.95rem">${c.name}</div>
-          <div style="font-size:.68rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:20px;padding:2px 9px">${c.focus}</div>
-        </div>
-        <div style="font-size:.82rem;color:#374151;line-height:1.5;margin-top:6px">${c.format}</div>
-      </div>`).join("");
+    // Test week — current quarter + this cycle's test/retest dates
+    const tw = P.testWeek;
     push("programming", `
       <div class="card col-12">
-        <div class="card-title">Class Formats</div>
-        <div class="card-headline" style="margin-bottom:12px">Every class, how it's built</div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px">${classCards}</div>
-        <div style="font-size:.7rem;color:#c4b5fd;margin-top:12px">Source programmes: ${P.sources} · Ask the Programme Designer above to draft a new session in this style.</div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px">
+          <div><div class="card-title">Test Week · ${tw.current_quarter}</div>
+            <div class="card-headline" style="margin-bottom:0">Weeks 1 &amp; 12</div></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="pill purple" style="cursor:default">Test: ${tw.test_dates}</span>
+            <span class="pill purple" style="cursor:default">Retest: ${tw.retest_dates}</span>
+          </div>
+        </div>
+        <p style="color:#6b7280;font-size:.8rem;line-height:1.5;margin:10px 0 8px">${tw.intro}</p>
+        <div class="inner-divider">${tw.current_quarter} test set</div>
+        <ol style="margin:0;padding-left:18px;color:#1f2937;font-size:.84rem;line-height:1.6">${tw.example.map(t => `<li style="padding:1px 0">${t}</li>`).join("")}</ol>
       </div>`);
+    // Move library (add / search / filter by body part) — rendered by renderMoveLibrary
+    push("programming", `<div class="card col-12" id="moveLibrary"></div>`);
   })();
 
   // Give each content tab its AI chat agent, pinned at the top.
@@ -3182,6 +3267,7 @@ function render(data) {
     if (typeof renderTodayHub === "function")   renderTodayHub();
     if (typeof renderSlack === "function")      renderSlack();
     if (typeof renderStarlingPl === "function") renderStarlingPl();
+    if (typeof renderMoveLibrary === "function") renderMoveLibrary();
   };
   paintDynamic();                          // paint immediately
   loadAtRiskState().then(paintDynamic);    // then reconcile with the shared store
