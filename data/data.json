@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T09:06:43.231681+00:00",
+  "generated_at": "2026-07-09T09:17:53.811236+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -325,7 +325,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "14h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -361,7 +361,7 @@
       "name": "Donna Thompson",
       "channel": "Phone",
       "message": "Thanks Grace  xxx",
-      "age": "22h ago",
+      "age": "23h ago",
       "unread": 2,
       "conv_id": "GSqYIxdRhAO0Wuoq8REm",
       "contact_id": "Tpej37kuW5gI8S79xmo3"
@@ -4247,7 +4247,7 @@
       {
         "user_id": "U086M7J0X4N",
         "text": "What a relief it's not anything sinister. Still worrying for you all I know but I'm so glad she's ok, and it's good they're keeping an eye on it xx ",
-        "hours": 40,
+        "hours": 41,
         "name": "Helen Traynor"
       },
       {
@@ -4384,7 +4384,6 @@
       "rebekah newnes": "U0ASK342Q3B",
       "noeleen murphy": "U0ASSEZQLM8",
       "sarah calvin": "U0AT0GVHH5W",
-      "lesley moore": "U0AT0KNDNH2",
       "sorcha gilmore": "U0AT9SVQRPV",
       "margaret reynolds": "U0AT9UT2W8Z",
       "catherine finney": "U0AU374165P",
@@ -20974,9 +20973,9 @@
       {
         "month": "2026-07",
         "revenue": 12225.06,
-        "expenses": 6968.83,
-        "profit": 5256.23,
-        "profit_pct": 43.0,
+        "expenses": 7052.03,
+        "profit": 5173.03,
+        "profit_pct": 42.3,
         "categories": {
           "in": [
             {
@@ -20995,7 +20994,7 @@
             },
             {
               "name": "Admin",
-              "amount": 1156.71
+              "amount": 1239.91
             },
             {
               "name": "Other",
@@ -21028,6 +21027,26 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "97132800-ca2c-42b4-a835-05da0f0411f4",
+            "date": "2026-07-09",
+            "name": "Zapier",
+            "ref": "ZAPIER.COM/CHARGE",
+            "amount": 68.98,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "970fd5b0-e964-4499-b601-4b064a83deb7",
+            "date": "2026-07-09",
+            "name": "Anthropic",
+            "ref": "ANTHROPIC",
+            "amount": 14.22,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
           {
             "uid": "97047ac5-a8ea-4a38-86b6-edc376311dfc",
             "date": "2026-07-09",
@@ -22442,7 +22461,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 4133.2,
+    "cash_position": 4050.0,
     "available": 0.0,
     "reserves": [
       {
@@ -22463,7 +22482,7 @@
       }
     ],
     "earmarked": 10077.0,
-    "total_cash": 14210.2,
+    "total_cash": 14127.0,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -22492,8 +22511,8 @@
       }
     ],
     "cash_in_30": 20444.94,
-    "cash_out_30": 14797.91,
-    "net_30": 5647.03,
+    "cash_out_30": 14881.11,
+    "net_30": 5563.83,
     "as_of": "2026-07-09"
   },
   "gocardless": {
