@@ -30,7 +30,7 @@ function doGet(e) {
 function doPost(e) {
   try {
     var b = JSON.parse((e && e.postData && e.postData.contents) || "{}");
-    var doc = DocumentApp.create(b.title || "The Forge — Monthly Report");
+    var doc = DocumentApp.create(b.title || "Forge Female Fitness — Monthly Report");
     var body = doc.getBody();
     body.appendParagraph(b.title || "Monthly Report").setHeading(DocumentApp.ParagraphHeading.TITLE);
     if (b.subtitle) {

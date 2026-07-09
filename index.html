@@ -1129,7 +1129,7 @@ function _exportStamp(){ return new Date().toLocaleDateString("en-IE", { day:"nu
 function _downloadWord(title, htmlBody){
   const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${_chatEsc(title)}</title></head>
     <body style="font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#111">
-    <h2 style="color:#5b21b6">${_chatEsc(title)}</h2><div style="color:#888;font-size:9pt;margin-bottom:12px">The Forge · ${_exportStamp()}</div>${htmlBody}</body></html>`;
+    <h2 style="color:#5b21b6">${_chatEsc(title)}</h2><div style="color:#888;font-size:9pt;margin-bottom:12px">Forge Female Fitness · ${_exportStamp()}</div>${htmlBody}</body></html>`;
   const blob = new Blob(["﻿", html], { type:"application/msword" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
@@ -1144,7 +1144,7 @@ function _downloadPdf(title, htmlBody){
   w.document.write(`<html><head><meta charset="utf-8"><title>${_chatEsc(title)}</title>
     <style>body{font-family:-apple-system,Segoe UI,Arial,sans-serif;font-size:12pt;color:#111;line-height:1.5;padding:28px;max-width:720px;margin:auto}
     h2{color:#5b21b6;margin:0 0 2px} .meta{color:#888;font-size:9pt;margin-bottom:16px} b{color:#111}</style></head>
-    <body><h2>${_chatEsc(title)}</h2><div class="meta">The Forge · ${_exportStamp()}</div>${htmlBody}</body></html>`);
+    <body><h2>${_chatEsc(title)}</h2><div class="meta">Forge Female Fitness · ${_exportStamp()}</div>${htmlBody}</body></html>`);
   w.document.close();
   setTimeout(() => { try { w.focus(); w.print(); } catch(e){} }, 350);
 }
@@ -1613,7 +1613,7 @@ function _pageReportMeta(key, period){
     ? "Week of " + today.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})
     : today.toLocaleDateString("en-GB",{month:"long",year:"numeric"});
   return {
-    title: `The Forge — ${heading} ${wk?"Weekly":"Monthly"} Report · ${periodLabel}`,
+    title: `Forge Female Fitness — ${heading} ${wk?"Weekly":"Monthly"} Report · ${periodLabel}`,
     subtitle: `${wk?"Weekly":"Monthly"} report · snapshot as of ${today.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})}`,
   };
 }

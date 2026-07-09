@@ -25,7 +25,7 @@ GMAIL_CLIENT_SECRET = os.environ.get("GMAIL_CLIENT_SECRET", "")
 GMAIL_REFRESH_TOKEN = os.environ.get("GMAIL_REFRESH_TOKEN", "")
 
 SENDER   = os.environ.get("TSHIRT_SENDER", "contact@tshirtstudio.com")
-SUBJECT  = os.environ.get("TSHIRT_SUBJECT", "")   # empty → match all from the sender; we filter to real orders in code
+SUBJECT  = os.environ.get("TSHIRT_SUBJECT", "Confirmation of your TShirt Studio order")
 LOOKBACK = os.environ.get("TSHIRT_LOOKBACK", "730d")
 
 
@@ -121,8 +121,10 @@ def run():
                 "error": "Gmail not configured — add GMAIL_CLIENT_ID / GMAIL_CLIENT_SECRET / GMAIL_REFRESH_TOKEN"}
     try:
         q = f'from:{SENDER} newer_than:{LOOKBACK}'
-        if SUBJECT.strip():
-            q += f' subject:{SUBJECT.strip()}'
+        subj = SUBJECT.strip()
+        if subj:
+            # quote multi-word subjects so Gmail matches the whole phrase
+            q += f' subject:"{subj}"' if " " in subj else f' subject:{subj}'
         res = svc.users().messages().list(userId="me", q=q, maxResults=100).execute()
         msgs = res.get("messages", [])
         orders, seen, total_spend = [], set(), 0.0

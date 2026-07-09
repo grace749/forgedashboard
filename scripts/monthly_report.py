@@ -160,9 +160,9 @@ def maybe_generate(data, force=None):
     for key in PAGE_ORDER:
         sec = sections_by_page.get(key)
         if sec:
-            record(key, f"The Forge — {sec['heading']} · {month_label}", [sec])
+            record(key, f"Forge Female Fitness — {sec['heading']} · {month_label}", [sec])
     # … and the full owner report covering everything.
-    record("full", f"The Forge — Monthly Report · {month_label}",
+    record("full", f"Forge Female Fitness — Monthly Report · {month_label}",
            [sections_by_page[k] for k in PAGE_ORDER if k in sections_by_page])
 
     REPORTS_FILE.write_text(json.dumps(reports, indent=2))
