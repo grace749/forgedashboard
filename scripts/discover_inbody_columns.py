@@ -15,28 +15,68 @@ import os
 import requests
 import fetch_inbody as fi
 
-# Candidate (TABLE, FIELD) codes to try for each metric, best guess first.
+# Only the two still-unconfirmed metrics. TBW/PROTEIN/MINERAL are already proven
+# (all BCA_TBL) and enabled in fetch_inbody, so we don't re-probe them here.
+# Visceral fat area (VFA) & InBody age live in InBody's "research" parameters,
+# which sit in a different table than BCA/MFA — hence the wider table sweep.
 CANDIDATES = {
-    "Hydration / Total Body Water": [
-        ("BCA_TBL", "TBW"), ("BCA_TBL", "TBW_WT"), ("MFA_TBL", "TBW"),
-    ],
-    "Protein": [
-        ("BCA_TBL", "PROTEIN"), ("BCA_TBL", "PROTEIN_WT"), ("BCA_TBL", "PROT"),
-        ("BCA_TBL", "TP"), ("MFA_TBL", "PROTEIN"),
-    ],
-    "Mineral": [
-        ("BCA_TBL", "MINERAL"), ("BCA_TBL", "MINERALS"), ("BCA_TBL", "TM"),
-        ("BCA_TBL", "OSMINERAL"), ("BCA_TBL", "BONE_MINERAL"), ("MFA_TBL", "MINERAL"),
-    ],
     "Visceral Fat": [
-        ("MFA_TBL", "VFL"), ("BCA_TBL", "VFL"), ("MFA_TBL", "VFA"),
-        ("BCA_TBL", "VFA"), ("MFA_TBL", "VISCERAL_FAT_LEVEL"), ("MFA_TBL", "VISCERAL_FAT"),
+        ("RESEARCH_TBL", "VFA"), ("RESEARCH_TBL", "VFL"), ("OBESITY_TBL", "VFL"),
+        ("OBESITY_TBL", "VFA"), ("OBESITY_TBL", "VISCERAL_FAT_LEVEL"),
+        ("RESEARCH_TBL", "VISCERAL_FAT_AREA"), ("MFA_TBL", "VFL"), ("BCA_TBL", "VFA"),
+        ("WC_TBL", "VFL"), ("WC_TBL", "VFA"),
     ],
     "InBody Age": [
-        ("MFA_TBL", "INBODY_AGE"), ("BCA_TBL", "INBODY_AGE"), ("MFA_TBL", "BODY_AGE"),
-        ("MFA_TBL", "BODYAGE"), ("RESEARCH_TBL", "INBODY_AGE"), ("USER_INFO1_TBL", "INBODY_AGE"),
+        ("RESEARCH_TBL", "INBODY_AGE"), ("RESEARCH_TBL", "BODY_AGE"), ("RESEARCH_TBL", "IB_AGE"),
+        ("RESEARCH_TBL", "AGE"), ("OBESITY_TBL", "INBODY_AGE"), ("BCA_TBL", "BODY_AGE"),
+        ("MFA_TBL", "IB_AGE"), ("RESEARCH_TBL", "INBODYAGE"), ("WC_TBL", "INBODY_AGE"),
     ],
 }
+
+# Endpoints that might return the authoritative column catalogue the export
+# "column picker" is built from (each column's real TABLE + FIELD code).
+CATALOG_URLS = [
+    "/SetupExportDataInBody", "/SetupExportDataInBody/Index",
+    "/SetupExportDataInBody/GetColumnList", "/SetupExportDataInBody/GetColumns",
+    "/SetupExportDataInBody/GetExportColumn", "/SetupExportDataInBody/GetSetupData",
+]
+
+
+BASE_URL = fi.BASE
+
+
+def dump_catalog(session):
+    """Best-effort: fetch the export column catalogue and print every TABLE.FIELD
+    it advertises, so the exact visceral-fat / InBody-age codes are visible."""
+    import re
+    pairs = set()
+    for path in CATALOG_URLS:
+        for method in ("get", "post"):
+            try:
+                r = getattr(session, method)(BASE_URL + path, timeout=30)
+            except Exception:
+                continue
+            if r.status_code != 200 or not r.text:
+                continue
+            txt = r.text
+            for a, b in re.findall(r'TABLENAME"\s*:\s*"([^"]+)"\s*,\s*"FieldName"\s*:\s*"([^"]+)"', txt):
+                pairs.add((a, b))
+            for b, a in re.findall(r'FieldName"\s*:\s*"([^"]+)"\s*,\s*"TABLENAME"\s*:\s*"([^"]+)"', txt):
+                pairs.add((a, b))
+            for a, b in re.findall(r'data-tablename="([^"]+)"[^>]*data-fieldname="([^"]+)"', txt):
+                pairs.add((a, b))
+    if pairs:
+        print("── Column catalogue found on the server ──")
+        for tbl in sorted(set(t for t, _ in pairs)):
+            fields = sorted(f for t, f in pairs if t == tbl)
+            print(f"   {tbl}: {', '.join(fields)}")
+        hits = [f"{t}.{f}" for t, f in sorted(pairs)
+                if any(k in f.upper() for k in ("VF", "VISC", "AGE"))]
+        if hits:
+            print("   >>> visceral-fat / age candidates:", ", ".join(hits))
+    else:
+        print("── No column catalogue endpoint responded (will rely on probing) ──")
+    print()
 
 BASE = [
     ("USER_INFO1_TBL", "NAME", "Name"),
@@ -51,7 +91,12 @@ def main():
         return
     session = requests.Session()
     fi._login(session)
-    uids = fi._fetch_uids(session)[:40]          # a sample is plenty to detect values
+
+    # First, try to read the authoritative column catalogue off the server.
+    dump_catalog(session)
+
+    # Then probe. Use a SMALL sample — big exports on the research table time out.
+    uids = fi._fetch_uids(session)[:12]
     if not uids:
         print("No members returned from Lookin'Body — check the login.")
         return
@@ -63,10 +108,15 @@ def main():
         found = None
         for tbl, field in cands:
             cols = BASE + [(tbl, field, field)]
-            try:
-                rows = fi._parse_export(fi._export_scans(session, uids, cols), len(cols))
-            except Exception as ex:
-                print(f"   {tbl}.{field:20s} → export ERROR ({ex})")
+            rows = None
+            for attempt in (1, 2):                 # one retry — research table is slow
+                try:
+                    rows = fi._parse_export(fi._export_scans(session, uids, cols), len(cols))
+                    break
+                except Exception as ex:
+                    if attempt == 2:
+                        print(f"   {tbl}.{field:20s} → export ERROR ({ex})")
+            if rows is None:
                 continue
             vals = [r[3] for r in rows if len(r) > 3 and (r[3] or "").strip() not in ("", "-")]
             numeric = [v for v in vals if fi._num(v) is not None]

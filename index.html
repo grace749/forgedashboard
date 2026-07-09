@@ -1642,9 +1642,13 @@ function _pageReportSections(key){
     const wLost = withDelta.filter(s=>s.weight_change<0);
     const fLost = withDelta.filter(s=>s.pbf_change<0);
     const mGain = withDelta.filter(s=>s.smm_change>0);
+    const minUp = withDelta.filter(s=>s.mineral_change>0);
     const sum = (arr,k)=>arr.reduce((t,s)=>t+(s[k]||0),0);
+    const avg = (arr,k)=>{ const v=arr.map(s=>s[k]).filter(x=>x!=null); return v.length?v.reduce((a,b)=>a+b,0)/v.length:null; };
+    const rnd = (v,p=1)=> v==null?null:Math.round(v*Math.pow(10,p))/Math.pow(10,p);
     const ages = ib.map(s=>s.inbody_age).filter(v=>v!=null);
     const avgAge = ages.length ? Math.round(ages.reduce((a,b)=>a+b,0)/ages.length) : null;
+    const avgTbw = avg(ib,"tbw"), avgProt = avg(ib,"protein"), avgMin = avg(ib,"mineral");
     const overdue = ib.filter(s=>s.overdue).length;
     const due = ib.map(s=>({name:s.name, days:daysSince(s)})).filter(x=>x.days!=null && x.days>30).sort((a,b)=>b.days-a.days);
 
@@ -1655,8 +1659,9 @@ function _pageReportSections(key){
       `Weight lost (since last scan): ${wLost.length?`${(Math.round(-sum(wLost,'weight_change')*10)/10)}kg across ${wLost.length} members`:"—"}`,
       `Body fat lost (since last scan): ${fLost.length?`avg ${sg(sum(fLost,'pbf_change')/fLost.length)}% across ${fLost.length} members`:"—"}`,
       `Muscle built (since last scan): ${mGain.length?`+${Math.round(sum(mGain,'smm_change')*10)/10}kg across ${mGain.length} members`:"—"}`,
-      `Average InBody age: ${avgAge!=null?avgAge:"— (awaiting extended InBody data)"}`,
-      `Mineral improvement: — (awaiting extended InBody data)`,
+      `Mineral gained (since last scan): ${minUp.length?`+${rnd(sum(minUp,'mineral_change'))}kg across ${minUp.length} members`:(avgMin!=null?"—":"— (updates after next scan sync)")}`,
+      `Averages — mineral ${avgMin!=null?rnd(avgMin)+"kg":"—"} · protein ${avgProt!=null?rnd(avgProt)+"kg":"—"} · hydration ${avgTbw!=null?rnd(avgTbw)+"L":"—"}`,
+      `Average InBody age: ${avgAge!=null?avgAge:"— (field code still to confirm)"}`,
     ]};
     const dueSec = { heading:`Due another scan — 30+ days since last scan (${due.length})`, lines:
       due.length ? due.slice(0,25).map(x=>`${x.name} — ${x.days} days ago`).concat(due.length>25?[`+${due.length-25} more`]:[])

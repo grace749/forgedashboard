@@ -30,20 +30,20 @@ BASE_COLS = [
     ("MFA_TBL",        "PBF",       "PBF"),
     ("MFA_TBL",        "BMI",       "BMI"),
 ]
-# Extra InBody metrics (field codes are best-effort Lookin'Body names; if any come
-# back blank after a refresh the exact code needs tweaking — the fallback below
-# means a bad code never loses the base data).
+# Extra InBody metrics — CONFIRMED via discover_inbody_columns.py (all BCA_TBL).
+# Order here MUST stay TBW, PROTEIN, MINERAL so the positional parse below (cols
+# 7,8,9) lines up. Visceral fat level + InBody age codes are still unconfirmed
+# (every candidate errored) — left out so a bad code can't wipe the export.
 EXTRA_COLS = [
     ("BCA_TBL",        "TBW",        "TBW"),          # total body water (hydration)
     ("BCA_TBL",        "PROTEIN",    "Protein"),
     ("BCA_TBL",        "MINERAL",    "Mineral"),
-    ("MFA_TBL",        "VFL",        "VFL"),           # visceral fat level
-    ("BCA_TBL",        "INBODY_AGE", "InBodyAge"),
+    # ("MFA_TBL",      "VFL",        "VFL"),           # visceral fat — code TBD
+    # ("...",          "INBODY_AGE", "InBodyAge"),     # InBody age  — code TBD
 ]
-# DISABLED: the extra field codes above are guesses and made the Lookin'Body
-# export error out, wiping ALL scans. Stay on the proven base columns until the
-# exact Lookin'Body field codes are confirmed. Then set: BASE_COLS + EXTRA_COLS.
-EXPORT_COLS = list(BASE_COLS)
+# The export defensively falls back to BASE_COLS on any error (see run()), so a
+# future bad code never loses the base data.
+EXPORT_COLS = list(BASE_COLS) + list(EXTRA_COLS)
 
 
 def _login(session):
@@ -218,6 +218,9 @@ def run():
             "weight_change": change("weight"),
             "smm_change":    change("smm"),
             "pbf_change":    change("pbf"),
+            "tbw_change":     change("tbw"),
+            "protein_change": change("protein"),
+            "mineral_change": change("mineral"),
             "next_due":    next_due.isoformat(),
             "days_to_due": (next_due - today).days,
             "overdue":     (next_due - today).days < 0,
