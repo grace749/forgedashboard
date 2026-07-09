@@ -1553,25 +1553,42 @@ function openTshirt(){
   window.open(url, "_blank", "noopener");
 }
 function _opClothing(){
-  const orders = _shList("opclothorder").sort((a,b) => (b.date||"").localeCompare(a.date||""));
+  const manual = _shList("opclothorder").sort((a,b) => (b.date||"").localeCompare(a.date||""));
+  // Auto-pulled from T-Shirt Studio order-confirmation emails (fetch_tshirt.py)
+  const ts = (window._data && window._data.tshirt) || {};
+  const auto = Array.isArray(ts.orders) ? ts.orders : [];
+  const spend = typeof ts.total_spend === "number" && ts.total_spend > 0
+    ? `£${ts.total_spend.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2})}` : "";
   return `
     <div class="card col-6">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap">
         <div><div class="card-title">Clothing Orders</div><div class="card-headline" style="margin-bottom:0">T-Shirt Studio</div></div>
         <button onclick="openTshirt()" style="font-size:.76rem;font-weight:700;color:#fff;background:#111;border:none;border-radius:8px;padding:8px 13px;cursor:pointer;white-space:nowrap">T-Shirt Studio login ↗</button>
       </div>
-      <div class="inner-divider">Latest orders</div>
+      <div class="inner-divider">${auto.length ? `Pulled from email${spend ? ` · ${spend} total` : ""}` : "Recent orders"}</div>
+      ${auto.length ? auto.slice(0,10).map(o => `
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid #f6f6fa">
+          <div style="min-width:0">
+            <div style="font-size:.85rem;color:#111">${_plEsc(o.title || (o.order_no ? "Order "+o.order_no : "Order"))}</div>
+            <div style="font-size:.68rem;color:#9ca3af">${o.order_no ? "#"+_plEsc(o.order_no)+" · " : ""}${o.total ? _plEsc(o.total) : ""}</div>
+          </div>
+          <span style="font-size:.72rem;color:#9ca3af;white-space:nowrap">${_opFmtD(o.date)}</span>
+        </div>`).join("")
+        : (ts.configured === false
+            ? `<p style="color:#ccc;font-size:.82rem;padding:2px 0">Connect Gmail (refresh) to auto-pull T-Shirt Studio orders.</p>`
+            : `<p style="color:#ccc;font-size:.82rem;padding:2px 0">No orders found in email yet — log one manually below.</p>`)}
+      <div class="inner-divider">Log an order manually</div>
       <div style="display:flex;gap:6px;margin-bottom:6px">
         <input id="opclothorder-date" type="date" style="font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
         <input id="opclothorder-in" placeholder="What was ordered" onkeydown="if(event.key==='Enter')addClothOrder()" style="flex:1;font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
         <button onclick="addClothOrder()" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:6px 13px;cursor:pointer">Add</button>
       </div>
-      ${orders.length ? orders.slice(0,8).map(i => `
+      ${manual.length ? manual.slice(0,6).map(i => `
         <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
           <span style="font-size:.85rem;color:#111">${_plEsc(i.title)}</span>
           <span style="display:flex;gap:8px;align-items:center;white-space:nowrap"><span style="font-size:.72rem;color:#9ca3af">${_opFmtD(i.date)}</span>
           <button onclick="opDel('${i._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button></span>
-        </div>`).join("") : `<p style="color:#ccc;font-size:.82rem;padding:2px 0">No orders logged yet.</p>`}
+        </div>`).join("") : ""}
       <div class="inner-divider">Need to order</div>
       ${_opCheckInner("opclothneed","Add clothing we need…")}
     </div>`;
