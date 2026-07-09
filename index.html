@@ -1163,7 +1163,7 @@ const FORGE_FACTS = {
 const AGENT_SKILLS = {
   finances:  { benchmarks:"Healthy gym net margin ~15-25%. Keep >3 months cash runway. Watch revenue-per-member trend (falling = pricing/upsell leak even if headcount grows). A failed DD/card is the earliest churn+cash warning.", lens:"Separate one-offs (April move) from the underlying trend. Tie cash movements to categories. Flag anything that threatens payroll or rent." },
   retention: { benchmarks:"Monthly churn <3% is good, >5% is a problem. Trial→member conversion target ~50%+. At-risk = a member absent 10+ days. Lapsed members are recoverable if contacted within ~30 days.", lens:"Find WHO is at risk and WHY, and what single action recovers the most members/revenue this week. Distinguish full members from trials. TRIAL CONVERSION: the ONLY correct source is data.trial_conversion (conv_rate %, converted, not_converted, total_complete from the Jumpstart tracker). Quote those exact figures. NEVER estimate or infer a conversion rate from lapsed_trials — lapsed_trials only lists trials that ended without renewing, it is NOT the conversion rate and using it will badly understate conversion." },
-  members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"data.membership_by_type is the CURRENT count of members in each membership type (Empower, Elevate, Evolve, Well75, Jumpstart, etc.) from TeamUp — USE IT to answer questions about the mix and which type is biggest. Note: only current counts are available, not month-by-month history per type, so if asked which is 'growing fastest' say you can give the current mix/biggest type but per-type trend over time isn't tracked yet — don't claim you have no type data." },
+  members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"data.membership_by_type is the CURRENT count of members in each membership type (Empower, Elevate, Evolve, Well75, Jumpstart, etc.) from TeamUp — USE IT to answer questions about the mix and which type is biggest. For GROWTH over time, data.type_history has each month's active-member count per type — compare the earliest vs latest month to say which type is growing fastest (biggest % / absolute gain) or shrinking. Quote the actual month-on-month numbers." },
   inbody:    { benchmarks:"Rescan cadence ~6 weeks. Progress = skeletal muscle up and/or body-fat % down. Overdue scans are a re-engagement opportunity.", lens:"Spot who's progressing (celebrate/case-study) and who's overdue or stalling (nudge)." },
   jumpstart: { benchmarks:"6-week programme. Have the conversion conversation by week 4-5, not week 6. Missed check-ins predict non-conversion.", lens:"Who needs a conversion chat now, who's drifting, and what to do before their 6 weeks end." },
   programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked to draft a session, ACTUALLY WRITE IT — never refuse. PREFER MOVES FROM THE PROVIDED move_library (grouped by body part) — these are The Forge's own moves that have real demo videos; use their EXACT names wherever possible so they can be matched to the coach's clips. Only invent a move if the library genuinely lacks anything suitable for a slot. Match the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press) with reps in the right range. Lay it out in the class's structure and follow programming_system.classes EXACTLY for the requested class. Deliver the full session. HARD RULES FOR UPPER & LOWER (never deviate, whatever the user's phrasing): output EXACTLY 3 strength sections; EACH section has EXACTLY 1 lead move (8–15 reps) + EXACTLY 3 accessories (max reps) — never 2, never a 4th; then a TEAM WORKOUT as an EMOM of EXACTLY 4 moves in this order — 1 machine move, 1 bodyweight move, 1 dumbbell move, 1 plate move. Do not add pods, complexes, extra sections or extra finishers for Upper/Lower. CRITICAL: only ever programme movements possible with The Forge's actual equipment (see programming_system.equipment) — NO fixed/pin-loaded machines (no leg press, hamstring-curl machine, pec deck). Cable moves are fine (racks have built-in cables); otherwise use barbell/dumbbell/kettlebell/sandbag/slam-ball/wall-ball/band/bodyweight and the sled, ski erg, rower, Concept2 bike and assault bike. For EVERY exercise, add a tappable demo link in the form https://www.youtube.com/results?search_query=EXERCISE+NAME+form (spaces as +) so the coach/member can see the movement — these are YouTube search links (not the Forge's own clips) so they always work." },
@@ -1611,10 +1611,24 @@ function _opMeetingCard(label, prefix){
     </div>`;
 }
 
+// Parse a free-text event date ("19 September", "22nd August 9.30am") → sortable
+// ISO date. No year in the sheet, so assume the next upcoming occurrence.
+function _evSortDate(when){
+  const m = String(when||"").match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]{3,})/);
+  if (!m) return "9999-99-99";
+  const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+  const mi = months.findIndex(mm => m[2].toLowerCase().startsWith(mm));
+  if (mi < 0) return "9999-99-99";
+  const day = parseInt(m[1],10), now = new Date();
+  let year = now.getFullYear();
+  const cand = new Date(year, mi, day), todayMid = new Date(now.getFullYear(), now.getMonth(), now.getDate()-1);
+  if (cand < todayMid) year++;   // date already passed this year → next year
+  return `${year}-${String(mi+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+}
 // Events — pulled live from the Events Calendar Google Sheet.
 function _opEvents(){
   const ev = (window._data && window._data.events) || {};
-  const list = Array.isArray(ev.events) ? ev.events : [];
+  const list = (Array.isArray(ev.events) ? ev.events : []).slice().sort((a,b) => _evSortDate(a.when).localeCompare(_evSortDate(b.when)));
   const url = ev.sheet_url || "";
   return `
     <div class="card col-12">
@@ -1804,7 +1818,7 @@ function _agentData(tab){
   switch (tab) {
     case "finances":  return { starling_monthly:(st.monthly||[]).slice(-8).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly };
     case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, trial_conversion:(d.jumpstart||{}).stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } };
-    case "members":   return { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, joined_this_month:tm.joined_this_month, churn:tm.churn }, membership_by_type:(tm.breakdown||[]).map(b => ({ type:b.name, count:b.count })) };
+    case "members":   return { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, joined_this_month:tm.joined_this_month, churn:tm.churn }, membership_by_type:(tm.breakdown||[]).map(b => ({ type:b.name, count:b.count })), type_history:(tm.member_history||[]).map(h => ({ month:h.month, by_type:h.by_type||{} })).filter(h => h.by_type && Object.keys(h.by_type).length) };
     case "inbody":    return { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) };
     case "jumpstart": return d.jumpstart || {};
     case "programming": {

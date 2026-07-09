@@ -742,25 +742,32 @@ def build_member_history(all_memberships, name_map, months=12):
             e = date.fromisoformat(e_raw) if e_raw else None
         except Exception:
             e = None
-        parsed.append((cid, s, e, not _is_trial_membership(nm)))
+        parsed.append((cid, s, e, not _is_trial_membership(nm), nm))
 
     series = []
     y, m = today.year, today.month
     for _ in range(months):
         mstart, mend = month_bounds(y, m)
-        active   = {cid for cid, s, e, full in parsed if s <= mend and (e is None or e >= mstart)}
+        active   = {cid for cid, s, e, full, nm in parsed if s <= mend and (e is None or e >= mstart)}
         # Churn = a member whose membership ended this month and who has NOTHING
         # active afterwards. A trial that converts to full stays (has a later
         # membership) → not churn; a trial that just ends and doesn't convert → churn.
-        at_start    = {cid for cid, s, e, full in parsed if s < mstart and (e is None or e >= mstart)}
-        still_after = {cid for cid, s, e, full in parsed if (e is None or e > mend) and s <= mend}
-        left = {cid for cid, s, e, full in parsed
+        at_start    = {cid for cid, s, e, full, nm in parsed if s < mstart and (e is None or e >= mstart)}
+        still_after = {cid for cid, s, e, full, nm in parsed if (e is None or e > mend) and s <= mend}
+        left = {cid for cid, s, e, full, nm in parsed
                 if e is not None and mstart <= e <= mend and cid not in still_after}
         churn = round(len(left) / len(at_start) * 100, 1) if at_start else 0.0
+        # Active distinct members per membership type this month (for per-type trends).
+        type_active = {}
+        for cid, s, e, full, nm in parsed:
+            if s <= mend and (e is None or e >= mstart):
+                type_active.setdefault(nm, set()).add(cid)
+        by_type = {k: len(v) for k, v in type_active.items()}
         series.append({
             "month":  f"{y:04d}-{m:02d}",
             "active": len(active),
             "churn":  churn,
+            "by_type": by_type,
         })
         m -= 1
         if m == 0:
