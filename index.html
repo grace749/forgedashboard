@@ -320,12 +320,16 @@
     }
     .modal-overlay.open { display: flex; }
     .modal {
-      background: #fff; border-radius: 14px; padding: 24px 28px;
-      min-width: 300px; max-width: 420px; width: 90%;
+      background: #fff; border-radius: 14px; padding: 20px 24px;
+      min-width: 300px; max-width: 460px; width: 90%;
+      max-height: 85vh; display: flex; flex-direction: column;
       box-shadow: 0 20px 60px rgba(0,0,0,0.4);
     }
-    .modal h3 { font-size: 1rem; font-weight: 700; color: #111; margin-bottom: 14px; }
-    .modal-list { list-style: none; }
+    .modal h3 { font-size: 1rem; font-weight: 700; color: #111; margin: 0; }
+    .modal-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; flex-shrink: 0; }
+    .modal-x { font-size: 1.5rem; line-height: 1; color: #9ca3af; background: none; border: none; cursor: pointer; padding: 0 4px; }
+    .modal-x:hover { color: #111; }
+    .modal-list { list-style: none; overflow-y: auto; flex: 1 1 auto; min-height: 0; margin: 0 -4px; padding: 0 4px; }
     .modal-list li {
       padding: 8px 0; border-bottom: 1px solid #f3f4f6;
       font-size: 0.88rem; color: #374151;
@@ -349,7 +353,10 @@
 <!-- Member names modal -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
   <div class="modal">
-    <h3 id="modal-title">Members</h3>
+    <div class="modal-head">
+      <h3 id="modal-title">Members</h3>
+      <button class="modal-x" onclick="closeModal()" title="Close" aria-label="Close">✕</button>
+    </div>
     <ul class="modal-list" id="modal-list"></ul>
     <div style="display:flex;gap:8px;margin-top:18px;flex-wrap:wrap">
       <button id="modal-task-done" style="display:none;flex:1;align-items:center;justify-content:center;padding:9px;background:#f0fdf4;color:#16a34a;border:1.5px solid #bbf7d0;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer">✓ Mark Done</button>
@@ -376,7 +383,6 @@
   <button class="tab-btn" onclick="switchTab('retention',this)">Retention</button>
   <button class="tab-btn" onclick="switchTab('inbody',this)">InBody</button>
   <button class="tab-btn" onclick="switchTab('programming',this)">Programming</button>
-  <button class="tab-btn" onclick="switchTab('calendar',this)">Calendar</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
   <button class="tab-btn" onclick="switchTab('ads',this)">Ads</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
@@ -1633,7 +1639,7 @@ function _opEvents(){
   return `
     <div class="card col-12">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap">
-        <div><div class="card-title">Events</div><div class="card-headline" style="margin-bottom:0">From the Events Calendar sheet</div></div>
+        <div><div class="card-title">Events Calendar</div><div class="card-headline" style="margin-bottom:0">Key dates &amp; events</div></div>
         ${url ? `<a href="${url}" target="_blank" rel="noopener" style="font-size:.76rem;font-weight:700;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;border-radius:8px;padding:7px 13px;text-decoration:none;white-space:nowrap">Open sheet ↗</a>` : ""}
       </div>
       <div style="margin-top:10px">
