@@ -1552,6 +1552,30 @@ function openTshirt(){
   if (!url) { url = (prompt("Paste your T-Shirt Studio login URL:", "https://www.tshirtstudio.com/account") || "").trim(); if (!url) return; sharedSet("setting:tshirt_url", url); }
   window.open(url, "_blank", "noopener");
 }
+// Monthly report card for one page (or "full"). reports.json is keyed by page,
+// each value a list of that page's Google Docs, newest first.
+function _reportCard(key, label){
+  const R = (window._data && window._data.reports) || {};
+  const list = Array.isArray(R[key]) ? R[key] : [];
+  const latest = list[0];
+  return `
+    <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div>
+          <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">Monthly Report · ${_plEsc(label)}</div>
+          <div class="card-headline" style="margin-bottom:0">${latest ? "Latest: " + _plEsc(latest.label) : "Auto-generated on the last Friday of each month"}</div>
+        </div>
+        ${latest ? `<a href="${latest.url}" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:700;color:#fff;background:#7c3aed;border-radius:8px;padding:8px 14px;text-decoration:none;white-space:nowrap">Open latest ↗</a>` : ""}
+      </div>
+      ${list.length ? `<div style="margin-top:12px;max-height:220px;overflow-y:auto">
+        ${list.map(r => `<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f0eefb">
+          <a href="${r.url}" target="_blank" rel="noopener" style="font-weight:600;color:#7c3aed;text-decoration:none;font-size:.88rem">📄 ${_plEsc(r.label)} ↗</a>
+          <span style="font-size:.72rem;color:#9ca3af;white-space:nowrap">generated ${_plEsc(r.generated||"")}</span>
+        </div>`).join("")}
+      </div>` : `<p style="color:#9ca3af;font-size:.82rem;margin-top:8px">No report yet — generates on the last Friday of this month.</p>`}
+    </div>`;
+}
+
 function _opClothing(){
   const manual = _shList("opclothorder").sort((a,b) => (b.date||"").localeCompare(a.date||""));
   // Auto-pulled from T-Shirt Studio order-confirmation emails (fetch_tshirt.py)
@@ -1861,9 +1885,11 @@ function _agentData(tab){
 
 // Full context = Forge facts + this agent's expert lens + the live tab data.
 function _agentContext(tab){
-  // Owner-only Single Strategic Objective — the coach's data never contains it,
-  // so her agents can't reason about it or reveal it.
-  const _sso = (window._data && window._data.strategic_objective) || null;
+  // Strategic objective for the agents to orient around. The owner's data holds
+  // the FULL SSO (with revenue + deadline); the coach's data only ever holds the
+  // member-count version, so her agents can never reason about or reveal the
+  // financial target — they simply never receive it.
+  const _sso = (window._data && (window._data.strategic_objective || window._data.coach_objective)) || null;
   const payload = {
     forge_context: FORGE_FACTS,
     expertise: AGENT_SKILLS[tab] || {},
@@ -2059,37 +2085,30 @@ function render(data) {
   const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], programming: [], calendar: [], operations: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
 
-  // ── Single Strategic Objective banner (owner only) ──
-  if (ROLE !== "coach" && data.strategic_objective) {
+  // ── Strategic objective banner ──
+  // Owner sees the full Single Strategic Objective; the coach sees only the
+  // member-count goal (data.coach_objective) — never revenue or the deadline.
+  const _bannerObj = (ROLE !== "coach" && data.strategic_objective) ? data.strategic_objective
+                   : (data.coach_objective || null);
+  if (_bannerObj) {
+    const _isOwnerSSO = ROLE !== "coach" && !!data.strategic_objective;
     push("home", `
       <div class="card col-12" style="margin-top:4px;background:linear-gradient(120deg,#4c1d95,#7c3aed);border:none;color:#fff;box-shadow:0 8px 24px rgba(124,58,237,.28)">
-        <div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.16em;opacity:.85">Single Strategic Objective</div>
-        <div style="font-size:1.35rem;font-weight:800;line-height:1.35;margin-top:6px">${_plEsc(data.strategic_objective)}</div>
+        <div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.16em;opacity:.85">${_isOwnerSSO ? "Single Strategic Objective" : "Our Goal"}</div>
+        <div style="font-size:1.35rem;font-weight:800;line-height:1.35;margin-top:6px">${_plEsc(_bannerObj)}</div>
         <div style="font-size:.72rem;opacity:.8;margin-top:8px">Everything points here. Every agent frames its answers around this goal.</div>
       </div>`);
   }
 
-  // ── Monthly Report (owner) — latest at top + list of every past report ──
-  if (ROLE !== "coach") {
-    const reports = Array.isArray(data.reports) ? data.reports : [];
-    const latest = reports[0];
-    push("home", `
-      <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap">
-          <div>
-            <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">Monthly Report</div>
-            <div class="card-headline" style="margin-bottom:0">${latest ? "Latest: " + _plEsc(latest.label) : "Auto-generated on the last Friday of each month"}</div>
-          </div>
-          ${latest ? `<a href="${latest.url}" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:700;color:#fff;background:#7c3aed;border-radius:8px;padding:8px 14px;text-decoration:none;white-space:nowrap">Open latest ↗</a>` : ""}
-        </div>
-        ${reports.length ? `<div style="margin-top:12px;max-height:260px;overflow-y:auto">
-          ${reports.map(r => `<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f0eefb">
-            <a href="${r.url}" target="_blank" rel="noopener" style="font-weight:600;color:#7c3aed;text-decoration:none;font-size:.88rem">📄 ${_plEsc(r.label)} ↗</a>
-            <span style="font-size:.72rem;color:#9ca3af;white-space:nowrap">generated ${_plEsc(r.generated||"")}</span>
-          </div>`).join("")}
-        </div>` : `<p style="color:#9ca3af;font-size:.82rem;margin-top:8px">No reports yet — the first generates on the last Friday of this month, covering retention, InBody, members, jumpstart, finances, leads, ads &amp; operations.</p>`}
-      </div>`);
-  }
+  // ── Full monthly report (owner home) — combined, covers everything ──
+  if (ROLE !== "coach") push("home", _reportCard("full", "Everything you see"));
+
+  // ── Per-page monthly report — each tab gets its own report card ──
+  // (Coach's data has no finance/leads/ads report keys, so those cards stay
+  //  empty even before the tabs are hidden — nothing sensitive leaks.)
+  const REPORT_TABS = { members:"Members", retention:"Retention", jumpstart:"Jumpstart",
+    inbody:"InBody", finances:"Finances", leads:"Leads", ads:"Ads", operations:"Operations" };
+  Object.keys(REPORT_TABS).forEach(k => { if (tabs[k]) push(k, _reportCard(k, REPORT_TABS[k])); });
 
   // ── "Today" hub — the single most urgent thing from every tab ──
   (function todayHub() {

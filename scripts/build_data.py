@@ -92,10 +92,13 @@ try:
 except Exception as ex:
     print(f"[cfo] live advice failed, keeping sheet advice: {ex}")
 
-# ── Single Strategic Objective (OWNER ONLY — stripped from the coach file) ──
+# ── Single Strategic Objective ────────────────────────────────────────────
+# Full SSO is OWNER ONLY (stripped from the coach file). The coach sees a
+# member-count-only version of the goal — no revenue target, no deadline.
 data["strategic_objective"] = (
     "Grow Forge to 200 recurring members generating over £30,000 a month by October 2026"
 )
+data["coach_objective"] = "Grow Forge to 200 recurring members"
 
 # ── Monthly report (last Friday of the month, or REPORT_FORCE=1) ──────────
 try:
@@ -116,11 +119,15 @@ COACH_STRIP = ["xero", "starling", "kpi", "gocardless", "stripe",   # finance
                "marketing",                                         # ads
                "growth_sprint",                                     # growth
                "sop",                                               # SOPs
-               "reports",                                           # monthly reports (contain finance/ads)
-               "strategic_objective",                               # SSO — owner's eyes only
+               "strategic_objective",                               # full SSO — owner's eyes only
                "brief"]                                             # owner home hub (has enquiries)
 coach = {k: v for k, v in data.items() if k not in COACH_STRIP}
 coach["role"] = "coach"
+# Per-page reports: the coach keeps her own pages' reports but never the
+# finance/leads/ads ones, nor the combined "full" report (which contains them).
+if isinstance(coach.get("reports"), dict):
+    coach["reports"] = {k: v for k, v in coach["reports"].items()
+                        if k not in ("finances", "leads", "ads", "full")}
 COACH_OUTPUT = OUTPUT.parent / "coach-data.json"
 COACH_OUTPUT.write_text(json.dumps(coach, indent=2))
 print(f"Wrote {COACH_OUTPUT} (redacted: {', '.join(COACH_STRIP)})")
