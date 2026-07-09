@@ -1769,7 +1769,7 @@ const AGENT_STARTERS = {
 function _businessSnapshot(tab){
   const d = window._data || {}, tm = d.teamup || {}, st = d.starling || {}, mk = d.marketing || {};
   const snap = {
-    members:   { active:tm.active, recurring:tm.recurring, trials:tm.trial, paused:tm.paused, joined_this_month:tm.joined_this_month, churn_pct:tm.churn },
+    members:   { active:tm.total_members, recurring:tm.recurring, trials:tm.trial, paused:tm.paused, joined_this_month:tm.joined_this_month, churn_pct:tm.churn_rate },
     open_leads:      (d.ghl||[]).length,
     jumpstart_active:((d.jumpstart||{}).active||[]).length
   };
@@ -1800,7 +1800,7 @@ function _derived(tab){
       avg_monthly_net_recent: avgNet!=null ? Math.round(avgNet) : null,
       runway_months: runway,
       last_3_months_net: mons.slice(-3).map(m => ({ month:m.month, net:Math.round(m.profit) })),
-      revenue_per_member_last_month: (last.revenue!=null && tm.active) ? Math.round(last.revenue/tm.active) : null,
+      revenue_per_member_last_month: (last.revenue!=null && tm.total_members) ? Math.round(last.revenue/tm.total_members) : null,
       cash_projection: (cash!=null && avgNet!=null) ? [1,2,3].map(n => ({ in_months:n, projected_cash:Math.round(cash + avgNet*n) })) : null
     };
   }
@@ -1823,8 +1823,8 @@ function _agentData(tab){
   const slim = m => ({ month:m.month, revenue:m.revenue, expenses:m.expenses, profit:m.profit, categories:m.categories });
   switch (tab) {
     case "finances":  return { starling_monthly:(st.monthly||[]).slice(-8).map(slim), cash:{ position:st.cash_position, net_30:st.net_30, reserves:st.reserves, committed_monthly:st.committed_monthly }, gocardless:(d.gocardless||{}).monthly, stripe:(d.stripe||{}).monthly };
-    case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, trial_conversion:(d.jumpstart||{}).stats, snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn } };
-    case "members":   return { snapshot:{ active:tm.active, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, joined_this_month:tm.joined_this_month, churn:tm.churn }, membership_by_type:(tm.breakdown||[]).map(b => ({ type:b.name, count:b.count })), type_history:(tm.member_history||[]).map(h => ({ month:h.month, by_type:h.by_type||{} })).filter(h => h.by_type && Object.keys(h.by_type).length) };
+    case "retention": return { member_history:tm.member_history, lapsed_full:tm.lapsed_full_by_month, lapsed_trials:tm.lapsed_trials_by_month, class_stats:tm.class_stats, trial_conversion:(d.jumpstart||{}).stats, snapshot:{ active:tm.total_members, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, churn:tm.churn_rate } };
+    case "members":   return { snapshot:{ active:tm.total_members, recurring:tm.recurring, trial:tm.trial, paused:tm.paused, leaving:tm.cancellations_this_month, joined_this_month:tm.joined_this_month, churn:tm.churn_rate }, membership_by_type:(tm.breakdown||[]).map(b => ({ type:b.name, count:b.count })), type_history:(tm.member_history||[]).map(h => ({ month:h.month, by_type:h.by_type||{} })).filter(h => h.by_type && Object.keys(h.by_type).length) };
     case "inbody":    return { scans:(d.inbody&&d.inbody.scans||[]).slice(0,80) };
     case "jumpstart": return d.jumpstart || {};
     case "programming": {
@@ -1838,7 +1838,7 @@ function _agentData(tab){
     case "staff":     return d.staff || {};
     case "sop":       return d.sop || {};
     case "home":      return { brief:d.brief, enquiries:d.ghl, slack:{ dms:(d.slack||{}).unreplied_dms } };
-    default:          return { snapshot:{ active:tm.active, recurring:tm.recurring } };
+    default:          return { snapshot:{ active:tm.total_members, recurring:tm.recurring } };
   }
 }
 
@@ -2037,6 +2037,28 @@ function render(data) {
   // Each tab gets its own cards array
   const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], programming: [], calendar: [], operations: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
+
+  // ── Monthly Report (owner) — latest at top + list of every past report ──
+  if (ROLE !== "coach") {
+    const reports = Array.isArray(data.reports) ? data.reports : [];
+    const latest = reports[0];
+    push("home", `
+      <div class="card col-12" style="margin-top:4px;background:linear-gradient(180deg,#faf5ff,#fff);border:1px solid #ede9fe">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap">
+          <div>
+            <div style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed">Monthly Report</div>
+            <div class="card-headline" style="margin-bottom:0">${latest ? "Latest: " + _plEsc(latest.label) : "Auto-generated on the last Friday of each month"}</div>
+          </div>
+          ${latest ? `<a href="${latest.url}" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:700;color:#fff;background:#7c3aed;border-radius:8px;padding:8px 14px;text-decoration:none;white-space:nowrap">Open latest ↗</a>` : ""}
+        </div>
+        ${reports.length ? `<div style="margin-top:12px;max-height:260px;overflow-y:auto">
+          ${reports.map(r => `<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f0eefb">
+            <a href="${r.url}" target="_blank" rel="noopener" style="font-weight:600;color:#7c3aed;text-decoration:none;font-size:.88rem">📄 ${_plEsc(r.label)} ↗</a>
+            <span style="font-size:.72rem;color:#9ca3af;white-space:nowrap">generated ${_plEsc(r.generated||"")}</span>
+          </div>`).join("")}
+        </div>` : `<p style="color:#9ca3af;font-size:.82rem;margin-top:8px">No reports yet — the first generates on the last Friday of this month, covering retention, InBody, members, jumpstart, finances, leads, ads &amp; operations.</p>`}
+      </div>`);
+  }
 
   // ── "Today" hub — the single most urgent thing from every tab ──
   (function todayHub() {
@@ -2338,7 +2360,7 @@ function render(data) {
             <div style="font-size:.63rem;color:#9ca3af;font-weight:700;text-transform:uppercase">Cancellations YTD</div>
           </div>
           <div style="flex:1;background:#fafafa;border:1px solid #f0f0f5;border-radius:10px;padding:12px 14px">
-            <div style="font-size:1.7rem;font-weight:800;color:${(tm.churn_rate||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</div>
+            <div style="font-size:1.7rem;font-weight:800;color:${(tm.churn_rate_rate||0)>3?'#dc2626':'#059669'};letter-spacing:-.02em">${tm.churn_rate_rate != null ? tm.churn_rate_rate + "%" : "—"}</div>
             <div style="font-size:.63rem;color:#9ca3af;font-weight:700;text-transform:uppercase">Set to cancel</div>
           </div>
         </div>
@@ -2557,7 +2579,7 @@ function render(data) {
       </div>
       <div class="stat-row">
         <span class="stat-label">Monthly churn rate</span>
-        <span class="stat-val ${(tm.churn_rate||0) > 5 ? 'red' : 'green'}">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</span>
+        <span class="stat-val ${(tm.churn_rate_rate||0) > 5 ? 'red' : 'green'}">${tm.churn_rate_rate != null ? tm.churn_rate_rate + "%" : "—"}</span>
       </div>
       <div class="inner-divider">By membership type</div>
       <div class="membership-scroll">
@@ -3916,11 +3938,11 @@ function render(data) {
       `<div class="card col-6">
         <div class="card-title">Members</div>
         <div class="card-headline" style="margin-bottom:8px">Full membership</div>
-        <div class="stat-row"><span class="stat-label">Active members</span><span class="stat-val">${tm.active ?? "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Active members</span><span class="stat-val">${tm.total_members ?? "—"}</span></div>
         <div class="stat-row"><span class="stat-label">Recurring</span><span class="stat-val">${tm.recurring ?? "—"}</span></div>
         <div class="stat-row"><span class="stat-label">Joined this month</span><span class="stat-val green">${tm.joined_this_month != null ? "+" + tm.joined_this_month : "—"}</span></div>
         <div class="stat-row"><span class="stat-label">Paused</span><span class="stat-val">${tm.paused ?? "—"}</span></div>
-        <div class="stat-row"><span class="stat-label">Monthly churn</span><span class="stat-val ${(tm.churn||0)>3?'red':'green'}">${tm.churn != null ? tm.churn + "%" : "—"}</span></div>
+        <div class="stat-row"><span class="stat-label">Monthly churn</span><span class="stat-val ${(tm.churn_rate||0)>3?'red':'green'}">${tm.churn_rate != null ? tm.churn_rate + "%" : "—"}</span></div>
         <div style="font-size:.68rem;color:#c4b5fd;margin-top:8px"><span onclick="goTab('members')" style="color:#7c3aed;cursor:pointer;font-weight:600">Open Members tab →</span></div>
       </div>`,
       // At-a-glance tiles
@@ -3929,7 +3951,7 @@ function render(data) {
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
           ${stat(jsAttention, "Need attention", jsAttention ? "#d97706" : "#059669", "jumpstart")}
           ${stat(ibOverdue, "InBody overdue", ibOverdue ? "#dc2626" : "#059669", "inbody")}
-          ${stat(tm.active != null ? tm.active : "—", "Active", "#111", "members")}
+          ${stat(tm.total_members != null ? tm.total_members : "—", "Active", "#111", "members")}
         </div>
       </div>`,
       // Your Asana tasks (JoJo's own, by email)

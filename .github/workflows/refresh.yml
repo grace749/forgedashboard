@@ -12,6 +12,11 @@ on:
     # Afternoon refresh ~3-4pm Belfast:
     - cron: "12 15 * * *"
   workflow_dispatch: # allow manual trigger from GitHub UI
+    inputs:
+      report_force:
+        description: "Set to 1 to generate this month's report now"
+        required: false
+        default: ""
 
 permissions:
   contents: write  # needed to commit data.json back to the repo
@@ -62,6 +67,8 @@ jobs:
           STRIPE_ACCESS_TOKEN: ${{ secrets.STRIPE_ACCESS_TOKEN }}
           ATRISK_SCRIPT_URL: ${{ secrets.ATRISK_SCRIPT_URL }}
           CHAT_SCRIPT_URL: ${{ secrets.CHAT_SCRIPT_URL }}
+          REPORT_SCRIPT_URL: ${{ secrets.REPORT_SCRIPT_URL }}
+          REPORT_FORCE: ${{ github.event.inputs.report_force }}
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: cd scripts && python build_data.py
@@ -70,7 +77,7 @@ jobs:
         run: |
           git config user.name "forge-dashboard-bot"
           git config user.email "bot@theforge.pt"
-          git add data/data.json data/coach-data.json data/class_counts.json data/ai_cache.json
+          git add data/data.json data/coach-data.json data/reports.json data/class_counts.json data/ai_cache.json
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: refresh dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           # Retry in case another run pushed meanwhile. data/* are GENERATED files,

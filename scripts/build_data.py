@@ -90,6 +90,14 @@ try:
 except Exception as ex:
     print(f"[cfo] live advice failed, keeping sheet advice: {ex}")
 
+# ── Monthly report (last Friday of the month, or REPORT_FORCE=1) ──────────
+try:
+    import monthly_report
+    monthly_report.maybe_generate(data)
+    data["reports"] = monthly_report._load_reports()
+except Exception as ex:
+    print(f"[report] skipped: {ex}")
+
 OUTPUT.write_text(json.dumps(data, indent=2))
 print(f"Wrote {OUTPUT}")
 
@@ -101,6 +109,7 @@ COACH_STRIP = ["xero", "starling", "kpi", "gocardless", "stripe",   # finance
                "marketing",                                         # ads
                "growth_sprint",                                     # growth
                "sop",                                               # SOPs
+               "reports",                                           # monthly reports (contain finance/ads)
                "brief"]                                             # owner home hub (has enquiries)
 coach = {k: v for k, v in data.items() if k not in COACH_STRIP}
 coach["role"] = "coach"
