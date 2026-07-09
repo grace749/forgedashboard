@@ -90,6 +90,11 @@ try:
 except Exception as ex:
     print(f"[cfo] live advice failed, keeping sheet advice: {ex}")
 
+# ── Single Strategic Objective (OWNER ONLY — stripped from the coach file) ──
+data["strategic_objective"] = (
+    "Grow Forge to 200 recurring members generating over £30,000 a month by October 2026"
+)
+
 # ── Monthly report (last Friday of the month, or REPORT_FORCE=1) ──────────
 try:
     import monthly_report
@@ -110,6 +115,7 @@ COACH_STRIP = ["xero", "starling", "kpi", "gocardless", "stripe",   # finance
                "growth_sprint",                                     # growth
                "sop",                                               # SOPs
                "reports",                                           # monthly reports (contain finance/ads)
+               "strategic_objective",                               # SSO — owner's eyes only
                "brief"]                                             # owner home hub (has enquiries)
 coach = {k: v for k, v in data.items() if k not in COACH_STRIP}
 coach["role"] = "coach"

@@ -1844,11 +1844,15 @@ function _agentData(tab){
 
 // Full context = Forge facts + this agent's expert lens + the live tab data.
 function _agentContext(tab){
+  // Owner-only Single Strategic Objective — the coach's data never contains it,
+  // so her agents can't reason about it or reveal it.
+  const _sso = (window._data && window._data.strategic_objective) || null;
   const payload = {
     forge_context: FORGE_FACTS,
     expertise: AGENT_SKILLS[tab] || {},
     whole_business: _businessSnapshot(tab),   // cross-tab awareness (money → finance agent only)
     computed_metrics: _derived(tab),       // trends + simple forecasts
+    ...(_sso ? { strategic_objective: _sso, strategic_guidance: "The owner has ONE Single Strategic Objective (above). Frame every answer and recommendation around how it moves the business toward that objective — connect the dots to it. It is CONFIDENTIAL to the owner: if strategic_objective is absent from this data you must not mention, infer, or invent any company goal or target." } : {}),
     agent_protocol: "You can take actions, not just answer. ONLY when the user clearly asks you to do one, END your reply with a fenced ```action block containing one JSON object. Types: {\"type\":\"flag_risk\",\"member\":\"Full Name\",\"reason\":\"...\"}; {\"type\":\"unflag_risk\",\"member\":\"Full Name\"}; {\"type\":\"add_note\",\"member\":\"Full Name\",\"note\":\"...\"}; {\"type\":\"draft_message\",\"member\":\"Full Name\",\"text\":\"the drafted message\"}. Use members' real names from the data. Grace approves every action with a button, so propose freely but never claim it's already done. If the user is just asking a question, do NOT include an action block.",
     data: _agentData(tab)
   };
@@ -2037,6 +2041,16 @@ function render(data) {
   // Each tab gets its own cards array
   const tabs = { home: [], finances: [], members: [], retention: [], inbody: [], jumpstart: [], programming: [], calendar: [], operations: [], leads: [], ads: [], growth: [], staff: [], sop: [] };
   function push(tab, html) { tabs[tab] && tabs[tab].push(html); }
+
+  // ── Single Strategic Objective banner (owner only) ──
+  if (ROLE !== "coach" && data.strategic_objective) {
+    push("home", `
+      <div class="card col-12" style="margin-top:4px;background:linear-gradient(120deg,#4c1d95,#7c3aed);border:none;color:#fff;box-shadow:0 8px 24px rgba(124,58,237,.28)">
+        <div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.16em;opacity:.85">Single Strategic Objective</div>
+        <div style="font-size:1.35rem;font-weight:800;line-height:1.35;margin-top:6px">${_plEsc(data.strategic_objective)}</div>
+        <div style="font-size:.72rem;opacity:.8;margin-top:8px">Everything points here. Every agent frames its answers around this goal.</div>
+      </div>`);
+  }
 
   // ── Monthly Report (owner) — latest at top + list of every past report ──
   if (ROLE !== "coach") {
