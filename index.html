@@ -370,10 +370,10 @@
 <div class="tab-bar">
   <button class="tab-btn active" onclick="switchTab('home',this)">Home</button>
   <button class="tab-btn" onclick="switchTab('finances',this)">Finances</button>
+  <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('members',this)">Members</button>
   <button class="tab-btn" onclick="switchTab('retention',this)">Retention</button>
   <button class="tab-btn" onclick="switchTab('inbody',this)">InBody</button>
-  <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('programming',this)">Programming</button>
   <button class="tab-btn" onclick="switchTab('calendar',this)">Calendar</button>
   <button class="tab-btn" onclick="switchTab('operations',this)">Operations</button>
@@ -1471,17 +1471,150 @@ function _opDated(title, prefix, placeholder){
         </div>`).join("") : `<p style="color:#ccc;font-size:.82rem;padding:4px 0">Nothing scheduled.</p>`}
     </div>`;
 }
+const _opFmtD = d => { if (!d) return "—"; const x = new Date(d + "T12:00:00"); return isNaN(x) ? d : x.toLocaleDateString("en-IE", { day:"numeric", month:"short", year:"numeric" }); };
+
+// Checklist rows without a card wrapper — embedded inside Supplies/Clothing.
+function _opCheckInner(prefix, placeholder){
+  const items = _shList(prefix);
+  return `
+    <div style="display:flex;gap:6px;margin:8px 0">
+      <input id="${prefix}-in" placeholder="${placeholder}" onkeydown="if(event.key==='Enter')opAdd('${prefix}','${prefix}-in')" style="flex:1;font-size:.82rem;padding:7px 10px;border:1px solid #e5e7eb;border-radius:8px;outline:none">
+      <button onclick="opAdd('${prefix}','${prefix}-in')" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:8px;padding:7px 13px;cursor:pointer">Add</button>
+    </div>
+    ${items.length ? items.map(i => `
+      <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
+        <input type="checkbox" ${i.done?"checked":""} onchange="opToggle('${i._key}')" style="width:16px;height:16px;cursor:pointer">
+        <span style="flex:1;font-size:.85rem;color:${i.done?'#c4b5fd':'#111'};text-decoration:${i.done?'line-through':'none'}">${_plEsc(i.title)}</span>
+        <button onclick="opDel('${i._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+      </div>`).join("") : `<p style="color:#ccc;font-size:.82rem;padding:2px 0">Nothing here yet.</p>`}`;
+}
+
+// Supplies & Sundries — item catalogue (vendors / price / last ordered) + a to-order list.
+async function addSupply(){
+  const name = _val("opsupply-name"); if (!name) { document.getElementById("opsupply-name").focus(); return; }
+  await _shAdd("opsupply", { title:name, vendors:_val("opsupply-vendors"), price:_val("opsupply-price"), date:_val("opsupply-date") });
+  ["opsupply-name","opsupply-vendors","opsupply-price","opsupply-date"].forEach(id => { const e=document.getElementById(id); if (e) e.value=""; });
+  renderOps();
+}
+function _opSupplies(){
+  const cat = _shList("opsupply");
+  return `
+    <div class="card col-6">
+      <div class="card-title">Supplies &amp; Sundries</div>
+      <div class="card-headline" style="margin-bottom:8px">Item catalogue</div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:.8rem;min-width:420px">
+          <thead><tr style="font-size:.58rem;text-transform:uppercase;letter-spacing:.05em;color:#bbb">
+            <th style="text-align:left;padding:4px 6px 4px 0;border-bottom:1px solid #eee">Item</th>
+            <th style="text-align:left;padding:4px 6px;border-bottom:1px solid #eee">Vendor(s)</th>
+            <th style="text-align:right;padding:4px 6px;border-bottom:1px solid #eee">Price</th>
+            <th style="text-align:right;padding:4px 6px;border-bottom:1px solid #eee">Last ordered</th>
+            <th style="border-bottom:1px solid #eee"></th></tr></thead>
+          <tbody>
+            ${cat.length ? cat.map(i => `<tr>
+              <td style="padding:6px 6px 6px 0;border-bottom:1px solid #f9f9fc;font-weight:600;color:#111">${_plEsc(i.title)}</td>
+              <td style="padding:6px;border-bottom:1px solid #f9f9fc;color:#6b7280">${_plEsc(i.vendors||'—')}</td>
+              <td style="padding:6px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${i.price?_plEsc(i.price):'—'}</td>
+              <td style="padding:6px;border-bottom:1px solid #f9f9fc;text-align:right;color:#9ca3af;white-space:nowrap">${_opFmtD(i.date)}</td>
+              <td style="padding:6px 0 6px 6px;border-bottom:1px solid #f9f9fc;text-align:right"><button onclick="opDel('${i._key}')" style="color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button></td>
+            </tr>`).join("") : `<tr><td colspan="5" style="color:#ccc;padding:6px 0;font-size:.82rem">No items yet — add one below.</td></tr>`}
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:8px">
+        <input id="opsupply-name" placeholder="Item" style="flex:2;min-width:100px;font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <input id="opsupply-vendors" placeholder="Vendor(s)" style="flex:2;min-width:100px;font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <input id="opsupply-price" placeholder="Price" style="width:70px;font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <input id="opsupply-date" type="date" title="Last ordered" style="font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <button onclick="addSupply()" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:6px 13px;cursor:pointer">Add item</button>
+      </div>
+      <div class="inner-divider">Need to order</div>
+      ${_opCheckInner("opsupplyneed","Add something we need…")}
+    </div>`;
+}
+
+// Clothing — T-Shirt Studio link + latest orders + a to-order list.
+async function addClothOrder(){
+  const name = _val("opclothorder-in"); if (!name) { document.getElementById("opclothorder-in").focus(); return; }
+  await _shAdd("opclothorder", { title:name, date:_val("opclothorder-date") });
+  document.getElementById("opclothorder-in").value = ""; const dd=document.getElementById("opclothorder-date"); if (dd) dd.value="";
+  renderOps();
+}
+function openTshirt(){
+  let url = sharedGet("setting:tshirt_url","") || "";
+  if (!url) { url = (prompt("Paste your T-Shirt Studio login URL:", "https://www.tshirtstudio.com/account") || "").trim(); if (!url) return; sharedSet("setting:tshirt_url", url); }
+  window.open(url, "_blank", "noopener");
+}
+function _opClothing(){
+  const orders = _shList("opclothorder").sort((a,b) => (b.date||"").localeCompare(a.date||""));
+  return `
+    <div class="card col-6">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap">
+        <div><div class="card-title">Clothing Orders</div><div class="card-headline" style="margin-bottom:0">T-Shirt Studio</div></div>
+        <button onclick="openTshirt()" style="font-size:.76rem;font-weight:700;color:#fff;background:#111;border:none;border-radius:8px;padding:8px 13px;cursor:pointer;white-space:nowrap">T-Shirt Studio login ↗</button>
+      </div>
+      <div class="inner-divider">Latest orders</div>
+      <div style="display:flex;gap:6px;margin-bottom:6px">
+        <input id="opclothorder-date" type="date" style="font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <input id="opclothorder-in" placeholder="What was ordered" onkeydown="if(event.key==='Enter')addClothOrder()" style="flex:1;font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <button onclick="addClothOrder()" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:6px 13px;cursor:pointer">Add</button>
+      </div>
+      ${orders.length ? orders.slice(0,8).map(i => `
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #f6f6fa">
+          <span style="font-size:.85rem;color:#111">${_plEsc(i.title)}</span>
+          <span style="display:flex;gap:8px;align-items:center;white-space:nowrap"><span style="font-size:.72rem;color:#9ca3af">${_opFmtD(i.date)}</span>
+          <button onclick="opDel('${i._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button></span>
+        </div>`).join("") : `<p style="color:#ccc;font-size:.82rem;padding:2px 0">No orders logged yet.</p>`}
+      <div class="inner-divider">Need to order</div>
+      ${_opCheckInner("opclothneed","Add clothing we need…")}
+    </div>`;
+}
+
+// One Meetings card: Head Coaches · Studio Coaches · 1:1 — next date + 3 latest each.
+function _opMeetings(){
+  const today = new Date().toISOString().slice(0,10);
+  const fmtFull = d => { if (!d) return "—"; const x=new Date(d+"T12:00:00"); return isNaN(x)?d:x.toLocaleDateString("en-IE",{weekday:"short",day:"numeric",month:"short"}); };
+  const secs = [
+    { label:"Head Coaches",   prefix:"opmtghead" },
+    { label:"Studio Coaches", prefix:"opmtgstudio" },
+    { label:"1:1",            prefix:"opmtg121" },
+  ];
+  const col = s => {
+    const all = _shList(s.prefix);
+    const next = all.filter(i => i.date && i.date >= today).sort((a,b) => a.date.localeCompare(b.date))[0];
+    const latest = [...all].sort((a,b) => (b.date||"").localeCompare(a.date||"")).slice(0,3);
+    return `
+      <div>
+        <div style="font-weight:800;color:#111;font-size:.95rem">${s.label}</div>
+        <div style="font-size:.72rem;color:#7c3aed;font-weight:700;margin-bottom:8px">Next: ${next ? fmtFull(next.date) : "none scheduled"}</div>
+        <div style="display:flex;gap:5px;margin-bottom:8px">
+          <input id="${s.prefix}-date" type="date" style="font-size:.74rem;padding:5px 6px;border:1px solid #e5e7eb;border-radius:6px;outline:none">
+          <input id="${s.prefix}-in" placeholder="Agenda / notes" onkeydown="if(event.key==='Enter')opAdd('${s.prefix}','${s.prefix}-in','${s.prefix}-date')" style="flex:1;min-width:0;font-size:.74rem;padding:5px 7px;border:1px solid #e5e7eb;border-radius:6px;outline:none">
+          <button onclick="opAdd('${s.prefix}','${s.prefix}-in','${s.prefix}-date')" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:6px;padding:5px 10px;cursor:pointer">+</button>
+        </div>
+        ${latest.length ? latest.map(i => `
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid #f6f6fa">
+            <div style="min-width:0"><div style="font-size:.8rem;color:#111">${_plEsc(i.title)}</div>
+              <div style="font-size:.68rem;color:#9ca3af">${fmtFull(i.date)}</div></div>
+            <button onclick="opDel('${i._key}')" style="font-size:.8rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+          </div>`).join("") : `<p style="color:#ccc;font-size:.8rem;padding:2px 0">No meetings logged.</p>`}
+      </div>`;
+  };
+  return `
+    <div class="card col-12">
+      <div class="card-title">Meetings</div>
+      <div class="card-headline" style="margin-bottom:12px">Head Coaches · Studio Coaches · 1:1</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px">
+        ${secs.map(col).join("")}
+      </div>
+    </div>`;
+}
+
 function renderOps(){
   const el = document.getElementById("opsBody"); if (!el) return;
   el.className = "";  // it's a wrapper, not a card
   el.style.cssText = "display:contents";
-  el.innerHTML =
-      _opChecklist("Supplies &amp; sundries to order", "opsupply", "Add an item to order (e.g. blue roll, chalk)")
-    + _opChecklist("Clothing orders", "opcloth", "Add a clothing item / order")
-    + _opDated("Head coaches' meetings", "opmtghead", "Agenda / notes")
-    + _opDated("Studio coaches' meetings", "opmtgstudio", "Agenda / notes")
-    + _opDated("1:1 meetings", "opmtg121", "Who + topic")
-    + _opDated("Events", "opevent", "Event name");
+  el.innerHTML = _opSupplies() + _opClothing() + _opMeetings() + _opDated("Events", "opevent", "Event name");
 }
 
 // Milestone t-shirt tracker spreadsheet — first click asks for the link, saves
