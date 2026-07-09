@@ -40,7 +40,10 @@ EXTRA_COLS = [
     ("MFA_TBL",        "VFL",        "VFL"),           # visceral fat level
     ("BCA_TBL",        "INBODY_AGE", "InBodyAge"),
 ]
-EXPORT_COLS = BASE_COLS + EXTRA_COLS
+# DISABLED: the extra field codes above are guesses and made the Lookin'Body
+# export error out, wiping ALL scans. Stay on the proven base columns until the
+# exact Lookin'Body field codes are confirmed. Then set: BASE_COLS + EXTRA_COLS.
+EXPORT_COLS = list(BASE_COLS)
 
 
 def _login(session):
@@ -146,12 +149,19 @@ def run():
     if not uids:
         return {"scans": [], "total": 0, "configured": True}
 
-    # Try the extended column set; if it yields nothing (e.g. an unknown field
-    # code), fall back to the proven base columns so data is never lost.
-    rows = _parse_export(_export_scans(session, uids, EXPORT_COLS), len(EXPORT_COLS))
+    # Export defensively: never let a bad column set crash the fetcher (which
+    # previously wiped ALL scans). Fall back to base columns on any error.
+    rows = []
+    try:
+        rows = _parse_export(_export_scans(session, uids, EXPORT_COLS), len(EXPORT_COLS))
+    except Exception as ex:
+        print(f"[inbody] export failed ({ex}); trying base columns")
     if not rows:
-        print("[inbody] extended export empty — falling back to base columns")
-        rows = _parse_export(_export_scans(session, uids, BASE_COLS), len(BASE_COLS))
+        try:
+            rows = _parse_export(_export_scans(session, uids, BASE_COLS), len(BASE_COLS))
+        except Exception as ex:
+            print(f"[inbody] base export also failed: {ex}")
+            return {"scans": [], "total": 0, "configured": True}
 
     # Columns are positional: 0 Name,1 ID,2 TestDate,3 WT,4 SMM,5 PBF,6 BMI,
     # then (extended) 7 TBW,8 PROTEIN,9 MINERAL,10 VFL,11 InBodyAge

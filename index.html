@@ -867,6 +867,22 @@ async function savePauseReason(name, inputId, btn){
   btn.textContent = "Saved ✓";
   setTimeout(() => { btn.textContent = "Save"; btn.disabled = false; }, 1500);
 }
+// SOP category chip → list every SOP in that category (built / not built).
+function showSopCategory(type){
+  const items = (window._sopByType || {})[type] || [];
+  const built = items.filter(i => i.built).length;
+  document.getElementById("modal-title").textContent = `${type} SOPs — ${built}/${items.length} built`;
+  const list = document.getElementById("modal-list");
+  const sorted = [...items].sort((a,b) => (a.built?1:0) - (b.built?1:0));   // not-built first
+  list.innerHTML = items.length ? sorted.map(it => `
+    <li style="list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid #f3f4f6">
+      <span style="font-size:.86rem;color:#111">${it.built ? "✅" : "⬜"} ${_plEsc(it.task)}</span>
+      ${it.owner ? `<span style="font-size:.7rem;color:#aaa;white-space:nowrap">${_plEsc(it.owner)}</span>` : ""}
+    </li>`).join("") : "<li style='color:#aaa'>None</li>";
+  document.getElementById("modal-task-done").style.display = "none";
+  document.getElementById("modal-asana-link").style.display = "none";
+  document.getElementById("modal-overlay").classList.add("open");
+}
 function closeModal(e) {
   if (!e || e.target === document.getElementById("modal-overlay")) {
     document.getElementById("modal-overlay").classList.remove("open");
@@ -2572,6 +2588,8 @@ function render(data) {
     return hit ? { name: memberNorm[hit], resolved: true, handle } : { name: raw, resolved: false, handle };
   };
   const delta = v => v == null ? "" : (v > 0 ? `<span style="color:#059669">▲${v}</span>` : v < 0 ? `<span style="color:#dc2626">▼${Math.abs(v)}</span>` : "—");
+  // Extra InBody metrics only show once the fetcher actually returns them.
+  const ibExtra = inbody.some(s => s.tbw != null || s.protein != null || s.mineral != null || s.vfl != null || s.inbody_age != null);
   push("inbody", `
     <div class="card col-12">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap">
@@ -2592,11 +2610,12 @@ function render(data) {
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Weight (lb)</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Muscle SMM (lb)</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Body fat %</th>
+                ${ibExtra ? `
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Visceral fat</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Protein</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Hydration (TBW)</th>
                 <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">Mineral</th>
-                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">InBody age</th>
+                <th style="text-align:right;padding:6px 8px;border-bottom:2px solid #f0f0f5">InBody age</th>` : ""}
                 <th style="text-align:right;padding:6px 0 6px 8px;border-bottom:2px solid #f0f0f5">Next due</th>
               </tr>
             </thead>
@@ -2614,11 +2633,12 @@ function render(data) {
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.weight ?? "—"} <span style="font-size:.7rem">${delta(s.weight_change)}</span></td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.smm ?? "—"} <span style="font-size:.7rem">${delta(s.smm_change)}</span></td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.pbf ?? "—"}% <span style="font-size:.7rem">${delta(s.pbf_change)}</span></td>
+                  ${ibExtra ? `
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.vfl ?? "—"}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.protein ?? "—"}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.tbw ?? "—"}</td>
                   <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.mineral ?? "—"}</td>
-                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.inbody_age ?? "—"}</td>
+                  <td style="padding:8px 8px;border-bottom:1px solid #f9f9fc;text-align:right;color:#111">${s.inbody_age ?? "—"}</td>` : ""}
                   <td style="padding:8px 0 8px 8px;border-bottom:1px solid #f9f9fc;text-align:right">${due}</td>
                 </tr>`;
               }).join("")}
@@ -3323,6 +3343,9 @@ function render(data) {
   const sopStats = sop.stats || {};
   const sopSections = sop.sections || [];
   const typeColour = { Facilities:"#0891b2", Coaches:"#7c3aed", Marketing:"#db2777", Clients:"#059669", General:"#64748b" };
+  // Group every SOP by category so the chips can open the full list.
+  window._sopByType = {};
+  sopSections.forEach(sec => (sec.items||[]).forEach(it => { (window._sopByType[it.type] = window._sopByType[it.type] || []).push(it); }));
 
   // The COO agent flags SOP GAPS (processes with no SOP in the sheet at all).
   // Fold those into the completion metric so it reflects the real work left —
@@ -3395,8 +3418,8 @@ function render(data) {
         <div style="font-size:.68rem;color:#9ca3af;margin-bottom:6px">% of all identified SOPs — the ${sopStats.total} in your sheet plus the ${sopGapN} gap${sopGapN!==1?"s":""} the COO agent flagged above.</div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
           ${(sopStats.by_type||[]).map(t => `
-            <span style="font-size:.75rem;font-weight:600;padding:4px 10px;border-radius:8px;background:#fafafa;border:1px solid #f0f0f5;color:${typeColour[t.type]||'#64748b'}">
-              ${t.type} ${t.built}/${t.total}
+            <span onclick="showSopCategory('${(t.type||'').replace(/'/g,"")}')" title="See all ${t.type} SOPs" style="font-size:.75rem;font-weight:600;padding:4px 10px;border-radius:8px;background:#fafafa;border:1px solid #f0f0f5;color:${typeColour[t.type]||'#64748b'};cursor:pointer">
+              ${t.type} ${t.built}/${t.total} ↗
             </span>`).join("")}
         </div>
         ${sop.not_built_list && sop.not_built_list.length ? `
@@ -3413,8 +3436,8 @@ function render(data) {
     </div>
   `);
 
-  // One card per cadence section
-  sopSections.forEach(section => {
+  // One card per cadence section (the catch-all "General" card is hidden).
+  sopSections.filter(section => (section.name||"").toLowerCase() !== "general").forEach(section => {
     const builtN = section.items.filter(i => i.built).length;
     push("sop", `
       <div class="card col-4" style="height:340px">
