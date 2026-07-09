@@ -1559,23 +1559,44 @@ function _pageReportSections(key){
   const d = window._data || {}, tm = d.teamup || {}, js = (d.jumpstart||{}).stats || {},
         ib = (d.inbody||{}).scans || [];
   const gbp = v => (typeof v === "number") ? "£" + v.toLocaleString("en-GB",{maximumFractionDigits:0}) : "—";
-  const n = v => (v===0||v) ? v : "—";
+  const gbp2 = v => (typeof v === "number") ? "£" + v.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2}) : "—";
+  const n  = v => (v===0||v) ? v : "—";
+  const sg = v => (typeof v==="number") ? (v>0?"+":"")+(Math.round(v*10)/10) : "—";
+  const nm = x => x==null ? "" : (typeof x==="string" ? x : (x.name || ""));
+
   if (key === "members"){
-    const top = (tm.breakdown||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0)).slice(0,6);
-    return [{ heading:"Members", lines:[
-      `Active members: ${n(tm.total_members)}`,
-      `Recurring: ${n(tm.recurring)} · Trials: ${n(tm.trial)} · Paused: ${n(tm.paused)}`,
-      `Joined this month: ${n(tm.joined_this_month)} · Monthly churn: ${n(tm.churn_rate)}%`,
-      tm.monthly_recurring_revenue ? `Monthly recurring revenue: ${gbp(Math.round(tm.monthly_recurring_revenue))}` : null,
-      "By type: " + (top.length ? top.map(b=>`${b.name} ${b.count}`).join(", ") : "—"),
-    ].filter(Boolean) }];
+    const bd = (tm.breakdown||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0));
+    const leaving = (tm.leaving_members||[]).map(nm).filter(Boolean);
+    const paused  = (tm.paused_members||[]).map(nm).filter(Boolean);
+    const atRisk  = (tm.at_risk||[]).map(r => nm(r) + (r.days_absent!=null?` (${r.days_absent}d absent)`:"")).filter(Boolean);
+    return [
+      { heading:"Membership — headline", lines:[
+        `Full (recurring) members: ${n(tm.recurring)}`,
+        `Trials: ${n(tm.trial)} · Paused: ${n(tm.paused)} · Total active: ${n(tm.total_members)}`,
+        `Monthly recurring revenue: ${gbp(tm.monthly_recurring_revenue)} · Avg price/member: ${gbp2(tm.avg_member_price)}`,
+        `Average tenure: ${n(tm.avg_tenure_months)} months`,
+      ]},
+      { heading:"Movement this month", lines:[
+        `Joined this month: ${n(tm.new_this_month)} · Cancellations this month: ${n(tm.cancellations_this_month)}`,
+        `Monthly churn: ${n(tm.churn_rate)}% · Cancelled last month: ${n(tm.cancelled_last_month)} · Cancelled YTD: ${n(tm.cancelled_ytd)}`,
+        `At-risk members: ${(tm.at_risk||[]).length}`,
+        leaving.length ? `Leaving: ${leaving.join(", ")}` : "Leaving: none",
+        paused.length  ? `Paused: ${paused.join(", ")}` : "Paused: none",
+        atRisk.length  ? `At risk: ${atRisk.slice(0,15).join(", ")}${atRisk.length>15?` +${atRisk.length-15} more`:""}` : null,
+      ].filter(Boolean)},
+      { heading:"By membership type", lines:
+        bd.length ? bd.map(b=>`${b.name}: ${b.count}`) : ["—"] },
+    ];
   }
   if (key === "retention"){
+    const leaving = (tm.leaving_members||[]).map(nm).filter(Boolean);
+    const paused  = (tm.paused_members||[]).map(nm).filter(Boolean);
     return [{ heading:"Retention", lines:[
       `Monthly churn: ${n(tm.churn_rate)}%`,
-      `Leaving this month: ${n(tm.cancellations_this_month)}`,
-      `Paused memberships: ${n(tm.paused)}`,
-      `Active members: ${n(tm.total_members)}`,
+      `Leaving this month: ${n(tm.cancellations_this_month)}` + (leaving.length?` — ${leaving.join(", ")}`:""),
+      `Cancelled last month: ${n(tm.cancelled_last_month)} · Cancelled YTD: ${n(tm.cancelled_ytd)}`,
+      `Paused memberships: ${n(tm.paused)}` + (paused.length?` — ${paused.join(", ")}`:""),
+      `Average tenure: ${n(tm.avg_tenure_months)} months · Active members: ${n(tm.total_members)}`,
     ] }];
   }
   if (key === "jumpstart"){
@@ -1585,11 +1606,35 @@ function _pageReportSections(key){
     ] }];
   }
   if (key === "inbody"){
-    const overdue = ib.filter(s=>s && s.overdue).length;
-    return [{ heading:"InBody", lines:[
-      `Members with scans: ${ib.length}`,
-      `Scans overdue: ${overdue}`,
-    ] }];
+    const today = new Date();
+    const daysSince = s => s.last_scan ? Math.floor((today - new Date(s.last_scan))/86400000) : null;
+    // progress = fat down + muscle up + weight down (each only when it's an improvement)
+    const withDelta = ib.filter(s => s.pbf_change!=null || s.smm_change!=null || s.weight_change!=null);
+    const score = s => (s.pbf_change<0?-s.pbf_change:0) + (s.smm_change>0?s.smm_change:0) + (s.weight_change<0?-s.weight_change*0.5:0);
+    const top = withDelta.slice().sort((a,b)=>score(b)-score(a)).slice(0,5);
+    const wLost = withDelta.filter(s=>s.weight_change<0);
+    const fLost = withDelta.filter(s=>s.pbf_change<0);
+    const mGain = withDelta.filter(s=>s.smm_change>0);
+    const sum = (arr,k)=>arr.reduce((t,s)=>t+(s[k]||0),0);
+    const ages = ib.map(s=>s.inbody_age).filter(v=>v!=null);
+    const avgAge = ages.length ? Math.round(ages.reduce((a,b)=>a+b,0)/ages.length) : null;
+    const overdue = ib.filter(s=>s.overdue).length;
+    const due = ib.map(s=>({name:s.name, days:daysSince(s)})).filter(x=>x.days!=null && x.days>30).sort((a,b)=>b.days-a.days);
+
+    const progress = { heading:"InBody — member progress", lines:[
+      `Members scanned: ${ib.length} · Repeat-scan members (progress tracked): ${withDelta.length} · Scans overdue: ${overdue}`,
+      top.length ? "Top movers: " + top.map(s=>`${s.name} (fat ${sg(s.pbf_change)}%, muscle ${sg(s.smm_change)}kg, weight ${sg(s.weight_change)}kg)`).join("; ")
+                 : "Top movers: — (needs at least two scans per member)",
+      `Weight lost (since last scan): ${wLost.length?`${(Math.round(-sum(wLost,'weight_change')*10)/10)}kg across ${wLost.length} members`:"—"}`,
+      `Body fat lost (since last scan): ${fLost.length?`avg ${sg(sum(fLost,'pbf_change')/fLost.length)}% across ${fLost.length} members`:"—"}`,
+      `Muscle built (since last scan): ${mGain.length?`+${Math.round(sum(mGain,'smm_change')*10)/10}kg across ${mGain.length} members`:"—"}`,
+      `Average InBody age: ${avgAge!=null?avgAge:"— (awaiting extended InBody data)"}`,
+      `Mineral improvement: — (awaiting extended InBody data)`,
+    ]};
+    const dueSec = { heading:`Due another scan — 30+ days since last scan (${due.length})`, lines:
+      due.length ? due.slice(0,25).map(x=>`${x.name} — ${x.days} days ago`).concat(due.length>25?[`+${due.length-25} more`]:[])
+                 : ["Everyone scanned within the last 30 days 🎉"] };
+    return [progress, dueSec];
   }
   if (key === "operations"){
     const ev = ((d.events||{}).events)||[], ts = d.tshirt||{};
@@ -1604,10 +1649,36 @@ function _pageReportSections(key){
     if (supplyNeed.length) lines.push("Supplies to order: " + supplyNeed.join(", "));
     return [{ heading:"Operations", lines }];
   }
+  if (key === "finances"){
+    const st = d.starling || {};
+    const thisYm = new Date().toISOString().slice(0,7);
+    const months = (st.monthly||[]).filter(m=>m.month!==thisYm).sort((a,b)=>(b.month||"").localeCompare(a.month||""));
+    const lf = months[0] || {};
+    return [{ heading:"Finances", lines:[
+      `Cash now: ${gbp(st.cash_position)} · Net last 30 days: ${sg(st.net_30)===("—")?"—":gbp(st.net_30)}`,
+      `Reserved in pots: ${gbp(st.earmarked)} · Committed monthly outgoings: ${gbp(st.committed_monthly)}`,
+      lf.month ? `Last full month (${lf.month}): in ${gbp(lf.revenue)}, out ${gbp(lf.expenses)}, net ${gbp(lf.profit)}` : "Last full month: —",
+    ] }];
+  }
+  if (key === "leads"){
+    const ghl = d.ghl || [], mk = d.marketing || {};
+    return [{ heading:"Leads", lines:[
+      `Open leads/enquiries: ${ghl.length}`,
+      `Close rate: ${n(mk.close_rate)}${typeof mk.close_rate==="number"?"%":""} · Leads (period): ${n(mk.leads)}`,
+    ] }];
+  }
+  if (key === "ads"){
+    const mk = d.marketing || {}, lt = mk.lifetime || {};
+    return [{ heading:"Ads", lines:[
+      `Lifetime ad spend: ${gbp(lt.spend)} · Leads: ${n(lt.leads)} · Sales: ${n(lt.sales)}`,
+      `Cost per lead: ${n(mk.cost_per_lead)===("—")?"—":gbp2(mk.cost_per_lead)} · Close rate: ${n(mk.close_rate)}${typeof mk.close_rate==="number"?"%":""}`,
+      `Lifetime income from ads: ${gbp(lt.income)} · Profit: ${gbp(lt.profit)}`,
+    ] }];
+  }
   return [{ heading:key, lines:["No data."] }];
 }
 function _pageReportMeta(key, period){
-  const titles = {members:"Members",retention:"Retention",jumpstart:"Jumpstart",inbody:"InBody",operations:"Operations"};
+  const titles = {members:"Members",retention:"Retention",jumpstart:"Jumpstart",inbody:"InBody",operations:"Operations",finances:"Finances",leads:"Leads",ads:"Ads"};
   const heading = titles[key] || key, today = new Date(), wk = period === "weekly";
   const periodLabel = wk
     ? "Week of " + today.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})
@@ -1653,8 +1724,8 @@ function _reportGenCard(key, label){
     <div class="card col-12" style="background:linear-gradient(120deg,#5b21b6,#7c3aed);border:none;color:#fff;box-shadow:0 8px 24px rgba(124,58,237,.28)">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
         <div>
-          <div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;opacity:.85">${_plEsc(label)} report</div>
-          <div style="font-size:1.05rem;font-weight:800;margin-top:2px">Generate a report to share with the team</div>
+          <div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;opacity:.85">${_plEsc(label)}</div>
+          <div style="font-size:1.15rem;font-weight:800;margin-top:2px">Generate Report</div>
         </div>
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <div style="display:inline-flex;background:rgba(255,255,255,.15);border-radius:8px;padding:3px">
@@ -2220,9 +2291,8 @@ function render(data) {
   // ── Full monthly report (owner home) — combined, covers everything ──
   if (ROLE !== "coach") push("home", _reportCard("full", "Everything you see"));
 
-  // ── Auto monthly-report history (owner-only pages) at the bottom ──
-  const AUTO_REPORT_TABS = { finances:"Finances", leads:"Leads", ads:"Ads" };
-  Object.keys(AUTO_REPORT_TABS).forEach(k => { if (tabs[k]) push(k, _reportCard(k, AUTO_REPORT_TABS[k])); });
+  // (Per-page report generators are pinned to the top of each page below, in the
+  //  same pass that pins the AI chat card — see GEN_REPORT_TABS.)
 
   // ── "Today" hub — the single most urgent thing from every tab ──
   (function todayHub() {
@@ -4137,9 +4207,10 @@ function render(data) {
   // Give each content tab its AI chat agent, pinned at the top.
   Object.keys(tabs).forEach(tab => { if (AGENT_TABS[tab]) tabs[tab].unshift(chatCard(tab)); });
 
-  // Report generator pinned to the very top of the shareable pages (both roles).
+  // Report generator pinned to the very top of every report page (owner-only
+  // pages simply aren't shown to the coach, so no sensitive data leaks).
   const GEN_REPORT_TABS = { members:"Members", retention:"Retention", jumpstart:"Jumpstart",
-    inbody:"InBody", operations:"Operations" };
+    inbody:"InBody", operations:"Operations", finances:"Finances", leads:"Leads", ads:"Ads" };
   Object.keys(GEN_REPORT_TABS).forEach(k => { if (tabs[k]) tabs[k].unshift(_reportGenCard(k, GEN_REPORT_TABS[k])); });
 
   // ── Render each tab ─────────────────────────────────────────
