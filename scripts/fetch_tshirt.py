@@ -24,8 +24,8 @@ GMAIL_CLIENT_ID     = os.environ.get("GMAIL_CLIENT_ID", "")
 GMAIL_CLIENT_SECRET = os.environ.get("GMAIL_CLIENT_SECRET", "")
 GMAIL_REFRESH_TOKEN = os.environ.get("GMAIL_REFRESH_TOKEN", "")
 
-SENDER   = os.environ.get("TSHIRT_SENDER", "tshirtstudio.com")
-SUBJECT  = os.environ.get("TSHIRT_SUBJECT", "order")
+SENDER   = os.environ.get("TSHIRT_SENDER", "contact@tshirtstudio.com")
+SUBJECT  = os.environ.get("TSHIRT_SUBJECT", "")   # empty → match all from the sender; we filter to real orders in code
 LOOKBACK = os.environ.get("TSHIRT_LOOKBACK", "730d")
 
 
@@ -120,7 +120,9 @@ def run():
         return {"configured": False, "orders": [],
                 "error": "Gmail not configured — add GMAIL_CLIENT_ID / GMAIL_CLIENT_SECRET / GMAIL_REFRESH_TOKEN"}
     try:
-        q = f'from:{SENDER} subject:{SUBJECT} newer_than:{LOOKBACK}'
+        q = f'from:{SENDER} newer_than:{LOOKBACK}'
+        if SUBJECT.strip():
+            q += f' subject:{SUBJECT.strip()}'
         res = svc.users().messages().list(userId="me", q=q, maxResults=100).execute()
         msgs = res.get("messages", [])
         orders, seen, total_spend = [], set(), 0.0
@@ -131,12 +133,16 @@ def run():
             body = _body_text(m.get("payload", {}))
             iso = _email_date(hdrs)
             no = _order_no(subject, body)
+            total = _total(body)
+            items = _items(body)
+            # contact@ also sends newsletters/dispatch notices — keep only real
+            # orders (something we can price or an order number).
+            if not (total or no):
+                continue
             key = no or msg["id"]
             if key in seen:
                 continue
             seen.add(key)
-            total = _total(body)
-            items = _items(body)
             if total:
                 try:
                     total_spend += float(total.replace("£", "").replace(",", ""))
