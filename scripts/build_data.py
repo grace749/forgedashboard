@@ -57,6 +57,7 @@ data = {
     "asana_script_url": os.environ.get("ASANA_SCRIPT_URL", ""),
     "atrisk_url": os.environ.get("ATRISK_SCRIPT_URL", ""),
     "chat_url": os.environ.get("CHAT_SCRIPT_URL", ""),
+    "report_url": os.environ.get("REPORT_SCRIPT_URL", ""),   # on-demand report → Google Doc
     "brief":     safe_run("brief",     fetch_brief.run),
     "ghl":       fetch_ghl_leads(),
     "jumpstart": safe_run("jumpstart", fetch_jumpstart.run),

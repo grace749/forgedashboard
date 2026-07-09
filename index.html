@@ -1552,6 +1552,123 @@ function openTshirt(){
   if (!url) { url = (prompt("Paste your T-Shirt Studio login URL:", "https://www.tshirtstudio.com/account") || "").trim(); if (!url) return; sharedSet("setting:tshirt_url", url); }
   window.open(url, "_blank", "noopener");
 }
+// ── On-demand report generation (per page) ─────────────────────────────────
+// Coaches (and owner) produce a Weekly or Monthly report for a page and either
+// download it as a PDF or push it into a shareable Google Doc for the team.
+function _pageReportSections(key){
+  const d = window._data || {}, tm = d.teamup || {}, js = (d.jumpstart||{}).stats || {},
+        ib = (d.inbody||{}).scans || [];
+  const gbp = v => (typeof v === "number") ? "£" + v.toLocaleString("en-GB",{maximumFractionDigits:0}) : "—";
+  const n = v => (v===0||v) ? v : "—";
+  if (key === "members"){
+    const top = (tm.breakdown||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0)).slice(0,6);
+    return [{ heading:"Members", lines:[
+      `Active members: ${n(tm.total_members)}`,
+      `Recurring: ${n(tm.recurring)} · Trials: ${n(tm.trial)} · Paused: ${n(tm.paused)}`,
+      `Joined this month: ${n(tm.joined_this_month)} · Monthly churn: ${n(tm.churn_rate)}%`,
+      tm.monthly_recurring_revenue ? `Monthly recurring revenue: ${gbp(Math.round(tm.monthly_recurring_revenue))}` : null,
+      "By type: " + (top.length ? top.map(b=>`${b.name} ${b.count}`).join(", ") : "—"),
+    ].filter(Boolean) }];
+  }
+  if (key === "retention"){
+    return [{ heading:"Retention", lines:[
+      `Monthly churn: ${n(tm.churn_rate)}%`,
+      `Leaving this month: ${n(tm.cancellations_this_month)}`,
+      `Paused memberships: ${n(tm.paused)}`,
+      `Active members: ${n(tm.total_members)}`,
+    ] }];
+  }
+  if (key === "jumpstart"){
+    return [{ heading:"Jumpstart (trials)", lines:[
+      `Active trials: ${n(js.active_count)} · Paused: ${n(js.paused_count)}`,
+      `Conversion rate: ${n(js.conv_rate)}% (${n(js.converted)} converted of ${n(js.total_complete)} completed)`,
+    ] }];
+  }
+  if (key === "inbody"){
+    const overdue = ib.filter(s=>s && s.overdue).length;
+    return [{ heading:"InBody", lines:[
+      `Members with scans: ${ib.length}`,
+      `Scans overdue: ${overdue}`,
+    ] }];
+  }
+  if (key === "operations"){
+    const ev = ((d.events||{}).events)||[], ts = d.tshirt||{};
+    const has = typeof _shList === "function";
+    const clothNeed  = has ? _shList("opclothneed").map(i=>i.title).filter(Boolean) : [];
+    const supplyNeed = has ? _shList("opsupplyneed").map(i=>i.title).filter(Boolean) : [];
+    const lines = [
+      `Upcoming events: ${ev.length}` + (ev.length ? " — " + ev.slice(0,6).map(e=>e.name + (e.when?` (${e.when})`:"")).join("; ") : ""),
+      `T-Shirt Studio orders in email: ${ts.count||0}` + (ts.total_spend?` · spend ${gbp(ts.total_spend)}`:""),
+    ];
+    if (clothNeed.length)  lines.push("Clothing to order: " + clothNeed.join(", "));
+    if (supplyNeed.length) lines.push("Supplies to order: " + supplyNeed.join(", "));
+    return [{ heading:"Operations", lines }];
+  }
+  return [{ heading:key, lines:["No data."] }];
+}
+function _pageReportMeta(key, period){
+  const titles = {members:"Members",retention:"Retention",jumpstart:"Jumpstart",inbody:"InBody",operations:"Operations"};
+  const heading = titles[key] || key, today = new Date(), wk = period === "weekly";
+  const periodLabel = wk
+    ? "Week of " + today.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})
+    : today.toLocaleDateString("en-GB",{month:"long",year:"numeric"});
+  return {
+    title: `The Forge — ${heading} ${wk?"Weekly":"Monthly"} Report · ${periodLabel}`,
+    subtitle: `${wk?"Weekly":"Monthly"} report · snapshot as of ${today.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})}`,
+  };
+}
+function _reportSectionsHtml(sections){
+  return sections.map(s => `<h3 style="color:#5b21b6;margin:14px 0 4px">${_chatEsc(s.heading)}</h3><ul style="margin:0 0 8px;padding-left:20px">${
+    s.lines.map(l => `<li style="margin:3px 0">${_chatEsc(l)}</li>`).join("")}</ul>`).join("");
+}
+function _rptPeriod(key){
+  const el = document.querySelector(`input[name="rpt-${key}-period"]:checked`);
+  return el ? el.value : "monthly";
+}
+function genPageReportPdf(key){
+  const period = _rptPeriod(key), meta = _pageReportMeta(key, period);
+  _downloadPdf(meta.title, `<div class="meta">${_chatEsc(meta.subtitle)}</div>` + _reportSectionsHtml(_pageReportSections(key)));
+}
+async function genPageReportDoc(key, btn){
+  const period = _rptPeriod(key), meta = _pageReportMeta(key, period), sections = _pageReportSections(key);
+  const url = (window._data||{}).report_url || "";
+  if (!url){ alert("Google Doc creation isn't set up yet (needs the report web app deployed). You can still download a PDF."); return; }
+  const old = btn ? btn.textContent : "";
+  if (btn){ btn.disabled = true; btn.textContent = "Creating…"; }
+  try{
+    const res = await fetch(url, { method:"POST", body: JSON.stringify({ title: meta.title, subtitle: meta.subtitle, sections }) });
+    const j = await res.json();
+    if (j && j.ok && j.url) window.open(j.url, "_blank", "noopener");
+    else alert("Couldn't create the Google Doc: " + ((j&&j.error)||"unknown error") + "\nYou can still download a PDF.");
+  }catch(e){ alert("Couldn't reach the report service: " + e.message + "\nYou can still download a PDF."); }
+  finally{ if (btn){ btn.disabled = false; btn.textContent = old; } }
+}
+// Interactive generator shown at the TOP of each report page.
+function _reportGenCard(key, label){
+  const R = (window._data && window._data.reports) || {};
+  const hist = Array.isArray(R[key]) ? R[key] : [];
+  const seg = "font-size:.78rem;font-weight:700;padding:5px 13px;border-radius:6px;cursor:pointer";
+  const pick = "Array.from(this.parentNode.children).forEach(l=>{l.style.background='';l.style.color='#fff'});this.style.background='#fff';this.style.color='#5b21b6'";
+  return `
+    <div class="card col-12" style="background:linear-gradient(120deg,#5b21b6,#7c3aed);border:none;color:#fff;box-shadow:0 8px 24px rgba(124,58,237,.28)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+        <div>
+          <div style="font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;opacity:.85">${_plEsc(label)} report</div>
+          <div style="font-size:1.05rem;font-weight:800;margin-top:2px">Generate a report to share with the team</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div style="display:inline-flex;background:rgba(255,255,255,.15);border-radius:8px;padding:3px">
+            <label style="${seg}" onclick="${pick}"><input type="radio" name="rpt-${key}-period" value="weekly" style="display:none">Weekly</label>
+            <label style="${seg};background:#fff;color:#5b21b6" onclick="${pick}"><input type="radio" name="rpt-${key}-period" value="monthly" checked style="display:none">Monthly</label>
+          </div>
+          <button onclick="genPageReportPdf('${key}')" style="font-size:.82rem;font-weight:700;color:#5b21b6;background:#fff;border:none;border-radius:8px;padding:8px 14px;cursor:pointer;white-space:nowrap">⬇ Download PDF</button>
+          <button onclick="genPageReportDoc('${key}', this)" style="font-size:.82rem;font-weight:700;color:#fff;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;cursor:pointer;white-space:nowrap">📄 Create Google Doc</button>
+        </div>
+      </div>
+      ${hist.length ? `<div style="margin-top:10px;font-size:.74rem;opacity:.92">Previously shared: ${hist.slice(0,4).map(r=>`<a href="${r.url}" target="_blank" rel="noopener" style="color:#fff;font-weight:700;text-decoration:underline">${_plEsc(r.label)}</a>`).join(" · ")}</div>` : ""}
+    </div>`;
+}
+
 // Monthly report card for one page (or "full"). reports.json is keyed by page,
 // each value a list of that page's Google Docs, newest first.
 function _reportCard(key, label){
@@ -2103,12 +2220,9 @@ function render(data) {
   // ── Full monthly report (owner home) — combined, covers everything ──
   if (ROLE !== "coach") push("home", _reportCard("full", "Everything you see"));
 
-  // ── Per-page monthly report — each tab gets its own report card ──
-  // (Coach's data has no finance/leads/ads report keys, so those cards stay
-  //  empty even before the tabs are hidden — nothing sensitive leaks.)
-  const REPORT_TABS = { members:"Members", retention:"Retention", jumpstart:"Jumpstart",
-    inbody:"InBody", finances:"Finances", leads:"Leads", ads:"Ads", operations:"Operations" };
-  Object.keys(REPORT_TABS).forEach(k => { if (tabs[k]) push(k, _reportCard(k, REPORT_TABS[k])); });
+  // ── Auto monthly-report history (owner-only pages) at the bottom ──
+  const AUTO_REPORT_TABS = { finances:"Finances", leads:"Leads", ads:"Ads" };
+  Object.keys(AUTO_REPORT_TABS).forEach(k => { if (tabs[k]) push(k, _reportCard(k, AUTO_REPORT_TABS[k])); });
 
   // ── "Today" hub — the single most urgent thing from every tab ──
   (function todayHub() {
@@ -4022,6 +4136,11 @@ function render(data) {
 
   // Give each content tab its AI chat agent, pinned at the top.
   Object.keys(tabs).forEach(tab => { if (AGENT_TABS[tab]) tabs[tab].unshift(chatCard(tab)); });
+
+  // Report generator pinned to the very top of the shareable pages (both roles).
+  const GEN_REPORT_TABS = { members:"Members", retention:"Retention", jumpstart:"Jumpstart",
+    inbody:"InBody", operations:"Operations" };
+  Object.keys(GEN_REPORT_TABS).forEach(k => { if (tabs[k]) tabs[k].unshift(_reportGenCard(k, GEN_REPORT_TABS[k])); });
 
   // ── Render each tab ─────────────────────────────────────────
   Object.entries(tabs).forEach(([tab, cards]) => {
