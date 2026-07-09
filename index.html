@@ -370,13 +370,13 @@
 <div class="tab-bar">
   <button class="tab-btn active" onclick="switchTab('home',this)">Home</button>
   <button class="tab-btn" onclick="switchTab('finances',this)">Finances</button>
+  <button class="tab-btn" onclick="switchTab('operations',this)">Operations</button>
   <button class="tab-btn" onclick="switchTab('jumpstart',this)">Jumpstart</button>
   <button class="tab-btn" onclick="switchTab('members',this)">Members</button>
   <button class="tab-btn" onclick="switchTab('retention',this)">Retention</button>
   <button class="tab-btn" onclick="switchTab('inbody',this)">InBody</button>
   <button class="tab-btn" onclick="switchTab('programming',this)">Programming</button>
   <button class="tab-btn" onclick="switchTab('calendar',this)">Calendar</button>
-  <button class="tab-btn" onclick="switchTab('operations',this)">Operations</button>
   <button class="tab-btn" onclick="switchTab('leads',this)">Leads</button>
   <button class="tab-btn" onclick="switchTab('ads',this)">Ads</button>
   <button class="tab-btn" onclick="switchTab('growth',this)">Growth</button>
@@ -1571,43 +1571,43 @@ function _opClothing(){
     </div>`;
 }
 
-// One Meetings card: Head Coaches · Studio Coaches · 1:1 — next date + 3 latest each.
-function _opMeetings(){
+// Add a meeting with an optional Granola notes link + date/time.
+async function addMeeting(prefix){
+  const title = _val(prefix+"-in"); if (!title) { document.getElementById(prefix+"-in").focus(); return; }
+  await _shAdd(prefix, { title, date:_val(prefix+"-date"), time:_val(prefix+"-time"), granola:_val(prefix+"-notes") });
+  [prefix+"-in", prefix+"-date", prefix+"-time", prefix+"-notes"].forEach(id => { const e=document.getElementById(id); if (e) e.value=""; });
+  renderOps();
+}
+// One card per meeting type (Head Coaches / Studio Coaches / 1:1) — own space,
+// next date/time, latest meetings, each with its Granola notes link.
+function _opMeetingCard(label, prefix){
   const today = new Date().toISOString().slice(0,10);
-  const fmtFull = d => { if (!d) return "—"; const x=new Date(d+"T12:00:00"); return isNaN(x)?d:x.toLocaleDateString("en-IE",{weekday:"short",day:"numeric",month:"short"}); };
-  const secs = [
-    { label:"Head Coaches",   prefix:"opmtghead" },
-    { label:"Studio Coaches", prefix:"opmtgstudio" },
-    { label:"1:1",            prefix:"opmtg121" },
-  ];
-  const col = s => {
-    const all = _shList(s.prefix);
-    const next = all.filter(i => i.date && i.date >= today).sort((a,b) => a.date.localeCompare(b.date))[0];
-    const latest = [...all].sort((a,b) => (b.date||"").localeCompare(a.date||"")).slice(0,3);
-    return `
-      <div>
-        <div style="font-weight:800;color:#111;font-size:.95rem">${s.label}</div>
-        <div style="font-size:.72rem;color:#7c3aed;font-weight:700;margin-bottom:8px">Next: ${next ? fmtFull(next.date) : "none scheduled"}</div>
-        <div style="display:flex;gap:5px;margin-bottom:8px">
-          <input id="${s.prefix}-date" type="date" style="font-size:.74rem;padding:5px 6px;border:1px solid #e5e7eb;border-radius:6px;outline:none">
-          <input id="${s.prefix}-in" placeholder="Agenda / notes" onkeydown="if(event.key==='Enter')opAdd('${s.prefix}','${s.prefix}-in','${s.prefix}-date')" style="flex:1;min-width:0;font-size:.74rem;padding:5px 7px;border:1px solid #e5e7eb;border-radius:6px;outline:none">
-          <button onclick="opAdd('${s.prefix}','${s.prefix}-in','${s.prefix}-date')" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:6px;padding:5px 10px;cursor:pointer">+</button>
-        </div>
-        ${latest.length ? latest.map(i => `
-          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid #f6f6fa">
-            <div style="min-width:0"><div style="font-size:.8rem;color:#111">${_plEsc(i.title)}</div>
-              <div style="font-size:.68rem;color:#9ca3af">${fmtFull(i.date)}</div></div>
-            <button onclick="opDel('${i._key}')" style="font-size:.8rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
-          </div>`).join("") : `<p style="color:#ccc;font-size:.8rem;padding:2px 0">No meetings logged.</p>`}
-      </div>`;
-  };
+  const fmtFull = d => { if (!d) return ""; const x=new Date(d+"T12:00:00"); return isNaN(x)?d:x.toLocaleDateString("en-IE",{weekday:"short",day:"numeric",month:"short"}); };
+  const all = _shList(prefix);
+  const next = all.filter(i => i.date && i.date >= today).sort((a,b) => a.date.localeCompare(b.date))[0];
+  const latest = [...all].sort((a,b) => (b.date||"").localeCompare(a.date||"")).slice(0,6);
   return `
-    <div class="card col-12">
+    <div class="card col-4">
       <div class="card-title">Meetings</div>
-      <div class="card-headline" style="margin-bottom:12px">Head Coaches · Studio Coaches · 1:1</div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px">
-        ${secs.map(col).join("")}
+      <div class="card-headline" style="margin-bottom:2px">${label}</div>
+      <div style="font-size:.72rem;color:#7c3aed;font-weight:700;margin-bottom:10px">Next: ${next ? fmtFull(next.date) + (next.time ? " · " + _plEsc(next.time) : "") : "none scheduled"}</div>
+      <div style="display:flex;gap:5px;margin-bottom:5px">
+        <input id="${prefix}-date" type="date" style="font-size:.76rem;padding:6px 7px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <input id="${prefix}-time" type="time" style="font-size:.76rem;padding:6px 7px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
       </div>
+      <input id="${prefix}-in" placeholder="Meeting / agenda title" onkeydown="if(event.key==='Enter')addMeeting('${prefix}')" style="width:100%;box-sizing:border-box;font-size:.8rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none;margin-bottom:5px">
+      <div style="display:flex;gap:5px;margin-bottom:10px">
+        <input id="${prefix}-notes" placeholder="Granola notes link (paste share URL)" style="flex:1;min-width:0;font-size:.76rem;padding:6px 8px;border:1px solid #e5e7eb;border-radius:7px;outline:none">
+        <button onclick="addMeeting('${prefix}')" style="font-size:.8rem;font-weight:700;color:#fff;background:#7c3aed;border:none;border-radius:7px;padding:6px 13px;cursor:pointer">Add</button>
+      </div>
+      ${latest.length ? latest.map(i => `
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid #f6f6fa">
+          <div style="min-width:0">
+            <div style="font-size:.83rem;color:#111;font-weight:600">${_plEsc(i.title)}</div>
+            <div style="font-size:.68rem;color:#9ca3af">${fmtFull(i.date)}${i.time?" · "+_plEsc(i.time):""}${i.granola?` · <a href="${_plEsc(i.granola)}" target="_blank" rel="noopener" style="color:#7c3aed;font-weight:700;text-decoration:none">📝 Notes ↗</a>`:""}</div>
+          </div>
+          <button onclick="opDel('${i._key}')" style="font-size:.8rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+        </div>`).join("") : `<p style="color:#ccc;font-size:.8rem;padding:2px 0">No meetings logged.</p>`}
     </div>`;
 }
 
@@ -1638,7 +1638,11 @@ function renderOps(){
   const el = document.getElementById("opsBody"); if (!el) return;
   el.className = "";  // it's a wrapper, not a card
   el.style.cssText = "display:contents";
-  el.innerHTML = _opSupplies() + _opClothing() + _opMeetings() + _opEvents();
+  el.innerHTML = _opSupplies() + _opClothing()
+    + _opMeetingCard("Head Coaches", "opmtghead")
+    + _opMeetingCard("Studio Coaches", "opmtgstudio")
+    + _opMeetingCard("1:1", "opmtg121")
+    + _opEvents();
 }
 
 // Milestone t-shirt tracker spreadsheet — first click asks for the link, saves
