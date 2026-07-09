@@ -1564,25 +1564,41 @@ function _pageReportSections(key){
   const sg = v => (typeof v==="number") ? (v>0?"+":"")+(Math.round(v*10)/10) : "—";
   const nm = x => x==null ? "" : (typeof x==="string" ? x : (x.name || ""));
 
+  // NOTE: members/retention/jumpstart/inbody/operations reports are visible to
+  // coaches — keep ALL money out of them (no MRR, no pricing, no revenue).
+  const fmtMon = ym => { const [y,m]=String(ym).split("-"); return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][(+m||1)-1]+" '"+String(y).slice(2); };
   if (key === "members"){
     const bd = (tm.breakdown||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0));
     const leaving = (tm.leaving_members||[]).map(nm).filter(Boolean);
     const paused  = (tm.paused_members||[]).map(nm).filter(Boolean);
-    const atRisk  = (tm.at_risk||[]).map(r => nm(r) + (r.days_absent!=null?` (${r.days_absent}d absent)`:"")).filter(Boolean);
+    const atRisk  = (tm.at_risk||[]).map(r => nm(r) + (r.days_absent!=null?` (${r.days_absent}d)`:"")).filter(Boolean);
+    const hist = (tm.member_history||[]).slice(-6);
+    const trend = hist.length ? hist.map(h=>`${fmtMon(h.month)} ${h.active}`).join("  →  ") : "—";
+    const ml = tm.member_list||[];
+    const totClasses = ml.reduce((t,m)=>t+(m.class_count||0),0);
+    const avgClasses = ml.length ? Math.round(totClasses/ml.length) : null;
+    const topAtt = ml.slice().sort((a,b)=>(b.class_count||0)-(a.class_count||0)).slice(0,5);
+    const miles = (tm.class_milestones||[]).map(m=>`${nm(m)} (${m.total_classes}→${m.next_milestone}, ${m.classes_away} away)`);
+    const net = (typeof tm.new_this_month==="number" && typeof tm.cancellations_this_month==="number") ? tm.new_this_month - tm.cancellations_this_month : null;
+    const retRate = (typeof tm.churn_rate==="number") ? (Math.round((100-tm.churn_rate)*10)/10) : null;
     return [
       { heading:"Membership — headline", lines:[
-        `Full (recurring) members: ${n(tm.recurring)}`,
-        `Trials: ${n(tm.trial)} · Paused: ${n(tm.paused)} · Total active: ${n(tm.total_members)}`,
-        `Monthly recurring revenue: ${gbp(tm.monthly_recurring_revenue)} · Avg price/member: ${gbp2(tm.avg_member_price)}`,
-        `Average tenure: ${n(tm.avg_tenure_months)} months`,
+        `Full (recurring) members: ${n(tm.recurring)} · Trials: ${n(tm.trial)} · Paused: ${n(tm.paused)}`,
+        `Total active: ${n(tm.total_members)} · Net change this month: ${net!=null?(net>0?"+":"")+net:"—"}`,
+        `Retention rate: ${retRate!=null?retRate+"%":"—"} · Monthly churn: ${n(tm.churn_rate)}% · Average tenure: ${n(tm.avg_tenure_months)} months`,
       ]},
+      { heading:"Growth — active members, last 6 months", lines:[ trend ]},
       { heading:"Movement this month", lines:[
-        `Joined this month: ${n(tm.new_this_month)} · Cancellations this month: ${n(tm.cancellations_this_month)}`,
-        `Monthly churn: ${n(tm.churn_rate)}% · Cancelled last month: ${n(tm.cancelled_last_month)} · Cancelled YTD: ${n(tm.cancelled_ytd)}`,
+        `Joined: ${n(tm.new_this_month)} · Cancellations: ${n(tm.cancellations_this_month)} · Cancelled last month: ${n(tm.cancelled_last_month)} · YTD: ${n(tm.cancelled_ytd)}`,
         `At-risk members: ${(tm.at_risk||[]).length}`,
         leaving.length ? `Leaving: ${leaving.join(", ")}` : "Leaving: none",
         paused.length  ? `Paused: ${paused.join(", ")}` : "Paused: none",
         atRisk.length  ? `At risk: ${atRisk.slice(0,15).join(", ")}${atRisk.length>15?` +${atRisk.length-15} more`:""}` : null,
+      ].filter(Boolean)},
+      { heading:"Engagement", lines:[
+        `Total classes attended (all members): ${totClasses.toLocaleString("en-GB")} · Avg per member: ${avgClasses!=null?avgClasses:"—"}`,
+        topAtt.length ? "Most active: " + topAtt.map(m=>`${nm(m)} (${m.class_count})`).join(", ") : "Most active: —",
+        miles.length ? "Nearing class milestones: " + miles.join(", ") : null,
       ].filter(Boolean)},
       { heading:"By membership type", lines:
         bd.length ? bd.map(b=>`${b.name}: ${b.count}`) : ["—"] },
@@ -1591,13 +1607,24 @@ function _pageReportSections(key){
   if (key === "retention"){
     const leaving = (tm.leaving_members||[]).map(nm).filter(Boolean);
     const paused  = (tm.paused_members||[]).map(nm).filter(Boolean);
-    return [{ heading:"Retention", lines:[
-      `Monthly churn: ${n(tm.churn_rate)}%`,
-      `Leaving this month: ${n(tm.cancellations_this_month)}` + (leaving.length?` — ${leaving.join(", ")}`:""),
-      `Cancelled last month: ${n(tm.cancelled_last_month)} · Cancelled YTD: ${n(tm.cancelled_ytd)}`,
-      `Paused memberships: ${n(tm.paused)}` + (paused.length?` — ${paused.join(", ")}`:""),
-      `Average tenure: ${n(tm.avg_tenure_months)} months · Active members: ${n(tm.total_members)}`,
-    ] }];
+    const atRisk  = (tm.at_risk||[]).map(r=>nm(r)+(r.days_absent!=null?` (${r.days_absent}d)`:"")).filter(Boolean);
+    const retRate = (typeof tm.churn_rate==="number")?(Math.round((100-tm.churn_rate)*10)/10):null;
+    const lapsed = (tm.lapsed_full_by_month||[]).slice(0,3).reverse().map(m=>`${fmtMon(m.month)} ${(m.members||[]).length}`);
+    return [
+      { heading:"Retention — headline", lines:[
+        `Retention rate: ${retRate!=null?retRate+"%":"—"} · Monthly churn: ${n(tm.churn_rate)}%`,
+        `Average tenure: ${n(tm.avg_tenure_months)} months · Active members: ${n(tm.total_members)}`,
+      ]},
+      { heading:"Losses", lines:[
+        `Leaving this month: ${n(tm.cancellations_this_month)}` + (leaving.length?` — ${leaving.join(", ")}`:""),
+        `Cancelled last month: ${n(tm.cancelled_last_month)} · Cancelled YTD: ${n(tm.cancelled_ytd)}`,
+        lapsed.length ? `Full members lapsed (recent months): ${lapsed.join(" · ")}` : null,
+      ].filter(Boolean)},
+      { heading:"Watch list", lines:[
+        `Paused memberships: ${n(tm.paused)}` + (paused.length?` — ${paused.join(", ")}`:""),
+        `At-risk members: ${(tm.at_risk||[]).length}` + (atRisk.length?` — ${atRisk.slice(0,15).join(", ")}${atRisk.length>15?` +${atRisk.length-15} more`:""}`:""),
+      ]},
+    ];
   }
   if (key === "jumpstart"){
     return [{ heading:"Jumpstart (trials)", lines:[
