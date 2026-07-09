@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T09:17:53.811236+00:00",
+  "generated_at": "2026-07-09T09:35:33.495365+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -112,10 +112,10 @@
         "from": "Alexandra from TeamUp",
         "from_raw": "Alexandra from TeamUp <support@goteamup.com>",
         "subject": "Re: \"How do I use an M2M token to call the REST API to get customer/mem...",
-        "snippet": "I have just checked, and it does allow her to use the membership. Could she try refreshing and trying again once she&#39;s settled and done driving We&#39;re here to help Reply directly to this email",
-        "id": "19f42afdfa32befe",
+        "snippet": "Hi Grace, I&#39;ve looked into this and it was caused by the same issue, where the Off Peak limitation had been incorrectly applied more widely than intended. I&#39;ve now corrected this for the",
+        "id": "19f463b840b8a8c0",
         "thread_id": "19f1dff910b90d31",
-        "msg_count": 11
+        "msg_count": 12
       },
       {
         "from": "Alexandra from TeamUp",
@@ -298,7 +298,7 @@
       "name": "Leah calvin",
       "channel": "Phone",
       "message": "Hi Grace, I have been enjoying it just this week has been so busy for me I have been so exhausted that\u2019s why I have missed 2 classes! I think my class last Saturday was definitely a tough one so I fee",
-      "age": "2h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "NeuyNTwbJNoTj5e7b33d",
       "contact_id": "JCxpNdfjiv0NWsl0wTGi"
@@ -307,7 +307,7 @@
       "name": "Ravash Nahavandi",
       "channel": "Phone",
       "message": "",
-      "age": "2h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "6xZMRle51rqvEXAQ7sIB",
       "contact_id": "28Bw6peYUldhaIP1qinC"
@@ -352,7 +352,7 @@
       "name": "Diane McLean",
       "channel": "Phone",
       "message": "Thanks.She\u2019s very weak but stable atm\ud83e\udd79",
-      "age": "22h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "YT73fAyojkmnuKFLsgLs",
       "contact_id": "AUWcUb3UZzD85p6OtEGd"
@@ -392,15 +392,6 @@
       "unread": 1,
       "conv_id": "FczoqjwJW47a4fAvzXpN",
       "contact_id": "QvpJ7M9wgXUgUmvyaMcp"
-    },
-    {
-      "name": "Kevin Rudd | Athlete AI",
-      "channel": "Phone",
-      "message": "",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "fNeLsvATDhbUEcUcA6c0",
-      "contact_id": "kBKOU4LDCvegyx2bqmtk"
     }
   ],
   "jumpstart": {
@@ -8105,7 +8096,7 @@
           },
           {
             "day": "Thursday",
-            "count": 358
+            "count": 364
           }
         ],
         "bottom_days": [
@@ -8115,7 +8106,7 @@
           },
           {
             "day": "Thursday",
-            "count": 358
+            "count": 364
           },
           {
             "day": "Monday",
@@ -8145,7 +8136,7 @@
           },
           {
             "name": "Elevate",
-            "count": 268
+            "count": 274
           },
           {
             "name": "Plate",
@@ -8179,7 +8170,7 @@
           },
           {
             "name": "Elevate",
-            "count": 268
+            "count": 274
           }
         ],
         "top_slots": [
@@ -8279,9 +8270,9 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 71,
-            "sessions": 10,
-            "avg": 7.1,
+            "count": 77,
+            "sessions": 11,
+            "avg": 7.0,
             "label": "Thursday 10am Elevate"
           },
           {
@@ -8294,7 +8285,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2391
+        "total_attended": 2397
       },
       "last_30_days": {
         "top_days": [
@@ -8316,7 +8307,7 @@
           },
           {
             "day": "Thursday",
-            "count": 122
+            "count": 128
           }
         ],
         "bottom_days": [
@@ -8326,7 +8317,7 @@
           },
           {
             "day": "Thursday",
-            "count": 122
+            "count": 128
           },
           {
             "day": "Friday",
@@ -8355,16 +8346,16 @@
             "count": 157
           },
           {
+            "name": "Elevate",
+            "count": 78
+          },
+          {
             "name": "Plate",
             "count": 77
           },
           {
             "name": "Circuits",
             "count": 75
-          },
-          {
-            "name": "Elevate",
-            "count": 72
           }
         ],
         "bottom_classes": [
@@ -8505,7 +8496,7 @@
             "label": "Thursday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 908
+        "total_attended": 914
       },
       "suggestion": "**For quiet studio time:**\n\n1. Add a paid 30-min \"Open Studio\" slot on Monday and Thursday mornings (your quietest days) \u2014 members can book PT-style for strength work, conditioning drills or form coaching in an otherwise empty studio, positioned as flexible alternative to full classes.\n\n2. Host a weekly 45-min \"Mobility + Strength Pairing\" workshop on Saturday mornings (lowest attendance day) teaching how to prep for the Build classes \u2014 position it as a retention tool for members intimidated by your most popular offerings.\n\n**For the quietest classes (Engine, Capacity, Barbelle, Strongevity, Games Night):**\n\n1. Move Engine to Thursday evening instead of its current slot \u2014 it's a low-barrier cardio class that suits your quieter day, and promote it as a \"no-lifting required\" option to widen appeal beyond your strength-focused members.\n\n2. Rebrand Games Night as a \"social strength mixer\" with a 2-for-1 intro offer targeting members who attend Build classes solo \u2014 position it as community-building rather than standalone.\n\n3. Trial Barbelle and Strongevity as back-to-back offerings (same day, consecutive slots) to create a themed \"evening\" for niche audiences and reduce studio downtime between them.",
       "capacity": [
