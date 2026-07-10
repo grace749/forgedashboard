@@ -270,13 +270,14 @@ def fetch_appointments():
 
 # ── Gmail ──────────────────────────────────────────────────────────────────
 
-def _gmail_service():
-    if not all([GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN]):
+def _gmail_service(refresh_token=None):
+    rt = refresh_token or GMAIL_REFRESH_TOKEN
+    if not all([GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, rt]):
         return None
     from google.oauth2.credentials import Credentials
     creds = Credentials(
         token=None,
-        refresh_token=GMAIL_REFRESH_TOKEN,
+        refresh_token=rt,
         token_uri="https://oauth2.googleapis.com/token",
         client_id=GMAIL_CLIENT_ID,
         client_secret=GMAIL_CLIENT_SECRET,
@@ -741,6 +742,59 @@ def run():
         "checkins":      checkins,
         "goals":         goals,
     }
+
+
+def run_coach():
+    """A coach's own inbox brief (emails needing a reply + important flagged),
+    using HER Gmail token — GMAIL_REFRESH_TOKEN_COACH. Never touches the owner's
+    mailbox. Returns None if the coach's Gmail isn't connected. This is injected
+    into the coach data file only, so it stays private to her dashboard."""
+    rt = os.environ.get("GMAIL_REFRESH_TOKEN_COACH", "")
+    if not rt:
+        return None
+    svc = _gmail_service(rt)
+    if not svc:
+        return None
+    self_email = os.environ.get("COACH_EMAIL", "jojo@theforge.pt").lower()
+    out = {"date": date.today().isoformat(), "urgent": [], "important": []}
+    try:
+        q = ("in:inbox newer_than:7d -category:promotions -category:updates "
+             "-category:social NOT label:spam")
+        threads = svc.users().threads().list(userId="me", q=q, maxResults=60).execute().get("threads", [])
+        for t in threads:
+            thread = svc.users().threads().get(
+                userId="me", id=t["id"], format="metadata",
+                metadataHeaders=["From", "Subject", "Date"]).execute()
+            msgs = thread.get("messages", [])
+            if not msgs:
+                continue
+            last = msgs[-1]
+            lh = {h["name"]: h["value"] for h in last.get("payload", {}).get("headers", [])}
+            frm = lh.get("From", "")
+            if self_email in frm.lower():            # she already replied last
+                continue
+            subj = lh.get("Subject", "(no subject)")
+            if _is_noise(frm, subj):
+                continue
+            out["urgent"].append({"from": _sender_name(frm), "subject": subj,
+                                  "snippet": last.get("snippet", "")[:200], "id": last["id"]})
+        out["urgent"] = out["urgent"][:10]
+    except Exception as ex:
+        print(f"[coach-brief] urgent error: {ex}")
+    try:
+        q2 = "is:unread (is:starred OR subject:invitation) newer_than:5d -category:promotions"
+        for msg in svc.users().messages().list(userId="me", q=q2, maxResults=10).execute().get("messages", []):
+            hdrs, snip = _get_headers(svc, msg["id"])
+            frm, subj = hdrs.get("From", ""), hdrs.get("Subject", "(no subject)")
+            if _is_noise(frm, subj) or self_email in frm.lower():
+                continue
+            out["important"].append({"from": _sender_name(frm), "subject": subj,
+                                     "snippet": snip[:180], "id": msg["id"]})
+        out["important"] = out["important"][:5]
+    except Exception as ex:
+        print(f"[coach-brief] important error: {ex}")
+    out["urgent_count"] = len(out["urgent"])
+    return out
 
 
 if __name__ == "__main__":

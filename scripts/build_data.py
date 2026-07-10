@@ -124,6 +124,15 @@ COACH_STRIP = ["xero", "starling", "kpi", "gocardless", "stripe",   # finance
                "brief"]                                             # owner home hub (has enquiries)
 coach = {k: v for k, v in data.items() if k not in COACH_STRIP}
 coach["role"] = "coach"
+# The coach's OWN inbox brief (her Gmail token) — added to the coach file only,
+# so her private email never lands in the owner data.json.
+try:
+    _cb = safe_run("coach-brief", fetch_brief.run_coach)
+    if _cb:
+        coach["coach_brief"] = _cb
+        print(f"[coach-brief] {_cb.get('urgent_count', 0)} emails needing a reply")
+except Exception as ex:
+    print(f"[coach-brief] skipped: {ex}")
 # Per-page reports: the coach keeps her own pages' reports but never the
 # finance/leads/ads ones, nor the combined "full" report (which contains them).
 if isinstance(coach.get("reports"), dict):

@@ -4234,6 +4234,22 @@ function render(data) {
               <span style="font-size:.72rem;color:${t.overdue?'#dc2626':'#9ca3af'};white-space:nowrap">${t.due_on||''}</span>
             </div>`).join("") : `<p style="color:#ccc;font-size:.85rem;padding:6px 0">No open Asana tasks assigned to you (populates after the next data refresh).</p>`}
         </div>`;
+      })(),
+      // Your inbox (JoJo's own Gmail — needs her token connected)
+      (() => {
+        const cb = data.coach_brief;
+        const u = (cb && cb.urgent) || [];
+        return `<div class="card col-6">
+          <div class="card-title">Your inbox</div>
+          <div class="card-headline" style="margin-bottom:8px">Emails needing a reply</div>
+          ${!cb
+            ? `<p style="color:#ccc;font-size:.85rem;padding:6px 0">Your Gmail isn't connected yet — ask Grace to switch it on so emails waiting on a reply show here.</p>`
+            : (u.length ? u.slice(0,8).map(e => `
+              <div style="padding:7px 0;border-bottom:1px solid #f6f6fa">
+                <div style="font-size:.84rem;color:#111;font-weight:600">${_plEsc(e.from)}</div>
+                <div style="font-size:.75rem;color:#6b7280">${_plEsc(e.subject)}</div>
+              </div>`).join("") : `<p style="color:#16a34a;font-size:.9rem;padding:6px 0">Inbox clear — nothing waiting on a reply 🎉</p>`)}
+        </div>`;
       })()
     ];
   }
