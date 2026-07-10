@@ -19,17 +19,15 @@ import fetch_inbody as fi
 # (all BCA_TBL) and enabled in fetch_inbody, so we don't re-probe them here.
 # Visceral fat area (VFA) & InBody age live in InBody's "research" parameters,
 # which sit in a different table than BCA/MFA — hence the wider table sweep.
+# Visceral fat is confirmed (WC_TBL / VFA). WC_TBL turned out to be the valid
+# "research/water-control" table, so InBody age is most likely there too under a
+# different field name — sweep WC_TBL variants first, then a few fallbacks.
 CANDIDATES = {
-    "Visceral Fat": [
-        ("RESEARCH_TBL", "VFA"), ("RESEARCH_TBL", "VFL"), ("OBESITY_TBL", "VFL"),
-        ("OBESITY_TBL", "VFA"), ("OBESITY_TBL", "VISCERAL_FAT_LEVEL"),
-        ("RESEARCH_TBL", "VISCERAL_FAT_AREA"), ("MFA_TBL", "VFL"), ("BCA_TBL", "VFA"),
-        ("WC_TBL", "VFL"), ("WC_TBL", "VFA"),
-    ],
     "InBody Age": [
-        ("RESEARCH_TBL", "INBODY_AGE"), ("RESEARCH_TBL", "BODY_AGE"), ("RESEARCH_TBL", "IB_AGE"),
-        ("RESEARCH_TBL", "AGE"), ("OBESITY_TBL", "INBODY_AGE"), ("BCA_TBL", "BODY_AGE"),
-        ("MFA_TBL", "IB_AGE"), ("RESEARCH_TBL", "INBODYAGE"), ("WC_TBL", "INBODY_AGE"),
+        ("WC_TBL", "BODY_AGE"), ("WC_TBL", "IB_AGE"), ("WC_TBL", "IBAGE"),
+        ("WC_TBL", "BODYAGE"), ("WC_TBL", "AGE"), ("WC_TBL", "INBODYAGE"),
+        ("WC_TBL", "IBODY_AGE"), ("WC_TBL", "MET_AGE"), ("WC_TBL", "BIO_AGE"),
+        ("WC_TBL", "BIOLOGICAL_AGE"), ("MFA_TBL", "BODY_AGE"), ("BCA_TBL", "IB_AGE"),
     ],
 }
 
@@ -49,7 +47,7 @@ def dump_catalog(session):
     """Best-effort: fetch the export column catalogue and print every TABLE.FIELD
     it advertises, so the exact visceral-fat / InBody-age codes are visible."""
     import re
-    pairs = set()
+    pairs, age_tokens, fields_all = set(), set(), set()
     for path in CATALOG_URLS:
         for method in ("get", "post"):
             try:
@@ -65,17 +63,23 @@ def dump_catalog(session):
                 pairs.add((a, b))
             for a, b in re.findall(r'data-tablename="([^"]+)"[^>]*data-fieldname="([^"]+)"', txt):
                 pairs.add((a, b))
+            fields_all.update(re.findall(r'"FieldName"\s*:\s*"([^"]+)"', txt))
+            # Raw sweep: any UPPER_SNAKE token containing AGE (reveals the age code
+            # even when the structured pairs don't parse).
+            age_tokens.update(t for t in re.findall(r'[A-Z][A-Z0-9_]{2,}', txt) if "AGE" in t)
     if pairs:
         print("── Column catalogue found on the server ──")
         for tbl in sorted(set(t for t, _ in pairs)):
-            fields = sorted(f for t, f in pairs if t == tbl)
-            print(f"   {tbl}: {', '.join(fields)}")
-        hits = [f"{t}.{f}" for t, f in sorted(pairs)
-                if any(k in f.upper() for k in ("VF", "VISC", "AGE"))]
+            print(f"   {tbl}: {', '.join(sorted(f for t, f in pairs if t == tbl))}")
+        hits = [f"{t}.{f}" for t, f in sorted(pairs) if any(k in f.upper() for k in ("VF", "VISC", "AGE"))]
         if hits:
             print("   >>> visceral-fat / age candidates:", ", ".join(hits))
     else:
-        print("── No column catalogue endpoint responded (will rely on probing) ──")
+        print("── No structured column catalogue found ──")
+    if fields_all:
+        print("   all FieldName values seen:", ", ".join(sorted(fields_all))[:800])
+    if age_tokens:
+        print("   >>> AGE-like tokens anywhere on the page:", ", ".join(sorted(age_tokens)))
     print()
 
 BASE = [

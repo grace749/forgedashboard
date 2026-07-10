@@ -38,8 +38,8 @@ EXTRA_COLS = [
     ("BCA_TBL",        "TBW",        "TBW"),          # total body water (hydration)
     ("BCA_TBL",        "PROTEIN",    "Protein"),
     ("BCA_TBL",        "MINERAL",    "Mineral"),
-    # ("MFA_TBL",      "VFL",        "VFL"),           # visceral fat — code TBD
-    # ("...",          "INBODY_AGE", "InBodyAge"),     # InBody age  — code TBD
+    ("WC_TBL",         "VFA",        "VFA"),          # visceral fat area (cm²) — confirmed
+    # ("...",          "INBODY_AGE", "InBodyAge"),    # InBody age — code TBD
 ]
 # The export defensively falls back to BASE_COLS on any error (see run()), so a
 # future bad code never loses the base data.
@@ -164,7 +164,8 @@ def run():
             return {"scans": [], "total": 0, "configured": True}
 
     # Columns are positional: 0 Name,1 ID,2 TestDate,3 WT,4 SMM,5 PBF,6 BMI,
-    # then (extended) 7 TBW,8 PROTEIN,9 MINERAL,10 VFL,11 InBodyAge
+    # then (extended) 7 TBW,8 PROTEIN,9 MINERAL,10 VFA (visceral fat area).
+    # InBody age (would be col 11) is not exported yet — its field code is TBD.
     def _col(r, i):
         return r[i] if len(r) > i else None
     by_member = {}
@@ -184,7 +185,7 @@ def run():
             "tbw":      _num(_col(r, 7)),
             "protein":  _num(_col(r, 8)),
             "mineral":  _num(_col(r, 9)),
-            "vfl":      _num(_col(r, 10)),
+            "vfa":      _num(_col(r, 10)),
             "inbody_age": _num(_col(r, 11)),
         }
         by_member.setdefault(name, []).append(entry)
@@ -213,7 +214,7 @@ def run():
             "tbw":         latest.get("tbw"),
             "protein":     latest.get("protein"),
             "mineral":     latest.get("mineral"),
-            "vfl":         latest.get("vfl"),
+            "vfa":         latest.get("vfa"),
             "inbody_age":  latest.get("inbody_age"),
             "weight_change": change("weight"),
             "smm_change":    change("smm"),
@@ -221,6 +222,7 @@ def run():
             "tbw_change":     change("tbw"),
             "protein_change": change("protein"),
             "mineral_change": change("mineral"),
+            "vfa_change":     change("vfa"),
             "next_due":    next_due.isoformat(),
             "days_to_due": (next_due - today).days,
             "overdue":     (next_due - today).days < 0,
