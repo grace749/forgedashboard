@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T14:00:57.990321+00:00",
+  "generated_at": "2026-07-10T20:07:44.649500+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1810,6 +1810,54 @@
   "inbody": {
     "scans": [
       {
+        "name": "028joanneh",
+        "last_scan": "2026-07-10",
+        "scan_count": 1,
+        "weight": 168.1,
+        "smm": 50.3,
+        "pbf": 44.0,
+        "bmi": 28.0,
+        "tbw": 68.8,
+        "protein": 18.3,
+        "mineral": 7.1,
+        "vfa": 152.1,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-08-21",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "029siobhanh",
+        "last_scan": "2026-07-10",
+        "scan_count": 1,
+        "weight": 280.3,
+        "smm": 73.6,
+        "pbf": 53.0,
+        "bmi": 46.6,
+        "tbw": 96.8,
+        "protein": 25.8,
+        "mineral": 9.1,
+        "vfa": 267.5,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-08-21",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "066lesleylaverty",
         "last_scan": "2026-07-09",
         "scan_count": 1,
@@ -3514,7 +3562,7 @@
         "overdue": true
       }
     ],
-    "total": 71,
+    "total": 73,
     "configured": true
   },
   "slack": {
@@ -3522,10 +3570,16 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U07KD58LVGT",
-        "text": "Just off the phone to Teamup support - there's been a bug all day for anyone booking elevate classes, super annoying but they say it's fixed, so this confirms i",
-        "hours": 44,
-        "name": "Dinah Evans"
+        "user_id": "U094L5UFJJU",
+        "text": "Ah thanks - your on holidays now so no rush getting it fixed.  Have a really lovely weekend and enjoy your break. x\nPs speaking to Dianne Phillips - believe she",
+        "hours": 1,
+        "name": "Janeen Gilfillan"
+      },
+      {
+        "user_id": "U08MBSD452M",
+        "text": "Grace\nCould I please cancel my class tomorrow morning. Thanks. mx",
+        "hours": 0,
+        "name": "Mary McKenna"
       }
     ],
     "mentions": [],
@@ -4239,7 +4293,7 @@
     }
   },
   "teamup": {
-    "total_members": 148,
+    "total_members": 151,
     "recurring": 100,
     "recurring_members": [
       {
@@ -4643,7 +4697,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 20,
+    "trial": 21,
     "trial_members": [
       {
         "id": 13448952,
@@ -4672,6 +4726,10 @@
       {
         "id": 13232285,
         "name": "Claire Walker"
+      },
+      {
+        "id": 13489620,
+        "name": "Jacqueline Crawford"
       },
       {
         "id": 13343600,
@@ -4726,7 +4784,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 22,
+    "new_this_month": 25,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -5930,7 +5988,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 20,
+        "count": 21,
         "members": [
           {
             "id": 13448952,
@@ -5959,6 +6017,10 @@
           {
             "id": 13232285,
             "name": "Claire Walker"
+          },
+          {
+            "id": 13489620,
+            "name": "Jacqueline Crawford"
           },
           {
             "id": 13343600,
@@ -6141,6 +6203,32 @@
         ]
       },
       {
+        "name": "Strongevity",
+        "count": 5,
+        "members": [
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 10090672,
+            "name": "Colleen Morrison"
+          },
+          {
+            "id": 13488511,
+            "name": "Gail Simpson"
+          },
+          {
+            "id": 13489401,
+            "name": "June Fowler"
+          },
+          {
+            "id": 13094545,
+            "name": "Lyn Chestnutt"
+          }
+        ]
+      },
+      {
         "name": "Foundation PAID IN FULL",
         "count": 4,
         "members": [
@@ -6159,24 +6247,6 @@
           {
             "id": 9414493,
             "name": "Zara Morrison"
-          }
-        ]
-      },
-      {
-        "name": "Strongevity",
-        "count": 3,
-        "members": [
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 10090672,
-            "name": "Colleen Morrison"
-          },
-          {
-            "id": 13094545,
-            "name": "Lyn Chestnutt"
           }
         ]
       },
@@ -6356,7 +6426,7 @@
           },
           {
             "day": "Friday",
-            "count": 433
+            "count": 451
           },
           {
             "day": "Monday",
@@ -6382,7 +6452,7 @@
           },
           {
             "day": "Friday",
-            "count": 433
+            "count": 451
           },
           {
             "day": "Tuesday",
@@ -6412,7 +6482,7 @@
           },
           {
             "name": "Mobility",
-            "count": 217
+            "count": 227
           }
         ],
         "bottom_classes": [
@@ -6430,11 +6500,11 @@
           },
           {
             "name": "Circuits",
-            "count": 197
+            "count": 205
           },
           {
             "name": "Mobility",
-            "count": 217
+            "count": 227
           },
           {
             "name": "Plate",
@@ -6446,9 +6516,9 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 110,
-            "sessions": 10,
-            "avg": 11.0,
+            "count": 120,
+            "sessions": 11,
+            "avg": 10.9,
             "label": "Friday 7pm Mobility"
           },
           {
@@ -6553,7 +6623,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2439
+        "total_attended": 2457
       },
       "last_30_days": {
         "top_days": [
@@ -6567,7 +6637,7 @@
           },
           {
             "day": "Friday",
-            "count": 168
+            "count": 186
           },
           {
             "day": "Monday",
@@ -6593,7 +6663,7 @@
           },
           {
             "day": "Friday",
-            "count": 168
+            "count": 186
           },
           {
             "day": "Wednesday",
@@ -6618,12 +6688,12 @@
             "count": 85
           },
           {
-            "name": "Elevate",
-            "count": 78
+            "name": "Circuits",
+            "count": 83
           },
           {
-            "name": "Circuits",
-            "count": 75
+            "name": "Mobility",
+            "count": 82
           }
         ],
         "bottom_classes": [
@@ -6648,8 +6718,8 @@
             "count": 26
           },
           {
-            "name": "Mobility",
-            "count": 72
+            "name": "Elevate",
+            "count": 78
           }
         ],
         "top_slots": [
@@ -6764,7 +6834,7 @@
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 926
+        "total_attended": 944
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a paid \"Open Strength Lab\" slot** on Thursday or Monday mornings (your quietest days) \u2014 45 mins of unsupervised barbell access for members who want flexible training outside class times. This fills dead air and appeals to Build-class enthusiasts wanting extra volume.\n\n2. **Run a monthly \"Intro to Barbelle\" workshop** (30 mins, small group, \u00a35 add-on) in a quiet Tuesday or Wednesday afternoon slot. Barbelle's 27 attendees suggests intimidation or unclear positioning \u2014 a one-off walkthrough removes friction and could convert curious members.\n\n3. **Block out Saturday 10am\u201311am as \"Coach's Office Hours\"** \u2014 members book 15-min PT consultations, form checks, or programme reviews at \u00a315 each. Uses dead Saturday time productively and creates a revenue stream from quiet periods.\n\n**For the quieter classes themselves:**\n\n- **Move Engine or Capacity to Wednesday evening** (your busiest day) when gym energy is high \u2014 timing and atmosphere directly affect energy-based classes more than strength ones.\n- **Rebrand Strongevity and Games Night** with member testimonials (age, fitness gains) \u2014 these sound gimmicky. Reframe as \"Strength for 40+\" and \"Competitive conditioning\" and email",
       "capacity": [
@@ -7071,7 +7141,7 @@
       },
       {
         "month": "2026-07",
-        "active": 151,
+        "active": 154,
         "churn": 9.2,
         "by_type": {
           "Empower": 62,
@@ -7083,9 +7153,9 @@
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "6 Week Jumpstart": 20,
+          "6 Week Jumpstart": 21,
           "Emerge": 1,
-          "Strongevity": 3,
+          "Strongevity": 5,
           "8 Session Block": 1,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -7183,11 +7253,6 @@
     ],
     "celebrations": {
       "first_week": [
-        {
-          "name": "BERNADETTE MCLAUGHLIN",
-          "days_in": 0,
-          "start_date": "2026-07-10"
-        },
         {
           "name": "Amy McNeill",
           "days_in": 4,
@@ -7339,6 +7404,12 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Jacqueline Crawford",
+        "type": "Meet a Coach",
+        "date": "2026-07-15",
+        "upcoming": true
+      },
       {
         "name": "Kay Sweeney",
         "type": "Meet a Coach",
@@ -7651,6 +7722,15 @@
         "last_momentum": null
       },
       {
+        "id": 13488511,
+        "name": "Gail Simpson",
+        "email": "gailsimis@btinternet.com",
+        "join_date": "2026-07-10",
+        "membership": "Strongevity",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
         "id": 8935595,
         "name": "Grace McAlister",
         "email": "gmca125@gmail.com",
@@ -7828,6 +7908,15 @@
         "join_date": "2025-12-05",
         "membership": "4 PT Sessions",
         "class_count": 22,
+        "last_momentum": null
+      },
+      {
+        "id": 13489401,
+        "name": "June Fowler",
+        "email": "juneboyd1@gmail.com",
+        "join_date": "2026-07-10",
+        "membership": "Strongevity",
+        "class_count": 0,
         "last_momentum": null
       },
       {
