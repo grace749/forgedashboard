@@ -77,7 +77,12 @@ jobs:
         run: |
           git config user.name "forge-dashboard-bot"
           git config user.email "bot@theforge.pt"
-          git add data/data.json data/coach-data.json data/reports.json data/class_counts.json data/ai_cache.json
+          # Some of these are optional (reports.json is only written on the last
+          # Friday / a forced run) — add each only if it exists so a missing file
+          # can't abort the commit.
+          for f in data/data.json data/coach-data.json data/reports.json data/class_counts.json data/ai_cache.json; do
+            [ -f "$f" ] && git add "$f"
+          done
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: refresh dashboard data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           # Retry in case another run pushed meanwhile. data/* are GENERATED files,
