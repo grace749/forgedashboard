@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T05:00:57.099740+00:00",
+  "generated_at": "2026-07-11T10:39:47.254923+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1676,6 +1676,54 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "064beccan",
+        "last_scan": "2026-07-11",
+        "scan_count": 1,
+        "weight": 214.2,
+        "smm": 62.2,
+        "pbf": 47.2,
+        "bmi": 35.6,
+        "tbw": 82.7,
+        "protein": 22.0,
+        "mineral": 8.4,
+        "vfa": 220.7,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-08-22",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "104catherinebrown",
+        "last_scan": "2026-07-11",
+        "scan_count": 1,
+        "weight": 178.2,
+        "smm": 46.3,
+        "pbf": 51.5,
+        "bmi": 34.8,
+        "tbw": 63.7,
+        "protein": 16.8,
+        "mineral": 5.9,
+        "vfa": 238.1,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-08-22",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "028joanneh",
         "last_scan": "2026-07-10",
@@ -3429,7 +3477,7 @@
         "overdue": true
       }
     ],
-    "total": 73,
+    "total": 75,
     "configured": true
   },
   "slack": {
@@ -3439,13 +3487,13 @@
       {
         "user_id": "U094L5UFJJU",
         "text": "Ah thanks - your on holidays now so no rush getting it fixed.  Have a really lovely weekend and enjoy your break. x\nPs speaking to Dianne Phillips - believe she",
-        "hours": 10,
+        "hours": 16,
         "name": "Janeen Gilfillan"
       },
       {
         "user_id": "U08MBSD452M",
         "text": "Grace\nCould I please cancel my class tomorrow morning. Thanks. mx",
-        "hours": 9,
+        "hours": 15,
         "name": "Mary McKenna"
       }
     ],
@@ -3611,6 +3659,8 @@
       "laura fullerton": "U0BFB7GKX8E",
       "amy mcwilliams": "U0BFEFYKUFJ",
       "amy mcneill": "U0BG7GH3S72",
+      "catherine brown": "U0BGT3RVBA8",
+      "kristina": "U0BGT464XE0",
       "bernadette mc laughlin": "U0BHC0AM5ME"
     }
   },
@@ -3788,7 +3838,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (17 sessions), Build: Upper (9), Elevate (6), and Strongevity (3) must move to JoJo and Eilis. Eilis should take Build: Full Body and Elevate slots she's already confident with; JoJo takes Build: Lower and Strongevity to round out her week outside Tuesdays.\n\n\u2022 **JoJo is significantly over-loaded at 133 sessions**: Even after Grace's classes shift, prioritise reducing her PT load (44 sessions is high). Review which clients truly need JoJo's expertise vs. Eilis, and transition 8\u201312 PT slots to Eilis to free JoJo's calendar and prevent burnout.\n\n\u2022 **Cover Grace's No Sweat Intro sessions (3) with a rotating pair approach**: Pair JoJo or Eilis with a senior member or admin staff to run these low-intensity onboarding sessions, so they don't fall on coaching time alone.\n\n\u2022 **Eilis has capacity and should own Elevate consistently**: She's run 7 Elevate sessions and shown capability; assign her a regular Elevate slot to build member relationships and reduce fragmentation across the timetable.\n\n\u2022 **Don't let Body Composition Scans inflate coaching load**: Reassign Grace's 9 scans and JoJo's 20 scans to Eilis or a non-coaching staff member where possible\u2014they're admin, not coaching time, and are masking true PT/class demand.\n\n\u2022 **Audit PT demand vs. coach skill fit**: Eilis has only 11 PT sessions. If demand exists, grow her PT book and vet which clients genuinely need JoJo's head-coach expertise; this is the fastest way to rebalance and let Grace step out",
+    "advice": "\u2022 **JoJo is overloaded at 133 sessions.** Move her 44 PT slots to Eilis (who has capacity at 48 sessions) and redistribute some of her Build: Upper classes. This brings JoJo closer to sustainable levels and develops Eilis's PT skills.\n\n\u2022 **Grace's Build: Lower (17 classes) must shift to Eilis.** Eilis is ready for non-Tuesday strength work. Start with 2\u20133 sessions weekly to build her confidence, then scale up through July.\n\n\u2022 **Grace's Elevate (6 classes) and Strongevity (3 classes) are lightly attended and should consolidate.** Merge these into a single weekly \"Elevate+\" slot and assign to Eilis or JoJo depending on demand; this reduces Grace's timetable immediately.\n\n\u2022 **Grace's No Sweat Intro (3 sessions) should become a rolling process.** Train Eilis to deliver intros as part of onboarding, or batch them into one monthly group session\u2014remove them from the weekly timetable entirely.\n\n\u2022 **Body Composition scans are a drain on coaching time.** Delegate all scans (currently 40 across the team) to a reception or admin role, or ask members to self-scan with brief verbal guidance. This frees ~5\u20136 coaching hours per month across the team.\n\n\u2022 **Review JoJo's Tuesday load once Grace steps back.** She's carrying all technically demanding work. Once Eilis has shadowed and grown, trial her on a modified Tuesday (e.g. Circuits or Elevate) to spread risk and prevent burnout.",
     "period": "June 2026"
   },
   "asana": {
@@ -6298,7 +6348,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 203
+            "count": 232
           },
           {
             "day": "Thursday",
@@ -6332,7 +6382,7 @@
           },
           {
             "name": "Elevate",
-            "count": 274
+            "count": 303
           },
           {
             "name": "Plate",
@@ -6481,7 +6531,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2457
+        "total_attended": 2486
       },
       "last_30_days": {
         "top_days": [
@@ -6509,7 +6559,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 56
+            "count": 85
           },
           {
             "day": "Wednesday",
@@ -6542,12 +6592,12 @@
             "count": 145
           },
           {
-            "name": "Mobility",
-            "count": 82
+            "name": "Elevate",
+            "count": 107
           },
           {
-            "name": "Elevate",
-            "count": 78
+            "name": "Mobility",
+            "count": 82
           },
           {
             "name": "Plate",
@@ -6582,6 +6632,15 @@
         ],
         "top_slots": [
           {
+            "day": "Saturday",
+            "time": "8am",
+            "name": "Elevate",
+            "count": 32,
+            "sessions": 3,
+            "avg": 10.7,
+            "label": "Saturday 8am Elevate"
+          },
+          {
             "day": "Tuesday",
             "time": "6pm",
             "name": "Build: Upper",
@@ -6598,15 +6657,6 @@
             "sessions": 2,
             "avg": 10.5,
             "label": "Wednesday 6pm Plate"
-          },
-          {
-            "day": "Saturday",
-            "time": "8am",
-            "name": "Elevate",
-            "count": 21,
-            "sessions": 2,
-            "avg": 10.5,
-            "label": "Saturday 8am Elevate"
           },
           {
             "day": "Monday",
@@ -6692,9 +6742,9 @@
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 895
+        "total_attended": 924
       },
-      "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a paid \"Open Strength Lab\" slot** on Thursday or Monday mornings (your quietest days) \u2014 45 mins of unsupervised barbell access for members who want flexible training outside class times. This fills dead air and appeals to Build-class enthusiasts wanting extra volume.\n\n2. **Run a monthly \"Intro to Barbelle\" workshop** (30 mins, small group, \u00a35 add-on) in a quiet Tuesday or Wednesday afternoon slot. Barbelle's 27 attendees suggests intimidation or unclear positioning \u2014 a one-off walkthrough removes friction and could convert curious members.\n\n3. **Block out Saturday 10am\u201311am as \"Coach's Office Hours\"** \u2014 members book 15-min PT consultations, form checks, or programme reviews at \u00a315 each. Uses dead Saturday time productively and creates a revenue stream from quiet periods.\n\n**For the quieter classes themselves:**\n\n- **Move Engine or Capacity to Wednesday evening** (your busiest day) when gym energy is high \u2014 timing and atmosphere directly affect energy-based classes more than strength ones.\n- **Rebrand Strongevity and Games Night** with member testimonials (age, fitness gains) \u2014 these sound gimmicky. Reframe as \"Strength for 40+\" and \"Competitive conditioning\" and email",
+      "suggestion": "**For quiet studio gaps:**\n\n1. **Add a 30-min \"Open Gym + Coach\" slot** on Monday and Thursday evenings (your quietest days) \u2014 members can drop in to use equipment with a coach available for form checks or mini-consultations; charge \u00a35-8 per session to generate revenue from otherwise empty studio time.\n\n2. **Launch a monthly \"Barbell Basics\" workshop** (60 mins) on a quiet Thursday or Monday, targeting newer members who might find Barbelle intimidating; position it as a low-pressure intro that feeds people into the class later.\n\n**For quieter classes themselves:**\n\n3. **Move Engine to a prime slot** (Tuesday or Wednesday morning/lunchtime when overall gym traffic is highest) and run a 2-week \"Try Engine free\" campaign with a targeted invite to Upper/Full Body Build attendees \u2014 the data suggests your strongest audience isn't sampling it yet, so it's a timing and awareness problem, not a class problem.",
       "capacity": [
         {
           "name": "Build: Lower",
@@ -7114,13 +7164,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 30,
         "last_seen": "2026-06-11"
-      },
-      {
-        "id": 7775785,
-        "name": "Sarah Sandford",
-        "membership": "Empower",
-        "days_absent": 24,
-        "last_seen": "2026-06-17"
       },
       {
         "id": 9414493,
