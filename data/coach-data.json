@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T14:02:03.798986+00:00",
+  "generated_at": "2026-07-13T20:03:12.224951+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3495,10 +3495,22 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
+        "user_id": "U0B8GGSV684",
+        "text": "You sure can! Let me know and I'll book you in ",
+        "hours": 1,
+        "name": "Nuala O\u2019Neill"
+      },
+      {
         "user_id": "U0B6X33LS0M",
-        "text": "Most of the girls like the 3 times a week from their trial to sign up to Empower but it's all up to what suits you best ",
-        "hours": 26,
+        "text": "Thanks Grace, I'll get signed up now :blush:",
+        "hours": 1,
         "name": "Lesley"
+      },
+      {
+        "user_id": "U09DDQ1UETB",
+        "text": "That's your mum all booked in x",
+        "hours": 1,
+        "name": "Claire Leeke"
       }
     ],
     "mentions": [],
@@ -3868,16 +3880,6 @@
         "notes": ""
       },
       {
-        "gid": "1216179630465821",
-        "name": "Write script for personal training onboarding videos (with JoJo and Eilis)",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216179630465821",
-        "project": null,
-        "due_on": "2026-07-01",
-        "overdue": true,
-        "notes": ""
-      },
-      {
         "gid": "1216109901724640",
         "name": "Speak to JoJo about implementing a functional 360 screen for members",
         "completed": false,
@@ -4048,26 +4050,6 @@
         "notes": ""
       },
       {
-        "gid": "1211867880420603",
-        "name": "Well75 Teamup membership and automation ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420603",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1211867880420601",
-        "name": "Add inbody app links to jumpstart hq ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420601",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
         "gid": "1215752967811515",
         "name": "4 week at home client cancel pdf",
         "completed": false,
@@ -4214,8 +4196,8 @@
     }
   },
   "teamup": {
-    "total_members": 151,
-    "recurring": 100,
+    "total_members": 149,
+    "recurring": 101,
     "recurring_members": [
       {
         "id": 10803724,
@@ -4444,6 +4426,10 @@
       {
         "id": 13414562,
         "name": "Laura Fullerton"
+      },
+      {
+        "id": 13262681,
+        "name": "Lesley Drake"
       },
       {
         "id": 13209864,
@@ -5492,8 +5478,8 @@
     ],
     "cancelled_ytd": 33,
     "churn_rate": 1.4,
-    "avg_member_price": 134.52,
-    "monthly_recurring_revenue": 13048.0,
+    "avg_member_price": 134.71,
+    "monthly_recurring_revenue": 13202.0,
     "avg_tenure_months": 8.9,
     "cancelled_last_month": 2,
     "cancelled_members": [
@@ -5511,7 +5497,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 62,
+        "count": 63,
         "members": [
           {
             "id": 10803724,
@@ -5648,6 +5634,10 @@
           {
             "id": 13414562,
             "name": "Laura Fullerton"
+          },
+          {
+            "id": 13262681,
+            "name": "Lesley Drake"
           },
           {
             "id": 13209864,
@@ -6096,36 +6086,6 @@
         ]
       },
       {
-        "name": "Strongevity",
-        "count": 6,
-        "members": [
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 10090672,
-            "name": "Colleen Morrison"
-          },
-          {
-            "id": 13496735,
-            "name": "Elaine Crawford"
-          },
-          {
-            "id": 13488511,
-            "name": "Gail Simpson"
-          },
-          {
-            "id": 13489401,
-            "name": "June Fowler"
-          },
-          {
-            "id": 13094545,
-            "name": "Lyn Chestnutt"
-          }
-        ]
-      },
-      {
         "name": "Evolve",
         "count": 5,
         "members": [
@@ -6170,6 +6130,28 @@
           {
             "id": 9414493,
             "name": "Zara Morrison"
+          }
+        ]
+      },
+      {
+        "name": "Strongevity",
+        "count": 4,
+        "members": [
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 13496735,
+            "name": "Elaine Crawford"
+          },
+          {
+            "id": 13488511,
+            "name": "Gail Simpson"
+          },
+          {
+            "id": 13489401,
+            "name": "June Fowler"
           }
         ]
       },
@@ -7036,7 +7018,7 @@
       },
       {
         "month": "2026-06",
-        "active": 144,
+        "active": 143,
         "churn": 3.3,
         "by_type": {
           "Empower": 65,
@@ -7049,7 +7031,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 15,
-          "Strongevity": 4,
+          "Strongevity": 3,
           "8 Session Block": 1,
           "4 Class Pass": 1,
           "New You Next Level": 2,
@@ -7058,10 +7040,10 @@
       },
       {
         "month": "2026-07",
-        "active": 155,
-        "churn": 8.6,
+        "active": 153,
+        "churn": 7.9,
         "by_type": {
-          "Empower": 62,
+          "Empower": 63,
           "8 PT Sessions": 2,
           "4 PT Sessions": 10,
           "Evolve": 4,
@@ -7071,7 +7053,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 20,
-          "Strongevity": 6,
+          "Strongevity": 4,
           "8 Session Block": 1,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -7596,15 +7578,6 @@
         "last_momentum": null
       },
       {
-        "id": 10090672,
-        "name": "Colleen Morrison",
-        "email": "col_morrison@yahoo.co.uk",
-        "join_date": "2026-06-30",
-        "membership": "Strongevity",
-        "class_count": 5,
-        "last_momentum": null
-      },
-      {
         "id": 13063966,
         "name": "Connie Gerrow",
         "email": "conniegerrow101@hotmail.com",
@@ -8055,6 +8028,15 @@
         "last_momentum": null
       },
       {
+        "id": 13262681,
+        "name": "Lesley Drake",
+        "email": "lesleyannedrake@yahoo.co.uk",
+        "join_date": "2026-05-30",
+        "membership": "Empower",
+        "class_count": 8,
+        "last_momentum": null
+      },
+      {
         "id": 11212636,
         "name": "Lesley Greehy",
         "email": "lesanngre@yahoo.co.uk",
@@ -8124,15 +8106,6 @@
         "join_date": "2026-03-13",
         "membership": "Elevate",
         "class_count": 49,
-        "last_momentum": null
-      },
-      {
-        "id": 13094545,
-        "name": "Lyn Chestnutt",
-        "email": "lynchestnutt@hotmail.com",
-        "join_date": "2026-07-02",
-        "membership": "Strongevity",
-        "class_count": 5,
         "last_momentum": null
       },
       {
