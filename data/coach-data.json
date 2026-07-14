@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T05:00:58.031395+00:00",
+  "generated_at": "2026-07-14T11:13:34.878423+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3497,20 +3497,26 @@
       {
         "user_id": "U0B8GGSV684",
         "text": "You sure can! Let me know and I'll book you in ",
-        "hours": 10,
+        "hours": 17,
         "name": "Nuala O\u2019Neill"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Thanks Grace, I'll get signed up now :blush:",
-        "hours": 10,
+        "hours": 16,
         "name": "Lesley"
       },
       {
         "user_id": "U09DDQ1UETB",
         "text": "No just tell us what classes you'd like to book and we can do it ",
-        "hours": 8,
+        "hours": 14,
         "name": "Claire Leeke"
+      },
+      {
+        "user_id": "U09K6AX2E6S",
+        "text": "Morning <@U05P1R84NKS> really sorry but can you hit pause on me again. My head is totally not in it and I am just exhausted come the evenings at the mo. I'm not",
+        "hours": 4,
+        "name": "Emma Hamilton"
       }
     ],
     "mentions": [],
@@ -3854,7 +3860,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: her Build: Lower (17 sessions) should shift to JoJo; Build: Upper (9) and Elevate (6) to Eilis. Strongevity (3) and No Sweat Intro (3) can rotate between JoJo and Eilis depending on who has capacity that week. This removes Grace from delivery entirely.\n\n\u2022 **JoJo is significantly overloaded at 133 sessions**: after taking Grace's Build: Lower, she'll be at ~150. Reduce her personal training from 44 to 28\u201330 by moving 14\u201316 PT slots to Eilis (who has only 11). This balances the workload and develops Eilis's 1:1 skills.\n\n\u2022 **Eilis is under-used and ready to grow**: she's on 48 sessions including 11 PT. Increase her PT load to 25\u201327, add Grace's Elevate and some of Build: Upper, and give her Strongevity and No Sweat Intro to broaden her class range. She'll sit around 95\u2013105 sessions \u2014 a healthier load.\n\n\u2022 **Body Composition scans (40 total last month) are inflating coaching numbers and masking real capacity**: assign these tactically by availability, not by coach. This frees up ~3\u20134 hours per coach per month for actual teaching or rest.\n\n\u2022 **JoJo remains the only Tuesday coach (respected constraint)**, but her overall volume is too high to sustain. Once PT and Grace's classes are redistributed, her weekly pattern will be more sustainable; monitor her burnout risk and consider a freelance or apprentice coach for non-Tuesday capacity support within 2\u20133 months.",
+    "advice": "\u2022 **Redistribute Grace's classes to Eilis and JoJo:** Grace runs 17 Build: Lower, 9 Build: Upper, 6 Elevate, and 3 Strongevity. Assign Build: Lower to Eilis (strength in her wheelhouse), Upper and Elevate to JoJo, and Strongevity to either coach on rotation. This removes ~35 coaching sessions from Grace immediately.\n\n\u2022 **Move Grace's 3 No Sweat Intros to a rota.** These can be shared across both coaches or handled by whichever one is coaching that day, reducing Grace's load further without creating bottlenecks.\n\n\u2022 **Ease JoJo's PT load by bringing Eilis up to 15\u201318 PTs per month.** JoJo carries 44 PTs; Eilis has only 11. Pair Eilis with experienced clients and gradually build her confidence and case load. This protects JoJo from burnout and makes better use of available capacity.\n\n\u2022 **Assign Body Composition Scans to a standing rota.** These are admin tasks, not coaching. Rotate them evenly (6\u20137 per coach per month) rather than letting them cluster with PT bookings. This frees up ~8\u201310 hours per coach per month for actual coaching.\n\n\u2022 **Create a Tuesdays backup.** JoJo always coaches Tuesdays, but having Eilis shadow or co-coach one session per month will build her confidence on that technically demanding day, reducing single-point-of-failure risk.\n\n\u2022 **Monitor Eilis's class load after redistribution.** Once she takes on Build: Lower and more PTs, she'll be closer to 70\u201375 sessions; if she stays under 100, she has capacity to absorb more Circuits or Capacity classes",
     "period": "June 2026"
   },
   "asana": {
@@ -4196,7 +4202,7 @@
     }
   },
   "teamup": {
-    "total_members": 149,
+    "total_members": 148,
     "recurring": 101,
     "recurring_members": [
       {
@@ -6134,7 +6140,7 @@
         ]
       },
       {
-        "name": "Strongevity",
+        "name": "Strongevity - Wednesday",
         "count": 4,
         "members": [
           {
@@ -6146,8 +6152,8 @@
             "name": "Elaine Crawford"
           },
           {
-            "id": 13488511,
-            "name": "Gail Simpson"
+            "id": 900564,
+            "name": "Grace Smith"
           },
           {
             "id": 13489401,
@@ -6325,7 +6331,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 434
+            "count": 444
           },
           {
             "day": "Thursday",
@@ -6351,7 +6357,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 434
+            "count": 444
           },
           {
             "day": "Friday",
@@ -6365,7 +6371,7 @@
           },
           {
             "name": "Build: Upper",
-            "count": 434
+            "count": 444
           },
           {
             "name": "Build: Lower",
@@ -6522,13 +6528,13 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2432
+        "total_attended": 2442
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 199
+            "count": 209
           },
           {
             "day": "Monday",
@@ -6572,7 +6578,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 199
+            "count": 209
           },
           {
             "name": "Build: Lower",
@@ -6733,9 +6739,9 @@
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 846
+        "total_attended": 856
       },
-      "suggestion": "**For quiet studio gaps:**\n\n1. Add a 45-minute \"Open Gym + Coach\" slot on Monday and Thursday evenings (your quietest days) \u2014 members can drop in to use equipment with a coach available for form checks or quick questions, charged at \u00a35-8 per session to offset staffing and boost Monday/Thursday footfall.\n\n2. Run a monthly \"Barbell Basics Workshop\" (Saturday morning, 30 mins) targeting newer members before a Barbelle class \u2014 teach setup, safety, and confidence-building so Barbelle feels less intimidating; position it as a free add-on or \u00a33 upsell.\n\n**For quieter classes:**\n\n3. Move Engine from its current slot to a post-work Tuesday or Wednesday 6pm slot (your peak days) \u2014 it's short and intense, which suits people grabbing a quick session after work; promote it as \"15-min metabolic finisher\" to Build class attendees as a pairing option.",
+      "suggestion": "**For quiet studio time:**\n\n1. **Add a 30-min \"Open Gym + Coach\" slot on Monday and Thursday evenings** \u2014 position it between your quietest PT hours and evening classes. Charge \u00a35-8 per session or bundle 5 passes. This captures members who want structure-free lifting time with a coach nearby for form checks, filling dead air and generating incremental revenue.\n\n2. **Run a monthly \"Barbell Clinic\" workshop on Saturday mornings** (your quietest day) \u2014 45 mins focused on one lift (deadlift, squat, bench). Price at \u00a315-20 and invite Barbelle attendees plus members who struggle with heavy compound lifts. Builds confidence for the actual Barbelle class.\n\n**For quieter classes:**\n\n3. **Shift Engine to Wednesday or Friday at lunch or 6pm** \u2014 it's performing badly (47 and 15 attendees in 90/30 days) likely due to poor timing, not the class itself. Test it on your busiest days when momentum and foot traffic are highest. Pair with a 2-week \"invite everyone who's done a conditioning class\" push to frame it as the next step.",
       "capacity": [
         {
           "name": "Mobility",
@@ -7009,7 +7015,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 5,
-          "Strongevity": 2,
+          "Strongevity - Wednesday": 2,
           "Strong Start 30 Day Trial": 1,
           "New You Next Level": 2,
           "Emerge": 2,
@@ -7031,7 +7037,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 15,
-          "Strongevity": 3,
+          "Strongevity - Wednesday": 3,
           "8 Session Block": 1,
           "4 Class Pass": 1,
           "New You Next Level": 2,
@@ -7040,7 +7046,7 @@
       },
       {
         "month": "2026-07",
-        "active": 153,
+        "active": 152,
         "churn": 7.9,
         "by_type": {
           "Empower": 63,
@@ -7053,7 +7059,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 20,
-          "Strongevity": 4,
+          "Strongevity - Wednesday": 3,
           "8 Session Block": 1,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -7381,6 +7387,12 @@
         "upcoming": true
       },
       {
+        "name": "Diane Marks",
+        "type": "Meet a Coach",
+        "date": "2026-07-15",
+        "upcoming": true
+      },
+      {
         "name": "Kay Sweeney",
         "type": "Meet a Coach",
         "date": "2026-07-14",
@@ -7651,7 +7663,7 @@
         "name": "Elaine Crawford",
         "email": "elaine.crawford01@gmail.com",
         "join_date": "2026-07-15",
-        "membership": "Strongevity",
+        "membership": "Strongevity - Wednesday",
         "class_count": 0,
         "last_momentum": null
       },
@@ -7689,15 +7701,6 @@
         "join_date": "2026-02-01",
         "membership": "Empower",
         "class_count": 79,
-        "last_momentum": null
-      },
-      {
-        "id": 13488511,
-        "name": "Gail Simpson",
-        "email": "gailsimis@btinternet.com",
-        "join_date": "2026-07-10",
-        "membership": "Strongevity",
-        "class_count": 0,
         "last_momentum": null
       },
       {
@@ -7885,7 +7888,7 @@
         "name": "June Fowler",
         "email": "juneboyd1@gmail.com",
         "join_date": "2026-07-20",
-        "membership": "Strongevity",
+        "membership": "Strongevity - Wednesday",
         "class_count": 0,
         "last_momentum": null
       },
