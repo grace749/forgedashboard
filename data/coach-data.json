@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T14:01:09.358386+00:00",
+  "generated_at": "2026-07-15T18:47:22.354560+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3535,21 +3535,15 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0B8GGSV684",
-        "text": "You sure can! Let me know and I'll book you in ",
-        "hours": 43,
-        "name": "Nuala O\u2019Neill"
-      },
-      {
         "user_id": "U09DDQ1UETB",
         "text": "No just tell us what classes you'd like to book and we can do it ",
-        "hours": 41,
+        "hours": 46,
         "name": "Claire Leeke"
       },
       {
         "user_id": "U09K6AX2E6S",
         "text": "Hi legend! Awh we will be so sad to see you go, but I totally understand, Dan is really struggling at the moment with leg and feet swelling and utter exhaustion",
-        "hours": 6,
+        "hours": 11,
         "name": "Emma Hamilton"
       }
     ],
@@ -3719,7 +3713,7 @@
       "catherine brown": "U0BGT3RVBA8",
       "kristina": "U0BGT464XE0",
       "bernadette mc laughlin": "U0BHC0AM5ME",
-      "jackiecraw21": "U0BHGLC00SW"
+      "jacqueline crawford": "U0BHGLC00SW"
     }
   },
   "staff": {
@@ -4238,7 +4232,7 @@
     }
   },
   "teamup": {
-    "total_members": 153,
+    "total_members": 152,
     "recurring": 101,
     "recurring_members": [
       {
@@ -4646,7 +4640,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 21,
+    "trial": 20,
     "trial_members": [
       {
         "id": 13448952,
@@ -4713,10 +4707,6 @@
         "name": "Nuala O'Neill"
       },
       {
-        "id": 13414335,
-        "name": "Rosie Mc Fetridge"
-      },
-      {
         "id": 12082042,
         "name": "Sharon Smyth"
       },
@@ -4733,7 +4723,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 31,
+    "new_this_month": 32,
     "cancellations_this_month": 2,
     "leaving_members": [
       {
@@ -5942,7 +5932,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 21,
+        "count": 20,
         "members": [
           {
             "id": 13448952,
@@ -6007,10 +5997,6 @@
           {
             "id": 13202275,
             "name": "Nuala O'Neill"
-          },
-          {
-            "id": 13414335,
-            "name": "Rosie Mc Fetridge"
           },
           {
             "id": 12082042,
@@ -6378,7 +6364,7 @@
         "top_days": [
           {
             "day": "Wednesday",
-            "count": 533
+            "count": 556
           },
           {
             "day": "Tuesday",
@@ -6421,12 +6407,12 @@
         ],
         "top_classes": [
           {
-            "name": "Build: Upper",
+            "name": "Build: Full Body",
             "count": 478
           },
           {
-            "name": "Build: Full Body",
-            "count": 466
+            "name": "Build: Upper",
+            "count": 478
           },
           {
             "name": "Build: Lower",
@@ -6437,12 +6423,12 @@
             "count": 303
           },
           {
-            "name": "Mobility",
-            "count": 227
+            "name": "Plate",
+            "count": 231
           },
           {
-            "name": "Plate",
-            "count": 220
+            "name": "Mobility",
+            "count": 227
           }
         ],
         "bottom_classes": [
@@ -6463,12 +6449,12 @@
             "count": 204
           },
           {
-            "name": "Plate",
-            "count": 220
-          },
-          {
             "name": "Mobility",
             "count": 227
+          },
+          {
+            "name": "Plate",
+            "count": 231
           }
         ],
         "top_slots": [
@@ -6530,12 +6516,12 @@
         "bottom_slots": [
           {
             "day": "Wednesday",
-            "time": "7pm",
-            "name": "Plate",
-            "count": 9,
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 11,
             "sessions": 2,
-            "avg": 4.5,
-            "label": "Wednesday 7pm Plate"
+            "avg": 5.5,
+            "label": "Wednesday 5pm Build: Full Body"
           },
           {
             "day": "Thursday",
@@ -6556,6 +6542,15 @@
             "label": "Tuesday 5pm Build: Upper"
           },
           {
+            "day": "Wednesday",
+            "time": "7pm",
+            "name": "Plate",
+            "count": 20,
+            "sessions": 3,
+            "avg": 6.7,
+            "label": "Wednesday 7pm Plate"
+          },
+          {
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
@@ -6572,18 +6567,9 @@
             "sessions": 11,
             "avg": 7.0,
             "label": "Thursday 10am Elevate"
-          },
-          {
-            "day": "Wednesday",
-            "time": "8pm",
-            "name": "Capacity",
-            "count": 66,
-            "sessions": 9,
-            "avg": 7.3,
-            "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2466
+        "total_attended": 2489
       },
       "last_30_days": {
         "top_days": [
@@ -6593,7 +6579,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 177
+            "count": 200
           },
           {
             "day": "Monday",
@@ -6627,7 +6613,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 177
+            "count": 200
           }
         ],
         "top_classes": [
@@ -6641,19 +6627,19 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 138
+            "count": 150
           },
           {
             "name": "Elevate",
             "count": 107
           },
           {
-            "name": "Circuits",
-            "count": 71
+            "name": "Plate",
+            "count": 78
           },
           {
-            "name": "Plate",
-            "count": 67
+            "name": "Circuits",
+            "count": 71
           }
         ],
         "bottom_classes": [
@@ -6678,8 +6664,8 @@
             "count": 61
           },
           {
-            "name": "Plate",
-            "count": 67
+            "name": "Circuits",
+            "count": 71
           }
         ],
         "top_slots": [
@@ -6741,12 +6727,12 @@
         "bottom_slots": [
           {
             "day": "Wednesday",
-            "time": "7pm",
-            "name": "Plate",
-            "count": 9,
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 11,
             "sessions": 2,
-            "avg": 4.5,
-            "label": "Wednesday 7pm Plate"
+            "avg": 5.5,
+            "label": "Wednesday 5pm Build: Full Body"
           },
           {
             "day": "Thursday",
@@ -6776,6 +6762,15 @@
             "label": "Wednesday 8pm Capacity"
           },
           {
+            "day": "Wednesday",
+            "time": "7pm",
+            "name": "Plate",
+            "count": 20,
+            "sessions": 3,
+            "avg": 6.7,
+            "label": "Wednesday 7pm Plate"
+          },
+          {
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
@@ -6783,18 +6778,9 @@
             "sessions": 3,
             "avg": 7.3,
             "label": "Thursday 10am Elevate"
-          },
-          {
-            "day": "Thursday",
-            "time": "7pm",
-            "name": "Engine",
-            "count": 15,
-            "sessions": 2,
-            "avg": 7.5,
-            "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 921
+        "total_attended": 944
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a 30-min \"Strength Basics\" open-gym slot on Monday/Thursday mornings** (your quietest days) where members can drop in for coached barbell work or machines \u2014 bridges the gap for people intimidated by full Build classes and can convert them into regulars.\n\n2. **Run a paid 4-week \"Engine Fundamentals\" workshop on Saturday mornings** (lowest attendance day) in a 45-min format with 6-8 members max \u2014 Engine is severely underattended, so repackage it as a structured intro course rather than a standalone class.\n\n**For quieter classes themselves:**\n\n3. **Move \"Games Night\" to Friday evening and pair it with a social post targeting members who attended that week's other classes** \u2014 it's your lowest-attended class (14 in 30 days) and likely buried in a bad slot; Friday's your third-busiest day, so better foot traffic + direct invites to recent attendees could triple sign-ups.",
       "capacity": [
@@ -7079,7 +7065,7 @@
       },
       {
         "month": "2026-06",
-        "active": 143,
+        "active": 142,
         "churn": 3.3,
         "by_type": {
           "Empower": 65,
@@ -7092,7 +7078,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
-          "6 Week Jumpstart": 15,
+          "6 Week Jumpstart": 14,
           "Strongevity": 3,
           "8 Session Block": 1,
           "4 Class Pass": 1,
@@ -7101,8 +7087,8 @@
       },
       {
         "month": "2026-07",
-        "active": 155,
-        "churn": 7.9,
+        "active": 154,
+        "churn": 8.0,
         "by_type": {
           "Empower": 63,
           "8 PT Sessions": 2,
@@ -7114,7 +7100,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
-          "6 Week Jumpstart": 21,
+          "6 Week Jumpstart": 20,
           "Strongevity": 6,
           "8 Session Block": 1,
           "4 Class Pass": 1,
@@ -7167,13 +7153,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 28,
         "last_seen": "2026-06-17"
-      },
-      {
-        "id": 12332786,
-        "name": "Linda Davidson",
-        "membership": "Elevate",
-        "days_absent": 18,
-        "last_seen": "2026-06-27"
       },
       {
         "id": 12852843,
