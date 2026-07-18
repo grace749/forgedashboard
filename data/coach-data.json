@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T14:02:17.327507+00:00",
+  "generated_at": "2026-07-18T18:12:57.282182+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3480,7 +3480,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U08HT8HQUBZ",
+        "text": "Hi <@U05P1R84NKS> The booking app is stressing me out! Not allowing me to book any 10am Mondays classes in Sept at all...maybe its an omen?? Can you help to res",
+        "hours": 0,
+        "name": "Lynne Brown"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -4176,7 +4183,7 @@
     }
   },
   "teamup": {
-    "total_members": 154,
+    "total_members": 155,
     "recurring": 103,
     "recurring_members": [
       {
@@ -4663,7 +4670,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 36,
+    "new_this_month": 37,
     "cancellations_this_month": 2,
     "leaving_members": [
       {
@@ -5988,6 +5995,56 @@
         ]
       },
       {
+        "name": "Strongevity",
+        "count": 11,
+        "members": [
+          {
+            "id": 13508479,
+            "name": "Angela McLaughlin"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 13511909,
+            "name": "Craig McCollum"
+          },
+          {
+            "id": 13496735,
+            "name": "Elaine Crawford"
+          },
+          {
+            "id": 13504855,
+            "name": "Eleanor Craig"
+          },
+          {
+            "id": 13516588,
+            "name": "Enda ARRELL"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13508595,
+            "name": "Joan McAfee"
+          },
+          {
+            "id": 11027616,
+            "name": "Joan Stewart"
+          },
+          {
+            "id": 13489401,
+            "name": "June Fowler"
+          },
+          {
+            "id": 13525181,
+            "name": "Margaret Platt"
+          }
+        ]
+      },
+      {
         "name": "Well75",
         "count": 11,
         "members": [
@@ -6034,52 +6091,6 @@
           {
             "id": 7580861,
             "name": "Tina Taggart"
-          }
-        ]
-      },
-      {
-        "name": "Strongevity",
-        "count": 10,
-        "members": [
-          {
-            "id": 13508479,
-            "name": "Angela McLaughlin"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 13511909,
-            "name": "Craig McCollum"
-          },
-          {
-            "id": 13496735,
-            "name": "Elaine Crawford"
-          },
-          {
-            "id": 13504855,
-            "name": "Eleanor Craig"
-          },
-          {
-            "id": 13516588,
-            "name": "Enda ARRELL"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13508595,
-            "name": "Joan McAfee"
-          },
-          {
-            "id": 13489401,
-            "name": "June Fowler"
-          },
-          {
-            "id": 13525181,
-            "name": "Margaret Platt"
           }
         ]
       },
@@ -7017,7 +7028,7 @@
       },
       {
         "month": "2026-07",
-        "active": 157,
+        "active": 158,
         "churn": 6.7,
         "by_type": {
           "Empower": 64,
@@ -7032,7 +7043,7 @@
           "New You Next Level": 2,
           "6 Week Jumpstart": 18,
           "8 Session Block": 1,
-          "Strongevity": 8,
+          "Strongevity": 9,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -7827,6 +7838,15 @@
         "join_date": "2026-08-12",
         "membership": "Strongevity",
         "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "id": 11027616,
+        "name": "Joan Stewart",
+        "email": "joanstewart61@outlook.com",
+        "join_date": "2026-07-18",
+        "membership": "Strongevity",
+        "class_count": 1,
         "last_momentum": null
       },
       {
@@ -11774,12 +11794,6 @@
       "source": "Q3 2026"
     },
     {
-      "name": "Step 3 - Keep Feet Down If Lower Back Lifts In Table Top",
-      "part": "Full Body",
-      "video": "https://www.instagram.com/p/DLsHGQjOu4X/",
-      "source": "Q3 2026"
-    },
-    {
       "name": "Straight Arm Torso Rotations",
       "part": "Core",
       "video": "https://www.instagram.com/p/DZK0iaKConK/?img_index=3",
@@ -12108,12 +12122,6 @@
       "part": "Quads",
       "video": "https://www.youtube.com/shorts/nZYZKQBEdm8",
       "source": "Q2 2026"
-    },
-    {
-      "name": "small bands in box in cupboard above sink",
-      "part": "Full Body",
-      "video": "https://www.instagram.com/p/DS6cqNvEW-M/",
-      "source": "Q3 2026"
     },
     {
       "name": "www.instagram.com/p/DQIYkBIiSUq/?",
