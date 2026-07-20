@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T14:00:55.506726+00:00",
+  "generated_at": "2026-07-20T20:14:33.244162+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-07-20",
-    "event_count": 33,
-    "urgent_count": 0,
-    "enquiry_count": 7,
+    "event_count": 34,
+    "urgent_count": 2,
+    "enquiry_count": 8,
     "calendar": [
       {
         "title": "LOWER 2",
@@ -140,7 +140,7 @@
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "8/12 booked",
+        "location": "7/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -162,7 +162,7 @@
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "7/12 booked",
+        "location": "8/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -249,7 +249,7 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
-        "location": "9/12 booked",
+        "location": "8/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -373,9 +373,42 @@
         "description": "",
         "location": "",
         "prep": ""
+      },
+      {
+        "title": "\ud83d\udcde Call: Jenny Loughery",
+        "time": "6:50pm",
+        "start_raw": "2026-07-23T18:50:00",
+        "day": "Thursday",
+        "attendees": [
+          "Jenny Loughery"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "National Fitness Awards",
+        "from_raw": "National Fitness Awards <returns@scriptmediagroup.co.uk>",
+        "subject": "National Fitness Awards 2026 - The Fitness Industry Oscars",
+        "snippet": "*|MC_PREVIEW_TEXT|* nationalfitnessawards.co.uk 47 Church Street, Barnsley, S70 2AS Click here if you would like to unsubscribe. We&#39;ll be sad to see you go! Terms | Privacy Policy Copyright \u00a9 *2026",
+        "id": "19f80eb002202387",
+        "thread_id": "19f80eb002202387",
+        "msg_count": 1,
+        "draft_id": "r-2413490708329182051"
+      },
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Confirmation of your TShirt Studio order - 3826000",
+        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3826000 Your order has been received as follows: Items Value T-Shirt (Value T-Shirt)",
+        "id": "19f7fddf204c4319",
+        "thread_id": "19f7fddf204c4319",
+        "msg_count": 1,
+        "draft_id": "r5346428968561071679"
+      }
+    ],
     "important": [
       {
         "from": "karenfloyd",
@@ -447,6 +480,15 @@
         "snippet": "Booked a call for Wednesday 3:30pm \u2014 potential member",
         "age": "",
         "unread": 0
+      },
+      {
+        "name": "Jenny Loughery",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Thursday 6:50pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Thursday 6:50pm",
+        "snippet": "Booked a call for Thursday 6:50pm \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
@@ -500,8 +542,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
         "sarah@nourishandnurtu.re": "2025-11-23",
+        "eiliskearns13@gmail.com": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -551,6 +593,7 @@
     },
     "goals": {
       "by_email": {
+        "lynda_watt@hotmail.com": "Lose weight feelmore",
         "marjorie.mccook@hotmail.co.uk": "Fell better about myself, health habits, lose",
         "berniemcl1@hotmail.com": "Improve my fitness level. Feel better. Learn to enjoy exercise Timez",
         "lisa.mcintyre@hotmail.co.uk": "Fitness and toning",
@@ -576,15 +619,78 @@
         "caroline.taylor75@btinternet.com": "Lose weight",
         "s.donaghy57@btinternet.com": "Strength Health and Bone improvement T"
       },
-      "count": 24
+      "count": 25
     }
   },
   "ghl": [
     {
+      "name": "Nicole",
+      "channel": "Phone",
+      "message": "Sounds good I will have a wee look at the form to get it filled out soon thank you \u263a\ufe0f",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "UFZAf3Pv9JqWVyqMsMDB",
+      "contact_id": "YcQwtcNE2eS4Nnwzksx3"
+    },
+    {
+      "name": "jeancarson",
+      "channel": "Phone",
+      "message": "Hello Grace I called in with you today and had a chat about joining your gym. I'll be going on holiday and due to be back on 6th October so if you can fit me in after that date it would be great. Than",
+      "age": "3h ago",
+      "unread": 1,
+      "conv_id": "JqXgJIgmmxxG7Jhj539C",
+      "contact_id": "Ieja0VOHP1zTtmq40wVW"
+    },
+    {
+      "name": "Elizabeth Steele",
+      "channel": "Phone",
+      "message": "Hi Grace, I had a phone call from you this afternoon but I had a WhatsApp with a link this morning at 9.20, will I use it to book in",
+      "age": "3h ago",
+      "unread": 2,
+      "conv_id": "BhSdClvGmtPv1u8DMeeb",
+      "contact_id": "Wsb0RNXfqLWC4P7jLKz3"
+    },
+    {
+      "name": "Kathryn Greehy",
+      "channel": "Phone",
+      "message": "Hey! Did you send me a message? On my end its just saying \u201cwaiting for this message. this may take a while\u201d.",
+      "age": "4h ago",
+      "unread": 2,
+      "conv_id": "9RNvBIKxCe7GMPrhzS6i",
+      "contact_id": "nba59HIlgU05yuO9SfAA"
+    },
+    {
+      "name": "Anne Graham",
+      "channel": "Phone",
+      "message": "Thanks for all the info! I think I\u2019d prefer the group 6 week jump start please. When can I start , is there a timetable and how does payment work ? Thanks, Anne",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "0eUtGzCLEVD4vl6MA1om",
+      "contact_id": "BaG2v3udQBrq6Pp4bSW9"
+    },
+    {
+      "name": "Brenda Bradley",
+      "channel": "Phone",
+      "message": "\ud83d\udcaf",
+      "age": "5h ago",
+      "unread": 1,
+      "conv_id": "fc1VW1wkC5h2F7aLPIpY",
+      "contact_id": "EsQDLDZVUZdsnBGPmuLs"
+    },
+    {
+      "name": "Jayne Thompson",
+      "channel": "Phone",
+      "message": "Sorry just rejected your call can I rearrange with you for tomorrow morning again?",
+      "age": "5h ago",
+      "unread": 3,
+      "conv_id": "pfLv5979QtfLOQjvb9pw",
+      "contact_id": "KSkTcbh77spG4XrKEGQC"
+    },
+    {
       "name": "Sadie Royle",
       "channel": "Phone",
       "message": "\ud83d\ude04\ud83d\udc4d",
-      "age": "0h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "iUY23N3Hkc70cSuWX28r",
       "contact_id": "n8ITw5jQgZIG6dvaFSED"
@@ -593,64 +699,19 @@
       "name": "PRIME | 3 in 1 Biosensor",
       "channel": "Phone",
       "message": "Hey, it\u2019s Kyle the founder who dropped by with the business cards for PRIMEBio the other day!\n\nJust wanted to send a massive thank you for letting me display our cards on the desk. It means a lot to h",
-      "age": "0h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "NU9sBPCKsKJXoaA0OPrr",
       "contact_id": "vSPPEtoQpjmC4aQFEMDc"
     },
     {
-      "name": "Henrietta Cunningham",
-      "channel": "Phone",
-      "message": "If you could ring around  11am  tomorrow  if thats ok with you thank you, im available  now if that suits you better \ud83d\ude0a",
-      "age": "2h ago",
-      "unread": 1,
-      "conv_id": "q2fTujDyfSAb5IRtG7Qk",
-      "contact_id": "RunEcUfmeLilOevIiVDg"
-    },
-    {
-      "name": "Marlyn Wuigleu",
-      "channel": "Phone",
-      "message": "Sorry  sent last messages to wrong person.  I should be about at lunchtime tomorrow.",
-      "age": "2h ago",
-      "unread": 4,
-      "conv_id": "0YhFWi3zrAXdVsvyAAE7",
-      "contact_id": "2kyRXMM8wqwpuV0Q811M"
-    },
-    {
-      "name": "Jayne Thompson",
-      "channel": "Phone",
-      "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "2h ago",
-      "unread": 1,
-      "conv_id": "pfLv5979QtfLOQjvb9pw",
-      "contact_id": "KSkTcbh77spG4XrKEGQC"
-    },
-    {
       "name": "Anne Witherow",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "3h ago",
+      "age": "9h ago",
       "unread": 1,
       "conv_id": "jrtQsY10cDoBkMJy8up1",
       "contact_id": "C1bV9NFGShy8IcXNRSKM"
-    },
-    {
-      "name": "Heather Dixon",
-      "channel": "Phone",
-      "message": "A group of friends are interested in joining would it be possible to call in and discuss it please?",
-      "age": "5h ago",
-      "unread": 2,
-      "conv_id": "Z4DC2hjPZbLW2SpF2KZb",
-      "contact_id": "D4eKXRbxiPNKtkkLxwLk"
-    },
-    {
-      "name": "Briege McAuley",
-      "channel": "Phone",
-      "message": "Yes please \ud83d\ude4f",
-      "age": "5h ago",
-      "unread": 1,
-      "conv_id": "2vEJ1LZM7LeXas07Z2gs",
-      "contact_id": "BJYeIHTIAcIjRGG2i89c"
     }
   ],
   "jumpstart": {
@@ -663,9 +724,9 @@
       },
       {
         "month": "2026-06",
-        "completed": 15,
+        "completed": 16,
         "converted": 7,
-        "conv_rate": 47
+        "conv_rate": 44
       },
       {
         "month": "2026-05",
@@ -1274,7 +1335,7 @@
         "days_left": -17,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -1282,7 +1343,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": false,
+        "pink_red": true,
         "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
       },
       {
@@ -1444,6 +1505,38 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "Find change difficult"
+      },
+      {
+        "name": "Rose Cosgrove",
+        "cohort": "APR-MAY",
+        "joined": "2026-07-05",
+        "end": "2026-06-18",
+        "goal": "Lose weight, build strength and get fit",
+        "notes": "No",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "week_on": 3,
+        "days_left": -32,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": true,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
+        "missing_checkins": 0,
+        "completed_checkins": 3,
+        "expected_checkins": 3,
+        "paused": false,
+        "pink_red": true,
+        "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       },
       {
         "name": "Gillian Connolly",
@@ -2054,38 +2147,6 @@
         "paused": true,
         "pink_red": false,
         "pause_reason": "car accident"
-      },
-      {
-        "name": "Rose Cosgrove",
-        "cohort": "APR-MAY",
-        "joined": "2026-07-05",
-        "end": "2026-06-18",
-        "goal": "Lose weight, build strength and get fit",
-        "notes": "No",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "week_on": 3,
-        "days_left": -32,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
-        "missing_checkins": 0,
-        "completed_checkins": 3,
-        "expected_checkins": 3,
-        "paused": true,
-        "pink_red": false,
-        "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       }
     ],
     "alerts": [
@@ -2202,11 +2263,11 @@
     ],
     "stats": {
       "active_count": 13,
-      "paused_count": 4,
-      "conv_rate": 37,
+      "paused_count": 3,
+      "conv_rate": 36,
       "converted": 10,
-      "not_converted": 7,
-      "total_complete": 27
+      "not_converted": 9,
+      "total_complete": 28
     }
   },
   "inbody": {
@@ -4773,34 +4834,28 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U08HT8HQUBZ",
-        "text": "Ah I just went in to see and there was a bug that wasn\u2019t letting anyone in elevate book a Monday! Not sure why. \n\nBut that\u2019s it\u2019s fixed and I've booked you in x",
-        "hours": 44,
-        "name": "Lynne Brown"
-      },
-      {
-        "user_id": "U09HG60QR7C",
-        "text": "Actually no further forward, she's just making me more angry because she's like why don't you just go and be happy and leave me to destroy my own life \u2026.. but t",
-        "hours": 25,
-        "name": "Melissa Traynor"
-      },
-      {
         "user_id": "U0AATFGV84R",
         "text": "That is super thank you so much :heart: I really appreciate it and I hope its not gonna be for too long xx",
-        "hours": 2,
+        "hours": 8,
         "name": "Kerry Tweed"
       },
       {
         "user_id": "U0B1G7ABCQL",
         "text": "That\u2019s it all cancelled from 23rd August for you and keep in touch when the summer is over get yourself back in :blush:",
-        "hours": 1,
+        "hours": 7,
         "name": "Victoria Thompson"
       },
       {
         "user_id": "U0AG31LK3T5",
         "text": "Strongevity info: <https://www.forgefemalefitness.com/strongevity|forgefemalefitness.com/strongevity>\n\nBook &amp; Pay for the august block: <https://goteamup.co",
-        "hours": 0,
+        "hours": 6,
         "name": "Louise Feeney"
+      },
+      {
+        "user_id": "U09HG60QR7C",
+        "text": "Michelle is wonderful ",
+        "hours": 0,
+        "name": "Melissa Traynor"
       }
     ],
     "mentions": [],
@@ -4969,7 +5024,8 @@
       "catherine brown": "U0BGT3RVBA8",
       "kristina": "U0BGT464XE0",
       "jacqueline crawford": "U0BHGLC00SW",
-      "marjorie": "U0BJD0WGJMA"
+      "marjorie": "U0BJD0WGJMA",
+      "lynda archibald": "U0BJHPWH3U6"
     }
   },
   "kpi": {
@@ -6513,8 +6569,8 @@
     }
   },
   "teamup": {
-    "total_members": 154,
-    "recurring": 101,
+    "total_members": 156,
+    "recurring": 102,
     "recurring_members": [
       {
         "id": 10803724,
@@ -6567,6 +6623,10 @@
       {
         "id": 11546736,
         "name": "Claire Leeke"
+      },
+      {
+        "id": 13232285,
+        "name": "Claire Walker"
       },
       {
         "id": 13063966,
@@ -6921,7 +6981,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 17,
+    "trial": 18,
     "trial_members": [
       {
         "id": 13448952,
@@ -6976,6 +7036,10 @@
         "name": "Louise Farley"
       },
       {
+        "id": 13539733,
+        "name": "Lynda Archibald"
+      },
+      {
         "id": 13529711,
         "name": "Marjorie Moore"
       },
@@ -6992,7 +7056,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 38,
+    "new_this_month": 40,
     "cancellations_this_month": 2,
     "leaving_members": [
       {
@@ -7719,11 +7783,6 @@
             "end": "2026-05-27"
           },
           {
-            "name": "Claire Walker",
-            "membership": "30 Day Challenge",
-            "end": "2026-05-27"
-          },
-          {
             "name": "Stephanie Mcnally",
             "membership": "6 Week Jumpstart",
             "end": "2026-05-08"
@@ -7773,8 +7832,8 @@
     ],
     "cancelled_ytd": 33,
     "churn_rate": 1.4,
-    "avg_member_price": 134.93,
-    "monthly_recurring_revenue": 13088.0,
+    "avg_member_price": 134.92,
+    "monthly_recurring_revenue": 13222.0,
     "avg_tenure_months": 8.9,
     "cancelled_last_month": 2,
     "cancelled_members": [
@@ -8050,7 +8109,7 @@
       },
       {
         "name": "Elevate",
-        "count": 34,
+        "count": 35,
         "members": [
           {
             "id": 11025666,
@@ -8067,6 +8126,10 @@
           {
             "id": 11546736,
             "name": "Claire Leeke"
+          },
+          {
+            "id": 13232285,
+            "name": "Claire Walker"
           },
           {
             "id": 7196665,
@@ -8192,7 +8255,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 17,
+        "count": 18,
         "members": [
           {
             "id": 13448952,
@@ -8245,6 +8308,10 @@
           {
             "id": 13390194,
             "name": "Louise Farley"
+          },
+          {
+            "id": 13539733,
+            "name": "Lynda Archibald"
           },
           {
             "id": 13529711,
@@ -8640,7 +8707,7 @@
           },
           {
             "day": "Monday",
-            "count": 350
+            "count": 390
           }
         ],
         "bottom_days": [
@@ -8650,7 +8717,7 @@
           },
           {
             "day": "Monday",
-            "count": 350
+            "count": 390
           },
           {
             "day": "Thursday",
@@ -8676,7 +8743,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 341
+            "count": 381
           },
           {
             "name": "Elevate",
@@ -8731,8 +8798,8 @@
             "day": "Monday",
             "time": "8pm",
             "name": "Build: Lower",
-            "count": 86,
-            "sessions": 8,
+            "count": 97,
+            "sessions": 9,
             "avg": 10.8,
             "label": "Monday 8pm Build: Lower"
           },
@@ -8758,19 +8825,19 @@
             "day": "Monday",
             "time": "10am",
             "name": "Build: Lower",
-            "count": 73,
-            "sessions": 7,
-            "avg": 10.4,
+            "count": 82,
+            "sessions": 8,
+            "avg": 10.2,
             "label": "Monday 10am Build: Lower"
           },
           {
-            "day": "Monday",
-            "time": "7pm",
-            "name": "Build: Lower",
-            "count": 83,
-            "sessions": 8,
-            "avg": 10.4,
-            "label": "Monday 7pm Build: Lower"
+            "day": "Saturday",
+            "time": "8am",
+            "name": "Elevate",
+            "count": 51,
+            "sessions": 5,
+            "avg": 10.2,
+            "label": "Saturday 8am Elevate"
           }
         ],
         "bottom_slots": [
@@ -8829,7 +8896,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2491
+        "total_attended": 2531
       },
       "last_30_days": {
         "top_days": [
@@ -8838,6 +8905,10 @@
             "count": 196
           },
           {
+            "day": "Monday",
+            "count": 161
+          },
+          {
             "day": "Wednesday",
             "count": 160
           },
@@ -8848,10 +8919,6 @@
           {
             "day": "Thursday",
             "count": 125
-          },
-          {
-            "day": "Monday",
-            "count": 121
           }
         ],
         "bottom_days": [
@@ -8860,10 +8927,6 @@
             "count": 113
           },
           {
-            "day": "Monday",
-            "count": 121
-          },
-          {
             "day": "Thursday",
             "count": 125
           },
@@ -8874,6 +8937,10 @@
           {
             "day": "Wednesday",
             "count": 160
+          },
+          {
+            "day": "Monday",
+            "count": 161
           }
         ],
         "top_classes": [
@@ -8882,16 +8949,16 @@
             "count": 196
           },
           {
+            "name": "Build: Lower",
+            "count": 152
+          },
+          {
             "name": "Elevate",
             "count": 137
           },
           {
             "name": "Build: Full Body",
             "count": 136
-          },
-          {
-            "name": "Build: Lower",
-            "count": 112
           },
           {
             "name": "Plate",
@@ -8957,6 +9024,15 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
+            "day": "Monday",
+            "time": "8pm",
+            "name": "Build: Lower",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Monday 8pm Build: Lower"
+          },
+          {
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
@@ -8973,15 +9049,6 @@
             "sessions": 3,
             "avg": 10.0,
             "label": "Wednesday 10am Circuits"
-          },
-          {
-            "day": "Monday",
-            "time": "5pm",
-            "name": "Build: Lower",
-            "count": 20,
-            "sessions": 2,
-            "avg": 10.0,
-            "label": "Monday 5pm Build: Lower"
           }
         ],
         "bottom_slots": [
@@ -9040,7 +9107,7 @@
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 870
+        "total_attended": 910
       },
       "suggestion": "**For quiet studio gaps (between PT and classes):**\n\n1. **Launch a Monday lunchtime open-gym slot** \u2014 Monday is your quietest day overall; a 45-minute unstructured lift window (11:30\u201312:15) with a staff member present captures the corporate crowd who can't commit to full classes.\n\n2. **Add a Saturday morning \"Strongevity + Coffee\" social workshop** \u2014 Strongevity has only 32 attendees over 90 days; pair a 30-minute technique clinic on longevity training with 15 minutes of informal networking and coffee on Saturday mornings to rebuild community around this class and fill dead time.\n\n**To lift the quieter classes themselves:**\n\n3. **Move Engine to a Thursday or Friday evening slot and run a 2-week \"Engine Challenge\" with incentive prizes** \u2014 Engine (55 attendees, 14 last month) is severely underperforming; it's likely a timing problem. Reposition it during your busier mid-week window and promote it as a 30-day conditioning challenge with small rewards (free PT session, merch) to create momentum and social proof.",
       "capacity": [
@@ -9346,20 +9413,20 @@
       },
       {
         "month": "2026-07",
-        "active": 158,
+        "active": 160,
         "churn": 7.5,
         "by_type": {
           "Empower": 64,
           "8 PT Sessions": 2,
           "4 PT Sessions": 10,
           "Evolve": 4,
-          "Elevate": 41,
+          "Elevate": 42,
           "1:2 PT 4 Sessions": 1,
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
-          "6 Week Jumpstart": 18,
+          "6 Week Jumpstart": 19,
           "Strongevity": 10,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -9392,13 +9459,6 @@
         "last_seen": "2026-06-09"
       },
       {
-        "id": 12671936,
-        "name": "Dorothy McIntyre",
-        "membership": "Elevate",
-        "days_absent": 11,
-        "last_seen": "2026-07-09"
-      },
-      {
         "id": 11882918,
         "name": "Emma Hamilton",
         "membership": "Elevate",
@@ -9423,13 +9483,6 @@
         "id": 9768831,
         "name": "Jane Hegarty",
         "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-07-08"
-      },
-      {
-        "id": 12947742,
-        "name": "Jayne Scott",
-        "membership": "Elevate",
         "days_absent": 12,
         "last_seen": "2026-07-08"
       },
@@ -9511,20 +9564,6 @@
         "last_seen": "2026-07-02"
       },
       {
-        "id": 10244264,
-        "name": "Sharon Kirk",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-07-08"
-      },
-      {
-        "id": 13118018,
-        "name": "Victoria Thompson",
-        "membership": "Empower",
-        "days_absent": 19,
-        "last_seen": "2026-07-01"
-      },
-      {
         "id": 12218719,
         "name": "sandra mccrea",
         "membership": "Elevate",
@@ -9546,6 +9585,11 @@
         }
       ],
       "new_members": [
+        {
+          "name": "Claire Walker",
+          "days_in": 0,
+          "start_date": "2026-07-20"
+        },
         {
           "name": "Lesley Drake",
           "days_in": 2,
@@ -9857,6 +9901,15 @@
         "join_date": "2025-10-02",
         "membership": "Elevate",
         "class_count": 81,
+        "last_momentum": null
+      },
+      {
+        "id": 13232285,
+        "name": "Claire Walker",
+        "email": "claire.walker311@gmail.com",
+        "join_date": "2026-05-26",
+        "membership": "Elevate",
+        "class_count": 15,
         "last_momentum": null
       },
       {
@@ -11347,6 +11400,1385 @@
             }
           ]
         }
+      },
+      {
+        "month": "2026-01",
+        "revenue": 15103.19,
+        "expenses": 15302.74,
+        "profit": -199.55,
+        "profit_pct": -1.3,
+        "categories": {
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 15103.19
+            }
+          ],
+          "out": [
+            {
+              "name": "Staff",
+              "amount": 3037.0
+            },
+            {
+              "name": "Admin",
+              "amount": 2615.35
+            },
+            {
+              "name": "Directors Wages",
+              "amount": 2500.0
+            },
+            {
+              "name": "Other",
+              "amount": 2205.68
+            },
+            {
+              "name": "Transfers",
+              "amount": 1844.4
+            },
+            {
+              "name": "Professional Services",
+              "amount": 869.64
+            },
+            {
+              "name": "Marketing",
+              "amount": 668.5
+            },
+            {
+              "name": "Workplace",
+              "amount": 516.79
+            },
+            {
+              "name": "Training",
+              "amount": 375.0
+            },
+            {
+              "name": "Travel",
+              "amount": 321.22
+            },
+            {
+              "name": "Equipment",
+              "amount": 97.1
+            },
+            {
+              "name": "Business Entertainment",
+              "amount": 80.0
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 65.97
+            },
+            {
+              "name": "Vehicles",
+              "amount": 58.19
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 47.9
+            }
+          ]
+        },
+        "transactions": [
+          {
+            "uid": "1ad37d66-5357-4a00-a8af-d8b60850b7bd",
+            "date": "2026-01-31",
+            "name": "Cash Machine",
+            "ref": "E07025300000000",
+            "amount": 100.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "18fe7cb2-5e36-41bc-a363-5633f496285a",
+            "date": "2026-01-31",
+            "name": "Facebook",
+            "ref": "FACEBK *PQJWZFHMW2",
+            "amount": 117.5,
+            "direction": "OUT",
+            "category": "Marketing",
+            "internal": false
+          },
+          {
+            "uid": "13b5506d-c090-492e-b53a-302676d3f242",
+            "date": "2026-01-30",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-D4DM7",
+            "amount": 579.58,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "07e28c6f-c185-4d3f-85a8-a96e1ab1c741",
+            "date": "2026-01-30",
+            "name": "Land & Property Services",
+            "ref": "01189869",
+            "amount": 170.14,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "12f319e4-2611-4e91-82ba-f8b77a294170",
+            "date": "2026-01-30",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 200.0,
+            "direction": "IN",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "0b5032c2-37ef-4137-a73c-a5f5c0c494c2",
+            "date": "2026-01-30",
+            "name": "Klarna",
+            "ref": "4X6D4R9",
+            "amount": 121.67,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "0ec9755a-437b-4986-9664-0db960a0e5d0",
+            "date": "2026-01-29",
+            "name": "Captions App",
+            "ref": "MIRAGE (CAPTIONS)",
+            "amount": 7.27,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "0e108db0-9850-4668-b16e-cdbcfac6c206",
+            "date": "2026-01-29",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-ZNGNP",
+            "amount": 64.96,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "0deb97ac-6405-47ae-9457-0174982c0948",
+            "date": "2026-01-29",
+            "name": "Sumup *sport N Sound",
+            "ref": "SumUp  *sport n sound",
+            "amount": 142.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "0de9862c-b1ee-41bd-8fbe-241ed24bbffb",
+            "date": "2026-01-29",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 150.0,
+            "direction": "IN",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "0dcb54d0-d71f-4f54-82ee-526d9436a597",
+            "date": "2026-01-29",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 23.57,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "05a29c9e-586a-454d-a0ce-c2f924c81f86",
+            "date": "2026-01-29",
+            "name": "Next Level Impact",
+            "ref": "CIPDDiploma",
+            "amount": 166.59,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "063ac01c-9d7b-4e46-94db-0e205af3be45",
+            "date": "2026-01-28",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 19.0,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "0530d294-abbe-496f-9722-621351fc9d1e",
+            "date": "2026-01-27",
+            "name": "LinkedIn",
+            "ref": "LinkedIn SN P740435173",
+            "amount": 66.66,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "03da33bc-dc93-4f4d-b2da-045dad9151aa",
+            "date": "2026-01-27",
+            "name": "Local Women Magazin",
+            "ref": "LOCAL WOMEN MAGAZINE",
+            "amount": 300.0,
+            "direction": "OUT",
+            "category": "Marketing",
+            "internal": false
+          },
+          {
+            "uid": "00ca2726-17e2-4238-ab3f-2be52ea17b48",
+            "date": "2026-01-27",
+            "name": "Microsoft",
+            "ref": "MICROSOFT PAYMENTS",
+            "amount": 8.49,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "e992da20-be8f-4e95-b49a-f3a49aff50f7",
+            "date": "2026-01-26",
+            "name": "GoCardless",
+            "ref": "NICHAMBER-MZDRXEJM",
+            "amount": 63.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "f99d6a0f-515d-43fe-95a0-0f27f5324635",
+            "date": "2026-01-25",
+            "name": "Etsy",
+            "ref": "Etsy.com*FitnessVaultP",
+            "amount": 65.88,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "ee2deb46-bc6b-4c16-a08e-4dcf94847765",
+            "date": "2026-01-23",
+            "name": "Walter Ai",
+            "ref": "WALTER AI",
+            "amount": 14.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "ec4f84a5-7ac5-4713-804a-039593f057e7",
+            "date": "2026-01-23",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-EXWKH",
+            "amount": 650.86,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "eb7181f8-2c73-4e2f-8c6d-9cb090743416",
+            "date": "2026-01-23",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 136.51,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "e80ac0ad-40b4-47af-bd22-d0748be2625b",
+            "date": "2026-01-22",
+            "name": "Loom Subscription",
+            "ref": "LOOM SUBSCRIPTION",
+            "amount": 17.91,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "e5e990a3-0c83-40ab-897c-1d71b9901bf5",
+            "date": "2026-01-22",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 49.05,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "e33fd34e-1582-4a52-8bdf-7dad4d039463",
+            "date": "2026-01-21",
+            "name": "Etsy",
+            "ref": "Etsy.com*HallieGraceGi",
+            "amount": 17.98,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "e24e4863-0ba3-433d-867f-4cead06e8546",
+            "date": "2026-01-21",
+            "name": "Booking.com",
+            "ref": "BKG*LAWLORS HOTEL     ",
+            "amount": 178.41,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "e244050e-90b6-4996-9e73-1417692dd41f",
+            "date": "2026-01-21",
+            "name": "Booking.com",
+            "ref": "BKG*HODSON BAY HOTEL  ",
+            "amount": 85.51,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "e22afa42-c401-4c22-9c08-495fea5ef849",
+            "date": "2026-01-21",
+            "name": "Womeninbusinessni.",
+            "ref": "WOMEN IN BUSINESS NI",
+            "amount": 20.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "e1cdc08e-101a-45c3-a060-13e041003746",
+            "date": "2026-01-21",
+            "name": "United Kingdom",
+            "ref": "LLP GOLD MONTHLY",
+            "amount": 18.95,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "d5ec163e-defa-4f36-9c5a-8bc9ebb6bc0c",
+            "date": "2026-01-21",
+            "name": "Stripe",
+            "ref": "STRIPE-QNEWMZ0OOOF",
+            "amount": 28.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "dd3f11e4-97b1-489f-a318-8ee6041ccbd7",
+            "date": "2026-01-20",
+            "name": "Pennington Hotel",
+            "ref": "PENNINGTON HOTEL",
+            "amount": 26.35,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "dc8d683b-f252-4446-91bc-f5f0d5c5988e",
+            "date": "2026-01-20",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 17.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "dc8b24ce-915b-4f50-ac63-b056ec4d01d5",
+            "date": "2026-01-20",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 180.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "dc57ba6d-9e84-4d97-bc60-6c394d9a0da7",
+            "date": "2026-01-20",
+            "name": "HMRC CUMBERNAULD",
+            "ref": "120PP032176722609",
+            "amount": 344.4,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": false
+          },
+          {
+            "uid": "dc032307-683c-44c5-8aa4-ef99cc8825cc",
+            "date": "2026-01-20",
+            "name": "Holmrook S.Stn",
+            "ref": "HOLMROOK  S.STN",
+            "amount": 12.66,
+            "direction": "OUT",
+            "category": "Vehicles",
+            "internal": false
+          },
+          {
+            "uid": "dad73f71-4e3e-49e2-820d-f890bc36b941",
+            "date": "2026-01-20",
+            "name": "Starbucks",
+            "ref": "STARBUCKS COFFEE COMPA",
+            "amount": 10.3,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "da91b72d-4d50-467d-b4f9-61fd8afb1e33",
+            "date": "2026-01-20",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 96.62,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "d5dd1615-375e-4a4a-9ada-9dd7df545515",
+            "date": "2026-01-19",
+            "name": "Tripcatcher",
+            "ref": "TRIPCATCHER INDIVIDUAL",
+            "amount": 18.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "c2334758-ba14-4260-983c-10fadb93048e",
+            "date": "2026-01-19",
+            "name": "GoCardless",
+            "ref": "COACHACCOUNT-YMPCV",
+            "amount": 199.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "d2781158-169b-46d1-84b7-277881dcbf09",
+            "date": "2026-01-18",
+            "name": "PayPal",
+            "ref": "PAYPAL *DROPBOXINTE",
+            "amount": 9.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "cc364ed2-2133-4b07-8c47-17234d8fe528",
+            "date": "2026-01-17",
+            "name": "Zoom",
+            "ref": "ZOOM.COM 888-799-9666",
+            "amount": 16.79,
+            "direction": "OUT",
+            "category": "Workplace",
+            "internal": false
+          },
+          {
+            "uid": "cb50c2f5-ec7e-4561-857d-35e89223e2b7",
+            "date": "2026-01-17",
+            "name": "Sarah Lacey",
+            "ref": "Workshop",
+            "amount": 50.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "cb50bb89-b1cb-4252-9eb0-58444955444e",
+            "date": "2026-01-17",
+            "name": "Joanne Hall",
+            "ref": "Workshop",
+            "amount": 75.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "c99816d2-484c-429a-9a73-0ef1dbc8da8d",
+            "date": "2026-01-17",
+            "name": "Taggart Estates Ltd",
+            "ref": "Unit5fireIns",
+            "amount": 310.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "c836e7df-ea45-4a64-9491-4b079345c8cf",
+            "date": "2026-01-17",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 24.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "c594b410-9233-4583-ad5c-238d942d9757",
+            "date": "2026-01-16",
+            "name": "Q-Park",
+            "ref": "Q PARK VICTORIA SQUARE",
+            "amount": 8.0,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "c5276626-c0b1-43d9-a2e7-feef93c3c1a2",
+            "date": "2026-01-16",
+            "name": "Neighbourhood Cafe",
+            "ref": "SQ *NEIGHBOURHOOD CAFE",
+            "amount": 13.12,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "c4eec43d-ddfa-400b-82d6-6c004f1ff4c4",
+            "date": "2026-01-16",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-MTEN7",
+            "amount": 726.72,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "c4e99de5-ee0b-45f5-a305-ad23d01f57b0",
+            "date": "2026-01-16",
+            "name": "Neighbourhood Cafe",
+            "ref": "SQ *NEIGHBOURHOOD CAFE",
+            "amount": 3.78,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "c45f0ea7-1b1d-4505-9482-6cdad14e6d58",
+            "date": "2026-01-16",
+            "name": "OpenAI",
+            "ref": "OPENAI *CHATGPT SUBSCR",
+            "amount": 17.97,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "bc940763-ef59-470f-81e9-c6a7b9e90353",
+            "date": "2026-01-16",
+            "name": "Daisy",
+            "ref": "QRO49404",
+            "amount": 47.92,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "bf74994f-ef1f-4dcb-ad81-94f89179135f",
+            "date": "2026-01-15",
+            "name": "Corp Tax 24/25",
+            "ref": "",
+            "amount": 400.0,
+            "direction": "IN",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "bf53d9c3-ba4f-4d72-8d84-bb133b9cb310",
+            "date": "2026-01-15",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-4RB7E",
+            "amount": 137.38,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "bed51a49-3b7c-4c19-9c0c-20a6de1dabab",
+            "date": "2026-01-15",
+            "name": "PayPal",
+            "ref": "PAYPAL *ZWIFT",
+            "amount": 17.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "be76d9ff-75d6-40c3-8007-1be3ac87dda8",
+            "date": "2026-01-15",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 106.96,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "bc4de315-ded6-4f2d-84a7-8d0c0e2dc48c",
+            "date": "2026-01-14",
+            "name": "Businessforunicorns",
+            "ref": "BUSINESSFORUNICORNS.CO",
+            "amount": 819.17,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "bb3a4544-6974-499c-bf43-a4eea58088b5",
+            "date": "2026-01-14",
+            "name": "PayPal",
+            "ref": "PAYPAL *DROPBOXINTE VG",
+            "amount": 9.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "bb39f1e2-2f96-48fc-87c2-4785e39c84e5",
+            "date": "2026-01-14",
+            "name": "Amazon",
+            "ref": "Amazon.co.uk*Z76E24K34",
+            "amount": 78.48,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "bb1f1b59-2c2d-4e35-847b-17859a97270f",
+            "date": "2026-01-14",
+            "name": "Adobe",
+            "ref": "Illustrator",
+            "amount": 32.98,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b9d5d386-c135-483e-9b05-264646b91898",
+            "date": "2026-01-14",
+            "name": "Barburrito Trafford Ki",
+            "ref": "BARBURRITO TRAFFORD KI",
+            "amount": 13.0,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "b8d15f3e-b171-4d39-b1e5-441f017dff6a",
+            "date": "2026-01-14",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 9.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "b8d06418-6b3e-436c-a832-6a8337941357",
+            "date": "2026-01-14",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 49.05,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "b53cfa84-eedb-44fb-ad48-b730e954dfcb",
+            "date": "2026-01-13",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 175.69,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b5254485-13be-462d-b792-9981b652d455",
+            "date": "2026-01-13",
+            "name": "Theresa McGreevy",
+            "ref": "WreathWorkshop",
+            "amount": 80.0,
+            "direction": "OUT",
+            "category": "Business Entertainment",
+            "internal": false
+          },
+          {
+            "uid": "b41c380b-60be-4f69-b9bf-2cdc34a9ff7b",
+            "date": "2026-01-13",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-9RK5E",
+            "amount": 261.8,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "b3649c63-60f3-4fb4-9804-89b3bd46e1a6",
+            "date": "2026-01-13",
+            "name": "PayPal",
+            "ref": "PAYPAL *SPOTIFY*P3E599",
+            "amount": 17.99,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "b32bbd6a-2afe-41c2-9f6f-7bcd7aac325c",
+            "date": "2026-01-13",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 87.47,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9e9c75d3-7e7d-47a8-bf42-0a8ada275ffb",
+            "date": "2026-01-13",
+            "name": "Stripe",
+            "ref": "STRIPE-OEMX5T0RDGL",
+            "amount": 99.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "b18b2d96-a6e5-445d-8229-08041c7255a7",
+            "date": "2026-01-13",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 800.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "afa52ff5-a969-401b-acad-9924ae68f667",
+            "date": "2026-01-12",
+            "name": "PayPal",
+            "ref": "PAYPAL *FIVERR COM",
+            "amount": 60.78,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "af7b595b-0c61-4511-850a-4715cdf05fea",
+            "date": "2026-01-12",
+            "name": "SumUp Payments Account",
+            "ref": "MRC PID1074100",
+            "amount": 25.84,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "aefe1a52-884d-45a6-afbd-6df58df93d98",
+            "date": "2026-01-12",
+            "name": "Sarah Lacey",
+            "ref": "Decforge",
+            "amount": 250.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "ae7a09e2-a319-4a45-95ee-d3edb6ab90c3",
+            "date": "2026-01-12",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-GHA3J",
+            "amount": 157.04,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "ad912d3b-70cf-4261-83c3-1f1bc398f63d",
+            "date": "2026-01-12",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 120.71,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "ac8e3c8f-c73c-4235-951f-991f5d6bcb1a",
+            "date": "2026-01-12",
+            "name": "MARGARET ANN IRENE ROBINSON",
+            "ref": "Irene Robinson",
+            "amount": 160.0,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "aadddb27-0d1f-4e3e-b247-a9112d393d4d",
+            "date": "2026-01-11",
+            "name": "PayPal",
+            "ref": "PAYPAL *PARETO",
+            "amount": 38.9,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "aad884b7-e7df-4d51-8e0c-cc41d6cad5ab",
+            "date": "2026-01-11",
+            "name": "Cleverbridge Gmbh",
+            "ref": "CBA*AOMEI",
+            "amount": 7.35,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "a0210a31-920c-4b16-afab-55ee11f55271",
+            "date": "2026-01-09",
+            "name": "Zapier",
+            "ref": "ZAPIER.COM/CHARGE",
+            "amount": 27.42,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "9f0648b4-0663-41ec-97d6-e81b21b96e5e",
+            "date": "2026-01-09",
+            "name": "Float-Away Portrus",
+            "ref": "SQ *FLOAT-AWAY PORTRUS",
+            "amount": 80.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "9ea33129-2e90-48ef-9d07-57eef12e4c6e",
+            "date": "2026-01-09",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 151.45,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "9da1a330-84e7-4048-ae2f-0fbbbc82e180",
+            "date": "2026-01-09",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-CTTF4",
+            "amount": 318.12,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9d059d26-28a9-43ae-804d-3deb6cda13d0",
+            "date": "2026-01-09",
+            "name": "Joanne Hall",
+            "ref": "Decsalary",
+            "amount": 2300.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "9ccaca28-da89-4eab-bf9a-73efee430cb5",
+            "date": "2026-01-09",
+            "name": "Eilis Kearns",
+            "ref": "Decsalary",
+            "amount": 312.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "9caafc27-cced-42dd-86cf-8fea7ab73f1f",
+            "date": "2026-01-09",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 38.6,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9bf1b331-7009-4e58-989d-31a29e53c1c5",
+            "date": "2026-01-09",
+            "name": "Teamup Software",
+            "ref": "TEAMUP SOFTWARE",
+            "amount": 141.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "9b94c0e1-9f68-498c-8ac7-63e7c3ac4963",
+            "date": "2026-01-09",
+            "name": "Apple iTunes",
+            "ref": "APPLE.COM/BILL",
+            "amount": 11.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
+          {
+            "uid": "9256cca1-f7a0-4229-8859-eb6ee16e20de",
+            "date": "2026-01-09",
+            "name": "Stripe",
+            "ref": "STRIPE-QNEWMZ0OOOF",
+            "amount": 10.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "9b1058f5-8353-4dec-ac9c-6b71adb55069",
+            "date": "2026-01-09",
+            "name": "VAT",
+            "ref": "",
+            "amount": 1300.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "95212a00-e45d-4c7c-9674-58383611355c",
+            "date": "2026-01-09",
+            "name": "Mr Mark David Smith",
+            "ref": "Forgecleaning",
+            "amount": 50.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "952157eb-9c6a-43a7-ad61-089adc7786a5",
+            "date": "2026-01-09",
+            "name": "TAGGART ESTATES LTD",
+            "ref": "UNIT5FORGE",
+            "amount": 500.0,
+            "direction": "OUT",
+            "category": "Workplace",
+            "internal": false
+          },
+          {
+            "uid": "9811a870-2134-455d-869e-36ac29b4b423",
+            "date": "2026-01-08",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-4SQPN",
+            "amount": 5508.27,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "9745fa03-9466-4122-b0e0-925d5fa340c6",
+            "date": "2026-01-08",
+            "name": "Northlink M1",
+            "ref": "NORTHLINK M1 LIMITED  ",
+            "amount": 2.0,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "9726c5b6-74bb-4b69-8ab6-54e65dd902dd",
+            "date": "2026-01-08",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 222.87,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "971be820-47e5-4eae-a8f4-9e3bb916e381",
+            "date": "2026-01-08",
+            "name": "Grace Smith",
+            "ref": "Jansalary",
+            "amount": 2500.0,
+            "direction": "OUT",
+            "category": "Directors Wages",
+            "internal": false
+          },
+          {
+            "uid": "9709c8a5-b723-409b-9601-4c733b56b417",
+            "date": "2026-01-08",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 108.93,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "96f7b78a-d2ce-4553-a6ed-998d3212c98b",
+            "date": "2026-01-08",
+            "name": "Northlink M1",
+            "ref": "NORTHLINK M1 LIMITED  ",
+            "amount": 2.0,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "96aa8de5-24f5-497e-aeaa-046c5d05df1c",
+            "date": "2026-01-08",
+            "name": "Applegreen",
+            "ref": "APPLEGREEN M1 LISBURN",
+            "amount": 5.4,
+            "direction": "OUT",
+            "category": "Vehicles",
+            "internal": false
+          },
+          {
+            "uid": "946165ea-ea2b-44d9-894e-b9e824eb94c8",
+            "date": "2026-01-07",
+            "name": "Hendersons Doagh",
+            "ref": "HENDERSONS DOAGH",
+            "amount": 40.13,
+            "direction": "OUT",
+            "category": "Vehicles",
+            "internal": false
+          },
+          {
+            "uid": "92e9b65b-1d8b-4119-aa12-7dc80c2bc540",
+            "date": "2026-01-07",
+            "name": "Sumup *abode Cafe",
+            "ref": "SumUp  *Abode Cafe",
+            "amount": 7.7,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "9254848d-50f4-48c4-9bba-2832b8c168a7",
+            "date": "2026-01-07",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-Z3M3M",
+            "amount": 207.35,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "925419c7-39a9-402a-b37f-c58411dd693d",
+            "date": "2026-01-07",
+            "name": "Wp*rosnashanehouse",
+            "ref": "WP*rosnashanehouse.com",
+            "amount": 50.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "86d12834-928c-4096-9007-7a6feb119f58",
+            "date": "2026-01-07",
+            "name": "Stripe",
+            "ref": "STRIPE-QNEWMZ0OOOF",
+            "amount": 1390.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "883af1d0-b956-4c3a-beff-77adaacf3c94",
+            "date": "2026-01-07",
+            "name": "O2",
+            "ref": "D24839001",
+            "amount": 56.84,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "883adf32-e6aa-4507-89fa-31990c4d2364",
+            "date": "2026-01-07",
+            "name": "O2",
+            "ref": "D7123920",
+            "amount": 16.8,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "8e839942-59fe-4c06-a72e-947bf0365e66",
+            "date": "2026-01-06",
+            "name": "Asana",
+            "ref": "ASANA.COM",
+            "amount": 23.18,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8de3c19c-ed26-436f-b14d-5d150430f222",
+            "date": "2026-01-06",
+            "name": "Techfoundher",
+            "ref": "TECHFOUNDHER",
+            "amount": 13.07,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "8cc55490-f22e-4b98-a112-63f3c17571c9",
+            "date": "2026-01-06",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-T9QR6",
+            "amount": 2506.88,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "8bcb4644-18a0-4878-8b00-aee7e3938caa",
+            "date": "2026-01-06",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 331.91,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "8a2e3373-81c6-4e98-80d9-6210062c5666",
+            "date": "2026-01-06",
+            "name": "Ring",
+            "ref": "RING BASIC PLAN",
+            "amount": 14.97,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "87c559f9-062e-4e54-8a19-c7ec1bad4390",
+            "date": "2026-01-05",
+            "name": "SumUp Payments Account",
+            "ref": "MRC PID1065818",
+            "amount": 17.06,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "8748dbe8-de80-40b0-961a-907beeebdd1e",
+            "date": "2026-01-05",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 8.27,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "8742ddea-2453-42fe-bac5-6ad38781e24e",
+            "date": "2026-01-05",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-3Q73G",
+            "amount": 347.88,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "83d2dd4c-d13a-48e2-b62e-e22ab1849c91",
+            "date": "2026-01-04",
+            "name": "Trainerize",
+            "ref": "ABC TRAINERIZE",
+            "amount": 10.6,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "825435a7-27a5-4712-8b46-32d92278cd5c",
+            "date": "2026-01-04",
+            "name": "Thegrowthcompany.Ie",
+            "ref": "THEGROWTHCOMPANY.IE",
+            "amount": 40.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "821d9f8e-e418-4ddf-b596-9dc3a0bd8f08",
+            "date": "2026-01-04",
+            "name": "Jordan Swain",
+            "ref": "JORDAN SWAIN",
+            "amount": 250.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "7d67c3aa-ce74-4c06-a2d3-2f7e9e9b81cc",
+            "date": "2026-01-03",
+            "name": "Adobe",
+            "ref": "Phtoshp Lightrm Bndl",
+            "amount": 14.99,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "7d05dde6-e522-41dc-a93c-b13f35a6939f",
+            "date": "2026-01-03",
+            "name": "Facebook",
+            "ref": "FACEBK *ZJJMHBDMW2",
+            "amount": 251.0,
+            "direction": "OUT",
+            "category": "Marketing",
+            "internal": false
+          },
+          {
+            "uid": "7d029bbd-5d61-48e4-a8db-434d7d5a67a5",
+            "date": "2026-01-03",
+            "name": "Scoreapp",
+            "ref": "SCOREAPP",
+            "amount": 90.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "7c7da79b-3bb6-440c-9a2d-be6f5865687c",
+            "date": "2026-01-03",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "FORGEFEMALE",
+            "amount": 480.56,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "786796bc-08c1-44ee-ad43-c81751dcdcfc",
+            "date": "2026-01-02",
+            "name": "Amazon Marketplace",
+            "ref": "AMZNMktplace*ZG6K17204",
+            "amount": 23.5,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "7646bb72-46cd-4b27-972d-669950bef7de",
+            "date": "2026-01-02",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-AQG8E",
+            "amount": 163.13,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "667ec2ad-7ae6-4588-ad2b-3063a53f825d",
+            "date": "2026-01-02",
+            "name": "Women In Business Ni",
+            "ref": "WIB-8542076",
+            "amount": 8.4,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "731d1f07-cb6c-4a15-b95d-2258e1551e08",
+            "date": "2026-01-01",
+            "name": "Staff Bonuses",
+            "ref": "",
+            "amount": 100.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "73196898-8382-42ec-b4e5-792d6e130946",
+            "date": "2026-01-01",
+            "name": "Forge Female Fitness Ltd",
+            "ref": "Bizsavings",
+            "amount": 1500.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": false
+          },
+          {
+            "uid": "73027e1a-0cee-4ea8-80ba-e777a1fec041",
+            "date": "2026-01-01",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "FORGEFEMALE",
+            "amount": 1441.08,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "72046f62-2120-4ca3-b0d4-0067cc32511d",
+            "date": "2026-01-01",
+            "name": "Squarespace",
+            "ref": "SQSP* WEBSIT#216131942",
+            "amount": 24.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "711d4e97-72ed-4ca6-8e61-e01aef192137",
+            "date": "2026-01-01",
+            "name": "Google Cloud",
+            "ref": "Google Workspace_workf",
+            "amount": 22.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "6fe75350-6670-4775-a0a9-895258f1a105",
+            "date": "2026-01-01",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 20.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "6fe77b0e-7921-4136-bdf1-7c96d1e0aa05",
+            "date": "2026-01-01",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 97.0,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "6f896a14-b3bb-405d-8dc6-a751b4c86c05",
+            "date": "2026-01-01",
+            "name": "Systemize M3 Llc",
+            "ref": "SYSTEMIZE M3 LLC",
+            "amount": 11.42,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "6dc5152b-b18a-4877-80ef-954f2bd104f5",
+            "date": "2026-01-01",
+            "name": "Leedstrinity.Ac",
+            "ref": "WWW.LEEDSTRINITY.AC.UK",
+            "amount": 375.0,
+            "direction": "OUT",
+            "category": "Training",
+            "internal": false
+          }
+        ]
       },
       {
         "month": "2026-02",
@@ -20268,9 +21700,9 @@
       {
         "month": "2026-07",
         "revenue": 18642.99,
-        "expenses": 12113.96,
-        "profit": 6529.03,
-        "profit_pct": 35.0,
+        "expenses": 12160.96,
+        "profit": 6482.03,
+        "profit_pct": 34.8,
         "categories": {
           "in": [
             {
@@ -20301,7 +21733,7 @@
             },
             {
               "name": "Other",
-              "amount": 1194.44
+              "amount": 1241.44
             },
             {
               "name": "Workplace",
@@ -20330,6 +21762,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "d6132bb7-eaca-48e7-aa6d-912273685349",
+            "date": "2026-07-20",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 47.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
           {
             "uid": "d4982b86-15f4-4b90-b0ec-a439ebc274f0",
             "date": "2026-07-20",
@@ -22224,7 +23666,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 2076.0,
+    "cash_position": 2029.0,
     "available": 0.0,
     "reserves": [
       {
@@ -22245,7 +23687,7 @@
       }
     ],
     "earmarked": 13407.0,
-    "total_cash": 15483.0,
+    "total_cash": 15436.0,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -22274,8 +23716,8 @@
       }
     ],
     "cash_in_30": 21016.62,
-    "cash_out_30": 16749.93,
-    "net_30": 4266.69,
+    "cash_out_30": 15996.93,
+    "net_30": 5019.69,
     "as_of": "2026-07-20"
   },
   "gocardless": {
@@ -22597,6 +24039,13 @@
   "tshirt": {
     "configured": true,
     "orders": [
+      {
+        "date": "2026-07-20",
+        "order_no": "",
+        "total": "\u00a347.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
       {
         "date": "2026-07-17",
         "order_no": "",
@@ -23249,8 +24698,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 93,
-    "total_spend": 8573.9,
+    "count": 94,
+    "total_spend": 8620.9,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": {

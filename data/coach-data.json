@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T14:00:55.506726+00:00",
+  "generated_at": "2026-07-20T20:14:33.244162+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -15,9 +15,9 @@
       },
       {
         "month": "2026-06",
-        "completed": 15,
+        "completed": 16,
         "converted": 7,
-        "conv_rate": 47
+        "conv_rate": 44
       },
       {
         "month": "2026-05",
@@ -626,7 +626,7 @@
         "days_left": -17,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -634,7 +634,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": false,
+        "pink_red": true,
         "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
       },
       {
@@ -796,6 +796,38 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "Find change difficult"
+      },
+      {
+        "name": "Rose Cosgrove",
+        "cohort": "APR-MAY",
+        "joined": "2026-07-05",
+        "end": "2026-06-18",
+        "goal": "Lose weight, build strength and get fit",
+        "notes": "No",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "week_on": 3,
+        "days_left": -32,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": true,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
+        "missing_checkins": 0,
+        "completed_checkins": 3,
+        "expected_checkins": 3,
+        "paused": false,
+        "pink_red": true,
+        "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       },
       {
         "name": "Gillian Connolly",
@@ -1406,38 +1438,6 @@
         "paused": true,
         "pink_red": false,
         "pause_reason": "car accident"
-      },
-      {
-        "name": "Rose Cosgrove",
-        "cohort": "APR-MAY",
-        "joined": "2026-07-05",
-        "end": "2026-06-18",
-        "goal": "Lose weight, build strength and get fit",
-        "notes": "No",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "week_on": 3,
-        "days_left": -32,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
-        "missing_checkins": 0,
-        "completed_checkins": 3,
-        "expected_checkins": 3,
-        "paused": true,
-        "pink_red": false,
-        "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       }
     ],
     "alerts": [
@@ -1554,11 +1554,11 @@
     ],
     "stats": {
       "active_count": 13,
-      "paused_count": 4,
-      "conv_rate": 37,
+      "paused_count": 3,
+      "conv_rate": 36,
       "converted": 10,
-      "not_converted": 7,
-      "total_complete": 27
+      "not_converted": 9,
+      "total_complete": 28
     }
   },
   "inbody": {
@@ -3492,34 +3492,28 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U08HT8HQUBZ",
-        "text": "Ah I just went in to see and there was a bug that wasn\u2019t letting anyone in elevate book a Monday! Not sure why. \n\nBut that\u2019s it\u2019s fixed and I've booked you in x",
-        "hours": 44,
-        "name": "Lynne Brown"
-      },
-      {
-        "user_id": "U09HG60QR7C",
-        "text": "Actually no further forward, she's just making me more angry because she's like why don't you just go and be happy and leave me to destroy my own life \u2026.. but t",
-        "hours": 25,
-        "name": "Melissa Traynor"
-      },
-      {
         "user_id": "U0AATFGV84R",
         "text": "That is super thank you so much :heart: I really appreciate it and I hope its not gonna be for too long xx",
-        "hours": 2,
+        "hours": 8,
         "name": "Kerry Tweed"
       },
       {
         "user_id": "U0B1G7ABCQL",
         "text": "That\u2019s it all cancelled from 23rd August for you and keep in touch when the summer is over get yourself back in :blush:",
-        "hours": 1,
+        "hours": 7,
         "name": "Victoria Thompson"
       },
       {
         "user_id": "U0AG31LK3T5",
         "text": "Strongevity info: <https://www.forgefemalefitness.com/strongevity|forgefemalefitness.com/strongevity>\n\nBook &amp; Pay for the august block: <https://goteamup.co",
-        "hours": 0,
+        "hours": 6,
         "name": "Louise Feeney"
+      },
+      {
+        "user_id": "U09HG60QR7C",
+        "text": "Michelle is wonderful ",
+        "hours": 0,
+        "name": "Melissa Traynor"
       }
     ],
     "mentions": [],
@@ -3688,7 +3682,8 @@
       "catherine brown": "U0BGT3RVBA8",
       "kristina": "U0BGT464XE0",
       "jacqueline crawford": "U0BHGLC00SW",
-      "marjorie": "U0BJD0WGJMA"
+      "marjorie": "U0BJD0WGJMA",
+      "lynda archibald": "U0BJHPWH3U6"
     }
   },
   "staff": {
@@ -4217,8 +4212,8 @@
     }
   },
   "teamup": {
-    "total_members": 154,
-    "recurring": 101,
+    "total_members": 156,
+    "recurring": 102,
     "recurring_members": [
       {
         "id": 10803724,
@@ -4271,6 +4266,10 @@
       {
         "id": 11546736,
         "name": "Claire Leeke"
+      },
+      {
+        "id": 13232285,
+        "name": "Claire Walker"
       },
       {
         "id": 13063966,
@@ -4625,7 +4624,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 17,
+    "trial": 18,
     "trial_members": [
       {
         "id": 13448952,
@@ -4680,6 +4679,10 @@
         "name": "Louise Farley"
       },
       {
+        "id": 13539733,
+        "name": "Lynda Archibald"
+      },
+      {
         "id": 13529711,
         "name": "Marjorie Moore"
       },
@@ -4696,7 +4699,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 38,
+    "new_this_month": 40,
     "cancellations_this_month": 2,
     "leaving_members": [
       {
@@ -5423,11 +5426,6 @@
             "end": "2026-05-27"
           },
           {
-            "name": "Claire Walker",
-            "membership": "30 Day Challenge",
-            "end": "2026-05-27"
-          },
-          {
             "name": "Stephanie Mcnally",
             "membership": "6 Week Jumpstart",
             "end": "2026-05-08"
@@ -5477,8 +5475,8 @@
     ],
     "cancelled_ytd": 33,
     "churn_rate": 1.4,
-    "avg_member_price": 134.93,
-    "monthly_recurring_revenue": 13088.0,
+    "avg_member_price": 134.92,
+    "monthly_recurring_revenue": 13222.0,
     "avg_tenure_months": 8.9,
     "cancelled_last_month": 2,
     "cancelled_members": [
@@ -5754,7 +5752,7 @@
       },
       {
         "name": "Elevate",
-        "count": 34,
+        "count": 35,
         "members": [
           {
             "id": 11025666,
@@ -5771,6 +5769,10 @@
           {
             "id": 11546736,
             "name": "Claire Leeke"
+          },
+          {
+            "id": 13232285,
+            "name": "Claire Walker"
           },
           {
             "id": 7196665,
@@ -5896,7 +5898,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 17,
+        "count": 18,
         "members": [
           {
             "id": 13448952,
@@ -5949,6 +5951,10 @@
           {
             "id": 13390194,
             "name": "Louise Farley"
+          },
+          {
+            "id": 13539733,
+            "name": "Lynda Archibald"
           },
           {
             "id": 13529711,
@@ -6344,7 +6350,7 @@
           },
           {
             "day": "Monday",
-            "count": 350
+            "count": 390
           }
         ],
         "bottom_days": [
@@ -6354,7 +6360,7 @@
           },
           {
             "day": "Monday",
-            "count": 350
+            "count": 390
           },
           {
             "day": "Thursday",
@@ -6380,7 +6386,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 341
+            "count": 381
           },
           {
             "name": "Elevate",
@@ -6435,8 +6441,8 @@
             "day": "Monday",
             "time": "8pm",
             "name": "Build: Lower",
-            "count": 86,
-            "sessions": 8,
+            "count": 97,
+            "sessions": 9,
             "avg": 10.8,
             "label": "Monday 8pm Build: Lower"
           },
@@ -6462,19 +6468,19 @@
             "day": "Monday",
             "time": "10am",
             "name": "Build: Lower",
-            "count": 73,
-            "sessions": 7,
-            "avg": 10.4,
+            "count": 82,
+            "sessions": 8,
+            "avg": 10.2,
             "label": "Monday 10am Build: Lower"
           },
           {
-            "day": "Monday",
-            "time": "7pm",
-            "name": "Build: Lower",
-            "count": 83,
-            "sessions": 8,
-            "avg": 10.4,
-            "label": "Monday 7pm Build: Lower"
+            "day": "Saturday",
+            "time": "8am",
+            "name": "Elevate",
+            "count": 51,
+            "sessions": 5,
+            "avg": 10.2,
+            "label": "Saturday 8am Elevate"
           }
         ],
         "bottom_slots": [
@@ -6533,7 +6539,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2491
+        "total_attended": 2531
       },
       "last_30_days": {
         "top_days": [
@@ -6542,6 +6548,10 @@
             "count": 196
           },
           {
+            "day": "Monday",
+            "count": 161
+          },
+          {
             "day": "Wednesday",
             "count": 160
           },
@@ -6552,10 +6562,6 @@
           {
             "day": "Thursday",
             "count": 125
-          },
-          {
-            "day": "Monday",
-            "count": 121
           }
         ],
         "bottom_days": [
@@ -6564,10 +6570,6 @@
             "count": 113
           },
           {
-            "day": "Monday",
-            "count": 121
-          },
-          {
             "day": "Thursday",
             "count": 125
           },
@@ -6578,6 +6580,10 @@
           {
             "day": "Wednesday",
             "count": 160
+          },
+          {
+            "day": "Monday",
+            "count": 161
           }
         ],
         "top_classes": [
@@ -6586,16 +6592,16 @@
             "count": 196
           },
           {
+            "name": "Build: Lower",
+            "count": 152
+          },
+          {
             "name": "Elevate",
             "count": 137
           },
           {
             "name": "Build: Full Body",
             "count": 136
-          },
-          {
-            "name": "Build: Lower",
-            "count": 112
           },
           {
             "name": "Plate",
@@ -6661,6 +6667,15 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
+            "day": "Monday",
+            "time": "8pm",
+            "name": "Build: Lower",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Monday 8pm Build: Lower"
+          },
+          {
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
@@ -6677,15 +6692,6 @@
             "sessions": 3,
             "avg": 10.0,
             "label": "Wednesday 10am Circuits"
-          },
-          {
-            "day": "Monday",
-            "time": "5pm",
-            "name": "Build: Lower",
-            "count": 20,
-            "sessions": 2,
-            "avg": 10.0,
-            "label": "Monday 5pm Build: Lower"
           }
         ],
         "bottom_slots": [
@@ -6744,7 +6750,7 @@
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 870
+        "total_attended": 910
       },
       "suggestion": "**For quiet studio gaps (between PT and classes):**\n\n1. **Launch a Monday lunchtime open-gym slot** \u2014 Monday is your quietest day overall; a 45-minute unstructured lift window (11:30\u201312:15) with a staff member present captures the corporate crowd who can't commit to full classes.\n\n2. **Add a Saturday morning \"Strongevity + Coffee\" social workshop** \u2014 Strongevity has only 32 attendees over 90 days; pair a 30-minute technique clinic on longevity training with 15 minutes of informal networking and coffee on Saturday mornings to rebuild community around this class and fill dead time.\n\n**To lift the quieter classes themselves:**\n\n3. **Move Engine to a Thursday or Friday evening slot and run a 2-week \"Engine Challenge\" with incentive prizes** \u2014 Engine (55 attendees, 14 last month) is severely underperforming; it's likely a timing problem. Reposition it during your busier mid-week window and promote it as a 30-day conditioning challenge with small rewards (free PT session, merch) to create momentum and social proof.",
       "capacity": [
@@ -7050,20 +7056,20 @@
       },
       {
         "month": "2026-07",
-        "active": 158,
+        "active": 160,
         "churn": 7.5,
         "by_type": {
           "Empower": 64,
           "8 PT Sessions": 2,
           "4 PT Sessions": 10,
           "Evolve": 4,
-          "Elevate": 41,
+          "Elevate": 42,
           "1:2 PT 4 Sessions": 1,
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
-          "6 Week Jumpstart": 18,
+          "6 Week Jumpstart": 19,
           "Strongevity": 10,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -7096,13 +7102,6 @@
         "last_seen": "2026-06-09"
       },
       {
-        "id": 12671936,
-        "name": "Dorothy McIntyre",
-        "membership": "Elevate",
-        "days_absent": 11,
-        "last_seen": "2026-07-09"
-      },
-      {
         "id": 11882918,
         "name": "Emma Hamilton",
         "membership": "Elevate",
@@ -7127,13 +7126,6 @@
         "id": 9768831,
         "name": "Jane Hegarty",
         "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-07-08"
-      },
-      {
-        "id": 12947742,
-        "name": "Jayne Scott",
-        "membership": "Elevate",
         "days_absent": 12,
         "last_seen": "2026-07-08"
       },
@@ -7215,20 +7207,6 @@
         "last_seen": "2026-07-02"
       },
       {
-        "id": 10244264,
-        "name": "Sharon Kirk",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-07-08"
-      },
-      {
-        "id": 13118018,
-        "name": "Victoria Thompson",
-        "membership": "Empower",
-        "days_absent": 19,
-        "last_seen": "2026-07-01"
-      },
-      {
         "id": 12218719,
         "name": "sandra mccrea",
         "membership": "Elevate",
@@ -7250,6 +7228,11 @@
         }
       ],
       "new_members": [
+        {
+          "name": "Claire Walker",
+          "days_in": 0,
+          "start_date": "2026-07-20"
+        },
         {
           "name": "Lesley Drake",
           "days_in": 2,
@@ -7561,6 +7544,15 @@
         "join_date": "2025-10-02",
         "membership": "Elevate",
         "class_count": 81,
+        "last_momentum": null
+      },
+      {
+        "id": 13232285,
+        "name": "Claire Walker",
+        "email": "claire.walker311@gmail.com",
+        "join_date": "2026-05-26",
+        "membership": "Elevate",
+        "class_count": 15,
         "last_momentum": null
       },
       {
@@ -8583,6 +8575,13 @@
     "configured": true,
     "orders": [
       {
+        "date": "2026-07-20",
+        "order_no": "",
+        "total": "\u00a347.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
+      {
         "date": "2026-07-17",
         "order_no": "",
         "total": "\u00a373.00",
@@ -9234,8 +9233,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 93,
-    "total_spend": 8573.9,
+    "count": 94,
+    "total_spend": 8620.9,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
