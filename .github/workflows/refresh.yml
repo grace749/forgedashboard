@@ -63,6 +63,8 @@ jobs:
           INBODY_PASSWORD: ${{ secrets.INBODY_PASSWORD }}
           SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
           SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
+          SLACK_USER_TOKEN_COACH: ${{ secrets.SLACK_USER_TOKEN_COACH }}
+          SLACK_USER_ID_COACH: ${{ secrets.SLACK_USER_ID_COACH }}
           STARLING_ACCESS_TOKEN: ${{ secrets.STARLING_ACCESS_TOKEN }}
           GOCARDLESS_ACCESS_TOKEN: ${{ secrets.GOCARDLESS_ACCESS_TOKEN }}
           STRIPE_ACCESS_TOKEN: ${{ secrets.STRIPE_ACCESS_TOKEN }}

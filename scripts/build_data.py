@@ -133,6 +133,14 @@ try:
         print(f"[coach-brief] {_cb.get('urgent_count', 0)} emails needing a reply")
 except Exception as ex:
     print(f"[coach-brief] skipped: {ex}")
+# The coach's OWN Slack (her token) — coach file only.
+try:
+    _cs = safe_run("coach-slack", fetch_slack.run_coach)
+    if _cs:
+        coach["coach_slack"] = _cs
+        print(f"[coach-slack] {len(_cs.get('mentions', []))} mentions, {len(_cs.get('unreplied_dms', []))} DMs")
+except Exception as ex:
+    print(f"[coach-slack] skipped: {ex}")
 # Per-page reports: the coach keeps her own pages' reports but never the
 # finance/leads/ads ones, nor the combined "full" report (which contains them).
 if isinstance(coach.get("reports"), dict):

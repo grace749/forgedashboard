@@ -4250,6 +4250,30 @@ function render(data) {
                 <div style="font-size:.75rem;color:#6b7280">${_plEsc(e.subject)}</div>
               </div>`).join("") : `<p style="color:#16a34a;font-size:.9rem;padding:6px 0">Inbox clear — nothing waiting on a reply 🎉</p>`)}
         </div>`;
+      })(),
+      // Your Slack (JoJo's own mentions + unreplied DMs — needs her token connected)
+      (() => {
+        const cs = data.coach_slack;
+        const mts = (cs && cs.mentions) || [];
+        const dms = (cs && cs.unreplied_dms) || [];
+        const row = (name, text, meta, link) => `
+          <div style="padding:7px 0;border-bottom:1px solid #f6f6fa">
+            <div style="display:flex;justify-content:space-between;gap:8px">
+              <span style="font-size:.84rem;color:#111;font-weight:600">${_plEsc(name)}</span>
+              <span style="font-size:.7rem;color:#9ca3af;white-space:nowrap">${_plEsc(meta)}</span>
+            </div>
+            <div style="font-size:.75rem;color:#6b7280">${link?`<a href="${_plEsc(link)}" target="_blank" rel="noopener" style="color:#6b7280;text-decoration:none">${_plEsc(text)}</a>`:_plEsc(text)}</div>
+          </div>`;
+        return `<div class="card col-6">
+          <div class="card-title">Your Slack</div>
+          <div class="card-headline" style="margin-bottom:8px">Mentions &amp; unanswered DMs</div>
+          ${!cs
+            ? `<p style="color:#ccc;font-size:.85rem;padding:6px 0">Your Slack isn't connected yet — ask Grace to switch it on to see your @-mentions and DMs needing a reply.</p>`
+            : ((mts.length||dms.length)
+                ? (dms.slice(0,5).map(d => row(d.name, d.text, `DM · ${d.hours}h`, "")).join("")
+                   + mts.slice(0,6).map(m => row(m.name, m.text, `${m.channel?"#"+m.channel+" · ":""}${m.hours}h`, m.permalink)).join(""))
+                : `<p style="color:#16a34a;font-size:.9rem;padding:6px 0">All caught up — no mentions or DMs waiting 🎉</p>`)}
+        </div>`;
       })()
     ];
   }

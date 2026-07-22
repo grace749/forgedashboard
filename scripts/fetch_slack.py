@@ -52,8 +52,10 @@ def _call(method, token, **params):
         return json.loads(resp.read())
 
 
-def _grace_replied_after(token, channel_id, after_ts, thread_ts=None):
-    """True if Grace has posted in this channel/thread AFTER the given message."""
+def _grace_replied_after(token, channel_id, after_ts, thread_ts=None, me=None):
+    """True if the user (default Grace) has posted in this channel/thread AFTER
+    the given message."""
+    me = me or GRACE_ID
     try:
         if thread_ts:
             r = _call("conversations.replies", token, channel=channel_id,
@@ -62,7 +64,7 @@ def _grace_replied_after(token, channel_id, after_ts, thread_ts=None):
             r = _call("conversations.history", token, channel=channel_id,
                       oldest=after_ts, limit=30)
         for m in r.get("messages", []):
-            if float(m.get("ts", 0)) > float(after_ts) and m.get("user") == GRACE_ID:
+            if float(m.get("ts", 0)) > float(after_ts) and m.get("user") == me:
                 return True
     except Exception as ex:
         print(f"[slack] reply-check error: {ex}")
@@ -105,8 +107,9 @@ def _all_users(token):
     return users
 
 
-def run():
-    token = os.environ.get("SLACK_USER_TOKEN", "")
+def run(token=None, user_id=None):
+    token = token or os.environ.get("SLACK_USER_TOKEN", "")
+    me = user_id or GRACE_ID
     if not token:
         print("[slack] SLACK_USER_TOKEN not set — skipping")
         return {"configured": False, "unreplied_dms": [], "mentions": []}
@@ -128,13 +131,13 @@ def run():
             ts = float(last.get("ts", 0))
             # Genuine DM I still need to reply to, within the last 48h:
             # last message is from the other person, recent, not automated/emoji.
-            if (last.get("user") and last["user"] != GRACE_ID
+            if (last.get("user") and last["user"] != me
                     and ts >= window_start
                     and not _is_noise_message(last)):
-                # If Grace replied in a thread on that last message, it's handled
+                # If they replied in a thread on that last message, it's handled
                 if (last.get("thread_ts") or last.get("reply_count")) and \
                         _grace_replied_after(token, im["id"], last["ts"],
-                                             last.get("thread_ts") or last["ts"]):
+                                             last.get("thread_ts") or last["ts"], me=me):
                     continue
                 other_ids.add(im.get("user"))
                 pending.append({
@@ -152,7 +155,7 @@ def run():
     # ── Mentions of Grace ───────────────────────────────────────
     mentions = []
     try:
-        res = _call("search.messages", token, query=f"<@{GRACE_ID}>",
+        res = _call("search.messages", token, query=f"<@{me}>",
                     sort="timestamp", sort_dir="desc", count=100)
         matches = (res.get("messages") or {}).get("matches", [])
         for m in matches:
@@ -161,11 +164,11 @@ def run():
                 continue
             if _is_noise_message(m):             # skip bot/automated mentions
                 continue
-            if m.get("user") == GRACE_ID:        # her own message mentioning herself
+            if m.get("user") == me:              # their own message mentioning themselves
                 continue
             chan_id = (m.get("channel") or {}).get("id", "")
-            # Skip if Grace has already replied after this mention (in-channel or in-thread)
-            if chan_id and _grace_replied_after(token, chan_id, m.get("ts", 0), m.get("thread_ts")):
+            # Skip if they've already replied after this mention (in-channel or in-thread)
+            if chan_id and _grace_replied_after(token, chan_id, m.get("ts", 0), m.get("thread_ts"), me=me):
                 continue
             mentions.append({
                 "name": (m.get("username") or m.get("user") or "Someone"),
@@ -193,6 +196,17 @@ def run():
         "mentions": mentions,
         "users": _all_users(token),   # name → id, for DM deep-links from a member profile
     }
+
+
+def run_coach():
+    """A coach's own Slack (unreplied DMs + @-mentions), using HER token —
+    SLACK_USER_TOKEN_COACH + SLACK_USER_ID_COACH. Returns None if not connected.
+    Added to the coach data file only, so it stays private to her dashboard."""
+    token = os.environ.get("SLACK_USER_TOKEN_COACH", "")
+    uid = os.environ.get("SLACK_USER_ID_COACH", "")
+    if not token or not uid:
+        return None
+    return run(token, uid)
 
 
 if __name__ == "__main__":
