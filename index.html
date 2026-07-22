@@ -4534,19 +4534,20 @@ async function doLogin(){
   localStorage.setItem("forge_user", JSON.stringify({ email, role }));
   _startApp(email, role);
 }
-function logout(){ localStorage.removeItem("forge_user"); location.reload(); }
+function logout(){ window._gateToken = ""; localStorage.removeItem("forge_user"); location.reload(); }
 function _startApp(email, role){
   ROLE = role;
   window._coachEmail = role === "coach" ? email : "";
   const ls = document.getElementById("login-screen"); if (ls) ls.style.display = "none";
   loadData().then(render).then(() => {
-    // add a logout control to the header
-    const bar = document.querySelector(".tabs") || document.body;
-    if (bar && !document.getElementById("logout-btn")) {
+    // Clearly-visible logout control, pinned top-right on the white dashboard.
+    if (!document.getElementById("logout-btn")) {
       const b = document.createElement("button");
-      b.id = "logout-btn"; b.textContent = "Log out";
-      b.title = "Signed in as " + email;
-      b.style.cssText = "position:fixed;top:10px;right:14px;z-index:50;font-size:.68rem;font-weight:700;color:#c4b5fd;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:7px;padding:5px 10px;cursor:pointer";
+      b.id = "logout-btn"; b.textContent = "⎋ Log out";
+      b.title = "Signed in as " + email + " — click to log out";
+      b.style.cssText = "position:fixed;top:12px;right:16px;z-index:1000;font-size:.74rem;font-weight:700;color:#7c3aed;background:#fff;border:1px solid #e9e4fb;border-radius:9px;padding:7px 14px;cursor:pointer;box-shadow:0 2px 10px rgba(17,17,17,.10)";
+      b.onmouseenter = () => { b.style.background = "#f5f3ff"; };
+      b.onmouseleave = () => { b.style.background = "#fff"; };
       b.onclick = logout;
       document.body.appendChild(b);
     }
