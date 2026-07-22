@@ -1041,17 +1041,30 @@ const COACH_HIDDEN_TABS = ["finances", "leads", "ads", "growth", "sop", "staff"]
 // Private data gate (docs/data_gate.gs). Empty = OFF: the dashboard works exactly
 // as before, loading the public data files. Paste your gate /exec URL here to make
 // the data private — then login + all data come through the gate (no public file).
-const DATA_GATE_URL = "https://script.google.com/macros/s/AKfycbzXiZDwEYWjJNZP08mwsM1_S2MxBm9mPjgSI-sA1zdERIeTFluYjZfMvtOnZmu80WFG/exec";
+const DATA_GATE_URL = "";   // gate temporarily OFF while we fix the coach data push
 window._gateToken = "";
 window._gateData = null;   // data returned by the auth call, consumed once by loadData
 
 async function loadData() {
   if (DATA_GATE_URL && window._gateToken) {
-    if (window._gateData != null) { const d = window._gateData; window._gateData = null; return d; }
-    const res = await fetch(DATA_GATE_URL, { method: "POST", body: JSON.stringify({ type: "data", token: window._gateToken }) });
-    const j = await res.json();
-    if (j && j.ok && j.data) { if (j.role) ROLE = j.role; return JSON.parse(j.data); }
-    const e = new Error("Your session expired — please sign in again."); e._reauth = true; throw e;
+    try {
+      let data = null;
+      if (window._gateData != null) { data = window._gateData; window._gateData = null; }
+      else {
+        const res = await fetch(DATA_GATE_URL, { method: "POST", body: JSON.stringify({ type: "data", token: window._gateToken }) });
+        const j = await res.json();
+        if (j && j.ok && j.data) { if (j.role) ROLE = j.role; data = JSON.parse(j.data); }
+        else { const e = new Error("Your session expired — please sign in again."); e._reauth = true; throw e; }
+      }
+      // If the gate has real data, use it. If it's empty (files not pushed to the
+      // gate yet), fall back to the public file during the transition so the
+      // dashboard is never blank. (Removed once the public files go in Stage 4.)
+      if (data && data.generated_at) return data;
+      console.warn("[gate] returned empty data — falling back to the public file for now");
+    } catch (e) {
+      if (e && e._reauth) throw e;
+      console.warn("[gate] error, falling back to the public file:", e && e.message);
+    }
   }
   const file = ROLE === "coach" ? "./data/coach-data.json" : "./data/data.json";
   const res = await fetch(file + "?t=" + Date.now());
