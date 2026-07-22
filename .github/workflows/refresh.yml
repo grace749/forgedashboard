@@ -71,6 +71,8 @@ jobs:
           ATRISK_SCRIPT_URL: ${{ secrets.ATRISK_SCRIPT_URL }}
           CHAT_SCRIPT_URL: ${{ secrets.CHAT_SCRIPT_URL }}
           REPORT_SCRIPT_URL: ${{ secrets.REPORT_SCRIPT_URL }}
+          DATA_GATE_URL: ${{ secrets.DATA_GATE_URL }}
+          DATA_WRITE_SECRET: ${{ secrets.DATA_WRITE_SECRET }}
           REPORT_FORCE: ${{ github.event.inputs.report_force }}
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS_WRITE }}
           GITHUB_REPOSITORY: ${{ github.repository }}

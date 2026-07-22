@@ -149,3 +149,24 @@ if isinstance(coach.get("reports"), dict):
 COACH_OUTPUT = OUTPUT.parent / "coach-data.json"
 COACH_OUTPUT.write_text(json.dumps(coach, indent=2))
 print(f"Wrote {COACH_OUTPUT} (redacted: {', '.join(COACH_STRIP)})")
+
+# ── Private data gate: push the built data into a private Drive store that only
+# a signed-in user can read (see docs/data_gate.gs). Additive — the public files
+# above are still written until the gate is verified and cut over.
+_gate_url = os.environ.get("DATA_GATE_URL", "")
+_gate_secret = os.environ.get("DATA_WRITE_SECRET", "")
+if _gate_url and _gate_secret:
+    try:
+        import requests
+        r = requests.post(_gate_url, data=json.dumps({
+            "type": "put", "secret": _gate_secret,
+            "owner": json.dumps(data), "coach": json.dumps(coach),
+        }), timeout=90)
+        ok = False
+        try:
+            ok = bool(r.json().get("ok"))
+        except Exception:
+            pass
+        print(f"[data-gate] pushed private data (ok={ok})")
+    except Exception as ex:
+        print(f"[data-gate] push failed (public files still written): {ex}")

@@ -1037,7 +1037,22 @@ const ACCOUNTS = { "grace@theforge.pt": "owner", "jojo@theforge.pt": "coach" };
 let ROLE = "owner";                                        // set on login
 window._coachEmail = "";                                   // logged-in coach's email (for her Asana feed)
 const COACH_HIDDEN_TABS = ["finances", "leads", "ads", "growth", "sop", "staff"];
+
+// Private data gate (docs/data_gate.gs). Empty = OFF: the dashboard works exactly
+// as before, loading the public data files. Paste your gate /exec URL here to make
+// the data private — then login + all data come through the gate (no public file).
+const DATA_GATE_URL = "";
+window._gateToken = "";
+window._gateData = null;   // data returned by the auth call, consumed once by loadData
+
 async function loadData() {
+  if (DATA_GATE_URL && window._gateToken) {
+    if (window._gateData != null) { const d = window._gateData; window._gateData = null; return d; }
+    const res = await fetch(DATA_GATE_URL, { method: "POST", body: JSON.stringify({ type: "data", token: window._gateToken }) });
+    const j = await res.json();
+    if (j && j.ok && j.data) { if (j.role) ROLE = j.role; return JSON.parse(j.data); }
+    const e = new Error("Your session expired — please sign in again."); e._reauth = true; throw e;
+  }
   const file = ROLE === "coach" ? "./data/coach-data.json" : "./data/data.json";
   const res = await fetch(file + "?t=" + Date.now());
   return res.json();
@@ -4493,8 +4508,23 @@ function _loginScreen(msg){
 async function doLogin(){
   const email = (document.getElementById("login-email").value || "").trim().toLowerCase();
   const pw = document.getElementById("login-pw").value || "";
-  const role = ACCOUNTS[email];
   const setMsg = m => { document.getElementById("login-msg").textContent = m; };
+  // Private gate: the gate verifies the password and returns the data.
+  if (DATA_GATE_URL) {
+    if (!email) return setMsg("Enter your email.");
+    if (!pw)    return setMsg("Enter your password.");
+    setMsg("Signing in…");
+    try {
+      const res = await fetch(DATA_GATE_URL, { method: "POST", body: JSON.stringify({ type: "auth", email, code: pw }) });
+      const j = await res.json();
+      if (!j || !j.ok) return setMsg((j && j.error) || "Sign-in failed.");
+      window._gateToken = j.token;
+      window._gateData = j.data ? JSON.parse(j.data) : null;
+      localStorage.setItem("forge_user", JSON.stringify({ email, role: j.role, token: j.token }));
+      return _startApp(email, j.role);
+    } catch (e) { return setMsg("Couldn't reach the sign-in service — try again."); }
+  }
+  const role = ACCOUNTS[email];
   if (!role) return setMsg("That email isn't set up for the dashboard.");
   if (!pw)   return setMsg("Enter a password.");
   await loadAtRiskState();
@@ -4521,14 +4551,27 @@ function _startApp(email, role){
       document.body.appendChild(b);
     }
   }).catch(err => {
+    if (err && err._reauth) {   // gate session expired → back to the login
+      window._gateToken = ""; localStorage.removeItem("forge_user");
+      _loginScreen("Your session expired — please sign in again.");
+      return;
+    }
     document.body.insertAdjacentHTML("beforeend", `<div style="padding:24px;color:#dc2626;font-family:sans-serif">Error: ${err.message}</div>`);
   });
 }
 // Boot: preload the shared-store URL from the redacted (safe, public) file so
 // login passwords sync across devices, then resume a session or show the login.
 (function boot(){
+  let u = null; try { u = JSON.parse(localStorage.getItem("forge_user") || "null"); } catch (e) {}
+  // Private-gate mode: resume with the saved session token; no public preflight.
+  if (DATA_GATE_URL) {
+    if (u && u.email && u.token) { window._gateToken = u.token; _startApp(u.email, u.role || ACCOUNTS[u.email] || "owner"); }
+    else _loginScreen();
+    return;
+  }
+  // Public-file mode (default): preload the shared-store URL from the redacted
+  // file so login passwords sync across devices, then resume or show the login.
   const go = () => {
-    let u = null; try { u = JSON.parse(localStorage.getItem("forge_user") || "null"); } catch (e) {}
     if (u && u.email && ACCOUNTS[u.email]) _startApp(u.email, ACCOUNTS[u.email]);
     else _loginScreen();
   };
