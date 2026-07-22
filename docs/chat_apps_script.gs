@@ -71,7 +71,24 @@ function doPost(e) {
     (b.history || []).forEach(function (m) {
       if (m && m.role && m.content) messages.push({ role: m.role, content: String(m.content) });
     });
-    messages.push({ role: "user", content: "DATA (JSON) for the " + (b.tab || "dashboard") + " tab:\n" + (b.context || "{}") + "\n\nQUESTION: " + b.question });
+    var qText = "DATA (JSON) for the " + (b.tab || "dashboard") + " tab:\n" + (b.context || "{}") + "\n\nQUESTION: " + b.question;
+    // Optional file attachments (e.g. a programme image/PDF the coach uploaded so
+    // the agent can read it). base64, no data: prefix.
+    if (b.attachments && b.attachments.length) {
+      var parts = [];
+      b.attachments.forEach(function (a) {
+        if (!a || !a.data) return;
+        if (a.type === "image") {
+          parts.push({ type: "image", source: { type: "base64", media_type: a.media_type || "image/jpeg", data: a.data } });
+        } else {
+          parts.push({ type: "document", source: { type: "base64", media_type: "application/pdf", data: a.data } });
+        }
+      });
+      parts.push({ type: "text", text: qText });
+      messages.push({ role: "user", content: parts });
+    } else {
+      messages.push({ role: "user", content: qText });
+    }
 
     // max_tokens is set by the client per tab (programming needs a lot); capped for safety.
     var maxTok = Math.min(parseInt(b.max_tokens, 10) || 900, 4096);

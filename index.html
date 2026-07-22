@@ -1172,7 +1172,7 @@ const AGENT_SKILLS = {
   members:   { benchmarks:"Watch concentration risk (over-reliance on one membership type). Track net growth = joins − cancellations. Paid-in-full vs recurring affects cash timing.", lens:"data.membership_by_type is the CURRENT count of members in each membership type (Empower, Elevate, Evolve, Well75, Jumpstart, etc.) from TeamUp — USE IT to answer questions about the mix and which type is biggest. For GROWTH over time, data.type_history has each month's active-member count per type — compare the earliest vs latest month to say which type is growing fastest (biggest % / absolute gain) or shrinking. Quote the actual month-on-month numbers." },
   inbody:    { benchmarks:"Rescan cadence ~6 weeks. Progress = skeletal muscle up and/or body-fat % down. Overdue scans are a re-engagement opportunity.", lens:"Spot who's progressing (celebrate/case-study) and who's overdue or stalling (nudge)." },
   jumpstart: { benchmarks:"6-week programme. Have the conversion conversation by week 4-5, not week 6. Missed check-ins predict non-conversion.", lens:"Who needs a conversion chat now, who's drifting, and what to do before their 6 weeks end." },
-  programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked to draft a session, ACTUALLY WRITE IT — never refuse. PREFER MOVES FROM THE PROVIDED move_library (grouped by body part) — these are The Forge's own moves that have real demo videos; use their EXACT names wherever possible so they can be matched to the coach's clips. Only invent a move if the library genuinely lacks anything suitable for a slot. Match the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press) with reps in the right range. Lay it out in the class's structure and follow programming_system.classes EXACTLY for the requested class. Deliver the full session. HARD RULES FOR UPPER & LOWER (never deviate, whatever the user's phrasing): output EXACTLY 3 strength sections; EACH section has EXACTLY 1 lead move (8–15 reps) + EXACTLY 3 accessories (max reps) — never 2, never a 4th; then a TEAM WORKOUT as an EMOM of EXACTLY 4 moves in this order — 1 machine move, 1 bodyweight move, 1 dumbbell move, 1 plate move. Do not add pods, complexes, extra sections or extra finishers for Upper/Lower. CRITICAL: only ever programme movements possible with The Forge's actual equipment (see programming_system.equipment) — NO fixed/pin-loaded machines (no leg press, hamstring-curl machine, pec deck). Cable moves are fine (racks have built-in cables); otherwise use barbell/dumbbell/kettlebell/sandbag/slam-ball/wall-ball/band/bodyweight and the sled, ski erg, rower, Concept2 bike and assault bike. For EVERY exercise, add a tappable demo link in the form https://www.youtube.com/results?search_query=EXERCISE+NAME+form (spaces as +) so the coach/member can see the movement — these are YouTube search links (not the Forge's own clips) so they always work." },
+  programming:{ benchmarks:"12-week cycles; Week 1 = test week, Week 12 = retest. Main/lead moves 8–15 reps, accessories max reps. Warm-ups/cool-downs are per DAY, not per class.", lens:"Answer using The Forge's exact class formats and A/B rotation. When asked to draft a session, ACTUALLY WRITE IT — never refuse. PREFER MOVES FROM THE PROVIDED move_library (grouped by body part) — these are The Forge's own moves that have real demo videos; use their EXACT names wherever possible so they can be matched to the coach's clips. Only invent a move if the library genuinely lacks anything suitable for a slot. Match the class variant's focus (e.g. Upper 1.0 = pull/back, 2.0 = press) with reps in the right range. Lay it out in the class's structure and follow programming_system.classes EXACTLY for the requested class. Deliver the full session. HARD RULES FOR UPPER & LOWER (never deviate, whatever the user's phrasing): output EXACTLY 3 strength sections; EACH section has EXACTLY 1 lead move (8–15 reps) + EXACTLY 3 accessories (max reps) — never 2, never a 4th; then a TEAM WORKOUT as an EMOM of EXACTLY 4 moves in this order — 1 machine move, 1 bodyweight move, 1 dumbbell move, 1 plate move. Do not add pods, complexes, extra sections or extra finishers for Upper/Lower. CRITICAL: only ever programme movements possible with The Forge's actual equipment (see programming_system.equipment) — NO fixed/pin-loaded machines (no leg press, hamstring-curl machine, pec deck). Cable moves are fine (racks have built-in cables); otherwise use barbell/dumbbell/kettlebell/sandbag/slam-ball/wall-ball/band/bodyweight and the sled, ski erg, rower, Concept2 bike and assault bike. For EVERY exercise, add a tappable demo link in the form https://www.youtube.com/results?search_query=EXERCISE+NAME+form (spaces as +) so the coach/member can see the movement — these are YouTube search links (not the Forge's own clips) so they always work. If uploaded_references is present, treat those notes as the coach's own reference material and draw on them (structures, schemes, ideas) when relevant." },
   leads:     { benchmarks:"Speed-to-lead matters most — reply within minutes, not hours. Every un-actioned enquiry is lost revenue.", lens:"Rank who to contact first and flag anything going stale." },
   ads:       { benchmarks:"Judge on cost-per-lead trend and lead→trial→member, not vanity metrics. Rising CPL with flat leads = creative/fatigue issue.", lens:"Say whether spend is working and what to change." },
   growth:    { benchmarks:"Focus beats breadth — one or two levers per sprint.", lens:"Recommend the highest-leverage focus from the data." },
@@ -1240,9 +1240,45 @@ async function addProgDoc(){
   document.getElementById("progdoc-in").value = ""; renderProgDocs();
 }
 async function delProgDoc(key){ await sharedSet(key, {}); renderProgDocs(); }
+
+// ── Upload a programme image / PDF → the agent reads it and keeps the notes ──
+// The file goes to the AI chat proxy once (vision / PDF), which returns concise
+// notes; we store the NOTES (small text) in the shared store and feed them into
+// the programming agent's context, so it "remembers" them on every question.
+window._progUploadBusy = false;
+async function addProgUpload(input){
+  const file = input.files && input.files[0]; if (!file) return;
+  const isImg = /^image\//.test(file.type);
+  const isPdf = file.type === "application/pdf" || /\.pdf$/i.test(file.name);
+  if (!isImg && !isPdf) { alert("Please upload an image (JPG/PNG) or a PDF."); input.value=""; return; }
+  if (file.size > 20*1024*1024) { alert("That file is over 20MB — please use a smaller image or PDF."); input.value=""; return; }
+  if (!window._chatUrl) { alert("The AI chat isn't connected yet, so files can't be read (needs CHAT_SCRIPT_URL)."); input.value=""; return; }
+  const b64 = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1]); r.onerror = rej; r.readAsDataURL(file); });
+  window._progUploadBusy = true; input.value = ""; renderProgDocs();
+  const question = "You are cataloguing a training reference for a gym's programming library. Read the attached file (a workout / programme image or PDF) and write concise, reusable notes a coach can draw on when writing sessions: the exercises, the structure (sections / blocks), set & rep schemes, and any key coaching notes. Be faithful to the file — do not invent. Reply as: first line 'TITLE: <4-8 word title>', then the notes as short bullet points.";
+  try {
+    const res = await fetch(window._chatUrl, { method:"POST", body: JSON.stringify({
+      tab:"programming", question, context:"{}", history:[], max_tokens:1200,
+      attachments:[{ type: isImg ? "image" : "pdf", media_type: file.type || "application/pdf", data: b64 }]
+    })});
+    const j = await res.json();
+    const txt = (j && j.answer) || "";
+    if (!txt) { alert("Couldn't read that file: " + ((j && j.error) || "no response from the AI.")); }
+    else {
+      let title = file.name, notes = txt;
+      const mm = txt.match(/^\s*TITLE:\s*(.+)$/im);
+      if (mm) { title = mm[1].trim(); notes = txt.replace(mm[0], "").trim(); }
+      await _shAdd("progupload", { title, notes, filename:file.name, kind: isImg ? "image" : "pdf", added: Date.now() });
+    }
+  } catch (e) { alert("Couldn't reach the AI to read the file: " + e.message); }
+  finally { window._progUploadBusy = false; renderProgDocs(); }
+}
+async function delProgUpload(key){ await sharedSet(key, {}); renderProgDocs(); }
+
 function renderProgDocs(){
   const el = document.getElementById("progDocs"); if (!el) return;
   const docs = _shList("progdoc");
+  const ups = _shList("progupload");
   el.className = "card col-12";
   el.innerHTML = `
     <div class="card-title">Programme documents</div>
@@ -1257,7 +1293,24 @@ function renderProgDocs(){
         <a href="${_plEsc(d.url)}" target="_blank" rel="noopener" style="font-size:.82rem;color:#7c3aed;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${_plEsc(d.url)}</a>
         <button onclick="delProgDoc('${d._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
       </div>`).join("")}</div>` : ""}
-    <div style="font-size:.68rem;color:#c4b5fd;margin-top:10px">Service account: forge-dashboard@forge-dashboard-473821.iam.gserviceaccount.com</div>`;
+
+    <div class="inner-divider" style="margin-top:16px">Reference uploads — the agent reads these</div>
+    <p style="color:#6b7280;font-size:.8rem;margin:2px 0 8px">Upload a programme image, screenshot or PDF. The agent reads it and remembers the notes, then draws on them when you ask it to write sessions.</p>
+    ${window._progUploadBusy
+      ? `<div style="font-size:.84rem;color:#7c3aed;font-weight:600;padding:6px 0">📖 Reading your file… this takes a few seconds.</div>`
+      : `<label style="display:inline-block;font-size:.82rem;font-weight:700;color:#fff;background:#7c3aed;border-radius:8px;padding:8px 14px;cursor:pointer">＋ Upload image / PDF
+          <input type="file" accept="image/*,application/pdf" onchange="addProgUpload(this)" style="display:none">
+        </label>`}
+    ${ups.length ? `<div style="margin-top:10px">${ups.sort((a,b)=>(b.added||0)-(a.added||0)).map(u => `
+      <div style="padding:8px 0;border-bottom:1px solid #f6f6fa">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <span style="font-size:.85rem;font-weight:600;color:#111">${u.kind==="pdf"?"📄":"🖼️"} ${_plEsc(u.title||u.filename||"Reference")}</span>
+          <button onclick="delProgUpload('${u._key}')" style="font-size:.85rem;color:#c4b5fd;background:none;border:none;cursor:pointer">✕</button>
+        </div>
+        ${u.notes ? `<div style="font-size:.75rem;color:#6b7280;margin-top:4px;white-space:pre-wrap;max-height:130px;overflow:auto">${_plEsc(u.notes)}</div>` : ""}
+      </div>`).join("")}</div>` : ""}
+
+    <div style="font-size:.68rem;color:#c4b5fd;margin-top:12px">Service account: forge-dashboard@forge-dashboard-473821.iam.gserviceaccount.com</div>`;
 }
 
 // ── Move library ──────────────────────────────────────────────
@@ -2113,7 +2166,10 @@ function _agentData(tab){
     case "programming": {
       const lib = {};
       _allMoves().forEach(m => { const p = m.part || "Other"; (lib[p] = lib[p] || []).push(m.name); });
-      return { programming_system: PROGRAMMING, move_library: lib };
+      // Notes the coach uploaded (images/PDFs the agent has "read" and remembers).
+      const uploaded = (typeof _shList === "function" ? _shList("progupload") : [])
+        .map(u => ({ title: u.title || u.filename, notes: u.notes })).filter(u => u.notes);
+      return { programming_system: PROGRAMMING, move_library: lib, uploaded_references: uploaded };
     }
     case "leads":     return { leads:d.ghl };
     case "ads":       return d.marketing || {};
