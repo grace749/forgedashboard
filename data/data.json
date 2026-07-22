@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T05:00:52.089953+00:00",
+  "generated_at": "2026-07-22T12:13:59.357964+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-07-22",
-    "event_count": 15,
-    "urgent_count": 0,
+    "event_count": 14,
+    "urgent_count": 1,
     "enquiry_count": 5,
     "calendar": [
       {
@@ -19,7 +19,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Brief Dan on doctor contacts; confirm he has phone numbers ready."
+        "prep": ""
       },
       {
         "title": "Build: Full Body",
@@ -56,16 +56,6 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
-        "title": "Untitled",
-        "time": "10:45am",
-        "start_raw": "2026-07-22T10:45:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": ""
-      },
-      {
         "title": "\ud83d\udcde Call: Pauline McAuley",
         "time": "3:30pm",
         "start_raw": "2026-07-22T15:30:00",
@@ -85,7 +75,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm Bertha's attendance; review any strength goals or modifications needed."
+        "prep": "Confirm details/location with organizer; prepare any materials needed."
       },
       {
         "title": "Grace x Holiday France",
@@ -98,7 +88,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm travel arrangements, accommodation, emergency contact details with team."
       },
       {
         "title": "Lower Two",
@@ -152,7 +142,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Arrange gym cover; brief staff on schedule and emergency contacts."
+        "prep": "Confirm details/location with organizer; prepare any materials needed."
       },
       {
         "title": "\ud83d\udcde Call: Victoria Taylor",
@@ -177,15 +167,19 @@
         "prep": ""
       }
     ],
-    "urgent": [],
-    "important": [
+    "urgent": [
       {
-        "from": "karenfloyd",
-        "subject": "A personal invitation from Karen Floyd",
-        "snippet": "Grace \u2014 Building Forge from your mother&#39;s spare room into an award-winning women&#39;s fitness community is an extraordinary founder story. Athletic discipline, entrepreneurship, local generosity,",
-        "id": "19f6fe2a176e3578"
+        "from": "Strength Shop UK",
+        "from_raw": "Strength Shop UK <support@strengthshop.co.uk>",
+        "subject": "Re: Ticket #72496 - Order Audit - S526300",
+        "snippet": "Hi there, Thank you for confirming this information for us. I am happy to confirm that your order has been processed for dispatch. Once collected from our warehouse and scanned by the courier you will",
+        "id": "19f895d8c7174f0e",
+        "thread_id": "19f895d8c7174f0e",
+        "msg_count": 1,
+        "draft_id": "r7553058184034788846"
       }
     ],
+    "important": [],
     "enquiries": [
       {
         "name": "Brenda Bradley",
@@ -284,8 +278,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
         "sarah@nourishandnurtu.re": "2025-11-23",
+        "eiliskearns13@gmail.com": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -367,10 +361,73 @@
   },
   "ghl": [
     {
+      "name": "Brenda Bradley",
+      "channel": "Phone",
+      "message": "May has none \nbrendaculbane@gmail.com",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "fc1VW1wkC5h2F7aLPIpY",
+      "contact_id": "EsQDLDZVUZdsnBGPmuLs"
+    },
+    {
+      "name": "Jenniferpatterson patterson",
+      "channel": "Phone",
+      "message": "I have booked thank you",
+      "age": "1h ago",
+      "unread": 2,
+      "conv_id": "GebZ8bmfaZL4YVfuE0Wa",
+      "contact_id": "N7mFBkjd4N8nz3jULT1d"
+    },
+    {
+      "name": "Hannah McClintock",
+      "channel": "Phone",
+      "message": "Hiya, I\u2019m free for a chat over message",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "9zsAZ6hFQtyItYieIIE0",
+      "contact_id": "uPti5LsMBACjOi4JIa7t"
+    },
+    {
+      "name": "Chrisfaulkner",
+      "channel": "Phone",
+      "message": "Oh it was",
+      "age": "2h ago",
+      "unread": 2,
+      "conv_id": "nmOHhjJZelaYKjnUDnqb",
+      "contact_id": "Yap2UUF87JQ4fgdk7gHk"
+    },
+    {
+      "name": "Henrietta Cunningham",
+      "channel": "Phone",
+      "message": "Thank you  ill be in contact with youse when zi get back from my wee break im only going  to  south for 5 days thanks for your response \ud83d\udc4d",
+      "age": "3h ago",
+      "unread": 1,
+      "conv_id": "q2fTujDyfSAb5IRtG7Qk",
+      "contact_id": "RunEcUfmeLilOevIiVDg"
+    },
+    {
+      "name": "Emma Hamilton",
+      "channel": "Phone",
+      "message": "Morning grace, just checking a payment came out for me this morning and wondering if it should have.. if you could check \ud83e\udd1e\ud83c\udffb",
+      "age": "4h ago",
+      "unread": 3,
+      "conv_id": "sUhovE2NI6fausfoR3wD",
+      "contact_id": "tglnhLfKQdza1NGPcYVi"
+    },
+    {
+      "name": "Amy \ud83c\udf3a",
+      "channel": "Phone",
+      "message": "\ud83d\udc4f",
+      "age": "6h ago",
+      "unread": 2,
+      "conv_id": "WCwVuAp9MbMMom86u5Ic",
+      "contact_id": "Rnp1ndaNNs0sWAM1BqLZ"
+    },
+    {
       "name": "Yvonne Atkinson",
       "channel": "Phone",
       "message": "Would love to join class but will be away when next block starts on 12th August. Would like a space in following block . How much does it cost per 4 week block? Thank you",
-      "age": "4h ago",
+      "age": "12h ago",
       "unread": 1,
       "conv_id": "BYWkDCRy7h6uQf7Sujsy",
       "contact_id": "KabjA7x7ZcOVOxGbW5Ud"
@@ -379,7 +436,7 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "Need to be a lean mean running machine",
-      "age": "6h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -388,7 +445,7 @@
       "name": "Liz Parr",
       "channel": "Phone",
       "message": "I will call in soon  and have a chat ref class",
-      "age": "9h ago",
+      "age": "16h ago",
       "unread": 1,
       "conv_id": "dHQ1TyazcvRmYRuAurW1",
       "contact_id": "Wmy1BHQnySyEozSktNtL"
@@ -397,7 +454,7 @@
       "name": "Jenny Loughery",
       "channel": "Phone",
       "message": "Thanks I have not exercised in years im looking to get fit and motivated x",
-      "age": "9h ago",
+      "age": "16h ago",
       "unread": 1,
       "conv_id": "Fct9mtygX4qTk4JO8iMq",
       "contact_id": "v5Qlxf4eHc92hnVHZtML"
@@ -406,7 +463,7 @@
       "name": "Linda Scott",
       "channel": "Phone",
       "message": "Call",
-      "age": "10h ago",
+      "age": "17h ago",
       "unread": 1,
       "conv_id": "KzoWzfJwq1OPF9pLT5r1",
       "contact_id": "cBBbBMUjbveyhPMIz3RU"
@@ -415,7 +472,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "https://www.facebook.com/share/r/1Pag2E1Lq3/?mibextid=wwXIfr",
-      "age": "11h ago",
+      "age": "18h ago",
       "unread": 2,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -424,7 +481,7 @@
       "name": "Alison Philpott",
       "channel": "Phone",
       "message": "Sorry I can\u2019t as working",
-      "age": "14h ago",
+      "age": "21h ago",
       "unread": 1,
       "conv_id": "EILoxBW8RWvcx5lejBVv",
       "contact_id": "NKGSDMcEY4KRxx1czykN"
@@ -433,64 +490,10 @@
       "name": "nigel.simmons@graham.co.uk",
       "channel": "Phone",
       "message": "",
-      "age": "16h ago",
+      "age": "23h ago",
       "unread": 0,
       "conv_id": "6XrmlnVK0MaYK36rNqnn",
       "contact_id": "E4Y1o6BtH5poylUj8tRu"
-    },
-    {
-      "name": "Jenniferpatterson patterson",
-      "channel": "Phone",
-      "message": "Hi, sorry I missed call I was on another call with my daughter. I\u2019ve booked in for  10/8/26",
-      "age": "17h ago",
-      "unread": 1,
-      "conv_id": "GebZ8bmfaZL4YVfuE0Wa",
-      "contact_id": "N7mFBkjd4N8nz3jULT1d"
-    },
-    {
-      "name": "Lynda Wright",
-      "channel": "Phone",
-      "message": "Hope that's it done \ud83d\ude00",
-      "age": "18h ago",
-      "unread": 1,
-      "conv_id": "rBvQbzXXETuFM8ahDeEH",
-      "contact_id": "zvyicP9O2D0R7RP27nCE"
-    },
-    {
-      "name": "Katie Reynolds",
-      "channel": "Phone",
-      "message": "\ud83d\udd0aVoice Note",
-      "age": "19h ago",
-      "unread": 1,
-      "conv_id": "hgkqBkW2GytMNwoMUBn4",
-      "contact_id": "olxLCjpscAwEk22LDmk6"
-    },
-    {
-      "name": "Omar Azam",
-      "channel": "Phone",
-      "message": "",
-      "age": "19h ago",
-      "unread": 0,
-      "conv_id": "15g2Sir949RYpOzzr1Ag",
-      "contact_id": "TWdDjE0sCOiqTAU9UBO8"
-    },
-    {
-      "name": "s donaghy57pd",
-      "channel": "Phone",
-      "message": "Grace, I may want to do this again and I need to pay but thank you for your kindness.xx",
-      "age": "20h ago",
-      "unread": 1,
-      "conv_id": "QHfzzcju442wvpcQtZ72",
-      "contact_id": "VYFMft5hVDpEjW2oA2u7"
-    },
-    {
-      "name": "Jords Grant",
-      "channel": "Phone",
-      "message": "",
-      "age": "20h ago",
-      "unread": 1,
-      "conv_id": "3CxaS2YOlWLHoGIkxJxe",
-      "contact_id": "pXvU9S5GHCA1WTAdZOWK"
     }
   ],
   "jumpstart": {
@@ -779,7 +782,7 @@
         "goal": "loose weight",
         "notes": "recurring shoulder pain/neck pain , prescribed pain relief fro doctor. Mild anxiety ",
         "nutrition_sent": true,
-        "inbody_done": false,
+        "inbody_done": true,
         "check_ins": [
           false,
           false,
@@ -811,7 +814,7 @@
         "goal": "loose weight, toneup, eat properly ",
         "notes": "health anxiety, family passed away in short space of time triggered.on medication which is healping",
         "nutrition_sent": true,
-        "inbody_done": false,
+        "inbody_done": true,
         "check_ins": [
           true,
           false,
@@ -842,8 +845,8 @@
         "end": "2026-08-24",
         "goal": "",
         "notes": "",
-        "nutrition_sent": false,
-        "inbody_done": false,
+        "nutrition_sent": true,
+        "inbody_done": true,
         "check_ins": [
           false,
           false,
@@ -872,7 +875,7 @@
         "cohort": "JULY",
         "joined": "2026-07-20",
         "end": "2026-08-31",
-        "goal": "",
+        "goal": "no weight needs inbody",
         "notes": "",
         "nutrition_sent": false,
         "inbody_done": false,
@@ -1969,11 +1972,6 @@
         "member": "catherine brown",
         "type": "missing_checkin",
         "detail": "Missing 2 check-in(s) (on week 2)"
-      },
-      {
-        "member": "catherine brown",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
@@ -1987,6 +1985,54 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "annegraham109",
+        "last_scan": "2026-07-22",
+        "scan_count": 1,
+        "weight": 179.4,
+        "smm": 55.1,
+        "pbf": 43.6,
+        "bmi": 31.8,
+        "tbw": 74.1,
+        "protein": 19.6,
+        "mineral": 7.4,
+        "vfa": 188.7,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-09-02",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "lyndaarch108",
+        "last_scan": "2026-07-22",
+        "scan_count": 1,
+        "weight": 195.9,
+        "smm": 69.4,
+        "pbf": 36.7,
+        "bmi": 29.8,
+        "tbw": 90.6,
+        "protein": 24.5,
+        "mineral": 9.0,
+        "vfa": 161.2,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-09-02",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "connieg051",
         "last_scan": "2026-07-17",
@@ -3908,7 +3954,7 @@
         "overdue": true
       }
     ],
-    "total": 80,
+    "total": 82,
     "configured": true
   },
   "sop": {
@@ -4542,46 +4588,40 @@
         "built": false
       }
     ],
-    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member onboarding** \u2013 no documented first-touch-to-first-class journey (assessment form, locker setup, app access, coach intro, expectation-setting)\n- **Cancellation & churn** \u2013 no win-back or exit process; you're losing members without a recorded reason or retention attempt\n- **Member check-ins** \u2013 no scheduled touchpoint protocol (when, who, frequency, escalation if disengagement detected)\n- **Health & safety incident reporting** \u2013 no template or escalation path for injuries, near-misses, equipment failures\n- **Financial controls** \u2013 no SOP for refunds, payment failures, billing disputes, or member credit management\n- **Complaints handling** \u2013 no documented protocol for member complaints (logging, response time, resolution, follow-up)\n- **Coaching standards audit** \u2013 no quality assurance process; Class Quality Audit Checklist exists but no scheduling/ownership SOP\n- **Pause/freeze membership** \u2013 no clear process for pausing (duration, auto-restart, comms, pricing)\n- **Supply ordering & inventory** \u2013 Order Supplies & Sundries missing; no reorder levels, supplier contacts, or stock tracking\n- **New staff onboarding** \u2013 no structured coach/admin induction (rotas, systems access, brand standards, safeguarding)\n\n---\n\n**Needs updating**\n\n- **Coach SOPs (20/24)** \u2013 likely missing: performance expectations, escalation for underperformance, one-to-one coaching protocols, retention/career progression\n- **Marketing SOPs (5/5)** \u2013 probably absent or vague: referral programme SOP (you have the title but no process), new quarter campaign timeline, member outcomes reporting for testimonials\n- **Member data/GDPR** \u2013 critical gap; no documented retention policy, data deletion requests, or consent audit trail"
+    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member onboarding**: No documented first-touch to first-class journey (discovery call \u2192 payment \u2192 induction \u2192 buddy assignment \u2192 first class \u2192 check-in at day 3/7)\n- **Churn & win-back**: No process for pause requests, cancellations, exit interviews, or re-engagement campaigns\n- **Coaching standards & quality**: No audit checklist, class observation protocol, or feedback loops tied to member outcomes\n- **Member retention touchpoints**: No scheduled check-ins, milestone tracking, or 30-day goal follow-ups\n- **Referral programme**: No mechanics, incentive structure, or tracking workflow\n- **Supply chain**: No SOP for ordering, receiving, inventory thresholds, or vendor management\n- **Complaints & incidents**: No escalation path, documentation, or resolution timeline\n- **Data governance**: No GDPR/privacy audit trail, consent capture, or data retention policy\n- **Financial controls**: No cash handling, payment disputes, refund authorization, or reconciliation process\n- **Health & safety incident reporting**: No form, reporting line, or corrective action tracking\n\n---\n\n# **Needs updating**\n\n- **Coaches (20/24)**: Missing coaching development roadmap, skill assessment framework, and performance feedback cadence; class observation currently informal\n- **Clients (23/33)**: No outcomes tracking, transformation pillar definition, or quarterly program launch comms; member data privacy missing entirely\n- **Weekly Key Coach Tasks**: Not documented\u2014likely ad hoc; needs dependencies mapped (prep, delivery, feedback, next-week planning)\n- **Facilities (5/6)**: Likely missing deep-clean schedules, equipment maintenance logs, and emergency protocols\n- **Marketing (5/5)**: Likely missing referral programme integration, member success story capture, or paid ad SOP\n\n---\n\n# **Build next**"
   },
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0AATFGV84R",
-        "text": "That is super thank you so much :heart: I really appreciate it and I hope its not gonna be for too long xx",
-        "hours": 41,
-        "name": "Kerry Tweed"
-      },
-      {
         "user_id": "U0B1G7ABCQL",
         "text": "That\u2019s it all cancelled from 23rd August for you and keep in touch when the summer is over get yourself back in :blush:",
-        "hours": 40,
+        "hours": 47,
         "name": "Victoria Thompson"
       },
       {
         "user_id": "U0AG31LK3T5",
         "text": "Strongevity info: <https://www.forgefemalefitness.com/strongevity|forgefemalefitness.com/strongevity>\n\nBook &amp; Pay for the august block: <https://goteamup.co",
-        "hours": 39,
+        "hours": 46,
         "name": "Louise Feeney"
       },
       {
         "user_id": "U08BG08G4DS",
         "text": "Hi grace can I plz pause aug also, sorry for messing yous about ",
-        "hours": 17,
+        "hours": 24,
         "name": "Evelyn Sharpe"
       },
       {
         "user_id": "U0BJD0WGJMA",
         "text": "Hiya ..I think that's me all set up now, and class booked! The No Sweat classes timewise didn't suit me this week, tho I have booked into some classes Wed, Thur",
-        "hours": 13,
+        "hours": 20,
         "name": "Marjorie"
       },
       {
         "user_id": "U094L5UFJJU",
         "text": "I'm going to have a bath now and will try and get the pernaton in the morning enroute.  I will try the class! ",
-        "hours": 9,
+        "hours": 16,
         "name": "Janeen Gilfillan"
       }
     ],
@@ -4753,7 +4793,8 @@
       "jacqueline crawford": "U0BHGLC00SW",
       "marjorie": "U0BJD0WGJMA",
       "lynda archibald": "U0BJHPWH3U6",
-      "lynda": "U0BJSPDLUHX"
+      "lynda": "U0BJSPDLUHX",
+      "anne graham": "U0BJWC0K6DT"
     }
   },
   "kpi": {
@@ -5768,7 +5809,7 @@
         ]
       }
     ],
-    "advice": "# The Forge \u2014 Fractional CFO Review\n\n## REVENUE \u2014 BIGGEST PRIORITY: Arrest the churn spike and stabilise member quality\n\n\u2022 **Churn spiked to 12.7% in May (vs 3.3% baseline in June & April).** You gained 13 net members (122\u2192135) but lost 17 to churn \u2014 that's waste. Post-relocation churn is often class timetable shock or retention gap. **Action: audit May/June class schedule adherence, survey dropped members, and run a 4-week \"win-back\" campaign (free trial week for lapsed members) in July. Target: drop churn back to \u22645%.**\n\n\u2022 **Rev/member is volatile (\u00a3115\u2013\u00a3138 range).** June at \u00a3115 is the lowest in 8 months despite 137 active members. This suggests either discounting creep or product mix shift (fewer premium cards, more base tier). **Action: audit your pricing mix in TeamUp \u2014 enforce minimum membership tier or upsell class packs (e.g. \"8-class top-up\" at \u00a335) to June cohort. Target: \u00a3130 minimum rev/member.**\n\n\u2022 **April's relocation killed cash flow (\u2212\u00a36,819) but didn't dent revenue long-term.** Post-move revenue held at \u00a315.7\u2013\u00a316.9k (vs pre-move \u00a314.2\u2013\u00a316.9k). **Action: use the larger studio footprint now open \u2014 identify 2\u20133 quiet class slots (check TeamUp attendance logs) and fill them via targeted ads to lapsed members and local corporates. A single added class at 60% utilisation = ~\u00a3600\u2013\u00a3800/month incremental.**\n\n---\n\n## EXPENSES \u2014 Cash burn in March (\u2212\u00a35,307) and June (\u2212\u00a32,521) signals timing/payroll misalignment\n\n\u2022 **Cash out spiked March (\u00a323,328) and April (\u00a339,015); June still elevated at \u00a320,644 vs revenue of \u00a315,765.** March and June are ~\u00a36\u20138k overspends vs revenue. **Action: pull your P&L by cost category (payroll, rent, supplies, utilities). Likely culprit: bi-weekly or monthly payroll hitting in those weeks, plus relocation stock purchases in April. Confirm cash-out buckets with your accountant and implement a 13-week rolling cash forecast to avoid surprises.**\n\n\u2022 **April's relocation spend (\u00a339k cash out) was pre-planned; your June elevation (\u00a320.6k) is not. June's cash out is",
+    "advice": "# THE FORGE \u2014 FRACTIONAL CFO REPORT\n\n## REVENUE: ARREST THE DECLINE & REBUILD MEMBER VALUE\n\n- **Rev/member has collapsed from \u00a3138 (Apr) to \u00a3115 (Jun) \u2014 a 17% drop in 8 weeks.** This isn't churn alone; it's pricing or ancillary sales leakage. Check: are members downgrading tiers post-relocation? Are class packs, PT blocks, or merchandise sales tracking? You should target \u00a3135+ per member by July. Audit your pricing tier uptake now \u2014 if the bigger studio hasn't lifted premium memberships or upsells, that's the fast win.\n\n- **Total revenue is volatile but flat: last 3 months average \u00a315,879 vs prior 3 months \u00a315,524 (+ 2% only).** Member count grew 16 members (122\u2192137) but revenue stayed dead. You've added capacity at the new studio \u2014 use it: run member surveys on class scheduling, introduce off-peak discounts (e.g. 10% off 10am slots) to flatten attendance curves and drive frequency (which drives stickiness and upsell).\n\n- **Churn spiked to 12.7% in May post-move; dropped to 3.3% in June \u2014 good stabilisation, but 3.3% monthly is 39% annualised.** Target \u22642% monthly. Implement 30-day post-relocation onboarding calls and a \"welcome-back\" offer (free class + protein shake) for lapsed members. The bigger studio should reduce churn via better class variety.\n\n- **Cash collection timing is healthy (revenue reasonably tracks bank deposits), but June net cash is -\u00a32,521.** You're not in distress (April relocation absorbed), but you're not building reserves. Once revenue stabilises at \u00a316.5k+, you should clear \u00a34k\u2013\u00a36k monthly; currently you're at break-even. See expenses below.\n\n---\n\n## EXPENSES: IDENTIFY THE JUNE OVERSPEND\n\n- **June cash out (\u00a320,644) vs June revenue (\u00a315,765) is unsustainable \u2014 you're spending 131% of revenue.** Last 3 months: out averaged \u00a319,864; prior 3 months: \u00a319,544 (flat, high). Breakout Q: is June's \u00a320.6k driven by utilities, staffing, or stock for the bigger studio? If staffing: you may have over-hired post-move. If utilities: the new space is more expensive than planned \u2014 renegotiate rates now. If stock/inventory: t",
     "advice_source": "live"
   },
   "staff": {
@@ -5945,7 +5986,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower (17 sessions) to JoJo.** JoJo is running 133 sessions and has established strength here; this is JoJo's highest-volume class anyway. Eilis could take 6\u20138 of these to develop, but primary load on JoJo.\n\n\u2022 **Redistribute Grace's Elevate (6 sessions) and Strongevity (3 sessions) between JoJo and Eilis.** Eilis is under-loaded at 48 sessions (vs JoJo's 133) and both classes suit her current level; this grows Eilis's portfolio safely.\n\n\u2022 **Hand Grace's No Sweat Intro (3 sessions) to any coach running that programme,** or consolidate into one coach's responsibility to reduce fragmentation.\n\n\u2022 **Strip out the 29 Body Composition Scans (Grace 9, JoJo 20, Eilis 11) from coaching load entirely.** These are admin, not coaching\u2014schedule them as standalone 15-min slots or member self-service where possible. This instantly frees ~10 hours from the team.\n\n\u2022 **Shift 10\u201315 of JoJo's PT sessions to Eilis** (JoJo carries 44, Eilis carries 11). JoJo is stretched; Eilis has room and needs experience. Start with lower-complexity clients or pair-shadowing.\n\n\u2022 **Confirm Eilis's class ceiling before the next month:** she's taking Elevate, Full Body, Plate, Capacity\u2014ensure no Tuesday creep and that she's not overwhelmed before loading more from Grace.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately:** Her Build: Lower (17), Build: Upper (9), Elevate (6), and Strongevity (3) must move to JoJo and Eilis. JoJo can take Build: Lower and Strongevity (aligns with her strength); Eilis takes Build: Upper and Elevate (matches her current load and skill level).\n\n\u2022 **Move Grace's PT and No Sweat Intros to JoJo:** Her 3 PT clients and 3 No Sweat Intros should transfer to JoJo, who has the experience and rapport. This formalises JoJo as lead coach for new member onboarding.\n\n\u2022 **Reassign Body Composition Scans away from coaches:** All 29 scans (Grace's 9 + JoJo's 20) should be handled by reception or a junior staff member\u2014they're admin, not coaching. This frees ~6 hours monthly from JoJo's load.\n\n\u2022 **Balance JoJo's PT portfolio:** After removing scans, JoJo will have ~57 billable/class sessions (44 PT + new transfers). Monitor her weekly schedule to cap PT at 8\u201310 per week so she has energy for classes and leadership.\n\n\u2022 **Expand Eilis's PT gradually:** She's currently underused on PT (11 sessions). Once Grace's classes move to her, trial Eilis for 2\u20133 of Grace's PT clients (lower-complexity, newer members) to build her confidence and revenue per coach.\n\n\u2022 **Plug the Circuits gap:** JoJo is the only coach delivering Circuits (6 sessions). Train Eilis on Circuits as her confidence grows, or rotate it to a lower priority if demand is soft.",
     "period": "June 2026"
   },
   "asana": {
@@ -6297,7 +6338,7 @@
     }
   },
   "teamup": {
-    "total_members": 158,
+    "total_members": 159,
     "recurring": 101,
     "recurring_members": [
       {
@@ -6784,7 +6825,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 43,
+    "new_this_month": 44,
     "cancellations_this_month": 2,
     "leaving_members": [
       {
@@ -7579,7 +7620,7 @@
       }
     ],
     "cancelled_ytd": 34,
-    "churn_rate": 1.4,
+    "churn_rate": 1.3,
     "avg_member_price": 134.93,
     "monthly_recurring_revenue": 13088.0,
     "avg_tenure_months": 8.9,
@@ -8081,7 +8122,7 @@
       },
       {
         "name": "Strongevity",
-        "count": 14,
+        "count": 15,
         "members": [
           {
             "id": 13508479,
@@ -8138,6 +8179,10 @@
           {
             "id": 13525181,
             "name": "Margaret Platt"
+          },
+          {
+            "id": 13524216,
+            "name": "Patricia Stewart"
           }
         ]
       },
@@ -8446,12 +8491,12 @@
       "last_90_days": {
         "top_days": [
           {
-            "day": "Tuesday",
-            "count": 525
+            "day": "Wednesday",
+            "count": 551
           },
           {
-            "day": "Wednesday",
-            "count": 520
+            "day": "Tuesday",
+            "count": 537
           },
           {
             "day": "Friday",
@@ -8484,18 +8529,18 @@
             "count": 454
           },
           {
-            "day": "Wednesday",
-            "count": 520
+            "day": "Tuesday",
+            "count": 537
           }
         ],
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 525
+            "count": 537
           },
           {
             "name": "Build: Full Body",
-            "count": 456
+            "count": 468
           },
           {
             "name": "Build: Lower",
@@ -8516,12 +8561,12 @@
         ],
         "bottom_classes": [
           {
-            "name": "Strongevity",
-            "count": 32
-          },
-          {
             "name": "Barbelle",
             "count": 34
+          },
+          {
+            "name": "Strongevity",
+            "count": 39
           },
           {
             "name": "Engine",
@@ -8533,7 +8578,7 @@
           },
           {
             "name": "Circuits",
-            "count": 197
+            "count": 209
           },
           {
             "name": "Plate",
@@ -8561,21 +8606,21 @@
           },
           {
             "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 128,
+            "sessions": 12,
+            "avg": 10.7,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Wednesday",
             "time": "6pm",
             "name": "Plate",
             "count": 85,
             "sessions": 8,
             "avg": 10.6,
             "label": "Wednesday 6pm Plate"
-          },
-          {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 116,
-            "sessions": 11,
-            "avg": 10.5,
-            "label": "Wednesday 7am Build: Full Body"
           },
           {
             "day": "Monday",
@@ -8625,15 +8670,6 @@
             "label": "Wednesday 7pm Plate"
           },
           {
-            "day": "Tuesday",
-            "time": "5pm",
-            "name": "Build: Upper",
-            "count": 27,
-            "sessions": 4,
-            "avg": 6.8,
-            "label": "Tuesday 5pm Build: Upper"
-          },
-          {
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
@@ -8641,6 +8677,15 @@
             "sessions": 5,
             "avg": 6.8,
             "label": "Thursday 8pm Barbelle"
+          },
+          {
+            "day": "Tuesday",
+            "time": "5pm",
+            "name": "Build: Upper",
+            "count": 29,
+            "sessions": 4,
+            "avg": 7.2,
+            "label": "Tuesday 5pm Build: Upper"
           },
           {
             "day": "Wednesday",
@@ -8652,21 +8697,21 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 2535
+        "total_attended": 2578
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 243
+            "count": 255
+          },
+          {
+            "day": "Wednesday",
+            "count": 191
           },
           {
             "day": "Monday",
             "count": 161
-          },
-          {
-            "day": "Wednesday",
-            "count": 160
           },
           {
             "day": "Friday",
@@ -8691,38 +8736,38 @@
             "count": 155
           },
           {
-            "day": "Wednesday",
-            "count": 160
-          },
-          {
             "day": "Monday",
             "count": 161
+          },
+          {
+            "day": "Wednesday",
+            "count": 191
           }
         ],
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 243
+            "count": 255
           },
           {
             "name": "Build: Lower",
             "count": 152
           },
           {
+            "name": "Build: Full Body",
+            "count": 148
+          },
+          {
             "name": "Elevate",
             "count": 137
           },
           {
-            "name": "Build: Full Body",
-            "count": 136
+            "name": "Circuits",
+            "count": 79
           },
           {
             "name": "Plate",
             "count": 68
-          },
-          {
-            "name": "Circuits",
-            "count": 67
           }
         ],
         "bottom_classes": [
@@ -8744,7 +8789,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 25
+            "count": 32
           },
           {
             "name": "Mobility",
@@ -8756,9 +8801,9 @@
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
-            "count": 33,
-            "sessions": 3,
-            "avg": 11.0,
+            "count": 45,
+            "sessions": 4,
+            "avg": 11.2,
             "label": "Wednesday 7am Build: Full Body"
           },
           {
@@ -8769,6 +8814,15 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Tuesday 7am Build: Upper"
+          },
+          {
+            "day": "Wednesday",
+            "time": "10am",
+            "name": "Circuits",
+            "count": 42,
+            "sessions": 4,
+            "avg": 10.5,
+            "label": "Wednesday 10am Circuits"
           },
           {
             "day": "Saturday",
@@ -8796,15 +8850,6 @@
             "sessions": 3,
             "avg": 10.0,
             "label": "Friday 7pm Mobility"
-          },
-          {
-            "day": "Wednesday",
-            "time": "10am",
-            "name": "Circuits",
-            "count": 30,
-            "sessions": 3,
-            "avg": 10.0,
-            "label": "Wednesday 10am Circuits"
           }
         ],
         "bottom_slots": [
@@ -8845,15 +8890,6 @@
             "label": "Wednesday 7pm Plate"
           },
           {
-            "day": "Tuesday",
-            "time": "5pm",
-            "name": "Build: Upper",
-            "count": 27,
-            "sessions": 4,
-            "avg": 6.8,
-            "label": "Tuesday 5pm Build: Upper"
-          },
-          {
             "day": "Thursday",
             "time": "7pm",
             "name": "Engine",
@@ -8861,11 +8897,20 @@
             "sessions": 2,
             "avg": 7.0,
             "label": "Thursday 7pm Engine"
+          },
+          {
+            "day": "Tuesday",
+            "time": "5pm",
+            "name": "Build: Upper",
+            "count": 29,
+            "sessions": 4,
+            "avg": 7.2,
+            "label": "Tuesday 5pm Build: Upper"
           }
         ],
-        "total_attended": 957
+        "total_attended": 1000
       },
-      "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a 30-min \"Open Gym + Coach\" slot on Monday and Thursday evenings** \u2014 staff a coach to supervise lifts and answer form questions during the currently dead space between classes, positioned as a lower-pressure alternative to full classes for members who want flexibility.\n\n2. **Run a paid \"Barbell Fundamentals\" workshop (45 mins) on Saturday mornings before the quieter weekend timetable** \u2014 target Barbelle and Strongevity members who may be intimidated; position it as a confidence-builder that feeds into those underattended classes.\n\n**For the quieter classes themselves:**\n\n3. **Move Engine to a Tuesday or Wednesday slot** (your busiest days) and pair it with a 2-week member challenge: \"Complete 3 Engine classes, get a free Elevate drop-in\" \u2014 this leverages momentum from Build classes and gives Engine a visibility boost through a high-traffic day rather than its current softer placement.",
+      "suggestion": "**For quiet studio time between sessions:**\n\n1. **Launch a paid \"Open Gym + Coach\" block on Monday/Thursday afternoons** \u2014 staff one coach to float between 2-3pm when studios are empty, charge \u00a38-12 per session for members wanting unsupervised lifting with form checks available. Fills dead time and captures revenue from your Build: Upper devotees who want extra volume.\n\n2. **Add a 30-min \"Lift + Mobility\" workshop slot Saturday mornings before the quietest day's classes start** \u2014 bridge Mobility's proven appeal (225 attendees) with a lower-barrier entry to Build classes; position it as a prep session to reduce perceived intensity of your least popular strength classes.\n\n**To lift the quieter classes themselves:**\n\n3. **Move Engine or Capacity to Tuesday/Wednesday evenings and run a 4-week \"Try for Free\" trial with direct invites to Build: Upper members** \u2014 your attendance data shows Wed/Tues are peak, and Build attendees are already comfortable with structured strength work; reframe these as \"conditioning finishers\" rather than standalone classes to lower the intimidation factor driving low uptake.",
       "capacity": [
         {
           "name": "Mobility",
@@ -9169,7 +9214,7 @@
       },
       {
         "month": "2026-07",
-        "active": 162,
+        "active": 163,
         "churn": 7.5,
         "by_type": {
           "Empower": 64,
@@ -9183,7 +9228,7 @@
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
           "6 Week Jumpstart": 20,
-          "Strongevity": 11,
+          "Strongevity": 12,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -9220,13 +9265,6 @@
         "membership": "Elevate",
         "days_absent": 11,
         "last_seen": "2026-07-11"
-      },
-      {
-        "id": 7399387,
-        "name": "Hilary-Anne Christie",
-        "membership": "Elevate",
-        "days_absent": 13,
-        "last_seen": "2026-07-09"
       },
       {
         "id": 9768831,
@@ -9283,13 +9321,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 20,
         "last_seen": "2026-07-02"
-      },
-      {
-        "id": 7194891,
-        "name": "Lorna McMullan",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-07-10"
       },
       {
         "id": 9831854,
@@ -9480,6 +9511,12 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Brenda Bradley",
+        "type": "Meet a Coach",
+        "date": "2026-07-29",
+        "upcoming": true
+      },
       {
         "name": "Geraldine Finch",
         "type": "Meet a Coach",
@@ -10455,6 +10492,15 @@
         "join_date": "2024-02-29",
         "membership": "8 PT Sessions",
         "class_count": 251,
+        "last_momentum": null
+      },
+      {
+        "id": 13524216,
+        "name": "Patricia Stewart",
+        "email": "patriciamstewart58@gmail.com",
+        "join_date": "2026-07-27",
+        "membership": "Strongevity",
+        "class_count": 0,
         "last_momentum": null
       },
       {
@@ -21489,9 +21535,9 @@
       {
         "month": "2026-07",
         "revenue": 19358.46,
-        "expenses": 13733.69,
-        "profit": 5624.77,
-        "profit_pct": 29.1,
+        "expenses": 13749.84,
+        "profit": 5608.62,
+        "profit_pct": 29.0,
         "categories": {
           "in": [
             {
@@ -21542,7 +21588,7 @@
             },
             {
               "name": "Food And Drink",
-              "amount": 67.15
+              "amount": 83.3
             },
             {
               "name": "Vehicles",
@@ -21559,6 +21605,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "e0dc1e61-39b8-4860-8f8a-be487ecc2c1a",
+            "date": "2026-07-22",
+            "name": "Culture Coffee",
+            "ref": "Culture Coffee",
+            "amount": 16.15,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
           {
             "uid": "dc1196df-7624-46ad-88ae-39cbc29e8d12",
             "date": "2026-07-21",
@@ -23533,7 +23589,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 1171.74,
+    "cash_position": 1155.59,
     "available": 0.0,
     "reserves": [
       {
@@ -23554,7 +23610,7 @@
       }
     ],
     "earmarked": 13407.0,
-    "total_cash": 14578.74,
+    "total_cash": 14562.59,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23582,9 +23638,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 21732.09,
-    "cash_out_30": 17457.11,
-    "net_30": 4274.98,
+    "cash_in_30": 21000.47,
+    "cash_out_30": 17406.48,
+    "net_30": 3593.99,
     "as_of": "2026-07-22"
   },
   "gocardless": {
@@ -23658,8 +23714,8 @@
       },
       {
         "month": "2026-07",
-        "collected": 14731.93,
-        "payments": 111
+        "collected": 14890.93,
+        "payments": 112
       }
     ],
     "failed": [],
@@ -23763,119 +23819,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now**\n- Have each coach list every service/variation they've sold in the past 3 months (classes, PT sessions, nutrition plans, challenges, etc.). You'll likely find inconsistency\u2014different coaches quoting different prices or inclusions. This is your real starting point, not a blank slate.\n\n**Price from member willingness, not cost-plus guessing**\n- Survey 15-20 current members: \"What would you pay for [PT package]? At what price would you think it's overpriced?\" Use their answers as anchors, not your assumptions. For women's fitness in Belfast, you're competing on perceived value and community\u2014not undercutting big chains.\n\n**Build TWO menus: internal (coaching clarity) + external (sales/website)**\n- Internal: Include profit margins, what coaches can/can't bundle, upgrade paths (e.g., \"member gets 4 free PT consultations to upsell ongoing sessions\"). External: Remove pricing complexity. Strip it to 3-4 core packages max\u2014people freeze with too many options.\n\n**Create a one-page \"service conversation script\" for coaches**\n- Coaches need to know the tier-appropriate next step for each member type (new vs. loyal vs. lapsed). Without this, they'll either oversell or undersell. A simple decision tree (\"Member doing classes 3x/week \u2192 offer this\") drives consistency and revenue.\n\n**Publish and test within 2 weeks**\n- Get it live internally first. Let coaches use it for 14 days, collect friction points, then refine. Don't perfectionism-delay this\u2014feedback from real conversations"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not your dreams**\nAudit what your coaches are *actually* selling right now (group classes, PT sessions, nutrition plans, mobility work). Don't design a menu of what you wish you offered. Ask your top 3 coaches: \"What gets booked most? What do members ask for but we don't have?\" This becomes your foundation.\n\n**2. Price by value extracted, not time spent**\nDon't charge \u00a330/hour for coaching because that's \"market rate.\" Ask: *What's the transformation worth?* A 12-week body composition program might be \u00a3600 because it's results-based. A drop-in mobility class might be \u00a312 because it's convenience. Make coaches understand the difference\u2014they'll sell with conviction.\n\n**3. Create TWO different menus with ruthless clarity**\n- **Member-facing**: Clean, benefit-led copy (\"Build Strength\" not \"3x/week barbell training\"). Pricing, what's included (e.g., form check, nutrition guidance), how to book.\n- **Coach-facing**: The operational spec\u2014what's *in* each service (e.g., \"PT session = 1:1 assessment, program design, video library access\"). Prevents coaches making up their own rules.\n\n**4. Test pricing on 5 existing members in conversation**\nDon't guess. Ring 5 loyal members, ask: \"If we offered 8-week transformation packages at \u00a3400, would you buy?\" Their hesitation or enthusiasm tells you everything. Adjust before launch.\n\n**5. Publish it Friday, measure bookings by next Friday**\nGet it live on your website and in"
       }
     ]
   },
@@ -24619,7 +24675,7 @@
       "income": 10607.0,
       "profit": 8857.92
     },
-    "advice": "**Insights**\n\nYour cost per lead has collapsed 90% (\u00a321 to \u00a32) and volume has surged 8x, but your close rate has cratered from 59% (Apr) to 4% (Jul). You're flooding the funnel with cheap, cold traffic that isn't converting\u2014this is a classic quality-versus-quantity trap. The profit is still positive this month (\u00a3947), but you're essentially burning cash on unqualified leads; at April's 29% close rate, those 165 leads would've generated 48 sales and \u00a37,000+ profit instead of \u00a31,323.\n\nSomething structural changed in July\u2014either your targeting widened dramatically, your creative softened, or the algorithm shifted to volume-focused campaigns. The leads are real (you got them) but they're not your people. You've optimised for the metric (CPL) rather than the outcome (sales).\n\n**Actions**\n\n1. **Immediately audit and tighten your targeting.** Pull your July audiences in Ads Manager\u2014what changed? Did you expand to Lookalike, broaden age ranges, or drop exclusions? Revert to April's targeting spec (interest stacks, age band, location radius, income if available) as your baseline. Run a small parallel test (\u00a350/day) with April's exact setup to confirm it still converts at 25%+ close rate.\n\n2. **Pause any broad or automated targeting campaigns in July and rebuild on intent signals.** Test three audiences next month: (a) fitness/gym interests + female + 25\u201345 + Belfast/commutable radius; (b) past website visitors + video viewers; (c) a tight Lookalike built from your April sales (not leads). Allocate 50% budget to (a), 30% to (b), 20% to (c).\n\n3. **Resurrect April's creative narrative.** July's \u00a32-lead ads are pulling clicks but not commitment. What was April saying? Run it again, verbatim if possible, and A/B against a \"social proof / testimonial\" creative (use your 20 sales from Apr/May as case studies). July's creative is likely vague (\"Join now!\") vs April's specificity (\"6-week"
+    "advice": "**Insights**\n\n1. **You've cracked cost-per-lead efficiency but broken conversion.** July delivered 165 leads at \u00a32/lead\u2014a 92% drop in cost versus June and a 10x improvement on April. But close rate collapsed from 68% (Apr) to 4% (Jul). You're buying cheap volume from the wrong people. The leads are either unqualified, cold-intent, or your follow-up process has fallen apart.\n\n2. **Your April baseline was your sweet spot: 20 sales for \u00a3435 spend.** You're now spending less (\u00a3376) but getting fewer sales (7 vs 20). Revenue per sale tells the real story\u2014April returned \u00a366.50 per pound spent; July returns \u00a33.54. You've optimized for clicks, not conversions.\n\n3. **May-to-June showed warning signs you ignored.** CPL doubled month-on-month while close rate stayed high(ish). That signalled audience fatigue and creep toward lower-intent traffic. July's 8x CPL drop suggests the algorithm found a completely different audience\u2014likely bargain-hunters, gym-curious randoms, or people in wrong locations/life stages.\n\n**Actions**\n\n1. **Pause all July-winning audiences and creatives immediately.** Those 165 leads aren't buyers. Audit your follow-up: are replies being answered same-day? Is there a qualification call? If your process is sound, this audience is just poor fit. Revert to April targeting: reuse that exact audience segment, location radius, age range, and interest stack. Run a small \u00a380/week test to confirm it still converts.\n\n2. **Test three narrow intent segments next week.** Create separate ad sets for: (a) \"Local women fitness\" + \"weight loss\" + exclude under-25s, (b) newly engaged/married women (life event targeting), (c) existing gym members (lookalike). Keep CPL cap around \u00a34\u20136 based on April's 20-sales math. Lower CPL targets are pulling in noise.\n\n3. **Change creative immediately.** July's ads clearly spoke to curiosity, not commitment. Film a 15-second testimonial from someone who actually completed the 6"
   },
   "moves": [
     {
@@ -24716,12 +24772,6 @@
       "name": "Alt Single Leg Step up",
       "part": "Quads",
       "video": "https://www.instagram.com/p/DZD10Ixo6Aw/?hl=en",
-      "source": "Q3 2026"
-    },
-    {
-      "name": "Alternating Side Lunges",
-      "part": "Quads",
-      "video": "https://www.instagram.com/p/Cg1iCYEAX41/",
       "source": "Q3 2026"
     },
     {
@@ -25065,12 +25115,6 @@
       "part": "Chest",
       "video": "https://www.instagram.com/p/B3xsPoaF23H/",
       "source": "Q4 2026"
-    },
-    {
-      "name": "Bradford Press - Use Dumbbells If Mobility Is Poor And Use Technique Bar If Weight Is A Issue",
-      "part": "Full Body",
-      "video": "https://www.instagram.com/p/CSsxdJyjUuj/",
-      "source": "Q3 2026"
     },
     {
       "name": "Bridge Knee Raise",
@@ -25667,6 +25711,12 @@
       "source": "Q2 2026"
     },
     {
+      "name": "Dumbbell Version",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=3wwQ3G0BgZk",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Elbow Plank Push And Pull",
       "part": "Core",
       "video": "https://www.youtube.com/shorts/65ObS2M5sWM",
@@ -26165,12 +26215,6 @@
       "source": "Strongevity"
     },
     {
-      "name": "Lateral Toe Taps Banded",
-      "part": "Core",
-      "video": "https://www.instagram.com/p/DPwEaaAkSe7/",
-      "source": "Q3 2026"
-    },
-    {
       "name": "Leg 90 Push Up",
       "part": "Chest",
       "video": "https://www.instagram.com/p/DFYTEImNDv7/",
@@ -26181,12 +26225,6 @@
       "part": "Core",
       "video": "https://www.instagram.com/p/DKKuZtZAjie/",
       "source": "Q4 2026"
-    },
-    {
-      "name": "Lunge Halo",
-      "part": "Shoulders",
-      "video": "https://www.instagram.com/p/CrV0xpiNGW2/",
-      "source": "Q3 2026"
     },
     {
       "name": "Lunge Plate Hops",
@@ -26541,12 +26579,6 @@
       "part": "Full Body",
       "video": "https://www.instagram.com/p/Cvhtk_9uCg5/",
       "source": "Q2 2026"
-    },
-    {
-      "name": "Only Add Kb If Shoulder Allows",
-      "part": "Full Body",
-      "video": "https://www.instagram.com/p/DTOiYCFkZjY/?hl=en",
-      "source": "Q3 2026"
     },
     {
       "name": "Overhead Hold",
@@ -27059,12 +27091,6 @@
       "source": "Q4 2026"
     },
     {
-      "name": "Sl Glute Bridges Or Normal If New",
-      "part": "Glutes",
-      "video": "https://www.instagram.com/p/DXCRH25DkeK/",
-      "source": "Q3 2026"
-    },
-    {
       "name": "Sled Drag",
       "part": "Cardio",
       "video": "https://www.youtube.com/shorts/CkjlvBEDlfQ",
@@ -27189,12 +27215,6 @@
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DPjs8Y_CelI/?img_index=1",
       "source": "Q4 2026"
-    },
-    {
-      "name": "Stand Away From The Cable Machine But Close Or You Will Know About It",
-      "part": "Full Body",
-      "video": "https://www.instagram.com/p/DabRscOTQwy/?hl=en",
-      "source": "Q3 2026"
     },
     {
       "name": "Standing Curl Pendulum .13",
