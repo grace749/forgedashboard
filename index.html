@@ -1555,6 +1555,24 @@ function openTshirt(){
 // ── On-demand report generation (per page) ─────────────────────────────────
 // Coaches (and owner) produce a Weekly or Monthly report for a page and either
 // download it as a PDF or push it into a shareable Google Doc for the team.
+// The at-risk list EXACTLY as the members page shows it: auto-detected
+// (teamup.at_risk, paused removed) PLUS manually-flagged members, minus resolved.
+function _reportAtRisk(){
+  const auto = window._atRiskData || [];
+  const autoNames = new Set(auto.map(m => (m.name||"").toLowerCase()));
+  const manual = Object.values(window._riskCandidates || {})
+    .filter(c => (typeof atState === "function") && atState(c.name).manual && !autoNames.has((c.name||"").toLowerCase()))
+    .map(c => ({ ...c, _manual: true }));
+  const all = [...auto, ...manual];
+  return (typeof _atResolved === "function") ? all.filter(m => !_atResolved(m)) : all;
+}
+function _reportAtRiskLabels(){
+  return _reportAtRisk().map(m => {
+    const days = m.days_absent != null ? ` (${m.days_absent}d absent)` : (m._manual ? " (flagged)" : "");
+    return (m.name || "") + days;
+  }).filter(s => s.trim());
+}
+
 function _pageReportSections(key){
   const d = window._data || {}, tm = d.teamup || {}, js = (d.jumpstart||{}).stats || {},
         ib = (d.inbody||{}).scans || [];
@@ -1568,19 +1586,22 @@ function _pageReportSections(key){
   // coaches — keep ALL money out of them (no MRR, no pricing, no revenue).
   const fmtMon = ym => { const [y,m]=String(ym).split("-"); return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][(+m||1)-1]+" '"+String(y).slice(2); };
   if (key === "members"){
-    const bd = (tm.breakdown||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0));
     const leaving = (tm.leaving_members||[]).map(nm).filter(Boolean);
     const paused  = (tm.paused_members||[]).map(nm).filter(Boolean);
-    const atRisk  = (tm.at_risk||[]).map(r => nm(r) + (r.days_absent!=null?` (${r.days_absent}d)`:"")).filter(Boolean);
+    const atRisk  = _reportAtRiskLabels();   // matches the members page exactly
     const hist = (tm.member_history||[]).slice(-6);
     const trend = hist.length ? hist.map(h=>`${fmtMon(h.month)} ${h.active}`).join("  →  ") : "—";
-    const ml = tm.member_list||[];
-    const totClasses = ml.reduce((t,m)=>t+(m.class_count||0),0);
-    const avgClasses = ml.length ? Math.round(totClasses/ml.length) : null;
-    const topAtt = ml.slice().sort((a,b)=>(b.class_count||0)-(a.class_count||0)).slice(0,5);
-    const miles = (tm.class_milestones||[]).map(m=>`${nm(m)} (${m.total_classes}→${m.next_milestone}, ${m.classes_away} away)`);
     const net = (typeof tm.new_this_month==="number" && typeof tm.cancellations_this_month==="number") ? tm.new_this_month - tm.cancellations_this_month : null;
     const retRate = (typeof tm.churn_rate==="number") ? (Math.round((100-tm.churn_rate)*10)/10) : null;
+    // This-month activity (NOT lifetime): classes in the last 30 days, scans done
+    // this calendar month, momentum calls booked.
+    const cs = tm.class_stats || {};
+    const classes30 = ((cs.last_30_days||{}).total_attended) || 0;
+    const mc = tm.momentum_calls || {};
+    const callsBooked = ((mc.upcoming)||[]).length, callsDone = ((mc.recent)||[]).length;
+    const ym = new Date().toISOString().slice(0,7);
+    const scansMonth = (((d.inbody||{}).scans)||[]).filter(s => (s.last_scan||"").slice(0,7) === ym).length;
+    const miles = (tm.class_milestones||[]).map(m => `${nm(m)} (${m.classes_away} from ${m.next_milestone})`);
     return [
       { heading:"Membership — headline", lines:[
         `Full (recurring) members: ${n(tm.recurring)} · Trials: ${n(tm.trial)} · Paused: ${n(tm.paused)}`,
@@ -1590,24 +1611,23 @@ function _pageReportSections(key){
       { heading:"Growth — active members, last 6 months", lines:[ trend ]},
       { heading:"Movement this month", lines:[
         `Joined: ${n(tm.new_this_month)} · Cancellations: ${n(tm.cancellations_this_month)} · Cancelled last month: ${n(tm.cancelled_last_month)} · YTD: ${n(tm.cancelled_ytd)}`,
-        `At-risk members: ${(tm.at_risk||[]).length}`,
         leaving.length ? `Leaving: ${leaving.join(", ")}` : "Leaving: none",
         paused.length  ? `Paused: ${paused.join(", ")}` : "Paused: none",
-        atRisk.length  ? `At risk: ${atRisk.slice(0,15).join(", ")}${atRisk.length>15?` +${atRisk.length-15} more`:""}` : null,
-      ].filter(Boolean)},
-      { heading:"Engagement", lines:[
-        `Total classes attended (all members): ${totClasses.toLocaleString("en-GB")} · Avg per member: ${avgClasses!=null?avgClasses:"—"}`,
-        topAtt.length ? "Most active: " + topAtt.map(m=>`${nm(m)} (${m.class_count})`).join(", ") : "Most active: —",
+      ]},
+      { heading:`Members at risk (${atRisk.length})`, lines:
+        atRisk.length ? [atRisk.join(", ")] : ["None flagged right now 🎉"] },
+      { heading:"This month", lines:[
+        `Classes attended (last 30 days): ${classes30 ? classes30.toLocaleString("en-GB") : "—"}`,
+        `Body scans done: ${scansMonth}`,
+        `Momentum calls booked: ${callsBooked}` + (callsDone ? ` · completed recently: ${callsDone}` : ""),
         miles.length ? "Nearing class milestones: " + miles.join(", ") : null,
       ].filter(Boolean)},
-      { heading:"By membership type", lines:
-        bd.length ? bd.map(b=>`${b.name}: ${b.count}`) : ["—"] },
     ];
   }
   if (key === "retention"){
     const leaving = (tm.leaving_members||[]).map(nm).filter(Boolean);
     const paused  = (tm.paused_members||[]).map(nm).filter(Boolean);
-    const atRisk  = (tm.at_risk||[]).map(r=>nm(r)+(r.days_absent!=null?` (${r.days_absent}d)`:"")).filter(Boolean);
+    const atRisk  = _reportAtRiskLabels();   // matches the members page exactly
     const retRate = (typeof tm.churn_rate==="number")?(Math.round((100-tm.churn_rate)*10)/10):null;
     const lapsed = (tm.lapsed_full_by_month||[]).slice(0,3).reverse().map(m=>`${fmtMon(m.month)} ${(m.members||[]).length}`);
     return [
