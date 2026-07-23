@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T12:11:43.180113+00:00",
+  "generated_at": "2026-07-23T14:00:59.508401+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-07-23",
-    "event_count": 9,
-    "urgent_count": 3,
-    "enquiry_count": 3,
+    "event_count": 10,
+    "urgent_count": 0,
+    "enquiry_count": 4,
     "calendar": [
       {
         "title": "Grace x Holiday France",
@@ -91,6 +91,18 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
+        "title": "\ud83d\udcde Call: Claire Millar",
+        "time": "5:00pm",
+        "start_raw": "2026-07-24T17:00:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Claire Millar"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
         "title": "Long Cardio - 30 Run / 30 Bike",
         "time": "all day",
         "start_raw": "2026-07-25",
@@ -111,38 +123,7 @@
         "prep": ""
       }
     ],
-    "urgent": [
-      {
-        "from": "Lynda Wright",
-        "from_raw": "Lynda Wright <wright2lynda@gmail.com>",
-        "subject": "Lynda, info on your No Sweat Intro",
-        "snippet": "Thank you, looking forward to it! On Tue, 21 Jul 2026, 10:40 Coach Grace, &lt;grace@theforge.pt&gt; wrote: Hi Lynda, Thanks for booking your No Sweat Intro! I&#39;m Coach Grace and I&#39;m excited to",
-        "id": "19f8e48634810890",
-        "thread_id": "19f840c6f942a3ff",
-        "msg_count": 2,
-        "draft_id": "r-6341607769247817375"
-      },
-      {
-        "from": "Sean McColgan",
-        "from_raw": "Sean McColgan <s.mccolgan@qub.ac.uk>",
-        "subject": "Help to Grow: Management Alumni",
-        "snippet": "Hi All Hope you&#39;re all well and enjoying the great weather. I&#39;m hoping you can help our colleagues at the Global Entrepreneurship Monitor (GEM) in Northern Ireland. They are currently in the",
-        "id": "19f8e3f956289a75",
-        "thread_id": "19f8e3f956289a75",
-        "msg_count": 1,
-        "draft_id": "r4683019291447927037"
-      },
-      {
-        "from": "mhewitt@acredula.co.uk",
-        "from_raw": "\"mhewitt@acredula.co.uk\" <mhewitt@acredula.co.uk>",
-        "subject": "The National Fitness Awards - 'Ladies Only Facility'",
-        "snippet": "We are delighted to announce that the &#39;Ladies Only Gym of the Year&#39; category is back at The National Fitness Awards - get your entry in and be recognised as one of the top facilities in the UK.",
-        "id": "19f8e279168a312c",
-        "thread_id": "19f8e279168a312c",
-        "msg_count": 1,
-        "draft_id": "r6980861433692726166"
-      }
-    ],
+    "urgent": [],
     "important": [],
     "enquiries": [
       {
@@ -169,6 +150,15 @@
         "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:15am",
         "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:15am",
         "snippet": "Booked a call for Tomorrow 11:15am \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
+      {
+        "name": "Claire Millar",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 5:00pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 5:00pm",
+        "snippet": "Booked a call for Tomorrow 5:00pm \u2014 potential member",
         "age": "",
         "unread": 0
       }
@@ -224,8 +214,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
         "sarah@nourishandnurtu.re": "2025-11-23",
+        "eiliskearns13@gmail.com": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -308,10 +298,46 @@
   },
   "ghl": [
     {
+      "name": "Angiebabes",
+      "channel": "Phone",
+      "message": "Hi, I have been thinking about joining for a while but unfortunately I am still recovering from surgery on my ankle from after Christmas.  The recovery is slow tbh and with not being able to go for wa",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "TC6jH8xnq39tijdCVSxq",
+      "contact_id": "LbsOomOPbaNz36YPjtS6"
+    },
+    {
+      "name": "Stella Hewitt",
+      "channel": "Phone",
+      "message": "I\u2019m definitely interested and I\u2019m looking at my calendar to see if I can make sure and fit in all sessions so maybe you would give me a ring when you are free thanks. Rgd\u2019s Stella",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "NsbAfQBqEiG1vnmhpEwn",
+      "contact_id": "4ELTsIQfbgoP9oTIKJFJ"
+    },
+    {
+      "name": "Chrisfaulkner",
+      "channel": "Phone",
+      "message": "Brilliant Lesley",
+      "age": "1h ago",
+      "unread": 3,
+      "conv_id": "nmOHhjJZelaYKjnUDnqb",
+      "contact_id": "Yap2UUF87JQ4fgdk7gHk"
+    },
+    {
+      "name": "Hannah McClintock",
+      "channel": "Phone",
+      "message": "Hi Grace, my main goal is to gain weight and build muscles",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "9zsAZ6hFQtyItYieIIE0",
+      "contact_id": "uPti5LsMBACjOi4JIa7t"
+    },
+    {
       "name": "Amy \ud83c\udf3a",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "1h ago",
+      "age": "3h ago",
       "unread": 3,
       "conv_id": "WCwVuAp9MbMMom86u5Ic",
       "contact_id": "Rnp1ndaNNs0sWAM1BqLZ"
@@ -320,7 +346,7 @@
       "name": "Elizabeth Greenaway",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "2h ago",
+      "age": "4h ago",
       "unread": 1,
       "conv_id": "Z1JjEXnxshsXv22Joew4",
       "contact_id": "LVMDPIWXCTZN8ASWzdu2"
@@ -329,37 +355,10 @@
       "name": "Agnes Duncan",
       "channel": "Phone",
       "message": "Thank you.\nI'm not interested at the moment due to  other appointment commitmentsbut will keep your details for later. Thank You",
-      "age": "5h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "2nozSkDrIF3d7liLEwyI",
       "contact_id": "LnBAwqFmF8QyAJLUd3jf"
-    },
-    {
-      "name": "Jackie Kearns",
-      "channel": "Phone",
-      "message": "\ud83d\udd25",
-      "age": "16h ago",
-      "unread": 1,
-      "conv_id": "gDkKFu6ZHAAhDgsgxojy",
-      "contact_id": "HtXUkqaQjoGiaZ52XSn0"
-    },
-    {
-      "name": "catherine gordon",
-      "channel": "Phone",
-      "message": "I'm just looking around at the moment Grace, thanks for replying. \nI'm 61 so was checking out your older ladies classes. How much are they and when are the on? Thank you",
-      "age": "16h ago",
-      "unread": 1,
-      "conv_id": "zmjZl4hVPDCRa40hWrwJ",
-      "contact_id": "q29pQwQRNmM49tnBEjuW"
-    },
-    {
-      "name": "Caroline Silva",
-      "channel": "Phone",
-      "message": "Hi Forge Female Fitness! What is your name? I am checking in to see in the link I sent out opened up ok for you.",
-      "age": "18h ago",
-      "unread": 2,
-      "conv_id": "3JFvM3Sh7m5j36gkRZOI",
-      "contact_id": "gBj3NQSp14aTMvaHvEOk"
     }
   ],
   "jumpstart": {
@@ -4407,19 +4406,19 @@
       {
         "user_id": "U0BJD0WGJMA",
         "text": "Hiya ..I think that's me all set up now, and class booked! The No Sweat classes timewise didn't suit me this week, tho I have booked into some classes Wed, Thur",
-        "hours": 44,
+        "hours": 46,
         "name": "Marjorie"
       },
       {
         "user_id": "U094L5UFJJU",
         "text": "Thanks again for encouraging me to attend this morning - I actually quite enjoyed that session.\nQuick question - after session this morning I visited a friend I",
-        "hours": 19,
+        "hours": 21,
         "name": "Janeen Gilfillan"
       },
       {
         "user_id": "U09HG60QR7C",
         "text": "Excellent choice ",
-        "hours": 18,
+        "hours": 20,
         "name": "Melissa Traynor"
       }
     ],
@@ -21353,9 +21352,9 @@
       {
         "month": "2026-07",
         "revenue": 20093.01,
-        "expenses": 13801.56,
-        "profit": 6291.45,
-        "profit_pct": 31.3,
+        "expenses": 13914.49,
+        "profit": 6178.52,
+        "profit_pct": 30.7,
         "categories": {
           "in": [
             {
@@ -21402,7 +21401,7 @@
             },
             {
               "name": "Marketing",
-              "amount": 328.58
+              "amount": 441.51
             },
             {
               "name": "Food And Drink",
@@ -21423,6 +21422,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "e6deac59-dfe9-4ba2-80da-74bba140b32c",
+            "date": "2026-07-23",
+            "name": "Facebook",
+            "ref": "FACEBK *JMRYJYRML2",
+            "amount": 112.93,
+            "direction": "OUT",
+            "category": "Marketing",
+            "internal": false
+          },
           {
             "uid": "e67a3feb-fd24-4b79-8f62-a3812d5e99c0",
             "date": "2026-07-23",
@@ -23467,7 +23476,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 1838.42,
+    "cash_position": 1725.49,
     "available": 0.0,
     "reserves": [
       {
@@ -23488,7 +23497,7 @@
       }
     ],
     "earmarked": 13407.0,
-    "total_cash": 15245.42,
+    "total_cash": 15132.49,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23517,8 +23526,8 @@
       }
     ],
     "cash_in_30": 21735.02,
-    "cash_out_30": 15364.36,
-    "net_30": 6370.66,
+    "cash_out_30": 15477.29,
+    "net_30": 6257.73,
     "as_of": "2026-07-23"
   },
   "gocardless": {
