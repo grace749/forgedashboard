@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T14:02:22.447124+00:00",
+  "generated_at": "2026-07-26T18:43:47.102991+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -309,8 +309,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "sarah@nourishandnurtu.re": "2025-11-23",
         "eiliskearns13@gmail.com": "2025-11-23",
+        "sarah@nourishandnurtu.re": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -396,19 +396,10 @@
       "name": "Sharon McAuley",
       "channel": "Phone",
       "message": "Please yes how much is it x",
-      "age": "5h ago",
+      "age": "10h ago",
       "unread": 5,
       "conv_id": "w1s5QFfLju54cM6BaOyT",
       "contact_id": "sfQMqriFdZECkHsrO6gN"
-    },
-    {
-      "name": "janette watt",
-      "channel": "Phone",
-      "message": "ok thankyou",
-      "age": "19h ago",
-      "unread": 1,
-      "conv_id": "x04YibDN1Ia7nQZLXpo4",
-      "contact_id": "mZL8kAbeXlQLE24x9fmZ"
     }
   ],
   "jumpstart": {
@@ -23696,8 +23687,8 @@
       }
     ],
     "cash_in_30": 21676.45,
-    "cash_out_30": 14704.71,
-    "net_30": 6971.74,
+    "cash_out_30": 14680.71,
+    "net_30": 6995.74,
     "as_of": "2026-07-26"
   },
   "gocardless": {
@@ -23999,28 +23990,10 @@
     ]
   },
   "events": {
-    "events": [
-      {
-        "name": "Forge Couch to 5k (8 Week Plan)",
-        "when": "7/20/2026",
-        "details": "8 Week running plan ending with a Team 5k",
-        "marketing": ""
-      },
-      {
-        "name": "5KM Park Run (end of couch 2 5k)",
-        "when": "19 September 9.30am",
-        "details": "Ballymoney Duck Pond park run",
-        "marketing": ""
-      },
-      {
-        "name": "Forge Summer Games",
-        "when": "22nd August 9.30am",
-        "details": "Forge Female Fitness",
-        "marketing": ""
-      }
-    ],
+    "events": [],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true
+    "configured": true,
+    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
   },
   "tshirt": {
     "configured": true,
