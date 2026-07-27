@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T14:00:52.707405+00:00",
+  "generated_at": "2026-07-27T15:57:27.726554+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-07-27",
     "event_count": 28,
-    "urgent_count": 2,
+    "urgent_count": 0,
     "enquiry_count": 11,
     "calendar": [
       {
@@ -322,28 +322,7 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
-    "urgent": [
-      {
-        "from": "TShirt Studio Customer Service",
-        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
-        "subject": "Please Give Feedback to TShirt Studio for your order - 3826000",
-        "snippet": "Feedback Dear Customer, Thanks for your order with TShirt Studio. Your items should be with you by now and we hope that you are happy with them. Items Value T-Shirt Qty: 1 Colour: Purple Size: 2XL",
-        "id": "19fa341f68a98586",
-        "thread_id": "19fa341f68a98586",
-        "msg_count": 1,
-        "draft_id": "r-1689950105190020058"
-      },
-      {
-        "from": "TShirt Studio Customer Service",
-        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
-        "subject": "Despatch of your TShirt Studio order - 3829843",
-        "snippet": "Thank you for shopping with TShirt Studio. Dear Customer, Your order number 3829843 has now been despatched. Items Sport Tank Top Qty: 1 Colour: Black Size: L Left Breast image : ForgelogoWHITE2023 (3)",
-        "id": "19fa2cf5ea0254ec",
-        "thread_id": "19fa2cf5ea0254ec",
-        "msg_count": 1,
-        "draft_id": "r-7535420753842481891"
-      }
-    ],
+    "urgent": [],
     "important": [],
     "enquiries": [
       {
@@ -497,8 +476,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
         "sarah@nourishandnurtu.re": "2025-11-23",
+        "eiliskearns13@gmail.com": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -580,10 +559,28 @@
   },
   "ghl": [
     {
+      "name": "Jo",
+      "channel": "Phone",
+      "message": "Why? It\u2019s a great video to show teaching points. I\u2019ve ones of me and eilis too to put up",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "SSmsaXAmGesXC4DA1BV3",
+      "contact_id": "xa3rPNDLcMKM9VtjK91V"
+    },
+    {
+      "name": "Enda Arrell",
+      "channel": "Phone",
+      "message": "Get Started",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "OVUOWilzvaPpZNBIDiZo",
+      "contact_id": "zck33Q8GIxCKMMq9nvAy"
+    },
+    {
       "name": "Idabell Blair",
       "channel": "Phone",
       "message": "Call",
-      "age": "1h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "Br1SOqOPhic1pgUiexJx",
       "contact_id": "aJsq6XH0lsgeizX6dQTj"
@@ -592,7 +589,7 @@
       "name": "Social Media Marketing Agency",
       "channel": "Phone",
       "message": "That\u2019s great, what time?",
-      "age": "5h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "woquxbhuSY8mSWxLuOSB",
       "contact_id": "mShHYMvnfi8kODG4KqyD"
@@ -601,7 +598,7 @@
       "name": "Theresa Quigg",
       "channel": "Phone",
       "message": "Call thanks",
-      "age": "7h ago",
+      "age": "9h ago",
       "unread": 1,
       "conv_id": "yW44ncnYa9sh6d5MUhhJ",
       "contact_id": "MBbBza1djSkBAZs1TZev"
@@ -610,7 +607,7 @@
       "name": "Wendy Hunter",
       "channel": "Phone",
       "message": "Thank you Grace.",
-      "age": "13h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "xfzEXsWeXpHIWtR34TtK",
       "contact_id": "JTP7PZAKjNgC6AzYH3jP"
@@ -2132,6 +2129,30 @@
         "protein_change": 0.0,
         "mineral_change": -0.5,
         "vfa_change": 1.2,
+        "next_due": "2026-09-07",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "lyndawright113",
+        "last_scan": "2026-07-27",
+        "scan_count": 1,
+        "weight": 174.4,
+        "smm": 50.9,
+        "pbf": 46.0,
+        "bmi": 29.9,
+        "tbw": 68.8,
+        "protein": 18.3,
+        "mineral": 7.1,
+        "vfa": 197.1,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
         "next_due": "2026-09-07",
         "days_to_due": 42,
         "overdue": false
@@ -4153,7 +4174,7 @@
         "overdue": true
       }
     ],
-    "total": 86,
+    "total": 87,
     "configured": true
   },
   "sop": {
@@ -8650,7 +8671,7 @@
           },
           {
             "day": "Monday",
-            "count": 366
+            "count": 374
           }
         ],
         "bottom_days": [
@@ -8660,7 +8681,7 @@
           },
           {
             "day": "Monday",
-            "count": 366
+            "count": 374
           },
           {
             "day": "Thursday",
@@ -8686,7 +8707,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 347
+            "count": 355
           },
           {
             "name": "Elevate",
@@ -8839,7 +8860,7 @@
             "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 2610
+        "total_attended": 2618
       },
       "last_30_days": {
         "top_days": [
@@ -8857,7 +8878,7 @@
           },
           {
             "day": "Monday",
-            "count": 144
+            "count": 152
           },
           {
             "day": "Thursday",
@@ -8875,7 +8896,7 @@
           },
           {
             "day": "Monday",
-            "count": 144
+            "count": 152
           },
           {
             "day": "Friday",
@@ -8901,7 +8922,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 125
+            "count": 133
           },
           {
             "name": "Circuits",
@@ -9050,7 +9071,7 @@
             "label": "Tuesday 5pm Build: Upper"
           }
         ],
-        "total_attended": 986
+        "total_attended": 994
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a Monday 6pm open-gym slot** \u2014 Monday is your quietest day (366 total) and likely has gaps between PT blocks. Offer 45 minutes of unstructured gym access at a lower price point to capture members who want flexibility without committing to a full class.\n\n2. **Run a paid \"Strength Foundations\" workshop on Thursday mornings (9:30am)** \u2014 Thursday is quiet (401) and mornings often have dead time. Target newer members or those intimidated by Build classes with a one-off, lower-pressure 30-minute coaching session on lifting technique.\n\n**For quieter classes:**\n\n3. **Move Barbelle and Engine to Wednesday 5:45pm slots** \u2014 both are severely underattended (42 and 45 over 90 days). Wednesday is your busiest day; slot them back-to-back right before or after your packed Build classes so members already in the studio might stay/add on, and the busy vibe lifts perceived class energy. Pair with a \"try one free\" invite to Build attendees the week before.",
       "capacity": [
@@ -9388,13 +9409,6 @@
         "last_seen": "2026-07-07"
       },
       {
-        "id": 12292932,
-        "name": "Ashley George",
-        "membership": "Elevate",
-        "days_absent": 17,
-        "last_seen": "2026-07-10"
-      },
-      {
         "id": 12280596,
         "name": "Cindy McIntyre",
         "membership": "Empower",
@@ -9498,13 +9512,6 @@
         "membership": "Kickstart PAID IN FULL",
         "days_absent": 25,
         "last_seen": "2026-07-02"
-      },
-      {
-        "id": 10973127,
-        "name": "Therese Charles",
-        "membership": "Foundation PAID IN FULL",
-        "days_absent": 17,
-        "last_seen": "2026-07-10"
       },
       {
         "id": 13248943,
@@ -26898,12 +26905,6 @@
       "part": "Back",
       "video": "https://www.instagram.com/p/DUS0t6cjIK3/",
       "source": "Q2 2026"
-    },
-    {
-      "name": "Main: 21 Tricep D Handles",
-      "part": "Biceps",
-      "video": "https://www.instagram.com/p/DYPN5apjdWp/",
-      "source": "Q3 2026"
     },
     {
       "name": "Main: Cable Hip Adduction",

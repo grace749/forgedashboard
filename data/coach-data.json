@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T14:00:52.707405+00:00",
+  "generated_at": "2026-07-27T15:57:27.726554+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1521,6 +1521,30 @@
         "protein_change": 0.0,
         "mineral_change": -0.5,
         "vfa_change": 1.2,
+        "next_due": "2026-09-07",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "lyndawright113",
+        "last_scan": "2026-07-27",
+        "scan_count": 1,
+        "weight": 174.4,
+        "smm": 50.9,
+        "pbf": 46.0,
+        "bmi": 29.9,
+        "tbw": 68.8,
+        "protein": 18.3,
+        "mineral": 7.1,
+        "vfa": 197.1,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
         "next_due": "2026-09-07",
         "days_to_due": 42,
         "overdue": false
@@ -3542,7 +3566,7 @@
         "overdue": true
       }
     ],
-    "total": 86,
+    "total": 87,
     "configured": true
   },
   "slack": {
@@ -6391,7 +6415,7 @@
           },
           {
             "day": "Monday",
-            "count": 366
+            "count": 374
           }
         ],
         "bottom_days": [
@@ -6401,7 +6425,7 @@
           },
           {
             "day": "Monday",
-            "count": 366
+            "count": 374
           },
           {
             "day": "Thursday",
@@ -6427,7 +6451,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 347
+            "count": 355
           },
           {
             "name": "Elevate",
@@ -6580,7 +6604,7 @@
             "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 2610
+        "total_attended": 2618
       },
       "last_30_days": {
         "top_days": [
@@ -6598,7 +6622,7 @@
           },
           {
             "day": "Monday",
-            "count": 144
+            "count": 152
           },
           {
             "day": "Thursday",
@@ -6616,7 +6640,7 @@
           },
           {
             "day": "Monday",
-            "count": 144
+            "count": 152
           },
           {
             "day": "Friday",
@@ -6642,7 +6666,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 125
+            "count": 133
           },
           {
             "name": "Circuits",
@@ -6791,7 +6815,7 @@
             "label": "Tuesday 5pm Build: Upper"
           }
         ],
-        "total_attended": 986
+        "total_attended": 994
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a Monday 6pm open-gym slot** \u2014 Monday is your quietest day (366 total) and likely has gaps between PT blocks. Offer 45 minutes of unstructured gym access at a lower price point to capture members who want flexibility without committing to a full class.\n\n2. **Run a paid \"Strength Foundations\" workshop on Thursday mornings (9:30am)** \u2014 Thursday is quiet (401) and mornings often have dead time. Target newer members or those intimidated by Build classes with a one-off, lower-pressure 30-minute coaching session on lifting technique.\n\n**For quieter classes:**\n\n3. **Move Barbelle and Engine to Wednesday 5:45pm slots** \u2014 both are severely underattended (42 and 45 over 90 days). Wednesday is your busiest day; slot them back-to-back right before or after your packed Build classes so members already in the studio might stay/add on, and the busy vibe lifts perceived class energy. Pair with a \"try one free\" invite to Build attendees the week before.",
       "capacity": [
@@ -7129,13 +7153,6 @@
         "last_seen": "2026-07-07"
       },
       {
-        "id": 12292932,
-        "name": "Ashley George",
-        "membership": "Elevate",
-        "days_absent": 17,
-        "last_seen": "2026-07-10"
-      },
-      {
         "id": 12280596,
         "name": "Cindy McIntyre",
         "membership": "Empower",
@@ -7239,13 +7256,6 @@
         "membership": "Kickstart PAID IN FULL",
         "days_absent": 25,
         "last_seen": "2026-07-02"
-      },
-      {
-        "id": 10973127,
-        "name": "Therese Charles",
-        "membership": "Foundation PAID IN FULL",
-        "days_absent": 17,
-        "last_seen": "2026-07-10"
       },
       {
         "id": 13248943,
@@ -11185,12 +11195,6 @@
       "part": "Back",
       "video": "https://www.instagram.com/p/DUS0t6cjIK3/",
       "source": "Q2 2026"
-    },
-    {
-      "name": "Main: 21 Tricep D Handles",
-      "part": "Biceps",
-      "video": "https://www.instagram.com/p/DYPN5apjdWp/",
-      "source": "Q3 2026"
     },
     {
       "name": "Main: Cable Hip Adduction",
