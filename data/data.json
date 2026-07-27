@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T15:57:27.726554+00:00",
+  "generated_at": "2026-07-27T20:10:39.895014+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-07-27",
     "event_count": 28,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "enquiry_count": 11,
     "calendar": [
       {
@@ -322,7 +322,18 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Katie Elliott",
+        "from_raw": "Katie Elliott <katie@womeninbusinessni.com>",
+        "subject": "evaluation and offboarding",
+        "snippet": "Hi all! I hope you are enjoying the summer so far. Thank you to all who have completed the final evaluation survey. For those who still have yet to complete, please do so by the end of this week:",
+        "id": "19fa45017a308b4b",
+        "thread_id": "19fa45017a308b4b",
+        "msg_count": 1,
+        "draft_id": "r-6362804024885279546"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -559,10 +570,19 @@
   },
   "ghl": [
     {
+      "name": "Kristina Nikolova",
+      "channel": "Phone",
+      "message": "Hi Grace , it's great.  Everyone is very supportive and responsive,  I am grand for now.  If I have any queries will be in touch \ud83d\ude0a Thanks",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "9HVsUbAXsN5wTe2Vy3T9",
+      "contact_id": "TCFriQHOPUlaOv3cMoyY"
+    },
+    {
       "name": "Jo",
       "channel": "Phone",
       "message": "Why? It\u2019s a great video to show teaching points. I\u2019ve ones of me and eilis too to put up",
-      "age": "0h ago",
+      "age": "4h ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -571,7 +591,7 @@
       "name": "Enda Arrell",
       "channel": "Phone",
       "message": "Get Started",
-      "age": "0h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "OVUOWilzvaPpZNBIDiZo",
       "contact_id": "zck33Q8GIxCKMMq9nvAy"
@@ -580,7 +600,7 @@
       "name": "Idabell Blair",
       "channel": "Phone",
       "message": "Call",
-      "age": "3h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "Br1SOqOPhic1pgUiexJx",
       "contact_id": "aJsq6XH0lsgeizX6dQTj"
@@ -589,7 +609,7 @@
       "name": "Social Media Marketing Agency",
       "channel": "Phone",
       "message": "That\u2019s great, what time?",
-      "age": "7h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "woquxbhuSY8mSWxLuOSB",
       "contact_id": "mShHYMvnfi8kODG4KqyD"
@@ -598,7 +618,7 @@
       "name": "Theresa Quigg",
       "channel": "Phone",
       "message": "Call thanks",
-      "age": "9h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "yW44ncnYa9sh6d5MUhhJ",
       "contact_id": "MBbBza1djSkBAZs1TZev"
@@ -607,7 +627,7 @@
       "name": "Wendy Hunter",
       "channel": "Phone",
       "message": "Thank you Grace.",
-      "age": "15h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "xfzEXsWeXpHIWtR34TtK",
       "contact_id": "JTP7PZAKjNgC6AzYH3jP"
@@ -617,15 +637,15 @@
     "monthly": [
       {
         "month": "2026-07",
-        "completed": 8,
+        "completed": 9,
         "converted": 0,
         "conv_rate": 0
       },
       {
         "month": "2026-06",
-        "completed": 16,
+        "completed": 17,
         "converted": 7,
-        "conv_rate": 44
+        "conv_rate": 41
       },
       {
         "month": "2026-05",
@@ -1246,6 +1266,38 @@
         "pause_reason": "no"
       },
       {
+        "name": "Anne Buchanan",
+        "cohort": "APR-MAY",
+        "joined": "2026-05-26",
+        "end": "2026-07-07",
+        "goal": "Lose weight, increase core strength to support healthy body in aging process.",
+        "notes": "No",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -20,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "Had a fall - taking time off 29.6.26",
+        "missing_checkins": 3,
+        "completed_checkins": 3,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "Had a fall - taking time off 29.6.26"
+      },
+      {
         "name": "Victoria McCullough",
         "cohort": "APR-MAY",
         "joined": "2026-05-25",
@@ -1330,7 +1382,7 @@
         "days_left": -24,
         "is_active": false,
         "is_converted": false,
-        "not_converted": true,
+        "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -1338,8 +1390,40 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": true,
+        "pink_red": false,
         "pause_reason": "I am currently on medication for depression due to family loss, work related stress and DV survivor. Also feel I'm ADHD"
+      },
+      {
+        "name": "Heather McIlrath",
+        "cohort": "APR-MAY",
+        "joined": "2026-05-19",
+        "end": "2026-06-30",
+        "goal": "To feel like me again. To gain confidence. To be fit for life and farming!",
+        "notes": "I have no body confidence though due to fertility issues",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -27,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "Bad back - taking time off 29.6.26",
+        "missing_checkins": 1,
+        "completed_checkins": 5,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "Bad back - taking time off 29.6.26"
       },
       {
         "name": "Lesley Laverty",
@@ -1522,7 +1606,7 @@
         "days_left": -39,
         "is_active": false,
         "is_converted": false,
-        "not_converted": true,
+        "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "SORE BACK SO TAKING TIME OFF - 29.6.26",
@@ -1530,7 +1614,7 @@
         "completed_checkins": 4,
         "expected_checkins": 4,
         "paused": false,
-        "pink_red": true,
+        "pink_red": false,
         "pause_reason": "SORE BACK SO TAKING TIME OFF - 29.6.26"
       },
       {
@@ -1562,7 +1646,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": true,
+        "pink_red": false,
         "pause_reason": "Can feel stressed and anxious and then it makes my OCD worse"
       },
       {
@@ -1626,7 +1710,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": true,
+        "pink_red": false,
         "pause_reason": "No, but I can get overwhelmed some days with all things going on. I have 3 children and a farmer husband so my days can be busy and sometimes mentally exhausting"
       },
       {
@@ -1722,7 +1806,7 @@
         "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": true,
+        "pink_red": false,
         "pause_reason": "No"
       },
       {
@@ -1855,70 +1939,6 @@
       }
     ],
     "paused": [
-      {
-        "name": "Anne Buchanan",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-26",
-        "end": "2026-07-07",
-        "goal": "Lose weight, increase core strength to support healthy body in aging process.",
-        "notes": "No",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          true,
-          false,
-          false,
-          false
-        ],
-        "week_on": 6,
-        "days_left": -20,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "Had a fall - taking time off 29.6.26",
-        "missing_checkins": 3,
-        "completed_checkins": 3,
-        "expected_checkins": 6,
-        "paused": true,
-        "pink_red": false,
-        "pause_reason": "Had a fall - taking time off 29.6.26"
-      },
-      {
-        "name": "Heather McIlrath",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-19",
-        "end": "2026-06-30",
-        "goal": "To feel like me again. To gain confidence. To be fit for life and farming!",
-        "notes": "I have no body confidence though due to fertility issues",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        "week_on": 6,
-        "days_left": -27,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "Bad back - taking time off 29.6.26",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6,
-        "paused": true,
-        "pink_red": false,
-        "pause_reason": "Bad back - taking time off 29.6.26"
-      },
       {
         "name": "Laura McGarry",
         "cohort": "JUNE",
@@ -2076,11 +2096,11 @@
     ],
     "stats": {
       "active_count": 14,
-      "paused_count": 3,
-      "conv_rate": 29,
+      "paused_count": 1,
+      "conv_rate": 27,
       "converted": 7,
-      "not_converted": 6,
-      "total_complete": 24
+      "not_converted": 4,
+      "total_complete": 26
     }
   },
   "inbody": {
@@ -8671,7 +8691,7 @@
           },
           {
             "day": "Monday",
-            "count": 374
+            "count": 396
           }
         ],
         "bottom_days": [
@@ -8681,7 +8701,7 @@
           },
           {
             "day": "Monday",
-            "count": 374
+            "count": 396
           },
           {
             "day": "Thursday",
@@ -8707,7 +8727,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 355
+            "count": 377
           },
           {
             "name": "Elevate",
@@ -8750,6 +8770,15 @@
         ],
         "top_slots": [
           {
+            "day": "Monday",
+            "time": "8pm",
+            "name": "Build: Lower",
+            "count": 97,
+            "sessions": 9,
+            "avg": 10.8,
+            "label": "Monday 8pm Build: Lower"
+          },
+          {
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -8775,15 +8804,6 @@
             "sessions": 8,
             "avg": 10.6,
             "label": "Wednesday 6pm Plate"
-          },
-          {
-            "day": "Monday",
-            "time": "8pm",
-            "name": "Build: Lower",
-            "count": 85,
-            "sessions": 8,
-            "avg": 10.6,
-            "label": "Monday 8pm Build: Lower"
           },
           {
             "day": "Monday",
@@ -8860,7 +8880,7 @@
             "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 2618
+        "total_attended": 2640
       },
       "last_30_days": {
         "top_days": [
@@ -8873,12 +8893,12 @@
             "count": 196
           },
           {
-            "day": "Friday",
-            "count": 155
+            "day": "Monday",
+            "count": 174
           },
           {
-            "day": "Monday",
-            "count": 152
+            "day": "Friday",
+            "count": 155
           },
           {
             "day": "Thursday",
@@ -8895,12 +8915,12 @@
             "count": 143
           },
           {
-            "day": "Monday",
-            "count": 152
-          },
-          {
             "day": "Friday",
             "count": 155
+          },
+          {
+            "day": "Monday",
+            "count": 174
           },
           {
             "day": "Wednesday",
@@ -8922,7 +8942,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 133
+            "count": 155
           },
           {
             "name": "Circuits",
@@ -8979,6 +8999,15 @@
             "label": "Wednesday 7am Build: Full Body"
           },
           {
+            "day": "Monday",
+            "time": "8pm",
+            "name": "Build: Lower",
+            "count": 42,
+            "sessions": 4,
+            "avg": 10.5,
+            "label": "Monday 8pm Build: Lower"
+          },
+          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -9004,15 +9033,6 @@
             "sessions": 4,
             "avg": 10.2,
             "label": "Thursday 7am Build: Full Body"
-          },
-          {
-            "day": "Saturday",
-            "time": "8am",
-            "name": "Elevate",
-            "count": 51,
-            "sessions": 5,
-            "avg": 10.2,
-            "label": "Saturday 8am Elevate"
           }
         ],
         "bottom_slots": [
@@ -9033,15 +9053,6 @@
             "sessions": 2,
             "avg": 5.5,
             "label": "Wednesday 5pm Build: Full Body"
-          },
-          {
-            "day": "Monday",
-            "time": "6pm",
-            "name": "Build: Lower",
-            "count": 20,
-            "sessions": 3,
-            "avg": 6.7,
-            "label": "Monday 6pm Build: Lower"
           },
           {
             "day": "Thursday",
@@ -9069,9 +9080,18 @@
             "sessions": 4,
             "avg": 7.2,
             "label": "Tuesday 5pm Build: Upper"
+          },
+          {
+            "day": "Wednesday",
+            "time": "7pm",
+            "name": "Plate",
+            "count": 29,
+            "sessions": 4,
+            "avg": 7.2,
+            "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 994
+        "total_attended": 1016
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a Monday 6pm open-gym slot** \u2014 Monday is your quietest day (366 total) and likely has gaps between PT blocks. Offer 45 minutes of unstructured gym access at a lower price point to capture members who want flexibility without committing to a full class.\n\n2. **Run a paid \"Strength Foundations\" workshop on Thursday mornings (9:30am)** \u2014 Thursday is quiet (401) and mornings often have dead time. Target newer members or those intimidated by Build classes with a one-off, lower-pressure 30-minute coaching session on lifting technique.\n\n**For quieter classes:**\n\n3. **Move Barbelle and Engine to Wednesday 5:45pm slots** \u2014 both are severely underattended (42 and 45 over 90 days). Wednesday is your busiest day; slot them back-to-back right before or after your packed Build classes so members already in the studio might stay/add on, and the busy vibe lifts perceived class energy. Pair with a \"try one free\" invite to Build attendees the week before.",
       "capacity": [
@@ -9120,7 +9140,7 @@
           "sessions": 57,
           "cap": 12,
           "avg_attending": 9.5,
-          "fill_rate": 79,
+          "fill_rate": 80,
           "status": "healthy"
         },
         {
