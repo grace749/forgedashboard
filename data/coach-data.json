@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T12:13:56.129959+00:00",
+  "generated_at": "2026-07-30T14:00:51.138744+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3734,19 +3734,19 @@
       {
         "user_id": "U0AG31LK3T5",
         "text": "Hi Grace. I have booked for full body tonight at 6pm. Is there any chance I could change it to the 5pm class tonight ",
-        "hours": 28,
+        "hours": 30,
         "name": "Louise Feeney"
       },
       {
         "user_id": "U0BJD0WGJMA",
         "text": "Hiya, I can honestly say I am really enjoying the classes, everyone is so friendly and such a lovely environment, were ladies support ladies I have totally chan",
-        "hours": 24,
+        "hours": 26,
         "name": "Marjorie"
       },
       {
         "user_id": "U07J3V3AVQE",
         "text": "I\u2019ve you all my booked x ",
-        "hours": 2,
+        "hours": 3,
         "name": "Joanne Hamill"
       }
     ],
@@ -4947,11 +4947,15 @@
       }
     ],
     "new_this_month": 44,
-    "cancellations_this_month": 2,
+    "cancellations_this_month": 3,
     "leaving_members": [
       {
         "id": 12960929,
         "name": "Donna Thompson"
+      },
+      {
+        "id": 13149261,
+        "name": "Khalida Ali"
       },
       {
         "id": 13118018,
@@ -5750,7 +5754,7 @@
       }
     ],
     "cancelled_ytd": 35,
-    "churn_rate": 1.4,
+    "churn_rate": 2.1,
     "avg_member_price": 136.04,
     "monthly_recurring_revenue": 13332.0,
     "avg_tenure_months": 8.9,
@@ -7645,6 +7649,12 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Angela Dobbin",
+        "type": "Personal Training Sales Call",
+        "date": "2026-07-31",
+        "upcoming": true
+      },
       {
         "name": "Brenda Bradley",
         "type": "Meet a Coach",
@@ -10031,6 +10041,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Burpee To Plate",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/watch?v=NE1sENZASmY",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Butterfly Swimmers",
       "part": "Chest",
       "video": "https://www.instagram.com/p/DZUSSk6klL5/",
@@ -12125,6 +12141,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Standing Chest Press",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/CC4GqR6JTsh/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Standing Curl Pendulum .13",
       "part": "Biceps",
       "video": "https://www.youtube.com/watch?v=q6DeEtkgAH8",
@@ -12171,6 +12193,12 @@
       "part": "Quads",
       "video": "https://www.youtube.com/shorts/0msVxLUZkas?t=1&feature=share",
       "source": "Q2 2026"
+    },
+    {
+      "name": "Suitcase Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/CC4GqR6JTsh/",
+      "source": "Q3 2026"
     },
     {
       "name": "Sumo Deadlift",
@@ -12255,6 +12283,12 @@
       "part": "Full Body",
       "video": "https://www.youtube.com/shorts/e7fUcp3sm9w",
       "source": "Q2 2026"
+    },
+    {
+      "name": "Thrusters",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/LvpotsUy2M8",
+      "source": "Q3 2026"
     },
     {
       "name": "Toe Taps",
@@ -12544,6 +12578,12 @@
         "id": "19fb27d8ab153630"
       },
       {
+        "from": "Angela Dobbin",
+        "subject": "Re: Your Forge Call today",
+        "snippet": "Great, thanks. Looking forward to our chat. Angie Yahoo Mail: Search, organise, conquer On Thu, 30 Jul 2026 at 13:30, Coach JoJo &lt;jojo@theforge.pt&gt; wrote: I&#39;ll call you tomorrow at 3pm ish",
+        "id": "19fb302cda524123"
+      },
+      {
         "from": "Coach Grace",
         "subject": "1:2 Personal Training",
         "snippet": "Hi Eleanor &amp; Diane, I&#39;m just replying to your enquiry, Eleanor. The 1:2 Personal Training sessions are \u00a335 each. You will have your own Personal Coach who will train you both in a private",
@@ -12575,6 +12615,6 @@
       }
     ],
     "important": [],
-    "urgent_count": 6
+    "urgent_count": 7
   }
 }
