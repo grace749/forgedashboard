@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T14:00:51.138744+00:00",
+  "generated_at": "2026-07-30T20:06:46.258818+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3734,19 +3734,19 @@
       {
         "user_id": "U0AG31LK3T5",
         "text": "Hi Grace. I have booked for full body tonight at 6pm. Is there any chance I could change it to the 5pm class tonight ",
-        "hours": 30,
+        "hours": 36,
         "name": "Louise Feeney"
       },
       {
         "user_id": "U0BJD0WGJMA",
         "text": "Hiya, I can honestly say I am really enjoying the classes, everyone is so friendly and such a lovely environment, were ladies support ladies I have totally chan",
-        "hours": 26,
+        "hours": 32,
         "name": "Marjorie"
       },
       {
         "user_id": "U07J3V3AVQE",
         "text": "I\u2019ve you all my booked x ",
-        "hours": 3,
+        "hours": 9,
         "name": "Joanne Hamill"
       }
     ],
@@ -4471,7 +4471,7 @@
     }
   },
   "teamup": {
-    "total_members": 153,
+    "total_members": 151,
     "recurring": 102,
     "recurring_members": [
       {
@@ -4946,7 +4946,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 44,
+    "new_this_month": 42,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -6293,56 +6293,6 @@
         ]
       },
       {
-        "name": "Strongevity",
-        "count": 11,
-        "members": [
-          {
-            "id": 13508479,
-            "name": "Angela McLaughlin"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 13511909,
-            "name": "Craig McCollum"
-          },
-          {
-            "id": 13496735,
-            "name": "Elaine Crawford"
-          },
-          {
-            "id": 13504855,
-            "name": "Eleanor Craig"
-          },
-          {
-            "id": 13542031,
-            "name": "Elizabeth Steele"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13527589,
-            "name": "Jennifer patterson"
-          },
-          {
-            "id": 13508595,
-            "name": "Joan McAfee"
-          },
-          {
-            "id": 11027616,
-            "name": "Joan Stewart"
-          },
-          {
-            "id": 13489401,
-            "name": "June Fowler"
-          }
-        ]
-      },
-      {
         "name": "Well75",
         "count": 11,
         "members": [
@@ -6389,6 +6339,48 @@
           {
             "id": 7580861,
             "name": "Tina Taggart"
+          }
+        ]
+      },
+      {
+        "name": "Strongevity",
+        "count": 9,
+        "members": [
+          {
+            "id": 13508479,
+            "name": "Angela McLaughlin"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 13496735,
+            "name": "Elaine Crawford"
+          },
+          {
+            "id": 13504855,
+            "name": "Eleanor Craig"
+          },
+          {
+            "id": 13542031,
+            "name": "Elizabeth Steele"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13508595,
+            "name": "Joan McAfee"
+          },
+          {
+            "id": 11027616,
+            "name": "Joan Stewart"
+          },
+          {
+            "id": 13489401,
+            "name": "June Fowler"
           }
         ]
       },
@@ -6597,12 +6589,12 @@
             "count": 491
           },
           {
-            "day": "Monday",
-            "count": 396
+            "day": "Thursday",
+            "count": 413
           },
           {
-            "day": "Thursday",
-            "count": 392
+            "day": "Monday",
+            "count": 396
           }
         ],
         "bottom_days": [
@@ -6611,12 +6603,12 @@
             "count": 243
           },
           {
-            "day": "Thursday",
-            "count": 392
-          },
-          {
             "day": "Monday",
             "count": 396
+          },
+          {
+            "day": "Thursday",
+            "count": 413
           },
           {
             "day": "Friday",
@@ -6634,7 +6626,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 465
+            "count": 472
           },
           {
             "name": "Build: Lower",
@@ -6656,11 +6648,11 @@
         "bottom_classes": [
           {
             "name": "Barbelle",
-            "count": 42
+            "count": 48
           },
           {
             "name": "Engine",
-            "count": 45
+            "count": 53
           },
           {
             "name": "Strongevity",
@@ -6767,9 +6759,9 @@
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
-            "count": 42,
-            "sessions": 6,
-            "avg": 7.0,
+            "count": 48,
+            "sessions": 7,
+            "avg": 6.9,
             "label": "Thursday 8pm Barbelle"
           },
           {
@@ -6791,7 +6783,7 @@
             "label": "Tuesday 5pm Build: Upper"
           }
         ],
-        "total_attended": 2691
+        "total_attended": 2712
       },
       "last_30_days": {
         "top_days": [
@@ -6805,7 +6797,7 @@
           },
           {
             "day": "Thursday",
-            "count": 161
+            "count": 182
           },
           {
             "day": "Friday",
@@ -6831,7 +6823,7 @@
           },
           {
             "day": "Thursday",
-            "count": 161
+            "count": 182
           },
           {
             "day": "Wednesday",
@@ -6845,7 +6837,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 197
+            "count": 204
           },
           {
             "name": "Elevate",
@@ -6871,15 +6863,15 @@
           },
           {
             "name": "Engine",
-            "count": 14
-          },
-          {
-            "name": "Barbelle",
-            "count": 27
+            "count": 22
           },
           {
             "name": "Capacity",
             "count": 29
+          },
+          {
+            "name": "Barbelle",
+            "count": 33
           },
           {
             "name": "Strongevity",
@@ -6978,9 +6970,9 @@
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
-            "count": 27,
-            "sessions": 4,
-            "avg": 6.8,
+            "count": 33,
+            "sessions": 5,
+            "avg": 6.6,
             "label": "Thursday 8pm Barbelle"
           },
           {
@@ -6996,13 +6988,13 @@
             "day": "Thursday",
             "time": "7pm",
             "name": "Engine",
-            "count": 14,
-            "sessions": 2,
-            "avg": 7.0,
+            "count": 22,
+            "sessions": 3,
+            "avg": 7.3,
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 1080
+        "total_attended": 1101
       },
       "suggestion": "**For quiet studio gaps (between PT blocks and classes):**\n\n1. **Launch a 30-min \"Open Lift\" slot on Monday/Thursday evenings** \u2014 these are your quietest days and members often want flexible barbell work outside structured classes; charge \u00a35-8 per session or bundle into membership. This captures demand without competing with existing classes.\n\n2. **Add a paid small-group PT block (2-3 people) on Saturday mornings** \u2014 Saturday is your slowest day overall (243 attendance) but a budget-friendly group session at \u00a315-20pp could fill dead studio time while generating revenue between lower-attendance classes.\n\n**To lift the quieter classes themselves:**\n\n3. **Reposition \"Engine\" and \"Barbelle\" to Tuesday or Wednesday mornings (your peak days)** \u2014 these low-attendance classes are likely scheduled when demand is lowest; moving them to high-traffic days lets them catch members already in the gym, plus they appeal to the same \"Build\" enthusiast audience. Pair with a 2-week email campaign targeting your Build class members as \"complementary conditioning.\"",
       "capacity": [
@@ -7308,7 +7300,7 @@
       },
       {
         "month": "2026-07",
-        "active": 156,
+        "active": 155,
         "churn": 7.7,
         "by_type": {
           "Empower": 66,
@@ -7321,7 +7313,7 @@
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
           "6 Week Jumpstart": 14,
-          "Strongevity": 8,
+          "Strongevity": 7,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -7907,15 +7899,6 @@
         "last_momentum": null
       },
       {
-        "id": 13511909,
-        "name": "Craig McCollum",
-        "email": "c.mccollum@hotmail.co.uk",
-        "join_date": "2026-07-20",
-        "membership": "Strongevity",
-        "class_count": 0,
-        "last_momentum": null
-      },
-      {
         "id": 7196665,
         "name": "Deborah Goss",
         "email": "deborahgoss@outlook.com",
@@ -8165,15 +8148,6 @@
         "join_date": "2026-05-23",
         "membership": "Elevate",
         "class_count": 28,
-        "last_momentum": null
-      },
-      {
-        "id": 13527589,
-        "name": "Jennifer patterson",
-        "email": "jennypatterson65@gmail.com",
-        "join_date": "2026-08-10",
-        "membership": "Strongevity",
-        "class_count": 0,
         "last_momentum": null
       },
       {

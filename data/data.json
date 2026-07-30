@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T14:00:51.138744+00:00",
+  "generated_at": "2026-07-30T20:06:46.258818+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-07-30",
-    "event_count": 20,
-    "urgent_count": 0,
+    "event_count": 18,
+    "urgent_count": 2,
     "enquiry_count": 8,
     "calendar": [
       {
@@ -82,30 +82,6 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
-        "title": "Mary Steven x Strongevity",
-        "time": "6:15pm",
-        "start_raw": "2026-07-30T18:15:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "marysteven94@gmail.com"
-        ],
-        "description": "",
-        "location": "07568331238",
-        "prep": ""
-      },
-      {
-        "title": "Tour the Galeon Andalucia ship!",
-        "time": "7:00pm",
-        "start_raw": "2026-07-30T19:00:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "danielleboyd493@gmail.com"
-        ],
-        "description": "",
-        "location": "",
-        "prep": "Confirm details with Mary Steven; prepare Strongevity partnership materials."
-      },
-      {
         "title": "Upper - Back/Triceps",
         "time": "all day",
         "start_raw": "2026-07-31",
@@ -113,7 +89,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm ship tour time, location, parking; brief any staff covering gym."
+        "prep": ""
       },
       {
         "title": "Mum n mark assembly",
@@ -123,7 +99,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm details with Mary Steven; prepare Strongevity partnership materials."
       },
       {
         "title": "Precious & Patience Coaching",
@@ -135,7 +111,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm ship tour time, location, parking; brief any staff covering gym."
       },
       {
         "title": "Account & Growth Review",
@@ -169,7 +145,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Review account metrics and growth data before Omar's Zoom call."
+        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Geraldine Pendleton",
@@ -201,7 +177,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Review account metrics and growth data before Omar's Zoom call."
       },
       {
         "title": "Lodge Brunch",
@@ -213,7 +189,7 @@
         ],
         "description": "",
         "location": "The Lodge Hotel, Lodge Rd Roundabout, Coleraine BT52 1NF, UK",
-        "prep": "Confirm headcount, dietary requirements, and book/confirm venue."
+        "prep": ""
       },
       {
         "title": "Surprise forge baby shower \ud83e\udd23",
@@ -226,7 +202,7 @@
         ],
         "description": "",
         "location": "Forge Female Fitness, Unit 7, Taggarts Yard, 18 Meeting House St, Ballymoney BT53 6JN, UK",
-        "prep": "Coordinate with team; arrange decorations, food, drinks, surprise logistics."
+        "prep": ""
       },
       {
         "title": "Mum n mark assembly",
@@ -236,12 +212,31 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm headcount, dietary requirements, and book/confirm venue."
       }
     ],
-    "urgent": {
-      "error": "<HttpError 400 when requesting https://gmail.googleapis.com/gmail/v1/users/me/threads/19faef3c53a2279c?format=metadata&metadataHeaders=From&metadataHeaders=Subject&metadataHeaders=Date&alt=json returned \"Precondition check failed.\". Details: \"[{'message': 'Precondition check failed.', 'domain': 'global', 'reason': 'failedPrecondition'}]\">"
-    },
+    "urgent": [
+      {
+        "from": "Mary Steven",
+        "from_raw": "Mary Steven <marysteven94@gmail.com>",
+        "subject": "Accepted: Mary Steven x Strongevity @ Thu Jul 30, 2026 6:15pm - 6:30pm (BST) (grace@theforge.pt)",
+        "snippet": "662213 On Thu, 30 Jul 2026, 18:33 Coach Grace, &lt;grace@theforge.pt&gt; wrote: That code expired, so it&#39;s just send a new one \ud83d\ude0a On Thu, 30 Jul 2026 at 18:32, Mary Steven &lt;marysteven94@gmail.com",
+        "id": "19fb41790fd104e6",
+        "thread_id": "19fb3f19913b1677",
+        "msg_count": 5,
+        "draft_id": "r-1668561074293627456"
+      },
+      {
+        "from": "Mary Steven",
+        "from_raw": "Mary Steven <marysteven94@gmail.com>",
+        "subject": "Re: Mary , \ud83d\udea8 Appointment Reminder",
+        "snippet": "That&#39;s ok Grace On Thu, 30 Jul 2026, 10:19 Coach Grace, &lt;grace@theforge.pt&gt; wrote: Hi Mary, I&#39;ve no call appointments after 6.30pm this evening but I have booked you in for 6.15pm if that",
+        "id": "19fb334342123962",
+        "thread_id": "19faf6d4cd09c45a",
+        "msg_count": 5,
+        "draft_id": "r1112832345709155616"
+      }
+    ],
     "important": [
       {
         "from": "Danielle Boyd",
@@ -456,10 +451,28 @@
   },
   "ghl": [
     {
+      "name": "Brenda Bradley",
+      "channel": "Phone",
+      "message": "Brenda Bradley was in Ballymoney on Monday along with may are we booked in please",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "23I4Td542goAeUzqzMPw",
+      "contact_id": "CFug6fn4i03AfuZq8dhr"
+    },
+    {
+      "name": "Craig McCollum",
+      "channel": "Phone",
+      "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
+      "age": "5h ago",
+      "unread": 1,
+      "conv_id": "Zz1ihLj7ctTA7WevCzQk",
+      "contact_id": "T7qEuDl7Oddfb45kQhYP"
+    },
+    {
       "name": "Moira Dallas",
       "channel": "Phone",
       "message": "Thanks Grace.\ud83d\udc4d\ud83d\ude42",
-      "age": "4h ago",
+      "age": "10h ago",
       "unread": 2,
       "conv_id": "qpgM0YPkzBdK9CnfQ8AJ",
       "contact_id": "Supdt52YX5kI2lSvItfl"
@@ -468,7 +481,7 @@
       "name": "Debbie Mclaughlin",
       "channel": "Phone",
       "message": "That is perfect..Thank you x",
-      "age": "4h ago",
+      "age": "10h ago",
       "unread": 1,
       "conv_id": "8gh4q07rhCsEqhUgO5v0",
       "contact_id": "2i0VOUIJdmNwUUxQStAK"
@@ -477,7 +490,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "5h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -486,37 +499,10 @@
       "name": "Sharon Mcauley",
       "channel": "Phone",
       "message": "Thanks",
-      "age": "6h ago",
+      "age": "12h ago",
       "unread": 1,
       "conv_id": "w1s5QFfLju54cM6BaOyT",
       "contact_id": "sfQMqriFdZECkHsrO6gN"
-    },
-    {
-      "name": "Melissa Traynor",
-      "channel": "Phone",
-      "message": "Obsessed",
-      "age": "17h ago",
-      "unread": 1,
-      "conv_id": "tA0pcX8JVZvw7NTfjn7O",
-      "contact_id": "rYz1ACnwYPQU1hASqM2A"
-    },
-    {
-      "name": "YourNeuroTune",
-      "channel": "Phone",
-      "message": "Hey Forge Female Fitness!\n\n\ufffcGlad to see you found YourNeuroTune this morning! We create better music for gyms while completely eliminating PPL PRS fees.\n\nWe think it could be a great fit for your gym.",
-      "age": "17h ago",
-      "unread": 1,
-      "conv_id": "WZxM13FNDCq34obS4VTV",
-      "contact_id": "pGVye8a7lIyFBKLtFa19"
-    },
-    {
-      "name": "marlene__montgomery",
-      "channel": "Phone",
-      "message": "https://www.instagram.com/reel/Dagx-upB1_V/",
-      "age": "19h ago",
-      "unread": 1,
-      "conv_id": "BHZmscvKKOS363Ux9evC",
-      "contact_id": "7qRztpJ4kBpCdBMeQ9MF"
     }
   ],
   "jumpstart": {
@@ -4881,19 +4867,19 @@
       {
         "user_id": "U0AG31LK3T5",
         "text": "Hi Grace. I have booked for full body tonight at 6pm. Is there any chance I could change it to the 5pm class tonight ",
-        "hours": 30,
+        "hours": 36,
         "name": "Louise Feeney"
       },
       {
         "user_id": "U0BJD0WGJMA",
         "text": "Hiya, I can honestly say I am really enjoying the classes, everyone is so friendly and such a lovely environment, were ladies support ladies I have totally chan",
-        "hours": 26,
+        "hours": 32,
         "name": "Marjorie"
       },
       {
         "user_id": "U07J3V3AVQE",
         "text": "I\u2019ve you all my booked x ",
-        "hours": 3,
+        "hours": 9,
         "name": "Joanne Hamill"
       }
     ],
@@ -6633,7 +6619,7 @@
     }
   },
   "teamup": {
-    "total_members": 153,
+    "total_members": 151,
     "recurring": 102,
     "recurring_members": [
       {
@@ -7108,7 +7094,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 44,
+    "new_this_month": 42,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -8455,56 +8441,6 @@
         ]
       },
       {
-        "name": "Strongevity",
-        "count": 11,
-        "members": [
-          {
-            "id": 13508479,
-            "name": "Angela McLaughlin"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 13511909,
-            "name": "Craig McCollum"
-          },
-          {
-            "id": 13496735,
-            "name": "Elaine Crawford"
-          },
-          {
-            "id": 13504855,
-            "name": "Eleanor Craig"
-          },
-          {
-            "id": 13542031,
-            "name": "Elizabeth Steele"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13527589,
-            "name": "Jennifer patterson"
-          },
-          {
-            "id": 13508595,
-            "name": "Joan McAfee"
-          },
-          {
-            "id": 11027616,
-            "name": "Joan Stewart"
-          },
-          {
-            "id": 13489401,
-            "name": "June Fowler"
-          }
-        ]
-      },
-      {
         "name": "Well75",
         "count": 11,
         "members": [
@@ -8551,6 +8487,48 @@
           {
             "id": 7580861,
             "name": "Tina Taggart"
+          }
+        ]
+      },
+      {
+        "name": "Strongevity",
+        "count": 9,
+        "members": [
+          {
+            "id": 13508479,
+            "name": "Angela McLaughlin"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 13496735,
+            "name": "Elaine Crawford"
+          },
+          {
+            "id": 13504855,
+            "name": "Eleanor Craig"
+          },
+          {
+            "id": 13542031,
+            "name": "Elizabeth Steele"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13508595,
+            "name": "Joan McAfee"
+          },
+          {
+            "id": 11027616,
+            "name": "Joan Stewart"
+          },
+          {
+            "id": 13489401,
+            "name": "June Fowler"
           }
         ]
       },
@@ -8759,12 +8737,12 @@
             "count": 491
           },
           {
-            "day": "Monday",
-            "count": 396
+            "day": "Thursday",
+            "count": 413
           },
           {
-            "day": "Thursday",
-            "count": 392
+            "day": "Monday",
+            "count": 396
           }
         ],
         "bottom_days": [
@@ -8773,12 +8751,12 @@
             "count": 243
           },
           {
-            "day": "Thursday",
-            "count": 392
-          },
-          {
             "day": "Monday",
             "count": 396
+          },
+          {
+            "day": "Thursday",
+            "count": 413
           },
           {
             "day": "Friday",
@@ -8796,7 +8774,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 465
+            "count": 472
           },
           {
             "name": "Build: Lower",
@@ -8818,11 +8796,11 @@
         "bottom_classes": [
           {
             "name": "Barbelle",
-            "count": 42
+            "count": 48
           },
           {
             "name": "Engine",
-            "count": 45
+            "count": 53
           },
           {
             "name": "Strongevity",
@@ -8929,9 +8907,9 @@
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
-            "count": 42,
-            "sessions": 6,
-            "avg": 7.0,
+            "count": 48,
+            "sessions": 7,
+            "avg": 6.9,
             "label": "Thursday 8pm Barbelle"
           },
           {
@@ -8953,7 +8931,7 @@
             "label": "Tuesday 5pm Build: Upper"
           }
         ],
-        "total_attended": 2691
+        "total_attended": 2712
       },
       "last_30_days": {
         "top_days": [
@@ -8967,7 +8945,7 @@
           },
           {
             "day": "Thursday",
-            "count": 161
+            "count": 182
           },
           {
             "day": "Friday",
@@ -8993,7 +8971,7 @@
           },
           {
             "day": "Thursday",
-            "count": 161
+            "count": 182
           },
           {
             "day": "Wednesday",
@@ -9007,7 +8985,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 197
+            "count": 204
           },
           {
             "name": "Elevate",
@@ -9033,15 +9011,15 @@
           },
           {
             "name": "Engine",
-            "count": 14
-          },
-          {
-            "name": "Barbelle",
-            "count": 27
+            "count": 22
           },
           {
             "name": "Capacity",
             "count": 29
+          },
+          {
+            "name": "Barbelle",
+            "count": 33
           },
           {
             "name": "Strongevity",
@@ -9140,9 +9118,9 @@
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
-            "count": 27,
-            "sessions": 4,
-            "avg": 6.8,
+            "count": 33,
+            "sessions": 5,
+            "avg": 6.6,
             "label": "Thursday 8pm Barbelle"
           },
           {
@@ -9158,13 +9136,13 @@
             "day": "Thursday",
             "time": "7pm",
             "name": "Engine",
-            "count": 14,
-            "sessions": 2,
-            "avg": 7.0,
+            "count": 22,
+            "sessions": 3,
+            "avg": 7.3,
             "label": "Thursday 7pm Engine"
           }
         ],
-        "total_attended": 1080
+        "total_attended": 1101
       },
       "suggestion": "**For quiet studio gaps (between PT blocks and classes):**\n\n1. **Launch a 30-min \"Open Lift\" slot on Monday/Thursday evenings** \u2014 these are your quietest days and members often want flexible barbell work outside structured classes; charge \u00a35-8 per session or bundle into membership. This captures demand without competing with existing classes.\n\n2. **Add a paid small-group PT block (2-3 people) on Saturday mornings** \u2014 Saturday is your slowest day overall (243 attendance) but a budget-friendly group session at \u00a315-20pp could fill dead studio time while generating revenue between lower-attendance classes.\n\n**To lift the quieter classes themselves:**\n\n3. **Reposition \"Engine\" and \"Barbelle\" to Tuesday or Wednesday mornings (your peak days)** \u2014 these low-attendance classes are likely scheduled when demand is lowest; moving them to high-traffic days lets them catch members already in the gym, plus they appeal to the same \"Build\" enthusiast audience. Pair with a 2-week email campaign targeting your Build class members as \"complementary conditioning.\"",
       "capacity": [
@@ -9470,7 +9448,7 @@
       },
       {
         "month": "2026-07",
-        "active": 156,
+        "active": 155,
         "churn": 7.7,
         "by_type": {
           "Empower": 66,
@@ -9483,7 +9461,7 @@
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
           "6 Week Jumpstart": 14,
-          "Strongevity": 8,
+          "Strongevity": 7,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -10069,15 +10047,6 @@
         "last_momentum": null
       },
       {
-        "id": 13511909,
-        "name": "Craig McCollum",
-        "email": "c.mccollum@hotmail.co.uk",
-        "join_date": "2026-07-20",
-        "membership": "Strongevity",
-        "class_count": 0,
-        "last_momentum": null
-      },
-      {
         "id": 7196665,
         "name": "Deborah Goss",
         "email": "deborahgoss@outlook.com",
@@ -10327,15 +10296,6 @@
         "join_date": "2026-05-23",
         "membership": "Elevate",
         "class_count": 28,
-        "last_momentum": null
-      },
-      {
-        "id": 13527589,
-        "name": "Jennifer patterson",
-        "email": "jennypatterson65@gmail.com",
-        "join_date": "2026-08-10",
-        "membership": "Strongevity",
-        "class_count": 0,
         "last_momentum": null
       },
       {
@@ -21838,9 +21798,9 @@
       {
         "month": "2026-07",
         "revenue": 23003.74,
-        "expenses": 17724.21,
-        "profit": 5279.53,
-        "profit_pct": 23.0,
+        "expenses": 17787.31,
+        "profit": 5216.43,
+        "profit_pct": 22.7,
         "categories": {
           "in": [
             {
@@ -21891,7 +21851,7 @@
             },
             {
               "name": "Food And Drink",
-              "amount": 83.3
+              "amount": 146.4
             },
             {
               "name": "Business Entertainment",
@@ -21908,6 +21868,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "0f9585a6-09f9-4951-b5db-37e0d75a25a8",
+            "date": "2026-07-30",
+            "name": "Dumpling Library",
+            "ref": "DUMPLING LIBRARY",
+            "amount": 63.1,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
           {
             "uid": "0e4f6ec4-5fcf-4f51-9a2f-4fedeaf5abb0",
             "date": "2026-07-30",
@@ -24202,7 +24172,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 826.5,
+    "cash_position": 763.4,
     "available": 0.0,
     "reserves": [
       {
@@ -24223,7 +24193,7 @@
       }
     ],
     "earmarked": 13407.0,
-    "total_cash": 14233.5,
+    "total_cash": 14170.4,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -24252,8 +24222,8 @@
       }
     ],
     "cash_in_30": 23003.74,
-    "cash_out_30": 17842.21,
-    "net_30": 5161.53,
+    "cash_out_30": 17905.31,
+    "net_30": 5098.43,
     "as_of": "2026-07-30"
   },
   "gocardless": {
@@ -24405,8 +24375,8 @@
       },
       {
         "month": "2026-07",
-        "collected": 517.0,
-        "payments": 11
+        "collected": 567.0,
+        "payments": 16
       }
     ],
     "failed": [
