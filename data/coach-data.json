@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T08:51:21.792410+00:00",
+  "generated_at": "2026-08-04T14:00:51.886423+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3833,14 +3833,32 @@
       {
         "user_id": "U07KRTPUQNR",
         "text": "I might make the 7pm class if so can i swap from 8pm",
-        "hours": 16,
+        "hours": 21,
         "name": "ZaraMo"
       },
       {
         "user_id": "U0B6X33LS0M",
-        "text": "Every 4 weeks as it means we can check in on progress x",
-        "hours": 2,
+        "text": "Thanks Grace, I'll get booked in. See you later x",
+        "hours": 5,
         "name": "Lesley"
+      },
+      {
+        "user_id": "U0AQQ1U63U3",
+        "text": "Ok, its showing on her teamup she is registered tues 18th Aug Wed 26 Aug and Wed 2nd Sept. Should she then be in wed 19th instead of tues 18th?",
+        "hours": 3,
+        "name": "Eleanor"
+      },
+      {
+        "user_id": "U0BM56X79BR",
+        "text": "Don't be worrying! We can put that back on your account to use again :blush:",
+        "hours": 2,
+        "name": "Geraldine Pendleton"
+      },
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "Completed Access:\nWhatsApp\nAsana\nTeamUp",
+        "hours": 1,
+        "name": "Julie Lapaz"
       }
     ],
     "mentions": [],
@@ -4321,6 +4339,16 @@
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
+        "gid": "1217150453835587",
+        "name": "",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1217150453835587",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
         "gid": "1211867880420609",
         "name": "Update forge card on netim ",
         "completed": false,
@@ -4577,8 +4605,8 @@
     }
   },
   "teamup": {
-    "total_members": 159,
-    "recurring": 105,
+    "total_members": 158,
+    "recurring": 104,
     "recurring_members": [
       {
         "id": 10803724,
@@ -4889,10 +4917,6 @@
         "name": "Nicola Duffin"
       },
       {
-        "id": 9166511,
-        "name": "Nicole Williams"
-      },
-      {
         "id": 13002340,
         "name": "Noeleen Murphy"
       },
@@ -5084,7 +5108,7 @@
         "name": "Zara Drain"
       }
     ],
-    "new_this_month": 12,
+    "new_this_month": 13,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -5140,6 +5164,16 @@
       }
     ],
     "cancelled_by_month": [
+      {
+        "month": "2026-08",
+        "members": [
+          {
+            "name": "Nicole Williams",
+            "membership": "Empower",
+            "end": "2026-08-04"
+          }
+        ]
+      },
       {
         "month": "2026-07",
         "members": [
@@ -5372,6 +5406,16 @@
       }
     ],
     "lapsed_full_by_month": [
+      {
+        "month": "2026-08",
+        "members": [
+          {
+            "name": "Nicole Williams",
+            "membership": "Empower",
+            "end": "2026-08-04"
+          }
+        ]
+      },
       {
         "month": "2026-07",
         "members": [
@@ -5840,10 +5884,10 @@
         ]
       }
     ],
-    "cancelled_ytd": 36,
+    "cancelled_ytd": 37,
     "churn_rate": 2.0,
-    "avg_member_price": 136.57,
-    "monthly_recurring_revenue": 13794.0,
+    "avg_member_price": 136.6,
+    "monthly_recurring_revenue": 13660.0,
     "avg_tenure_months": 8.8,
     "cancelled_last_month": 9,
     "cancelled_members": [
@@ -5896,7 +5940,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 67,
+        "count": 66,
         "members": [
           {
             "id": 10803724,
@@ -6081,10 +6125,6 @@
           {
             "id": 9196376,
             "name": "Nerys Young"
-          },
-          {
-            "id": 9166511,
-            "name": "Nicole Williams"
           },
           {
             "id": 13002340,
@@ -6505,6 +6545,10 @@
             "name": "Angela McLaughlin"
           },
           {
+            "id": 13224922,
+            "name": "Carol Ferry"
+          },
+          {
             "id": 11546736,
             "name": "Claire Leeke"
           },
@@ -6527,10 +6571,6 @@
           {
             "id": 13508595,
             "name": "Joan McAfee"
-          },
-          {
-            "id": 11027616,
-            "name": "Joan Stewart"
           },
           {
             "id": 13618093,
@@ -7169,18 +7209,18 @@
           "status": "healthy"
         },
         {
-          "name": "Build: Upper",
-          "sessions": 71,
-          "cap": 12,
-          "avg_attending": 9.9,
-          "fill_rate": 83,
-          "status": "healthy"
-        },
-        {
           "name": "Circuits",
           "sessions": 26,
           "cap": 12,
           "avg_attending": 9.9,
+          "fill_rate": 82,
+          "status": "healthy"
+        },
+        {
+          "name": "Build: Upper",
+          "sessions": 71,
+          "cap": 12,
+          "avg_attending": 9.8,
           "fill_rate": 82,
           "status": "healthy"
         },
@@ -7437,7 +7477,7 @@
       },
       {
         "month": "2026-07",
-        "active": 157,
+        "active": 156,
         "churn": 7.6,
         "by_type": {
           "Empower": 66,
@@ -7450,7 +7490,7 @@
           "Kickstart PAID IN FULL": 2,
           "New You Next Level": 2,
           "6 Week Jumpstart": 16,
-          "Strongevity": 7,
+          "Strongevity": 6,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -7462,7 +7502,7 @@
       {
         "month": "2026-08",
         "active": 159,
-        "churn": 11.6,
+        "churn": 12.3,
         "by_type": {
           "Empower": 66,
           "8 PT Sessions": 2,
@@ -7596,13 +7636,6 @@
         "membership": "Empower",
         "days_absent": 14,
         "last_seen": "2026-07-21"
-      },
-      {
-        "id": 9166511,
-        "name": "Nicole Williams",
-        "membership": "Empower",
-        "days_absent": 126,
-        "last_seen": "2026-03-31"
       },
       {
         "id": 8500731,
@@ -8008,6 +8041,15 @@
         "last_momentum": null
       },
       {
+        "id": 13224922,
+        "name": "Carol Ferry",
+        "email": "caroljferry@gmail.com",
+        "join_date": "2026-08-11",
+        "membership": "Strongevity",
+        "class_count": 5,
+        "last_momentum": null
+      },
+      {
         "id": 12999713,
         "name": "Catherine Finney",
         "email": "kate.gilmour4@icloud.com",
@@ -8386,15 +8428,6 @@
         "last_momentum": null
       },
       {
-        "id": 11027616,
-        "name": "Joan Stewart",
-        "email": "joanstewart61@outlook.com",
-        "join_date": "2026-07-18",
-        "membership": "Strongevity",
-        "class_count": 1,
-        "last_momentum": null
-      },
-      {
         "id": 9647702,
         "name": "Joan Taggart",
         "email": "jkt21@hotmail.co.uk",
@@ -8770,15 +8803,6 @@
         "join_date": "2026-02-09",
         "membership": "Elevate",
         "class_count": 55,
-        "last_momentum": null
-      },
-      {
-        "id": 9166511,
-        "name": "Nicole Williams",
-        "email": "nickyc_87@hotmail.com",
-        "join_date": "2024-10-01",
-        "membership": "Empower",
-        "class_count": 188,
         "last_momentum": null
       },
       {
@@ -12796,12 +12820,6 @@
         "id": "19fc9b30dadeaa23"
       },
       {
-        "from": "Fundraising",
-        "subject": "Re: London landmark half marathon",
-        "snippet": "Thanks for letting us know. We hope you&#39;ll look out for our other running opportunities. We have access to entries around the world including the full London marathon and even Tokyo. Let me know i",
-        "id": "19fcbbdb78089433"
-      },
-      {
         "from": "Eilis Kearns",
         "subject": "Accepted: Eilis JoJo meeting @ Thu 6 Aug 2026 2:30pm - 3:15pm (BST) (jojo@theforge.pt)",
         "snippet": "Eilis JoJo meeting Eilis Kearns has accepted this invitation. When Thursday 6 Aug 2026 \u22c5 2:30pm \u2013 3:15pm (United Kingdom Time) Guests jojo@theforge.pt - organiser Eilis Kearns grace@theforge.pt View",
@@ -12848,6 +12866,12 @@
         "subject": "Post Mid-Week Client Wins on Slack",
         "snippet": "Hey Coach JoJo, TODAY Please post on the TEAM Channel in Slack a collection 5-8 member wins from the past week. Focus 90% on non-scale wins with no more than ONE scale win. An example of this is: http",
         "id": "19fad88bb9bb11e3"
+      },
+      {
+        "from": "Coach Grace",
+        "subject": "Accepted: Eilis JoJo meeting @ Thu 6 Aug 2026 2:30pm - 3:15pm (BST) (Coach JoJo)",
+        "snippet": "Eilis JoJo meeting Coach Grace has accepted this invitation. When Thursday 6 Aug 2026 \u22c5 2:30pm \u2013 3:15pm (United Kingdom Time) Guests Coach JoJo - organiser eiliskearns13@gmail.com Coach Grace View all",
+        "id": "19fad1015deccd11"
       }
     ],
     "important": [],
