@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T14:00:45.156946+00:00",
+  "generated_at": "2026-08-09T15:45:54.672566+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-08-09",
-    "event_count": 14,
+    "event_count": 15,
     "urgent_count": 0,
-    "enquiry_count": 0,
+    "enquiry_count": 1,
     "calendar": [
       {
         "title": "Pay Dan House Bills",
@@ -38,7 +38,7 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
-        "location": "2/3 booked",
+        "location": "3/3 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -164,11 +164,33 @@
         "description": "",
         "location": "Flax Steakhouse, 3 Raceview Rd, Broughshane, Ballymena BT42 4JD, UK",
         "prep": "Confirm attendees, location/virtual details, and agenda with Dude contact."
+      },
+      {
+        "title": "\ud83d\udcde Call: VIVIAN MORRISON",
+        "time": "11:30am",
+        "start_raw": "2026-08-12T11:30:00",
+        "day": "Wednesday",
+        "attendees": [
+          "VIVIAN MORRISON"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
     "urgent": [],
     "important": [],
-    "enquiries": [],
+    "enquiries": [
+      {
+        "name": "VIVIAN MORRISON",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Wednesday 11:30am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Wednesday 11:30am",
+        "snippet": "Booked a call for Wednesday 11:30am \u2014 potential member",
+        "age": "",
+        "unread": 0
+      }
+    ],
     "checkins": {
       "by_email": {
         "conniegerrow101@hotmail.com": "2026-06-29",
@@ -220,8 +242,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "sarah@nourishandnurtu.re": "2025-11-23",
         "eiliskearns13@gmail.com": "2025-11-23",
+        "sarah@nourishandnurtu.re": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -306,7 +328,7 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/DZh9WVNRP_1/",
-      "age": "1h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -315,7 +337,7 @@
       "name": "Carla Bonnar",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "4h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "BIMMNUemXTJSshpfOXTD",
       "contact_id": "cqtLwx7PaodlKhS8mDQy"
@@ -324,7 +346,7 @@
       "name": "Hazel Graham",
       "channel": "Phone",
       "message": "",
-      "age": "12h ago",
+      "age": "14h ago",
       "unread": 3,
       "conv_id": "ujm4YPFw4mNiNZOjFXQG",
       "contact_id": "rByygHQcBAkR7wkFwsxl"
@@ -333,7 +355,7 @@
       "name": "Pauline McAuley",
       "channel": "Phone",
       "message": "Hi Grace,can you just confirm as I have forgot the date.\ud83e\udee3Is it Monday the 17th of August that I\u2019am booked in to start.\ud83d\ude0a",
-      "age": "19h ago",
+      "age": "20h ago",
       "unread": 2,
       "conv_id": "TeXHIUKz8mkJPvGtcP7T",
       "contact_id": "cYHVNpY6qljDMmsI8L4z"
@@ -393,15 +415,6 @@
       "contact_id": "wkHwSZFvH6y5Ttw9TRza"
     },
     {
-      "name": "Claire Martin",
-      "channel": "Phone",
-      "message": "Aww good I\u2019m all set up!! \ud83d\ude0a thanks for the message though Xxxx",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "7hQHOW9b5yzeAQtL3XUQ",
-      "contact_id": "1d8py3fxMG2gZMxACuTb"
-    },
-    {
       "name": "Zara Morrison",
       "channel": "Phone",
       "message": "Dying at this \ud83d\ude02",
@@ -441,19 +454,10 @@
       "name": "Ruth Quigg",
       "channel": "Phone",
       "message": "Oh sorry for delay in getting back Grace \nI\u2019ll have to put on hold maybe until end of September \nI\u2019ll need to get my work nights organised,  to facilitate the same day every week \nThey are not good at",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 1,
       "conv_id": "ztQlA6P0ytlD4xPpIs2j",
       "contact_id": "nkyf0g7QdyFmr9EFjjpA"
-    },
-    {
-      "name": "Eilis Kearns",
-      "channel": "Phone",
-      "message": "\ud83d\udd0aVoice Note",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
-      "contact_id": "SL5iEZ30xiRwJF12kd5S"
     }
   ],
   "jumpstart": {
@@ -5026,13 +5030,13 @@
       {
         "user_id": "U0AG2GW7DCM",
         "text": "Hi Grace, I got my 50 t-shirt a few weeks ago. :grinning:",
-        "hours": 25,
+        "hours": 27,
         "name": "Wee Woman"
       },
       {
         "user_id": "U0AEX0KL5FY",
         "text": "Thanks Grace, will definitely try that out. I hope to recover quickly &amp; get back as soon as I can",
-        "hours": 0,
+        "hours": 2,
         "name": "Margaret Hughes"
       }
     ],
@@ -9833,11 +9837,6 @@
           "name": "Sharon McAuley",
           "days_in": 2,
           "start_date": "2026-08-07"
-        },
-        {
-          "name": "Claire Martin",
-          "days_in": 4,
-          "start_date": "2026-08-05"
         },
         {
           "name": "Elizabeth Greenaway",
