@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T14:00:56.484560+00:00",
+  "generated_at": "2026-08-10T16:08:36.001660+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-08-10",
     "event_count": 15,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "enquiry_count": 2,
     "calendar": [
       {
@@ -115,7 +115,7 @@
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "12/12 booked",
+        "location": "10/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -137,7 +137,8 @@
         "start_raw": "2026-08-11T10:45:00+01:00",
         "day": "Tomorrow",
         "attendees": [
-          "Omar Azam"
+          "Omar Azam",
+          "Elaine Blood"
         ],
         "description": "Omar is inviting you to a scheduled Zoom meeting.\n\nTopic: Account & Growth Review\nTime: Aug 7, 2026 10:45 AM London\nJoin Zoom Meeting\nhttps://us02web.zoom.us/j/81310513438?pwd=k4WjzWqHGrulCqxTMPtEZuix",
         "location": "https://us02web.zoom.us/j/81310513438?pwd=k4WjzWqHGrulCqxTMPtEZuixHDL4Aa.1",
@@ -178,7 +179,18 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Omar Azam",
+        "from_raw": "Omar Azam <omar.azam@daysmart.com>",
+        "subject": "Account & Growth Review",
+        "snippet": "Omar is inviting you to a scheduled Zoom meeting. Topic: Account &amp; Growth Review Time: Aug 7, 2026 10:45 AM London Join Zoom Meeting https://us02web.zoom.us/j/81310513438?pwd=",
+        "id": "19fec3af83d750c7",
+        "thread_id": "19fec3af83d750c7",
+        "msg_count": 1,
+        "draft_id": "r5794010810069962679"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -251,8 +263,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
         "sarah@nourishandnurtu.re": "2025-11-23",
+        "eiliskearns13@gmail.com": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -286,10 +298,9 @@
         "juana-mai03@hotmail.com": "2025-08-03",
         "lornamcmullan99@hotmail.co.uk": "2025-08-03",
         "clairecrowe3@gmail.com": "2025-07-20",
-        "christinestevenson897@gmail.com": "2025-07-20",
-        "redtiger_1983@yahoo.co.uk": "2025-07-06"
+        "christinestevenson897@gmail.com": "2025-07-20"
       },
-      "count": 86
+      "count": 85
     },
     "goals": {
       "by_email": {
@@ -331,25 +342,16 @@
       "name": "Lorraine Kelly",
       "channel": "Phone",
       "message": "Hi Grace I\u2019m running late for the no sweat is it ok if I\u2019m 10-15 min be late",
-      "age": "2h ago",
+      "age": "4h ago",
       "unread": 1,
       "conv_id": "9ojHAxMjyqGrcP0PdbsN",
       "contact_id": "gRReEsODlsXfEcWLBB7y"
     },
     {
-      "name": "Claire Martin",
-      "channel": "Phone",
-      "message": "\ud83d\udd0aVoice Note",
-      "age": "4h ago",
-      "unread": 3,
-      "conv_id": "7hQHOW9b5yzeAQtL3XUQ",
-      "contact_id": "1d8py3fxMG2gZMxACuTb"
-    },
-    {
       "name": "Amy McNeill",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "6h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "ISvKgmjNy4tXNZ85GXD0",
       "contact_id": "VGEsSiSnStSW8mDMRNmh"
@@ -358,7 +360,7 @@
       "name": "Rachel Linton",
       "channel": "Phone",
       "message": "It\u2019s good I\u2019m really enjoying the classes. I think overall it\u2019s just my eating isn\u2019t great and tend to eat the same thing everyday. I\u2019m really wanting to tone my stomach area particularly and my arms.",
-      "age": "14h ago",
+      "age": "17h ago",
       "unread": 1,
       "conv_id": "AXTFgrJmlqvYdUwIL3HI",
       "contact_id": "iaiVoMYXKoW3c6rkCLF7"
@@ -367,7 +369,7 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "Lol have this saved for capacity",
-      "age": "15h ago",
+      "age": "17h ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -376,7 +378,7 @@
       "name": "Nuala O'Neill",
       "channel": "Phone",
       "message": "Thanks Grace",
-      "age": "21h ago",
+      "age": "23h ago",
       "unread": 2,
       "conv_id": "2rNnZXTi74WestP9T2uh",
       "contact_id": "vAZT8pq5TLM8qZFFXqc8"
@@ -5066,13 +5068,13 @@
       {
         "user_id": "U0AEX0KL5FY",
         "text": "Thanks Grace, will definitely try that out. I hope to recover quickly &amp; get back as soon as I can",
-        "hours": 24,
+        "hours": 26,
         "name": "Margaret Hughes"
       },
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Hi Coach Grace, just checking in and confirming if these are assigned particularly for me? I am sorry if I missed these but I can work on it. Though says on the",
-        "hours": 6,
+        "hours": 8,
         "name": "Julie Lapaz"
       }
     ],
@@ -6787,8 +6789,8 @@
     }
   },
   "teamup": {
-    "total_members": 157,
-    "recurring": 104,
+    "total_members": 156,
+    "recurring": 103,
     "recurring_members": [
       {
         "id": 10803724,
@@ -7009,10 +7011,6 @@
       {
         "id": 13177624,
         "name": "Laura Douglas"
-      },
-      {
-        "id": 13414562,
-        "name": "Laura Fullerton"
       },
       {
         "id": 13262681,
@@ -7346,6 +7344,11 @@
         "month": "2026-08",
         "members": [
           {
+            "name": "Laura Fullerton",
+            "membership": "Empower",
+            "end": "2026-08-10"
+          },
+          {
             "name": "Nicole Williams",
             "membership": "Empower",
             "end": "2026-08-04"
@@ -7587,6 +7590,11 @@
       {
         "month": "2026-08",
         "members": [
+          {
+            "name": "Laura Fullerton",
+            "membership": "Empower",
+            "end": "2026-08-10"
+          },
           {
             "name": "Nicole Williams",
             "membership": "Empower",
@@ -8062,10 +8070,10 @@
         ]
       }
     ],
-    "cancelled_ytd": 37,
+    "cancelled_ytd": 38,
     "churn_rate": 2.0,
-    "avg_member_price": 136.6,
-    "monthly_recurring_revenue": 13660.0,
+    "avg_member_price": 136.42,
+    "monthly_recurring_revenue": 13506.0,
     "avg_tenure_months": 8.8,
     "cancelled_last_month": 9,
     "cancelled_members": [
@@ -8118,7 +8126,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 66,
+        "count": 65,
         "members": [
           {
             "id": 10803724,
@@ -8251,10 +8259,6 @@
           {
             "id": 13177624,
             "name": "Laura Douglas"
-          },
-          {
-            "id": 13414562,
-            "name": "Laura Fullerton"
           },
           {
             "id": 13262681,
@@ -8958,7 +8962,7 @@
           },
           {
             "day": "Monday",
-            "count": 407
+            "count": 416
           }
         ],
         "bottom_days": [
@@ -8968,7 +8972,7 @@
           },
           {
             "day": "Monday",
-            "count": 407
+            "count": 416
           },
           {
             "day": "Thursday",
@@ -8994,7 +8998,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 379
+            "count": 388
           },
           {
             "name": "Elevate",
@@ -9147,7 +9151,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 2775
+        "total_attended": 2784
       },
       "last_30_days": {
         "top_days": [
@@ -9160,12 +9164,12 @@
             "count": 210
           },
           {
-            "day": "Thursday",
+            "day": "Monday",
             "count": 166
           },
           {
-            "day": "Monday",
-            "count": 157
+            "day": "Thursday",
+            "count": 166
           },
           {
             "day": "Friday",
@@ -9182,11 +9186,11 @@
             "count": 152
           },
           {
-            "day": "Monday",
-            "count": 157
+            "day": "Thursday",
+            "count": 166
           },
           {
-            "day": "Thursday",
+            "day": "Monday",
             "count": 166
           },
           {
@@ -9209,7 +9213,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 129
+            "count": 138
           },
           {
             "name": "Circuits",
@@ -9358,7 +9362,7 @@
             "label": "Saturday 9am Elevate"
           }
         ],
-        "total_attended": 1035
+        "total_attended": 1044
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a Friday lunchtime open-gym slot (12\u20131pm or 1\u20132pm).** Friday is your third-busiest day overall but likely has staff availability between classes; a staffed open-gym fills revenue time and captures members who can't commit to full classes.\n\n2. **Run a Monday evening \"Strength Basics\" workshop (30\u201345 mins) targeting newer members.** Monday is your quietest day\u2014use the gap before or after a class to teach proper form on barbell movements; charge \u00a38\u201312 per head and funnel attendees into Build classes later that week.\n\n**To lift the quietest classes:**\n\n3. **Reposition Barbelle, Engine, and Capacity as \"skill-building\" classes with a targeted 4-week challenge.** These are likely being underperformed because their positioning is unclear. Invite recent Build-class finishers by name with a message like *\"Master your power and conditioning\u2014try Engine this week, included in membership\"*\u2014pair it with a free intro offer for first-timers and track who converts. Run the challenge starting next Monday to build momentum on your quiet day.",
       "capacity": [
@@ -9406,7 +9410,7 @@
           "name": "Build: Lower",
           "sessions": 59,
           "cap": 12,
-          "avg_attending": 9.5,
+          "avg_attending": 9.4,
           "fill_rate": 79,
           "status": "healthy"
         },
@@ -9671,7 +9675,7 @@
       {
         "month": "2026-08",
         "active": 158,
-        "churn": 8.5,
+        "churn": 9.2,
         "by_type": {
           "Empower": 66,
           "8 PT Sessions": 2,
@@ -9783,13 +9787,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 21,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 13414562,
-        "name": "Laura Fullerton",
-        "membership": "Empower",
-        "days_absent": 24,
-        "last_seen": "2026-07-17"
       },
       {
         "id": 13387830,
@@ -10736,15 +10733,6 @@
         "join_date": "2026-07-03",
         "membership": "Empower",
         "class_count": 32,
-        "last_momentum": null
-      },
-      {
-        "id": 13414562,
-        "name": "Laura Fullerton",
-        "email": "laurafullerton90@gmail.com",
-        "join_date": "2026-06-29",
-        "membership": "Empower",
-        "class_count": 7,
         "last_momentum": null
       },
       {
