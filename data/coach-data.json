@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T07:23:49.748164+00:00",
+  "generated_at": "2026-08-11T14:00:55.836196+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1593,6 +1593,54 @@
   "inbody": {
     "scans": [
       {
+        "name": "124victoriat",
+        "last_scan": "2026-08-11",
+        "scan_count": 1,
+        "weight": 283.7,
+        "smm": 78.3,
+        "pbf": 51.0,
+        "bmi": 45.8,
+        "tbw": 102.1,
+        "protein": 27.1,
+        "mineral": 9.6,
+        "vfa": 251.5,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-09-22",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "jojo002",
+        "last_scan": "2026-08-11",
+        "scan_count": 13,
+        "weight": 194.2,
+        "smm": 71.2,
+        "pbf": 34.5,
+        "bmi": 30.4,
+        "tbw": 92.8,
+        "protein": 25.1,
+        "mineral": 9.2,
+        "vfa": 139.3,
+        "inbody_age": null,
+        "weight_change": -0.6,
+        "smm_change": -2.0,
+        "pbf_change": 1.3,
+        "tbw_change": -2.2,
+        "protein_change": -0.7,
+        "mineral_change": -0.1,
+        "vfa_change": 6.4,
+        "next_due": "2026-09-22",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Amy McNeill",
         "last_scan": "2026-08-10",
         "scan_count": 2,
@@ -1852,30 +1900,6 @@
         "protein_change": 0.6,
         "mineral_change": 0.3,
         "vfa_change": -6.9,
-        "next_due": "2026-09-15",
-        "days_to_due": 35,
-        "overdue": false
-      },
-      {
-        "name": "jojo002",
-        "last_scan": "2026-08-04",
-        "scan_count": 12,
-        "weight": 194.8,
-        "smm": 73.2,
-        "pbf": 33.2,
-        "bmi": 30.5,
-        "tbw": 95.0,
-        "protein": 25.8,
-        "mineral": 9.3,
-        "vfa": 132.9,
-        "inbody_age": null,
-        "weight_change": -1.3,
-        "smm_change": 2.0,
-        "pbf_change": -2.0,
-        "tbw_change": 2.2,
-        "protein_change": 0.7,
-        "mineral_change": 0.3,
-        "vfa_change": -7.7,
         "next_due": "2026-09-15",
         "days_to_due": 35,
         "overdue": false
@@ -3921,7 +3945,7 @@
         "overdue": true
       }
     ],
-    "total": 97,
+    "total": 98,
     "configured": true
   },
   "slack": {
@@ -3929,28 +3953,28 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0AEX0KL5FY",
-        "text": "Thanks Grace, will definitely try that out. I hope to recover quickly &amp; get back as soon as I can",
-        "hours": 42,
-        "name": "Margaret Hughes"
-      },
-      {
         "user_id": "U0BLXE1KQQH",
         "text": "Hi Coach Grace, just checking in and confirming if these are assigned particularly for me? I am sorry if I missed these but I can work on it. Though says on the",
-        "hours": 23,
+        "hours": 30,
         "name": "Julie Lapaz"
       },
       {
         "user_id": "U0B3H87F05U",
         "text": "Hi Grace, Dougie\u2019s car has broken down so I am going to have to head to pick him up. Is there any chance I can switch my class tonight to 8pm?",
-        "hours": 15,
+        "hours": 21,
         "name": "Laura Douglas"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Hey Grace, is there a link to buy forge merchandise. I thought I saw one at a time but can't find it now x",
-        "hours": 11,
+        "hours": 17,
         "name": "Lesley"
+      },
+      {
+        "user_id": "U08N11LNT0U",
+        "text": "How many times do you want to train catherine a week, 2 or 3 times? I can send the link to get you setup again once i know",
+        "hours": 7,
+        "name": "Catherine"
       }
     ],
     "mentions": [],
@@ -4569,8 +4593,8 @@
     }
   },
   "teamup": {
-    "total_members": 157,
-    "recurring": 103,
+    "total_members": 158,
+    "recurring": 104,
     "recurring_members": [
       {
         "id": 10803724,
@@ -4969,6 +4993,10 @@
         "name": "Victoria Thompson"
       },
       {
+        "id": 13359403,
+        "name": "Zara Drain"
+      },
+      {
         "id": 12672618,
         "name": "hazel graham"
       },
@@ -5064,7 +5092,7 @@
         "name": "Sheena Mulholland"
       }
     ],
-    "new_this_month": 19,
+    "new_this_month": 20,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -5852,8 +5880,8 @@
     ],
     "cancelled_ytd": 38,
     "churn_rate": 2.0,
-    "avg_member_price": 136.42,
-    "monthly_recurring_revenue": 13506.0,
+    "avg_member_price": 136.6,
+    "monthly_recurring_revenue": 13660.0,
     "avg_tenure_months": 8.8,
     "cancelled_last_month": 9,
     "cancelled_members": [
@@ -5906,7 +5934,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 65,
+        "count": 66,
         "members": [
           {
             "id": 10803724,
@@ -6159,6 +6187,10 @@
           {
             "id": 13118018,
             "name": "Victoria Thompson"
+          },
+          {
+            "id": 13359403,
+            "name": "Zara Drain"
           },
           {
             "id": 12672618,
@@ -6734,7 +6766,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 557
+            "count": 573
           },
           {
             "day": "Friday",
@@ -6768,13 +6800,13 @@
           },
           {
             "day": "Tuesday",
-            "count": 557
+            "count": 573
           }
         ],
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 557
+            "count": 564
           },
           {
             "name": "Build: Full Body",
@@ -6807,12 +6839,12 @@
             "count": 63
           },
           {
-            "name": "Strongevity",
+            "name": "Capacity",
             "count": 75
           },
           {
-            "name": "Capacity",
-            "count": 75
+            "name": "Strongevity",
+            "count": 84
           },
           {
             "name": "Plate",
@@ -6935,13 +6967,13 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 2776
+        "total_attended": 2792
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 226
+            "count": 242
           },
           {
             "day": "Wednesday",
@@ -6985,7 +7017,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 226
+            "count": 233
           },
           {
             "name": "Build: Lower",
@@ -7022,12 +7054,12 @@
             "count": 29
           },
           {
-            "name": "Strongevity",
-            "count": 62
-          },
-          {
             "name": "Plate",
             "count": 69
+          },
+          {
+            "name": "Strongevity",
+            "count": 71
           },
           {
             "name": "Mobility",
@@ -7146,7 +7178,7 @@
             "label": "Saturday 9am Elevate"
           }
         ],
-        "total_attended": 1048
+        "total_attended": 1064
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. Launch a \"Open Studio\" drop-in slot on Monday or Thursday afternoons (your quietest days) at an off-peak time \u2014 members can book 30 mins of unstructured gym time cheaply, filling dead space and building weekday habit.\n\n2. Run a paid \"Strength Basics\" workshop (4\u20136 members max) in gaps before/after PT blocks on quiet days \u2014 teach form on key lifts that feed into Build classes, positioning it as a gateway that boosts confidence in your most popular classes.\n\n**For quieter classes:**\n\n3. Move **Engine** and **Barbelle** to Tuesday or Wednesday mornings (your busy days) to ride existing traffic, then promote them as \"high-intensity options for members who've mastered Build\" \u2014 these are currently fighting for attention on empty days.",
       "capacity": [
@@ -7178,7 +7210,7 @@
           "name": "Build: Upper",
           "sessions": 72,
           "cap": 12,
-          "avg_attending": 9.8,
+          "avg_attending": 9.7,
           "fill_rate": 81,
           "status": "healthy"
         },
@@ -7458,10 +7490,10 @@
       },
       {
         "month": "2026-08",
-        "active": 159,
+        "active": 160,
         "churn": 9.2,
         "by_type": {
-          "Empower": 66,
+          "Empower": 67,
           "8 PT Sessions": 3,
           "4 PT Sessions": 11,
           "Evolve": 5,
@@ -7648,6 +7680,11 @@
         }
       ],
       "new_members": [
+        {
+          "name": "Zara Drain",
+          "days_in": 0,
+          "start_date": "2026-08-11"
+        },
         {
           "name": "Amy McNeill",
           "days_in": 8,
@@ -8988,6 +9025,15 @@
         "join_date": "2026-05-26",
         "membership": "4 PT Sessions",
         "class_count": 6,
+        "last_momentum": null
+      },
+      {
+        "id": 13359403,
+        "name": "Zara Drain",
+        "email": "rdrain224@gmail.com",
+        "join_date": "2026-08-11",
+        "membership": "Empower",
+        "class_count": 11,
         "last_momentum": null
       },
       {
@@ -12829,6 +12875,18 @@
     "date": "2026-08-11",
     "urgent": [
       {
+        "from": "Coach Grace",
+        "subject": "Accepted: Basher and Jo hyrox @ Wed 11 Nov 2026 (Coach JoJo)",
+        "snippet": "Basher and Jo hyrox Coach Grace has accepted this invitation. When Wednesday 11 Nov 2026 Guests Coach JoJo - organiser eiliskearns13@gmail.com Coach Grace View all guest info Invitation from Google",
+        "id": "19ff0289cdb917bd"
+      },
+      {
+        "from": "Coach Grace",
+        "subject": "Accepted: JoJo holiday @ Wed 7 Oct - Mon 12 Oct 2026 (Coach JoJo)",
+        "snippet": "JoJo holiday Coach Grace has accepted this invitation. When Wednesday 7 Oct \u2013 Monday 12 Oct 2026 Guests Coach JoJo - organiser eiliskearns13@gmail.com Coach Grace View all guest info Invitation from",
+        "id": "19ff0289973ca4b8"
+      },
+      {
         "from": "Forge Female Fitness",
         "subject": "Get ready for your Personal Training",
         "snippet": "Hey Victoria, Head Coach Grace here and I&#39;m excited to have you in Team Forge! You have your own Personal Training Headquarters here: https://www.forgefemalefitness.com/personaltraininghq. This ha",
@@ -12878,6 +12936,6 @@
       }
     ],
     "important": [],
-    "urgent_count": 8
+    "urgent_count": 10
   }
 }
