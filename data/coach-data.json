@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T07:47:05.642202+00:00",
+  "generated_at": "2026-08-12T14:00:47.291490+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1538,6 +1538,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Claire Martin",
+        "last_scan": "2026-08-12",
+        "scan_count": 1,
+        "weight": 154.6,
+        "smm": 51.8,
+        "pbf": 38.1,
+        "bmi": 27.4,
+        "tbw": 70.1,
+        "protein": 18.5,
+        "mineral": 7.1,
+        "vfa": 138.8,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-09-23",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "124victoriat",
         "last_scan": "2026-08-11",
@@ -3891,7 +3915,7 @@
         "overdue": true
       }
     ],
-    "total": 98,
+    "total": 99,
     "configured": true
   },
   "slack": {
@@ -3899,27 +3923,21 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Hi Coach Grace, just checking in and confirming if these are assigned particularly for me? I am sorry if I missed these but I can work on it. Though says on the",
-        "hours": 47,
-        "name": "Julie Lapaz"
-      },
-      {
         "user_id": "U0B3H87F05U",
         "text": "Hi Grace, Dougie\u2019s car has broken down so I am going to have to head to pick him up. Is there any chance I can switch my class tonight to 8pm?",
-        "hours": 39,
+        "hours": 45,
         "name": "Laura Douglas"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Hey Grace, is there a link to buy forge merchandise. I thought I saw one at a time but can't find it now x",
-        "hours": 35,
+        "hours": 41,
         "name": "Lesley"
       },
       {
         "user_id": "U08N11LNT0U",
         "text": "How many times do you want to train catherine a week, 2 or 3 times? I can send the link to get you setup again once i know",
-        "hours": 24,
+        "hours": 31,
         "name": "Catherine"
       }
     ],
@@ -4094,7 +4112,8 @@
       "angie": "U0BN147CPJN",
       "sharon mcauley": "U0BNNGUJHJ7",
       "sheena": "U0BNWKAUSRJ",
-      "lorraine kelly": "U0BP0LES2D8"
+      "lorraine kelly": "U0BP0LES2D8",
+      "claire martin": "U0BPR734WKT"
     }
   },
   "staff": {
@@ -4539,7 +4558,7 @@
     }
   },
   "teamup": {
-    "total_members": 157,
+    "total_members": 156,
     "recurring": 104,
     "recurring_members": [
       {
@@ -5038,7 +5057,7 @@
         "name": "Sheena Mulholland"
       }
     ],
-    "new_this_month": 20,
+    "new_this_month": 21,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -6484,7 +6503,7 @@
       },
       {
         "name": "Strongevity",
-        "count": 9,
+        "count": 8,
         "members": [
           {
             "id": 13508479,
@@ -6497,10 +6516,6 @@
           {
             "id": 13504855,
             "name": "Eleanor Craig"
-          },
-          {
-            "id": 13542031,
-            "name": "Elizabeth Steele"
           },
           {
             "id": 900564,
@@ -6718,7 +6733,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 553
+            "count": 573
           },
           {
             "day": "Friday",
@@ -6752,7 +6767,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 553
+            "count": 573
           }
         ],
         "top_classes": [
@@ -6778,7 +6793,7 @@
           },
           {
             "name": "Circuits",
-            "count": 224
+            "count": 235
           }
         ],
         "bottom_classes": [
@@ -6796,7 +6811,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 84
+            "count": 93
           },
           {
             "name": "Plate",
@@ -6804,7 +6819,7 @@
           },
           {
             "name": "Circuits",
-            "count": 224
+            "count": 235
           }
         ],
         "top_slots": [
@@ -6919,7 +6934,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 2791
+        "total_attended": 2811
       },
       "last_30_days": {
         "top_days": [
@@ -6929,7 +6944,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 221
+            "count": 241
           },
           {
             "day": "Monday",
@@ -6963,7 +6978,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 221
+            "count": 241
           }
         ],
         "top_classes": [
@@ -6985,11 +7000,11 @@
           },
           {
             "name": "Circuits",
-            "count": 84
+            "count": 95
           },
           {
-            "name": "Mobility",
-            "count": 72
+            "name": "Strongevity",
+            "count": 80
           }
         ],
         "bottom_classes": [
@@ -7010,12 +7025,12 @@
             "count": 69
           },
           {
-            "name": "Strongevity",
-            "count": 71
-          },
-          {
             "name": "Mobility",
             "count": 72
+          },
+          {
+            "name": "Strongevity",
+            "count": 80
           }
         ],
         "top_slots": [
@@ -7050,9 +7065,9 @@
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
-            "count": 42,
-            "sessions": 4,
-            "avg": 10.5,
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
             "label": "Wednesday 10am Circuits"
           },
           {
@@ -7130,7 +7145,7 @@
             "label": "Tuesday 6pm Build: Upper"
           }
         ],
-        "total_attended": 1107
+        "total_attended": 1127
       },
       "suggestion": "**For quiet studio time (Monday/Thursday gaps):**\n\n1. **Add a 30-min \"Engine Prep\" open-gym block on Monday and Thursday mornings** \u2014 Engine is consistently underbooked (26 attendees last month); a guided warm-up/technique session before the actual class might lower the barrier to entry and funnel people into the class itself.\n\n2. **Run a paid 4-week \"Barbelle Fundamentals\" workshop series on quiet Thursday evenings** \u2014 Barbelle has only 29 attendees in 30 days; position it as a standalone skill-builder for members intimidated by the class, then graduate them into the regular session.\n\n**For the quieter classes themselves:**\n\n3. **Move Capacity to Tuesday morning (a busier day) and pair it with a targeted email invite to Build: Lower/Upper attendees** \u2014 Capacity (19 last month) is likely being crowded out by schedule placement; these strength-focused members are your warm audience, and a time-slot shift + direct outreach could lift it significantly.",
       "capacity": [
@@ -7154,7 +7169,7 @@
           "name": "Strongevity",
           "sessions": 14,
           "cap": 12,
-          "avg_attending": 8.9,
+          "avg_attending": 9.0,
           "fill_rate": 82,
           "status": "healthy"
         },
@@ -7419,7 +7434,7 @@
       },
       {
         "month": "2026-07",
-        "active": 150,
+        "active": 149,
         "churn": 7.9,
         "by_type": {
           "Empower": 66,
@@ -7431,7 +7446,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 13,
-          "Strongevity": 4,
+          "Strongevity": 3,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -7442,8 +7457,8 @@
       },
       {
         "month": "2026-08",
-        "active": 160,
-        "churn": 9.3,
+        "active": 159,
+        "churn": 9.4,
         "by_type": {
           "Empower": 67,
           "8 PT Sessions": 3,
@@ -7454,7 +7469,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "6 Week Jumpstart": 19,
-          "Strongevity": 8,
+          "Strongevity": 7,
           "4 Class Pass": 1,
           "Well75": 10,
           "Strongevity - 2 Classes": 1,
@@ -8138,15 +8153,6 @@
         "join_date": "2026-07-22",
         "membership": "Strongevity",
         "class_count": 3,
-        "last_momentum": null
-      },
-      {
-        "id": 13542031,
-        "name": "Elizabeth Steele",
-        "email": "e.steele.233@btinternet.com",
-        "join_date": "2026-07-21",
-        "membership": "Strongevity",
-        "class_count": 0,
         "last_momentum": null
       },
       {
@@ -12727,6 +12733,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "on ball or low box",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/C69hPMiokMs/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "outube.com/shorts/JqDrU_z1K2Q",
       "part": "Full Body",
       "video": "https://www.youtube.com/shorts/JqDrU_z1K2Q",
@@ -12826,21 +12838,9 @@
         "subject": "Fwd: Give me 1 minute and I'll give you \u00a350",
         "snippet": "---------- Forwarded message --------- From: Laura Doherty &lt;lauratoner85@hotmail.com&gt; Date: Thu, 6 Aug 2026 at 23:27 Subject: Re: Give me 1 minute and I&#39;ll give you \u00a350 To: grace@theforge.pt",
         "id": "19fd9388446e4b76"
-      },
-      {
-        "from": "grace",
-        "subject": "Post Mid-Week Client Wins on Slack",
-        "snippet": "Hey Coach JoJo, TODAY Please post on the TEAM Channel in Slack a collection 5-8 member wins from the past week. Focus 90% on non-scale wins with no more than ONE scale win. An example of this is: http",
-        "id": "19fd1ed525b81c6f"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Strongevity Booking",
-        "snippet": "Hi Stephanie, I see you called in with Coach JoJo today, however we have no record of payment or registration on your Teamup profile. Our Monday and Wednesday blocks are now filled and we only have 2",
-        "id": "19fd18870106bdca"
       }
     ],
     "important": [],
-    "urgent_count": 4
+    "urgent_count": 2
   }
 }
