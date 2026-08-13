@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T07:47:55.923121+00:00",
+  "generated_at": "2026-08-13T14:00:52.506780+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4313,6 +4313,16 @@
         "notes": ""
       },
       {
+        "gid": "1217446721230588",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1217446721230588",
+        "project": null,
+        "due_on": "2026-08-14",
+        "overdue": false,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
         "gid": "1217150453835587",
         "name": "",
         "completed": false,
@@ -6682,7 +6692,7 @@
           },
           {
             "day": "Thursday",
-            "count": 422
+            "count": 428
           }
         ],
         "bottom_days": [
@@ -6692,7 +6702,7 @@
           },
           {
             "day": "Thursday",
-            "count": 422
+            "count": 428
           },
           {
             "day": "Monday",
@@ -6714,7 +6724,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 477
+            "count": 478
           },
           {
             "name": "Build: Lower",
@@ -6722,7 +6732,7 @@
           },
           {
             "name": "Elevate",
-            "count": 334
+            "count": 339
           },
           {
             "name": "Mobility",
@@ -6806,13 +6816,13 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
-            "day": "Saturday",
-            "time": "8am",
-            "name": "Elevate",
-            "count": 82,
-            "sessions": 8,
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 132,
+            "sessions": 13,
             "avg": 10.2,
-            "label": "Saturday 8am Elevate"
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -6865,13 +6875,13 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 77,
-            "sessions": 10,
-            "avg": 7.7,
+            "count": 82,
+            "sessions": 11,
+            "avg": 7.5,
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2825
+        "total_attended": 2831
       },
       "last_30_days": {
         "top_days": [
@@ -6889,7 +6899,7 @@
           },
           {
             "day": "Thursday",
-            "count": 175
+            "count": 181
           },
           {
             "day": "Friday",
@@ -6907,7 +6917,7 @@
           },
           {
             "day": "Thursday",
-            "count": 175
+            "count": 181
           },
           {
             "day": "Monday",
@@ -6925,7 +6935,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 200
+            "count": 201
           },
           {
             "name": "Build: Lower",
@@ -6933,7 +6943,7 @@
           },
           {
             "name": "Elevate",
-            "count": 139
+            "count": 144
           },
           {
             "name": "Circuits",
@@ -6999,6 +7009,15 @@
             "label": "Wednesday 10am Circuits"
           },
           {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
+            "label": "Thursday 7am Build: Full Body"
+          },
+          {
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
@@ -7015,15 +7034,6 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Monday 8pm Build: Lower"
-          },
-          {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 52,
-            "sessions": 5,
-            "avg": 10.4,
-            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7082,7 +7092,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1170
+        "total_attended": 1176
       },
       "suggestion": "**For quiet studio time (Monday/Thursday/Saturday gaps):**\n\n1. **Add a paid \"Open Studio\" drop-in slot on Monday and Thursday evenings** (30-45 mins) positioned as unstructured gym access with a coach on hand for form checks\u2014captures members who want flexibility without committing to a full class, and fills dead air in your quietest days.\n\n2. **Run a Saturday morning \"Strength Basics\" workshop (45 mins, capped at 8 people)** in the gap before or after your existing classes\u2014position it as a 4-week progressive series for newer members, bridges the gap between personal training and Build classes, and creates a pipeline.\n\n**To lift quieter classes (Barbelle, Engine, Capacity, Plate):**\n\n3. **Trial \"Barbelle + Mobility combo packages\"**: Offer members a discounted 2-class bundle (Barbelle + the following Mobility session) and invite Build: Upper regulars directly\u2014Barbelle is isolation-focused and complements upper body work, but needs positioning as a recovery/accessory tool rather than standalone, plus Mobility is underperforming and needs traffic.",
       "capacity": [
@@ -7143,19 +7153,19 @@
           "status": "healthy"
         },
         {
-          "name": "Build: Full Body",
-          "sessions": 59,
-          "cap": 12,
-          "avg_attending": 9.2,
-          "fill_rate": 77,
-          "status": "healthy"
-        },
-        {
           "name": "Barbelle",
           "sessions": 13,
           "cap": 9,
           "avg_attending": 6.9,
           "fill_rate": 77,
+          "status": "healthy"
+        },
+        {
+          "name": "Build: Full Body",
+          "sessions": 59,
+          "cap": 12,
+          "avg_attending": 9.2,
+          "fill_rate": 76,
           "status": "healthy"
         },
         {
@@ -10108,6 +10118,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Bird Dog",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DVQbSrzjeu-/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Bird Dog Row",
       "part": "Back",
       "video": "https://www.instagram.com/p/CQ33WoIiA8U/",
@@ -11242,9 +11258,21 @@
       "source": "Q3 2026"
     },
     {
+      "name": "Last - Can Do This Standing",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DKU4oXcI-Wt/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Last - Keep Plate Down If Too Hard",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DN0e6CLYpdT/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Last Can Do Standing",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DRCSrP5EfQM/",
       "source": "Q3 2026"
     },
     {
@@ -11288,6 +11316,18 @@
       "part": "Core",
       "video": "https://www.instagram.com/p/DKKuZtZAjie/",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Lifts",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DPt6GI3iRvc/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lizard Spinal Twist",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DSDY7alAWLu/",
+      "source": "Q3 2026"
     },
     {
       "name": "Lounge twists",
@@ -11854,6 +11894,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Quadruped Leg Lifts",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DUk2n6CjPh2/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Rack assisted Single leg KB RDL - - for space they need to face the rack - not go side on facing tv, they need to face the white wall behind the racks and hold on Accessory 2: DB Duck Squats",
       "part": "Hamstrings",
       "video": "https://www.youtube.com/watch?v=0iGZn-Jy0O4",
@@ -12067,6 +12113,12 @@
       "name": "Seated Twists",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DYMC_oojEDy/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Seated Version",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DGmJcAgvmvy/",
       "source": "Q3 2026"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T07:47:55.923121+00:00",
+  "generated_at": "2026-08-13T14:00:52.506780+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,44 +7,10 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-08-13",
-    "event_count": 5,
-    "urgent_count": 0,
+    "event_count": 2,
+    "urgent_count": 1,
     "enquiry_count": 2,
     "calendar": [
-      {
-        "title": "Precious & Patience Coaching",
-        "time": "8:30am",
-        "start_raw": "2026-08-13T08:30:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "a.mcknight920@btinternet.com"
-        ],
-        "description": "",
-        "location": "",
-        "prep": "Review Precious & Patience's current program progress and goals."
-      },
-      {
-        "title": "Michelle x Al coffee",
-        "time": "11:00am",
-        "start_raw": "2026-08-13T11:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "Culture Coffee Ballymoney, 13 High St, Ballymoney BT53 6AH, UK",
-        "prep": ""
-      },
-      {
-        "title": "Eilis x 1:1 Meeting",
-        "time": "12:30pm",
-        "start_raw": "2026-08-13T12:30:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "eiliskearns@hotmail.co.uk"
-        ],
-        "description": "",
-        "location": "Forge Female Fitness, Unit 7, Taggarts Yard, 18 Meeting House St, Ballymoney BT53 6JN, UK",
-        "prep": "Prepare notes on Eilis's progress, concerns, and development areas."
-      },
       {
         "title": "Pre natal appointment",
         "time": "10:00am",
@@ -55,7 +21,7 @@
         ],
         "description": "Birth choices - labour options",
         "location": "Royal Jubilee Maternity Hospital, E, 274 Grosvenor Rd, Belfast BT12 6BA, UK",
-        "prep": "Bring pregnancy records, list questions about labour options beforehand."
+        "prep": "Review Precious & Patience's current program progress and goals."
       },
       {
         "title": "Forge 10th Year Anniversary - Cinema Meetup",
@@ -69,10 +35,21 @@
         ],
         "description": "",
         "location": "The Playhouse Portrush, 47 Main St, Portrush BT56 8BN, UK",
-        "prep": "Confirm cinema booking, coordinate timing with members, arrange transport/parking."
+        "prep": ""
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Evri Support",
+        "from_raw": "Evri Support <MyEvri@customer.evri.com>",
+        "subject": "Chatbot Enquiry for H0758A0005988507",
+        "snippet": "Update 260811-031271 Dear Grace, Thank you for your reply regarding parcel reference H0758A0005988507. I&#39;m sorry to hear your parcel still hasn&#39;t been located, I have raised this direct to the",
+        "id": "19ffaec935fa68ac",
+        "thread_id": "19ff5f5aa137f512",
+        "msg_count": 3,
+        "draft_id": "r2224772966025169882"
+      }
+    ],
     "important": [
       {
         "from": "AwakenClub Newsletter",
@@ -87,8 +64,8 @@
         "email": "",
         "subject": "Chatbot Enquiry for H0758A0005988507",
         "path": "",
-        "snippet": "Update 260811-031271 Dear Grace, Thank you for contacting us regarding parcel reference H0758A0005988507 which you had not received. I can confirm we alerted the courier as soon as you raised the",
-        "id": "19ff5f5aa137f512"
+        "snippet": "Update 260811-031271 Dear Grace, Thank you for your reply regarding parcel reference H0758A0005988507. I&#39;m sorry to hear your parcel still hasn&#39;t been located, I have raised this direct to the",
+        "id": "19ffaec935fa68ac"
       },
       {
         "name": "Evri Support",
@@ -226,10 +203,19 @@
   },
   "ghl": [
     {
+      "name": "Joanne McLernon",
+      "channel": "Phone",
+      "message": "I\u2019m going to leave it for now Grace. Thanks for the info!",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "IdYUJ7osVMC9lOeZGnXb",
+      "contact_id": "L1MBQ5Q7g81610Y2HPoT"
+    },
+    {
       "name": "Zara Morrison",
       "channel": "Phone",
       "message": "Dying at this \ud83d\ude02",
-      "age": "9h ago",
+      "age": "16h ago",
       "unread": 2,
       "conv_id": "vEdhq0D7a8a1H9SfZehN",
       "contact_id": "KqVnteKcxUdZZ1CoNzRQ"
@@ -238,7 +224,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "16h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -256,7 +242,7 @@
       "name": "Elaine Blood",
       "channel": "Phone",
       "message": "",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 0,
       "conv_id": "7ZGaDpl6SHkxAiS67Ine",
       "contact_id": "CGWc9toO4b6O8EuhAF7A"
@@ -265,7 +251,7 @@
       "name": "Amy \ud83c\udf3a",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 1,
       "conv_id": "WCwVuAp9MbMMom86u5Ic",
       "contact_id": "Rnp1ndaNNs0sWAM1BqLZ"
@@ -6364,6 +6350,16 @@
         "notes": ""
       },
       {
+        "gid": "1217446721230588",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1217446721230588",
+        "project": null,
+        "due_on": "2026-08-14",
+        "overdue": false,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
         "gid": "1217150453835587",
         "name": "",
         "completed": false,
@@ -8733,7 +8729,7 @@
           },
           {
             "day": "Thursday",
-            "count": 422
+            "count": 428
           }
         ],
         "bottom_days": [
@@ -8743,7 +8739,7 @@
           },
           {
             "day": "Thursday",
-            "count": 422
+            "count": 428
           },
           {
             "day": "Monday",
@@ -8765,7 +8761,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 477
+            "count": 478
           },
           {
             "name": "Build: Lower",
@@ -8773,7 +8769,7 @@
           },
           {
             "name": "Elevate",
-            "count": 334
+            "count": 339
           },
           {
             "name": "Mobility",
@@ -8857,13 +8853,13 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
-            "day": "Saturday",
-            "time": "8am",
-            "name": "Elevate",
-            "count": 82,
-            "sessions": 8,
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 132,
+            "sessions": 13,
             "avg": 10.2,
-            "label": "Saturday 8am Elevate"
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -8916,13 +8912,13 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 77,
-            "sessions": 10,
-            "avg": 7.7,
+            "count": 82,
+            "sessions": 11,
+            "avg": 7.5,
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2825
+        "total_attended": 2831
       },
       "last_30_days": {
         "top_days": [
@@ -8940,7 +8936,7 @@
           },
           {
             "day": "Thursday",
-            "count": 175
+            "count": 181
           },
           {
             "day": "Friday",
@@ -8958,7 +8954,7 @@
           },
           {
             "day": "Thursday",
-            "count": 175
+            "count": 181
           },
           {
             "day": "Monday",
@@ -8976,7 +8972,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 200
+            "count": 201
           },
           {
             "name": "Build: Lower",
@@ -8984,7 +8980,7 @@
           },
           {
             "name": "Elevate",
-            "count": 139
+            "count": 144
           },
           {
             "name": "Circuits",
@@ -9050,6 +9046,15 @@
             "label": "Wednesday 10am Circuits"
           },
           {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
+            "label": "Thursday 7am Build: Full Body"
+          },
+          {
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
@@ -9066,15 +9071,6 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Monday 8pm Build: Lower"
-          },
-          {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 52,
-            "sessions": 5,
-            "avg": 10.4,
-            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -9133,7 +9129,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1170
+        "total_attended": 1176
       },
       "suggestion": "**For quiet studio time (Monday/Thursday/Saturday gaps):**\n\n1. **Add a paid \"Open Studio\" drop-in slot on Monday and Thursday evenings** (30-45 mins) positioned as unstructured gym access with a coach on hand for form checks\u2014captures members who want flexibility without committing to a full class, and fills dead air in your quietest days.\n\n2. **Run a Saturday morning \"Strength Basics\" workshop (45 mins, capped at 8 people)** in the gap before or after your existing classes\u2014position it as a 4-week progressive series for newer members, bridges the gap between personal training and Build classes, and creates a pipeline.\n\n**To lift quieter classes (Barbelle, Engine, Capacity, Plate):**\n\n3. **Trial \"Barbelle + Mobility combo packages\"**: Offer members a discounted 2-class bundle (Barbelle + the following Mobility session) and invite Build: Upper regulars directly\u2014Barbelle is isolation-focused and complements upper body work, but needs positioning as a recovery/accessory tool rather than standalone, plus Mobility is underperforming and needs traffic.",
       "capacity": [
@@ -9194,19 +9190,19 @@
           "status": "healthy"
         },
         {
-          "name": "Build: Full Body",
-          "sessions": 59,
-          "cap": 12,
-          "avg_attending": 9.2,
-          "fill_rate": 77,
-          "status": "healthy"
-        },
-        {
           "name": "Barbelle",
           "sessions": 13,
           "cap": 9,
           "avg_attending": 6.9,
           "fill_rate": 77,
+          "status": "healthy"
+        },
+        {
+          "name": "Build: Full Body",
+          "sessions": 59,
+          "cap": 12,
+          "avg_attending": 9.2,
+          "fill_rate": 76,
           "status": "healthy"
         },
         {
@@ -23742,8 +23738,8 @@
       },
       {
         "month": "2026-08",
-        "collected": 9406.11,
-        "payments": 67
+        "collected": 10538.11,
+        "payments": 75
       }
     ],
     "failed": [
@@ -23833,8 +23829,8 @@
       },
       {
         "month": "2026-08",
-        "collected": 125.0,
-        "payments": 9
+        "collected": 130.0,
+        "payments": 10
       }
     ],
     "failed": [
@@ -24684,11 +24680,11 @@
     "period": "August 2026",
     "ad_spend": 278.03,
     "leads": 75,
-    "sales": 23,
+    "sales": 24,
     "income_from_ads": 26.0,
     "profit": 26.74,
     "cost_per_lead": 3.71,
-    "close_rate": 30.7,
+    "close_rate": 32.0,
     "monthly": [
       {
         "month": "Apr",
@@ -24726,7 +24722,7 @@
         "month": "Aug",
         "spend": 278.03,
         "leads": 75,
-        "sales": 23,
+        "sales": 24,
         "income": 26.0,
         "profit": 26.74
       }
@@ -24734,7 +24730,7 @@
     "lifetime": {
       "spend": 2166.3,
       "leads": 417,
-      "sales": 52,
+      "sales": 53,
       "income": 120.0,
       "profit": 459.88
     },
@@ -25166,6 +25162,12 @@
       "part": "Back",
       "video": "https://www.instagram.com/p/DPG2QERkaQn/",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Bird Dog",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DVQbSrzjeu-/",
+      "source": "Q3 2026"
     },
     {
       "name": "Bird Dog Row",
@@ -26302,9 +26304,21 @@
       "source": "Q3 2026"
     },
     {
+      "name": "Last - Can Do This Standing",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DKU4oXcI-Wt/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Last - Keep Plate Down If Too Hard",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DN0e6CLYpdT/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Last Can Do Standing",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DRCSrP5EfQM/",
       "source": "Q3 2026"
     },
     {
@@ -26348,6 +26362,18 @@
       "part": "Core",
       "video": "https://www.instagram.com/p/DKKuZtZAjie/",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Lifts",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DPt6GI3iRvc/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lizard Spinal Twist",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DSDY7alAWLu/",
+      "source": "Q3 2026"
     },
     {
       "name": "Lounge twists",
@@ -26914,6 +26940,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Quadruped Leg Lifts",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DUk2n6CjPh2/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Rack assisted Single leg KB RDL - - for space they need to face the rack - not go side on facing tv, they need to face the white wall behind the racks and hold on Accessory 2: DB Duck Squats",
       "part": "Hamstrings",
       "video": "https://www.youtube.com/watch?v=0iGZn-Jy0O4",
@@ -27127,6 +27159,12 @@
       "name": "Seated Twists",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DYMC_oojEDy/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Seated Version",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DGmJcAgvmvy/",
       "source": "Q3 2026"
     },
     {
