@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T14:00:52.506780+00:00",
+  "generated_at": "2026-08-13T16:08:52.574087+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-08-13",
     "event_count": 2,
-    "urgent_count": 1,
+    "urgent_count": 0,
     "enquiry_count": 2,
     "calendar": [
       {
@@ -38,18 +38,7 @@
         "prep": ""
       }
     ],
-    "urgent": [
-      {
-        "from": "Evri Support",
-        "from_raw": "Evri Support <MyEvri@customer.evri.com>",
-        "subject": "Chatbot Enquiry for H0758A0005988507",
-        "snippet": "Update 260811-031271 Dear Grace, Thank you for your reply regarding parcel reference H0758A0005988507. I&#39;m sorry to hear your parcel still hasn&#39;t been located, I have raised this direct to the",
-        "id": "19ffaec935fa68ac",
-        "thread_id": "19ff5f5aa137f512",
-        "msg_count": 3,
-        "draft_id": "r2224772966025169882"
-      }
-    ],
+    "urgent": [],
     "important": [
       {
         "from": "AwakenClub Newsletter",
@@ -127,8 +116,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "sarah@nourishandnurtu.re": "2025-11-23",
         "eiliskearns13@gmail.com": "2025-11-23",
+        "sarah@nourishandnurtu.re": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -203,10 +192,19 @@
   },
   "ghl": [
     {
+      "name": "Natalia Szmyglewska",
+      "channel": "Phone",
+      "message": "Can I have more information please",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "DMINOgEYJJXJi9Lqbrn8",
+      "contact_id": "jKB4Vf91lJQnZiklBuf5"
+    },
+    {
       "name": "Joanne McLernon",
       "channel": "Phone",
       "message": "I\u2019m going to leave it for now Grace. Thanks for the info!",
-      "age": "1h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "IdYUJ7osVMC9lOeZGnXb",
       "contact_id": "L1MBQ5Q7g81610Y2HPoT"
@@ -215,7 +213,7 @@
       "name": "Zara Morrison",
       "channel": "Phone",
       "message": "Dying at this \ud83d\ude02",
-      "age": "16h ago",
+      "age": "18h ago",
       "unread": 2,
       "conv_id": "vEdhq0D7a8a1H9SfZehN",
       "contact_id": "KqVnteKcxUdZZ1CoNzRQ"
@@ -224,7 +222,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "22h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -282,15 +280,6 @@
       "unread": 1,
       "conv_id": "QNmKMCYHjeixxe0kBB72",
       "contact_id": "TXHQIeK7CjuXmpVEtIRL"
-    },
-    {
-      "name": "Angela McLaughlin",
-      "channel": "Phone",
-      "message": "Thanks a million Grace. X",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "iQW7q9Dq06XfrOt83ZRo",
-      "contact_id": "DpV2EBWIatrMuJyFAYBB"
     }
   ],
   "jumpstart": {
@@ -9209,8 +9198,8 @@
           "name": "Engine",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 7.4,
-          "fill_rate": 63,
+          "avg_attending": 7.3,
+          "fill_rate": 62,
           "status": "attention"
         },
         {
@@ -22925,9 +22914,9 @@
       {
         "month": "2026-08",
         "revenue": 12312.14,
-        "expenses": 13245.49,
-        "profit": -933.35,
-        "profit_pct": -7.6,
+        "expenses": 13473.81,
+        "profit": -1161.67,
+        "profit_pct": -9.4,
         "categories": {
           "in": [
             {
@@ -22942,7 +22931,7 @@
           "out": [
             {
               "name": "Staff",
-              "amount": 3528.0
+              "amount": 3750.33
             },
             {
               "name": "Directors Wages",
@@ -22966,7 +22955,7 @@
             },
             {
               "name": "Admin",
-              "amount": 537.89
+              "amount": 543.88
             },
             {
               "name": "Other",
@@ -22999,6 +22988,26 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "5d5658f8-4779-4512-96f8-088dd55dc2a4",
+            "date": "2026-08-13",
+            "name": "Amazon",
+            "ref": "AMAZON.CO.UK",
+            "amount": 5.99,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "5d2241d2-f3d8-4835-8658-c6738479b242",
+            "date": "2026-08-13",
+            "name": "I360* Theragun",
+            "ref": "I360* MUSCLEANDMOTION",
+            "amount": 222.33,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
           {
             "uid": "5b824f7c-7556-4bd2-8057-366be407c630",
             "date": "2026-08-13",
@@ -23613,7 +23622,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 735.45,
+    "cash_position": 507.13,
     "available": 0.0,
     "reserves": [
       {
@@ -23634,7 +23643,7 @@
       }
     ],
     "earmarked": 15377.0,
-    "total_cash": 16112.45,
+    "total_cash": 15884.13,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23663,8 +23672,8 @@
       }
     ],
     "cash_in_30": 23824.62,
-    "cash_out_30": 21221.25,
-    "net_30": 2603.37,
+    "cash_out_30": 21449.57,
+    "net_30": 2375.05,
     "as_of": "2026-08-13"
   },
   "gocardless": {
@@ -24663,17 +24672,10 @@
         "total": "\u00a3139.85",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-08-13",
-        "order_no": "",
-        "total": "\u00a388.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
-    "count": 96,
-    "total_spend": 8887.9,
+    "count": 95,
+    "total_spend": 8799.9,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": {
