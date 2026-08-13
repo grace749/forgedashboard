@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T05:00:53.492522+00:00",
+  "generated_at": "2026-08-13T07:47:55.923121+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-08-13",
     "event_count": 5,
-    "urgent_count": 1,
+    "urgent_count": 0,
     "enquiry_count": 2,
     "calendar": [
       {
@@ -72,18 +72,7 @@
         "prep": "Confirm cinema booking, coordinate timing with members, arrange transport/parking."
       }
     ],
-    "urgent": [
-      {
-        "from": "Elizabeth Steele",
-        "from_raw": "Elizabeth Steele <e.steele.233@btinternet.com>",
-        "subject": "Re: You have been removed from Strongevity on 9. September 2026 11:30",
-        "snippet": "Thanks for getting back to me Grace Sent from my iPhone On 12 Aug 2026, at 18:17, Coach Grace &lt;grace@theforge.pt&gt; wrote: \ufeff Hi Elizabeth, I&#39;ve booked all your 4 classes for this August block,",
-        "id": "19ff7478de5a8292",
-        "thread_id": "19ff6dd0547d400b",
-        "msg_count": 3,
-        "draft_id": "r-4187932568830135247"
-      }
-    ],
+    "urgent": [],
     "important": [
       {
         "from": "AwakenClub Newsletter",
@@ -240,7 +229,7 @@
       "name": "Zara Morrison",
       "channel": "Phone",
       "message": "Dying at this \ud83d\ude02",
-      "age": "7h ago",
+      "age": "9h ago",
       "unread": 2,
       "conv_id": "vEdhq0D7a8a1H9SfZehN",
       "contact_id": "KqVnteKcxUdZZ1CoNzRQ"
@@ -249,7 +238,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "13h ago",
+      "age": "16h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -4851,14 +4840,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U08N11LNT0U",
-        "text": "How many times do you want to train catherine a week, 2 or 3 times? I can send the link to get you setup again once i know",
-        "hours": 46,
-        "name": "Catherine"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -8751,7 +8733,7 @@
           },
           {
             "day": "Thursday",
-            "count": 413
+            "count": 422
           }
         ],
         "bottom_days": [
@@ -8761,7 +8743,7 @@
           },
           {
             "day": "Thursday",
-            "count": 413
+            "count": 422
           },
           {
             "day": "Monday",
@@ -8783,7 +8765,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 468
+            "count": 477
           },
           {
             "name": "Build: Lower",
@@ -8875,13 +8857,13 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 122,
-            "sessions": 12,
+            "day": "Saturday",
+            "time": "8am",
+            "name": "Elevate",
+            "count": 82,
+            "sessions": 8,
             "avg": 10.2,
-            "label": "Thursday 7am Build: Full Body"
+            "label": "Saturday 8am Elevate"
           }
         ],
         "bottom_slots": [
@@ -8940,7 +8922,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2816
+        "total_attended": 2825
       },
       "last_30_days": {
         "top_days": [
@@ -8958,7 +8940,7 @@
           },
           {
             "day": "Thursday",
-            "count": 166
+            "count": 175
           },
           {
             "day": "Friday",
@@ -8976,7 +8958,7 @@
           },
           {
             "day": "Thursday",
-            "count": 166
+            "count": 175
           },
           {
             "day": "Monday",
@@ -8994,7 +8976,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 191
+            "count": 200
           },
           {
             "name": "Build: Lower",
@@ -9059,15 +9041,6 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Thursday 7am Build: Full Body"
-          },
-          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -9093,6 +9066,15 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Monday 8pm Build: Lower"
+          },
+          {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -9151,7 +9133,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1161
+        "total_attended": 1170
       },
       "suggestion": "**For quiet studio time (Monday/Thursday/Saturday gaps):**\n\n1. **Add a paid \"Open Studio\" drop-in slot on Monday and Thursday evenings** (30-45 mins) positioned as unstructured gym access with a coach on hand for form checks\u2014captures members who want flexibility without committing to a full class, and fills dead air in your quietest days.\n\n2. **Run a Saturday morning \"Strength Basics\" workshop (45 mins, capped at 8 people)** in the gap before or after your existing classes\u2014position it as a 4-week progressive series for newer members, bridges the gap between personal training and Build classes, and creates a pipeline.\n\n**To lift quieter classes (Barbelle, Engine, Capacity, Plate):**\n\n3. **Trial \"Barbelle + Mobility combo packages\"**: Offer members a discounted 2-class bundle (Barbelle + the following Mobility session) and invite Build: Upper regulars directly\u2014Barbelle is isolation-focused and complements upper body work, but needs positioning as a recovery/accessory tool rather than standalone, plus Mobility is underperforming and needs traffic.",
       "capacity": [
@@ -22946,15 +22928,15 @@
       },
       {
         "month": "2026-08",
-        "revenue": 12278.49,
+        "revenue": 12312.14,
         "expenses": 13245.49,
-        "profit": -967.0,
-        "profit_pct": -7.9,
+        "profit": -933.35,
+        "profit_pct": -7.6,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 12273.33
+              "amount": 12306.98
             },
             {
               "name": "Business Entertainment",
@@ -23021,6 +23003,26 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "5b824f7c-7556-4bd2-8057-366be407c630",
+            "date": "2026-08-13",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 24.0,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "5b7ac8b0-e3a6-45b9-a212-65d5ec76475a",
+            "date": "2026-08-13",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 9.65,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
           {
             "uid": "56c9ee63-a7cc-4ab3-ae07-e3e70a2e3fc9",
             "date": "2026-08-12",
@@ -23615,7 +23617,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 701.8,
+    "cash_position": 735.45,
     "available": 0.0,
     "reserves": [
       {
@@ -23636,7 +23638,7 @@
       }
     ],
     "earmarked": 15377.0,
-    "total_cash": 16078.8,
+    "total_cash": 16112.45,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23664,9 +23666,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 23986.58,
+    "cash_in_30": 23824.62,
     "cash_out_30": 21221.25,
-    "net_30": 2765.33,
+    "net_30": 2603.37,
     "as_of": "2026-08-13"
   },
   "gocardless": {

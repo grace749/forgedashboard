@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T05:00:53.492522+00:00",
+  "generated_at": "2026-08-13T07:47:55.923121+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3884,14 +3884,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U08N11LNT0U",
-        "text": "How many times do you want to train catherine a week, 2 or 3 times? I can send the link to get you setup again once i know",
-        "hours": 46,
-        "name": "Catherine"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -6689,7 +6682,7 @@
           },
           {
             "day": "Thursday",
-            "count": 413
+            "count": 422
           }
         ],
         "bottom_days": [
@@ -6699,7 +6692,7 @@
           },
           {
             "day": "Thursday",
-            "count": 413
+            "count": 422
           },
           {
             "day": "Monday",
@@ -6721,7 +6714,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 468
+            "count": 477
           },
           {
             "name": "Build: Lower",
@@ -6813,13 +6806,13 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 122,
-            "sessions": 12,
+            "day": "Saturday",
+            "time": "8am",
+            "name": "Elevate",
+            "count": 82,
+            "sessions": 8,
             "avg": 10.2,
-            "label": "Thursday 7am Build: Full Body"
+            "label": "Saturday 8am Elevate"
           }
         ],
         "bottom_slots": [
@@ -6878,7 +6871,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2816
+        "total_attended": 2825
       },
       "last_30_days": {
         "top_days": [
@@ -6896,7 +6889,7 @@
           },
           {
             "day": "Thursday",
-            "count": 166
+            "count": 175
           },
           {
             "day": "Friday",
@@ -6914,7 +6907,7 @@
           },
           {
             "day": "Thursday",
-            "count": 166
+            "count": 175
           },
           {
             "day": "Monday",
@@ -6932,7 +6925,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 191
+            "count": 200
           },
           {
             "name": "Build: Lower",
@@ -6997,15 +6990,6 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Thursday 7am Build: Full Body"
-          },
-          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -7031,6 +7015,15 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Monday 8pm Build: Lower"
+          },
+          {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7089,7 +7082,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1161
+        "total_attended": 1170
       },
       "suggestion": "**For quiet studio time (Monday/Thursday/Saturday gaps):**\n\n1. **Add a paid \"Open Studio\" drop-in slot on Monday and Thursday evenings** (30-45 mins) positioned as unstructured gym access with a coach on hand for form checks\u2014captures members who want flexibility without committing to a full class, and fills dead air in your quietest days.\n\n2. **Run a Saturday morning \"Strength Basics\" workshop (45 mins, capped at 8 people)** in the gap before or after your existing classes\u2014position it as a 4-week progressive series for newer members, bridges the gap between personal training and Build classes, and creates a pipeline.\n\n**To lift quieter classes (Barbelle, Engine, Capacity, Plate):**\n\n3. **Trial \"Barbelle + Mobility combo packages\"**: Offer members a discounted 2-class bundle (Barbelle + the following Mobility session) and invite Build: Upper regulars directly\u2014Barbelle is isolation-focused and complements upper body work, but needs positioning as a recovery/accessory tool rather than standalone, plus Mobility is underperforming and needs traffic.",
       "capacity": [
