@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T07:46:10.401024+00:00",
+  "generated_at": "2026-08-14T14:00:47.288347+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,22 +7,10 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-08-14",
-    "event_count": 4,
-    "urgent_count": 0,
-    "enquiry_count": 2,
+    "event_count": 3,
+    "urgent_count": 2,
+    "enquiry_count": 1,
     "calendar": [
-      {
-        "title": "Pre natal appointment",
-        "time": "10:00am",
-        "start_raw": "2026-08-14T10:00:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "danielle_boyd_3@hotmail.com"
-        ],
-        "description": "Birth choices - labour options",
-        "location": "Royal Jubilee Maternity Hospital, E, 274 Grosvenor Rd, Belfast BT12 6BA, UK",
-        "prep": "Review birth choices literature; prepare questions on labour options for discussion."
-      },
       {
         "title": "Forge 10th Year Anniversary - Cinema Meetup",
         "time": "all day",
@@ -35,7 +23,7 @@
         ],
         "description": "",
         "location": "The Playhouse Portrush, 47 Main St, Portrush BT56 8BN, UK",
-        "prep": "Confirm cinema booking, ticket count, seat arrangement, and member communication plan."
+        "prep": "Review birth choices literature; prepare questions on labour options for discussion."
       },
       {
         "title": "LOWER 2",
@@ -45,7 +33,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm cinema booking, ticket count, seat arrangement, and member communication plan."
       },
       {
         "title": "Forge 10 Year Birthday Week",
@@ -57,18 +45,32 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm venue bookings, decorations, catering, social media schedule, member invitations sent."
+        "prep": ""
       }
     ],
-    "urgent": [],
-    "important": [
+    "urgent": [
       {
-        "from": "AwakenClub Newsletter",
-        "subject": "Upcoming Opportunities' and Events in August and September",
-        "snippet": "Events, opportunities, and supports you won&#39;t want to miss \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f",
-        "id": "19ff5a0eeac67307"
+        "from": "Danielle Boyd",
+        "from_raw": "Danielle Boyd <danielle_boyd_3@hotmail.com>",
+        "subject": "Accepted: Midwife appt Antrim",
+        "snippet": "",
+        "id": "19fff7fc88df3f77",
+        "thread_id": "19fff7fc88df3f77",
+        "msg_count": 1,
+        "draft_id": "r2839315061193193742"
+      },
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Confirmation of your TShirt Studio order - 3853752",
+        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3853752 Your order has been received as follows: Items Value T-Shirt (Value T-Shirt)",
+        "id": "19fff5155f7b58e9",
+        "thread_id": "19fff5155f7b58e9",
+        "msg_count": 1,
+        "draft_id": "r6180353495862040982"
       }
     ],
+    "important": [],
     "enquiries": [
       {
         "name": "Evri Support",
@@ -77,14 +79,6 @@
         "path": "",
         "snippet": "Update 260811-031271 Dear Grace, Thank you for your reply regarding parcel reference H0758A0005988507. I&#39;m sorry to hear your parcel still hasn&#39;t been located, I have raised this direct to the",
         "id": "19ffaec935fa68ac"
-      },
-      {
-        "name": "Evri Support",
-        "email": "",
-        "subject": "Evri Enquiry - [Incident: 260811-031271]",
-        "path": "",
-        "snippet": "Enquiry Created Hi Grace, Thank you for getting in touch with your enquiry which you raised on the Evri website via our Digital Assistant. As soon as you submitted your enquiry details it was sent to",
-        "id": "19ff10af20889c99"
       }
     ],
     "checkins": {
@@ -138,8 +132,8 @@
         "joannehenry28@btinternet.com": "2025-12-07",
         "catherinemarygavin@gmail.com": "2025-12-07",
         "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "sarah@nourishandnurtu.re": "2025-11-23",
         "eiliskearns13@gmail.com": "2025-11-23",
+        "sarah@nourishandnurtu.re": "2025-11-23",
         "rosiemcclen@icloud.com": "2025-11-23",
         "hilaryachristie@outlook.com": "2025-11-23",
         "galtracey@live.com": "2025-11-13",
@@ -214,10 +208,46 @@
   },
   "ghl": [
     {
+      "name": "VIVIAN MORRISON",
+      "channel": "Phone",
+      "message": "Perfect",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "TESJQ4g0PJHWbd59neF3",
+      "contact_id": "YTlYN8fJzrhGZdu7IkCN"
+    },
+    {
+      "name": "eiliskearns13@gmail.com",
+      "channel": "Phone",
+      "message": "",
+      "age": "1h ago",
+      "unread": 0,
+      "conv_id": "Lnp3Hyp4T8042PGcK946",
+      "contact_id": "etoQQFDgeaNcobvoTKd3"
+    },
+    {
+      "name": "Lorna McMullan",
+      "channel": "Phone",
+      "message": "\ud83d\udd25",
+      "age": "1h ago",
+      "unread": 3,
+      "conv_id": "Xz3SRkAl5w8IEiirtO2P",
+      "contact_id": "e0G0l2bWOPW6aGvJwUEi"
+    },
+    {
+      "name": "Oliver Jowa",
+      "channel": "Phone",
+      "message": "\ud83c\udf89 Congratulations!\n\nWe're pleased to announce that your page is eligible for a free Meta Verified badge.\n\n\u2705 This badge confirms your credibility and authenticity, helping you build trust with new cust",
+      "age": "5h ago",
+      "unread": 1,
+      "conv_id": "UftyVprJeQVH3T5rfefv",
+      "contact_id": "yj1Nw7AsKhwFOBqiQc3f"
+    },
+    {
       "name": "Sarah Calvin",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "0h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "jNYCyqjp8OzEb92fDnUo",
       "contact_id": "A5hgsD1mCFuSKr8ppc4Q"
@@ -226,55 +256,19 @@
       "name": "STRYD.Media\u2122",
       "channel": "Phone",
       "message": "kadowex.com",
-      "age": "10h ago",
+      "age": "16h ago",
       "unread": 6,
       "conv_id": "YEmmsKp4HOYbLkKYYFWq",
       "contact_id": "l3bVJnGmIY2sh4M1bJVs"
     },
     {
-      "name": "Joan Mc Williams",
-      "channel": "Phone",
-      "message": "Congratulations to u both  xx\ud83e\udd70",
-      "age": "11h ago",
-      "unread": 5,
-      "conv_id": "5kAy2hHev9B9URyK9xWL",
-      "contact_id": "lSMNBWovre7Gb2aTJvU5"
-    },
-    {
       "name": "Marie Mccrellis",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "12h ago",
+      "age": "18h ago",
       "unread": 1,
       "conv_id": "zlrBdiXXmvhv8BdKMQ8S",
       "contact_id": "xJ6aEWeNUCc3mb2OvsKU"
-    },
-    {
-      "name": "Eilis Kearns",
-      "channel": "Phone",
-      "message": "\ud83d\udd0aVoice Note",
-      "age": "12h ago",
-      "unread": 1,
-      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
-      "contact_id": "SL5iEZ30xiRwJF12kd5S"
-    },
-    {
-      "name": "VIVIAN MORRISON",
-      "channel": "Phone",
-      "message": "Great thanks",
-      "age": "13h ago",
-      "unread": 1,
-      "conv_id": "TESJQ4g0PJHWbd59neF3",
-      "contact_id": "YTlYN8fJzrhGZdu7IkCN"
-    },
-    {
-      "name": "Rachel Linton",
-      "channel": "Phone",
-      "message": "I can do Monday, Wednesday, Thursday and Friday next week. I\u2019m free after the 10am class on Monday, I\u2019m free Wednesday morning and afternoon. Thursday morning and Friday morning \ud83d\ude0a",
-      "age": "14h ago",
-      "unread": 1,
-      "conv_id": "AXTFgrJmlqvYdUwIL3HI",
-      "contact_id": "iaiVoMYXKoW3c6rkCLF7"
     },
     {
       "name": "Zara Morrison",
@@ -293,15 +287,6 @@
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
-    },
-    {
-      "name": "everymomentanopportunity",
-      "channel": "Phone",
-      "message": "\ud83d\udc4f",
-      "age": "2d ago",
-      "unread": 21,
-      "conv_id": "bCO1UnwwejQ3wgV2B5KB",
-      "contact_id": "VjwHTdCoNMXKrbzPdSx0"
     }
   ],
   "jumpstart": {
@@ -4449,6 +4434,13 @@
             "built": false
           },
           {
+            "task": "Clothes Stock Tracker",
+            "type": "Facilities",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
             "task": "Update Member Mastersheet Tracker",
             "type": "Clients",
             "sop": "Forge Master Member Tracker",
@@ -4636,13 +4628,6 @@
             "sop": "Warmups and Cooldowns SOP https://canva.link/rdamphvgb76et2s FOR Q3",
             "owner": "GS /JH / EK",
             "built": true
-          },
-          {
-            "task": "New Quarter Program Launch",
-            "type": "Coaches",
-            "sop": "",
-            "owner": "GS /JH / EK",
-            "built": false
           }
         ]
       }
@@ -4660,12 +4645,12 @@
         },
         {
           "type": "Coaches",
-          "total": 24,
+          "total": 23,
           "built": 20
         },
         {
           "type": "Facilities",
-          "total": 6,
+          "total": 7,
           "built": 5
         },
         {
@@ -4707,6 +4692,13 @@
         "type": "Facilities",
         "sop": "",
         "owner": "GS / JH",
+        "built": false
+      },
+      {
+        "task": "Clothes Stock Tracker",
+        "type": "Facilities",
+        "sop": "",
+        "owner": "GS /JH / EK",
         "built": false
       },
       {
@@ -4777,13 +4769,6 @@
         "type": "Clients",
         "sop": "",
         "owner": "",
-        "built": false
-      },
-      {
-        "task": "New Quarter Program Launch",
-        "type": "Coaches",
-        "sop": "",
-        "owner": "GS /JH / EK",
         "built": false
       }
     ],
@@ -4962,7 +4947,9 @@
       "sharon mcauley": "U0BNNGUJHJ7",
       "sheena": "U0BNWKAUSRJ",
       "lorraine kelly": "U0BP0LES2D8",
-      "claire martin": "U0BPR734WKT"
+      "claire martin": "U0BPR734WKT",
+      "megan morrison": "U0BQBBSQ125",
+      "vivian": "U0BQCNL23GU"
     }
   },
   "kpi": {
@@ -6512,8 +6499,8 @@
     }
   },
   "teamup": {
-    "total_members": 155,
-    "recurring": 105,
+    "total_members": 157,
+    "recurring": 106,
     "recurring_members": [
       {
         "id": 10803724,
@@ -6880,6 +6867,10 @@
         "name": "Sharon Smyth"
       },
       {
+        "id": 13361715,
+        "name": "Sheila Lundy"
+      },
+      {
         "id": 13119520,
         "name": "Siobhan Honeyford"
       },
@@ -6936,7 +6927,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 19,
+    "trial": 21,
     "trial_members": [
       {
         "id": 13442966,
@@ -6995,16 +6986,20 @@
         "name": "Lorraine Kelly"
       },
       {
-        "id": 13539733,
-        "name": "Lynda Archibald"
-      },
-      {
         "id": 13542263,
         "name": "Lynda Wright"
       },
       {
+        "id": 13667307,
+        "name": "Megan Morrison"
+      },
+      {
         "id": 13553225,
         "name": "Rachel Linton"
+      },
+      {
+        "id": 13414335,
+        "name": "Rosie Mc Fetridge"
       },
       {
         "id": 13602153,
@@ -7013,9 +7008,13 @@
       {
         "id": 13642081,
         "name": "Sheena Mulholland"
+      },
+      {
+        "id": 13677712,
+        "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 21,
+    "new_this_month": 24,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -7813,8 +7812,8 @@
     ],
     "cancelled_ytd": 39,
     "churn_rate": 2.0,
-    "avg_member_price": 136.77,
-    "monthly_recurring_revenue": 13814.0,
+    "avg_member_price": 136.94,
+    "monthly_recurring_revenue": 13968.0,
     "avg_tenure_months": 8.8,
     "cancelled_last_month": 9,
     "cancelled_members": [
@@ -7867,7 +7866,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 67,
+        "count": 68,
         "members": [
           {
             "id": 10803724,
@@ -8098,6 +8097,10 @@
             "name": "Sharon Kirk"
           },
           {
+            "id": 13361715,
+            "name": "Sheila Lundy"
+          },
+          {
             "id": 13119520,
             "name": "Siobhan Honeyford"
           },
@@ -8279,7 +8282,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 19,
+        "count": 21,
         "members": [
           {
             "id": 13442966,
@@ -8338,16 +8341,20 @@
             "name": "Lorraine Kelly"
           },
           {
-            "id": 13539733,
-            "name": "Lynda Archibald"
-          },
-          {
             "id": 13542263,
             "name": "Lynda Wright"
           },
           {
+            "id": 13667307,
+            "name": "Megan Morrison"
+          },
+          {
             "id": 13553225,
             "name": "Rachel Linton"
+          },
+          {
+            "id": 13414335,
+            "name": "Rosie Mc Fetridge"
           },
           {
             "id": 13602153,
@@ -8356,6 +8363,10 @@
           {
             "id": 13642081,
             "name": "Sheena Mulholland"
+          },
+          {
+            "id": 13677712,
+            "name": "VIVIAN MORRISON"
           }
         ]
       },
@@ -8695,7 +8706,7 @@
           },
           {
             "day": "Friday",
-            "count": 458
+            "count": 468
           },
           {
             "day": "Thursday",
@@ -8721,7 +8732,7 @@
           },
           {
             "day": "Friday",
-            "count": 458
+            "count": 468
           },
           {
             "day": "Tuesday",
@@ -8773,7 +8784,7 @@
           },
           {
             "name": "Mobility",
-            "count": 214
+            "count": 224
           },
           {
             "name": "Circuits",
@@ -8892,7 +8903,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2815
+        "total_attended": 2825
       },
       "last_30_days": {
         "top_days": [
@@ -8914,7 +8925,7 @@
           },
           {
             "day": "Friday",
-            "count": 162
+            "count": 172
           }
         ],
         "bottom_days": [
@@ -8924,7 +8935,7 @@
           },
           {
             "day": "Friday",
-            "count": 162
+            "count": 172
           },
           {
             "day": "Monday",
@@ -8979,12 +8990,12 @@
             "count": 35
           },
           {
-            "name": "Mobility",
-            "count": 72
-          },
-          {
             "name": "Strongevity",
             "count": 80
+          },
+          {
+            "name": "Mobility",
+            "count": 82
           },
           {
             "name": "Plate",
@@ -9103,7 +9114,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1156
+        "total_attended": 1166
       },
       "suggestion": "**For quiet studio time:**\n\n1. Launch a paid \"Open Studio\" block (30-45 min) on Monday and Thursday evenings between class gaps \u2014 members can book PT, use equipment unsupervised, or do their own workout at a lower rate than full PT, filling dead time and capturing revenue from members who can't commit to scheduled classes.\n\n2. Run a weekly \"Mobility + Recovery\" workshop on Saturday mornings (quietest day) led by an instructor \u2014 position it as a paid add-on or member perk, filling the studio while building habit around low-attendance Mobility class content.\n\n**For quieter classes:**\n\n3. Trial moving **Engine** and **Barbelle** to Tuesday or Wednesday mornings (peak attendance days) at an earlier or later slot than current Build classes \u2014 test if time-of-week is the barrier rather than the class format itself, and promote them as \"try a new strength style\" to Build regulars.",
       "capacity": [
@@ -9371,7 +9382,7 @@
       },
       {
         "month": "2026-06",
-        "active": 130,
+        "active": 131,
         "churn": 3.4,
         "by_type": {
           "Empower": 65,
@@ -9382,7 +9393,7 @@
           "1:2 PT 4 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "6 Week Jumpstart": 4,
+          "6 Week Jumpstart": 5,
           "Strongevity": 3,
           "4 Class Pass": 1,
           "2 Sessions": 1,
@@ -9415,10 +9426,10 @@
       },
       {
         "month": "2026-08",
-        "active": 159,
+        "active": 161,
         "churn": 9.4,
         "by_type": {
-          "Empower": 68,
+          "Empower": 69,
           "8 PT Sessions": 3,
           "4 PT Sessions": 11,
           "Evolve": 5,
@@ -9426,7 +9437,7 @@
           "1:2 PT 4 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "6 Week Jumpstart": 19,
+          "6 Week Jumpstart": 21,
           "Strongevity": 7,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -9479,13 +9490,6 @@
         "membership": "Elevate",
         "days_absent": 13,
         "last_seen": "2026-08-01"
-      },
-      {
-        "id": 11100381,
-        "name": "Elaine Adair",
-        "membership": "Elevate",
-        "days_absent": 65,
-        "last_seen": "2026-06-10"
       },
       {
         "id": 12745323,
@@ -9610,6 +9614,16 @@
     "celebrations": {
       "first_week": [
         {
+          "name": "VIVIAN MORRISON",
+          "days_in": 0,
+          "start_date": "2026-08-14"
+        },
+        {
+          "name": "Megan Morrison",
+          "days_in": 0,
+          "start_date": "2026-08-14"
+        },
+        {
           "name": "Claire Martin",
           "days_in": 2,
           "start_date": "2026-08-12"
@@ -9632,6 +9646,11 @@
       ],
       "new_members": [
         {
+          "name": "Sheila Lundy",
+          "days_in": 0,
+          "start_date": "2026-08-14"
+        },
+        {
           "name": "Rachel Linton",
           "days_in": 1,
           "start_date": "2026-08-13"
@@ -9647,12 +9666,12 @@
           "start_date": "2026-08-03"
         },
         {
-          "name": "Louise Farley",
+          "name": "Rosie Mc Fetridge",
           "days_in": 12,
           "start_date": "2026-08-02"
         },
         {
-          "name": "Rosie Mc Fetridge",
+          "name": "Louise Farley",
           "days_in": 12,
           "start_date": "2026-08-02"
         },
@@ -9816,7 +9835,13 @@
           "status": "attended"
         }
       ],
-      "upcoming": []
+      "upcoming": [
+        {
+          "name": "Rachel Linton",
+          "date": "2026-08-19",
+          "status": "registered"
+        }
+      ]
     },
     "lead_bookings": [
       {
@@ -10767,7 +10792,7 @@
         "id": 13414335,
         "name": "Rosie Mc Fetridge",
         "email": "rosie3387@hotmail.co.uk",
-        "join_date": "2026-08-02",
+        "join_date": "2026-06-29",
         "membership": "Empower",
         "class_count": 16,
         "last_momentum": null
@@ -10842,6 +10867,15 @@
         "join_date": "2026-07-29",
         "membership": "4 PT Sessions",
         "class_count": 1,
+        "last_momentum": null
+      },
+      {
+        "id": 13361715,
+        "name": "Sheila Lundy",
+        "email": "sheilalundy@btinternet.com",
+        "join_date": "2026-08-14",
+        "membership": "Empower",
+        "class_count": 19,
         "last_momentum": null
       },
       {
@@ -22927,15 +22961,15 @@
       },
       {
         "month": "2026-08",
-        "revenue": 12321.79,
-        "expenses": 13928.98,
-        "profit": -1607.19,
-        "profit_pct": -13.0,
+        "revenue": 13432.65,
+        "expenses": 14143.37,
+        "profit": -710.72,
+        "profit_pct": -5.3,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 12316.63
+              "amount": 13427.49
             },
             {
               "name": "Business Entertainment",
@@ -22957,15 +22991,15 @@
             },
             {
               "name": "Other",
-              "amount": 871.82
+              "amount": 1071.22
+            },
+            {
+              "name": "Equipment",
+              "amount": 687.79
             },
             {
               "name": "Workplace",
               "amount": 680.0
-            },
-            {
-              "name": "Equipment",
-              "amount": 672.8
             },
             {
               "name": "None",
@@ -23002,6 +23036,66 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "628b960e-9b79-423a-953b-9d71fc4eb4f3",
+            "date": "2026-08-14",
+            "name": "Mol*mirafit",
+            "ref": "MOL*MIRAFIT",
+            "amount": 33.85,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "62887453-863e-444f-9ad3-7a0581410233",
+            "date": "2026-08-14",
+            "name": "Sp Seller Vision",
+            "ref": "SP SELLER VISION",
+            "amount": 14.99,
+            "direction": "OUT",
+            "category": "Equipment",
+            "internal": false
+          },
+          {
+            "uid": "62140ac4-2fe1-4a74-8052-86557ece7030",
+            "date": "2026-08-14",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 1000.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": true
+          },
+          {
+            "uid": "6205e8d7-87ed-42e2-95f3-a25d69346b10",
+            "date": "2026-08-14",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-FVJP7",
+            "amount": 1110.86,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "6148d5e4-34d6-4b0e-b415-ab93d51d88e6",
+            "date": "2026-08-14",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 165.55,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "6146fa14-22f0-4777-89b8-7a99d8fa26ab",
+            "date": "2026-08-14",
+            "name": "Corp tax 25/26",
+            "ref": "",
+            "amount": 1000.0,
+            "direction": "IN",
+            "category": "Transfers",
+            "internal": true
+          },
           {
             "uid": "61143107-3252-4d79-bf0b-52076f4ddd17",
             "date": "2026-08-14",
@@ -23676,7 +23770,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 61.61,
+    "cash_position": 958.08,
     "available": 0.0,
     "reserves": [
       {
@@ -23697,7 +23791,7 @@
       }
     ],
     "earmarked": 15377.0,
-    "total_cash": 15438.61,
+    "total_cash": 16335.08,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23725,9 +23819,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 22649.96,
-    "cash_out_30": 21904.74,
-    "net_30": 745.22,
+    "cash_in_30": 23760.82,
+    "cash_out_30": 22119.13,
+    "net_30": 1641.69,
     "as_of": "2026-08-14"
   },
   "gocardless": {
@@ -23892,8 +23986,8 @@
       },
       {
         "month": "2026-08",
-        "collected": 130.0,
-        "payments": 10
+        "collected": 145.0,
+        "payments": 11
       }
     ],
     "failed": [
@@ -24062,6 +24156,13 @@
   "tshirt": {
     "configured": true,
     "orders": [
+      {
+        "date": "2026-08-14",
+        "order_no": "",
+        "total": "\u00a3169.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
       {
         "date": "2026-08-07",
         "order_no": "",
@@ -24719,17 +24820,10 @@
         "total": "\u00a329.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-08-14",
-        "order_no": "",
-        "total": "\u00a3139.85",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
     "count": 95,
-    "total_spend": 8799.9,
+    "total_spend": 8829.05,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": {

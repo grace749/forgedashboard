@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T07:46:10.401024+00:00",
+  "generated_at": "2026-08-14T14:00:47.288347+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4009,7 +4009,9 @@
       "sharon mcauley": "U0BNNGUJHJ7",
       "sheena": "U0BNWKAUSRJ",
       "lorraine kelly": "U0BP0LES2D8",
-      "claire martin": "U0BPR734WKT"
+      "claire martin": "U0BPR734WKT",
+      "megan morrison": "U0BQBBSQ125",
+      "vivian": "U0BQCNL23GU"
     }
   },
   "staff": {
@@ -4464,8 +4466,8 @@
     }
   },
   "teamup": {
-    "total_members": 155,
-    "recurring": 105,
+    "total_members": 157,
+    "recurring": 106,
     "recurring_members": [
       {
         "id": 10803724,
@@ -4832,6 +4834,10 @@
         "name": "Sharon Smyth"
       },
       {
+        "id": 13361715,
+        "name": "Sheila Lundy"
+      },
+      {
         "id": 13119520,
         "name": "Siobhan Honeyford"
       },
@@ -4888,7 +4894,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 19,
+    "trial": 21,
     "trial_members": [
       {
         "id": 13442966,
@@ -4947,16 +4953,20 @@
         "name": "Lorraine Kelly"
       },
       {
-        "id": 13539733,
-        "name": "Lynda Archibald"
-      },
-      {
         "id": 13542263,
         "name": "Lynda Wright"
       },
       {
+        "id": 13667307,
+        "name": "Megan Morrison"
+      },
+      {
         "id": 13553225,
         "name": "Rachel Linton"
+      },
+      {
+        "id": 13414335,
+        "name": "Rosie Mc Fetridge"
       },
       {
         "id": 13602153,
@@ -4965,9 +4975,13 @@
       {
         "id": 13642081,
         "name": "Sheena Mulholland"
+      },
+      {
+        "id": 13677712,
+        "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 21,
+    "new_this_month": 24,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -5765,8 +5779,8 @@
     ],
     "cancelled_ytd": 39,
     "churn_rate": 2.0,
-    "avg_member_price": 136.77,
-    "monthly_recurring_revenue": 13814.0,
+    "avg_member_price": 136.94,
+    "monthly_recurring_revenue": 13968.0,
     "avg_tenure_months": 8.8,
     "cancelled_last_month": 9,
     "cancelled_members": [
@@ -5819,7 +5833,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 67,
+        "count": 68,
         "members": [
           {
             "id": 10803724,
@@ -6050,6 +6064,10 @@
             "name": "Sharon Kirk"
           },
           {
+            "id": 13361715,
+            "name": "Sheila Lundy"
+          },
+          {
             "id": 13119520,
             "name": "Siobhan Honeyford"
           },
@@ -6231,7 +6249,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 19,
+        "count": 21,
         "members": [
           {
             "id": 13442966,
@@ -6290,16 +6308,20 @@
             "name": "Lorraine Kelly"
           },
           {
-            "id": 13539733,
-            "name": "Lynda Archibald"
-          },
-          {
             "id": 13542263,
             "name": "Lynda Wright"
           },
           {
+            "id": 13667307,
+            "name": "Megan Morrison"
+          },
+          {
             "id": 13553225,
             "name": "Rachel Linton"
+          },
+          {
+            "id": 13414335,
+            "name": "Rosie Mc Fetridge"
           },
           {
             "id": 13602153,
@@ -6308,6 +6330,10 @@
           {
             "id": 13642081,
             "name": "Sheena Mulholland"
+          },
+          {
+            "id": 13677712,
+            "name": "VIVIAN MORRISON"
           }
         ]
       },
@@ -6647,7 +6673,7 @@
           },
           {
             "day": "Friday",
-            "count": 458
+            "count": 468
           },
           {
             "day": "Thursday",
@@ -6673,7 +6699,7 @@
           },
           {
             "day": "Friday",
-            "count": 458
+            "count": 468
           },
           {
             "day": "Tuesday",
@@ -6725,7 +6751,7 @@
           },
           {
             "name": "Mobility",
-            "count": 214
+            "count": 224
           },
           {
             "name": "Circuits",
@@ -6844,7 +6870,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2815
+        "total_attended": 2825
       },
       "last_30_days": {
         "top_days": [
@@ -6866,7 +6892,7 @@
           },
           {
             "day": "Friday",
-            "count": 162
+            "count": 172
           }
         ],
         "bottom_days": [
@@ -6876,7 +6902,7 @@
           },
           {
             "day": "Friday",
-            "count": 162
+            "count": 172
           },
           {
             "day": "Monday",
@@ -6931,12 +6957,12 @@
             "count": 35
           },
           {
-            "name": "Mobility",
-            "count": 72
-          },
-          {
             "name": "Strongevity",
             "count": 80
+          },
+          {
+            "name": "Mobility",
+            "count": 82
           },
           {
             "name": "Plate",
@@ -7055,7 +7081,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1156
+        "total_attended": 1166
       },
       "suggestion": "**For quiet studio time:**\n\n1. Launch a paid \"Open Studio\" block (30-45 min) on Monday and Thursday evenings between class gaps \u2014 members can book PT, use equipment unsupervised, or do their own workout at a lower rate than full PT, filling dead time and capturing revenue from members who can't commit to scheduled classes.\n\n2. Run a weekly \"Mobility + Recovery\" workshop on Saturday mornings (quietest day) led by an instructor \u2014 position it as a paid add-on or member perk, filling the studio while building habit around low-attendance Mobility class content.\n\n**For quieter classes:**\n\n3. Trial moving **Engine** and **Barbelle** to Tuesday or Wednesday mornings (peak attendance days) at an earlier or later slot than current Build classes \u2014 test if time-of-week is the barrier rather than the class format itself, and promote them as \"try a new strength style\" to Build regulars.",
       "capacity": [
@@ -7323,7 +7349,7 @@
       },
       {
         "month": "2026-06",
-        "active": 130,
+        "active": 131,
         "churn": 3.4,
         "by_type": {
           "Empower": 65,
@@ -7334,7 +7360,7 @@
           "1:2 PT 4 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "6 Week Jumpstart": 4,
+          "6 Week Jumpstart": 5,
           "Strongevity": 3,
           "4 Class Pass": 1,
           "2 Sessions": 1,
@@ -7367,10 +7393,10 @@
       },
       {
         "month": "2026-08",
-        "active": 159,
+        "active": 161,
         "churn": 9.4,
         "by_type": {
-          "Empower": 68,
+          "Empower": 69,
           "8 PT Sessions": 3,
           "4 PT Sessions": 11,
           "Evolve": 5,
@@ -7378,7 +7404,7 @@
           "1:2 PT 4 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "6 Week Jumpstart": 19,
+          "6 Week Jumpstart": 21,
           "Strongevity": 7,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -7431,13 +7457,6 @@
         "membership": "Elevate",
         "days_absent": 13,
         "last_seen": "2026-08-01"
-      },
-      {
-        "id": 11100381,
-        "name": "Elaine Adair",
-        "membership": "Elevate",
-        "days_absent": 65,
-        "last_seen": "2026-06-10"
       },
       {
         "id": 12745323,
@@ -7562,6 +7581,16 @@
     "celebrations": {
       "first_week": [
         {
+          "name": "VIVIAN MORRISON",
+          "days_in": 0,
+          "start_date": "2026-08-14"
+        },
+        {
+          "name": "Megan Morrison",
+          "days_in": 0,
+          "start_date": "2026-08-14"
+        },
+        {
           "name": "Claire Martin",
           "days_in": 2,
           "start_date": "2026-08-12"
@@ -7584,6 +7613,11 @@
       ],
       "new_members": [
         {
+          "name": "Sheila Lundy",
+          "days_in": 0,
+          "start_date": "2026-08-14"
+        },
+        {
           "name": "Rachel Linton",
           "days_in": 1,
           "start_date": "2026-08-13"
@@ -7599,12 +7633,12 @@
           "start_date": "2026-08-03"
         },
         {
-          "name": "Louise Farley",
+          "name": "Rosie Mc Fetridge",
           "days_in": 12,
           "start_date": "2026-08-02"
         },
         {
-          "name": "Rosie Mc Fetridge",
+          "name": "Louise Farley",
           "days_in": 12,
           "start_date": "2026-08-02"
         },
@@ -7768,7 +7802,13 @@
           "status": "attended"
         }
       ],
-      "upcoming": []
+      "upcoming": [
+        {
+          "name": "Rachel Linton",
+          "date": "2026-08-19",
+          "status": "registered"
+        }
+      ]
     },
     "lead_bookings": [
       {
@@ -8719,7 +8759,7 @@
         "id": 13414335,
         "name": "Rosie Mc Fetridge",
         "email": "rosie3387@hotmail.co.uk",
-        "join_date": "2026-08-02",
+        "join_date": "2026-06-29",
         "membership": "Empower",
         "class_count": 16,
         "last_momentum": null
@@ -8794,6 +8834,15 @@
         "join_date": "2026-07-29",
         "membership": "4 PT Sessions",
         "class_count": 1,
+        "last_momentum": null
+      },
+      {
+        "id": 13361715,
+        "name": "Sheila Lundy",
+        "email": "sheilalundy@btinternet.com",
+        "join_date": "2026-08-14",
+        "membership": "Empower",
+        "class_count": 19,
         "last_momentum": null
       },
       {
@@ -9005,6 +9054,13 @@
   "tshirt": {
     "configured": true,
     "orders": [
+      {
+        "date": "2026-08-14",
+        "order_no": "",
+        "total": "\u00a3169.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
       {
         "date": "2026-08-07",
         "order_no": "",
@@ -9662,17 +9718,10 @@
         "total": "\u00a329.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-08-14",
-        "order_no": "",
-        "total": "\u00a3139.85",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
     "count": 95,
-    "total_spend": 8799.9,
+    "total_spend": 8829.05,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
