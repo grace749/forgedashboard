@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:00:48.987265+00:00",
+  "generated_at": "2026-08-14T07:46:10.401024+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -768,7 +768,7 @@
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
-        "welcome_pack": false,
+        "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
@@ -832,7 +832,7 @@
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
-        "welcome_pack": false,
+        "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
@@ -6647,7 +6647,7 @@
           },
           {
             "day": "Friday",
-            "count": 448
+            "count": 458
           },
           {
             "day": "Thursday",
@@ -6673,7 +6673,7 @@
           },
           {
             "day": "Friday",
-            "count": 448
+            "count": 458
           },
           {
             "day": "Tuesday",
@@ -6698,12 +6698,12 @@
             "count": 339
           },
           {
-            "name": "Circuits",
-            "count": 227
+            "name": "Plate",
+            "count": 229
           },
           {
-            "name": "Plate",
-            "count": 219
+            "name": "Circuits",
+            "count": 227
           }
         ],
         "bottom_classes": [
@@ -6728,8 +6728,8 @@
             "count": 214
           },
           {
-            "name": "Plate",
-            "count": 219
+            "name": "Circuits",
+            "count": 227
           }
         ],
         "top_slots": [
@@ -6844,7 +6844,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2805
+        "total_attended": 2815
       },
       "last_30_days": {
         "top_days": [
@@ -6866,7 +6866,7 @@
           },
           {
             "day": "Friday",
-            "count": 152
+            "count": 162
           }
         ],
         "bottom_days": [
@@ -6876,7 +6876,7 @@
           },
           {
             "day": "Friday",
-            "count": 152
+            "count": 162
           },
           {
             "day": "Monday",
@@ -6913,8 +6913,8 @@
             "count": 95
           },
           {
-            "name": "Strongevity",
-            "count": 80
+            "name": "Plate",
+            "count": 88
           }
         ],
         "bottom_classes": [
@@ -6935,12 +6935,12 @@
             "count": 72
           },
           {
-            "name": "Plate",
-            "count": 78
-          },
-          {
             "name": "Strongevity",
             "count": 80
+          },
+          {
+            "name": "Plate",
+            "count": 88
           }
         ],
         "top_slots": [
@@ -7055,7 +7055,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1146
+        "total_attended": 1156
       },
       "suggestion": "**For quiet studio time:**\n\n1. Launch a paid \"Open Studio\" block (30-45 min) on Monday and Thursday evenings between class gaps \u2014 members can book PT, use equipment unsupervised, or do their own workout at a lower rate than full PT, filling dead time and capturing revenue from members who can't commit to scheduled classes.\n\n2. Run a weekly \"Mobility + Recovery\" workshop on Saturday mornings (quietest day) led by an instructor \u2014 position it as a paid add-on or member perk, filling the studio while building habit around low-attendance Mobility class content.\n\n**For quieter classes:**\n\n3. Trial moving **Engine** and **Barbelle** to Tuesday or Wednesday mornings (peak attendance days) at an earlier or later slot than current Build classes \u2014 test if time-of-week is the barrier rather than the class format itself, and promote them as \"try a new strength style\" to Build regulars.",
       "capacity": [
@@ -7071,8 +7071,8 @@
           "name": "Mobility",
           "sessions": 26,
           "cap": 16,
-          "avg_attending": 10.2,
-          "fill_rate": 84,
+          "avg_attending": 10.1,
+          "fill_rate": 83,
           "status": "healthy"
         },
         {
