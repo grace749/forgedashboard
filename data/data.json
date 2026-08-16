@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T06:55:58.998951+00:00",
+  "generated_at": "2026-08-16T14:00:49.574943+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,8 +8,8 @@
   "brief": {
     "date": "2026-08-16",
     "event_count": 20,
-    "urgent_count": 0,
-    "enquiry_count": 2,
+    "urgent_count": 1,
+    "enquiry_count": 1,
     "calendar": [
       {
         "title": "LOWER 2",
@@ -118,7 +118,7 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
-        "location": "12/12 booked",
+        "location": "11/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -237,17 +237,20 @@
         "prep": "Confirm Hope Hub collection details: items needed, delivery logistics, timeline."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Coach JoJo",
+        "from_raw": "Coach JoJo <jojo@theforge.pt>",
+        "subject": "Fwd: Invoice INV-0107 from Brew Bars Limited for Forge Female Fitness",
+        "snippet": "Coach JoJo Head Coach Forge Female Fitness P: 07519725651 E: jojo@theforge.pt | forgefemalefitness.com Unit 7, Taggarts Yard, 18 Meetinghouse Street, Ballymoney BT53 6JN (next to Lidl) facebook icon",
+        "id": "1a00a54672eef6d8",
+        "thread_id": "1a00a54672eef6d8",
+        "msg_count": 1,
+        "draft_id": "r-6665208737844190180"
+      }
+    ],
     "important": [],
     "enquiries": [
-      {
-        "name": "Evri Support",
-        "email": "",
-        "subject": "Chatbot Enquiry for H0758A0005988507",
-        "path": "",
-        "snippet": "Update 260811-031271 Dear Grace, Thank you for your reply regarding parcel reference H0758A0005988507. I&#39;m sorry to hear your parcel still hasn&#39;t been located, I have raised this direct to the",
-        "id": "19ffaec935fa68ac"
-      },
       {
         "name": "Lucinda Thompson",
         "channel": "Booked call",
@@ -261,8 +264,8 @@
     "checkins": {
       "by_email": {
         "sarah@nourishandnurtu.re": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -386,19 +389,55 @@
   },
   "ghl": [
     {
-      "name": "Lucinda Thompson",
+      "name": "Jennifer Reid",
       "channel": "Phone",
-      "message": "Great thank you\u2026 chat then..",
-      "age": "12h ago",
+      "message": "I\u2019m really enjoying it. I just need to work on confidence and worrying less about hurting myself. Had a good chat to Jo Jo about it the other night. My left middle side is weaker because of the groin ",
+      "age": "1h ago",
       "unread": 1,
-      "conv_id": "NEKsszxOYgskIAOQRRrj",
-      "contact_id": "szNe35bAxU1esJgB3f1G"
+      "conv_id": "cPvuPHCcVj18vlnSZi3P",
+      "contact_id": "UM1vGtICvgNVCNDKdAkA"
+    },
+    {
+      "name": "Elizabeth Greenaway",
+      "channel": "Phone",
+      "message": "Hi Grace,\n\nSorry I was at church when I got your message.  \nI must admit I'm rather enjoying the 6 week jumpstart.  It's great getting some me time and meeting new people.   \nI've started watching wha",
+      "age": "1h ago",
+      "unread": 2,
+      "conv_id": "Z1JjEXnxshsXv22Joew4",
+      "contact_id": "LVMDPIWXCTZN8ASWzdu2"
+    },
+    {
+      "name": "Helen Basher Logan",
+      "channel": "Phone",
+      "message": "Another booking for Motivated and ABLE",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
+      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
+    },
+    {
+      "name": "Jo",
+      "channel": "Phone",
+      "message": "We are doing something similar in strongevity atm",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "SSmsaXAmGesXC4DA1BV3",
+      "contact_id": "xa3rPNDLcMKM9VtjK91V"
+    },
+    {
+      "name": "Grace Smith",
+      "channel": "Phone",
+      "message": "https://www.instagram.com/cummins_tree_services?igsh=MWN6aDh1bmdpY2Rycw==",
+      "age": "6h ago",
+      "unread": 2,
+      "conv_id": "leaqYBjiLhuv0lhKOwxf",
+      "contact_id": "DcIu9gjOwVM5njhW8xsb"
     },
     {
       "name": "everymomentanopportunity",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "12h ago",
+      "age": "19h ago",
       "unread": 22,
       "conv_id": "bCO1UnwwejQ3wgV2B5KB",
       "contact_id": "VjwHTdCoNMXKrbzPdSx0"
@@ -443,7 +482,7 @@
       "name": "VIVIAN MORRISON",
       "channel": "Phone",
       "message": "Perfect",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 1,
       "conv_id": "TESJQ4g0PJHWbd59neF3",
       "contact_id": "YTlYN8fJzrhGZdu7IkCN"
@@ -452,7 +491,7 @@
       "name": "eiliskearns13@gmail.com",
       "channel": "Phone",
       "message": "",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 0,
       "conv_id": "Lnp3Hyp4T8042PGcK946",
       "contact_id": "etoQQFDgeaNcobvoTKd3"
@@ -461,7 +500,7 @@
       "name": "Lorna McMullan",
       "channel": "Phone",
       "message": "\ud83d\udd25",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 3,
       "conv_id": "Xz3SRkAl5w8IEiirtO2P",
       "contact_id": "e0G0l2bWOPW6aGvJwUEi"
@@ -470,7 +509,7 @@
       "name": "Oliver Jowa",
       "channel": "Phone",
       "message": "\ud83c\udf89 Congratulations!\n\nWe're pleased to announce that your page is eligible for a free Meta Verified badge.\n\n\u2705 This badge confirms your credibility and authenticity, helping you build trust with new cust",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 1,
       "conv_id": "UftyVprJeQVH3T5rfefv",
       "contact_id": "yj1Nw7AsKhwFOBqiQc3f"
@@ -483,15 +522,6 @@
       "unread": 6,
       "conv_id": "YEmmsKp4HOYbLkKYYFWq",
       "contact_id": "l3bVJnGmIY2sh4M1bJVs"
-    },
-    {
-      "name": "Marie Mccrellis",
-      "channel": "Phone",
-      "message": "\ud83d\udc4f",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "zlrBdiXXmvhv8BdKMQ8S",
-      "contact_id": "xJ6aEWeNUCc3mb2OvsKU"
     }
   ],
   "jumpstart": {
@@ -5024,13 +5054,13 @@
       {
         "user_id": "U0AU374165P",
         "text": "Thanks Grace. Not for 1 minute did I ever think I'd make it to 10 little alone 50. I am feeling the benefits of being part of the forge family although it's bee",
-        "hours": 39,
+        "hours": 46,
         "name": "Catherine Finney"
       },
       {
         "user_id": "U08N11LNT0U",
         "text": "I would like to train 3 times  a week please if thats ok",
-        "hours": 38,
+        "hours": 45,
         "name": "Catherine"
       }
     ],
@@ -24078,96 +24108,14 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 23271.67,
-    "cash_out_30": 23318.07,
-    "net_30": -46.4,
+    "cash_in_30": 21935.02,
+    "cash_out_30": 22337.89,
+    "net_30": -402.87,
     "as_of": "2026-08-16"
   },
   "gocardless": {
     "configured": true,
-    "source": "GoCardless",
-    "monthly": [
-      {
-        "month": "2025-08",
-        "collected": 11870.07,
-        "payments": 92
-      },
-      {
-        "month": "2025-09",
-        "collected": 12168.39,
-        "payments": 98
-      },
-      {
-        "month": "2025-10",
-        "collected": 12757.53,
-        "payments": 104
-      },
-      {
-        "month": "2025-11",
-        "collected": 11953.14,
-        "payments": 97
-      },
-      {
-        "month": "2025-12",
-        "collected": 13209.0,
-        "payments": 109
-      },
-      {
-        "month": "2026-01",
-        "collected": 12875.16,
-        "payments": 97
-      },
-      {
-        "month": "2026-02",
-        "collected": 13704.06,
-        "payments": 115
-      },
-      {
-        "month": "2026-03",
-        "collected": 14008.0,
-        "payments": 108
-      },
-      {
-        "month": "2026-04",
-        "collected": 16162.82,
-        "payments": 125
-      },
-      {
-        "month": "2026-05",
-        "collected": 15570.33,
-        "payments": 116
-      },
-      {
-        "month": "2026-06",
-        "collected": 15587.4,
-        "payments": 119
-      },
-      {
-        "month": "2026-07",
-        "collected": 19176.93,
-        "payments": 142
-      },
-      {
-        "month": "2026-08",
-        "collected": 10538.11,
-        "payments": 75
-      }
-    ],
-    "failed": [
-      {
-        "name": "Sabia Akbar",
-        "amount": 180.0,
-        "date": "2026-08-05",
-        "status": "failed"
-      },
-      {
-        "name": "Dympna Brogan",
-        "amount": 129.0,
-        "date": "2026-08-05",
-        "status": "failed"
-      }
-    ],
-    "failed_count": 2
+    "error": "HTTPSConnectionPool(host='api.gocardless.com', port=443): Read timed out."
   },
   "stripe": {
     "configured": true,
