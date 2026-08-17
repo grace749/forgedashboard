@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T07:12:21.558175+00:00",
+  "generated_at": "2026-08-17T14:00:49.847115+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -16,14 +16,14 @@
       {
         "month": "2026-08",
         "completed": 5,
-        "converted": 1,
-        "conv_rate": 20
+        "converted": 4,
+        "conv_rate": 80
       },
       {
         "month": "2026-07",
         "completed": 12,
-        "converted": 0,
-        "conv_rate": 0
+        "converted": 3,
+        "conv_rate": 25
       },
       {
         "month": "2026-06",
@@ -52,7 +52,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -64,8 +64,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 3,
+        "missing_checkins": 2,
+        "completed_checkins": 4,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -84,7 +84,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -96,8 +96,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 3,
+        "missing_checkins": 1,
+        "completed_checkins": 4,
         "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
@@ -116,7 +116,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -128,8 +128,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 3,
+        "missing_checkins": 1,
+        "completed_checkins": 4,
         "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
@@ -147,7 +147,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -160,8 +160,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
+        "missing_checkins": 1,
+        "completed_checkins": 3,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -251,10 +251,10 @@
         "week_on": 4,
         "days_left": 18,
         "is_active": true,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
-        "welcome_pack": false,
+        "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 2,
         "completed_checkins": 2,
@@ -275,7 +275,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -288,8 +288,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
+        "missing_checkins": 1,
+        "completed_checkins": 3,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -308,7 +308,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -320,8 +320,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "not on slack",
-        "missing_checkins": 1,
-        "completed_checkins": 3,
+        "missing_checkins": 0,
+        "completed_checkins": 4,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -338,7 +338,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -352,8 +352,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "Pending",
-        "missing_checkins": 5,
-        "completed_checkins": 1,
+        "missing_checkins": 4,
+        "completed_checkins": 2,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -370,7 +370,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -384,8 +384,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 5,
-        "completed_checkins": 1,
+        "missing_checkins": 4,
+        "completed_checkins": 2,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -402,7 +402,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -416,8 +416,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 5,
-        "completed_checkins": 1,
+        "missing_checkins": 4,
+        "completed_checkins": 2,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -434,7 +434,7 @@
         "inbody_done": true,
         "check_ins": [
           false,
-          false,
+          true,
           false,
           false,
           false,
@@ -448,8 +448,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 6,
-        "completed_checkins": 0,
+        "missing_checkins": 5,
+        "completed_checkins": 1,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -497,7 +497,7 @@
         "nutrition_sent": true,
         "inbody_done": true,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -524,12 +524,12 @@
         "cohort": "August",
         "joined": "2026-10-08",
         "end": "2026-09-21",
-        "goal": "",
+        "goal": "get stronger tone  and build confidence",
         "notes": "cant do reverse lunges. foot pain.struggles wth confidence.can suffer from anxiety",
         "nutrition_sent": false,
         "inbody_done": false,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -550,6 +550,102 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "cant do reverse lunges. foot pain.struggles wth confidence.can suffer from anxiety"
+      },
+      {
+        "name": "claire martin",
+        "cohort": "August",
+        "joined": "2026-12-08",
+        "end": "2026-09-23",
+        "goal": "loose weight tone up",
+        "notes": "adhd, fractured shoulder 2 years ago",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": null,
+        "days_left": 37,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 0,
+        "completed_checkins": 0,
+        "expected_checkins": 0,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "adhd, fractured shoulder 2 years ago"
+      },
+      {
+        "name": "megan morrison",
+        "cohort": "August",
+        "joined": "2026-08-14",
+        "end": "2026-09-25",
+        "goal": "build confidence",
+        "notes": "severe anxiety",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 39,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "severe anxiety"
+      },
+      {
+        "name": "vivian morrison",
+        "cohort": "August",
+        "joined": "2026-08-14",
+        "end": "2026-09-25",
+        "goal": "build self esteem",
+        "notes": "divorce, encouragd by womens aid to do soemthing outside of house",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 39,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "divorce, encouragd by womens aid to do soemthing outside of house"
       }
     ],
     "recent": [
@@ -637,7 +733,7 @@
         "week_on": 6,
         "days_left": -5,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
@@ -669,7 +765,7 @@
         "week_on": 6,
         "days_left": -10,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": true,
@@ -701,7 +797,7 @@
         "week_on": 6,
         "days_left": -15,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": true,
@@ -765,7 +861,7 @@
         "week_on": 6,
         "days_left": -21,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": true,
@@ -829,7 +925,7 @@
         "week_on": 6,
         "days_left": -24,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": true,
@@ -887,7 +983,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false
         ],
         "week_on": 6,
@@ -898,8 +994,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "car accident ",
-        "missing_checkins": 2,
-        "completed_checkins": 4,
+        "missing_checkins": 1,
+        "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -957,7 +1053,7 @@
         "week_on": 6,
         "days_left": -32,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": true,
@@ -1296,7 +1392,7 @@
       {
         "member": "kristina nikolova",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 5)"
+        "detail": "Missing 1 check-in(s) (on week 5)"
       },
       {
         "member": "kristina nikolova",
@@ -1306,7 +1402,7 @@
       {
         "member": "catherine brown",
         "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 6)"
+        "detail": "Missing 2 check-in(s) (on week 6)"
       },
       {
         "member": "catherine brown",
@@ -1316,7 +1412,7 @@
       {
         "member": "jacqueline crawford",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 5)"
+        "detail": "Missing 1 check-in(s) (on week 5)"
       },
       {
         "member": "jacqueline crawford",
@@ -1326,7 +1422,7 @@
       {
         "member": "Lynda Wright",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
+        "detail": "Missing 1 check-in(s) (on week 4)"
       },
       {
         "member": "Lynda Wright",
@@ -1336,7 +1432,7 @@
       {
         "member": "Lynda Archibald",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
+        "detail": "Missing 1 check-in(s) (on week 4)"
       },
       {
         "member": "Anne Graham",
@@ -1355,33 +1451,28 @@
       },
       {
         "member": "janine patton",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 4)"
-      },
-      {
-        "member": "janine patton",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
       },
       {
         "member": "Jennifer Reid",
         "type": "missing_checkin",
-        "detail": "Missing 5 check-in(s) (on week 6)"
+        "detail": "Missing 4 check-in(s) (on week 6)"
       },
       {
         "member": "Caroline Stinson",
         "type": "missing_checkin",
-        "detail": "Missing 5 check-in(s) (on week 6)"
+        "detail": "Missing 4 check-in(s) (on week 6)"
       },
       {
         "member": "Geraldine Pendleton",
         "type": "missing_checkin",
-        "detail": "Missing 5 check-in(s) (on week 6)"
+        "detail": "Missing 4 check-in(s) (on week 6)"
       },
       {
         "member": "Elizabeth Greenaway",
         "type": "missing_checkin",
-        "detail": "Missing 6 check-in(s) (on week 6)"
+        "detail": "Missing 5 check-in(s) (on week 6)"
       },
       {
         "member": "Sharon Mcauley",
@@ -1390,6 +1481,11 @@
       },
       {
         "member": "Sharon Mcauley",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "claire martin",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
       },
@@ -1397,19 +1493,87 @@
         "member": "lorraine kelly",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "megan morrison",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "megan morrison",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "vivian morrison",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "vivian morrison",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 16,
+      "active_count": 19,
       "paused_count": 1,
-      "conv_rate": 5,
-      "converted": 1,
+      "conv_rate": 32,
+      "converted": 7,
       "not_converted": 8,
       "total_complete": 22
     }
   },
   "inbody": {
     "scans": [
+      {
+        "name": "grace001",
+        "last_scan": "2026-08-17",
+        "scan_count": 10,
+        "weight": 185.3,
+        "smm": 69.4,
+        "pbf": 33.2,
+        "bmi": 29.9,
+        "tbw": 90.6,
+        "protein": 24.5,
+        "mineral": 8.8,
+        "vfa": 129.9,
+        "inbody_age": null,
+        "weight_change": -4.1,
+        "smm_change": -0.5,
+        "pbf_change": -1.0,
+        "tbw_change": -0.7,
+        "protein_change": 0.0,
+        "mineral_change": 0.0,
+        "vfa_change": -9.4,
+        "next_due": "2026-09-28",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "jackiee068",
+        "last_scan": "2026-08-17",
+        "scan_count": 1,
+        "weight": 156.9,
+        "smm": 53.6,
+        "pbf": 37.9,
+        "bmi": 28.7,
+        "tbw": 71.4,
+        "protein": 19.4,
+        "mineral": 6.7,
+        "vfa": 132.4,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-09-28",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "081sharonsmyth",
         "last_scan": "2026-08-15",
@@ -1622,30 +1786,6 @@
         "protein_change": 0.5,
         "mineral_change": 0.0,
         "vfa_change": -10.4,
-        "next_due": "2026-09-21",
-        "days_to_due": 35,
-        "overdue": false
-      },
-      {
-        "name": "grace001",
-        "last_scan": "2026-08-10",
-        "scan_count": 9,
-        "weight": 189.4,
-        "smm": 69.9,
-        "pbf": 34.2,
-        "bmi": 30.6,
-        "tbw": 91.3,
-        "protein": 24.5,
-        "mineral": 8.8,
-        "vfa": 139.3,
-        "inbody_age": null,
-        "weight_change": 1.8,
-        "smm_change": 0.2,
-        "pbf_change": 0.2,
-        "tbw_change": 0.7,
-        "protein_change": 0.0,
-        "mineral_change": 0.0,
-        "vfa_change": 2.7,
         "next_due": "2026-09-21",
         "days_to_due": 35,
         "overdue": false
@@ -3883,7 +4023,7 @@
         "overdue": true
       }
     ],
-    "total": 103,
+    "total": 104,
     "configured": true
   },
   "slack": {
@@ -4517,7 +4657,7 @@
     }
   },
   "teamup": {
-    "total_members": 154,
+    "total_members": 152,
     "recurring": 106,
     "recurring_members": [
       {
@@ -4945,7 +5085,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 19,
+    "trial": 17,
     "trial_members": [
       {
         "id": 13442966,
@@ -4962,10 +5102,6 @@
       {
         "id": 13630157,
         "name": "Claire Martin"
-      },
-      {
-        "id": 13588511,
-        "name": "Elizabeth Greenaway"
       },
       {
         "id": 13601807,
@@ -5016,15 +5152,11 @@
         "name": "Sharon McAuley"
       },
       {
-        "id": 13642081,
-        "name": "Sheena Mulholland"
-      },
-      {
         "id": 13677712,
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 23,
+    "new_this_month": 21,
     "cancellations_this_month": 3,
     "leaving_members": [
       {
@@ -6292,7 +6424,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 19,
+        "count": 17,
         "members": [
           {
             "id": 13442966,
@@ -6309,10 +6441,6 @@
           {
             "id": 13630157,
             "name": "Claire Martin"
-          },
-          {
-            "id": 13588511,
-            "name": "Elizabeth Greenaway"
           },
           {
             "id": 13601807,
@@ -6361,10 +6489,6 @@
           {
             "id": 13602153,
             "name": "Sharon McAuley"
-          },
-          {
-            "id": 13642081,
-            "name": "Sheena Mulholland"
           },
           {
             "id": 13677712,
@@ -6687,12 +6811,12 @@
             "count": 490
           },
           {
-            "day": "Thursday",
-            "count": 442
+            "day": "Monday",
+            "count": 452
           },
           {
-            "day": "Monday",
-            "count": 431
+            "day": "Thursday",
+            "count": 442
           }
         ],
         "bottom_days": [
@@ -6701,12 +6825,12 @@
             "count": 272
           },
           {
-            "day": "Monday",
-            "count": 431
-          },
-          {
             "day": "Thursday",
             "count": 442
+          },
+          {
+            "day": "Monday",
+            "count": 452
           },
           {
             "day": "Friday",
@@ -6728,7 +6852,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 403
+            "count": 414
           },
           {
             "name": "Elevate",
@@ -6758,7 +6882,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 93
+            "count": 103
           },
           {
             "name": "Plate",
@@ -6819,9 +6943,9 @@
             "day": "Monday",
             "time": "10am",
             "name": "Build: Lower",
-            "count": 72,
-            "sessions": 7,
-            "avg": 10.3,
+            "count": 83,
+            "sessions": 8,
+            "avg": 10.4,
             "label": "Monday 10am Build: Lower"
           }
         ],
@@ -6881,7 +7005,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2847
+        "total_attended": 2868
       },
       "last_30_days": {
         "top_days": [
@@ -6895,7 +7019,7 @@
           },
           {
             "day": "Monday",
-            "count": 190
+            "count": 211
           },
           {
             "day": "Friday",
@@ -6921,7 +7045,7 @@
           },
           {
             "day": "Monday",
-            "count": 190
+            "count": 211
           },
           {
             "day": "Wednesday",
@@ -6934,6 +7058,10 @@
             "count": 221
           },
           {
+            "name": "Build: Lower",
+            "count": 173
+          },
+          {
             "name": "Build: Full Body",
             "count": 164
           },
@@ -6942,16 +7070,12 @@
             "count": 163
           },
           {
-            "name": "Build: Lower",
-            "count": 162
-          },
-          {
             "name": "Circuits",
             "count": 85
           },
           {
-            "name": "Mobility",
-            "count": 72
+            "name": "Strongevity",
+            "count": 80
           }
         ],
         "bottom_classes": [
@@ -6972,12 +7096,12 @@
             "count": 66
           },
           {
-            "name": "Strongevity",
-            "count": 70
-          },
-          {
             "name": "Mobility",
             "count": 72
+          },
+          {
+            "name": "Strongevity",
+            "count": 80
           }
         ],
         "top_slots": [
@@ -7027,13 +7151,13 @@
             "label": "Thursday 7am Build: Full Body"
           },
           {
-            "day": "Friday",
-            "time": "6pm",
-            "name": "Circuits",
+            "day": "Monday",
+            "time": "10am",
+            "name": "Build: Lower",
             "count": 42,
             "sessions": 4,
             "avg": 10.5,
-            "label": "Friday 6pm Circuits"
+            "label": "Monday 10am Build: Lower"
           }
         ],
         "bottom_slots": [
@@ -7092,7 +7216,7 @@
             "label": "Saturday 9am Elevate"
           }
         ],
-        "total_attended": 1066
+        "total_attended": 1087
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Launch a paid \"Open Studio\" block (30\u201345 mins) on Monday\u2013Thursday afternoons**, positioned between PT slots and evening classes\u2014members can drop in for self-directed training, accessory work, or form coaching from a roving instructor. This captures the quieter weekday demand without requiring a full structured class.\n\n2. **Run a weekly \"Strength Basics Workshop\" (45 mins) on Saturday mornings before the quietest period**\u2014teach deadlift, squat, or bench setup to newer members in small groups (capped at 8). Saturday footfall is lowest, so a paid workshop fills dead time and builds skills that feed into Build classes later.\n\n**To lift the quietest classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday evenings** (your peak days) and pair them with a 2-week \"Try for Free\" invite to recent Elevate/Circuits attendees\u2014these quieter classes attract different energy types, so position them when the gym is busy and target members already comfortable with intensity, rather than hope they'll find a sparse Thursday slot.",
       "capacity": [
@@ -7403,7 +7527,7 @@
       },
       {
         "month": "2026-08",
-        "active": 158,
+        "active": 156,
         "churn": 8.1,
         "by_type": {
           "Empower": 69,
@@ -7414,7 +7538,7 @@
           "1:2 PT 4 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "6 Week Jumpstart": 19,
+          "6 Week Jumpstart": 17,
           "Strongevity": 6,
           "4 Class Pass": 1,
           "Well75": 10,
@@ -9799,10 +9923,22 @@
       "source": "Q4 2026"
     },
     {
+      "name": "1Thrusters",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=r8_G7rKTJ4Q",
+      "source": "Q3 2026"
+    },
+    {
       "name": "2 Kettlebell Windmill",
       "part": "Core",
       "video": "https://www.instagram.com/p/DNfm9H1RsVC/?img_index=1",
       "source": "Q4 2026"
+    },
+    {
+      "name": "20 -Might Need Small Plate For Those With Lower Back Issues",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=KUDNUYfR1TY",
+      "source": "Q3 2026"
     },
     {
       "name": "2Nd Movement",
@@ -10463,12 +10599,6 @@
       "part": "Quads",
       "video": "https://www.youtube.com/watch?v=tCqkKCxXzec",
       "source": "Q4 2026"
-    },
-    {
-      "name": "DB Heel Elevated Front Squat to Good morning",
-      "part": "Back",
-      "video": "https://www.instagram.com/p/DYw_umau99r/",
-      "source": "Q3 2026"
     },
     {
       "name": "DB Lateral Box Step Overs",
@@ -11347,6 +11477,12 @@
       "source": "Strongevity"
     },
     {
+      "name": "Lateral Taps",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DWqgYnqmJsV/",
+      "source": "Strongevity"
+    },
+    {
       "name": "Leg 90 Push Up",
       "part": "Chest",
       "video": "https://www.instagram.com/p/DFYTEImNDv7/",
@@ -11399,6 +11535,24 @@
       "part": "Quads",
       "video": "https://www.instagram.com/p/DHLzOAZJgOz/",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Lunge Wood Chop - Left",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=1LwbeBUKDqo",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lunge Wood Chop - Right",
+      "part": "Quads",
+      "video": "https://www.youtube.com/watch?v=1LwbeBUKDqo",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Lunge twists with Block",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/DWdHx9QiBTh/",
+      "source": "Strongevity"
     },
     {
       "name": "Lying 90/90 Switches",
@@ -11461,9 +11615,9 @@
       "source": "Q4 2026"
     },
     {
-      "name": "MAIN: Cable Glute Kickbacks x8 per side (opposite foot on wedge) (if they struggle with the height just do a traditional kickback with a low cable height) - TIP: Get them to put on the ankle strap on each leg before they start, saves faffing about",
-      "part": "Triceps",
-      "video": "https://www.instagram.com/p/DZA5gYsoNPi/",
+      "name": "MAIN: Bench supported single leg glute RDL",
+      "part": "Hamstrings",
+      "video": "https://www.instagram.com/reels/Dbg8OvCIR92/",
       "source": "Q3 2026"
     },
     {
@@ -11941,15 +12095,15 @@
       "source": "Q3 2026"
     },
     {
+      "name": "RDL with Ball, to Bicep Curl",
+      "part": "Biceps",
+      "video": "https://www.instagram.com/reel/DaVx1iqCtCs/",
+      "source": "Strongevity"
+    },
+    {
       "name": "Rack assisted Single leg KB RDL - - for space they need to face the rack - not go side on facing tv, they need to face the white wall behind the racks and hold on Accessory 2: DB Duck Squats",
       "part": "Hamstrings",
       "video": "https://www.youtube.com/watch?v=0iGZn-Jy0O4",
-      "source": "Q3 2026"
-    },
-    {
-      "name": "Rack supported DB RDL (same as this but take a step away from the rack facing the door, with two DB\u2019s) Accessory 2: Staggered stance KB Squat",
-      "part": "Hamstrings",
-      "video": "https://www.youtube.com/shorts/1-jVBQsuYdk",
       "source": "Q3 2026"
     },
     {
@@ -12169,6 +12323,12 @@
       "source": "Q3 2026"
     },
     {
+      "name": "Sec 34 - Stagger Everyone So They Are Along Carpet",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=48gjc54MCaE",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Second Movement",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/Cc3EOe4uGcJ/?hl=en",
@@ -12238,6 +12398,12 @@
       "name": "Single Heel Raises",
       "part": "Calves",
       "video": "https://www.instagram.com/p/DTy0WBLAQH8/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Single Leg Ball Sit to Stand",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/reels/DZu7F8SilvU/",
       "source": "Strongevity"
     },
     {
@@ -12511,6 +12677,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Supine Leg Circles Left",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/watch?v=-1GJdJWLmnk",
+      "source": "Q3 2026"
+    },
+    {
       "name": "T Spinal Twist",
       "part": "Full Body",
       "video": "https://www.youtube.com/shorts/cncdlzYmbxg",
@@ -12601,6 +12773,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Triple Low to High Ball Reach",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/reel/Db3Sn6KKaLR/",
+      "source": "Strongevity"
+    },
+    {
       "name": "Unilateral KB Swing",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DV_0PeHCOqO/?hl=en",
@@ -12665,6 +12843,18 @@
       "part": "Quads",
       "video": "https://www.youtube.com/shorts/XnroUF5mzg0",
       "source": "Q2 2026"
+    },
+    {
+      "name": "Weighted Plate plate lunges: Accessory 2: Staggered stance KB Squat",
+      "part": "Quads",
+      "video": "https://www.instagram.com/reels/DbgRakdxt7s/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Weighted Scissors",
+      "part": "Full Body",
+      "video": "https://www.youtube.com/shorts/5g2hD8jNkuI",
+      "source": "Q3 2026"
     },
     {
       "name": "Weighted Wall Sit",
