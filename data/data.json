@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T05:00:47.928604+00:00",
+  "generated_at": "2026-08-17T07:12:21.558175+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -140,7 +140,7 @@
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "12/12 booked",
+        "location": "11/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -381,7 +381,7 @@
       "name": "Denise",
       "channel": "Phone",
       "message": "I am looking for upper body  strength training but I am a wheelchair user",
-      "age": "11h ago",
+      "age": "14h ago",
       "unread": 2,
       "conv_id": "6p7q4plt3prB4yUBuC0K",
       "contact_id": "VTAQaAUAPv50ScYCMGVp"
@@ -390,7 +390,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "NI League Dates .",
-      "age": "14h ago",
+      "age": "16h ago",
       "unread": 5,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -399,7 +399,7 @@
       "name": "Jennifer Reid",
       "channel": "Phone",
       "message": "I\u2019m really enjoying it. I just need to work on confidence and worrying less about hurting myself. Had a good chat to Jo Jo about it the other night. My left middle side is weaker because of the groin ",
-      "age": "16h ago",
+      "age": "18h ago",
       "unread": 1,
       "conv_id": "cPvuPHCcVj18vlnSZi3P",
       "contact_id": "UM1vGtICvgNVCNDKdAkA"
@@ -408,7 +408,7 @@
       "name": "Elizabeth Greenaway",
       "channel": "Phone",
       "message": "Hi Grace,\n\nSorry I was at church when I got your message.  \nI must admit I'm rather enjoying the 6 week jumpstart.  It's great getting some me time and meeting new people.   \nI've started watching wha",
-      "age": "16h ago",
+      "age": "18h ago",
       "unread": 2,
       "conv_id": "Z1JjEXnxshsXv22Joew4",
       "contact_id": "LVMDPIWXCTZN8ASWzdu2"
@@ -417,7 +417,7 @@
       "name": "Grace Smith",
       "channel": "Phone",
       "message": "https://www.instagram.com/cummins_tree_services?igsh=MWN6aDh1bmdpY2Rycw==",
-      "age": "21h ago",
+      "age": "23h ago",
       "unread": 2,
       "conv_id": "leaqYBjiLhuv0lhKOwxf",
       "contact_id": "DcIu9gjOwVM5njhW8xsb"
@@ -435,7 +435,7 @@
       "name": "Eilis Kearns",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 1,
       "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
       "contact_id": "SL5iEZ30xiRwJF12kd5S"
@@ -23152,15 +23152,15 @@
       },
       {
         "month": "2026-08",
-        "revenue": 15832.65,
+        "revenue": 16585.94,
         "expenses": 17481.11,
-        "profit": -1648.46,
-        "profit_pct": -10.4,
+        "profit": -895.17,
+        "profit_pct": -5.4,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 15827.49
+              "amount": 16580.78
             },
             {
               "name": "Business Entertainment",
@@ -23227,6 +23227,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "71f023fb-ff74-4a4f-9de8-5724b85817f8",
+            "date": "2026-08-17",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 753.29,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
           {
             "uid": "6f1ecc29-0ce6-44e0-9e0b-5c6a26958b09",
             "date": "2026-08-16",
@@ -24051,7 +24061,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 420.34,
+    "cash_position": 1173.63,
     "available": 0.0,
     "reserves": [
       {
@@ -24072,7 +24082,7 @@
       }
     ],
     "earmarked": 14977.0,
-    "total_cash": 15397.34,
+    "total_cash": 16150.63,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -24100,9 +24110,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 24335.02,
-    "cash_out_30": 24375.31,
-    "net_30": -40.29,
+    "cash_in_30": 25088.31,
+    "cash_out_30": 24302.21,
+    "net_30": 786.1,
     "as_of": "2026-08-17"
   },
   "gocardless": {
@@ -26490,6 +26500,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "High Waist Marching",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/reels/DPXnhD2E6sh/",
+      "source": "Strongevity"
+    },
+    {
       "name": "Hip Circle Sliders",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DNBaR81pktZ/?img_index=2",
@@ -27664,6 +27680,12 @@
       "part": "Back",
       "video": "https://www.instagram.com/p/DYkkjJviEDz/",
       "source": "Q3 2026"
+    },
+    {
+      "name": "Single Heel Raises",
+      "part": "Calves",
+      "video": "https://www.instagram.com/p/DTy0WBLAQH8/",
+      "source": "Strongevity"
     },
     {
       "name": "Single Leg Bench to Stand",
