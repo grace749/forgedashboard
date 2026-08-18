@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T14:01:02.532184+00:00",
+  "generated_at": "2026-08-18T15:45:40.409484+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1527,6 +1527,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Grace McAllister",
+        "last_scan": "2026-08-18",
+        "scan_count": 2,
+        "weight": 170.1,
+        "smm": 62.0,
+        "pbf": 34.4,
+        "bmi": 27.5,
+        "tbw": 81.4,
+        "protein": 22.0,
+        "mineral": 8.2,
+        "vfa": 120.1,
+        "inbody_age": null,
+        "weight_change": -2.7,
+        "smm_change": -3.9,
+        "pbf_change": 3.1,
+        "tbw_change": -5.2,
+        "protein_change": -1.4,
+        "mineral_change": -0.3,
+        "vfa_change": 14.8,
+        "next_due": "2026-09-29",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "jojo002",
         "last_scan": "2026-08-18",
         "scan_count": 14,
@@ -2460,30 +2484,6 @@
         "vfa_change": null,
         "next_due": "2026-08-26",
         "days_to_due": 8,
-        "overdue": false
-      },
-      {
-        "name": "Grace McAllister",
-        "last_scan": "2026-07-14",
-        "scan_count": 1,
-        "weight": 172.8,
-        "smm": 65.9,
-        "pbf": 31.3,
-        "bmi": 27.9,
-        "tbw": 86.6,
-        "protein": 23.4,
-        "mineral": 8.5,
-        "vfa": 105.3,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-08-25",
-        "days_to_due": 7,
         "overdue": false
       },
       {
@@ -4033,13 +4033,13 @@
       {
         "user_id": "U09HG60QR7C",
         "text": "My head has been absolutely up my butt all day! Yeah so flying to Croatia tomorrow she is going away tues-friday\u2026. To some other town or something. Who knows, b",
-        "hours": 16,
+        "hours": 18,
         "name": "Melissa Traynor"
       },
       {
         "user_id": "U08TTDDAJD7",
         "text": "Got this fixed now so shouldnt happen again, if it does let me know",
-        "hours": 4,
+        "hours": 5,
         "name": "Therese Charles"
       }
     ],
@@ -9164,683 +9164,33 @@
     ]
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,
-    "orders": [
-      {
-        "date": "2026-08-14",
-        "order_no": "",
-        "total": "\u00a3169.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-08-07",
-        "order_no": "",
-        "total": "\u00a3234.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-07-22",
-        "order_no": "",
-        "total": "\u00a333.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-07-20",
-        "order_no": "",
-        "total": "\u00a347.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-07-17",
-        "order_no": "",
-        "total": "\u00a373.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-07-07",
-        "order_no": "",
-        "total": "\u00a3251.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-06-04",
-        "order_no": "",
-        "total": "\u00a335.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-05-29",
-        "order_no": "",
-        "total": "\u00a331.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-05-27",
-        "order_no": "",
-        "total": "\u00a397.80",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-05-27",
-        "order_no": "",
-        "total": "\u00a3112.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-05-21",
-        "order_no": "",
-        "total": "\u00a331.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-05-21",
-        "order_no": "",
-        "total": "\u00a3221.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-05-07",
-        "order_no": "",
-        "total": "\u00a3170.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-04-21",
-        "order_no": "",
-        "total": "\u00a3130.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-04-18",
-        "order_no": "",
-        "total": "\u00a3156.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-04-17",
-        "order_no": "",
-        "total": "\u00a316.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-04-14",
-        "order_no": "",
-        "total": "\u00a396.25",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-04-02",
-        "order_no": "",
-        "total": "\u00a3421.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-03-13",
-        "order_no": "",
-        "total": "\u00a314.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-03-12",
-        "order_no": "",
-        "total": "\u00a348.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-02-24",
-        "order_no": "",
-        "total": "\u00a394.25",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-02-24",
-        "order_no": "",
-        "total": "\u00a3187.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-02-11",
-        "order_no": "",
-        "total": "\u00a316.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-02-11",
-        "order_no": "",
-        "total": "\u00a3299.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-02-05",
-        "order_no": "",
-        "total": "\u00a3135.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-01-22",
-        "order_no": "",
-        "total": "\u00a344.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-01-20",
-        "order_no": "",
-        "total": "\u00a317.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-01-20",
-        "order_no": "",
-        "total": "\u00a3195.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2026-01-09",
-        "order_no": "",
-        "total": "\u00a3151.45",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-12-13",
-        "order_no": "",
-        "total": "\u00a397.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-12-09",
-        "order_no": "",
-        "total": "\u00a3273.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-12-01",
-        "order_no": "",
-        "total": "\u00a316.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-11-28",
-        "order_no": "3527514",
-        "total": "\u00a3104.00",
-        "items": [],
-        "title": "Order 3527514"
-      },
-      {
-        "date": "2025-11-27",
-        "order_no": "",
-        "total": "\u00a3104.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-11-25",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-11-25",
-        "order_no": "",
-        "total": "\u00a331.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-10-06",
-        "order_no": "",
-        "total": "\u00a331.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-25",
-        "order_no": "",
-        "total": "\u00a353.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-24",
-        "order_no": "",
-        "total": "\u00a3156.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-21",
-        "order_no": "",
-        "total": "\u00a384.10",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-18",
-        "order_no": "",
-        "total": "\u00a334.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-17",
-        "order_no": "",
-        "total": "\u00a3160.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-04",
-        "order_no": "",
-        "total": "\u00a331.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-09-02",
-        "order_no": "",
-        "total": "\u00a3135.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-27",
-        "order_no": "",
-        "total": "\u00a3266.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-13",
-        "order_no": "",
-        "total": "\u00a317.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-12",
-        "order_no": "",
-        "total": "\u00a353.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-12",
-        "order_no": "",
-        "total": "\u00a349.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-12",
-        "order_no": "",
-        "total": "\u00a3205.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-04",
-        "order_no": "",
-        "total": "\u00a318.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-08-04",
-        "order_no": "",
-        "total": "\u00a363.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-07-25",
-        "order_no": "",
-        "total": "\u00a3104.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-07-25",
-        "order_no": "",
-        "total": "\u00a317.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-07-25",
-        "order_no": "",
-        "total": "\u00a3169.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-07-23",
-        "order_no": "",
-        "total": "\u00a397.75",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-07-07",
-        "order_no": "",
-        "total": "\u00a383.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-06-01",
-        "order_no": "",
-        "total": "\u00a331.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-05-16",
-        "order_no": "",
-        "total": "\u00a366.75",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-04-28",
-        "order_no": "",
-        "total": "\u00a362.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-04-28",
-        "order_no": "",
-        "total": "\u00a384.10",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-04-22",
-        "order_no": "",
-        "total": "\u00a3222.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-04-22",
-        "order_no": "",
-        "total": "\u00a3149.85",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-04-14",
-        "order_no": "",
-        "total": "\u00a353.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-04-07",
-        "order_no": "",
-        "total": "\u00a3108.75",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-03-31",
-        "order_no": "",
-        "total": "\u00a329.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-03-28",
-        "order_no": "",
-        "total": "\u00a317.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-02-24",
-        "order_no": "",
-        "total": "\u00a3150.70",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-02-18",
-        "order_no": "",
-        "total": "\u00a350.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-02-17",
-        "order_no": "",
-        "total": "\u00a3422.20",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-01-27",
-        "order_no": "",
-        "total": "\u00a314.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-01-20",
-        "order_no": "",
-        "total": "\u00a362.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-01-09",
-        "order_no": "",
-        "total": "\u00a361.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-01-06",
-        "order_no": "",
-        "total": "\u00a316.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2025-01-06",
-        "order_no": "",
-        "total": "\u00a316.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-12-13",
-        "order_no": "",
-        "total": "\u00a314.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-12-11",
-        "order_no": "",
-        "total": "\u00a340.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-12-05",
-        "order_no": "",
-        "total": "\u00a316.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-12-04",
-        "order_no": "",
-        "total": "\u00a334.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-12-04",
-        "order_no": "",
-        "total": "\u00a3308.60",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-12-02",
-        "order_no": "",
-        "total": "\u00a3106.60",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-28",
-        "order_no": "",
-        "total": "\u00a338.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-25",
-        "order_no": "",
-        "total": "\u00a314.50",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-25",
-        "order_no": "",
-        "total": "\u00a374.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-21",
-        "order_no": "",
-        "total": "\u00a336.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-21",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-12",
-        "order_no": "",
-        "total": "\u00a331.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-08",
-        "order_no": "",
-        "total": "\u00a340.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-21",
-        "order_no": "",
-        "total": "\u00a338.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-17",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-12",
-        "order_no": "",
-        "total": "\u00a374.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-12",
-        "order_no": "",
-        "total": "\u00a343.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-09",
-        "order_no": "",
-        "total": "\u00a3129.40",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-09-24",
-        "order_no": "",
-        "total": "\u00a353.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-09-17",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-09-07",
-        "order_no": "",
-        "total": "\u00a329.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
-      }
-    ],
-    "count": 95,
-    "total_spend": 8829.05,
-    "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
+    "orders": [],
+    "error": "<HttpError 503 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19abc770c695bb3f?format=full&alt=json returned \"Authentication backend unavailable.\". Details: \"[{'message': 'Authentication backend unavailable.', 'domain': 'global', 'reason': 'backendError'}]\">"
   },
   "moves": [
     {
