@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T14:00:55.114526+00:00",
+  "generated_at": "2026-08-20T15:48:48.409321+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3814,7 +3814,7 @@
         "overdue": true
       },
       {
-        "name": "claire067",
+        "name": "Claire Walker",
         "last_scan": "2026-05-25",
         "scan_count": 1,
         "weight": 171.0,
@@ -3862,7 +3862,7 @@
         "overdue": true
       },
       {
-        "name": "karen036",
+        "name": "Karen Hobson",
         "last_scan": "2026-05-25",
         "scan_count": 1,
         "weight": 176.2,
@@ -3886,7 +3886,7 @@
         "overdue": true
       },
       {
-        "name": "lesley066",
+        "name": "Lesley Laverty (test 1)",
         "last_scan": "2026-05-25",
         "scan_count": 1,
         "weight": 181.3,
@@ -3992,7 +3992,7 @@
       {
         "user_id": "U0BQCNL23GU",
         "text": "We are running late cause social worker phoned but are on way",
-        "hours": 5,
+        "hours": 7,
         "name": "Vivian"
       }
     ],
@@ -9168,10 +9168,28 @@
     ]
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,
@@ -13052,6 +13070,12 @@
     "urgent": [
       {
         "from": "Coach Grace",
+        "subject": "FORGE: InBody Comparison",
+        "snippet": "Hi Lesley, I wanted to send you an email comparing your latest InBody scan from July to your initial scan from May. I&#39;ve attached a screenshot so you can see the key differences. You achieved a",
+        "id": "1a01fc193aec5f8e"
+      },
+      {
+        "from": "Coach Grace",
         "subject": "Fwd: easyJet booking reference: KD6V96V",
         "snippet": "---------- Forwarded message --------- From: confirmation@easyJet.com &lt;donotreply@easyjet.com&gt; Date: Wed, 19 Aug 2026 at 17:33 Subject: easyJet booking reference: KD6V96V To: GRACE SMITH &lt;",
         "id": "1a01af0d8fe7cdbb"
@@ -13089,6 +13113,6 @@
         "id": "1a013a2c13167e34"
       }
     ],
-    "urgent_count": 5
+    "urgent_count": 6
   }
 }
