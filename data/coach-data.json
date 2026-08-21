@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T07:03:35.066991+00:00",
+  "generated_at": "2026-08-21T14:00:49.298569+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1515,9 +1515,57 @@
   "inbody": {
     "scans": [
       {
+        "name": "020joules",
+        "last_scan": "2026-08-21",
+        "scan_count": 1,
+        "weight": 164.1,
+        "smm": 52.7,
+        "pbf": 41.1,
+        "bmi": 29.1,
+        "tbw": 70.8,
+        "protein": 19.0,
+        "mineral": 6.9,
+        "vfa": 167.8,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-02",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Joanne Hamill",
+        "last_scan": "2026-08-21",
+        "scan_count": 3,
+        "weight": 244.5,
+        "smm": 71.0,
+        "pbf": 47.6,
+        "bmi": 38.3,
+        "tbw": 93.9,
+        "protein": 24.9,
+        "mineral": 9.3,
+        "vfa": 255.9,
+        "inbody_age": null,
+        "weight_change": -2.9,
+        "smm_change": -1.3,
+        "pbf_change": 0.3,
+        "tbw_change": -1.6,
+        "protein_change": -0.7,
+        "mineral_change": 0.0,
+        "vfa_change": 2.2,
+        "next_due": "2026-10-02",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Coach Grace",
         "last_scan": "2026-08-20",
-        "scan_count": 11,
+        "scan_count": 12,
         "weight": 183.7,
         "smm": 69.2,
         "pbf": 33.0,
@@ -1992,6 +2040,30 @@
         "vfa_change": null,
         "next_due": "2026-09-19",
         "days_to_due": 29,
+        "overdue": false
+      },
+      {
+        "name": "Eilis Kearns",
+        "last_scan": "2026-08-07",
+        "scan_count": 3,
+        "weight": 139.9,
+        "smm": 62.4,
+        "pbf": 19.6,
+        "bmi": 22.6,
+        "tbw": 82.2,
+        "protein": 22.3,
+        "mineral": 8.0,
+        "vfa": 50.8,
+        "inbody_age": null,
+        "weight_change": 0.0,
+        "smm_change": -0.7,
+        "pbf_change": 0.4,
+        "tbw_change": -0.5,
+        "protein_change": -0.2,
+        "mineral_change": 0.0,
+        "vfa_change": 2.7,
+        "next_due": "2026-09-18",
+        "days_to_due": 28,
         "overdue": false
       },
       {
@@ -2763,30 +2835,6 @@
         "overdue": true
       },
       {
-        "name": "Joanne Hamill",
-        "last_scan": "2026-07-07",
-        "scan_count": 2,
-        "weight": 247.4,
-        "smm": 72.3,
-        "pbf": 47.3,
-        "bmi": 38.7,
-        "tbw": 95.5,
-        "protein": 25.6,
-        "mineral": 9.3,
-        "vfa": 253.7,
-        "inbody_age": null,
-        "weight_change": -1.1,
-        "smm_change": 0.4,
-        "pbf_change": -0.6,
-        "tbw_change": 0.5,
-        "protein_change": 0.5,
-        "mineral_change": 0.0,
-        "vfa_change": -8.9,
-        "next_due": "2026-08-18",
-        "days_to_due": -3,
-        "overdue": true
-      },
-      {
         "name": "Laura Fullerton",
         "last_scan": "2026-07-06",
         "scan_count": 1,
@@ -3000,30 +3048,6 @@
         "vfa_change": null,
         "next_due": "2026-08-07",
         "days_to_due": -14,
-        "overdue": true
-      },
-      {
-        "name": "Eilis Kearns",
-        "last_scan": "2026-06-25",
-        "scan_count": 1,
-        "weight": 142.4,
-        "smm": 64.8,
-        "pbf": 18.0,
-        "bmi": 22.3,
-        "tbw": 85.5,
-        "protein": 22.9,
-        "mineral": 8.2,
-        "vfa": 48.1,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-08-06",
-        "days_to_due": -15,
         "overdue": true
       },
       {
@@ -3987,7 +4011,7 @@
         "overdue": true
       }
     ],
-    "total": 103,
+    "total": 104,
     "configured": true
   },
   "slack": {
@@ -3997,8 +4021,14 @@
       {
         "user_id": "U0BQCNL23GU",
         "text": "We are running late cause social worker phoned but are on way",
-        "hours": 22,
+        "hours": 29,
         "name": "Vivian"
+      },
+      {
+        "user_id": "U0AG31LK3T5",
+        "text": "Sorry Grace to be a pain. But i cannot seem to book classes. It says my waiver form is not signed but when I go to sign it it comes up error and will not be do ",
+        "hours": 7,
+        "name": "Louise Feeney"
       }
     ],
     "mentions": [],
@@ -6825,7 +6855,7 @@
           },
           {
             "day": "Friday",
-            "count": 460
+            "count": 471
           },
           {
             "day": "Thursday",
@@ -6843,7 +6873,7 @@
           },
           {
             "day": "Friday",
-            "count": 460
+            "count": 471
           },
           {
             "day": "Monday",
@@ -6876,7 +6906,7 @@
             "count": 232
           },
           {
-            "name": "Plate",
+            "name": "Mobility",
             "count": 223
           }
         ],
@@ -6898,11 +6928,11 @@
             "count": 112
           },
           {
-            "name": "Mobility",
-            "count": 212
+            "name": "Plate",
+            "count": 223
           },
           {
-            "name": "Plate",
+            "name": "Mobility",
             "count": 223
           }
         ],
@@ -7018,7 +7048,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2909
+        "total_attended": 2920
       },
       "last_30_days": {
         "top_days": [
@@ -7040,7 +7070,7 @@
           },
           {
             "day": "Friday",
-            "count": 158
+            "count": 169
           }
         ],
         "bottom_days": [
@@ -7050,7 +7080,7 @@
           },
           {
             "day": "Friday",
-            "count": 158
+            "count": 169
           },
           {
             "day": "Thursday",
@@ -7087,8 +7117,8 @@
             "count": 96
           },
           {
-            "name": "Strongevity",
-            "count": 80
+            "name": "Mobility",
+            "count": 83
           }
         ],
         "bottom_classes": [
@@ -7105,16 +7135,16 @@
             "count": 33
           },
           {
-            "name": "Mobility",
-            "count": 72
-          },
-          {
             "name": "Plate",
             "count": 79
           },
           {
             "name": "Strongevity",
             "count": 80
+          },
+          {
+            "name": "Mobility",
+            "count": 83
           }
         ],
         "top_slots": [
@@ -7229,7 +7259,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1171
+        "total_attended": 1182
       },
       "suggestion": "**For quiet studio gaps (between PT and classes):**\n\n1. Run a drop-in \"Open Lift\" slot on Thursday or Friday mornings (your quietest days) \u2014 30 mins, no booking needed, minimal staffing \u2014 to capture members who want unstructured strength work and build momentum heading into weekend.\n\n2. Offer a paid 4-week \"Barbelle Foundations\" workshop (small group, 6\u20138 max) on a quiet Thursday evening; teach proper form, build confidence, then invite graduates into regular Barbelle classes with a 2-week trial pass.\n\n**To lift the quieter classes themselves:**\n\n3. Move Mobility to Tuesday or Wednesday morning (before or after a Build class) to piggyback on your peak-day traffic, and email Tuesday/Wednesday regulars a one-time invite \u2014 position it as \"active recovery for Builders\" rather than a standalone class.",
       "capacity": [
