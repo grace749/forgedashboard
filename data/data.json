@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T05:00:51.824766+00:00",
+  "generated_at": "2026-08-22T06:55:48.265034+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-08-22",
     "event_count": 15,
-    "urgent_count": 1,
+    "urgent_count": 0,
     "enquiry_count": 1,
     "calendar": [
       {
@@ -179,18 +179,7 @@
         "source": "teamup"
       }
     ],
-    "urgent": [
-      {
-        "from": "Sharon McAuley",
-        "from_raw": "Sharon McAuley <sharonmcauley5@gmail.com>",
-        "subject": "Re: Your next Forge Class!",
-        "snippet": "Hi will be next week have had a family emergency sorry On Fri, 21 Aug 2026, 17:00 Forge Female Fitness, &lt;noreply@goteamup.com&gt; wrote: Hey Sharon , We&#39;re looking forward to seeing you at your",
-        "id": "1a0251da76d03d18",
-        "thread_id": "1a0251da76d03d18",
-        "msg_count": 1,
-        "draft_id": "r-1161363447677862283"
-      }
-    ],
+    "urgent": [],
     "important": [],
     "enquiries": [
       {
@@ -205,9 +194,9 @@
     ],
     "checkins": {
       "by_email": {
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -334,7 +323,7 @@
       "name": "Rosella Watton Austin",
       "channel": "Phone",
       "message": "I understand that \nFamily is all important \nI pray your brother will pull through \nAll the best\nRosella",
-      "age": "6h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "SaWV0eC2w7qymx3QLLCt",
       "contact_id": "KKZnn6rCfXu9tdYFnOjS"
@@ -343,7 +332,7 @@
       "name": "Amanda Hanna",
       "channel": "Phone",
       "message": "Thank you Grace.",
-      "age": "7h ago",
+      "age": "9h ago",
       "unread": 2,
       "conv_id": "h0NzD2Tq91E8iBTviXlQ",
       "contact_id": "ksKWsVJ7BtgbzrNV4r9s"
@@ -352,7 +341,7 @@
       "name": "Amber Dillon",
       "channel": "Phone",
       "message": "Hey Grace thanks for your messages! Sorry I\u2019ve been flat to the mat this week otherwise I would\u2019ve come back to you sooner - I\u2019m still interested! \u263a\ufe0f just nervous \ud83d\ude48\ud83e\udd23 I think a wee call or something wo",
-      "age": "15h ago",
+      "age": "17h ago",
       "unread": 1,
       "conv_id": "cY6FpEW3OmbLIbfkAnPs",
       "contact_id": "X5CxraJzmX1qRKI0Thw8"
@@ -361,7 +350,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "12th September only date suitable..",
-      "age": "16h ago",
+      "age": "18h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -370,7 +359,7 @@
       "name": "Connie Gerrow-Chambers",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "17h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "NFvD87tNhJKGn6sewLMz",
       "contact_id": "4zbGXFtmihKaEFOdNmK9"
@@ -379,7 +368,7 @@
       "name": "Anna Biskupska",
       "channel": "Phone",
       "message": "Hi ,sorry Grace. I was at work until 6pm ...same today . I will get back to you ASAP",
-      "age": "19h ago",
+      "age": "21h ago",
       "unread": 1,
       "conv_id": "gVtmWfDsIQjw8s2zS1Y5",
       "contact_id": "eotS8N8tGFYgzQyseVVT"
@@ -388,7 +377,7 @@
       "name": "Rosie Mc Fetridge",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\ude02\"",
-      "age": "21h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "r7YRMfT26A29D4gQ7oGs",
       "contact_id": "CCSuFuMKXluRmB5Omscx"
@@ -4506,7 +4495,653 @@
     "total": 106,
     "configured": true
   },
-  "sop": null,
+  "sop": {
+    "sections": [
+      {
+        "name": "General",
+        "items": [
+          {
+            "task": "Instagram DM & Lead Followup",
+            "type": "Marketing",
+            "sop": "Instagram DM SOP",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Walk-Ins",
+            "type": "General",
+            "sop": "Walk-Ins SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Jumpstart Sales Calls",
+            "type": "Marketing",
+            "sop": "Jumpstart Sales Call SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Schedule PT Sales Calls",
+            "type": "Marketing",
+            "sop": "Schedule PT Sales Call",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Personal Training Sales Call & Post Call Msg",
+            "type": "Marketing",
+            "sop": "PT Sales Call & Follow Message",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Prospect Tracker",
+            "type": "Marketing",
+            "sop": "Forge Prospect Tracker",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "No Sweat Intro",
+            "type": "Clients",
+            "sop": "No Sweat Intro SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Trial Tracker Walkthrough",
+            "type": "Clients",
+            "sop": "Trial Tracker SOP",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Trials Tracker Sheet",
+            "type": "Clients",
+            "sop": "Trial Tracker",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "Trial to Full Member Conversion",
+            "type": "Clients",
+            "sop": "Trial to Full Member Conversion",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Slack - Trial to Full Member",
+            "type": "Clients",
+            "sop": "Slack - Trial to Full Member",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Trial to Full Member Pack",
+            "type": "Clients",
+            "sop": "Full Member Swag Bag",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Full Member Welcome Pack SOP",
+            "type": "Clients",
+            "sop": "Full Member Welcome Pack",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "New PT Guide",
+            "type": "Clients",
+            "sop": "SOP: New PT Member Induction",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Personal Training Guide",
+            "type": "Coaches",
+            "sop": "Personal Training Clients SOP",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to create Recurring reservations for PT Clients",
+            "type": "Clients",
+            "sop": "Reservations for PTs.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to create PT sessions on Teamup",
+            "type": "Clients",
+            "sop": "One off PT Sessions Video Guide",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Edit PT Sessions",
+            "type": "Clients",
+            "sop": "Change PT Sessions & update coaches.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Personal Training Tracker JoJo",
+            "type": "Clients",
+            "sop": "PT Members - JoJo",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Personal Training Tracker Eilis",
+            "type": "Clients",
+            "sop": "PT Members - Eilis",
+            "owner": "EK",
+            "built": true
+          },
+          {
+            "task": "All Services SOP",
+            "type": "Facilities",
+            "sop": "Forge Female Fitness \u2014 Internal Service Menu",
+            "owner": "ALL",
+            "built": true
+          },
+          {
+            "task": "Key Programme Resources",
+            "type": "Facilities",
+            "sop": "Key Programmes",
+            "owner": "ALL",
+            "built": true
+          },
+          {
+            "task": "Weekly Key Coach Tasks",
+            "type": "Coaches",
+            "sop": "",
+            "owner": "All",
+            "built": false
+          },
+          {
+            "task": "Forge Values",
+            "type": "Coaches",
+            "sop": "Forge Values",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Forge Culture",
+            "type": "Coaches",
+            "sop": "Culture at Forge SOP",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Great Coaching Questions",
+            "type": "Coaches",
+            "sop": "Great Coaching Questions SOP",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Client Communication",
+            "type": "Coaches",
+            "sop": "Client Communication SOP",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Service Principles",
+            "type": "Coaches",
+            "sop": "Service Principles SOP",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Communication Principles",
+            "type": "Coaches",
+            "sop": "Communication Principles SOP",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Always & Never Guide",
+            "type": "Coaches",
+            "sop": "Always & Never SOP",
+            "owner": "All",
+            "built": true
+          },
+          {
+            "task": "Coaching Development Roadmap",
+            "type": "Coaches",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Class Quality Audit Checklist",
+            "type": "Coaches",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Head Coach Peformance Review",
+            "type": "Coaches",
+            "sop": "Canva Link for Head Coaches",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Coach Performance Review",
+            "type": "Coaches",
+            "sop": "Canva Link for Coaches to print out",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Evaluation Sheet for Head Coaches",
+            "type": "Coaches",
+            "sop": "Canva Link to Evaluation sheet for Head Coaches",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Performance Review FAQ",
+            "type": "Coaches",
+            "sop": "Performance Review & Class Audit FAQ",
+            "owner": "GS / JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to frame Feedback",
+            "type": "Coaches",
+            "sop": "Forge Feedback Cheat Sheet",
+            "owner": "GS / JH",
+            "built": true
+          },
+          {
+            "task": "Coaches Quarterly Audit",
+            "type": "Coaches",
+            "sop": "Coach Audit Template",
+            "owner": "GS / JH / EK",
+            "built": true
+          },
+          {
+            "task": "Coach Annual Review",
+            "type": "Coaches",
+            "sop": "Coach Annual Review Template",
+            "owner": "GS / JH / EK",
+            "built": true
+          },
+          {
+            "task": "Cleaning",
+            "type": "Facilities",
+            "sop": "Forge Cleaning Checklist",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Studio Open and Close",
+            "type": "Facilities",
+            "sop": "Forge Open/Close Checklist",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Remove member from class",
+            "type": "Clients",
+            "sop": "Remove Member from Class.mp4",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Ordering T-Shirts",
+            "type": "Facilities",
+            "sop": "Ordering Clothing SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Order Supplies & Sundries",
+            "type": "Facilities",
+            "sop": "",
+            "owner": "GS / JH",
+            "built": false
+          },
+          {
+            "task": "Clothes Stock Tracker",
+            "type": "Facilities",
+            "sop": "Clothing Stock Tracker",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Update Member Mastersheet Tracker",
+            "type": "Clients",
+            "sop": "Forge Master Member Tracker",
+            "owner": "GS",
+            "built": true
+          },
+          {
+            "task": "Member Onboarding",
+            "type": "Clients",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Member Checkins",
+            "type": "Clients",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Member Pause, Cancellation & Churn",
+            "type": "Clients",
+            "sop": "",
+            "owner": "GS",
+            "built": false
+          },
+          {
+            "task": "Milestone Achievements",
+            "type": "Clients",
+            "sop": "",
+            "owner": "JH / GS",
+            "built": false
+          },
+          {
+            "task": "Referral Programme",
+            "type": "Clients",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Member Milestone Tees",
+            "type": "Clients",
+            "sop": "Milestone Tees Tracker",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Member data privacy & GDPR",
+            "type": "Clients",
+            "sop": "",
+            "owner": "ALL",
+            "built": false
+          },
+          {
+            "task": "No Social Members",
+            "type": "Clients",
+            "sop": "No Social Members",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Weekly Client Wins (SLACK)",
+            "type": "Clients",
+            "sop": "Weekly Wins SOP",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Member Complaints or Conflict",
+            "type": "Coaches",
+            "sop": "Handling Conflict SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "How to create reservations for the same class for a member",
+            "type": "Clients",
+            "sop": "Create recurring class reservation",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Add Medical Issues onto Strongevity Member teamup profiles",
+            "type": "Clients",
+            "sop": "Add Medical Issues for Strongevity Members on Teamup",
+            "owner": "GS /JH",
+            "built": true
+          },
+          {
+            "task": "Add Medical Issues onto 6 Week Jumpstart Member teamup profiles",
+            "type": "Clients",
+            "sop": "Add medical issues - 6 Week Jumpstart.pdf",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "30 Day Goals",
+            "type": "Clients",
+            "sop": "",
+            "owner": "",
+            "built": false
+          },
+          {
+            "task": "Member of the Month Announcement",
+            "type": "Clients",
+            "sop": "Consistency Queen SOP  Canva Template",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Momentum Sessions",
+            "type": "Clients",
+            "sop": "Momentum Session SOP   Book Momentum Call Teamup.mp4",
+            "owner": "JH",
+            "built": true
+          },
+          {
+            "task": "Forge InBody 270 Member Guide",
+            "type": "Clients",
+            "sop": "Forge InBody 270 Info.pdf",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Forge InBody Coaches Guide",
+            "type": "Coaches",
+            "sop": "Forge InBody 270 SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "InBody Admin Dashboard",
+            "type": "Clients",
+            "sop": "InBody Admin Dashboard SOP",
+            "owner": "GS /JH",
+            "built": true
+          },
+          {
+            "task": "Member Outcomes",
+            "type": "Clients",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Troubleshooting Guide",
+            "type": "Clients",
+            "sop": "",
+            "owner": "GS /JH / EK",
+            "built": false
+          },
+          {
+            "task": "Transformation Pillars",
+            "type": "Clients",
+            "sop": "",
+            "owner": "",
+            "built": false
+          },
+          {
+            "task": "Annual Member Awards",
+            "type": "Clients",
+            "sop": "Forge Awards",
+            "owner": "GS/JH",
+            "built": true
+          },
+          {
+            "task": "Current Years Programming",
+            "type": "Coaches",
+            "sop": "Q4 Program Movements Q1 2026 Q2 2026 Q3 2026 Strongevity Programme",
+            "owner": "GS / JH",
+            "built": true
+          },
+          {
+            "task": "Cardio Machine Technique Guide",
+            "type": "Coaches",
+            "sop": "Cardio Machine Technique SOP",
+            "owner": "GS /JH / EK",
+            "built": true
+          },
+          {
+            "task": "Warmups & Cooldown Sheets",
+            "type": "Coaches",
+            "sop": "Warmups and Cooldowns SOP https://canva.link/rdamphvgb76et2s FOR Q3",
+            "owner": "GS /JH / EK",
+            "built": true
+          }
+        ]
+      }
+    ],
+    "stats": {
+      "total": 72,
+      "built": 58,
+      "not_built": 14,
+      "pct_built": 81,
+      "by_type": [
+        {
+          "type": "Clients",
+          "total": 36,
+          "built": 26
+        },
+        {
+          "type": "Coaches",
+          "total": 23,
+          "built": 20
+        },
+        {
+          "type": "Facilities",
+          "total": 7,
+          "built": 6
+        },
+        {
+          "type": "General",
+          "total": 1,
+          "built": 1
+        },
+        {
+          "type": "Marketing",
+          "total": 5,
+          "built": 5
+        }
+      ]
+    },
+    "not_built_list": [
+      {
+        "task": "Weekly Key Coach Tasks",
+        "type": "Coaches",
+        "sop": "",
+        "owner": "All",
+        "built": false
+      },
+      {
+        "task": "Coaching Development Roadmap",
+        "type": "Coaches",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Class Quality Audit Checklist",
+        "type": "Coaches",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Order Supplies & Sundries",
+        "type": "Facilities",
+        "sop": "",
+        "owner": "GS / JH",
+        "built": false
+      },
+      {
+        "task": "Member Onboarding",
+        "type": "Clients",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Member Checkins",
+        "type": "Clients",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Member Pause, Cancellation & Churn",
+        "type": "Clients",
+        "sop": "",
+        "owner": "GS",
+        "built": false
+      },
+      {
+        "task": "Milestone Achievements",
+        "type": "Clients",
+        "sop": "",
+        "owner": "JH / GS",
+        "built": false
+      },
+      {
+        "task": "Referral Programme",
+        "type": "Clients",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Member data privacy & GDPR",
+        "type": "Clients",
+        "sop": "",
+        "owner": "ALL",
+        "built": false
+      },
+      {
+        "task": "30 Day Goals",
+        "type": "Clients",
+        "sop": "",
+        "owner": "",
+        "built": false
+      },
+      {
+        "task": "Member Outcomes",
+        "type": "Clients",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Troubleshooting Guide",
+        "type": "Clients",
+        "sop": "",
+        "owner": "GS /JH / EK",
+        "built": false
+      },
+      {
+        "task": "Transformation Pillars",
+        "type": "Clients",
+        "sop": "",
+        "owner": "",
+        "built": false
+      }
+    ],
+    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member Onboarding**: no documented intake, goal-setting, or initial coaching touchpoints (highest churn risk window)\n- **Cancellation & Churn**: no standardized win-back cadence, offboarding comms, or exit-interview protocol\n- **Member Checkins**: no scheduled touchpoint cadence or conversation framework to catch disengagement early\n- **Coaching Development Roadmap**: no clarity on how coaches progress, skill gates, or performance expectations\n- **Class Quality Audit Checklist**: no mechanism to measure coaching consistency across studio\n- **Member Data Privacy & GDPR**: critical gap for UK compliance and member trust\n- **Order Supplies & Sundries**: no system for stock, reordering, or vendor management\n- **30 Day Goals & Member Outcomes**: no structured review process to prove member progress and justify retention/upsell\n\n---\n\n# **Needs updating**\n\n- **Coaches SOP suite (20/23)**: likely missing clear KPIs, observation/feedback loops, and escalation pathways for quality issues or member complaints\n- **Clients onboarding path**: probably doesn't connect member goals to specific coach assignments or coaching methodology\n- **Marketing (5/5)**: no retention/engagement funnels tied to actual member lifecycle milestones (pause recovery, lapsed win-back, referral triggers)\n- **Facilities**: missing incident/injury protocol and equipment maintenance schedules\n- **General (1/1)**: only one SOP\u2014likely missing complaints handling, safeguarding, and decision-making authority matrix\n\n---\n\n# **Build next**\n\n1. **Member Onboarding SOP** (Priority 1)  \n   *Structure: Pre-sign, first visit intake form, goal-capture session, coach pairing logic, first 3 classes touchpoints, week-2"
+  },
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
@@ -4514,19 +5149,19 @@
       {
         "user_id": "U0BQCNL23GU",
         "text": "We are running late cause social worker phoned but are on way",
-        "hours": 44,
+        "hours": 46,
         "name": "Vivian"
       },
       {
         "user_id": "U0AG31LK3T5",
         "text": "Sorry Grace to be a pain. But i cannot seem to book classes. It says my waiver form is not signed but when I go to sign it it comes up error and will not be do ",
-        "hours": 22,
+        "hours": 24,
         "name": "Louise Feeney"
       },
       {
         "user_id": "U08TTDDAJD7",
         "text": "<@U05P1R84NKS> apologies for late cancellation. Struck down with something this morning. Thought it was minor but seem to be getting worse. Will see how I am ov",
-        "hours": 14,
+        "hours": 16,
         "name": "Therese Charles"
       }
     ],
@@ -22664,9 +23299,9 @@
       {
         "month": "2026-08",
         "revenue": 19104.88,
-        "expenses": 23246.4,
-        "profit": -4141.52,
-        "profit_pct": -21.7,
+        "expenses": 24746.4,
+        "profit": -5641.52,
+        "profit_pct": -29.5,
         "categories": {
           "in": [
             {
@@ -22685,7 +23320,7 @@
           "out": [
             {
               "name": "Transfers",
-              "amount": 4880.0
+              "amount": 6380.0
             },
             {
               "name": "Vat",
@@ -22746,6 +23381,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "8e065302-0666-4714-af75-d32a018bea05",
+            "date": "2026-08-22",
+            "name": "Forge Female Fitness Ltd",
+            "ref": "Bizsavings",
+            "amount": 1500.0,
+            "direction": "OUT",
+            "category": "Transfers",
+            "internal": false
+          },
           {
             "uid": "8bcb3bbf-7294-484d-b23a-5b29a848dbce",
             "date": "2026-08-21",
@@ -24010,7 +24655,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 2427.28,
+    "cash_position": 927.28,
     "available": 0.0,
     "reserves": [
       {
@@ -24031,7 +24676,7 @@
       }
     ],
     "earmarked": 10477.0,
-    "total_cash": 12904.28,
+    "total_cash": 11404.28,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -24060,8 +24705,8 @@
       }
     ],
     "cash_in_30": 25930.96,
-    "cash_out_30": 27941.79,
-    "net_30": -2010.83,
+    "cash_out_30": 29441.79,
+    "net_30": -3510.83,
     "as_of": "2026-08-22"
   },
   "gocardless": {
