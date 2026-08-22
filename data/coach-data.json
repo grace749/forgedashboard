@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T06:55:48.265034+00:00",
+  "generated_at": "2026-08-22T14:00:48.492338+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1498,6 +1498,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach Grace",
+        "last_scan": "2026-08-22",
+        "scan_count": 13,
+        "weight": 182.5,
+        "smm": 69.2,
+        "pbf": 32.1,
+        "bmi": 29.5,
+        "tbw": 90.6,
+        "protein": 24.3,
+        "mineral": 9.0,
+        "vfa": 124.9,
+        "inbody_age": null,
+        "weight_change": -1.2,
+        "smm_change": 0.0,
+        "pbf_change": -0.9,
+        "tbw_change": 0.4,
+        "protein_change": 0.0,
+        "mineral_change": 0.2,
+        "vfa_change": -0.4,
+        "next_due": "2026-10-03",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "020joules",
         "last_scan": "2026-08-21",
         "scan_count": 1,
@@ -1591,30 +1615,6 @@
         "vfa_change": 2.2,
         "next_due": "2026-10-02",
         "days_to_due": 41,
-        "overdue": false
-      },
-      {
-        "name": "Coach Grace",
-        "last_scan": "2026-08-20",
-        "scan_count": 12,
-        "weight": 183.7,
-        "smm": 69.2,
-        "pbf": 33.0,
-        "bmi": 29.7,
-        "tbw": 90.2,
-        "protein": 24.3,
-        "mineral": 8.8,
-        "vfa": 125.3,
-        "inbody_age": null,
-        "weight_change": -1.6,
-        "smm_change": -0.2,
-        "pbf_change": -0.2,
-        "tbw_change": -0.4,
-        "protein_change": -0.2,
-        "mineral_change": 0.0,
-        "vfa_change": -4.6,
-        "next_due": "2026-10-01",
-        "days_to_due": 40,
         "overdue": false
       },
       {
@@ -4050,22 +4050,22 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BQCNL23GU",
-        "text": "We are running late cause social worker phoned but are on way",
-        "hours": 46,
-        "name": "Vivian"
-      },
-      {
         "user_id": "U0AG31LK3T5",
         "text": "Sorry Grace to be a pain. But i cannot seem to book classes. It says my waiver form is not signed but when I go to sign it it comes up error and will not be do ",
-        "hours": 24,
+        "hours": 31,
         "name": "Louise Feeney"
       },
       {
         "user_id": "U08TTDDAJD7",
         "text": "<@U05P1R84NKS> apologies for late cancellation. Struck down with something this morning. Thought it was minor but seem to be getting worse. Will see how I am ov",
-        "hours": 16,
+        "hours": 23,
         "name": "Therese Charles"
+      },
+      {
+        "user_id": "U0A62JJ6HD2",
+        "text": "Thanks for this morning Grace, I really enjoyed it :blush:",
+        "hours": 2,
+        "name": "Sybil M"
       }
     ],
     "mentions": [],
