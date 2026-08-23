@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T14:00:49.468654+00:00",
+  "generated_at": "2026-08-23T15:35:19.361203+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -181,8 +181,8 @@
     "checkins": {
       "by_email": {
         "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -309,7 +309,7 @@
       "name": "Ballykenver Farm Shop & Kitchen",
       "channel": "Phone",
       "message": "Here\u2019s to the next 10!! \ud83c\udf89",
-      "age": "1h ago",
+      "age": "3h ago",
       "unread": 2,
       "conv_id": "UsFaJnyrfVHPqVeWVgze",
       "contact_id": "zSPgbPNeJpACIxJ3HNtO"
@@ -318,7 +318,7 @@
       "name": "Lesley",
       "channel": "Phone",
       "message": "Love this \ud83d\udcaa\ud83d\udc9c",
-      "age": "4h ago",
+      "age": "6h ago",
       "unread": 2,
       "conv_id": "6sS2azH5AanN8U5CyafO",
       "contact_id": "vnO99bnMpOm7vKyxsYkO"
@@ -327,7 +327,7 @@
       "name": "ek.coaching_",
       "channel": "Phone",
       "message": "So well! She's great",
-      "age": "15h ago",
+      "age": "16h ago",
       "unread": 1,
       "conv_id": "GuiQOqaPIXmezrTLE9Uv",
       "contact_id": "BaXslzBfwXN2FDK2zPtQ"
@@ -336,7 +336,7 @@
       "name": "Sybil M Donaghy",
       "channel": "Phone",
       "message": "Grace, have you ever thought about doing the bombshell body again?xx",
-      "age": "19h ago",
+      "age": "20h ago",
       "unread": 3,
       "conv_id": "QHfzzcju442wvpcQtZ72",
       "contact_id": "VYFMft5hVDpEjW2oA2u7"
@@ -385,15 +385,6 @@
       "unread": 2,
       "conv_id": "h0NzD2Tq91E8iBTviXlQ",
       "contact_id": "ksKWsVJ7BtgbzrNV4r9s"
-    },
-    {
-      "name": "Amber Dillon",
-      "channel": "Phone",
-      "message": "Hey Grace thanks for your messages! Sorry I\u2019ve been flat to the mat this week otherwise I would\u2019ve come back to you sooner - I\u2019m still interested! \u263a\ufe0f just nervous \ud83d\ude48\ud83e\udd23 I think a wee call or something wo",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "cY6FpEW3OmbLIbfkAnPs",
-      "contact_id": "X5CxraJzmX1qRKI0Thw8"
     },
     {
       "name": "Helen Basher Logan",
@@ -5095,14 +5086,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U08TTDDAJD7",
-        "text": "<@U05P1R84NKS> apologies for late cancellation. Struck down with something this morning. Thought it was minor but seem to be getting worse. Will see how I am ov",
-        "hours": 47,
-        "name": "Therese Charles"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -25011,10 +24995,28 @@
     ]
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,

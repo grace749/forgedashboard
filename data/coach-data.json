@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T14:00:49.468654+00:00",
+  "generated_at": "2026-08-23T15:35:19.361203+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4048,14 +4048,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U08TTDDAJD7",
-        "text": "<@U05P1R84NKS> apologies for late cancellation. Struck down with something this morning. Thought it was minor but seem to be getting worse. Will see how I am ov",
-        "hours": 47,
-        "name": "Therese Charles"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -9208,10 +9201,28 @@
     ]
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,
@@ -13119,15 +13130,9 @@
         "subject": "Invitation: Studio Coaches Meeting @ Thu 22 Oct 2026 12:30pm - 2pm (BST) (Coach JoJo)",
         "snippet": "Studio Coaches Meeting Meeting to prep for my maternity leave in November Meeting to prep for my maternity leave in November When Thursday 22 Oct 2026 \u22c5 12:30pm \u2013 2pm (United Kingdom Time) Location",
         "id": "1a013a2c13167e34"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Joan Taggart - 30 Days as a Member Checkin",
-        "snippet": "Hi Coach, Our member Joan Taggart has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member - reminding",
-        "id": "1a00af17edb02823"
       }
     ],
     "important": [],
-    "urgent_count": 6
+    "urgent_count": 5
   }
 }
