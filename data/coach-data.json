@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:04:14.526063+00:00",
+  "generated_at": "2026-08-25T14:00:54.166750+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1451,6 +1451,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach JoJo",
+        "last_scan": "2026-08-25",
+        "scan_count": 15,
+        "weight": 194.4,
+        "smm": 72.8,
+        "pbf": 33.4,
+        "bmi": 30.4,
+        "tbw": 94.4,
+        "protein": 25.6,
+        "mineral": 9.5,
+        "vfa": 128.2,
+        "inbody_age": null,
+        "weight_change": 1.7,
+        "smm_change": 2.0,
+        "pbf_change": -1.2,
+        "tbw_change": 2.5,
+        "protein_change": 0.7,
+        "mineral_change": 0.3,
+        "vfa_change": -9.7,
+        "next_due": "2026-10-06",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Coach Grace",
         "last_scan": "2026-08-22",
         "scan_count": 13,
@@ -1638,30 +1662,6 @@
         "protein_change": -1.4,
         "mineral_change": -0.3,
         "vfa_change": 14.8,
-        "next_due": "2026-09-29",
-        "days_to_due": 35,
-        "overdue": false
-      },
-      {
-        "name": "Coach JoJo",
-        "last_scan": "2026-08-18",
-        "scan_count": 14,
-        "weight": 192.7,
-        "smm": 70.8,
-        "pbf": 34.6,
-        "bmi": 30.2,
-        "tbw": 91.9,
-        "protein": 24.9,
-        "mineral": 9.2,
-        "vfa": 137.9,
-        "inbody_age": null,
-        "weight_change": -1.5,
-        "smm_change": -0.4,
-        "pbf_change": 0.1,
-        "tbw_change": -0.9,
-        "protein_change": -0.2,
-        "mineral_change": 0.0,
-        "vfa_change": -1.4,
         "next_due": "2026-09-29",
         "days_to_due": 35,
         "overdue": false
@@ -4005,7 +4005,7 @@
       {
         "user_id": "U08BG08G4DS",
         "text": "Hi grace, I'm sorry I\u2019m going to have to pause sept also, I'll hopefully b bk for Oct as supposedly there is more staff coming on ",
-        "hours": 39,
+        "hours": 46,
         "name": "Evelyn Sharpe"
       }
     ],
@@ -4647,7 +4647,7 @@
     }
   },
   "teamup": {
-    "total_members": 157,
+    "total_members": 159,
     "recurring": 106,
     "recurring_members": [
       {
@@ -5138,7 +5138,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 32,
+    "new_this_month": 34,
     "cancellations_this_month": 4,
     "leaving_members": [
       {
@@ -5946,7 +5946,7 @@
       }
     ],
     "cancelled_ytd": 41,
-    "churn_rate": 2.7,
+    "churn_rate": 2.6,
     "avg_member_price": 136.82,
     "monthly_recurring_revenue": 14092.0,
     "avg_tenure_months": 8.7,
@@ -6591,7 +6591,7 @@
       },
       {
         "name": "Strongevity Membership",
-        "count": 9,
+        "count": 11,
         "members": [
           {
             "id": 13487762,
@@ -6618,6 +6618,10 @@
             "name": "Elizabeth Steele"
           },
           {
+            "id": 13593758,
+            "name": "Jill Weir"
+          },
+          {
             "id": 11027616,
             "name": "Joan Stewart"
           },
@@ -6628,6 +6632,10 @@
           {
             "id": 13094545,
             "name": "Lyn Chestnutt"
+          },
+          {
+            "id": 13212332,
+            "name": "Sandra Sherrard"
           }
         ]
       },
@@ -6831,7 +6839,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 576
+            "count": 594
           },
           {
             "day": "Friday",
@@ -6865,13 +6873,13 @@
           },
           {
             "day": "Tuesday",
-            "count": 576
+            "count": 594
           }
         ],
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 567
+            "count": 577
           },
           {
             "name": "Build: Full Body",
@@ -6909,7 +6917,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 124
+            "count": 132
           },
           {
             "name": "Plate",
@@ -7032,13 +7040,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2863
+        "total_attended": 2881
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 244
+            "count": 262
           },
           {
             "day": "Monday",
@@ -7082,7 +7090,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 235
+            "count": 245
           },
           {
             "name": "Build: Lower",
@@ -7098,7 +7106,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 85
+            "count": 93
           },
           {
             "name": "Circuits",
@@ -7243,7 +7251,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1089
+        "total_attended": 1107
       },
       "suggestion": "**For quiet studio time:**\n\n1. Launch a paid \"Open Studio\" slot on Monday and Thursday afternoons (2\u20134pm) \u2014 members often want unstructured lifting time between scheduled classes, and this captures demand without cannibalizing existing bookings.\n\n2. Run a monthly \"Intro to Barbelle\" workshop (30 mins, free or \u00a35) on a quiet Thursday or Monday, positioned as a standalone skill-builder rather than a full class \u2014 Barbelle's 60 attendees suggests positioning problem, not concept problem.\n\n**For quieter classes:**\n\n3. Move \"Engine\" and \"Capacity\" to Wednesday or Friday mornings (your busiest days) where gym traffic is highest, then fill their old Monday/Thursday slots with the Open Studio above \u2014 these classes likely suffer from poor slot timing rather than poor content.",
       "capacity": [
@@ -7275,7 +7283,7 @@
           "name": "Build: Upper",
           "sessions": 74,
           "cap": 12,
-          "avg_attending": 9.8,
+          "avg_attending": 9.7,
           "fill_rate": 81,
           "status": "healthy"
         },
@@ -7554,7 +7562,7 @@
       },
       {
         "month": "2026-08",
-        "active": 161,
+        "active": 163,
         "churn": 6.8,
         "by_type": {
           "Empower": 69,
@@ -7570,7 +7578,7 @@
           "4 Class Pass": 1,
           "Well75": 10,
           "8 Session Block": 1,
-          "Strongevity Membership": 9,
+          "Strongevity Membership": 11,
           "2 Sessions": 1
         }
       }
@@ -8474,6 +8482,15 @@
         "last_momentum": null
       },
       {
+        "id": 13593758,
+        "name": "Jill Weir",
+        "email": "jillweir03@gmail.com",
+        "join_date": "2026-08-25",
+        "membership": "Strongevity Membership",
+        "class_count": 1,
+        "last_momentum": null
+      },
+      {
         "id": 13508595,
         "name": "Joan McAfee",
         "email": "jackiemcafee@hotmail.com",
@@ -8960,6 +8977,15 @@
         "last_momentum": null
       },
       {
+        "id": 13212332,
+        "name": "Sandra Sherrard",
+        "email": "smsherrard1@gmail.com",
+        "join_date": "2026-08-25",
+        "membership": "Strongevity Membership",
+        "class_count": 7,
+        "last_momentum": null
+      },
+      {
         "id": 8760404,
         "name": "Sara Benetti",
         "email": "sarabenetti2013@gmail.com",
@@ -9214,10 +9240,28 @@
     ]
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,
@@ -13125,15 +13169,9 @@
         "subject": "Claire Walker - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Claire Walker has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member - remindin",
         "id": "1a01a822664d9cd6"
-      },
-      {
-        "from": "Forge Coach",
-        "subject": "Strongevity VIP Booking",
-        "snippet": "Hi ladies, Our Strongevity classes have been filling up incredibly fast for each block. I know some of you have found the block booking rush stressful. With over 450 women enquiring about only 36",
-        "id": "1a0146357f024c16"
       }
     ],
     "important": [],
-    "urgent_count": 6
+    "urgent_count": 5
   }
 }
