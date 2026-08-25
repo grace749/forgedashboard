@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T05:00:50.163762+00:00",
+  "generated_at": "2026-08-25T07:04:14.526063+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4001,7 +4001,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U08BG08G4DS",
+        "text": "Hi grace, I'm sorry I\u2019m going to have to pause sept also, I'll hopefully b bk for Oct as supposedly there is more staff coming on ",
+        "hours": 39,
+        "name": "Evelyn Sharpe"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -5131,7 +5138,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 31,
+    "new_this_month": 32,
     "cancellations_this_month": 4,
     "leaving_members": [
       {
@@ -6584,11 +6591,15 @@
       },
       {
         "name": "Strongevity Membership",
-        "count": 8,
+        "count": 9,
         "members": [
           {
             "id": 13487762,
             "name": "BERNADETTE MCLAUGHLIN"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
           },
           {
             "id": 10090672,
@@ -6820,7 +6831,7 @@
           },
           {
             "day": "Tuesday",
-            "count": 565
+            "count": 576
           },
           {
             "day": "Friday",
@@ -6854,13 +6865,13 @@
           },
           {
             "day": "Tuesday",
-            "count": 565
+            "count": 576
           }
         ],
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 556
+            "count": 567
           },
           {
             "name": "Build: Full Body",
@@ -6938,6 +6949,15 @@
             "label": "Friday 7pm Mobility"
           },
           {
+            "day": "Tuesday",
+            "time": "7am",
+            "name": "Build: Upper",
+            "count": 115,
+            "sessions": 11,
+            "avg": 10.5,
+            "label": "Tuesday 7am Build: Upper"
+          },
+          {
             "day": "Monday",
             "time": "8pm",
             "name": "Build: Lower",
@@ -6945,15 +6965,6 @@
             "sessions": 10,
             "avg": 10.4,
             "label": "Monday 8pm Build: Lower"
-          },
-          {
-            "day": "Tuesday",
-            "time": "7am",
-            "name": "Build: Upper",
-            "count": 104,
-            "sessions": 10,
-            "avg": 10.4,
-            "label": "Tuesday 7am Build: Upper"
           },
           {
             "day": "Thursday",
@@ -7021,13 +7032,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 2852
+        "total_attended": 2863
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 233
+            "count": 244
           },
           {
             "day": "Monday",
@@ -7071,7 +7082,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 224
+            "count": 235
           },
           {
             "name": "Build: Lower",
@@ -7134,8 +7145,8 @@
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
-            "count": 44,
-            "sessions": 4,
+            "count": 55,
+            "sessions": 5,
             "avg": 11.0,
             "label": "Tuesday 7am Build: Upper"
           },
@@ -7232,7 +7243,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1078
+        "total_attended": 1089
       },
       "suggestion": "**For quiet studio time:**\n\n1. Launch a paid \"Open Studio\" slot on Monday and Thursday afternoons (2\u20134pm) \u2014 members often want unstructured lifting time between scheduled classes, and this captures demand without cannibalizing existing bookings.\n\n2. Run a monthly \"Intro to Barbelle\" workshop (30 mins, free or \u00a35) on a quiet Thursday or Monday, positioned as a standalone skill-builder rather than a full class \u2014 Barbelle's 60 attendees suggests positioning problem, not concept problem.\n\n**For quieter classes:**\n\n3. Move \"Engine\" and \"Capacity\" to Wednesday or Friday mornings (your busiest days) where gym traffic is highest, then fill their old Monday/Thursday slots with the Open Studio above \u2014 these classes likely suffer from poor slot timing rather than poor content.",
       "capacity": [
@@ -7559,7 +7570,7 @@
           "4 Class Pass": 1,
           "Well75": 10,
           "8 Session Block": 1,
-          "Strongevity Membership": 8,
+          "Strongevity Membership": 9,
           "2 Sessions": 1
         }
       }
@@ -9203,28 +9214,10 @@
     ]
   },
   "events": {
-    "events": [
-      {
-        "name": "Forge Couch to 5k (8 Week Plan)",
-        "when": "7/20/2026",
-        "details": "8 Week running plan ending with a Team 5k",
-        "marketing": ""
-      },
-      {
-        "name": "5KM Park Run (end of couch 2 5k)",
-        "when": "19 September 9.30am",
-        "details": "Ballymoney Duck Pond park run",
-        "marketing": ""
-      },
-      {
-        "name": "Forge Summer Games",
-        "when": "22nd August 9.30am",
-        "details": "Forge Female Fitness",
-        "marketing": ""
-      }
-    ],
+    "events": [],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true
+    "configured": true,
+    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
   },
   "tshirt": {
     "configured": true,
@@ -13138,15 +13131,9 @@
         "subject": "Strongevity VIP Booking",
         "snippet": "Hi ladies, Our Strongevity classes have been filling up incredibly fast for each block. I know some of you have found the block booking rush stressful. With over 450 women enquiring about only 36",
         "id": "1a0146357f024c16"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Invitation: Studio Coaches Meeting @ Thu 22 Oct 2026 12:30pm - 2pm (BST) (Coach JoJo)",
-        "snippet": "Studio Coaches Meeting Meeting to prep for my maternity leave in November Meeting to prep for my maternity leave in November When Thursday 22 Oct 2026 \u22c5 12:30pm \u2013 2pm (United Kingdom Time) Location",
-        "id": "1a013a2c13167e34"
       }
     ],
     "important": [],
-    "urgent_count": 7
+    "urgent_count": 6
   }
 }
