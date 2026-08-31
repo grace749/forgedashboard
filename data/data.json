@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T14:00:50.317678+00:00",
+  "generated_at": "2026-08-31T20:49:58.506356+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-08-31",
-    "event_count": 23,
-    "urgent_count": 1,
+    "event_count": 24,
+    "urgent_count": 2,
     "enquiry_count": 5,
     "calendar": [
       {
@@ -90,16 +90,6 @@
         "source": "teamup"
       },
       {
-        "title": "Padel clinic",
-        "time": "5:00pm",
-        "start_raw": "2026-08-31T17:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": "Confirm attendee list and prepare Strongevity session plan."
-      },
-      {
         "title": "Build: Lower",
         "time": "5:00pm",
         "start_raw": "2026-08-31T17:00:00+01:00",
@@ -162,19 +152,39 @@
         "attendees": [],
         "description": "",
         "location": "",
+        "prep": "Confirm attendee list and prepare Strongevity session plan."
+      },
+      {
+        "title": "Flight to manchester",
+        "time": "8:00am",
+        "start_raw": "2026-09-01T08:00:00+01:00",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
         "prep": "Review Google Profile updates; prepare post announcement comms."
       },
       {
+        "title": "Flight back to belfast",
+        "time": "7:15pm",
+        "start_raw": "2026-09-01T19:15:00+01:00",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Confirm padel court booking; prep clinic outline/drills."
+      },
+      {
         "title": "Precious & Patience Coaching",
-        "time": "8:00am",
-        "start_raw": "2026-09-02T08:00:00+01:00",
+        "time": "7:45am",
+        "start_raw": "2026-09-02T07:45:00+01:00",
         "day": "Wednesday",
         "attendees": [
           "a.mcknight920@btinternet.com"
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm padel court booking; prep clinic outline/drills."
+        "prep": ""
       },
       {
         "title": "Padel match with Bobby",
@@ -184,7 +194,7 @@
         "attendees": [],
         "description": "",
         "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": ""
+        "prep": "Review client files; prepare coaching session notes/goals."
       },
       {
         "title": "4D Scan",
@@ -196,7 +206,7 @@
         ],
         "description": "",
         "location": "From Bump To Baby - Baby Scans Belfast, 11, Belfast BT3 9JQ, UK",
-        "prep": "Review client files; prepare coaching session notes/goals."
+        "prep": "Confirm match details with Bobby; bring padel gear."
       },
       {
         "title": "Untitled",
@@ -206,7 +216,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm match details with Bobby; bring padel gear."
+        "prep": "Confirm appointment time and bring any required documentation."
       },
       {
         "title": "RenewYou Start Meet",
@@ -216,7 +226,7 @@
         "attendees": [],
         "description": "<b>RenewYou Start Meet<br><br></b><a href=\"https://teams.live.com/meet/9372222198637?p=ezssuz6J53KMex55uq\">https://teams.live.com/meet/9372222198637?p=ezssuz6J53KMex55uq</a><b></b>",
         "location": "",
-        "prep": "Confirm appointment time and bring any required documentation."
+        "prep": "Clarify event purpose; prepare relevant materials/agenda."
       },
       {
         "title": "Q4 Programming Meet",
@@ -229,7 +239,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Clarify event purpose; prepare relevant materials/agenda."
+        "prep": "Prepare RenewYou Start Meet agenda; brief team on goals."
       },
       {
         "title": "\ud83d\udcde Call: Nancy  Cubitt",
@@ -269,6 +279,16 @@
       }
     ],
     "urgent": [
+      {
+        "from": "Danielle Boyd",
+        "from_raw": "Danielle Boyd <danielle_boyd_3@hotmail.com>",
+        "subject": "Accepted: The Jury Experience \u2013 Death by AI: Who Pays the Price?, Sunday 13 Sep \u00b7 16:00 \u2013 17:30",
+        "snippet": "",
+        "id": "1a059494b4820269",
+        "thread_id": "1a059494b4820269",
+        "msg_count": 1,
+        "draft_id": "r-8645406808173737767"
+      },
       {
         "from": "Siobhan McNicholl",
         "from_raw": "Siobhan McNicholl <siobhanpmcnicholl@gmail.com>",
@@ -336,9 +356,9 @@
     ],
     "checkins": {
       "by_email": {
-        "sarah@nourishandnurtu.re": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -460,10 +480,19 @@
   },
   "ghl": [
     {
+      "name": "Elizabeth Greenaway",
+      "channel": "Phone",
+      "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
+      "age": "3h ago",
+      "unread": 2,
+      "conv_id": "Z1JjEXnxshsXv22Joew4",
+      "contact_id": "LVMDPIWXCTZN8ASWzdu2"
+    },
+    {
       "name": "Grindify Sports",
       "channel": "Phone",
       "message": "Hi there \nWe are a professional manufacture of custom sports uniforms and apparel. We can make your team uniforms and casual wear with your logo, name, and design at the best prices.\nPlease send your ",
-      "age": "0h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "24RterkJmhZvRhotEGvm",
       "contact_id": "nGp07shiBbglGmD3GEoH"
@@ -472,7 +501,7 @@
       "name": "Grindify Sport",
       "channel": "Phone",
       "message": "Hi there \nWe are a professional manufacture of custom sports uniforms and apparel. We can make your team uniforms and casual wear with your logo, name, and design at the best prices.\nPlease send your ",
-      "age": "0h ago",
+      "age": "7h ago",
       "unread": 2,
       "conv_id": "uYVwLdDmHnCBdXi0YosQ",
       "contact_id": "xsgA4dtATRUS7nLLXVCF"
@@ -481,7 +510,7 @@
       "name": "Geraldine Finch",
       "channel": "Phone",
       "message": "Great,  thanks again.",
-      "age": "1h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "NfDNfpGndCfvZtRZT5G6",
       "contact_id": "BOknZVOGSp9UYTPZU9q1"
@@ -490,7 +519,7 @@
       "name": "Edith Irwin",
       "channel": "Phone",
       "message": "Ok thank you, again.",
-      "age": "17h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "S5UMCln6AxYzvZxzCV8i",
       "contact_id": "NpGhVJ1mMA48f6EpJuwe"
@@ -499,7 +528,7 @@
       "name": "Claire Bear",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/DcmNJ3NRBrI/",
-      "age": "21h ago",
+      "age": "1d ago",
       "unread": 2,
       "conv_id": "Mj2Uv2MZnrRVBYKJhDwU",
       "contact_id": "Nr5RfQBav4oNgS8h3e9y"
@@ -508,7 +537,7 @@
       "name": "Mary Millar",
       "channel": "Phone",
       "message": "Thank you .",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "tpf1xwEhoydWmfMKxam6",
       "contact_id": "VXBK5s6tT7hd6K8EP9Ts"
@@ -517,7 +546,7 @@
       "name": "MSAK NI",
       "channel": "Phone",
       "message": "Please have a look at https://www.msakpharma.com/     \n\nPens available from \u00a355 bulk orders\u2026",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "CfBu7QRwZ4nAFaoyUWRP",
       "contact_id": "IKjD08dss686ylXJGfcT"
@@ -5144,8 +5173,14 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Ok awesome! Thank you. I've sent the updated pdf for the ones who has not sign the strongevity forms yet.",
-        "hours": 6,
+        "hours": 12,
         "name": "Julie Lapaz"
+      },
+      {
+        "user_id": "U0AV56YE0N4",
+        "text": "Hi Megan. Must be a wee bug as we're off today for the bank holiday :blush:",
+        "hours": 6,
+        "name": "Megan"
       }
     ],
     "mentions": [],
@@ -25148,8 +25183,8 @@
       }
     ],
     "cash_in_30": 23358.04,
-    "cash_out_30": 28343.62,
-    "net_30": -4985.58,
+    "cash_out_30": 28272.63,
+    "net_30": -4914.59,
     "as_of": "2026-08-31"
   },
   "gocardless": {
