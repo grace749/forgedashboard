@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T05:02:30.068020+00:00",
+  "generated_at": "2026-09-01T11:33:46.377981+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-09-01",
-    "event_count": 16,
-    "urgent_count": 1,
+    "event_count": 15,
+    "urgent_count": 4,
     "enquiry_count": 3,
     "calendar": [
       {
@@ -22,16 +22,6 @@
         "prep": "Confirm RenewYou programme details, materials, and participant list for all-day delivery."
       },
       {
-        "title": "Flight to manchester",
-        "time": "8:00am",
-        "start_raw": "2026-09-01T08:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": "Check flight confirmation, boarding pass, arrive early for security."
-      },
-      {
         "title": "Flight back to belfast",
         "time": "7:15pm",
         "start_raw": "2026-09-01T19:15:00+01:00",
@@ -39,7 +29,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Check flight confirmation, boarding pass, arrive early for security."
       },
       {
         "title": "Precious & Patience Coaching",
@@ -51,7 +41,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Review coaching plan, confirm attendance with Precious and Patience."
+        "prep": ""
       },
       {
         "title": "Padel match with Bobby",
@@ -61,7 +51,7 @@
         "attendees": [],
         "description": "",
         "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": "Confirm match time, location, and Bobby's contact details."
+        "prep": "Review coaching plan, confirm attendance with Precious and Patience."
       },
       {
         "title": "4D Scan",
@@ -73,7 +63,7 @@
         ],
         "description": "",
         "location": "From Bump To Baby - Baby Scans Belfast, 11, Belfast BT3 9JQ, UK",
-        "prep": "Bring appointment card, arrive 15 minutes early, wear comfortable clothing."
+        "prep": "Confirm match time, location, and Bobby's contact details."
       },
       {
         "title": "Untitled",
@@ -83,7 +73,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Bring appointment card, arrive 15 minutes early, wear comfortable clothing."
       },
       {
         "title": "RenewYou Start Meet",
@@ -93,30 +83,17 @@
         "attendees": [],
         "description": "<b>RenewYou Start Meet<br><br></b><a href=\"https://teams.live.com/meet/9372222198637?p=ezssuz6J53KMex55uq\">https://teams.live.com/meet/9372222198637?p=ezssuz6J53KMex55uq</a><b></b>",
         "location": "",
-        "prep": "Prepare RenewYou Start Meet agenda, participant list, Teams link tested."
-      },
-      {
-        "title": "Q4 Programming Meet",
-        "time": "all day",
-        "start_raw": "2026-09-03",
-        "day": "Thursday",
-        "attendees": [
-          "jojo@theforge.pt",
-          "eiliskearns@hotmail.co.uk"
-        ],
-        "description": "",
-        "location": "",
-        "prep": "Review Q4 programming data, targets, budget, prepare presentation materials."
+        "prep": ""
       },
       {
         "title": "Mark Eye Appt Causeway Hospital",
-        "time": "9:15am",
-        "start_raw": "2026-09-03T09:15:00+01:00",
+        "time": "9:00am",
+        "start_raw": "2026-09-03T09:00:00+01:00",
         "day": "Thursday",
         "attendees": [],
         "description": "",
         "location": "Causeway Hospital, 4 Newbridge Rd, Coleraine BT52 1HS, UK",
-        "prep": "Confirm appointment time, bring insurance card and medical history."
+        "prep": "Prepare RenewYou Start Meet agenda, participant list, Teams link tested."
       },
       {
         "title": "\ud83d\udcde Call: Nancy  Cubitt",
@@ -150,7 +127,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Review Q4 programming data, targets, budget, prepare presentation materials."
       },
       {
         "title": "Untitled",
@@ -160,7 +137,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm appointment time, bring insurance card and medical history."
       },
       {
         "title": "\ud83d\udcde Call: Laura Mckendry",
@@ -183,9 +160,52 @@
         "description": "",
         "location": "",
         "prep": ""
+      },
+      {
+        "title": "Q4 Programming Meet",
+        "time": "2:00pm",
+        "start_raw": "2026-09-03T14:00:00+01:00",
+        "day": "Thursday",
+        "attendees": [
+          "jojo@theforge.pt",
+          "eiliskearns@hotmail.co.uk"
+        ],
+        "description": "",
+        "location": "",
+        "prep": ""
       }
     ],
     "urgent": [
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Confirmation of your TShirt Studio order - 3874468",
+        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3874468 Your order has been received as follows: Items Sport Shirt (Sport Shirt)",
+        "id": "1a05c994af0eb7c6",
+        "thread_id": "1a05c994af0eb7c6",
+        "msg_count": 1,
+        "draft_id": "r-1913684462028948725"
+      },
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Confirmation of your TShirt Studio order - 3874460",
+        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3874460 Your order has been received as follows: Items Value T-Shirt (Value T-Shirt)",
+        "id": "1a05c911921c59e0",
+        "thread_id": "1a05c911921c59e0",
+        "msg_count": 1,
+        "draft_id": "r-6030893702542549358"
+      },
+      {
+        "from": "Stuart Aitken",
+        "from_raw": "Stuart Aitken <stuart@theptroadmap.com>",
+        "subject": "Nick Winkelman (Sept 26th)",
+        "snippet": "Hi! Thanks for booking onto Nick Winkelman&#39;s seminar in Edinburgh on September 26th. I cannot tell you how excited I am for the event, and to meet you all in person! I&#39;ll be sending over all",
+        "id": "1a05c60023138bf8",
+        "thread_id": "1a05c60023138bf8",
+        "msg_count": 1,
+        "draft_id": "r-7493789731762524696"
+      },
       {
         "from": "Siobhan McNicholl",
         "from_raw": "Siobhan McNicholl <siobhanpmcnicholl@gmail.com>",
@@ -235,9 +255,9 @@
     ],
     "checkins": {
       "by_email": {
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -359,19 +379,19 @@
   },
   "ghl": [
     {
-      "name": "Joan Stewart",
+      "name": "Lynda Wright",
       "channel": "Phone",
-      "message": "Sorry Grave can\u2019t get anyone to sit with Allister on Tuesday just because of the recovery they don\u2019t want responsibility for something happening",
-      "age": "6h ago",
-      "unread": 2,
-      "conv_id": "LtgYYO88NEmcV5G7a1T1",
-      "contact_id": "nSypTXitfscRgAByuC86"
+      "message": "\ud83d\udc4d",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "rBvQbzXXETuFM8ahDeEH",
+      "contact_id": "zvyicP9O2D0R7RP27nCE"
     },
     {
       "name": "Elizabeth Greenaway",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "11h ago",
+      "age": "18h ago",
       "unread": 2,
       "conv_id": "Z1JjEXnxshsXv22Joew4",
       "contact_id": "LVMDPIWXCTZN8ASWzdu2"
@@ -380,7 +400,7 @@
       "name": "Grindify Sports",
       "channel": "Phone",
       "message": "Hi there \nWe are a professional manufacture of custom sports uniforms and apparel. We can make your team uniforms and casual wear with your logo, name, and design at the best prices.\nPlease send your ",
-      "age": "15h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "24RterkJmhZvRhotEGvm",
       "contact_id": "nGp07shiBbglGmD3GEoH"
@@ -389,7 +409,7 @@
       "name": "Grindify Sport",
       "channel": "Phone",
       "message": "Hi there \nWe are a professional manufacture of custom sports uniforms and apparel. We can make your team uniforms and casual wear with your logo, name, and design at the best prices.\nPlease send your ",
-      "age": "15h ago",
+      "age": "22h ago",
       "unread": 2,
       "conv_id": "uYVwLdDmHnCBdXi0YosQ",
       "contact_id": "xsgA4dtATRUS7nLLXVCF"
@@ -398,55 +418,10 @@
       "name": "Geraldine Finch",
       "channel": "Phone",
       "message": "Great,  thanks again.",
-      "age": "16h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "NfDNfpGndCfvZtRZT5G6",
       "contact_id": "BOknZVOGSp9UYTPZU9q1"
-    },
-    {
-      "name": "Edith Irwin",
-      "channel": "Phone",
-      "message": "Ok thank you, again.",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "S5UMCln6AxYzvZxzCV8i",
-      "contact_id": "NpGhVJ1mMA48f6EpJuwe"
-    },
-    {
-      "name": "Claire Bear",
-      "channel": "Phone",
-      "message": "https://www.instagram.com/reel/DcmNJ3NRBrI/",
-      "age": "1d ago",
-      "unread": 2,
-      "conv_id": "Mj2Uv2MZnrRVBYKJhDwU",
-      "contact_id": "Nr5RfQBav4oNgS8h3e9y"
-    },
-    {
-      "name": "Mary Millar",
-      "channel": "Phone",
-      "message": "Thank you .",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "tpf1xwEhoydWmfMKxam6",
-      "contact_id": "VXBK5s6tT7hd6K8EP9Ts"
-    },
-    {
-      "name": "MSAK NI",
-      "channel": "Phone",
-      "message": "Please have a look at https://www.msakpharma.com/     \n\nPens available from \u00a355 bulk orders\u2026",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "CfBu7QRwZ4nAFaoyUWRP",
-      "contact_id": "IKjD08dss686ylXJGfcT"
-    },
-    {
-      "name": "Helen Basher Logan",
-      "channel": "Phone",
-      "message": "Thank you Grace .",
-      "age": "1d ago",
-      "unread": 2,
-      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
-      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
     }
   ],
   "jumpstart": {
@@ -1804,6 +1779,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach JoJo",
+        "last_scan": "2026-09-01",
+        "scan_count": 16,
+        "weight": 194.9,
+        "smm": 73.2,
+        "pbf": 33.4,
+        "bmi": 30.5,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": 0.5,
+        "smm_change": 0.4,
+        "pbf_change": 0.0,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-13",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Coach Grace",
         "last_scan": "2026-08-31",
         "scan_count": 14,
@@ -1873,30 +1872,6 @@
         "vfa_change": null,
         "next_due": "2026-10-07",
         "days_to_due": 36,
-        "overdue": false
-      },
-      {
-        "name": "Coach JoJo",
-        "last_scan": "2026-08-25",
-        "scan_count": 15,
-        "weight": 194.4,
-        "smm": 72.8,
-        "pbf": 33.4,
-        "bmi": 30.4,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": 1.7,
-        "smm_change": 2.0,
-        "pbf_change": -1.2,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-06",
-        "days_to_due": 35,
         "overdue": false
       },
       {
@@ -4691,8 +4666,15 @@
           {
             "task": "Clothes Stock Tracker",
             "type": "Facilities",
-            "sop": "Clothing Stock Tracker",
-            "owner": "GS /JH / EK",
+            "sop": "Clothing & Supplies Stock Tracker",
+            "owner": "JH / EK",
+            "built": true
+          },
+          {
+            "task": "Supplies Stock Tracker",
+            "type": "Facilities",
+            "sop": "Clothing & Supplies Stock Tracker",
+            "owner": "JH",
             "built": true
           },
           {
@@ -4876,13 +4858,6 @@
             "sop": "Cardio Machine Technique SOP",
             "owner": "GS /JH / EK",
             "built": true
-          },
-          {
-            "task": "Warmups & Cooldown Sheets",
-            "type": "Coaches",
-            "sop": "Warmups and Cooldowns SOP https://canva.link/rdamphvgb76et2s FOR Q3",
-            "owner": "GS /JH / EK",
-            "built": true
           }
         ]
       }
@@ -4900,13 +4875,13 @@
         },
         {
           "type": "Coaches",
-          "total": 23,
-          "built": 20
+          "total": 22,
+          "built": 19
         },
         {
           "type": "Facilities",
-          "total": 7,
-          "built": 6
+          "total": 8,
+          "built": 7
         },
         {
           "type": "General",
@@ -5027,16 +5002,16 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Ok awesome! Thank you. I've sent the updated pdf for the ones who has not sign the strongevity forms yet.",
-        "hours": 21,
-        "name": "Julie Lapaz"
-      },
-      {
         "user_id": "U0AV56YE0N4",
         "text": "Hi Megan. Must be a wee bug as we're off today for the bank holiday :blush:",
-        "hours": 14,
+        "hours": 20,
         "name": "Megan"
+      },
+      {
+        "user_id": "U0AT9UT2W8Z",
+        "text": "Feeling much better! Had a nasty vomiting bug ",
+        "hours": 1,
+        "name": "Margaret Reynolds"
       }
     ],
     "mentions": [],
@@ -5059,6 +5034,7 @@
       "kat greehy": "U06ADJK7A9F",
       "debs goss": "U06LXKXUD70",
       "noor alshehabi": "U06MR4JES9F",
+      "sarah": "U06S00H1P0D",
       "karen rhodes": "U06SRJHDFEE",
       "sara": "U06TFF56MHN",
       "heather m": "U06TXTYRF6J",
@@ -6480,6 +6456,66 @@
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
+        "gid": "1218042452227858",
+        "name": "",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227858",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
+        "gid": "1218042452227857",
+        "name": "Julie VA Task - Update Blog",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227857",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
+        "gid": "1218042452227856",
+        "name": "Julie VA Task - email newsletter",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227856",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
+        "gid": "1218042452227855",
+        "name": "Julie VA Task - msging old leads",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227855",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
+        "gid": "1218042452227854",
+        "name": "Davy 30 Day wellbeing journeys",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227854",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
+        "gid": "1218042452227853",
+        "name": "Nigel mobility and nutrition graham",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227853",
+        "project": null,
+        "due_on": null,
+        "overdue": false,
+        "notes": ""
+      },
+      {
         "gid": "1217150453835587",
         "name": "",
         "completed": false,
@@ -6666,8 +6702,8 @@
     }
   },
   "teamup": {
-    "total_members": 164,
-    "recurring": 111,
+    "total_members": 167,
+    "recurring": 113,
     "recurring_members": [
       {
         "id": 10803724,
@@ -6890,6 +6926,10 @@
         "name": "Kerry McGillan"
       },
       {
+        "id": 4772999,
+        "name": "Kirsty Dunn"
+      },
+      {
         "id": 13122563,
         "name": "Laura Doherty"
       },
@@ -7028,6 +7068,10 @@
       {
         "id": 12323224,
         "name": "Sami-Jo Smyth"
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Boorman"
       },
       {
         "id": 12982150,
@@ -7169,7 +7213,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 4,
+    "new_this_month": 6,
     "cancellations_this_month": 5,
     "leaving_members": [
       {
@@ -7193,7 +7237,7 @@
         "name": "Teresa Dougan"
       }
     ],
-    "paused": 4,
+    "paused": 3,
     "paused_members": [
       {
         "id": 10746722,
@@ -7202,10 +7246,6 @@
       {
         "id": 7840911,
         "name": "Kathryn Greehy"
-      },
-      {
-        "id": 4772999,
-        "name": "Kirsty Dunn"
       },
       {
         "id": 9188544,
@@ -7406,11 +7446,6 @@
       {
         "month": "2026-03",
         "members": [
-          {
-            "name": "Sarah Boorman",
-            "membership": "Empower",
-            "end": "2026-03-31"
-          },
           {
             "name": "Joan Mcwilliams",
             "membership": "Elevate",
@@ -7668,11 +7703,6 @@
       {
         "month": "2026-03",
         "members": [
-          {
-            "name": "Sarah Boorman",
-            "membership": "Empower",
-            "end": "2026-03-31"
-          },
           {
             "name": "Joan Mcwilliams",
             "membership": "Elevate",
@@ -7968,11 +7998,11 @@
         ]
       }
     ],
-    "cancelled_ytd": 43,
-    "churn_rate": 3.2,
-    "avg_member_price": 137.18,
-    "monthly_recurring_revenue": 15090.0,
-    "avg_tenure_months": 8.6,
+    "cancelled_ytd": 42,
+    "churn_rate": 3.1,
+    "avg_member_price": 137.3,
+    "monthly_recurring_revenue": 15378.0,
+    "avg_tenure_months": 8.5,
     "cancelled_last_month": 7,
     "cancelled_members": [
       {
@@ -8014,7 +8044,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 71,
+        "count": 73,
         "members": [
           {
             "id": 10803724,
@@ -8149,6 +8179,10 @@
             "name": "Kerry McGillan"
           },
           {
+            "id": 4772999,
+            "name": "Kirsty Dunn"
+          },
+          {
             "id": 13177624,
             "name": "Laura Douglas"
           },
@@ -8231,6 +8265,10 @@
           {
             "id": 12323224,
             "name": "Sami-Jo Smyth"
+          },
+          {
+            "id": 7190530,
+            "name": "Sarah Boorman"
           },
           {
             "id": 12982150,
@@ -8461,6 +8499,68 @@
         ]
       },
       {
+        "name": "Strongevity Membership",
+        "count": 14,
+        "members": [
+          {
+            "id": 13487762,
+            "name": "BERNADETTE MCLAUGHLIN"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 10090672,
+            "name": "Colleen Morrison"
+          },
+          {
+            "id": 13511909,
+            "name": "Craig McCollum"
+          },
+          {
+            "id": 13520776,
+            "name": "Davina Dickson"
+          },
+          {
+            "id": 13488742,
+            "name": "Diane Thomson"
+          },
+          {
+            "id": 13542031,
+            "name": "Elizabeth Steele"
+          },
+          {
+            "id": 13526500,
+            "name": "Geraldine Finch"
+          },
+          {
+            "id": 13593758,
+            "name": "Jill Weir"
+          },
+          {
+            "id": 11027616,
+            "name": "Joan Stewart"
+          },
+          {
+            "id": 13512836,
+            "name": "Laurie Curran"
+          },
+          {
+            "id": 13094545,
+            "name": "Lyn Chestnutt"
+          },
+          {
+            "id": 13536586,
+            "name": "Pauline McAuley"
+          },
+          {
+            "id": 13212332,
+            "name": "Sandra Sherrard"
+          }
+        ]
+      },
+      {
         "name": "6 Week Jumpstart",
         "count": 13,
         "members": [
@@ -8515,64 +8615,6 @@
           {
             "id": 13677712,
             "name": "VIVIAN MORRISON"
-          }
-        ]
-      },
-      {
-        "name": "Strongevity Membership",
-        "count": 13,
-        "members": [
-          {
-            "id": 13487762,
-            "name": "BERNADETTE MCLAUGHLIN"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 10090672,
-            "name": "Colleen Morrison"
-          },
-          {
-            "id": 13511909,
-            "name": "Craig McCollum"
-          },
-          {
-            "id": 13520776,
-            "name": "Davina Dickson"
-          },
-          {
-            "id": 13488742,
-            "name": "Diane Thomson"
-          },
-          {
-            "id": 13542031,
-            "name": "Elizabeth Steele"
-          },
-          {
-            "id": 13526500,
-            "name": "Geraldine Finch"
-          },
-          {
-            "id": 13593758,
-            "name": "Jill Weir"
-          },
-          {
-            "id": 11027616,
-            "name": "Joan Stewart"
-          },
-          {
-            "id": 13512836,
-            "name": "Laurie Curran"
-          },
-          {
-            "id": 13094545,
-            "name": "Lyn Chestnutt"
-          },
-          {
-            "id": 13212332,
-            "name": "Sandra Sherrard"
           }
         ]
       },
@@ -8890,7 +8932,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 638
+            "count": 658
           },
           {
             "day": "Wednesday",
@@ -8898,7 +8940,7 @@
           },
           {
             "day": "Monday",
-            "count": 475
+            "count": 487
           },
           {
             "day": "Friday",
@@ -8924,7 +8966,7 @@
           },
           {
             "day": "Monday",
-            "count": 475
+            "count": 487
           },
           {
             "day": "Wednesday",
@@ -8934,7 +8976,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 621
+            "count": 641
           },
           {
             "name": "Build: Full Body",
@@ -8972,7 +9014,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 142
+            "count": 154
           },
           {
             "name": "Plate",
@@ -9003,15 +9045,6 @@
             "label": "Wednesday 6pm Plate"
           },
           {
-            "day": "Tuesday",
-            "time": "7am",
-            "name": "Build: Upper",
-            "count": 115,
-            "sessions": 11,
-            "avg": 10.5,
-            "label": "Tuesday 7am Build: Upper"
-          },
-          {
             "day": "Monday",
             "time": "8pm",
             "name": "Build: Lower",
@@ -9021,6 +9054,24 @@
             "label": "Monday 8pm Build: Lower"
           },
           {
+            "day": "Tuesday",
+            "time": "7am",
+            "name": "Build: Upper",
+            "count": 124,
+            "sessions": 12,
+            "avg": 10.3,
+            "label": "Tuesday 7am Build: Upper"
+          },
+          {
+            "day": "Monday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 62,
+            "sessions": 6,
+            "avg": 10.3,
+            "label": "Monday 11am Strongevity"
+          },
+          {
             "day": "Thursday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -9028,15 +9079,6 @@
             "sessions": 13,
             "avg": 10.2,
             "label": "Thursday 7am Build: Full Body"
-          },
-          {
-            "day": "Friday",
-            "time": "7pm",
-            "name": "Mobility",
-            "count": 112,
-            "sessions": 11,
-            "avg": 10.2,
-            "label": "Friday 7pm Mobility"
           }
         ],
         "bottom_slots": [
@@ -9095,13 +9137,13 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 2934
+        "total_attended": 2966
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 250
+            "count": 270
           },
           {
             "day": "Wednesday",
@@ -9109,7 +9151,7 @@
           },
           {
             "day": "Monday",
-            "count": 174
+            "count": 186
           },
           {
             "day": "Thursday",
@@ -9135,7 +9177,7 @@
           },
           {
             "day": "Monday",
-            "count": 174
+            "count": 186
           },
           {
             "day": "Wednesday",
@@ -9145,7 +9187,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 233
+            "count": 253
           },
           {
             "name": "Build: Full Body",
@@ -9161,7 +9203,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 86
+            "count": 98
           },
           {
             "name": "Circuits",
@@ -9205,15 +9247,6 @@
             "label": "Friday 7pm Mobility"
           },
           {
-            "day": "Tuesday",
-            "time": "7am",
-            "name": "Build: Upper",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Tuesday 7am Build: Upper"
-          },
-          {
             "day": "Thursday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -9221,6 +9254,15 @@
             "sessions": 4,
             "avg": 10.8,
             "label": "Thursday 7am Build: Full Body"
+          },
+          {
+            "day": "Monday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 43,
+            "sessions": 4,
+            "avg": 10.8,
+            "label": "Monday 11am Strongevity"
           },
           {
             "day": "Wednesday",
@@ -9306,7 +9348,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1015
+        "total_attended": 1047
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. **Add a paid 30-min PT block or open-gym slot on Thursday/Friday mornings** \u2014 your quietest days have gaps between classes; even 2\u20133 PTs booking back-to-back slots or members paying \u00a35\u20138 for supervised gym access during off-peak hours generates revenue with minimal scheduling friction.\n\n2. **Launch a Saturday \"Mobility + Coffee\" workshop (45 mins, \u00a38\u201310)** \u2014 Saturday is your quietest day; a guided mobility or stretching session followed by a social coffee break attracts members who skip weekend classes but want community time, and sits between your existing timetable gaps.\n\n**Lift quieter classes:**\n\n3. **Move Barbelle and Capacity to Tuesday or Wednesday mornings, and run a 4-week \"Try It Free\" promo with a 1:1 form demo pre-class** \u2014 these two are critically low (14\u201319 in last 30 days); pairing them with your busiest days increases discovery, and a quick 10-min form walkthrough removes the intimidation barrier that's likely keeping signups down. Invite Build class attendees directly.",
       "capacity": [
@@ -9622,10 +9664,10 @@
       },
       {
         "month": "2026-09",
-        "active": 161,
+        "active": 163,
         "churn": 9.4,
         "by_type": {
-          "Empower": 69,
+          "Empower": 70,
           "8 PT Sessions": 3,
           "4 PT Sessions": 10,
           "Evolve": 5,
@@ -9639,7 +9681,7 @@
           "4 Class Pass": 1,
           "Well75": 10,
           "8 Session Block": 1,
-          "Strongevity Membership": 13
+          "Strongevity Membership": 14
         }
       }
     ],
@@ -9736,13 +9778,6 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 9768831,
-        "name": "Jane Hegarty",
-        "membership": "Empower",
-        "days_absent": 13,
-        "last_seen": "2026-08-19"
-      },
-      {
         "id": 11206355,
         "name": "Janeen Gilfillan",
         "membership": "Elevate",
@@ -9783,6 +9818,13 @@
         "membership": "4 PT Sessions",
         "days_absent": 43,
         "last_seen": "2026-07-20"
+      },
+      {
+        "id": 4772999,
+        "name": "Kirsty Dunn",
+        "membership": "Empower",
+        "days_absent": 40,
+        "last_seen": "2026-07-23"
       },
       {
         "id": 13262681,
@@ -10690,6 +10732,15 @@
         "last_momentum": null
       },
       {
+        "id": 4772999,
+        "name": "Kirsty Dunn",
+        "email": "kirsty.dunn40@icloud.com",
+        "join_date": "2021-12-07",
+        "membership": "Empower",
+        "class_count": 587,
+        "last_momentum": null
+      },
+      {
         "id": 13122563,
         "name": "Laura Doherty",
         "email": "lauratoner85@hotmail.com",
@@ -11023,6 +11074,15 @@
         "last_momentum": null
       },
       {
+        "id": 13536586,
+        "name": "Pauline McAuley",
+        "email": "paulinemcauley4@gmail.com",
+        "join_date": "2026-09-01",
+        "membership": "Strongevity Membership",
+        "class_count": 3,
+        "last_momentum": null
+      },
+      {
         "id": 13553225,
         "name": "Rachel Linton",
         "email": "rachellinton0@gmail.com",
@@ -11084,6 +11144,15 @@
         "membership": "Kickstart PAID IN FULL",
         "class_count": 211,
         "last_momentum": "2026-08-26"
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Boorman",
+        "email": "sarahlouiseboorman@yahoo.co.uk",
+        "join_date": "2024-06-26",
+        "membership": "Empower",
+        "class_count": 299,
+        "last_momentum": null
       },
       {
         "id": 12982150,
@@ -23549,20 +23618,145 @@
       },
       {
         "month": "2026-09",
-        "revenue": 0.0,
-        "expenses": 147.0,
-        "profit": -147.0,
-        "profit_pct": null,
+        "revenue": 831.63,
+        "expenses": 465.74,
+        "profit": 365.89,
+        "profit_pct": 44.0,
         "categories": {
-          "in": [],
+          "in": [
+            {
+              "name": "Revenue",
+              "amount": 831.63
+            }
+          ],
           "out": [
             {
+              "name": "Other",
+              "amount": 230.55
+            },
+            {
               "name": "Professional Services",
-              "amount": 147.0
+              "amount": 177.0
+            },
+            {
+              "name": "Phone And Internet",
+              "amount": 24.99
+            },
+            {
+              "name": "Food And Drink",
+              "amount": 15.1
+            },
+            {
+              "name": "Admin",
+              "amount": 12.9
+            },
+            {
+              "name": "Travel",
+              "amount": 5.2
             }
           ]
         },
         "transactions": [
+          {
+            "uid": "c730d903-43ae-4de8-b38b-9002da70b89a",
+            "date": "2026-09-01",
+            "name": "Granola Inc",
+            "ref": "GRANOLA INC",
+            "amount": 12.9,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "c72c1bfb-5f61-40f3-afe7-d414c0e8f815",
+            "date": "2026-09-01",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 56.0,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "c72273a7-ea4f-4359-b1ff-e96a0d771e50",
+            "date": "2026-09-01",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 174.55,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "c6ff6e0c-0265-4f90-aa7a-fb2ddbb72466",
+            "date": "2026-09-01",
+            "name": "Ezra & Gil",
+            "ref": "SQ *EZRA & GIL",
+            "amount": 15.1,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
+          {
+            "uid": "c6c22ff3-2c8c-4c84-980d-63a8a42f2c7d",
+            "date": "2026-09-01",
+            "name": "Manchester Airport",
+            "ref": "MANCHESTER AIRPORT TVM",
+            "amount": 5.2,
+            "direction": "OUT",
+            "category": "Travel",
+            "internal": false
+          },
+          {
+            "uid": "c6530042-8a52-45d1-8bb0-0c87b85cc441",
+            "date": "2026-09-01",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 66.91,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "c64f99d7-4347-4152-b5af-1aaed1629cf6",
+            "date": "2026-09-01",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 764.72,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "c637a5ad-c049-4d84-a02a-4636f54c3165",
+            "date": "2026-09-01",
+            "name": "Systemize Ai",
+            "ref": "SYSTEMIZE AI LTD",
+            "amount": 20.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "c637e898-b821-4e2f-bbc4-21e9f765517d",
+            "date": "2026-09-01",
+            "name": "Systemize Ai",
+            "ref": "SYSTEMIZE AI LTD",
+            "amount": 10.0,
+            "direction": "OUT",
+            "category": "Professional Services",
+            "internal": false
+          },
+          {
+            "uid": "c6220f28-194a-4231-92b4-e6719160193c",
+            "date": "2026-09-01",
+            "name": "Apple App Store",
+            "ref": "APPLE.COM/BILL",
+            "amount": 24.99,
+            "direction": "OUT",
+            "category": "Phone And Internet",
+            "internal": false
+          },
           {
             "uid": "c57580c7-97d9-4da9-9d33-61b3e1c5f966",
             "date": "2026-09-01",
@@ -23577,7 +23771,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 1086.42,
+    "cash_position": 1599.31,
     "available": 0.0,
     "reserves": [
       {
@@ -23598,7 +23792,7 @@
       }
     ],
     "earmarked": 10477.0,
-    "total_cash": 11563.42,
+    "total_cash": 12076.31,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23626,9 +23820,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 23352.88,
-    "cash_out_30": 28419.63,
-    "net_30": -5066.75,
+    "cash_in_30": 24184.51,
+    "cash_out_30": 28738.37,
+    "net_30": -4553.86,
     "as_of": "2026-09-01"
   },
   "gocardless": {
@@ -23697,8 +23891,8 @@
       },
       {
         "month": "2026-08",
-        "collected": 15501.11,
-        "payments": 112
+        "collected": 15661.11,
+        "payments": 114
       },
       {
         "month": "2026-09",
@@ -23975,6 +24169,20 @@
   "tshirt": {
     "configured": true,
     "orders": [
+      {
+        "date": "2026-09-01",
+        "order_no": "",
+        "total": "\u00a356.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
+      {
+        "date": "2026-09-01",
+        "order_no": "",
+        "total": "\u00a3174.55",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
       {
         "date": "2026-08-14",
         "order_no": "",
@@ -24641,8 +24849,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 95,
-    "total_spend": 8829.05,
+    "count": 97,
+    "total_spend": 9059.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": {
@@ -24703,7 +24911,7 @@
       "income": 123.0,
       "profit": 485.39
     },
-    "advice": "**Insights**\n\nJuly was an anomaly\u2014you hit 215 leads at \u00a32/lead with a 13.5% close rate (29 sales). August collapsed to 109 leads at \u00a35/lead despite higher spend, and close rate held at 22% (actually your strongest conversion). This isn't a creative or messaging problem; the lead *quality* tanked in August while the sales quality stayed solid. Something changed in your targeting, audience, or ad setup between July and August that widened your funnel to cheaper, colder prospects who don't convert.\n\nYour profit-per-sale in August (\u00a352) is strong, but you're now getting half the volume at 2.5\u00d7 the cost-per-lead. April\u2013June showed cost-per-lead drift (\u00a36\u2192\u00a321) before the July reset, suggesting you've hit this ceiling before when audiences fatigue or targeting gets too broad.\n\nThe 22% close rate is excellent for a gym trial lead and means your sales team or follow-up is working. Don't fix what isn't broken there.\n\n**Actions**\n\n1. **Audit July's exact targeting setup.** Pull the ad account reports for both months side-by-side. Check: audience size, age/location breakdowns, interest/behaviour stacks, lookalike seed, and placement mix. July's \u00a32/lead came from somewhere specific\u2014tighter targeting, better seed audience, or different placements. Replicate that configuration exactly in September, then test relaxed versions once you've locked in the baseline.\n\n2. **Rebuild your core audience around your 22% converters.** Export your 24 August sales as a custom audience, create a lookalike (1% similarity, UK), and run a dedicated test budget (\u00a3150\u2013200) targeting *only* that lookalike plus your core interest stacks (women's fitness, functional training, local Belfast gym interest). Expect \u00a33\u20134/lead; measure close rate rigorously. If it hits 20%+, shift 60% of September budget here.\n\n3. **Cut the broad/lookalike spend ruthlessly.** If you're still running 25%+ of budget on broad audiences or large lookalikes (5%+ similarity), pause them immediately. Your August cost cre"
+    "advice": "**Insights**\n\n- July was an anomaly driven by volume\u2014215 leads at \u00a32/lead looks like either a technical tracking issue, audience overlap, or a creative that saturated fast. August corrected to 109 leads at \u00a35/lead, which is actually *healthy* and sustainable. Your close rate (22%) is solid; the issue isn't lead quality, it's consistency.\n- You've cracked the conversion funnel (22% close is strong for a gym trial), but your cost-per-lead is creeping back up month-on-month (\u00a36 \u2192 \u00a314 \u2192 \u00a321 \u2192 \u00a32 \u2192 \u00a35). This suggests creative fatigue and audience exhaustion\u2014you're hitting the same cold audiences repeatedly without refresh.\n- August's \u00a352 profit per trial sold is workable, but it's margins-thin. You need either lower CAC or higher close rate to scale confidently.\n\n**Actions**\n\n1. **Pause and segment your July audience.** That 215-lead month tells you there's a winning creative or audience in there. Pull the top 3 performing ad variants from July and test them fresh against a *new* cold audience in September (lookalike off your 29 July converters, or interest-stack women 25\u201345 into wellness/fitness you haven't hit in 60+ days). Isolate what actually worked.\n\n2. **Test 3 new creative angles immediately.** You're suffering creative decay. Run: (a) user-generated testimonial from your 24 August converters (social proof), (b) pain-point reframe (busy working mum / post-baby / stress relief\u2014not just \"fitness\"), (c) urgency/scarcity (6-week trial, limited spots). Keep spend equal across all three; kill the losers by day 7.\n\n3. **Tighten your audience to high-intent only.** Stop broad cold targeting. Use a LAL (lookalike) audience built from your 24 August paying customers only, and layer in: women 28\u201342, Belfast/surrounding 5 miles, interests in weight loss + mental health + women's spaces (not just fitness). Shrink your audience size to force relevance; you'll pay more per impression"
   },
   "moves": [
     {
