@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T11:33:46.377981+00:00",
+  "generated_at": "2026-09-01T14:00:55.033177+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3938,13 +3938,13 @@
       {
         "user_id": "U0AV56YE0N4",
         "text": "Hi Megan. Must be a wee bug as we're off today for the bank holiday :blush:",
-        "hours": 20,
+        "hours": 23,
         "name": "Megan"
       },
       {
         "user_id": "U0AT9UT2W8Z",
         "text": "Feeling much better! Had a nasty vomiting bug ",
-        "hours": 1,
+        "hours": 4,
         "name": "Margaret Reynolds"
       }
     ],
@@ -5138,7 +5138,7 @@
       }
     ],
     "new_this_month": 6,
-    "cancellations_this_month": 5,
+    "cancellations_this_month": 6,
     "leaving_members": [
       {
         "id": 12931950,
@@ -5151,6 +5151,10 @@
       {
         "id": 10671756,
         "name": "Jill Chadburn"
+      },
+      {
+        "id": 12672913,
+        "name": "Louise Feeney"
       },
       {
         "id": 13014573,
@@ -5923,7 +5927,7 @@
       }
     ],
     "cancelled_ytd": 42,
-    "churn_rate": 3.1,
+    "churn_rate": 3.8,
     "avg_member_price": 137.3,
     "monthly_recurring_revenue": 15378.0,
     "avg_tenure_months": 8.5,
@@ -7293,16 +7297,16 @@
           "status": "healthy"
         },
         {
-          "name": "Build: Upper",
-          "sessions": 75,
+          "name": "Mobility",
+          "sessions": 26,
           "cap": 12,
           "avg_attending": 9.8,
-          "fill_rate": 82,
+          "fill_rate": 81,
           "status": "healthy"
         },
         {
-          "name": "Mobility",
-          "sessions": 26,
+          "name": "Build: Upper",
+          "sessions": 75,
           "cap": 12,
           "avg_attending": 9.8,
           "fill_rate": 81,
@@ -7589,7 +7593,7 @@
       {
         "month": "2026-09",
         "active": 163,
-        "churn": 9.4,
+        "churn": 10.0,
         "by_type": {
           "Empower": 70,
           "8 PT Sessions": 3,
@@ -9324,28 +9328,10 @@
     ]
   },
   "events": {
-    "events": [
-      {
-        "name": "Forge Couch to 5k (8 Week Plan)",
-        "when": "7/20/2026",
-        "details": "8 Week running plan ending with a Team 5k",
-        "marketing": ""
-      },
-      {
-        "name": "5KM Park Run (end of couch 2 5k)",
-        "when": "19 September 9.30am",
-        "details": "Ballymoney Duck Pond park run",
-        "marketing": ""
-      },
-      {
-        "name": "Forge Summer Games",
-        "when": "22nd August 9.30am",
-        "details": "Forge Female Fitness",
-        "marketing": ""
-      }
-    ],
+    "events": [],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true
+    "configured": true,
+    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
   },
   "tshirt": {
     "configured": true,
