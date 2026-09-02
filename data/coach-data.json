@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T14:00:51.356438+00:00",
+  "generated_at": "2026-09-02T18:41:56.919840+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1328,6 +1328,54 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach Grace",
+        "last_scan": "2026-09-02",
+        "scan_count": 15,
+        "weight": 182.3,
+        "smm": 67.7,
+        "pbf": 33.6,
+        "bmi": 29.4,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -0.8,
+        "smm_change": -1.5,
+        "pbf_change": 0.8,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-14",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Lynda Wright",
+        "last_scan": "2026-09-02",
+        "scan_count": 2,
+        "weight": 174.7,
+        "smm": 53.1,
+        "pbf": 44.0,
+        "bmi": 30.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": 0.3,
+        "smm_change": 2.2,
+        "pbf_change": -2.0,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-14",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Coach JoJo",
         "last_scan": "2026-09-01",
         "scan_count": 16,
@@ -1349,30 +1397,6 @@
         "vfa_change": null,
         "next_due": "2026-10-13",
         "days_to_due": 41,
-        "overdue": false
-      },
-      {
-        "name": "Coach Grace",
-        "last_scan": "2026-08-31",
-        "scan_count": 14,
-        "weight": 183.1,
-        "smm": 69.2,
-        "pbf": 32.8,
-        "bmi": 29.6,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": 0.6,
-        "smm_change": 0.0,
-        "pbf_change": 0.7,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-12",
-        "days_to_due": 40,
         "overdue": false
       },
       {
@@ -2189,30 +2213,6 @@
         "vfa_change": null,
         "next_due": "2026-09-14",
         "days_to_due": 12,
-        "overdue": false
-      },
-      {
-        "name": "Lynda Wright",
-        "last_scan": "2026-07-27",
-        "scan_count": 1,
-        "weight": 174.4,
-        "smm": 50.9,
-        "pbf": 46.0,
-        "bmi": 29.9,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-09-07",
-        "days_to_due": 5,
         "overdue": false
       },
       {
@@ -3904,15 +3904,9 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0AV56YE0N4",
-        "text": "Hi Megan. Must be a wee bug as we're off today for the bank holiday :blush:",
-        "hours": 47,
-        "name": "Megan"
-      },
-      {
         "user_id": "U0AT9UT2W8Z",
         "text": "Oh not nice     Hope Dan is keeping well.  See you soon.  Off to Donegal for a few days ",
-        "hours": 23,
+        "hours": 27,
         "name": "Margaret Reynolds"
       }
     ],
@@ -4594,7 +4588,7 @@
     }
   },
   "teamup": {
-    "total_members": 166,
+    "total_members": 167,
     "recurring": 114,
     "recurring_members": [
       {
@@ -5105,7 +5099,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 7,
+    "new_this_month": 8,
     "cancellations_this_month": 6,
     "leaving_members": [
       {
@@ -6390,7 +6384,7 @@
       },
       {
         "name": "Strongevity Membership",
-        "count": 14,
+        "count": 15,
         "members": [
           {
             "id": 13487762,
@@ -6447,6 +6441,10 @@
           {
             "id": 13212332,
             "name": "Sandra Sherrard"
+          },
+          {
+            "id": 13338052,
+            "name": "Therese Mcmillan"
           }
         ]
       },
@@ -6822,7 +6820,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 605
+            "count": 615
           },
           {
             "day": "Monday",
@@ -6856,7 +6854,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 605
+            "count": 615
           }
         ],
         "top_classes": [
@@ -6866,7 +6864,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 505
+            "count": 515
           },
           {
             "name": "Build: Lower",
@@ -7006,24 +7004,24 @@
           },
           {
             "day": "Wednesday",
-            "time": "5pm",
-            "name": "Build: Full Body",
-            "count": 53,
-            "sessions": 7,
-            "avg": 7.6,
-            "label": "Wednesday 5pm Build: Full Body"
-          },
-          {
-            "day": "Wednesday",
             "time": "6pm",
             "name": "Build: Full Body",
             "count": 70,
             "sessions": 9,
             "avg": 7.8,
             "label": "Wednesday 6pm Build: Full Body"
+          },
+          {
+            "day": "Wednesday",
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 63,
+            "sessions": 8,
+            "avg": 7.9,
+            "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3014
+        "total_attended": 3024
       },
       "last_30_days": {
         "top_days": [
@@ -7033,7 +7031,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 240
+            "count": 250
           },
           {
             "day": "Monday",
@@ -7067,7 +7065,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 240
+            "count": 250
           }
         ],
         "top_classes": [
@@ -7077,7 +7075,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 189
+            "count": 199
           },
           {
             "name": "Build: Lower",
@@ -7234,7 +7232,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1131
+        "total_attended": 1141
       },
       "suggestion": "**For quiet studio time:**\n\n1. Open a 30-min paid PT block (\u00a325\u201335) on Tuesday\u2013Wednesday mornings before the Build classes start \u2014 these are your peak days, so members already on-site can book add-on sessions without committing to full packages.\n\n2. Run a monthly \"Barbell Basics\" workshop (45 min, \u00a310\u201315) on Saturday mornings before Barbelle \u2014 teaches foundational technique to build confidence in a low-pressure setting, then invite attendees to the actual class.\n\n**For quieter classes:**\n\n3. Move Engine to Thursday evening (your second-quietest day needs a lift) and pair it with a targeted email to members who've done Elevate and Circuits \u2014 position it as \"cardio for strength athletes\" rather than a standalone offering, with a \"try free\" invite for first-timers.",
       "capacity": [
@@ -7290,9 +7288,9 @@
           "name": "Plate",
           "sessions": 26,
           "cap": 12,
-          "avg_attending": 9.0,
-          "fill_rate": 75,
-          "status": "healthy"
+          "avg_attending": 8.9,
+          "fill_rate": 74,
+          "status": "attention"
         },
         {
           "name": "Elevate",
@@ -7322,8 +7320,8 @@
           "name": "Capacity",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 6.1,
-          "fill_rate": 51,
+          "avg_attending": 6.0,
+          "fill_rate": 50,
           "status": "attention"
         }
       ]
@@ -7550,7 +7548,7 @@
       },
       {
         "month": "2026-09",
-        "active": 162,
+        "active": 163,
         "churn": 8.8,
         "by_type": {
           "Empower": 71,
@@ -7567,7 +7565,7 @@
           "Well75": 10,
           "6 Week Jumpstart": 12,
           "8 Session Block": 1,
-          "Strongevity Membership": 14
+          "Strongevity Membership": 15
         }
       }
     ],
@@ -7865,6 +7863,11 @@
     "momentum_calls": {
       "recent": [
         {
+          "name": "Lynda Archibald",
+          "date": "2026-09-02",
+          "status": "registered"
+        },
+        {
           "name": "Sara Benetti",
           "date": "2026-08-26",
           "status": "registered"
@@ -7907,11 +7910,6 @@
         {
           "name": "Kathleen Simpson",
           "date": "2026-07-20",
-          "status": "registered"
-        },
-        {
-          "name": "Joanne Honeyford",
-          "date": "2026-07-17",
           "status": "registered"
         }
       ],
@@ -8511,7 +8509,7 @@
         "join_date": "2026-06-26",
         "membership": "Empower",
         "class_count": 41,
-        "last_momentum": "2026-07-17"
+        "last_momentum": null
       },
       {
         "id": 12199003,
@@ -8754,7 +8752,7 @@
         "join_date": "2026-08-29",
         "membership": "Elevate",
         "class_count": 16,
-        "last_momentum": null
+        "last_momentum": "2026-09-02"
       },
       {
         "id": 5379471,
@@ -9153,6 +9151,15 @@
         "last_momentum": null
       },
       {
+        "id": 13338052,
+        "name": "Therese Mcmillan",
+        "email": "theresemcmillan_57@hotmail.com",
+        "join_date": "2026-09-02",
+        "membership": "Strongevity Membership",
+        "class_count": 8,
+        "last_momentum": null
+      },
+      {
         "id": 13465042,
         "name": "Tiarna O\u2019Neill",
         "email": "tiarnab02@gmail.com",
@@ -9261,15 +9268,7 @@
         "last_momentum": null
       }
     ],
-    "inbody_scans": [
-      {
-        "name": "Helen Traynor",
-        "last_scan": "2026-05-29",
-        "next_due": "2026-07-10",
-        "days_to_due": -54,
-        "overdue": true
-      }
-    ]
+    "inbody_scans": []
   },
   "events": {
     "events": [
@@ -10056,6 +10055,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "1C 2 Bike",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/EjSYesisWs4",
+      "source": "Q3 2026"
+    },
+    {
       "name": "1Thrusters",
       "part": "Full Body",
       "video": "https://www.youtube.com/watch?v=r8_G7rKTJ4Q",
@@ -10113,6 +10118,12 @@
       "name": "Around The Worlds",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DVxB6aBkSvr/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Assault Bike",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/rp6DB13iWqw",
       "source": "Q3 2026"
     },
     {
@@ -11121,6 +11132,12 @@
       "name": "First",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DQClFRsAF3M/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "First - At Lockers",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DJt4AsONPwr/",
       "source": "Q3 2026"
     },
     {
@@ -12324,6 +12341,12 @@
       "source": "Q4 2026"
     },
     {
+      "name": "Rower",
+      "part": "Back",
+      "video": "https://www.youtube.com/shorts/cGy29PC4oPk",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Russian Twists",
       "part": "Core",
       "video": "https://www.youtube.com/watch?v=2wGgUyYwzpQ",
@@ -12334,6 +12357,12 @@
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DJaFEmqz4u-/",
       "source": "Q2 2026"
+    },
+    {
+      "name": "SWAP HALF WAY - bay 2",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Dcmpeb5RnJ1/",
+      "source": "Q3 2026"
     },
     {
       "name": "Sa Alt Kb Squat",
@@ -12592,6 +12621,12 @@
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DHf5UXTTDHw/",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Ski",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/watch?v=44YUR_dln0k",
+      "source": "Q3 2026"
     },
     {
       "name": "Sled Drag",
@@ -12930,6 +12965,12 @@
       "source": "Q3 2026"
     },
     {
+      "name": "Use Sliders In The Post Box",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DcRCQvHhI_m/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "Use Tricep Handle",
       "part": "Triceps",
       "video": "https://www.instagram.com/p/C84YwobJZ_d/?hl=en",
@@ -13074,6 +13115,24 @@
       "source": "Q3 2026"
     },
     {
+      "name": "bay 3",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DbJ6I8ix-tl/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "between bay 1 & 2",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Db0tfCJBqY8/",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "between bay 2 & 3",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/C1cgPlUum0N/",
+      "source": "Q3 2026"
+    },
+    {
       "name": "ment 4",
       "part": "Full Body",
       "video": "https://www.facebook.com/reel/1164306242245754",
@@ -13132,6 +13191,12 @@
       "part": "Core",
       "video": "https://www.youtube.com/shorts/9WIxNGEXrCA",
       "source": "Q4 2026"
+    },
+    {
+      "name": "\u200b\u200b HEAVY DUMBBELLS - beside c2 bike",
+      "part": "Cardio",
+      "video": "https://www.youtube.com/shorts/sLTCtCSOFFg",
+      "source": "Q3 2026"
     }
   ],
   "coach_objective": "Grow Forge to 200 recurring members",
@@ -13222,6 +13287,12 @@
     "date": "2026-09-02",
     "urgent": [
       {
+        "from": "Coach Grace",
+        "subject": "Updated invitation: Q4 Programming Meet @ Thu 10 Sept 2026 2pm - 3:45pm (BST) (Coach JoJo)",
+        "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 10 Sept 2026 \u22c5 2pm \u2013 3:45pm (United Kingdom Time). This event has been updated Changed",
+        "id": "1a0628662e9c4928"
+      },
+      {
         "from": "Christine Freeman",
         "subject": "Re: Strongevity VIP Booking",
         "snippet": "Hi. I want to book and pay for next 4 classes on Tuesdays at 11.30. Sorry but I always have difficulty with the link. If you could possibly call me and I can pay over the phone. Thanks Christine. (",
@@ -13243,11 +13314,17 @@
     "important": [
       {
         "from": "Coach Grace",
+        "subject": "Updated invitation: Q4 Programming Meet @ Thu 10 Sept 2026 2pm - 3:45pm (BST) (Coach JoJo)",
+        "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 10 Sept 2026 \u22c5 2pm \u2013 3:45pm (United Kingdom Time). This event has ",
+        "id": "1a0628662e9c4928"
+      },
+      {
+        "from": "Coach Grace",
         "subject": "Updated invitation: Q4 Programming Meet @ Thu 3 Sept 2026 2pm - 3:45pm (BST) (Coach JoJo)",
         "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 3 Sept 2026 \u22c5 2pm \u2013 3:45pm (United Kingdom Time). This event has b",
         "id": "1a05c8e02ed8b3a1"
       }
     ],
-    "urgent_count": 3
+    "urgent_count": 4
   }
 }
