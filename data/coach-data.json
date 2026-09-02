@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T05:00:45.829823+00:00",
+  "generated_at": "2026-09-02T11:11:05.148093+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3906,13 +3906,13 @@
       {
         "user_id": "U0AV56YE0N4",
         "text": "Hi Megan. Must be a wee bug as we're off today for the bank holiday :blush:",
-        "hours": 38,
+        "hours": 44,
         "name": "Megan"
       },
       {
         "user_id": "U0AT9UT2W8Z",
         "text": "Oh not nice     Hope Dan is keeping well.  See you soon.  Off to Donegal for a few days ",
-        "hours": 14,
+        "hours": 20,
         "name": "Margaret Reynolds"
       }
     ],
@@ -6818,11 +6818,11 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 705
+            "count": 713
           },
           {
             "day": "Wednesday",
-            "count": 576
+            "count": 605
           },
           {
             "day": "Monday",
@@ -6856,7 +6856,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 576
+            "count": 605
           }
         ],
         "top_classes": [
@@ -6866,7 +6866,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 494
+            "count": 505
           },
           {
             "name": "Build: Lower",
@@ -6878,7 +6878,7 @@
           },
           {
             "name": "Circuits",
-            "count": 224
+            "count": 233
           },
           {
             "name": "Mobility",
@@ -6900,7 +6900,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 154
+            "count": 171
           },
           {
             "name": "Plate",
@@ -6916,8 +6916,8 @@
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
-            "count": 109,
-            "sessions": 10,
+            "count": 120,
+            "sessions": 11,
             "avg": 10.9,
             "label": "Wednesday 7am Build: Full Body"
           },
@@ -7023,17 +7023,17 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 2977
+        "total_attended": 3014
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 317
+            "count": 325
           },
           {
             "day": "Wednesday",
-            "count": 211
+            "count": 240
           },
           {
             "day": "Monday",
@@ -7067,7 +7067,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 211
+            "count": 240
           }
         ],
         "top_classes": [
@@ -7077,23 +7077,23 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 178
+            "count": 189
           },
           {
             "name": "Build: Lower",
             "count": 143
           },
           {
+            "name": "Strongevity",
+            "count": 115
+          },
+          {
             "name": "Elevate",
             "count": 110
           },
           {
-            "name": "Strongevity",
-            "count": 98
-          },
-          {
             "name": "Circuits",
-            "count": 72
+            "count": 81
           }
         ],
         "bottom_classes": [
@@ -7115,11 +7115,11 @@
           },
           {
             "name": "Circuits",
-            "count": 72
+            "count": 81
           },
           {
-            "name": "Strongevity",
-            "count": 98
+            "name": "Elevate",
+            "count": 110
           }
         ],
         "top_slots": [
@@ -7142,6 +7142,15 @@
             "label": "Thursday 7am Build: Full Body"
           },
           {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 43,
+            "sessions": 4,
+            "avg": 10.8,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
@@ -7151,24 +7160,6 @@
             "label": "Monday 11am Strongevity"
           },
           {
-            "day": "Wednesday",
-            "time": "10am",
-            "name": "Circuits",
-            "count": 32,
-            "sessions": 3,
-            "avg": 10.7,
-            "label": "Wednesday 10am Circuits"
-          },
-          {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 32,
-            "sessions": 3,
-            "avg": 10.7,
-            "label": "Wednesday 7am Build: Full Body"
-          },
-          {
             "day": "Monday",
             "time": "5pm",
             "name": "Build: Lower",
@@ -7176,6 +7167,15 @@
             "sessions": 3,
             "avg": 10.7,
             "label": "Monday 5pm Build: Lower"
+          },
+          {
+            "day": "Tuesday",
+            "time": "7am",
+            "name": "Build: Upper",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Tuesday 7am Build: Upper"
           }
         ],
         "bottom_slots": [
@@ -7234,7 +7234,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1094
+        "total_attended": 1131
       },
       "suggestion": "**For quiet studio time:**\n\n1. Open a 30-min paid PT block (\u00a325\u201335) on Tuesday\u2013Wednesday mornings before the Build classes start \u2014 these are your peak days, so members already on-site can book add-on sessions without committing to full packages.\n\n2. Run a monthly \"Barbell Basics\" workshop (45 min, \u00a310\u201315) on Saturday mornings before Barbelle \u2014 teaches foundational technique to build confidence in a low-pressure setting, then invite attendees to the actual class.\n\n**For quieter classes:**\n\n3. Move Engine to Thursday evening (your second-quietest day needs a lift) and pair it with a targeted email to members who've done Elevate and Circuits \u2014 position it as \"cardio for strength athletes\" rather than a standalone offering, with a \"try free\" invite for first-timers.",
       "capacity": [
@@ -7580,13 +7580,6 @@
         "last_seen": "2026-07-07"
       },
       {
-        "id": 13508479,
-        "name": "Angela McLaughlin",
-        "membership": "Strongevity",
-        "days_absent": 30,
-        "last_seen": "2026-08-03"
-      },
-      {
         "id": 12292932,
         "name": "Ashley George",
         "membership": "Elevate",
@@ -7741,11 +7734,18 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 6086046,
-        "name": "Rose McGill",
-        "membership": "4 PT Sessions",
-        "days_absent": 21,
-        "last_seen": "2026-08-12"
+        "id": 7775785,
+        "name": "Sarah Sandford",
+        "membership": "Empower",
+        "days_absent": 39,
+        "last_seen": "2026-07-25"
+      },
+      {
+        "id": 12228505,
+        "name": "Sarah jayne Simpson",
+        "membership": "Empower",
+        "days_absent": 12,
+        "last_seen": "2026-08-21"
       }
     ],
     "celebrations": {
@@ -13222,6 +13222,12 @@
     "date": "2026-09-02",
     "urgent": [
       {
+        "from": "Christine Freeman",
+        "subject": "Re: Strongevity VIP Booking",
+        "snippet": "Hi. I want to book and pay for next 4 classes on Tuesdays at 11.30. Sorry but I always have difficulty with the link. If you could possibly call me and I can pay over the phone. Thanks Christine. (",
+        "id": "1a0610d110222640"
+      },
+      {
         "from": "Coach Grace",
         "subject": "Updated invitation: Q4 Programming Meet @ Thu 3 Sept 2026 2pm - 3:45pm (BST) (Coach JoJo)",
         "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 3 Sept 2026 \u22c5 2pm \u2013 3:45pm (United Kingdom Time). This event has been updated Changed:",
@@ -13232,18 +13238,6 @@
         "subject": "Sharon Smyth - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Sharon Smyth has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member - reminding",
         "id": "1a059b150d685f01"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Fwd: Scheduled Event Mail",
-        "snippet": "Hey both, Coaches Congress. At the bottom of this email is the zoho attendee app link. You can download the app and use your email address to sign in and then download your ticket to your iPhone walle",
-        "id": "1a03d1d29787c978"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Updated invitation: Q4 Programming Meet @ Thu 3 Sept 2026 (Coach JoJo)",
-        "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 3 Sept 2026. This event has been updated Changed: Time When CHANGED Thursday 3 Sept",
-        "id": "1a03cbf08a7364a7"
       }
     ],
     "important": [
@@ -13254,6 +13248,6 @@
         "id": "1a05c8e02ed8b3a1"
       }
     ],
-    "urgent_count": 4
+    "urgent_count": 3
   }
 }
