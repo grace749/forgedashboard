@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T11:07:07.893339+00:00",
+  "generated_at": "2026-09-03T14:01:08.469148+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3916,13 +3916,13 @@
       {
         "user_id": "U0AT9UT2W8Z",
         "text": "Oh not nice     Hope Dan is keeping well.  See you soon.  Off to Donegal for a few days ",
-        "hours": 44,
+        "hours": 47,
         "name": "Margaret Reynolds"
       },
       {
         "user_id": "U0AJ93W8J8Y",
-        "text": "Question?  What do i select here?",
-        "hours": 16,
+        "text": "<@U05MXJC8QNB> more vids!",
+        "hours": 1,
         "name": "Lynbelfast48"
       }
     ],
@@ -4614,7 +4614,7 @@
     }
   },
   "teamup": {
-    "total_members": 168,
+    "total_members": 166,
     "recurring": 114,
     "recurring_members": [
       {
@@ -5126,11 +5126,15 @@
       }
     ],
     "new_this_month": 9,
-    "cancellations_this_month": 6,
+    "cancellations_this_month": 7,
     "leaving_members": [
       {
         "id": 12931950,
         "name": "Amanda Hanna"
+      },
+      {
+        "id": 13063966,
+        "name": "Connie Gerrow"
       },
       {
         "id": 11929298,
@@ -5895,7 +5899,7 @@
       }
     ],
     "cancelled_ytd": 42,
-    "churn_rate": 3.8,
+    "churn_rate": 4.4,
     "avg_member_price": 137.45,
     "monthly_recurring_revenue": 15532.0,
     "avg_tenure_months": 8.5,
@@ -6649,36 +6653,6 @@
         ]
       },
       {
-        "name": "Strongevity",
-        "count": 6,
-        "members": [
-          {
-            "id": 13508479,
-            "name": "Angela McLaughlin"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13593758,
-            "name": "Jill Weir"
-          },
-          {
-            "id": 13618093,
-            "name": "Joyce Lyons"
-          },
-          {
-            "id": 13753616,
-            "name": "Mae Brown"
-          }
-        ]
-      },
-      {
         "name": "Foundation PAID IN FULL",
         "count": 4,
         "members": [
@@ -6697,6 +6671,28 @@
           {
             "id": 9414493,
             "name": "Zara Morrison"
+          }
+        ]
+      },
+      {
+        "name": "Strongevity",
+        "count": 4,
+        "members": [
+          {
+            "id": 13508479,
+            "name": "Angela McLaughlin"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13593758,
+            "name": "Jill Weir"
           }
         ]
       },
@@ -7299,18 +7295,18 @@
           "status": "healthy"
         },
         {
+          "name": "Barbelle",
+          "sessions": 13,
+          "cap": 9,
+          "avg_attending": 6.8,
+          "fill_rate": 75,
+          "status": "healthy"
+        },
+        {
           "name": "Plate",
           "sessions": 26,
           "cap": 12,
           "avg_attending": 8.9,
-          "fill_rate": 74,
-          "status": "attention"
-        },
-        {
-          "name": "Barbelle",
-          "sessions": 13,
-          "cap": 9,
-          "avg_attending": 6.7,
           "fill_rate": 74,
           "status": "attention"
         },
@@ -7334,8 +7330,8 @@
           "name": "Engine",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 7.5,
-          "fill_rate": 62,
+          "avg_attending": 7.3,
+          "fill_rate": 61,
           "status": "attention"
         },
         {
@@ -7548,7 +7544,7 @@
       },
       {
         "month": "2026-08",
-        "active": 165,
+        "active": 163,
         "churn": 5.4,
         "by_type": {
           "Empower": 71,
@@ -7560,7 +7556,7 @@
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 6,
+          "Strongevity": 4,
           "4 Class Pass": 1,
           "Well75": 10,
           "6 Week Jumpstart": 11,
@@ -7569,8 +7565,8 @@
       },
       {
         "month": "2026-09",
-        "active": 163,
-        "churn": 8.2,
+        "active": 161,
+        "churn": 9.0,
         "by_type": {
           "Empower": 71,
           "8 PT Sessions": 3,
@@ -7581,7 +7577,7 @@
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 5,
+          "Strongevity": 3,
           "4 Class Pass": 1,
           "Well75": 10,
           "6 Week Jumpstart": 12,
@@ -8519,15 +8515,6 @@
         "last_momentum": null
       },
       {
-        "id": 13618093,
-        "name": "Joyce Lyons",
-        "email": "joycelyons31@hotmail.com",
-        "join_date": "2026-08-03",
-        "membership": "Strongevity",
-        "class_count": 0,
-        "last_momentum": null
-      },
-      {
         "id": 12338245,
         "name": "Karen Hanna",
         "email": "k.hanna@stran.ac.uk",
@@ -8759,15 +8746,6 @@
         "join_date": "2023-10-25",
         "membership": "Empower",
         "class_count": 463,
-        "last_momentum": null
-      },
-      {
-        "id": 13753616,
-        "name": "Mae Brown",
-        "email": "brw81@aol.com",
-        "join_date": "2026-08-27",
-        "membership": "Strongevity",
-        "class_count": 0,
         "last_momentum": null
       },
       {
@@ -9278,10 +9256,28 @@
     "inbody_scans": []
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,
