@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:00:53.697228+00:00",
+  "generated_at": "2026-09-03T11:07:07.893339+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1313,6 +1313,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "129shannoncampbell",
+        "last_scan": "2026-09-03",
+        "scan_count": 1,
+        "weight": 229.6,
+        "smm": 60.0,
+        "pbf": 52.6,
+        "bmi": 39.4,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-15",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Coach Grace",
         "last_scan": "2026-09-02",
@@ -3882,7 +3906,7 @@
         "overdue": true
       }
     ],
-    "total": 107,
+    "total": 108,
     "configured": true
   },
   "slack": {
@@ -3892,13 +3916,13 @@
       {
         "user_id": "U0AT9UT2W8Z",
         "text": "Oh not nice     Hope Dan is keeping well.  See you soon.  Off to Donegal for a few days ",
-        "hours": 38,
+        "hours": 44,
         "name": "Margaret Reynolds"
       },
       {
         "user_id": "U0AJ93W8J8Y",
         "text": "Question?  What do i select here?",
-        "hours": 9,
+        "hours": 16,
         "name": "Lynbelfast48"
       }
     ],
@@ -4331,6 +4355,16 @@
         "project": null,
         "due_on": "2026-08-28",
         "overdue": true,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
+        "gid": "1218135667309248",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218135667309248",
+        "project": null,
+        "due_on": "2026-09-04",
+        "overdue": false,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -6820,7 +6854,7 @@
           },
           {
             "day": "Thursday",
-            "count": 428
+            "count": 443
           }
         ],
         "bottom_days": [
@@ -6830,7 +6864,7 @@
           },
           {
             "day": "Thursday",
-            "count": 428
+            "count": 443
           },
           {
             "day": "Friday",
@@ -6852,7 +6886,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 503
+            "count": 512
           },
           {
             "name": "Build: Lower",
@@ -6860,7 +6894,7 @@
           },
           {
             "name": "Elevate",
-            "count": 345
+            "count": 351
           },
           {
             "name": "Circuits",
@@ -6994,9 +7028,9 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 78,
-            "sessions": 10,
-            "avg": 7.8,
+            "count": 84,
+            "sessions": 11,
+            "avg": 7.6,
             "label": "Thursday 10am Elevate"
           },
           {
@@ -7009,7 +7043,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3009
+        "total_attended": 3024
       },
       "last_30_days": {
         "top_days": [
@@ -7023,7 +7057,7 @@
           },
           {
             "day": "Thursday",
-            "count": 158
+            "count": 173
           },
           {
             "day": "Friday",
@@ -7049,7 +7083,7 @@
           },
           {
             "day": "Thursday",
-            "count": 158
+            "count": 173
           },
           {
             "day": "Wednesday",
@@ -7063,11 +7097,11 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 210
+            "count": 219
           },
           {
             "name": "Elevate",
-            "count": 110
+            "count": 116
           },
           {
             "name": "Build: Lower",
@@ -7128,15 +7162,6 @@
             "label": "Friday 7pm Mobility"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Thursday 7am Build: Full Body"
-          },
-          {
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -7162,6 +7187,15 @@
             "sessions": 5,
             "avg": 10.4,
             "label": "Tuesday 7am Build: Upper"
+          },
+          {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7193,6 +7227,15 @@
             "label": "Saturday 9am Elevate"
           },
           {
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 37,
+            "sessions": 5,
+            "avg": 7.4,
+            "label": "Thursday 10am Elevate"
+          },
+          {
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
@@ -7200,15 +7243,6 @@
             "sessions": 5,
             "avg": 7.8,
             "label": "Wednesday 7pm Plate"
-          },
-          {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 31,
-            "sessions": 4,
-            "avg": 7.8,
-            "label": "Thursday 10am Elevate"
           },
           {
             "day": "Tuesday",
@@ -7220,7 +7254,7 @@
             "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 1121
+        "total_attended": 1136
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. **Add a Saturday morning open-gym block (7\u20139am)** before or after your lightest day's existing classes \u2014 Saturday attendance is half of Tuesday's, so a casual pay-per-session slot targets members who skip structured classes but want weekend access.\n\n2. **Launch a Thursday lunchtime \"Strength Fundamentals\" workshop (30 mins, 12:30\u20131pm)** in the gap between morning and evening classes \u2014 targets working members who can't commit to full classes but need skill-building, positions it as a feeder to Build and Barbelle.\n\n**Lift the quieter classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday evenings** (your peak days) and rebrand them with a short tagline in member comms (e.g. \"Barbelle: sculpt and strength\" or \"Engine: cardio endurance that builds power\") \u2014 quieter classes often suffer from positioning confusion, not lack of interest; pairing them with peak-day traffic and clarity will boost trial.",
       "capacity": [
@@ -7265,18 +7299,18 @@
           "status": "healthy"
         },
         {
-          "name": "Barbelle",
-          "sessions": 13,
-          "cap": 9,
-          "avg_attending": 6.8,
-          "fill_rate": 75,
-          "status": "healthy"
-        },
-        {
           "name": "Plate",
           "sessions": 26,
           "cap": 12,
           "avg_attending": 8.9,
+          "fill_rate": 74,
+          "status": "attention"
+        },
+        {
+          "name": "Barbelle",
+          "sessions": 13,
+          "cap": 9,
+          "avg_attending": 6.7,
           "fill_rate": 74,
           "status": "attention"
         },
@@ -9244,28 +9278,10 @@
     "inbody_scans": []
   },
   "events": {
-    "events": [
-      {
-        "name": "Forge Couch to 5k (8 Week Plan)",
-        "when": "7/20/2026",
-        "details": "8 Week running plan ending with a Team 5k",
-        "marketing": ""
-      },
-      {
-        "name": "5KM Park Run (end of couch 2 5k)",
-        "when": "19 September 9.30am",
-        "details": "Ballymoney Duck Pond park run",
-        "marketing": ""
-      },
-      {
-        "name": "Forge Summer Games",
-        "when": "22nd August 9.30am",
-        "details": "Forge Female Fitness",
-        "marketing": ""
-      }
-    ],
+    "events": [],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true
+    "configured": true,
+    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
   },
   "tshirt": {
     "configured": true,
