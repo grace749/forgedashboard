@@ -1,54 +1,31 @@
 {
-  "generated_at": "2026-09-02T18:41:56.919840+00:00",
+  "generated_at": "2026-09-03T05:00:53.697228+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
   "chat_url": "https://script.google.com/macros/s/AKfycbyrEYTFnqQb5PYYr7GPIYzYp0uZcw7yP99NyFaFCeHH8Wqk9QYc7G77FTPo2nSBSq8/exec",
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
-    "date": "2026-09-02",
-    "event_count": 16,
+    "date": "2026-09-03",
+    "event_count": 18,
     "urgent_count": 2,
     "enquiry_count": 3,
     "calendar": [
       {
-        "title": "Build: Full Body",
-        "time": "6:00pm",
-        "start_raw": "2026-09-02T18:00:00+01:00",
+        "title": "Call doctor appt",
+        "time": "8:30am",
+        "start_raw": "2026-09-03T08:30:00+01:00",
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "10/12 booked",
-        "prep": "",
-        "source": "teamup"
-      },
-      {
-        "title": "Plate",
-        "time": "7:00pm",
-        "start_raw": "2026-09-02T19:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "10/12 booked",
-        "prep": "",
-        "source": "teamup"
-      },
-      {
-        "title": "Capacity",
-        "time": "8:00pm",
-        "start_raw": "2026-09-02T20:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "5/12 booked",
-        "prep": "",
-        "source": "teamup"
+        "location": "",
+        "prep": ""
       },
       {
         "title": "Mark Eye Appt Causeway Hospital",
         "time": "9:00am",
         "start_raw": "2026-09-03T09:00:00+01:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "Causeway Hospital, 4 Newbridge Rd, Coleraine BT52 1HS, UK",
@@ -58,7 +35,7 @@
         "title": "\ud83d\udcde Call: Nancy  Cubitt",
         "time": "10:30am",
         "start_raw": "2026-09-03T10:30:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "Nancy  Cubitt"
         ],
@@ -70,7 +47,7 @@
         "title": "\ud83d\udcde Call: Kathryn Alleyne",
         "time": "10:30am",
         "start_raw": "2026-09-03T10:30:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "Kathryn Alleyne"
         ],
@@ -82,7 +59,7 @@
         "title": "Untitled",
         "time": "10:30am",
         "start_raw": "2026-09-03T10:30:00+01:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
@@ -92,17 +69,17 @@
         "title": "Untitled",
         "time": "10:30am",
         "start_raw": "2026-09-03T10:30:00+01:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm appointment details and bring insurance/ID documents."
+        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Laura Mckendry",
         "time": "11:10am",
         "start_raw": "2026-09-03T11:10:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "Laura Mckendry"
         ],
@@ -114,7 +91,7 @@
         "title": "Untitled",
         "time": "11:10am",
         "start_raw": "2026-09-03T11:10:00+01:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
@@ -124,17 +101,39 @@
         "title": "Padel Coleraine",
         "time": "12:00pm",
         "start_raw": "2026-09-03T12:00:00+01:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Test Teams link, prepare meeting agenda, brief attendees beforehand."
+        "prep": ""
+      },
+      {
+        "title": "Programming + coffee",
+        "time": "3:00pm",
+        "start_raw": "2026-09-03T15:00:00+01:00",
+        "day": "Today",
+        "attendees": [
+          "jojo@theforge.pt"
+        ],
+        "description": "",
+        "location": "Forge Female Fitness, Unit 7, Taggarts Yard, 18 Meeting House St, Ballymoney BT53 6JN, UK",
+        "prep": "Review programming notes; prepare coffee."
+      },
+      {
+        "title": "Ring Irene Strongevity",
+        "time": "5:00pm",
+        "start_raw": "2026-09-03T17:00:00+01:00",
+        "day": "Today",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
       },
       {
         "title": "Precious & Patience Coaching",
         "time": "8:00am",
         "start_raw": "2026-09-04T08:00:00+01:00",
-        "day": "Friday",
+        "day": "Tomorrow",
         "attendees": [
           "a.mcknight920@btinternet.com"
         ],
@@ -146,7 +145,7 @@
         "title": "Midwife appt Antrim",
         "time": "9:50am",
         "start_raw": "2026-09-04T09:50:00+01:00",
-        "day": "Friday",
+        "day": "Tomorrow",
         "attendees": [
           "danielle_boyd_3@hotmail.com"
         ],
@@ -158,7 +157,7 @@
         "title": "Dude x Meet",
         "time": "11:30am",
         "start_raw": "2026-09-04T11:30:00+01:00",
-        "day": "Friday",
+        "day": "Tomorrow",
         "attendees": [
           "sarah@nourishandnurtu.re"
         ],
@@ -170,7 +169,17 @@
         "title": "Padel weekend social",
         "time": "3:00pm",
         "start_raw": "2026-09-04T15:00:00+01:00",
-        "day": "Friday",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Confirm attendees and padel court booking."
+      },
+      {
+        "title": "Padel Session Coleraine",
+        "time": "7:00pm",
+        "start_raw": "2026-09-04T19:00:00+01:00",
+        "day": "Tomorrow",
         "attendees": [],
         "description": "",
         "location": "",
@@ -178,13 +187,23 @@
       },
       {
         "title": "Padel Session Coleraine",
-        "time": "7:00pm",
-        "start_raw": "2026-09-04T19:00:00+01:00",
-        "day": "Friday",
+        "time": "10:00am",
+        "start_raw": "2026-09-05T10:00:00+01:00",
+        "day": "Saturday",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Review Q4 data, programs, metrics; prepare discussion points/slides."
+        "prep": ""
+      },
+      {
+        "title": "National Fitness awards deadline",
+        "time": "all day",
+        "start_raw": "2026-09-06",
+        "day": "Sunday",
+        "attendees": [],
+        "description": "https://nationalfitnessawards.co.uk/categories/\n\nneed to enter joanne hall for personal trainer and michelle for member",
+        "location": "",
+        "prep": "Complete Joanne Hall personal trainer entry before deadline."
       }
     ],
     "urgent": [
@@ -219,36 +238,36 @@
       {
         "name": "Nancy  Cubitt",
         "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
-        "snippet": "Booked a call for Tomorrow 10:30am \u2014 potential member",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 10:30am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 10:30am",
+        "snippet": "Booked a call for Today 10:30am \u2014 potential member",
         "age": "",
         "unread": 0
       },
       {
         "name": "Kathryn Alleyne",
         "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
-        "snippet": "Booked a call for Tomorrow 10:30am \u2014 potential member",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 10:30am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 10:30am",
+        "snippet": "Booked a call for Today 10:30am \u2014 potential member",
         "age": "",
         "unread": 0
       },
       {
         "name": "Laura Mckendry",
         "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:10am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:10am",
-        "snippet": "Booked a call for Tomorrow 11:10am \u2014 potential member",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 11:10am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 11:10am",
+        "snippet": "Booked a call for Today 11:10am \u2014 potential member",
         "age": "",
         "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -370,10 +389,28 @@
   },
   "ghl": [
     {
+      "name": "karina henry",
+      "channel": "Phone",
+      "message": "sorry! how much and where is your studio based?",
+      "age": "7h ago",
+      "unread": 1,
+      "conv_id": "nSDfFAmHVeNs4GqnE9At",
+      "contact_id": "f6ltw4AtvK5YuMX4enzw"
+    },
+    {
+      "name": "Marjorie Moore",
+      "channel": "Phone",
+      "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
+      "age": "7h ago",
+      "unread": 1,
+      "conv_id": "JKcjT9cmgXd35Lb7k4Zs",
+      "contact_id": "lDfmDqih72Z96TbfUUmo"
+    },
+    {
       "name": "Irene Norris",
       "channel": "Phone",
       "message": "Yes, that is good thanks",
-      "age": "0h ago",
+      "age": "10h ago",
       "unread": 1,
       "conv_id": "u6wcVOtr97hhyKS7mar7",
       "contact_id": "5MOPmnYHkAao3o5JaaZn"
@@ -382,7 +419,7 @@
       "name": "Sarah McKay",
       "channel": "Phone",
       "message": "Hey yes sorry would love some more info",
-      "age": "2h ago",
+      "age": "12h ago",
       "unread": 1,
       "conv_id": "0t53BLIFYsTsKLnPKBRj",
       "contact_id": "UdVvnd7Cl225L5PopENj"
@@ -391,7 +428,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "I had Police at house last night. Someone put in that they were worried about Sarah and Mes safety in the home \u2026 I appreciate them doing it - shows me we are cared for and the Police were lovely - but",
-      "age": "5h ago",
+      "age": "16h ago",
       "unread": 4,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -400,7 +437,7 @@
       "name": "Kathleen Mullan",
       "channel": "Phone",
       "message": "Yeah let me know time, thx",
-      "age": "9h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "yP0zxwjoCm54hNbfI6vS",
       "contact_id": "du88beLkOvt7iqEcEsD9"
@@ -409,28 +446,10 @@
       "name": "Amy McNeill",
       "channel": "Phone",
       "message": "My goal is to try get my waist size smaller with less belly fat \ud83e\udee0 and once I\u2019ve lost the weight I want to lose then to continue for movement, toning and also for my mental health \ud83d\udc4c",
-      "age": "13h ago",
+      "age": "23h ago",
       "unread": 2,
       "conv_id": "ISvKgmjNy4tXNZ85GXD0",
       "contact_id": "VGEsSiSnStSW8mDMRNmh"
-    },
-    {
-      "name": "Danielle B",
-      "channel": "Phone",
-      "message": "But damn Dad support the head",
-      "age": "22h ago",
-      "unread": 2,
-      "conv_id": "HI7MIoXVyBosoYmMsqvw",
-      "contact_id": "PxU8tUUapZek9a2ZDT5X"
-    },
-    {
-      "name": "Ballykenver Farm Shop & Kitchen",
-      "channel": "Phone",
-      "message": "Thanks. Getting there!",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "UsFaJnyrfVHPqVeWVgze",
-      "contact_id": "zSPgbPNeJpACIxJ3HNtO"
     }
   ],
   "jumpstart": {
@@ -438,6 +457,12 @@
       {
         "month": "2026-10",
         "completed": 1,
+        "converted": 0,
+        "conv_rate": 0
+      },
+      {
+        "month": "2026-09",
+        "completed": 2,
         "converted": 0,
         "conv_rate": 0
       },
@@ -468,70 +493,6 @@
     ],
     "active": [
       {
-        "name": "Lynda Archibald",
-        "cohort": "JULY",
-        "joined": "2026-07-22",
-        "end": "2026-09-02",
-        "goal": "loose weight",
-        "notes": "none",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        "week_on": 6,
-        "days_left": 0,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
-        "expected_checkins": 6,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "none"
-      },
-      {
-        "name": "Majorie Moore",
-        "cohort": "JULY",
-        "joined": "2026-07-22",
-        "end": "2026-09-02",
-        "goal": "no wieght given ",
-        "notes": "feel better about herself, healthy habits",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          false,
-          false
-        ],
-        "week_on": 6,
-        "days_left": 0,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 4,
-        "expected_checkins": 6,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "feel better about herself, healthy habits"
-      },
-      {
         "name": "Anne Graham",
         "cohort": "JULY",
         "joined": "2026-07-23",
@@ -549,7 +510,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 1,
+        "days_left": 0,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -581,7 +542,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 2,
+        "days_left": 1,
         "is_active": true,
         "is_converted": true,
         "not_converted": false,
@@ -613,7 +574,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 3,
+        "days_left": 2,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -645,7 +606,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": 3,
+        "days_left": 2,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -677,7 +638,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 12,
+        "days_left": 11,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -709,7 +670,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 12,
+        "days_left": 11,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -741,7 +702,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 12,
+        "days_left": 11,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -773,7 +734,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 12,
+        "days_left": 11,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -805,7 +766,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 16,
+        "days_left": 15,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -837,7 +798,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 18,
+        "days_left": 17,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -869,7 +830,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 19,
+        "days_left": 18,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -901,7 +862,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 21,
+        "days_left": 20,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -933,7 +894,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 23,
+        "days_left": 22,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -965,7 +926,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": 23,
+        "days_left": 22,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -997,7 +958,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 44,
+        "days_left": 43,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -1031,7 +992,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 36,
+        "days_left": 35,
         "is_active": true,
         "is_converted": false,
         "not_converted": true,
@@ -1044,6 +1005,70 @@
         "paused": false,
         "pink_red": true,
         "pause_reason": "n/a"
+      },
+      {
+        "name": "Lynda Archibald",
+        "cohort": "JULY",
+        "joined": "2026-07-22",
+        "end": "2026-09-02",
+        "goal": "loose weight",
+        "notes": "none",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -1,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 5,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "none"
+      },
+      {
+        "name": "Majorie Moore",
+        "cohort": "JULY",
+        "joined": "2026-07-22",
+        "end": "2026-09-02",
+        "goal": "no wieght given ",
+        "notes": "feel better about herself, healthy habits",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -1,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 2,
+        "completed_checkins": 4,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "feel better about herself, healthy habits"
       },
       {
         "name": "kristina nikolova",
@@ -1063,7 +1088,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -2,
+        "days_left": -3,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1095,7 +1120,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -7,
+        "days_left": -8,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1127,7 +1152,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -9,
+        "days_left": -10,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1159,7 +1184,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -20,
+        "days_left": -21,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1191,7 +1216,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -21,
+        "days_left": -22,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1223,7 +1248,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -26,
+        "days_left": -27,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1255,7 +1280,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -31,
+        "days_left": -32,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1287,7 +1312,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -32,
+        "days_left": -33,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1319,7 +1344,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -37,
+        "days_left": -38,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1351,7 +1376,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -37,
+        "days_left": -38,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1383,7 +1408,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -40,
+        "days_left": -41,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1415,7 +1440,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -40,
+        "days_left": -41,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1447,7 +1472,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -41,
+        "days_left": -42,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1479,7 +1504,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -43,
+        "days_left": -44,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1511,7 +1536,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -48,
+        "days_left": -49,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1543,7 +1568,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -54,
+        "days_left": -55,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1577,7 +1602,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -22,
+        "days_left": -23,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1606,17 +1631,7 @@
       {
         "member": "Lynda Wright",
         "type": "conversion",
-        "detail": "3d left \u2014 conversion chat not scheduled!"
-      },
-      {
-        "member": "Lynda Archibald",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 6)"
-      },
-      {
-        "member": "Lynda Archibald",
-        "type": "conversion",
-        "detail": "0d left \u2014 conversion chat not scheduled!"
+        "detail": "2d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Anne Graham",
@@ -1625,16 +1640,6 @@
       },
       {
         "member": "Anne Graham",
-        "type": "conversion",
-        "detail": "1d left \u2014 conversion chat not scheduled!"
-      },
-      {
-        "member": "Majorie Moore",
-        "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 6)"
-      },
-      {
-        "member": "Majorie Moore",
         "type": "conversion",
         "detail": "0d left \u2014 conversion chat not scheduled!"
       },
@@ -1646,7 +1651,7 @@
       {
         "member": "rachel linton",
         "type": "conversion",
-        "detail": "2d left \u2014 conversion chat not scheduled!"
+        "detail": "1d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "janine patton",
@@ -1656,7 +1661,7 @@
       {
         "member": "janine patton",
         "type": "conversion",
-        "detail": "3d left \u2014 conversion chat not scheduled!"
+        "detail": "2d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Jennifer Reid",
@@ -1666,7 +1671,7 @@
       {
         "member": "Jennifer Reid",
         "type": "conversion",
-        "detail": "12d left \u2014 conversion chat not scheduled!"
+        "detail": "11d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Caroline Stinson",
@@ -1676,7 +1681,7 @@
       {
         "member": "Caroline Stinson",
         "type": "conversion",
-        "detail": "12d left \u2014 conversion chat not scheduled!"
+        "detail": "11d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Geraldine Pendleton",
@@ -1686,7 +1691,7 @@
       {
         "member": "Geraldine Pendleton",
         "type": "conversion",
-        "detail": "12d left \u2014 conversion chat not scheduled!"
+        "detail": "11d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Elizabeth Greenaway",
@@ -1696,7 +1701,7 @@
       {
         "member": "Elizabeth Greenaway",
         "type": "conversion",
-        "detail": "12d left \u2014 conversion chat not scheduled!"
+        "detail": "11d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Sharon Mcauley",
@@ -1745,12 +1750,12 @@
       }
     ],
     "stats": {
-      "active_count": 17,
+      "active_count": 15,
       "paused_count": 1,
-      "conv_rate": 47,
+      "conv_rate": 42,
       "converted": 8,
       "not_converted": 5,
-      "total_complete": 17
+      "total_complete": 19
     }
   },
   "inbody": {
@@ -1776,7 +1781,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-14",
-        "days_to_due": 42,
+        "days_to_due": 41,
         "overdue": false
       },
       {
@@ -1800,7 +1805,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-14",
-        "days_to_due": 42,
+        "days_to_due": 41,
         "overdue": false
       },
       {
@@ -1824,7 +1829,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-13",
-        "days_to_due": 41,
+        "days_to_due": 40,
         "overdue": false
       },
       {
@@ -1848,7 +1853,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-09",
-        "days_to_due": 37,
+        "days_to_due": 36,
         "overdue": false
       },
       {
@@ -1872,7 +1877,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-07",
-        "days_to_due": 35,
+        "days_to_due": 34,
         "overdue": false
       },
       {
@@ -1896,7 +1901,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -1920,7 +1925,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -1944,7 +1949,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -1968,7 +1973,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -1992,7 +1997,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-01",
-        "days_to_due": 29,
+        "days_to_due": 28,
         "overdue": false
       },
       {
@@ -2016,7 +2021,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-01",
-        "days_to_due": 29,
+        "days_to_due": 28,
         "overdue": false
       },
       {
@@ -2040,7 +2045,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-29",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2064,7 +2069,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-28",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -2088,7 +2093,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-26",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2112,7 +2117,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-26",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2136,7 +2141,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -2160,7 +2165,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -2184,7 +2189,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -2208,7 +2213,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -2232,7 +2237,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-24",
-        "days_to_due": 22,
+        "days_to_due": 21,
         "overdue": false
       },
       {
@@ -2256,7 +2261,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-23",
-        "days_to_due": 21,
+        "days_to_due": 20,
         "overdue": false
       },
       {
@@ -2280,7 +2285,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-22",
-        "days_to_due": 20,
+        "days_to_due": 19,
         "overdue": false
       },
       {
@@ -2304,7 +2309,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2328,7 +2333,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2352,7 +2357,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2376,7 +2381,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2400,7 +2405,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-19",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2424,7 +2429,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-18",
-        "days_to_due": 16,
+        "days_to_due": 15,
         "overdue": false
       },
       {
@@ -2448,7 +2453,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-18",
-        "days_to_due": 16,
+        "days_to_due": 15,
         "overdue": false
       },
       {
@@ -2472,7 +2477,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-17",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2496,7 +2501,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-17",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2520,7 +2525,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-16",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2544,7 +2549,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-15",
-        "days_to_due": 13,
+        "days_to_due": 12,
         "overdue": false
       },
       {
@@ -2568,7 +2573,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2592,7 +2597,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2616,7 +2621,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2640,7 +2645,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2664,7 +2669,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-05",
-        "days_to_due": 3,
+        "days_to_due": 2,
         "overdue": false
       },
       {
@@ -2688,7 +2693,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2712,7 +2717,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2736,7 +2741,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2760,8 +2765,8 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-02",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "Lynda Archibald",
@@ -2784,8 +2789,8 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-02",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "Connie Gerrow",
@@ -2808,7 +2813,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2832,7 +2837,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2856,7 +2861,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2880,7 +2885,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2904,7 +2909,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-27",
-        "days_to_due": -6,
+        "days_to_due": -7,
         "overdue": true
       },
       {
@@ -2928,7 +2933,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-26",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2952,7 +2957,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-26",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2976,7 +2981,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-22",
-        "days_to_due": -11,
+        "days_to_due": -12,
         "overdue": true
       },
       {
@@ -3000,7 +3005,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-22",
-        "days_to_due": -11,
+        "days_to_due": -12,
         "overdue": true
       },
       {
@@ -3024,7 +3029,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-21",
-        "days_to_due": -12,
+        "days_to_due": -13,
         "overdue": true
       },
       {
@@ -3048,7 +3053,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-21",
-        "days_to_due": -12,
+        "days_to_due": -13,
         "overdue": true
       },
       {
@@ -3072,7 +3077,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-20",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -3096,7 +3101,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-20",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -3120,7 +3125,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-18",
-        "days_to_due": -15,
+        "days_to_due": -16,
         "overdue": true
       },
       {
@@ -3144,7 +3149,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-18",
-        "days_to_due": -15,
+        "days_to_due": -16,
         "overdue": true
       },
       {
@@ -3168,7 +3173,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -16,
+        "days_to_due": -17,
         "overdue": true
       },
       {
@@ -3192,7 +3197,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -16,
+        "days_to_due": -17,
         "overdue": true
       },
       {
@@ -3216,7 +3221,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -16,
+        "days_to_due": -17,
         "overdue": true
       },
       {
@@ -3240,7 +3245,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -16,
+        "days_to_due": -17,
         "overdue": true
       },
       {
@@ -3264,7 +3269,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-15",
-        "days_to_due": -18,
+        "days_to_due": -19,
         "overdue": true
       },
       {
@@ -3288,7 +3293,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-13",
-        "days_to_due": -20,
+        "days_to_due": -21,
         "overdue": true
       },
       {
@@ -3312,7 +3317,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-11",
-        "days_to_due": -22,
+        "days_to_due": -23,
         "overdue": true
       },
       {
@@ -3336,7 +3341,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": -25,
+        "days_to_due": -26,
         "overdue": true
       },
       {
@@ -3360,7 +3365,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-07",
-        "days_to_due": -26,
+        "days_to_due": -27,
         "overdue": true
       },
       {
@@ -3384,7 +3389,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-05",
-        "days_to_due": -28,
+        "days_to_due": -29,
         "overdue": true
       },
       {
@@ -3408,7 +3413,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -29,
+        "days_to_due": -30,
         "overdue": true
       },
       {
@@ -3432,7 +3437,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -29,
+        "days_to_due": -30,
         "overdue": true
       },
       {
@@ -3456,7 +3461,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -29,
+        "days_to_due": -30,
         "overdue": true
       },
       {
@@ -3480,7 +3485,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": -32,
+        "days_to_due": -33,
         "overdue": true
       },
       {
@@ -3504,7 +3509,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -33,
+        "days_to_due": -34,
         "overdue": true
       },
       {
@@ -3528,7 +3533,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -33,
+        "days_to_due": -34,
         "overdue": true
       },
       {
@@ -3552,7 +3557,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -33,
+        "days_to_due": -34,
         "overdue": true
       },
       {
@@ -3576,7 +3581,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-30",
-        "days_to_due": -34,
+        "days_to_due": -35,
         "overdue": true
       },
       {
@@ -3600,7 +3605,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": -35,
+        "days_to_due": -36,
         "overdue": true
       },
       {
@@ -3624,7 +3629,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": -35,
+        "days_to_due": -36,
         "overdue": true
       },
       {
@@ -3648,7 +3653,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": -36,
+        "days_to_due": -37,
         "overdue": true
       },
       {
@@ -3672,7 +3677,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": -36,
+        "days_to_due": -37,
         "overdue": true
       },
       {
@@ -3696,7 +3701,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": -37,
+        "days_to_due": -38,
         "overdue": true
       },
       {
@@ -3720,7 +3725,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": -37,
+        "days_to_due": -38,
         "overdue": true
       },
       {
@@ -3744,7 +3749,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": -42,
+        "days_to_due": -43,
         "overdue": true
       },
       {
@@ -3768,7 +3773,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": -42,
+        "days_to_due": -43,
         "overdue": true
       },
       {
@@ -3792,7 +3797,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": -43,
+        "days_to_due": -44,
         "overdue": true
       },
       {
@@ -3816,7 +3821,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": -43,
+        "days_to_due": -44,
         "overdue": true
       },
       {
@@ -3840,7 +3845,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-20",
-        "days_to_due": -44,
+        "days_to_due": -45,
         "overdue": true
       },
       {
@@ -3864,7 +3869,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": -46,
+        "days_to_due": -47,
         "overdue": true
       },
       {
@@ -3888,7 +3893,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": -46,
+        "days_to_due": -47,
         "overdue": true
       },
       {
@@ -3912,7 +3917,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": -48,
+        "days_to_due": -49,
         "overdue": true
       },
       {
@@ -3936,7 +3941,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": -48,
+        "days_to_due": -49,
         "overdue": true
       },
       {
@@ -3960,7 +3965,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-14",
-        "days_to_due": -50,
+        "days_to_due": -51,
         "overdue": true
       },
       {
@@ -3984,7 +3989,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -51,
+        "days_to_due": -52,
         "overdue": true
       },
       {
@@ -4008,7 +4013,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -51,
+        "days_to_due": -52,
         "overdue": true
       },
       {
@@ -4032,7 +4037,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -51,
+        "days_to_due": -52,
         "overdue": true
       },
       {
@@ -4056,7 +4061,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -51,
+        "days_to_due": -52,
         "overdue": true
       },
       {
@@ -4080,7 +4085,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-11",
-        "days_to_due": -53,
+        "days_to_due": -54,
         "overdue": true
       },
       {
@@ -4104,7 +4109,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": -55,
+        "days_to_due": -56,
         "overdue": true
       },
       {
@@ -4128,7 +4133,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-07",
-        "days_to_due": -57,
+        "days_to_due": -58,
         "overdue": true
       },
       {
@@ -4152,7 +4157,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -58,
+        "days_to_due": -59,
         "overdue": true
       },
       {
@@ -4176,7 +4181,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -58,
+        "days_to_due": -59,
         "overdue": true
       },
       {
@@ -4200,7 +4205,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -58,
+        "days_to_due": -59,
         "overdue": true
       },
       {
@@ -4224,7 +4229,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -58,
+        "days_to_due": -59,
         "overdue": true
       },
       {
@@ -4248,7 +4253,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -58,
+        "days_to_due": -59,
         "overdue": true
       },
       {
@@ -4272,7 +4277,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4296,7 +4301,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4320,7 +4325,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-03",
-        "days_to_due": -61,
+        "days_to_due": -62,
         "overdue": true
       }
     ],
@@ -4972,7 +4977,7 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 no structured first-touch, goal-setting, or baseline capture; likely losing retention wins at entry\n- **Cancellation & Churn** \u2013 no documented exit interview, win-back criteria, or pause-vs-cancel decision tree\n- **Member Checkins** \u2013 no cadence, trigger points, or escalation for at-risk members (retention backbone missing)\n- **Coaching Development Roadmap** \u2013 no clear progression, skill certification, or performance feedback loop for coaches\n- **Class Quality Audit Checklist** \u2013 no standard for evaluating class delivery, energy, cueing, safety compliance\n- **Order Supplies & Sundries** \u2013 no reorder triggers, vendor management, or stock level SOP\n- **Member data privacy & GDPR** \u2013 critical gap; no consent capture, data retention, or breach protocol\n- **Troubleshooting Guide** \u2013 no escalation paths for common member complaints (class cancellations, billing, injury concerns)\n- **Weekly Key Coach Tasks** \u2013 no standard weekly checklist ensuring consistent delivery across shifts\n\n---\n\n# **Needs updating**\n\n- **Member Pause** \u2013 likely incomplete; doesn't address communication cadence during pause or auto-reactivation triggers\n- **Referral Programme** \u2013 probably lacks incentive clarity, tracking mechanism, or attribution to revenue\n- **30 Day Goals & Member Outcomes** \u2013 likely exist but missing review cadence, coach accountability, and measurement checkpoints\n- **Milestone Achievements** \u2013 no tie-in to retention touchpoints or personalized celebration triggers\n- **Marketing SOPs** \u2013 no integration with member lifecycle stages (win-back campaigns, re-engagement sequences)\n- **Facilities (7/8)** \u2013 missing one; likely emergency/incident response or deep-clean protocols\n\n---\n\n# **Build next**\n\n1. **Member"
+    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 nobody has documented the first-touch journey (induction format, fitness assessment, liability waivers, expectation-setting); this directly affects retention and safety compliance\n- **Member Checklins & Retention** \u2013 no systematic process for reaching out to at-risk members, dormant accounts, or post-pause re-engagement\n- **Cancellation & Churn** \u2013 no win-back protocol, exit interview, or data capture on why members leave\n- **Coaching Development Roadmap** \u2013 no career progression, competency ladder, or upskilling pathway for coaches; limits retention and quality consistency\n- **Class Quality Audit Checklist** \u2013 no standardised way to measure coaching delivery, class pacing, member engagement, or safety enforcement\n- **Member data privacy & GDPR** \u2013 critical gap; you're storing member data without documented data handling, consent, or retention protocols\n- **Referral Programme** \u2013 no documented mechanics (incentives, tracking, payout, messaging) even though referrals are cheap acquisition\n- **Weekly Key Coach Tasks** \u2013 no clarity on what coaches actually own week-to-week (programming, social content, 1-on-1 outreach, feedback cycles)\n- **30 Day Goals & Member Outcomes** \u2013 no process for goal-setting, tracking, or celebrating progress; kills engagement\n- **Troubleshooting Guide** \u2013 no escalation path for common complaints (injured mid-class, billing issues, coach conflicts, cleanliness)\n\n**Needs updating**\n\n- **Coach SOPs** \u2013 likely missing: accountability for member touchpoints outside class, how coaches feed back on member progress to retention team, standards for correcting unsafe form mid-class\n- **Facilities SOPs** \u2013 missing deep-clean schedules, equipment maintenance logs, emergency incident reporting (what happens when someone gets injured?)\n-"
   },
   "slack": {
     "configured": true,
@@ -4981,8 +4986,14 @@
       {
         "user_id": "U0AT9UT2W8Z",
         "text": "Oh not nice     Hope Dan is keeping well.  See you soon.  Off to Donegal for a few days ",
-        "hours": 27,
+        "hours": 38,
         "name": "Margaret Reynolds"
+      },
+      {
+        "user_id": "U0AJ93W8J8Y",
+        "text": "Question?  What do i select here?",
+        "hours": 9,
+        "name": "Lynbelfast48"
       }
     ],
     "mentions": [],
@@ -5164,7 +5175,7 @@
     }
   },
   "kpi": {
-    "advice": "# THE FORGE \u2014 FRACTIONAL CFO BRIEF\n\n## REVENUE \u2014 CRITICAL ACTIONS\n\n\u2022 **Arrest the rev/member collapse.** Aug at \u00a397/member is 32% down from Jul's \u00a3142 and way below your Jan\u2013Jul average of \u00a3129. You've added 27 members since May (111\u2192166) but revenue per head has tanked. Immediate audit: are new members on discounted rates? Are existing members downgrading tiers? You're leaving \u00a3900\u2013\u00a31,200/month on the table. Enforce price consistency and fast-track new joiners onto standard rate after month 1.\n\n\u2022 **Churn spike in May (12.8%) was a one-off (now back to 3\u20138% range).** Good. But your Aug *net* member growth masks soft underlying retention \u2014 you're recruiting hard to offset leakage. Focus Q4 on *keeping* the 166 you have, not just adding. Run a win-back campaign on lapsed members from May; offer 3-month loyalty discounts only to existing base.\n\n\u2022 **Class occupancy and peak-hour pricing.** You don't have class data, but with 166 active members you should be hitting near-capacity in peak slots (6\u20138 a.m., 5\u20137 p.m.). Introduce surge pricing (\u00a33\u20135 premium for peak classes booked within 48 hours) and off-peak incentives (free class or \u00a32 discount 10\u201311 a.m., 2\u20134 p.m.). Target: shift 8\u201310 members/month to quiet slots = \u00a396\u2013120 extra revenue at zero cost.\n\n\u2022 **New revenue line: personal training / small-group coaching.** At \u00a397/member, standalone membership margin is thin. Offer 1-to-1 PT at \u00a340\u201350/session (typical Belfast rate) to your top 20 engaged members; aim for 2\u20133 takers at 2 sessions/month = \u00a3160\u2013300 extra. Alternatively, \"6-week shred\" bootcamp packages at \u00a3120/person to non-members. You have a bigger studio now (post-relocation); use the space.\n\n---\n\n## EXPENSES \u2014 WHERE TO TIGHTEN\n\n\u2022 **August cash burn is unsustainable.** Net cash was \u2013\u00a35,335 (revenue \u00a316,160, outgoings \u00a328,693). Excluding the planned April relocation shock, your last 3 months average \u2013\u00a31,408 net cash *despite* growing membership. This means fixed costs (rent, utilities, insurance, payroll) are too high relative to current revenue.",
+    "advice": "# THE FORGE \u2014 FRACTIONAL CFO REVIEW\n\n## REVENUE \u2014 URGENT PRIORITY: ARREST MEMBER DILUTION & MAXIMISE YIELD\n\n\u2022 **Revenue per member has collapsed from \u00a3142 (July) to \u00a398 (August) \u2014 a 31% drop on a larger member base (165 vs 139).** This is the single biggest red flag. August added 26 members but revenue fell \u00a33.6k. Either (a) new members are on introductory/discounted rates and aren't converting to full-price, or (b) churn is happening among higher-paying tiers. Pull TeamUp reports on cohort pricing and tenure \u2014 if intros/discounts are >30 days, shorten to 2 weeks and enforce upgrade pricing within 14 days. This is costing you ~\u00a32,400/month in visible leakage.\n\n\u2022 **Churn spiked to 12.8% in May then normalised** \u2014 but that May spike (17 members lost) needs postmortem: were those post-intro defaults, or seasonal? Cross-reference with payment failures in GoCardless. If it's payment friction, implement Stripe recurring + auto-retry within 48 hours.\n\n\u2022 **Last 3 months (June\u2013Aug) average \u00a317.4k/month revenue vs prior 3 (March\u2013May) at \u00a315.4k \u2014 growth is real (+13%), but it's entirely member count, not pricing power.** You're at 165 members now. Calculate LTV: if average member pays for 8 months and then churns, your LTV is ~\u00a3780\u2013\u00a31,040. Acquisition cost per new member (marketing + onboarding time) should be <\u00a3150 to justify. Are you tracking this? If not, start now.\n\n\u2022 **Launch a tiered upsell: move from single \"membership\" to Membership + PT add-on (\u00a340\u2013\u00a360/month) + nutrition/class-pass bundles (\u00a315\u2013\u00a325).** At 165 members, even 20% uptake on a \u00a350 add-on is +\u00a31,650/month revenue. August's revenue/member (\u00a398) should be closer to \u00a3120\u2013\u00a3130 once the cohort matures and add-ons gain traction.\n\n---\n\n## EXPENSES \u2014 CASH BURN PATTERN MASKED BY MEMBER GROWTH\n\n\u2022 **Net cash has been negative in 4 of 8 months** (Jan, March, April excl., May, August). August is particularly concerning: +\u00a326.6k cash in but -\u00a328.7k cash out = -\u00a35.3k net",
     "advice_source": "live"
   },
   "staff": {
@@ -5325,7 +5336,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower classes to JoJo immediately.** JoJo already owns Build: Upper and has Tuesday expertise; consolidating lower-body strength under one head coach creates consistency and removes Grace's largest delivery commitment (16 sessions).\n\n\u2022 **Redistribute Grace's Strongevity and Engine to Eilis.** These are lower-intensity, technique-focused classes well-suited to Eilis's development as a coach. This gives Eilis variety beyond PT and covers remaining Grace class hours.\n\n\u2022 **Shift half of Grace's PT clients (10 sessions) to Eilis and half to JoJo.** Both have capacity. This spreads responsibility and ensures no single coach owns Grace's personal training relationships, reducing handover risk.\n\n\u2022 **Assign all Body Composition scans to a single admin task or rotate them fairly outside PT load.** Currently JoJo and Eilis are doing 13 and 12 respectively\u2014these shouldn't count as coaching time or create scheduling friction. Formalise who owns this operationally.\n\n\u2022 **Front-load Eilis's Tuesday readiness plan.** JoJo (103 sessions) is carrying technical classes alone. Once Eilis is confident, adding her to one Tuesday Circuits or Plate slot reduces dependency on JoJo and builds the team's resilience.\n\n\u2022 **After these moves, review whether Eilis or JoJo needs more PT clients** to balance workload fairly. Current split (40 PT vs 20 PT) is uneven; rebalancing after Grace's handover will show true capacity.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately:** Her Build: Lower (16 sessions) should shift to JoJo, and Strongevity (5 sessions) to Eilis. This removes Grace from delivery and uses your two active coaches more efficiently without overloading either.\n\n\u2022 **Eilis is significantly under-loaded:** At 93 real coaching hours (excluding scans), she has capacity. Assign her additional Plate and Mobility classes to build consistency and member familiarity \u2014 these suit her current skill level and free up JoJo for higher-demand work.\n\n\u2022 **JoJo is carrying too much:** 90 real coaching hours plus Tuesday technical load makes her the single point of failure. Once Grace's classes transfer, protect JoJo by giving Eilis more lower-intensity group sessions, so JoJo focuses on Build: Upper, PT, and Tuesday delivery.\n\n\u2022 **Body Composition Scans are administrative, not coaching:** Stop counting them against timetable balance. Any available coach can do them in under 10 minutes; use them as flexible filler or member onboarding, not as workload justification.\n\n\u2022 **No Sweat Intro (10 sessions last month) should rotate between both coaches:** Currently split between JoJo and Grace. Make it a regular Eilis responsibility to onboard new members \u2014 builds her profile and spreads face-time with intake.\n\n\u2022 **Aim for September:** Eilis 12\u201316 group sessions + 8\u201312 PT; JoJo 15\u201318 group sessions (including all Tuesdays) + 15\u201318 PT. Grace: zero delivery, zero PT.",
     "period": "August 2026"
   },
   "asana": {
@@ -5667,7 +5678,7 @@
     }
   },
   "teamup": {
-    "total_members": 167,
+    "total_members": 168,
     "recurring": 114,
     "recurring_members": [
       {
@@ -6178,7 +6189,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 8,
+    "new_this_month": 9,
     "cancellations_this_month": 6,
     "leaving_members": [
       {
@@ -6866,16 +6877,6 @@
             "name": "Sinead Horner",
             "membership": "4 PT Sessions",
             "end": "2025-09-07"
-          },
-          {
-            "name": "Teresa Mckillop",
-            "membership": "Empower",
-            "end": "2025-09-02"
-          },
-          {
-            "name": "Ann Taggart",
-            "membership": "Empower",
-            "end": "2025-09-02"
           }
         ]
       }
@@ -7782,20 +7783,6 @@
         ]
       },
       {
-        "name": "8 Session Block",
-        "count": 2,
-        "members": [
-          {
-            "id": 930054,
-            "name": "Annette Scott"
-          },
-          {
-            "id": 3236503,
-            "name": "Michelle McKnight"
-          }
-        ]
-      },
-      {
         "name": "Kickstart PAID IN FULL",
         "count": 2,
         "members": [
@@ -7806,6 +7793,16 @@
           {
             "id": 8760404,
             "name": "Sara Benetti"
+          }
+        ]
+      },
+      {
+        "name": "8 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 3236503,
+            "name": "Michelle McKnight"
           }
         ]
       },
@@ -7888,6 +7885,16 @@
             "name": "Alison Moffitt-Robinson"
           }
         ]
+      },
+      {
+        "name": "4 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 11029358,
+            "name": "Rosemary Kennedy"
+          }
+        ]
       }
     ],
     "class_stats": {
@@ -7899,7 +7906,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 615
+            "count": 641
           },
           {
             "day": "Monday",
@@ -7911,7 +7918,7 @@
           },
           {
             "day": "Thursday",
-            "count": 469
+            "count": 428
           }
         ],
         "bottom_days": [
@@ -7921,7 +7928,7 @@
           },
           {
             "day": "Thursday",
-            "count": 469
+            "count": 428
           },
           {
             "day": "Friday",
@@ -7933,7 +7940,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 615
+            "count": 641
           }
         ],
         "top_classes": [
@@ -7943,7 +7950,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 515
+            "count": 503
           },
           {
             "name": "Build: Lower",
@@ -7951,41 +7958,41 @@
           },
           {
             "name": "Elevate",
-            "count": 354
+            "count": 345
           },
           {
             "name": "Circuits",
             "count": 233
           },
           {
-            "name": "Mobility",
-            "count": 218
+            "name": "Plate",
+            "count": 223
           }
         ],
         "bottom_classes": [
-          {
-            "name": "Capacity",
-            "count": 59
-          },
           {
             "name": "Barbelle",
             "count": 60
           },
           {
+            "name": "Capacity",
+            "count": 64
+          },
+          {
             "name": "Engine",
-            "count": 74
+            "count": 65
           },
           {
             "name": "Strongevity",
             "count": 171
           },
           {
-            "name": "Plate",
-            "count": 213
-          },
-          {
             "name": "Mobility",
             "count": 218
+          },
+          {
+            "name": "Plate",
+            "count": 223
           }
         ],
         "top_slots": [
@@ -8035,13 +8042,13 @@
             "label": "Monday 11am Strongevity"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 133,
-            "sessions": 13,
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 112,
+            "sessions": 11,
             "avg": 10.2,
-            "label": "Thursday 7am Build: Full Body"
+            "label": "Friday 7pm Mobility"
           }
         ],
         "bottom_slots": [
@@ -8049,9 +8056,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 59,
-            "sessions": 10,
-            "avg": 5.9,
+            "count": 64,
+            "sessions": 11,
+            "avg": 5.8,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -8076,31 +8083,31 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 63,
-            "sessions": 9,
-            "avg": 7.0,
+            "count": 73,
+            "sessions": 10,
+            "avg": 7.3,
             "label": "Wednesday 7pm Plate"
           },
           {
-            "day": "Wednesday",
-            "time": "6pm",
-            "name": "Build: Full Body",
-            "count": 70,
-            "sessions": 9,
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 78,
+            "sessions": 10,
             "avg": 7.8,
-            "label": "Wednesday 6pm Build: Full Body"
+            "label": "Thursday 10am Elevate"
           },
           {
             "day": "Wednesday",
             "time": "5pm",
             "name": "Build: Full Body",
-            "count": 63,
+            "count": 64,
             "sessions": 8,
-            "avg": 7.9,
+            "avg": 8.0,
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3024
+        "total_attended": 3009
       },
       "last_30_days": {
         "top_days": [
@@ -8110,11 +8117,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 250
-          },
-          {
-            "day": "Monday",
-            "count": 186
+            "count": 276
           },
           {
             "day": "Thursday",
@@ -8123,6 +8126,10 @@
           {
             "day": "Friday",
             "count": 143
+          },
+          {
+            "day": "Monday",
+            "count": 140
           }
         ],
         "bottom_days": [
@@ -8131,6 +8138,10 @@
             "count": 79
           },
           {
+            "day": "Monday",
+            "count": 140
+          },
+          {
             "day": "Friday",
             "count": 143
           },
@@ -8139,12 +8150,8 @@
             "count": 158
           },
           {
-            "day": "Monday",
-            "count": 186
-          },
-          {
             "day": "Wednesday",
-            "count": 250
+            "count": 276
           }
         ],
         "top_classes": [
@@ -8154,19 +8161,19 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 199
-          },
-          {
-            "name": "Build: Lower",
-            "count": 143
-          },
-          {
-            "name": "Strongevity",
-            "count": 115
+            "count": 210
           },
           {
             "name": "Elevate",
             "count": 110
+          },
+          {
+            "name": "Build: Lower",
+            "count": 106
+          },
+          {
+            "name": "Strongevity",
+            "count": 106
           },
           {
             "name": "Circuits",
@@ -8174,6 +8181,10 @@
           }
         ],
         "bottom_classes": [
+          {
+            "name": "Capacity",
+            "count": 19
+          },
           {
             "name": "Barbelle",
             "count": 19
@@ -8183,23 +8194,28 @@
             "count": 28
           },
           {
-            "name": "Plate",
-            "count": 63
-          },
-          {
             "name": "Mobility",
             "count": 69
           },
           {
-            "name": "Circuits",
-            "count": 81
+            "name": "Plate",
+            "count": 73
           },
           {
-            "name": "Elevate",
-            "count": 110
+            "name": "Circuits",
+            "count": 81
           }
         ],
         "top_slots": [
+          {
+            "day": "Monday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 34,
+            "sessions": 3,
+            "avg": 11.3,
+            "label": "Monday 11am Strongevity"
+          },
           {
             "day": "Friday",
             "time": "7pm",
@@ -8229,20 +8245,11 @@
           },
           {
             "day": "Monday",
-            "time": "11am",
-            "name": "Strongevity",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Monday 11am Strongevity"
-          },
-          {
-            "day": "Monday",
             "time": "5pm",
             "name": "Build: Lower",
-            "count": 32,
-            "sessions": 3,
-            "avg": 10.7,
+            "count": 21,
+            "sessions": 2,
+            "avg": 10.5,
             "label": "Monday 5pm Build: Lower"
           },
           {
@@ -8260,9 +8267,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 14,
-            "sessions": 3,
-            "avg": 4.7,
+            "count": 19,
+            "sessions": 4,
+            "avg": 4.8,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -8275,15 +8282,6 @@
             "label": "Thursday 8pm Barbelle"
           },
           {
-            "day": "Wednesday",
-            "time": "7pm",
-            "name": "Plate",
-            "count": 29,
-            "sessions": 4,
-            "avg": 7.2,
-            "label": "Wednesday 7pm Plate"
-          },
-          {
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
@@ -8293,13 +8291,13 @@
             "label": "Saturday 9am Elevate"
           },
           {
-            "day": "Monday",
+            "day": "Wednesday",
             "time": "7pm",
-            "name": "Build: Lower",
-            "count": 23,
-            "sessions": 3,
-            "avg": 7.7,
-            "label": "Monday 7pm Build: Lower"
+            "name": "Plate",
+            "count": 39,
+            "sessions": 5,
+            "avg": 7.8,
+            "label": "Wednesday 7pm Plate"
           },
           {
             "day": "Thursday",
@@ -8309,11 +8307,20 @@
             "sessions": 4,
             "avg": 7.8,
             "label": "Thursday 10am Elevate"
+          },
+          {
+            "day": "Tuesday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 25,
+            "sessions": 3,
+            "avg": 8.3,
+            "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 1141
+        "total_attended": 1121
       },
-      "suggestion": "**For quiet studio time:**\n\n1. Open a 30-min paid PT block (\u00a325\u201335) on Tuesday\u2013Wednesday mornings before the Build classes start \u2014 these are your peak days, so members already on-site can book add-on sessions without committing to full packages.\n\n2. Run a monthly \"Barbell Basics\" workshop (45 min, \u00a310\u201315) on Saturday mornings before Barbelle \u2014 teaches foundational technique to build confidence in a low-pressure setting, then invite attendees to the actual class.\n\n**For quieter classes:**\n\n3. Move Engine to Thursday evening (your second-quietest day needs a lift) and pair it with a targeted email to members who've done Elevate and Circuits \u2014 position it as \"cardio for strength athletes\" rather than a standalone offering, with a \"try free\" invite for first-timers.",
+      "suggestion": "**Fill quiet studio time:**\n\n1. **Add a Saturday morning open-gym block (7\u20139am)** before or after your lightest day's existing classes \u2014 Saturday attendance is half of Tuesday's, so a casual pay-per-session slot targets members who skip structured classes but want weekend access.\n\n2. **Launch a Thursday lunchtime \"Strength Fundamentals\" workshop (30 mins, 12:30\u20131pm)** in the gap between morning and evening classes \u2014 targets working members who can't commit to full classes but need skill-building, positions it as a feeder to Build and Barbelle.\n\n**Lift the quieter classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday evenings** (your peak days) and rebrand them with a short tagline in member comms (e.g. \"Barbelle: sculpt and strength\" or \"Engine: cardio endurance that builds power\") \u2014 quieter classes often suffer from positioning confusion, not lack of interest; pairing them with peak-day traffic and clarity will boost trial.",
       "capacity": [
         {
           "name": "Strongevity",
@@ -8360,7 +8367,7 @@
           "sessions": 13,
           "cap": 9,
           "avg_attending": 6.8,
-          "fill_rate": 76,
+          "fill_rate": 75,
           "status": "healthy"
         },
         {
@@ -8605,7 +8612,7 @@
       },
       {
         "month": "2026-08",
-        "active": 166,
+        "active": 165,
         "churn": 5.4,
         "by_type": {
           "Empower": 71,
@@ -8621,14 +8628,13 @@
           "4 Class Pass": 1,
           "Well75": 10,
           "6 Week Jumpstart": 11,
-          "8 Session Block": 1,
           "Strongevity Membership": 13
         }
       },
       {
         "month": "2026-09",
         "active": 163,
-        "churn": 8.8,
+        "churn": 8.2,
         "by_type": {
           "Empower": 71,
           "8 PT Sessions": 3,
@@ -8643,8 +8649,8 @@
           "4 Class Pass": 1,
           "Well75": 10,
           "6 Week Jumpstart": 12,
-          "8 Session Block": 1,
-          "Strongevity Membership": 15
+          "Strongevity Membership": 15,
+          "4 Session Block": 1
         }
       }
     ],
@@ -8653,176 +8659,169 @@
         "id": 10057245,
         "name": "Alison Moffitt-Robinson",
         "membership": "4 Class Pass",
-        "days_absent": 57,
+        "days_absent": 58,
         "last_seen": "2026-07-07"
       },
       {
         "id": 12292932,
         "name": "Ashley George",
         "membership": "Elevate",
-        "days_absent": 35,
+        "days_absent": 36,
         "last_seen": "2026-07-29"
       },
       {
         "id": 12162382,
         "name": "Catherine Gavin",
         "membership": "8 PT Sessions",
-        "days_absent": 44,
+        "days_absent": 45,
         "last_seen": "2026-07-20"
       },
       {
         "id": 11546736,
         "name": "Claire Leeke",
         "membership": "Elevate",
-        "days_absent": 27,
+        "days_absent": 28,
         "last_seen": "2026-08-06"
       },
       {
         "id": 13520776,
         "name": "Davina Dickson",
         "membership": "Strongevity Membership",
-        "days_absent": 30,
+        "days_absent": 31,
         "last_seen": "2026-08-03"
       },
       {
         "id": 12289714,
         "name": "Diane McLean",
         "membership": "Elevate",
-        "days_absent": 43,
+        "days_absent": 44,
         "last_seen": "2026-07-21"
       },
       {
         "id": 10317298,
         "name": "Evelyn Sharpe",
         "membership": "Elevate",
-        "days_absent": 111,
+        "days_absent": 112,
         "last_seen": "2026-05-14"
       },
       {
         "id": 7373444,
         "name": "Helen Logan",
         "membership": "Empower",
-        "days_absent": 16,
+        "days_absent": 17,
         "last_seen": "2026-08-17"
       },
       {
         "id": 11929298,
         "name": "Irene Robinson",
         "membership": "4 PT Sessions",
-        "days_absent": 44,
+        "days_absent": 45,
         "last_seen": "2026-07-20"
       },
       {
         "id": 10671756,
         "name": "Jill Chadburn",
         "membership": "Empower",
-        "days_absent": 47,
+        "days_absent": 48,
         "last_seen": "2026-07-17"
       },
       {
         "id": 9647702,
         "name": "Joan Taggart",
         "membership": "Elevate",
-        "days_absent": 13,
+        "days_absent": 14,
         "last_seen": "2026-08-20"
       },
       {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
-        "days_absent": 44,
+        "days_absent": 45,
         "last_seen": "2026-07-20"
       },
       {
         "id": 4772999,
         "name": "Kirsty Dunn",
         "membership": "Empower",
-        "days_absent": 41,
+        "days_absent": 42,
         "last_seen": "2026-07-23"
       },
       {
         "id": 13507202,
         "name": "Linda Greet",
         "membership": "6 Week Jumpstart",
-        "days_absent": 30,
+        "days_absent": 31,
         "last_seen": "2026-08-03"
       },
       {
         "id": 12852843,
         "name": "Liz Houston",
         "membership": "4 PT Sessions",
-        "days_absent": 27,
+        "days_absent": 28,
         "last_seen": "2026-08-06"
       },
       {
         "id": 12672913,
         "name": "Louise Feeney",
         "membership": "Elevate",
-        "days_absent": 12,
+        "days_absent": 13,
         "last_seen": "2026-08-21"
       },
       {
         "id": 12116479,
         "name": "Margaret Hughes",
         "membership": "Elevate",
-        "days_absent": 27,
+        "days_absent": 28,
         "last_seen": "2026-08-06"
-      },
-      {
-        "id": 13667307,
-        "name": "Megan Morrison",
-        "membership": "6 Week Jumpstart",
-        "days_absent": 13,
-        "last_seen": "2026-08-20"
-      },
-      {
-        "id": 7561270,
-        "name": "Mollie McGregor",
-        "membership": "Elevate",
-        "days_absent": 14,
-        "last_seen": "2026-08-19"
       },
       {
         "id": 9196376,
         "name": "Nerys Young",
         "membership": "Empower",
-        "days_absent": 43,
+        "days_absent": 44,
         "last_seen": "2026-07-21"
-      },
-      {
-        "id": 12327757,
-        "name": "Nicola Duffin",
-        "membership": "Elevate",
-        "days_absent": 12,
-        "last_seen": "2026-08-21"
       },
       {
         "id": 13002340,
         "name": "Noeleen Murphy",
         "membership": "Empower",
-        "days_absent": 36,
+        "days_absent": 37,
         "last_seen": "2026-07-28"
       },
       {
         "id": 8500731,
         "name": "Noor AlShehabi",
         "membership": "8 PT Sessions",
-        "days_absent": 44,
+        "days_absent": 45,
         "last_seen": "2026-07-20"
       },
       {
         "id": 7775785,
         "name": "Sarah Sandford",
         "membership": "Empower",
-        "days_absent": 39,
+        "days_absent": 40,
         "last_seen": "2026-07-25"
       },
       {
-        "id": 12228505,
-        "name": "Sarah jayne Simpson",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-08-21"
+        "id": 13602153,
+        "name": "Sharon McAuley",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 14,
+        "last_seen": "2026-08-20"
+      },
+      {
+        "id": 13677712,
+        "name": "VIVIAN MORRISON",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 14,
+        "last_seen": "2026-08-20"
+      },
+      {
+        "id": 9414493,
+        "name": "Zara Morrison",
+        "membership": "Foundation PAID IN FULL",
+        "days_absent": 17,
+        "last_seen": "2026-08-17"
       }
     ],
     "celebrations": {
@@ -8830,32 +8829,32 @@
       "new_members": [
         {
           "name": "Elizabeth Greenaway",
-          "days_in": 1,
+          "days_in": 2,
           "start_date": "2026-09-01"
         },
         {
           "name": "Jennifer Reid",
-          "days_in": 3,
+          "days_in": 4,
           "start_date": "2026-08-30"
         },
         {
           "name": "Lynda Archibald",
-          "days_in": 4,
+          "days_in": 5,
           "start_date": "2026-08-29"
         },
         {
           "name": "Jacqueline Crawford",
-          "days_in": 5,
+          "days_in": 6,
           "start_date": "2026-08-28"
         },
         {
           "name": "Marjorie Moore",
-          "days_in": 6,
+          "days_in": 7,
           "start_date": "2026-08-27"
         },
         {
           "name": "Laura McGarry",
-          "days_in": 7,
+          "days_in": 8,
           "start_date": "2026-08-26"
         }
       ],
@@ -8864,21 +8863,14 @@
           "name": "Joules Williamson",
           "label": "9 months",
           "months": 9,
-          "days_until": 3,
+          "days_until": 2,
           "start_date": "2025-12-05"
-        },
-        {
-          "name": "Connie Gerrow",
-          "label": "3 months",
-          "months": 3,
-          "days_until": -4,
-          "start_date": "2026-05-30"
         },
         {
           "name": "Liz Bloomer",
           "label": "3 months",
           "months": 3,
-          "days_until": -2,
+          "days_until": -3,
           "start_date": "2026-06-01"
         }
       ]
@@ -9075,15 +9067,6 @@
         "join_date": "2023-07-10",
         "membership": "Empower",
         "class_count": 366,
-        "last_momentum": null
-      },
-      {
-        "id": 930054,
-        "name": "Annette Scott",
-        "email": "annettescott2@gmail.com",
-        "join_date": "2024-06-25",
-        "membership": "8 Session Block",
-        "class_count": 249,
         "last_momentum": null
       },
       {
@@ -10056,6 +10039,15 @@
         "join_date": "2022-10-17",
         "membership": "4 PT Sessions",
         "class_count": 199,
+        "last_momentum": null
+      },
+      {
+        "id": 11029358,
+        "name": "Rosemary Kennedy",
+        "email": "rosemary_kennedy@yahoo.com",
+        "join_date": "2026-09-03",
+        "membership": "4 Session Block",
+        "class_count": 111,
         "last_momentum": null
       },
       {
@@ -22569,9 +22561,9 @@
       {
         "month": "2026-09",
         "revenue": 1458.5,
-        "expenses": 535.55,
-        "profit": 922.95,
-        "profit_pct": 63.3,
+        "expenses": 543.95,
+        "profit": 914.55,
+        "profit_pct": 62.7,
         "categories": {
           "in": [
             {
@@ -22582,7 +22574,7 @@
           "out": [
             {
               "name": "Other",
-              "amount": 230.55
+              "amount": 238.95
             },
             {
               "name": "Professional Services",
@@ -22607,6 +22599,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "c698a4ed-4a36-4a87-99a6-0f16edcee2be",
+            "date": "2026-09-02",
+            "name": "Women In Business Ni",
+            "ref": "WIB-8542076",
+            "amount": 8.4,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
           {
             "uid": "ce10e838-5d8f-445b-872d-f6f48117f1f4",
             "date": "2026-09-02",
@@ -22821,7 +22823,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 2156.37,
+    "cash_position": 2147.97,
     "available": 0.0,
     "reserves": [
       {
@@ -22842,7 +22844,7 @@
       }
     ],
     "earmarked": 10477.0,
-    "total_cash": 12633.37,
+    "total_cash": 12624.97,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -22871,9 +22873,9 @@
       }
     ],
     "cash_in_30": 23526.79,
-    "cash_out_30": 25784.79,
-    "net_30": -2258.0,
-    "as_of": "2026-09-02"
+    "cash_out_30": 25793.19,
+    "net_30": -2266.4,
+    "as_of": "2026-09-03"
   },
   "gocardless": {
     "configured": true,
@@ -23039,6 +23041,11 @@
         "month": "2026-08",
         "collected": 499.0,
         "payments": 32
+      },
+      {
+        "month": "2026-09",
+        "collected": 149.0,
+        "payments": 1
       }
     ],
     "failed": [
@@ -23076,119 +23083,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Build for The Forge\n\n**Get it done fast \u2014 here's the real work:**\n\n\u2022 **Start with your ACTUAL revenue** \u2014 pull last 3 months of transactions, group by service type (group classes, PT, packages, add-ons). This shows what's *actually* selling, not what you think should sell. Build your menu around proven money-makers first.\n\n\u2022 **Create two separate docs immediately** \u2014 one \"member-facing\" (clean, benefits-focused, pricing clear), one \"coach operations sheet\" (what's included in each offering, what upsells exist, commission/compensation structure). Coaches need to know where the $ comes from to sell it.\n\n\u2022 **Price anchor to your best seller** \u2014 identify your highest-margin or most-booked offering, then position everything else relative to it. If PT is your star, price packages as multiples of single sessions. Removes decision paralysis.\n\n\u2022 **Add one \"VIP/premium tier\" immediately** \u2014 even if it's just priority booking + nutrition check-ins. High-ticket offerings don't need volume; they justify their own margin and create urgency around standard tiers.\n\n\u2022 **Lock it down and communicate ruthlessly** \u2014 once finalized, send to coaches with *one* required meeting to walk through it (15 mins max). Inconsistent messaging kills conversion. Then post it publicly and start using it in every sales conversation this week.\n\nWhat's your current highest-revenue service type?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue anchor \u2014 tier your memberships NOW**\nDon't overthink this. List your THREE membership levels (Basic/Standard/Premium or similar), price them, and lock them in. Grace: what's your current pricing? Use that as your floor. Add one tier above at +30-40% (includes class priority + 1 coaching session/month). This creates an immediate upsell path. Have this done in 2 days max \u2014 perfectionism kills momentum.\n\n**2. Create TWO separate docs \u2014 coach-facing and member-facing**\nCoaches need to see: what packages they can sell, commission structure, what's bundled vs. \u00e0 la carte, upsell sequences. Members see: clean, benefit-focused descriptions (not feature dumps). Use Canva or a simple Google Doc template \u2014 not a 20-page PDF. Coaches won't read it; members won't finish it.\n\n**3. Audit what you actually deliver vs. what you're promising**\nWalk through a typical week. What classes run? How many 1-on-1 sessions are realistic? What's your actual coach capacity? Your menu must reflect real capacity, not wishful thinking. If you promise it, price it to ensure profitability.\n\n**4. Price coaching sessions as standalone products with urgency**\nDon't bury them. \"5-Class Package: \u00a375\" and \"1 Coaching Session: \u00a340\" (or whatever works). Add a scarcity angle: \"Coaching slots limited to X per coach per week.\" This drives fast decisions from members.\n\n**What's your current pricing structure? That changes the priority order here.**"
       }
     ]
   },
@@ -23903,7 +23910,66 @@
     "total_spend": 9059.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
-  "marketing": null,
+  "marketing": {
+    "period": "August 2026 (latest)",
+    "ad_spend": 544.09,
+    "leads": 109,
+    "sales": 24,
+    "income_from_ads": 29.0,
+    "profit": 52.25,
+    "cost_per_lead": 4.99,
+    "close_rate": 22.0,
+    "monthly": [
+      {
+        "month": "Apr",
+        "spend": 434.57,
+        "leads": 69,
+        "sales": 0,
+        "income": 20.0,
+        "profit": 87.99
+      },
+      {
+        "month": "May",
+        "spend": 521.58,
+        "leads": 38,
+        "sales": 0,
+        "income": 23.0,
+        "profit": 124.79
+      },
+      {
+        "month": "Jun",
+        "spend": 417.11,
+        "leads": 20,
+        "sales": 0,
+        "income": 13.0,
+        "profit": 140.91
+      },
+      {
+        "month": "Jul",
+        "spend": 515.01,
+        "leads": 215,
+        "sales": 29,
+        "income": 38.0,
+        "profit": 79.45
+      },
+      {
+        "month": "Aug",
+        "spend": 544.09,
+        "leads": 109,
+        "sales": 24,
+        "income": 29.0,
+        "profit": 52.25
+      }
+    ],
+    "lifetime": {
+      "spend": 2432.36,
+      "leads": 451,
+      "sales": 53,
+      "income": 123.0,
+      "profit": 485.39
+    },
+    "advice": "# The Forge \u2014 August Performance Analysis\n\n## Insights\n\n**July was an anomaly, not a baseline.** You crushed it in July (215 leads at \u00a32/lead, 29 sales) but August has reverted to a harder-to-convert pattern: half the leads, 2.5x the cost-per-lead, lower close rate (22% vs 13% in July). This isn't gradual decay\u2014it's sharp. Either your July creative/audience resonated uniquely, or you've drifted from that setup.\n\n**You're now profitable, but fragile.** August's \u00a352 profit on \u00a3544 spend (9.6% ROAS) is solid for lead-gen, and your 22% close rate is genuinely strong. But you're reliant on converting ~20 sales monthly to stay in the black; any slip in close rate or rise in CPL kills margins fast.\n\n**Spend efficiency has worsened month-on-month since July despite higher absolute leads.** Your cost-per-lead climbed from \u00a32 (Jul) to \u00a35 (Aug)\u2014a 150% increase. This screams audience fatigue, creative staleness, or seasonal drop-off in intent (post-summer, fewer gym joiners).\n\n## Actions\n\n**1. Reverse-engineer July's winner.** Pull the exact creative assets, ad copy, audience segments, and placements that drove July's 215 leads. Screenshot everything. Test those exact creatives again in September as your control. If they perform, you've got a repeatable formula; if they don't, something external changed (seasonal, algorithm, audience saturation). Either way, you'll know.\n\n**2. Split-test creative angle: anxiety/confidence reframe.** Your close rate is high (22%), so your trial offer converts well *once they click*. The problem is lead volume and quality softening. Test two new ad angles: (a) \"Women-only space = no judgment, just results\" (social proof angle), and (b) \"6 weeks to feel strong again\" (confidence/transformation, not body-focused). Run \u00a3100/week on each. Hypothesis: summer may attract casual clickers; back-to-school/autumn intent (Sept\u2013Oct"
+  },
   "moves": [
     {
       "name": "12 Behind The Back Tricep Raises",
