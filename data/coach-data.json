@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:01:08.469148+00:00",
+  "generated_at": "2026-09-03T18:38:26.113814+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1314,7 +1314,7 @@
   "inbody": {
     "scans": [
       {
-        "name": "129shannoncampbell",
+        "name": "Shannon Campbell",
         "last_scan": "2026-09-03",
         "scan_count": 1,
         "weight": 229.6,
@@ -1329,6 +1329,30 @@
         "weight_change": null,
         "smm_change": null,
         "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-15",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Chrissie Taggart",
+        "last_scan": "2026-09-03",
+        "scan_count": 2,
+        "weight": 143.5,
+        "smm": 61.1,
+        "pbf": 22.9,
+        "bmi": 22.5,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": 2.4,
+        "smm_change": 3.1,
+        "pbf_change": -2.1,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -3642,30 +3666,6 @@
         "overdue": true
       },
       {
-        "name": "Chrissie Taggart",
-        "last_scan": "2026-05-30",
-        "scan_count": 1,
-        "weight": 141.1,
-        "smm": 58.0,
-        "pbf": 25.0,
-        "bmi": 22.1,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-07-11",
-        "days_to_due": -54,
-        "overdue": true
-      },
-      {
         "name": "Cindy McIntyre",
         "last_scan": "2026-05-28",
         "scan_count": 1,
@@ -3914,15 +3914,9 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0AT9UT2W8Z",
-        "text": "Oh not nice     Hope Dan is keeping well.  See you soon.  Off to Donegal for a few days ",
-        "hours": 47,
-        "name": "Margaret Reynolds"
-      },
-      {
         "user_id": "U0AJ93W8J8Y",
-        "text": "<@U05MXJC8QNB> more vids!",
-        "hours": 1,
+        "text": "Sorry wrong  channek",
+        "hours": 4,
         "name": "Lynbelfast48"
       }
     ],
@@ -5126,11 +5120,15 @@
       }
     ],
     "new_this_month": 9,
-    "cancellations_this_month": 7,
+    "cancellations_this_month": 8,
     "leaving_members": [
       {
         "id": 12931950,
         "name": "Amanda Hanna"
+      },
+      {
+        "id": 11178634,
+        "name": "Christine Bartlett"
       },
       {
         "id": 13063966,
@@ -5899,7 +5897,7 @@
       }
     ],
     "cancelled_ytd": 42,
-    "churn_rate": 4.4,
+    "churn_rate": 5.1,
     "avg_member_price": 137.45,
     "monthly_recurring_revenue": 15532.0,
     "avg_tenure_months": 8.5,
@@ -6850,7 +6848,7 @@
           },
           {
             "day": "Thursday",
-            "count": 443
+            "count": 451
           }
         ],
         "bottom_days": [
@@ -6860,7 +6858,7 @@
           },
           {
             "day": "Thursday",
-            "count": 443
+            "count": 451
           },
           {
             "day": "Friday",
@@ -6882,7 +6880,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 512
+            "count": 520
           },
           {
             "name": "Build: Lower",
@@ -7039,7 +7037,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3024
+        "total_attended": 3032
       },
       "last_30_days": {
         "top_days": [
@@ -7053,7 +7051,7 @@
           },
           {
             "day": "Thursday",
-            "count": 173
+            "count": 181
           },
           {
             "day": "Friday",
@@ -7079,7 +7077,7 @@
           },
           {
             "day": "Thursday",
-            "count": 173
+            "count": 181
           },
           {
             "day": "Wednesday",
@@ -7093,7 +7091,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 219
+            "count": 227
           },
           {
             "name": "Elevate",
@@ -7250,7 +7248,7 @@
             "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 1136
+        "total_attended": 1144
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. **Add a Saturday morning open-gym block (7\u20139am)** before or after your lightest day's existing classes \u2014 Saturday attendance is half of Tuesday's, so a casual pay-per-session slot targets members who skip structured classes but want weekend access.\n\n2. **Launch a Thursday lunchtime \"Strength Fundamentals\" workshop (30 mins, 12:30\u20131pm)** in the gap between morning and evening classes \u2014 targets working members who can't commit to full classes but need skill-building, positions it as a feeder to Build and Barbelle.\n\n**Lift the quieter classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday evenings** (your peak days) and rebrand them with a short tagline in member comms (e.g. \"Barbelle: sculpt and strength\" or \"Engine: cardio endurance that builds power\") \u2014 quieter classes often suffer from positioning confusion, not lack of interest; pairing them with peak-day traffic and clarity will boost trial.",
       "capacity": [
@@ -7290,7 +7288,7 @@
           "name": "Build: Full Body",
           "sessions": 62,
           "cap": 12,
-          "avg_attending": 9.3,
+          "avg_attending": 9.2,
           "fill_rate": 77,
           "status": "healthy"
         },
@@ -7566,7 +7564,7 @@
       {
         "month": "2026-09",
         "active": 161,
-        "churn": 9.0,
+        "churn": 9.6,
         "by_type": {
           "Empower": 71,
           "8 PT Sessions": 3,
@@ -10130,6 +10128,24 @@
       "source": "Q4 2026"
     },
     {
+      "name": "BALL Ball supported single leg squat ()",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/Dcd-mOAiRrm/?hl=en",
+      "source": "Strongevity"
+    },
+    {
+      "name": "BALL Seated starfish",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/Dcd-mOAiRrm/?hl=en",
+      "source": "Strongevity"
+    },
+    {
+      "name": "BAND Chest to overhead press with bad",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DZiJ50uiFkI/?hl=en",
+      "source": "Strongevity"
+    },
+    {
       "name": "Ball 1. Ball Foot Stamps",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DYNpdMQSj9n/",
@@ -10175,6 +10191,12 @@
       "name": "Ball lifts side to side",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DU4hnq2jR6Q/b",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Ball over unders",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DZvh2Y4oWta/?hl=en",
       "source": "Strongevity"
     },
     {
@@ -11309,6 +11331,12 @@
       "name": "Heel Raises single or double",
       "part": "Calves",
       "video": "https://www.instagram.com/p/DTy0WBLAQH8/",
+      "source": "Strongevity"
+    },
+    {
+      "name": "Heels elevated on block - squats",
+      "part": "Quads",
+      "video": "https://www.instagram.com/p/CRmnH9ADivm/?hl=en",
       "source": "Strongevity"
     },
     {
@@ -12470,6 +12498,12 @@
       "source": "Q3 2026"
     },
     {
+      "name": "Seated knee chest press",
+      "part": "Chest",
+      "video": "https://www.instagram.com/p/DcyldD_qgHg/?hl=en",
+      "source": "Strongevity"
+    },
+    {
       "name": "Sec 34 - Stagger Everyone So They Are Along Carpet",
       "part": "Full Body",
       "video": "https://www.youtube.com/watch?v=48gjc54MCaE",
@@ -13116,6 +13150,12 @@
       "part": "Full Body",
       "video": "https://www.instagram.com/p/C1cgPlUum0N/",
       "source": "Q3 2026"
+    },
+    {
+      "name": "degree step reaches",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DcUAUGqiOju/?hl=en",
+      "source": "Strongevity"
     },
     {
       "name": "ment 4",
