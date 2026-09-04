@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T05:00:49.334385+00:00",
+  "generated_at": "2026-09-04T11:10:40.332151+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1314,6 +1314,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach JoJo",
+        "last_scan": "2026-09-04",
+        "scan_count": 17,
+        "weight": 195.1,
+        "smm": 75.8,
+        "pbf": 30.7,
+        "bmi": 30.6,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": 0.2,
+        "smm_change": 2.6,
+        "pbf_change": -2.7,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-16",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Shannon Campbell",
         "last_scan": "2026-09-03",
         "scan_count": 1,
@@ -1410,30 +1434,6 @@
         "overdue": false
       },
       {
-        "name": "Coach JoJo",
-        "last_scan": "2026-09-01",
-        "scan_count": 16,
-        "weight": 194.9,
-        "smm": 73.2,
-        "pbf": 33.4,
-        "bmi": 30.5,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": 0.5,
-        "smm_change": 0.4,
-        "pbf_change": 0.0,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-13",
-        "days_to_due": 39,
-        "overdue": false
-      },
-      {
         "name": "Kristina Nikolova",
         "last_scan": "2026-08-28",
         "scan_count": 2,
@@ -1458,7 +1458,7 @@
         "overdue": false
       },
       {
-        "name": "lesleyg",
+        "name": "Lesley Greehy",
         "last_scan": "2026-08-26",
         "scan_count": 1,
         "weight": 160.3,
@@ -1482,7 +1482,7 @@
         "overdue": false
       },
       {
-        "name": "020joules",
+        "name": "Joules Williamson",
         "last_scan": "2026-08-21",
         "scan_count": 1,
         "weight": 164.1,
@@ -3618,7 +3618,7 @@
         "overdue": true
       },
       {
-        "name": "helent078",
+        "name": "Helen Traynor",
         "last_scan": "2026-06-01",
         "scan_count": 1,
         "weight": 118.7,
@@ -3916,8 +3916,14 @@
       {
         "user_id": "U0AJ93W8J8Y",
         "text": "Sorry wrong  channek",
-        "hours": 15,
+        "hours": 21,
         "name": "Lynbelfast48"
+      },
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "Also, just checking if you received the new payment request in Payoneer?",
+        "hours": 2,
+        "name": "Julie Lapaz"
       }
     ],
     "mentions": [],
@@ -4608,7 +4614,7 @@
     }
   },
   "teamup": {
-    "total_members": 166,
+    "total_members": 168,
     "recurring": 114,
     "recurring_members": [
       {
@@ -5068,7 +5074,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 11,
+    "trial": 12,
     "trial_members": [
       {
         "id": 13748936,
@@ -5111,11 +5117,15 @@
         "name": "Sharon McAuley"
       },
       {
+        "id": 13642081,
+        "name": "Sheena Mulholland"
+      },
+      {
         "id": 13677712,
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 9,
+    "new_this_month": 10,
     "cancellations_this_month": 8,
     "leaving_members": [
       {
@@ -5893,7 +5903,7 @@
       }
     ],
     "cancelled_ytd": 42,
-    "churn_rate": 5.1,
+    "churn_rate": 5.0,
     "avg_member_price": 137.45,
     "monthly_recurring_revenue": 15532.0,
     "avg_tenure_months": 8.5,
@@ -6463,6 +6473,60 @@
         ]
       },
       {
+        "name": "6 Week Jumpstart",
+        "count": 12,
+        "members": [
+          {
+            "id": 13748936,
+            "name": "Babs Roeshaw"
+          },
+          {
+            "id": 13608450,
+            "name": "Caroline Stinson"
+          },
+          {
+            "id": 13630157,
+            "name": "Claire Martin"
+          },
+          {
+            "id": 13588511,
+            "name": "Elizabeth Greenaway"
+          },
+          {
+            "id": 13562135,
+            "name": "Janine Patton"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greet"
+          },
+          {
+            "id": 13649468,
+            "name": "Lorraine Kelly"
+          },
+          {
+            "id": 13542263,
+            "name": "Lynda Wright"
+          },
+          {
+            "id": 13667307,
+            "name": "Megan Morrison"
+          },
+          {
+            "id": 13602153,
+            "name": "Sharon McAuley"
+          },
+          {
+            "id": 13642081,
+            "name": "Sheena Mulholland"
+          },
+          {
+            "id": 13677712,
+            "name": "VIVIAN MORRISON"
+          }
+        ]
+      },
+      {
         "name": "4 PT Sessions",
         "count": 11,
         "members": [
@@ -6563,56 +6627,6 @@
         ]
       },
       {
-        "name": "6 Week Jumpstart",
-        "count": 11,
-        "members": [
-          {
-            "id": 13748936,
-            "name": "Babs Roeshaw"
-          },
-          {
-            "id": 13608450,
-            "name": "Caroline Stinson"
-          },
-          {
-            "id": 13630157,
-            "name": "Claire Martin"
-          },
-          {
-            "id": 13588511,
-            "name": "Elizabeth Greenaway"
-          },
-          {
-            "id": 13562135,
-            "name": "Janine Patton"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greet"
-          },
-          {
-            "id": 13649468,
-            "name": "Lorraine Kelly"
-          },
-          {
-            "id": 13542263,
-            "name": "Lynda Wright"
-          },
-          {
-            "id": 13667307,
-            "name": "Megan Morrison"
-          },
-          {
-            "id": 13602153,
-            "name": "Sharon McAuley"
-          },
-          {
-            "id": 13677712,
-            "name": "VIVIAN MORRISON"
-          }
-        ]
-      },
-      {
         "name": "Evolve",
         "count": 6,
         "members": [
@@ -6643,6 +6657,32 @@
         ]
       },
       {
+        "name": "Strongevity",
+        "count": 5,
+        "members": [
+          {
+            "id": 13508479,
+            "name": "Angela McLaughlin"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13593758,
+            "name": "Jill Weir"
+          },
+          {
+            "id": 13839012,
+            "name": "Nancy Cubitt"
+          }
+        ]
+      },
+      {
         "name": "Foundation PAID IN FULL",
         "count": 4,
         "members": [
@@ -6661,28 +6701,6 @@
           {
             "id": 9414493,
             "name": "Zara Morrison"
-          }
-        ]
-      },
-      {
-        "name": "Strongevity",
-        "count": 4,
-        "members": [
-          {
-            "id": 13508479,
-            "name": "Angela McLaughlin"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13593758,
-            "name": "Jill Weir"
           }
         ]
       },
@@ -6840,7 +6858,7 @@
           },
           {
             "day": "Friday",
-            "count": 444
+            "count": 447
           }
         ],
         "bottom_days": [
@@ -6850,7 +6868,7 @@
           },
           {
             "day": "Friday",
-            "count": 444
+            "count": 447
           },
           {
             "day": "Thursday",
@@ -6910,7 +6928,7 @@
           },
           {
             "name": "Mobility",
-            "count": 206
+            "count": 209
           },
           {
             "name": "Plate",
@@ -7029,7 +7047,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3014
+        "total_attended": 3017
       },
       "last_30_days": {
         "top_days": [
@@ -7047,7 +7065,7 @@
           },
           {
             "day": "Friday",
-            "count": 143
+            "count": 146
           },
           {
             "day": "Monday",
@@ -7065,7 +7083,7 @@
           },
           {
             "day": "Friday",
-            "count": 143
+            "count": 146
           },
           {
             "day": "Thursday",
@@ -7117,7 +7135,7 @@
           },
           {
             "name": "Mobility",
-            "count": 69
+            "count": 72
           },
           {
             "name": "Plate",
@@ -7213,6 +7231,15 @@
             "label": "Saturday 9am Elevate"
           },
           {
+            "day": "Friday",
+            "time": "10am",
+            "name": "Mobility",
+            "count": 39,
+            "sessions": 5,
+            "avg": 7.8,
+            "label": "Friday 10am Mobility"
+          },
+          {
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
@@ -7229,18 +7256,9 @@
             "sessions": 5,
             "avg": 8.0,
             "label": "Thursday 10am Elevate"
-          },
-          {
-            "day": "Tuesday",
-            "time": "11am",
-            "name": "Strongevity",
-            "count": 25,
-            "sessions": 3,
-            "avg": 8.3,
-            "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 1097
+        "total_attended": 1100
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a paid \"Open Studio\" block on Friday afternoons** \u2014 your quietest day has studio downtime between classes; offer 90-min slots at \u00a38-12 for members who want self-directed lifting or accessory work, no instructor needed, just monitored access.\n\n2. **Run a monthly \"Intro to Barbelle\" workshop (Saturday morning)** \u2014 Barbelle is consistently lowest (27 in last 30 days); a 45-min guided taster before the regular class, free to members, removes the intimidation barrier and feeds sign-ups into the live class that follows.\n\n**For the quieter classes themselves:**\n\n3. **Move Capacity to Tuesday 6:45pm (your busiest day) and promote it as \"Strength foundation for Build class lovers\"** \u2014 it's getting 64-19 attendees but pairs logically with your top performers (Build Upper/Full Body); slot it right before or after one of those to catch overflow interest and position it as a complementary skill-builder rather than standalone.",
       "capacity": [
@@ -7296,7 +7314,7 @@
           "name": "Plate",
           "sessions": 26,
           "cap": 12,
-          "avg_attending": 8.9,
+          "avg_attending": 8.8,
           "fill_rate": 74,
           "status": "attention"
         },
@@ -7534,7 +7552,7 @@
       },
       {
         "month": "2026-08",
-        "active": 163,
+        "active": 164,
         "churn": 5.5,
         "by_type": {
           "Empower": 71,
@@ -7549,14 +7567,14 @@
           "Strongevity": 4,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 10,
+          "6 Week Jumpstart": 11,
           "Strongevity Membership": 13
         }
       },
       {
         "month": "2026-09",
-        "active": 161,
-        "churn": 9.6,
+        "active": 163,
+        "churn": 10.2,
         "by_type": {
           "Empower": 71,
           "8 PT Sessions": 3,
@@ -7567,10 +7585,10 @@
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 3,
+          "Strongevity": 4,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 11,
+          "6 Week Jumpstart": 12,
           "Strongevity Membership": 15,
           "4 Session Block": 1
         }
@@ -8828,6 +8846,15 @@
         "last_momentum": null
       },
       {
+        "id": 13839012,
+        "name": "Nancy Cubitt",
+        "email": "nancycubitt@gmail.com",
+        "join_date": "2026-09-04",
+        "membership": "Strongevity",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
         "id": 9196376,
         "name": "Nerys Young",
         "email": "nerysyoung@hotmail.com",
@@ -9245,10 +9272,28 @@
     "inbody_scans": []
   },
   "events": {
-    "events": [],
+    "events": [
+      {
+        "name": "Forge Couch to 5k (8 Week Plan)",
+        "when": "7/20/2026",
+        "details": "8 Week running plan ending with a Team 5k",
+        "marketing": ""
+      },
+      {
+        "name": "5KM Park Run (end of couch 2 5k)",
+        "when": "19 September 9.30am",
+        "details": "Ballymoney Duck Pond park run",
+        "marketing": ""
+      },
+      {
+        "name": "Forge Summer Games",
+        "when": "22nd August 9.30am",
+        "details": "Forge Female Fitness",
+        "marketing": ""
+      }
+    ],
     "sheet_url": "https://docs.google.com/spreadsheets/d/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/edit",
-    "configured": true,
-    "error": "<HttpError 503 when requesting https://sheets.googleapis.com/v4/spreadsheets/18EQd_ARn_UuC1eL_lGA8LaLToUtPsBxM_AftHRhGiB4/values/A1%3AZ300?alt=json returned \"The service is currently unavailable.\". Details: \"The service is currently unavailable.\">"
+    "configured": true
   },
   "tshirt": {
     "configured": true,
@@ -12739,6 +12784,30 @@
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DPjs8Y_CelI/?img_index=1",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Standing Block Leg Reach Left",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CRmnH9ADivm/?img_index=4",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Standing Block Leg Reach Right",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CRmnH9ADivm/?img_index=4",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Standing Block Semi Circles Left",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CRmnH9ADivm/?img_index=6",
+      "source": "Q3 2026"
+    },
+    {
+      "name": "Standing Block Semi Circles Right",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/CRmnH9ADivm/?img_index=6",
+      "source": "Q3 2026"
     },
     {
       "name": "Standing Chest Press",
