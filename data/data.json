@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T14:00:45.809953+00:00",
+  "generated_at": "2026-09-05T17:20:38.678462+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-09-05",
-    "event_count": 16,
-    "urgent_count": 2,
-    "enquiry_count": 1,
+    "event_count": 17,
+    "urgent_count": 1,
+    "enquiry_count": 2,
     "calendar": [
       {
         "title": "National Fitness awards deadline",
@@ -183,6 +183,18 @@
         "description": "<a href=\"https://www.investni.com/support-for-business/support-for-start-ups-with-export-potential/ambition-to-grow\">https://www.investni.com/support-for-business/support-for-start-ups-with-export-pot",
         "location": "",
         "prep": "Review Google Profile updates; prepare any new photos or content."
+      },
+      {
+        "title": "\ud83d\udcde Call: Claire Scull",
+        "time": "1:50pm",
+        "start_raw": "2026-09-08T13:50:00",
+        "day": "Tuesday",
+        "attendees": [
+          "Claire Scull"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
     "urgent": [
@@ -194,16 +206,6 @@
         "id": "1a06233f4524f744",
         "thread_id": "1a011d9c64ca6cb3",
         "msg_count": 6
-      },
-      {
-        "from": "Spud",
-        "from_raw": "Spud <sayhellotomark@gmail.com>",
-        "subject": "Fwd: Confirmation of your order: A27718036756. Please find your invoice attached.",
-        "snippet": "---------- Forwarded message --------- From: &lt;confirmation@screwfix.com&gt; Date: Sun, 30 Aug 2026 at 14:08 Subject: Confirmation of your order: A27718036756. Please find your invoice attached. To:",
-        "id": "1a056d9f71be3fcb",
-        "thread_id": "1a056d9f71be3fcb",
-        "msg_count": 1,
-        "draft_id": "r1787347475046791998"
       }
     ],
     "important": [],
@@ -215,13 +217,22 @@
         "path": "",
         "snippet": "I would like to confirm my next Training Block for 12th October. I thought I would get a call at 12.35 today so I could pay by card? I apologise but I&#39;m not too efficient with IT. Many thanks,",
         "id": "1a067210fbe56608"
+      },
+      {
+        "name": "Claire Scull",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tuesday 1:50pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tuesday 1:50pm",
+        "snippet": "Booked a call for Tuesday 1:50pm \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -343,10 +354,37 @@
   },
   "ghl": [
     {
+      "name": "Lesley Drake",
+      "channel": "Phone",
+      "message": "Unreal \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "H09p4V3a3kVPyfzLF4fV",
+      "contact_id": "vKNuh7JvZdjcmfgmdajc"
+    },
+    {
+      "name": "Amanda Hanna",
+      "channel": "Phone",
+      "message": "Ok. Thanks Grace!",
+      "age": "2h ago",
+      "unread": 3,
+      "conv_id": "h0NzD2Tq91E8iBTviXlQ",
+      "contact_id": "ksKWsVJ7BtgbzrNV4r9s"
+    },
+    {
+      "name": "Amanda Hanna",
+      "channel": "Phone",
+      "message": "Well done! \ud83d\udc4d",
+      "age": "3h ago",
+      "unread": 1,
+      "conv_id": "CXxAFcKyuc8tpofsVFbi",
+      "contact_id": "1V9TeXvvGNEmelBFeXZT"
+    },
+    {
       "name": "vinefoodclub",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/Dc57Whzgjnd/",
-      "age": "1h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "zh9N0KrMmmTU3Z60ih4J",
       "contact_id": "CVcwvCpXLlWkXgaHqFrb"
@@ -355,7 +393,7 @@
       "name": "Amy \ud83c\udf3a",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 2,
       "conv_id": "WCwVuAp9MbMMom86u5Ic",
       "contact_id": "Rnp1ndaNNs0sWAM1BqLZ"
@@ -364,7 +402,7 @@
       "name": "Roy Hall",
       "channel": "Phone",
       "message": "\ud83d\ude4f",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "bkmRWyspgEIEErHM9boP",
       "contact_id": "x2DBY6Qodi71H2gBfzkC"
@@ -373,7 +411,7 @@
       "name": "Wendy Hunter",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "xfzEXsWeXpHIWtR34TtK",
       "contact_id": "JTP7PZAKjNgC6AzYH3jP"
@@ -382,7 +420,7 @@
       "name": "Lorna McMullan",
       "channel": "Phone",
       "message": "That\u2019s fabulous Eilis. Congratulations \ud83e\udd73",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 4,
       "conv_id": "Xz3SRkAl5w8IEiirtO2P",
       "contact_id": "e0G0l2bWOPW6aGvJwUEi"
@@ -391,7 +429,7 @@
       "name": "Mopcam Mopcam",
       "channel": "Phone",
       "message": "\u26a0\ufe0fMeta Business Suite\u00a0to:\r\nYour page has been notified of a possible violation of our policies:\r\nThis may involve copyrighted materials, misleading claims about products, or content that does not comp",
-      "age": "8h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "pJVuCmvmpQ7pzMYYxBPF",
       "contact_id": "Z6RBRJOFztWpjscP4kD3"
@@ -400,7 +438,7 @@
       "name": "Eilis Kearns",
       "channel": "Phone",
       "message": "Fab just to let you know \ud83d\ude0a",
-      "age": "17h ago",
+      "age": "20h ago",
       "unread": 2,
       "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
       "contact_id": "SL5iEZ30xiRwJF12kd5S"
@@ -409,7 +447,7 @@
       "name": "Cindy Mcintyre",
       "channel": "Phone",
       "message": "Congratulations \ud83d\ude4c",
-      "age": "17h ago",
+      "age": "20h ago",
       "unread": 8,
       "conv_id": "dCxnPsvupngBf48WNmVV",
       "contact_id": "z4nj98gnOJPQRvaTYMN5"
@@ -418,7 +456,7 @@
       "name": "ek.coaching_",
       "channel": "Phone",
       "message": "\ud83d\udd7a\ud83d\udd7a",
-      "age": "17h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "GuiQOqaPIXmezrTLE9Uv",
       "contact_id": "BaXslzBfwXN2FDK2zPtQ"
@@ -427,7 +465,7 @@
       "name": "Bernadette Boorman",
       "channel": "Phone",
       "message": "Hi Grace, Thanks for all the information. Where does it take place?",
-      "age": "20h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "yn7Z3IPo9KQsTfScpdd7",
       "contact_id": "tdkxWNwNE1EseUxD8o9n"
@@ -436,7 +474,7 @@
       "name": "Sarah Boorman",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "20h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "RxERpG7Azk0iq8uIjLEH",
       "contact_id": "gFQXUMxBh7tLSHeROut8"
@@ -445,7 +483,7 @@
       "name": "Emma",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "20h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "s9L4SEj7Dyin9AnhtQHf",
       "contact_id": "mmfNpvI8AMXMpnMQPP7E"
@@ -454,19 +492,10 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "21h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
-    },
-    {
-      "name": "Laura Doherty",
-      "channel": "Phone",
-      "message": "Three months ago, I walked into a gym for the first time ever, not really knowing what to expect. I\u2019m so proud I\u2019ve stuck with it and, more importantly, I\u2019m genuinely enjoying it!\n\nI\u2019m seeing real pro",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "hec5kLrW7jdPvkdj4osr",
-      "contact_id": "AlU8TyFT1dtBMEYBlv6M"
     }
   ],
   "jumpstart": {
@@ -5053,32 +5082,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0AJ93W8J8Y",
-        "text": "Sorry wrong  channek",
-        "hours": 48,
-        "name": "Lynbelfast48"
-      },
-      {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Also, just checking if you received the new payment request in Payoneer?",
-        "hours": 29,
-        "name": "Julie Lapaz"
-      },
-      {
-        "user_id": "U0A62JJ6HD2",
-        "text": "Honestly Sybil you are impressing all the coaches no end, your dedication to improving and your attitude to pushing yourself. I wish every member had that same ",
-        "hours": 22,
-        "name": "Sybil M"
-      },
-      {
-        "user_id": "U0AEX0KL5FY",
-        "text": "Morning Grace, am booked into Full Body on Wednesday &amp; Elevate Saturday next week. Still feeling a bit tender but I am keen to get back to Forge x",
-        "hours": 5,
-        "name": "Margaret Hughes"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -5771,8 +5775,8 @@
     }
   },
   "teamup": {
-    "total_members": 166,
-    "recurring": 114,
+    "total_members": 167,
+    "recurring": 115,
     "recurring_members": [
       {
         "id": 10803724,
@@ -5789,6 +5793,10 @@
       {
         "id": 11025666,
         "name": "Ann Wales"
+      },
+      {
+        "id": 13542995,
+        "name": "Anne Graham"
       },
       {
         "id": 7110690,
@@ -6282,7 +6290,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 9,
+    "new_this_month": 10,
     "cancellations_this_month": 8,
     "leaving_members": [
       {
@@ -7060,9 +7068,9 @@
       }
     ],
     "cancelled_ytd": 42,
-    "churn_rate": 5.1,
-    "avg_member_price": 137.45,
-    "monthly_recurring_revenue": 15532.0,
+    "churn_rate": 5.0,
+    "avg_member_price": 137.6,
+    "monthly_recurring_revenue": 15686.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 7,
     "cancelled_members": [
@@ -7105,7 +7113,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 74,
+        "count": 75,
         "members": [
           {
             "id": 10803724,
@@ -7118,6 +7126,10 @@
           {
             "id": 13448952,
             "name": "Amy McNeill"
+          },
+          {
+            "id": 13542995,
+            "name": "Anne Graham"
           },
           {
             "id": 7110690,
@@ -8716,10 +8728,10 @@
       },
       {
         "month": "2026-09",
-        "active": 161,
+        "active": 162,
         "churn": 9.6,
         "by_type": {
-          "Empower": 71,
+          "Empower": 72,
           "8 PT Sessions": 3,
           "4 PT Sessions": 10,
           "Evolve": 5,
@@ -8927,6 +8939,11 @@
         }
       ],
       "new_members": [
+        {
+          "name": "Anne Graham",
+          "days_in": 0,
+          "start_date": "2026-09-05"
+        },
         {
           "name": "Elizabeth Greenaway",
           "days_in": 4,
@@ -9158,6 +9175,15 @@
         "join_date": "2025-06-27",
         "membership": "Elevate",
         "class_count": 106,
+        "last_momentum": null
+      },
+      {
+        "id": 13542995,
+        "name": "Anne Graham",
+        "email": "anne.graham72@gmail.com",
+        "join_date": "2026-09-05",
+        "membership": "Empower",
+        "class_count": 13,
         "last_momentum": null
       },
       {
@@ -23122,8 +23148,8 @@
       }
     ],
     "cash_in_30": 25934.05,
-    "cash_out_30": 27549.46,
-    "net_30": -1615.41,
+    "cash_out_30": 27526.28,
+    "net_30": -1592.23,
     "as_of": "2026-09-05"
   },
   "gocardless": {
