@@ -1,63 +1,41 @@
 {
-  "generated_at": "2026-09-04T18:23:52.897871+00:00",
+  "generated_at": "2026-09-05T05:00:46.730108+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
   "chat_url": "https://script.google.com/macros/s/AKfycbyrEYTFnqQb5PYYr7GPIYzYp0uZcw7yP99NyFaFCeHH8Wqk9QYc7G77FTPo2nSBSq8/exec",
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
-    "date": "2026-09-04",
-    "event_count": 8,
-    "urgent_count": 2,
-    "enquiry_count": 2,
+    "date": "2026-09-05",
+    "event_count": 17,
+    "urgent_count": 1,
+    "enquiry_count": 1,
     "calendar": [
-      {
-        "title": "\ud83d\udcde Call: Celia Currie",
-        "time": "11:15am",
-        "start_raw": "2026-09-04T11:15:00",
-        "day": "Today",
-        "attendees": [
-          "Celia Currie"
-        ],
-        "description": "Booked discovery call",
-        "location": "",
-        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
-      },
-      {
-        "title": "Padel Session Coleraine",
-        "time": "7:00pm",
-        "start_raw": "2026-09-04T19:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": ""
-      },
       {
         "title": "Padel Session Coleraine",
         "time": "10:00am",
         "start_raw": "2026-09-05T10:00:00+01:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm Coleraine location details; pack padel rackets and balls."
       },
       {
         "title": "National Fitness awards deadline",
         "time": "all day",
         "start_raw": "2026-09-06",
-        "day": "Sunday",
+        "day": "Tomorrow",
         "attendees": [],
         "description": "https://nationalfitnessawards.co.uk/categories/\n\nneed to enter joanne hall for personal trainer and michelle for member",
         "location": "",
-        "prep": "Confirm meeting location/time with Dude; prepare any gym updates/proposals to discuss."
+        "prep": "Prepare Joanne Hall's personal trainer credentials and upload entry."
       },
       {
         "title": "Tashas house",
         "time": "12:00pm",
         "start_raw": "2026-09-06T12:00:00+01:00",
-        "day": "Sunday",
+        "day": "Tomorrow",
         "attendees": [
           "danielleboyd493@gmail.com"
         ],
@@ -73,7 +51,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Brief Eilis on full-time schedule, systems, and responsibilities."
       },
       {
         "title": "Q3 RE-TEST WEEK",
@@ -86,7 +64,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Print/prepare Q3 retest protocols and assessment forms for coaches."
       },
       {
         "title": "LOWER 1",
@@ -96,20 +74,128 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Complete National Fitness Awards entry form for Joanne Hall; submit before deadline."
+        "prep": ""
+      },
+      {
+        "title": "Jordan filming",
+        "time": "9:30am",
+        "start_raw": "2026-09-07T09:30:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Confirm Jordan filming schedule, location, equipment needs, and brief staff."
+      },
+      {
+        "title": "Body Composition Scan",
+        "time": "9:30am",
+        "start_raw": "2026-09-07T09:30:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "2/3 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Build: Lower",
+        "time": "10:00am",
+        "start_raw": "2026-09-07T10:00:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "11/12 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Strongevity",
+        "time": "11:30am",
+        "start_raw": "2026-09-07T11:30:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "12/12 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Post Google Profile Update (Forge)",
+        "time": "12:00pm",
+        "start_raw": "2026-09-07T12:00:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Review Google Profile updates; prepare any new photos or content."
+      },
+      {
+        "title": "No Sweat Intro",
+        "time": "12:30pm",
+        "start_raw": "2026-09-07T12:30:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Build: Lower",
+        "time": "5:00pm",
+        "start_raw": "2026-09-07T17:00:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "11/12 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Build: Lower",
+        "time": "6:00pm",
+        "start_raw": "2026-09-07T18:00:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "12/12 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Build: Lower",
+        "time": "7:00pm",
+        "start_raw": "2026-09-07T19:00:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "12/12 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Build: Lower",
+        "time": "8:00pm",
+        "start_raw": "2026-09-07T20:00:00+01:00",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "12/12 booked",
+        "prep": "",
+        "source": "teamup"
+      },
+      {
+        "title": "Ambition to grow opens",
+        "time": "all day",
+        "start_raw": "2026-09-08",
+        "day": "Tuesday",
+        "attendees": [],
+        "description": "<a href=\"https://www.investni.com/support-for-business/support-for-start-ups-with-export-potential/ambition-to-grow\">https://www.investni.com/support-for-business/support-for-start-ups-with-export-pot",
+        "location": "",
+        "prep": "Review Invest NI growth programme eligibility and application requirements."
       }
     ],
     "urgent": [
-      {
-        "from": "Sarah Lacey",
-        "from_raw": "Sarah Lacey <sarah@nourishandnurtu.re>",
-        "subject": "Website revisions doc - no idea how to check these or correct (tried on SS)",
-        "snippet": "facebook instagram Sarah Lacey CBT | Nutrition| Menopause Nutritionist of the year 2024 Wellbeing Specialist 2025 Mental Health Innovator 2026 sarah@nourishandnurtu.re www.nourishandnurtu.re",
-        "id": "1a06d4435a7efa15",
-        "thread_id": "1a06d4435a7efa15",
-        "msg_count": 1,
-        "draft_id": "r5921733127572560894"
-      },
       {
         "from": "Mary Steven",
         "from_raw": "Mary Steven <marysteven94@gmail.com>",
@@ -136,22 +222,13 @@
         "path": "",
         "snippet": "I would like to confirm my next Training Block for 12th October. I thought I would get a call at 12.35 today so I could pay by card? I apologise but I&#39;m not too efficient with IT. Many thanks,",
         "id": "1a067210fbe56608"
-      },
-      {
-        "name": "Celia Currie",
-        "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Today 11:15am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Today 11:15am",
-        "snippet": "Booked a call for Today 11:15am \u2014 potential member",
-        "age": "",
-        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -273,19 +350,55 @@
   },
   "ghl": [
     {
+      "name": "Wendy Hunter",
+      "channel": "Phone",
+      "message": "I thought I was booked in for classes from Monday 12th October? (Already paid)",
+      "age": "4h ago",
+      "unread": 3,
+      "conv_id": "xfzEXsWeXpHIWtR34TtK",
+      "contact_id": "JTP7PZAKjNgC6AzYH3jP"
+    },
+    {
       "name": "Amanda Hanna",
       "channel": "Phone",
-      "message": "So happy! \ud83d\ude00",
-      "age": "0h ago",
-      "unread": 2,
+      "message": "Maybe they arent that good. I actually dont think I\u2019ve lost much weight, forgot you had paddle tonight. Chat soon.",
+      "age": "8h ago",
+      "unread": 3,
       "conv_id": "h0NzD2Tq91E8iBTviXlQ",
       "contact_id": "ksKWsVJ7BtgbzrNV4r9s"
+    },
+    {
+      "name": "Eilis Kearns",
+      "channel": "Phone",
+      "message": "Fab just to let you know \ud83d\ude0a",
+      "age": "8h ago",
+      "unread": 2,
+      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
+      "contact_id": "SL5iEZ30xiRwJF12kd5S"
+    },
+    {
+      "name": "Cindy Mcintyre",
+      "channel": "Phone",
+      "message": "Congratulations \ud83d\ude4c",
+      "age": "8h ago",
+      "unread": 8,
+      "conv_id": "dCxnPsvupngBf48WNmVV",
+      "contact_id": "z4nj98gnOJPQRvaTYMN5"
+    },
+    {
+      "name": "ek.coaching_",
+      "channel": "Phone",
+      "message": "\ud83d\udd7a\ud83d\udd7a",
+      "age": "8h ago",
+      "unread": 1,
+      "conv_id": "GuiQOqaPIXmezrTLE9Uv",
+      "contact_id": "BaXslzBfwXN2FDK2zPtQ"
     },
     {
       "name": "Bernadette Boorman",
       "channel": "Phone",
       "message": "Hi Grace, Thanks for all the information. Where does it take place?",
-      "age": "0h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "yn7Z3IPo9KQsTfScpdd7",
       "contact_id": "tdkxWNwNE1EseUxD8o9n"
@@ -294,7 +407,7 @@
       "name": "Sarah Boorman",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "0h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "RxERpG7Azk0iq8uIjLEH",
       "contact_id": "gFQXUMxBh7tLSHeROut8"
@@ -303,7 +416,7 @@
       "name": "Emma",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "0h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "s9L4SEj7Dyin9AnhtQHf",
       "contact_id": "mmfNpvI8AMXMpnMQPP7E"
@@ -312,25 +425,16 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "2h ago",
+      "age": "12h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
     },
     {
-      "name": "Jo",
-      "channel": "Phone",
-      "message": "https://www.instagram.com/reel/Dc0Y-wgNUy-/",
-      "age": "7h ago",
-      "unread": 5,
-      "conv_id": "SSmsaXAmGesXC4DA1BV3",
-      "contact_id": "xa3rPNDLcMKM9VtjK91V"
-    },
-    {
       "name": "Laura Doherty",
       "channel": "Phone",
       "message": "Three months ago, I walked into a gym for the first time ever, not really knowing what to expect. I\u2019m so proud I\u2019ve stuck with it and, more importantly, I\u2019m genuinely enjoying it!\n\nI\u2019m seeing real pro",
-      "age": "12h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "hec5kLrW7jdPvkdj4osr",
       "contact_id": "AlU8TyFT1dtBMEYBlv6M"
@@ -352,24 +456,6 @@
       "unread": 1,
       "conv_id": "fZl1RnwP80YzvUiitWWS",
       "contact_id": "vSyCZ5IKcLG1UhCoF18H"
-    },
-    {
-      "name": "Marjorie Moore",
-      "channel": "Phone",
-      "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "JKcjT9cmgXd35Lb7k4Zs",
-      "contact_id": "lDfmDqih72Z96TbfUUmo"
-    },
-    {
-      "name": "Irene Norris",
-      "channel": "Phone",
-      "message": "Yes, that is good thanks",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "u6wcVOtr97hhyKS7mar7",
-      "contact_id": "5MOPmnYHkAao3o5JaaZn"
     }
   ],
   "jumpstart": {
@@ -382,9 +468,9 @@
       },
       {
         "month": "2026-09",
-        "completed": 3,
-        "converted": 0,
-        "conv_rate": 0
+        "completed": 4,
+        "converted": 1,
+        "conv_rate": 25
       },
       {
         "month": "2026-08",
@@ -413,38 +499,6 @@
     ],
     "active": [
       {
-        "name": "rachel linton",
-        "cohort": "JULY",
-        "joined": "2026-07-24",
-        "end": "2026-09-04",
-        "goal": "loose weight",
-        "notes": "n/a",
-        "nutrition_sent": true,
-        "inbody_done": false,
-        "check_ins": [
-          true,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "week_on": 6,
-        "days_left": 0,
-        "is_active": true,
-        "is_converted": true,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": true,
-        "follow_up": "",
-        "missing_checkins": 4,
-        "completed_checkins": 2,
-        "expected_checkins": 6,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "n/a"
-      },
-      {
         "name": "Lynda Wright",
         "cohort": "JULY",
         "joined": "2026-07-25",
@@ -462,7 +516,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 1,
+        "days_left": 0,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -494,7 +548,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": 1,
+        "days_left": 0,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -526,7 +580,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 10,
+        "days_left": 9,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -558,7 +612,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 10,
+        "days_left": 9,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -590,7 +644,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 10,
+        "days_left": 9,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -622,7 +676,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 10,
+        "days_left": 9,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -654,7 +708,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 14,
+        "days_left": 13,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -686,7 +740,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 16,
+        "days_left": 15,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -718,7 +772,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 17,
+        "days_left": 16,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -750,7 +804,7 @@
           false
         ],
         "week_on": null,
-        "days_left": 19,
+        "days_left": 18,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -782,7 +836,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 21,
+        "days_left": 20,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -814,7 +868,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 21,
+        "days_left": 20,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -846,7 +900,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 42,
+        "days_left": 41,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -880,7 +934,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 34,
+        "days_left": 33,
         "is_active": true,
         "is_converted": false,
         "not_converted": true,
@@ -892,6 +946,38 @@
         "expected_checkins": 6,
         "paused": false,
         "pink_red": true,
+        "pause_reason": "n/a"
+      },
+      {
+        "name": "rachel linton",
+        "cohort": "JULY",
+        "joined": "2026-07-24",
+        "end": "2026-09-04",
+        "goal": "loose weight",
+        "notes": "n/a",
+        "nutrition_sent": true,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 6,
+        "days_left": -1,
+        "is_active": false,
+        "is_converted": true,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": true,
+        "follow_up": "",
+        "missing_checkins": 4,
+        "completed_checkins": 2,
+        "expected_checkins": 6,
+        "paused": false,
+        "pink_red": false,
         "pause_reason": "n/a"
       },
       {
@@ -912,7 +998,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -1,
+        "days_left": -2,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -944,7 +1030,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -2,
+        "days_left": -3,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -976,7 +1062,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -2,
+        "days_left": -3,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1008,7 +1094,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -4,
+        "days_left": -5,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1040,7 +1126,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -9,
+        "days_left": -10,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1072,7 +1158,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -11,
+        "days_left": -12,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1104,7 +1190,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -22,
+        "days_left": -23,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1136,7 +1222,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -23,
+        "days_left": -24,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1168,7 +1254,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -28,
+        "days_left": -29,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1200,7 +1286,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -33,
+        "days_left": -34,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1232,7 +1318,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -34,
+        "days_left": -35,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1264,7 +1350,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -39,
+        "days_left": -40,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1296,7 +1382,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -39,
+        "days_left": -40,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1328,7 +1414,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -42,
+        "days_left": -43,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1360,7 +1446,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -42,
+        "days_left": -43,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1392,7 +1478,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -43,
+        "days_left": -44,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1424,7 +1510,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -45,
+        "days_left": -46,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1456,7 +1542,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -50,
+        "days_left": -51,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1469,38 +1555,6 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "achilies rupture, high blood pressure"
-      },
-      {
-        "name": "Lesley Drake",
-        "cohort": "APR-MAY",
-        "joined": "2026-05-29",
-        "end": "2026-07-10",
-        "goal": "Get healthier, get fitter, be happy in herself and how her body looks",
-        "notes": "no",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "week_on": 6,
-        "days_left": -56,
-        "is_active": false,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": true,
-        "follow_up": "",
-        "missing_checkins": 0,
-        "completed_checkins": 6,
-        "expected_checkins": 6,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "no"
       }
     ],
     "paused": [
@@ -1522,7 +1576,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -24,
+        "days_left": -25,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1551,16 +1605,6 @@
       {
         "member": "Lynda Wright",
         "type": "conversion",
-        "detail": "1d left \u2014 conversion chat not scheduled!"
-      },
-      {
-        "member": "rachel linton",
-        "type": "missing_checkin",
-        "detail": "Missing 4 check-in(s) (on week 6)"
-      },
-      {
-        "member": "rachel linton",
-        "type": "conversion",
         "detail": "0d left \u2014 conversion chat not scheduled!"
       },
       {
@@ -1571,7 +1615,7 @@
       {
         "member": "janine patton",
         "type": "conversion",
-        "detail": "1d left \u2014 conversion chat not scheduled!"
+        "detail": "0d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Jennifer Reid",
@@ -1581,7 +1625,7 @@
       {
         "member": "Jennifer Reid",
         "type": "conversion",
-        "detail": "10d left \u2014 conversion chat not scheduled!"
+        "detail": "9d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Caroline Stinson",
@@ -1591,7 +1635,7 @@
       {
         "member": "Caroline Stinson",
         "type": "conversion",
-        "detail": "10d left \u2014 conversion chat not scheduled!"
+        "detail": "9d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Geraldine Pendleton",
@@ -1601,7 +1645,7 @@
       {
         "member": "Geraldine Pendleton",
         "type": "conversion",
-        "detail": "10d left \u2014 conversion chat not scheduled!"
+        "detail": "9d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Elizabeth Greenaway",
@@ -1611,7 +1655,7 @@
       {
         "member": "Elizabeth Greenaway",
         "type": "conversion",
-        "detail": "10d left \u2014 conversion chat not scheduled!"
+        "detail": "9d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Sharon Mcauley",
@@ -1626,7 +1670,7 @@
       {
         "member": "Sharon Mcauley",
         "type": "conversion",
-        "detail": "14d left \u2014 conversion chat not scheduled!"
+        "detail": "13d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "claire martin",
@@ -1670,16 +1714,40 @@
       }
     ],
     "stats": {
-      "active_count": 14,
+      "active_count": 13,
       "paused_count": 1,
-      "conv_rate": 40,
-      "converted": 8,
+      "conv_rate": 45,
+      "converted": 9,
       "not_converted": 5,
       "total_complete": 20
     }
   },
   "inbody": {
     "scans": [
+      {
+        "name": "babs",
+        "last_scan": "2026-09-04",
+        "scan_count": 1,
+        "weight": 261.0,
+        "smm": 79.6,
+        "pbf": 45.7,
+        "bmi": 36.4,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-16",
+        "days_to_due": 41,
+        "overdue": false
+      },
       {
         "name": "Coach JoJo",
         "last_scan": "2026-09-04",
@@ -1701,7 +1769,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-16",
-        "days_to_due": 42,
+        "days_to_due": 41,
         "overdue": false
       },
       {
@@ -1725,7 +1793,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-15",
-        "days_to_due": 41,
+        "days_to_due": 40,
         "overdue": false
       },
       {
@@ -1749,7 +1817,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-15",
-        "days_to_due": 41,
+        "days_to_due": 40,
         "overdue": false
       },
       {
@@ -1773,7 +1841,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-14",
-        "days_to_due": 40,
+        "days_to_due": 39,
         "overdue": false
       },
       {
@@ -1797,7 +1865,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-14",
-        "days_to_due": 40,
+        "days_to_due": 39,
         "overdue": false
       },
       {
@@ -1821,7 +1889,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-09",
-        "days_to_due": 35,
+        "days_to_due": 34,
         "overdue": false
       },
       {
@@ -1845,7 +1913,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-07",
-        "days_to_due": 33,
+        "days_to_due": 32,
         "overdue": false
       },
       {
@@ -1869,7 +1937,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -1893,7 +1961,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -1917,7 +1985,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -1941,7 +2009,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -1965,7 +2033,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-01",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -1989,7 +2057,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-01",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -2013,7 +2081,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-29",
-        "days_to_due": 25,
+        "days_to_due": 24,
         "overdue": false
       },
       {
@@ -2037,7 +2105,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-28",
-        "days_to_due": 24,
+        "days_to_due": 23,
         "overdue": false
       },
       {
@@ -2061,7 +2129,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-26",
-        "days_to_due": 22,
+        "days_to_due": 21,
         "overdue": false
       },
       {
@@ -2085,7 +2153,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-26",
-        "days_to_due": 22,
+        "days_to_due": 21,
         "overdue": false
       },
       {
@@ -2109,7 +2177,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 21,
+        "days_to_due": 20,
         "overdue": false
       },
       {
@@ -2133,7 +2201,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 21,
+        "days_to_due": 20,
         "overdue": false
       },
       {
@@ -2157,7 +2225,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 21,
+        "days_to_due": 20,
         "overdue": false
       },
       {
@@ -2181,7 +2249,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": 21,
+        "days_to_due": 20,
         "overdue": false
       },
       {
@@ -2205,7 +2273,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-24",
-        "days_to_due": 20,
+        "days_to_due": 19,
         "overdue": false
       },
       {
@@ -2229,7 +2297,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-23",
-        "days_to_due": 19,
+        "days_to_due": 18,
         "overdue": false
       },
       {
@@ -2253,7 +2321,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-22",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2277,7 +2345,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2301,7 +2369,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2325,7 +2393,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2349,7 +2417,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": 17,
+        "days_to_due": 16,
         "overdue": false
       },
       {
@@ -2373,7 +2441,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-19",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2397,7 +2465,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-18",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2421,7 +2489,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-18",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2445,7 +2513,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-17",
-        "days_to_due": 13,
+        "days_to_due": 12,
         "overdue": false
       },
       {
@@ -2469,7 +2537,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-17",
-        "days_to_due": 13,
+        "days_to_due": 12,
         "overdue": false
       },
       {
@@ -2493,7 +2561,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-16",
-        "days_to_due": 12,
+        "days_to_due": 11,
         "overdue": false
       },
       {
@@ -2517,7 +2585,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-15",
-        "days_to_due": 11,
+        "days_to_due": 10,
         "overdue": false
       },
       {
@@ -2541,7 +2609,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2565,7 +2633,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2589,7 +2657,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2613,7 +2681,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": 10,
+        "days_to_due": 9,
         "overdue": false
       },
       {
@@ -2637,7 +2705,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-05",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2661,8 +2729,8 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "Amanda Hanna",
@@ -2685,8 +2753,8 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "Rachel Linton",
@@ -2709,8 +2777,8 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "Anne Graham",
@@ -2733,7 +2801,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-02",
-        "days_to_due": -2,
+        "days_to_due": -3,
         "overdue": true
       },
       {
@@ -2757,7 +2825,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-02",
-        "days_to_due": -2,
+        "days_to_due": -3,
         "overdue": true
       },
       {
@@ -2781,7 +2849,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2805,7 +2873,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2829,7 +2897,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2853,7 +2921,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2877,7 +2945,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-27",
-        "days_to_due": -8,
+        "days_to_due": -9,
         "overdue": true
       },
       {
@@ -2901,7 +2969,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-26",
-        "days_to_due": -9,
+        "days_to_due": -10,
         "overdue": true
       },
       {
@@ -2925,7 +2993,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-26",
-        "days_to_due": -9,
+        "days_to_due": -10,
         "overdue": true
       },
       {
@@ -2949,7 +3017,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-22",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -2973,7 +3041,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-22",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -2997,7 +3065,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-21",
-        "days_to_due": -14,
+        "days_to_due": -15,
         "overdue": true
       },
       {
@@ -3021,7 +3089,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-21",
-        "days_to_due": -14,
+        "days_to_due": -15,
         "overdue": true
       },
       {
@@ -3045,7 +3113,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-20",
-        "days_to_due": -15,
+        "days_to_due": -16,
         "overdue": true
       },
       {
@@ -3069,7 +3137,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-20",
-        "days_to_due": -15,
+        "days_to_due": -16,
         "overdue": true
       },
       {
@@ -3093,7 +3161,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-18",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -3117,7 +3185,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-18",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -3141,7 +3209,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -18,
+        "days_to_due": -19,
         "overdue": true
       },
       {
@@ -3165,7 +3233,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -18,
+        "days_to_due": -19,
         "overdue": true
       },
       {
@@ -3189,7 +3257,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -18,
+        "days_to_due": -19,
         "overdue": true
       },
       {
@@ -3213,7 +3281,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -18,
+        "days_to_due": -19,
         "overdue": true
       },
       {
@@ -3237,7 +3305,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-15",
-        "days_to_due": -20,
+        "days_to_due": -21,
         "overdue": true
       },
       {
@@ -3261,7 +3329,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-13",
-        "days_to_due": -22,
+        "days_to_due": -23,
         "overdue": true
       },
       {
@@ -3285,7 +3353,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-11",
-        "days_to_due": -24,
+        "days_to_due": -25,
         "overdue": true
       },
       {
@@ -3309,7 +3377,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": -27,
+        "days_to_due": -28,
         "overdue": true
       },
       {
@@ -3333,7 +3401,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-07",
-        "days_to_due": -28,
+        "days_to_due": -29,
         "overdue": true
       },
       {
@@ -3357,7 +3425,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-05",
-        "days_to_due": -30,
+        "days_to_due": -31,
         "overdue": true
       },
       {
@@ -3381,7 +3449,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -31,
+        "days_to_due": -32,
         "overdue": true
       },
       {
@@ -3405,7 +3473,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -31,
+        "days_to_due": -32,
         "overdue": true
       },
       {
@@ -3429,7 +3497,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -31,
+        "days_to_due": -32,
         "overdue": true
       },
       {
@@ -3453,7 +3521,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": -34,
+        "days_to_due": -35,
         "overdue": true
       },
       {
@@ -3477,7 +3545,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -35,
+        "days_to_due": -36,
         "overdue": true
       },
       {
@@ -3501,7 +3569,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -35,
+        "days_to_due": -36,
         "overdue": true
       },
       {
@@ -3525,7 +3593,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -35,
+        "days_to_due": -36,
         "overdue": true
       },
       {
@@ -3549,7 +3617,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-30",
-        "days_to_due": -36,
+        "days_to_due": -37,
         "overdue": true
       },
       {
@@ -3573,7 +3641,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": -37,
+        "days_to_due": -38,
         "overdue": true
       },
       {
@@ -3597,7 +3665,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": -37,
+        "days_to_due": -38,
         "overdue": true
       },
       {
@@ -3621,7 +3689,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": -38,
+        "days_to_due": -39,
         "overdue": true
       },
       {
@@ -3645,7 +3713,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": -38,
+        "days_to_due": -39,
         "overdue": true
       },
       {
@@ -3669,7 +3737,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": -39,
+        "days_to_due": -40,
         "overdue": true
       },
       {
@@ -3693,7 +3761,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-27",
-        "days_to_due": -39,
+        "days_to_due": -40,
         "overdue": true
       },
       {
@@ -3717,7 +3785,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": -44,
+        "days_to_due": -45,
         "overdue": true
       },
       {
@@ -3741,7 +3809,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": -44,
+        "days_to_due": -45,
         "overdue": true
       },
       {
@@ -3765,7 +3833,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": -45,
+        "days_to_due": -46,
         "overdue": true
       },
       {
@@ -3789,7 +3857,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": -45,
+        "days_to_due": -46,
         "overdue": true
       },
       {
@@ -3813,7 +3881,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-20",
-        "days_to_due": -46,
+        "days_to_due": -47,
         "overdue": true
       },
       {
@@ -3837,7 +3905,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": -48,
+        "days_to_due": -49,
         "overdue": true
       },
       {
@@ -3861,7 +3929,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-18",
-        "days_to_due": -48,
+        "days_to_due": -49,
         "overdue": true
       },
       {
@@ -3885,7 +3953,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": -50,
+        "days_to_due": -51,
         "overdue": true
       },
       {
@@ -3909,7 +3977,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": -50,
+        "days_to_due": -51,
         "overdue": true
       },
       {
@@ -3933,7 +4001,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-14",
-        "days_to_due": -52,
+        "days_to_due": -53,
         "overdue": true
       },
       {
@@ -3957,7 +4025,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -53,
+        "days_to_due": -54,
         "overdue": true
       },
       {
@@ -3981,7 +4049,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -53,
+        "days_to_due": -54,
         "overdue": true
       },
       {
@@ -4005,7 +4073,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -53,
+        "days_to_due": -54,
         "overdue": true
       },
       {
@@ -4029,7 +4097,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -53,
+        "days_to_due": -54,
         "overdue": true
       },
       {
@@ -4053,7 +4121,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": -57,
+        "days_to_due": -58,
         "overdue": true
       },
       {
@@ -4077,7 +4145,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-07",
-        "days_to_due": -59,
+        "days_to_due": -60,
         "overdue": true
       },
       {
@@ -4101,7 +4169,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4125,7 +4193,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4149,7 +4217,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4173,7 +4241,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4197,7 +4265,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -60,
+        "days_to_due": -61,
         "overdue": true
       },
       {
@@ -4221,7 +4289,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": -62,
+        "days_to_due": -63,
         "overdue": true
       },
       {
@@ -4245,7 +4313,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": -62,
+        "days_to_due": -63,
         "overdue": true
       },
       {
@@ -4269,11 +4337,11 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-03",
-        "days_to_due": -63,
+        "days_to_due": -64,
         "overdue": true
       }
     ],
-    "total": 108,
+    "total": 109,
     "configured": true
   },
   "sop": {
@@ -4921,7 +4989,7 @@
         "built": false
       }
     ],
-    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 no documented first-touch-to-first-class flow; likely inconsistent induction, fitness assessment, payment setup, app orientation\n- **Cancellation & Churn** \u2013 no win-back protocol or exit interview process; losing members without knowing why\n- **Class Quality Audit Checklist** \u2013 no standard for evaluating coach delivery, member experience, or safety; quality drifts\n- **Member Check-ins** \u2013 no cadence or framework for retention touchpoints (new, inactive, at-risk); passive approach to churn\n- **Member Data Privacy & GDPR** \u2013 critical gap; no documented handling of personal data, consent, retention, deletion, or breach response\n- **Referral Programme** \u2013 no structure for incentives, tracking, or member encouragement; leaving revenue on table\n- **Complaints & Incidents** \u2013 no formal log, escalation, or resolution SOP; reputational and safety risk\n- **Supplies & Sundries Ordering** \u2013 ad hoc restocking; risk of shortages (mats, towels, etc.) affecting member experience\n- **Pause & Reactivation** \u2013 unclear process when members pause; no reengagement playbook\n- **30-Day Goals & Member Outcomes** \u2013 no mechanism to track progress or celebrate milestones; weak engagement hook\n\n**Needs updating**\n\n- **Weekly Key Coach Tasks** \u2013 missing; coaches likely unclear on admin duties (timesheets, class prep, safety checks, feedback loops)\n- **Coaching Development Roadmap** \u2013 missing; no progression path or competency framework for coaches (limits retention and quality scaling)\n- **Milestone Achievements** \u2013 missing; no structured celebration or communication of member wins (retention and referral driver)\n- **Transformation Pillars** \u2013 exists but likely misaligned with actual member journey; probably"
+    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 first touchpoint sets retention trajectory; missing: intake form standardization, goal-setting protocol, coach assignment logic, first-week engagement cadence\n- **Member Checkins** \u2013 recurring retention lever; no documented cadence, trigger points, or escalation path when engagement drops\n- **Cancellation & Churn** \u2013 reactive only; missing: win-back sequence, exit interview protocol, pause-vs-cancel decision tree, alumni re-engagement\n- **Referral Programme** \u2013 marketing multiplier unplugged; missing: incentive structure, referrer/referee onboarding, tracking mechanism, comms templates\n- **Member data privacy & GDPR** \u2013 legal/compliance blind spot; missing: data capture consent workflow, retention/deletion protocols, breach response\n- **Order Supplies & Sundries** \u2013 operational bottleneck; missing: reorder thresholds, vendor SLAs, stock audits, approval limits\n- **Complaints & Incidents** \u2013 no documented response protocol; missing: escalation matrix, resolution SLA, follow-up\n- **Weekly Key Coach Tasks** \u2013 coaching quality depends on this; missing: weekly priorities, client review cadence, performance flag triggers\n\n---\n\n# **Needs updating**\n\n- **Class Quality Audit Checklist** \u2013 exists but likely one-dimensional; needs: real-time feedback loop, coach self-assessment integration, member satisfaction correlation\n- **Coaching Development Roadmap** \u2013 skill progression unclear; needs: competency levels (beginner/intermediate/advanced), certification prerequisites, one-to-one training schedule\n- **Member Pause** \u2013 likely buried in Cancellation or incomplete; needs: pause length options, re-engagement sequence, coach communication pre/post-pause\n- **30 Day Goals & Member Outcomes** \u2013 probably aspirational, not operational; needs: tracking mechanism, coach accountability"
   },
   "slack": {
     "configured": true,
@@ -4930,19 +4998,19 @@
       {
         "user_id": "U0AJ93W8J8Y",
         "text": "Sorry wrong  channek",
-        "hours": 28,
+        "hours": 39,
         "name": "Lynbelfast48"
       },
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Also, just checking if you received the new payment request in Payoneer?",
-        "hours": 9,
+        "hours": 20,
         "name": "Julie Lapaz"
       },
       {
         "user_id": "U0A62JJ6HD2",
         "text": "Honestly Sybil you are impressing all the coaches no end, your dedication to improving and your attitude to pushing yourself. I wish every member had that same ",
-        "hours": 2,
+        "hours": 13,
         "name": "Sybil M"
       }
     ],
@@ -5125,7 +5193,7 @@
     }
   },
   "kpi": {
-    "advice": "# The Forge \u2014 Fractional CFO Action Plan\n\n## REVENUE: Fix the per-member collapse & churn spike\n\n- **Per-member revenue has crashed from \u00a3143 (July) to \u00a399 (August) \u2014 a 31% drop on flat membership growth (138 \u2192 163).** This is a pricing or product mix issue, not volume. Audit: are new members on intro rates? Are card purchases (PT, classes, retail) down? **Action: Run cohort analysis by join date; if Aug joiners are on discounted onboarding, front-load the rate or shorten the promo window to 4 weeks max. Target \u00a3130/member by Oct.**\n\n- **May churn spiked to 12.8% (vs 3\u20136% every other month) \u2014 you lost ~17 members that month.** Something broke that month (post-relocation fatigue? staffing gap? class cancellations?). **Action: Pull TeamUp data from May \u2014 check attendance, class availability, instructor changes. If found, document and prevent recurrence. This one month cost you ~\u00a32k annualized recurring revenue.**\n\n- **Last 3 months (Jun\u2013Aug) averaged \u00a317.4k/month vs prior 3 (Mar\u2013May) \u00a315.4k \u2014 +13% revenue trend is good, but membership only grew 6% (127 \u2192 163).** You're growing faster on the card/upsell line. **Action: Double down: bundle PT packages with membership tiers, run a \"August Momentum\" class pass promotion (8 classes, \u00a345) to convert casual drop-ins, add a retail margin review (if in-gym protein/towels are there, ensure 40%+ margin).**\n\n---\n\n## EXPENSES: August spending is structural and unsustainable\n\n- **August cash out was \u00a328,693 \u2014 your highest month on record, yet only 1.9% more members than July (163 vs 138).** That's a 55% spend jump for 18% member growth. **Exclude the relocation: August payroll, rent, or utilities are running hot.** **Action: Pull the August P&L detail \u2014 flag if July included one-time relocation costs that lingered (deep clean, rebranding, double-rent overlap). If August is your new \"normal\" state, you're at \u00a3345/member/month spend vs a healthier \u00a3225. Cut \u00a35\u20138k from Aug run-rate before month 9.**\n\n- **Last 3-month avg cash out: \u00a322.5k. At \u00a317.4k revenue, you're spending 129% of revenue.** On a 120",
+    "advice": "# The Forge \u2014 Fractional CFO Review\n\n## REVENUE \u2014 The Big Issue\n\n**Rev/member has collapsed.** Jul \u00a3144 \u2192 Aug \u00a399 is a 31% drop despite adding 26 new members (121\u2192163). You're acquiring scale but monetising poorly. This is your single biggest priority.\n\n- **Raise base membership price by 8\u201310% immediately** (test \u00a312.99\u2192\u00a313.99/week or equivalent monthly). You're \u00a3124 average now; comparable women's gyms in Belfast command \u00a314\u201316. Churn won't spike; you have low competition.\n- **Launch tiered add-ons within 2 weeks.** Personal training (\u00a325\u201335/session), nutrition plans (\u00a315/month), guest passes (\u00a38). Aug's revenue was dragged down because new members joined at baseline rate. Add-ons will push Rev/member back above \u00a3130 fast.\n- **Plug class attendance leaks.** Your 5\u20138% monthly churn is acceptable, but the spike to 12.8% in May signals a one-off issue (poor retention of a cohort). Segment churn by join-date and class type; identify which classes lose members fastest and run a 2-week re-engagement campaign in quiet slots (likely off-peak morning/midweek).\n\n---\n\n## EXPENSES \u2014 Timing & Structure\n\n**Cash out spiked Aug (\u00a328,693 vs Jul \u00a318,497).** Excluding April's planned relocation, this is your highest outgoing. Without sight of the P&L, flag: did Aug include an unexpected supplier bill, payroll spike, or rent increase post-move? **Pull a 12-line itemised P&L for Aug immediately** \u2014 if staffing or rent ate the rise, that's unsustainable against \u00a316.2k revenue.\n\n- **Target cash out \u00a316\u201317k/month going forward** (assuming Aug was a one-off or relocation tail). That gives you 8\u201310% operating margin; at current revenue, that's \u00a31.3\u20131.7k profit/month\u2014thin but defensible pre-tax.\n- **Audit supplier contracts (cards, software, cleaning).** At 163 members, you may have negotiating power with your payment processor (GoCardless/Stripe). Even 0.3% fee reduction on \u00a316k/month = \u00a348 saved. TeamUp and Starling are likely fixed small sums; focus on volume plays.\n\n---\n\n## PROFITABILITY & TAX\n\n- **Plan Q4 corporation tax on \u00a36\u20138k profit (last 3 months annualised).** If",
     "advice_source": "live"
   },
   "staff": {
@@ -5286,7 +5354,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (16 sessions) and Strongevity (5) must shift to Eilis and JoJo. Eilis can absorb Build: Lower; JoJo takes Strongevity. This removes Grace from the timetable entirely and levels workload.\n\n\u2022 **JoJo is over-loaded at 90 real coaching hours** (excluding InBody scans). Reduce her PT load from 20 to 12 sessions per month by moving 8 PT slots to Eilis, who sits at only 40 PT sessions and has capacity. JoJo stays on Tuesdays as required.\n\n\u2022 **Eilis is under-used and ready for growth**: Move her from 40 to ~50 PT sessions and give her 1\u20132 additional group classes (e.g. Circuits or Engine) to build confidence on non-Tuesday days. She's reliable but needs stretch work outside her current Elevate and Build comfort zone.\n\n\u2022 **No Sweat Intro and Engine are single-coach dependent**: JoJo covers both (7 sessions each). Train Eilis to co-deliver these low-barrier classes so members aren't stuck if JoJo is unavailable; this also reduces JoJo's admin load and gives Eilis visibility with new joiners.\n\n\u2022 **Ignore the 12 + 13 + 5 InBody scans in workload planning**: Delegate these to whoever is in studio that day as a 10-minute admin task, not coaching time. This frees ~30 combined hours and stops artificially inflating anyone's schedule.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her 16 Build: Lower sessions need covering \u2014 assign to JoJo (strength expertise) or split between JoJo and Eilis depending on timetable. Her Strongevity, No Sweat Intro, and Engine classes should go to Eilis (lower technical demand, builds her confidence on non-Tuesday slots).\n\n\u2022 **Eilis is under-loaded on coaching hours**: At 105 sessions she's doing heavy PT (40 sessions) but only 42 real coaching hours. Shift her toward more group classes (Plate, Mobility, Elevate) to free capacity for Grace's classes and reduce her PT dependency.\n\n\u2022 **JoJo is at capacity and over-specialised**: She's carrying both Tuesdays (technical) and 20 PT sessions. Reduce her PT load to 12\u201315 sessions; move surplus PT clients to Eilis to grow her skillset and balance the team.\n\n\u2022 **Body Composition scans are a scheduling tool, not coaching load**: Stop counting them toward workload. Use them as flexible admin tasks to fill gaps \u2014 any coach can stand members on the InBody scale. This frees up 30 perceived hours across the team.\n\n\u2022 **Create a Tuesday safety net**: JoJo leads Tuesdays, but Eilis should shadow or co-coach one Build: Upper session per month to reduce single-person dependency and build Eilis's capability on technical days over time.\n\n\u2022 **Cap PT at 12\u201315 sessions per coach per month**: This spreads client relationships, prevents burnout, and gives Eilis sustainable growth. Use freed PT slots to build class coaching depth instead.",
     "period": "August 2026"
   },
   "asana": {
@@ -5388,7 +5456,7 @@
         "url": "https://app.asana.com/1/1211586132567259/task/1218135667309248",
         "project": null,
         "due_on": "2026-09-04",
-        "overdue": false,
+        "overdue": true,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -5638,7 +5706,7 @@
     }
   },
   "teamup": {
-    "total_members": 167,
+    "total_members": 166,
     "recurring": 114,
     "recurring_members": [
       {
@@ -6098,7 +6166,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 13,
+    "trial": 12,
     "trial_members": [
       {
         "id": 13748936,
@@ -6115,10 +6183,6 @@
       {
         "id": 13588511,
         "name": "Elizabeth Greenaway"
-      },
-      {
-        "id": 13562135,
-        "name": "Janine Patton"
       },
       {
         "id": 13840212,
@@ -6931,7 +6995,7 @@
       }
     ],
     "cancelled_ytd": 42,
-    "churn_rate": 5.0,
+    "churn_rate": 5.1,
     "avg_member_price": 137.45,
     "monthly_recurring_revenue": 15532.0,
     "avg_tenure_months": 8.5,
@@ -7502,7 +7566,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 13,
+        "count": 12,
         "members": [
           {
             "id": 13748936,
@@ -7519,10 +7583,6 @@
           {
             "id": 13588511,
             "name": "Elizabeth Greenaway"
-          },
-          {
-            "id": 13562135,
-            "name": "Janine Patton"
           },
           {
             "id": 13840212,
@@ -7871,26 +7931,26 @@
             "count": 487
           },
           {
-            "day": "Thursday",
-            "count": 462
+            "day": "Friday",
+            "count": 468
           },
           {
-            "day": "Friday",
-            "count": 447
+            "day": "Thursday",
+            "count": 462
           }
         ],
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 267
-          },
-          {
-            "day": "Friday",
-            "count": 447
+            "count": 240
           },
           {
             "day": "Thursday",
             "count": 462
+          },
+          {
+            "day": "Friday",
+            "count": 468
           },
           {
             "day": "Monday",
@@ -7916,15 +7976,15 @@
           },
           {
             "name": "Elevate",
-            "count": 354
+            "count": 327
           },
           {
             "name": "Circuits",
-            "count": 228
+            "count": 237
           },
           {
-            "name": "Plate",
-            "count": 211
+            "name": "Mobility",
+            "count": 221
           }
         ],
         "bottom_classes": [
@@ -7945,12 +8005,12 @@
             "count": 171
           },
           {
-            "name": "Mobility",
-            "count": 209
-          },
-          {
             "name": "Plate",
             "count": 211
+          },
+          {
+            "name": "Mobility",
+            "count": 221
           }
         ],
         "top_slots": [
@@ -8000,13 +8060,13 @@
             "label": "Monday 11am Strongevity"
           },
           {
-            "day": "Monday",
-            "time": "10am",
-            "name": "Build: Lower",
-            "count": 81,
-            "sessions": 8,
-            "avg": 10.1,
-            "label": "Monday 10am Build: Lower"
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 112,
+            "sessions": 11,
+            "avg": 10.2,
+            "label": "Friday 7pm Mobility"
           }
         ],
         "bottom_slots": [
@@ -8065,17 +8125,17 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3017
+        "total_attended": 3011
       },
       "last_30_days": {
         "top_days": [
           {
-            "day": "Wednesday",
-            "count": 276
-          },
-          {
             "day": "Tuesday",
             "count": 267
+          },
+          {
+            "day": "Wednesday",
+            "count": 236
           },
           {
             "day": "Thursday",
@@ -8083,7 +8143,7 @@
           },
           {
             "day": "Friday",
-            "count": 146
+            "count": 167
           },
           {
             "day": "Monday",
@@ -8101,15 +8161,15 @@
           },
           {
             "day": "Friday",
-            "count": 146
+            "count": 167
           },
           {
             "day": "Thursday",
             "count": 192
           },
           {
-            "day": "Tuesday",
-            "count": 267
+            "day": "Wednesday",
+            "count": 236
           }
         ],
         "top_classes": [
@@ -8119,7 +8179,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 227
+            "count": 213
           },
           {
             "name": "Elevate",
@@ -8131,11 +8191,11 @@
           },
           {
             "name": "Strongevity",
-            "count": 106
+            "count": 96
           },
           {
-            "name": "Circuits",
-            "count": 81
+            "name": "Mobility",
+            "count": 84
           }
         ],
         "bottom_classes": [
@@ -8152,16 +8212,16 @@
             "count": 28
           },
           {
-            "name": "Mobility",
-            "count": 72
-          },
-          {
             "name": "Plate",
-            "count": 73
+            "count": 67
           },
           {
             "name": "Circuits",
-            "count": 81
+            "count": 80
+          },
+          {
+            "name": "Mobility",
+            "count": 84
           }
         ],
         "top_slots": [
@@ -8178,9 +8238,9 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 33,
-            "sessions": 3,
-            "avg": 11.0,
+            "count": 45,
+            "sessions": 4,
+            "avg": 11.2,
             "label": "Friday 7pm Mobility"
           },
           {
@@ -8258,15 +8318,6 @@
             "label": "Friday 10am Mobility"
           },
           {
-            "day": "Wednesday",
-            "time": "7pm",
-            "name": "Plate",
-            "count": 39,
-            "sessions": 5,
-            "avg": 7.8,
-            "label": "Wednesday 7pm Plate"
-          },
-          {
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
@@ -8274,11 +8325,20 @@
             "sessions": 5,
             "avg": 8.0,
             "label": "Thursday 10am Elevate"
+          },
+          {
+            "day": "Wednesday",
+            "time": "7pm",
+            "name": "Plate",
+            "count": 33,
+            "sessions": 4,
+            "avg": 8.2,
+            "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 1100
+        "total_attended": 1081
       },
-      "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a paid \"Open Studio\" block on Friday afternoons** \u2014 your quietest day has studio downtime between classes; offer 90-min slots at \u00a38-12 for members who want self-directed lifting or accessory work, no instructor needed, just monitored access.\n\n2. **Run a monthly \"Intro to Barbelle\" workshop (Saturday morning)** \u2014 Barbelle is consistently lowest (27 in last 30 days); a 45-min guided taster before the regular class, free to members, removes the intimidation barrier and feeds sign-ups into the live class that follows.\n\n**For the quieter classes themselves:**\n\n3. **Move Capacity to Tuesday 6:45pm (your busiest day) and promote it as \"Strength foundation for Build class lovers\"** \u2014 it's getting 64-19 attendees but pairs logically with your top performers (Build Upper/Full Body); slot it right before or after one of those to catch overflow interest and position it as a complementary skill-builder rather than standalone.",
+      "suggestion": "**For quiet studio gaps:**\n\n1. **Launch a \"Lift & Learn\" workshop series on Thursday or Friday afternoons** \u2014 short 20-30 min paid sessions (\u00a35-8) covering form coaching, nutrition, or recovery, tapping underutilised weekday capacity without competing with scheduled classes.\n\n2. **Block 90 minutes on Saturday mornings for open-gym coaching rotations** \u2014 staff a studio for drop-in form checks or small-group PT blocks at premium rates, since Saturday has lowest traffic but women often prefer weekend training.\n\n**For quieter classes:**\n\n3. **Move Capacity and Engine to Tuesday or Wednesday mornings at 6:30am or lunchtime** \u2014 they're lowest-attended but strength-focused; stacking them near Build classes (your strongest performers) may capture overflow or habit-stackers, plus test if timing/day rather than format is the issue.\n\n4. **Rebrand Barbelle as \"Strength & Social\" and host a free taster session with a current attendee bonus** (\u00a310 credit) \u2014 27 per month suggests awareness problem, not appeal problem; targeted invite to Build class regulars + word-of-mouth incentive is faster than promoting to cold audience.",
       "capacity": [
         {
           "name": "Strongevity",
@@ -8548,7 +8608,7 @@
       },
       {
         "month": "2026-07",
-        "active": 138,
+        "active": 137,
         "churn": 8.1,
         "by_type": {
           "Empower": 66,
@@ -8563,14 +8623,14 @@
           "Strongevity": 1,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 4,
+          "6 Week Jumpstart": 3,
           "New You Next Level": 1,
           "Emerge": 1
         }
       },
       {
         "month": "2026-08",
-        "active": 164,
+        "active": 163,
         "churn": 5.5,
         "by_type": {
           "Empower": 71,
@@ -8585,14 +8645,14 @@
           "Strongevity": 4,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 11,
+          "6 Week Jumpstart": 10,
           "Strongevity Membership": 13
         }
       },
       {
         "month": "2026-09",
-        "active": 162,
-        "churn": 10.2,
+        "active": 161,
+        "churn": 9.6,
         "by_type": {
           "Empower": 71,
           "8 PT Sessions": 3,
@@ -8606,7 +8666,7 @@
           "Strongevity": 3,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 13,
+          "6 Week Jumpstart": 12,
           "Strongevity Membership": 15
         }
       }
@@ -8616,206 +8676,220 @@
         "id": 10057245,
         "name": "Alison Moffitt-Robinson",
         "membership": "4 Class Pass",
-        "days_absent": 59,
+        "days_absent": 60,
         "last_seen": "2026-07-07"
       },
       {
         "id": 12292932,
         "name": "Ashley George",
         "membership": "Elevate",
-        "days_absent": 37,
+        "days_absent": 38,
         "last_seen": "2026-07-29"
       },
       {
         "id": 12162382,
         "name": "Catherine Gavin",
         "membership": "8 PT Sessions",
-        "days_absent": 46,
+        "days_absent": 47,
         "last_seen": "2026-07-20"
+      },
+      {
+        "id": 7209125,
+        "name": "Christine Calvin",
+        "membership": "Evolve",
+        "days_absent": 11,
+        "last_seen": "2026-08-25"
       },
       {
         "id": 11546736,
         "name": "Claire Leeke",
         "membership": "Elevate",
-        "days_absent": 29,
+        "days_absent": 30,
         "last_seen": "2026-08-06"
       },
       {
         "id": 13520776,
         "name": "Davina Dickson",
         "membership": "Strongevity Membership",
-        "days_absent": 32,
+        "days_absent": 33,
         "last_seen": "2026-08-03"
       },
       {
         "id": 12289714,
         "name": "Diane McLean",
         "membership": "Elevate",
-        "days_absent": 45,
+        "days_absent": 46,
         "last_seen": "2026-07-21"
+      },
+      {
+        "id": 11100381,
+        "name": "Elaine Adair",
+        "membership": "Elevate",
+        "days_absent": 11,
+        "last_seen": "2026-08-25"
       },
       {
         "id": 10317298,
         "name": "Evelyn Sharpe",
         "membership": "Elevate",
-        "days_absent": 113,
+        "days_absent": 114,
         "last_seen": "2026-05-14"
       },
       {
         "id": 7373444,
         "name": "Helen Logan",
         "membership": "Empower",
-        "days_absent": 18,
+        "days_absent": 19,
         "last_seen": "2026-08-17"
       },
       {
         "id": 11929298,
         "name": "Irene Robinson",
         "membership": "4 PT Sessions",
-        "days_absent": 46,
+        "days_absent": 47,
         "last_seen": "2026-07-20"
       },
       {
         "id": 10671756,
         "name": "Jill Chadburn",
         "membership": "Empower",
-        "days_absent": 49,
+        "days_absent": 50,
         "last_seen": "2026-07-17"
       },
       {
         "id": 9647702,
         "name": "Joan Taggart",
         "membership": "Elevate",
-        "days_absent": 15,
+        "days_absent": 16,
         "last_seen": "2026-08-20"
+      },
+      {
+        "id": 8762722,
+        "name": "Karen Rhodes",
+        "membership": "Empower",
+        "days_absent": 11,
+        "last_seen": "2026-08-25"
       },
       {
         "id": 12822795,
         "name": "Kathleen Simpson",
         "membership": "Elevate",
-        "days_absent": 11,
+        "days_absent": 12,
         "last_seen": "2026-08-24"
       },
       {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
-        "days_absent": 46,
+        "days_absent": 47,
         "last_seen": "2026-07-20"
       },
       {
         "id": 4772999,
         "name": "Kirsty Dunn",
         "membership": "Empower",
-        "days_absent": 43,
+        "days_absent": 44,
         "last_seen": "2026-07-23"
       },
       {
         "id": 13507202,
         "name": "Linda Greet",
         "membership": "6 Week Jumpstart",
-        "days_absent": 32,
+        "days_absent": 33,
         "last_seen": "2026-08-03"
       },
       {
         "id": 12672913,
         "name": "Louise Feeney",
         "membership": "Elevate",
-        "days_absent": 14,
+        "days_absent": 15,
         "last_seen": "2026-08-21"
       },
       {
         "id": 12116479,
         "name": "Margaret Hughes",
         "membership": "Elevate",
-        "days_absent": 29,
+        "days_absent": 30,
         "last_seen": "2026-08-06"
       },
       {
         "id": 9196376,
         "name": "Nerys Young",
         "membership": "Empower",
-        "days_absent": 45,
+        "days_absent": 46,
         "last_seen": "2026-07-21"
       },
       {
         "id": 13002340,
         "name": "Noeleen Murphy",
         "membership": "Empower",
-        "days_absent": 38,
+        "days_absent": 39,
         "last_seen": "2026-07-28"
       },
       {
         "id": 8500731,
         "name": "Noor AlShehabi",
         "membership": "8 PT Sessions",
-        "days_absent": 46,
+        "days_absent": 47,
         "last_seen": "2026-07-20"
+      },
+      {
+        "id": 12323224,
+        "name": "Sami-Jo Smyth",
+        "membership": "Empower",
+        "days_absent": 11,
+        "last_seen": "2026-08-25"
       },
       {
         "id": 7775785,
         "name": "Sarah Sandford",
         "membership": "Empower",
-        "days_absent": 41,
+        "days_absent": 42,
         "last_seen": "2026-07-25"
-      },
-      {
-        "id": 13602153,
-        "name": "Sharon McAuley",
-        "membership": "6 Week Jumpstart",
-        "days_absent": 15,
-        "last_seen": "2026-08-20"
-      },
-      {
-        "id": 9414493,
-        "name": "Zara Morrison",
-        "membership": "Foundation PAID IN FULL",
-        "days_absent": 18,
-        "last_seen": "2026-08-17"
       }
     ],
     "celebrations": {
       "first_week": [
         {
           "name": "Babs Roeshaw",
-          "days_in": 0,
+          "days_in": 1,
           "start_date": "2026-09-04"
         },
         {
           "name": "Kathryn Alleyne",
-          "days_in": 0,
+          "days_in": 1,
           "start_date": "2026-09-04"
         }
       ],
       "new_members": [
         {
           "name": "Elizabeth Greenaway",
-          "days_in": 3,
+          "days_in": 4,
           "start_date": "2026-09-01"
         },
         {
           "name": "Jennifer Reid",
-          "days_in": 5,
+          "days_in": 6,
           "start_date": "2026-08-30"
         },
         {
           "name": "Lynda Archibald",
-          "days_in": 6,
+          "days_in": 7,
           "start_date": "2026-08-29"
         },
         {
           "name": "Jacqueline Crawford",
-          "days_in": 7,
+          "days_in": 8,
           "start_date": "2026-08-28"
         },
         {
           "name": "Marjorie Moore",
-          "days_in": 8,
+          "days_in": 9,
           "start_date": "2026-08-27"
         },
         {
           "name": "Laura McGarry",
-          "days_in": 9,
+          "days_in": 10,
           "start_date": "2026-08-26"
         }
       ],
@@ -8824,15 +8898,15 @@
           "name": "Joules Williamson",
           "label": "9 months",
           "months": 9,
-          "days_until": 1,
+          "days_until": 0,
           "start_date": "2025-12-05"
         },
         {
-          "name": "Liz Bloomer",
-          "label": "3 months",
-          "months": 3,
-          "days_until": -4,
-          "start_date": "2026-06-01"
+          "name": "Noleen McMullan",
+          "label": "6 months",
+          "months": 6,
+          "days_until": 4,
+          "start_date": "2026-03-10"
         }
       ]
     },
@@ -22633,7 +22707,7 @@
             "uid": "d35ae10c-e417-464f-9eec-e413146b4fe4",
             "date": "2026-09-03",
             "name": "Amazon",
-            "ref": "AMAZON.CO.UK",
+            "ref": "AMAZON* NV97K8EH4",
             "amount": 23.97,
             "direction": "OUT",
             "category": "Admin",
@@ -22973,9 +23047,9 @@
       }
     ],
     "cash_in_30": 28584.27,
-    "cash_out_30": 27880.31,
-    "net_30": 703.96,
-    "as_of": "2026-09-04"
+    "cash_out_30": 27865.34,
+    "net_30": 718.93,
+    "as_of": "2026-09-05"
   },
   "gocardless": {
     "configured": true,
@@ -22983,8 +23057,8 @@
     "monthly": [
       {
         "month": "2025-08",
-        "collected": 320.04,
-        "payments": 8
+        "collected": 310.04,
+        "payments": 7
       },
       {
         "month": "2025-09",
@@ -23178,119 +23252,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit what you're ACTUALLY selling right now** \u2014 Have Grace and her lead coach list every single offering members pay for or receive (classes, PT, nutrition consults, challenges, locker access, etc.). You'll likely find inconsistencies or things nobody knows about. This becomes your master list.\n\n\u2022 **Price anchor from PT first** \u2014 Start with what your 1-on-1 coaching costs. Everything else prices relative to that value/time investment (e.g., small-group coaching = 60% of PT, class pass = 20% of PT per session). This prevents pricing chaos and makes the menu feel intentional.\n\n\u2022 **Create two DISTINCT documents immediately** \u2014 Internal (for coaches): shows full margins, upsell pathways, what they can offer. External (for members): shows only what they care about (outcome, price, duration, what's included). Use different language \u2014 coaches see \"acquisition funnel,\" members see \"build strength in 8 weeks for \u00a3X.\"\n\n\u2022 **Embed the member menu on your website/WhatsApp TODAY** \u2014 Not perfect, done. Grace should screenshot it, add it to her Instagram bio link, send it to every past inquiry who ghosted. You'll get immediate feedback on what confuses people (that's gold).\n\n\u2022 **Designate one person as \"menu keeper\"** \u2014 Every time someone asks \"do we offer X?\" or coaches make up a new package deal, it goes to this person to update. Prevents menu creep."
+        "advice": "# Execute Your Service Menu Clarity\n\n**1. Audit what you're ACTUALLY doing right now**\nDon't start from scratch. Have each coach log their actual weekly activities for 2 weeks (group classes, 1:1s, nutrition checks, form corrections, etc.). You'll find hidden services you're already delivering but not pricing\u2014that's revenue sitting on the table.\n\n**2. Price backwards from your target member**\nWhat's a woman in Belfast willing to pay monthly? Build your tiers INTO that number, not around it. If your sweet spot is \u00a350-80/month, decide if that's \"unlimited classes only\" or \"classes + 2 form checks + monthly progress chat.\" Don't list features first\u2014lock the price, then design what fits.\n\n**3. Create TWO menus with intentionally different language**\n**Coach version:** Task-focused (\"explain progression options,\" \"identify form breakdown,\" \"track attendance patterns\"). This shows coaches WHERE they add value each session.\n**Member version:** Benefit-focused (\"get stronger safely,\" \"see real progress,\" \"personalized form guidance\"). Same offerings, different brain.\n\n**4. Test it on 3 existing members this week**\nShow them the new menu in a casual chat. Do they get what they're paying for? Do they see gaps? You'll spot confusion before it costs you retention or referrals. Adjust immediately\u2014don't wait for perfect.\n\n**5. Pin it everywhere operationally**\nPoster in the gym, email to all members, coach WhatsApp group, your website. Coaches should be able to recite it. Members should know exactly what they're getting.\n\nWhat's your current price range, and are you selling pure membership or bundling anything else?"
       }
     ]
   },
