@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T05:00:46.730108+00:00",
+  "generated_at": "2026-09-05T10:29:39.495352+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1271,6 +1271,54 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "essex",
+        "last_scan": "2026-09-05",
+        "scan_count": 1,
+        "weight": 174.7,
+        "smm": 59.7,
+        "pbf": 37.5,
+        "bmi": 25.8,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-17",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "lynnc",
+        "last_scan": "2026-09-05",
+        "scan_count": 1,
+        "weight": 151.0,
+        "smm": 57.3,
+        "pbf": 31.0,
+        "bmi": 25.1,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-17",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "babs",
         "last_scan": "2026-09-04",
@@ -3888,7 +3936,7 @@
         "overdue": true
       }
     ],
-    "total": 109,
+    "total": 111,
     "configured": true
   },
   "slack": {
@@ -3898,20 +3946,26 @@
       {
         "user_id": "U0AJ93W8J8Y",
         "text": "Sorry wrong  channek",
-        "hours": 39,
+        "hours": 44,
         "name": "Lynbelfast48"
       },
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Also, just checking if you received the new payment request in Payoneer?",
-        "hours": 20,
+        "hours": 25,
         "name": "Julie Lapaz"
       },
       {
         "user_id": "U0A62JJ6HD2",
         "text": "Honestly Sybil you are impressing all the coaches no end, your dedication to improving and your attitude to pushing yourself. I wish every member had that same ",
-        "hours": 13,
+        "hours": 18,
         "name": "Sybil M"
+      },
+      {
+        "user_id": "U0AEX0KL5FY",
+        "text": "Morning Grace, am booked into Full Body on Wednesday &amp; Elevate Saturday next week. Still feeling a bit tender but I am keen to get back to Forge x",
+        "hours": 2,
+        "name": "Margaret Hughes"
       }
     ],
     "mentions": [],
@@ -6838,7 +6892,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 240
+            "count": 270
           },
           {
             "day": "Thursday",
@@ -6872,7 +6926,7 @@
           },
           {
             "name": "Elevate",
-            "count": 327
+            "count": 357
           },
           {
             "name": "Circuits",
@@ -7021,7 +7075,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3011
+        "total_attended": 3041
       },
       "last_30_days": {
         "top_days": [
@@ -7049,7 +7103,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 79
+            "count": 109
           },
           {
             "day": "Monday",
@@ -7079,7 +7133,7 @@
           },
           {
             "name": "Elevate",
-            "count": 119
+            "count": 149
           },
           {
             "name": "Build: Lower",
@@ -7199,9 +7253,9 @@
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
-            "count": 22,
-            "sessions": 3,
-            "avg": 7.3,
+            "count": 30,
+            "sessions": 4,
+            "avg": 7.5,
             "label": "Saturday 9am Elevate"
           },
           {
@@ -7232,7 +7286,7 @@
             "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 1081
+        "total_attended": 1111
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Launch a \"Lift & Learn\" workshop series on Thursday or Friday afternoons** \u2014 short 20-30 min paid sessions (\u00a35-8) covering form coaching, nutrition, or recovery, tapping underutilised weekday capacity without competing with scheduled classes.\n\n2. **Block 90 minutes on Saturday mornings for open-gym coaching rotations** \u2014 staff a studio for drop-in form checks or small-group PT blocks at premium rates, since Saturday has lowest traffic but women often prefer weekend training.\n\n**For quieter classes:**\n\n3. **Move Capacity and Engine to Tuesday or Wednesday mornings at 6:30am or lunchtime** \u2014 they're lowest-attended but strength-focused; stacking them near Build classes (your strongest performers) may capture overflow or habit-stackers, plus test if timing/day rather than format is the issue.\n\n4. **Rebrand Barbelle as \"Strength & Social\" and host a free taster session with a current attendee bonus** (\u00a310 credit) \u2014 27 per month suggests awareness problem, not appeal problem; targeted invite to Build class regulars + word-of-mouth incentive is faster than promoting to cold audience.",
       "capacity": [
@@ -7597,13 +7651,6 @@
         "last_seen": "2026-08-25"
       },
       {
-        "id": 11546736,
-        "name": "Claire Leeke",
-        "membership": "Elevate",
-        "days_absent": 30,
-        "last_seen": "2026-08-06"
-      },
-      {
         "id": 13520776,
         "name": "Davina Dickson",
         "membership": "Strongevity Membership",
@@ -7742,6 +7789,13 @@
         "membership": "Empower",
         "days_absent": 42,
         "last_seen": "2026-07-25"
+      },
+      {
+        "id": 13602153,
+        "name": "Sharon McAuley",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 16,
+        "last_seen": "2026-08-20"
       }
     ],
     "celebrations": {
