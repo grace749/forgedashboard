@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:00:50.632362+00:00",
+  "generated_at": "2026-09-07T19:09:10.758568+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-09-07",
-    "event_count": 20,
-    "urgent_count": 1,
-    "enquiry_count": 2,
+    "event_count": 22,
+    "urgent_count": 4,
+    "enquiry_count": 3,
     "calendar": [
       {
         "title": "Eilis goes full time FORGE",
@@ -155,6 +155,28 @@
         "prep": "Review Google Profile updates; schedule posting; prepare caption and hashtags."
       },
       {
+        "title": "\ud83d\udcde Call: Jordyn Uprichard",
+        "time": "10:50am",
+        "start_raw": "2026-09-08T10:50:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Jordyn Uprichard"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "Untitled",
+        "time": "10:50am",
+        "start_raw": "2026-09-08T10:50:00+01:00",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Review grant criteria, eligibility requirements, application deadline, and support documentation needed."
+      },
+      {
         "title": "\ud83d\udcde Call: Helynn McCahon",
         "time": "11:00am",
         "start_raw": "2026-09-08T11:00:00",
@@ -174,7 +196,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Review grant criteria, eligibility requirements, application deadline, and support documentation needed."
+        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Claire Scull",
@@ -196,7 +218,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm meeting purpose, attendees, and agenda items; prepare any required materials."
       },
       {
         "title": "Padel social",
@@ -219,7 +241,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm meeting purpose, attendees, and agenda items; prepare any required materials."
+        "prep": "Confirm player count, court booking, time slot, and post-social refreshments plan."
       },
       {
         "title": "Pay Dan House Bills",
@@ -229,10 +251,40 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm player count, court booking, time slot, and post-social refreshments plan."
+        "prep": ""
       }
     ],
     "urgent": [
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Confirmation of your TShirt Studio order - 3880392",
+        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3880392 Your order has been received as follows: Items Sport Tank Top (Sport Tank Top)",
+        "id": "1a07c5da7e80241f",
+        "thread_id": "1a07c5da7e80241f",
+        "msg_count": 1,
+        "draft_id": "r1626367142134658307"
+      },
+      {
+        "from": "Bernadette Boorman",
+        "from_raw": "Bernadette Boorman <bbsperrin@gmail.com>",
+        "subject": "Re: Bernadette, your STRONGEVITY info inside",
+        "snippet": "Thanks Grace, I have just had toe injections and have to rest the foot for a couple of weeks. I&#39;ll hopefully join the next set of sessions. King regards Bernie On Fri, 4 Sept 2026, 13:56 Coach",
+        "id": "1a07c4a3a8ca7bf7",
+        "thread_id": "1a07c4a3a8ca7bf7",
+        "msg_count": 1,
+        "draft_id": "r992562777376734934"
+      },
+      {
+        "from": "Burnside, Gabriella(Entrepreneur Acceleration Manager)",
+        "from_raw": "\"Burnside, Gabriella(Entrepreneur Acceleration Manager)\" <Gabriella.Burnside@natwest.com>",
+        "subject": "Ulster Bank Accelerator - September Newsletter",
+        "snippet": "Good afternoon! Welcome to the September Ulster Bank Accelerator Newsletter! Please see our September activities below: 1:1 Sessions with Gabi or Erin These sessions are an opportunity for you to",
+        "id": "1a07c38f6526ec11",
+        "thread_id": "1a07c3311beb1c61",
+        "msg_count": 2,
+        "draft_id": "r-2462205405203555097"
+      },
       {
         "from": "Mary Steven",
         "from_raw": "Mary Steven <marysteven94@gmail.com>",
@@ -245,6 +297,15 @@
     ],
     "important": [],
     "enquiries": [
+      {
+        "name": "Jordyn Uprichard",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:50am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:50am",
+        "snippet": "Booked a call for Tomorrow 10:50am \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
       {
         "name": "Helynn McCahon",
         "channel": "Booked call",
@@ -266,8 +327,8 @@
     ],
     "checkins": {
       "by_email": {
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
@@ -347,10 +408,9 @@
         "ellenmeldrum555@gmail.com": "2025-08-31",
         "shannon_camp@hotmail.co.uk": "2025-08-31",
         "kathryn.greehy@gmail.com": "2025-08-17",
-        "tmcg73@hotmail.com": "2025-08-10",
-        "juana-mai03@hotmail.com": "2025-08-03"
+        "tmcg73@hotmail.com": "2025-08-10"
       },
-      "count": 83
+      "count": 82
     },
     "goals": {
       "by_email": {
@@ -389,67 +449,94 @@
   },
   "ghl": [
     {
-      "name": "Jordyn Uprichard",
+      "name": "Erin Honeyford",
       "channel": "Phone",
-      "message": "",
+      "message": "I\u2019m free for a call anytime",
       "age": "0h ago",
-      "unread": 0,
-      "conv_id": "nxbSCm0qtlynIOx5qB5E",
-      "contact_id": "aGLRF487TPXwwXFGIqKo"
+      "unread": 1,
+      "conv_id": "PULJISSSEmZaeU7NqMi3",
+      "contact_id": "0CPElYUxk8nHLLoZTZov"
+    },
+    {
+      "name": "Sheila Lundy",
+      "channel": "Phone",
+      "message": "Thanks Grace!",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "TcrxAet44Yh76BmcWhoo",
+      "contact_id": "1ZtSC9s0CNF99mohCNbq"
+    },
+    {
+      "name": "laurie curran",
+      "channel": "Phone",
+      "message": "Here she is",
+      "age": "2h ago",
+      "unread": 2,
+      "conv_id": "Uk11CWYawgfS20XgpFAA",
+      "contact_id": "L1yCv2klmkX82qPuduVt"
+    },
+    {
+      "name": "Lynda Wright",
+      "channel": "Phone",
+      "message": "Continuing on my strength improvement im so pleased and my clothes are showing me the differance x",
+      "age": "3h ago",
+      "unread": 2,
+      "conv_id": "rBvQbzXXETuFM8ahDeEH",
+      "contact_id": "zvyicP9O2D0R7RP27nCE"
+    },
+    {
+      "name": "Helynn McCahon",
+      "channel": "Phone",
+      "message": "This says my slot is cancelled, is that a mistake?",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "1YVk2flMJGHrKrwsq5pY",
+      "contact_id": "8ePGp7S6fhpJYBIZ9tyG"
+    },
+    {
+      "name": "Sadie Royle",
+      "channel": "Phone",
+      "message": "Yes, lol. I'll have to improve on this booking melarky. Thanks for your help!",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "iUY23N3Hkc70cSuWX28r",
+      "contact_id": "n8ITw5jQgZIG6dvaFSED"
+    },
+    {
+      "name": "Mrs m c mcalister",
+      "channel": "Phone",
+      "message": "Tku i will save your number for future ref..",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "DzRpVrnesJVHLUrPQ02O",
+      "contact_id": "kh8b0YNMRuX9kBPKPmc5"
+    },
+    {
+      "name": "Helen Basher Logan",
+      "channel": "Phone",
+      "message": "It was , nice to have a second sport to enjoy. \nExhausted now : whole day of play and travelling all in one day ..",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
+      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
     },
     {
       "name": "Jean Rees",
       "channel": "Phone",
       "message": "Many thanks",
-      "age": "1h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "bLOQNvOqMWl3O0gU112V",
       "contact_id": "AWefI2Z86wiggEzVlRGL"
     },
     {
-      "name": "Helen Basher Logan",
-      "channel": "Phone",
-      "message": "In Birmingham playing adaptive pickleball - new kits looking good .. can you spot us !",
-      "age": "3h ago",
-      "unread": 4,
-      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
-      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
-    },
-    {
-      "name": "Wilma Reid",
-      "channel": "Phone",
-      "message": "Hi there I haven't been too well since I left. Between my hips and left shoulder my mobility hasn't been too good, I also go in on Thursday for my operation at last. I'll be un touch with you when I'm",
-      "age": "5h ago",
-      "unread": 2,
-      "conv_id": "FCqsFe4pDyj1eA6hy4Uz",
-      "contact_id": "Y6iffh3BlOe9xSo5JJ1L"
-    },
-    {
       "name": "Jo",
       "channel": "Phone",
       "message": "I had a version of this in last quarter and they couldn\u2019t do it \n\nHurt their back too much \ud83d\ude44",
-      "age": "16h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
-    },
-    {
-      "name": "Claire Martin",
-      "channel": "Phone",
-      "message": "Hi Grace, thanks so much for this info. I\u2019ll have a look through it when I get sitting down. \n\nWhat date does my 6 week jumpstart end on?",
-      "age": "22h ago",
-      "unread": 2,
-      "conv_id": "7hQHOW9b5yzeAQtL3XUQ",
-      "contact_id": "1d8py3fxMG2gZMxACuTb"
-    },
-    {
-      "name": "laurie curran",
-      "channel": "Phone",
-      "message": "She\u2019s very sick and just back from the vets, fingers crossed it will pass.",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "Uk11CWYawgfS20XgpFAA",
-      "contact_id": "L1yCv2klmkX82qPuduVt"
     },
     {
       "name": "Joan Stewart",
@@ -459,24 +546,6 @@
       "unread": 1,
       "conv_id": "LtgYYO88NEmcV5G7a1T1",
       "contact_id": "nSypTXitfscRgAByuC86"
-    },
-    {
-      "name": "Anna Biskupska",
-      "channel": "Phone",
-      "message": "Hi Grace.  Sorry to getting back to you so late. I would love to join the program eventually but I have to get back into my work routine first and see how it will work time wise and of course money wi",
-      "age": "1d ago",
-      "unread": 2,
-      "conv_id": "gVtmWfDsIQjw8s2zS1Y5",
-      "contact_id": "eotS8N8tGFYgzQyseVVT"
-    },
-    {
-      "name": "Claire Leeke \ud83c\udf3b",
-      "channel": "Phone",
-      "message": "We are absolutely loving it. I think in 10 years it\u2019s one of my favourite classes I\u2019ve ever coached xx",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "34FrAZfNnTQCyjnXS4iw",
-      "contact_id": "5LOY403F8eNAKGXWUPQH"
     }
   ],
   "jumpstart": {
@@ -5122,13 +5191,13 @@
       {
         "user_id": "U0BMD4089EJ",
         "text": "Sorry as I know it's late on Sunday and your day off , but I wanted to give as much notice as possible. I'm going to need to cancel this weeks sessions.   I thi",
-        "hours": 18,
+        "hours": 23,
         "name": "Caroline Stinson"
       },
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Hello Coach Grace! Just got home. Will be working now. Thank you!",
-        "hours": 2,
+        "hours": 7,
         "name": "Julie Lapaz"
       }
     ],
@@ -8070,12 +8139,12 @@
             "count": 641
           },
           {
-            "day": "Friday",
-            "count": 468
+            "day": "Monday",
+            "count": 489
           },
           {
-            "day": "Monday",
-            "count": 463
+            "day": "Friday",
+            "count": 468
           },
           {
             "day": "Thursday",
@@ -8092,12 +8161,12 @@
             "count": 462
           },
           {
-            "day": "Monday",
-            "count": 463
-          },
-          {
             "day": "Friday",
             "count": 468
+          },
+          {
+            "day": "Monday",
+            "count": 489
           },
           {
             "day": "Wednesday",
@@ -8115,7 +8184,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 391
+            "count": 417
           },
           {
             "name": "Elevate",
@@ -8268,7 +8337,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3017
+        "total_attended": 3043
       },
       "last_30_days": {
         "top_days": [
@@ -8282,7 +8351,7 @@
           },
           {
             "day": "Monday",
-            "count": 159
+            "count": 185
           },
           {
             "day": "Thursday",
@@ -8308,7 +8377,7 @@
           },
           {
             "day": "Monday",
-            "count": 159
+            "count": 185
           },
           {
             "day": "Wednesday",
@@ -8325,12 +8394,12 @@
             "count": 194
           },
           {
-            "name": "Elevate",
-            "count": 139
+            "name": "Build: Lower",
+            "count": 141
           },
           {
-            "name": "Build: Lower",
-            "count": 115
+            "name": "Elevate",
+            "count": 139
           },
           {
             "name": "Strongevity",
@@ -8479,7 +8548,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1046
+        "total_attended": 1072
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. Launch a paid \"Open Studio\" block (30-45 mins) on Monday/Thursday afternoons between PT slots \u2014 market it as flexible strength work or technique practice for members who can't commit to scheduled classes, positioning it as a premium add-on rather than free access.\n\n2. Run a monthly \"Masterclass\" workshop series (60 mins) in the quietest midweek gaps \u2014 e.g. \"Deadlift Technique Deep Dive\" or \"Movement Mobility Reset\" \u2014 charge \u00a38-12 per person and invite members from underattended classes (Capacity, Engine, Barbelle) to experience expert coaching in a low-pressure format.\n\n**To lift quieter classes:**\n\n3. Offer a \"Try 3\" incentive: members who've never attended Engine, Capacity, or Barbelle get a free first class + \u00a35 off if they return within 14 days \u2014 target this at Build: Upper regulars (your biggest cohort) since strength-focused members may be skipping these without knowing what they offer.",
       "capacity": [
@@ -8949,13 +9018,6 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 4772999,
-        "name": "Kirsty Dunn",
-        "membership": "Empower",
-        "days_absent": 46,
-        "last_seen": "2026-07-23"
-      },
-      {
         "id": 11212636,
         "name": "Lesley Greehy",
         "membership": "4 PT Sessions",
@@ -8989,6 +9051,13 @@
         "membership": "Empower",
         "days_absent": 11,
         "last_seen": "2026-08-27"
+      },
+      {
+        "id": 9196376,
+        "name": "Nerys Young",
+        "membership": "Empower",
+        "days_absent": 48,
+        "last_seen": "2026-07-21"
       }
     ],
     "celebrations": {
@@ -9169,7 +9238,14 @@
       ],
       "upcoming": []
     },
-    "lead_bookings": [],
+    "lead_bookings": [
+      {
+        "name": "Breanna Gaston",
+        "type": "Meet a Coach",
+        "date": "2026-09-15",
+        "upcoming": true
+      }
+    ],
     "member_list": [
       {
         "id": 10803724,
@@ -22743,29 +22819,33 @@
       },
       {
         "month": "2026-09",
-        "revenue": 8335.38,
-        "expenses": 3857.57,
-        "profit": 4477.81,
-        "profit_pct": 53.7,
+        "revenue": 8440.67,
+        "expenses": 8043.47,
+        "profit": 397.2,
+        "profit_pct": 4.7,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 8335.38
+              "amount": 8440.67
             }
           ],
           "out": [
+            {
+              "name": "Staff",
+              "amount": 4070.0
+            },
             {
               "name": "Directors Wages",
               "amount": 2500.0
             },
             {
-              "name": "Marketing",
-              "amount": 347.44
+              "name": "Other",
+              "amount": 354.85
             },
             {
-              "name": "Other",
-              "amount": 238.95
+              "name": "Marketing",
+              "amount": 347.44
             },
             {
               "name": "Professional Services",
@@ -22798,6 +22878,56 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "ea24abaa-ba13-46cc-9f28-69c7f7e41d22",
+            "date": "2026-09-07",
+            "name": "SumUp Payments Account",
+            "ref": "MRC PID1354570",
+            "amount": 105.29,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
+          {
+            "uid": "e9deceb6-3f67-4259-965b-0b02553a581d",
+            "date": "2026-09-07",
+            "name": "TShirt Studio",
+            "ref": "TSHIRT STUDIO",
+            "amount": 115.9,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "e9c120b5-9047-460b-bd14-35b86850686b",
+            "date": "2026-09-07",
+            "name": "Sarah Lacey",
+            "ref": "Forge",
+            "amount": 50.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "e9c1543a-2d3e-4f1c-9ee6-5bca2421ab80",
+            "date": "2026-09-07",
+            "name": "Eilis Kearns",
+            "ref": "Forgesalary",
+            "amount": 1520.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
+          {
+            "uid": "e9c0cdfb-3d43-473c-bf3a-32c1e37d1d56",
+            "date": "2026-09-07",
+            "name": "Joanne Hall",
+            "ref": "Forgesalary",
+            "amount": 2500.0,
+            "direction": "OUT",
+            "category": "Staff",
+            "internal": false
+          },
           {
             "uid": "e990c81a-2182-4219-990d-9e006144bcca",
             "date": "2026-09-07",
@@ -23262,7 +23392,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 5711.23,
+    "cash_position": 1630.62,
     "available": 0.0,
     "reserves": [
       {
@@ -23283,7 +23413,7 @@
       }
     ],
     "earmarked": 10477.0,
-    "total_cash": 16188.23,
+    "total_cash": 12107.62,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23311,9 +23441,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 21051.85,
-    "cash_out_30": 23385.19,
-    "net_30": -2333.34,
+    "cash_in_30": 21157.14,
+    "cash_out_30": 27571.09,
+    "net_30": -6413.95,
     "as_of": "2026-09-07"
   },
   "gocardless": {
@@ -23660,6 +23790,13 @@
   "tshirt": {
     "configured": true,
     "orders": [
+      {
+        "date": "2026-09-07",
+        "order_no": "",
+        "total": "\u00a3116.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
       {
         "date": "2026-09-01",
         "order_no": "",
@@ -24333,8 +24470,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 96,
-    "total_spend": 9030.6,
+    "count": 97,
+    "total_spend": 9146.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": {
@@ -24573,7 +24710,7 @@
       "source": "Strongevity"
     },
     {
-      "name": "BAND Chest to overhead press with bad",
+      "name": "BAND Chest to overhead press",
       "part": "Chest",
       "video": "https://www.instagram.com/p/DZiJ50uiFkI/?hl=en",
       "source": "Strongevity"

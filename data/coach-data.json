@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:00:50.632362+00:00",
+  "generated_at": "2026-09-07T19:09:10.758568+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4001,13 +4001,13 @@
       {
         "user_id": "U0BMD4089EJ",
         "text": "Sorry as I know it's late on Sunday and your day off , but I wanted to give as much notice as possible. I'm going to need to cancel this weeks sessions.   I thi",
-        "hours": 18,
+        "hours": 23,
         "name": "Caroline Stinson"
       },
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Hello Coach Grace! Just got home. Will be working now. Thank you!",
-        "hours": 2,
+        "hours": 7,
         "name": "Julie Lapaz"
       }
     ],
@@ -6945,12 +6945,12 @@
             "count": 641
           },
           {
-            "day": "Friday",
-            "count": 468
+            "day": "Monday",
+            "count": 489
           },
           {
-            "day": "Monday",
-            "count": 463
+            "day": "Friday",
+            "count": 468
           },
           {
             "day": "Thursday",
@@ -6967,12 +6967,12 @@
             "count": 462
           },
           {
-            "day": "Monday",
-            "count": 463
-          },
-          {
             "day": "Friday",
             "count": 468
+          },
+          {
+            "day": "Monday",
+            "count": 489
           },
           {
             "day": "Wednesday",
@@ -6990,7 +6990,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 391
+            "count": 417
           },
           {
             "name": "Elevate",
@@ -7143,7 +7143,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3017
+        "total_attended": 3043
       },
       "last_30_days": {
         "top_days": [
@@ -7157,7 +7157,7 @@
           },
           {
             "day": "Monday",
-            "count": 159
+            "count": 185
           },
           {
             "day": "Thursday",
@@ -7183,7 +7183,7 @@
           },
           {
             "day": "Monday",
-            "count": 159
+            "count": 185
           },
           {
             "day": "Wednesday",
@@ -7200,12 +7200,12 @@
             "count": 194
           },
           {
-            "name": "Elevate",
-            "count": 139
+            "name": "Build: Lower",
+            "count": 141
           },
           {
-            "name": "Build: Lower",
-            "count": 115
+            "name": "Elevate",
+            "count": 139
           },
           {
             "name": "Strongevity",
@@ -7354,7 +7354,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1046
+        "total_attended": 1072
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. Launch a paid \"Open Studio\" block (30-45 mins) on Monday/Thursday afternoons between PT slots \u2014 market it as flexible strength work or technique practice for members who can't commit to scheduled classes, positioning it as a premium add-on rather than free access.\n\n2. Run a monthly \"Masterclass\" workshop series (60 mins) in the quietest midweek gaps \u2014 e.g. \"Deadlift Technique Deep Dive\" or \"Movement Mobility Reset\" \u2014 charge \u00a38-12 per person and invite members from underattended classes (Capacity, Engine, Barbelle) to experience expert coaching in a low-pressure format.\n\n**To lift quieter classes:**\n\n3. Offer a \"Try 3\" incentive: members who've never attended Engine, Capacity, or Barbelle get a free first class + \u00a35 off if they return within 14 days \u2014 target this at Build: Upper regulars (your biggest cohort) since strength-focused members may be skipping these without knowing what they offer.",
       "capacity": [
@@ -7824,13 +7824,6 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 4772999,
-        "name": "Kirsty Dunn",
-        "membership": "Empower",
-        "days_absent": 46,
-        "last_seen": "2026-07-23"
-      },
-      {
         "id": 11212636,
         "name": "Lesley Greehy",
         "membership": "4 PT Sessions",
@@ -7864,6 +7857,13 @@
         "membership": "Empower",
         "days_absent": 11,
         "last_seen": "2026-08-27"
+      },
+      {
+        "id": 9196376,
+        "name": "Nerys Young",
+        "membership": "Empower",
+        "days_absent": 48,
+        "last_seen": "2026-07-21"
       }
     ],
     "celebrations": {
@@ -8044,7 +8044,14 @@
       ],
       "upcoming": []
     },
-    "lead_bookings": [],
+    "lead_bookings": [
+      {
+        "name": "Breanna Gaston",
+        "type": "Meet a Coach",
+        "date": "2026-09-15",
+        "upcoming": true
+      }
+    ],
     "member_list": [
       {
         "id": 10803724,
@@ -9427,6 +9434,13 @@
     "configured": true,
     "orders": [
       {
+        "date": "2026-09-07",
+        "order_no": "",
+        "total": "\u00a3116.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
+      {
         "date": "2026-09-01",
         "order_no": "",
         "total": "\u00a356.00",
@@ -10099,8 +10113,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 96,
-    "total_spend": 9030.6,
+    "count": 97,
+    "total_spend": 9146.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
@@ -10279,7 +10293,7 @@
       "source": "Strongevity"
     },
     {
-      "name": "BAND Chest to overhead press with bad",
+      "name": "BAND Chest to overhead press",
       "part": "Chest",
       "video": "https://www.instagram.com/p/DZiJ50uiFkI/?hl=en",
       "source": "Strongevity"
@@ -13595,12 +13609,6 @@
         "subject": "Invitation: Programming + coffee @ Thu 3 Sept 2026 3pm - 4pm (BST) (Coach JoJo)",
         "snippet": "Programming + coffee You have been invited by Coach Grace to attend an event named Programming + coffee on Thursday 3 Sept 2026 \u22c5 3pm \u2013 4pm (United Kingdom Time). When Thursday 3 S",
         "id": "1a063d9d6badbcab"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Updated invitation: Q4 Programming Meet @ Thu 10 Sept 2026 2pm - 3:45pm (BST) (Coach JoJo)",
-        "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 10 Sept 2026 \u22c5 2pm \u2013 3:45pm (United Kingdom Time). This event has ",
-        "id": "1a0628662e9c4928"
       }
     ],
     "urgent_count": 8
