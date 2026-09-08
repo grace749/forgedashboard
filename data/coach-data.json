@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T11:10:44.402892+00:00",
+  "generated_at": "2026-09-08T14:00:52.082113+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4001,20 +4001,26 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Hello Coach Grace! Just got home. Will be working now. Thank you!",
-        "hours": 23,
+        "hours": 26,
         "name": "Julie Lapaz"
       },
       {
         "user_id": "U09HG60QR7C",
         "text": "Boom ",
-        "hours": 14,
+        "hours": 17,
         "name": "Melissa Traynor"
       },
       {
         "user_id": "U0BMD4089EJ",
         "text": "Please don't apologise, you did exactly the right thing letting me know, and your health comes first, always. I know you spoke to JoJo last night, and we are he",
-        "hours": 3,
+        "hours": 6,
         "name": "Caroline Stinson"
+      },
+      {
+        "user_id": "U08B2C3KK52",
+        "text": "Absolutely! I'll do this now. Keep in touch with any updates. Health always first ",
+        "hours": 2,
+        "name": "Hilary McDowell"
       }
     ],
     "mentions": [],
@@ -4183,7 +4189,8 @@
       "janine patton": "U0BQH0N22DP",
       "tiarna o\u2019neill": "U0BS3U1JSSX",
       "babs": "U0BSM7JFU31",
-      "kathryn alleyne": "U0C0X302V2L"
+      "kathryn alleyne": "U0C0X302V2L",
+      "erin honeyford": "U0C150T7ZPS"
     }
   },
   "staff": {
@@ -4696,7 +4703,7 @@
     }
   },
   "teamup": {
-    "total_members": 166,
+    "total_members": 167,
     "recurring": 113,
     "recurring_members": [
       {
@@ -5152,7 +5159,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 12,
+    "trial": 13,
     "trial_members": [
       {
         "id": 13748936,
@@ -5169,6 +5176,10 @@
       {
         "id": 13588511,
         "name": "Elizabeth Greenaway"
+      },
+      {
+        "id": 13862590,
+        "name": "Erin Honeyford"
       },
       {
         "id": 13840212,
@@ -5203,7 +5214,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 13,
+    "new_this_month": 14,
     "cancellations_this_month": 8,
     "leaving_members": [
       {
@@ -6010,7 +6021,7 @@
       }
     ],
     "cancelled_ytd": 44,
-    "churn_rate": 5.1,
+    "churn_rate": 5.0,
     "avg_member_price": 137.81,
     "monthly_recurring_revenue": 15572.0,
     "avg_tenure_months": 8.5,
@@ -6580,6 +6591,64 @@
         ]
       },
       {
+        "name": "6 Week Jumpstart",
+        "count": 13,
+        "members": [
+          {
+            "id": 13748936,
+            "name": "Babs Roeshaw"
+          },
+          {
+            "id": 13608450,
+            "name": "Caroline Stinson"
+          },
+          {
+            "id": 13630157,
+            "name": "Claire Martin"
+          },
+          {
+            "id": 13588511,
+            "name": "Elizabeth Greenaway"
+          },
+          {
+            "id": 13862590,
+            "name": "Erin Honeyford"
+          },
+          {
+            "id": 13840212,
+            "name": "Kathryn Alleyne"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greet"
+          },
+          {
+            "id": 13649468,
+            "name": "Lorraine Kelly"
+          },
+          {
+            "id": 13542263,
+            "name": "Lynda Wright"
+          },
+          {
+            "id": 13667307,
+            "name": "Megan Morrison"
+          },
+          {
+            "id": 13602153,
+            "name": "Sharon McAuley"
+          },
+          {
+            "id": 13642081,
+            "name": "Sheena Mulholland"
+          },
+          {
+            "id": 13677712,
+            "name": "VIVIAN MORRISON"
+          }
+        ]
+      },
+      {
         "name": "4 PT Sessions",
         "count": 12,
         "members": [
@@ -6630,60 +6699,6 @@
           {
             "id": 13248943,
             "name": "Yasmine Douglas"
-          }
-        ]
-      },
-      {
-        "name": "6 Week Jumpstart",
-        "count": 12,
-        "members": [
-          {
-            "id": 13748936,
-            "name": "Babs Roeshaw"
-          },
-          {
-            "id": 13608450,
-            "name": "Caroline Stinson"
-          },
-          {
-            "id": 13630157,
-            "name": "Claire Martin"
-          },
-          {
-            "id": 13588511,
-            "name": "Elizabeth Greenaway"
-          },
-          {
-            "id": 13840212,
-            "name": "Kathryn Alleyne"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greet"
-          },
-          {
-            "id": 13649468,
-            "name": "Lorraine Kelly"
-          },
-          {
-            "id": 13542263,
-            "name": "Lynda Wright"
-          },
-          {
-            "id": 13667307,
-            "name": "Megan Morrison"
-          },
-          {
-            "id": 13602153,
-            "name": "Sharon McAuley"
-          },
-          {
-            "id": 13642081,
-            "name": "Sheena Mulholland"
-          },
-          {
-            "id": 13677712,
-            "name": "VIVIAN MORRISON"
           }
         ]
       },
@@ -7669,7 +7684,7 @@
       },
       {
         "month": "2026-09",
-        "active": 165,
+        "active": 166,
         "churn": 10.8,
         "by_type": {
           "Empower": 72,
@@ -7683,7 +7698,7 @@
           "Strongevity": 4,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 12,
+          "6 Week Jumpstart": 13,
           "8 Session Block": 1,
           "Strongevity Membership": 15,
           "1:2 PT 4 Sessions": 1
@@ -9412,6 +9427,13 @@
     "configured": true,
     "orders": [
       {
+        "date": "2026-09-08",
+        "order_no": "",
+        "total": "\u00a3312.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
+      {
         "date": "2026-09-07",
         "order_no": "",
         "total": "\u00a3116.00",
@@ -10091,8 +10113,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 97,
-    "total_spend": 9146.6,
+    "count": 98,
+    "total_spend": 9458.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
@@ -13534,6 +13556,12 @@
     "urgent": [
       {
         "from": "Coach Grace",
+        "subject": "Accepted: JoJo Senegal @ Mon 19 Apr 2pm - Fri 30 Apr 2027 3pm (BST) (Coach JoJo)",
+        "snippet": "JoJo Senegal Coach Grace has accepted this invitation. When Monday 19 Apr \u22c5 2pm \u2013 Friday 30 Apr 2027 \u22c5 3pm (United Kingdom Time) Guests Coach JoJo - organiser eiliskearns13@gmail.com Coach Grace View",
+        "id": "1a0810ca65daf0cb"
+      },
+      {
+        "from": "Coach Grace",
         "subject": "Updated invitation: Q4 Programming Meet @ Thu 10 Sept 2026 1pm - 3pm (BST) (Coach JoJo)",
         "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 10 Sept 2026 \u22c5 1pm \u2013 3pm (United Kingdom Time). This event has been updated Changed:",
         "id": "1a07c0c446eff547"
@@ -13570,6 +13598,6 @@
       }
     ],
     "important": [],
-    "urgent_count": 6
+    "urgent_count": 7
   }
 }
