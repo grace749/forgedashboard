@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T11:14:32.920016+00:00",
+  "generated_at": "2026-09-09T14:00:51.549705+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-09-09",
     "event_count": 12,
-    "urgent_count": 2,
+    "urgent_count": 1,
     "enquiry_count": 1,
     "calendar": [
       {
@@ -25,16 +25,6 @@
         "prep": "Review Q3 test protocols; prepare score sheets and equipment for retest week."
       },
       {
-        "title": "Padel social",
-        "time": "12:00pm",
-        "start_raw": "2026-09-09T12:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": ""
-      },
-      {
         "title": "Eilis Jo meet up",
         "time": "3:30pm",
         "start_raw": "2026-09-09T15:30:00+01:00",
@@ -45,7 +35,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm attendees; arrange padel court booking and any refreshments needed."
+        "prep": ""
       },
       {
         "title": "Collect Dan bfast",
@@ -55,12 +45,22 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm attendees; arrange padel court booking and any refreshments needed."
       },
       {
         "title": "Pay Dan House Bills",
         "time": "all day",
         "start_raw": "2026-09-10",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
+        "title": "Health centre",
+        "time": "8:30am",
+        "start_raw": "2026-09-10T08:30:00+01:00",
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
@@ -114,8 +114,8 @@
       },
       {
         "title": "Dude x Meet & Lunch",
-        "time": "10:30am",
-        "start_raw": "2026-09-11T10:30:00+01:00",
+        "time": "11:00am",
+        "start_raw": "2026-09-11T11:00:00+01:00",
         "day": "Friday",
         "attendees": [
           "sarah@nourishandnurtu.re"
@@ -151,23 +151,14 @@
     ],
     "urgent": [
       {
-        "from": "~ Accelerator",
-        "from_raw": "\"~ Accelerator\" <Accelerator@ulsterbank.com>",
-        "subject": "The NatWest Accelerator app is getting a glow-up next week",
-        "snippet": "\u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f",
-        "id": "1a08556993e6fc69",
-        "thread_id": "1a08556993e6fc69",
+        "from": "Sarah Lacey",
+        "from_raw": "Sarah Lacey <sarah@nourishandnurtu.re>",
+        "subject": "NN CRM LINK",
+        "snippet": "https://docs.google.com/spreadsheets/d/1Vh8QU_1W0jiPkS3IRxLT9g7bzzbfA5Oy5toE0mnBiN0/edit?gid=755523471#gid=755523471 facebook instagram Sarah Lacey CBT | Nutrition| Menopause Nutritionist of the year",
+        "id": "1a0861a7832ebf57",
+        "thread_id": "1a0861a7832ebf57",
         "msg_count": 1,
-        "draft_id": "r-1073387478921409091"
-      },
-      {
-        "from": "Mary Steven",
-        "from_raw": "Mary Steven <marysteven94@gmail.com>",
-        "subject": "Re: New recurring reservation: Strongevity: Tuesday 11:30 - 12:30 at Forge Female Fitness",
-        "snippet": "Super, thanks Grace On Wed, 2 Sept 2026, 13:31 Coach Grace, &lt;grace@theforge.pt&gt; wrote: Hi Mary, Absolutely! I&#39;ve purchased it on your account and booked you in. You&#39;re all set and we look",
-        "id": "1a06233f4524f744",
-        "thread_id": "1a011d9c64ca6cb3",
-        "msg_count": 6
+        "draft_id": "r280851720143597896"
       }
     ],
     "important": [],
@@ -306,10 +297,28 @@
   },
   "ghl": [
     {
+      "name": "Irene Norris",
+      "channel": "Phone",
+      "message": "\ud83d\ude2d",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "jn3eJeTzCgbcwOmXpap6",
+      "contact_id": "aj9apAxOoT6ignQjdeb1"
+    },
+    {
+      "name": "Manage AI",
+      "channel": "Phone",
+      "message": "\u26a0\ufe0fMeta Business Suite to:\r\nYour page has been notified of a possible violation of our policies:\r\nThis may involve copyrighted materials, misleading claims about products, or content that does not comp",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "7gKFPnNKYnZn1N2ETf1d",
+      "contact_id": "sCHmQ9CxRBDCmFK7YooO"
+    },
+    {
       "name": "Mia Evelyn",
       "channel": "Phone",
       "message": "Hello! \n\nI hope your day is going well so far\ud83d\ude0a\n\nI was speaking to a lady Louise Feeney who attends your gym and I\u2019d love to join if possible! I listened to Grace speak at an event a few months ago at ",
-      "age": "0h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "oGpjTV7kKXjUnWJL6gPF",
       "contact_id": "G6viDiDP98Ex5rkVdwTb"
@@ -318,7 +327,7 @@
       "name": "Meta Chat'Al",
       "channel": "Phone",
       "message": "\u26a0\ufe0fMeta Business Suite to:\r\nYour page has been notified of a possible violation of our policies:\r\nThis may involve copyrighted materials, misleading claims about products, or content that does not comp",
-      "age": "1h ago",
+      "age": "4h ago",
       "unread": 1,
       "conv_id": "HUhApVxsDT861krFfAVa",
       "contact_id": "dtjNAkAOfDEm2cj4kdxA"
@@ -327,7 +336,7 @@
       "name": "Heather Murdock",
       "channel": "Phone",
       "message": "Thank u",
-      "age": "2h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "vecpQ6i5LHcUFegsruGV",
       "contact_id": "Z0Fwamx75Rm5JBu2ryUJ"
@@ -336,7 +345,7 @@
       "name": "Annie O\u2019Connor",
       "channel": "Phone",
       "message": "https://www.facebook.com/share/v/1BwoSBgnke/?mibextid=wwXIfr",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "l9NUyFBcbheBy6KJTYcV",
       "contact_id": "2nvo1wD4lVQMD1wF2cgQ"
@@ -345,7 +354,7 @@
       "name": "\ud835\udc00\ud835\udc08 \ud835\udc02\ud835\udc07\ud835\udc00\ud835\udc13",
       "channel": "Phone",
       "message": "https://lookaside.fbsbx.com/ig_messaging_cdn/?asset_id=1730922331465682&signature=Ab2avcWX2AnfHyrnqa3alkxIWsElH8MaSSyVo_R-HYtiepRnI-Ub63vUov-qm31ShEj_6TBUS2hLy04GeF6lltmVdrJzgVmBwg1Phlav3ao5ryjKHTpx90",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 2,
       "conv_id": "HWy3R8yx5azOCxqCuaVR",
       "contact_id": "Jg6D7SZ1psx6Si0cMQ0w"
@@ -354,7 +363,7 @@
       "name": "everymomentanopportunity",
       "channel": "Phone",
       "message": "\ud83d\udd25",
-      "age": "3h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "bCO1UnwwejQ3wgV2B5KB",
       "contact_id": "VjwHTdCoNMXKrbzPdSx0"
@@ -363,7 +372,7 @@
       "name": "FIT Pop @ Fuel Ignite Triumph",
       "channel": "Phone",
       "message": "Hey Forge team! \ud83d\udc4b\n\nWe\u2019re the founders of FIT Pops \ud83c\udf6d \u2014 a tasty, convenient boost made for active lifestyles, and we\u2019d love to see them in Forge!\n\nWe absolutely love your female-only gym concept and the",
-      "age": "16h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "OYb5Ml6GMmtraKOwRLvz",
       "contact_id": "y9HSnpJGvSABzoQwTh5j"
@@ -372,7 +381,7 @@
       "name": "Kristina Nikolova",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "17h ago",
+      "age": "19h ago",
       "unread": 4,
       "conv_id": "9HVsUbAXsN5wTe2Vy3T9",
       "contact_id": "TCFriQHOPUlaOv3cMoyY"
@@ -381,19 +390,10 @@
       "name": "Lisa Rankin",
       "channel": "Phone",
       "message": "Hello Grace. Thankyou for the kind message. I really loved all my time at Forge. It was amazing. I learned alot. Coaching was brilliant and so was the atmosphere. Now i am back to work. Schedule is ju",
-      "age": "17h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "couXwtleKh3AO9hKq51b",
       "contact_id": "j42uhQa1AxJQ3g8VOFmX"
-    },
-    {
-      "name": "Debs",
-      "channel": "Phone",
-      "message": "https://www.instagram.com/reel/DcgokXZsE9-/",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "BjbZbRY393SNDSLgL90X",
-      "contact_id": "X7XKFJ3NoYG9rDANdXB3"
     }
   ],
   "jumpstart": {
@@ -5042,33 +5042,27 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Hello Coach Grace! Just got home. Will be working now. Thank you!",
-        "hours": 47,
-        "name": "Julie Lapaz"
-      },
-      {
         "user_id": "U09HG60QR7C",
         "text": "Boom ",
-        "hours": 38,
+        "hours": 41,
         "name": "Melissa Traynor"
       },
       {
         "user_id": "U0BMD4089EJ",
         "text": "Please don't apologise, you did exactly the right thing letting me know, and your health comes first, always. I know you spoke to JoJo last night, and we are he",
-        "hours": 27,
+        "hours": 30,
         "name": "Caroline Stinson"
       },
       {
         "user_id": "U08B2C3KK52",
         "text": "Absolutely! I'll do this now. Keep in touch with any updates. Health always first ",
-        "hours": 24,
+        "hours": 27,
         "name": "Hilary McDowell"
       },
       {
         "user_id": "U0AEX0KL5FY",
         "text": "Of course! That's what we\u2019re here for. Looking forward to seeing mummy beast back in xx ",
-        "hours": 19,
+        "hours": 22,
         "name": "Margaret Hughes"
       }
     ],
@@ -22707,15 +22701,15 @@
       },
       {
         "month": "2026-09",
-        "revenue": 12852.59,
+        "revenue": 13321.49,
         "expenses": 12406.0,
-        "profit": 446.59,
-        "profit_pct": 3.5,
+        "profit": 915.49,
+        "profit_pct": 6.9,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 12852.59
+              "amount": 13321.49
             }
           ],
           "out": [
@@ -22774,6 +22768,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "f4530c69-c46a-4420-bedb-8f98980a72a0",
+            "date": "2026-09-09",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-CQ5BZ",
+            "amount": 468.9,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
           {
             "uid": "f362dbb7-a13e-49b7-b0a0-4e7716cf9789",
             "date": "2026-09-09",
@@ -23448,7 +23452,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 680.01,
+    "cash_position": 1148.91,
     "available": 0.0,
     "reserves": [
       {
@@ -23469,7 +23473,7 @@
       }
     ],
     "earmarked": 11477.0,
-    "total_cash": 12157.01,
+    "total_cash": 12625.91,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23497,9 +23501,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 25139.09,
-    "cash_out_30": 30767.26,
-    "net_30": -5628.17,
+    "cash_in_30": 25341.22,
+    "cash_out_30": 28517.26,
+    "net_30": -3176.04,
     "as_of": "2026-09-09"
   },
   "gocardless": {
@@ -23690,129 +23694,7 @@
     ],
     "failed_count": 3
   },
-  "growth_sprint": {
-    "kpis": [
-      {
-        "Action": "INTERNAL: Create clear service menu (for coaches and for members) \u2014 what we offer, what it costs, what's included.\n",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "x",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Revisit systemize automations for 6 week trial enquiries",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Decrease costs by 10%",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Update Monthly finance KPI's",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Start Financial Forecasting",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Pick 3 repetitive tasks and build an AI automation",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      },
-      {
-        "Action": "Start Cyber security for forge website",
-        "Owner": "Grace",
-        "Deadline": "July 31st",
-        "Done": "",
-        "advice": "# Service Menu Execution \u2014 The Forge\n\n**1. Start with your highest-revenue services first**\nDon't map everything. Interview your top 3-5 coaches about what they actually sell most (personal training packages, group classes, nutrition add-ons, challenges). Price these first, get them right. Everything else follows. You'll move faster and capture the money that matters.\n\n**2. Create two separate documents \u2014 and be ruthless about what coaches see**\nCoaches need: service name, duration, price, what's included, upsell opportunities, commission structure. Members need: service name, benefit, price, how to book, what to expect. Don't dump your full pricing/margin strategy on members. Coaches need the business logic; members need the outcome.\n\n**3. Run a 30-minute \"pricing reality check\" with your top-performing coach**\nShow her your draft menu. She'll immediately spot if pricing is too low (leaving money on the table) or positioned confusingly (loses sales). One person's gut check beats weeks of guessing. Also shows coaches you're including them in decisions \u2014 builds buy-in.\n\n**4. Test the menu live before finalizing**\nUse it with 10 new inquiries this week. Track which services people ask about, which confuse them, which they push back on price-wise. One real conversation beats assumptions. Update based on actual pushback, then lock it.\n\n**5. Build a simple \"service decision tree\" for coaches**\nWhen a member walks in, what questions do they ask first? Map the conversation flow on one page so coaches recommend consistently. This prevents undercutting and ensures members get to the right offer.\n\nDone in 2 weeks max. What's your current best-"
-      }
-    ]
-  },
+  "growth_sprint": null,
   "events": {
     "events": [
       {
