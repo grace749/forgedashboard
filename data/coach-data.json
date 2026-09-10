@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T05:00:46.345476+00:00",
+  "generated_at": "2026-09-10T11:11:08.484109+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4004,22 +4004,22 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BMD4089EJ",
-        "text": "Please don't apologise, you did exactly the right thing letting me know, and your health comes first, always. I know you spoke to JoJo last night, and we are he",
-        "hours": 45,
-        "name": "Caroline Stinson"
-      },
-      {
         "user_id": "U08B2C3KK52",
         "text": "Absolutely! I'll do this now. Keep in touch with any updates. Health always first ",
-        "hours": 41,
+        "hours": 48,
         "name": "Hilary McDowell"
       },
       {
         "user_id": "U0AEX0KL5FY",
         "text": "Of course! That's what we\u2019re here for. Looking forward to seeing mummy beast back in xx ",
-        "hours": 37,
+        "hours": 43,
         "name": "Margaret Hughes"
+      },
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "<@U0BLXE1KQQH> Finally got this sorted with payoneer, so shouldn't happen again on the next invoice :slightly_smiling_face:",
+        "hours": 3,
+        "name": "Julie Lapaz"
       }
     ],
     "mentions": [],
@@ -4451,6 +4451,16 @@
         "project": null,
         "due_on": "2026-09-04",
         "overdue": true,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
+        "gid": "1218352668838384",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1218352668838384",
+        "project": null,
+        "due_on": "2026-09-11",
+        "overdue": false,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -5160,7 +5170,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 13,
+    "trial": 12,
     "trial_members": [
       {
         "id": 13748936,
@@ -5193,10 +5203,6 @@
       {
         "id": 13649468,
         "name": "Lorraine Kelly"
-      },
-      {
-        "id": 13542263,
-        "name": "Lynda Wright"
       },
       {
         "id": 13667307,
@@ -6596,64 +6602,6 @@
         ]
       },
       {
-        "name": "6 Week Jumpstart",
-        "count": 13,
-        "members": [
-          {
-            "id": 13748936,
-            "name": "Babs Roeshaw"
-          },
-          {
-            "id": 13608450,
-            "name": "Caroline Stinson"
-          },
-          {
-            "id": 13630157,
-            "name": "Claire Martin"
-          },
-          {
-            "id": 13588511,
-            "name": "Elizabeth Greenaway"
-          },
-          {
-            "id": 13862590,
-            "name": "Erin Honeyford"
-          },
-          {
-            "id": 13840212,
-            "name": "Kathryn Alleyne"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greet"
-          },
-          {
-            "id": 13649468,
-            "name": "Lorraine Kelly"
-          },
-          {
-            "id": 13542263,
-            "name": "Lynda Wright"
-          },
-          {
-            "id": 13667307,
-            "name": "Megan Morrison"
-          },
-          {
-            "id": 13602153,
-            "name": "Sharon McAuley"
-          },
-          {
-            "id": 13642081,
-            "name": "Sheena Mulholland"
-          },
-          {
-            "id": 13677712,
-            "name": "VIVIAN MORRISON"
-          }
-        ]
-      },
-      {
         "name": "4 PT Sessions",
         "count": 12,
         "members": [
@@ -6704,6 +6652,60 @@
           {
             "id": 13248943,
             "name": "Yasmine Douglas"
+          }
+        ]
+      },
+      {
+        "name": "6 Week Jumpstart",
+        "count": 12,
+        "members": [
+          {
+            "id": 13748936,
+            "name": "Babs Roeshaw"
+          },
+          {
+            "id": 13608450,
+            "name": "Caroline Stinson"
+          },
+          {
+            "id": 13630157,
+            "name": "Claire Martin"
+          },
+          {
+            "id": 13588511,
+            "name": "Elizabeth Greenaway"
+          },
+          {
+            "id": 13862590,
+            "name": "Erin Honeyford"
+          },
+          {
+            "id": 13840212,
+            "name": "Kathryn Alleyne"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greet"
+          },
+          {
+            "id": 13649468,
+            "name": "Lorraine Kelly"
+          },
+          {
+            "id": 13667307,
+            "name": "Megan Morrison"
+          },
+          {
+            "id": 13602153,
+            "name": "Sharon McAuley"
+          },
+          {
+            "id": 13642081,
+            "name": "Sheena Mulholland"
+          },
+          {
+            "id": 13677712,
+            "name": "VIVIAN MORRISON"
           }
         ]
       },
@@ -6979,7 +6981,7 @@
           },
           {
             "day": "Thursday",
-            "count": 423
+            "count": 442
           }
         ],
         "bottom_days": [
@@ -6989,7 +6991,7 @@
           },
           {
             "day": "Thursday",
-            "count": 423
+            "count": 442
           },
           {
             "day": "Friday",
@@ -7011,7 +7013,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 481
+            "count": 491
           },
           {
             "name": "Build: Lower",
@@ -7019,7 +7021,7 @@
           },
           {
             "name": "Elevate",
-            "count": 357
+            "count": 366
           },
           {
             "name": "Circuits",
@@ -7141,15 +7143,6 @@
             "label": "Wednesday 7pm Plate"
           },
           {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 87,
-            "sessions": 11,
-            "avg": 7.9,
-            "label": "Thursday 10am Elevate"
-          },
-          {
             "day": "Wednesday",
             "time": "5pm",
             "name": "Build: Full Body",
@@ -7157,6 +7150,15 @@
             "sessions": 8,
             "avg": 8.0,
             "label": "Wednesday 5pm Build: Full Body"
+          },
+          {
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 96,
+            "sessions": 12,
+            "avg": 8.0,
+            "label": "Thursday 10am Elevate"
           },
           {
             "day": "Wednesday",
@@ -7168,7 +7170,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 3010
+        "total_attended": 3029
       },
       "last_30_days": {
         "top_days": [
@@ -7182,7 +7184,7 @@
           },
           {
             "day": "Thursday",
-            "count": 145
+            "count": 164
           },
           {
             "day": "Monday",
@@ -7208,7 +7210,7 @@
           },
           {
             "day": "Thursday",
-            "count": 145
+            "count": 164
           },
           {
             "day": "Wednesday",
@@ -7222,7 +7224,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 194
+            "count": 204
           },
           {
             "name": "Strongevity",
@@ -7230,7 +7232,7 @@
           },
           {
             "name": "Elevate",
-            "count": 111
+            "count": 120
           },
           {
             "name": "Build: Lower",
@@ -7343,15 +7345,6 @@
             "label": "Thursday 8pm Barbelle"
           },
           {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 30,
-            "sessions": 4,
-            "avg": 7.5,
-            "label": "Thursday 10am Elevate"
-          },
-          {
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
@@ -7359,6 +7352,15 @@
             "sessions": 3,
             "avg": 7.7,
             "label": "Saturday 9am Elevate"
+          },
+          {
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 39,
+            "sessions": 5,
+            "avg": 7.8,
+            "label": "Thursday 10am Elevate"
           },
           {
             "day": "Friday",
@@ -7379,7 +7381,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1086
+        "total_attended": 1105
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. Add a paid \"Open Studio\" block (30\u201345 min) on Thursday and Friday afternoons between PT slots \u2014 members can drop in for self-directed lifting, stretching, or form practice at \u00a33\u20135 per session to monetize dead time without needing instructor prep.\n\n2. Run a monthly \"Mobility + Strength\" workshop (60 min) Saturday mornings before the quiet period starts, pairing a Mobility class member with a Build class member to cross-pollinate audiences and justify higher studio occupancy.\n\n**For the quieter classes:**\n\n3. Move **Engine and Capacity** to Tuesday or Wednesday mornings at 6:30am (pre-work slot) \u2014 they're HIIT/conditioning classes that suit commuters, and you have proven demand for early weekdays; test 2 weeks with a targeted email to Build class regulars who might want conditioning variation.\n\n4. Offer **Barbelle** members a \"bring a friend free\" week and position it as a skill-builder class for Build members wanting barbell technique \u2014 the 19 last-month attendance suggests positioning problem more than format problem.\n\n5. Shift **Mobility** to immediately *after* a high-traffic Build class (stack it) so members can stay post-workout; alternatively, run it Saturday mornings as a recovery slot for Thursday/",
       "capacity": [
@@ -7651,7 +7653,7 @@
       },
       {
         "month": "2026-07",
-        "active": 137,
+        "active": 136,
         "churn": 8.1,
         "by_type": {
           "Empower": 66,
@@ -7665,7 +7667,7 @@
           "Strongevity": 1,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 3,
+          "6 Week Jumpstart": 2,
           "1:2 PT 4 Sessions": 1,
           "New You Next Level": 1,
           "Emerge": 1
@@ -7673,8 +7675,8 @@
       },
       {
         "month": "2026-08",
-        "active": 164,
-        "churn": 5.5,
+        "active": 163,
+        "churn": 5.6,
         "by_type": {
           "Empower": 71,
           "8 PT Sessions": 3,
@@ -7687,7 +7689,7 @@
           "Strongevity": 3,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 10,
+          "6 Week Jumpstart": 9,
           "8 Session Block": 1,
           "Strongevity Membership": 13,
           "1:2 PT 4 Sessions": 1
@@ -7696,7 +7698,7 @@
       {
         "month": "2026-09",
         "active": 167,
-        "churn": 10.2,
+        "churn": 10.3,
         "by_type": {
           "Empower": 73,
           "8 PT Sessions": 3,
@@ -7709,7 +7711,7 @@
           "Strongevity": 3,
           "4 Class Pass": 1,
           "Well75": 10,
-          "6 Week Jumpstart": 13,
+          "6 Week Jumpstart": 12,
           "8 Session Block": 1,
           "Strongevity Membership": 15,
           "8 Class Block": 1,
@@ -7845,13 +7847,6 @@
         "last_seen": "2026-08-06"
       },
       {
-        "id": 9198838,
-        "name": "Marlene Hayes",
-        "membership": "Empower",
-        "days_absent": 14,
-        "last_seen": "2026-08-27"
-      },
-      {
         "id": 9196376,
         "name": "Nerys Young",
         "membership": "Empower",
@@ -7892,6 +7887,13 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 21,
         "last_seen": "2026-08-20"
+      },
+      {
+        "id": 13449102,
+        "name": "Shauna Lewis",
+        "membership": "4 PT Sessions",
+        "days_absent": 15,
+        "last_seen": "2026-08-26"
       }
     ],
     "celebrations": {
@@ -8919,7 +8921,7 @@
         "id": 13542263,
         "name": "Lynda Wright",
         "email": "wright2lynda@gmail.com",
-        "join_date": "2026-07-25",
+        "join_date": "2026-09-08",
         "membership": "Empower",
         "class_count": 15,
         "last_momentum": null
