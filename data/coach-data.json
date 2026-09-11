@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T14:00:51.410765+00:00",
+  "generated_at": "2026-09-11T18:32:14.127816+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1286,6 +1286,30 @@
         "overdue": false
       },
       {
+        "name": "07974721205",
+        "last_scan": "2026-09-11",
+        "scan_count": 1,
+        "weight": 166.3,
+        "smm": 55.8,
+        "pbf": 37.5,
+        "bmi": 26.9,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-23",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Catherine Finney",
         "last_scan": "2026-09-11",
         "scan_count": 2,
@@ -1301,6 +1325,30 @@
         "weight_change": -7.5,
         "smm_change": -3.1,
         "pbf_change": 0.8,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-23",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Jennifer Reid",
+        "last_scan": "2026-09-11",
+        "scan_count": 2,
+        "weight": 219.2,
+        "smm": 65.0,
+        "pbf": 46.6,
+        "bmi": 36.5,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": 0.0,
+        "smm_change": 1.1,
+        "pbf_change": -0.8,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -2613,30 +2661,6 @@
         "smm": 54.5,
         "pbf": 26.2,
         "bmi": 21.1,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-09-14",
-        "days_to_due": 3,
-        "overdue": false
-      },
-      {
-        "name": "Jennifer Reid",
-        "last_scan": "2026-08-03",
-        "scan_count": 1,
-        "weight": 219.2,
-        "smm": 63.9,
-        "pbf": 47.4,
-        "bmi": 36.5,
         "tbw": null,
         "protein": null,
         "mineral": null,
@@ -3998,7 +4022,7 @@
         "overdue": true
       }
     ],
-    "total": 114,
+    "total": 115,
     "configured": true
   },
   "slack": {
@@ -4006,16 +4030,16 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0ALM0N736X",
-        "text": "Test week\nAssault bike 14 cals\nGrace 6kgs 1 min 42 secs\nAlt step up 5 kgs 40 reps\n500m 2 mins 38 secs\nLat pull down 65kgs\nFarmers hold 20kgs 1 min 30 secs\nSeate",
-        "hours": 20,
-        "name": "Jackie Elliott"
-      },
-      {
         "user_id": "U0BLXE1KQQH",
         "text": "Good morning, Coach Grace! Payment received. Sorry, I was not able to work yesterday. Will work everything that is pedning today. Happy Friday!",
-        "hours": 8,
+        "hours": 13,
         "name": "Julie Lapaz"
+      },
+      {
+        "user_id": "U0ALM0N736X",
+        "text": "Oops 24 cals on bike ",
+        "hours": 1,
+        "name": "Jackie Elliott"
       }
     ],
     "mentions": [],
@@ -6963,12 +6987,12 @@
             "count": 489
           },
           {
-            "day": "Thursday",
-            "count": 462
+            "day": "Friday",
+            "count": 469
           },
           {
-            "day": "Friday",
-            "count": 445
+            "day": "Thursday",
+            "count": 462
           }
         ],
         "bottom_days": [
@@ -6977,12 +7001,12 @@
             "count": 270
           },
           {
-            "day": "Friday",
-            "count": 445
-          },
-          {
             "day": "Thursday",
             "count": 462
+          },
+          {
+            "day": "Friday",
+            "count": 469
           },
           {
             "day": "Monday",
@@ -7012,11 +7036,11 @@
           },
           {
             "name": "Circuits",
-            "count": 226
+            "count": 238
           },
           {
             "name": "Mobility",
-            "count": 210
+            "count": 222
           }
         ],
         "bottom_classes": [
@@ -7042,7 +7066,7 @@
           },
           {
             "name": "Mobility",
-            "count": 210
+            "count": 222
           }
         ],
         "top_slots": [
@@ -7083,6 +7107,15 @@
             "label": "Monday 8pm Build: Lower"
           },
           {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 112,
+            "sessions": 11,
+            "avg": 10.2,
+            "label": "Friday 7pm Mobility"
+          },
+          {
             "day": "Saturday",
             "time": "8am",
             "name": "Elevate",
@@ -7090,15 +7123,6 @@
             "sessions": 10,
             "avg": 10.2,
             "label": "Saturday 8am Elevate"
-          },
-          {
-            "day": "Tuesday",
-            "time": "7am",
-            "name": "Build: Upper",
-            "count": 121,
-            "sessions": 12,
-            "avg": 10.1,
-            "label": "Tuesday 7am Build: Upper"
           }
         ],
         "bottom_slots": [
@@ -7157,7 +7181,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 3026
+        "total_attended": 3050
       },
       "last_30_days": {
         "top_days": [
@@ -7175,7 +7199,7 @@
           },
           {
             "day": "Friday",
-            "count": 146
+            "count": 170
           },
           {
             "day": "Monday",
@@ -7193,7 +7217,7 @@
           },
           {
             "day": "Friday",
-            "count": 146
+            "count": 170
           },
           {
             "day": "Thursday",
@@ -7227,7 +7251,7 @@
           },
           {
             "name": "Circuits",
-            "count": 81
+            "count": 93
           }
         ],
         "bottom_classes": [
@@ -7249,11 +7273,11 @@
           },
           {
             "name": "Mobility",
-            "count": 77
+            "count": 89
           },
           {
             "name": "Circuits",
-            "count": 81
+            "count": 93
           }
         ],
         "top_slots": [
@@ -7270,9 +7294,9 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 34,
-            "sessions": 3,
-            "avg": 11.3,
+            "count": 46,
+            "sessions": 4,
+            "avg": 11.5,
             "label": "Friday 7pm Mobility"
           },
           {
@@ -7368,7 +7392,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1084
+        "total_attended": 1108
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Launch a Friday \"Lift & Learn\" workshop series (30-45 min, paid add-on)** \u2014 target the Friday slump with technique deep-dives (deadlift form, mobility drills, nutrition) to build Friday attendance momentum and create a reason for members to visit on a weaker day.\n\n2. **Open a Saturday morning \"open strength block\" (60 min)** \u2014 staff a studio with minimal oversight for members to do their own workouts between classes; Saturday has the lowest attendance, so a low-barrier, flexible option fills dead time and builds Saturday habit.\n\n**For quieter classes:**\n\n3. **Rebrand and reposition \"Capacity\" and \"Barbelle\"** \u2014 send targeted emails to your \"Build\" class devotees (699 + 501 + 417 members) offering a free trial, since these low-attendance classes likely appeal to the same strength-focused segment but aren't on their radar; pair with a one-liner explaining the difference (e.g., \"Barbelle: barbell-focused, lower reps, pure strength\").",
       "capacity": [
@@ -7750,13 +7774,6 @@
         "last_seen": "2026-08-03"
       },
       {
-        "id": 11617522,
-        "name": "Hayley Moore",
-        "membership": "Empower",
-        "days_absent": 14,
-        "last_seen": "2026-08-28"
-      },
-      {
         "id": 7373444,
         "name": "Helen Logan",
         "membership": "Empower",
@@ -7825,13 +7842,6 @@
         "membership": "Empower",
         "days_absent": 52,
         "last_seen": "2026-07-21"
-      },
-      {
-        "id": 10726245,
-        "name": "Nichola McAuley",
-        "membership": "Elevate",
-        "days_absent": 14,
-        "last_seen": "2026-08-28"
       },
       {
         "id": 12323224,
