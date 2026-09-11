@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T05:00:46.724328+00:00",
+  "generated_at": "2026-09-11T11:11:48.545037+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-09-11",
-    "event_count": 10,
-    "urgent_count": 0,
+    "event_count": 11,
+    "urgent_count": 2,
     "enquiry_count": 1,
     "calendar": [
       {
@@ -36,6 +36,16 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
+        "title": "Barbers",
+        "time": "12:45pm",
+        "start_raw": "2026-09-11T12:45:00+01:00",
+        "day": "Today",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
         "title": "Family meetup (emma organising)",
         "time": "6:30pm",
         "start_raw": "2026-09-11T18:30:00+01:00",
@@ -45,7 +55,7 @@
         ],
         "description": "",
         "location": "The Royal Court Hotel, 233 Ballybogey Rd, Portrush BT56 8NF, UK",
-        "prep": ""
+        "prep": "Confirm padel court booking with Claire, Debs, Cherith; check equipment ready."
       },
       {
         "title": "Padel forge",
@@ -55,7 +65,7 @@
         "attendees": [],
         "description": "Claire leeke\nDebs\nCherith",
         "location": "Powerhouse Padel, 52 Hanover Pl, Coleraine BT52 1EB, UK",
-        "prep": "Confirm padel court booking with Claire, Debs, Cherith; check equipment ready."
+        "prep": "Prepare gym access, brief staff on Giants group arrival, review class schedule."
       },
       {
         "title": "Giants @ Forge",
@@ -65,7 +75,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Prepare gym access, brief staff on Giants group arrival, review class schedule."
+        "prep": ""
       },
       {
         "title": "Giants Wheelchair Basketball Session",
@@ -86,7 +96,7 @@
         "attendees": [],
         "description": "",
         "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": ""
+        "prep": "Review event details, confirm attendance, plan transport to venue."
       },
       {
         "title": "The Jury Experience \u2013 Death by AI: Who Pays the Price?, Sunday 13 Sep \u00b7 16:00 \u2013 17:30",
@@ -98,7 +108,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Review event details, confirm attendance, plan transport to venue."
+        "prep": "Brief staff on RenewYou program launch; prepare welcome materials/schedule for participants."
       },
       {
         "title": "Boddingtons RenewYou Start",
@@ -108,7 +118,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Brief staff on RenewYou program launch; prepare welcome materials/schedule for participants."
+        "prep": ""
       },
       {
         "title": "LOWER 2",
@@ -121,7 +131,28 @@
         "prep": ""
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Records",
+        "from_raw": "Records <Records@leedstrinity.ac.uk>",
+        "subject": "Leeds Trinity Programme Registration - URGENT",
+        "snippet": "Hi Grace, Thank you for getting in touch, we require students to register each new academic year, so although you are nearing the end of your programme, we have to be able to record that you are still",
+        "id": "1a090118e0fa6d9c",
+        "thread_id": "1a0472b2be4f1ad2",
+        "msg_count": 3,
+        "draft_id": "r-3607610147317826840"
+      },
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Despatch of your TShirt Studio order - 3880392",
+        "snippet": "Thank you for shopping with TShirt Studio. Dear Customer, Your order number 3880392 has now been despatched. Items Sport Shirt Qty: 2 Colour: Purple Size: M Left breast image : Forge Logo White (1).svg",
+        "id": "1a08f6a3ddde951f",
+        "thread_id": "1a08f6a3ddde951f",
+        "msg_count": 1,
+        "draft_id": "r-7480792644534555755"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -136,9 +167,9 @@
     ],
     "checkins": {
       "by_email": {
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -258,10 +289,46 @@
   },
   "ghl": [
     {
+      "name": "Eileen Graham",
+      "channel": "Phone",
+      "message": "Grace this is Eileen Graham, I joined the class on Wednesday but unfortunately I won't b able in the meantime to go back. I have been having stomach problems and lower back on my left side over the la",
+      "age": "0h ago",
+      "unread": 2,
+      "conv_id": "lxqgImvTfRWym2WKQ7Ds",
+      "contact_id": "O7YpxLqO3CJ0k89E0Cux"
+    },
+    {
+      "name": "Hermine Fomo",
+      "channel": "Phone",
+      "message": "\u26a0\ufe0fMeta Business Suite\u00a0to:\r\nYour page has been notified of a possible violation of our policies:\r\nThis may involve copyrighted materials, misleading claims about products, or content that does not comp",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "8zFqGl08DvWxsiIIXzfy",
+      "contact_id": "X65BTlvNFd4WTkodF8h7"
+    },
+    {
+      "name": "everymomentanopportunity",
+      "channel": "Phone",
+      "message": "\ud83d\udc4f",
+      "age": "4h ago",
+      "unread": 2,
+      "conv_id": "bCO1UnwwejQ3wgV2B5KB",
+      "contact_id": "VjwHTdCoNMXKrbzPdSx0"
+    },
+    {
+      "name": "Heather Murdock",
+      "channel": "Phone",
+      "message": "Morning I go on holidays on the 20th for a week...ill contact u when am bk can anyone join the gym and do yous have personal trainers",
+      "age": "4h ago",
+      "unread": 2,
+      "conv_id": "vecpQ6i5LHcUFegsruGV",
+      "contact_id": "Z0Fwamx75Rm5JBu2ryUJ"
+    },
+    {
       "name": "Zara Drain",
       "channel": "Phone",
       "message": "Ok",
-      "age": "8h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "6zig33GJx234SfCD9SFV",
       "contact_id": "2jHhjsZ8e3ngQTnSRx2i"
@@ -270,7 +337,7 @@
       "name": "Jordyn Uprichard",
       "channel": "Phone",
       "message": "Awh that\u2019s great, thanks so much! I\u2019ll be in touch soon \u263a\ufe0f",
-      "age": "8h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "nxbSCm0qtlynIOx5qB5E",
       "contact_id": "aGLRF487TPXwwXFGIqKo"
@@ -279,7 +346,7 @@
       "name": "Lisa Rankin",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\udc4d\"",
-      "age": "8h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "couXwtleKh3AO9hKq51b",
       "contact_id": "j42uhQa1AxJQ3g8VOFmX"
@@ -288,7 +355,7 @@
       "name": "Sharon Mcauley",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "12h ago",
+      "age": "18h ago",
       "unread": 1,
       "conv_id": "w1s5QFfLju54cM6BaOyT",
       "contact_id": "sfQMqriFdZECkHsrO6gN"
@@ -297,7 +364,7 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "\ud83d\ude48",
-      "age": "15h ago",
+      "age": "21h ago",
       "unread": 3,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -306,7 +373,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "Hey - you\u2019re amazing .\n\nSarah will understand having to stop with Jo Jo . I will speak to Sarah .. \n\nThe Bashers are ok .. we are made of tough stuff ..",
-      "age": "16h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -315,7 +382,7 @@
       "name": "Marjorie Moore",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "19h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "JKcjT9cmgXd35Lb7k4Zs",
       "contact_id": "lDfmDqih72Z96TbfUUmo"
@@ -346,42 +413,6 @@
       "unread": 2,
       "conv_id": "UevWGfY8ioeFOVjMtD7l",
       "contact_id": "xijN1wTbeMFKe1n7NmQp"
-    },
-    {
-      "name": "Irene Norris",
-      "channel": "Phone",
-      "message": "\ud83d\ude2d",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "jn3eJeTzCgbcwOmXpap6",
-      "contact_id": "aj9apAxOoT6ignQjdeb1"
-    },
-    {
-      "name": "Manage AI",
-      "channel": "Phone",
-      "message": "\u26a0\ufe0fMeta Business Suite to:\r\nYour page has been notified of a possible violation of our policies:\r\nThis may involve copyrighted materials, misleading claims about products, or content that does not comp",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "7gKFPnNKYnZn1N2ETf1d",
-      "contact_id": "sCHmQ9CxRBDCmFK7YooO"
-    },
-    {
-      "name": "Mia Evelyn",
-      "channel": "Phone",
-      "message": "Hello! \n\nI hope your day is going well so far\ud83d\ude0a\n\nI was speaking to a lady Louise Feeney who attends your gym and I\u2019d love to join if possible! I listened to Grace speak at an event a few months ago at ",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "oGpjTV7kKXjUnWJL6gPF",
-      "contact_id": "G6viDiDP98Ex5rkVdwTb"
-    },
-    {
-      "name": "Meta Chat'Al",
-      "channel": "Phone",
-      "message": "\u26a0\ufe0fMeta Business Suite to:\r\nYour page has been notified of a possible violation of our policies:\r\nThis may involve copyrighted materials, misleading claims about products, or content that does not comp",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "HUhApVxsDT861krFfAVa",
-      "contact_id": "dtjNAkAOfDEm2cj4kdxA"
     }
   ],
   "jumpstart": {
@@ -1640,6 +1671,54 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "07703594839",
+        "last_scan": "2026-09-11",
+        "scan_count": 1,
+        "weight": 198.0,
+        "smm": 63.1,
+        "pbf": 42.1,
+        "bmi": 32.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-23",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Catherine Finney",
+        "last_scan": "2026-09-11",
+        "scan_count": 2,
+        "weight": 245.4,
+        "smm": 70.3,
+        "pbf": 49.3,
+        "bmi": 42.1,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -7.5,
+        "smm_change": -3.1,
+        "pbf_change": 0.8,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-23",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Nuala O'Neill",
         "last_scan": "2026-09-10",
@@ -3369,30 +3448,6 @@
         "overdue": true
       },
       {
-        "name": "Catherine Finney",
-        "last_scan": "2026-07-06",
-        "scan_count": 1,
-        "weight": 252.9,
-        "smm": 73.4,
-        "pbf": 48.5,
-        "bmi": 43.4,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-08-17",
-        "days_to_due": -25,
-        "overdue": true
-      },
-      {
         "name": "Kerrie MacKerracher",
         "last_scan": "2026-07-06",
         "scan_count": 2,
@@ -4353,7 +4408,7 @@
         "overdue": true
       }
     ],
-    "total": 113,
+    "total": 114,
     "configured": true
   },
   "sop": {
@@ -5001,23 +5056,23 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# SOP Audit & Build Plan \u2013 The Forge Belfast\n\n## **Gaps \u2014 no SOP yet**\n\n- **Member onboarding & first 30 days** \u2013 no documented sequence for intake forms, induction class, goal-setting, buddy/coach assignment\n- **Churn prevention & win-back** \u2013 no trigger-based playbook for pauses, cancellations, or lapsed members (critical revenue lever)\n- **Class quality audit** \u2013 no standardised observation rubric for coach consistency, music, pacing, cueing, safety\n- **Coaching development & progression** \u2013 no documented pathway for coach skill assessment, promotion, or remediation\n- **Member check-in cadence** \u2013 no scheduled touchpoints post-onboarding (weeks 2, 4, 8) to reinforce retention\n- **Complaints & incident logging** \u2013 no escalation process for injuries, member conflicts, or safeguarding issues\n- **GDPR & member data privacy** \u2013 no SOP for consent, data retention, DPA requests, or privacy breach response\n- **Referral & milestone incentive programmes** \u2013 no process for tracking, rewarding, or promoting member achievements\n- **Supply ordering** \u2013 no re-order triggers, vendor management, or inventory checks for equipment/merchandise\n- **Weekly coach task checklist** \u2013 no standardised weekly accountability items (class prep, feedback cycles, target outreach)\n\n## **Needs updating**\n\n- **Client onboarding SOP** \u2013 likely missing first touchpoint via WhatsApp/email; needs pre-class messaging, arrival workflow, and coach intro protocol\n- **Retention messaging** \u2013 exists but probably not automated or segmented by member lifecycle stage (new vs. at-risk vs. lapsed)\n- **Coach feedback & performance** \u2013 no clear connection between class audits and 1-on-1 coaching development conversations\n- **Cancellation SOP** \u2013"
+    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member onboarding & first 30 days**: no documented path from signup \u2192 induction \u2192 first class \u2192 goal-setting \u2192 retention touchpoints. This is your biggest leak.\n- **Churn & pause management**: no protocol for detecting at-risk members, pause requests, or win-back campaigns. Reactive, not proactive.\n- **Coach quality standards & audits**: no SOP for class observation, feedback, or performance management\u2014only individual coach task lists.\n- **Data privacy & GDPR compliance**: no process for member consent, data storage, deletion requests, or breach response. Legal & reputational risk.\n- **Supply chain & inventory**: \"Order Supplies & Sundries\" missing\u2014no protocol for when/how to reorder mats, towels, cleaning, retail stock.\n- **Complaints & incident handling**: no escalation route, documentation, or resolution SOP. Leaves you exposed.\n- **Referral programme mechanics**: no SOP for how referrals are tracked, rewarded, or validated.\n- **Health & safety incident response**: no protocol for injuries, near-misses, safeguarding concerns, or accident reporting.\n\n---\n\n**Needs updating**\n\n- **Coaches 19/22**: \"Weekly Key Coach Tasks\" is missing\u2014update coaching SOPs to include session prep, class debrief, member feedback loops, and development time allocation.\n- **Clients 26/36**: Member milestone achievements, outcomes tracking, and 30-day goals are missing\u2014these should sit between onboarding and retention SOPs.\n- **Marketing 5/5**: No SOP linking referral programme, member testimonials, or transformation stories to marketing campaigns. Marketing SOPs likely disconnected from ops.\n- **General 1/1**: Single SOP probably doesn't cover finance (invoicing, late payment, refunds), staffing"
   },
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BLXE1KQQH",
-        "text": "<@U0BLXE1KQQH> Finally got this sorted with payoneer, so shouldn't happen again on the next invoice :slightly_smiling_face:",
-        "hours": 21,
-        "name": "Julie Lapaz"
-      },
-      {
         "user_id": "U0ALM0N736X",
         "text": "Test week\nAssault bike 14 cals\nGrace 6kgs 1 min 42 secs\nAlt step up 5 kgs 40 reps\n500m 2 mins 38 secs\nLat pull down 65kgs\nFarmers hold 20kgs 1 min 30 secs\nSeate",
-        "hours": 11,
+        "hours": 17,
         "name": "Jackie Elliott"
+      },
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "Good morning, Coach Grace! Payment received. Sorry, I was not able to work yesterday. Will work everything that is pedning today. Happy Friday!",
+        "hours": 6,
+        "name": "Julie Lapaz"
       }
     ],
     "mentions": [],
@@ -7974,7 +8029,7 @@
           },
           {
             "day": "Friday",
-            "count": 429
+            "count": 445
           }
         ],
         "bottom_days": [
@@ -7984,7 +8039,7 @@
           },
           {
             "day": "Friday",
-            "count": 429
+            "count": 445
           },
           {
             "day": "Thursday",
@@ -8021,8 +8076,8 @@
             "count": 226
           },
           {
-            "name": "Plate",
-            "count": 204
+            "name": "Mobility",
+            "count": 210
           }
         ],
         "bottom_classes": [
@@ -8043,12 +8098,12 @@
             "count": 196
           },
           {
-            "name": "Mobility",
-            "count": 200
+            "name": "Plate",
+            "count": 210
           },
           {
-            "name": "Plate",
-            "count": 204
+            "name": "Mobility",
+            "count": 210
           }
         ],
         "top_slots": [
@@ -8163,7 +8218,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 3010
+        "total_attended": 3026
       },
       "last_30_days": {
         "top_days": [
@@ -8180,12 +8235,12 @@
             "count": 184
           },
           {
-            "day": "Monday",
-            "count": 142
+            "day": "Friday",
+            "count": 146
           },
           {
-            "day": "Friday",
-            "count": 130
+            "day": "Monday",
+            "count": 142
           }
         ],
         "bottom_days": [
@@ -8194,12 +8249,12 @@
             "count": 81
           },
           {
-            "day": "Friday",
-            "count": 130
-          },
-          {
             "day": "Monday",
             "count": 142
+          },
+          {
+            "day": "Friday",
+            "count": 146
           },
           {
             "day": "Thursday",
@@ -8250,12 +8305,12 @@
             "count": 28
           },
           {
-            "name": "Mobility",
-            "count": 67
+            "name": "Plate",
+            "count": 74
           },
           {
-            "name": "Plate",
-            "count": 68
+            "name": "Mobility",
+            "count": 77
           },
           {
             "name": "Circuits",
@@ -8338,6 +8393,15 @@
             "label": "Thursday 8pm Barbelle"
           },
           {
+            "day": "Friday",
+            "time": "7am",
+            "name": "Plate",
+            "count": 30,
+            "sessions": 4,
+            "avg": 7.5,
+            "label": "Friday 7am Plate"
+          },
+          {
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
@@ -8357,24 +8421,15 @@
           },
           {
             "day": "Friday",
-            "time": "7am",
-            "name": "Plate",
-            "count": 24,
-            "sessions": 3,
-            "avg": 8.0,
-            "label": "Friday 7am Plate"
-          },
-          {
-            "day": "Friday",
             "time": "10am",
             "name": "Mobility",
-            "count": 33,
-            "sessions": 4,
-            "avg": 8.2,
+            "count": 43,
+            "sessions": 5,
+            "avg": 8.6,
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1068
+        "total_attended": 1084
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Launch a Friday \"Lift & Learn\" workshop series (30-45 min, paid add-on)** \u2014 target the Friday slump with technique deep-dives (deadlift form, mobility drills, nutrition) to build Friday attendance momentum and create a reason for members to visit on a weaker day.\n\n2. **Open a Saturday morning \"open strength block\" (60 min)** \u2014 staff a studio with minimal oversight for members to do their own workouts between classes; Saturday has the lowest attendance, so a low-barrier, flexible option fills dead time and builds Saturday habit.\n\n**For quieter classes:**\n\n3. **Rebrand and reposition \"Capacity\" and \"Barbelle\"** \u2014 send targeted emails to your \"Build\" class devotees (699 + 501 + 417 members) offering a free trial, since these low-attendance classes likely appeal to the same strength-focused segment but aren't on their radar; pair with a one-liner explaining the difference (e.g., \"Barbelle: barbell-focused, lower reps, pure strength\").",
       "capacity": [
@@ -8789,13 +8844,6 @@
         "membership": "Elevate",
         "days_absent": 22,
         "last_seen": "2026-08-20"
-      },
-      {
-        "id": 8762722,
-        "name": "Karen Rhodes",
-        "membership": "Empower",
-        "days_absent": 17,
-        "last_seen": "2026-08-25"
       },
       {
         "id": 9049277,
@@ -22629,15 +22677,15 @@
       },
       {
         "month": "2026-09",
-        "revenue": 13801.16,
-        "expenses": 12949.67,
-        "profit": 851.49,
-        "profit_pct": 6.2,
+        "revenue": 14143.53,
+        "expenses": 12975.62,
+        "profit": 1167.91,
+        "profit_pct": 8.3,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 13801.16
+              "amount": 14143.53
             }
           ],
           "out": [
@@ -22667,7 +22715,7 @@
             },
             {
               "name": "Admin",
-              "amount": 363.21
+              "amount": 389.16
             },
             {
               "name": "Professional Services",
@@ -22696,6 +22744,26 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "fea0770e-3888-4892-af61-7c7c2465660b",
+            "date": "2026-09-11",
+            "name": "Https //scribe.How/b",
+            "ref": "HTTPS //SCRIBE.HOW/B",
+            "amount": 25.95,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "fe90f777-d817-4ce7-9049-c0e7aa2ad1c7",
+            "date": "2026-09-11",
+            "name": "Stripe Payments UK Ltd",
+            "ref": "STRIPE",
+            "amount": 342.37,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
           {
             "uid": "fcec4b06-1de9-48a1-a477-e1afaf11bd7a",
             "date": "2026-09-11",
@@ -23470,7 +23538,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 64.91,
+    "cash_position": 381.33,
     "available": 0.0,
     "reserves": [
       {
@@ -23491,7 +23559,7 @@
       }
     ],
     "earmarked": 12497.0,
-    "total_cash": 12561.91,
+    "total_cash": 12878.33,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23519,9 +23587,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 25064.91,
-    "cash_out_30": 28397.6,
-    "net_30": -3332.69,
+    "cash_in_30": 25379.13,
+    "cash_out_30": 28423.55,
+    "net_30": -3044.42,
     "as_of": "2026-09-11"
   },
   "gocardless": {
@@ -23725,119 +23793,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Audit first, then design:**\n- Spend 2 hours with your top 3 coaches asking: \"What do members actually ask for?\" and \"What takes up most of your time?\" This kills guesswork. Your menu should reflect what's *already selling*, not what sounds good.\n\n**Split into two docs with ruthless clarity:**\n- **Coach version:** Exactly what you offer (class types, PT packages, nutrition coaching, whatever), margin per service, upsell sequence (how does someone go from group class \u2192 PT \u2192 nutrition?). This drives consistency and prevents undercutting.\n- **Member version:** Clean, benefit-focused copy. \"Small Group Training (4 people max)\" \u2192 \"*Get personalized form checks + tailored progressions* \u2014 \u00a3X/session or \u00a3Y/month.\" Include what's bundled (locker access, app, community events).\n\n**Price anchoring move:**\n- List your *premium* option first (e.g., 1:1 coaching), then show the \"good middle ground\" (small group). Psychology works\u2014people anchor to the first price they see. Test this with 10 members before finalizing.\n\n**Lock in a simple decision tree:**\n- Create a one-page flowchart: \"New member?\" \u2192 \"Beginner class\" \u2192 \"After 4 weeks, offer PT assessment.\" This removes coach guesswork and creates predictable upgrade paths. Saves time *and* money left on the table.\n\n**Live date this week:**\n- Pick Friday to launch internally. Coaches need to live it before members see it. Any friction now = you fix it before it hits your sales funnel.\n\nWhat's your current pricing"
+        "advice": "# Service Menu Execution for The Forge\n\n**Start with your profit anchor:** Map your current revenue by service type (memberships, PT packages, classes, retail). The top 2-3 revenue drivers become your menu's hero items\u2014price these confidently and feature them first.\n\n**Separate menus by user intent:** Coaches need a *pricing/delivery manual* (what they're selling, margins, upsell triggers). Members need a *benefit-focused menu* (outcomes, not features). Don't make one document do both jobs.\n\n**Price backward from member psychology:** For PT packages, test anchoring\u2014show a \"full-price\" 10-session package alongside a 5-session option at 60% the rate. Most will choose the 5, you've still moved revenue. Don't guess; run this by 5 existing members first.\n\n**Kill the \"what's included\" ambiguity:** Use a simple comparison table (online + printed in gym). Explicitly state what's *not* included in each tier. This prevents scope creep complaints and makes upsells feel natural (\"that's a Tier 2 benefit\").\n\n**Deploy it immediately for decision-making:** Before a polished launch, get this into your coaches' hands *this week*\u2014even if rough. They'll spot pricing gaps and member questions you'd miss. Iterate once from their feedback, then release to members.\n\nWhat's your current highest-revenue service\u2014memberships or PT?"
       }
     ]
   },
@@ -24617,7 +24685,7 @@
       "income": 123.0,
       "profit": 485.39
     },
-    "advice": "**Insights**\n\n1. **July was an anomaly, August is regression toward true performance.** July's 215 leads at \u00a32/lead looks like a budget dump, algorithm fluke, or creative that broke targeting integrity\u2014those 29 sales (13% close) suggest poor lead quality despite volume. August's 82 leads at \u00a35/lead with 29% close rate is more sustainable and actually your *best conversion data*; you're getting fewer but hotter leads.\n\n2. **Your real unit economics are now visible and fragile.** At \u00a35/lead \u00d7 29% close = \u00a31.45 cost-per-sale against \u00a329 income, you're making \u00a327.55 profit per conversion. That 29% close rate is excellent and your genuine competitive edge\u2014but it only works if you protect lead quality. Chasing volume (like July) tanks this.\n\n3. **April\u2013June tell a cautionary tale: wrong targeting or creative killed your funnel.** Cost-per-lead climbed from \u00a36 to \u00a321 while sales stayed at zero. You were either reaching the wrong audience or the offer/creative wasn't resonating. July's sudden fix suggests someone changed targeting or creative significantly.\n\n**Actions**\n\n1. **Reverse-engineer July's winning setup immediately.** Pull the exact targeting, audience, placement mix, creative assets, and copy from July. Don't assume it was volume\u2014isolate which *combination* drove that close rate. Test that exact setup again at modest scale (\u00a3300/week) before scaling. If it repeats the 13% close rate, it's junk; if it repeats 29%, scale it to \u00a3600/week.\n\n2. **Protect the 29% close rate by auditing your lead qualification.** Those August leads are gold. Talk to your sales team: what makes a lead from August different from April\u2013June? Age range? Location precision? Device type? Likely your targeting got tighter without you realising. Document and lock in that targeting, then use it as your baseline for all August-forward testing.\n\n3. **Test creative/messaging against audience segmentation, not just budget.** Run three parallel audiences in August's structure (\u00a3140 each for a month): (1) cold traffic aged 25\u2013"
+    "advice": "**Insights**\n\n1. **July was an anomaly fuelled by unsustainable volume.** You pulled 215 leads at \u00a32/lead\u2014nearly 3\u00d7 August's volume at half the cost. That collapsed to 82 leads in August. Something broke: either you paused a high-volume audience, algorithm shifted, or creative fatigue kicked in hard. The 29 sales in July (13% close rate) versus 24 in August (29% close rate) tells you July's leads were lower quality; August's tighter funnel is actually healthier, but it's not enough to offset the lead cliff.\n\n2. **You're profitable but fragile.** \u00a329 revenue per lead and \u00a352 profit per trial close works *only* if conversion holds. April\u2013June show what happens when cost/lead drifts above \u00a36: sales dry up entirely. July's volume masked poor quality. August is a warning: you've fallen back to a sustainable but low-volume state.\n\n3. **The real problem isn't spend\u2014it's consistency and reach.** You're spending \u00a3424\u2013\u00a3515/month but getting wildly different lead counts (20\u2192215\u219282). That's not strategic scaling; it's reactive ad management. Your July peak didn't stick because you likely didn't understand what drove it or let it run long enough to build momentum.\n\n**Actions**\n\n1. **Audit and rebuild the July winning formula immediately.** Pull your Meta Ads Manager historical data: which audience segments, placements, and creatives drove those 215 leads? Was it Reels, Stories, feed? Lookalike audience or interest-based? Age range? Geo-targeting (Belfast postcodes only or wider)? Rebuild that exact setup in September, but run it for *at least* 2\u20133 weeks to let the algorithm stabilize, not 5 days. Allocate \u00a3600+ to this test.\n\n2. **Test three distinct creative angles on rotation.** Your close rate jumped from 13% to 29%\u2014August's *messaging* is working better than July's. But leads halved. Run three ad sets in parallel: (A) the top-performer from August (keep running), (B) a \"social proof\" angle (testimonial/transformation"
   },
   "moves": [
     {
