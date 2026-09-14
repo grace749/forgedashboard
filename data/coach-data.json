@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:00:55.687674+00:00",
+  "generated_at": "2026-09-14T19:50:25.752259+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1277,6 +1277,30 @@
         "weight_change": null,
         "smm_change": null,
         "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-26",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Noor AlShehabi",
+        "last_scan": "2026-09-14",
+        "scan_count": 2,
+        "weight": 150.1,
+        "smm": 55.8,
+        "pbf": 31.8,
+        "bmi": 25.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -8.4,
+        "smm_change": -0.4,
+        "pbf_change": -3.1,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -3542,30 +3566,6 @@
         "overdue": true
       },
       {
-        "name": "Noor AlShehabi",
-        "last_scan": "2026-06-15",
-        "scan_count": 1,
-        "weight": 158.5,
-        "smm": 56.2,
-        "pbf": 34.9,
-        "bmi": 26.4,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-07-27",
-        "days_to_due": -49,
-        "overdue": true
-      },
-      {
         "name": "Lyndsay Sinclair",
         "last_scan": "2026-06-10",
         "scan_count": 1,
@@ -4080,7 +4080,7 @@
       {
         "user_id": "U09DDQ1UETB",
         "text": "Love this :purple_heart::call_me_hand::skin-tone-2:",
-        "hours": 4,
+        "hours": 10,
         "name": "Claire Leeke"
       }
     ],
@@ -7013,12 +7013,12 @@
             "count": 626
           },
           {
-            "day": "Friday",
-            "count": 469
+            "day": "Monday",
+            "count": 497
           },
           {
-            "day": "Monday",
-            "count": 464
+            "day": "Friday",
+            "count": 469
           },
           {
             "day": "Thursday",
@@ -7035,12 +7035,12 @@
             "count": 462
           },
           {
-            "day": "Monday",
-            "count": 464
-          },
-          {
             "day": "Friday",
             "count": 469
+          },
+          {
+            "day": "Monday",
+            "count": 497
           },
           {
             "day": "Wednesday",
@@ -7057,12 +7057,12 @@
             "count": 501
           },
           {
-            "name": "Elevate",
-            "count": 390
+            "name": "Build: Lower",
+            "count": 415
           },
           {
-            "name": "Build: Lower",
-            "count": 382
+            "name": "Elevate",
+            "count": 390
           },
           {
             "name": "Circuits",
@@ -7211,7 +7211,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3049
+        "total_attended": 3082
       },
       "last_30_days": {
         "top_days": [
@@ -7225,7 +7225,7 @@
           },
           {
             "day": "Monday",
-            "count": 162
+            "count": 195
           },
           {
             "day": "Thursday",
@@ -7251,7 +7251,7 @@
           },
           {
             "day": "Monday",
-            "count": 162
+            "count": 195
           },
           {
             "day": "Wednesday",
@@ -7268,16 +7268,16 @@
             "count": 165
           },
           {
+            "name": "Build: Lower",
+            "count": 141
+          },
+          {
             "name": "Elevate",
             "count": 139
           },
           {
             "name": "Strongevity",
             "count": 120
-          },
-          {
-            "name": "Build: Lower",
-            "count": 108
           },
           {
             "name": "Circuits",
@@ -7339,15 +7339,6 @@
             "label": "Tuesday 7pm Build: Upper"
           },
           {
-            "day": "Monday",
-            "time": "6pm",
-            "name": "Build: Lower",
-            "count": 22,
-            "sessions": 2,
-            "avg": 11.0,
-            "label": "Monday 6pm Build: Lower"
-          },
-          {
             "day": "Tuesday",
             "time": "8pm",
             "name": "Build: Upper",
@@ -7364,6 +7355,15 @@
             "sessions": 4,
             "avg": 10.8,
             "label": "Tuesday 6pm Build: Upper"
+          },
+          {
+            "day": "Monday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 54,
+            "sessions": 5,
+            "avg": 10.8,
+            "label": "Monday 11am Strongevity"
           }
         ],
         "bottom_slots": [
@@ -7404,6 +7404,15 @@
             "label": "Saturday 9am Elevate"
           },
           {
+            "day": "Monday",
+            "time": "5pm",
+            "name": "Build: Lower",
+            "count": 24,
+            "sessions": 3,
+            "avg": 8.0,
+            "label": "Monday 5pm Build: Lower"
+          },
+          {
             "day": "Friday",
             "time": "10am",
             "name": "Mobility",
@@ -7411,18 +7420,9 @@
             "sessions": 4,
             "avg": 8.2,
             "label": "Friday 10am Mobility"
-          },
-          {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 34,
-            "sessions": 4,
-            "avg": 8.5,
-            "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1016
+        "total_attended": 1049
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. Launch a \"Drop-in Barbell Clinic\" \u2014 a 30-minute paid workshop (\u00a38-12) in gaps before/after Build classes, teaching proper form on lifts featured in that day's session. Targets women intimidated by barbells and creates revenue from otherwise empty studio time.\n\n2. Add an open-gym block on Monday or Thursday afternoons (2-3pm) with a coach present for form checks \u2014 these are your quietest days and members often want unstructured lifting time between scheduled classes.\n\n**Improve the quieter classes themselves:**\n\n3. Shift **Barbelle and Capacity** to Tuesday or Wednesday mornings (your busiest days) to ride momentum and tap into habit-stacking \u2014 members already in the gym for Build classes are more likely to add a second session if it's right there. Run a 2-week \"try it free\" offer to both classes with a targeted email to Build attendees.",
       "capacity": [
@@ -7781,25 +7781,11 @@
         "last_seen": "2026-09-01"
       },
       {
-        "id": 12292932,
-        "name": "Ashley George",
-        "membership": "Elevate",
-        "days_absent": 47,
-        "last_seen": "2026-07-29"
-      },
-      {
         "id": 12162382,
         "name": "Catherine Gavin",
         "membership": "8 PT Sessions",
         "days_absent": 56,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 11006791,
-        "name": "Christina Faulkner",
-        "membership": "Empower",
-        "days_absent": 11,
-        "last_seen": "2026-09-03"
       },
       {
         "id": 7209125,
@@ -7893,13 +7879,6 @@
         "last_seen": "2026-09-02"
       },
       {
-        "id": 11210157,
-        "name": "Kerry McGillan",
-        "membership": "Empower",
-        "days_absent": 11,
-        "last_seen": "2026-09-03"
-      },
-      {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
@@ -7933,6 +7912,27 @@
         "membership": "Empower",
         "days_absent": 55,
         "last_seen": "2026-07-21"
+      },
+      {
+        "id": 12323224,
+        "name": "Sami-Jo Smyth",
+        "membership": "Empower",
+        "days_absent": 20,
+        "last_seen": "2026-08-25"
+      },
+      {
+        "id": 13212332,
+        "name": "Sandra Sherrard",
+        "membership": "Strongevity Membership",
+        "days_absent": 34,
+        "last_seen": "2026-08-11"
+      },
+      {
+        "id": 13602153,
+        "name": "Sharon McAuley",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 25,
+        "last_seen": "2026-08-20"
       }
     ],
     "celebrations": {
