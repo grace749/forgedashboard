@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T12:36:40.736405+00:00",
+  "generated_at": "2026-09-14T14:00:55.687674+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4080,7 +4080,7 @@
       {
         "user_id": "U09DDQ1UETB",
         "text": "Love this :purple_heart::call_me_hand::skin-tone-2:",
-        "hours": 3,
+        "hours": 4,
         "name": "Claire Leeke"
       }
     ],
@@ -4773,7 +4773,7 @@
     }
   },
   "teamup": {
-    "total_members": 169,
+    "total_members": 170,
     "recurring": 113,
     "recurring_members": [
       {
@@ -5272,7 +5272,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 19,
+    "new_this_month": 20,
     "cancellations_this_month": 8,
     "leaving_members": [
       {
@@ -6073,7 +6073,7 @@
       }
     ],
     "cancelled_ytd": 44,
-    "churn_rate": 5.0,
+    "churn_rate": 4.9,
     "avg_member_price": 137.89,
     "monthly_recurring_revenue": 15582.0,
     "avg_tenure_months": 8.5,
@@ -6907,6 +6907,20 @@
         ]
       },
       {
+        "name": "4 Class Pass",
+        "count": 2,
+        "members": [
+          {
+            "id": 10057245,
+            "name": "Alison Moffitt-Robinson"
+          },
+          {
+            "id": 13899688,
+            "name": "Sarah Logan"
+          }
+        ]
+      },
+      {
         "name": "8 Session Block",
         "count": 1,
         "members": [
@@ -6973,16 +6987,6 @@
           {
             "id": 7373444,
             "name": "Helen Logan"
-          }
-        ]
-      },
-      {
-        "name": "4 Class Pass",
-        "count": 1,
-        "members": [
-          {
-            "id": 10057245,
-            "name": "Alison Moffitt-Robinson"
           }
         ]
       },
@@ -7733,7 +7737,7 @@
       },
       {
         "month": "2026-09",
-        "active": 167,
+        "active": 168,
         "churn": 7.9,
         "by_type": {
           "Empower": 73,
@@ -7745,7 +7749,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 5,
-          "4 Class Pass": 1,
+          "4 Class Pass": 2,
           "Well75": 10,
           "6 Week Jumpstart": 10,
           "Strongevity Membership": 15,
@@ -8099,6 +8103,12 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Jordyn Uprichard",
+        "type": "Meet a Coach",
+        "date": "2026-09-16",
+        "upcoming": true
+      },
       {
         "name": "Breanna Gaston",
         "type": "Meet a Coach",
@@ -9233,6 +9243,15 @@
         "last_momentum": null
       },
       {
+        "id": 13899688,
+        "name": "Sarah Logan",
+        "email": "hellierankin@aol.com",
+        "join_date": "2026-09-14",
+        "membership": "4 Class Pass",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
         "id": 7775785,
         "name": "Sarah Sandford",
         "email": "sarahesandford@gmail.com",
@@ -9496,6 +9515,13 @@
   "tshirt": {
     "configured": true,
     "orders": [
+      {
+        "date": "2026-09-14",
+        "order_no": "",
+        "total": "\u00a3108.80",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
       {
         "date": "2026-09-08",
         "order_no": "",
@@ -10183,8 +10209,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 98,
-    "total_spend": 9458.6,
+    "count": 99,
+    "total_spend": 9567.4,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
@@ -13647,12 +13673,6 @@
         "subject": "Accepted: JoJo Senegal @ Mon 19 Apr 2pm - Fri 30 Apr 2027 3pm (BST) (Coach JoJo)",
         "snippet": "JoJo Senegal Coach Grace has accepted this invitation. When Monday 19 Apr \u22c5 2pm \u2013 Friday 30 Apr 2027 \u22c5 3pm (United Kingdom Time) Guests Coach JoJo - organiser eiliskearns13@gmail.com Coach Grace View",
         "id": "1a0810ca65daf0cb"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Updated invitation: Q4 Programming Meet @ Thu 10 Sept 2026 1pm - 3pm (BST) (Coach JoJo)",
-        "snippet": "Q4 Programming Meet You have been invited by Coach Grace to attend an event named Q4 Programming Meet on Thursday 10 Sept 2026 \u22c5 1pm \u2013 3pm (United Kingdom Time). This event has been updated Changed:",
-        "id": "1a07c0c446eff547"
       }
     ],
     "important": [
@@ -13669,6 +13689,6 @@
         "id": "1a08b5b47183d9d9"
       }
     ],
-    "urgent_count": 5
+    "urgent_count": 4
   }
 }
