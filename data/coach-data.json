@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T14:00:53.083908+00:00",
+  "generated_at": "2026-09-15T18:59:55.041113+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4050,13 +4050,13 @@
       {
         "user_id": "U09DDQ1UETB",
         "text": "Love this :purple_heart::call_me_hand::skin-tone-2:",
-        "hours": 28,
+        "hours": 33,
         "name": "Claire Leeke"
       },
       {
         "user_id": "U09CYACSUE9",
         "text": "Oh fab - thank you! I'll get another class added now if I can for that week :+1:",
-        "hours": 0,
+        "hours": 5,
         "name": "Kerrie"
       }
     ],
@@ -4749,7 +4749,7 @@
     }
   },
   "teamup": {
-    "total_members": 170,
+    "total_members": 171,
     "recurring": 113,
     "recurring_members": [
       {
@@ -5205,7 +5205,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 10,
+    "trial": 11,
     "trial_members": [
       {
         "id": 13748936,
@@ -5236,6 +5236,10 @@
         "name": "Megan Morrison"
       },
       {
+        "id": 13908961,
+        "name": "Mia Taylor"
+      },
+      {
         "id": 13602153,
         "name": "Sharon McAuley"
       },
@@ -5248,7 +5252,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 22,
+    "new_this_month": 23,
     "cancellations_this_month": 9,
     "leaving_members": [
       {
@@ -6053,7 +6057,7 @@
       }
     ],
     "cancelled_ytd": 44,
-    "churn_rate": 5.6,
+    "churn_rate": 5.5,
     "avg_member_price": 137.86,
     "monthly_recurring_revenue": 15716.0,
     "avg_tenure_months": 8.5,
@@ -6732,7 +6736,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 10,
+        "count": 11,
         "members": [
           {
             "id": 13748936,
@@ -6761,6 +6765,10 @@
           {
             "id": 13667307,
             "name": "Megan Morrison"
+          },
+          {
+            "id": 13908961,
+            "name": "Mia Taylor"
           },
           {
             "id": 13602153,
@@ -6996,7 +7004,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 716
+            "count": 741
           },
           {
             "day": "Wednesday",
@@ -7040,7 +7048,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 673
+            "count": 698
           },
           {
             "name": "Build: Full Body",
@@ -7201,13 +7209,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3064
+        "total_attended": 3089
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 290
+            "count": 315
           },
           {
             "day": "Wednesday",
@@ -7251,7 +7259,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 256
+            "count": 281
           },
           {
             "name": "Build: Full Body",
@@ -7276,14 +7284,6 @@
         ],
         "bottom_classes": [
           {
-            "name": "Barbelle",
-            "count": 13
-          },
-          {
-            "name": "Capacity",
-            "count": 14
-          },
-          {
             "name": "Engine",
             "count": 28
           },
@@ -7298,6 +7298,14 @@
           {
             "name": "Circuits",
             "count": 71
+          },
+          {
+            "name": "Elevate",
+            "count": 111
+          },
+          {
+            "name": "Strongevity",
+            "count": 128
           }
         ],
         "top_slots": [
@@ -7323,8 +7331,8 @@
             "day": "Tuesday",
             "time": "7pm",
             "name": "Build: Upper",
-            "count": 44,
-            "sessions": 4,
+            "count": 55,
+            "sessions": 5,
             "avg": 11.0,
             "label": "Tuesday 7pm Build: Upper"
           },
@@ -7338,15 +7346,6 @@
             "label": "Tuesday 8pm Build: Upper"
           },
           {
-            "day": "Tuesday",
-            "time": "6pm",
-            "name": "Build: Upper",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Tuesday 6pm Build: Upper"
-          },
-          {
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
@@ -7354,6 +7353,15 @@
             "sessions": 5,
             "avg": 10.8,
             "label": "Monday 11am Strongevity"
+          },
+          {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 32,
+            "sessions": 3,
+            "avg": 10.7,
+            "label": "Wednesday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7412,7 +7420,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1050
+        "total_attended": 1075
       },
       "suggestion": "**1. Launch a paid \"Build Basics\" workshop series in Thursday/Friday quiet gaps (30-45 min blocks between classes).** Target members attending lower-attendance classes like Barbelle and Capacity\u2014these workshops teach foundational technique or movement prep, positioning them as \"entry points\" before stepping into the main Build classes. Charge \u00a35\u20138 per drop-in to offset studio time and create gentle upsell momentum toward your busier strength classes.\n\n**2. Move Barbelle and Capacity to Tuesday/Wednesday peak days at off-peak *times* (e.g., 6:30am or 9:45am slots instead of mid-day).** Your quietest classes are bleeding attendance partly because they're competing for studio space on slow days. A smaller, dedicated cohort on a busy gym day creates social proof and peer discovery\u2014members already in the building see the class running and are more likely to try it next week.\n\n**3. Invite Strongevity and Elevate attendees into a \"Mobility + Strength Pairing\" 15-min open studio window on Thursday evenings (currently quiet).** Frame it as optional cooldown or prep time between classes, free for members. This fills dead air, normalizes Thursday studio use, and gently exposes members to the space as a recovery/community hub\u2014increasing their likelihood of booking a quieter class slot",
       "capacity": [
@@ -7727,7 +7735,7 @@
       },
       {
         "month": "2026-09",
-        "active": 168,
+        "active": 169,
         "churn": 7.3,
         "by_type": {
           "Empower": 74,
@@ -7741,7 +7749,7 @@
           "Strongevity": 4,
           "4 Class Pass": 2,
           "Well75": 10,
-          "6 Week Jumpstart": 10,
+          "6 Week Jumpstart": 11,
           "Strongevity Membership": 15,
           "4 Session Block": 1,
           "8 Class Block": 1,
@@ -7800,13 +7808,6 @@
         "last_seen": "2026-09-03"
       },
       {
-        "id": 8935595,
-        "name": "Grace McAlister",
-        "membership": "Empower",
-        "days_absent": 13,
-        "last_seen": "2026-09-02"
-      },
-      {
         "id": 7373444,
         "name": "Helen Logan",
         "membership": "Empower",
@@ -7826,13 +7827,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 57,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 11206355,
-        "name": "Janeen Gilfillan",
-        "membership": "Elevate",
-        "days_absent": 14,
-        "last_seen": "2026-09-01"
       },
       {
         "id": 12947742,
@@ -7924,10 +7918,29 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 26,
         "last_seen": "2026-08-20"
+      },
+      {
+        "id": 13449102,
+        "name": "Shauna Lewis",
+        "membership": "4 PT Sessions",
+        "days_absent": 20,
+        "last_seen": "2026-08-26"
+      },
+      {
+        "id": 13465042,
+        "name": "Tiarna O\u2019Neill",
+        "membership": "4 PT Sessions",
+        "days_absent": 12,
+        "last_seen": "2026-09-03"
       }
     ],
     "celebrations": {
       "first_week": [
+        {
+          "name": "Mia Taylor",
+          "days_in": 0,
+          "start_date": "2026-09-15"
+        },
         {
           "name": "Erin Honeyford",
           "days_in": 4,
@@ -8770,7 +8783,7 @@
       {
         "id": 7392514,
         "name": "Kellie Carson",
-        "email": "kellbredin@hotmail.co.uk",
+        "email": "kellcarson25@hotmail.com",
         "join_date": "2023-09-25",
         "membership": "Empower",
         "class_count": 447,
@@ -9509,6 +9522,13 @@
     "configured": true,
     "orders": [
       {
+        "date": "2026-09-15",
+        "order_no": "",
+        "total": "\u00a357.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
+      {
         "date": "2026-09-14",
         "order_no": "",
         "total": "\u00a316.50",
@@ -10200,17 +10220,10 @@
         "total": "\u00a343.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-09",
-        "order_no": "",
-        "total": "\u00a3129.40",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
     "count": 100,
-    "total_spend": 9644.0,
+    "total_spend": 9571.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
@@ -13661,15 +13674,9 @@
         "subject": "Updated invitation: Q4 TEST WEEK @ Mon 21 Sept - Thu 24 Sept 2026 (Coach JoJo)",
         "snippet": "Q4 TEST WEEK You have been invited by Coach Grace to attend an event named Q4 TEST WEEK on Monday 21 Sept \u2013 Thursday 24 Sept 2026. This event has been updated Changed: Time When CHANGED Monday 21 Sept",
         "id": "1a08b5b47183d9d9"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Invitation: Reservation at Sky Garden Bars @ Fri 2 Oct 2026 6:30pm - 8pm (BST) (Coach JoJo)",
-        "snippet": "Reservation at Sky Garden Bars Grace Smith Grace Smith When Friday 2 Oct 2026 \u22c5 6:30pm \u2013 8pm (United Kingdom Time) Location 1 Sky Garden Walk View map Guests Coach Grace - organiser Coach JoJo View al",
-        "id": "1a081761b6a01ab3"
       }
     ],
     "important": [],
-    "urgent_count": 3
+    "urgent_count": 2
   }
 }
