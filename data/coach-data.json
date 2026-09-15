@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T11:37:29.421759+00:00",
+  "generated_at": "2026-09-15T14:00:53.083908+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4050,8 +4050,14 @@
       {
         "user_id": "U09DDQ1UETB",
         "text": "Love this :purple_heart::call_me_hand::skin-tone-2:",
-        "hours": 26,
+        "hours": 28,
         "name": "Claire Leeke"
+      },
+      {
+        "user_id": "U09CYACSUE9",
+        "text": "Oh fab - thank you! I'll get another class added now if I can for that week :+1:",
+        "hours": 0,
+        "name": "Kerrie"
       }
     ],
     "mentions": [],
@@ -5242,8 +5248,8 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 21,
-    "cancellations_this_month": 8,
+    "new_this_month": 22,
+    "cancellations_this_month": 9,
     "leaving_members": [
       {
         "id": 12931950,
@@ -5260,6 +5266,10 @@
       {
         "id": 10671756,
         "name": "Jill Chadburn"
+      },
+      {
+        "id": 11611451,
+        "name": "Kerrie MacKerracher"
       },
       {
         "id": 12672913,
@@ -6043,9 +6053,9 @@
       }
     ],
     "cancelled_ytd": 44,
-    "churn_rate": 4.9,
-    "avg_member_price": 137.89,
-    "monthly_recurring_revenue": 15582.0,
+    "churn_rate": 5.6,
+    "avg_member_price": 137.86,
+    "monthly_recurring_revenue": 15716.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 7,
     "cancelled_members": [
@@ -6088,7 +6098,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 75,
+        "count": 76,
         "members": [
           {
             "id": 10803724,
@@ -6221,6 +6231,10 @@
           {
             "id": 7392514,
             "name": "Kellie Carson"
+          },
+          {
+            "id": 11611451,
+            "name": "Kerrie MacKerracher"
           },
           {
             "id": 11210157,
@@ -7716,7 +7730,7 @@
         "active": 168,
         "churn": 7.3,
         "by_type": {
-          "Empower": 73,
+          "Empower": 74,
           "8 PT Sessions": 3,
           "4 PT Sessions": 11,
           "Evolve": 5,
@@ -13653,28 +13667,9 @@
         "subject": "Invitation: Reservation at Sky Garden Bars @ Fri 2 Oct 2026 6:30pm - 8pm (BST) (Coach JoJo)",
         "snippet": "Reservation at Sky Garden Bars Grace Smith Grace Smith When Friday 2 Oct 2026 \u22c5 6:30pm \u2013 8pm (United Kingdom Time) Location 1 Sky Garden Walk View map Guests Coach Grace - organiser Coach JoJo View al",
         "id": "1a081761b6a01ab3"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Accepted: JoJo Senegal @ Mon 19 Apr 2pm - Fri 30 Apr 2027 3pm (BST) (Coach JoJo)",
-        "snippet": "JoJo Senegal Coach Grace has accepted this invitation. When Monday 19 Apr \u22c5 2pm \u2013 Friday 30 Apr 2027 \u22c5 3pm (United Kingdom Time) Guests Coach JoJo - organiser eiliskearns13@gmail.com Coach Grace View",
-        "id": "1a0810ca65daf0cb"
       }
     ],
-    "important": [
-      {
-        "from": "Coach Grace",
-        "subject": "Invitation: Programming Q4  @ Thu 17 Sept 2026 1:15pm - 3:30pm (BST) (Coach JoJo)",
-        "snippet": "Programming Q4 You have been invited by Coach Grace to attend an event named Programming Q4 on Thursday 17 Sept 2026 \u22c5 1:15pm \u2013 3:30pm (United Kingdom Time). When Thursday 17 Sept ",
-        "id": "1a08b9cf23b9e831"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Updated invitation: Q4 TEST WEEK @ Mon 21 Sept - Thu 24 Sept 2026 (Coach JoJo)",
-        "snippet": "Q4 TEST WEEK You have been invited by Coach Grace to attend an event named Q4 TEST WEEK on Monday 21 Sept \u2013 Thursday 24 Sept 2026. This event has been updated Changed: Time When CH",
-        "id": "1a08b5b47183d9d9"
-      }
-    ],
-    "urgent_count": 4
+    "important": [],
+    "urgent_count": 3
   }
 }
