@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T05:00:47.189691+00:00",
+  "generated_at": "2026-09-15T11:37:29.421759+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1232,6 +1232,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach JoJo",
+        "last_scan": "2026-09-15",
+        "scan_count": 20,
+        "weight": 192.4,
+        "smm": 71.4,
+        "pbf": 33.8,
+        "bmi": 30.1,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": 1.2,
+        "smm_change": 1.5,
+        "pbf_change": -1.1,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-27",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "kathleens133",
         "last_scan": "2026-09-14",
         "scan_count": 1,
@@ -1415,30 +1439,6 @@
         "weight_change": 0.0,
         "smm_change": 1.1,
         "pbf_change": -0.8,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-23",
-        "days_to_due": 38,
-        "overdue": false
-      },
-      {
-        "name": "Coach JoJo",
-        "last_scan": "2026-09-11",
-        "scan_count": 19,
-        "weight": 191.2,
-        "smm": 69.9,
-        "pbf": 34.9,
-        "bmi": 29.9,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": -1.4,
-        "smm_change": -0.9,
-        "pbf_change": 0.4,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -4050,7 +4050,7 @@
       {
         "user_id": "U09DDQ1UETB",
         "text": "Love this :purple_heart::call_me_hand::skin-tone-2:",
-        "hours": 19,
+        "hours": 26,
         "name": "Claire Leeke"
       }
     ],
@@ -6982,7 +6982,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 687
+            "count": 716
           },
           {
             "day": "Wednesday",
@@ -7026,7 +7026,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 652
+            "count": 673
           },
           {
             "name": "Build: Full Body",
@@ -7063,12 +7063,12 @@
             "count": 69
           },
           {
-            "name": "Strongevity",
-            "count": 206
-          },
-          {
             "name": "Plate",
             "count": 210
+          },
+          {
+            "name": "Strongevity",
+            "count": 214
           },
           {
             "name": "Mobility",
@@ -7098,8 +7098,8 @@
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
-            "count": 114,
-            "sessions": 11,
+            "count": 125,
+            "sessions": 12,
             "avg": 10.4,
             "label": "Tuesday 7am Build: Upper"
           },
@@ -7187,13 +7187,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3035
+        "total_attended": 3064
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 261
+            "count": 290
           },
           {
             "day": "Wednesday",
@@ -7237,7 +7237,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 235
+            "count": 256
           },
           {
             "name": "Build: Full Body",
@@ -7249,7 +7249,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 120
+            "count": 128
           },
           {
             "name": "Elevate",
@@ -7288,15 +7288,6 @@
         ],
         "top_slots": [
           {
-            "day": "Tuesday",
-            "time": "10am",
-            "name": "Build: Upper",
-            "count": 35,
-            "sessions": 3,
-            "avg": 11.7,
-            "label": "Tuesday 10am Build: Upper"
-          },
-          {
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
@@ -7304,6 +7295,15 @@
             "sessions": 3,
             "avg": 11.7,
             "label": "Friday 7pm Mobility"
+          },
+          {
+            "day": "Tuesday",
+            "time": "10am",
+            "name": "Build: Upper",
+            "count": 45,
+            "sessions": 4,
+            "avg": 11.2,
+            "label": "Tuesday 10am Build: Upper"
           },
           {
             "day": "Tuesday",
@@ -7398,7 +7398,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1021
+        "total_attended": 1050
       },
       "suggestion": "**1. Launch a paid \"Build Basics\" workshop series in Thursday/Friday quiet gaps (30-45 min blocks between classes).** Target members attending lower-attendance classes like Barbelle and Capacity\u2014these workshops teach foundational technique or movement prep, positioning them as \"entry points\" before stepping into the main Build classes. Charge \u00a35\u20138 per drop-in to offset studio time and create gentle upsell momentum toward your busier strength classes.\n\n**2. Move Barbelle and Capacity to Tuesday/Wednesday peak days at off-peak *times* (e.g., 6:30am or 9:45am slots instead of mid-day).** Your quietest classes are bleeding attendance partly because they're competing for studio space on slow days. A smaller, dedicated cohort on a busy gym day creates social proof and peer discovery\u2014members already in the building see the class running and are more likely to try it next week.\n\n**3. Invite Strongevity and Elevate attendees into a \"Mobility + Strength Pairing\" 15-min open studio window on Thursday evenings (currently quiet).** Frame it as optional cooldown or prep time between classes, free for members. This fills dead air, normalizes Thursday studio use, and gently exposes members to the space as a recovery/community hub\u2014increasing their likelihood of booking a quieter class slot",
       "capacity": [
