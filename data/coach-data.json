@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:00:50.857837+00:00",
+  "generated_at": "2026-09-16T18:54:09.249344+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4018,7 +4018,7 @@
       {
         "user_id": "U09CYACSUE9",
         "text": "Oh fab - thank you! I'll get another class added now if I can for that week :+1:",
-        "hours": 24,
+        "hours": 29,
         "name": "Kerrie"
       }
     ],
@@ -6979,7 +6979,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 609
+            "count": 627
           },
           {
             "day": "Monday",
@@ -7013,7 +7013,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 609
+            "count": 627
           }
         ],
         "top_classes": [
@@ -7023,7 +7023,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 491
+            "count": 503
           },
           {
             "name": "Build: Lower",
@@ -7057,7 +7057,7 @@
           },
           {
             "name": "Plate",
-            "count": 198
+            "count": 204
           },
           {
             "name": "Mobility",
@@ -7147,10 +7147,19 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 84,
-            "sessions": 11,
-            "avg": 7.6,
+            "count": 90,
+            "sessions": 12,
+            "avg": 7.5,
             "label": "Wednesday 7pm Plate"
+          },
+          {
+            "day": "Wednesday",
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 68,
+            "sessions": 9,
+            "avg": 7.6,
+            "label": "Wednesday 5pm Build: Full Body"
           },
           {
             "day": "Saturday",
@@ -7162,15 +7171,6 @@
             "label": "Saturday 9am Elevate"
           },
           {
-            "day": "Wednesday",
-            "time": "5pm",
-            "name": "Build: Full Body",
-            "count": 64,
-            "sessions": 8,
-            "avg": 8.0,
-            "label": "Wednesday 5pm Build: Full Body"
-          },
-          {
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
@@ -7180,7 +7180,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3072
+        "total_attended": 3090
       },
       "last_30_days": {
         "top_days": [
@@ -7190,7 +7190,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 235
+            "count": 253
           },
           {
             "day": "Monday",
@@ -7224,7 +7224,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 235
+            "count": 253
           }
         ],
         "top_classes": [
@@ -7234,7 +7234,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 174
+            "count": 186
           },
           {
             "name": "Build: Lower",
@@ -7260,7 +7260,7 @@
           },
           {
             "name": "Plate",
-            "count": 55
+            "count": 61
           },
           {
             "name": "Mobility",
@@ -7373,6 +7373,15 @@
             "label": "Saturday 9am Elevate"
           },
           {
+            "day": "Wednesday",
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 31,
+            "sessions": 4,
+            "avg": 7.8,
+            "label": "Wednesday 5pm Build: Full Body"
+          },
+          {
             "day": "Monday",
             "time": "5pm",
             "name": "Build: Lower",
@@ -7380,18 +7389,9 @@
             "sessions": 3,
             "avg": 8.0,
             "label": "Monday 5pm Build: Lower"
-          },
-          {
-            "day": "Friday",
-            "time": "10am",
-            "name": "Mobility",
-            "count": 33,
-            "sessions": 4,
-            "avg": 8.2,
-            "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 1105
+        "total_attended": 1123
       },
       "suggestion": "**Fill quiet studio gaps:**\n\n1. Add a paid \"Barbell Basics\" workshop (30 mins) on Thursday or Friday mornings before the quieter classes \u2014 position it as a prep session that feeds directly into Engine or Plate, removing the intimidation barrier for those underperforming strength classes.\n\n2. Open the studio for 45-minute \"Open Lift\" slots on Saturday mornings (your quietest day) between PT blocks \u2014 charge a small drop-in fee and market it to members who want unstructured barbell time; this builds Saturday traffic overall and may convert to class attendance later.\n\n**Lift the quieter classes themselves:**\n\n3. Move Capacity and Barbelle to Tuesday or Wednesday (your busiest days) at off-peak times within those days \u2014 they're getting buried on quiet days; the busier studio energy and foot traffic will naturally boost walk-ins, and pairing them back-to-back with a Build class appeals to members already committed to strength work that day.",
       "capacity": [
@@ -7444,18 +7444,18 @@
           "status": "attention"
         },
         {
-          "name": "Plate",
-          "sessions": 26,
-          "cap": 12,
-          "avg_attending": 8.6,
-          "fill_rate": 72,
-          "status": "attention"
-        },
-        {
           "name": "Elevate",
           "sessions": 52,
           "cap": 12,
           "avg_attending": 8.6,
+          "fill_rate": 71,
+          "status": "attention"
+        },
+        {
+          "name": "Plate",
+          "sessions": 26,
+          "cap": 12,
+          "avg_attending": 8.5,
           "fill_rate": 71,
           "status": "attention"
         },
@@ -7479,8 +7479,8 @@
           "name": "Capacity",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 5.4,
-          "fill_rate": 45,
+          "avg_attending": 5.3,
+          "fill_rate": 44,
           "status": "attention"
         }
       ]
@@ -7759,13 +7759,6 @@
         "last_seen": "2026-08-25"
       },
       {
-        "id": 9505781,
-        "name": "Claire Green",
-        "membership": "Kickstart PAID IN FULL",
-        "days_absent": 15,
-        "last_seen": "2026-09-01"
-      },
-      {
         "id": 13232285,
         "name": "Claire Walker",
         "membership": "Elevate",
@@ -7799,13 +7792,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 58,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 12947742,
-        "name": "Jayne Scott",
-        "membership": "Elevate",
-        "days_absent": 15,
-        "last_seen": "2026-09-01"
       },
       {
         "id": 10671756,
