@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T11:33:58.810690+00:00",
+  "generated_at": "2026-09-17T14:00:50.677025+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,20 +7,10 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-09-17",
-    "event_count": 7,
+    "event_count": 8,
     "urgent_count": 1,
-    "enquiry_count": 0,
+    "enquiry_count": 1,
     "calendar": [
-      {
-        "title": "Eilis 1:1 Meeting",
-        "time": "12:30pm",
-        "start_raw": "2026-09-17T12:30:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": "Confirm padel court availability and equipment ready."
-      },
       {
         "title": "Programming Q4 ",
         "time": "1:15pm",
@@ -32,7 +22,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Order/confirm delivery of tile trim and toilet seat."
+        "prep": "Confirm padel court availability and equipment ready."
       },
       {
         "title": "Padel course",
@@ -42,7 +32,7 @@
         "attendees": [],
         "description": "",
         "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": "Review Eilis's progress notes and goals beforehand."
+        "prep": "Order/confirm delivery of tile trim and toilet seat."
       },
       {
         "title": "RenewYou individual programes",
@@ -52,7 +42,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Prepare Q4 programming outline and member feedback data."
+        "prep": "Review Eilis's progress notes and goals beforehand."
       },
       {
         "title": "Dude x Padel",
@@ -64,12 +54,34 @@
         ],
         "description": "",
         "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": ""
+        "prep": "Prepare Q4 programming outline and member feedback data."
       },
       {
         "title": "Paint mums fence",
         "time": "11:00am",
         "start_raw": "2026-09-18T11:00:00+01:00",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
+        "title": "\ud83d\udcde Call: Rebecca Gill",
+        "time": "11:30am",
+        "start_raw": "2026-09-18T11:30:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Rebecca Gill"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "Untitled",
+        "time": "11:30am",
+        "start_raw": "2026-09-18T11:30:00+01:00",
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
@@ -89,14 +101,14 @@
     ],
     "urgent": [
       {
-        "from": "Coach JoJo",
-        "from_raw": "Coach JoJo <jojo@theforge.pt>",
-        "subject": "Invitation: Disney JoJo @ Thu Dec 10 - Mon Dec 14, 2026 (Coach Grace)",
-        "snippet": "Disney JoJo You have been invited by Coach JoJo to attend an event named Disney JoJo on Thursday Dec 10 \u2013 Monday Dec 14, 2026. When Thursday Dec 10 \u2013 Monday Dec 14, 2026 Guests Coach JoJo - organizer",
-        "id": "1a0ae6e9d99b6024",
-        "thread_id": "1a0ae6e9d99b6024",
+        "from": "Roisin | Women in Business NI",
+        "from_raw": "\"Roisin | Women in Business NI\" <Roisin@womeninbusinessni.com>",
+        "subject": "Hi Grace just one final form - just few mins to do!",
+        "snippet": "Hi Grace I think you have missed this one. I have a fun task to write an Impact report for InterTradeIreland. And Im missing some info from you. This should only take 4-5mins. Would you mind completing",
+        "id": "1a0af9dce44b64a6",
+        "thread_id": "1a0af9dce44b64a6",
         "msg_count": 1,
-        "draft_id": "r-1374644922047280350"
+        "draft_id": "r1176821800064713437"
       }
     ],
     "important": [
@@ -107,11 +119,21 @@
         "id": "1a0ae6e9d99b6024"
       }
     ],
-    "enquiries": [],
+    "enquiries": [
+      {
+        "name": "Rebecca Gill",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:30am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:30am",
+        "snippet": "Booked a call for Tomorrow 11:30am \u2014 potential member",
+        "age": "",
+        "unread": 0
+      }
+    ],
     "checkins": {
       "by_email": {
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
@@ -234,25 +256,16 @@
       "name": "Christine Bartlett",
       "channel": "Phone",
       "message": "CALL",
-      "age": "12h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "hLEomDZAvYaiSsqRh5XM",
       "contact_id": "F7bpBfzFJgBC1QrRZvRT"
     },
     {
-      "name": "Eilis Kearns",
-      "channel": "Phone",
-      "message": "Perfect \ud83d\ude0a",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
-      "contact_id": "SL5iEZ30xiRwJF12kd5S"
-    },
-    {
       "name": "Irene Norris",
       "channel": "Phone",
       "message": "\ud83d\ude0d",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 1,
       "conv_id": "jn3eJeTzCgbcwOmXpap6",
       "contact_id": "aj9apAxOoT6ignQjdeb1"
@@ -4977,14 +4990,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U09CYACSUE9",
-        "text": "Oh fab - thank you! I'll get another class added now if I can for that week :+1:",
-        "hours": 46,
-        "name": "Kerrie"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -22695,15 +22701,15 @@
       },
       {
         "month": "2026-09",
-        "revenue": 17142.86,
+        "revenue": 17454.96,
         "expenses": 14886.7,
-        "profit": 2256.16,
-        "profit_pct": 13.2,
+        "profit": 2568.26,
+        "profit_pct": 14.7,
         "categories": {
           "in": [
             {
               "name": "Revenue",
-              "amount": 17142.86
+              "amount": 17454.96
             }
           ],
           "out": [
@@ -22762,6 +22768,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "2164c70e-31d6-45db-a19c-d4a43270e9a8",
+            "date": "2026-09-17",
+            "name": "GC C1",
+            "ref": "FORGEFITNESS-XPPQC",
+            "amount": 312.1,
+            "direction": "IN",
+            "category": "Revenue",
+            "internal": false
+          },
           {
             "uid": "205b4a4e-9ede-43cf-8754-0267501cb581",
             "date": "2026-09-17",
@@ -23886,7 +23902,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 1269.58,
+    "cash_position": 1581.68,
     "available": 0.0,
     "reserves": [
       {
@@ -23907,7 +23923,7 @@
       }
     ],
     "earmarked": 12697.0,
-    "total_cash": 13966.58,
+    "total_cash": 14278.68,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -23935,9 +23951,9 @@
         "monthly": 50.0
       }
     ],
-    "cash_in_30": 23896.68,
-    "cash_out_30": 25773.85,
-    "net_30": -1877.17,
+    "cash_in_30": 24208.78,
+    "cash_out_30": 25762.98,
+    "net_30": -1554.2,
     "as_of": "2026-09-17"
   },
   "gocardless": {
