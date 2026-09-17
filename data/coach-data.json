@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T14:00:50.677025+00:00",
+  "generated_at": "2026-09-17T19:02:05.544896+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7004,7 +7004,7 @@
           },
           {
             "day": "Thursday",
-            "count": 446
+            "count": 463
           }
         ],
         "bottom_days": [
@@ -7014,7 +7014,7 @@
           },
           {
             "day": "Thursday",
-            "count": 446
+            "count": 463
           },
           {
             "day": "Friday",
@@ -7036,7 +7036,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 495
+            "count": 504
           },
           {
             "name": "Build: Lower",
@@ -7066,7 +7066,7 @@
           },
           {
             "name": "Engine",
-            "count": 60
+            "count": 68
           },
           {
             "name": "Plate",
@@ -7193,7 +7193,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 3078
+        "total_attended": 3095
       },
       "last_30_days": {
         "top_days": [
@@ -7207,7 +7207,7 @@
           },
           {
             "day": "Thursday",
-            "count": 172
+            "count": 189
           },
           {
             "day": "Monday",
@@ -7233,7 +7233,7 @@
           },
           {
             "day": "Thursday",
-            "count": 172
+            "count": 189
           },
           {
             "day": "Wednesday",
@@ -7247,7 +7247,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 195
+            "count": 204
           },
           {
             "name": "Strongevity",
@@ -7273,7 +7273,7 @@
           },
           {
             "name": "Engine",
-            "count": 28
+            "count": 36
           },
           {
             "name": "Plate",
@@ -7404,7 +7404,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1081
+        "total_attended": 1098
       },
       "suggestion": "I don't have the attendance data needed to give you specific recommendations\u2014the brackets in your message are empty. \n\nTo give you 2-3 actionable suggestions, I'd need to know:\n\n- **Which days/times have gaps** between PT sessions and classes?\n- **Which classes are underperforming** (specific names and current attendance)?\n- **What studio space** do you have (how many rooms, capacity per class)?\n\nOnce you share that, I can suggest things like: a walk-in open-gym slot in a quiet afternoon window, a paid small-group PT block at an off-peak time, a targeted email push to existing members for a specific underbooked class, or a time-slot shift for a quiet class to a busier part of the week.\n\nCan you pull those numbers?",
       "capacity": [
@@ -7444,17 +7444,9 @@
           "name": "Build: Full Body",
           "sessions": 64,
           "cap": 12,
-          "avg_attending": 9.2,
+          "avg_attending": 9.1,
           "fill_rate": 76,
           "status": "healthy"
-        },
-        {
-          "name": "Barbelle",
-          "sessions": 13,
-          "cap": 9,
-          "avg_attending": 6.5,
-          "fill_rate": 72,
-          "status": "attention"
         },
         {
           "name": "Plate",
@@ -7469,6 +7461,14 @@
           "sessions": 52,
           "cap": 12,
           "avg_attending": 8.6,
+          "fill_rate": 71,
+          "status": "attention"
+        },
+        {
+          "name": "Barbelle",
+          "sessions": 13,
+          "cap": 9,
+          "avg_attending": 6.4,
           "fill_rate": 71,
           "status": "attention"
         },
