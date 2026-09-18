@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T05:00:52.749009+00:00",
+  "generated_at": "2026-09-18T11:06:35.353688+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1167,6 +1167,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Christina Faulkner",
+        "last_scan": "2026-09-18",
+        "scan_count": 2,
+        "weight": 153.1,
+        "smm": 50.3,
+        "pbf": 40.3,
+        "bmi": 28.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -1.0,
+        "smm_change": 0.0,
+        "pbf_change": -0.1,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-30",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Tina Taggart",
         "last_scan": "2026-09-17",
@@ -3016,30 +3040,6 @@
         "overdue": true
       },
       {
-        "name": "Christina Faulkner",
-        "last_scan": "2026-07-07",
-        "scan_count": 1,
-        "weight": 154.1,
-        "smm": 50.3,
-        "pbf": 40.4,
-        "bmi": 28.2,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-08-18",
-        "days_to_due": -31,
-        "overdue": true
-      },
-      {
         "name": "Laura Fullerton",
         "last_scan": "2026-07-06",
         "scan_count": 1,
@@ -4311,7 +4311,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower classes immediately** \u2014 these 16 sessions are her largest commitment. JoJo already teaches Build: Upper; assign Build: Lower to Eilis (who has capacity) or split between both coaches so no single person owns two variants of the same programme.\n\n\u2022 **Move Grace's Strongevity, Engine and No Sweat Intro to JoJo and Eilis** \u2014 these are low-volume classes (9 sessions total). JoJo can absorb Strongevity and Engine given her head coach seniority; Eilis can take additional No Sweat Intros to build her experience and confidence outside Tuesdays.\n\n\u2022 **Rebalance PT load: Eilis is carrying 40 PT sessions vs JoJo's 20** \u2014 Eilis is over-loaded on 1:1s. Shift some of Eilis's PT clients to JoJo or consider scheduling a third coach for PT slots, as relying on one person for half your revenue-generating sessions creates risk.\n\n\u2022 **Stop treating Body Composition Scans as coaching load** \u2014 they're administrative tasks. Rotate these among all coaches or assign to a non-coaching team member to free up 30 sessions of false \"coaching time\" each month and clarify actual class and PT capacity.\n\n\u2022 **Plug Eilis's remaining capacity into secondary class slots** \u2014 after redistribution, Eilis will have room. Use her for shadowing or co-teaching higher-skill classes (Circuits, Build variants) on non-Tuesday days to develop her coaching strength without overloading.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately**: Hand her 16 Build: Lower sessions to JoJo (aligns with JoJo's Upper focus and spreads strength programming), Strongevity to Eilis (lower intensity, suits her development), and Engine/No Sweat Intro to Eilis. This removes Grace entirely from the timetable.\n\n\u2022 **Rebalance PT load**: Eilis is carrying 40 PT sessions against JoJo's 20. Shift 10 PT slots to JoJo to create equity and reduce Eilis's burnout risk, freeing her for more class coverage.\n\n\u2022 **Stop treating Body Composition Scans as coaching time**: Delegate all InBody scans (Eilis's 12, JoJo's 13, Grace's 5) to reception or junior staff. These are admin, not skill-building, and artificially inflate coaching hours.\n\n\u2022 **Shore up No Sweat Intro coverage**: Grace and JoJo are the only providers (3 + 7 sessions). Train Eilis to deliver this low-barrier class so it's not dependent on two people and scales with member growth.\n\n\u2022 **Protect JoJo's Tuesday specialist role**: Keep her on technically demanding Tuesdays, but audit whether she needs 24 Build: Upper sessions monthly \u2014 consider whether Eilis could shadow or co-coach some Upper sessions to develop her skills without solo delivery.",
     "period": "August 2026"
   },
   "asana": {
@@ -4683,7 +4683,7 @@
     }
   },
   "teamup": {
-    "total_members": 174,
+    "total_members": 175,
     "recurring": 113,
     "recurring_members": [
       {
@@ -5190,7 +5190,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 27,
+    "new_this_month": 28,
     "cancellations_this_month": 9,
     "leaving_members": [
       {
@@ -6723,6 +6723,40 @@
         ]
       },
       {
+        "name": "Strongevity",
+        "count": 7,
+        "members": [
+          {
+            "id": 13954610,
+            "name": "Carol McCappin"
+          },
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 13755354,
+            "name": "Eileen Graham"
+          },
+          {
+            "id": 13903499,
+            "name": "Gail Houston"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13535278,
+            "name": "Jean Rees"
+          },
+          {
+            "id": 13618093,
+            "name": "Joyce Lyons"
+          }
+        ]
+      },
+      {
         "name": "Evolve",
         "count": 6,
         "members": [
@@ -6749,36 +6783,6 @@
           {
             "id": 13014573,
             "name": "Sorcha Gilmore"
-          }
-        ]
-      },
-      {
-        "name": "Strongevity",
-        "count": 6,
-        "members": [
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 13755354,
-            "name": "Eileen Graham"
-          },
-          {
-            "id": 13903499,
-            "name": "Gail Houston"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13535278,
-            "name": "Jean Rees"
-          },
-          {
-            "id": 13618093,
-            "name": "Joyce Lyons"
           }
         ]
       },
@@ -6976,7 +6980,7 @@
           },
           {
             "day": "Friday",
-            "count": 434
+            "count": 449
           }
         ],
         "bottom_days": [
@@ -6986,7 +6990,7 @@
           },
           {
             "day": "Friday",
-            "count": 434
+            "count": 449
           },
           {
             "day": "Thursday",
@@ -7042,11 +7046,11 @@
           },
           {
             "name": "Plate",
-            "count": 195
+            "count": 202
           },
           {
             "name": "Mobility",
-            "count": 205
+            "count": 213
           },
           {
             "name": "Strongevity",
@@ -7165,7 +7169,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 3060
+        "total_attended": 3075
       },
       "last_30_days": {
         "top_days": [
@@ -7182,12 +7186,12 @@
             "count": 189
           },
           {
-            "day": "Monday",
-            "count": 132
+            "day": "Friday",
+            "count": 143
           },
           {
-            "day": "Friday",
-            "count": 128
+            "day": "Monday",
+            "count": 132
           }
         ],
         "bottom_days": [
@@ -7196,12 +7200,12 @@
             "count": 77
           },
           {
-            "day": "Friday",
-            "count": 128
-          },
-          {
             "day": "Monday",
             "count": 132
+          },
+          {
+            "day": "Friday",
+            "count": 143
           },
           {
             "day": "Thursday",
@@ -7253,11 +7257,11 @@
           },
           {
             "name": "Plate",
-            "count": 61
+            "count": 68
           },
           {
             "name": "Mobility",
-            "count": 68
+            "count": 76
           },
           {
             "name": "Circuits",
@@ -7352,9 +7356,9 @@
             "day": "Friday",
             "time": "7am",
             "name": "Plate",
-            "count": 20,
-            "sessions": 3,
-            "avg": 6.7,
+            "count": 27,
+            "sessions": 4,
+            "avg": 6.8,
             "label": "Friday 7am Plate"
           },
           {
@@ -7376,24 +7380,24 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1035
+        "total_attended": 1050
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a paid \"Open Lifting Block\" (30\u201345 min) on Thursday and Friday afternoons** \u2014 these are your quietest days and the studio sits unused between sessions. Price it lower than PT ($8\u201312) to attract members who want structure without a full class, targeting your Build: class loyalists who'd use it for extra strength work.\n\n2. **Run a monthly \"Mobility + Strength Workshop\" (60 min, paid or member-inclusive) on Saturday mornings before your quietest day** \u2014 Mobility is underperforming (68 last month) and Saturday is weak overall (294 over 90 days). A hybrid format positions it as skill-building rather than a standalone class, and Saturday morning slots often drive weekend gym traffic.\n\n**For the quieter classes themselves:**\n\n3. **Move Barbelle and Capacity to Tuesday or Wednesday evenings** \u2014 your peak days (741 and 631 attendance). These classes are critically low (13 and 18 last month) likely because they're scheduled during low-traffic windows. A time-slot shift costs nothing and leverages existing momentum when members are already in-studio.",
       "capacity": [
-        {
-          "name": "Circuits",
-          "sessions": 26,
-          "cap": 13,
-          "avg_attending": 10.5,
-          "fill_rate": 88,
-          "status": "healthy"
-        },
         {
           "name": "Strongevity",
           "sessions": 27,
           "cap": 15,
           "avg_attending": 10.5,
           "fill_rate": 88,
+          "status": "healthy"
+        },
+        {
+          "name": "Circuits",
+          "sessions": 26,
+          "cap": 13,
+          "avg_attending": 10.5,
+          "fill_rate": 87,
           "status": "healthy"
         },
         {
@@ -7743,13 +7747,6 @@
         "membership": "8 PT Sessions",
         "days_absent": 60,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 7209125,
-        "name": "Christine Calvin",
-        "membership": "Evolve",
-        "days_absent": 24,
-        "last_seen": "2026-08-25"
       },
       {
         "id": 13232285,
@@ -8207,6 +8204,15 @@
         "join_date": "2025-01-26",
         "membership": "Empower",
         "class_count": 174,
+        "last_momentum": null
+      },
+      {
+        "id": 13954610,
+        "name": "Carol McCappin",
+        "email": "c.mccappin@btinternet.com",
+        "join_date": "2026-10-05",
+        "membership": "Strongevity",
+        "class_count": 0,
         "last_momentum": null
       },
       {
