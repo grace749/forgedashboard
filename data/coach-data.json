@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:00:52.259369+00:00",
+  "generated_at": "2026-09-18T18:28:29.294184+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -3982,7 +3982,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U09CYACSUE9",
+        "text": "Hi Grace, i've an email in about my next Forge payment and it's still showing \u00a3119 - and I was expecting it to go up again for next month when I go back to 3 pw",
+        "hours": 4,
+        "name": "Kerrie"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -6980,7 +6987,7 @@
           },
           {
             "day": "Friday",
-            "count": 449
+            "count": 457
           }
         ],
         "bottom_days": [
@@ -6990,7 +6997,7 @@
           },
           {
             "day": "Friday",
-            "count": 449
+            "count": 457
           },
           {
             "day": "Thursday",
@@ -7024,7 +7031,7 @@
           },
           {
             "name": "Circuits",
-            "count": 233
+            "count": 241
           },
           {
             "name": "Strongevity",
@@ -7169,7 +7176,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 3075
+        "total_attended": 3083
       },
       "last_30_days": {
         "top_days": [
@@ -7187,7 +7194,7 @@
           },
           {
             "day": "Friday",
-            "count": 143
+            "count": 151
           },
           {
             "day": "Monday",
@@ -7205,7 +7212,7 @@
           },
           {
             "day": "Friday",
-            "count": 143
+            "count": 151
           },
           {
             "day": "Thursday",
@@ -7234,12 +7241,12 @@
             "count": 119
           },
           {
-            "name": "Build: Lower",
-            "count": 88
+            "name": "Circuits",
+            "count": 89
           },
           {
-            "name": "Circuits",
-            "count": 81
+            "name": "Build: Lower",
+            "count": 88
           }
         ],
         "bottom_classes": [
@@ -7264,8 +7271,8 @@
             "count": 76
           },
           {
-            "name": "Circuits",
-            "count": 81
+            "name": "Build: Lower",
+            "count": 88
           }
         ],
         "top_slots": [
@@ -7380,7 +7387,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1050
+        "total_attended": 1058
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a paid \"Open Lifting Block\" (30\u201345 min) on Thursday and Friday afternoons** \u2014 these are your quietest days and the studio sits unused between sessions. Price it lower than PT ($8\u201312) to attract members who want structure without a full class, targeting your Build: class loyalists who'd use it for extra strength work.\n\n2. **Run a monthly \"Mobility + Strength Workshop\" (60 min, paid or member-inclusive) on Saturday mornings before your quietest day** \u2014 Mobility is underperforming (68 last month) and Saturday is weak overall (294 over 90 days). A hybrid format positions it as skill-building rather than a standalone class, and Saturday morning slots often drive weekend gym traffic.\n\n**For the quieter classes themselves:**\n\n3. **Move Barbelle and Capacity to Tuesday or Wednesday evenings** \u2014 your peak days (741 and 631 attendance). These classes are critically low (13 and 18 last month) likely because they're scheduled during low-traffic windows. A time-slot shift costs nothing and leverages existing momentum when members are already in-studio.",
       "capacity": [
@@ -7396,7 +7403,7 @@
           "name": "Circuits",
           "sessions": 26,
           "cap": 13,
-          "avg_attending": 10.5,
+          "avg_attending": 10.4,
           "fill_rate": 87,
           "status": "healthy"
         },
