@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T10:51:15.568605+00:00",
+  "generated_at": "2026-09-19T14:00:47.117438+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1104,6 +1104,30 @@
         "weight_change": -1.4,
         "smm_change": 0.9,
         "pbf_change": -1.1,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-10-31",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "Brona McQuillan",
+        "last_scan": "2026-09-19",
+        "scan_count": 2,
+        "weight": 177.0,
+        "smm": 72.3,
+        "pbf": 27.1,
+        "bmi": 28.6,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -6.5,
+        "smm_change": -1.1,
+        "pbf_change": -1.6,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -3513,30 +3537,6 @@
         "overdue": true
       },
       {
-        "name": "Brona McQuillan",
-        "last_scan": "2026-06-06",
-        "scan_count": 1,
-        "weight": 183.5,
-        "smm": 73.4,
-        "pbf": 28.7,
-        "bmi": 29.6,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-07-18",
-        "days_to_due": -63,
-        "overdue": true
-      },
-      {
         "name": "Heather McWilliams",
         "last_scan": "2026-06-04",
         "scan_count": 1,
@@ -3903,7 +3903,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U09CYACSUE9",
+        "text": "Hi Grace, i've an email in about my next Forge payment and it's still showing \u00a3119 - and I was expecting it to go up again for next month when I go back to 3 pw",
+        "hours": 24,
+        "name": "Kerrie"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
