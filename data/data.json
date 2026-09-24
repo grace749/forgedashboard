@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T11:38:14.719937+00:00",
+  "generated_at": "2026-09-24T14:00:54.139508+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-09-24",
-    "event_count": 18,
-    "urgent_count": 0,
+    "event_count": 17,
+    "urgent_count": 4,
     "enquiry_count": 2,
     "calendar": [
       {
@@ -47,19 +47,6 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
-        "title": "Programming",
-        "time": "12:30pm",
-        "start_raw": "2026-09-24T12:30:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "eiliskearns@hotmail.co.uk",
-          "jojo@theforge.pt"
-        ],
-        "description": "",
-        "location": "",
-        "prep": "Confirm padel court booking; have B-money contact details ready."
-      },
-      {
         "title": "Padel course",
         "time": "6:00pm",
         "start_raw": "2026-09-24T18:00:00+01:00",
@@ -67,7 +54,7 @@
         "attendees": [],
         "description": "",
         "location": "Padel Society - Antrim, 5 Nursery Park, Belfast Rd, Antrim BT41 1QS, UK",
-        "prep": "Review programming schedule; prepare any new workout templates needed."
+        "prep": "Confirm padel court booking; have B-money contact details ready."
       },
       {
         "title": "Mum card for dentist",
@@ -77,7 +64,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Gather padel course materials; confirm participant list & equipment."
+        "prep": "Review programming schedule; prepare any new workout templates needed."
       },
       {
         "title": "Mum car insurance",
@@ -87,7 +74,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Gather padel course materials; confirm participant list & equipment."
       },
       {
         "title": "Midwife appt",
@@ -121,7 +108,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Prepare padel lesson plan; confirm court booking with Mark."
+        "prep": ""
       },
       {
         "title": "Padel lesson with Andrew",
@@ -131,7 +118,7 @@
         "attendees": [],
         "description": "",
         "location": "Powerhouse Padel, 52 Hanover Pl, Coleraine BT52 1EB, UK",
-        "prep": "Prepare padel lesson plan; confirm court booking with Andrew."
+        "prep": "Prepare padel lesson plan; confirm court booking with Mark."
       },
       {
         "title": "COVER CLASSES - JoJo at conference in Edinburgh",
@@ -141,7 +128,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Brief cover coaches on class formats; confirm JoJo's Edinburgh details."
+        "prep": "Prepare padel lesson plan; confirm court booking with Andrew."
       },
       {
         "title": "Elevate",
@@ -150,7 +137,7 @@
         "day": "Saturday",
         "attendees": [],
         "description": "",
-        "location": "11/12 booked",
+        "location": "10/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -206,11 +193,58 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm padel forge participants; check court availability & equipment."
+        "prep": "Brief cover coaches on class formats; confirm JoJo's Edinburgh details."
       }
     ],
-    "urgent": [],
-    "important": [],
+    "urgent": [
+      {
+        "from": "Coach JoJo",
+        "from_raw": "Coach JoJo <jojo@theforge.pt>",
+        "subject": "Invitation: Eilis concert @ Wed Aug 18 3pm - Thu Aug 19, 2027 11pm (BST) (Coach Grace)",
+        "snippet": "Eilis concert You have been invited by Coach JoJo to attend an event named Eilis concert on Wednesday Aug 18 \u22c5 3pm \u2013 Thursday Aug 19, 2027 \u22c5 11pm (United Kingdom Time). When Wednesday Aug 18 \u22c5 3pm \u2013",
+        "id": "1a0d3b66c9390249",
+        "thread_id": "1a0d3b66c9390249",
+        "msg_count": 1,
+        "draft_id": "r7141884462834588376"
+      },
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Please Give Feedback to TShirt Studio for your order - 3897253",
+        "snippet": "Feedback Dear Customer, Thanks for your order with TShirt Studio. Your items should be with you by now and we hope that you are happy with them. Items Value T-Shirt Qty: 1 Colour: Purple Size: M Front",
+        "id": "1a0d39fb36c92a5f",
+        "thread_id": "1a0d39fb36c92a5f",
+        "msg_count": 1,
+        "draft_id": "r889005398227689608"
+      },
+      {
+        "from": "Mirafit",
+        "from_raw": "Mirafit <support@mirafit.co.uk>",
+        "subject": "Your Mirafit order confirmation",
+        "snippet": "Mirafit Grace Smith, WE MAY SEND YOUR EQUIPMENT IN MORE THAN ONE DELIVERY SO PLEASE DON&#39;T WORRY IF IT DOESN&#39;T ALL TURN UP TOGETHER. Once we have shipped your goods, we will send you a tracking",
+        "id": "1a0d398490140660",
+        "thread_id": "1a0d37843e190239",
+        "msg_count": 2,
+        "draft_id": "r-1052065634652840115"
+      },
+      {
+        "from": "Elaine Blood",
+        "from_raw": "Elaine Blood <elaine.blood@daysmart.com>",
+        "subject": "Perform",
+        "snippet": "Hey Grace, The team are looking into this again now. It looks like there&#39;s a 403 error coming through from Team Up, which Danny has jumped on to investigate. In the meantime, he&#39;s asked if you",
+        "id": "1a0d34a2c53cdea0",
+        "thread_id": "1a0cda3e7a5211e2",
+        "msg_count": 9
+      }
+    ],
+    "important": [
+      {
+        "from": "Coach JoJo",
+        "subject": "Invitation: Eilis concert @ Wed Aug 18 3pm - Thu Aug 19, 2027 11pm (BST) (Coach Grace)",
+        "snippet": "Eilis concert You have been invited by Coach JoJo to attend an event named Eilis concert on Wednesday Aug 18 \u22c5 3pm \u2013 Thursday Aug 19, 2027 \u22c5 11pm (United Kingdom Time). When Wednesday Aug 18 \u22c5 3pm \u2013",
+        "id": "1a0d3b66c9390249"
+      }
+    ],
     "enquiries": [
       {
         "name": "John Franklin",
@@ -352,10 +386,19 @@
   },
   "ghl": [
     {
+      "name": "Helen Basher Logan",
+      "channel": "Phone",
+      "message": "Gone two years today .",
+      "age": "1h ago",
+      "unread": 2,
+      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
+      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
+    },
+    {
       "name": "Sarah Lacey",
       "channel": "Phone",
       "message": "Thank you for your email.\n\n\n\nI am currently out of the office and will respond on my return.\n\n\nMany thanks,\nSarah\n\n\n--\n\n\n\n\n\n\n\n[https://ci3.googleusercontent.com/mail-sig/AIorK4xWGwCiMcl87xQCG_0dRRcX8t",
-      "age": "0h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "sRzEIGhh2ddxExaJMuck",
       "contact_id": "AOZMso4TwuS701qlQw9R"
@@ -364,43 +407,25 @@
       "name": "Danielle B",
       "channel": "Phone",
       "message": "We could do with something for doobie as that bowls too small",
-      "age": "1h ago",
+      "age": "3h ago",
       "unread": 2,
       "conv_id": "HI7MIoXVyBosoYmMsqvw",
       "contact_id": "PxU8tUUapZek9a2ZDT5X"
     },
     {
-      "name": "Alison Moffitt-Robinson",
-      "channel": "Phone",
-      "message": "Thanks Grace. Really appreciate your kind words. All the very best for the future of the business and your new family. \ud83d\udc9c",
-      "age": "1h ago",
-      "unread": 1,
-      "conv_id": "LOOhTKnjdX430B9xTTHY",
-      "contact_id": "ORK5QGJbw2whyEM6epD7"
-    },
-    {
       "name": "Rebekah Newnes",
       "channel": "Phone",
       "message": "This is so nice \ud83e\udd79\ud83d\udc9c",
-      "age": "2h ago",
+      "age": "4h ago",
       "unread": 1,
       "conv_id": "RP0BnrvrKIAYWSgkYUZV",
       "contact_id": "N33wKXzr4iHKvZybichO"
     },
     {
-      "name": "Jo",
-      "channel": "Phone",
-      "message": "These guys are opening in Portrush -slick videos",
-      "age": "3h ago",
-      "unread": 2,
-      "conv_id": "SSmsaXAmGesXC4DA1BV3",
-      "contact_id": "xa3rPNDLcMKM9VtjK91V"
-    },
-    {
       "name": "Danielle Burke",
       "channel": "Phone",
       "message": "gkQxj3PI",
-      "age": "15h ago",
+      "age": "17h ago",
       "unread": 2,
       "conv_id": "vUYv49gcwKBgaARfddnh",
       "contact_id": "aHD0jtsKHztYpoLnN5yQ"
@@ -409,7 +434,7 @@
       "name": "Maude McAleese",
       "channel": "Phone",
       "message": "Hi Grace, Jo Jo said all I needed to do was go online to book for next session after my 4th wk ends next Wednesday,  I  hope I've done the proper booking as I said  I'm useless at doing things online",
-      "age": "18h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "hGiVCDAGnrq0g1jLR8Sr",
       "contact_id": "I2UV26waUFtQznFaOqUY"
@@ -418,7 +443,7 @@
       "name": "Kathryn Alleyne",
       "channel": "Phone",
       "message": "Hi Grace, thanks for checking in \ud83d\ude0a I think things are going well. I dont crave sugar as much since I've been eating more protein but am not great at drinking the water! My body is generally a little a",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "SchC4kWTwkUNZLq6QGix",
       "contact_id": "Qu5byPho0Z2foHCVnzfA"
@@ -458,15 +483,6 @@
       "unread": 15,
       "conv_id": "3QF7tW4Hwq1h9rWPGBSg",
       "contact_id": "YXbW7QpyxBOrzx4uq7ln"
-    },
-    {
-      "name": "Agnes Marilyn Chestnutt",
-      "channel": "Phone",
-      "message": "Grace I fell last Sunday and I\u2019ve got sore ribs I wasn\u2019t at class last week because I was in a lot of pain.  I\u2019ll not be there tomorrow either because I\u2019m still sore so think it\u2019s better to let the ri",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "6yIFrhFcWeEkoUakdueJ",
-      "contact_id": "V9MyDbB7abQISMqVVpiL"
     }
   ],
   "jumpstart": {
@@ -5070,7 +5086,44 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U086J76UC3Y",
+        "text": "Hi Alison, thank you so much for such a lovely message, it really means a lot. I completely understand your reasons and totally support you doing what's best fo",
+        "hours": 48,
+        "name": "Alison Moffitt-Robinson"
+      },
+      {
+        "user_id": "U0AEX0KL5FY",
+        "text": "Hi Grace, am loving being back, really missed the classes. I feel my fitness level still isn't where it was, am hoping that will improve over the next few weeks",
+        "hours": 44,
+        "name": "Margaret Hughes"
+      },
+      {
+        "user_id": "U08BG08G4DS",
+        "text": "Hi grace yeah I'll b bk Oct, I'm off a couple off weeks so will be able to get my classes fitted in lol, looking forward to it :blush:",
+        "hours": 26,
+        "name": "Evelyn Sharpe"
+      },
+      {
+        "user_id": "U08K892MJNQ",
+        "text": "Thanks Grace yes that all makes sense and I was kind of assuming that was maybe the case. That's grand, I\u2019ll stay put where I'm at then and if I need to cancel ",
+        "hours": 21,
+        "name": "Karen Hobson"
+      },
+      {
+        "user_id": "U0AJVCF923T",
+        "text": "Hi Grace\u2026 \u00a3149.00 has come out of my account this evening, I'm only doing 2 sessions a week from the 2nd sept. \nI also have paid for August and was away, can I ",
+        "hours": 17,
+        "name": "Heather McWilliams"
+      },
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "Hello Coach Grace, this is noted. Thank you!",
+        "hours": 7,
+        "name": "Julie Lapaz"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -6281,7 +6334,7 @@
         "name": "VIVIAN MORRISON"
       }
     ],
-    "new_this_month": 32,
+    "new_this_month": 31,
     "cancellations_this_month": 9,
     "leaving_members": [
       {
@@ -7886,20 +7939,6 @@
         ]
       },
       {
-        "name": "8 Session Block",
-        "count": 2,
-        "members": [
-          {
-            "id": 930054,
-            "name": "Annette Scott"
-          },
-          {
-            "id": 3236503,
-            "name": "Michelle McKnight"
-          }
-        ]
-      },
-      {
         "name": "Kickstart PAID IN FULL",
         "count": 2,
         "members": [
@@ -7924,6 +7963,16 @@
           {
             "id": 13899688,
             "name": "Sarah Logan"
+          }
+        ]
+      },
+      {
+        "name": "8 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 3236503,
+            "name": "Michelle McKnight"
           }
         ]
       },
@@ -8488,7 +8537,7 @@
           "sessions": 13,
           "cap": 9,
           "avg_attending": 6.8,
-          "fill_rate": 76,
+          "fill_rate": 75,
           "status": "healthy"
         },
         {
@@ -8752,7 +8801,7 @@
       },
       {
         "month": "2026-09",
-        "active": 171,
+        "active": 170,
         "churn": 7.3,
         "by_type": {
           "Empower": 75,
@@ -8768,7 +8817,6 @@
           "6 Week Jumpstart": 10,
           "Strongevity Membership": 15,
           "8 Class Block": 1,
-          "8 Session Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "1:2 PT 4 Sessions": 1
         }
@@ -9200,15 +9248,6 @@
         "join_date": "2023-07-10",
         "membership": "Empower",
         "class_count": 370,
-        "last_momentum": null
-      },
-      {
-        "id": 930054,
-        "name": "Annette Scott",
-        "email": "annettescott2@gmail.com",
-        "join_date": "2024-06-25",
-        "membership": "8 Session Block",
-        "class_count": 256,
         "last_momentum": null
       },
       {
@@ -22730,9 +22769,9 @@
       {
         "month": "2026-09",
         "revenue": 20944.93,
-        "expenses": 19733.97,
-        "profit": 1210.96,
-        "profit_pct": 5.8,
+        "expenses": 20092.3,
+        "profit": 852.63,
+        "profit_pct": 4.1,
         "categories": {
           "in": [
             {
@@ -22755,7 +22794,7 @@
             },
             {
               "name": "Other",
-              "amount": 2405.08
+              "amount": 2624.68
             },
             {
               "name": "Professional Services",
@@ -22767,7 +22806,7 @@
             },
             {
               "name": "Admin",
-              "amount": 884.28
+              "amount": 1004.26
             },
             {
               "name": "Marketing",
@@ -22791,7 +22830,7 @@
             },
             {
               "name": "Food And Drink",
-              "amount": 121.2
+              "amount": 139.95
             },
             {
               "name": "Vehicles",
@@ -22804,6 +22843,46 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "491ca5fd-102a-402c-829b-c28359ec0f65",
+            "date": "2026-09-24",
+            "name": "Mol*mirafit",
+            "ref": "MOL*MIRAFIT",
+            "amount": 154.8,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "48eed47f-e062-476b-92d7-64c87ade0a26",
+            "date": "2026-09-24",
+            "name": "Mol*mirafit",
+            "ref": "MOL*MIRAFIT",
+            "amount": 64.8,
+            "direction": "OUT",
+            "category": "Other",
+            "internal": false
+          },
+          {
+            "uid": "48df0a84-1839-42c2-a49e-92a1eca0193a",
+            "date": "2026-09-24",
+            "name": "Amazon",
+            "ref": "AMAZON.CO.UK",
+            "amount": 119.98,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
+          {
+            "uid": "48c3b62c-7837-409f-9c24-454600b88356",
+            "date": "2026-09-24",
+            "name": "Culture Coffee",
+            "ref": "Culture Coffee",
+            "amount": 18.75,
+            "direction": "OUT",
+            "category": "Food And Drink",
+            "internal": false
+          },
           {
             "uid": "48b27e75-9b51-4aa2-a8b3-b0d22afb27d9",
             "date": "2026-09-24",
@@ -24518,7 +24597,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 1224.48,
+    "cash_position": 866.15,
     "available": 0.0,
     "reserves": [
       {
@@ -24539,7 +24618,7 @@
       }
     ],
     "earmarked": 11697.0,
-    "total_cash": 12921.48,
+    "total_cash": 12563.15,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -24568,8 +24647,8 @@
       }
     ],
     "cash_in_30": 24660.43,
-    "cash_out_30": 23486.57,
-    "net_30": 1173.86,
+    "cash_out_30": 23844.9,
+    "net_30": 815.53,
     "as_of": "2026-09-24"
   },
   "gocardless": {
