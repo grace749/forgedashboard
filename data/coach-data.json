@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T05:00:51.631643+00:00",
+  "generated_at": "2026-09-26T11:16:54.326363+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1090,6 +1090,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "claires140",
+        "last_scan": "2026-09-26",
+        "scan_count": 1,
+        "weight": 184.2,
+        "smm": 80.7,
+        "pbf": 21.1,
+        "bmi": 25.7,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-07",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Eilis Kearns",
         "last_scan": "2026-09-25",
@@ -4019,20 +4043,13 @@
         "overdue": true
       }
     ],
-    "total": 122,
+    "total": 123,
     "configured": true
   },
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Hello Coach Grace, this is noted. Thank you!",
-        "hours": 46,
-        "name": "Julie Lapaz"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -4362,7 +4379,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her 16 Build: Lower sessions need covering\u2014assign 8\u201310 to JoJo (already leading Build: Upper) to create a full Lower/Upper split, and 6\u20138 to Eilis to build her confidence on this format. This removes Grace's largest delivery commitment.\n\n\u2022 **Cap Eilis's PT load**: At 40 sessions, she's carrying too much 1:1 work and risks burnout. Aim for 25\u201330 PT slots; move 10\u201312 of her least specialised clients to JoJo (who has capacity at 20 PT) or use as onboarding slots for newer coaches if you hire.\n\n\u2022 **Shore up Strongevity and No Sweat Intro coverage**: Grace holds both (5 and 3 sessions). Assign Strongevity to JoJo or Eilis depending on class style/demand, and rotate No Sweat Intro among coaches to avoid single-point failure and give everyone a share of member onboarding.\n\n\u2022 **Use Body Composition scans as admin, not coaching**: Stop counting them toward timetable balance. Assign InBody slots to whichever coach has a gap that week\u2014it's a 10-minute admin task, not coaching load.\n\n\u2022 **Stabilise Circuits and Engine**: These are low-volume (7 and 1 session). Either consolidate them into one coach's regular slot or rotate to fill gaps; don't leave them as orphaned classes.\n\n\u2022 **Confirm JoJo can absorb extra load**: She's currently at 103 sessions (excluding InBody). Before reassigning, confirm Tuesdays and her Upper focus aren't already maxed, so she can safely take 10\u201315 of Grace's sessions without burnout.",
+    "advice": "\u2022 **Reassign Grace's Build: Lower (16 sessions/month) to JoJo.** This is JoJo's strength class wheelhouse and distributes her existing Upper work more evenly; it also removes a significant chunk of Grace's load without requiring a new coach to learn it.\n\n\u2022 **Move Grace's Strongevity (5 sessions) and Engine (1 session) to Eilis.** Both are lower-intensity, technique-focused classes well-suited to Eilis's current capability and help fill her timetable productively outside her heavy PT load.\n\n\u2022 **Assign Grace's No Sweat Intro (3 sessions) to either coach on a rotating basis.** This is short, low-skill delivery; rotating it prevents burnout and gives both Eilis and JoJo a straightforward way to top up their hours.\n\n\u2022 **Eilis is carrying 40 PT sessions monthly \u2014 review whether all are appropriate.** At that volume she's under-utilised for group coaching. Consider whether some PT clients could step into classes (Elevate, Plate, Mobility) or whether PT load can be redistributed once Grace's classes are covered.\n\n\u2022 **Assign Grace's Body Composition Scans (5 sessions) to admin or a non-coaching duty.** They're just scale readings; freeing these releases Grace entirely and stops the team conflating them with real coaching work.\n\n\u2022 **After redistribution, Grace drops to zero delivery and the team absorbs her 35 sessions.** JoJo gains 17 (Lower + Intro rotation), Eilis gains 6 (Strongevity + Engine + Intro rotation), leaving both well-utilised and no single coach dependent on Grace's cover.",
     "period": "August 2026"
   },
   "asana": {
@@ -5108,16 +5125,16 @@
         "name": "Sami-Jo Smyth"
       },
       {
-        "id": 7190530,
-        "name": "Sarah Boorman"
-      },
-      {
         "id": 12982150,
         "name": "Sarah Calvin"
       },
       {
         "id": 10361424,
         "name": "Sarah Lacey"
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Poulton"
       },
       {
         "id": 7775785,
@@ -6334,16 +6351,16 @@
             "name": "Sami-Jo Smyth"
           },
           {
-            "id": 7190530,
-            "name": "Sarah Boorman"
-          },
-          {
             "id": 12982150,
             "name": "Sarah Calvin"
           },
           {
             "id": 10361424,
             "name": "Sarah Lacey"
+          },
+          {
+            "id": 7190530,
+            "name": "Sarah Poulton"
           },
           {
             "id": 7775785,
@@ -6975,7 +6992,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 292
+            "count": 312
           },
           {
             "day": "Friday",
@@ -7009,7 +7026,7 @@
           },
           {
             "name": "Elevate",
-            "count": 387
+            "count": 407
           },
           {
             "name": "Circuits",
@@ -7131,6 +7148,15 @@
             "label": "Wednesday 5pm Build: Full Body"
           },
           {
+            "day": "Saturday",
+            "time": "9am",
+            "name": "Elevate",
+            "count": 87,
+            "sessions": 12,
+            "avg": 7.2,
+            "label": "Saturday 9am Elevate"
+          },
+          {
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
@@ -7138,15 +7164,6 @@
             "sessions": 13,
             "avg": 7.2,
             "label": "Wednesday 7pm Plate"
-          },
-          {
-            "day": "Saturday",
-            "time": "9am",
-            "name": "Elevate",
-            "count": 81,
-            "sessions": 11,
-            "avg": 7.4,
-            "label": "Saturday 9am Elevate"
           },
           {
             "day": "Thursday",
@@ -7158,7 +7175,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3168
+        "total_attended": 3188
       },
       "last_30_days": {
         "top_days": [
@@ -7186,7 +7203,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 103
+            "count": 123
           },
           {
             "day": "Monday",
@@ -7216,7 +7233,7 @@
           },
           {
             "name": "Elevate",
-            "count": 141
+            "count": 161
           },
           {
             "name": "Build: Lower",
@@ -7336,8 +7353,8 @@
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
-            "count": 25,
-            "sessions": 4,
+            "count": 31,
+            "sessions": 5,
             "avg": 6.2,
             "label": "Saturday 9am Elevate"
           },
@@ -7369,7 +7386,7 @@
             "label": "Wednesday 7pm Plate"
           }
         ],
-        "total_attended": 1035
+        "total_attended": 1055
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a Friday lunchtime open-gym slot (12\u20131pm or 1\u20132pm).** Friday is your quietest day overall (471 vs. 750 on Tuesday); a paid drop-in open-gym fills dead time between PTs and classes without cannibalizing scheduled sessions, and targets members who can't make evening classes.\n\n2. **Run a paid \"Strength Fundamentals\" workshop (45 mins) on Thursday or Saturday mornings.** Slot it between existing classes or in a quiet 2-hour window. Position it as a 4-week block for members new to barbell work\u2014this feeds members *into* Build and Elevate classes, and monetizes otherwise empty studio time.\n\n**For the quieter classes (Capacity, Barbelle, Engine, Plate, Mobility):**\n\n3. **Move Barbelle and Capacity to Tuesday or Wednesday mornings (7am or 8am slot).** Both are severely underattended\u2014relocating them to your peak days lifts their attendance through higher foot traffic, and tests whether timing (not content) is the barrier. Pair with a 2-week \"bring a friend free\" invite to existing Build members.\n\n4. **Rebrand Mobility as \"Pre-Class Mobility\" (20 mins) and run it *",
       "capacity": [
@@ -9181,15 +9198,6 @@
         "last_momentum": "2026-08-26"
       },
       {
-        "id": 7190530,
-        "name": "Sarah Boorman",
-        "email": "sarahlouiseboorman@yahoo.co.uk",
-        "join_date": "2024-06-26",
-        "membership": "Empower",
-        "class_count": 322,
-        "last_momentum": null
-      },
-      {
         "id": 12982150,
         "name": "Sarah Calvin",
         "email": "sarahc4648@gmail.com",
@@ -9205,6 +9213,15 @@
         "join_date": "2026-09-14",
         "membership": "4 Class Pass",
         "class_count": 0,
+        "last_momentum": null
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Poulton",
+        "email": "sarahlouiseboorman@yahoo.co.uk",
+        "join_date": "2024-06-26",
+        "membership": "Empower",
+        "class_count": 322,
         "last_momentum": null
       },
       {
