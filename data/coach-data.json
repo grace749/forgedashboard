@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T05:00:46.356533+00:00",
+  "generated_at": "2026-09-27T11:56:22.067173+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4021,7 +4021,7 @@
       {
         "user_id": "U0ADMNX20R3",
         "text": "Hi Grace, I owe you \u00a310 for the padel.  I will be in on Tuesday morning so will leave it for you.  Is that ok?",
-        "hours": 12,
+        "hours": 19,
         "name": "Noleen McMullan"
       }
     ],
@@ -4354,7 +4354,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Reassign Grace's Build: Lower (16 sessions/month) to JoJo.** This is JoJo's strength class wheelhouse and distributes her existing Upper work more evenly; it also removes a significant chunk of Grace's load without requiring a new coach to learn it.\n\n\u2022 **Move Grace's Strongevity (5 sessions) and Engine (1 session) to Eilis.** Both are lower-intensity, technique-focused classes well-suited to Eilis's current capability and help fill her timetable productively outside her heavy PT load.\n\n\u2022 **Assign Grace's No Sweat Intro (3 sessions) to either coach on a rotating basis.** This is short, low-skill delivery; rotating it prevents burnout and gives both Eilis and JoJo a straightforward way to top up their hours.\n\n\u2022 **Eilis is carrying 40 PT sessions monthly \u2014 review whether all are appropriate.** At that volume she's under-utilised for group coaching. Consider whether some PT clients could step into classes (Elevate, Plate, Mobility) or whether PT load can be redistributed once Grace's classes are covered.\n\n\u2022 **Assign Grace's Body Composition Scans (5 sessions) to admin or a non-coaching duty.** They're just scale readings; freeing these releases Grace entirely and stops the team conflating them with real coaching work.\n\n\u2022 **After redistribution, Grace drops to zero delivery and the team absorbs her 35 sessions.** JoJo gains 17 (Lower + Intro rotation), Eilis gains 6 (Strongevity + Engine + Intro rotation), leaving both well-utilised and no single coach dependent on Grace's cover.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (16 sessions) should go to JoJo; Strongevity (5) to Eilis; No Sweat Intro (3) and Engine (1) can rotate between both coaches. This removes Grace from delivery entirely.\n\n\u2022 **Rebalance Eilis and JoJo's PT load**: Eilis is carrying 40 PT sessions while JoJo has only 20. Shift 8\u201310 of Eilis's PT clients to JoJo to even the workload and reduce Eilis's risk of burnout; Eilis focuses on class delivery where she's strongest.\n\n\u2022 **Stop counting Body Composition scans as coaching time**: Remove all InBody scans (Eilis 12, JoJo 13, Grace 5) from the timetable \u2014 they're admin, not coaching. This instantly drops the team's apparent load and clarifies actual coaching hours.\n\n\u2022 **Shore up No Sweat Intro coverage**: Grace currently delivers this; move it to JoJo (who already runs 7) or train Eilis to co-deliver on non-Tuesdays, so one person isn't the single point of failure for new-member onboarding.\n\n\u2022 **Protect JoJo's Tuesday specialist role**: Keep JoJo on technically complex Tuesday classes (Build: Upper, Circuits) and use the PT handover to leave her capacity for those high-skill sessions; don't overload her with extra classes.",
     "period": "August 2026"
   },
   "asana": {
@@ -13665,6 +13665,12 @@
     "urgent": [
       {
         "from": "Coach Grace",
+        "subject": "Jacqueline Crawford - 30 Days as a Member Checkin",
+        "snippet": "Hi Coach, Our member Jacqueline Crawford has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
+        "id": "1a0e253220f5b835"
+      },
+      {
+        "from": "Coach Grace",
         "subject": "Fwd: Workbook for tomorrow \ud83d\udd8a\ufe0f",
         "snippet": "---------- Forwarded message --------- From: Stuart Aitken &lt;stuart@theptroadmap.com&gt; Date: Fri, 25 Sep 2026 at 16:08 Subject: Workbook for tomorrow \ud83d\udd8a\ufe0f To: Afternoon! Attached is a digital",
         "id": "1a0d93c9ac1ad009"
@@ -13716,12 +13722,6 @@
         "subject": "Fwd: Booking confirmation \u2013 Leicester to Birmingham New Street",
         "snippet": "---------- Forwarded message --------- From: CrossCountry Trains &lt;no-reply@crosscountrytrains.co.uk&gt; Date: Mon, Sep 21, 2026 at 3:16 PM Subject: Booking confirmation \u2013 Leicester to Birmingham Ne",
         "id": "1a0c46505d7eef61"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Fwd: Your booking is confirmed. Ref no. AYD0156513",
-        "snippet": "---------- Forwarded message --------- From: Premier Inn &lt;donotreply@picomms.premierinn.com&gt; Date: Mon, Sep 21, 2026 at 2:42 PM Subject: Your booking is confirmed. Ref no. AYD0156513 To: &lt;",
-        "id": "1a0c435af6e9c700"
       }
     ],
     "important": [],
