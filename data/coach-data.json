@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T05:00:47.603671+00:00",
+  "generated_at": "2026-09-28T13:45:11.611521+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -16,8 +16,8 @@
       {
         "month": "2026-09",
         "completed": 16,
-        "converted": 9,
-        "conv_rate": 56
+        "converted": 8,
+        "conv_rate": 50
       },
       {
         "month": "2026-08",
@@ -57,7 +57,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -70,8 +70,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
+        "missing_checkins": 1,
+        "completed_checkins": 3,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -89,7 +89,7 @@
         "check_ins": [
           false,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -102,8 +102,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 1,
+        "missing_checkins": 2,
+        "completed_checkins": 2,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -120,7 +120,7 @@
         "inbody_done": false,
         "check_ins": [
           false,
-          false,
+          true,
           false,
           false,
           false,
@@ -134,8 +134,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 0,
+        "missing_checkins": 2,
+        "completed_checkins": 1,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -181,9 +181,9 @@
         "goal": "no form filled out",
         "notes": "",
         "nutrition_sent": false,
-        "inbody_done": false,
+        "inbody_done": true,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -198,9 +198,73 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 0,
+        "missing_checkins": 1,
+        "completed_checkins": 1,
         "expected_checkins": 2,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": ""
+      },
+      {
+        "name": "Helen Faulkner",
+        "cohort": "September",
+        "joined": "2026-09-28",
+        "end": "2026-11-09",
+        "goal": "",
+        "notes": "",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": ""
+      },
+      {
+        "name": "Rebecca Gill",
+        "cohort": "September",
+        "joined": "2026-09-28",
+        "end": "2026-11-09",
+        "goal": "",
+        "notes": "",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
         "paused": false,
         "pink_red": false,
         "pause_reason": ""
@@ -254,7 +318,7 @@
           true,
           true,
           true,
-          false
+          true
         ],
         "week_on": 6,
         "days_left": -3,
@@ -264,8 +328,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
+        "missing_checkins": 0,
+        "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -286,7 +350,7 @@
           true,
           true,
           true,
-          false
+          true
         ],
         "week_on": 6,
         "days_left": -3,
@@ -296,8 +360,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 5,
+        "missing_checkins": 0,
+        "completed_checkins": 6,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -323,8 +387,8 @@
         "week_on": null,
         "days_left": -5,
         "is_active": false,
-        "is_converted": true,
-        "not_converted": false,
+        "is_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -332,7 +396,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
-        "pink_red": false,
+        "pink_red": true,
         "pause_reason": "adhd, fractured shoulder 2 years ago"
       },
       {
@@ -356,7 +420,7 @@
         "days_left": -7,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -364,7 +428,7 @@
         "completed_checkins": 0,
         "expected_checkins": 0,
         "paused": false,
-        "pink_red": false,
+        "pink_red": true,
         "pause_reason": "cant do reverse lunges. foot pain.struggles wth confidence.can suffer from anxiety"
       },
       {
@@ -420,7 +484,7 @@
         "days_left": -10,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -428,7 +492,7 @@
         "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
-        "pink_red": false,
+        "pink_red": true,
         "pause_reason": "no"
       },
       {
@@ -982,17 +1046,17 @@
       {
         "member": "Babs",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
+        "detail": "Missing 1 check-in(s) (on week 4)"
       },
       {
         "member": "Kathryn Alleyne",
         "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 4)"
+        "detail": "Missing 2 check-in(s) (on week 4)"
       },
       {
         "member": "Erin Honeyford",
         "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 3)"
+        "detail": "Missing 2 check-in(s) (on week 3)"
       },
       {
         "member": "Mia Taylor",
@@ -1007,25 +1071,69 @@
       {
         "member": "Claire Scullion",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 2)"
+        "detail": "Missing 1 check-in(s) (on week 2)"
       },
       {
         "member": "Claire Scullion",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "Helen Faulkner",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "Helen Faulkner",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "Rebecca Gill",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "Rebecca Gill",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 5,
+      "active_count": 7,
       "paused_count": 1,
-      "conv_rate": 57,
-      "converted": 13,
-      "not_converted": 3,
+      "conv_rate": 52,
+      "converted": 12,
+      "not_converted": 6,
       "total_complete": 23
     }
   },
   "inbody": {
     "scans": [
+      {
+        "name": "helenf141",
+        "last_scan": "2026-09-28",
+        "scan_count": 1,
+        "weight": 130.0,
+        "smm": 41.4,
+        "pbf": 40.6,
+        "bmi": 26.2,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-09",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "claires140",
         "last_scan": "2026-09-26",
@@ -3979,7 +4087,7 @@
         "overdue": true
       }
     ],
-    "total": 123,
+    "total": 124,
     "configured": true
   },
   "slack": {
@@ -3989,7 +4097,7 @@
       {
         "user_id": "U0ADMNX20R3",
         "text": "Hi Grace, I owe you \u00a310 for the padel.  I will be in on Tuesday morning so will leave it for you.  Is that ok?",
-        "hours": 36,
+        "hours": 45,
         "name": "Noleen McMullan"
       }
     ],
@@ -4161,7 +4269,8 @@
       "claire scull": "U0C12Q31S3W",
       "erin honeyford": "U0C150T7ZPS",
       "mia taylor": "U0C20TU18GN",
-      "rebecca gill": "U0C3BRA7525"
+      "rebecca gill": "U0C3BRA7525",
+      "helen": "U0C4TEPJU3F"
     }
   },
   "staff": {
@@ -4322,389 +4431,12 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (16 sessions) should go to JoJo; Strongevity (5) to Eilis; No Sweat Intro (3) and Engine (1) can rotate between both coaches. This removes Grace from delivery entirely.\n\n\u2022 **Rebalance Eilis and JoJo's PT load**: Eilis is carrying 40 PT sessions while JoJo has only 20. Shift 8\u201310 of Eilis's PT clients to JoJo to even the workload and reduce Eilis's risk of burnout; Eilis focuses on class delivery where she's strongest.\n\n\u2022 **Stop counting Body Composition scans as coaching time**: Remove all InBody scans (Eilis 12, JoJo 13, Grace 5) from the timetable \u2014 they're admin, not coaching. This instantly drops the team's apparent load and clarifies actual coaching hours.\n\n\u2022 **Shore up No Sweat Intro coverage**: Grace currently delivers this; move it to JoJo (who already runs 7) or train Eilis to co-deliver on non-Tuesdays, so one person isn't the single point of failure for new-member onboarding.\n\n\u2022 **Protect JoJo's Tuesday specialist role**: Keep JoJo on technically complex Tuesday classes (Build: Upper, Circuits) and use the PT handover to leave her capacity for those high-skill sessions; don't overload her with extra classes.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (16 sessions) should shift to JoJo; Strongevity (5) to Eilis. This removes Grace from the rota entirely and balances the upper/lower split across the team.\n\n\u2022 **Eilis is under-loaded on class delivery**: She's doing 40 PT sessions but only 42 classes. Assign her more Plate and Mobility classes (her current strengths) to bring her total class count up and reduce her PT dependency; this gives her variety and spreads coaching load more evenly.\n\n\u2022 **JoJo is over-reliant for technical classes**: She's the only coach taking Circuits and is heavily weighted on Build: Upper. Develop Eilis on additional Build: Upper sessions to share the load and reduce single-coach dependency on technical content.\n\n\u2022 **No Sweat Intro (10 sessions combined) is split awkwardly**: Keep JoJo's 7 but move Grace's 3 to Eilis so she builds a small intro offering and frees Grace completely.\n\n\u2022 **Body Composition scans are filling time unproductively**: These aren't coaching. Batch them into one 30-minute admin slot per week (either coach) rather than spreading across 30 sessions\u2014this reclaims ~10 hours monthly for real class or PT delivery.\n\n\u2022 **Target state**: Eilis 60\u201370 classes + 20\u201325 PT; JoJo 70\u201375 classes + 20 PT; Grace zero delivery. Aim for balanced weekly rotas by September.",
     "period": "August 2026"
   },
-  "asana": {
-    "tasks_today": [
-      {
-        "gid": "1211866326373927",
-        "name": "Female Entrepreneur application",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211866326373927",
-        "project": null,
-        "due_on": "2025-11-20",
-        "overdue": true,
-        "notes": "https://www.open.edu/openlearncreate/course/view.php?id=16178\n\nApply"
-      },
-      {
-        "gid": "1215407735451757",
-        "name": "Print out ring sheet to put up in the studio",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1215407735451757",
-        "project": null,
-        "due_on": "2026-06-04",
-        "overdue": true,
-        "notes": ""
-      },
-      {
-        "gid": "1216109901724640",
-        "name": "Speak to JoJo about implementing a functional 360 screen for members",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216109901724640",
-        "project": null,
-        "due_on": "2026-07-01",
-        "overdue": true,
-        "notes": ""
-      },
-      {
-        "gid": "1216109898383505",
-        "name": "Nutrition section guide \u2014 when do members get personalised nutrition? (Jump Start)",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216109898383505",
-        "project": null,
-        "due_on": "2026-07-01",
-        "overdue": true,
-        "notes": ""
-      },
-      {
-        "gid": "1216109898063575",
-        "name": "Welcome sequence: explain classes are beginner friendly for Jump Start",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216109898063575",
-        "project": null,
-        "due_on": "2026-07-01",
-        "overdue": true,
-        "notes": ""
-      },
-      {
-        "gid": "1216109825026452",
-        "name": "Add 30-day cancellation notice and class notice to welcome sequence for full members",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216109825026452",
-        "project": null,
-        "due_on": "2026-07-01",
-        "overdue": true,
-        "notes": ""
-      },
-      {
-        "gid": "1217446721230588",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1217446721230588",
-        "project": null,
-        "due_on": "2026-08-14",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1217670926559417",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1217670926559417",
-        "project": null,
-        "due_on": "2026-08-21",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1217895174719736",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1217895174719736",
-        "project": null,
-        "due_on": "2026-08-28",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1218135667309248",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218135667309248",
-        "project": null,
-        "due_on": "2026-09-04",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1218352668838384",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218352668838384",
-        "project": null,
-        "due_on": "2026-09-11",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1218577286309635",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218577286309635",
-        "project": null,
-        "due_on": "2026-09-18",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1218816018638969",
-        "name": "Consider updating your project progress",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218816018638969",
-        "project": null,
-        "due_on": "2026-09-25",
-        "overdue": true,
-        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
-      },
-      {
-        "gid": "1218042452227858",
-        "name": "",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227858",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1218042452227857",
-        "name": "Julie VA Task - Update Blog",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227857",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1218042452227856",
-        "name": "Julie VA Task - email newsletter",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227856",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1218042452227855",
-        "name": "Julie VA Task - msging old leads",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227855",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1218042452227854",
-        "name": "Davy 30 Day wellbeing journeys",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227854",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1218042452227853",
-        "name": "Nigel mobility and nutrition graham",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1218042452227853",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1217150453835587",
-        "name": "",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1217150453835587",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1211867880420609",
-        "name": "Update forge card on netim ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420609",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": "For pt domain"
-      },
-      {
-        "gid": "1216230077220299",
-        "name": "Audit Fit Pro landing page vs M Power landing page",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1216230077220299",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": "Review the Fit Pro landing page to confirm everything that's included in the offer is actually listed on the page (nothing missing).\n\nAlso do a competitor comparison against what Empire are doing on their equivalent landing page \u2014 check their inclusions, positioning, and offer structure to see where we're ahead/behind."
-      },
-      {
-        "gid": "1211867880420605",
-        "name": "Split Pay option teamup for 6 week jumpstart ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420605",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1211867880420604",
-        "name": "Reduce subscriptions - biz bank account ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420604",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1215752967811515",
-        "name": "4 week at home client cancel pdf",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1215752967811515",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": "4 weeks of home workouts \nnutrition \nlifestyle \nQR code to come back with discount code"
-      },
-      {
-        "gid": "1215360820939684",
-        "name": "Off boarding 4 week plan for member leaving - like ramey",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1215360820939684",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1215273464758411",
-        "name": "sand media wall living room ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1215273464758411",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1211867880420596",
-        "name": "Coach roles ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420596",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1211867880420594",
-        "name": "Dorothy home workouts ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1211867880420594",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": ""
-      },
-      {
-        "gid": "1214120850648787",
-        "name": "Inbody video and page",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1214120850648787",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": "https://thegymltd.ie/inbody-270-scan-a-free-service-with-your-membership/"
-      },
-      {
-        "gid": "1214258236145748",
-        "name": "Add a trust page with member testimonials ",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1214258236145748",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": "https://go.businessforunicorns.com/trust"
-      },
-      {
-        "gid": "1213019384239249",
-        "name": "SOPs",
-        "completed": false,
-        "url": "https://app.asana.com/1/1211586132567259/task/1213019384239249",
-        "project": null,
-        "due_on": null,
-        "overdue": false,
-        "notes": "PT Onboarding\nPT Client Communication\nPT Sickness/Bereavement - what to do if a coach is sick or has a bereavement and cant take the PT\nSarah Role SOP"
-      }
-    ],
-    "coach": {
-      "jojo@theforge.pt": [
-        {
-          "gid": "1214477846324178",
-          "name": "Standardised Warmups and Cooldowns",
-          "completed": false,
-          "url": "https://app.asana.com/1/1211586132567259/project/1211866326373923/task/1214477846324178",
-          "project": "Ops & Members",
-          "due_on": "2026-05-07",
-          "overdue": true,
-          "notes": "I have completed Mondays and part of tuesday (feel free to edit or change though).\n\nAll days need a standard warmup and cooldown for each quarter so we can print and laminate these and keep in the studio to keep each day consistent. The only caveat to this is if the weather is good then the coach can choose the warmup/cooldown for outside. \n\nCan you complete the rest of the week: \nhttps://canva.link/rdamphvgb76et2s\n\nThen add the movement demos here: https://docs.google.com/document/d/1FtozUO4hG5VZDvtR0SmvP5mGKCrJUrLHyQQ0vmHHZCo/edit?usp=sharing\n\nThey then need printed and laminated and brought into the studio and put into the coaches draw or in the kitchen cabinet within easy reach. \n\n\nWe will start these Monday 18th May to give every coach all of next week to review them."
-        },
-        {
-          "gid": "1212306151725208",
-          "name": "Film Personal Training onboarding video sequence to match Trial sequence",
-          "completed": false,
-          "url": "https://app.asana.com/1/1211586132567259/project/1211866326373943/task/1212306151725208",
-          "project": "Marketing",
-          "due_on": "2026-05-15",
-          "overdue": true,
-          "notes": "Instructions and script: https://docs.google.com/document/d/1wTJwDek-fZBV-f3PCklUkrQH29ZhTl4-9EQ_UIU1NEk/edit?usp=sharing"
-        },
-        {
-          "gid": "1216295733803537",
-          "name": "Events Calendar",
-          "completed": false,
-          "url": "https://app.asana.com/1/1211586132567259/project/1211866326373923/task/1216295733803537",
-          "project": "Ops & Members",
-          "due_on": "2026-07-17",
-          "overdue": true,
-          "notes": "Events calendar for Q3 - detailed list I can then design in canva\n\nand start to finalise what Q4 will have in events/menopause/nutrition/lizzie/beauty etc"
-        },
-        {
-          "gid": "1211867880420595",
-          "name": "Warmup Coolddowns",
-          "completed": false,
-          "url": "https://app.asana.com/1/1211586132567259/task/1211867880420595",
-          "project": null,
-          "due_on": "2026-08-14",
-          "overdue": true,
-          "notes": "Finish, print out and laminate: https://canva.link/rdamphvgb76et2s"
-        },
-        {
-          "gid": "1211867880420610",
-          "name": "Forge summer games  - brainstorm ",
-          "completed": false,
-          "url": "https://app.asana.com/1/1211586132567259/task/1211867880420610",
-          "project": null,
-          "due_on": null,
-          "overdue": false,
-          "notes": ""
-        }
-      ]
-    }
-  },
+  "asana": null,
   "teamup": {
-    "total_members": 168,
+    "total_members": 170,
     "recurring": 111,
     "recurring_members": [
       {
@@ -5187,8 +4919,8 @@
         "name": "Sharon McAuley"
       }
     ],
-    "new_this_month": 31,
-    "cancellations_this_month": 7,
+    "new_this_month": 33,
+    "cancellations_this_month": 8,
     "leaving_members": [
       {
         "id": 10057245,
@@ -5213,6 +4945,10 @@
       {
         "id": 13202275,
         "name": "Nuala O'Neill"
+      },
+      {
+        "id": 13536586,
+        "name": "Pauline McAuley"
       },
       {
         "id": 11691790,
@@ -6024,7 +5760,7 @@
       }
     ],
     "cancelled_ytd": 48,
-    "churn_rate": 4.4,
+    "churn_rate": 4.9,
     "avg_member_price": 138.22,
     "monthly_recurring_revenue": 15066.0,
     "avg_tenure_months": 8.5,
@@ -6517,7 +6253,7 @@
       },
       {
         "name": "Strongevity Membership",
-        "count": 14,
+        "count": 16,
         "members": [
           {
             "id": 13487762,
@@ -6552,6 +6288,10 @@
             "name": "Geraldine Finch"
           },
           {
+            "id": 13625545,
+            "name": "Helen Hamilton"
+          },
+          {
             "id": 11027616,
             "name": "Joan Stewart"
           },
@@ -6562,6 +6302,10 @@
           {
             "id": 13094545,
             "name": "Lyn Chestnutt"
+          },
+          {
+            "id": 13753616,
+            "name": "Mae Brown"
           },
           {
             "id": 13536586,
@@ -6918,12 +6662,12 @@
             "count": 661
           },
           {
-            "day": "Thursday",
-            "count": 483
+            "day": "Monday",
+            "count": 490
           },
           {
-            "day": "Monday",
-            "count": 472
+            "day": "Thursday",
+            "count": 483
           },
           {
             "day": "Friday",
@@ -6940,12 +6684,12 @@
             "count": 471
           },
           {
-            "day": "Monday",
-            "count": 472
-          },
-          {
             "day": "Thursday",
             "count": 483
+          },
+          {
+            "day": "Monday",
+            "count": 490
           },
           {
             "day": "Wednesday",
@@ -6967,15 +6711,15 @@
           },
           {
             "name": "Build: Lower",
-            "count": 379
+            "count": 388
+          },
+          {
+            "name": "Strongevity",
+            "count": 259
           },
           {
             "name": "Circuits",
             "count": 254
-          },
-          {
-            "name": "Strongevity",
-            "count": 250
           }
         ],
         "bottom_classes": [
@@ -7000,8 +6744,8 @@
             "count": 223
           },
           {
-            "name": "Strongevity",
-            "count": 250
+            "name": "Circuits",
+            "count": 254
           }
         ],
         "top_slots": [
@@ -7054,9 +6798,9 @@
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
-            "count": 93,
-            "sessions": 9,
-            "avg": 10.3,
+            "count": 102,
+            "sessions": 10,
+            "avg": 10.2,
             "label": "Monday 11am Strongevity"
           }
         ],
@@ -7116,7 +6860,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3149
+        "total_attended": 3167
       },
       "last_30_days": {
         "top_days": [
@@ -7130,7 +6874,7 @@
           },
           {
             "day": "Monday",
-            "count": 163
+            "count": 181
           },
           {
             "day": "Thursday",
@@ -7156,7 +6900,7 @@
           },
           {
             "day": "Monday",
-            "count": 163
+            "count": 181
           },
           {
             "day": "Wednesday",
@@ -7178,11 +6922,11 @@
           },
           {
             "name": "Build: Lower",
-            "count": 120
+            "count": 129
           },
           {
             "name": "Strongevity",
-            "count": 115
+            "count": 124
           },
           {
             "name": "Circuits",
@@ -7238,9 +6982,9 @@
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
             "label": "Monday 11am Strongevity"
           },
           {
@@ -7327,7 +7071,7 @@
             "label": "Friday 10am Mobility"
           }
         ],
-        "total_attended": 996
+        "total_attended": 1014
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. **Open-gym slots on Monday/Friday afternoons** \u2014 your quietest days have gaps between PT blocks; offer 90-min unstructured strength access at a lower price point to capture members who want flexibility without a structured class.\n\n2. **Saturday morning \"Mobility + Coffee\" workshop** \u2014 run a 45-min guided mobility session (6:30\u20137:15am) before your first class, positioned as recovery + community; charge \u00a35\u20138 to offset low Saturday attendance and build weekend habit.\n\n**Lift the quieter classes:**\n\n3. **Reposition Barbelle, Engine, and Capacity as \"strength fundamentals\" pathway** \u2014 these are clearly struggling separately, so bundle targeted invites to newer/lower-strength members as a progression series (e.g. \"Master the basics before Build: Lower\"), run back-to-back on one quieter day, and offer \"first session free\" to Build attendees wanting to deload or learn technique.",
       "capacity": [
@@ -7640,8 +7384,8 @@
       },
       {
         "month": "2026-09",
-        "active": 168,
-        "churn": 6.1,
+        "active": 170,
+        "churn": 6.8,
         "by_type": {
           "Empower": 75,
           "8 PT Sessions": 3,
@@ -7654,7 +7398,7 @@
           "Strongevity": 5,
           "4 Class Pass": 2,
           "6 Week Jumpstart": 8,
-          "Strongevity Membership": 15,
+          "Strongevity Membership": 17,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "1:2 PT 4 Sessions": 1
@@ -8538,6 +8282,15 @@
         "last_momentum": null
       },
       {
+        "id": 13625545,
+        "name": "Helen Hamilton",
+        "email": "helen.hamilton10@yahoo.co.uk",
+        "join_date": "2026-09-28",
+        "membership": "Strongevity Membership",
+        "class_count": 1,
+        "last_momentum": null
+      },
+      {
         "id": 7373444,
         "name": "Helen Logan",
         "email": "hellierankin@aol.com",
@@ -8694,7 +8447,7 @@
         "id": 13618093,
         "name": "Joyce Lyons",
         "email": "joycelyons31@hotmail.com",
-        "join_date": "2026-09-14",
+        "join_date": "2026-09-28",
         "membership": "Strongevity",
         "class_count": 0,
         "last_momentum": null
@@ -8940,6 +8693,15 @@
         "join_date": "2023-10-25",
         "membership": "Empower",
         "class_count": 470,
+        "last_momentum": null
+      },
+      {
+        "id": 13753616,
+        "name": "Mae Brown",
+        "email": "brw81@aol.com",
+        "join_date": "2026-09-28",
+        "membership": "Strongevity Membership",
+        "class_count": 1,
         "last_momentum": null
       },
       {
