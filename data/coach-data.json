@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T14:00:54.562804+00:00",
+  "generated_at": "2026-09-28T21:13:38.632753+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4093,14 +4093,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0ADMNX20R3",
-        "text": "Hi Grace, I owe you \u00a310 for the padel.  I will be in on Tuesday morning so will leave it for you.  Is that ok?",
-        "hours": 45,
-        "name": "Noleen McMullan"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -6997,6 +6990,16 @@
         ]
       },
       {
+        "name": "4 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 11029358,
+            "name": "Rosemary Kennedy"
+          }
+        ]
+      },
+      {
         "name": "8 Class Block",
         "count": 1,
         "members": [
@@ -7015,16 +7018,6 @@
             "name": "Breanna Gaston"
           }
         ]
-      },
-      {
-        "name": "4 Session Block",
-        "count": 1,
-        "members": [
-          {
-            "id": 11029358,
-            "name": "Rosemary Kennedy"
-          }
-        ]
       }
     ],
     "class_stats": {
@@ -7040,7 +7033,7 @@
           },
           {
             "day": "Monday",
-            "count": 490
+            "count": 518
           },
           {
             "day": "Thursday",
@@ -7066,7 +7059,7 @@
           },
           {
             "day": "Monday",
-            "count": 490
+            "count": 518
           },
           {
             "day": "Wednesday",
@@ -7083,12 +7076,12 @@
             "count": 533
           },
           {
-            "name": "Elevate",
-            "count": 407
+            "name": "Build: Lower",
+            "count": 416
           },
           {
-            "name": "Build: Lower",
-            "count": 388
+            "name": "Elevate",
+            "count": 407
           },
           {
             "name": "Strongevity",
@@ -7228,16 +7221,16 @@
             "label": "Wednesday 7pm Plate"
           },
           {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 95,
-            "sessions": 12,
-            "avg": 7.9,
-            "label": "Thursday 10am Elevate"
+            "day": "Monday",
+            "time": "6pm",
+            "name": "Build: Lower",
+            "count": 77,
+            "sessions": 10,
+            "avg": 7.7,
+            "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 3167
+        "total_attended": 3195
       },
       "last_30_days": {
         "top_days": [
@@ -7246,12 +7239,12 @@
             "count": 232
           },
           {
-            "day": "Wednesday",
-            "count": 197
+            "day": "Monday",
+            "count": 209
           },
           {
-            "day": "Monday",
-            "count": 181
+            "day": "Wednesday",
+            "count": 197
           },
           {
             "day": "Thursday",
@@ -7276,12 +7269,12 @@
             "count": 143
           },
           {
-            "day": "Monday",
-            "count": 181
-          },
-          {
             "day": "Wednesday",
             "count": 197
+          },
+          {
+            "day": "Monday",
+            "count": 209
           }
         ],
         "top_classes": [
@@ -7290,16 +7283,16 @@
             "count": 199
           },
           {
+            "name": "Build: Lower",
+            "count": 157
+          },
+          {
             "name": "Elevate",
             "count": 156
           },
           {
             "name": "Build: Full Body",
             "count": 151
-          },
-          {
-            "name": "Build: Lower",
-            "count": 129
           },
           {
             "name": "Strongevity",
@@ -7433,22 +7426,22 @@
             "day": "Monday",
             "time": "5pm",
             "name": "Build: Lower",
-            "count": 20,
-            "sessions": 3,
-            "avg": 6.7,
+            "count": 29,
+            "sessions": 4,
+            "avg": 7.2,
             "label": "Monday 5pm Build: Lower"
           },
           {
-            "day": "Friday",
-            "time": "10am",
-            "name": "Mobility",
-            "count": 30,
+            "day": "Monday",
+            "time": "6pm",
+            "name": "Build: Lower",
+            "count": 29,
             "sessions": 4,
-            "avg": 7.5,
-            "label": "Friday 10am Mobility"
+            "avg": 7.2,
+            "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1014
+        "total_attended": 1042
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. **Open-gym slots on Monday/Friday afternoons** \u2014 your quietest days have gaps between PT blocks; offer 90-min unstructured strength access at a lower price point to capture members who want flexibility without a structured class.\n\n2. **Saturday morning \"Mobility + Coffee\" workshop** \u2014 run a 45-min guided mobility session (6:30\u20137:15am) before your first class, positioned as recovery + community; charge \u00a35\u20138 to offset low Saturday attendance and build weekend habit.\n\n**Lift the quieter classes:**\n\n3. **Reposition Barbelle, Engine, and Capacity as \"strength fundamentals\" pathway** \u2014 these are clearly struggling separately, so bundle targeted invites to newer/lower-strength members as a progression series (e.g. \"Master the basics before Build: Lower\"), run back-to-back on one quieter day, and offer \"first session free\" to Build attendees wanting to deload or learn technique.",
       "capacity": [
@@ -7528,8 +7521,8 @@
           "name": "Build: Lower",
           "sessions": 65,
           "cap": 13,
-          "avg_attending": 7.7,
-          "fill_rate": 64,
+          "avg_attending": 7.6,
+          "fill_rate": 63,
           "status": "attention"
         },
         {
@@ -7772,10 +7765,11 @@
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 5,
+          "Strongevity": 4,
           "4 Class Pass": 2,
           "6 Week Jumpstart": 8,
           "Strongevity Membership": 17,
+          "4 Session Block": 1,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "1:2 PT 4 Sessions": 1
@@ -7882,13 +7876,6 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 13177624,
-        "name": "Laura Douglas",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-09-16"
-      },
-      {
         "id": 13507202,
         "name": "Linda Greet",
         "membership": "6 Week Jumpstart",
@@ -7931,13 +7918,6 @@
         "last_seen": "2026-09-15"
       },
       {
-        "id": 13553225,
-        "name": "Rachel Linton",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-09-16"
-      },
-      {
         "id": 12323224,
         "name": "Sami-Jo Smyth",
         "membership": "Empower",
@@ -7957,6 +7937,20 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 39,
         "last_seen": "2026-08-20"
+      },
+      {
+        "id": 13449102,
+        "name": "Shauna Lewis",
+        "membership": "4 PT Sessions",
+        "days_absent": 33,
+        "last_seen": "2026-08-26"
+      },
+      {
+        "id": 12294488,
+        "name": "Sybil M Donaghy",
+        "membership": "Empower",
+        "days_absent": 11,
+        "last_seen": "2026-09-17"
       }
     ],
     "celebrations": {
@@ -8185,6 +8179,12 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Patricia McTaggart",
+        "type": "Meet a Coach",
+        "date": "2026-09-30",
+        "upcoming": true
+      },
       {
         "name": "Jordyn Uprichard",
         "type": "Meet a Coach",
@@ -8824,7 +8824,7 @@
         "id": 13618093,
         "name": "Joyce Lyons",
         "email": "joycelyons31@hotmail.com",
-        "join_date": "2026-09-28",
+        "join_date": "2026-10-19",
         "membership": "Strongevity",
         "class_count": 0,
         "last_momentum": null
@@ -9283,7 +9283,7 @@
         "id": 11029358,
         "name": "Rosemary Kennedy",
         "email": "rosemary_kennedy@yahoo.com",
-        "join_date": "2026-10-02",
+        "join_date": "2026-09-03",
         "membership": "4 Session Block",
         "class_count": 116,
         "last_momentum": null
@@ -13794,6 +13794,12 @@
     "urgent": [
       {
         "from": "Coach Grace",
+        "subject": "Lynda Archibald - 30 Days as a Member Checkin",
+        "snippet": "Hi Coach, Our member Lynda Archibald has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
+        "id": "1a0e86fe6149abc8"
+      },
+      {
+        "from": "Coach Grace",
         "subject": "Jacqueline Crawford - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Jacqueline Crawford has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
         "id": "1a0e253220f5b835"
@@ -13845,12 +13851,6 @@
         "subject": "Fwd: Nick's seminar (form for lunch & after event drinks)",
         "snippet": "---------- Forwarded message --------- From: Stuart Aitken &lt;stuart@theptroadmap.com&gt; Date: Tue, 22 Sep 2026 at 10:06 Subject: Re: Nick&#39;s seminar (form for lunch &amp; after event drinks) To:",
         "id": "1a0c87d418c624f7"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Fwd: Booking confirmation \u2013 Leicester to Birmingham New Street",
-        "snippet": "---------- Forwarded message --------- From: CrossCountry Trains &lt;no-reply@crosscountrytrains.co.uk&gt; Date: Mon, Sep 21, 2026 at 3:16 PM Subject: Booking confirmation \u2013 Leicester to Birmingham Ne",
-        "id": "1a0c46505d7eef61"
       }
     ],
     "important": [],
