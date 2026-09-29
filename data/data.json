@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T14:00:50.603490+00:00",
+  "generated_at": "2026-09-29T19:59:00.785146+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,19 +8,9 @@
   "brief": {
     "date": "2026-09-29",
     "event_count": 9,
-    "urgent_count": 2,
+    "urgent_count": 6,
     "enquiry_count": 0,
     "calendar": [
-      {
-        "title": "Padel match x malcolm",
-        "time": "4:00pm",
-        "start_raw": "2026-09-29T16:00:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": ""
-      },
       {
         "title": "Call jean rees x strongevity october",
         "time": "all day",
@@ -29,7 +19,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm match time/location with Malcolm."
+        "prep": ""
       },
       {
         "title": "Contact gail lowe x strongevity",
@@ -38,6 +28,18 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "Wants to do a wednesday",
+        "location": "",
+        "prep": "Confirm match time/location with Malcolm."
+      },
+      {
+        "title": "Dude x Google Meet",
+        "time": "9:00am",
+        "start_raw": "2026-09-30T09:00:00+01:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "sarah@nourishandnurtu.re"
+        ],
+        "description": "",
         "location": "",
         "prep": "Contact Gail Lowe re: Wednesday availability for Strongevity collaboration."
       },
@@ -109,14 +111,54 @@
     ],
     "urgent": [
       {
-        "from": "Mirafit",
-        "from_raw": "Mirafit <support@mirafit.co.uk>",
-        "subject": "Your Mirafit order confirmation",
-        "snippet": "Mirafit Grace Smith, WE MAY SEND YOUR EQUIPMENT IN MORE THAN ONE DELIVERY SO PLEASE DON&#39;T WORRY IF IT DOESN&#39;T ALL TURN UP TOGETHER. Once we have shipped your goods, we will send you a tracking",
-        "id": "1a0d398490140660",
-        "thread_id": "1a0d37843e190239",
-        "msg_count": 2,
-        "draft_id": "r9140999660940455322"
+        "from": "Sarah Lacey",
+        "from_raw": "Sarah Lacey <sarah@nourishandnurtu.re>",
+        "subject": "Accepted: Dude x Google Meet @ Wed Sep 30, 2026 9am - 10am (BST) (grace@theforge.pt)",
+        "snippet": "Dude x Google Meet Sarah Lacey has accepted this invitation. Join with Google Meet Meeting link meet.google.com/zng-wxcc-tzp Join by phone (GB) +44 20 3937 1908 PIN: 433013781 More phone numbers When",
+        "id": "1a0ee65450b02974",
+        "thread_id": "1a0ee65450b02974",
+        "msg_count": 1,
+        "draft_id": "r7057033409872570918"
+      },
+      {
+        "from": "Jennifer Reid",
+        "from_raw": "Jennifer Reid <jenn.reid@hotmail.co.uk>",
+        "subject": "Re: Jennifer, you're now 30 days as a full member!",
+        "snippet": "To keep working on lunges. I find them so difficult. My right knee is always very sore. Like a gripping pain across knee cap. Sent from my iPhone On 28 Sep 2026, at 13:32, Coach Grace &lt;grace@",
+        "id": "1a0ee4c38dbb2c4c",
+        "thread_id": "1a0ee4c38dbb2c4c",
+        "msg_count": 1,
+        "draft_id": "r-4982340273524299069"
+      },
+      {
+        "from": "Coach JoJo",
+        "from_raw": "Coach JoJo <jojo@theforge.pt>",
+        "subject": "Accepted: Tigermilk Lunch @ Fri Oct 2, 2026 1pm - 2pm (BST) (Coach Grace)",
+        "snippet": "Tigermilk Lunch Coach JoJo has accepted this invitation. When Friday Oct 2, 2026 \u22c5 1pm \u2013 2pm (United Kingdom Time) Location Tigermilk - Tottenham Court Road, 127 Charing Cross Rd, London WC2H 0EW, UK",
+        "id": "1a0eddac0498c284",
+        "thread_id": "1a0eddac0498c284",
+        "msg_count": 1,
+        "draft_id": "r6187958934307421450"
+      },
+      {
+        "from": "Alison Butler",
+        "from_raw": "Alison Butler <alison@365firesecurity.co.uk>",
+        "subject": "Forge Fitness - October maintenance",
+        "snippet": "Hi, I have scheduled the fire maintenance for 22.10.26, please confirm this date is suitable for access. Kind Regards Alison Butler Administrator 365 Fire Security Ltd Unit 25, Antrim Enterprise Agency",
+        "id": "1a0ed8e5aebd556b",
+        "thread_id": "1a0ed8e5aebd556b",
+        "msg_count": 1,
+        "draft_id": "r-1849548325355784041"
+      },
+      {
+        "from": "Mandy Hassan",
+        "from_raw": "Mandy Hassan <Mandy.Hassan@causewaycoastandglens.gov.uk>",
+        "subject": "Building Stronger Leaders, Building Stronger Businesses",
+        "snippet": "Dear Business Owner / Employer We are delighted to invite you to the Skills to Propel Business Breakfast, taking place on Thursday 15 October 2026 at the Bushtown Hotel, from 9.30am to 11.00am, with",
+        "id": "1a0ed8cd7424e2d6",
+        "thread_id": "1a0ed8cd7424e2d6",
+        "msg_count": 1,
+        "draft_id": "r233718452580220916"
       },
       {
         "from": "Elaine Blood",
@@ -131,89 +173,7 @@
     "important": [],
     "enquiries": [],
     "checkins": {
-      "by_email": {
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
-        "sarabenetti2013@gmail.com": "2026-08-13",
-        "conniegerrow101@hotmail.com": "2026-06-29",
-        "melissatraynor@live.ie": "2026-06-21",
-        "sorchagilmore11@gmail.com": "2026-06-11",
-        "catherineboyle@hotmail.com": "2026-06-09",
-        "s.donaghy57@btinternet.com": "2026-06-09",
-        "noleen.mckillop@gmail.com": "2026-06-08",
-        "k.hanna@stran.ac.uj": "2026-06-08",
-        "1234@gmail.com": "2026-06-03",
-        "susanbethhenry@icloud.com": "2026-05-31",
-        "mollie-a@hotmail.co.uk": "2026-05-31",
-        "deborahgoss@outlook.com": "2026-05-17",
-        "emmaglen2@aol.com": "2026-05-17",
-        "libbystevenson51@hotmail.com": "2026-05-03",
-        "ctaggart321@gmail.com": "2026-04-19",
-        "wee_zara@hotmail.com": "2026-04-06",
-        "rosalyn.simpson1310@gmail.com": "2026-03-30",
-        "k.hanna@stran.ac.uk": "2026-03-29",
-        "kerrie@asylia.com": "2026-03-29",
-        "karen.rhodes76@yahoo.com": "2026-03-29",
-        "sarabenetti2013@gmail.coms": "2026-03-29",
-        "lindadavidson41@yahoo.co.uk": "2026-03-29",
-        "cherithcubitt91@gmail.com": "2026-03-29",
-        "sarahesandford@gmail.com": "2026-03-29",
-        "samijo86@hotmail.com": "2026-03-16",
-        "sarahlouiseboorman@yahoo.co.uk": "2026-03-15",
-        "ashley.george07@outlook.com": "2026-03-15",
-        "david.vance@btinternet.com": "2026-03-15",
-        "rachellemcmullan@hotmail.com": "2026-03-01",
-        "hellierankin@aol.com": "2026-03-01",
-        "aborland591@icloud.com": "2026-02-16",
-        "claireleeke@hotmail.co.uk": "2026-02-15",
-        "mfsndjmck@aol.com": "2026-01-24",
-        "christine.calvin@icloud.com": "2026-01-18",
-        "kmemcc7@gmail.com": "2026-01-18",
-        "sstewart905@icloud.com": "2026-01-04",
-        "simpsonasmps4@aol.com": "2026-01-04",
-        "marg.6313@gmail.com": "2026-01-04",
-        "noeleen60c@gmail.com": "2026-01-04",
-        "hazelmillar65@hotmail.com": "2026-01-04",
-        "boydgillian53@gmail.com": "2025-12-29",
-        "paulinereid1952@gmail.com": "2025-12-29",
-        "cindydoll78@hotmail.com": "2025-12-26",
-        "sharonkirk2012@gmail.com": "2025-12-21",
-        "sarahgaston16@gmail.com": "2025-12-11",
-        "joannehenry28@btinternet.com": "2025-12-07",
-        "catherinemarygavin@gmail.com": "2025-12-07",
-        "lorilou4214@yahoo.co.uk": "2025-11-23",
-        "eiliskearns13@gmail.com": "2025-11-23",
-        "rosiemcclen@icloud.com": "2025-11-23",
-        "hilaryachristie@outlook.com": "2025-11-23",
-        "galtracey@live.com": "2025-11-13",
-        "tmg73@hotmail.com": "2025-11-02",
-        "janeengilfillan@hotmail.com": "2025-10-27",
-        "hils182@hotmail.co.uk": "2025-10-26",
-        "ursycamps@hotmail.com": "2025-10-26",
-        "trsadougan@gmail.com": "2025-10-13",
-        "remy77@hotmail.co.uk": "2025-10-12",
-        "hildaclements@btinternet.com": "2025-10-12",
-        "joaniejt@hotmail.co.uk": "2025-10-12",
-        "ashleen16ok@yahoo.co.uk": "2025-10-12",
-        "jhaslett@hotmail.co.uk": "2025-10-12",
-        "jkt21@hotmail.co.uk": "2025-10-05",
-        "dolomite105@gmail.com": "2025-10-05",
-        "kerrymcgillan@hotmail.co.uk": "2025-10-05",
-        "juliejpm@aol.com": "2025-09-28",
-        "millar_lynda@yahoo.co.uk": "2025-09-28",
-        "evans9494@gmail.com": "2025-09-28",
-        "maddie.mullan05@hotmail.com": "2025-09-28",
-        "kellcarson25@hotmail.com": "2025-09-21",
-        "janedngilfillan@hotmail.com": "2025-09-21",
-        "marie16ok@yahoo.co.uk": "2025-09-14",
-        "clareandbob@tiscali.co.uk": "2025-09-07",
-        "cherithcubitt@gmail.com": "2025-09-07",
-        "kellbredin@hotmail.co.uk": "2025-08-31",
-        "ellenmeldrum555@gmail.com": "2025-08-31",
-        "shannon_camp@hotmail.co.uk": "2025-08-31"
-      },
-      "count": 80
+      "error": "<HttpError 500 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/199fbe9825bad6e4?format=full&alt=json returned \"Internal error encountered.\". Details: \"[{'message': 'Internal error encountered.', 'domain': 'global', 'reason': 'backendError'}]\">"
     },
     "goals": {
       "by_email": {
@@ -252,10 +212,28 @@
   },
   "ghl": [
     {
+      "name": "Anne Diamond",
+      "channel": "Phone",
+      "message": "That sound fine Grace, ill call in and see you face to face sure, if you send me the link I'll get booked in, thank you",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "vdtkxKRvGKsTzVqjTEk2",
+      "contact_id": "FoDwOXfGpACn2JmSeC9S"
+    },
+    {
+      "name": "Emma Gamble",
+      "channel": "Phone",
+      "message": "Sorry Grace wrong Emma",
+      "age": "3h ago",
+      "unread": 1,
+      "conv_id": "PYvMScTUGOPJChRcyCNo",
+      "contact_id": "XRyymavNNbAtsEEEYHuh"
+    },
+    {
       "name": "Maureen Donoghue",
       "channel": "Phone",
       "message": "Thanks for that, I will keep it in mind for the future.",
-      "age": "0h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "YRbvYU4u0SDtgbknkZsr",
       "contact_id": "UqVaZbertrBaJmh9u72u"
@@ -264,7 +242,7 @@
       "name": "Lesley Drake",
       "channel": "Phone",
       "message": "Morning Grace, I need to apologise to you!!!! My payment for the gym didn't go out this month, I   forgot to transfer money into my account. I am so sorry!!! I promise I'm not trying to sneak free gym",
-      "age": "6h ago",
+      "age": "12h ago",
       "unread": 1,
       "conv_id": "zuEITylRivse3QQQrZk0",
       "contact_id": "XzdfHm5AOxvgArTsauPe"
@@ -273,7 +251,7 @@
       "name": "Davina Dickson",
       "channel": "Phone",
       "message": "Thanks Grace",
-      "age": "18h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "ko3XeODGa2uehvdmRWzw",
       "contact_id": "R6uR5DakIYaq4I0uvmVi"
@@ -282,7 +260,7 @@
       "name": "Mia Taylor",
       "channel": "Phone",
       "message": "Hey Grace, I hope you\u2019re well. I was due to start my classes this week/tonight, but unfortunately my mental health has really plummeted recently. I\u2019ve been in touch with my gp today regarding it, so I",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "nIX2ZhR6oQ8ClG4tJuri",
       "contact_id": "mDeeMt6eZCx66azPVIgi"
@@ -291,7 +269,7 @@
       "name": "Ballykenver Farm Shop & Kitchen",
       "channel": "Phone",
       "message": "Well done girls!",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 2,
       "conv_id": "UsFaJnyrfVHPqVeWVgze",
       "contact_id": "zSPgbPNeJpACIxJ3HNtO"
@@ -300,7 +278,7 @@
       "name": "Claire Scull",
       "channel": "Phone",
       "message": "Hi Grace, thanks for checking. Still buzzing from Saturday! Got my days wrong. I\u2019m in tomorrow for upper I think. Looking forward for to it. Meet all coaches in their classes, different classes and di",
-      "age": "21h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "TCXvAarCzRxIhAMMSnmG",
       "contact_id": "LhGPitybbRvAP04JUKkK"
@@ -309,7 +287,7 @@
       "name": "Mrs Patricia McTaggart",
       "channel": "Phone",
       "message": "Thank you, I've set up a meeting for 9.30am on Wednesday with her. Unfortunately I am unable to attend with her as I live in England but if you wish to speak to me directly, please don't hesitate to r",
-      "age": "22h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "BIJVOEoCV0id9I25KFeo",
       "contact_id": "ojEL6YjKR1rOBNEricSm"
@@ -318,19 +296,10 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "Grace I am heading home from work with Migraine . Sorry I won\u2019t be in class tonight and Sarah has no way in - apologies.",
-      "age": "22h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
-    },
-    {
-      "name": "Kate Moore",
-      "channel": "Phone",
-      "message": "Get Started",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "Y4rG5aD2Z8jLlSYjbrCD",
-      "contact_id": "ZGAhgIJsygA27DZTGuPk"
     }
   ],
   "jumpstart": {
@@ -5082,14 +5051,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0ADMNX20R3",
-        "text": "Sorry Grace,  I forgot to take the \u00a310 in this morning!  I'm in again on Thursday, will bring it then.",
-        "hours": 4,
-        "name": "Noleen McMullan"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -8026,7 +7988,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 712
+            "count": 742
           },
           {
             "day": "Wednesday",
@@ -8070,7 +8032,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 662
+            "count": 692
           },
           {
             "name": "Build: Full Body",
@@ -8231,13 +8193,13 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 3157
+        "total_attended": 3187
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 248
+            "count": 278
           },
           {
             "day": "Monday",
@@ -8281,7 +8243,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 215
+            "count": 245
           },
           {
             "name": "Build: Lower",
@@ -8306,14 +8268,6 @@
         ],
         "bottom_classes": [
           {
-            "name": "Capacity",
-            "count": 11
-          },
-          {
-            "name": "Barbelle",
-            "count": 12
-          },
-          {
             "name": "Engine",
             "count": 24
           },
@@ -8328,6 +8282,14 @@
           {
             "name": "Circuits",
             "count": 80
+          },
+          {
+            "name": "Strongevity",
+            "count": 124
+          },
+          {
+            "name": "Elevate",
+            "count": 133
           }
         ],
         "top_slots": [
@@ -8335,8 +8297,8 @@
             "day": "Tuesday",
             "time": "7pm",
             "name": "Build: Upper",
-            "count": 45,
-            "sessions": 4,
+            "count": 56,
+            "sessions": 5,
             "avg": 11.2,
             "label": "Tuesday 7pm Build: Upper"
           },
@@ -8368,15 +8330,6 @@
             "label": "Tuesday 8pm Build: Upper"
           },
           {
-            "day": "Tuesday",
-            "time": "6pm",
-            "name": "Build: Upper",
-            "count": 40,
-            "sessions": 4,
-            "avg": 10.0,
-            "label": "Tuesday 6pm Build: Upper"
-          },
-          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -8384,6 +8337,15 @@
             "sessions": 4,
             "avg": 10.0,
             "label": "Wednesday 10am Circuits"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Friday 6pm Circuits"
           }
         ],
         "bottom_slots": [
@@ -8442,7 +8404,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1035
+        "total_attended": 1065
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a 30-min \"Barbell Basics\" workshop on Friday afternoons** \u2014 slot it between PT blocks to capture members who skip Engine/Barbelle due to intimidation; charge \u00a35-8 or bundle free with membership to build confidence and feed those underperforming classes.\n\n2. **Open a paid PT block (\u00a320-25/person) on Saturday mornings before the quietest day picks up** \u2014 target pairs or small groups wanting semi-coached strength work; uses dead studio time and creates revenue without launching another class.\n\n**For the quieter classes themselves:**\n\n3. **Move Mobility to Thursday evening (post-work slot) and rebrand it \"Recovery & Mobility\"** \u2014 pair it with a free 10-min stretch video sent to members after their Thursday Build class; Thursday is quieter overall, so shifting it there spreads load while the repositioning makes it feel less like a \"filler\" class and more like intentional recovery (which drives retention).",
       "capacity": [
@@ -22761,8 +22723,8 @@
       {
         "month": "2026-09",
         "revenue": 25086.7,
-        "expenses": 23042.18,
-        "profit": 2044.52,
+        "expenses": 23049.74,
+        "profit": 2036.96,
         "profit_pct": 8.1,
         "categories": {
           "in": [
@@ -22802,7 +22764,7 @@
             },
             {
               "name": "Admin",
-              "amount": 1080.49
+              "amount": 1088.05
             },
             {
               "name": "Marketing",
@@ -22839,6 +22801,16 @@
           ]
         },
         "transactions": [
+          {
+            "uid": "65a605f4-6ee1-41c1-874c-f0d31bb2624a",
+            "date": "2026-09-29",
+            "name": "Captions.Ai",
+            "ref": "CAPTIONS.AI",
+            "amount": 7.56,
+            "direction": "OUT",
+            "category": "Admin",
+            "internal": false
+          },
           {
             "uid": "64e2e258-e072-4000-ab37-c0ae520b1e1a",
             "date": "2026-09-29",
@@ -24783,7 +24755,7 @@
       }
     ],
     "account_name": "Main",
-    "cash_position": 2058.04,
+    "cash_position": 2050.48,
     "available": 0.0,
     "reserves": [
       {
@@ -24804,7 +24776,7 @@
       }
     ],
     "earmarked": 11697.0,
-    "total_cash": 13755.04,
+    "total_cash": 13747.48,
     "committed_monthly": 1536.59,
     "standing_orders": [
       {
@@ -24833,8 +24805,8 @@
       }
     ],
     "cash_in_30": 25086.7,
-    "cash_out_30": 23057.18,
-    "net_30": 2029.52,
+    "cash_out_30": 23064.74,
+    "net_30": 2021.96,
     "as_of": "2026-09-29"
   },
   "gocardless": {

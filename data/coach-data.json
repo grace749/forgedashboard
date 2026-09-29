@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T14:00:50.603490+00:00",
+  "generated_at": "2026-09-29T19:59:00.785146+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4093,14 +4093,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0ADMNX20R3",
-        "text": "Sorry Grace,  I forgot to take the \u00a310 in this morning!  I'm in again on Thursday, will bring it then.",
-        "hours": 4,
-        "name": "Noleen McMullan"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -7033,7 +7026,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 712
+            "count": 742
           },
           {
             "day": "Wednesday",
@@ -7077,7 +7070,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 662
+            "count": 692
           },
           {
             "name": "Build: Full Body",
@@ -7238,13 +7231,13 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 3157
+        "total_attended": 3187
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 248
+            "count": 278
           },
           {
             "day": "Monday",
@@ -7288,7 +7281,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 215
+            "count": 245
           },
           {
             "name": "Build: Lower",
@@ -7313,14 +7306,6 @@
         ],
         "bottom_classes": [
           {
-            "name": "Capacity",
-            "count": 11
-          },
-          {
-            "name": "Barbelle",
-            "count": 12
-          },
-          {
             "name": "Engine",
             "count": 24
           },
@@ -7335,6 +7320,14 @@
           {
             "name": "Circuits",
             "count": 80
+          },
+          {
+            "name": "Strongevity",
+            "count": 124
+          },
+          {
+            "name": "Elevate",
+            "count": 133
           }
         ],
         "top_slots": [
@@ -7342,8 +7335,8 @@
             "day": "Tuesday",
             "time": "7pm",
             "name": "Build: Upper",
-            "count": 45,
-            "sessions": 4,
+            "count": 56,
+            "sessions": 5,
             "avg": 11.2,
             "label": "Tuesday 7pm Build: Upper"
           },
@@ -7375,15 +7368,6 @@
             "label": "Tuesday 8pm Build: Upper"
           },
           {
-            "day": "Tuesday",
-            "time": "6pm",
-            "name": "Build: Upper",
-            "count": 40,
-            "sessions": 4,
-            "avg": 10.0,
-            "label": "Tuesday 6pm Build: Upper"
-          },
-          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -7391,6 +7375,15 @@
             "sessions": 4,
             "avg": 10.0,
             "label": "Wednesday 10am Circuits"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Friday 6pm Circuits"
           }
         ],
         "bottom_slots": [
@@ -7449,7 +7442,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1035
+        "total_attended": 1065
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a 30-min \"Barbell Basics\" workshop on Friday afternoons** \u2014 slot it between PT blocks to capture members who skip Engine/Barbelle due to intimidation; charge \u00a35-8 or bundle free with membership to build confidence and feed those underperforming classes.\n\n2. **Open a paid PT block (\u00a320-25/person) on Saturday mornings before the quietest day picks up** \u2014 target pairs or small groups wanting semi-coached strength work; uses dead studio time and creates revenue without launching another class.\n\n**For the quieter classes themselves:**\n\n3. **Move Mobility to Thursday evening (post-work slot) and rebrand it \"Recovery & Mobility\"** \u2014 pair it with a free 10-min stretch video sent to members after their Thursday Build class; Thursday is quieter overall, so shifting it there spreads load while the repositioning makes it feel less like a \"filler\" class and more like intentional recovery (which drives retention).",
       "capacity": [
