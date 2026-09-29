@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T05:00:49.861714+00:00",
+  "generated_at": "2026-09-29T12:43:38.174560+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1111,6 +1111,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach JoJo",
+        "last_scan": "2026-09-29",
+        "scan_count": 19,
+        "weight": 192.4,
+        "smm": 72.5,
+        "pbf": 32.9,
+        "bmi": 30.1,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -0.1,
+        "smm_change": 0.0,
+        "pbf_change": -0.1,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-10",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "helenf141",
         "last_scan": "2026-09-28",
         "scan_count": 1,
@@ -1396,30 +1420,6 @@
         "vfa_change": null,
         "next_due": "2026-11-05",
         "days_to_due": 37,
-        "overdue": false
-      },
-      {
-        "name": "Coach JoJo",
-        "last_scan": "2026-09-23",
-        "scan_count": 18,
-        "weight": 192.5,
-        "smm": 72.5,
-        "pbf": 33.0,
-        "bmi": 30.1,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": 0.5,
-        "smm_change": 0.4,
-        "pbf_change": 0.0,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-11-04",
-        "days_to_due": 36,
         "overdue": false
       },
       {
@@ -4093,7 +4093,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U0ADMNX20R3",
+        "text": "Sorry Grace,  I forgot to take the \u00a310 in this morning!  I'm in again on Thursday, will bring it then.",
+        "hours": 3,
+        "name": "Noleen McMullan"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -4263,7 +4270,8 @@
       "erin honeyford": "U0C150T7ZPS",
       "mia taylor": "U0C20TU18GN",
       "rebecca gill": "U0C3BRA7525",
-      "helen": "U0C4TEPJU3F"
+      "helen": "U0C4TEPJU3F",
+      "trisha": "U0C51C5DYQ3"
     }
   },
   "staff": {
@@ -4424,7 +4432,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (16 sessions) should shift to JoJo; Strongevity (5) to Eilis. This removes Grace from the rota entirely and balances the upper/lower split across the team.\n\n\u2022 **Eilis is under-loaded on class delivery**: She's doing 40 PT sessions but only 42 classes. Assign her more Plate and Mobility classes (her current strengths) to bring her total class count up and reduce her PT dependency; this gives her variety and spreads coaching load more evenly.\n\n\u2022 **JoJo is over-reliant for technical classes**: She's the only coach taking Circuits and is heavily weighted on Build: Upper. Develop Eilis on additional Build: Upper sessions to share the load and reduce single-coach dependency on technical content.\n\n\u2022 **No Sweat Intro (10 sessions combined) is split awkwardly**: Keep JoJo's 7 but move Grace's 3 to Eilis so she builds a small intro offering and frees Grace completely.\n\n\u2022 **Body Composition scans are filling time unproductively**: These aren't coaching. Batch them into one 30-minute admin slot per week (either coach) rather than spreading across 30 sessions\u2014this reclaims ~10 hours monthly for real class or PT delivery.\n\n\u2022 **Target state**: Eilis 60\u201370 classes + 20\u201325 PT; JoJo 70\u201375 classes + 20 PT; Grace zero delivery. Aim for balanced weekly rotas by September.",
+    "advice": "\u2022 **Move Grace's Build: Lower (16 sessions) to JoJo** \u2013 this is JoJo's strength area and fits her existing Upper work; Eilis can absorb the lighter Mobility and Plate classes Grace runs, spreading load more evenly.\n\n\u2022 **Shift Grace's PT load (20 sessions from JoJo + Grace's implied PT gap)** \u2013 JoJo is carrying 20 PTs on top of heavy class delivery. Trial moving 8\u201310 PT slots to Eilis to free JoJo for more class focus and reduce her burnout risk.\n\n\u2022 **InBody scans are admin, not coaching load** \u2013 stop counting them against timetable balance. JoJo and Eilis are each doing 12\u201313 per month; delegate these to reception or a rotating non-coach role to free 4\u20135 hours monthly per person.\n\n\u2022 **Cover Grace's Strongevity and Engine classes** \u2013 assign Strongevity to Eilis (lower-intensity, fits her development) and Engine to JoJo; this removes Grace's last class commitments and builds Eilis's class variety outside Tuesdays.\n\n\u2022 **No Sweat Intro coverage** \u2013 JoJo has 7; trial moving 3\u20134 to Eilis to give her client-facing intro experience and reduce JoJo's admin-heavy load.\n\n\u2022 **Eilis is currently under-used** (105 sessions but lighter PT ratio and single-class-heavy) \u2013 increase her PT slots and class range to match JoJo's delivery intensity, preparing her as a stronger second pillar.",
     "period": "August 2026"
   },
   "asana": {
@@ -4806,8 +4814,8 @@
     }
   },
   "teamup": {
-    "total_members": 170,
-    "recurring": 111,
+    "total_members": 169,
+    "recurring": 110,
     "recurring_members": [
       {
         "id": 10803724,
@@ -5090,10 +5098,6 @@
         "name": "Margaret Reynolds"
       },
       {
-        "id": 13529711,
-        "name": "Marjorie Moore"
-      },
-      {
         "id": 9198838,
         "name": "Marlene Hayes"
       },
@@ -5254,7 +5258,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 8,
+    "trial": 9,
     "trial_members": [
       {
         "id": 13748936,
@@ -5279,6 +5283,10 @@
       {
         "id": 13908961,
         "name": "Mia Taylor"
+      },
+      {
+        "id": 14016511,
+        "name": "Patricia McAuley"
       },
       {
         "id": 13959176,
@@ -5325,7 +5333,7 @@
         "name": "Teresa Dougan"
       }
     ],
-    "paused": 5,
+    "paused": 6,
     "paused_members": [
       {
         "id": 10746722,
@@ -5342,6 +5350,10 @@
       {
         "id": 7840911,
         "name": "Kathryn Greehy"
+      },
+      {
+        "id": 13529711,
+        "name": "Marjorie Moore"
       },
       {
         "id": 9188544,
@@ -6130,9 +6142,9 @@
       }
     ],
     "cancelled_ytd": 48,
-    "churn_rate": 4.9,
-    "avg_member_price": 138.22,
-    "monthly_recurring_revenue": 15066.0,
+    "churn_rate": 5.0,
+    "avg_member_price": 138.07,
+    "monthly_recurring_revenue": 14912.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 7,
     "cancelled_members": [
@@ -6175,7 +6187,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 74,
+        "count": 73,
         "members": [
           {
             "id": 10803724,
@@ -6352,10 +6364,6 @@
           {
             "id": 12994868,
             "name": "Margaret Reynolds"
-          },
-          {
-            "id": 13529711,
-            "name": "Marjorie Moore"
           },
           {
             "id": 9198838,
@@ -6746,46 +6754,8 @@
         ]
       },
       {
-        "name": "Strongevity",
-        "count": 8,
-        "members": [
-          {
-            "id": 13954610,
-            "name": "Carol McCappin"
-          },
-          {
-            "id": 11546736,
-            "name": "Claire Leeke"
-          },
-          {
-            "id": 13755354,
-            "name": "Eileen Graham"
-          },
-          {
-            "id": 13903499,
-            "name": "Gail Houston"
-          },
-          {
-            "id": 900564,
-            "name": "Grace Smith"
-          },
-          {
-            "id": 13535278,
-            "name": "Jean Rees"
-          },
-          {
-            "id": 13618093,
-            "name": "Joyce Lyons"
-          },
-          {
-            "id": 13489401,
-            "name": "June Fowler"
-          }
-        ]
-      },
-      {
         "name": "6 Week Jumpstart",
-        "count": 8,
+        "count": 9,
         "members": [
           {
             "id": 13748936,
@@ -6812,12 +6782,50 @@
             "name": "Mia Taylor"
           },
           {
+            "id": 14016511,
+            "name": "Patricia McAuley"
+          },
+          {
             "id": 13959176,
             "name": "Rebecca Gill"
           },
           {
             "id": 13602153,
             "name": "Sharon McAuley"
+          }
+        ]
+      },
+      {
+        "name": "Strongevity",
+        "count": 7,
+        "members": [
+          {
+            "id": 11546736,
+            "name": "Claire Leeke"
+          },
+          {
+            "id": 13755354,
+            "name": "Eileen Graham"
+          },
+          {
+            "id": 900564,
+            "name": "Grace Smith"
+          },
+          {
+            "id": 13535278,
+            "name": "Jean Rees"
+          },
+          {
+            "id": 13618093,
+            "name": "Joyce Lyons"
+          },
+          {
+            "id": 13489401,
+            "name": "June Fowler"
+          },
+          {
+            "id": 13750478,
+            "name": "Maureen Donoghue"
           }
         ]
       },
@@ -7025,7 +7033,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 696
+            "count": 712
           },
           {
             "day": "Wednesday",
@@ -7069,7 +7077,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 646
+            "count": 662
           },
           {
             "name": "Build: Full Body",
@@ -7156,15 +7164,6 @@
             "label": "Wednesday 10am Circuits"
           },
           {
-            "day": "Tuesday",
-            "time": "7am",
-            "name": "Build: Upper",
-            "count": 113,
-            "sessions": 11,
-            "avg": 10.3,
-            "label": "Tuesday 7am Build: Upper"
-          },
-          {
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
@@ -7172,6 +7171,15 @@
             "sessions": 10,
             "avg": 10.2,
             "label": "Monday 11am Strongevity"
+          },
+          {
+            "day": "Tuesday",
+            "time": "7am",
+            "name": "Build: Upper",
+            "count": 121,
+            "sessions": 12,
+            "avg": 10.1,
+            "label": "Tuesday 7am Build: Upper"
           }
         ],
         "bottom_slots": [
@@ -7230,13 +7238,13 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 3141
+        "total_attended": 3157
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 232
+            "count": 248
           },
           {
             "day": "Monday",
@@ -7280,7 +7288,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 199
+            "count": 215
           },
           {
             "name": "Build: Lower",
@@ -7359,15 +7367,6 @@
           },
           {
             "day": "Tuesday",
-            "time": "10am",
-            "name": "Build: Upper",
-            "count": 31,
-            "sessions": 3,
-            "avg": 10.3,
-            "label": "Tuesday 10am Build: Upper"
-          },
-          {
-            "day": "Tuesday",
             "time": "8pm",
             "name": "Build: Upper",
             "count": 30,
@@ -7383,6 +7382,15 @@
             "sessions": 4,
             "avg": 10.0,
             "label": "Tuesday 6pm Build: Upper"
+          },
+          {
+            "day": "Wednesday",
+            "time": "10am",
+            "name": "Circuits",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Wednesday 10am Circuits"
           }
         ],
         "bottom_slots": [
@@ -7441,7 +7449,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1019
+        "total_attended": 1035
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a 30-min \"Barbell Basics\" workshop on Friday afternoons** \u2014 slot it between PT blocks to capture members who skip Engine/Barbelle due to intimidation; charge \u00a35-8 or bundle free with membership to build confidence and feed those underperforming classes.\n\n2. **Open a paid PT block (\u00a320-25/person) on Saturday mornings before the quietest day picks up** \u2014 target pairs or small groups wanting semi-coached strength work; uses dead studio time and creates revenue without launching another class.\n\n**For the quieter classes themselves:**\n\n3. **Move Mobility to Thursday evening (post-work slot) and rebrand it \"Recovery & Mobility\"** \u2014 pair it with a free 10-min stretch video sent to members after their Thursday Build class; Thursday is quieter overall, so shifting it there spreads load while the repositioning makes it feel less like a \"filler\" class and more like intentional recovery (which drives retention).",
       "capacity": [
@@ -7754,7 +7762,7 @@
       },
       {
         "month": "2026-09",
-        "active": 170,
+        "active": 171,
         "churn": 6.8,
         "by_type": {
           "Empower": 75,
@@ -7767,7 +7775,7 @@
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 4,
           "4 Class Pass": 2,
-          "6 Week Jumpstart": 8,
+          "6 Week Jumpstart": 9,
           "Strongevity Membership": 17,
           "4 Session Block": 1,
           "8 Class Block": 1,
@@ -7804,13 +7812,6 @@
         "membership": "8 PT Sessions",
         "days_absent": 71,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 13851559,
-        "name": "Celia Currie",
-        "membership": "4 PT Sessions",
-        "days_absent": 12,
-        "last_seen": "2026-09-17"
       },
       {
         "id": 7209125,
@@ -7860,13 +7861,6 @@
         "membership": "Strongevity Membership",
         "days_absent": 22,
         "last_seen": "2026-09-07"
-      },
-      {
-        "id": 1793399,
-        "name": "Helen Traynor",
-        "membership": "Empower",
-        "days_absent": 11,
-        "last_seen": "2026-09-18"
       },
       {
         "id": 11929298,
@@ -7951,6 +7945,20 @@
         "membership": "8 PT Sessions",
         "days_absent": 14,
         "last_seen": "2026-09-15"
+      },
+      {
+        "id": 13536586,
+        "name": "Pauline McAuley",
+        "membership": "Strongevity Membership",
+        "days_absent": 14,
+        "last_seen": "2026-09-15"
+      },
+      {
+        "id": 12323224,
+        "name": "Sami-Jo Smyth",
+        "membership": "Empower",
+        "days_absent": 35,
+        "last_seen": "2026-08-25"
       }
     ],
     "celebrations": {
@@ -8310,15 +8318,6 @@
         "last_momentum": null
       },
       {
-        "id": 13954610,
-        "name": "Carol McCappin",
-        "email": "c.mccappin@btinternet.com",
-        "join_date": "2026-10-05",
-        "membership": "Strongevity",
-        "class_count": 0,
-        "last_momentum": null
-      },
-      {
         "id": 13608450,
         "name": "Caroline Stinson",
         "email": "carolinestinson94@gmail.com",
@@ -8586,15 +8585,6 @@
         "join_date": "2026-02-01",
         "membership": "Empower",
         "class_count": 133,
-        "last_momentum": null
-      },
-      {
-        "id": 13903499,
-        "name": "Gail Houston",
-        "email": "gailyhouston@msn.com",
-        "join_date": "2026-10-06",
-        "membership": "Strongevity",
-        "class_count": 0,
         "last_momentum": null
       },
       {
@@ -9093,15 +9083,6 @@
         "last_momentum": null
       },
       {
-        "id": 13529711,
-        "name": "Marjorie Moore",
-        "email": "marjorie.mccook@hotmail.co.uk",
-        "join_date": "2026-08-27",
-        "membership": "Empower",
-        "class_count": 39,
-        "last_momentum": null
-      },
-      {
         "id": 9198838,
         "name": "Marlene Hayes",
         "email": "mmontgomery42@icloud.com",
@@ -9135,6 +9116,15 @@
         "join_date": "2025-06-04",
         "membership": "Empower",
         "class_count": 187,
+        "last_momentum": null
+      },
+      {
+        "id": 13750478,
+        "name": "Maureen Donoghue",
+        "email": "maudono61@gmail.com",
+        "join_date": "2026-10-06",
+        "membership": "Strongevity",
+        "class_count": 2,
         "last_momentum": null
       },
       {
@@ -13787,6 +13777,30 @@
     "urgent": [
       {
         "from": "Coach Grace",
+        "subject": "Invitation: Tigermilk Lunch @ Fri 2 Oct 2026 1pm - 2pm (BST) (Coach JoJo)",
+        "snippet": "Tigermilk Lunch You have been invited by Coach Grace to attend an event named Tigermilk Lunch on Friday 2 Oct 2026 \u22c5 1pm \u2013 2pm (United Kingdom Time). When Friday 2 Oct 2026 \u22c5 1pm \u2013 2pm (United Kingdom",
+        "id": "1a0ed1eee4d6308d"
+      },
+      {
+        "from": "Coach Grace",
+        "subject": "Updated invitation: Q1 2027 Programming Meet @ Fri 18 Dec 2026 (Coach JoJo)",
+        "snippet": "Q1 2027 Programming Meet You have been invited by Coach Grace to attend an event named Q1 2027 Programming Meet on Friday 18 Dec 2026. This event has been updated Changed: Time When CHANGED Friday 18",
+        "id": "1a0ed067ac1bde96"
+      },
+      {
+        "from": "Coach Grace",
+        "subject": "Holidays and Switches",
+        "snippet": "Hi team, We are moving to a better solution for managing holidays and class/day switches so everything is in one place and easy to access. I&#39;ve set up a shared spreadsheet for booking time off and",
+        "id": "1a0ec874d5492205"
+      },
+      {
+        "from": "Coach Grace",
+        "subject": "Fwd: A quick favour after Saturday.",
+        "snippet": "---------- Forwarded message --------- From: Stuart Aitken &lt;stuart@theptroadmap.com&gt; Date: Tue, 29 Sep 2026 at 09:28 Subject: A quick favour after Saturday. To: Stuart Aitken &lt;stuart@",
+        "id": "1a0ec485f91eeed6"
+      },
+      {
+        "from": "Coach Grace",
         "subject": "Lynda Archibald - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Lynda Archibald has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
         "id": "1a0e86fe6149abc8"
@@ -13820,33 +13834,22 @@
         "subject": "Accepted: Eilis concert @ Wed 18 Aug 3pm - Thu 19 Aug 2027 11pm (BST) (Coach JoJo)",
         "snippet": "Eilis concert Coach Grace has accepted this invitation. When Wednesday 18 Aug \u22c5 3pm \u2013 Thursday 19 Aug 2027 \u22c5 11pm (United Kingdom Time) Guests Coach JoJo - organiser eiliskearns@hotmail.co.uk Coach",
         "id": "1a0d3bcee75b9da7"
-      },
-      {
-        "from": "eilis kearns",
-        "subject": "Accepted: Eilis JoJo coach meeting",
-        "snippet": "",
-        "id": "1a0d3a9d4e52c764"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Fwd: Time for some reflection!",
-        "snippet": "---------- Forwarded message --------- From: Jennifer Reid &lt;jenn.reid@hotmail.co.uk&gt; Date: Thu, 24 Sep 2026 at 12:13 Subject: Re: Time for some reflection! To: grace@theforge.pt &lt;grace@",
-        "id": "1a0d31fb0e7dd6ff"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Invitation: So Soy Candle Workshop @ Fri 30 Oct 2026 7pm - 8:30pm (GMT) (Coach JoJo)",
-        "snippet": "So Soy Candle Workshop You have been invited by Coach Grace to attend an event named So Soy Candle Workshop on Friday 30 Oct 2026 \u22c5 7pm \u2013 8:30pm (United Kingdom Time). When Friday 30 Oct 2026 \u22c5 7pm \u2013 ",
-        "id": "1a0c99fd7c153e5a"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Fwd: Nick's seminar (form for lunch & after event drinks)",
-        "snippet": "---------- Forwarded message --------- From: Stuart Aitken &lt;stuart@theptroadmap.com&gt; Date: Tue, 22 Sep 2026 at 10:06 Subject: Re: Nick&#39;s seminar (form for lunch &amp; after event drinks) To:",
-        "id": "1a0c87d418c624f7"
       }
     ],
-    "important": [],
+    "important": [
+      {
+        "from": "Coach Grace",
+        "subject": "Invitation: Tigermilk Lunch @ Fri 2 Oct 2026 1pm - 2pm (BST) (Coach JoJo)",
+        "snippet": "Tigermilk Lunch You have been invited by Coach Grace to attend an event named Tigermilk Lunch on Friday 2 Oct 2026 \u22c5 1pm \u2013 2pm (United Kingdom Time). When Friday 2 Oct 2026 \u22c5 1pm \u2013",
+        "id": "1a0ed1eee4d6308d"
+      },
+      {
+        "from": "Coach Grace",
+        "subject": "Updated invitation: Q1 2027 Programming Meet @ Fri 18 Dec 2026 (Coach JoJo)",
+        "snippet": "Q1 2027 Programming Meet You have been invited by Coach Grace to attend an event named Q1 2027 Programming Meet on Friday 18 Dec 2026. This event has been updated Changed: Time Whe",
+        "id": "1a0ed067ac1bde96"
+      }
+    ],
     "urgent_count": 10
   }
 }
