@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T14:00:49.093376+00:00",
+  "generated_at": "2026-09-30T20:00:30.122044+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4163,14 +4163,20 @@
       {
         "user_id": "U0ADMNX20R3",
         "text": "Sorry Grace,  I forgot to take the \u00a310 in this morning!  I'm in again on Thursday, will bring it then.",
-        "hours": 28,
+        "hours": 34,
         "name": "Noleen McMullan"
       },
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Forge enquiry for all emails ",
-        "hours": 4,
+        "hours": 10,
         "name": "Julie Lapaz"
+      },
+      {
+        "user_id": "U08TTDDAJD7",
+        "text": "This is ace to hear! As I programmed quite a tricky set of movements to do and coach in lower 1, and I did wonder after Monday should I make some switches so th",
+        "hours": 1,
+        "name": "Therese Charles"
       }
     ],
     "mentions": [],
@@ -4222,7 +4228,6 @@
       "mel": "U0805QUKLHJ",
       "emma hopkins": "U081RCPFSAX",
       "hilda": "U086GEWDBSA",
-      "alison moffitt-robinson": "U086J76UC3Y",
       "helen traynor": "U086M7J0X4N",
       "carol chestnutt": "U087NC9N9G9",
       "sharon kirk": "U08AELMAXG8",
@@ -4295,7 +4300,6 @@
       "sorcha gilmore": "U0AT9SVQRPV",
       "margaret reynolds": "U0AT9UT2W8Z",
       "catherine finney": "U0AU374165P",
-      "connie gerrow": "U0AV43XAKTL",
       "megan": "U0AV56YE0N4",
       "joanne honeyford": "U0B19N9FTCM",
       "victoria thompson": "U0B1G7ABCQL",
@@ -4309,7 +4313,6 @@
       "victoria": "U0B792FBTHS",
       "paula": "U0B7AQX192L",
       "sharoncsmyth": "U0B8A4UBH47",
-      "nuala o\u2019neill": "U0B8GGSV684",
       "laura": "U0B9FS1TJTH",
       "louise farley": "U0BC72RDJTE",
       "rosie": "U0BDFCBBTSA",
@@ -4343,7 +4346,8 @@
       "mia taylor": "U0C20TU18GN",
       "rebecca gill": "U0C3BRA7525",
       "helen": "U0C4TEPJU3F",
-      "trisha": "U0C51C5DYQ3"
+      "trisha": "U0C51C5DYQ3",
+      "patriciamctaggart": "U0C6HMSKW7J"
     }
   },
   "staff": {
@@ -4886,8 +4890,8 @@
     }
   },
   "teamup": {
-    "total_members": 170,
-    "recurring": 110,
+    "total_members": 169,
+    "recurring": 109,
     "recurring_members": [
       {
         "id": 10803724,
@@ -5238,10 +5242,6 @@
         "name": "Rosie Mc Fetridge"
       },
       {
-        "id": 12323224,
-        "name": "Sami-Jo Smyth"
-      },
-      {
         "id": 12982150,
         "name": "Sarah Calvin"
       },
@@ -5405,7 +5405,7 @@
         "name": "Teresa Dougan"
       }
     ],
-    "paused": 6,
+    "paused": 7,
     "paused_members": [
       {
         "id": 10746722,
@@ -5426,6 +5426,10 @@
       {
         "id": 13529711,
         "name": "Marjorie Moore"
+      },
+      {
+        "id": 12323224,
+        "name": "Sami-Jo Smyth"
       },
       {
         "id": 9188544,
@@ -6214,9 +6218,9 @@
       }
     ],
     "cancelled_ytd": 48,
-    "churn_rate": 4.9,
-    "avg_member_price": 138.07,
-    "monthly_recurring_revenue": 14912.0,
+    "churn_rate": 5.0,
+    "avg_member_price": 138.02,
+    "monthly_recurring_revenue": 14768.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 7,
     "cancelled_members": [
@@ -6259,7 +6263,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 73,
+        "count": 72,
         "members": [
           {
             "id": 10803724,
@@ -6476,10 +6480,6 @@
           {
             "id": 13414335,
             "name": "Rosie Mc Fetridge"
-          },
-          {
-            "id": 12323224,
-            "name": "Sami-Jo Smyth"
           },
           {
             "id": 12982150,
@@ -7113,7 +7113,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 631
+            "count": 655
           },
           {
             "day": "Monday",
@@ -7147,7 +7147,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 631
+            "count": 655
           }
         ],
         "top_classes": [
@@ -7157,7 +7157,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 513
+            "count": 528
           },
           {
             "name": "Build: Lower",
@@ -7179,7 +7179,7 @@
         "bottom_classes": [
           {
             "name": "Capacity",
-            "count": 48
+            "count": 51
           },
           {
             "name": "Barbelle",
@@ -7191,7 +7191,7 @@
           },
           {
             "name": "Plate",
-            "count": 194
+            "count": 200
           },
           {
             "name": "Mobility",
@@ -7263,9 +7263,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 48,
-            "sessions": 10,
-            "avg": 4.8,
+            "count": 51,
+            "sessions": 11,
+            "avg": 4.6,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -7278,6 +7278,15 @@
             "label": "Thursday 8pm Barbelle"
           },
           {
+            "day": "Wednesday",
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 72,
+            "sessions": 10,
+            "avg": 7.2,
+            "label": "Wednesday 5pm Build: Full Body"
+          },
+          {
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
@@ -7288,20 +7297,11 @@
           },
           {
             "day": "Wednesday",
-            "time": "5pm",
-            "name": "Build: Full Body",
-            "count": 66,
-            "sessions": 9,
-            "avg": 7.3,
-            "label": "Wednesday 5pm Build: Full Body"
-          },
-          {
-            "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 90,
-            "sessions": 12,
-            "avg": 7.5,
+            "count": 96,
+            "sessions": 13,
+            "avg": 7.4,
             "label": "Wednesday 7pm Plate"
           },
           {
@@ -7314,7 +7314,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 3157
+        "total_attended": 3181
       },
       "last_30_days": {
         "top_days": [
@@ -7324,7 +7324,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 216
+            "count": 240
           },
           {
             "day": "Monday",
@@ -7358,7 +7358,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 216
+            "count": 240
           }
         ],
         "top_classes": [
@@ -7368,7 +7368,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 160
+            "count": 175
           },
           {
             "name": "Build: Lower",
@@ -7389,12 +7389,16 @@
         ],
         "bottom_classes": [
           {
+            "name": "Capacity",
+            "count": 14
+          },
+          {
             "name": "Engine",
             "count": 24
           },
           {
             "name": "Plate",
-            "count": 53
+            "count": 59
           },
           {
             "name": "Mobility",
@@ -7407,10 +7411,6 @@
           {
             "name": "Elevate",
             "count": 133
-          },
-          {
-            "name": "Strongevity",
-            "count": 134
           }
         ],
         "top_slots": [
@@ -7474,9 +7474,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 11,
-            "sessions": 3,
-            "avg": 3.7,
+            "count": 14,
+            "sessions": 4,
+            "avg": 3.5,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -7501,9 +7501,9 @@
             "day": "Wednesday",
             "time": "5pm",
             "name": "Build: Full Body",
-            "count": 19,
-            "sessions": 3,
-            "avg": 6.3,
+            "count": 25,
+            "sessions": 4,
+            "avg": 6.2,
             "label": "Wednesday 5pm Build: Full Body"
           },
           {
@@ -7525,7 +7525,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1084
+        "total_attended": 1108
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Add a Friday lunchtime open-gym slot (12\u20131pm).** Friday is your quietest day overall (471 vs 742 on Tuesday); a staffed, pay-per-session open gym targets members who can't commit to fixed classes but want structured time in the space.\n\n2. **Run a 45-min \"Strength Fundamentals\" workshop on Saturday mornings before your first class.** Saturday's low attendance (312) suggests timing or format mismatch\u2014a short, coached intro session (\u00a35\u20138) could warm up the studio and funnel people into later classes.\n\n**For quieter classes themselves:**\n\n3. **Move Engine to a Tuesday or Wednesday 6:30pm slot and pair it with a 3-week \"Try Engine free\" challenge targeting Build class regulars.** Engine is critically low (24 in last 30 days) and likely scheduled poorly; your Build loyalists already trust conditioning work, so a time-slot shift + targeted invite could convert them.",
       "capacity": [
@@ -8002,13 +8002,6 @@
         "last_seen": "2026-09-18"
       },
       {
-        "id": 11819845,
-        "name": "Melissa Traynor",
-        "membership": "Evolve",
-        "days_absent": 12,
-        "last_seen": "2026-09-18"
-      },
-      {
         "id": 7561270,
         "name": "Mollie McGregor",
         "membership": "Elevate",
@@ -8035,6 +8028,13 @@
         "membership": "Strongevity Membership",
         "days_absent": 15,
         "last_seen": "2026-09-15"
+      },
+      {
+        "id": 13602153,
+        "name": "Sharon McAuley",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 41,
+        "last_seen": "2026-08-20"
       }
     ],
     "celebrations": {
@@ -9354,15 +9354,6 @@
         "join_date": "2026-08-02",
         "membership": "Empower",
         "class_count": 35,
-        "last_momentum": null
-      },
-      {
-        "id": 12323224,
-        "name": "Sami-Jo Smyth",
-        "email": "samijo86@hotmail.com",
-        "join_date": "2026-01-29",
-        "membership": "Empower",
-        "class_count": 97,
         "last_momentum": null
       },
       {
@@ -13852,6 +13843,12 @@
     "date": "2026-09-30",
     "urgent": [
       {
+        "from": "Coach Grace",
+        "subject": "Email test",
+        "snippet": "Hey Eilis! Coach Grace Founder &amp; Head Coach Forge Female Fitness P: 07519725651 E: grace@theforge.pt | forgefemalefitness.com Unit 7, Taggarts Yard, 18 Meetinghouse Street, Ballymoney BT53 6JN (",
+        "id": "1a0f34467a6b8811"
+      },
+      {
         "from": "Forge Female Fitness",
         "subject": "Get ready for your Personal Training",
         "snippet": "Hey Pat, Head Coach Grace here and I&#39;m excited to have you in Team Forge! You have your own Personal Training Headquarters here: https://www.forgefemalefitness.com/personaltraininghq. This has all",
@@ -13904,12 +13901,6 @@
         "subject": "Fwd: Workbook for tomorrow \ud83d\udd8a\ufe0f",
         "snippet": "---------- Forwarded message --------- From: Stuart Aitken &lt;stuart@theptroadmap.com&gt; Date: Fri, 25 Sep 2026 at 16:08 Subject: Workbook for tomorrow \ud83d\udd8a\ufe0f To: Afternoon! Attached is a digital",
         "id": "1a0d93c9ac1ad009"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Laura McGarry - 30 Days as a Member Checkin",
-        "snippet": "Hi Coach, Our member Laura McGarry has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member - remindin",
-        "id": "1a0d90b83dee8f77"
       }
     ],
     "important": [
