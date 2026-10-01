@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T05:00:44.913112+00:00",
+  "generated_at": "2026-10-01T13:03:49.988260+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1153,6 +1153,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "patmctaggart143",
+        "last_scan": "2026-10-01",
+        "scan_count": 1,
+        "weight": 223.0,
+        "smm": 59.3,
+        "pbf": 51.4,
+        "bmi": 37.1,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-12",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Jayne Scott",
         "last_scan": "2026-09-30",
         "scan_count": 3,
@@ -1177,7 +1201,7 @@
         "overdue": false
       },
       {
-        "name": "trisha142",
+        "name": "Patricia McAuley Trisha",
         "last_scan": "2026-09-30",
         "scan_count": 1,
         "weight": 151.0,
@@ -1249,7 +1273,7 @@
         "overdue": false
       },
       {
-        "name": "claires140",
+        "name": "claire scullion",
         "last_scan": "2026-09-26",
         "scan_count": 1,
         "weight": 184.2,
@@ -4153,7 +4177,7 @@
         "overdue": true
       }
     ],
-    "total": 125,
+    "total": 126,
     "configured": true
   },
   "slack": {
@@ -4161,21 +4185,15 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0ADMNX20R3",
-        "text": "Sorry Grace,  I forgot to take the \u00a310 in this morning!  I'm in again on Thursday, will bring it then.",
-        "hours": 43,
-        "name": "Noleen McMullan"
-      },
-      {
         "user_id": "U0BLXE1KQQH",
         "text": "Forge enquiry for all emails ",
-        "hours": 19,
+        "hours": 27,
         "name": "Julie Lapaz"
       },
       {
         "user_id": "U08TTDDAJD7",
         "text": "This is ace to hear! As I programmed quite a tricky set of movements to do and coach in lower 1, and I did wonder after Monday should I make some switches so th",
-        "hours": 10,
+        "hours": 18,
         "name": "Therese Charles"
       }
     ],
@@ -4512,7 +4530,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower (16 sessions)** \u2014 this is her largest class commitment. JoJo already runs Build: Upper; consider splitting Lower between JoJo and Eilis on non-Tuesday days, or rotating Eilis into Lower on days she's quieter to build her strength in lower-body coaching.\n\n\u2022 **Move Grace's Strongevity (5 sessions) to Eilis** \u2014 Eilis has capacity and this lower-intensity class suits a coach building confidence. Eilis currently runs only Mobility (6) in the specialist category; Strongevity will round out her offering without overloading her.\n\n\u2022 **Shift Grace's No Sweat Intro (3 sessions) to JoJo or Eilis on a rota** \u2014 both can handle introductory coaching. This removes Grace entirely from class delivery and spreads the small commitment across the team.\n\n\u2022 **JoJo is at genuine capacity (90 real coaching hours, excluding scans)** \u2014 protect her Tuesday commitment and avoid adding more PT or classes. She's the most technically demanding coach and your anchor; overloading her risks burnout.\n\n\u2022 **Eilis has room for ~15\u201320 more real coaching hours** \u2014 after taking Strongevity and sharing Lower, she'll be closer to balanced load without stepping into Tuesdays. Use this to test her readiness for higher-demand classes later.\n\n\u2022 **Offload all InBody scans to a rotating admin or less-skilled coach** \u2014 neither Eilis nor JoJo should spend time on standing members on a scale. This frees ~25\u201330 real coaching hours monthly across the team.",
+    "advice": "\u2022 **Remove Grace's class load immediately**: Redistribute her Build: Lower (20 sessions), Elevate (3), Strongevity (4) and No Sweat Intro (2) across JoJo and Eilis. This frees Grace to focus on management. Eilis can absorb Elevate and Build: Lower; JoJo takes additional Strongevity and No Sweat Intro slots.\n\n\u2022 **JoJo is over-loaded at 140 sessions**: She's carrying 27 PTs, 28 Upper Build classes, plus scans and intro sessions. Cap her at ~110\u2013120 sessions by shifting 8\u201310 PT slots to Eilis and moving some Upper Build classes to Eilis as a secondary offering to reduce single-coach dependency.\n\n\u2022 **Eilis is under-used and under-challenged**: She has capacity and is ready to grow beyond PT and Elevate. Give her Build: Lower and Build: Full Body lead slots (not just cover) to develop her class coaching and reduce reliance on JoJo for Upper Build sessions.\n\n\u2022 **Body Composition scans are tanking the coaching timetable**: JoJo and Eilis logged 40 scans combined. Move these to a dedicated admin or rotating non-coaching slot so both coaches' real delivery time is clearer and their schedules aren't artificially inflated.\n\n\u2022 **Protect JoJo's Tuesday technical load**: Keep her as the Tuesday anchor, but backfill her other class and PT hours with Eilis so Tuesdays remain her focus and she's not spread thin across the whole week.",
     "period": "September 2026"
   },
   "asana": {
@@ -4645,6 +4663,16 @@
         "project": null,
         "due_on": "2026-09-25",
         "overdue": true,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
+        "gid": "1219057077207686",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1219057077207686",
+        "project": null,
+        "due_on": "2026-10-02",
+        "overdue": false,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -7064,19 +7092,19 @@
           },
           {
             "day": "Wednesday",
-            "count": 656
+            "count": 657
           },
           {
             "day": "Monday",
             "count": 518
           },
           {
-            "day": "Friday",
-            "count": 471
+            "day": "Thursday",
+            "count": 474
           },
           {
-            "day": "Thursday",
-            "count": 459
+            "day": "Friday",
+            "count": 471
           }
         ],
         "bottom_days": [
@@ -7085,12 +7113,12 @@
             "count": 312
           },
           {
-            "day": "Thursday",
-            "count": 459
-          },
-          {
             "day": "Friday",
             "count": 471
+          },
+          {
+            "day": "Thursday",
+            "count": 474
           },
           {
             "day": "Monday",
@@ -7098,7 +7126,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 656
+            "count": 657
           }
         ],
         "top_classes": [
@@ -7108,7 +7136,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 514
+            "count": 525
           },
           {
             "name": "Build: Lower",
@@ -7116,7 +7144,7 @@
           },
           {
             "name": "Elevate",
-            "count": 407
+            "count": 412
           },
           {
             "name": "Strongevity",
@@ -7176,8 +7204,8 @@
             "day": "Thursday",
             "time": "7am",
             "name": "Build: Full Body",
-            "count": 125,
-            "sessions": 12,
+            "count": 135,
+            "sessions": 13,
             "avg": 10.4,
             "label": "Thursday 7am Build: Full Body"
           },
@@ -7256,16 +7284,16 @@
             "label": "Wednesday 7pm Plate"
           },
           {
-            "day": "Monday",
-            "time": "6pm",
-            "name": "Build: Lower",
-            "count": 77,
-            "sessions": 10,
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 100,
+            "sessions": 13,
             "avg": 7.7,
-            "label": "Monday 6pm Build: Lower"
+            "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3158
+        "total_attended": 3174
       },
       "last_30_days": {
         "top_days": [
@@ -7275,7 +7303,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 241
+            "count": 242
           },
           {
             "day": "Monday",
@@ -7283,7 +7311,7 @@
           },
           {
             "day": "Thursday",
-            "count": 143
+            "count": 158
           },
           {
             "day": "Friday",
@@ -7301,7 +7329,7 @@
           },
           {
             "day": "Thursday",
-            "count": 143
+            "count": 158
           },
           {
             "day": "Monday",
@@ -7309,7 +7337,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 241
+            "count": 242
           }
         ],
         "top_classes": [
@@ -7319,7 +7347,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 175
+            "count": 186
           },
           {
             "name": "Build: Lower",
@@ -7327,7 +7355,7 @@
           },
           {
             "name": "Elevate",
-            "count": 133
+            "count": 138
           },
           {
             "name": "Strongevity",
@@ -7476,7 +7504,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1097
+        "total_attended": 1113
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a 30-min \"Open Lift\" slot on Thursday and Friday mornings** (your quietest days) before or after the existing timetable \u2014 members can drop in for self-directed training, structured around the Build class format they already love, with optional PT check-ins billable separately.\n\n2. **Run a paid \"Mobility + Strength\" workshop on Saturday mornings** (lowest attendance day) targeting the 50+ demographic, since Strongevity and Mobility are underperforming \u2014 position it as injury prevention and complement to the Build classes rather than standalone.\n\n**For quieter classes:**\n\n3. **Rebrand and reposition \"Capacity\" and \"Engine\"** \u2014 these are drastically underattended (15\u201324 in last 30 days). Find out if timing, description, or instructor are the issue; consider moving them to Tuesday/Wednesday when gym energy is highest, or trial a 2-week targeted invite campaign to Build class regulars as \"conditioning finishers\" to test if it's a visibility/positioning problem rather than demand.",
       "capacity": [
@@ -7525,16 +7553,8 @@
           "sessions": 13,
           "cap": 9,
           "avg_attending": 6.8,
-          "fill_rate": 76,
+          "fill_rate": 75,
           "status": "healthy"
-        },
-        {
-          "name": "Engine",
-          "sessions": 13,
-          "cap": 12,
-          "avg_attending": 8.5,
-          "fill_rate": 71,
-          "status": "attention"
         },
         {
           "name": "Elevate",
@@ -7549,6 +7569,14 @@
           "sessions": 26,
           "cap": 12,
           "avg_attending": 8.3,
+          "fill_rate": 69,
+          "status": "attention"
+        },
+        {
+          "name": "Engine",
+          "sessions": 13,
+          "cap": 12,
+          "avg_attending": 8.2,
           "fill_rate": 69,
           "status": "attention"
         },
@@ -7888,13 +7916,6 @@
         "last_seen": "2026-09-03"
       },
       {
-        "id": 10317298,
-        "name": "Evelyn Sharpe",
-        "membership": "Elevate",
-        "days_absent": 140,
-        "last_seen": "2026-05-14"
-      },
-      {
         "id": 13526500,
         "name": "Geraldine Finch",
         "membership": "Strongevity Membership",
@@ -7958,13 +7979,6 @@
         "last_seen": "2026-09-03"
       },
       {
-        "id": 12994868,
-        "name": "Margaret Reynolds",
-        "membership": "Empower",
-        "days_absent": 13,
-        "last_seen": "2026-09-18"
-      },
-      {
         "id": 7561270,
         "name": "Mollie McGregor",
         "membership": "Elevate",
@@ -7991,6 +8005,20 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 42,
         "last_seen": "2026-08-20"
+      },
+      {
+        "id": 12082042,
+        "name": "Sharon Smyth",
+        "membership": "Elevate",
+        "days_absent": 12,
+        "last_seen": "2026-09-19"
+      },
+      {
+        "id": 13465042,
+        "name": "Tiarna O\u2019Neill",
+        "membership": "4 PT Sessions",
+        "days_absent": 14,
+        "last_seen": "2026-09-17"
       }
     ],
     "celebrations": {
@@ -8127,6 +8155,11 @@
     "momentum_calls": {
       "recent": [
         {
+          "name": "Jennifer Reid",
+          "date": "2026-10-01",
+          "status": "attended"
+        },
+        {
           "name": "Caroline Stinson",
           "date": "2026-09-23",
           "status": "registered"
@@ -8170,11 +8203,6 @@
           "name": "Rachel Linton",
           "date": "2026-08-19",
           "status": "attended"
-        },
-        {
-          "name": "Amy McNeill",
-          "date": "2026-08-07",
-          "status": "registered"
         }
       ],
       "upcoming": []
@@ -8234,7 +8262,7 @@
         "join_date": "2026-08-03",
         "membership": "Empower",
         "class_count": 33,
-        "last_momentum": "2026-08-07"
+        "last_momentum": null
       },
       {
         "id": 13595083,
@@ -8765,7 +8793,7 @@
         "join_date": "2026-08-30",
         "membership": "Empower",
         "class_count": 59,
-        "last_momentum": null
+        "last_momentum": "2026-10-01"
       },
       {
         "id": 11027616,
