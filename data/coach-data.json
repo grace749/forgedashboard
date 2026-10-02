@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T14:00:54.647258+00:00",
+  "generated_at": "2026-10-02T19:56:43.993599+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4190,15 +4190,9 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U08TTDDAJD7",
-        "text": "This is ace to hear! As I programmed quite a tricky set of movements to do and coach in lower 1, and I did wonder after Monday should I make some switches so th",
-        "hours": 43,
-        "name": "Therese Charles"
-      },
-      {
         "user_id": "U0BLXE1KQQH",
         "text": "That's it all paid :blush:",
-        "hours": 5,
+        "hours": 10,
         "name": "Julie Lapaz"
       }
     ],
@@ -7109,7 +7103,7 @@
           },
           {
             "day": "Friday",
-            "count": 452
+            "count": 470
           }
         ],
         "bottom_days": [
@@ -7119,7 +7113,7 @@
           },
           {
             "day": "Friday",
-            "count": 452
+            "count": 470
           },
           {
             "day": "Thursday",
@@ -7157,7 +7151,7 @@
           },
           {
             "name": "Circuits",
-            "count": 233
+            "count": 244
           }
         ],
         "bottom_classes": [
@@ -7179,23 +7173,14 @@
           },
           {
             "name": "Mobility",
-            "count": 230
+            "count": 237
           },
           {
             "name": "Circuits",
-            "count": 233
+            "count": 244
           }
         ],
         "top_slots": [
-          {
-            "day": "Friday",
-            "time": "7pm",
-            "name": "Mobility",
-            "count": 117,
-            "sessions": 11,
-            "avg": 10.6,
-            "label": "Friday 7pm Mobility"
-          },
           {
             "day": "Wednesday",
             "time": "7am",
@@ -7222,6 +7207,15 @@
             "sessions": 11,
             "avg": 10.3,
             "label": "Wednesday 10am Circuits"
+          },
+          {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 124,
+            "sessions": 12,
+            "avg": 10.3,
+            "label": "Friday 7pm Mobility"
           },
           {
             "day": "Monday",
@@ -7298,7 +7292,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3169
+        "total_attended": 3187
       },
       "last_30_days": {
         "top_days": [
@@ -7315,12 +7309,12 @@
             "count": 197
           },
           {
-            "day": "Thursday",
-            "count": 172
+            "day": "Friday",
+            "count": 175
           },
           {
-            "day": "Friday",
-            "count": 157
+            "day": "Thursday",
+            "count": 172
           }
         ],
         "bottom_days": [
@@ -7329,12 +7323,12 @@
             "count": 100
           },
           {
-            "day": "Friday",
-            "count": 157
-          },
-          {
             "day": "Thursday",
             "count": 172
+          },
+          {
+            "day": "Friday",
+            "count": 175
           },
           {
             "day": "Monday",
@@ -7368,7 +7362,7 @@
           },
           {
             "name": "Mobility",
-            "count": 85
+            "count": 92
           }
         ],
         "bottom_classes": [
@@ -7390,23 +7384,14 @@
           },
           {
             "name": "Circuits",
-            "count": 80
+            "count": 91
           },
           {
             "name": "Mobility",
-            "count": 85
+            "count": 92
           }
         ],
         "top_slots": [
-          {
-            "day": "Friday",
-            "time": "7pm",
-            "name": "Mobility",
-            "count": 45,
-            "sessions": 4,
-            "avg": 11.2,
-            "label": "Friday 7pm Mobility"
-          },
           {
             "day": "Tuesday",
             "time": "7pm",
@@ -7417,6 +7402,24 @@
             "label": "Tuesday 7pm Build: Upper"
           },
           {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Friday 7pm Mobility"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 51,
+            "sessions": 5,
+            "avg": 10.2,
+            "label": "Friday 6pm Circuits"
+          },
+          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -7424,15 +7427,6 @@
             "sessions": 4,
             "avg": 10.0,
             "label": "Wednesday 10am Circuits"
-          },
-          {
-            "day": "Friday",
-            "time": "6pm",
-            "name": "Circuits",
-            "count": 40,
-            "sessions": 4,
-            "avg": 10.0,
-            "label": "Friday 6pm Circuits"
           },
           {
             "day": "Monday",
@@ -7509,7 +7503,7 @@
             "label": "Monday 6pm Build: Lower"
           }
         ],
-        "total_attended": 1071
+        "total_attended": 1089
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Launch a \"Drop-in Barbell Clinic\" on Friday afternoons** \u2014 a 30-min paid workshop (\u00a38\u201312) targeting members who struggle with Barbelle or Engine form; position it as confidence-building rather than a full class, and use it to funnel people into those underperforming sessions.\n\n2. **Add a Saturday morning \"Open Gym + Mobility Flow\" hybrid slot** \u2014 staff-led but informal, combining open gym access with optional guided mobility work; Saturday is your quietest day, so this low-overhead offering can attract members who want flexibility and draw them into the studio.\n\n**For the quieter classes themselves:**\n\n3. **Reposition Capacity and Barbelle with member testimonials and \"Bring a Friend Free\" weeks** \u2014 these are niche but likely undermarketed; create 2\u20133 short member success stories (strength gains, technique breakthroughs) and promote to your Build cohort via email, since they're your engaged base and may be ready to diversify.",
       "capacity": [
@@ -7541,7 +7535,7 @@
           "name": "Mobility",
           "sessions": 28,
           "cap": 12,
-          "avg_attending": 9.5,
+          "avg_attending": 9.4,
           "fill_rate": 79,
           "status": "healthy"
         },
@@ -7865,13 +7859,6 @@
         "last_seen": "2026-09-17"
       },
       {
-        "id": 13595083,
-        "name": "Angela Dobbin",
-        "membership": "4 PT Sessions",
-        "days_absent": 35,
-        "last_seen": "2026-08-28"
-      },
-      {
         "id": 12162382,
         "name": "Catherine Gavin",
         "membership": "8 PT Sessions",
@@ -8024,6 +8011,13 @@
         "membership": "8 PT Sessions",
         "days_absent": 17,
         "last_seen": "2026-09-15"
+      },
+      {
+        "id": 13202275,
+        "name": "Nuala O'Neill",
+        "membership": "Empower",
+        "days_absent": 13,
+        "last_seen": "2026-09-19"
       }
     ],
     "celebrations": {
@@ -13803,6 +13797,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Invitation: Coaches Xmas Lunch & Cocktails @ Sat 5 Dec 2026 1:30pm - 4:30pm (GMT) (Coach JoJo)",
+        "snippet": "Coaches Xmas Lunch &amp; Cocktails You have been invited by Grace Smith to attend an event named Coaches Xmas Lunch &amp; Cocktails on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 4:30pm (United Kingdom Time). When",
+        "id": "1a0fd30481476d0b"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Invitation: Forge Full Team Meeting @ Wed 14 Oct 2026 12:30pm - 2:30pm (BST) (Coach JoJo)",
         "snippet": "Forge Full Team Meeting Full team meeting 2026 Recap 2027 Vision Individual 2027 Coach Plan Roles &amp; Responsibility Full team meeting 2026 Recap 2027 Vision Individual 2027 Coach Plan Roles &amp;",
         "id": "1a0f7ef786a79734"
@@ -13854,15 +13854,15 @@
         "subject": "Lynda Archibald - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Lynda Archibald has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
         "id": "1a0e86fe6149abc8"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Jacqueline Crawford - 30 Days as a Member Checkin",
-        "snippet": "Hi Coach, Our member Jacqueline Crawford has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
-        "id": "1a0e253220f5b835"
       }
     ],
     "important": [
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Coaches Xmas Lunch & Cocktails @ Sat 5 Dec 2026 1:30pm - 4:30pm (GMT) (Coach JoJo)",
+        "snippet": "Coaches Xmas Lunch &amp; Cocktails You have been invited by Grace Smith to attend an event named Coaches Xmas Lunch &amp; Cocktails on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 4:30pm (United",
+        "id": "1a0fd30481476d0b"
+      },
       {
         "from": "Grace Smith",
         "subject": "Invitation: Forge Full Team Meeting @ Wed 14 Oct 2026 12:30pm - 2:30pm (BST) (Coach JoJo)",
