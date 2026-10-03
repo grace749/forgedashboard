@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T05:00:46.029089+00:00",
+  "generated_at": "2026-10-03T11:34:01.930015+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4160,7 +4160,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "That's it all paid :blush:",
-        "hours": 20,
+        "hours": 26,
         "name": "Julie Lapaz"
       }
     ],
@@ -4497,7 +4497,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her 20 Build: Lower sessions and 4 Strongevity classes need new owners. Assign Build: Lower to Eilis (she's capable and under-stretched on class delivery) and Strongevity to JoJo (she's already running them). This removes Grace from delivery entirely.\n\n\u2022 **Rebalance JoJo's PT load**: She's carrying 27 PTs while also running 9 classes and 10 Strongevity sessions \u2014 she's overloaded. Cap her PT at 15\u201318 per month and shift 10\u201312 of her current PTs to Eilis, who has capacity and is already doing 39 PTs.\n\n\u2022 **Stop counting Body Composition scans as coaching time**: Eilis and JoJo are using these (40 combined scans) as filler. Train all coaches to do them in 10 minutes before or after real sessions \u2014 they don't need dedicated slots and shouldn't inflate perceived workload.\n\n\u2022 **Grow Eilis into a second class teacher**: She's doing only Elevate, Plate, and Mobility (26 class sessions). Add Build: Lower from Grace and one other weekday Build slot to round out her timetable and build depth. Keep her off Tuesdays (technically demanding).\n\n\u2022 **Create a Tuesday cover plan that doesn't depend solely on JoJo**: If JoJo is ever ill or overbooked, Tuesday classes currently fail. Once Eilis is stronger, trial one lower-demand Tuesday session (e.g. Mobility or Plate) with her to build redundancy.\n\n\u2022 **Audit No Sweat Intro scheduling**: JoJo is doing all 9. These are low-skill sessions \u2014 delegate to Eilis to free JoJo for higher-value PT and technical classes.",
+    "advice": "\u2022 **JoJo is over-loaded at 119 real coaching sessions (excluding 21 body comp scans).** Redistribute her Personal Training load \u2014 move 8\u201310 PT slots to Eilis, who has capacity and is already delivering 39 PTs. This brings JoJo down and gives Eilis meaningful PT experience under supervision.\n\n\u2022 **Reassign Grace's Build: Lower (20 sessions) and Strongevity (4 sessions) to JoJo and Eilis.** Strongevity suits JoJo (she already runs 10); Build: Lower can split between both. This removes Grace from delivery entirely while staying within realistic new loads for the team.\n\n\u2022 **Eilis should take on No Sweat Intros and Elevate growth.** She currently runs 13 Elevates and delivered no Intros last month; these lower-intensity classes are appropriate for her current level and free up JoJo to focus on technical Build and Strongevity sessions.\n\n\u2022 **Move all Body Composition scans (45 total) off the coaching schedule.** Treat them as admin or front-desk tasks \u2014 they add no real coaching value and artificially inflate workload. This immediately frees ~6 hours across the team.\n\n\u2022 **JoJo should own Upper and Full Body classes; Eilis takes Plate and Mobility as her foundation, with Elevate and Intro slots to fill.** This creates clear specialism, reduces dependency on any one coach for signature classes, and gives Eilis ownership and progression.\n\n\u2022 **Target: JoJo ~100 sessions, Eilis ~85\u201390 sessions (real coaching only).** Grace zero. Revisit weekly in October to track actual uptake and adjust PT/class ratios.",
     "period": "September 2026"
   },
   "asana": {
@@ -7027,16 +7027,6 @@
         ]
       },
       {
-        "name": "4 Session Block",
-        "count": 1,
-        "members": [
-          {
-            "id": 11029358,
-            "name": "Rosemary Kennedy"
-          }
-        ]
-      },
-      {
         "name": "8 Class Block",
         "count": 1,
         "members": [
@@ -7053,6 +7043,16 @@
           {
             "id": 13849543,
             "name": "Breanna Gaston"
+          }
+        ]
+      },
+      {
+        "name": "4 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 11029358,
+            "name": "Rosemary Kennedy"
           }
         ]
       }
@@ -7774,7 +7774,7 @@
       },
       {
         "month": "2026-09",
-        "active": 171,
+        "active": 170,
         "churn": 6.1,
         "by_type": {
           "Empower": 75,
@@ -7789,7 +7789,6 @@
           "4 Class Pass": 2,
           "6 Week Jumpstart": 8,
           "Strongevity Membership": 17,
-          "4 Session Block": 1,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "1:2 PT 4 Sessions": 1
@@ -7812,9 +7811,9 @@
           "4 Class Pass": 2,
           "6 Week Jumpstart": 8,
           "Strongevity Membership": 15,
-          "4 Session Block": 1,
           "8 Class Block": 1,
-          "1:2 Personal Training (With Friend/Family Member)": 1
+          "1:2 Personal Training (With Friend/Family Member)": 1,
+          "4 Session Block": 1
         }
       }
     ],
@@ -9268,7 +9267,7 @@
         "id": 11029358,
         "name": "Rosemary Kennedy",
         "email": "rosemary_kennedy@yahoo.com",
-        "join_date": "2026-09-03",
+        "join_date": "2026-10-02",
         "membership": "4 Session Block",
         "class_count": 119,
         "last_momentum": null
