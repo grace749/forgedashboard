@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T14:00:51.904065+00:00",
+  "generated_at": "2026-10-04T18:38:20.252581+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8163,9 +8163,21 @@
           "status": "attended"
         }
       ],
-      "upcoming": []
+      "upcoming": [
+        {
+          "name": "Catherine McMullan",
+          "date": "2026-10-05",
+          "status": "registered"
+        }
+      ]
     },
     "lead_bookings": [
+      {
+        "name": "Johanna Lapsley",
+        "type": "Meet a Coach",
+        "date": "2026-10-20",
+        "upcoming": true
+      },
       {
         "name": "Patricia McTaggart",
         "type": "Meet a Coach",
