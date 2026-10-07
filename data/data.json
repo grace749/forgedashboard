@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T05:00:48.613391+00:00",
+  "generated_at": "2026-10-07T13:13:06.530684+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-10-07",
-    "event_count": 25,
-    "urgent_count": 1,
-    "enquiry_count": 2,
+    "event_count": 24,
+    "urgent_count": 5,
+    "enquiry_count": 3,
     "calendar": [
       {
         "title": "FULL BODY 3",
@@ -30,16 +30,6 @@
         "description": "",
         "location": "",
         "prep": "Brief staff on JoJo's absence coverage."
-      },
-      {
-        "title": "Take Wed Morning classes",
-        "time": "6:30am",
-        "start_raw": "2026-10-07T06:30:00+01:00",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": ""
       },
       {
         "title": "Build: Full Body",
@@ -82,7 +72,7 @@
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "9/12 booked",
+        "location": "7/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -98,14 +88,16 @@
         "source": "teamup"
       },
       {
-        "title": "Gareth Studio",
-        "time": "12:30pm",
-        "start_raw": "2026-10-07T12:30:00+01:00",
+        "title": "\ud83d\udcde Call: Paula Hodges",
+        "time": "1:00pm",
+        "start_raw": "2026-10-07T13:00:00",
         "day": "Today",
-        "attendees": [],
-        "description": "",
+        "attendees": [
+          "Paula Hodges"
+        ],
+        "description": "Booked discovery call",
         "location": "",
-        "prep": "Confirm studio booking and equipment setup."
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
         "title": "Padel lesson with Andrew",
@@ -125,7 +117,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Download and review all TeamUp data before app ends."
+        "prep": "Confirm studio booking and equipment setup."
       },
       {
         "title": "FULL BODY 4",
@@ -147,7 +139,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Prepare coaching plans for Precious and Patience."
+        "prep": "Download and review all TeamUp data before app ends."
       },
       {
         "title": "\ud83d\udcde Call: Emma Gregg",
@@ -169,7 +161,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Prepare retirement wellbeing content and slides."
+        "prep": ""
       },
       {
         "title": "Padel x vic",
@@ -179,7 +171,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Prepare coaching plans for Precious and Patience."
       },
       {
         "title": "Take Thurs evening classes",
@@ -189,7 +181,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Prepare retirement wellbeing content and slides."
       },
       {
         "title": "Body Composition Scan",
@@ -209,7 +201,7 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
-        "location": "12/12 booked",
+        "location": "11/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -255,7 +247,7 @@
         ],
         "description": "",
         "location": "Royal Jubilee Maternity Hospital, E, 274 Grosvenor Rd, Belfast BT12 6BA, UK",
-        "prep": "Prepare medical records and questions for appointment."
+        "prep": ""
       },
       {
         "title": "Padel social",
@@ -275,10 +267,50 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Prepare medical records and questions for appointment."
       }
     ],
     "urgent": [
+      {
+        "from": "Elaine Blood",
+        "from_raw": "Elaine Blood <elaine.blood@daysmart.com>",
+        "subject": "Perform",
+        "snippet": "Hi Grace, Of course! \ud83d\ude0a It&#39;s great that you&#39;re getting everything ready to move over to Perform, and I&#39;d be more than happy to run through the setup with you. You can book a time that works",
+        "id": "1a116230f5c70e38",
+        "thread_id": "1a1123a90f1bdf79",
+        "msg_count": 2,
+        "draft_id": "r3627429370649034638"
+      },
+      {
+        "from": "Coaches Ed.",
+        "from_raw": "\"Coaches Ed.\" <hello@coachesed.com>",
+        "subject": "Great to meet you at Coaches Congress - more info about Eval Ed.",
+        "snippet": "Hi Grace, It was great to meet you at Coaches Congress at the weekend! We hope you enjoyed the Eval Ed. demo. It was good to learn more about Forge Female Fitness and how you&#39;re leading your team",
+        "id": "1a115e2b3e19e2ba",
+        "thread_id": "1a115e2b3e19e2ba",
+        "msg_count": 1,
+        "draft_id": "r7937305747134635602"
+      },
+      {
+        "from": "Coach Grace",
+        "from_raw": "Coach Grace <enquiries@theforge.pt>",
+        "subject": "Monthly Maintenance Check",
+        "snippet": "Hey Coach JoJo, It&#39;s time for this month&#39;s maintenance check. Could you run through the list below today. It should take about 15 minutes. Cable machines Run each cable along its full length",
+        "id": "1a115ce6b4792773",
+        "thread_id": "1a115ce6b4792773",
+        "msg_count": 1,
+        "draft_id": "r806496602957224406"
+      },
+      {
+        "from": "Justice Williams",
+        "from_raw": "Justice Williams <justice@dreamplanlaunch.com>",
+        "subject": "Join me 12pm for my free speaker Booked & Paid workshop",
+        "snippet": "Join my free workshop today and learn how to turn your expertise into paid speaking opportunities. Hey Grace You already have expertise worth paying for. But do you know how to turn it into paid",
+        "id": "1a115cc5886087b2",
+        "thread_id": "1a115cc5886087b2",
+        "msg_count": 1,
+        "draft_id": "r6606910555822792070"
+      },
       {
         "from": "Ricardo Tosatto",
         "from_raw": "Ricardo Tosatto <tosatto@teamesfera.com>",
@@ -301,6 +333,15 @@
         "unread": 0
       },
       {
+        "name": "Paula Hodges",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 1:00pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 1:00pm",
+        "snippet": "Booked a call for Today 1:00pm \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
+      {
         "name": "Emma Gregg",
         "channel": "Booked call",
         "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 9:15am",
@@ -312,9 +353,9 @@
     ],
     "checkins": {
       "by_email": {
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -429,37 +470,118 @@
   },
   "ghl": [
     {
+      "name": "Helen Basher Logan",
+      "channel": "Phone",
+      "message": "Divorce court done . \n\nHave to go back to court again as he has contested the occupation order of the house - police put him out last Thursday so I have to go back to court November about that \u2026 \n\nCra",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
+      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
+    },
+    {
+      "name": "Janet McDowell",
+      "channel": "Phone",
+      "message": "I really love the idea of a pt again but would be happy with small groups too. I need held accountable and i love lifting heavy and being the strongest i can be.",
+      "age": "0h ago",
+      "unread": 2,
+      "conv_id": "ECBkMbQiugfPkSQtorfn",
+      "contact_id": "AEHBNbWeUNubRsBqZGv1"
+    },
+    {
+      "name": "Zara Drain",
+      "channel": "Phone",
+      "message": "Hi grace ive aggrevated my back from class on monday so have cancelled my class tonight and saturday as dont want to make it worse.",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "6zig33GJx234SfCD9SFV",
+      "contact_id": "2jHhjsZ8e3ngQTnSRx2i"
+    },
+    {
       "name": "Eileen Graham",
       "channel": "Phone",
-      "message": "Get started",
-      "age": "7h ago",
+      "message": "Thankyou so much Grace. Eileen",
+      "age": "1h ago",
       "unread": 1,
       "conv_id": "w9CF2vpiRDv6jEfc822j",
       "contact_id": "nUCwnnBXMPSHpgFCu1cK"
     },
     {
+      "name": "Eilis Kearns",
+      "channel": "Phone",
+      "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
+      "contact_id": "SL5iEZ30xiRwJF12kd5S"
+    },
+    {
+      "name": "Ruthie Townsley",
+      "channel": "Phone",
+      "message": "Im.okay thanks",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "2fHdFpr7GHHDiuHohfTp",
+      "contact_id": "QVTVAEKCMz8Yjc0qrTRX"
+    },
+    {
+      "name": "Ballykenver Farm Shop & Kitchen",
+      "channel": "Phone",
+      "message": "Well done girls!",
+      "age": "3h ago",
+      "unread": 3,
+      "conv_id": "UsFaJnyrfVHPqVeWVgze",
+      "contact_id": "zSPgbPNeJpACIxJ3HNtO"
+    },
+    {
+      "name": "Heather ROULSTON",
+      "channel": "Phone",
+      "message": "Yes",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "fykAH0cG60VhBMbchPDv",
+      "contact_id": "paXBuNimbUXt4oII6YM4"
+    },
+    {
+      "name": "Laura McGarry",
+      "channel": "Phone",
+      "message": "\ud83d\udcac Reacted with \"\ud83d\ude02\"",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "RY9evPXEU5A694ehHzww",
+      "contact_id": "IsE2jOJHIzOVsIqlmiLd"
+    },
+    {
+      "name": "Rose McGill",
+      "channel": "Phone",
+      "message": "Sorry, forgot!\nThanks Grace",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "8mNcIXR9lDEhHFH5VmiH",
+      "contact_id": "C19cay1MrZtac3ZWv1wr"
+    },
+    {
+      "name": "Gemma Mcdonagh",
+      "channel": "Phone",
+      "message": "Brilliant Grace thank you \ud83d\ude42",
+      "age": "5h ago",
+      "unread": 2,
+      "conv_id": "KwlbhjLyzuw2bzwbQnwk",
+      "contact_id": "pJQ9J5OsbK9yHoqPxU6c"
+    },
+    {
       "name": "Kathryn Alleyne",
       "channel": "Phone",
       "message": "I completely forgot about class tonight and am in Tobermore visiting my mum",
-      "age": "13h ago",
+      "age": "21h ago",
       "unread": 3,
       "conv_id": "SchC4kWTwkUNZLq6QGix",
       "contact_id": "Qu5byPho0Z2foHCVnzfA"
     },
     {
-      "name": "Gemma Mcdonagh",
-      "channel": "Phone",
-      "message": "Thank you for your time today great  chatting to you to.",
-      "age": "15h ago",
-      "unread": 1,
-      "conv_id": "KwlbhjLyzuw2bzwbQnwk",
-      "contact_id": "pJQ9J5OsbK9yHoqPxU6c"
-    },
-    {
       "name": "Justine Baird",
       "channel": "Phone",
       "message": "Hi Grace,I\u2019m so sorry I missed the call on Friday,I haven\u2019t been feeling too great over the weekend. I think I\u2019m going to have to miss out on the 6 week programme,we had a big unexpected car bill and ",
-      "age": "16h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "VkJN7P8lxQmxDMiSQkry",
       "contact_id": "2yjNShLlJrbIrMZuhg6c"
@@ -468,7 +590,7 @@
       "name": "Agnes Marilyn Chestnutt",
       "channel": "Phone",
       "message": "\ud83d\udc4d",
-      "age": "18h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "6yIFrhFcWeEkoUakdueJ",
       "contact_id": "V9MyDbB7abQISMqVVpiL"
@@ -477,55 +599,10 @@
       "name": "M\u00e1ir\u00edn Murray",
       "channel": "Phone",
       "message": "\ud83d\udd0aVoice Note",
-      "age": "18h ago",
+      "age": "1d ago",
       "unread": 3,
       "conv_id": "mrGLksYlNVrqARALUxbr",
       "contact_id": "q4FsuQVZSX2zRQpyIk6L"
-    },
-    {
-      "name": "Gemma McDonagh",
-      "channel": "Phone",
-      "message": "Yes really want to feel myself again.  I will have a look over it after work tonight. \ud83d\ude42",
-      "age": "21h ago",
-      "unread": 1,
-      "conv_id": "9mgfsU6FFr74LE7BmVlC",
-      "contact_id": "qixXi625E3AxHJmoGaYt"
-    },
-    {
-      "name": "Helen Basher Logan",
-      "channel": "Phone",
-      "message": "I also feel I have run out of time for HYROX . Life in general isn\u2019t being kind or calm . \n\nI will transfer \u00a3100 to you this month and \u00a3100 next month . Can you send me your bank details please . Apol",
-      "age": "21h ago",
-      "unread": 3,
-      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
-      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
-    },
-    {
-      "name": "deewall123",
-      "channel": "Phone",
-      "message": "Hi, I made an enquiry yesterday and missed a call later in the day, I\u2019m wondering was that yourselves? The number was 07757 657628. \n\nMy name is Deirdre Wallace and I\u2019m still interested in getting sta",
-      "age": "22h ago",
-      "unread": 1,
-      "conv_id": "WkTXpzOpItdDmehR5ZeD",
-      "contact_id": "FdQuIFhbjArKOVoh7V1c"
-    },
-    {
-      "name": "Nancy Cubitt",
-      "channel": "Phone",
-      "message": "Just found you Meetinghouse Street. \ud83d\udc4d\ud83c\udffc",
-      "age": "1d ago",
-      "unread": 0,
-      "conv_id": "chLFYUB45pkJenv0JzX2",
-      "contact_id": "98yRLM3PChmvL7E4dXJN"
-    },
-    {
-      "name": "BERNADETTE (Bernie) MCLAUGHLIN",
-      "channel": "Phone",
-      "message": "Unable to make class today. On granny duties. Bernie McLaughlin",
-      "age": "1d ago",
-      "unread": 0,
-      "conv_id": "kCxh07GLNCcE4tA5fEix",
-      "contact_id": "umv4mrtOnyxDBD9ntOnN"
     }
   ],
   "jumpstart": {
@@ -1639,6 +1716,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach Grace",
+        "last_scan": "2026-10-07",
+        "scan_count": 19,
+        "weight": 172.3,
+        "smm": 66.8,
+        "pbf": 30.9,
+        "bmi": 27.8,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -1.4,
+        "smm_change": -1.3,
+        "pbf_change": 1.0,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-18",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Tiarna O\u2019Neill",
         "last_scan": "2026-10-01",
         "scan_count": 2,
@@ -1894,30 +1995,6 @@
         "weight_change": null,
         "smm_change": null,
         "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-11-06",
-        "days_to_due": 30,
-        "overdue": false
-      },
-      {
-        "name": "Coach Grace",
-        "last_scan": "2026-09-25",
-        "scan_count": 18,
-        "weight": 173.7,
-        "smm": 68.1,
-        "pbf": 29.9,
-        "bmi": 28.0,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": -2.2,
-        "smm_change": 0.9,
-        "pbf_change": -2.0,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -5332,23 +5409,29 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 nobody owns the first-touch experience; no standardised induction sequence, fitness assessment capture, or expectation-setting (critical for retention)\n- **Member Checklists & Milestones** \u2013 no formal touchpoints at 7/30/90 days; staff ad-hoc on progress tracking and motivation\n- **Pause/Cancellation workflow** \u2013 no win-back trigger, exit interview capture, or data logging; churn happens invisibly\n- **Coaching Development Roadmap** \u2013 no career progression, skill certification, or performance feedback loop for coaches\n- **Class Quality Audit Checklist** \u2013 no consistency audit mechanism; coaches operating at variable standards\n- **Referral Programme** \u2013 no structured incentive, tracking, or attribution; word-of-mouth unmanaged\n- **Member Data & GDPR** \u2013 no documented data retention, consent, or breach protocol (legal/compliance risk)\n- **Transformation Pillars & 30-Day Goals** \u2013 no framework for linking member goals to coaching conversations and outcomes measurement\n- **Complaints & Incident Log** \u2013 no formal escalation, resolution SOP, or pattern-spotting mechanism\n- **Finance (invoicing/refunds/holds)** \u2013 gaps in pause/refund authorization and dispute handling\n\n---\n\n# **Needs updating**\n\n- **Coaching standards SOPs** \u2013 \"Weekly Key Coach Tasks\" needs specificity on class prep, member feedback loops, and quality gates\n- **Marketing SOPs** \u2013 missing attribution tie-in to referral/retention data; no feedback loop from churn to campaign planning\n- **Facilities** \u2013 no seasonal deep-clean SOP or equipment maintenance escalation matrix\n- **General** \u2013 no crisis/emergency response protocol (injury, safeguarding concern, complaint escalation)\n\n---\n\n# **Build next**\n\n1"
+    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 first 14 days entirely unstructured; no touchpoint cadence, no induction standard, no baseline assessments being captured\n- **Churn & Cancellation** \u2013 no win-back protocol, no exit interview process, no data on *why* members leave\n- **Member Check-ins** \u2013 retention touch-base undefined; unclear who owns, frequency, what triggers escalation\n- **GDPR & Data Privacy** \u2013 high legal/compliance risk; no documented handling of member data, consent, retention, deletion requests\n- **Coaching Development Roadmap** \u2013 no clear progression path for coaches; assessment criteria, upskilling, advancement undefined\n- **Class Quality Audit Checklist** \u2013 no standardized measure of coaching delivery, member safety, consistency across instructors\n- **Referral Programme** \u2013 no structured incentive or tracking; leaving revenue on table\n- **Complaints & Incident Handling** \u2013 no logged process for member grievances, safety incidents, or escalation; duty-of-care gap\n- **Transformation Pillars & Member Outcomes** \u2013 marketing claims likely unsupported by data or tracking; no documented methodology for measuring/communicating results\n\n---\n\n# **Needs updating**\n\n- **Weekly Key Coach Tasks** \u2013 exists but likely vague on accountability, frequency, and what \"done\" looks like; should map to class prep, member feedback, studio upkeep\n- **Member Pause** \u2013 if it exists, no tie-in to re-engagement plan; sitting dormant instead of being a retention lever\n- **30 Day Goals** \u2013 probably reactive; needs proactive prompting, coach handoff, and check-in cadence built in\n- **Marketing SOPs** \u2013 no link between member journey data (onboarding, outcomes, churn) and campaign messaging; claims disconnected from reality\n- **"
   },
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0B792FBTHS",
-        "text": "Awh rest up x ",
-        "hours": 40,
-        "name": "Victoria"
-      },
-      {
         "user_id": "U0BLXE1KQQH",
         "text": "Good morning, Coach Grace! Yes. All emails are coming from the enquiries@ email.\n\nAlso, for Joanne Mclernon, I still send her a follow up due to the \"for now\" s",
-        "hours": 23,
+        "hours": 31,
         "name": "Julie Lapaz"
+      },
+      {
+        "user_id": "U0A62JJ6HD2",
+        "text": "May I have the free capacity on Wednesday on Wednesday the 21st please?xx",
+        "hours": 4,
+        "name": "Sybil M"
+      },
+      {
+        "user_id": "U09CYACSUE9",
+        "text": "Must remember to double check the teamup report on this each month so it doesn't happen again.\n\nWOAH That is unreal!!!!!!",
+        "hours": 1,
+        "name": "Kerrie"
       }
     ],
     "mentions": [],
@@ -5687,7 +5770,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (20 sessions) should split between JoJo and Eilis; Strongevity (4) and Elevate (3) to Eilis. No Sweat Intros (2) can rotate between both coaches. This removes ~30 delivery hours from Grace within one month.\n\n\u2022 **JoJo is significantly over-loaded at 140 sessions**: Strip out her Body Composition Scans (21 sessions\u2014not real coaching) and reassign to Eilis or rotate across both coaches. This frees ~15% of her timetable without losing actual coaching capacity.\n\n\u2022 **Eilis is under-utilised in group classes**: She's carrying heavy PT load (39 sessions) but only teaches 4 class types. Move some of Grace's Elevate and introduce Eilis to Build: Lower once she's confident, to build her class portfolio and spread the group coaching load.\n\n\u2022 **JoJo should focus on technical/complex classes**: Keep her on Build: Upper, Strongevity, and Tuesdays; move lower-skill-threshold classes (Build: Full Body, some Elevate) to Eilis to create clearer role separation and reduce JoJo burnout.\n\n\u2022 **Rebalance PT fairly**: JoJo has 27 PT slots and Eilis 39\u2014shift ~8\u201310 PT clients to JoJo to even the load and ensure Eilis has capacity for more group classes as she develops.\n\n\u2022 **Audit \"No Sweat Intro\" coverage**: Currently only JoJo and Grace deliver these. Both coaches should co-facilitate or alternate to prevent bottlenecks and reduce dependency on one person.",
+    "advice": "\u2022 **Remove Grace's classes immediately**: Her Build: Lower (20 sessions), Strongevity (4), Elevate (3), and Build: Full Body (1) should split between JoJo and Eilis. Eilis can take Build: Lower and Elevate; JoJo keeps Strongevity. This frees Grace entirely from delivery.\n\n\u2022 **Redistribute Grace's PT load**: Her 0 PT sessions are already zero, but ring-fence Eilis's 39 PT slots \u2014 she's the dedicated 1:1 coach. Route any new PT requests to Eilis first; only overflow to JoJo if Eilis is at capacity.\n\n\u2022 **JoJo is overloaded at 140 sessions (21 after removing inBodys)**. Move some Build: Upper classes to Eilis to balance the timetable and reduce dependency on one coach for strength work. Eilis has capacity and can develop confidence with Build programming.\n\n\u2022 **Body Composition scans are admin, not coaching**: Stop counting the 45 combined inBody sessions (21 JoJo, 19 Eilis, 5 Grace) against coaching load. Assign them to whoever has a gap that day or rotate as a low-skill task.\n\n\u2022 **No Sweat Intro and Plate classes have thin coverage**: JoJo runs all 9 No Sweats; Eilis runs 7 Plates. Cross-train Eilis on No Sweat Intro and JoJo on Plate so neither class depends on one person if someone is ill or on leave.\n\n\u2022 **Monitor Eilis's Tuesday readiness**: She's at 111 sessions but no Tuesdays yet. Once she's confident, one Build: Upper or Plate session on Tuesday would ease JoJo's technical day without overloading her.",
     "period": "September 2026"
   },
   "asana": {
@@ -8252,7 +8335,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 623
+            "count": 639
           },
           {
             "day": "Monday",
@@ -8286,7 +8369,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 623
+            "count": 639
           }
         ],
         "top_classes": [
@@ -8296,7 +8379,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 518
+            "count": 528
           },
           {
             "name": "Build: Lower",
@@ -8311,8 +8394,8 @@
             "count": 282
           },
           {
-            "name": "Mobility",
-            "count": 237
+            "name": "Circuits",
+            "count": 241
           }
         ],
         "bottom_classes": [
@@ -8333,12 +8416,12 @@
             "count": 192
           },
           {
-            "name": "Circuits",
-            "count": 235
-          },
-          {
             "name": "Mobility",
             "count": 237
+          },
+          {
+            "name": "Circuits",
+            "count": 241
           }
         ],
         "top_slots": [
@@ -8346,8 +8429,8 @@
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
-            "count": 105,
-            "sessions": 10,
+            "count": 115,
+            "sessions": 11,
             "avg": 10.5,
             "label": "Wednesday 7am Build: Full Body"
           },
@@ -8359,15 +8442,6 @@
             "sessions": 13,
             "avg": 10.4,
             "label": "Thursday 7am Build: Full Body"
-          },
-          {
-            "day": "Wednesday",
-            "time": "10am",
-            "name": "Circuits",
-            "count": 104,
-            "sessions": 10,
-            "avg": 10.4,
-            "label": "Wednesday 10am Circuits"
           },
           {
             "day": "Friday",
@@ -8395,6 +8469,15 @@
             "sessions": 13,
             "avg": 10.1,
             "label": "Friday 6pm Circuits"
+          },
+          {
+            "day": "Wednesday",
+            "time": "10am",
+            "name": "Circuits",
+            "count": 110,
+            "sessions": 11,
+            "avg": 10.0,
+            "label": "Wednesday 10am Circuits"
           }
         ],
         "bottom_slots": [
@@ -8453,7 +8536,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3171
+        "total_attended": 3187
       },
       "last_30_days": {
         "top_days": [
@@ -8467,7 +8550,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 177
+            "count": 193
           },
           {
             "day": "Friday",
@@ -8493,7 +8576,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 177
+            "count": 193
           },
           {
             "day": "Tuesday",
@@ -8511,7 +8594,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 145
+            "count": 155
           },
           {
             "name": "Strongevity",
@@ -8522,8 +8605,8 @@
             "count": 99
           },
           {
-            "name": "Mobility",
-            "count": 77
+            "name": "Circuits",
+            "count": 79
           }
         ],
         "bottom_classes": [
@@ -8536,12 +8619,12 @@
             "count": 58
           },
           {
-            "name": "Circuits",
-            "count": 73
-          },
-          {
             "name": "Mobility",
             "count": 77
+          },
+          {
+            "name": "Circuits",
+            "count": 79
           },
           {
             "name": "Elevate",
@@ -8572,15 +8655,6 @@
             "label": "Friday 6pm Circuits"
           },
           {
-            "day": "Wednesday",
-            "time": "10am",
-            "name": "Circuits",
-            "count": 31,
-            "sessions": 3,
-            "avg": 10.3,
-            "label": "Wednesday 10am Circuits"
-          },
-          {
             "day": "Monday",
             "time": "6pm",
             "name": "Build: Lower",
@@ -8606,6 +8680,15 @@
             "sessions": 4,
             "avg": 10.0,
             "label": "Friday 7pm Mobility"
+          },
+          {
+            "day": "Wednesday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Wednesday 11am Strongevity"
           }
         ],
         "bottom_slots": [
@@ -8664,7 +8747,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1071
+        "total_attended": 1087
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. Add a 30-min \"Open Lift\" slot on Thursday or Friday mornings (6:30\u20137am or lunchtime) \u2014 members who've done Build classes often want unstructured barbell time, and this captures demand without cannibalizing scheduled classes.\n\n2. Run a paid 4-week \"Engine Foundations\" workshop (4\u20136 people, \u00a325\u201335/person) on a quieter Friday evening \u2014 Engine is underperforming (24 attendees last month), so small-group coaching on technique/pacing in a workshop format removes the pressure of a full class and builds confidence before mainline Engine classes.\n\n**For the quieter classes themselves:**\n\n3. Move **Capacity** to Tuesday morning (your busiest day) at a premium time slot \u2014 it's only pulling 48 attendees, suggesting poor timing or visibility; test it when foot traffic is highest. Pair it with a one-week free trial invite to recent Build attendees (they're your strong cohort) positioned as \"strength endurance for power athletes.\"",
       "capacity": [
@@ -8681,7 +8764,7 @@
           "sessions": 27,
           "cap": 13,
           "avg_attending": 10.1,
-          "fill_rate": 85,
+          "fill_rate": 84,
           "status": "healthy"
         },
         {
@@ -8696,8 +8779,8 @@
           "name": "Build: Full Body",
           "sessions": 65,
           "cap": 12,
-          "avg_attending": 9.6,
-          "fill_rate": 80,
+          "avg_attending": 9.5,
+          "fill_rate": 79,
           "status": "healthy"
         },
         {
@@ -10776,31 +10859,12 @@
       },
       {
         "month": "2026-10",
-        "collected": 3048.0,
-        "payments": 25
+        "collected": 6969.75,
+        "payments": 50
       }
     ],
-    "failed": [
-      {
-        "name": "Yasmine Douglas",
-        "amount": 180.0,
-        "date": "2026-10-06",
-        "status": "failed"
-      },
-      {
-        "name": "Julie Williamson",
-        "amount": 160.0,
-        "date": "2026-10-06",
-        "status": "failed"
-      },
-      {
-        "name": "susan Henry",
-        "amount": 139.0,
-        "date": "2026-10-02",
-        "status": "failed"
-      }
-    ],
-    "failed_count": 3
+    "failed": [],
+    "failed_count": 0
   },
   "stripe": {
     "configured": true,
@@ -10808,8 +10872,8 @@
     "monthly": [
       {
         "month": "2025-09",
-        "collected": 366.0,
-        "payments": 12
+        "collected": 199.0,
+        "payments": 11
       },
       {
         "month": "2025-10",
@@ -10913,119 +10977,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Executing a Clear Service Menu for The Forge\n\n**For Coaches (Internal Clarity):**\n- **Map it backwards from money**: List every revenue stream (memberships tiers, PT sessions, classes, challenges, nutrition coaching), then define what coaches actually deliver for each. This stops scope creep before it starts. Coaches need to know: \"If someone buys X, I deliver Y, and it takes Z time.\"\n- **Create a 1-page pricing decision tree**: Coaches should never guess. Build a laminated guide showing: membership tier \u2192 what classes/perks they unlock \u2192 what PT costs extra \u2192 what's included vs. add-on. Reduces confusion + improves upselling consistency.\n\n**For Members (Public Clarity):**\n- **Ditch the typical pricing table**: Use a **comparison matrix by outcome**, not features. Instead of \"Membership A: 10 classes + gym access,\" frame it as: \"Want to transform body in 12 weeks? Choose this package (includes these classes + 4 PT sessions + nutrition check-ins).\" Members buy results, not access.\n- **Price anchor aggressively**: Show 3 tiers (Good/Better/Best), make the middle one the obvious choice. Put the highest price first so mid-tier feels reasonable. Test a \"first month 50% off\" trial on entry-level to reduce signup friction.\n- **Make inclusions brutally obvious**: Use checkmarks/X's. Include small things others charge for (form checks, program tweaks, progress photos). This compounds perceived value and justifies price.\n\n**Implementation order**: Coach version first (1 week), then launch member version immediately after."
+        "advice": "# Service Menu Execution for The Forge\n\n**Audit what you're ACTUALLY selling right now:**\nMap every revenue stream across your gym right now \u2014 memberships (tiers?), PT sessions, classes, challenges, nutrition coaching, anything paid. Ask your 3 best coaches and your most loyal members what they think you offer. You'll likely find gaps between what exists and what people think exists.\n\n**Build two separate documents, not one:**\nCoaches need a *delivery manual* \u2014 class formats, PT package structures, what's included in each tier, upsell opportunities, pricing authority they have. Members need a *clean sales sheet* \u2014 3-4 membership tiers max (choice paralysis kills conversions), clear pricing, what they get week 1 vs month 3, a simple add-on menu (PT blocks, challenges, etc.). Coaches sell from confidence; members buy from clarity.\n\n**Anchor pricing to outcomes, not hours:**\nInstead of \"6 PT sessions = \u00a3X,\" lead with \"8-week body composition transformation package\" or \"Confidence-building beginner's intro program.\" This shifts how prospects think about value. Test this language with your current members \u2014 what outcome made them sign up? That's your messaging north star.\n\n**Get it live in 5 days, not 5 weeks:**\nCanva template, your pricing, one clear call-to-action per document. Deploy on your website, socials, and in the gym immediately. You'll learn what confuses people fast \u2014 then iterate. Perfection kills momentum.\n\n**Lock your coaches into one consistent pitch:**\nEvery coach should say the same thing about what's included in each package. One inconsistency and members get confused or feel misled. Weekly"
       }
     ]
   },
