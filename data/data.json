@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T13:13:06.530684+00:00",
+  "generated_at": "2026-10-07T14:00:50.247667+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-10-07",
-    "event_count": 24,
-    "urgent_count": 5,
+    "event_count": 25,
+    "urgent_count": 4,
     "enquiry_count": 3,
     "calendar": [
       {
@@ -250,6 +250,18 @@
         "prep": ""
       },
       {
+        "title": "Perform Set Up Call - Forge Female Fitness",
+        "time": "1:45pm",
+        "start_raw": "2026-10-09T13:45:00+01:00",
+        "day": "Friday",
+        "attendees": [
+          "Elaine Blood"
+        ],
+        "description": "In this Zoom meeting we'll discuss your key setup requirements to ensure your TeamUp account is ready to go live with your customers.\n\n\n\ud83d\udcbb To get the most out of the meeting please join via your comput",
+        "location": "",
+        "prep": ""
+      },
+      {
         "title": "Padel social",
         "time": "3:00pm",
         "start_raw": "2026-10-09T15:00:00+01:00",
@@ -257,7 +269,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Prepare medical records and questions for appointment."
       },
       {
         "title": "Pay Dan House Bills",
@@ -267,10 +279,20 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Prepare medical records and questions for appointment."
+        "prep": ""
       }
     ],
     "urgent": [
+      {
+        "from": "Elaine Blood",
+        "from_raw": "Elaine Blood <elaine.blood@daysmart.com>",
+        "subject": "Perform Set Up Call - Forge Female Fitness",
+        "snippet": "In this Zoom meeting we&#39;ll discuss your key setup requirements to ensure your TeamUp account is ready to go live with your customers. \ud83d\udcbb To get the most out of the meeting please join via your",
+        "id": "1a116a6526250bac",
+        "thread_id": "1a116a6526250bac",
+        "msg_count": 1,
+        "draft_id": "r152743333884907776"
+      },
       {
         "from": "Elaine Blood",
         "from_raw": "Elaine Blood <elaine.blood@daysmart.com>",
@@ -279,17 +301,7 @@
         "id": "1a116230f5c70e38",
         "thread_id": "1a1123a90f1bdf79",
         "msg_count": 2,
-        "draft_id": "r3627429370649034638"
-      },
-      {
-        "from": "Coaches Ed.",
-        "from_raw": "\"Coaches Ed.\" <hello@coachesed.com>",
-        "subject": "Great to meet you at Coaches Congress - more info about Eval Ed.",
-        "snippet": "Hi Grace, It was great to meet you at Coaches Congress at the weekend! We hope you enjoyed the Eval Ed. demo. It was good to learn more about Forge Female Fitness and how you&#39;re leading your team",
-        "id": "1a115e2b3e19e2ba",
-        "thread_id": "1a115e2b3e19e2ba",
-        "msg_count": 1,
-        "draft_id": "r7937305747134635602"
+        "draft_id": "r-2795504470074322473"
       },
       {
         "from": "Coach Grace",
@@ -299,17 +311,7 @@
         "id": "1a115ce6b4792773",
         "thread_id": "1a115ce6b4792773",
         "msg_count": 1,
-        "draft_id": "r806496602957224406"
-      },
-      {
-        "from": "Justice Williams",
-        "from_raw": "Justice Williams <justice@dreamplanlaunch.com>",
-        "subject": "Join me 12pm for my free speaker Booked & Paid workshop",
-        "snippet": "Join my free workshop today and learn how to turn your expertise into paid speaking opportunities. Hey Grace You already have expertise worth paying for. But do you know how to turn it into paid",
-        "id": "1a115cc5886087b2",
-        "thread_id": "1a115cc5886087b2",
-        "msg_count": 1,
-        "draft_id": "r6606910555822792070"
+        "draft_id": "r-5995816584563212580"
       },
       {
         "from": "Ricardo Tosatto",
@@ -353,9 +355,9 @@
     ],
     "checkins": {
       "by_email": {
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -473,7 +475,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "Divorce court done . \n\nHave to go back to court again as he has contested the occupation order of the house - police put him out last Thursday so I have to go back to court November about that \u2026 \n\nCra",
-      "age": "0h ago",
+      "age": "1h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -482,7 +484,7 @@
       "name": "Janet McDowell",
       "channel": "Phone",
       "message": "I really love the idea of a pt again but would be happy with small groups too. I need held accountable and i love lifting heavy and being the strongest i can be.",
-      "age": "0h ago",
+      "age": "1h ago",
       "unread": 2,
       "conv_id": "ECBkMbQiugfPkSQtorfn",
       "contact_id": "AEHBNbWeUNubRsBqZGv1"
@@ -491,7 +493,7 @@
       "name": "Zara Drain",
       "channel": "Phone",
       "message": "Hi grace ive aggrevated my back from class on monday so have cancelled my class tonight and saturday as dont want to make it worse.",
-      "age": "0h ago",
+      "age": "1h ago",
       "unread": 1,
       "conv_id": "6zig33GJx234SfCD9SFV",
       "contact_id": "2jHhjsZ8e3ngQTnSRx2i"
@@ -500,7 +502,7 @@
       "name": "Eileen Graham",
       "channel": "Phone",
       "message": "Thankyou so much Grace. Eileen",
-      "age": "1h ago",
+      "age": "2h ago",
       "unread": 1,
       "conv_id": "w9CF2vpiRDv6jEfc822j",
       "contact_id": "nUCwnnBXMPSHpgFCu1cK"
@@ -509,7 +511,7 @@
       "name": "Eilis Kearns",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "1h ago",
+      "age": "2h ago",
       "unread": 1,
       "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
       "contact_id": "SL5iEZ30xiRwJF12kd5S"
@@ -518,7 +520,7 @@
       "name": "Ruthie Townsley",
       "channel": "Phone",
       "message": "Im.okay thanks",
-      "age": "2h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "2fHdFpr7GHHDiuHohfTp",
       "contact_id": "QVTVAEKCMz8Yjc0qrTRX"
@@ -536,7 +538,7 @@
       "name": "Heather ROULSTON",
       "channel": "Phone",
       "message": "Yes",
-      "age": "4h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "fykAH0cG60VhBMbchPDv",
       "contact_id": "paXBuNimbUXt4oII6YM4"
@@ -545,7 +547,7 @@
       "name": "Laura McGarry",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\ud83d\ude02\"",
-      "age": "4h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "RY9evPXEU5A694ehHzww",
       "contact_id": "IsE2jOJHIzOVsIqlmiLd"
@@ -554,7 +556,7 @@
       "name": "Rose McGill",
       "channel": "Phone",
       "message": "Sorry, forgot!\nThanks Grace",
-      "age": "4h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "8mNcIXR9lDEhHFH5VmiH",
       "contact_id": "C19cay1MrZtac3ZWv1wr"
@@ -563,7 +565,7 @@
       "name": "Gemma Mcdonagh",
       "channel": "Phone",
       "message": "Brilliant Grace thank you \ud83d\ude42",
-      "age": "5h ago",
+      "age": "6h ago",
       "unread": 2,
       "conv_id": "KwlbhjLyzuw2bzwbQnwk",
       "contact_id": "pJQ9J5OsbK9yHoqPxU6c"
@@ -572,7 +574,7 @@
       "name": "Kathryn Alleyne",
       "channel": "Phone",
       "message": "I completely forgot about class tonight and am in Tobermore visiting my mum",
-      "age": "21h ago",
+      "age": "22h ago",
       "unread": 3,
       "conv_id": "SchC4kWTwkUNZLq6QGix",
       "contact_id": "Qu5byPho0Z2foHCVnzfA"
@@ -5418,7 +5420,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Good morning, Coach Grace! Yes. All emails are coming from the enquiries@ email.\n\nAlso, for Joanne Mclernon, I still send her a follow up due to the \"for now\" s",
-        "hours": 31,
+        "hours": 32,
         "name": "Julie Lapaz"
       },
       {
@@ -5429,8 +5431,8 @@
       },
       {
         "user_id": "U09CYACSUE9",
-        "text": "Must remember to double check the teamup report on this each month so it doesn't happen again.\n\nWOAH That is unreal!!!!!!",
-        "hours": 1,
+        "text": "It should be fine going forward now that i'm on 3pw from start of October :+1:",
+        "hours": 0,
         "name": "Kerrie"
       }
     ],
@@ -6162,7 +6164,7 @@
     }
   },
   "teamup": {
-    "total_members": 165,
+    "total_members": 166,
     "recurring": 110,
     "recurring_members": [
       {
@@ -6606,7 +6608,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 8,
+    "trial": 9,
     "trial_members": [
       {
         "id": 13748936,
@@ -6637,11 +6639,15 @@
         "name": "Patricia McAuley"
       },
       {
+        "id": 14069731,
+        "name": "Paula Hodges"
+      },
+      {
         "id": 13959176,
         "name": "Rebecca Gill"
       }
     ],
-    "new_this_month": 7,
+    "new_this_month": 8,
     "cancellations_this_month": 4,
     "leaving_members": [
       {
@@ -8057,7 +8063,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 8,
+        "count": 9,
         "members": [
           {
             "id": 13748936,
@@ -8086,6 +8092,10 @@
           {
             "id": 14016511,
             "name": "Patricia McAuley"
+          },
+          {
+            "id": 14069731,
+            "name": "Paula Hodges"
           },
           {
             "id": 13959176,
@@ -9065,7 +9075,7 @@
       },
       {
         "month": "2026-10",
-        "active": 164,
+        "active": 165,
         "churn": 5.7,
         "by_type": {
           "Empower": 72,
@@ -9078,7 +9088,7 @@
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 5,
           "4 Class Pass": 2,
-          "6 Week Jumpstart": 8,
+          "6 Week Jumpstart": 9,
           "Strongevity Membership": 15,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -9265,6 +9275,11 @@
     ],
     "celebrations": {
       "first_week": [
+        {
+          "name": "Paula Hodges",
+          "days_in": 0,
+          "start_date": "2026-10-07"
+        },
         {
           "name": "Patricia McAuley",
           "days_in": 7,
