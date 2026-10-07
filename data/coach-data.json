@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T14:00:50.247667+00:00",
+  "generated_at": "2026-10-07T20:36:59.617408+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4150,20 +4150,20 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Good morning, Coach Grace! Yes. All emails are coming from the enquiries@ email.\n\nAlso, for Joanne Mclernon, I still send her a follow up due to the \"for now\" s",
-        "hours": 32,
+        "hours": 39,
         "name": "Julie Lapaz"
-      },
-      {
-        "user_id": "U0A62JJ6HD2",
-        "text": "May I have the free capacity on Wednesday on Wednesday the 21st please?xx",
-        "hours": 4,
-        "name": "Sybil M"
       },
       {
         "user_id": "U09CYACSUE9",
         "text": "It should be fine going forward now that i'm on 3pw from start of October :+1:",
-        "hours": 0,
+        "hours": 7,
         "name": "Kerrie"
+      },
+      {
+        "user_id": "U0A62JJ6HD2",
+        "text": "Brilliant. I\u2019m down with the flu at the moment ",
+        "hours": 0,
+        "name": "Sybil M"
       }
     ],
     "mentions": [],
@@ -7071,7 +7071,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 639
+            "count": 661
           },
           {
             "day": "Monday",
@@ -7105,7 +7105,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 639
+            "count": 661
           }
         ],
         "top_classes": [
@@ -7115,7 +7115,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 528
+            "count": 541
           },
           {
             "name": "Build: Lower",
@@ -7137,7 +7137,7 @@
         "bottom_classes": [
           {
             "name": "Capacity",
-            "count": 48
+            "count": 53
           },
           {
             "name": "Barbelle",
@@ -7149,7 +7149,7 @@
           },
           {
             "name": "Plate",
-            "count": 192
+            "count": 196
           },
           {
             "name": "Mobility",
@@ -7221,8 +7221,8 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 48,
-            "sessions": 10,
+            "count": 53,
+            "sessions": 11,
             "avg": 4.8,
             "label": "Wednesday 8pm Capacity"
           },
@@ -7248,8 +7248,8 @@
             "day": "Wednesday",
             "time": "5pm",
             "name": "Build: Full Body",
-            "count": 72,
-            "sessions": 10,
+            "count": 79,
+            "sessions": 11,
             "avg": 7.2,
             "label": "Wednesday 5pm Build: Full Body"
           },
@@ -7257,9 +7257,9 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 90,
-            "sessions": 12,
-            "avg": 7.5,
+            "count": 94,
+            "sessions": 13,
+            "avg": 7.2,
             "label": "Wednesday 7pm Plate"
           },
           {
@@ -7272,7 +7272,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3187
+        "total_attended": 3209
       },
       "last_30_days": {
         "top_days": [
@@ -7286,7 +7286,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 193
+            "count": 215
           },
           {
             "day": "Friday",
@@ -7312,7 +7312,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 193
+            "count": 215
           },
           {
             "day": "Tuesday",
@@ -7330,7 +7330,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 155
+            "count": 168
           },
           {
             "name": "Strongevity",
@@ -7347,12 +7347,16 @@
         ],
         "bottom_classes": [
           {
+            "name": "Capacity",
+            "count": 15
+          },
+          {
             "name": "Engine",
             "count": 24
           },
           {
             "name": "Plate",
-            "count": 58
+            "count": 62
           },
           {
             "name": "Mobility",
@@ -7365,10 +7369,6 @@
           {
             "name": "Elevate",
             "count": 99
-          },
-          {
-            "name": "Strongevity",
-            "count": 124
           }
         ],
         "top_slots": [
@@ -7432,19 +7432,10 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 10,
-            "sessions": 3,
-            "avg": 3.3,
+            "count": 15,
+            "sessions": 4,
+            "avg": 3.8,
             "label": "Wednesday 8pm Capacity"
-          },
-          {
-            "day": "Wednesday",
-            "time": "5pm",
-            "name": "Build: Full Body",
-            "count": 14,
-            "sessions": 3,
-            "avg": 4.7,
-            "label": "Wednesday 5pm Build: Full Body"
           },
           {
             "day": "Thursday",
@@ -7454,6 +7445,15 @@
             "sessions": 2,
             "avg": 5.0,
             "label": "Thursday 8pm Barbelle"
+          },
+          {
+            "day": "Wednesday",
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 21,
+            "sessions": 4,
+            "avg": 5.2,
+            "label": "Wednesday 5pm Build: Full Body"
           },
           {
             "day": "Saturday",
@@ -7468,9 +7468,9 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 26,
-            "sessions": 4,
-            "avg": 6.5,
+            "count": 30,
+            "sessions": 5,
+            "avg": 6.0,
             "label": "Wednesday 7pm Plate"
           },
           {
@@ -7483,7 +7483,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1087
+        "total_attended": 1109
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. Add a 30-min \"Open Lift\" slot on Thursday or Friday mornings (6:30\u20137am or lunchtime) \u2014 members who've done Build classes often want unstructured barbell time, and this captures demand without cannibalizing scheduled classes.\n\n2. Run a paid 4-week \"Engine Foundations\" workshop (4\u20136 people, \u00a325\u201335/person) on a quieter Friday evening \u2014 Engine is underperforming (24 attendees last month), so small-group coaching on technique/pacing in a workshop format removes the pressure of a full class and builds confidence before mainline Engine classes.\n\n**For the quieter classes themselves:**\n\n3. Move **Capacity** to Tuesday morning (your busiest day) at a premium time slot \u2014 it's only pulling 48 attendees, suggesting poor timing or visibility; test it when foot traffic is highest. Pair it with a one-week free trial invite to recent Build attendees (they're your strong cohort) positioned as \"strength endurance for power athletes.\"",
       "capacity": [
@@ -8001,11 +8001,6 @@
     ],
     "celebrations": {
       "first_week": [
-        {
-          "name": "Paula Hodges",
-          "days_in": 0,
-          "start_date": "2026-10-07"
-        },
         {
           "name": "Patricia McAuley",
           "days_in": 7,
@@ -13769,15 +13764,9 @@
         "subject": "RE: Forge Slow Cooker Recipe Book",
         "snippet": "Thanks JoJo, as I say no problem if not Best Regards Catherine Catherine McMullan (She/Her) Engagement Manager Business Banking &amp; Commercial Mid-Market NI | Ulster Bank | 11-16 Donegall Square Eas",
         "id": "1a10b7b0b747761a"
-      },
-      {
-        "from": "Coach Grace",
-        "subject": "Email test",
-        "snippet": "Hey Eilis! Coach Grace Founder &amp; Head Coach Forge Female Fitness P: 07519725651 E: grace@theforge.pt | forgefemalefitness.com Unit 7, Taggarts Yard, 18 Meetinghouse Street, Ballymoney BT53 6JN (",
-        "id": "1a0f34467a6b8811"
       }
     ],
     "important": [],
-    "urgent_count": 3
+    "urgent_count": 2
   }
 }
