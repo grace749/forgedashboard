@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T14:00:58.283174+00:00",
+  "generated_at": "2026-10-09T20:06:22.381235+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4157,26 +4157,32 @@
       {
         "user_id": "U0A62JJ6HD2",
         "text": "Aww hope you feel better soon.xx",
-        "hours": 40,
+        "hours": 46,
         "name": "Sybil M"
       },
       {
         "user_id": "U08UK7TATMJ",
         "text": "Come on in :call_me_hand::skin-tone-2:",
-        "hours": 22,
+        "hours": 28,
         "name": "Christina faulkner"
       },
       {
         "user_id": "U0C3BRA7525",
         "text": "Perfect, that's you all booked in. Say to Coach Eilis to get your body scan done pre or post class and we'll get that all done for you too :blush:",
-        "hours": 18,
+        "hours": 24,
         "name": "Rebecca Gill"
       },
       {
         "user_id": "U0C12Q31S3W",
         "text": "Morning Grace, I dropped a WhatsApp yesterday but realise you may not see it. I\u2019m wondering if I could ask a big favour please and one you probably don\u2019t get ve",
-        "hours": 4,
+        "hours": 10,
         "name": "Claire Scull"
+      },
+      {
+        "user_id": "U0A77CLG4PJ",
+        "text": "Awh no Linda, I will let Eilis know",
+        "hours": 4,
+        "name": "Linda Davidson"
       }
     ],
     "mentions": [],
@@ -4346,7 +4352,8 @@
       "rebecca gill": "U0C3BRA7525",
       "helen": "U0C4TEPJU3F",
       "trisha": "U0C51C5DYQ3",
-      "patriciamctaggart": "U0C6HMSKW7J"
+      "patriciamctaggart": "U0C6HMSKW7J",
+      "paula hodges": "U0C7Z5EC1H9"
     }
   },
   "staff": {
@@ -7094,7 +7101,7 @@
           },
           {
             "day": "Friday",
-            "count": 451
+            "count": 473
           }
         ],
         "bottom_days": [
@@ -7104,7 +7111,7 @@
           },
           {
             "day": "Friday",
-            "count": 451
+            "count": 473
           },
           {
             "day": "Thursday",
@@ -7142,7 +7149,7 @@
           },
           {
             "name": "Circuits",
-            "count": 233
+            "count": 244
           }
         ],
         "bottom_classes": [
@@ -7164,11 +7171,11 @@
           },
           {
             "name": "Mobility",
-            "count": 224
+            "count": 235
           },
           {
             "name": "Circuits",
-            "count": 233
+            "count": 244
           }
         ],
         "top_slots": [
@@ -7185,8 +7192,8 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 114,
-            "sessions": 11,
+            "count": 125,
+            "sessions": 12,
             "avg": 10.4,
             "label": "Friday 7pm Mobility"
           },
@@ -7212,9 +7219,9 @@
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
-            "count": 123,
-            "sessions": 12,
-            "avg": 10.2,
+            "count": 134,
+            "sessions": 13,
+            "avg": 10.3,
             "label": "Friday 6pm Circuits"
           },
           {
@@ -7283,7 +7290,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3178
+        "total_attended": 3200
       },
       "last_30_days": {
         "top_days": [
@@ -7301,7 +7308,7 @@
           },
           {
             "day": "Friday",
-            "count": 169
+            "count": 191
           },
           {
             "day": "Thursday",
@@ -7319,7 +7326,7 @@
           },
           {
             "day": "Friday",
-            "count": 169
+            "count": 191
           },
           {
             "day": "Monday",
@@ -7353,7 +7360,7 @@
           },
           {
             "name": "Mobility",
-            "count": 85
+            "count": 96
           }
         ],
         "bottom_classes": [
@@ -7375,11 +7382,11 @@
           },
           {
             "name": "Circuits",
-            "count": 79
+            "count": 90
           },
           {
             "name": "Mobility",
-            "count": 85
+            "count": 96
           }
         ],
         "top_slots": [
@@ -7396,18 +7403,18 @@
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
-            "count": 42,
-            "sessions": 4,
-            "avg": 10.5,
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
             "label": "Friday 6pm Circuits"
           },
           {
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 40,
-            "sessions": 4,
-            "avg": 10.0,
+            "count": 51,
+            "sessions": 5,
+            "avg": 10.2,
             "label": "Friday 7pm Mobility"
           },
           {
@@ -7494,7 +7501,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1047
+        "total_attended": 1069
       },
       "suggestion": "**For quiet studio gaps (between PTs and classes):**\n\n1. **Launch a Friday \"Strength Basics\" workshop series** \u2014 30-min paid drop-in sessions (\u00a35-8) targeting members intimidated by Build classes; run 6-8pm when Friday studio sits empty, positioning it as a confidence-builder that feeds into Build: Lower and Upper.\n\n2. **Open Saturday mornings as supervised open-gym slots** \u2014 7-9am with a roaming PT on duty; Saturday's your quietest day but likely has members wanting flexible training; charge \u00a33-5 per session or bundle into membership tiers.\n\n**For the quieter classes themselves:**\n\n3. **Rebrand and reposition Capacity, Barbelle, and Engine with member-referral incentives** \u2014 these three are consistently lowest; offer existing members \u00a310 credit for bringing a friend to any of these classes, AND move Barbelle to Tuesday evening (your busiest day) if studio schedule allows, to ride the momentum and reduce the perception these are \"niche\" classes.",
       "capacity": [
@@ -7891,13 +7898,6 @@
         "last_seen": "2026-09-21"
       },
       {
-        "id": 7196665,
-        "name": "Deborah Goss",
-        "membership": "Empower",
-        "days_absent": 17,
-        "last_seen": "2026-09-22"
-      },
-      {
         "id": 12289714,
         "name": "Diane McLean",
         "membership": "Elevate",
@@ -8008,6 +8008,13 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 20,
         "last_seen": "2026-09-19"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 35,
+        "last_seen": "2026-09-04"
       }
     ],
     "celebrations": {
