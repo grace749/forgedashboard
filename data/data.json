@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:07:54.894219+00:00",
+  "generated_at": "2026-10-09T14:00:58.283174+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-10-09",
-    "event_count": 9,
-    "urgent_count": 1,
+    "event_count": 8,
+    "urgent_count": 2,
     "enquiry_count": 0,
     "calendar": [
       {
@@ -32,18 +32,6 @@
         "prep": "Export final data from TeamUp; confirm all member info backed up before midnight."
       },
       {
-        "title": "Perform Set Up Call - Forge Female Fitness",
-        "time": "1:45pm",
-        "start_raw": "2026-10-09T13:45:00+01:00",
-        "day": "Today",
-        "attendees": [
-          "Elaine Blood"
-        ],
-        "description": "In this Zoom meeting we'll discuss your key setup requirements to ensure your TeamUp account is ready to go live with your customers.\n\n\n\ud83d\udcbb To get the most out of the meeting please join via your comput",
-        "location": "",
-        "prep": "Prepare medical records/questions for midwife appointment."
-      },
-      {
         "title": "Ring Deirdre x Jumpstart",
         "time": "all day",
         "start_raw": "2026-10-10",
@@ -51,7 +39,7 @@
         "attendees": [],
         "description": "07901760279",
         "location": "",
-        "prep": "Review TeamUp setup requirements; list Forge-specific needs/questions for migration."
+        "prep": "Prepare medical records/questions for midwife appointment."
       },
       {
         "title": "Pay Dan House Bills",
@@ -61,7 +49,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Review TeamUp setup requirements; list Forge-specific needs/questions for migration."
       },
       {
         "title": "Giants @ Forge",
@@ -71,7 +59,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm Giants team arrival time; ensure gym access/facilities ready."
+        "prep": ""
       },
       {
         "title": "Giants Wheelchair Basketball Session",
@@ -92,7 +80,7 @@
         "attendees": [],
         "description": "Lets go padel ballyclare",
         "location": "",
-        "prep": ""
+        "prep": "Confirm Giants team arrival time; ensure gym access/facilities ready."
       },
       {
         "title": "LOWER 2",
@@ -114,15 +102,25 @@
         "id": "1a120bc26cf79c5c",
         "thread_id": "1a11b3e0b3593340",
         "msg_count": 6
+      },
+      {
+        "from": "Elaine Blood",
+        "from_raw": "Elaine Blood <elaine.blood@daysmart.com>",
+        "subject": "Perform",
+        "snippet": "Hey Grace, Lovely chatting with you just now! One thing I forgot to mention: when you go into each staff member&#39;s account in TeamUp, just make sure &#39;Perform by BoxMate&#39; is ticked to give",
+        "id": "1a120e4b18ba7853",
+        "thread_id": "1a1123a90f1bdf79",
+        "msg_count": 4,
+        "draft_id": "r4626003264136226888"
       }
     ],
     "important": [],
     "enquiries": [],
     "checkins": {
       "by_email": {
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -240,7 +238,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "0h ago",
+      "age": "1h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -249,7 +247,7 @@
       "name": "Rebecca Gill",
       "channel": "Phone",
       "message": "Hi Grace, going really well.  First week of classes complete so Im buzzing.  I was maybe wondering about what I should be eating or doing post workout to promote recovery or help with DOMS.  I know it",
-      "age": "1h ago",
+      "age": "2h ago",
       "unread": 2,
       "conv_id": "vaIf3R9K7aQKPjOcGU16",
       "contact_id": "W6xf2hzerVybWT0epJ7H"
@@ -267,7 +265,7 @@
       "name": "Nancy Cubitt",
       "channel": "Phone",
       "message": "Thank you!",
-      "age": "20h ago",
+      "age": "21h ago",
       "unread": 1,
       "conv_id": "chLFYUB45pkJenv0JzX2",
       "contact_id": "98yRLM3PChmvL7E4dXJN"
@@ -5136,33 +5134,27 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U09CYACSUE9",
-        "text": "It should be fine going forward now that i'm on 3pw from start of October :+1:",
-        "hours": 47,
-        "name": "Kerrie"
-      },
-      {
         "user_id": "U0A62JJ6HD2",
         "text": "Aww hope you feel better soon.xx",
-        "hours": 39,
+        "hours": 40,
         "name": "Sybil M"
       },
       {
         "user_id": "U08UK7TATMJ",
         "text": "Come on in :call_me_hand::skin-tone-2:",
-        "hours": 21,
+        "hours": 22,
         "name": "Christina faulkner"
       },
       {
         "user_id": "U0C3BRA7525",
         "text": "Perfect, that's you all booked in. Say to Coach Eilis to get your body scan done pre or post class and we'll get that all done for you too :blush:",
-        "hours": 17,
+        "hours": 18,
         "name": "Rebecca Gill"
       },
       {
         "user_id": "U0C12Q31S3W",
         "text": "Morning Grace, I dropped a WhatsApp yesterday but realise you may not see it. I\u2019m wondering if I could ask a big favour please and one you probably don\u2019t get ve",
-        "hours": 3,
+        "hours": 4,
         "name": "Claire Scull"
       }
     ],
