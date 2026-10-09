@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T05:00:52.648235+00:00",
+  "generated_at": "2026-10-09T13:07:54.894219+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -65,10 +65,10 @@
         "week_on": 6,
         "days_left": 7,
         "is_active": true,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
-        "welcome_pack": false,
+        "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 2,
         "completed_checkins": 4,
@@ -211,7 +211,7 @@
         "joined": "2026-09-28",
         "end": "2026-11-09",
         "goal": "",
-        "notes": "",
+        "notes": "1st time training since pregnancy",
         "nutrition_sent": false,
         "inbody_done": false,
         "check_ins": [
@@ -235,7 +235,7 @@
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
-        "pause_reason": ""
+        "pause_reason": "1st time training since pregnancy"
       },
       {
         "name": "Patricia Mcauley",
@@ -268,6 +268,38 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "aniexty and can feel overwhelmed , knee injury from car crash in 2025"
+      },
+      {
+        "name": "Paula Hodges",
+        "cohort": "October",
+        "joined": "2026-10-09",
+        "end": "2026-11-20",
+        "goal": "",
+        "notes": "",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": ""
       }
     ],
     "recent": [
@@ -1043,10 +1075,20 @@
         "member": "Patricia Mcauley",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "Paula Hodges",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "Paula Hodges",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 7,
+      "active_count": 8,
       "paused_count": 2,
       "conv_rate": 45,
       "converted": 9,
@@ -1056,6 +1098,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "rebeccagill144",
+        "last_scan": "2026-10-09",
+        "scan_count": 1,
+        "weight": 222.8,
+        "smm": 66.1,
+        "pbf": 47.1,
+        "bmi": 39.5,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-20",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Laura McGarry",
         "last_scan": "2026-10-08",
@@ -4081,7 +4147,7 @@
         "overdue": true
       }
     ],
-    "total": 126,
+    "total": 127,
     "configured": true
   },
   "slack": {
@@ -4091,26 +4157,32 @@
       {
         "user_id": "U09CYACSUE9",
         "text": "It should be fine going forward now that i'm on 3pw from start of October :+1:",
-        "hours": 39,
+        "hours": 47,
         "name": "Kerrie"
       },
       {
         "user_id": "U0A62JJ6HD2",
         "text": "Aww hope you feel better soon.xx",
-        "hours": 31,
+        "hours": 39,
         "name": "Sybil M"
       },
       {
         "user_id": "U08UK7TATMJ",
         "text": "Come on in :call_me_hand::skin-tone-2:",
-        "hours": 13,
+        "hours": 21,
         "name": "Christina faulkner"
       },
       {
         "user_id": "U0C3BRA7525",
         "text": "Perfect, that's you all booked in. Say to Coach Eilis to get your body scan done pre or post class and we'll get that all done for you too :blush:",
-        "hours": 9,
+        "hours": 17,
         "name": "Rebecca Gill"
+      },
+      {
+        "user_id": "U0C12Q31S3W",
+        "text": "Morning Grace, I dropped a WhatsApp yesterday but realise you may not see it. I\u2019m wondering if I could ask a big favour please and one you probably don\u2019t get ve",
+        "hours": 3,
+        "name": "Claire Scull"
       }
     ],
     "mentions": [],
@@ -4445,7 +4517,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Remove Grace's classes immediately**: redistribute her 20 Build: Lower sessions to JoJo and Eilis (10 each). This protects Tuesday coverage (JoJo handles upper/technical work) and gives Eilis consistent Full Body + Lower rotation without overloading either.\n\n\u2022 **Reassign Grace's PT and Strongevity**: Eilis should pick up 3\u20134 of the 27 PT slots; JoJo takes the remaining ~23 PT. Rotate the 4 Strongevity sessions to JoJo (2) and Eilis (2) to share niche-class load.\n\n\u2022 **Stop conflating Body Comp scans with coaching load**: strip these from your timetable calculations entirely \u2014 they're admin tasks, not PT or class time. This reveals JoJo is genuinely over-extended (likely ~110 real coaching sessions) while Eilis sits lighter.\n\n\u2022 **Build Eilis' confidence and capacity**: she's handling 92 real coaching sessions; move her toward 110\u2013120 by taking more Full Body and PT, freeing JoJo from breadth. JoJo stays on Upper, Build: Lower, Strongevity (technical/founder-level work).\n\n\u2022 **Protect JoJo's Tuesdays and add Eilis stability**: confirm JoJo owns all Tuesday slots; use Mondays, Wednesdays, Thursdays for Eilis to own one Build: Full Body or Elevate class each, so members see consistent faces in lower-intensity offerings.\n\n\u2022 **Audit No Sweat Intros and Elevate**: currently thin and fragmented. Assign Elevate sessions to Eilis as a signature class; rotate No Sweat Intros between both coaches monthly so neither is the single point of contact for new members.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately:** Her Build: Lower (20 sessions) should split between JoJo and Eilis; Strongevity (4) and Elevate (3) to Eilis; No Sweat Intro (2) can rotate between both. This removes Grace from delivery entirely.\n\n\u2022 **JoJo is carrying too much load at 140 sessions.** Strip out her Body Composition scans (21 sessions\u2014these aren't real coaching) and share them 50/50 with Eilis. That frees 21 hours and brings JoJo down to a more sustainable level, especially given she's also Head Coach.\n\n\u2022 **Eilis is under-stretched and ready for more:** After taking Grace's classes and Build: Lower share, add more Build: Full Body and introduce her to Strongevity (it's not Tuesday-dependent). She can also own Body Composition scans. This builds her confidence and rounds her skill set without breaching the Tuesday restriction.\n\n\u2022 **Protect JoJo's Tuesdays and Upper Body specialism:** Keep her focused on the technically demanding Tuesday classes and Upper Body Build sessions where she adds most value. Reduce her across-the-board coverage to let Eilis take more front-of-house variety.\n\n\u2022 **No Sweat Intros should rotate consistently** between JoJo and Eilis each month to share that touchpoint and prevent member relationships being one-coach dependent.",
     "period": "September 2026"
   },
   "asana": {
@@ -7028,7 +7100,7 @@
           },
           {
             "day": "Friday",
-            "count": 433
+            "count": 451
           }
         ],
         "bottom_days": [
@@ -7038,7 +7110,7 @@
           },
           {
             "day": "Friday",
-            "count": 433
+            "count": 451
           },
           {
             "day": "Thursday",
@@ -7094,11 +7166,11 @@
           },
           {
             "name": "Plate",
-            "count": 188
+            "count": 198
           },
           {
             "name": "Mobility",
-            "count": 216
+            "count": 224
           },
           {
             "name": "Circuits",
@@ -7217,7 +7289,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3160
+        "total_attended": 3178
       },
       "last_30_days": {
         "top_days": [
@@ -7234,12 +7306,12 @@
             "count": 212
           },
           {
-            "day": "Thursday",
-            "count": 165
+            "day": "Friday",
+            "count": 169
           },
           {
-            "day": "Friday",
-            "count": 151
+            "day": "Thursday",
+            "count": 165
           }
         ],
         "bottom_days": [
@@ -7248,12 +7320,12 @@
             "count": 70
           },
           {
-            "day": "Friday",
-            "count": 151
-          },
-          {
             "day": "Thursday",
             "count": 165
+          },
+          {
+            "day": "Friday",
+            "count": 169
           },
           {
             "day": "Monday",
@@ -7286,8 +7358,8 @@
             "count": 100
           },
           {
-            "name": "Circuits",
-            "count": 79
+            "name": "Mobility",
+            "count": 85
           }
         ],
         "bottom_classes": [
@@ -7305,15 +7377,15 @@
           },
           {
             "name": "Plate",
-            "count": 62
-          },
-          {
-            "name": "Mobility",
-            "count": 77
+            "count": 72
           },
           {
             "name": "Circuits",
             "count": 79
+          },
+          {
+            "name": "Mobility",
+            "count": 85
           }
         ],
         "top_slots": [
@@ -7428,7 +7500,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1029
+        "total_attended": 1047
       },
       "suggestion": "**For quiet studio gaps (between PTs and classes):**\n\n1. **Launch a Friday \"Strength Basics\" workshop series** \u2014 30-min paid drop-in sessions (\u00a35-8) targeting members intimidated by Build classes; run 6-8pm when Friday studio sits empty, positioning it as a confidence-builder that feeds into Build: Lower and Upper.\n\n2. **Open Saturday mornings as supervised open-gym slots** \u2014 7-9am with a roaming PT on duty; Saturday's your quietest day but likely has members wanting flexible training; charge \u00a33-5 per session or bundle into membership tiers.\n\n**For the quieter classes themselves:**\n\n3. **Rebrand and reposition Capacity, Barbelle, and Engine with member-referral incentives** \u2014 these three are consistently lowest; offer existing members \u00a310 credit for bringing a friend to any of these classes, AND move Barbelle to Tuesday evening (your busiest day) if studio schedule allows, to ride the momentum and reduce the perception these are \"niche\" classes.",
       "capacity": [
@@ -7457,16 +7529,16 @@
           "status": "healthy"
         },
         {
-          "name": "Mobility",
-          "sessions": 28,
+          "name": "Build: Full Body",
+          "sessions": 65,
           "cap": 12,
           "avg_attending": 9.4,
-          "fill_rate": 79,
+          "fill_rate": 78,
           "status": "healthy"
         },
         {
-          "name": "Build: Full Body",
-          "sessions": 65,
+          "name": "Mobility",
+          "sessions": 28,
           "cap": 12,
           "avg_attending": 9.4,
           "fill_rate": 78,
@@ -7489,18 +7561,18 @@
           "status": "attention"
         },
         {
-          "name": "Plate",
-          "sessions": 27,
-          "cap": 12,
-          "avg_attending": 7.9,
-          "fill_rate": 66,
-          "status": "attention"
-        },
-        {
           "name": "Elevate",
           "sessions": 52,
           "cap": 12,
           "avg_attending": 7.8,
+          "fill_rate": 65,
+          "status": "attention"
+        },
+        {
+          "name": "Plate",
+          "sessions": 27,
+          "cap": 12,
+          "avg_attending": 7.9,
           "fill_rate": 65,
           "status": "attention"
         },
@@ -7783,13 +7855,6 @@
         "last_seen": "2026-09-17"
       },
       {
-        "id": 8603158,
-        "name": "Ann Vance",
-        "membership": "Foundation PAID IN FULL",
-        "days_absent": 17,
-        "last_seen": "2026-09-22"
-      },
-      {
         "id": 12292932,
         "name": "Ashley George",
         "membership": "Elevate",
@@ -7942,6 +8007,13 @@
         "membership": "Empower",
         "days_absent": 16,
         "last_seen": "2026-09-23"
+      },
+      {
+        "id": 13908961,
+        "name": "Mia Taylor",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 20,
+        "last_seen": "2026-09-19"
       }
     ],
     "celebrations": {
