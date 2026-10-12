@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T15:13:11.241377+00:00",
+  "generated_at": "2026-10-12T22:29:28.581752+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4273,14 +4273,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0C3BRA7525",
-        "text": "Eilis helped me out.  ",
-        "hours": 6,
-        "name": "Rebecca Gill"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -5017,8 +5010,8 @@
     }
   },
   "teamup": {
-    "total_members": 166,
-    "recurring": 111,
+    "total_members": 167,
+    "recurring": 112,
     "recurring_members": [
       {
         "id": 10803724,
@@ -5067,6 +5060,10 @@
       {
         "id": 12742363,
         "name": "Catherine McMullan"
+      },
+      {
+        "id": 10746722,
+        "name": "Catherine Mckay"
       },
       {
         "id": 9459737,
@@ -5508,12 +5505,16 @@
         "name": "Rebecca Gill"
       }
     ],
-    "new_this_month": 10,
-    "cancellations_this_month": 4,
+    "new_this_month": 11,
+    "cancellations_this_month": 5,
     "leaving_members": [
       {
         "id": 10057245,
         "name": "Alison Moffitt-Robinson"
+      },
+      {
+        "id": 10746722,
+        "name": "Catherine Mckay"
       },
       {
         "id": 12289714,
@@ -5528,12 +5529,8 @@
         "name": "Nuala O'Neill"
       }
     ],
-    "paused": 6,
+    "paused": 5,
     "paused_members": [
-      {
-        "id": 10746722,
-        "name": "Catherine Mckay"
-      },
       {
         "id": 12754228,
         "name": "Jackie Elliott"
@@ -6307,9 +6304,9 @@
       }
     ],
     "cancelled_ytd": 50,
-    "churn_rate": 2.5,
-    "avg_member_price": 138.11,
-    "monthly_recurring_revenue": 14778.0,
+    "churn_rate": 3.1,
+    "avg_member_price": 138.04,
+    "monthly_recurring_revenue": 15046.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 7,
     "cancelled_members": [
@@ -6352,7 +6349,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 72,
+        "count": 73,
         "members": [
           {
             "id": 10803724,
@@ -6385,6 +6382,10 @@
           {
             "id": 12742363,
             "name": "Catherine McMullan"
+          },
+          {
+            "id": 10746722,
+            "name": "Catherine Mckay"
           },
           {
             "id": 9459737,
@@ -6646,7 +6647,7 @@
       },
       {
         "name": "Elevate",
-        "count": 35,
+        "count": 36,
         "members": [
           {
             "id": 12931950,
@@ -6663,6 +6664,10 @@
           {
             "id": 13608450,
             "name": "Caroline Stinson"
+          },
+          {
+            "id": 10746722,
+            "name": "Catherine Mckay"
           },
           {
             "id": 12215372,
@@ -7198,7 +7203,7 @@
           },
           {
             "day": "Monday",
-            "count": 580
+            "count": 619
           },
           {
             "day": "Thursday",
@@ -7224,7 +7229,7 @@
           },
           {
             "day": "Monday",
-            "count": 580
+            "count": 619
           },
           {
             "day": "Wednesday",
@@ -7242,7 +7247,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 458
+            "count": 497
           },
           {
             "name": "Elevate",
@@ -7395,13 +7400,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3214
+        "total_attended": 3253
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Monday",
-            "count": 237
+            "count": 276
           },
           {
             "day": "Tuesday",
@@ -7444,12 +7449,12 @@
         ],
         "top_classes": [
           {
-            "name": "Build: Upper",
-            "count": 188
+            "name": "Build: Lower",
+            "count": 226
           },
           {
-            "name": "Build: Lower",
-            "count": 187
+            "name": "Build: Upper",
+            "count": 188
           },
           {
             "name": "Build: Full Body",
@@ -7517,8 +7522,8 @@
             "day": "Monday",
             "time": "6pm",
             "name": "Build: Lower",
-            "count": 40,
-            "sessions": 4,
+            "count": 50,
+            "sessions": 5,
             "avg": 10.0,
             "label": "Monday 6pm Build: Lower"
           },
@@ -7606,7 +7611,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 999
+        "total_attended": 1038
       },
       "suggestion": "**Filling quiet studio time:**\n\n1. **Add a paid \"Open Gym + Coach\" slot on Friday/Saturday mornings** \u2014 book a single PT or qualified coach to be on studio floor for 60 mins, available for walk-in form checks, spot requests, or informal small groups; costs minimal staff while capturing members who'd otherwise train alone at home.\n\n2. **Launch a \"Barbell Clinic\" workshop series in Tuesday/Wednesday gaps** \u2014 30-min paid micro-sessions teaching deadlift/squat technique to Build class regulars; positions Barbelle and Capacity as skill-builders rather than standalone classes, and gives quieter days a revenue boost without competing with existing classes.\n\n**Lifting quieter classes:**\n\n3. **Move Mobility to Thursday 6:30 pm (post-work slot) and bundle it as \"recovery add-on\"** \u2014 let members book it free with any evening class that week, or offer a 4-class + 1 mobility pass at a discount; Mobility's low numbers suggest timing/positioning issue, not interest; recovery appeal peaks when people are still in gym clothes.",
       "capacity": [
@@ -7662,8 +7667,8 @@
           "name": "Build: Lower",
           "sessions": 65,
           "cap": 13,
-          "avg_attending": 8.4,
-          "fill_rate": 70,
+          "avg_attending": 8.3,
+          "fill_rate": 69,
           "status": "attention"
         },
         {
@@ -7977,6 +7982,13 @@
         "last_seen": "2026-07-20"
       },
       {
+        "id": 10746722,
+        "name": "Catherine Mckay",
+        "membership": "Empower",
+        "days_absent": 150,
+        "last_seen": "2026-05-15"
+      },
+      {
         "id": 13851559,
         "name": "Celia Currie",
         "membership": "4 PT Sessions",
@@ -8047,13 +8059,6 @@
         "last_seen": "2026-09-03"
       },
       {
-        "id": 8935595,
-        "name": "Grace McAlister",
-        "membership": "Empower",
-        "days_absent": 23,
-        "last_seen": "2026-09-19"
-      },
-      {
         "id": 7373444,
         "name": "Helen Logan",
         "membership": "Empower",
@@ -8089,13 +8094,6 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 13262681,
-        "name": "Lesley Drake",
-        "membership": "Empower",
-        "days_absent": 20,
-        "last_seen": "2026-09-22"
-      },
-      {
         "id": 13507202,
         "name": "Linda Greer",
         "membership": "6 Week Jumpstart",
@@ -8122,6 +8120,13 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 23,
         "last_seen": "2026-09-19"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 38,
+        "last_seen": "2026-09-04"
       }
     ],
     "celebrations": {
@@ -8145,6 +8150,13 @@
         }
       ],
       "tenure": [
+        {
+          "name": "Catherine Mckay",
+          "label": "18 months",
+          "months": 18,
+          "days_until": 0,
+          "start_date": "2025-04-12"
+        },
         {
           "name": "Hilary McDowell",
           "label": "18 months",
@@ -8496,6 +8508,15 @@
         "membership": "Empower",
         "class_count": 114,
         "last_momentum": "2026-10-05"
+      },
+      {
+        "id": 10746722,
+        "name": "Catherine Mckay",
+        "email": "cmckay868@gmail.com",
+        "join_date": "2025-04-12",
+        "membership": "Empower",
+        "class_count": 117,
+        "last_momentum": null
       },
       {
         "id": 13851559,
