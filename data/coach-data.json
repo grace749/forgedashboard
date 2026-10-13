@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:11:38.568277+00:00",
+  "generated_at": "2026-10-13T20:40:29.229949+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -91,7 +91,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false
         ],
         "week_on": 6,
@@ -102,8 +102,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 3,
+        "missing_checkins": 2,
+        "completed_checkins": 4,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -122,7 +122,7 @@
           false,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -134,8 +134,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 2,
+        "missing_checkins": 2,
+        "completed_checkins": 3,
         "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
@@ -152,7 +152,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -166,8 +166,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 1,
+        "missing_checkins": 2,
+        "completed_checkins": 2,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -180,11 +180,11 @@
         "end": "2026-11-09",
         "goal": "be fitter more flexible tone up",
         "notes": "stress and anxiety, breast cancer 2006,knee surgery 2000",
-        "nutrition_sent": false,
+        "nutrition_sent": true,
         "inbody_done": false,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -198,8 +198,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 1,
+        "missing_checkins": 1,
+        "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -212,11 +212,11 @@
         "end": "2026-11-09",
         "goal": "",
         "notes": "1st time training since pregnancy",
-        "nutrition_sent": false,
+        "nutrition_sent": true,
         "inbody_done": false,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -230,8 +230,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 1,
+        "missing_checkins": 1,
+        "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -244,11 +244,11 @@
         "end": "2026-11-11",
         "goal": "tone up,loose weight feel confiendt in outfit upcoming wedding",
         "notes": "aniexty and can feel overwhelmed , knee injury from car crash in 2025",
-        "nutrition_sent": false,
+        "nutrition_sent": true,
         "inbody_done": false,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -262,8 +262,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 1,
+        "missing_checkins": 0,
+        "completed_checkins": 2,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -274,10 +274,10 @@
         "cohort": "October",
         "joined": "2026-10-09",
         "end": "2026-11-20",
-        "goal": "",
-        "notes": "",
+        "goal": "tone uo build confidence",
+        "notes": "recently diagonosed with full fronyal alopecia . on hrt",
         "nutrition_sent": false,
-        "inbody_done": false,
+        "inbody_done": true,
         "check_ins": [
           false,
           false,
@@ -299,7 +299,39 @@
         "expected_checkins": 1,
         "paused": false,
         "pink_red": false,
-        "pause_reason": ""
+        "pause_reason": "recently diagonosed with full fronyal alopecia . on hrt"
+      },
+      {
+        "name": "Deirdre Wallace",
+        "cohort": "October",
+        "joined": "2026-10-12",
+        "end": "2026-11-23",
+        "goal": "Lose weight, reduce stiffness and aches and pains, feel more confident.",
+        "notes": "I suffer with low mood at times. I am easily defeated and struggle to get motivated. I am a terrible procrastinator! I have taken steps to lower stress recently and hope that starts to show in my mood soon.",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 41,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "I suffer with low mood at times. I am easily defeated and struggle to get motivated. I am a terrible procrastinator! I have taken steps to lower stress recently and hope that starts to show in my mood soon."
       }
     ],
     "recent": [
@@ -1024,7 +1056,7 @@
       {
         "member": "Kathryn Alleyne",
         "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 6)"
+        "detail": "Missing 2 check-in(s) (on week 6)"
       },
       {
         "member": "Kathryn Alleyne",
@@ -1034,7 +1066,7 @@
       {
         "member": "Erin Honeyford",
         "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 5)"
+        "detail": "Missing 2 check-in(s) (on week 5)"
       },
       {
         "member": "Erin Honeyford",
@@ -1044,37 +1076,17 @@
       {
         "member": "Claire Scullion",
         "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 4)"
+        "detail": "Missing 2 check-in(s) (on week 4)"
       },
       {
         "member": "Helen Faulkner",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 3)"
-      },
-      {
-        "member": "Helen Faulkner",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
+        "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
         "member": "Rebecca Gill",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 3)"
-      },
-      {
-        "member": "Rebecca Gill",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
-      },
-      {
-        "member": "Patricia Mcauley",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 2)"
-      },
-      {
-        "member": "Patricia Mcauley",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
+        "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
         "member": "Paula Hodges",
@@ -1085,10 +1097,20 @@
         "member": "Paula Hodges",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "Deirdre Wallace",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "Deirdre Wallace",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 8,
+      "active_count": 9,
       "paused_count": 2,
       "conv_rate": 45,
       "converted": 9,
@@ -4277,7 +4299,7 @@
       {
         "user_id": "U0C3BRA7525",
         "text": "Amazing thank you so much.  Again my apologies.  ",
-        "hours": 7,
+        "hours": 14,
         "name": "Rebecca Gill"
       }
     ],
@@ -7202,7 +7224,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 738
+            "count": 779
           },
           {
             "day": "Wednesday",
@@ -7246,7 +7268,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 666
+            "count": 707
           },
           {
             "name": "Build: Full Body",
@@ -7336,9 +7358,9 @@
             "day": "Tuesday",
             "time": "7pm",
             "name": "Build: Upper",
-            "count": 123,
-            "sessions": 12,
-            "avg": 10.2,
+            "count": 134,
+            "sessions": 13,
+            "avg": 10.3,
             "label": "Tuesday 7pm Build: Upper"
           },
           {
@@ -7407,17 +7429,17 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3240
+        "total_attended": 3281
       },
       "last_30_days": {
         "top_days": [
           {
-            "day": "Monday",
-            "count": 276
+            "day": "Tuesday",
+            "count": 288
           },
           {
-            "day": "Tuesday",
-            "count": 247
+            "day": "Monday",
+            "count": 276
           },
           {
             "day": "Wednesday",
@@ -7450,18 +7472,18 @@
             "count": 181
           },
           {
-            "day": "Tuesday",
-            "count": 247
+            "day": "Monday",
+            "count": 276
           }
         ],
         "top_classes": [
           {
-            "name": "Build: Lower",
-            "count": 226
+            "name": "Build: Upper",
+            "count": 251
           },
           {
-            "name": "Build: Upper",
-            "count": 210
+            "name": "Build: Lower",
+            "count": 226
           },
           {
             "name": "Build: Full Body",
@@ -7511,8 +7533,8 @@
             "day": "Tuesday",
             "time": "7pm",
             "name": "Build: Upper",
-            "count": 43,
-            "sessions": 4,
+            "count": 54,
+            "sessions": 5,
             "avg": 10.8,
             "label": "Tuesday 7pm Build: Upper"
           },
@@ -7618,7 +7640,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 1045
+        "total_attended": 1086
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. Launch a paid \"Open Lift\" block (30-45 mins) on Thursday and Friday mornings \u2014 slot it between your quietest hours and PT bookings to capture members who want flexibility without a full class commitment, generating incremental revenue on low-traffic days.\n\n2. Run a monthly \"Masterclass Workshop\" (60 mins) on a quiet Friday afternoon featuring a guest instructor or your strongest coach doing a deep-dive on a specific lift or mobility pattern \u2014 price it as a paid add-on and invite members who've attended Build classes but skipped Mobility and Capacity (they may just need the \"why\" and form cues).\n\n3. Add a small-group PT block (2\u20133 people max) on Thursday evenings at 6pm, marketed as \"mini-squad sessions\" at a lower rate than 1-on-1 \u2014 it fills dead time, builds community, and converts solo lifters into repeat group-training customers.\n\n**For the quietest classes themselves:**\n\n1. **Capacity & Barbelle**: Rebrand these as 4-week progressive challenges with tracked progress sheets and a small prize/recognition at the end \u2014 market directly to your Build class regulars as \"the next step\" and make attendance feel like progression, not a lateral move.\n\n2. **Engine**: Move it to Wednesday 6:30",
       "capacity": [
@@ -7975,13 +7997,6 @@
         "last_seen": "2026-09-17"
       },
       {
-        "id": 12292932,
-        "name": "Ashley George",
-        "membership": "Elevate",
-        "days_absent": 18,
-        "last_seen": "2026-09-25"
-      },
-      {
         "id": 12162382,
         "name": "Catherine Gavin",
         "membership": "8 PT Sessions",
@@ -8052,32 +8067,11 @@
         "last_seen": "2026-09-30"
       },
       {
-        "id": 9889595,
-        "name": "Emma Hopkins",
-        "membership": "Empower",
-        "days_absent": 40,
-        "last_seen": "2026-09-03"
-      },
-      {
         "id": 7373444,
         "name": "Helen Logan",
         "membership": "Empower",
         "days_absent": 22,
         "last_seen": "2026-09-21"
-      },
-      {
-        "id": 11206355,
-        "name": "Janeen Gilfillan",
-        "membership": "Elevate",
-        "days_absent": 14,
-        "last_seen": "2026-09-29"
-      },
-      {
-        "id": 9388799,
-        "name": "Joanne Hamill",
-        "membership": "Evolve",
-        "days_absent": 41,
-        "last_seen": "2026-09-02"
       },
       {
         "id": 9049277,
@@ -8134,6 +8128,34 @@
         "membership": "Strongevity Membership",
         "days_absent": 13,
         "last_seen": "2026-09-30"
+      },
+      {
+        "id": 13899688,
+        "name": "Sarah Logan",
+        "membership": "4 Class Pass",
+        "days_absent": 22,
+        "last_seen": "2026-09-21"
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Poulton",
+        "membership": "Empower",
+        "days_absent": 13,
+        "last_seen": "2026-09-30"
+      },
+      {
+        "id": 12082042,
+        "name": "Sharon Smyth",
+        "membership": "Elevate",
+        "days_absent": 24,
+        "last_seen": "2026-09-19"
+      },
+      {
+        "id": 13338052,
+        "name": "Therese Mcmillan",
+        "membership": "Strongevity Membership",
+        "days_absent": 20,
+        "last_seen": "2026-09-23"
       }
     ],
     "celebrations": {
@@ -13943,6 +13965,24 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Updated invitation: Lunch at Cloth Ear @ Sat 5 Dec 2026 1:30pm - 2:30pm (GMT) (Coach JoJo)",
+        "snippet": "Lunch at Cloth Ear You have been invited by Grace Smith to attend an event named Lunch at Cloth Ear on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 2:30pm (United Kingdom Time). This event has been updated Changed:",
+        "id": "1a135cd0f72a8dd6"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Cocktails Merchant @ Sat 5 Dec 2026 12:30pm - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Cocktails Merchant You have been invited by Grace Smith to attend an event named Cocktails Merchant on Saturday 5 Dec 2026 \u22c5 12:30pm \u2013 1:30pm (United Kingdom Time). When Saturday 5 Dec 2026 \u22c5 12:30pm ",
+        "id": "1a135cca65bf8de6"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Lunch at Cloth Ear @ Sat 5 Dec 2026 1:30pm - 2:30pm (GMT) (Coach JoJo)",
+        "snippet": "Lunch at Cloth Ear You have been invited by Grace Smith to attend an event named Lunch at Cloth Ear on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 2:30pm (United Kingdom Time). When Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 ",
+        "id": "1a135cc29e556d10"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Updated invitation: Coaches Xmas Lunch & Cocktails @ Sat 5 Dec 2026 12:30pm - 3:30pm (GMT) (Coach JoJo)",
         "snippet": "Coaches Xmas Lunch &amp; Cocktails You have been invited by Grace Smith to attend an event named Coaches Xmas Lunch &amp; Cocktails on Saturday 5 Dec 2026 \u22c5 12:30pm \u2013 3:30pm (United Kingdom Time). Thi",
         "id": "1a1348f372e6f2f8"
@@ -13952,15 +13992,27 @@
         "subject": "Invitation: JoJo Spain Holiday @ Mon 18 Oct - Mon 25 Oct 2027 (Coach JoJo)",
         "snippet": "JoJo Spain Holiday You have been invited by Grace Smith to attend an event named JoJo Spain Holiday on Monday 18 Oct \u2013 Monday 25 Oct 2027. When Monday 18 Oct \u2013 Monday 25 Oct 2027 Guests Grace Smith -",
         "id": "1a130721ad8ccfff"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Declined: Basher and Jo hyrox @ Wed 11 Nov 2026 (Coach JoJo)",
-        "snippet": "Basher and Jo hyrox Grace Smith has declined this invitation. When Wednesday 11 Nov 2026 Guests Coach JoJo - organiser eiliskearns13@gmail.com Grace Smith View all guest info Invitation from Google",
-        "id": "1a11290df561be92"
       }
     ],
     "important": [
+      {
+        "from": "Grace Smith",
+        "subject": "Updated invitation: Lunch at Cloth Ear @ Sat 5 Dec 2026 1:30pm - 2:30pm (GMT) (Coach JoJo)",
+        "snippet": "Lunch at Cloth Ear You have been invited by Grace Smith to attend an event named Lunch at Cloth Ear on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 2:30pm (United Kingdom Time). This event has b",
+        "id": "1a135cd0f72a8dd6"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Cocktails Merchant @ Sat 5 Dec 2026 12:30pm - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Cocktails Merchant You have been invited by Grace Smith to attend an event named Cocktails Merchant on Saturday 5 Dec 2026 \u22c5 12:30pm \u2013 1:30pm (United Kingdom Time). When Saturday 5",
+        "id": "1a135cca65bf8de6"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Lunch at Cloth Ear @ Sat 5 Dec 2026 1:30pm - 2:30pm (GMT) (Coach JoJo)",
+        "snippet": "Lunch at Cloth Ear You have been invited by Grace Smith to attend an event named Lunch at Cloth Ear on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 2:30pm (United Kingdom Time). When Saturday 5 ",
+        "id": "1a135cc29e556d10"
+      },
       {
         "from": "Grace Smith",
         "subject": "Invitation: JoJo Spain Holiday @ Mon 18 Oct - Mon 25 Oct 2027 (Coach JoJo)",
@@ -13968,6 +14020,6 @@
         "id": "1a130721ad8ccfff"
       }
     ],
-    "urgent_count": 3
+    "urgent_count": 5
   }
 }
