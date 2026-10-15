@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T11:19:50.956077+00:00",
+  "generated_at": "2026-10-15T14:01:03.449527+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4328,7 +4328,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Good morning, Coach Grace. Please be advised that I can't still access the follow up files.",
-        "hours": 4,
+        "hours": 6,
         "name": "Julie Lapaz"
       }
     ],
@@ -7706,9 +7706,9 @@
           "name": "Barbelle",
           "sessions": 13,
           "cap": 9,
-          "avg_attending": 6.8,
-          "fill_rate": 75,
-          "status": "healthy"
+          "avg_attending": 6.7,
+          "fill_rate": 74,
+          "status": "attention"
         },
         {
           "name": "Build: Lower",
@@ -7722,8 +7722,8 @@
           "name": "Engine",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 8.2,
-          "fill_rate": 68,
+          "avg_attending": 8.1,
+          "fill_rate": 67,
           "status": "attention"
         },
         {
@@ -13938,6 +13938,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Fwd: Invitation: Warm-Up & Recovery Workshop with Hyperice at BLK BOX, Sat 31 Oct",
+        "snippet": "---------- Forwarded message --------- From: Jordan Vaughan &lt;jvaughan@hyperice.com&gt; Date: Thu, 15 Oct 2026 at 13:41 Subject: Invitation: Warm-Up &amp; Recovery Workshop with Hyperice at BLK BOX,",
+        "id": "1a13f9c0ffa66523"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Updated invitation: Coaches Xmas Lunch & Cocktails @ Sat 5 Dec 2026 12:30pm - 4pm (GMT) (Coach JoJo)",
         "snippet": "Coaches Xmas Lunch &amp; Cocktails You have been invited by Grace Smith to attend an event named Coaches Xmas Lunch &amp; Cocktails on Saturday 5 Dec 2026 \u22c5 12:30pm \u2013 4pm (United Kingdom Time). This",
         "id": "1a13c21a76ad9348"
@@ -13950,6 +13956,12 @@
       }
     ],
     "important": [
+      {
+        "from": "Grace Smith",
+        "subject": "Fwd: Invitation: Warm-Up & Recovery Workshop with Hyperice at BLK BOX, Sat 31 Oct",
+        "snippet": "---------- Forwarded message --------- From: Jordan Vaughan &lt;jvaughan@hyperice.com&gt; Date: Thu, 15 Oct 2026 at 13:41 Subject: Invitation: Warm-Up &amp; Recovery Workshop with ",
+        "id": "1a13f9c0ffa66523"
+      },
       {
         "from": "Grace Smith",
         "subject": "Updated invitation: Lunch at Cloth Ear @ Sat 5 Dec 2026 1:30pm - 2:30pm (GMT) (Coach JoJo)",
@@ -13975,6 +13987,6 @@
         "id": "1a130721ad8ccfff"
       }
     ],
-    "urgent_count": 2
+    "urgent_count": 3
   }
 }
