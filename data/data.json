@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T14:00:57.701572+00:00",
+  "generated_at": "2026-10-16T18:48:24.134373+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-10-16",
     "event_count": 7,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "enquiry_count": 2,
     "calendar": [
       {
@@ -90,7 +90,18 @@
         "prep": "Confirm details and purpose of this meeting."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Marcie Tucker",
+        "from_raw": "Marcie Tucker <marcie@theenterpriseworld.com>",
+        "subject": "Exclusive Invitation: Grace Smith For NEXT Conclave: HER Edition, Dubai 2027",
+        "snippet": "Dear Grace, Good Day! It is a pleasure connecting with you. We are delighted to invite you to be part of NEXT Conclave: HER Edition \u2014 Dubai 2027, taking place on 30 January 2027 at Le M\u00e9ridien Dubai",
+        "id": "1a145bcf57711cae",
+        "thread_id": "1a145bcf57711cae",
+        "msg_count": 1,
+        "draft_id": "r2609066256272591023"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -114,9 +125,9 @@
     ],
     "checkins": {
       "by_email": {
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -231,26 +242,35 @@
     {
       "name": "Zara McCaughan",
       "channel": "Phone",
-      "message": "I'm sure you cannot wait to meet him \ud83d\udc99 x",
+      "message": "Thank u so much \u2764\ufe0f\n\nSo glad that Dan is keeping well. I remember that feeling of being so fed up and uncomfortable, and so ready to have it all over. Will be so worth it all once he arrives. It's the ",
       "age": "0h ago",
-      "unread": 4,
+      "unread": 2,
       "conv_id": "j6uSpfPFXUJwKQo0Lkvs",
       "contact_id": "KKd6yfEoXgp9LkdyqSC0"
     },
     {
-      "name": "Jo",
+      "name": "Davina Dickson",
       "channel": "Phone",
-      "message": "https://www.instagram.com/reel/DeiRuWvS3ZY/",
+      "message": "Thanks Grace",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "ko3XeODGa2uehvdmRWzw",
+      "contact_id": "R6uR5DakIYaq4I0uvmVi"
+    },
+    {
+      "name": "Anne Forgrave",
+      "channel": "Phone",
+      "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
       "age": "1h ago",
-      "unread": 2,
-      "conv_id": "SSmsaXAmGesXC4DA1BV3",
-      "contact_id": "xa3rPNDLcMKM9VtjK91V"
+      "unread": 1,
+      "conv_id": "ENGctHymqHMc3itSqwyW",
+      "contact_id": "oLPVHGhijJv9fTFXmwFJ"
     },
     {
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "Enjoy you two \u2026 \n\nWe are doing ok . Sarah not in great form but covering it with a smile and grunt ! \n\nHer Sports teacher asked to see the video you took of her lifting at Gym !",
-      "age": "1h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -259,25 +279,16 @@
       "name": "Danielle B",
       "channel": "Phone",
       "message": "Can't wait to see you wearing banks \ud83e\udd70",
-      "age": "3h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "HI7MIoXVyBosoYmMsqvw",
       "contact_id": "PxU8tUUapZek9a2ZDT5X"
     },
     {
-      "name": "Eilis Kearns",
-      "channel": "Phone",
-      "message": "No probs at all thanks!",
-      "age": "3h ago",
-      "unread": 1,
-      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
-      "contact_id": "SL5iEZ30xiRwJF12kd5S"
-    },
-    {
       "name": "Joanne Hall",
       "channel": "Phone",
       "message": "\u2611\ufe0ffrom other device",
-      "age": "5h ago",
+      "age": "10h ago",
       "unread": 0,
       "conv_id": "7AupKhnC2kTzAlOTMyYW",
       "contact_id": "XqQqyixSpJbS6mYf5tQO"
@@ -286,7 +297,7 @@
       "name": "Gemma McDonagh",
       "channel": "Phone",
       "message": "Hi Gemma, good morning.  just sending the right link for the Jumpstart. Sorry if this cause confusion. https://goteamup.com/p/894542-forge-female-fitness/memberships/269528/",
-      "age": "6h ago",
+      "age": "11h ago",
       "unread": 0,
       "conv_id": "9mgfsU6FFr74LE7BmVlC",
       "contact_id": "qixXi625E3AxHJmoGaYt"
@@ -295,7 +306,7 @@
       "name": "Brennah Brown | Next-Gen Studio Strategy",
       "channel": "Phone",
       "message": "You're officially on the waitlist! What are your current challenges with social media?",
-      "age": "8h ago",
+      "age": "13h ago",
       "unread": 0,
       "conv_id": "Bwl452ZfEPl82GCvRwqg",
       "contact_id": "GWNAcMFIZJnknTIAPIpA"
@@ -304,7 +315,7 @@
       "name": "Padel Society",
       "channel": "Phone",
       "message": "Hey Team \ud83d\udc4b\n\nWe\u2019d love to team up with you! Through our Gym Partner Programme, your members get 10% off court bookings on our four panoramic courts (two covered, two outdoor). It\u2019s a nice extra perk fo",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 0,
       "conv_id": "K1iYwMRPATMsevR4y7mZ",
       "contact_id": "b5lbPYyCZ3iJOiz3uPsi"
@@ -317,15 +328,6 @@
       "unread": 1,
       "conv_id": "HO9iqqpYqx7IEOqNKfMI",
       "contact_id": "1QXILUZCHQ9clv00blzj"
-    },
-    {
-      "name": "Elizabeth Greenaway",
-      "channel": "Phone",
-      "message": "Hey Grace, looking advice before purchasing \ud83e\udee3.        Do you think this is worth \u00a3200 excluding weights but getting mats?",
-      "age": "2d ago",
-      "unread": 2,
-      "conv_id": "Z1JjEXnxshsXv22Joew4",
-      "contact_id": "LVMDPIWXCTZN8ASWzdu2"
     }
   ],
   "jumpstart": {
@@ -5318,8 +5320,8 @@
     "unreplied_dms": [
       {
         "user_id": "U0BLXE1KQQH",
-        "text": "Good morning, Coach Grace. Please be advised that I can't still access the follow up files.",
-        "hours": 30,
+        "text": "New <mailto:enquiries@theforge.pt|enquiries@theforge.pt> password: 5A5UPT4V7hW&amp;9hY&lt;\n\nI needed to reset it for all our accounts",
+        "hours": 0,
         "name": "Julie Lapaz"
       }
     ],
@@ -8240,12 +8242,12 @@
             "count": 619
           },
           {
-            "day": "Thursday",
-            "count": 455
+            "day": "Friday",
+            "count": 469
           },
           {
-            "day": "Friday",
-            "count": 446
+            "day": "Thursday",
+            "count": 455
           }
         ],
         "bottom_days": [
@@ -8254,12 +8256,12 @@
             "count": 273
           },
           {
-            "day": "Friday",
-            "count": 446
-          },
-          {
             "day": "Thursday",
             "count": 455
+          },
+          {
+            "day": "Friday",
+            "count": 469
           },
           {
             "day": "Monday",
@@ -8293,7 +8295,7 @@
           },
           {
             "name": "Circuits",
-            "count": 235
+            "count": 247
           }
         ],
         "bottom_classes": [
@@ -8315,11 +8317,11 @@
           },
           {
             "name": "Mobility",
-            "count": 222
+            "count": 233
           },
           {
             "name": "Circuits",
-            "count": 235
+            "count": 247
           }
         ],
         "top_slots": [
@@ -8331,6 +8333,15 @@
             "sessions": 11,
             "avg": 10.4,
             "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 135,
+            "sessions": 13,
+            "avg": 10.4,
+            "label": "Friday 6pm Circuits"
           },
           {
             "day": "Tuesday",
@@ -8345,8 +8356,8 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 113,
-            "sessions": 11,
+            "count": 124,
+            "sessions": 12,
             "avg": 10.3,
             "label": "Friday 7pm Mobility"
           },
@@ -8367,15 +8378,6 @@
             "sessions": 12,
             "avg": 10.2,
             "label": "Thursday 7am Build: Full Body"
-          },
-          {
-            "day": "Friday",
-            "time": "6pm",
-            "name": "Circuits",
-            "count": 123,
-            "sessions": 12,
-            "avg": 10.2,
-            "label": "Friday 6pm Circuits"
           }
         ],
         "bottom_slots": [
@@ -8434,7 +8436,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3228
+        "total_attended": 3251
       },
       "last_30_days": {
         "top_days": [
@@ -8452,7 +8454,7 @@
           },
           {
             "day": "Friday",
-            "count": 167
+            "count": 190
           },
           {
             "day": "Thursday",
@@ -8470,7 +8472,7 @@
           },
           {
             "day": "Friday",
-            "count": 167
+            "count": 190
           },
           {
             "day": "Monday",
@@ -8499,12 +8501,12 @@
             "count": 105
           },
           {
-            "name": "Elevate",
-            "count": 91
+            "name": "Mobility",
+            "count": 93
           },
           {
-            "name": "Mobility",
-            "count": 82
+            "name": "Circuits",
+            "count": 91
           }
         ],
         "bottom_classes": [
@@ -8525,12 +8527,12 @@
             "count": 69
           },
           {
-            "name": "Circuits",
-            "count": 79
+            "name": "Elevate",
+            "count": 91
           },
           {
-            "name": "Mobility",
-            "count": 82
+            "name": "Circuits",
+            "count": 91
           }
         ],
         "top_slots": [
@@ -8547,10 +8549,19 @@
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
             "label": "Friday 6pm Circuits"
+          },
+          {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 50,
+            "sessions": 5,
+            "avg": 10.0,
+            "label": "Friday 7pm Mobility"
           },
           {
             "day": "Monday",
@@ -8569,15 +8580,6 @@
             "sessions": 4,
             "avg": 9.8,
             "label": "Thursday 7am Build: Full Body"
-          },
-          {
-            "day": "Friday",
-            "time": "7pm",
-            "name": "Mobility",
-            "count": 39,
-            "sessions": 4,
-            "avg": 9.8,
-            "label": "Friday 7pm Mobility"
           },
           {
             "day": "Monday",
@@ -8645,7 +8647,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1071
+        "total_attended": 1094
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. Launch a paid \"Open Barbell Lab\" block (30\u201345 min) on Thursday/Friday afternoons between PT slots \u2014 members can drop in to practice technique or repeat that week's Build class movements unsupervised, positioning it as affordable skill-building without a full class commitment.\n\n2. Run a monthly \"Capacity & Engine Masterclass\" workshop (45 min, small group, \u20ac8\u201312) on a quiet Friday or Saturday morning, led by an instructor explaining the \"why\" behind these conditioning formats and who they suit best \u2014 removes intimidation and builds a dedicated cohort.\n\n**For quieter classes themselves:**\n\n3. Move Barbelle to Tuesday or Wednesday morning (your peak days) and pair it with a targeted 2-week email campaign to Upper/Full Body members, positioning it as \"accessory work to complement your Build classes\" \u2014 test it as a complementary sister-class rather than standalone, with one free trial offer for existing members.",
       "capacity": [
@@ -8685,7 +8687,7 @@
           "name": "Mobility",
           "sessions": 28,
           "cap": 12,
-          "avg_attending": 9.4,
+          "avg_attending": 9.3,
           "fill_rate": 78,
           "status": "healthy"
         },
