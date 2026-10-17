@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T05:00:53.794379+00:00",
+  "generated_at": "2026-10-17T10:33:24.375897+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1120,6 +1120,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Lesley Laverty",
+        "last_scan": "2026-10-17",
+        "scan_count": 3,
+        "weight": 169.5,
+        "smm": 49.4,
+        "pbf": 46.4,
+        "bmi": 32.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -1.7,
+        "smm_change": 1.8,
+        "pbf_change": -2.2,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-11-28",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Erin Honeyford",
         "last_scan": "2026-10-16",
@@ -2343,30 +2367,6 @@
         "next_due": "2026-10-17",
         "days_to_due": 0,
         "overdue": false
-      },
-      {
-        "name": "Lesley Laverty",
-        "last_scan": "2026-09-04",
-        "scan_count": 2,
-        "weight": 171.2,
-        "smm": 47.6,
-        "pbf": 48.6,
-        "bmi": 32.4,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": -6.9,
-        "smm_change": -0.2,
-        "pbf_change": -2.0,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-16",
-        "days_to_due": -1,
-        "overdue": true
       },
       {
         "name": "Amanda Hanna",
@@ -4319,14 +4319,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0BLXE1KQQH",
-        "text": "New <mailto:enquiries@theforge.pt|enquiries@theforge.pt> password: 5A5UPT4V7hW&amp;9hY&lt;\n\nI needed to reset it for all our accounts",
-        "hours": 11,
-        "name": "Julie Lapaz"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -4656,7 +4649,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Remove Grace's class load immediately.** Redistribute her 20 Build: Lower and remaining classes to JoJo and Eilis on their existing strong days \u2014 JoJo can absorb Lower (technical), Eilis can cover Elevate and Full Body. This frees Grace completely from delivery.\n\n\u2022 **JoJo is over-loaded at 140 sessions.** She's carrying 28 Upper classes, 27 PT clients, and technical delivery. Cap her at ~100 sessions by moving some PT clients to Eilis (who has capacity at 111 and currently only 39 PT) and reassign routine Body Composition scans to whoever is on duty that day.\n\n\u2022 **Eilis is under-utilised on PT.** She has room for 15\u201320 more PT clients \u2014 actively move mid-tier clients from JoJo's book to Eilis to balance the 1:1 load and reduce dependency on JoJo for income-generating work.\n\n\u2022 **Protect JoJo's technical classes (Upper, Strongevity, Tuesdays) and use Eilis for high-volume, lower-technical delivery** (Full Body, Plate, Mobility, Elevate) where she can build confidence and free JoJo for her strengths.\n\n\u2022 **Assign Body Composition scans to a duty rota** (not tied to coaching load) so they don't skew workload data; this alone will drop both coaches' apparent session count by ~30 and make real coaching balance clearer.\n\n\u2022 **Audit No Sweat Intros and Strongevity.** JoJo is the only resource for both; train Eilis on Intros to provide cover and give JoJo breathing room for higher-value technical work.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (20 sessions) should split between JoJo and Eilis; Strongevity (4), Elevate (3), and No Sweat Intro (2) go to Eilis. This removes Grace from delivery entirely and uses Eilis's underutilised class capacity.\n\n\u2022 **Reduce JoJo's PT load**: She's carrying 27 PTs while also running 28 Upper and other classes \u2014 she's the only one doing both at volume. Cap JoJo at 15 PTs per month and move 10\u201312 to Eilis, who currently has 39 but no Upper Body alternative classes to teach; this balances their total workload.\n\n\u2022 **Shift Upper Body dependency**: JoJo is the sole Upper coach (28 sessions). Train Eilis on Upper Body or schedule a second Upper slot with JoJo to create redundancy \u2014 one person carrying a popular class is a bottleneck.\n\n\u2022 **Remove InBody scans from coaching metrics**: You've logged 45 scans across the team (21 + 19 + 5). These aren't coaching and inflate perceived load. Stop counting them against timetable hours so real class and PT time shows clearly.\n\n\u2022 **Stabilise Eilis's growth**: She now has 111 sessions across 6 different class types plus 39 PTs. Prioritise depth in 2\u20133 class types (e.g. Full Body, Elevate, Mobility) before adding more, and cap her PT growth at 30 while JoJo carries the overflow.\n\n\u2022 **Confirm JoJo's Tuesday commitment**: She's the only coach on this high-skill day \u2014 document exactly which sessions *require* JoJo versus which Eilis could co-deliver or shadow to build capability for future",
     "period": "September 2026"
   },
   "asana": {
@@ -7259,7 +7252,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 245
+            "count": 270
           },
           {
             "day": "Thursday",
@@ -7293,7 +7286,7 @@
           },
           {
             "name": "Elevate",
-            "count": 337
+            "count": 362
           },
           {
             "name": "Strongevity",
@@ -7400,9 +7393,9 @@
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
-            "count": 61,
-            "sessions": 10,
-            "avg": 6.1,
+            "count": 65,
+            "sessions": 11,
+            "avg": 5.9,
             "label": "Saturday 9am Elevate"
           },
           {
@@ -7442,7 +7435,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3223
+        "total_attended": 3248
       },
       "last_30_days": {
         "top_days": [
@@ -7470,7 +7463,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 64
+            "count": 89
           },
           {
             "day": "Thursday",
@@ -7503,16 +7496,16 @@
             "count": 174
           },
           {
+            "name": "Elevate",
+            "count": 116
+          },
+          {
             "name": "Strongevity",
             "count": 94
           },
           {
             "name": "Mobility",
             "count": 93
-          },
-          {
-            "name": "Elevate",
-            "count": 91
           }
         ],
         "bottom_classes": [
@@ -7537,8 +7530,8 @@
             "count": 81
           },
           {
-            "name": "Elevate",
-            "count": 91
+            "name": "Mobility",
+            "count": 93
           }
         ],
         "top_slots": [
@@ -7602,9 +7595,9 @@
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
-            "count": 11,
-            "sessions": 3,
-            "avg": 3.7,
+            "count": 15,
+            "sessions": 4,
+            "avg": 3.8,
             "label": "Saturday 9am Elevate"
           },
           {
@@ -7653,7 +7646,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1042
+        "total_attended": 1067
       },
       "suggestion": "**For quiet studio time:**\n\n1. Add a Friday lunchtime \"Open Gym + Coach\" slot (30-45 mins) \u2014 members pay \u20ac5-8 to book a coach for form checks while lifting freely; captures the Friday slump and creates revenue from dead time between classes.\n\n2. Run a monthly \"Barbelle & Capacity Workshop\" on Thursday evenings (quietest day, lowest-attendance classes) \u2014 20-min masterclass on technique/mindset for those two classes, then a discounted trial class; positions them as \"learner-friendly\" rather than niche.\n\n3. Audit the schedule gaps on Saturdays: slot a Saturday morning \"Strongevity + Coffee\" social session \u2014 keeps Mobility/Strongevity members engaged on the quiet day and builds community around underperforming classes.\n\n**To lift the quieter classes themselves:**\n\n- **Barbelle & Capacity**: Send targeted invites to members who regularly do Build classes \u2014 frame as \"complement your strength work\" with a one-time guest pass; these classes likely appeal to existing lifters but lack visibility.\n- **Engine & Plate**: Trial moving Engine to Tuesday (busy day) if schedule allows, or add a weekly \"Engine Challenge\" leaderboard in the app to gamify attendance.\n- **Mobility**: Rebrand as \"Recovery & Mobility for Build Members",
       "capacity": [
@@ -8071,13 +8064,6 @@
         "last_seen": "2026-09-28"
       },
       {
-        "id": 10670081,
-        "name": "Donna Watton",
-        "membership": "Empower",
-        "days_absent": 18,
-        "last_seen": "2026-09-29"
-      },
-      {
         "id": 13542031,
         "name": "Elizabeth Steele",
         "membership": "Strongevity Membership",
@@ -8167,6 +8153,13 @@
         "membership": "Strongevity Membership",
         "days_absent": 24,
         "last_seen": "2026-09-23"
+      },
+      {
+        "id": 13550083,
+        "name": "Victoria Taylor",
+        "membership": "8 PT Sessions",
+        "days_absent": 32,
+        "last_seen": "2026-09-15"
       }
     ],
     "celebrations": {
@@ -8361,7 +8354,13 @@
           "status": "registered"
         }
       ],
-      "upcoming": []
+      "upcoming": [
+        {
+          "name": "Noleen MCKILLOP",
+          "date": "2026-10-19",
+          "status": "registered"
+        }
+      ]
     },
     "lead_bookings": [
       {
