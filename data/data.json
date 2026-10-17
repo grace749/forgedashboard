@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T10:33:24.375897+00:00",
+  "generated_at": "2026-10-17T14:00:56.358906+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,19 +8,9 @@
   "brief": {
     "date": "2026-10-17",
     "event_count": 15,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "enquiry_count": 2,
     "calendar": [
-      {
-        "title": "Masters score released",
-        "time": "all day",
-        "start_raw": "2026-10-17",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": "Review Masters scores; prepare member communications if needed."
-      },
       {
         "title": "Arie Padel Lesson",
         "time": "9:00am",
@@ -29,7 +19,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm court booking; prepare padel rackets and balls."
+        "prep": "Review Masters scores; prepare member communications if needed."
       },
       {
         "title": "Kingfisher spa",
@@ -41,10 +31,20 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm spa appointment details and any package requirements."
+        "prep": "Confirm court booking; prepare padel rackets and balls."
       },
       {
         "title": "LOWER 1",
+        "time": "all day",
+        "start_raw": "2026-10-19",
+        "day": "Monday",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Confirm spa appointment details and any package requirements."
+      },
+      {
+        "title": "Masters score released",
         "time": "all day",
         "start_raw": "2026-10-19",
         "day": "Monday",
@@ -175,7 +175,18 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Walled City Brewery",
+        "from_raw": "Walled City Brewery <info@walledcitybrewery.com>",
+        "subject": "Reservation Feedback for Walled City Brewery",
+        "snippet": "Walled City Brewery Post Reservation Feedback Dear Grace Smith Thank you for joining us! We would appreciate a moment of your time to provide us with some feedback. This helps us to monitor service",
+        "id": "1a14a29089942cef",
+        "thread_id": "1a14a29089942cef",
+        "msg_count": 1,
+        "draft_id": "r8017632823907860940"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -199,9 +210,9 @@
     ],
     "checkins": {
       "by_email": {
-        "sarah@nourishandnurtu.re": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -317,7 +328,7 @@
       "name": "Kerrie MacKerracher",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/DcgokXZsE9-/",
-      "age": "0h ago",
+      "age": "3h ago",
       "unread": 2,
       "conv_id": "LXa0si23v1eSjNLK7YWX",
       "contact_id": "JCgWX9GrzpqqdDUGKw9n"
@@ -326,7 +337,7 @@
       "name": "Mathilda Taulbutt",
       "channel": "Phone",
       "message": "Hi yes would be happy to discuss - I know I need to do strength training or similar. Many thanks",
-      "age": "3h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "RY7QyiFivHQ4LSxJ1sh6",
       "contact_id": "LbqO1KQgIQzWKekjJNjF"
@@ -335,7 +346,7 @@
       "name": "Gemma McDonagh",
       "channel": "Phone",
       "message": "Oh perfect thank you",
-      "age": "8h ago",
+      "age": "11h ago",
       "unread": 1,
       "conv_id": "9mgfsU6FFr74LE7BmVlC",
       "contact_id": "qixXi625E3AxHJmoGaYt"
@@ -344,25 +355,16 @@
       "name": "Eilis Kearns",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "14h ago",
+      "age": "18h ago",
       "unread": 1,
       "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
       "contact_id": "SL5iEZ30xiRwJF12kd5S"
     },
     {
-      "name": "Zara McCaughan",
-      "channel": "Phone",
-      "message": "Thank u so much \u2764\ufe0f\n\nSo glad that Dan is keeping well. I remember that feeling of being so fed up and uncomfortable, and so ready to have it all over. Will be so worth it all once he arrives. It's the ",
-      "age": "16h ago",
-      "unread": 2,
-      "conv_id": "j6uSpfPFXUJwKQo0Lkvs",
-      "contact_id": "KKd6yfEoXgp9LkdyqSC0"
-    },
-    {
       "name": "Davina Dickson",
       "channel": "Phone",
       "message": "Thanks Grace",
-      "age": "16h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "ko3XeODGa2uehvdmRWzw",
       "contact_id": "R6uR5DakIYaq4I0uvmVi"
@@ -371,7 +373,7 @@
       "name": "Anne Forgrave",
       "channel": "Phone",
       "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "16h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "ENGctHymqHMc3itSqwyW",
       "contact_id": "oLPVHGhijJv9fTFXmwFJ"
@@ -380,7 +382,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "Enjoy you two \u2026 \n\nWe are doing ok . Sarah not in great form but covering it with a smile and grunt ! \n\nHer Sports teacher asked to see the video you took of her lifting at Gym !",
-      "age": "21h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -5386,7 +5388,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "New <mailto:enquiries@theforge.pt|enquiries@theforge.pt> password: 5A5UPT4V7hW&amp;9hY&lt;\n\nI needed to reset it for all our accounts",
+        "hours": 20,
+        "name": "Julie Lapaz"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -11813,17 +11822,10 @@
         "total": "\u00a338.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-17",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
-    "count": 98,
-    "total_spend": 9454.6,
+    "count": 97,
+    "total_spend": 9426.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": null,

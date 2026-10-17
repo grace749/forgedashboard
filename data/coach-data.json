@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T10:33:24.375897+00:00",
+  "generated_at": "2026-10-17T14:00:56.358906+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4319,7 +4319,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "New <mailto:enquiries@theforge.pt|enquiries@theforge.pt> password: 5A5UPT4V7hW&amp;9hY&lt;\n\nI needed to reset it for all our accounts",
+        "hours": 20,
+        "name": "Julie Lapaz"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -10444,17 +10451,10 @@
         "total": "\u00a338.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-17",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
-    "count": 98,
-    "total_spend": 9454.6,
+    "count": 97,
+    "total_spend": 9426.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
@@ -14002,12 +14002,6 @@
         "subject": "Invitation: Lunch at Cloth Ear @ Sat 5 Dec 2026 1:30pm - 2:30pm (GMT) (Coach JoJo)",
         "snippet": "Lunch at Cloth Ear You have been invited by Grace Smith to attend an event named Lunch at Cloth Ear on Saturday 5 Dec 2026 \u22c5 1:30pm \u2013 2:30pm (United Kingdom Time). When Saturday 5 ",
         "id": "1a135cc29e556d10"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Invitation: JoJo Spain Holiday @ Mon 18 Oct - Mon 25 Oct 2027 (Coach JoJo)",
-        "snippet": "JoJo Spain Holiday You have been invited by Grace Smith to attend an event named JoJo Spain Holiday on Monday 18 Oct \u2013 Monday 25 Oct 2027. When Monday 18 Oct \u2013 Monday 25 Oct 2027 G",
-        "id": "1a130721ad8ccfff"
       }
     ],
     "urgent_count": 3
