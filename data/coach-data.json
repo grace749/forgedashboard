@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T14:00:53.938853+00:00",
+  "generated_at": "2026-10-19T20:34:39.007869+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -5047,7 +5047,7 @@
     }
   },
   "teamup": {
-    "total_members": 169,
+    "total_members": 168,
     "recurring": 113,
     "recurring_members": [
       {
@@ -5543,7 +5543,7 @@
       }
     ],
     "new_this_month": 13,
-    "cancellations_this_month": 4,
+    "cancellations_this_month": 5,
     "leaving_members": [
       {
         "id": 10057245,
@@ -5560,6 +5560,10 @@
       {
         "id": 13202275,
         "name": "Nuala O'Neill"
+      },
+      {
+        "id": 13553225,
+        "name": "Rachel Linton"
       }
     ],
     "paused": 5,
@@ -5589,6 +5593,11 @@
       {
         "month": "2026-10",
         "members": [
+          {
+            "name": "Victoria Taylor",
+            "membership": "8 PT Sessions",
+            "end": "2026-10-19"
+          },
           {
             "name": "Irene Robinson",
             "membership": "4 PT Sessions",
@@ -5861,6 +5870,11 @@
       {
         "month": "2026-10",
         "members": [
+          {
+            "name": "Victoria Taylor",
+            "membership": "8 PT Sessions",
+            "end": "2026-10-19"
+          },
           {
             "name": "Irene Robinson",
             "membership": "4 PT Sessions",
@@ -6336,8 +6350,8 @@
         ]
       }
     ],
-    "cancelled_ytd": 50,
-    "churn_rate": 2.5,
+    "cancelled_ytd": 51,
+    "churn_rate": 3.1,
     "avg_member_price": 137.85,
     "monthly_recurring_revenue": 15026.0,
     "avg_tenure_months": 8.5,
@@ -7043,28 +7057,6 @@
         ]
       },
       {
-        "name": "8 PT Sessions",
-        "count": 4,
-        "members": [
-          {
-            "id": 12162382,
-            "name": "Catherine Gavin"
-          },
-          {
-            "id": 8500731,
-            "name": "Noor AlShehabi"
-          },
-          {
-            "id": 14025389,
-            "name": "Pat McTaggart"
-          },
-          {
-            "id": 13550083,
-            "name": "Victoria Taylor"
-          }
-        ]
-      },
-      {
         "name": "Foundation PAID IN FULL",
         "count": 4,
         "members": [
@@ -7083,6 +7075,24 @@
           {
             "id": 9414493,
             "name": "Zara Morrison"
+          }
+        ]
+      },
+      {
+        "name": "8 PT Sessions",
+        "count": 3,
+        "members": [
+          {
+            "id": 12162382,
+            "name": "Catherine Gavin"
+          },
+          {
+            "id": 8500731,
+            "name": "Noor AlShehabi"
+          },
+          {
+            "id": 14025389,
+            "name": "Pat McTaggart"
           }
         ]
       },
@@ -7228,7 +7238,7 @@
           },
           {
             "day": "Monday",
-            "count": 579
+            "count": 605
           },
           {
             "day": "Friday",
@@ -7254,7 +7264,7 @@
           },
           {
             "day": "Monday",
-            "count": 579
+            "count": 605
           },
           {
             "day": "Wednesday",
@@ -7272,7 +7282,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 466
+            "count": 492
           },
           {
             "name": "Elevate",
@@ -7425,17 +7435,17 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3208
+        "total_attended": 3234
       },
       "last_30_days": {
         "top_days": [
           {
-            "day": "Tuesday",
-            "count": 234
+            "day": "Monday",
+            "count": 253
           },
           {
-            "day": "Monday",
-            "count": 227
+            "day": "Tuesday",
+            "count": 234
           },
           {
             "day": "Wednesday",
@@ -7468,18 +7478,18 @@
             "count": 185
           },
           {
-            "day": "Monday",
-            "count": 227
+            "day": "Tuesday",
+            "count": 234
           }
         ],
         "top_classes": [
           {
-            "name": "Build: Upper",
-            "count": 205
+            "name": "Build: Lower",
+            "count": 213
           },
           {
-            "name": "Build: Lower",
-            "count": 187
+            "name": "Build: Upper",
+            "count": 205
           },
           {
             "name": "Build: Full Body",
@@ -7562,6 +7572,15 @@
             "label": "Monday 11am Strongevity"
           },
           {
+            "day": "Monday",
+            "time": "6pm",
+            "name": "Build: Lower",
+            "count": 49,
+            "sessions": 5,
+            "avg": 9.8,
+            "label": "Monday 6pm Build: Lower"
+          },
+          {
             "day": "Saturday",
             "time": "8am",
             "name": "Elevate",
@@ -7569,15 +7588,6 @@
             "sessions": 4,
             "avg": 9.8,
             "label": "Saturday 8am Elevate"
-          },
-          {
-            "day": "Tuesday",
-            "time": "11am",
-            "name": "Strongevity",
-            "count": 29,
-            "sessions": 3,
-            "avg": 9.7,
-            "label": "Tuesday 11am Strongevity"
           }
         ],
         "bottom_slots": [
@@ -7636,7 +7646,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1006
+        "total_attended": 1032
       },
       "suggestion": "**For quiet studio time (gaps between PT blocks and classes):**\n\n1. Run a paid \"Open Studio\" slot on Thursday or Friday mornings (your quietest days) where members can book a studio spot for self-guided training, circuits, or conditioning work \u2014 low-lift to run, fills dead air, and captures members who want flexibility without a full class commitment.\n\n2. Launch a rotating \"Technique Workshop\" series (30 mins, 6\u20138 capacity) in gaps on quieter days, focusing on form for underperforming classes like Engine, Barbelle, and Capacity \u2014 position it as free for members or \u00a35 drop-in, and use it as a low-pressure entry point to those classes.\n\n**For the quieter classes themselves:**\n\n3. Move **Barbelle** and **Engine** to Tuesday or Wednesday (your peak days) at off-peak times within those days \u2014 even a quieter slot on a busy day will pull more walk-ins than a prime slot on Thursday \u2014 and send a one-time targeted invite to Upper Body and Full Body class regulars who might enjoy them as complementary sessions.",
       "capacity": [
@@ -7692,8 +7702,8 @@
           "name": "Build: Lower",
           "sessions": 65,
           "cap": 13,
-          "avg_attending": 8.5,
-          "fill_rate": 71,
+          "avg_attending": 8.4,
+          "fill_rate": 70,
           "status": "attention"
         },
         {
@@ -7955,7 +7965,7 @@
       {
         "month": "2026-10",
         "active": 167,
-        "churn": 3.8,
+        "churn": 4.5,
         "by_type": {
           "Empower": 74,
           "8 PT Sessions": 4,
@@ -8131,13 +8141,6 @@
         "last_seen": "2026-09-04"
       },
       {
-        "id": 10726245,
-        "name": "Nichola McAuley",
-        "membership": "Elevate",
-        "days_absent": 13,
-        "last_seen": "2026-10-06"
-      },
-      {
         "id": 13202275,
         "name": "Nuala O'Neill",
         "membership": "Empower",
@@ -8150,6 +8153,13 @@
         "membership": "4 Class Pass",
         "days_absent": 28,
         "last_seen": "2026-09-21"
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Poulton",
+        "membership": "Empower",
+        "days_absent": 19,
+        "last_seen": "2026-09-30"
       }
     ],
     "celebrations": {
@@ -9639,15 +9649,6 @@
         "join_date": "2026-07-18",
         "membership": "Empower",
         "class_count": 29,
-        "last_momentum": null
-      },
-      {
-        "id": 13550083,
-        "name": "Victoria Taylor",
-        "email": "toritaylor24740@gmail.com",
-        "join_date": "2026-08-10",
-        "membership": "8 PT Sessions",
-        "class_count": 10,
         "last_momentum": null
       },
       {
