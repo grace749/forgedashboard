@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T05:00:51.668594+00:00",
+  "generated_at": "2026-10-19T12:59:18.555573+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -60,7 +60,7 @@
           true,
           true,
           true,
-          false
+          true
         ],
         "week_on": 6,
         "days_left": 0,
@@ -70,8 +70,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 4,
+        "missing_checkins": 1,
+        "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -110,38 +110,6 @@
         "pause_reason": ""
       },
       {
-        "name": "Claire Scullion",
-        "cohort": "September",
-        "joined": "2026-09-19",
-        "end": "2026-10-31",
-        "goal": "no form filled out",
-        "notes": "",
-        "nutrition_sent": true,
-        "inbody_done": true,
-        "check_ins": [
-          true,
-          true,
-          false,
-          false,
-          false,
-          false
-        ],
-        "week_on": 5,
-        "days_left": 12,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "",
-        "missing_checkins": 3,
-        "completed_checkins": 2,
-        "expected_checkins": 5,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": ""
-      },
-      {
         "name": "Helen Faulkner",
         "cohort": "September",
         "joined": "2026-09-28",
@@ -153,7 +121,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -166,8 +134,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
+        "missing_checkins": 1,
+        "completed_checkins": 3,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -185,7 +153,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -198,8 +166,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
+        "missing_checkins": 1,
+        "completed_checkins": 3,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -217,7 +185,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -230,8 +198,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 2,
+        "missing_checkins": 0,
+        "completed_checkins": 3,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -247,7 +215,7 @@
         "nutrition_sent": false,
         "inbody_done": true,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -262,8 +230,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 0,
+        "missing_checkins": 1,
+        "completed_checkins": 1,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -279,7 +247,7 @@
         "nutrition_sent": false,
         "inbody_done": false,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -294,8 +262,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 0,
+        "missing_checkins": 1,
+        "completed_checkins": 1,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -317,7 +285,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false
         ],
         "week_on": 6,
@@ -328,8 +296,8 @@
         "conv_chat_done": false,
         "welcome_pack": true,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 4,
+        "missing_checkins": 1,
+        "completed_checkins": 5,
         "expected_checkins": 6,
         "paused": false,
         "pink_red": false,
@@ -978,6 +946,38 @@
     ],
     "paused": [
       {
+        "name": "Claire Scullion",
+        "cohort": "September",
+        "joined": "2026-09-19",
+        "end": "2026-10-31",
+        "goal": "no form filled out",
+        "notes": "",
+        "nutrition_sent": true,
+        "inbody_done": true,
+        "check_ins": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 5,
+        "days_left": 12,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "not finishung personl issues",
+        "missing_checkins": 3,
+        "completed_checkins": 2,
+        "expected_checkins": 5,
+        "paused": true,
+        "pink_red": false,
+        "pause_reason": "not finishung personl issues"
+      },
+      {
         "name": "Lisa Rankin",
         "cohort": "JUNE",
         "joined": "2026-06-30",
@@ -1046,7 +1046,7 @@
       {
         "member": "Kathryn Alleyne",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 6)"
+        "detail": "Missing 1 check-in(s) (on week 6)"
       },
       {
         "member": "Kathryn Alleyne",
@@ -1064,34 +1064,19 @@
         "detail": "4d left \u2014 conversion chat not scheduled!"
       },
       {
-        "member": "Claire Scullion",
-        "type": "missing_checkin",
-        "detail": "Missing 3 check-in(s) (on week 5)"
-      },
-      {
-        "member": "Claire Scullion",
-        "type": "conversion",
-        "detail": "12d left \u2014 conversion chat not scheduled!"
-      },
-      {
         "member": "Helen Faulkner",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
+        "detail": "Missing 1 check-in(s) (on week 4)"
       },
       {
         "member": "Rebecca Gill",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
-      },
-      {
-        "member": "Patricia Mcauley",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 3)"
+        "detail": "Missing 1 check-in(s) (on week 4)"
       },
       {
         "member": "Paula Hodges",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 2)"
+        "detail": "Missing 1 check-in(s) (on week 2)"
       },
       {
         "member": "Paula Hodges",
@@ -1101,7 +1086,7 @@
       {
         "member": "Deirdre Wallace",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 2)"
+        "detail": "Missing 1 check-in(s) (on week 2)"
       },
       {
         "member": "Deirdre Wallace",
@@ -1110,8 +1095,8 @@
       }
     ],
     "stats": {
-      "active_count": 8,
-      "paused_count": 2,
+      "active_count": 7,
+      "paused_count": 3,
       "conv_rate": 48,
       "converted": 10,
       "not_converted": 6,
@@ -4650,7 +4635,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately.** Her Build: Lower (20 sessions) should split between JoJo and Eilis; her Strongevity (4) and Elevate (3) go to Eilis. This removes Grace from delivery entirely and uses Eilis's current lighter load.\n\n\u2022 **JoJo is over-loaded at 140 sessions.** She's carrying 28 Upper Body classes plus heavy PT (27 sessions). Offload her Upper Body classes to Eilis to balance the timetable and prevent burnout on your head coach.\n\n\u2022 **Eilis is ready to take more.** At 111 sessions (excluding scans), she has capacity. Moving Grace's classes and JoJo's Upper Body to her creates better distribution and develops Eilis's range \u2014 she'll gain experience in strength-focused classes.\n\n\u2022 **Stop counting Body Composition Scans as coaching load.** You have 45 scans across the team last month. Rotate these as admin tasks among all coaches (or assign to an admin role) to free up 10\u201315 real coaching hours per month.\n\n\u2022 **PT dependency is hidden.** JoJo and Eilis together delivered 66 PT sessions last month. If either is absent, coverage breaks. Train Eilis to take some of JoJo's regulars, or cap new PT clients to Eilis to build resilience.\n\n\u2022 **Review the No Sweat Intro load.** Grace and JoJo shared 11 intros in September. Assign these to Eilis going forward \u2014 it's a good confidence-builder and uses her available capacity.",
+    "advice": "\u2022 **Remove Grace's class load immediately.** Her 20 Build: Lower + 4 Strongevity + 3 Elevate + 1 Full Body (28 classes) should shift to JoJo and Eilis. This is the quickest win and frees Grace entirely from delivery.\n\n\u2022 **Redistribute Grace's 27 PT clients between JoJo and Eilis.** JoJo is already at 27 PTs; Eilis has 39. Consider moving 12\u201315 of Grace's clients to JoJo (bringing him to ~40) to balance the load more evenly and reduce Eilis's dominance in 1:1 work.\n\n\u2022 **Assign all InBody scans to Eilis.** She's doing 19; Grace has 5, JoJo has 21. Shift JoJo's 21 scans to Eilis (she'd handle ~40 total). Scans aren't real coaching \u2014 this frees JoJo's calendar for classes and protects his time from admin creep.\n\n\u2022 **Strengthen Eilis on lower-body and technical classes.** She's only doing Elevate (13), Plate (7), Mobility (6). Add her to Build: Full Body consistently and consider giving her Build: Lower sessions (non-Tuesday) to broaden her skillset and reduce JoJo's class dependency.\n\n\u2022 **Protect JoJo's Tuesdays and cap his class load at 25\u201330 per month.** He's running 48 classes + PTs + scans. Once Grace's classes are gone and scans move to Eilis, aim for JoJo at ~30 classes, Eilis at ~35\u201340 to balance fairly.\n\n\u2022 **Cover No Sweat Intro and Strongevity gaps",
     "period": "September 2026"
   },
   "asana": {
@@ -7243,7 +7228,7 @@
           },
           {
             "day": "Monday",
-            "count": 570
+            "count": 579
           },
           {
             "day": "Friday",
@@ -7269,7 +7254,7 @@
           },
           {
             "day": "Monday",
-            "count": 570
+            "count": 579
           },
           {
             "day": "Wednesday",
@@ -7287,7 +7272,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 457
+            "count": 466
           },
           {
             "name": "Elevate",
@@ -7440,7 +7425,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3199
+        "total_attended": 3208
       },
       "last_30_days": {
         "top_days": [
@@ -7450,7 +7435,7 @@
           },
           {
             "day": "Monday",
-            "count": 218
+            "count": 227
           },
           {
             "day": "Wednesday",
@@ -7484,7 +7469,7 @@
           },
           {
             "day": "Monday",
-            "count": 218
+            "count": 227
           }
         ],
         "top_classes": [
@@ -7494,7 +7479,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 178
+            "count": 187
           },
           {
             "name": "Build: Full Body",
@@ -7577,15 +7562,6 @@
             "label": "Monday 11am Strongevity"
           },
           {
-            "day": "Monday",
-            "time": "10am",
-            "name": "Build: Lower",
-            "count": 39,
-            "sessions": 4,
-            "avg": 9.8,
-            "label": "Monday 10am Build: Lower"
-          },
-          {
             "day": "Saturday",
             "time": "8am",
             "name": "Elevate",
@@ -7593,6 +7569,15 @@
             "sessions": 4,
             "avg": 9.8,
             "label": "Saturday 8am Elevate"
+          },
+          {
+            "day": "Tuesday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 29,
+            "sessions": 3,
+            "avg": 9.7,
+            "label": "Tuesday 11am Strongevity"
           }
         ],
         "bottom_slots": [
@@ -7651,7 +7636,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 997
+        "total_attended": 1006
       },
       "suggestion": "**For quiet studio time (gaps between PT blocks and classes):**\n\n1. Run a paid \"Open Studio\" slot on Thursday or Friday mornings (your quietest days) where members can book a studio spot for self-guided training, circuits, or conditioning work \u2014 low-lift to run, fills dead air, and captures members who want flexibility without a full class commitment.\n\n2. Launch a rotating \"Technique Workshop\" series (30 mins, 6\u20138 capacity) in gaps on quieter days, focusing on form for underperforming classes like Engine, Barbelle, and Capacity \u2014 position it as free for members or \u00a35 drop-in, and use it as a low-pressure entry point to those classes.\n\n**For the quieter classes themselves:**\n\n3. Move **Barbelle** and **Engine** to Tuesday or Wednesday (your peak days) at off-peak times within those days \u2014 even a quieter slot on a busy day will pull more walk-ins than a prime slot on Thursday \u2014 and send a one-time targeted invite to Upper Body and Full Body class regulars who might enjoy them as complementary sessions.",
       "capacity": [
@@ -7707,8 +7692,8 @@
           "name": "Build: Lower",
           "sessions": 65,
           "cap": 13,
-          "avg_attending": 8.6,
-          "fill_rate": 72,
+          "avg_attending": 8.5,
+          "fill_rate": 71,
           "status": "attention"
         },
         {
@@ -13946,6 +13931,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "To print see attached",
+        "snippet": "-- Coach Grace Founder &amp; Head Coach Forge Female Fitness P: 07519725651 E: grace@theforge.pt | forgefemalefitness.com Unit 7, Taggarts Yard, 18 Meetinghouse Street, Ballymoney BT53 6JN (next to",
+        "id": "1a1532d795079fb9"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Fwd: Invitation: Warm-Up & Recovery Workshop with Hyperice at BLK BOX, Sat 31 Oct",
         "snippet": "---------- Forwarded message --------- From: Jordan Vaughan &lt;jvaughan@hyperice.com&gt; Date: Thu, 15 Oct 2026 at 13:41 Subject: Invitation: Warm-Up &amp; Recovery Workshop with Hyperice at BLK BOX,",
         "id": "1a13f9c0ffa66523"
@@ -13971,6 +13962,6 @@
         "id": "1a13f9c0ffa66523"
       }
     ],
-    "urgent_count": 3
+    "urgent_count": 4
   }
 }
