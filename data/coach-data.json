@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T14:01:01.919323+00:00",
+  "generated_at": "2026-10-21T19:17:29.856692+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4295,13 +4295,13 @@
       {
         "user_id": "U0BJWC0K6DT",
         "text": "Hi Grace. I haven't left the gym or anything! I've had the flu and then away with work. I hope to be in this week. I think paying for 3 classes is a bit ambitio",
-        "hours": 2,
+        "hours": 8,
         "name": "Anne Graham"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Hi Lesley. Just a note that your October payment has failed 3 times so it\u2019s now blocking you from classes. Would you be able to have a look at this? Thanks x ",
-        "hours": 2,
+        "hours": 7,
         "name": "Lesley"
       }
     ],
@@ -5551,7 +5551,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 19,
+    "new_this_month": 20,
     "cancellations_this_month": 6,
     "leaving_members": [
       {
@@ -5579,8 +5579,12 @@
         "name": "hazel graham"
       }
     ],
-    "paused": 5,
+    "paused": 6,
     "paused_members": [
+      {
+        "id": 7373444,
+        "name": "Helen Logan"
+      },
       {
         "id": 12754228,
         "name": "Jackie Elliott"
@@ -7140,6 +7144,20 @@
         ]
       },
       {
+        "name": "8 Session Block",
+        "count": 2,
+        "members": [
+          {
+            "id": 930054,
+            "name": "Annette Scott"
+          },
+          {
+            "id": 3236503,
+            "name": "Michelle McKnight"
+          }
+        ]
+      },
+      {
         "name": "Kickstart PAID IN FULL",
         "count": 2,
         "members": [
@@ -7164,16 +7182,6 @@
           {
             "id": 13899688,
             "name": "Sarah Logan"
-          }
-        ]
-      },
-      {
-        "name": "8 Session Block",
-        "count": 1,
-        "members": [
-          {
-            "id": 3236503,
-            "name": "Michelle McKnight"
           }
         ]
       },
@@ -7228,16 +7236,6 @@
         ]
       },
       {
-        "name": "2 Sessions",
-        "count": 1,
-        "members": [
-          {
-            "id": 7373444,
-            "name": "Helen Logan"
-          }
-        ]
-      },
-      {
         "name": "8 Class Block",
         "count": 1,
         "members": [
@@ -7277,7 +7275,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 633
+            "count": 655
           },
           {
             "day": "Monday",
@@ -7311,7 +7309,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 633
+            "count": 655
           }
         ],
         "top_classes": [
@@ -7321,7 +7319,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 516
+            "count": 527
           },
           {
             "name": "Build: Lower",
@@ -7342,12 +7340,12 @@
         ],
         "bottom_classes": [
           {
-            "name": "Capacity",
-            "count": 51
-          },
-          {
             "name": "Barbelle",
             "count": 57
+          },
+          {
+            "name": "Capacity",
+            "count": 59
           },
           {
             "name": "Engine",
@@ -7355,7 +7353,7 @@
           },
           {
             "name": "Plate",
-            "count": 181
+            "count": 184
           },
           {
             "name": "Mobility",
@@ -7427,9 +7425,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 51,
-            "sessions": 10,
-            "avg": 5.1,
+            "count": 59,
+            "sessions": 11,
+            "avg": 5.4,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -7454,10 +7452,19 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 80,
-            "sessions": 12,
-            "avg": 6.7,
+            "count": 83,
+            "sessions": 13,
+            "avg": 6.4,
             "label": "Wednesday 7pm Plate"
+          },
+          {
+            "day": "Wednesday",
+            "time": "5pm",
+            "name": "Build: Full Body",
+            "count": 85,
+            "sessions": 12,
+            "avg": 7.1,
+            "label": "Wednesday 5pm Build: Full Body"
           },
           {
             "day": "Thursday",
@@ -7467,18 +7474,9 @@
             "sessions": 13,
             "avg": 7.1,
             "label": "Thursday 10am Elevate"
-          },
-          {
-            "day": "Wednesday",
-            "time": "5pm",
-            "name": "Build: Full Body",
-            "count": 81,
-            "sessions": 11,
-            "avg": 7.4,
-            "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3218
+        "total_attended": 3240
       },
       "last_30_days": {
         "top_days": [
@@ -7492,7 +7490,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 214
+            "count": 236
           },
           {
             "day": "Friday",
@@ -7518,7 +7516,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 214
+            "count": 236
           },
           {
             "day": "Monday",
@@ -7536,7 +7534,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 168
+            "count": 179
           },
           {
             "name": "Strongevity",
@@ -7562,11 +7560,11 @@
           },
           {
             "name": "Capacity",
-            "count": 20
+            "count": 28
           },
           {
             "name": "Plate",
-            "count": 56
+            "count": 59
           },
           {
             "name": "Mobility",
@@ -7644,6 +7642,15 @@
             "label": "Saturday 9am Elevate"
           },
           {
+            "day": "Wednesday",
+            "time": "7pm",
+            "name": "Plate",
+            "count": 22,
+            "sessions": 5,
+            "avg": 4.4,
+            "label": "Wednesday 7pm Plate"
+          },
+          {
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
@@ -7651,24 +7658,6 @@
             "sessions": 4,
             "avg": 4.8,
             "label": "Thursday 10am Elevate"
-          },
-          {
-            "day": "Wednesday",
-            "time": "7pm",
-            "name": "Plate",
-            "count": 19,
-            "sessions": 4,
-            "avg": 4.8,
-            "label": "Wednesday 7pm Plate"
-          },
-          {
-            "day": "Wednesday",
-            "time": "8pm",
-            "name": "Capacity",
-            "count": 20,
-            "sessions": 4,
-            "avg": 5.0,
-            "label": "Wednesday 8pm Capacity"
           },
           {
             "day": "Thursday",
@@ -7683,13 +7672,22 @@
             "day": "Wednesday",
             "time": "5pm",
             "name": "Build: Full Body",
-            "count": 24,
-            "sessions": 4,
-            "avg": 6.0,
+            "count": 28,
+            "sessions": 5,
+            "avg": 5.6,
             "label": "Wednesday 5pm Build: Full Body"
+          },
+          {
+            "day": "Wednesday",
+            "time": "8pm",
+            "name": "Capacity",
+            "count": 28,
+            "sessions": 5,
+            "avg": 5.6,
+            "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1101
+        "total_attended": 1123
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a Thursday/Friday paid PT block (30-min slots, 6-8pm).** Thursday and Friday are your weakest days; positioning premium PT during those evenings captures demand you're currently leaving on the table and fills otherwise empty studio hours.\n\n2. **Launch a Saturday \"Open Gym + Coach\" session (90 mins, mid-morning).** Saturday has the lowest attendance overall; staff one coach to offer form checks and programming advice while members train freely\u2014lower overhead than a class, fills the studio, builds weekend habit.\n\n**For the quieter classes themselves:**\n\n3. **Move Barbelle, Engine, and Capacity to Tuesday/Monday mornings or early evenings.** These three are critically underattended; they're likely scheduled in off-peak windows. Test them at 6am or 7pm on your busiest days\u2014riders follow traffic, not schedule gaps. Pair with a 2-week \"new member invite\" push for each.",
       "capacity": [
@@ -7811,8 +7809,8 @@
           "4 PT Sessions": 11,
           "Evolve": 3,
           "Elevate": 26,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
+          "2 Sessions": 1,
           "Transformation 90 Day Package": 1,
           "10 Day Trial": 3,
           "Strong Start 30 Day Trial": 3,
@@ -7832,9 +7830,9 @@
           "4 PT Sessions": 11,
           "Evolve": 3,
           "Elevate": 28,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "Strong Start 30 Day Trial": 3,
           "New You Next Level": 1,
@@ -7852,9 +7850,9 @@
           "4 PT Sessions": 12,
           "Evolve": 3,
           "Elevate": 32,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "Strong Start 30 Day Trial": 1,
           "New You Next Level": 1,
@@ -7871,9 +7869,9 @@
           "4 PT Sessions": 12,
           "Evolve": 3,
           "Elevate": 36,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "Strong Start 30 Day Trial": 1,
           "New You Next Level": 1,
@@ -7890,9 +7888,9 @@
           "4 PT Sessions": 10,
           "Evolve": 2,
           "Elevate": 38,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "Strong Start 30 Day Trial": 1,
           "New You Next Level": 1,
@@ -7909,10 +7907,10 @@
           "4 PT Sessions": 12,
           "Evolve": 3,
           "Elevate": 38,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 2,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "Strong Start 30 Day Trial": 1,
           "New You Next Level": 1,
@@ -7931,11 +7929,11 @@
           "4 PT Sessions": 10,
           "Evolve": 4,
           "Elevate": 39,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 3,
           "4 Class Pass": 1,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "New You Next Level": 1,
           "Emerge": 1,
@@ -7952,12 +7950,12 @@
           "4 PT Sessions": 11,
           "Evolve": 5,
           "Elevate": 42,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 1,
           "4 Class Pass": 1,
           "6 Week Jumpstart": 2,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1,
           "New You Next Level": 1,
           "Emerge": 1
@@ -7973,13 +7971,13 @@
           "4 PT Sessions": 11,
           "Evolve": 5,
           "Elevate": 41,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 2,
           "4 Class Pass": 1,
           "6 Week Jumpstart": 1,
           "Strongevity Membership": 13,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1
         }
       },
@@ -7993,7 +7991,6 @@
           "4 PT Sessions": 11,
           "Evolve": 6,
           "Elevate": 40,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 1,
@@ -8002,12 +7999,13 @@
           "Strongevity Membership": 17,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
+          "2 Sessions": 1,
           "1:2 PT 4 Sessions": 1
         }
       },
       {
         "month": "2026-10",
-        "active": 170,
+        "active": 171,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8015,7 +8013,6 @@
           "4 PT Sessions": 11,
           "Evolve": 5,
           "Elevate": 38,
-          "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 4,
@@ -8024,7 +8021,9 @@
           "Strongevity Membership": 15,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
-          "4 Session Block": 1
+          "4 Session Block": 1,
+          "8 Session Block": 1,
+          "2 Sessions": 1
         }
       }
     ],
@@ -8114,13 +8113,6 @@
         "last_seen": "2026-09-30"
       },
       {
-        "id": 7373444,
-        "name": "Helen Logan",
-        "membership": "Empower",
-        "days_absent": 30,
-        "last_seen": "2026-09-21"
-      },
-      {
         "id": 12199003,
         "name": "Joules Williamson",
         "membership": "4 PT Sessions",
@@ -8133,13 +8125,6 @@
         "membership": "4 PT Sessions",
         "days_absent": 93,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 11212636,
-        "name": "Lesley Greehy",
-        "membership": "4 PT Sessions",
-        "days_absent": 14,
-        "last_seen": "2026-10-07"
       },
       {
         "id": 13507202,
@@ -8478,6 +8463,15 @@
         "membership": "Empower",
         "class_count": 382,
         "last_momentum": null
+      },
+      {
+        "id": 930054,
+        "name": "Annette Scott",
+        "email": "annettescott2@gmail.com",
+        "join_date": "2024-06-25",
+        "membership": "8 Session Block",
+        "class_count": 262,
+        "last_momentum": "2026-10-21"
       },
       {
         "id": 12292932,
@@ -10458,17 +10452,10 @@
         "total": "\u00a340.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-10-21",
-        "order_no": "",
-        "total": "\u00a338.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
-    "count": 97,
-    "total_spend": 9426.6,
+    "count": 96,
+    "total_spend": 9388.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
