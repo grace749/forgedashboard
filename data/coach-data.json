@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T11:39:55.194852+00:00",
+  "generated_at": "2026-10-21T14:01:01.919323+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4293,10 +4293,16 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0AJVCF923T",
-        "text": "Ah goodness \nI asked Teamup to sort this \n\nI'll msg them now and refund you \nApologies!",
-        "hours": 0,
-        "name": "Heather McWilliams"
+        "user_id": "U0BJWC0K6DT",
+        "text": "Hi Grace. I haven't left the gym or anything! I've had the flu and then away with work. I hope to be in this week. I think paying for 3 classes is a bit ambitio",
+        "hours": 2,
+        "name": "Anne Graham"
+      },
+      {
+        "user_id": "U0B6X33LS0M",
+        "text": "Hi Lesley. Just a note that your October payment has failed 3 times so it\u2019s now blocking you from classes. Would you be able to have a look at this? Thanks x ",
+        "hours": 2,
+        "name": "Lesley"
       }
     ],
     "mentions": [],
@@ -5042,7 +5048,7 @@
     }
   },
   "teamup": {
-    "total_members": 173,
+    "total_members": 171,
     "recurring": 113,
     "recurring_members": [
       {
@@ -5545,7 +5551,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 21,
+    "new_this_month": 19,
     "cancellations_this_month": 6,
     "leaving_members": [
       {
@@ -6368,7 +6374,7 @@
       }
     ],
     "cancelled_ytd": 52,
-    "churn_rate": 3.6,
+    "churn_rate": 3.7,
     "avg_member_price": 137.6,
     "monthly_recurring_revenue": 15274.0,
     "avg_tenure_months": 8.4,
@@ -7039,7 +7045,7 @@
       },
       {
         "name": "Strongevity",
-        "count": 8,
+        "count": 6,
         "members": [
           {
             "id": 8986394,
@@ -7056,14 +7062,6 @@
           {
             "id": 13618093,
             "name": "Joyce Lyons"
-          },
-          {
-            "id": 14018342,
-            "name": "Lynne McIlwaine"
-          },
-          {
-            "id": 13550184,
-            "name": "Maude McAleese"
           },
           {
             "id": 13750478,
@@ -7779,7 +7777,7 @@
           "name": "Capacity",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 5.3,
+          "avg_attending": 5.2,
           "fill_rate": 44,
           "status": "attention"
         }
@@ -8009,7 +8007,7 @@
       },
       {
         "month": "2026-10",
-        "active": 172,
+        "active": 170,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8020,7 +8018,7 @@
           "2 Sessions": 1,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 6,
+          "Strongevity": 4,
           "4 Class Pass": 2,
           "6 Week Jumpstart": 11,
           "Strongevity Membership": 15,
@@ -9265,15 +9263,6 @@
         "last_momentum": null
       },
       {
-        "id": 14018342,
-        "name": "Lynne McIlwaine",
-        "email": "lynne.mcilwaine@gmail.com",
-        "join_date": "2026-10-21",
-        "membership": "Strongevity",
-        "class_count": 2,
-        "last_momentum": null
-      },
-      {
         "id": 13753616,
         "name": "Mae Brown",
         "email": "brw81@aol.com",
@@ -9334,15 +9323,6 @@
         "join_date": "2025-06-04",
         "membership": "Empower",
         "class_count": 204,
-        "last_momentum": null
-      },
-      {
-        "id": 13550184,
-        "name": "Maude McAleese",
-        "email": "maudemcaleese@outlook.com",
-        "join_date": "2026-10-21",
-        "membership": "Strongevity",
-        "class_count": 6,
         "last_momentum": null
       },
       {
@@ -13994,6 +13974,18 @@
     "date": "2026-10-21",
     "urgent": [
       {
+        "from": "Coach Grace",
+        "subject": "Caroline Stinson - 30 Days as a Member Checkin",
+        "snippet": "Hi Coach, Our member Caroline Stinson has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
+        "id": "1a15ebf2b449f8ee"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Re: These are my transactions to you.",
+        "snippet": "Hi Carol, Yes we don&#39;t have any payment on your account for this block in October. Coach JoJo will sort the payment for October next week with you and also book November then for you as well. Just",
+        "id": "1a15e736c05f0148"
+      },
+      {
         "from": "Coach Eilis",
         "subject": "Invitation: Concert (jojo cover @ Wed 18 Aug - Thu 19 Aug 2027 (Coach JoJo)",
         "snippet": "Concert (jojo cover You have been invited by Coach Eilis to attend an event named Concert (jojo cover on Wednesday 18 Aug \u2013 Thursday 19 Aug 2027. When Wednesday 18 Aug \u2013 Thursday 19 Aug 2027 Guests",
@@ -14043,6 +14035,6 @@
       }
     ],
     "important": [],
-    "urgent_count": 8
+    "urgent_count": 10
   }
 }
