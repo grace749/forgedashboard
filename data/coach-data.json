@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T11:41:58.779864+00:00",
+  "generated_at": "2026-10-22T14:01:00.108279+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4263,19 +4263,19 @@
       {
         "user_id": "U0BJWC0K6DT",
         "text": "Hi Grace. I haven't left the gym or anything! I've had the flu and then away with work. I hope to be in this week. I think paying for 3 classes is a bit ambitio",
-        "hours": 24,
+        "hours": 26,
         "name": "Anne Graham"
       },
       {
         "user_id": "U0B6X33LS0M",
         "text": "Hi Lesley. Just a note that your October payment has failed 3 times so it\u2019s now blocking you from classes. Would you be able to have a look at this? Thanks x ",
-        "hours": 24,
+        "hours": 26,
         "name": "Lesley"
       },
       {
         "user_id": "U08BG08G4DS",
         "text": "\u00a3129 for elevate",
-        "hours": 0,
+        "hours": 3,
         "name": "Evelyn Sharpe"
       }
     ],
@@ -5535,7 +5535,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 21,
+    "new_this_month": 22,
     "cancellations_this_month": 6,
     "leaving_members": [
       {
@@ -7033,7 +7033,7 @@
       },
       {
         "name": "Strongevity",
-        "count": 6,
+        "count": 7,
         "members": [
           {
             "id": 8986394,
@@ -7054,6 +7054,10 @@
           {
             "id": 13750478,
             "name": "Maureen Donoghue"
+          },
+          {
+            "id": 6086046,
+            "name": "Rose McGill"
           },
           {
             "id": 13616418,
@@ -7723,9 +7727,9 @@
           "name": "Barbelle",
           "sessions": 13,
           "cap": 9,
-          "avg_attending": 6.8,
-          "fill_rate": 75,
-          "status": "healthy"
+          "avg_attending": 6.7,
+          "fill_rate": 74,
+          "status": "attention"
         },
         {
           "name": "Build: Lower",
@@ -7993,7 +7997,7 @@
       },
       {
         "month": "2026-10",
-        "active": 172,
+        "active": 173,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8003,7 +8007,7 @@
           "Elevate": 38,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 4,
+          "Strongevity": 6,
           "4 Class Pass": 2,
           "6 Week Jumpstart": 11,
           "Strongevity Membership": 15,
@@ -9660,7 +9664,7 @@
         "id": 13616418,
         "name": "Wendy Hunter",
         "email": "wendyshouse35@icloud.com",
-        "join_date": "2026-11-10",
+        "join_date": "2026-10-12",
         "membership": "Strongevity",
         "class_count": 6,
         "last_momentum": null
@@ -13939,6 +13943,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Cancelled event: GRACE MATERNITY LEAVE @ Mon 30 Nov 2026 (Coach JoJo)",
+        "snippet": "GRACE MATERNITY LEAVE This event has been cancelled and removed from your calendar. When Monday 30 Nov 2026 Guests Grace Smith - organiser Coach JoJo Invitation from Google Calendar You are receiving",
+        "id": "1a163a6388f4d2d3"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Updated invitation: Studio Coaches Meeting @ Thu 26 Nov 2026 12pm - 1pm (GMT) (Coach JoJo)",
         "snippet": "Studio Coaches Meeting You have been invited by Grace Smith to attend an event named Studio Coaches Meeting on Thursday 26 Nov 2026 \u22c5 12pm \u2013 1pm (United Kingdom Time). This event has been updated",
         "id": "1a163479ce606da5"
@@ -13990,12 +14000,6 @@
         "subject": "Accepted: Disney JoJo @ Thu 10 Dec - Mon 14 Dec 2026 (jojo@theforge.pt)",
         "snippet": "Disney JoJo Eilis Kearns has accepted this invitation. When Thursday 10 Dec \u2013 Monday 14 Dec 2026 Guests jojo@theforge.pt - organiser Eilis Kearns grace@theforge.pt View all guest info Invitation from",
         "id": "1a15997b6840fc4d"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Fwd: the_forge_standards.docx",
-        "snippet": "---------- Forwarded message --------- From: eilis kearns &lt;eiliskearns@hotmail.co.uk&gt; Date: Tue, 20 Oct 2026 at 11:53 Subject: the_forge_standards.docx To: Coach Grace &lt;grace@theforge.pt&gt;",
-        "id": "1a15904067c7451e"
       }
     ],
     "important": [
