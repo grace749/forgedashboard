@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T11:30:26.826955+00:00",
+  "generated_at": "2026-10-23T14:01:03.177989+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -90,7 +90,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -102,8 +102,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 3,
+        "missing_checkins": 0,
+        "completed_checkins": 4,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -122,7 +122,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -134,8 +134,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 3,
+        "missing_checkins": 0,
+        "completed_checkins": 4,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -154,7 +154,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -166,8 +166,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 3,
+        "missing_checkins": 0,
+        "completed_checkins": 4,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -184,7 +184,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -198,8 +198,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 1,
+        "missing_checkins": 1,
+        "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -216,7 +216,7 @@
         "inbody_done": false,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -230,8 +230,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 1,
+        "missing_checkins": 0,
+        "completed_checkins": 2,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -990,34 +990,14 @@
         "detail": "0d left \u2014 conversion chat not scheduled!"
       },
       {
-        "member": "Helen Faulkner",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 4)"
-      },
-      {
-        "member": "Rebecca Gill",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 4)"
-      },
-      {
-        "member": "Patricia Mcauley",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 4)"
-      },
-      {
         "member": "Paula Hodges",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 3)"
+        "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
         "member": "Paula Hodges",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
-      },
-      {
-        "member": "Deirdre Wallace",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 2)"
       },
       {
         "member": "Deirdre Wallace",
@@ -4261,21 +4241,9 @@
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BJWC0K6DT",
-        "text": "Hi Grace. I haven't left the gym or anything! I've had the flu and then away with work. I hope to be in this week. I think paying for 3 classes is a bit ambitio",
-        "hours": 48,
-        "name": "Anne Graham"
-      },
-      {
-        "user_id": "U0B6X33LS0M",
-        "text": "Hi Lesley. Just a note that your October payment has failed 3 times so it\u2019s now blocking you from classes. Would you be able to have a look at this? Thanks x ",
-        "hours": 48,
-        "name": "Lesley"
-      },
-      {
         "user_id": "U08BG08G4DS",
         "text": "\u00a3129 for elevate",
-        "hours": 24,
+        "hours": 27,
         "name": "Evelyn Sharpe"
       }
     ],
@@ -8155,13 +8123,6 @@
         "last_seen": "2026-10-12"
       },
       {
-        "id": 12199003,
-        "name": "Joules Williamson",
-        "membership": "4 PT Sessions",
-        "days_absent": 18,
-        "last_seen": "2026-10-05"
-      },
-      {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
@@ -8202,6 +8163,13 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 34,
         "last_seen": "2026-09-19"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 49,
+        "last_seen": "2026-09-04"
       }
     ],
     "celebrations": {
