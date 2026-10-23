@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T14:01:03.177989+00:00",
+  "generated_at": "2026-10-23T19:12:13.324708+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4243,7 +4243,7 @@
       {
         "user_id": "U08BG08G4DS",
         "text": "\u00a3129 for elevate",
-        "hours": 27,
+        "hours": 32,
         "name": "Evelyn Sharpe"
       }
     ],
@@ -4413,7 +4413,8 @@
       "paula hodges": "U0C7Z5EC1H9",
       "deirdre wallace": "U0C8M6VEQTE",
       "anne forgrave": "U0C9XJAA8AH",
-      "sarahb": "U0CAKFA5SJF"
+      "sarahb": "U0CAKFA5SJF",
+      "sinead wilson": "U0CBL296W3F"
     }
   },
   "staff": {
@@ -7250,12 +7251,12 @@
             "count": 605
           },
           {
-            "day": "Thursday",
-            "count": 460
+            "day": "Friday",
+            "count": 469
           },
           {
-            "day": "Friday",
-            "count": 451
+            "day": "Thursday",
+            "count": 460
           }
         ],
         "bottom_days": [
@@ -7264,12 +7265,12 @@
             "count": 270
           },
           {
-            "day": "Friday",
-            "count": 451
-          },
-          {
             "day": "Thursday",
             "count": 460
+          },
+          {
+            "day": "Friday",
+            "count": 469
           },
           {
             "day": "Monday",
@@ -7303,7 +7304,7 @@
           },
           {
             "name": "Circuits",
-            "count": 236
+            "count": 244
           }
         ],
         "bottom_classes": [
@@ -7325,11 +7326,11 @@
           },
           {
             "name": "Mobility",
-            "count": 225
+            "count": 235
           },
           {
             "name": "Circuits",
-            "count": 236
+            "count": 244
           }
         ],
         "top_slots": [
@@ -7337,8 +7338,8 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 116,
-            "sessions": 11,
+            "count": 126,
+            "sessions": 12,
             "avg": 10.5,
             "label": "Friday 7pm Mobility"
           },
@@ -7350,15 +7351,6 @@
             "sessions": 11,
             "avg": 10.4,
             "label": "Wednesday 7am Build: Full Body"
-          },
-          {
-            "day": "Friday",
-            "time": "6pm",
-            "name": "Circuits",
-            "count": 124,
-            "sessions": 12,
-            "avg": 10.3,
-            "label": "Friday 6pm Circuits"
           },
           {
             "day": "Monday",
@@ -7377,6 +7369,15 @@
             "sessions": 13,
             "avg": 10.2,
             "label": "Tuesday 7pm Build: Upper"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 132,
+            "sessions": 13,
+            "avg": 10.2,
+            "label": "Friday 6pm Circuits"
           },
           {
             "day": "Wednesday",
@@ -7444,7 +7445,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3227
+        "total_attended": 3245
       },
       "last_30_days": {
         "top_days": [
@@ -7462,7 +7463,7 @@
           },
           {
             "day": "Friday",
-            "count": 173
+            "count": 191
           },
           {
             "day": "Thursday",
@@ -7480,7 +7481,7 @@
           },
           {
             "day": "Friday",
-            "count": 173
+            "count": 191
           },
           {
             "day": "Monday",
@@ -7505,16 +7506,16 @@
             "count": 171
           },
           {
-            "name": "Strongevity",
-            "count": 91
-          },
-          {
-            "name": "Elevate",
-            "count": 87
+            "name": "Mobility",
+            "count": 93
           },
           {
             "name": "Circuits",
-            "count": 84
+            "count": 92
+          },
+          {
+            "name": "Strongevity",
+            "count": 91
           }
         ],
         "bottom_classes": [
@@ -7535,24 +7536,15 @@
             "count": 68
           },
           {
-            "name": "Mobility",
-            "count": 83
+            "name": "Elevate",
+            "count": 87
           },
           {
-            "name": "Circuits",
-            "count": 84
+            "name": "Strongevity",
+            "count": 91
           }
         ],
         "top_slots": [
-          {
-            "day": "Friday",
-            "time": "6pm",
-            "name": "Circuits",
-            "count": 44,
-            "sessions": 4,
-            "avg": 11.0,
-            "label": "Friday 6pm Circuits"
-          },
           {
             "day": "Tuesday",
             "time": "11am",
@@ -7570,6 +7562,15 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Monday 6pm Build: Lower"
+          },
+          {
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Friday 6pm Circuits"
           },
           {
             "day": "Tuesday",
@@ -7655,7 +7656,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 1076
+        "total_attended": 1094
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Launch a Friday lunchtime \"Quick Strength\" drop-in slot (30 mins, 12\u201312:30 or 12:30\u20131pm).** Fridays are your quietest day; a paid mini-session targeting office workers would fill a recurring dead zone and build momentum into the weekend.\n\n2. **Block Thursday evenings for a rotating paid PT clinic or small-group coaching block (4\u20136 people max).** Thursday is your third-quietest day; use that studio downtime to capture members who can't fit standard PT slots.\n\n**For the quietest classes themselves:**\n\n3. **Move Barbelle and Capacity to Tuesday or Wednesday mornings (your peak days) and promote them as \"strength skill-builders\" with a 4-week intro offer.** They're positioning poorly, not popularity-proof\u2014better day + reframing + incentive (e.g., \"first 4 weeks half-price\") will test demand. Test with targeted emails to Build class regulars who might enjoy technique work.",
       "capacity": [
@@ -7671,8 +7672,8 @@
           "name": "Circuits",
           "sessions": 27,
           "cap": 13,
-          "avg_attending": 10.3,
-          "fill_rate": 86,
+          "avg_attending": 10.1,
+          "fill_rate": 85,
           "status": "healthy"
         },
         {
