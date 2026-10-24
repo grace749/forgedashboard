@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T10:50:15.172387+00:00",
+  "generated_at": "2026-10-24T14:00:53.939440+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-10-24",
-    "event_count": 15,
+    "event_count": 16,
     "urgent_count": 0,
-    "enquiry_count": 3,
+    "enquiry_count": 4,
     "calendar": [
       {
         "title": "Reservation at Smoke BBQ",
@@ -175,6 +175,18 @@
         "description": "Booked discovery call",
         "location": "",
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "\ud83d\udcde Call: Julia Millar",
+        "time": "1:10pm",
+        "start_raw": "2026-10-27T13:10:00",
+        "day": "Tuesday",
+        "attendees": [
+          "Julia Millar"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
     "urgent": [],
@@ -206,13 +218,22 @@
         "snippet": "Booked a call for Tuesday 11:10am \u2014 potential member",
         "age": "",
         "unread": 0
+      },
+      {
+        "name": "Julia Millar",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tuesday 1:10pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tuesday 1:10pm",
+        "snippet": "Booked a call for Tuesday 1:10pm \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
@@ -325,19 +346,55 @@
   },
   "ghl": [
     {
-      "name": "Joanne Hall",
+      "name": "Julia Millar",
       "channel": "Phone",
-      "message": "I\u2019ll not message her as you have already anx so will Eilis \n\nI\u2019ll message her tomorrow",
-      "age": "0h ago",
+      "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
+      "age": "1h ago",
       "unread": 1,
-      "conv_id": "7AupKhnC2kTzAlOTMyYW",
-      "contact_id": "XqQqyixSpJbS6mYf5tQO"
+      "conv_id": "wAPGvSb8Dt46v4JZaH6L",
+      "contact_id": "Luhu0X6J0lJXrrasH2Bp"
+    },
+    {
+      "name": "Eilis Kearns",
+      "channel": "Phone",
+      "message": ":((( aw god love her",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
+      "contact_id": "SL5iEZ30xiRwJF12kd5S"
+    },
+    {
+      "name": "Lesley Owens",
+      "channel": "Phone",
+      "message": "Hi Grace,  i'm 57 so all round fitness and strength training. No really looking to lose weight.",
+      "age": "1h ago",
+      "unread": 2,
+      "conv_id": "Pl2G7xnELNK5n9huhs58",
+      "contact_id": "BTQFUZmHO8IQhafLIvUL"
+    },
+    {
+      "name": "trainr.cloud | Gym Software",
+      "channel": "Phone",
+      "message": "Hey guys\n\nMy name is Zak, I\u2019m an ex GM of a gym - just trying to share as much value as I can of everything I\u2019ve learnt. \u000b\u000bWe\u2019re a startup trying to make a difference :)\n\nPlease give us a follow back,",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "HpbhIdkth2tqLnei14G3",
+      "contact_id": "2ZQO3G5e4AsmSDPJsk0q"
+    },
+    {
+      "name": "Sarah Boyd",
+      "channel": "Phone",
+      "message": "Aw bless you, you did have to but I really appreciate it :)",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "HFse8Zp7V3kYGsOhyliT",
+      "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
     },
     {
       "name": "Jill Weir",
       "channel": "Phone",
       "message": "Hey Grace, yes I\u2019m well. I enjoyed the classes but felt I couldn\u2019t continue to book in blocks of 4 on the same day as I\u2019m away a lot usually about every 5 weeks, it just wasn\u2019t flexible enough for me ",
-      "age": "0h ago",
+      "age": "3h ago",
       "unread": 2,
       "conv_id": "o8DX8L3Se6oQr3GioCCu",
       "contact_id": "H28dDKULnSaznwzDHpaR"
@@ -346,7 +403,7 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/De1_HM_M0Vy/",
-      "age": "0h ago",
+      "age": "3h ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -355,7 +412,7 @@
       "name": "WENDY Hara",
       "channel": "Phone",
       "message": "Hi Grace I'm of on Tuesday if that suits.",
-      "age": "11h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "MOoW9hNmv19jFNvkOAz8",
       "contact_id": "mqANp2VSKCXN093dwsMB"
@@ -364,7 +421,7 @@
       "name": "Wendy McCafferty",
       "channel": "Phone",
       "message": "",
-      "age": "12h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "Q0SQSphGS2mGwK3qDjmC",
       "contact_id": "4DUEMcYWSselVcz4fuRZ"
@@ -373,7 +430,7 @@
       "name": "Caroline Stinson",
       "channel": "Phone",
       "message": "Right now my focus is getting g the time to come to gym.   To find slots where I\u2019m not inconvenience others , so I can still come. \n\n\nI\u2019m also very aware I have food issues , and seriously upset that ",
-      "age": "14h ago",
+      "age": "17h ago",
       "unread": 2,
       "conv_id": "FU9UEIK4WdZmaQKrTbOL",
       "contact_id": "EbImv5wT2xiSr8QNB1kT"
@@ -382,7 +439,7 @@
       "name": "Isobel Stirling",
       "channel": "Phone",
       "message": "Thankyou .",
-      "age": "15h ago",
+      "age": "18h ago",
       "unread": 1,
       "conv_id": "Q0TTwWRRSTOghjW8LyJz",
       "contact_id": "f98asQACBpX1okoKqpwU"
@@ -391,7 +448,7 @@
       "name": "Kerry Tweed",
       "channel": "Phone",
       "message": "Aw your ok, awk ill get ther its just frustrating when im trying different meds and I just dont respond to them \ud83d\ude48 but I think ther is another change next Friday so surely it will be the one!! Thank yo",
-      "age": "22h ago",
+      "age": "1d ago",
       "unread": 2,
       "conv_id": "JybTOqdWGSHLDfwWx6Yi",
       "contact_id": "M9AElMDSxdqHqDcQtv7M"
@@ -413,33 +470,6 @@
       "unread": 1,
       "conv_id": "3BSkFeLIBTO5BsRveunL",
       "contact_id": "Hq4Z7MLeCJbjZxYnJ5gD"
-    },
-    {
-      "name": "Diane McLean",
-      "channel": "Phone",
-      "message": "Hi Grace,thanks for checking in on me.\nYes ,I\u2019m doing ok and have been back with the doctor who has increased my medication short term.\nI\u2019m starting to feel a little better and enjoying plenty of nice",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "YT73fAyojkmnuKFLsgLs",
-      "contact_id": "AUWcUb3UZzD85p6OtEGd"
-    },
-    {
-      "name": "Maude McAleese",
-      "channel": "Phone",
-      "message": "Thank you soo much",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "hGiVCDAGnrq0g1jLR8Sr",
-      "contact_id": "I2UV26waUFtQznFaOqUY"
-    },
-    {
-      "name": "Grindify Sport",
-      "channel": "Phone",
-      "message": "Any response for us sir ?",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "uYVwLdDmHnCBdXi0YosQ",
-      "contact_id": "xsgA4dtATRUS7nLLXVCF"
     }
   ],
   "jumpstart": {
@@ -5327,14 +5357,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U08BG08G4DS",
-        "text": "\u00a3129 for elevate",
-        "hours": 47,
-        "name": "Evelyn Sharpe"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -9453,6 +9476,11 @@
           "name": "Jayne Scott",
           "date": "2026-10-26",
           "status": "not_registered"
+        },
+        {
+          "name": "Jayne Scott",
+          "date": "2026-10-27",
+          "status": "registered"
         }
       ]
     },
@@ -10961,8 +10989,8 @@
     "monthly": [
       {
         "month": "2025-09",
-        "collected": 30.0,
-        "payments": 3
+        "collected": 10.0,
+        "payments": 1
       },
       {
         "month": "2025-10",
