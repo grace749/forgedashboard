@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T11:16:01.749651+00:00",
+  "generated_at": "2026-10-25T15:00:59.328690+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-10-25",
     "event_count": 19,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "enquiry_count": 4,
     "calendar": [
       {
@@ -137,7 +137,7 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
-        "location": "10/12 booked",
+        "location": "11/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -148,7 +148,7 @@
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
-        "location": "10/12 booked",
+        "location": "9/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -219,7 +219,18 @@
         "prep": "Confirm padel court booking; prepare lesson plan and equipment check."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "The Dairy",
+        "from_raw": "The Dairy <hello@thedairygleno.com>",
+        "subject": "Reservation Confirmation for The Dairy",
+        "snippet": "The Dairy Reservation Confirmation Dear Grace Smith This email is to confirm your booking at The Dairy on Wednesday, 28 October 2026 at 1:00 PM. Your booking details are below: Ref: BYWFMVD6 Date:",
+        "id": "1a17381ecf3039db",
+        "thread_id": "1a17381ecf3039db",
+        "msg_count": 1,
+        "draft_id": "r8695887179388627898"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -262,9 +273,9 @@
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -376,10 +387,28 @@
   },
   "ghl": [
     {
+      "name": "Jo",
+      "channel": "Phone",
+      "message": "https://www.instagram.com/reel/DeB0s2JR033/",
+      "age": "0h ago",
+      "unread": 2,
+      "conv_id": "SSmsaXAmGesXC4DA1BV3",
+      "contact_id": "xa3rPNDLcMKM9VtjK91V"
+    },
+    {
+      "name": "Sinead wilson",
+      "channel": "Phone",
+      "message": "Not yet will do thanks",
+      "age": "0h ago",
+      "unread": 3,
+      "conv_id": "3PQ05CKhotipHihWqy8h",
+      "contact_id": "rJuOdqwW3MBtIUNARd3W"
+    },
+    {
       "name": "Lorna Dunlop",
       "channel": "Phone",
       "message": "Thanks so much for getting back to me  Grace, I will leave it for now. Thanks",
-      "age": "4h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "HzoRJzSs0uUo6kKZryue",
       "contact_id": "y3CBMHBEvQEFZ0VtW7bx"
@@ -388,7 +417,7 @@
       "name": "Eilis Kearns",
       "channel": "Phone",
       "message": "Aww she's a lovely girl, hopefully she gets abit of relief pain wise \ud83d\ude2d",
-      "age": "19h ago",
+      "age": "23h ago",
       "unread": 2,
       "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
       "contact_id": "SL5iEZ30xiRwJF12kd5S"
@@ -397,25 +426,16 @@
       "name": "Irene Boyd",
       "channel": "Phone",
       "message": "Thank you I will hopefully get back soon x",
-      "age": "19h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "P05jeDIjJiV8jjpFGImO",
       "contact_id": "tKUbT8KxzyaPOt9gExXn"
     },
     {
-      "name": "Julia Millar",
-      "channel": "Phone",
-      "message": "\ud83d\udcac Reacted with \"\u2764\ufe0f\"",
-      "age": "22h ago",
-      "unread": 1,
-      "conv_id": "wAPGvSb8Dt46v4JZaH6L",
-      "contact_id": "Luhu0X6J0lJXrrasH2Bp"
-    },
-    {
       "name": "Lesley Owens",
       "channel": "Phone",
       "message": "Hi Grace,  i'm 57 so all round fitness and strength training. No really looking to lose weight.",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 2,
       "conv_id": "Pl2G7xnELNK5n9huhs58",
       "contact_id": "BTQFUZmHO8IQhafLIvUL"
@@ -424,7 +444,7 @@
       "name": "trainr.cloud | Gym Software",
       "channel": "Phone",
       "message": "Hey guys\n\nMy name is Zak, I\u2019m an ex GM of a gym - just trying to share as much value as I can of everything I\u2019ve learnt. \u000b\u000bWe\u2019re a startup trying to make a difference :)\n\nPlease give us a follow back,",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "HpbhIdkth2tqLnei14G3",
       "contact_id": "2ZQO3G5e4AsmSDPJsk0q"
@@ -439,15 +459,6 @@
       "contact_id": "H28dDKULnSaznwzDHpaR"
     },
     {
-      "name": "Jo",
-      "channel": "Phone",
-      "message": "https://www.instagram.com/reel/De1_HM_M0Vy/",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "SSmsaXAmGesXC4DA1BV3",
-      "contact_id": "xa3rPNDLcMKM9VtjK91V"
-    },
-    {
       "name": "Wendy McCafferty",
       "channel": "Phone",
       "message": "",
@@ -455,33 +466,6 @@
       "unread": 1,
       "conv_id": "Q0SQSphGS2mGwK3qDjmC",
       "contact_id": "4DUEMcYWSselVcz4fuRZ"
-    },
-    {
-      "name": "Caroline Stinson",
-      "channel": "Phone",
-      "message": "Right now my focus is getting g the time to come to gym.   To find slots where I\u2019m not inconvenience others , so I can still come. \n\n\nI\u2019m also very aware I have food issues , and seriously upset that ",
-      "age": "1d ago",
-      "unread": 2,
-      "conv_id": "FU9UEIK4WdZmaQKrTbOL",
-      "contact_id": "EbImv5wT2xiSr8QNB1kT"
-    },
-    {
-      "name": "Kerry Tweed",
-      "channel": "Phone",
-      "message": "Aw your ok, awk ill get ther its just frustrating when im trying different meds and I just dont respond to them \ud83d\ude48 but I think ther is another change next Friday so surely it will be the one!! Thank yo",
-      "age": "1d ago",
-      "unread": 2,
-      "conv_id": "JybTOqdWGSHLDfwWx6Yi",
-      "contact_id": "M9AElMDSxdqHqDcQtv7M"
-    },
-    {
-      "name": "Sinead wilson",
-      "channel": "Phone",
-      "message": "\ud83d\ude01",
-      "age": "2d ago",
-      "unread": 2,
-      "conv_id": "3PQ05CKhotipHihWqy8h",
-      "contact_id": "rJuOdqwW3MBtIUNARd3W"
     }
   ],
   "jumpstart": {
