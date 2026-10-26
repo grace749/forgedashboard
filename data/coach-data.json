@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T15:01:04.309559+00:00",
+  "generated_at": "2026-10-26T20:28:33.944280+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4318,7 +4318,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U081RCPFSAX",
+        "text": "Hi <@U05P1R84NKS> \nI'm so sorry but I won't be able to make it to tonights 8pm class.\nSending so much love and luck to you, Dan and baby Banks. Enjoy every seco",
+        "hours": 2,
+        "name": "Emma Hopkins"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -7304,22 +7311,22 @@
         ]
       },
       {
-        "name": "4 Session Block",
-        "count": 1,
-        "members": [
-          {
-            "id": 11029358,
-            "name": "Rosemary Kennedy"
-          }
-        ]
-      },
-      {
         "name": "Fuel Forward Nutrition Challenge",
         "count": 1,
         "members": [
           {
             "id": 12982150,
             "name": "Sarah Calvin"
+          }
+        ]
+      },
+      {
+        "name": "4 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 11029358,
+            "name": "Rosemary Kennedy"
           }
         ]
       }
@@ -7337,7 +7344,7 @@
           },
           {
             "day": "Monday",
-            "count": 564
+            "count": 585
           },
           {
             "day": "Friday",
@@ -7363,7 +7370,7 @@
           },
           {
             "day": "Monday",
-            "count": 564
+            "count": 585
           },
           {
             "day": "Wednesday",
@@ -7381,7 +7388,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 451
+            "count": 472
           },
           {
             "name": "Elevate",
@@ -7534,7 +7541,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3202
+        "total_attended": 3223
       },
       "last_30_days": {
         "top_days": [
@@ -7544,7 +7551,7 @@
           },
           {
             "day": "Monday",
-            "count": 211
+            "count": 232
           },
           {
             "day": "Wednesday",
@@ -7578,7 +7585,7 @@
           },
           {
             "day": "Monday",
-            "count": 211
+            "count": 232
           }
         ],
         "top_classes": [
@@ -7588,7 +7595,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 172
+            "count": 193
           },
           {
             "name": "Build: Full Body",
@@ -7644,15 +7651,6 @@
             "label": "Tuesday 11am Strongevity"
           },
           {
-            "day": "Monday",
-            "time": "6pm",
-            "name": "Build: Lower",
-            "count": 42,
-            "sessions": 4,
-            "avg": 10.5,
-            "label": "Monday 6pm Build: Lower"
-          },
-          {
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
@@ -7678,6 +7676,15 @@
             "sessions": 4,
             "avg": 10.2,
             "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Monday",
+            "time": "6pm",
+            "name": "Build: Lower",
+            "count": 50,
+            "sessions": 5,
+            "avg": 10.0,
+            "label": "Monday 6pm Build: Lower"
           },
           {
             "day": "Wednesday",
@@ -7745,7 +7752,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 1006
+        "total_attended": 1027
       },
       "suggestion": "**For quiet studio time (especially Thursday/Friday/Saturday):**\n\n1. Launch a paid \"Open Studio + Coach\" slot (30\u201345 mins) on Thursday or Friday afternoons\u2014members book a studio hour at a lower price point than PT, with a coach available for form checks or programming advice. Captures gym traffic during naturally quiet periods without cannibalizing PT bookings.\n\n2. Run a monthly \"Barbelle + Engine Workshop\" (60 mins, Saturday morning)\u2014position it as a skills clinic teaching proper barbell technique and metabolic conditioning, not a regular class. Price as a one-off workshop (\u00a38\u201312) to attract curious members who find the weekly classes intimidating, and use it to build a cohort who might then attend the regular classes.\n\n**For the quieter classes themselves:**\n\n3. Swap **Mobility** to a Thursday or Friday morning slot (currently likely buried in a busy day). Pair it with a targeted email to members over 40 or those with \"recovering from injury\" tags, and offer the first session free. Mobility has real demand but poor visibility in its current time; repositioning + direct outreach will lift it faster than format changes.",
       "capacity": [
@@ -8063,7 +8070,7 @@
       },
       {
         "month": "2026-10",
-        "active": 175,
+        "active": 174,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8079,7 +8086,6 @@
           "Strongevity Membership": 15,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
-          "4 Session Block": 1,
           "8 Session Block": 1,
           "Fuel Forward Nutrition Challenge": 1,
           "2 Sessions": 1
@@ -8454,7 +8460,7 @@
     },
     "lead_bookings": [
       {
-        "name": "Isobel Sterling",
+        "name": "Isobel Stirling",
         "type": "Personal Training Sales Call",
         "date": "2026-10-26",
         "upcoming": true
@@ -9557,7 +9563,7 @@
         "id": 11029358,
         "name": "Rosemary Kennedy",
         "email": "rosemary_kennedy@yahoo.com",
-        "join_date": "2026-10-22",
+        "join_date": "2026-11-03",
         "membership": "4 Session Block",
         "class_count": 122,
         "last_momentum": null
@@ -14126,12 +14132,6 @@
         "subject": "Invitation: Jordan filming @ Tue 24 Nov 2026 10am - 1:30pm (GMT) (Coach JoJo)",
         "snippet": "Jordan filming You have been invited by Grace Smith to attend an event named Jordan filming on Tuesday 24 Nov 2026 \u22c5 10am \u2013 1:30pm (United Kingdom Time). When Tuesday 24 Nov 2026 \u22c5",
         "id": "1a17847f9a0aeafb"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Invitation: New Year Ad filming with Jordan @ Mon 30 Nov 2026 12:30pm - 1:45pm (GMT) (Coach JoJo)",
-        "snippet": "New Year Ad filming with Jordan You have been invited by Grace Smith to attend an event named New Year Ad filming with Jordan on Monday 30 Nov 2026 \u22c5 12:30pm \u2013 1:45pm (United Kingd",
-        "id": "1a17847da39b1195"
       },
       {
         "from": "Grace Smith",
