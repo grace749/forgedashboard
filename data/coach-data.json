@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T06:00:53.163127+00:00",
+  "generated_at": "2026-10-26T12:49:59.271424+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -148,7 +148,7 @@
         "end": "2026-11-20",
         "goal": "tone uo build confidence",
         "notes": "recently diagonosed with full fronyal alopecia . on hrt",
-        "nutrition_sent": false,
+        "nutrition_sent": true,
         "inbody_done": true,
         "check_ins": [
           true,
@@ -180,8 +180,8 @@
         "end": "2026-11-23",
         "goal": "Lose weight, reduce stiffness and aches and pains, feel more confident.",
         "notes": "I suffer with low mood at times. I am easily defeated and struggle to get motivated. I am a terrible procrastinator! I have taken steps to lower stress recently and hope that starts to show in my mood soon.",
-        "nutrition_sent": false,
-        "inbody_done": false,
+        "nutrition_sent": true,
+        "inbody_done": true,
         "check_ins": [
           true,
           true,
@@ -204,6 +204,38 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "I suffer with low mood at times. I am easily defeated and struggle to get motivated. I am a terrible procrastinator! I have taken steps to lower stress recently and hope that starts to show in my mood soon."
+      },
+      {
+        "name": "sinead wilson",
+        "cohort": "October",
+        "joined": "2026-10-23",
+        "end": "2026-12-04",
+        "goal": "prevent deterioration, flexibilty and strength and weight loss",
+        "notes": "moderate neck arthritis, hysterectomy 15 years ago. widow last 6 years. carer for mum",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 39,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "moderate neck arthritis, hysterectomy 15 years ago. widow last 6 years. carer for mum"
       }
     ],
     "recent": [
@@ -976,6 +1008,38 @@
         "paused": true,
         "pink_red": false,
         "pause_reason": "not continueing due to mental health"
+      },
+      {
+        "name": "sarah boyd",
+        "cohort": "October",
+        "joined": "2026-10-21",
+        "end": "2026-02-12",
+        "goal": "firness tone, general better health",
+        "notes": "slipped disc l4,trmalleolar fracture of right ankle, has anixety dusorder very nervous ",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": -256,
+        "is_active": false,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 0,
+        "completed_checkins": 1,
+        "expected_checkins": 1,
+        "paused": true,
+        "pink_red": false,
+        "pause_reason": "slipped disc l4,trmalleolar fracture of right ankle, has anixety dusorder very nervous"
       }
     ],
     "alerts": [
@@ -1005,24 +1069,24 @@
         "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
-        "member": "Paula Hodges",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
-      },
-      {
         "member": "Deirdre Wallace",
         "type": "missing_checkin",
         "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
-        "member": "Deirdre Wallace",
+        "member": "sinead wilson",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "sinead wilson",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 5,
-      "paused_count": 3,
+      "active_count": 6,
+      "paused_count": 4,
       "conv_rate": 43,
       "converted": 9,
       "not_converted": 6,
@@ -1031,6 +1095,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Coach Grace",
+        "last_scan": "2026-10-26",
+        "scan_count": 21,
+        "weight": 168.9,
+        "smm": 68.1,
+        "pbf": 28.0,
+        "bmi": 27.3,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -1.1,
+        "smm_change": 1.1,
+        "pbf_change": -1.6,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-07",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Rebekah Newnes",
         "last_scan": "2026-10-24",
@@ -1287,30 +1375,6 @@
         "weight_change": null,
         "smm_change": null,
         "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-11-23",
-        "days_to_due": 28,
-        "overdue": false
-      },
-      {
-        "name": "Coach Grace",
-        "last_scan": "2026-10-12",
-        "scan_count": 20,
-        "weight": 170.0,
-        "smm": 67.0,
-        "pbf": 29.6,
-        "bmi": 27.4,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": -2.3,
-        "smm_change": 0.2,
-        "pbf_change": -1.3,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -4588,7 +4652,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower (20 sessions) to JoJo and Eilis.** JoJo already runs Upper; adding Lower balances the Build: programme across both and makes use of JoJo's spare capacity. Split 10\u201310 or 12\u20138 depending on existing timetable gaps.\n\n\u2022 **Redistribute Grace's Strongevity (4 sessions) and Elevate (3 sessions) to Eilis.** Eilis has room in her schedule and these lower-intensity classes suit her development as a coach; gives her more variety beyond PT-heavy load.\n\n\u2022 **Reassign Grace's No Sweat Intro (2 sessions) to JoJo or Eilis on rotation.** This is a low-risk class; either coach can deliver it. Spreads the onboarding responsibility and removes another class from Grace.\n\n\u2022 **Rebalance JoJo and Eilis's Personal Training load.** JoJo carries 27 PTs; Eilis carries 39. Shift 5\u20138 PT slots from Eilis to JoJo to even the workload and free Eilis capacity for more class delivery (her weaker area).\n\n\u2022 **Audit InBody scans across the month.** 45 scans were logged (21 + 19 + 5); these are admin tasks, not coaching. Batch them into dedicated admin slots or assign to whichever coach is lightest that week\u2014don't let them fragment coaching time.\n\n\u2022 **Result:** Grace moves to zero delivery; JoJo and Eilis share classes fairly; Eilis gains coaching confidence on lower-stakes formats; PT load levels out.",
+    "advice": "\u2022 **Strip InBody scans from coaching load immediately** \u2014 Grace's 5 scans and JoJo's 21 account for 26 sessions that aren't real coaching. Delegate scans to reception or admin staff; this alone frees ~30 hours of perceived load across the team.\n\n\u2022 **Redistribute Grace's classes to Eilis and JoJo** \u2014 Grace's Build: Lower (20 sessions) and Elevate (3 sessions) should move to Eilis, who has capacity and is already teaching Elevate. This removes Grace from delivery entirely and uses Eilis's existing skillset.\n\n\u2022 **Rebalance PT load away from JoJo** \u2014 JoJo is carrying 27 PT slots while Eilis has 39; JoJo's heavy class schedule (48 Build + Strongevity + No Sweat sessions) makes her over-committed. Aim to cap JoJo at 15\u201318 PT slots and grow Eilis's PT book to 45\u201350 by marketing Eilis as available.\n\n\u2022 **Cover Build: Upper dependency on JoJo** \u2014 JoJo is the sole provider of Build: Upper (28 sessions). Train Eilis on Upper or introduce a second coach into this class rotation to reduce single-coach reliance and give JoJo breathing room.\n\n\u2022 **Ring-fence JoJo for Tuesdays and signature classes** \u2014 Keep JoJo focused on technically demanding Tuesday classes and flagship offerings (Strongevity, No Sweat Intro). This plays to her head coach role and prevents burnout.\n\n\u2022 **Monitor Eilis's readiness** \u2014 Eilis is now carrying the majority of PT and Build: Full Body; after absorbing Grace's Lower and Elevate classes, confirm she's supported and consider if a third coach hire is needed by Q1",
     "period": "September 2026"
   },
   "asana": {
@@ -5517,7 +5581,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 24,
+    "new_this_month": 25,
     "cancellations_this_month": 5,
     "leaving_members": [
       {
@@ -7248,6 +7312,16 @@
             "name": "Rosemary Kennedy"
           }
         ]
+      },
+      {
+        "name": "Fuel Forward Nutrition Challenge",
+        "count": 1,
+        "members": [
+          {
+            "id": 12982150,
+            "name": "Sarah Calvin"
+          }
+        ]
       }
     ],
     "class_stats": {
@@ -7263,7 +7337,7 @@
           },
           {
             "day": "Monday",
-            "count": 553
+            "count": 564
           },
           {
             "day": "Friday",
@@ -7289,7 +7363,7 @@
           },
           {
             "day": "Monday",
-            "count": 553
+            "count": 564
           },
           {
             "day": "Wednesday",
@@ -7307,7 +7381,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 450
+            "count": 451
           },
           {
             "name": "Elevate",
@@ -7315,7 +7389,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 292
+            "count": 302
           },
           {
             "name": "Circuits",
@@ -7371,8 +7445,8 @@
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
-            "count": 103,
-            "sessions": 10,
+            "count": 113,
+            "sessions": 11,
             "avg": 10.3,
             "label": "Monday 11am Strongevity"
           },
@@ -7460,7 +7534,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3191
+        "total_attended": 3202
       },
       "last_30_days": {
         "top_days": [
@@ -7470,7 +7544,7 @@
           },
           {
             "day": "Monday",
-            "count": 200
+            "count": 211
           },
           {
             "day": "Wednesday",
@@ -7504,7 +7578,7 @@
           },
           {
             "day": "Monday",
-            "count": 200
+            "count": 211
           }
         ],
         "top_classes": [
@@ -7514,7 +7588,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 171
+            "count": 172
           },
           {
             "name": "Build: Full Body",
@@ -7526,7 +7600,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 84
+            "count": 94
           },
           {
             "name": "Mobility",
@@ -7671,7 +7745,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 995
+        "total_attended": 1006
       },
       "suggestion": "**For quiet studio time (especially Thursday/Friday/Saturday):**\n\n1. Launch a paid \"Open Studio + Coach\" slot (30\u201345 mins) on Thursday or Friday afternoons\u2014members book a studio hour at a lower price point than PT, with a coach available for form checks or programming advice. Captures gym traffic during naturally quiet periods without cannibalizing PT bookings.\n\n2. Run a monthly \"Barbelle + Engine Workshop\" (60 mins, Saturday morning)\u2014position it as a skills clinic teaching proper barbell technique and metabolic conditioning, not a regular class. Price as a one-off workshop (\u00a38\u201312) to attract curious members who find the weekly classes intimidating, and use it to build a cohort who might then attend the regular classes.\n\n**For the quieter classes themselves:**\n\n3. Swap **Mobility** to a Thursday or Friday morning slot (currently likely buried in a busy day). Pair it with a targeted email to members over 40 or those with \"recovering from injury\" tags, and offer the first session free. Mobility has real demand but poor visibility in its current time; repositioning + direct outreach will lift it faster than format changes.",
       "capacity": [
@@ -8007,6 +8081,7 @@
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "4 Session Block": 1,
           "8 Session Block": 1,
+          "Fuel Forward Nutrition Challenge": 1,
           "2 Sessions": 1
         }
       }
@@ -8076,13 +8151,6 @@
         "last_seen": "2026-10-14"
       },
       {
-        "id": 13511909,
-        "name": "Craig McCollum",
-        "membership": "Strongevity Membership",
-        "days_absent": 14,
-        "last_seen": "2026-10-12"
-      },
-      {
         "id": 13520776,
         "name": "Davina Dickson",
         "membership": "Strongevity Membership",
@@ -8118,32 +8186,11 @@
         "last_seen": "2026-10-15"
       },
       {
-        "id": 13625545,
-        "name": "Helen Hamilton",
-        "membership": "Strongevity Membership",
-        "days_absent": 14,
-        "last_seen": "2026-10-12"
-      },
-      {
-        "id": 11027616,
-        "name": "Joan Stewart",
-        "membership": "Strongevity Membership",
-        "days_absent": 14,
-        "last_seen": "2026-10-12"
-      },
-      {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
         "days_absent": 98,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 13512836,
-        "name": "Laurie Curran",
-        "membership": "Strongevity Membership",
-        "days_absent": 14,
-        "last_seen": "2026-10-12"
       },
       {
         "id": 13262681,
@@ -8158,13 +8205,6 @@
         "membership": "6 Week Jumpstart",
         "days_absent": 84,
         "last_seen": "2026-08-03"
-      },
-      {
-        "id": 12852843,
-        "name": "Liz Houston",
-        "membership": "4 PT Sessions",
-        "days_absent": 14,
-        "last_seen": "2026-10-12"
       },
       {
         "id": 8163121,
@@ -8186,6 +8226,41 @@
         "membership": "Strongevity",
         "days_absent": 13,
         "last_seen": "2026-10-13"
+      },
+      {
+        "id": 13908961,
+        "name": "Mia Taylor",
+        "membership": "6 Week Jumpstart",
+        "days_absent": 37,
+        "last_seen": "2026-09-19"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 52,
+        "last_seen": "2026-09-04"
+      },
+      {
+        "id": 9196376,
+        "name": "Nerys Young",
+        "membership": "Empower",
+        "days_absent": 17,
+        "last_seen": "2026-10-09"
+      },
+      {
+        "id": 13149989,
+        "name": "Paula Bamford",
+        "membership": "Empower",
+        "days_absent": 12,
+        "last_seen": "2026-10-14"
+      },
+      {
+        "id": 13553225,
+        "name": "Rachel Linton",
+        "membership": "Empower",
+        "days_absent": 14,
+        "last_seen": "2026-10-12"
       }
     ],
     "celebrations": {
@@ -8378,6 +8453,12 @@
       ]
     },
     "lead_bookings": [
+      {
+        "name": "Isobel Sterling",
+        "type": "Personal Training Sales Call",
+        "date": "2026-10-26",
+        "upcoming": true
+      },
       {
         "name": "Johanna Lapsley",
         "type": "Meet a Coach",
@@ -13980,6 +14061,18 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Invitation: Jordan filming @ Tue 24 Nov 2026 10am - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Jordan filming You have been invited by Grace Smith to attend an event named Jordan filming on Tuesday 24 Nov 2026 \u22c5 10am \u2013 1:30pm (United Kingdom Time). When Tuesday 24 Nov 2026 \u22c5 10am \u2013 1:30pm (",
+        "id": "1a17847f9a0aeafb"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: New Year Ad filming with Jordan @ Mon 30 Nov 2026 12:30pm - 1:45pm (GMT) (Coach JoJo)",
+        "snippet": "New Year Ad filming with Jordan You have been invited by Grace Smith to attend an event named New Year Ad filming with Jordan on Monday 30 Nov 2026 \u22c5 12:30pm \u2013 1:45pm (United Kingdom Time). When Monda",
+        "id": "1a17847da39b1195"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Cancelled event: GRACE MATERNITY LEAVE @ Mon 30 Nov 2026 (Coach JoJo)",
         "snippet": "GRACE MATERNITY LEAVE This event has been cancelled and removed from your calendar. When Monday 30 Nov 2026 Guests Grace Smith - organiser Coach JoJo Invitation from Google Calendar You are receiving",
         "id": "1a163a6388f4d2d3"
@@ -14025,21 +14118,21 @@
         "subject": "Invitation: Wedding (jojo cover) @ Sat 3 Jul 2027 (Coach JoJo)",
         "snippet": "Wedding (jojo cover) You have been invited by Coach Eilis to attend an event named Wedding (jojo cover) on Saturday 3 Jul 2027. When Saturday 3 Jul 2027 Guests Coach Eilis - organiser Coach JoJo View",
         "id": "1a1599cce6624acc"
-      },
-      {
-        "from": "Coach Eilis",
-        "subject": "Invitation: Wedding (Jojo covering) @ Fri 2 Jul 2027 (Coach JoJo)",
-        "snippet": "Wedding (Jojo covering) You have been invited by Coach Eilis to attend an event named Wedding (Jojo covering) on Friday 2 Jul 2027. When Friday 2 Jul 2027 Guests Coach Eilis - organiser Coach JoJo Vie",
-        "id": "1a1599c6288a20e6"
-      },
-      {
-        "from": "Eilis Kearns",
-        "subject": "Accepted: Disney JoJo @ Thu 10 Dec - Mon 14 Dec 2026 (jojo@theforge.pt)",
-        "snippet": "Disney JoJo Eilis Kearns has accepted this invitation. When Thursday 10 Dec \u2013 Monday 14 Dec 2026 Guests jojo@theforge.pt - organiser Eilis Kearns grace@theforge.pt View all guest info Invitation from",
-        "id": "1a15997b6840fc4d"
       }
     ],
     "important": [
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Jordan filming @ Tue 24 Nov 2026 10am - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Jordan filming You have been invited by Grace Smith to attend an event named Jordan filming on Tuesday 24 Nov 2026 \u22c5 10am \u2013 1:30pm (United Kingdom Time). When Tuesday 24 Nov 2026 \u22c5",
+        "id": "1a17847f9a0aeafb"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: New Year Ad filming with Jordan @ Mon 30 Nov 2026 12:30pm - 1:45pm (GMT) (Coach JoJo)",
+        "snippet": "New Year Ad filming with Jordan You have been invited by Grace Smith to attend an event named New Year Ad filming with Jordan on Monday 30 Nov 2026 \u22c5 12:30pm \u2013 1:45pm (United Kingd",
+        "id": "1a17847da39b1195"
+      },
       {
         "from": "Grace Smith",
         "subject": "Updated invitation: Studio Coaches Meeting @ Thu 26 Nov 2026 12pm - 1pm (GMT) (Coach JoJo)",
