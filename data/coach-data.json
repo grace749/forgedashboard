@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T15:01:04.499605+00:00",
+  "generated_at": "2026-10-27T20:05:05.030220+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1103,6 +1103,30 @@
         "weight_change": -12.4,
         "smm_change": -3.1,
         "pbf_change": -1.5,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-08",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "margaret153",
+        "last_scan": "2026-10-27",
+        "scan_count": 1,
+        "weight": 138.6,
+        "smm": 42.1,
+        "pbf": 42.9,
+        "bmi": 24.6,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -4280,7 +4304,7 @@
         "overdue": true
       }
     ],
-    "total": 134,
+    "total": 135,
     "configured": true
   },
   "slack": {
@@ -4290,7 +4314,7 @@
       {
         "user_id": "U081RCPFSAX",
         "text": "Hi <@U05P1R84NKS> \nI'm so sorry but I won't be able to make it to tonights 8pm class.\nSending so much love and luck to you, Dan and baby Banks. Enjoy every seco",
-        "hours": 20,
+        "hours": 25,
         "name": "Emma Hopkins"
       }
     ],
@@ -4462,7 +4486,8 @@
       "anne forgrave": "U0C9XJAA8AH",
       "sarahb": "U0CAKFA5SJF",
       "sinead wilson": "U0CBL296W3F",
-      "margaret.edgar21": "U0CBSU8J0GN"
+      "margaret.edgar21": "U0CBSU8J0GN",
+      "julia": "U0CCFLY2VUK"
     }
   },
   "staff": {
@@ -5049,7 +5074,7 @@
     }
   },
   "teamup": {
-    "total_members": 173,
+    "total_members": 174,
     "recurring": 112,
     "recurring_members": [
       {
@@ -5501,7 +5526,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 12,
+    "trial": 13,
     "trial_members": [
       {
         "id": 13878811,
@@ -5518,6 +5543,10 @@
       {
         "id": 14158967,
         "name": "Jayne McKay"
+      },
+      {
+        "id": 14185563,
+        "name": "Julia Millar"
       },
       {
         "id": 13507202,
@@ -5552,8 +5581,8 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 25,
-    "cancellations_this_month": 5,
+    "new_this_month": 27,
+    "cancellations_this_month": 6,
     "leaving_members": [
       {
         "id": 10057245,
@@ -5570,6 +5599,10 @@
       {
         "id": 13553225,
         "name": "Rachel Linton"
+      },
+      {
+        "id": 13359403,
+        "name": "Zara Drain"
       },
       {
         "id": 12672618,
@@ -6385,9 +6418,9 @@
       }
     ],
     "cancelled_ytd": 53,
-    "churn_rate": 3.0,
-    "avg_member_price": 137.73,
-    "monthly_recurring_revenue": 15150.0,
+    "churn_rate": 3.6,
+    "avg_member_price": 137.69,
+    "monthly_recurring_revenue": 15284.0,
     "avg_tenure_months": 8.4,
     "cancelled_last_month": 7,
     "cancelled_members": [
@@ -6728,7 +6761,7 @@
       },
       {
         "name": "Elevate",
-        "count": 38,
+        "count": 39,
         "members": [
           {
             "id": 12931950,
@@ -6871,6 +6904,10 @@
             "name": "Sharon Smyth"
           },
           {
+            "id": 13359403,
+            "name": "Zara Drain"
+          },
+          {
             "id": 12672618,
             "name": "hazel graham"
           },
@@ -6952,7 +6989,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 12,
+        "count": 13,
         "members": [
           {
             "id": 13878811,
@@ -6969,6 +7006,10 @@
           {
             "id": 14158967,
             "name": "Jayne McKay"
+          },
+          {
+            "id": 14185563,
+            "name": "Julia Millar"
           },
           {
             "id": 13507202,
@@ -7294,7 +7335,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 760
+            "count": 794
           },
           {
             "day": "Wednesday",
@@ -7338,7 +7379,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 669
+            "count": 703
           },
           {
             "name": "Build: Full Body",
@@ -7437,8 +7478,8 @@
             "day": "Tuesday",
             "time": "7pm",
             "name": "Build: Upper",
-            "count": 123,
-            "sessions": 12,
+            "count": 132,
+            "sessions": 13,
             "avg": 10.2,
             "label": "Tuesday 7pm Build: Upper"
           }
@@ -7499,13 +7540,13 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3197
+        "total_attended": 3231
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 278
+            "count": 312
           },
           {
             "day": "Monday",
@@ -7549,7 +7590,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 237
+            "count": 271
           },
           {
             "name": "Build: Lower",
@@ -7609,15 +7650,6 @@
             "label": "Friday 6pm Circuits"
           },
           {
-            "day": "Tuesday",
-            "time": "7pm",
-            "name": "Build: Upper",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
-            "label": "Tuesday 7pm Build: Upper"
-          },
-          {
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -7625,6 +7657,15 @@
             "sessions": 4,
             "avg": 10.2,
             "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Tuesday",
+            "time": "7pm",
+            "name": "Build: Upper",
+            "count": 50,
+            "sessions": 5,
+            "avg": 10.0,
+            "label": "Tuesday 7pm Build: Upper"
           },
           {
             "day": "Monday",
@@ -7710,7 +7751,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 1037
+        "total_attended": 1071
       },
       "suggestion": "**For quiet studio time between PT and classes:**\n\n1. **Launch a Friday/Saturday open-gym block (30\u201345 mins) with a staffed coach available for form checks.** Friday and Saturday are your quietest days \u2014 these slots let members drop in without committing to a full class, and the coach presence drives accountability without needing a structured class format.\n\n2. **Run a paid \"Mobility + Recovery\" workshop on Thursday mornings (your second-quietest day).** Market it as a 20-minute standalone session targeting soreness and prep-work \u2014 price it as a quick add-on (\u00a35\u20138) rather than a full class, which positions it as extra value and fills dead time between existing bookings.\n\n**For the quieter classes themselves:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday mornings and pair them with a targeted email invite to your Build class regulars.** These classes are severely underattended (20 bookings each in the last 30 days). Your strength audience clearly exists \u2014 they're just not discovering or choosing these formats. A time slot shift + direct outreach to your most active cohort will test demand before deciding on format changes.",
       "capacity": [
@@ -8028,7 +8069,7 @@
       },
       {
         "month": "2026-10",
-        "active": 175,
+        "active": 174,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8038,9 +8079,9 @@
           "Elevate": 38,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 8,
+          "Strongevity": 6,
           "4 Class Pass": 2,
-          "6 Week Jumpstart": 12,
+          "6 Week Jumpstart": 13,
           "Strongevity Membership": 15,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -8673,7 +8714,7 @@
         "id": 13594540,
         "name": "Christine Freeman",
         "email": "christineefreeman@msn.com",
-        "join_date": "2026-10-27",
+        "join_date": "2026-11-03",
         "membership": "Strongevity",
         "class_count": 9,
         "last_momentum": null
@@ -8790,7 +8831,7 @@
         "id": 13589102,
         "name": "Edith Irwin",
         "email": "edith.irwin@outlook.com",
-        "join_date": "2026-10-27",
+        "join_date": "2026-11-03",
         "membership": "Strongevity",
         "class_count": 10,
         "last_momentum": null
