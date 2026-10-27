@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:01:36.442727+00:00",
+  "generated_at": "2026-10-27T15:01:04.499605+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -27,9 +27,21 @@
       },
       {
         "month": "2026-07",
-        "completed": 7,
+        "completed": 12,
         "converted": 3,
-        "conv_rate": 43
+        "conv_rate": 25
+      },
+      {
+        "month": "2026-06",
+        "completed": 17,
+        "converted": 7,
+        "conv_rate": 41
+      },
+      {
+        "month": "2026-05",
+        "completed": 16,
+        "converted": 8,
+        "conv_rate": 50
       }
     ],
     "active": [
@@ -1052,6 +1064,30 @@
   "inbody": {
     "scans": [
       {
+        "name": "Coach JoJo",
+        "last_scan": "2026-10-27",
+        "scan_count": 22,
+        "weight": 187.9,
+        "smm": 71.0,
+        "pbf": 32.9,
+        "bmi": 29.4,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -0.9,
+        "smm_change": 1.1,
+        "pbf_change": -1.1,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-08",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Lynda Archibald",
         "last_scan": "2026-10-27",
         "scan_count": 3,
@@ -1211,30 +1247,6 @@
         "weight_change": -14.8,
         "smm_change": -1.3,
         "pbf_change": -2.4,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-12-01",
-        "days_to_due": 35,
-        "overdue": false
-      },
-      {
-        "name": "Coach JoJo",
-        "last_scan": "2026-10-20",
-        "scan_count": 21,
-        "weight": 188.8,
-        "smm": 69.9,
-        "pbf": 34.0,
-        "bmi": 29.6,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": -3.1,
-        "smm_change": -0.9,
-        "pbf_change": 0.0,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -4278,7 +4290,7 @@
       {
         "user_id": "U081RCPFSAX",
         "text": "Hi <@U05P1R84NKS> \nI'm so sorry but I won't be able to make it to tonights 8pm class.\nSending so much love and luck to you, Dan and baby Banks. Enjoy every seco",
-        "hours": 17,
+        "hours": 20,
         "name": "Emma Hopkins"
       }
     ],
@@ -5489,12 +5501,8 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 13,
+    "trial": 12,
     "trial_members": [
-      {
-        "id": 14128812,
-        "name": "Anne Forgrave"
-      },
       {
         "id": 13878811,
         "name": "Claire Scull"
@@ -6944,12 +6952,8 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 13,
+        "count": 12,
         "members": [
-          {
-            "id": 14128812,
-            "name": "Anne Forgrave"
-          },
           {
             "id": 13878811,
             "name": "Claire Scull"
@@ -7052,15 +7056,23 @@
       },
       {
         "name": "Strongevity",
-        "count": 7,
+        "count": 9,
         "members": [
           {
             "id": 8986394,
             "name": "Ann Taggart"
           },
           {
+            "id": 13594540,
+            "name": "Christine Freeman"
+          },
+          {
             "id": 11546736,
             "name": "Claire Leeke"
+          },
+          {
+            "id": 13589102,
+            "name": "Edith Irwin"
           },
           {
             "id": 900564,
@@ -7273,16 +7285,6 @@
           {
             "id": 12982150,
             "name": "Sarah Calvin"
-          }
-        ]
-      },
-      {
-        "name": "4 Session Block",
-        "count": 1,
-        "members": [
-          {
-            "id": 11029358,
-            "name": "Rosemary Kennedy"
           }
         ]
       }
@@ -8026,7 +8028,7 @@
       },
       {
         "month": "2026-10",
-        "active": 174,
+        "active": 175,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8036,9 +8038,9 @@
           "Elevate": 38,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 6,
+          "Strongevity": 8,
           "4 Class Pass": 2,
-          "6 Week Jumpstart": 13,
+          "6 Week Jumpstart": 12,
           "Strongevity Membership": 15,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -8668,6 +8670,15 @@
         "last_momentum": null
       },
       {
+        "id": 13594540,
+        "name": "Christine Freeman",
+        "email": "christineefreeman@msn.com",
+        "join_date": "2026-10-27",
+        "membership": "Strongevity",
+        "class_count": 9,
+        "last_momentum": null
+      },
+      {
         "id": 12280596,
         "name": "Cindy McIntyre",
         "email": "cindydoll78@hotmail.com",
@@ -8773,6 +8784,15 @@
         "join_date": "2026-04-13",
         "membership": "Elevate",
         "class_count": 65,
+        "last_momentum": null
+      },
+      {
+        "id": 13589102,
+        "name": "Edith Irwin",
+        "email": "edith.irwin@outlook.com",
+        "join_date": "2026-10-27",
+        "membership": "Strongevity",
+        "class_count": 10,
         "last_momentum": null
       },
       {
@@ -9502,15 +9522,6 @@
         "join_date": "2022-10-17",
         "membership": "4 PT Sessions",
         "class_count": 210,
-        "last_momentum": null
-      },
-      {
-        "id": 11029358,
-        "name": "Rosemary Kennedy",
-        "email": "rosemary_kennedy@yahoo.com",
-        "join_date": "2026-11-03",
-        "membership": "4 Session Block",
-        "class_count": 122,
         "last_momentum": null
       },
       {
@@ -14051,24 +14062,6 @@
         "subject": "Re: These are my transactions to you.",
         "snippet": "That&#39;s great, thank you. On Wed, 21 Oct 2026 at 13:33, Grace Smith &lt;grace@theforge.pt&gt; wrote: Hi Carol, Yes we don&#39;t have any payment on your account for this block in October. Coach JoJ",
         "id": "1a16315d6e597223"
-      },
-      {
-        "from": "Coach Eilis",
-        "subject": "Invitation: Concert (jojo cover @ Wed 18 Aug - Thu 19 Aug 2027 (Coach JoJo)",
-        "snippet": "Concert (jojo cover You have been invited by Coach Eilis to attend an event named Concert (jojo cover on Wednesday 18 Aug \u2013 Thursday 19 Aug 2027. When Wednesday 18 Aug \u2013 Thursday 19 Aug 2027 Guests",
-        "id": "1a1599d768442ca5"
-      },
-      {
-        "from": "Coach Eilis",
-        "subject": "Invitation: Wedding (jojo cover) @ Sat 3 Jul 2027 (Coach JoJo)",
-        "snippet": "Wedding (jojo cover) You have been invited by Coach Eilis to attend an event named Wedding (jojo cover) on Saturday 3 Jul 2027. When Saturday 3 Jul 2027 Guests Coach Eilis - organiser Coach JoJo View",
-        "id": "1a1599cce6624acc"
-      },
-      {
-        "from": "Coach Eilis",
-        "subject": "Invitation: Wedding (Jojo covering) @ Fri 2 Jul 2027 (Coach JoJo)",
-        "snippet": "Wedding (Jojo covering) You have been invited by Coach Eilis to attend an event named Wedding (Jojo covering) on Friday 2 Jul 2027. When Friday 2 Jul 2027 Guests Coach Eilis - organiser Coach JoJo Vie",
-        "id": "1a1599c6288a20e6"
       }
     ],
     "important": [
@@ -14079,6 +14072,6 @@
         "id": "1a17847f9a0aeafb"
       }
     ],
-    "urgent_count": 10
+    "urgent_count": 7
   }
 }
