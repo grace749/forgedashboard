@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T06:00:59.745438+00:00",
+  "generated_at": "2026-10-28T12:42:09.642326+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -236,6 +236,70 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "moderate neck arthritis, hysterectomy 15 years ago. widow last 6 years. carer for mum"
+      },
+      {
+        "name": "anne forgrave",
+        "cohort": "October",
+        "joined": "2026-10-28",
+        "end": "2026-12-09",
+        "goal": "Weight loss, get fit and boost self-esteem",
+        "notes": "I find caring for my father stressful at times. If life is busy I get stressed. I\u2019m not prone to anxiety",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "I find caring for my father stressful at times. If life is busy I get stressed. I\u2019m not prone to anxiety"
+      },
+      {
+        "name": "jayne mckay",
+        "cohort": "October",
+        "joined": "2026-10-28",
+        "end": "2026-12-09",
+        "goal": "Weight loss, get fit and boost self-esteem",
+        "notes": "carer for father",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "carer for father"
       }
     ],
     "recent": [
@@ -1052,6 +1116,16 @@
         "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
+        "member": "anne forgrave",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "anne forgrave",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
+      },
+      {
         "member": "sinead wilson",
         "type": "missing_checkin",
         "detail": "Missing 1 check-in(s) (on week 1)"
@@ -1060,10 +1134,20 @@
         "member": "sinead wilson",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "jayne mckay",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "jayne mckay",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 6,
+      "active_count": 8,
       "paused_count": 4,
       "conv_rate": 45,
       "converted": 9,
@@ -1073,6 +1157,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "annefo154",
+        "last_scan": "2026-10-28",
+        "scan_count": 1,
+        "weight": 238.2,
+        "smm": 76.3,
+        "pbf": 43.0,
+        "bmi": 36.2,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-09",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Coach JoJo",
         "last_scan": "2026-10-27",
@@ -4338,7 +4446,7 @@
         "overdue": true
       }
     ],
-    "total": 136,
+    "total": 137,
     "configured": true
   },
   "slack": {
@@ -4348,14 +4456,26 @@
       {
         "user_id": "U081RCPFSAX",
         "text": "Hi <@U05P1R84NKS> \nI'm so sorry but I won't be able to make it to tonights 8pm class.\nSending so much love and luck to you, Dan and baby Banks. Enjoy every seco",
-        "hours": 35,
+        "hours": 42,
         "name": "Emma Hopkins"
       },
       {
         "user_id": "U09CYACSUE9",
         "text": "Hey, just wanted to send a wee message as I didn't get speaking to you at the end of the class on Monday night and there's that many comments on the teams chann",
-        "hours": 9,
+        "hours": 16,
         "name": "Kerrie"
+      },
+      {
+        "user_id": "U0BJWC0K6DT",
+        "text": "We will always adjust movements for you if we feel they aren't right for you and do always say to use if you're unsure or feeling any tightness as well, as we w",
+        "hours": 3,
+        "name": "Anne Graham"
+      },
+      {
+        "user_id": "U0BLXE1KQQH",
+        "text": "Hi Coach Grace, I just wanted to check if you\u2019re considering increasing my work hours anytime? I\u2019d appreciate knowing if that might be possible. Thank you!",
+        "hours": 2,
+        "name": "Julie Lapaz"
       }
     ],
     "mentions": [],
@@ -4692,7 +4812,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her Build: Lower (20 sessions) should split between JoJo and Eilis; Strongevity (4), Elevate (3), and No Sweat Intro (2) go to Eilis. This removes Grace from delivery entirely and only adds ~29 group sessions across the team \u2014 manageable.\n\n\u2022 **Eilis is under-loaded on delivery**: At 111 sessions she has capacity. She's doing 39 PT slots but should take more group classes to build confidence pre-Tuesday readiness. Target her for the Strongevity, Elevate, and No Sweat Intro Grace is dropping, plus share Build: Lower.\n\n\u2022 **JoJo is carrying too much**: 140 sessions with 27 PT slots is unsustainable. Shift non-Tuesday PT clients to Eilis (aim for 50/50 split on PT caseload) and move some Build: Upper to Eilis to ease class load. JoJo should focus on Tuesdays, Strongevity quality, and mentoring.\n\n\u2022 **Body Composition scans are clogging the schedule**: 45 scans across the team aren't \"coaching.\" Batch these into admin/reception slots or assign them as low-priority filler, freeing ~20 hours of real coaching time monthly.\n\n\u2022 **Tuesday dependency is hidden**: JoJo runs Tuesdays alone (correct, given Eilis isn't ready), but her PT caseload masks how pinched she is. Reducing her PT numbers lets her teach Tuesdays with headspace and support Eilis's development on other days.\n\n\u2022 **Build a PT handover plan**: Gradually move 8\u201310 of JoJo's PT clients to Eilis over Q4 2026 so she gains experience, confidence, and Eilis",
+    "advice": "\u2022 **Move Grace's Build: Lower entirely to JoJo or Eilis** \u2014 Grace ran 20 Lower sessions last month. JoJo already coaches Upper regularly; Eilis is building Full Body capacity. Assign Lower to one coach (likely Eilis for variety) and free Grace completely from classes.\n\n\u2022 **Redistribute Grace's Strongevity and Elevate to Eilis** \u2014 Eilis took only 13 Elevate and zero Strongevity last month whilst JoJo ran 10 Strongevity. Shift Grace's 4 Strongevity and 3 Elevate to Eilis to broaden her class mix and reduce Grace's load further.\n\n\u2022 **Reduce JoJo's PT load; increase Eilis's PT strategically** \u2014 JoJo ran 27 PTs and Eilis ran 39, yet JoJo is Head Coach and needs capacity for team leadership. Audit which of JoJo's PT clients could move to Eilis (especially those not needing Head Coach expertise) to balance workload and develop Eilis.\n\n\u2022 **Stop JoJo running No Sweat Intros solo** \u2014 JoJo took 9 last month; Eilis took none. Intros are lower-skill delivery. Share this 50/50 with Eilis to free JoJo for higher-value work and give Eilis visible member-facing presence early in the journey.\n\n\u2022 **Treat Body Composition Scans as admin, not coaching load** \u2014 Remove all InBody scans (66 total across team) from session counts. Slot them as standalone 10-minute admin tasks or rotate them as a non-coaching duty so they don't distort workload visibility.\n\n\u2022 **Target: Grace zero delivery hours, JoJo ~100 sessions (classes +",
     "period": "September 2026"
   },
   "asana": {
@@ -5114,7 +5234,7 @@
     }
   },
   "teamup": {
-    "total_members": 174,
+    "total_members": 176,
     "recurring": 112,
     "recurring_members": [
       {
@@ -5621,7 +5741,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 28,
+    "new_this_month": 29,
     "cancellations_this_month": 7,
     "leaving_members": [
       {
@@ -6966,11 +7086,15 @@
       },
       {
         "name": "Strongevity Membership",
-        "count": 15,
+        "count": 17,
         "members": [
           {
             "id": 13487762,
             "name": "BERNADETTE MCLAUGHLIN"
+          },
+          {
+            "id": 13224922,
+            "name": "Carol Ferry"
           },
           {
             "id": 11546736,
@@ -7011,6 +7135,10 @@
           {
             "id": 13512836,
             "name": "Laurie Curran"
+          },
+          {
+            "id": 13517095,
+            "name": "Linda Adams"
           },
           {
             "id": 13094545,
@@ -7140,7 +7268,7 @@
       },
       {
         "name": "Strongevity",
-        "count": 9,
+        "count": 8,
         "members": [
           {
             "id": 8986394,
@@ -7169,10 +7297,6 @@
           {
             "id": 13750478,
             "name": "Maureen Donoghue"
-          },
-          {
-            "id": 6086046,
-            "name": "Rose McGill"
           },
           {
             "id": 13616418,
@@ -7382,7 +7506,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 598
+            "count": 617
           },
           {
             "day": "Monday",
@@ -7416,7 +7540,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 598
+            "count": 617
           }
         ],
         "top_classes": [
@@ -7426,7 +7550,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 502
+            "count": 514
           },
           {
             "name": "Build: Lower",
@@ -7438,7 +7562,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 303
+            "count": 310
           },
           {
             "name": "Mobility",
@@ -7482,6 +7606,15 @@
             "label": "Friday 7pm Mobility"
           },
           {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 114,
+            "sessions": 11,
+            "avg": 10.4,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
             "day": "Monday",
             "time": "11am",
             "name": "Strongevity",
@@ -7516,15 +7649,6 @@
             "sessions": 10,
             "avg": 10.2,
             "label": "Wednesday 10am Circuits"
-          },
-          {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 102,
-            "sessions": 10,
-            "avg": 10.2,
-            "label": "Wednesday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7583,7 +7707,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3174
+        "total_attended": 3193
       },
       "last_30_days": {
         "top_days": [
@@ -7597,7 +7721,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 190
+            "count": 209
           },
           {
             "day": "Friday",
@@ -7623,7 +7747,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 190
+            "count": 209
           },
           {
             "day": "Monday",
@@ -7641,11 +7765,11 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 155
+            "count": 167
           },
           {
             "name": "Strongevity",
-            "count": 102
+            "count": 109
           },
           {
             "name": "Elevate",
@@ -7684,6 +7808,15 @@
         ],
         "top_slots": [
           {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
@@ -7691,15 +7824,6 @@
             "sessions": 4,
             "avg": 10.5,
             "label": "Friday 6pm Circuits"
-          },
-          {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
-            "label": "Wednesday 7am Build: Full Body"
           },
           {
             "day": "Tuesday",
@@ -7794,7 +7918,7 @@
             "label": "Thursday 8pm Barbelle"
           }
         ],
-        "total_attended": 1071
+        "total_attended": 1090
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Launch a \"Build Basics\" workshop series on Thursday evenings** \u2014 use the quieter day to run 30-min form clinics (free or \u00a35) focused on barbell technique, targeting members who might be intimidated by Barbelle or Engine classes; position it as a bridge to those underperforming classes.\n\n2. **Block out Saturday 9\u201310am as open-gym coaching hours** \u2014 staff a coach to offer form checks and mini-programming advice (charged as \u00a310 drop-in or bundled into memberships); leverages your quietest day and builds community around strength work.\n\n**For the quieter classes themselves:**\n\n3. **Reposition Barbelle and Engine as \"by application\" or small-group paid add-ons** \u2014 rather than trying to fill seats in low-attendance slots, treat them as premium 1\u20134 person sessions with a coach; at only 20\u201357 attendees, they may be better suited as paid PT blocks (\u00a325\u201335pp) than open classes, removing the perception of \"empty\" classes and generating higher revenue per slot.",
       "capacity": [
@@ -7803,7 +7927,7 @@
           "sessions": 38,
           "cap": 15,
           "avg_attending": 11.4,
-          "fill_rate": 88,
+          "fill_rate": 89,
           "status": "healthy"
         },
         {
@@ -8112,7 +8236,7 @@
       },
       {
         "month": "2026-10",
-        "active": 174,
+        "active": 176,
         "churn": 4.5,
         "by_type": {
           "Empower": 74,
@@ -8122,10 +8246,10 @@
           "Elevate": 38,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
-          "Strongevity": 6,
+          "Strongevity": 5,
           "4 Class Pass": 2,
           "6 Week Jumpstart": 13,
-          "Strongevity Membership": 15,
+          "Strongevity Membership": 17,
           "8 Class Block": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "8 Session Block": 1,
@@ -8671,6 +8795,15 @@
         "join_date": "2025-01-26",
         "membership": "Empower",
         "class_count": 187,
+        "last_momentum": null
+      },
+      {
+        "id": 13224922,
+        "name": "Carol Ferry",
+        "email": "caroljferry@gmail.com",
+        "join_date": "2026-10-28",
+        "membership": "Strongevity Membership",
+        "class_count": 10,
         "last_momentum": null
       },
       {
@@ -9328,6 +9461,15 @@
         "join_date": "2026-07-08",
         "membership": "Empower",
         "class_count": 63,
+        "last_momentum": null
+      },
+      {
+        "id": 13517095,
+        "name": "Linda Adams",
+        "email": "muffin.brandy@gmail.com",
+        "join_date": "2026-10-28",
+        "membership": "Strongevity Membership",
+        "class_count": 6,
         "last_momentum": null
       },
       {
@@ -14126,6 +14268,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Invitation: National Fitness Awards interview @ Tue 10 Nov 2026 12:30pm - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "National Fitness Awards interview Zoom link: https://us06web.zoom.us/j/86437093070?pwd=fj4I1UmCxPuQchbfdGejSuHwpky1ia.1 Zoom link: https://us06web.zoom.us/j/86437093070?pwd=",
+        "id": "1a18181026f15daa"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Fwd: New Client Chat Widget Msg",
         "snippet": "---------- Forwarded message --------- From: Coach Grace &lt;grace@forgefemalefitness.com&gt; Date: Tue, Oct 27, 2026 at 9:56 PM Subject: New Client Chat Widget Msg To: &lt;grace@theforge.pt&gt; Hey",
         "id": "1a17f5eabf29536e"
@@ -14149,6 +14297,12 @@
         "id": "1a163479ce606da5"
       },
       {
+        "from": "Carol Ferry",
+        "subject": "Re: These are my transactions to you.",
+        "snippet": "That&#39;s great, thank you. On Wed, 21 Oct 2026 at 13:33, Grace Smith &lt;grace@theforge.pt&gt; wrote: Hi Carol, Yes we don&#39;t have any payment on your account for this block in October. Coach JoJ",
+        "id": "1a16315d6e597223"
+      },
+      {
         "from": "Forge Female Fitness",
         "subject": "Get ready for your Personal Training",
         "snippet": "Hey Margaret, Head Coach Grace here and I&#39;m excited to have you in Team Forge! You have your own Personal Training Headquarters here: https://www.forgefemalefitness.com/personaltraininghq. This ha",
@@ -14165,12 +14319,6 @@
         "subject": "Caroline Stinson - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Caroline Stinson has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
         "id": "1a15ebf2b449f8ee"
-      },
-      {
-        "from": "Carol Ferry",
-        "subject": "Re: These are my transactions to you.",
-        "snippet": "That&#39;s great, thank you. On Wed, 21 Oct 2026 at 13:33, Grace Smith &lt;grace@theforge.pt&gt; wrote: Hi Carol, Yes we don&#39;t have any payment on your account for this block in October. Coach JoJ",
-        "id": "1a16315d6e597223"
       }
     ],
     "important": [
@@ -14181,6 +14329,6 @@
         "id": "1a17847f9a0aeafb"
       }
     ],
-    "urgent_count": 8
+    "urgent_count": 9
   }
 }
