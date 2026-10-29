@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T06:00:58.086083+00:00",
+  "generated_at": "2026-10-29T12:51:56.840474+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,22 +7,10 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-10-29",
-    "event_count": 12,
-    "urgent_count": 0,
-    "enquiry_count": 4,
+    "event_count": 11,
+    "urgent_count": 2,
+    "enquiry_count": 5,
     "calendar": [
-      {
-        "title": "Precious & Patience Coaching",
-        "time": "8:30am",
-        "start_raw": "2026-10-29T08:30:00Z",
-        "day": "Today",
-        "attendees": [
-          "a.mcknight920@btinternet.com"
-        ],
-        "description": "",
-        "location": "",
-        "prep": ""
-      },
       {
         "title": "\ud83d\udcde Call: Martha Patton",
         "time": "10:30am",
@@ -34,26 +22,6 @@
         "description": "Booked discovery call",
         "location": "",
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
-      },
-      {
-        "title": "Untitled",
-        "time": "10:30am",
-        "start_raw": "2026-10-29T10:30:00Z",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "",
-        "prep": ""
-      },
-      {
-        "title": "Meet mum",
-        "time": "10:30am",
-        "start_raw": "2026-10-29T10:30:00Z",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
-        "location": "Broughshane, Ballymena, UK",
-        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Orlagh McCallion",
@@ -112,6 +80,28 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
+        "title": "\ud83d\udcde Call: Shirley Anderson",
+        "time": "5:15pm",
+        "start_raw": "2026-10-29T17:15:00",
+        "day": "Today",
+        "attendees": [
+          "Shirley Anderson"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "Untitled",
+        "time": "5:15pm",
+        "start_raw": "2026-10-29T17:15:00Z",
+        "day": "Today",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
         "title": "Banks C Section",
         "time": "all day",
         "start_raw": "2026-10-30",
@@ -121,7 +111,7 @@
         ],
         "description": "",
         "location": "Royal Jubilee Maternity Hospital, E, 274 Grosvenor Rd, Belfast BT12 6BA, UK",
-        "prep": "Review bank statements and reconcile C Section account records."
+        "prep": ""
       },
       {
         "title": "So Soy Candle Workshop",
@@ -133,7 +123,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Confirm candle supplier delivery; prepare workshop materials and setup instructions."
+        "prep": ""
       },
       {
         "title": "BLK BOX Warmup Recovery",
@@ -145,10 +135,31 @@
         ],
         "description": "<a href=\"https://www.eventbrite.co.uk/e/warm-up-recovery-workshop-blk-box-hq-with-hyperice-tickets-1996975087243\">https://www.eventbrite.co.uk/e/warm-up-recovery-workshop-blk-box-hq-with-hyperice-tick",
         "location": "BLK BOX, 4 Cloughfern Ave, Newtownabbey BT37 0UB, UK",
-        "prep": "Confirm HyperIce equipment availability; brief staff on workshop logistics."
+        "prep": "Review bank statements and reconcile C Section account records."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Christine Mnguni",
+        "from_raw": "Christine Mnguni <christine.mnguni@tlcworldwide.com>",
+        "subject": "Partnership Opportunity | Forge Female Fitness x Electric Ireland \u2013 Brighter Things To Do",
+        "snippet": "Dear Grace, I hope you are well. My name is Christine Mnguni, and I&#39;m a Partnerships and Account Manager at TLC Worldwide. I&#39;m reaching out to explore a potential partnership with Forge Female",
+        "id": "1a186f1fce523e16",
+        "thread_id": "1a186f1fce523e16",
+        "msg_count": 1,
+        "draft_id": "r3648729231915489277"
+      },
+      {
+        "from": "Diane Roberts",
+        "from_raw": "Diane Roberts <diane@xpinnovates.com>",
+        "subject": "Your GrowthSprint account closes tomorrow, 30 October",
+        "snippet": "Hello Grace, I wanted to send a quick note before your GrowthSprint trial ends tomorrow, 30 October. Thank you so much for being one of my pilot users. Your feedback has shaped the software in ways you",
+        "id": "1a186d47b8519403",
+        "thread_id": "1a186d47b8519403",
+        "msg_count": 1,
+        "draft_id": "r841584974434032551"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -186,14 +197,23 @@
         "snippet": "Booked a call for Today 1:30pm \u2014 potential member",
         "age": "",
         "unread": 0
+      },
+      {
+        "name": "Shirley Anderson",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 5:15pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 5:15pm",
+        "snippet": "Booked a call for Today 5:15pm \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -303,10 +323,28 @@
   },
   "ghl": [
     {
+      "name": "deewall123",
+      "channel": "Phone",
+      "message": "\ud83d\udc4f",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "WkTXpzOpItdDmehR5ZeD",
+      "contact_id": "FdQuIFhbjArKOVoh7V1c"
+    },
+    {
+      "name": "everymomentanopportunity",
+      "channel": "Phone",
+      "message": "\ud83d\udd25",
+      "age": "4h ago",
+      "unread": 1,
+      "conv_id": "bCO1UnwwejQ3wgV2B5KB",
+      "contact_id": "VjwHTdCoNMXKrbzPdSx0"
+    },
+    {
       "name": "Sarah Boyd",
       "channel": "Phone",
       "message": "Bless you! You have so much on your plate, congratulations and super exciting!!! \nNutrition is definitely something I would like to focus on, however I cant bite or chew at the moment as I think ive k",
-      "age": "7h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "HFse8Zp7V3kYGsOhyliT",
       "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
@@ -315,7 +353,7 @@
       "name": "marlene__montgomery",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/Dagx-upB1_V/",
-      "age": "9h ago",
+      "age": "16h ago",
       "unread": 1,
       "conv_id": "BHZmscvKKOS363Ux9evC",
       "contact_id": "7qRztpJ4kBpCdBMeQ9MF"
@@ -324,7 +362,7 @@
       "name": "Ruth",
       "channel": "Phone",
       "message": "Please can you book evening class for me please thank Ruth, Let me know what time,  x",
-      "age": "9h ago",
+      "age": "16h ago",
       "unread": 2,
       "conv_id": "yY2pDB0bDaClKUeKAWmT",
       "contact_id": "NhyYgdUcoGkO9kK9WBa3"
@@ -333,7 +371,7 @@
       "name": "Zara Drain",
       "channel": "Phone",
       "message": "It definately has made me push myself to attend classes otherwise if it was left to self discipline i wld have quite a few times lol.  Very supportive and always happy to alter things i find annoys my",
-      "age": "13h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "6zig33GJx234SfCD9SFV",
       "contact_id": "2jHhjsZ8e3ngQTnSRx2i"
@@ -342,7 +380,7 @@
       "name": "Kathryn Alleyne",
       "channel": "Phone",
       "message": "Just did there now! \ud83d\ude0a when would be good for me to do my body composition scan?",
-      "age": "13h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "SchC4kWTwkUNZLq6QGix",
       "contact_id": "Qu5byPho0Z2foHCVnzfA"
@@ -351,7 +389,7 @@
       "name": "Bernice Mccloskey",
       "channel": "Phone",
       "message": "Hi Grace, I wouldn't be able to do it this side of Christmas but unless the wheels totally come off my life between now and Christmas , I will definitely get in touch in the new year - it all sounds b",
-      "age": "17h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "nXREQ5IrofBfmSSZ07vC",
       "contact_id": "cOagqjOJAbKt0UFf96o8"
@@ -360,19 +398,10 @@
       "name": "Deirdre Wallace",
       "channel": "Phone",
       "message": "Hi Grace thank you for texting. \nI\u2019m finding it difficult to be honest, I knew I was unfit but I didn\u2019t realise just how much! \nI had a chat with JoJo yesterday about not seeing any shift in the scale",
-      "age": "18h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "mKxxaU2S0zBdTQn1RdHl",
       "contact_id": "pp1ZsVsvZet7uLeG36ZH"
-    },
-    {
-      "name": "Joanne Pethick",
-      "channel": "Phone",
-      "message": "Day time usually suits me",
-      "age": "20h ago",
-      "unread": 1,
-      "conv_id": "JpIV1nw6okXsH1MatpZl",
-      "contact_id": "gF5urtfDq46aiQOqLfF8"
     }
   ],
   "jumpstart": {
@@ -5414,7 +5443,7 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 no documented first-touch-to-first-class journey (induction safety, fitness assessment, goal-setting, tech/app setup)\n- **Member Check-ins** \u2013 no cadence or trigger for proactive retention outreach (30/60/90-day, post-pause, low-attendance flags)\n- **Cancellation & Churn** \u2013 no win-back protocol, exit interview, or retention trigger playbook\n- **Pause/Freeze** \u2013 no criteria for approval, duration limits, or re-engagement SOP\n- **Referral Programme** \u2013 no mechanics, incentive tracking, or reward fulfilment process\n- **Member Data Privacy & GDPR** \u2013 no data handling, consent, retention, deletion, or breach response protocol\n- **Complaints & Incident Management** \u2013 no escalation path, documentation, or resolution timeline\n- **Health & Safety Incident Logging** \u2013 no injury/safeguarding reporting or follow-up process\n- **Staffing** \u2013 no hiring, probation, performance review, or termination SOP\n- **Finance & Billing** \u2013 no reconciliation, refund, or payment failure recovery process\n\n---\n\n# **Needs updating**\n\n- **Coaching Development Roadmap** \u2013 likely missing skill progression milestones, assessment frequency, and tie-in to pay/promotion\n- **Class Quality Audit Checklist** \u2013 unclear if covers member feedback loops, coach consistency metrics, or corrective action triggers\n- **Weekly Key Coach Tasks** \u2013 may lack clarity on attendance/cancellation ownership, member outreach, or class prep standards\n- **Member Outcomes & 30 Day Goals** \u2013 probably missing tracking mechanism, coach accountability, and how outcomes feed retention/upsell\n- **Troubleshooting Guide** \u2013 likely doesn't cover tech failures, no-shows,"
+    "coo_evaluation": "# SOP Audit: The Forge, Belfast\n\n**Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 first 7 days critical; no documented sequence for induction, movement screening, goal-setting, or coach assignment\n- **Member Checkins** \u2013 no cadence for re-engagement post-signup (week 1, month 1, month 3); risk of silent churn\n- **Cancellation & Churn** \u2013 no win-back protocol, exit interview process, or data capture on why members leave\n- **Member Pause** \u2013 unclear criteria, duration limits, re-activation comms, and pause-to-cancellation prevention\n- **Referral Programme** \u2013 no mechanics: incentive tier, redemption, tracking, or staff commission/bonus rules\n- **Member Data Privacy & GDPR** \u2013 no data handling, consent, retention, or breach response documented\n- **Troubleshooting Guide** \u2013 no decision tree for common member complaints (billing, coach issues, class booking, injury concerns)\n- **Coaching Development Roadmap** \u2013 no progression framework, certification pathways, or performance review cadence\n- **Class Quality Audit Checklist** \u2013 no monthly/quarterly standard-setting or peer/manager observation protocol\n- **30 Day Goals & Member Outcomes** \u2013 no tracking template, review rhythm, or outcome-to-retention link\n\n**Needs updating**\n\n- **Weekly Key Coach Tasks** \u2013 likely missing: session prep checklists, admin handoffs, member communication templates, injury/incident logging\n- **Milestone Achievements** \u2013 if it exists, confirm it ties to referral incentives and retention nudges; check frequency of celebration comms\n- **Clients (28/37)** \u2013 massive gap in retention/churn cycle; audit existing SOPs for payment, pause, and account management workflows\n- **Marketing (6/6)** \u2013 confirm"
   },
   "slack": {
     "configured": true,
@@ -5423,19 +5452,19 @@
       {
         "user_id": "U09CYACSUE9",
         "text": "Hey, just wanted to send a wee message as I didn't get speaking to you at the end of the class on Monday night and there's that many comments on the teams chann",
-        "hours": 33,
+        "hours": 40,
         "name": "Kerrie"
       },
       {
         "user_id": "U0BJWC0K6DT",
         "text": "We will always adjust movements for you if we feel they aren't right for you and do always say to use if you're unsure or feeling any tightness as well, as we w",
-        "hours": 20,
+        "hours": 27,
         "name": "Anne Graham"
       },
       {
         "user_id": "U0BLXE1KQQH",
-        "text": "Hi Coach Grace, I just wanted to check if you\u2019re considering increasing my work hours anytime? I\u2019d appreciate knowing if that might be possible. Thank you!",
-        "hours": 19,
+        "text": "Good morning, Coach. Password is not working.",
+        "hours": 3,
         "name": "Julie Lapaz"
       }
     ],
@@ -5777,7 +5806,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower entirely to JoJo or Eilis** \u2014 Grace ran 20 Lower sessions last month. JoJo already coaches Upper regularly; Eilis is building Full Body capacity. Assign Lower to one coach (likely Eilis for variety) and free Grace completely from classes.\n\n\u2022 **Redistribute Grace's Strongevity and Elevate to Eilis** \u2014 Eilis took only 13 Elevate and zero Strongevity last month whilst JoJo ran 10 Strongevity. Shift Grace's 4 Strongevity and 3 Elevate to Eilis to broaden her class mix and reduce Grace's load further.\n\n\u2022 **Reduce JoJo's PT load; increase Eilis's PT strategically** \u2014 JoJo ran 27 PTs and Eilis ran 39, yet JoJo is Head Coach and needs capacity for team leadership. Audit which of JoJo's PT clients could move to Eilis (especially those not needing Head Coach expertise) to balance workload and develop Eilis.\n\n\u2022 **Stop JoJo running No Sweat Intros solo** \u2014 JoJo took 9 last month; Eilis took none. Intros are lower-skill delivery. Share this 50/50 with Eilis to free JoJo for higher-value work and give Eilis visible member-facing presence early in the journey.\n\n\u2022 **Treat Body Composition Scans as admin, not coaching load** \u2014 Remove all InBody scans (66 total across team) from session counts. Slot them as standalone 10-minute admin tasks or rotate them as a non-coaching duty so they don't distort workload visibility.\n\n\u2022 **Target: Grace zero delivery hours, JoJo ~100 sessions (classes +",
+    "advice": "\u2022 **Redistribute Grace's class load immediately.** She's running Build: Lower (20 sessions) and Elevate (3 sessions) \u2014 hand these to Eilis and JoJo. Eilis can absorb most Build: Lower; JoJo takes Elevate to give Eilis breathing room. This removes Grace from delivery entirely.\n\n\u2022 **Move Grace's Strongevity and No Sweat Intro to JoJo.** JoJo already runs Strongevity (10 sessions) and No Sweat Intro (9 sessions), so she has the template. Adding Grace's 4 Strongevity and 2 No Sweat Intro sessions consolidates these offerings under one coach.\n\n\u2022 **Offload some of JoJo's PT to Eilis.** JoJo is carrying 27 PT clients against Eilis's 39 \u2014 but JoJo also has 140 total sessions, double Eilis's load. Move 5\u20138 of JoJo's PT clients to Eilis to balance delivery and prevent burnout.\n\n\u2022 **Assign all Body Composition scans to Eilis** (she's done 19, can do more). They're not real coaching; use them to fill her timetable efficiently without adding class or PT pressure on JoJo.\n\n\u2022 **Monitor Plate and Mobility coverage.** Eilis runs both (7 and 6 sessions). If demand grows, JoJo should shadow and co-deliver to build a second coach on these classes and reduce single-person dependency.\n\n\u2022 **Create a simple handover plan for Grace's PT clients.** Confirm which clients move to Eilis and which to JoJo by next month, so members aren't left without continuity.",
     "period": "September 2026"
   },
   "asana": {
@@ -5950,6 +5979,16 @@
         "project": null,
         "due_on": "2026-10-23",
         "overdue": true,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
+        "gid": "1220006646781787",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1220006646781787",
+        "project": null,
+        "due_on": "2026-10-30",
+        "overdue": false,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -6199,7 +6238,7 @@
     }
   },
   "teamup": {
-    "total_members": 175,
+    "total_members": 176,
     "recurring": 112,
     "recurring_members": [
       {
@@ -6706,7 +6745,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 31,
+    "new_this_month": 32,
     "cancellations_this_month": 7,
     "leaving_members": [
       {
@@ -8257,7 +8296,7 @@
       },
       {
         "name": "Strongevity",
-        "count": 9,
+        "count": 10,
         "members": [
           {
             "id": 8986394,
@@ -8290,6 +8329,10 @@
           {
             "id": 6086046,
             "name": "Rose McGill"
+          },
+          {
+            "id": 14193486,
+            "name": "Shirley Anderson"
           },
           {
             "id": 13616418,
@@ -8507,7 +8550,7 @@
           },
           {
             "day": "Thursday",
-            "count": 421
+            "count": 439
           }
         ],
         "bottom_days": [
@@ -8517,7 +8560,7 @@
           },
           {
             "day": "Thursday",
-            "count": 421
+            "count": 439
           },
           {
             "day": "Friday",
@@ -8539,7 +8582,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 501
+            "count": 513
           },
           {
             "name": "Build: Lower",
@@ -8547,7 +8590,7 @@
           },
           {
             "name": "Elevate",
-            "count": 349
+            "count": 355
           },
           {
             "name": "Strongevity",
@@ -8681,9 +8724,9 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 81,
-            "sessions": 12,
-            "avg": 6.8,
+            "count": 87,
+            "sessions": 13,
+            "avg": 6.7,
             "label": "Thursday 10am Elevate"
           },
           {
@@ -8696,7 +8739,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3167
+        "total_attended": 3185
       },
       "last_30_days": {
         "top_days": [
@@ -8718,7 +8761,7 @@
           },
           {
             "day": "Thursday",
-            "count": 120
+            "count": 138
           }
         ],
         "bottom_days": [
@@ -8728,7 +8771,7 @@
           },
           {
             "day": "Thursday",
-            "count": 120
+            "count": 138
           },
           {
             "day": "Friday",
@@ -8750,7 +8793,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 172
+            "count": 184
           },
           {
             "name": "Build: Lower",
@@ -8762,7 +8805,7 @@
           },
           {
             "name": "Elevate",
-            "count": 81
+            "count": 87
           },
           {
             "name": "Mobility",
@@ -8833,6 +8876,15 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 40,
+            "sessions": 4,
+            "avg": 10.0,
+            "label": "Thursday 7am Build: Full Body"
+          },
+          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -8840,15 +8892,6 @@
             "sessions": 3,
             "avg": 10.0,
             "label": "Wednesday 10am Circuits"
-          },
-          {
-            "day": "Monday",
-            "time": "11am",
-            "name": "Strongevity",
-            "count": 30,
-            "sessions": 3,
-            "avg": 10.0,
-            "label": "Monday 11am Strongevity"
           }
         ],
         "bottom_slots": [
@@ -8865,9 +8908,9 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 17,
-            "sessions": 4,
-            "avg": 4.2,
+            "count": 23,
+            "sessions": 5,
+            "avg": 4.6,
             "label": "Thursday 10am Elevate"
           },
           {
@@ -8907,7 +8950,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1047
+        "total_attended": 1065
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Launch a \"Plate Basics\" workshop (30 mins, paid add-on)** \u2014 Barbelle and Plate are clearly struggling; a short technique/form clinic between scheduled classes would build confidence and feed direct sign-ups into those underperforming classes, plus generate extra revenue from the studio downtime.\n\n2. **Open a self-directed \"Strength Lab\" slot (60 mins, free to members)** on Thursday or Friday afternoons \u2014 your quietest days have dead air; a supervised-but-unstructured time lets members train solo or pair up, fills the studio, and can funnel people toward Engine or Circuits if you subtly prompt them.\n\n**For the quieter classes themselves:**\n\n3. **Move Engine to a Tuesday or Wednesday slot** (or trial it there for 4 weeks) \u2014 it's barely hitting 72 in 90 days; your quietest day is Saturday with 268 total attendance, so moving it to a busy day borrows momentum from high-traffic periods and shifts perception from \"niche\" to \"normal.\"",
       "capacity": [
@@ -8936,16 +8979,16 @@
           "status": "healthy"
         },
         {
-          "name": "Build: Full Body",
-          "sessions": 65,
+          "name": "Mobility",
+          "sessions": 28,
           "cap": 12,
           "avg_attending": 9.4,
-          "fill_rate": 79,
+          "fill_rate": 78,
           "status": "healthy"
         },
         {
-          "name": "Mobility",
-          "sessions": 28,
+          "name": "Build: Full Body",
+          "sessions": 65,
           "cap": 12,
           "avg_attending": 9.4,
           "fill_rate": 78,
@@ -8971,8 +9014,8 @@
           "name": "Engine",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 7.9,
-          "fill_rate": 66,
+          "avg_attending": 7.8,
+          "fill_rate": 65,
           "status": "attention"
         },
         {
@@ -9645,6 +9688,18 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Mary Eakin",
+        "type": "Meet a Coach",
+        "date": "2026-11-03",
+        "upcoming": true
+      },
+      {
+        "name": "Heather Henry",
+        "type": "Meet a Coach",
+        "date": "2026-11-02",
+        "upcoming": true
+      },
       {
         "name": "Orlagh McCallion",
         "type": "Personal Training Sales Call",
@@ -10896,6 +10951,15 @@
         "last_momentum": null
       },
       {
+        "id": 14193486,
+        "name": "Shirley Anderson",
+        "email": "sd_anderson@hotmail.com",
+        "join_date": "2026-11-03",
+        "membership": "Strongevity",
+        "class_count": 0,
+        "last_momentum": null
+      },
+      {
         "id": 13119520,
         "name": "Siobhan Honeyford",
         "email": "siobhanhoneyford01@gmail.com",
@@ -11145,8 +11209,8 @@
       },
       {
         "month": "2026-10",
-        "collected": 14434.25,
-        "payments": 110
+        "collected": 16927.25,
+        "payments": 129
       },
       {
         "month": "2026-11",
@@ -11281,119 +11345,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' reality, not a spreadsheet**\nPull your top 3 coaches into a working session (1 hour max). Have them map what they *actually* sell right now\u2014personal training packages, group classes, nutrition consultations, whatever. Don't design from scratch; codify what's already working and making money. This gets buy-in and reveals gaps simultaneously.\n\n**2. Price anchor from your best performer**\nIdentify which coach/service generates the most revenue per hour. That's your baseline. Price everything else relative to that (cheaper for group, premium for specialized certifications). This ensures profitability is baked in, not hoped for.\n\n**3. Create two side-by-side documents: Coach version + Member version**\nCoach version = what they can sell, commission structure, upsell sequences (e.g., \"if someone books 4 sessions, pitch the 8-pack discount\").\nMember version = clean pricing, what's included (e.g., \"personal training includes form checks, workout plan, 1 nutrition review\").\nThe coach version drives sales behavior; the member version removes friction at sign-up.\n\n**4. Test it before publishing**\nPost the member menu in your studio for 1 week. Track what questions come up at the desk. That friction tells you what to clarify. Refine, then go live.\n\n**5. Build it into your booking system NOW**\nDon't create a PDF you'll email\u2014integrate pricing and packages directly into your booking/CRM tool (Mindbody, Zen Planner, etc.). Every new inquiry sees it immediately. Removes back-and-forth friction.\n\nWhat's your current booking"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have your coaches list every service they deliver (group classes, 1:1 coaching, nutrition checks, form assessments, etc.) \u2014 don't assume you know\n- Note what members are currently paying for vs. what's bundled/free \u2014 this reveals pricing confusion\n- **Do this in 2 hours with your head coach before designing anything**\n\n**2. Build two separate menus \u2014 don't mix them**\n- **Coach menu**: Service tiers by time/complexity (e.g., \"30-min form check \u00a325\" vs. \"12-week strength program \u00a3400\") \u2014 coaches need to know what they're selling and what margin it covers\n- **Member menu**: Stripped down, benefit-focused (e.g., \"Unlimited classes + monthly 1:1 \u00a365\" not \"coaching, programming, technique review\") \u2014 members buy outcomes, not features\n\n**3. Price from your margin backwards**\n- Calculate: what does 1 hour of coach time cost you (salary + overhead)?\n- Price so that selling 15 hours/week of 1:1 work covers that coach's full cost + profit margin\n- **If you can't hit margin targets, bundle services differently \u2014 don't just cut price**\n\n**4. Test with your best 5 members first**\n- Send them the draft menu before launch; get feedback on clarity\n- Watch if they ask questions \u2014 if they do, rewrite that section\n- **Launch next week, not after endless rounds of internal debate**\n\n**5. Make it a live doc on your website + printed in gym**\n- URL: theforgegym."
       }
     ]
   },
