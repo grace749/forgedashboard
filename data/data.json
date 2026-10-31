@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T06:00:47.605090+00:00",
+  "generated_at": "2026-10-31T12:15:37.220316+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-10-31",
     "event_count": 7,
-    "urgent_count": 0,
+    "urgent_count": 2,
     "enquiry_count": 0,
     "calendar": [
       {
@@ -89,15 +89,36 @@
         "source": "teamup"
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "Chloe Hill",
+        "from_raw": "Chloe Hill <conversation-chloehill-fitnessinstructor-oos@indeedemail.com>",
+        "subject": "New message from Chloe Hill \u2013 Fitness Instructor",
+        "snippet": "Is this job part time and i have tech 3 days tuesdays and thursday and friday and i can only monday and wednesday and saturday and sunday \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f",
+        "id": "1a191cd1eb9c8ea5",
+        "thread_id": "1a191cc4765dc170",
+        "msg_count": 2,
+        "draft_id": "r-2563643151913081372"
+      },
+      {
+        "from": "Helen Faulkner",
+        "from_raw": "Helen Faulkner <hfaulkner09@gmail.com>",
+        "subject": "Re: Happy Birthday Helen, from Coach Grace!",
+        "snippet": "Thank you! And big congrats to you Grace on the safe arrival of Baby Banks ! On Sat, 31 Oct 2026, 07:00 Forge Female Fitness, &lt;noreply@goteamup.com&gt; wrote: Hi Helen, Happy Birthday! I hope you",
+        "id": "1a1918981201bb90",
+        "thread_id": "1a1918981201bb90",
+        "msg_count": 1,
+        "draft_id": "r2393189240461579964"
+      }
+    ],
     "important": [],
     "enquiries": [],
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -207,19 +228,64 @@
   },
   "ghl": [
     {
-      "name": "Jo",
+      "name": "Rosie Dickie",
       "channel": "Phone",
-      "message": "https://www.instagram.com/reel/DfFFr0cOytv/",
-      "age": "7h ago",
+      "message": "This sounds amazing thanks Grace. I would be interested to know some approximate costs and the time commitment(how often do you meet) of the 6week challenge\nThank you",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "RkKoB8NSYL62tw8zv4B4",
+      "contact_id": "wPpnuRTdG50vdBnOIVxL"
+    },
+    {
+      "name": "Marlene Burns",
+      "channel": "Phone",
+      "message": "Can I ask first where you are located in bmoney?",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "2RTdaACnhuHmcpIhnLJb",
+      "contact_id": "HRRFh9DJDAehuIDTS2Y6"
+    },
+    {
+      "name": "JULIE Tagg",
+      "channel": "Phone",
+      "message": "Can I Just check where your classes are? I live in Coleraine!",
+      "age": "2h ago",
+      "unread": 1,
+      "conv_id": "h7ZJ6OIq5P5Nz4oqT87Q",
+      "contact_id": "3b5liH4sjsA7obX7wAhs"
+    },
+    {
+      "name": "Marlene Eleanor Burns",
+      "channel": "Phone",
+      "message": "Hi Grace, can I ask where yr located in Bmoney?",
+      "age": "2h ago",
       "unread": 2,
-      "conv_id": "SSmsaXAmGesXC4DA1BV3",
-      "contact_id": "xa3rPNDLcMKM9VtjK91V"
+      "conv_id": "xxePjLkyiS48Z7tSZ4Ea",
+      "contact_id": "E76TMGeRWglSI7gRDKPU"
+    },
+    {
+      "name": "Shirley Anderson",
+      "channel": "Phone",
+      "message": "Hi, I think that I\u2019m already booked in to the class starting on Tuesday 3rd. \nSee you then.",
+      "age": "3h ago",
+      "unread": 1,
+      "conv_id": "w0M4v0L4ECnKnh5FvdQm",
+      "contact_id": "3FK4bpBzDhjppPpBp7QM"
+    },
+    {
+      "name": "Eilis Kearns",
+      "channel": "Phone",
+      "message": "Omg \ud83d\ude02I thought it was on email thanks!",
+      "age": "4h ago",
+      "unread": 3,
+      "conv_id": "kXcNeQ0vlfPmqLR9O6BD",
+      "contact_id": "SL5iEZ30xiRwJF12kd5S"
     },
     {
       "name": "Debbie Mcmullan",
       "channel": "Phone",
       "message": "Sorry Ballymoney a bit far away. I have joined cancer to walk 100  miles in November. Thanks for checking in.",
-      "age": "7h ago",
+      "age": "13h ago",
       "unread": 1,
       "conv_id": "5S0RykiHOE7CcsQluMQY",
       "contact_id": "djO1DnDJL2WMaTD1slTX"
@@ -228,7 +294,7 @@
       "name": "Pauline Boreland",
       "channel": "Phone",
       "message": "Hi Grace would it be possible to schedule chat someday this coming week.? Thanks x",
-      "age": "8h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "vuj646TMEx5d8JcougUl",
       "contact_id": "y8zlAsv7tAqbeEkRdYZk"
@@ -237,7 +303,7 @@
       "name": "Ballykenver Farm Shop & Kitchen",
       "channel": "Phone",
       "message": "Congratulations \ud83c\udf89",
-      "age": "9h ago",
+      "age": "15h ago",
       "unread": 1,
       "conv_id": "UsFaJnyrfVHPqVeWVgze",
       "contact_id": "zSPgbPNeJpACIxJ3HNtO"
@@ -246,7 +312,7 @@
       "name": "Wendy Robinson",
       "channel": "Phone",
       "message": "Hi. Im not sure of work schedule next week but can you give me some more info? Is it based in ballymoney and what times so I know if I can work round work. Thanks in advance x",
-      "age": "10h ago",
+      "age": "16h ago",
       "unread": 2,
       "conv_id": "xd0pCw4e0tQkTHciFwfN",
       "contact_id": "WYTJ3pcLMXwT00nl8Oh6"
@@ -255,7 +321,7 @@
       "name": "Wendy Robinson",
       "channel": "Phone",
       "message": "Get started",
-      "age": "10h ago",
+      "age": "17h ago",
       "unread": 1,
       "conv_id": "ygLqTLX0zTXGMKBT4Ypb",
       "contact_id": "dVBjkQZW6H5yReGqADI2"
@@ -264,7 +330,7 @@
       "name": "Orla McGrath",
       "channel": "Phone",
       "message": "Hi Grace are you looking a coach?",
-      "age": "13h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "JBZMTwHOZtt7cXL1cFea",
       "contact_id": "TZ1gtUJXrDIruOXARDEK"
@@ -273,64 +339,10 @@
       "name": "Taylor McLernon",
       "channel": "Phone",
       "message": "Hi Grace, \nSorry for the lack of communication I moved to Ballymena for sometime but I\u2019m back in Ballymoney now. Do you still have some availability?",
-      "age": "14h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "PpAgi5sI6aDTzJLTgP9K",
       "contact_id": "YkNGuzupYifPzMpFS0Va"
-    },
-    {
-      "name": "everymomentanopportunity",
-      "channel": "Phone",
-      "message": "\ud83d\udc4f",
-      "age": "16h ago",
-      "unread": 2,
-      "conv_id": "bCO1UnwwejQ3wgV2B5KB",
-      "contact_id": "VjwHTdCoNMXKrbzPdSx0"
-    },
-    {
-      "name": "Helen Basher Logan",
-      "channel": "Phone",
-      "message": "Thinking of you both today - life is precious , I am so blessed to have my Baby B . Can\u2019t wait to meet Banks.",
-      "age": "17h ago",
-      "unread": 1,
-      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
-      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
-    },
-    {
-      "name": "Helen Faulkner",
-      "channel": "Phone",
-      "message": "Thanks Grace ! Wow you can talk quickly when you want to ! I'll get back with my decision. The 10am and 5pm classes are really the only ones I have gone to in the 6 weeks.  They def suit me best . Bes",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "OEKgLR9PZSmEbhXXH9om",
-      "contact_id": "pG8CcBfGMwRDGGbiwpW5"
-    },
-    {
-      "name": "Hesther Henry",
-      "channel": "Phone",
-      "message": "Hi grace thanks I\u2019m booked in for Monday at 4.30",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "N4MpGHP3Qs9ZQq5Ktfnp",
-      "contact_id": "NBllgZYxbBOSJ7IMdlnF"
-    },
-    {
-      "name": "Zara McCaughan",
-      "channel": "Phone",
-      "message": "I'm feeling great thanks, I've been v blessed with a really easy run so far \ud83e\udd70\n\nWill be thinking of yous tomorrow and hope that all goes well x",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "j6uSpfPFXUJwKQo0Lkvs",
-      "contact_id": "KKd6yfEoXgp9LkdyqSC0"
-    },
-    {
-      "name": "Laura Breadon",
-      "channel": "Phone",
-      "message": "Does this mean 4 Mondays beginning 9th November ?",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "PIZurEGKi6zJeem8MdeJ",
-      "contact_id": "za2dsafwfwDqIxfpphNJ"
     }
   ],
   "jumpstart": {
@@ -1426,6 +1438,54 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "juliam156",
+        "last_scan": "2026-10-31",
+        "scan_count": 1,
+        "weight": 172.5,
+        "smm": 52.3,
+        "pbf": 44.8,
+        "bmi": 32.6,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-12",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "sineadw155",
+        "last_scan": "2026-10-31",
+        "scan_count": 1,
+        "weight": 146.8,
+        "smm": 51.8,
+        "pbf": 35.2,
+        "bmi": 24.4,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-12",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Anne Forgrave",
         "last_scan": "2026-10-28",
@@ -4715,7 +4775,7 @@
         "overdue": true
       }
     ],
-    "total": 137,
+    "total": 139,
     "configured": true
   },
   "sop": {
@@ -5377,22 +5437,16 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member onboarding flow**: no documented journey from sign-up \u2192 first class \u2192 retention checkpoint (email sequences, goal-setting, buddy assignments missing)\n- **Churn prevention & win-back**: no trigger-based SOP for pause requests, cancellations, or dormant member re-engagement campaigns\n- **Coaching consistency & quality**: Class Quality Audit Checklist, Coaching Development Roadmap, and Weekly Key Coach Tasks all absent\u2014coaching standards are ad-hoc\n- **Member outcomes tracking**: no process for logging progress, milestone celebrations, or 30-day goal reviews that drive retention\n- **Complaints & incident management**: no SOP for member complaints, injury reports, safeguarding concerns, or resolution escalation\n- **Data governance**: Member data privacy & GDPR handling not documented (legal/compliance risk)\n- **Referral programme mechanics**: no SOP on incentive triggers, tracking, or member communication\n- **Finance & billing**: no documented process for payment failures, refunds, pause billing, or dispute resolution\n- **Staffing handoffs**: no SOP for shift handover, duty briefings, or emergency staff cover\n- **Health & safety incident response**: no formal process for accidents, near-misses, or incident logging\n\n---\n\n# **Needs updating**\n\n- **Clients SOPs (28/37)**: likely missing member lifecycle stages (pre-join \u2192 onboarded \u2192 retained \u2192 paused \u2192 win-back \u2192 churned); retention checkpoints vague\n- **Coaches SOPs (21/24)**: no link between weekly tasks, development goals, and quality standards; class observation/feedback process unclear\n- **Marketing SOPs (6/6)**: probably skew toward acquisition; retention campaign cadence and member referral nurture likely thin or missing\n- **General (1/1)**: almost certainly incomplete\u2014should include vision"
+    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member onboarding** \u2013 no standardised first-touch experience; unclear how new members move from sign-up \u2192 first class \u2192 retention checkpoint\n- **Churn & pause management** \u2013 no documented trigger points, re-engagement sequences, or pause-to-cancel pathways; losing money by not acting early\n- **Coaching standards audit** \u2013 Class Quality Audit Checklist exists nowhere; coaches have no feedback loop on consistency, form correction, cueing\n- **Retention win-back** \u2013 no systematic approach to lapsed members; ad-hoc outreach only\n- **Member data & GDPR** \u2013 no documented handling of sign-ups, payment info, communications consent, deletion requests; compliance risk\n- **Incident & complaints** \u2013 no formal escalation, resolution, or safeguarding log (especially critical in women-only space)\n- **Health & safety inductions** \u2013 no SOP for onboarding members to gym safety, equipment, emergency procedures\n- **Finance/billing disputes** \u2013 no SOP for refunds, chargebacks, frozen accounts, payment failures\n- **Milestone recognition** \u2013 no process to celebrate member wins (first class, attendance streaks, goal hits); lost retention lever\n\n**Needs updating**\n\n- **Coaches SOPs (21/24)** \u2013 likely missing: weekly task prioritisation, 1-to-1 coaching micro-feedback loops, how to handle form breakdowns mid-class, progression tracking per member\n- **Marketing (6/6)** \u2013 probably no integration between retention marketing and onboarding; referral programme structure missing\n- **Member Outcomes** \u2013 non-existent; no standard for tracking member goals, progress benchmarks, or data to close the loop with coaching\n\n**Build next**\n\n1. **Member Onboarding SOP** (highest leverage) \u2013 Structure as: Pre-arrival comms \u2192 In"
   },
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
     "unreplied_dms": [
       {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Good morning, Coach. Password is not working.",
-        "hours": 44,
-        "name": "Julie Lapaz"
-      },
-      {
         "user_id": "U09HURWMY3G",
         "text": "Fab!! Enjoy every minute xx",
-        "hours": 21,
+        "hours": 27,
         "name": "Eilis Kearns"
       }
     ],
@@ -5735,7 +5789,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower (20 sessions) to Eilis.** Eilis is capable on Lower body work and currently under-loaded on technical class delivery. This is Eilis's strongest opportunity to build consistency in a signature class.\n\n\u2022 **Redistribute Grace's Strongevity (4 sessions) and Elevate (3 sessions) between JoJo and Eilis.** JoJo already runs Strongevity; give her the extra sessions. Eilis already teaches Elevate; add Grace's slots to her rota. This balances class coverage and removes Grace entirely from the schedule.\n\n\u2022 **Cover Grace's No Sweat Intros (2 sessions) with JoJo and Eilis on rotation.** Both coaches run these already; share the load monthly to avoid relying on one person.\n\n\u2022 **Stop counting Body Composition Scans as coaching load.** Grace's 5, JoJo's 21, and Eilis's 19 scans are admin, not delivery. Task reception or admin staff to handle these, freeing 45 hours of coach time across the month.\n\n\u2022 **Redistribute Grace's Build: Full Body (1 session) to Eilis** to give Eilis a second class type and fill a gap in her timetable.\n\n\u2022 **Review JoJo's PT load (27 sessions).** JoJo is carrying heavy 1:1 demand. If Eilis can safely take more PT clients (she's at 39), offer new inquiries to Eilis first to balance and develop her client base.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately**: Her 20 Build: Lower sessions and 4 Strongevity sessions should split between JoJo (take Lower) and Eilis (take Strongevity once she's confident). This removes her from timetable entirely and lets her focus on leadership.\n\n\u2022 **Shift JoJo's Body Composition workload**: JoJo ran 21 scans last month\u2014that's admin work, not coaching. Move these to Eilis and free up ~3 hours weekly for actual class delivery or reduce her overall load to prevent burnout on a demanding Tuesday schedule.\n\n\u2022 **Eilis is under-utilised in group classes**: She's doing 39 PTs against only 38 group sessions (Elevate, Build, Plate, Mobility). Build her into a second regular class slot (e.g. a second Elevate or Plate session per week) to balance her week and reduce PT dependency on her.\n\n\u2022 **No Sweat Intro is fragile**: Only JoJo and Grace deliver these (9 + 2 sessions). Train Eilis to run No Sweat Intros so new member onboarding isn't bottlenecked; this is a low-risk way to build her confidence outside Tuesdays.\n\n\u2022 **JoJo's real load is ~90 sessions monthly** (removing 21 scans). That's sustainable, but assign her Upper Body classes as her anchor (she's clearly strong here) and rotate other classes with Eilis to avoid over-reliance and keep variety for members.\n\n\u2022 **PT demand is real**: Combined 66 PT sessions across two coaches. If this continues, consider whether a third part-time coach or hybrid coach-admin role would free JoJo and Eilis for more group delivery.",
     "period": "September 2026"
   },
   "asana": {
@@ -8483,7 +8537,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 243
+            "count": 265
           },
           {
             "day": "Thursday",
@@ -8517,7 +8571,7 @@
           },
           {
             "name": "Elevate",
-            "count": 330
+            "count": 352
           },
           {
             "name": "Strongevity",
@@ -8624,9 +8678,9 @@
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
-            "count": 58,
-            "sessions": 10,
-            "avg": 5.8,
+            "count": 66,
+            "sessions": 11,
+            "avg": 6.0,
             "label": "Saturday 9am Elevate"
           },
           {
@@ -8666,7 +8720,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3179
+        "total_attended": 3201
       },
       "last_30_days": {
         "top_days": [
@@ -8694,7 +8748,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 64
+            "count": 86
           },
           {
             "day": "Thursday",
@@ -8727,16 +8781,16 @@
             "count": 146
           },
           {
+            "name": "Elevate",
+            "count": 109
+          },
+          {
             "name": "Mobility",
             "count": 94
           },
           {
             "name": "Strongevity",
             "count": 90
-          },
-          {
-            "name": "Elevate",
-            "count": 87
           }
         ],
         "bottom_classes": [
@@ -8761,8 +8815,8 @@
             "count": 80
           },
           {
-            "name": "Elevate",
-            "count": 87
+            "name": "Strongevity",
+            "count": 90
           }
         ],
         "top_slots": [
@@ -8823,15 +8877,6 @@
         ],
         "bottom_slots": [
           {
-            "day": "Saturday",
-            "time": "9am",
-            "name": "Elevate",
-            "count": 12,
-            "sessions": 3,
-            "avg": 4.0,
-            "label": "Saturday 9am Elevate"
-          },
-          {
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
@@ -8848,6 +8893,15 @@
             "sessions": 5,
             "avg": 4.6,
             "label": "Thursday 10am Elevate"
+          },
+          {
+            "day": "Saturday",
+            "time": "9am",
+            "name": "Elevate",
+            "count": 20,
+            "sessions": 4,
+            "avg": 5.0,
+            "label": "Saturday 9am Elevate"
           },
           {
             "day": "Wednesday",
@@ -8877,7 +8931,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1028
+        "total_attended": 1050
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. Add a paid \"Open Lift\" block (30\u201345 mins) on Thursday or Friday mornings before or after the quieter classes\u2014members often want unstructured barbell time, and it fills dead air without cannibalizing scheduled classes.\n\n2. Run a monthly \"Masterclass\" workshop (45 mins) on Saturday mornings in the quiet slot\u2014invite members to deep-dive on technique (deadlift mechanics, programming basics, mobility drills)\u2014charges \u00a38\u201312 per head and draws Saturday traffic.\n\n**For the struggling classes (Capacity, Barbelle, Engine, Plate, Circuits):**\n\n1. Move **Barbelle** or **Engine** to Tuesday or Wednesday evening (your peak days) instead of their current quiet slots\u2014rider effect: members already there for Build classes may stay for a follow-up session.\n\n2. Rebrand **Capacity** as \"Capacity + Mobility\" (add 10 mins of targeted stretching) and promote it as \"recovery-focused strength\"\u2014position it as a complement to the heavy Build classes members are already attending; consider a 2-week free trial for Build class regulars.\n\n3. For **Circuits** and **Plate**, send targeted invites to members who've attended 8+ Build classes in the last 30 days\u2014frame",
       "capacity": [
@@ -8946,16 +9000,16 @@
           "status": "attention"
         },
         {
-          "name": "Plate",
-          "sessions": 27,
+          "name": "Elevate",
+          "sessions": 52,
           "cap": 12,
-          "avg_attending": 7.2,
-          "fill_rate": 60,
+          "avg_attending": 7.3,
+          "fill_rate": 61,
           "status": "attention"
         },
         {
-          "name": "Elevate",
-          "sessions": 52,
+          "name": "Plate",
+          "sessions": 27,
           "cap": 12,
           "avg_attending": 7.2,
           "fill_rate": 60,
@@ -9262,13 +9316,6 @@
         "last_seen": "2026-09-21"
       },
       {
-        "id": 11546736,
-        "name": "Claire Leeke",
-        "membership": "Elevate",
-        "days_absent": 15,
-        "last_seen": "2026-10-16"
-      },
-      {
         "id": 13232285,
         "name": "Claire Walker",
         "membership": "Elevate",
@@ -9339,13 +9386,6 @@
         "last_seen": "2026-10-12"
       },
       {
-        "id": 8935595,
-        "name": "Grace McAlister",
-        "membership": "Empower",
-        "days_absent": 16,
-        "last_seen": "2026-10-15"
-      },
-      {
         "id": 10301313,
         "name": "Hilary McDowell",
         "membership": "Elevate",
@@ -9393,6 +9433,20 @@
         "membership": "Strongevity",
         "days_absent": 18,
         "last_seen": "2026-10-13"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 57,
+        "last_seen": "2026-09-04"
+      },
+      {
+        "id": 9196376,
+        "name": "Nerys Young",
+        "membership": "Empower",
+        "days_absent": 22,
+        "last_seen": "2026-10-09"
       }
     ],
     "celebrations": {
@@ -11252,119 +11306,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**1. Audit what you're ACTUALLY selling right now**\n- Have each coach list every service they currently deliver (classes, PT, nutrition checks, form reviews, etc.)\n- Price what members are paying for (spot-check 10 recent invoices/bookings)\n- You'll likely find inconsistency\u2014capitalize on this clarity gap\n\n**2. Build two separate menus with different information**\n- **Members' menu**: pricing, duration, outcomes (what they GET). Make it beautiful, visual, confidence-building\n- **Coaches' menu**: scope, margins, setup time, handoff points (what they DELIVER). Make it operational and foolproof\n- Use a simple spreadsheet template you can update monthly\u2014don't over-design yet\n\n**3. Price strategically, not arbitrarily**\n- Bundle low-hanging fruit (e.g., \"3 classes + form check\" at a premium) to increase ticket size\n- Identify your highest-margin service and feature it front-and-center to coaches (they'll naturally recommend it)\n- Test price tiers for 30 days before committing\n\n**4. Get immediate buy-in from coaches**\n- Walk through the menu with them in person (not email)\u2014flag what confuses them NOW before members ask\n- Make them co-owners: \"If you see members want something we're missing, flag it\"\n\n**5. Deploy it this week**\n- Post members' version on your website and gym (printed). It's a conversion tool.\n- Share coaches' version in your group chat + printed at the desk. Done.\n\nWhat's your current pricing spread looking like across services?"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your coaches' needs FIRST (counterintuitive, but critical)**\nHave each coach list every variation they currently sell or could sell\u2014classes, PT rates, packages, add-ons. You'll find inconsistency (your selling point). Now standardise: pick 3-4 tiers (e.g., \"Foundation,\" \"Accelerator,\" \"Transform\") with fixed pricing. Coaches get a one-page laminate card they memorise by Friday. This stops members hearing different prices and coaches underselling.\n\n**2. Create TWO separate visual menus (not one confusing sheet)**\nMembers see: class schedule + monthly membership tiers + PT pricing + bolt-ons (nutrition consult, progress tracking). Coaches see: commission structure per tier + upsell triggers (when to pitch PT to group class members). Post the member version by the desk; laminate the coach version.\n\n**3. Define \"what's included\" obsessively\u2014this is your conversion engine**\nDon't just list \"unlimited classes.\" Write: \"Access to 18+ weekly classes + form checks in every session + quarterly fitness assessment.\" Members need to feel the value before pricing. Coaches need to know what they're delivering so they stop giving extras away for free.\n\n**4. Price psychology tweak: anchor aggressively**\nShow your premium tier *first* in any communication. Make mid-tier look like the \"smart choice.\" Most women will default to middle option. This is standard but works\u2014especially in fitness.\n\n**5. Launch via email + in-person (not just printed)**\nSend members a short video from YOU explaining the refresh. Schedule 10-minute huddles with each coach to lock"
       }
     ]
   },
