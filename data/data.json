@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T15:00:56.121161+00:00",
+  "generated_at": "2026-11-01T19:38:53.284771+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-01",
-    "event_count": 9,
-    "urgent_count": 1,
-    "enquiry_count": 1,
+    "event_count": 11,
+    "urgent_count": 0,
+    "enquiry_count": 2,
     "calendar": [
       {
         "title": "LOWER 2",
@@ -99,6 +99,28 @@
         "prep": ""
       },
       {
+        "title": "\ud83d\udcde Call: Stephanie Blair",
+        "time": "6:50pm",
+        "start_raw": "2026-11-03T18:50:00",
+        "day": "Tuesday",
+        "attendees": [
+          "Stephanie Blair"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "Untitled",
+        "time": "6:50pm",
+        "start_raw": "2026-11-03T18:50:00Z",
+        "day": "Tuesday",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Confirm junior SIPP setup requirements; prepare documentation needed."
+      },
+      {
         "title": "Setup junior  SIPP",
         "time": "10:00pm",
         "start_raw": "2026-11-03T22:00:00Z",
@@ -106,21 +128,10 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm junior SIPP setup requirements; prepare documentation needed."
+        "prep": ""
       }
     ],
-    "urgent": [
-      {
-        "from": "Jane Meer",
-        "from_raw": "Jane Meer <janemeer76@gmail.com>",
-        "subject": "GXT Tutor email - November",
-        "snippet": "The GXT team had a fantastic time last week at Yogafit Retreats. It was a wonderful opportunity to get some training in, upskill, share knowledge and connect with others. It really is such a valuable",
-        "id": "1a19796e0c374a61",
-        "thread_id": "1a19796e0c374a61",
-        "msg_count": 1,
-        "draft_id": "r5710549138511963467"
-      }
-    ],
+    "urgent": [],
     "important": [],
     "enquiries": [
       {
@@ -131,14 +142,23 @@
         "snippet": "Booked a call for Tuesday 10:30am \u2014 potential member",
         "age": "",
         "unread": 0
+      },
+      {
+        "name": "Stephanie Blair",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tuesday 6:50pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tuesday 6:50pm",
+        "snippet": "Booked a call for Tuesday 6:50pm \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -251,7 +271,7 @@
       "name": "Rosie Dickie",
       "channel": "Phone",
       "message": "Thank you very much\nI\u2019ll leave it for this session but definitely get in touch to hear more another time\nThanks",
-      "age": "4h ago",
+      "age": "9h ago",
       "unread": 2,
       "conv_id": "RkKoB8NSYL62tw8zv4B4",
       "contact_id": "wPpnuRTdG50vdBnOIVxL"
@@ -260,25 +280,16 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/DfKbeHrhbjW/",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
     },
     {
-      "name": "Ann Mcnicholl",
-      "channel": "Phone",
-      "message": "I am reallybintrested",
-      "age": "20h ago",
-      "unread": 1,
-      "conv_id": "23tU0hFPqU6f1odfzuYK",
-      "contact_id": "ObK7YxhTY4R0VGYyN10Q"
-    },
-    {
       "name": "Wendi Scott",
       "channel": "Phone",
       "message": "Hi Grace. Thanks for getting in touch again. I am interested but am worried I don\u2019t have time to give to it at the moment with the run up to Christmas. and with the price would want to really get the ",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "KpNetPXicb2NxGENQ4oh",
       "contact_id": "4buSP0XLxfe3kociIqCo"
@@ -300,24 +311,6 @@
       "unread": 1,
       "conv_id": "segpnzOKUdDARSAKxHGj",
       "contact_id": "i76jL4qTNSUPwz77zRxi"
-    },
-    {
-      "name": "Marlene Eleanor Burns",
-      "channel": "Phone",
-      "message": "Hi Grace, can I ask where yr located in Bmoney?",
-      "age": "1d ago",
-      "unread": 2,
-      "conv_id": "xxePjLkyiS48Z7tSZ4Ea",
-      "contact_id": "E76TMGeRWglSI7gRDKPU"
-    },
-    {
-      "name": "Shirley Anderson",
-      "channel": "Phone",
-      "message": "Hi, I think that I\u2019m already booked in to the class starting on Tuesday 3rd. \nSee you then.",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "w0M4v0L4ECnKnh5FvdQm",
-      "contact_id": "3FK4bpBzDhjppPpBp7QM"
     }
   ],
   "jumpstart": {
@@ -14641,6 +14634,12 @@
       "source": "Q3 2026"
     },
     {
+      "name": "Sideway leg lifts",
+      "part": "Core",
+      "video": "https://www.instagram.com/p/DeADf5GIWWj/",
+      "source": "Strongevity"
+    },
+    {
       "name": "Single Arm Delt Row",
       "part": "Back",
       "video": "https://www.instagram.com/p/DQPngAdEVbc/",
@@ -14903,6 +14902,12 @@
       "part": "Triceps",
       "video": "https://www.youtube.com/shorts/h2jtMAr8MPM",
       "source": "Q4 2026"
+    },
+    {
+      "name": "Standing heel and Toe rocks",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DeMs_lgB72Y/",
+      "source": "Strongevity"
     },
     {
       "name": "Star Balance Leg",
@@ -15274,6 +15279,12 @@
       "name": "degree step reaches",
       "part": "Full Body",
       "video": "https://www.instagram.com/p/DcUAUGqiOju/?hl=en",
+      "source": "Strongevity"
+    },
+    {
+      "name": "ment 2",
+      "part": "Full Body",
+      "video": "https://www.instagram.com/p/DaVcGB4o8PY/",
       "source": "Strongevity"
     },
     {
