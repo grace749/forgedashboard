@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T15:38:38.156668+00:00",
+  "generated_at": "2026-11-02T23:06:10.226448+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1074,6 +1074,30 @@
         "weight_change": -2.6,
         "smm_change": -1.8,
         "pbf_change": 0.7,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-14",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "michelle157",
+        "last_scan": "2026-11-02",
+        "scan_count": 1,
+        "weight": 136.9,
+        "smm": 48.3,
+        "pbf": 35.5,
+        "bmi": 27.6,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -4371,7 +4395,7 @@
         "overdue": true
       }
     ],
-    "total": 139,
+    "total": 140,
     "configured": true
   },
   "slack": {
@@ -4381,14 +4405,8 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "By the way, just checking if you were able to receive the payoneer request?",
-        "hours": 5,
+        "hours": 13,
         "name": "Julie Lapaz"
-      },
-      {
-        "user_id": "U09CYACSUE9",
-        "text": "Long may it last!\nBoth my boys were teenagers before they slept :laughing: And now I can't get them out of their beds lol\nThough both of them had colic and refl",
-        "hours": 5,
-        "name": "Kerrie"
       }
     ],
     "mentions": [],
@@ -7385,7 +7403,7 @@
           },
           {
             "day": "Monday",
-            "count": 560
+            "count": 595
           },
           {
             "day": "Friday",
@@ -7411,7 +7429,7 @@
           },
           {
             "day": "Monday",
-            "count": 560
+            "count": 595
           },
           {
             "day": "Wednesday",
@@ -7429,7 +7447,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 445
+            "count": 479
           },
           {
             "name": "Elevate",
@@ -7582,7 +7600,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3176
+        "total_attended": 3211
       },
       "last_30_days": {
         "top_days": [
@@ -7592,7 +7610,7 @@
           },
           {
             "day": "Monday",
-            "count": 197
+            "count": 232
           },
           {
             "day": "Wednesday",
@@ -7626,7 +7644,7 @@
           },
           {
             "day": "Monday",
-            "count": 197
+            "count": 232
           }
         ],
         "top_classes": [
@@ -7636,7 +7654,7 @@
           },
           {
             "name": "Build: Lower",
-            "count": 156
+            "count": 190
           },
           {
             "name": "Build: Full Body",
@@ -7793,7 +7811,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1005
+        "total_attended": 1040
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Block 30-min \"Open Lift\" slots** (paid or membership-included) on Thursday & Friday afternoons between PT sessions \u2014 these days need footfall, and members often want unstructured barbell time without committing to a full class.\n\n2. **Host 45-min \"Barbell Basics\" workshops** Saturday mornings before or after the quietest hours \u2014 teach technique to newer members in a structured-but-small format, feeding them into Build classes and potentially Barbelle (which has the lowest retention).\n\n**For the quieter classes themselves:**\n\n3. **Move Capacity to Thursday 6pm or Friday 5:45pm** (test a week) \u2014 it's positioning-dependent; currently it may clash with commute times or compete against busier classes. Pair the move with a targeted invite to Thursday regulars and a \"try free\" offer to recent Build class grads who might be ready for metabolic conditioning.",
       "capacity": [
@@ -8220,13 +8238,6 @@
         "last_seen": "2026-09-28"
       },
       {
-        "id": 12671936,
-        "name": "Dorothy McIntyre",
-        "membership": "Elevate",
-        "days_absent": 13,
-        "last_seen": "2026-10-20"
-      },
-      {
         "id": 11100381,
         "name": "Elaine Adair",
         "membership": "Elevate",
@@ -8316,6 +8327,13 @@
         "membership": "Strongevity",
         "days_absent": 20,
         "last_seen": "2026-10-13"
+      },
+      {
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 59,
+        "last_seen": "2026-09-04"
       }
     ],
     "celebrations": {
