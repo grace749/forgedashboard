@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T06:00:55.702928+00:00",
+  "generated_at": "2026-11-03T14:02:07.639160+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,8 +8,8 @@
   "brief": {
     "date": "2026-11-03",
     "event_count": 9,
-    "urgent_count": 0,
-    "enquiry_count": 3,
+    "urgent_count": 2,
+    "enquiry_count": 4,
     "calendar": [
       {
         "title": "\ud83d\udcde Call: Nicola Neill",
@@ -24,12 +24,12 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
-        "title": "Untitled",
-        "time": "10:30am",
-        "start_raw": "2026-11-03T10:30:00Z",
+        "title": "Joanne x jumpstart",
+        "time": "2:00pm",
+        "start_raw": "2026-11-03T14:00:00Z",
         "day": "Today",
         "attendees": [],
-        "description": "",
+        "description": "\u202a+44\u00a07713\u00a0766594\u202c",
         "location": "",
         "prep": ""
       },
@@ -56,24 +56,26 @@
         "prep": ""
       },
       {
-        "title": "Setup junior  SIPP",
-        "time": "10:00pm",
-        "start_raw": "2026-11-03T22:00:00Z",
-        "day": "Today",
-        "attendees": [],
-        "description": "",
+        "title": "\ud83d\udcde Call: Deirdre Bones",
+        "time": "1:10pm",
+        "start_raw": "2026-11-04T13:10:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Deirdre Bones"
+        ],
+        "description": "Booked discovery call",
         "location": "",
-        "prep": "Confirm SIPP provider details and gather junior member documentation requirements."
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
-        "title": "Banks passport",
-        "time": "all day",
-        "start_raw": "2026-11-04",
+        "title": "Untitled",
+        "time": "1:10pm",
+        "start_raw": "2026-11-04T13:10:00Z",
         "day": "Tomorrow",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Collect passport details/copies and verify banking information for all account holders."
+        "prep": "Confirm SIPP provider details and gather junior member documentation requirements."
       },
       {
         "title": "Precious & Patience Coaching",
@@ -85,7 +87,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Collect passport details/copies and verify banking information for all account holders."
       },
       {
         "title": "\ud83d\udcde Call: Kay Blackburn",
@@ -110,8 +112,36 @@
         "prep": ""
       }
     ],
-    "urgent": [],
-    "important": [],
+    "urgent": [
+      {
+        "from": "Elizabeth Steele",
+        "from_raw": "Elizabeth Steele <e.steele.233@btinternet.com>",
+        "subject": "Re: Receipt for transaction on TeamUp",
+        "snippet": "Hi Grace, Unfortunately I&#39;m not fully recovered from having the shingles, I won&#39;t make this month&#39;s classes, I believe that you don&#39;t do our class in December. I hope to be in better",
+        "id": "1a1a1255331a0121",
+        "thread_id": "1a1a1255331a0121",
+        "msg_count": 1,
+        "draft_id": "r-6384180918968544742"
+      },
+      {
+        "from": "Liz Elliott",
+        "from_raw": "Liz Elliott <admin@scriptmediagroup.co.uk>",
+        "subject": "NFA 2026 - Shortlisting Certificate",
+        "snippet": "Hi Grace Please find attached your Shortlisting Certificate for the Boutique Facility of the Year category. Kind regards Liz Liz Elliott | T: 01226 734251 Please note my working hours are 9am-5pm",
+        "id": "1a1a0f7796f0458a",
+        "thread_id": "1a1a0f7796f0458a",
+        "msg_count": 1,
+        "draft_id": "r-229924410375297332"
+      }
+    ],
+    "important": [
+      {
+        "from": "HMRC help and support",
+        "subject": "Salaried workers and the National Minimum Wage: are you getting it right?",
+        "snippet": "\ufeffView in browser\ufeff Dear customer, Your workers are salaried, but are you confident they&#39;re receiving the National Minimum Wage (NMW) for every hour they work? Salaried pay can seem straightforward,",
+        "id": "1a1a1a6425ccfa79"
+      }
+    ],
     "enquiries": [
       {
         "name": "Nicola Neill",
@@ -132,6 +162,15 @@
         "unread": 0
       },
       {
+        "name": "Deirdre Bones",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 1:10pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 1:10pm",
+        "snippet": "Booked a call for Tomorrow 1:10pm \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
+      {
         "name": "Kay Blackburn",
         "channel": "Booked call",
         "subject": "\ud83d\udcde Booked a call \u00b7 Thursday 9:30am",
@@ -144,9 +183,9 @@
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -252,28 +291,28 @@
   },
   "ghl": [
     {
-      "name": "patculbertson",
+      "name": "Nicola Neill",
       "channel": "Phone",
-      "message": "Hi when would be suitable to call down and see someone about overall fitness and toning up",
-      "age": "2h ago",
+      "message": "Thanks Grace, I think I'll have to register when I'm back from holiday otherwise I'll loose 1 week of the 6 weeks by being away.",
+      "age": "1h ago",
       "unread": 1,
-      "conv_id": "vSRSE0vG0OAPfOntPVyA",
-      "contact_id": "umknW9twPl6l37ZQ0IRV"
+      "conv_id": "3cl9lYQmkmjeNRUZz8d3",
+      "contact_id": "MEeA6qhOuTfR3PHngR7R"
     },
     {
-      "name": "JULIE Tagg",
+      "name": "Helen Basher Logan",
       "channel": "Phone",
-      "message": "Sorry it has just been chaotic few days ... thank you will try to get in touch when things are less crazy \ud83d\ude15",
-      "age": "5h ago",
+      "message": "I asked about transferring HYROX ticket but they said no. \n\nSo sorry about this . I will transfer \u00a3100 this month and \u00a3100 next month . Just getting it tight with money as Sarah has school trip to Rom",
+      "age": "3h ago",
       "unread": 1,
-      "conv_id": "h7ZJ6OIq5P5Nz4oqT87Q",
-      "contact_id": "3b5liH4sjsA7obX7wAhs"
+      "conv_id": "eQqHZ8ajEmhlhRz78UMe",
+      "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
     },
     {
       "name": "Caroline Stinson",
       "channel": "Phone",
       "message": "Love that jojo remembers injuries or fear and either pushes or pulls you back.   Personal thought , even half burpees are too much lol. \n\nI love the flexibility, if I really feel I can\u2019t do something ",
-      "age": "11h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "FU9UEIK4WdZmaQKrTbOL",
       "contact_id": "EbImv5wT2xiSr8QNB1kT"
@@ -282,7 +321,7 @@
       "name": "Ruth",
       "channel": "Phone",
       "message": "Lm working 10 to 3, Rest of week, if l finish early will try call in,  thank",
-      "age": "11h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "yY2pDB0bDaClKUeKAWmT",
       "contact_id": "NhyYgdUcoGkO9kK9WBa3"
@@ -291,7 +330,7 @@
       "name": "Sheila Lundy",
       "channel": "Phone",
       "message": "Enjoy - they don\u2019t stay that size for long.",
-      "age": "14h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "TcrxAet44Yh76BmcWhoo",
       "contact_id": "1ZtSC9s0CNF99mohCNbq"
@@ -300,7 +339,7 @@
       "name": "Sarah Boyd",
       "channel": "Phone",
       "message": "Aw he is beautiful!!! What a little angel \ud83d\ude07  \n\nDefinitely not the start we wanted but I'll rally haha\n\nAw bless her! Xx",
-      "age": "14h ago",
+      "age": "22h ago",
       "unread": 1,
       "conv_id": "HFse8Zp7V3kYGsOhyliT",
       "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
@@ -5358,7 +5397,7 @@
         "built": false
       }
     ],
-    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member onboarding**: No documented first-touch-to-first-class journey (goal-setting, induction safety, class level assignment, buddy/coach intro)\n- **Churn prevention**: No SOP for pause requests, cancellation triggers, or win-back sequences despite this being core to studio unit economics\n- **Coaching standards & quality**: No audit checklist or development roadmap\u2014you have 21 coach SOPs but no mechanism to measure/enforce consistency or progression\n- **Member data & GDPR**: Legally exposed; no documented process for data capture consent, storage, deletion, or incident response\n- **Retention mechanics**: Missing SOPs for check-ins (timing/cadence/escalation), milestone celebrations, and 30-day goal tracking\u2014all high-leverage retention levers\n- **Referral programme**: No documented mechanics, tracking, or incentive fulfilment process\n- **Incident & complaints**: No SOP for member injuries, facility issues, or complaint resolution\u2014liability and NPS risk\n- **Financial**: Only 1 general SOP; gaps in payment failures, refunds, package rollovers, late fees\n\n**Needs updating**\n\n- **Class scheduling & substitution**: Likely doesn't cover last-minute coach absence or how members are notified\n- **Coach onboarding (21 SOPs)**: Probably thin on probation milestones, peer feedback loops, or performance review cadence\n- **Marketing SOPs (6 total)**: May not link to actual member acquisition funnels or retention campaigns; likely missing campaign post-mortems\n- **Facilities**: 8/8 looks complete but check if cleaning checklists cover post-class deep-clean or equipment maintenance intervals\n- **Client communication**: Likely missing escalation paths for unresponded member queries or complaint timelines\n\n**Build next**\n\n1. **"
+    "coo_evaluation": "**Gaps \u2014 no SOP yet**\n\n- **Member Onboarding**: no standardised first-touch flow (induction, goal-setting, intro class, payment setup). High-friction, high-churn point.\n- **Member Checklists & Win-back**: no documented cadence for 30-day, 90-day, post-pause outreach or re-engagement triggers.\n- **Cancellation & Churn**: no defined conversation protocol, exit survey, or pause-vs-cancel decision tree. Revenue leakage invisible.\n- **Coaching Development Roadmap**: no career progression, upskilling tracks, or performance review cycle. Coaches flying blind on growth.\n- **Class Quality Audit**: no systematic way to measure coaching delivery, member experience, or class consistency. Quality drift undetected.\n- **Referral Programme**: no mechanics (incentives, tracking, redemption). Member acquisition engine untapped.\n- **Member Data & GDPR**: no data handling, consent, retention, or deletion protocols. Compliance and privacy risk.\n- **Milestone Achievements & Outcomes**: no system to track or celebrate progress. Retention driver left unused.\n- **Troubleshooting Guide**: no escalation path for common member complaints (billing, injury, class conflicts, coach issues).\n- **Finance SOP gaps**: invoicing, refund/credit policy, payment failure handling, revenue reconciliation.\n- **Incident/Safeguarding**: no protocol for member complaints, accidents, welfare concerns, or complaints log.\n\n---\n\n**Needs updating**\n\n- **Weekly Key Coach Tasks**: likely missing accountability owners, time-blocking, or success metrics for weekly admin/planning.\n- **Existing Coach SOPs (21/24)**: probably thin on performance feedback loops, member feedback integration, substitute cover protocols.\n- **Marketing SOPs (6/6)**: possibly outdated on member"
   },
   "slack": {
     "configured": true,
@@ -5367,7 +5406,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "By the way, just checking if you were able to receive the payoneer request?",
-        "hours": 20,
+        "hours": 28,
         "name": "Julie Lapaz"
       }
     ],
@@ -5706,7 +5745,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower classes (20 sessions).** This is her largest commitment and core strength work. JoJo should take the majority since she's the head coach and already delivers Build: Upper; Eilis can co-cover some sessions to build her technical confidence in lower-body programming, but keep her load manageable.\n\n\u2022 **Split Grace's Strongevity (5 sessions) between JoJo and Eilis.** JoJo already runs 7 Strongevity sessions; adding 5 more spreads the load fairly. Eilis can take 2\u20133 to diversify her class portfolio away from heavy PT dependency.\n\n\u2022 **Reduce Eilis's Personal Training load from 53 to ~35\u201340 sessions.** She is heavily over-reliant on 1:1s. Redirect some PT clients to group classes (Elevate, Plate, Mobility) or pair them with JoJo's PT slots to build resilience and give Eilis breathing room.\n\n\u2022 **Cap JoJo's PT at ~15\u201318 sessions per month.** She is currently running 22 PTs plus 11 Momentum Calls (mostly admin/check-ins, not delivery). Consolidate Momentum Calls into fewer, longer touchpoints; redirect new PT inquiries to Eilis when she has capacity after re-balancing.\n\n\u2022 **Assign Body Composition Scans to a rotating admin or reception slot** (not tracked as coaching load). This frees ~35 combined hours monthly across the team and removes it as a false measure of coaching demand.\n\n\u2022 **Monitor coverage dependency: Eilis now holds 60% of PT revenue.** Once rebalanced, aim for 50/50 split between coaches so illness or holidays don't collapse the PT offer.",
+    "advice": "\u2022 **Move Grace's Build: Lower classes to JoJo immediately.** Grace is running 20 sessions of this each month \u2014 JoJo already owns Build: Upper and has the expertise. This single shift removes most of Grace's coaching load and creates consistency for members.\n\n\u2022 **Redistribute Grace's Strongevity and remaining classes to Eilis.** Eilis is running 131 sessions already but has capacity in class delivery (mostly PT and scans). Strongevity and Engine are lower-skill classes where Eilis can grow; this frees Grace completely and balances Eilis's mix away from pure PT.\n\n\u2022 **Eilis is over-loaded on 1:1 PT (53 sessions).** Cap her at 35\u201340 PT slots per month and redirect new PT inquiries to JoJo, who is running only 22. This protects Eilis from burnout and develops JoJo's PT business.\n\n\u2022 **Ignore Body Composition Scans when planning coaching time** \u2014 they're admin, not real sessions. Spread them evenly (roughly 10\u201312 per coach per month) based on member booking patterns, not coach load.\n\n\u2022 **Confirm JoJo owns Tuesdays and all Build classes going forward.** She's carrying the technical load well; centralise Build (Upper, Lower, Full Body) with her to avoid fragmentation and member confusion.\n\n\u2022 **Review Momentum Calls (JoJo's 11/month).** If these are part of a onboarding or retention pathway, document the process so Eilis can take half once she's embedded; otherwise, keep them with JoJo as head coach.",
     "period": "October 2026"
   },
   "asana": {
@@ -6138,7 +6177,7 @@
     }
   },
   "teamup": {
-    "total_members": 174,
+    "total_members": 175,
     "recurring": 112,
     "recurring_members": [
       {
@@ -6637,7 +6676,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 12,
+    "new_this_month": 13,
     "cancellations_this_month": 4,
     "leaving_members": [
       {
@@ -8337,6 +8376,16 @@
             "name": "Helen Faulkner"
           }
         ]
+      },
+      {
+        "name": "4 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 11029358,
+            "name": "Rosemary Kennedy"
+          }
+        ]
       }
     ],
     "class_stats": {
@@ -8344,7 +8393,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 736
+            "count": 765
           },
           {
             "day": "Wednesday",
@@ -8388,7 +8437,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 645
+            "count": 667
           },
           {
             "name": "Build: Full Body",
@@ -8404,7 +8453,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 312
+            "count": 319
           },
           {
             "name": "Mobility",
@@ -8549,13 +8598,13 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3154
+        "total_attended": 3183
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 266
+            "count": 295
           },
           {
             "day": "Monday",
@@ -8599,7 +8648,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 225
+            "count": 247
           },
           {
             "name": "Build: Lower",
@@ -8610,12 +8659,12 @@
             "count": 147
           },
           {
-            "name": "Elevate",
-            "count": 104
+            "name": "Strongevity",
+            "count": 108
           },
           {
-            "name": "Strongevity",
-            "count": 101
+            "name": "Elevate",
+            "count": 104
           },
           {
             "name": "Mobility",
@@ -8671,18 +8720,18 @@
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
-            "count": 42,
-            "sessions": 4,
-            "avg": 10.5,
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
             "label": "Tuesday 7am Build: Upper"
           },
           {
             "day": "Tuesday",
             "time": "10am",
             "name": "Build: Upper",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
             "label": "Tuesday 10am Build: Upper"
           },
           {
@@ -8760,7 +8809,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1041
+        "total_attended": 1070
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. Launch a \"Lift & Learn\" workshop series (30\u201345 min) in Thursday/Friday gaps between classes \u2014 rotate topics like form clinics for Build variations, nutrition basics, or mobility. Charge \u00a38\u201312 per person or bundle 4 for \u00a330. Targets members already in-studio and builds confidence for underattended classes.\n\n2. Open a paid small-group PT block (2\u20134 people) on Saturday mornings before the gym gets busy \u2014 position it as \"Strength Foundations\" for members intimidated by Build: Upper or Lower, removing a barrier to those classes.\n\n**Lift the quieter classes:**\n\n3. Move **Barbelle and Capacity to Tuesday/Wednesday evenings** (or earlier slots on those peak days) \u2014 they're strength-focused like the popular Build classes, so members already showing up for those will see them. Pair with a one-week \"try free\" invite to recent Build attendees, framed as \"complement your strength training.\"",
       "capacity": [
@@ -8784,7 +8833,7 @@
           "name": "Build: Upper",
           "sessions": 78,
           "cap": 12,
-          "avg_attending": 10.1,
+          "avg_attending": 10.0,
           "fill_rate": 84,
           "status": "healthy"
         },
@@ -9085,7 +9134,7 @@
       },
       {
         "month": "2026-11",
-        "active": 172,
+        "active": 173,
         "churn": 7.8,
         "by_type": {
           "Empower": 72,
@@ -9104,6 +9153,7 @@
           "8 Session Block": 1,
           "Fuel Forward Nutrition Challenge": 1,
           "Off-Peak": 1,
+          "4 Session Block": 1,
           "2 Sessions": 1
         }
       }
@@ -9222,13 +9272,6 @@
         "last_seen": "2026-10-22"
       },
       {
-        "id": 10301313,
-        "name": "Hilary McDowell",
-        "membership": "Elevate",
-        "days_absent": 14,
-        "last_seen": "2026-10-20"
-      },
-      {
         "id": 12199003,
         "name": "Joules Williamson",
         "membership": "4 PT Sessions",
@@ -9278,11 +9321,18 @@
         "last_seen": "2026-10-15"
       },
       {
-        "id": 13542263,
-        "name": "Lynda Wright",
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 60,
+        "last_seen": "2026-09-04"
+      },
+      {
+        "id": 9196376,
+        "name": "Nerys Young",
         "membership": "Empower",
-        "days_absent": 13,
-        "last_seen": "2026-10-21"
+        "days_absent": 25,
+        "last_seen": "2026-10-09"
       }
     ],
     "celebrations": {
@@ -10619,6 +10669,15 @@
         "last_momentum": null
       },
       {
+        "id": 11029358,
+        "name": "Rosemary Kennedy",
+        "email": "rosemary_kennedy@yahoo.com",
+        "join_date": "2026-11-13",
+        "membership": "4 Session Block",
+        "class_count": 127,
+        "last_momentum": null
+      },
+      {
         "id": 13414335,
         "name": "Rosie Mc Fetridge",
         "email": "rosie3387@hotmail.co.uk",
@@ -10994,8 +11053,8 @@
       },
       {
         "month": "2026-11",
-        "collected": 0.0,
-        "payments": 0
+        "collected": 15.0,
+        "payments": 1
       }
     ],
     "failed": [
@@ -11124,119 +11183,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n\u2022 **Audit first, then structure** \u2014 Have Grace spend 2 hours with her top 2-3 coaches documenting *exactly* what they currently deliver (session length, programming style, progression model, accountability touchpoints). Don't invent \u2014 codify what's already working. This prevents coaches feeling blindsided by new \"rules.\"\n\n\u2022 **Price from member value backward** \u2014 Survey 5-10 current members asking \"what would you pay MORE for?\" (e.g., form checks, nutrition guidance, community challenges). Price based on what they've already indicated matters, not cost-plus guessing. Build a simple 1-page comparison sheet: Basic / Standard / Premium tier with *one* clear differentiator per level (e.g., frequency of check-ins).\n\n\u2022 **Split into two docs, use ruthlessly** \u2014 Coach version: what they promise clients, templates for progress tracking, escalation rules (\"if member X isn't seeing results by week 4, here's the conversation script\"). Member version: simple pricing card + FAQ addressing the 3 questions you hear most. Print both. Post the member version where signups happen.\n\n\u2022 **Lock it down with one rule** \u2014 No service gets offered until it's on the menu. This forces Grace to say \"that's a custom package \u2014 let's discuss\" rather than bespoke chaos. This also surfaces which add-ons actually convert (track for next iteration).\n\n\u2022 **Timeline: 1 week** \u2014 Menu draft by day 3, coach input/refinement by day 5, member rollout by day 7. Perfectionism kills momentum."
+        "advice": "# Execution Playbook: Service Menu Build\n\n**1. Audit ruthlessly FIRST (before you design anything)**\nDon't guess what you offer. Spend 2 hours this week having Grace and coaches list *every* service, variant, and add-on currently being sold or discussed. You'll find gaps and redundancy. This prevents designing a menu that doesn't match reality.\n\n**2. Price backwards from member willingness-to-pay, not costs**\nRun a 10-minute Slack poll to your most engaged members: \"What would you pay for [personalized nutrition coaching / monthly form checks / small-group strength programming]?\" Use those anchors to price, not spreadsheet math. Members in Belfast have a ceiling; find it before listing prices.\n\n**3. Build TWO menus, not one\u2014and they're totally different**\n- **Coach version**: shows margin per service, time commitment, upsell sequences (e.g., \"if member buys 4 PT sessions, offer nutrition package at discount\")\n- **Member version**: benefits-focused, jargon-free, shows bundled value (\"Get 8 sessions + form check for \u00a3X instead of \u00a3Y separately\")\n\n**4. Create a one-page quick-sell guide for coaches**\nNot the full menu\u2014a laminated card they use during sign-ups. Most important: what's the *default* package you push, and what's the upgrade? Coaches sell what's front-and-center. Make decisions *for* them.\n\n**5. Price one service as a \"loss leader\" to drive repeat membership**\nPick ONE high-visibility offering (e.g., \"First form assessment: \u00a315\") that's almost free. It pulls members into bigger"
       }
     ]
   },

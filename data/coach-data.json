@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T06:00:55.702928+00:00",
+  "generated_at": "2026-11-03T14:02:07.639160+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4405,7 +4405,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "By the way, just checking if you were able to receive the payoneer request?",
-        "hours": 20,
+        "hours": 28,
         "name": "Julie Lapaz"
       }
     ],
@@ -4740,7 +4740,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower classes (20 sessions).** This is her largest commitment and core strength work. JoJo should take the majority since she's the head coach and already delivers Build: Upper; Eilis can co-cover some sessions to build her technical confidence in lower-body programming, but keep her load manageable.\n\n\u2022 **Split Grace's Strongevity (5 sessions) between JoJo and Eilis.** JoJo already runs 7 Strongevity sessions; adding 5 more spreads the load fairly. Eilis can take 2\u20133 to diversify her class portfolio away from heavy PT dependency.\n\n\u2022 **Reduce Eilis's Personal Training load from 53 to ~35\u201340 sessions.** She is heavily over-reliant on 1:1s. Redirect some PT clients to group classes (Elevate, Plate, Mobility) or pair them with JoJo's PT slots to build resilience and give Eilis breathing room.\n\n\u2022 **Cap JoJo's PT at ~15\u201318 sessions per month.** She is currently running 22 PTs plus 11 Momentum Calls (mostly admin/check-ins, not delivery). Consolidate Momentum Calls into fewer, longer touchpoints; redirect new PT inquiries to Eilis when she has capacity after re-balancing.\n\n\u2022 **Assign Body Composition Scans to a rotating admin or reception slot** (not tracked as coaching load). This frees ~35 combined hours monthly across the team and removes it as a false measure of coaching demand.\n\n\u2022 **Monitor coverage dependency: Eilis now holds 60% of PT revenue.** Once rebalanced, aim for 50/50 split between coaches so illness or holidays don't collapse the PT offer.",
+    "advice": "\u2022 **Move Grace's Build: Lower classes to JoJo immediately.** Grace is running 20 sessions of this each month \u2014 JoJo already owns Build: Upper and has the expertise. This single shift removes most of Grace's coaching load and creates consistency for members.\n\n\u2022 **Redistribute Grace's Strongevity and remaining classes to Eilis.** Eilis is running 131 sessions already but has capacity in class delivery (mostly PT and scans). Strongevity and Engine are lower-skill classes where Eilis can grow; this frees Grace completely and balances Eilis's mix away from pure PT.\n\n\u2022 **Eilis is over-loaded on 1:1 PT (53 sessions).** Cap her at 35\u201340 PT slots per month and redirect new PT inquiries to JoJo, who is running only 22. This protects Eilis from burnout and develops JoJo's PT business.\n\n\u2022 **Ignore Body Composition Scans when planning coaching time** \u2014 they're admin, not real sessions. Spread them evenly (roughly 10\u201312 per coach per month) based on member booking patterns, not coach load.\n\n\u2022 **Confirm JoJo owns Tuesdays and all Build classes going forward.** She's carrying the technical load well; centralise Build (Upper, Lower, Full Body) with her to avoid fragmentation and member confusion.\n\n\u2022 **Review Momentum Calls (JoJo's 11/month).** If these are part of a onboarding or retention pathway, document the process so Eilis can take half once she's embedded; otherwise, keep them with JoJo as head coach.",
     "period": "October 2026"
   },
   "asana": {
@@ -5172,7 +5172,7 @@
     }
   },
   "teamup": {
-    "total_members": 174,
+    "total_members": 175,
     "recurring": 112,
     "recurring_members": [
       {
@@ -5671,7 +5671,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 12,
+    "new_this_month": 13,
     "cancellations_this_month": 4,
     "leaving_members": [
       {
@@ -7371,6 +7371,16 @@
             "name": "Helen Faulkner"
           }
         ]
+      },
+      {
+        "name": "4 Session Block",
+        "count": 1,
+        "members": [
+          {
+            "id": 11029358,
+            "name": "Rosemary Kennedy"
+          }
+        ]
       }
     ],
     "class_stats": {
@@ -7378,7 +7388,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 736
+            "count": 765
           },
           {
             "day": "Wednesday",
@@ -7422,7 +7432,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 645
+            "count": 667
           },
           {
             "name": "Build: Full Body",
@@ -7438,7 +7448,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 312
+            "count": 319
           },
           {
             "name": "Mobility",
@@ -7583,13 +7593,13 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3154
+        "total_attended": 3183
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 266
+            "count": 295
           },
           {
             "day": "Monday",
@@ -7633,7 +7643,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 225
+            "count": 247
           },
           {
             "name": "Build: Lower",
@@ -7644,12 +7654,12 @@
             "count": 147
           },
           {
-            "name": "Elevate",
-            "count": 104
+            "name": "Strongevity",
+            "count": 108
           },
           {
-            "name": "Strongevity",
-            "count": 101
+            "name": "Elevate",
+            "count": 104
           },
           {
             "name": "Mobility",
@@ -7705,18 +7715,18 @@
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
-            "count": 42,
-            "sessions": 4,
-            "avg": 10.5,
+            "count": 53,
+            "sessions": 5,
+            "avg": 10.6,
             "label": "Tuesday 7am Build: Upper"
           },
           {
             "day": "Tuesday",
             "time": "10am",
             "name": "Build: Upper",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
             "label": "Tuesday 10am Build: Upper"
           },
           {
@@ -7794,7 +7804,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1041
+        "total_attended": 1070
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. Launch a \"Lift & Learn\" workshop series (30\u201345 min) in Thursday/Friday gaps between classes \u2014 rotate topics like form clinics for Build variations, nutrition basics, or mobility. Charge \u00a38\u201312 per person or bundle 4 for \u00a330. Targets members already in-studio and builds confidence for underattended classes.\n\n2. Open a paid small-group PT block (2\u20134 people) on Saturday mornings before the gym gets busy \u2014 position it as \"Strength Foundations\" for members intimidated by Build: Upper or Lower, removing a barrier to those classes.\n\n**Lift the quieter classes:**\n\n3. Move **Barbelle and Capacity to Tuesday/Wednesday evenings** (or earlier slots on those peak days) \u2014 they're strength-focused like the popular Build classes, so members already showing up for those will see them. Pair with a one-week \"try free\" invite to recent Build attendees, framed as \"complement your strength training.\"",
       "capacity": [
@@ -7818,7 +7828,7 @@
           "name": "Build: Upper",
           "sessions": 78,
           "cap": 12,
-          "avg_attending": 10.1,
+          "avg_attending": 10.0,
           "fill_rate": 84,
           "status": "healthy"
         },
@@ -8119,7 +8129,7 @@
       },
       {
         "month": "2026-11",
-        "active": 172,
+        "active": 173,
         "churn": 7.8,
         "by_type": {
           "Empower": 72,
@@ -8138,6 +8148,7 @@
           "8 Session Block": 1,
           "Fuel Forward Nutrition Challenge": 1,
           "Off-Peak": 1,
+          "4 Session Block": 1,
           "2 Sessions": 1
         }
       }
@@ -8256,13 +8267,6 @@
         "last_seen": "2026-10-22"
       },
       {
-        "id": 10301313,
-        "name": "Hilary McDowell",
-        "membership": "Elevate",
-        "days_absent": 14,
-        "last_seen": "2026-10-20"
-      },
-      {
         "id": 12199003,
         "name": "Joules Williamson",
         "membership": "4 PT Sessions",
@@ -8312,11 +8316,18 @@
         "last_seen": "2026-10-15"
       },
       {
-        "id": 13542263,
-        "name": "Lynda Wright",
+        "id": 7561270,
+        "name": "Mollie McGregor",
+        "membership": "Elevate",
+        "days_absent": 60,
+        "last_seen": "2026-09-04"
+      },
+      {
+        "id": 9196376,
+        "name": "Nerys Young",
         "membership": "Empower",
-        "days_absent": 13,
-        "last_seen": "2026-10-21"
+        "days_absent": 25,
+        "last_seen": "2026-10-09"
       }
     ],
     "celebrations": {
@@ -9650,6 +9661,15 @@
         "join_date": "2022-10-17",
         "membership": "Strongevity",
         "class_count": 216,
+        "last_momentum": null
+      },
+      {
+        "id": 11029358,
+        "name": "Rosemary Kennedy",
+        "email": "rosemary_kennedy@yahoo.com",
+        "join_date": "2026-11-13",
+        "membership": "4 Session Block",
+        "class_count": 127,
         "last_momentum": null
       },
       {
