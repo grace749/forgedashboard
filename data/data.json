@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:02:07.639160+00:00",
+  "generated_at": "2026-11-03T15:00:59.977101+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,8 +8,8 @@
   "brief": {
     "date": "2026-11-03",
     "event_count": 9,
-    "urgent_count": 2,
-    "enquiry_count": 4,
+    "urgent_count": 0,
+    "enquiry_count": 5,
     "calendar": [
       {
         "title": "\ud83d\udcde Call: Nicola Neill",
@@ -22,16 +22,6 @@
         "description": "Booked discovery call",
         "location": "",
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
-      },
-      {
-        "title": "Joanne x jumpstart",
-        "time": "2:00pm",
-        "start_raw": "2026-11-03T14:00:00Z",
-        "day": "Today",
-        "attendees": [],
-        "description": "\u202a+44\u00a07713\u00a0766594\u202c",
-        "location": "",
-        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Stephanie Blair",
@@ -75,7 +65,19 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm SIPP provider details and gather junior member documentation requirements."
+        "prep": ""
+      },
+      {
+        "title": "\ud83d\udcde Call: Joanne Pethick",
+        "time": "1:45pm",
+        "start_raw": "2026-11-04T13:45:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Joanne Pethick"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
         "title": "Precious & Patience Coaching",
@@ -87,7 +89,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Collect passport details/copies and verify banking information for all account holders."
+        "prep": "Confirm SIPP provider details and gather junior member documentation requirements."
       },
       {
         "title": "\ud83d\udcde Call: Kay Blackburn",
@@ -109,31 +111,10 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Collect passport details/copies and verify banking information for all account holders."
       }
     ],
-    "urgent": [
-      {
-        "from": "Elizabeth Steele",
-        "from_raw": "Elizabeth Steele <e.steele.233@btinternet.com>",
-        "subject": "Re: Receipt for transaction on TeamUp",
-        "snippet": "Hi Grace, Unfortunately I&#39;m not fully recovered from having the shingles, I won&#39;t make this month&#39;s classes, I believe that you don&#39;t do our class in December. I hope to be in better",
-        "id": "1a1a1255331a0121",
-        "thread_id": "1a1a1255331a0121",
-        "msg_count": 1,
-        "draft_id": "r-6384180918968544742"
-      },
-      {
-        "from": "Liz Elliott",
-        "from_raw": "Liz Elliott <admin@scriptmediagroup.co.uk>",
-        "subject": "NFA 2026 - Shortlisting Certificate",
-        "snippet": "Hi Grace Please find attached your Shortlisting Certificate for the Boutique Facility of the Year category. Kind regards Liz Liz Elliott | T: 01226 734251 Please note my working hours are 9am-5pm",
-        "id": "1a1a0f7796f0458a",
-        "thread_id": "1a1a0f7796f0458a",
-        "msg_count": 1,
-        "draft_id": "r-229924410375297332"
-      }
-    ],
+    "urgent": [],
     "important": [
       {
         "from": "HMRC help and support",
@@ -167,6 +148,15 @@
         "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 1:10pm",
         "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 1:10pm",
         "snippet": "Booked a call for Tomorrow 1:10pm \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
+      {
+        "name": "Joanne Pethick",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 1:45pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 1:45pm",
+        "snippet": "Booked a call for Tomorrow 1:45pm \u2014 potential member",
         "age": "",
         "unread": 0
       },
@@ -294,7 +284,7 @@
       "name": "Nicola Neill",
       "channel": "Phone",
       "message": "Thanks Grace, I think I'll have to register when I'm back from holiday otherwise I'll loose 1 week of the 6 weeks by being away.",
-      "age": "1h ago",
+      "age": "2h ago",
       "unread": 1,
       "conv_id": "3cl9lYQmkmjeNRUZz8d3",
       "contact_id": "MEeA6qhOuTfR3PHngR7R"
@@ -303,7 +293,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "I asked about transferring HYROX ticket but they said no. \n\nSo sorry about this . I will transfer \u00a3100 this month and \u00a3100 next month . Just getting it tight with money as Sarah has school trip to Rom",
-      "age": "3h ago",
+      "age": "4h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -312,7 +302,7 @@
       "name": "Caroline Stinson",
       "channel": "Phone",
       "message": "Love that jojo remembers injuries or fear and either pushes or pulls you back.   Personal thought , even half burpees are too much lol. \n\nI love the flexibility, if I really feel I can\u2019t do something ",
-      "age": "19h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "FU9UEIK4WdZmaQKrTbOL",
       "contact_id": "EbImv5wT2xiSr8QNB1kT"
@@ -321,7 +311,7 @@
       "name": "Ruth",
       "channel": "Phone",
       "message": "Lm working 10 to 3, Rest of week, if l finish early will try call in,  thank",
-      "age": "19h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "yY2pDB0bDaClKUeKAWmT",
       "contact_id": "NhyYgdUcoGkO9kK9WBa3"
@@ -330,7 +320,7 @@
       "name": "Sheila Lundy",
       "channel": "Phone",
       "message": "Enjoy - they don\u2019t stay that size for long.",
-      "age": "22h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "TcrxAet44Yh76BmcWhoo",
       "contact_id": "1ZtSC9s0CNF99mohCNbq"
@@ -339,7 +329,7 @@
       "name": "Sarah Boyd",
       "channel": "Phone",
       "message": "Aw he is beautiful!!! What a little angel \ud83d\ude07  \n\nDefinitely not the start we wanted but I'll rally haha\n\nAw bless her! Xx",
-      "age": "22h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "HFse8Zp7V3kYGsOhyliT",
       "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
@@ -5406,7 +5396,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "By the way, just checking if you were able to receive the payoneer request?",
-        "hours": 28,
+        "hours": 29,
         "name": "Julie Lapaz"
       }
     ],
