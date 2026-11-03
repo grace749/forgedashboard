@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T15:00:59.977101+00:00",
+  "generated_at": "2026-11-03T20:58:31.494964+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-03",
-    "event_count": 9,
-    "urgent_count": 0,
-    "enquiry_count": 5,
+    "event_count": 11,
+    "urgent_count": 1,
+    "enquiry_count": 7,
     "calendar": [
       {
         "title": "\ud83d\udcde Call: Nicola Neill",
@@ -36,10 +36,22 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
+        "title": "\ud83d\udcde Call: KAREN  Burke",
+        "time": "12:10pm",
+        "start_raw": "2026-11-04T12:10:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "KAREN  Burke"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
         "title": "Untitled",
-        "time": "6:50pm",
-        "start_raw": "2026-11-03T18:50:00Z",
-        "day": "Today",
+        "time": "12:10pm",
+        "start_raw": "2026-11-04T12:10:00Z",
+        "day": "Tomorrow",
         "attendees": [],
         "description": "",
         "location": "",
@@ -112,9 +124,32 @@
         "description": "",
         "location": "",
         "prep": "Collect passport details/copies and verify banking information for all account holders."
+      },
+      {
+        "title": "\ud83d\udcde Call: Laura Patton",
+        "time": "11:10am",
+        "start_raw": "2026-11-06T11:10:00",
+        "day": "Friday",
+        "attendees": [
+          "Laura Patton"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "WellFit Expo",
+        "from_raw": "WellFit Expo <info@wellfitexpo.com>",
+        "subject": "Schedule",
+        "snippet": "Hi Grace, Apologies on the delay in responding we have been working hard to put together an Agenda. This will have more updates to come but we have a great lineup which can be viewed here: https://www.",
+        "id": "1a1a2ba9ba175738",
+        "thread_id": "1a12c3d96fea9428",
+        "msg_count": 2,
+        "draft_id": "r5640023978462610989"
+      }
+    ],
     "important": [
       {
         "from": "HMRC help and support",
@@ -139,6 +174,15 @@
         "subject": "\ud83d\udcde Booked a call \u00b7 Today 6:50pm",
         "path": "\ud83d\udcde Booked a call \u00b7 Today 6:50pm",
         "snippet": "Booked a call for Today 6:50pm \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
+      {
+        "name": "KAREN  Burke",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 12:10pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 12:10pm",
+        "snippet": "Booked a call for Tomorrow 12:10pm \u2014 potential member",
         "age": "",
         "unread": 0
       },
@@ -168,14 +212,23 @@
         "snippet": "Booked a call for Thursday 9:30am \u2014 potential member",
         "age": "",
         "unread": 0
+      },
+      {
+        "name": "Laura Patton",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Friday 11:10am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Friday 11:10am",
+        "snippet": "Booked a call for Friday 11:10am \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "sarah@nourishandnurtu.re": "2026-08-15",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -281,10 +334,19 @@
   },
   "ghl": [
     {
+      "name": "KAREN Burke",
+      "channel": "Phone",
+      "message": "Thanku..we will chat tomorrow",
+      "age": "3h ago",
+      "unread": 1,
+      "conv_id": "lyoe7kP3Psv829BbrmVp",
+      "contact_id": "a7FK2jzb3VvfzgeoEnZI"
+    },
+    {
       "name": "Nicola Neill",
       "channel": "Phone",
       "message": "Thanks Grace, I think I'll have to register when I'm back from holiday otherwise I'll loose 1 week of the 6 weeks by being away.",
-      "age": "2h ago",
+      "age": "8h ago",
       "unread": 1,
       "conv_id": "3cl9lYQmkmjeNRUZz8d3",
       "contact_id": "MEeA6qhOuTfR3PHngR7R"
@@ -293,7 +355,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "I asked about transferring HYROX ticket but they said no. \n\nSo sorry about this . I will transfer \u00a3100 this month and \u00a3100 next month . Just getting it tight with money as Sarah has school trip to Rom",
-      "age": "4h ago",
+      "age": "9h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -302,37 +364,10 @@
       "name": "Caroline Stinson",
       "channel": "Phone",
       "message": "Love that jojo remembers injuries or fear and either pushes or pulls you back.   Personal thought , even half burpees are too much lol. \n\nI love the flexibility, if I really feel I can\u2019t do something ",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "FU9UEIK4WdZmaQKrTbOL",
       "contact_id": "EbImv5wT2xiSr8QNB1kT"
-    },
-    {
-      "name": "Ruth",
-      "channel": "Phone",
-      "message": "Lm working 10 to 3, Rest of week, if l finish early will try call in,  thank",
-      "age": "20h ago",
-      "unread": 1,
-      "conv_id": "yY2pDB0bDaClKUeKAWmT",
-      "contact_id": "NhyYgdUcoGkO9kK9WBa3"
-    },
-    {
-      "name": "Sheila Lundy",
-      "channel": "Phone",
-      "message": "Enjoy - they don\u2019t stay that size for long.",
-      "age": "23h ago",
-      "unread": 1,
-      "conv_id": "TcrxAet44Yh76BmcWhoo",
-      "contact_id": "1ZtSC9s0CNF99mohCNbq"
-    },
-    {
-      "name": "Sarah Boyd",
-      "channel": "Phone",
-      "message": "Aw he is beautiful!!! What a little angel \ud83d\ude07  \n\nDefinitely not the start we wanted but I'll rally haha\n\nAw bless her! Xx",
-      "age": "23h ago",
-      "unread": 1,
-      "conv_id": "HFse8Zp7V3kYGsOhyliT",
-      "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
     }
   ],
   "jumpstart": {
@@ -1364,6 +1399,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Noor AlShehabi",
+        "last_scan": "2026-11-03",
+        "scan_count": 3,
+        "weight": 144.1,
+        "smm": 53.8,
+        "pbf": 31.4,
+        "bmi": 24.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -6.0,
+        "smm_change": -2.0,
+        "pbf_change": -0.4,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-15",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "catherinegavin134",
         "last_scan": "2026-11-02",
@@ -2484,30 +2543,6 @@
         "weight_change": null,
         "smm_change": null,
         "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-26",
-        "days_to_due": -8,
-        "overdue": true
-      },
-      {
-        "name": "Noor AlShehabi",
-        "last_scan": "2026-09-14",
-        "scan_count": 2,
-        "weight": 150.1,
-        "smm": 55.8,
-        "pbf": 31.8,
-        "bmi": 25.0,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": -8.4,
-        "smm_change": -0.4,
-        "pbf_change": -3.1,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -5396,7 +5431,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "By the way, just checking if you were able to receive the payoneer request?",
-        "hours": 29,
+        "hours": 35,
         "name": "Julie Lapaz"
       }
     ],
@@ -6167,7 +6202,7 @@
     }
   },
   "teamup": {
-    "total_members": 175,
+    "total_members": 176,
     "recurring": 112,
     "recurring_members": [
       {
@@ -6619,7 +6654,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 11,
+    "trial": 12,
     "trial_members": [
       {
         "id": 14087556,
@@ -6646,6 +6681,10 @@
         "name": "Michelle Taggart"
       },
       {
+        "id": 14221384,
+        "name": "Pat Culbertson"
+      },
+      {
         "id": 14016511,
         "name": "Patricia McAuley"
       },
@@ -6666,7 +6705,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 13,
+    "new_this_month": 14,
     "cancellations_this_month": 4,
     "leaving_members": [
       {
@@ -8029,7 +8068,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 11,
+        "count": 12,
         "members": [
           {
             "id": 14087556,
@@ -8054,6 +8093,10 @@
           {
             "id": 14166374,
             "name": "Michelle Taggart"
+          },
+          {
+            "id": 14221384,
+            "name": "Pat Culbertson"
           },
           {
             "id": 14016511,
@@ -8383,7 +8426,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 765
+            "count": 791
           },
           {
             "day": "Wednesday",
@@ -8427,7 +8470,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 667
+            "count": 693
           },
           {
             "name": "Build: Full Body",
@@ -8505,15 +8548,6 @@
             "label": "Wednesday 7am Build: Full Body"
           },
           {
-            "day": "Tuesday",
-            "time": "7pm",
-            "name": "Build: Upper",
-            "count": 124,
-            "sessions": 12,
-            "avg": 10.3,
-            "label": "Tuesday 7pm Build: Upper"
-          },
-          {
             "day": "Wednesday",
             "time": "10am",
             "name": "Circuits",
@@ -8530,6 +8564,15 @@
             "sessions": 12,
             "avg": 10.2,
             "label": "Thursday 7am Build: Full Body"
+          },
+          {
+            "day": "Tuesday",
+            "time": "10am",
+            "name": "Build: Upper",
+            "count": 122,
+            "sessions": 12,
+            "avg": 10.2,
+            "label": "Tuesday 10am Build: Upper"
           }
         ],
         "bottom_slots": [
@@ -8588,13 +8631,13 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3183
+        "total_attended": 3209
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 295
+            "count": 321
           },
           {
             "day": "Monday",
@@ -8638,7 +8681,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 247
+            "count": 273
           },
           {
             "name": "Build: Lower",
@@ -8799,7 +8842,7 @@
             "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1070
+        "total_attended": 1096
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. Launch a \"Lift & Learn\" workshop series (30\u201345 min) in Thursday/Friday gaps between classes \u2014 rotate topics like form clinics for Build variations, nutrition basics, or mobility. Charge \u00a38\u201312 per person or bundle 4 for \u00a330. Targets members already in-studio and builds confidence for underattended classes.\n\n2. Open a paid small-group PT block (2\u20134 people) on Saturday mornings before the gym gets busy \u2014 position it as \"Strength Foundations\" for members intimidated by Build: Upper or Lower, removing a barrier to those classes.\n\n**Lift the quieter classes:**\n\n3. Move **Barbelle and Capacity to Tuesday/Wednesday evenings** (or earlier slots on those peak days) \u2014 they're strength-focused like the popular Build classes, so members already showing up for those will see them. Pair with a one-week \"try free\" invite to recent Build attendees, framed as \"complement your strength training.\"",
       "capacity": [
@@ -9124,7 +9167,7 @@
       },
       {
         "month": "2026-11",
-        "active": 173,
+        "active": 174,
         "churn": 7.8,
         "by_type": {
           "Empower": 72,
@@ -9135,7 +9178,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 9,
-          "6 Week Jumpstart": 11,
+          "6 Week Jumpstart": 12,
           "Strongevity Membership": 17,
           "8 Class Block": 1,
           "4 Class Pass": 1,
@@ -9255,13 +9298,6 @@
         "last_seen": "2026-10-17"
       },
       {
-        "id": 11617522,
-        "name": "Hayley Moore",
-        "membership": "Empower",
-        "days_absent": 12,
-        "last_seen": "2026-10-22"
-      },
-      {
         "id": 12199003,
         "name": "Joules Williamson",
         "membership": "4 PT Sessions",
@@ -9323,10 +9359,22 @@
         "membership": "Empower",
         "days_absent": 25,
         "last_seen": "2026-10-09"
+      },
+      {
+        "id": 13553225,
+        "name": "Rachel Linton",
+        "membership": "Empower",
+        "days_absent": 22,
+        "last_seen": "2026-10-12"
       }
     ],
     "celebrations": {
       "first_week": [
+        {
+          "name": "Pat Culbertson",
+          "days_in": 0,
+          "start_date": "2026-11-03"
+        },
         {
           "name": "Julia Millar",
           "days_in": 3,
