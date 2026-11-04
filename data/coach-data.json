@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T15:01:01.868323+00:00",
+  "generated_at": "2026-11-04T21:19:36.744323+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4410,7 +4410,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Good afternoon, Coach Grace. Just following up regarding my October payment. When you have a moment! Thank you.\n\n<https://link.payoneer.com/Token?t=DDA9B4DAC8EC",
-        "hours": 4,
+        "hours": 10,
         "name": "Julie Lapaz"
       }
     ],
@@ -7401,7 +7401,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 618
+            "count": 634
           },
           {
             "day": "Monday",
@@ -7435,7 +7435,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 618
+            "count": 634
           }
         ],
         "top_classes": [
@@ -7445,7 +7445,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 515
+            "count": 522
           },
           {
             "name": "Build: Lower",
@@ -7466,12 +7466,12 @@
         ],
         "bottom_classes": [
           {
-            "name": "Capacity",
-            "count": 55
-          },
-          {
             "name": "Barbelle",
             "count": 57
+          },
+          {
+            "name": "Capacity",
+            "count": 58
           },
           {
             "name": "Engine",
@@ -7479,7 +7479,7 @@
           },
           {
             "name": "Plate",
-            "count": 178
+            "count": 184
           },
           {
             "name": "Circuits",
@@ -7551,9 +7551,9 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 55,
-            "sessions": 11,
-            "avg": 5.0,
+            "count": 58,
+            "sessions": 12,
+            "avg": 4.8,
             "label": "Wednesday 8pm Capacity"
           },
           {
@@ -7578,8 +7578,8 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 76,
-            "sessions": 12,
+            "count": 82,
+            "sessions": 13,
             "avg": 6.3,
             "label": "Wednesday 7pm Plate"
           },
@@ -7602,7 +7602,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3197
+        "total_attended": 3213
       },
       "last_30_days": {
         "top_days": [
@@ -7616,7 +7616,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 205
+            "count": 221
           },
           {
             "day": "Friday",
@@ -7642,7 +7642,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 205
+            "count": 221
           },
           {
             "day": "Monday",
@@ -7660,7 +7660,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 157
+            "count": 164
           },
           {
             "name": "Strongevity",
@@ -7681,16 +7681,16 @@
             "count": 20
           },
           {
-            "name": "Capacity",
-            "count": 26
-          },
-          {
             "name": "Engine",
             "count": 26
           },
           {
+            "name": "Capacity",
+            "count": 29
+          },
+          {
             "name": "Plate",
-            "count": 53
+            "count": 59
           },
           {
             "name": "Mobility",
@@ -7759,15 +7759,6 @@
         ],
         "bottom_slots": [
           {
-            "day": "Wednesday",
-            "time": "7pm",
-            "name": "Plate",
-            "count": 17,
-            "sessions": 4,
-            "avg": 4.2,
-            "label": "Wednesday 7pm Plate"
-          },
-          {
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
@@ -7775,6 +7766,15 @@
             "sessions": 4,
             "avg": 4.5,
             "label": "Thursday 10am Elevate"
+          },
+          {
+            "day": "Wednesday",
+            "time": "7pm",
+            "name": "Plate",
+            "count": 23,
+            "sessions": 5,
+            "avg": 4.6,
+            "label": "Wednesday 7pm Plate"
           },
           {
             "day": "Saturday",
@@ -7787,11 +7787,20 @@
           },
           {
             "day": "Wednesday",
+            "time": "8pm",
+            "name": "Capacity",
+            "count": 29,
+            "sessions": 5,
+            "avg": 5.8,
+            "label": "Wednesday 8pm Capacity"
+          },
+          {
+            "day": "Wednesday",
             "time": "6pm",
             "name": "Build: Full Body",
-            "count": 22,
-            "sessions": 4,
-            "avg": 5.5,
+            "count": 29,
+            "sessions": 5,
+            "avg": 5.8,
             "label": "Wednesday 6pm Build: Full Body"
           },
           {
@@ -7802,18 +7811,9 @@
             "sessions": 3,
             "avg": 6.0,
             "label": "Wednesday 5pm Build: Full Body"
-          },
-          {
-            "day": "Wednesday",
-            "time": "8pm",
-            "name": "Capacity",
-            "count": 26,
-            "sessions": 4,
-            "avg": 6.5,
-            "label": "Wednesday 8pm Capacity"
           }
         ],
-        "total_attended": 1124
+        "total_attended": 1140
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. Launch a paid \"Open Studio\" block (30-45 mins) on Thursday and Friday mornings before the first class \u2014 position it as flexible strength training for members who want unstructured barbell work; this captures demand without competing with scheduled classes.\n\n2. Run a monthly \"Workshop Wednesday\" (off-peak slot) teaching barbell technique, nutrition, or mobility \u2014 charge \u00a35-8 per person and invite Barbelle and Engine attendees directly, positioning it as prep work that makes those classes more rewarding.\n\n**Lift quieter classes:**\n\n3. Move Barbelle and Capacity to Tuesday or Monday (your peak days) at a different time to existing strength classes \u2014 test a slot right after Build: Upper when that audience is already in-gym and primed; pair with a one-time \"Try Free\" invite to recent Build attendees so they sample the format.",
       "capacity": [
@@ -7901,8 +7901,8 @@
           "name": "Capacity",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 5.0,
-          "fill_rate": 42,
+          "avg_attending": 4.8,
+          "fill_rate": 40,
           "status": "attention"
         }
       ]
@@ -8341,11 +8341,6 @@
     ],
     "celebrations": {
       "first_week": [
-        {
-          "name": "Pat Culbertson",
-          "days_in": 1,
-          "start_date": "2026-11-03"
-        },
         {
           "name": "Julia Millar",
           "days_in": 4,
