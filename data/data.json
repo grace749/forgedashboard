@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T15:01:02.716052+00:00",
+  "generated_at": "2026-11-05T21:27:54.223870+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,9 +7,9 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-05",
-    "event_count": 4,
-    "urgent_count": 0,
-    "enquiry_count": 2,
+    "event_count": 8,
+    "urgent_count": 2,
+    "enquiry_count": 4,
     "calendar": [
       {
         "title": "\ud83d\udcde Call: Kay Blackburn",
@@ -36,6 +36,28 @@
         "prep": ""
       },
       {
+        "title": "\ud83d\udcde Call: Tracy Boyd",
+        "time": "10:30am",
+        "start_raw": "2026-11-06T10:30:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Tracy Boyd"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "Untitled",
+        "time": "10:30am",
+        "start_raw": "2026-11-06T10:30:00Z",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
         "title": "\ud83d\udcde Call: Laura Patton",
         "time": "11:10am",
         "start_raw": "2026-11-06T11:10:00",
@@ -55,10 +77,53 @@
         "attendees": [],
         "description": "",
         "location": "",
+        "prep": "Register attendance, print conference schedule, confirm travel/parking arrangements."
+      },
+      {
+        "title": "\ud83d\udcde Call: Lisa Bell",
+        "time": "12:10pm",
+        "start_raw": "2026-11-06T12:10:00",
+        "day": "Tomorrow",
+        "attendees": [
+          "Lisa Bell"
+        ],
+        "description": "Booked discovery call",
+        "location": "",
+        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
+      },
+      {
+        "title": "Untitled",
+        "time": "12:10pm",
+        "start_raw": "2026-11-06T12:10:00Z",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
         "prep": ""
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "TShirt Studio Customer Service",
+        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
+        "subject": "Confirmation of your TShirt Studio order - 3969745",
+        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3969745 Your order has been received as follows: Items Value T-Shirt (Value T-Shirt)",
+        "id": "1a1ad356918d7ecf",
+        "thread_id": "1a1ad356918d7ecf",
+        "msg_count": 1,
+        "draft_id": "r8220445733989665948"
+      },
+      {
+        "from": "Liz houston",
+        "from_raw": "Liz houston <lizhouston@hotmail.com>",
+        "subject": "Re: Receipt for transaction on TeamUp",
+        "snippet": "Hi Grace, Everything seems to be conspiring against me at the minute. I want to give notice to cancel my membership on the earliest possible date. Thanks Liz Sent from Outlook for iOS From: Forge",
+        "id": "1a1ac462601a4721",
+        "thread_id": "1a1ac462601a4721",
+        "msg_count": 1,
+        "draft_id": "r2227989214335607627"
+      }
+    ],
     "important": [
       {
         "from": "HMRC help and support",
@@ -78,6 +143,15 @@
         "unread": 0
       },
       {
+        "name": "Tracy Boyd",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
+        "snippet": "Booked a call for Tomorrow 10:30am \u2014 potential member",
+        "age": "",
+        "unread": 0
+      },
+      {
         "name": "Laura Patton",
         "channel": "Booked call",
         "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:10am",
@@ -85,14 +159,23 @@
         "snippet": "Booked a call for Tomorrow 11:10am \u2014 potential member",
         "age": "",
         "unread": 0
+      },
+      {
+        "name": "Lisa Bell",
+        "channel": "Booked call",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 12:10pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 12:10pm",
+        "snippet": "Booked a call for Tomorrow 12:10pm \u2014 potential member",
+        "age": "",
+        "unread": 0
       }
     ],
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -198,10 +281,37 @@
   },
   "ghl": [
     {
+      "name": "Jo",
+      "channel": "Phone",
+      "message": "Literally just watching this",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "SSmsaXAmGesXC4DA1BV3",
+      "contact_id": "xa3rPNDLcMKM9VtjK91V"
+    },
+    {
+      "name": "Yvonna Stewart",
+      "channel": "Phone",
+      "message": "OK thanks.x",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "G6XnkCvzsI36MKq77X9f",
+      "contact_id": "ZqNqmgjODVYEKOL9WbmQ"
+    },
+    {
+      "name": "Sheila Lundy",
+      "channel": "Phone",
+      "message": "I have looked at them- he\u2019s a wee beauty!!",
+      "age": "0h ago",
+      "unread": 1,
+      "conv_id": "TcrxAet44Yh76BmcWhoo",
+      "contact_id": "1ZtSC9s0CNF99mohCNbq"
+    },
+    {
       "name": "Kathy Donaghey",
       "channel": "Phone",
       "message": "Hi Grace\nI am so sorry for not replying earlier. I have had a crazy week. I wanted to give this some thought before making a decision. \nThe 6 week program sounds great but o couldn\u2019t afford the monthl",
-      "age": "8h ago",
+      "age": "14h ago",
       "unread": 1,
       "conv_id": "fH4GjEUb6KDQkdiVOYsS",
       "contact_id": "ovjWn2V9bl5Zx8Ih4AdZ"
@@ -210,7 +320,7 @@
       "name": "Yvonna Stewart",
       "channel": "Phone",
       "message": "Hey, it's the 6week Menopause one",
-      "age": "16h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "CbjeiID1tNwMFDV9zi4c",
       "contact_id": "9If4MIMQvEeKo38VB5cd"
@@ -219,7 +329,7 @@
       "name": "Hannah McClintock",
       "channel": "Phone",
       "message": "Hiya, sorry for only getting back to you now! I\u2019ve managed to find a gym closer to me that suits me better, but thank you for following up \ud83d\ude0a",
-      "age": "18h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "9zsAZ6hFQtyItYieIIE0",
       "contact_id": "uPti5LsMBACjOi4JIa7t"
@@ -228,7 +338,7 @@
       "name": "Ruth",
       "channel": "Phone",
       "message": "Will try call in tomorrow lm not finished 5,   What time you start,  x",
-      "age": "19h ago",
+      "age": "1d ago",
       "unread": 2,
       "conv_id": "yY2pDB0bDaClKUeKAWmT",
       "contact_id": "NhyYgdUcoGkO9kK9WBa3"
@@ -237,7 +347,7 @@
       "name": "Anne Forgrave",
       "channel": "Phone",
       "message": "Hi Grace, thanks for checking in! Hope you\u2019re enjoying time with little Banks\u2026precious days with a wee newborn in the home \ud83d\udc99 \nI\u2019m really enjoying the Jumpstart so far. I\u2019ve done 4 classes and have fou",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "ENGctHymqHMc3itSqwyW",
       "contact_id": "oLPVHGhijJv9fTFXmwFJ"
@@ -246,7 +356,7 @@
       "name": "Amanda Wilmont",
       "channel": "Phone",
       "message": "Hi grace, \nUnfortunately I\u2019m still fat grace lol",
-      "age": "21h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "ickQyz0fPwsXkmEwOqgW",
       "contact_id": "Psfpck1mNokSZ50x2sfN"
@@ -255,7 +365,7 @@
       "name": "Patricia Culbertson",
       "channel": "Phone",
       "message": "Thanks \ud83d\ude0a",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "UVOyvmIME5ymSR9z2uU9",
       "contact_id": "iNPTnsgJ9b8aWqNzx8uK"
@@ -268,15 +378,6 @@
       "unread": 1,
       "conv_id": "UnpT084NtcZ1H6j0GVTu",
       "contact_id": "72kxELhcufSKuAVl0kQe"
-    },
-    {
-      "name": "Kangen Water Better Living",
-      "channel": "Phone",
-      "message": "Hi there,\n\nI hope you're keeping well.\n\nMy name is Anna Laverty, and together with my husband Kevin, I run Kangen Water Better Living, a family-run business based on the North Coast of Northern Irelan",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "DkZJ5K5W297z9VqeSwwI",
-      "contact_id": "yTUOTOgdby2jN8Bbx73o"
     }
   ],
   "jumpstart": {
@@ -5345,7 +5446,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Good afternoon, Coach Grace. Just following up regarding my October payment. When you have a moment! Thank you.\n\n<https://link.payoneer.com/Token?t=DDA9B4DAC8EC",
-        "hours": 28,
+        "hours": 34,
         "name": "Julie Lapaz"
       }
     ],
@@ -5483,6 +5584,7 @@
       "sharoncsmyth": "U0B8A4UBH47",
       "laura": "U0B9FS1TJTH",
       "zara": "U0BAT6XKSLC",
+      "sheila lundy": "U0BAZMBM8EP",
       "louise farley": "U0BC72RDJTE",
       "rosie": "U0BDFCBBTSA",
       "amy mcwilliams": "U0BFEFYKUFJ",
@@ -8375,7 +8477,7 @@
           },
           {
             "day": "Thursday",
-            "count": 428
+            "count": 446
           }
         ],
         "bottom_days": [
@@ -8385,7 +8487,7 @@
           },
           {
             "day": "Thursday",
-            "count": 428
+            "count": 446
           },
           {
             "day": "Friday",
@@ -8407,7 +8509,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 514
+            "count": 522
           },
           {
             "name": "Build: Lower",
@@ -8437,7 +8539,7 @@
           },
           {
             "name": "Engine",
-            "count": 68
+            "count": 78
           },
           {
             "name": "Plate",
@@ -8564,7 +8666,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3184
+        "total_attended": 3202
       },
       "last_30_days": {
         "top_days": [
@@ -8581,12 +8683,12 @@
             "count": 188
           },
           {
-            "day": "Friday",
-            "count": 152
+            "day": "Thursday",
+            "count": 163
           },
           {
-            "day": "Thursday",
-            "count": 145
+            "day": "Friday",
+            "count": 152
           }
         ],
         "bottom_days": [
@@ -8595,12 +8697,12 @@
             "count": 86
           },
           {
-            "day": "Thursday",
-            "count": 145
-          },
-          {
             "day": "Friday",
             "count": 152
+          },
+          {
+            "day": "Thursday",
+            "count": 163
           },
           {
             "day": "Monday",
@@ -8618,7 +8720,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 175
+            "count": 183
           },
           {
             "name": "Build: Lower",
@@ -8643,12 +8745,12 @@
             "count": 20
           },
           {
-            "name": "Engine",
-            "count": 26
-          },
-          {
             "name": "Capacity",
             "count": 29
+          },
+          {
+            "name": "Engine",
+            "count": 36
           },
           {
             "name": "Plate",
@@ -8775,7 +8877,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1113
+        "total_attended": 1131
       },
       "suggestion": "**Fill quiet studio time:**\n\n1. Open a paid PT block (60-90 min slots) on Thursday and Friday mornings when studio demand is lowest\u2014trainers can fill these with clients who prefer off-peak, and it captures unused capacity without competing with scheduled classes.\n\n2. Add a drop-in \"Open Gym + Mobility\" session Thursday evenings (post-work, pre-dinner slot) to activate that quietest day; position it as unstructured time with a coach on hand for form checks\u2014low overhead, fills the gap, feeds Mobility class attendance.\n\n**Lift the quietest classes:**\n\n3. Move **Barbelle, Engine,** and **Capacity** to Tuesday or Wednesday mornings (your peak days) where studio energy and foot traffic are highest, then promote them as \"new time\" with a 2-week targeted invite to members who attended Build classes\u2014these strength-focused sessions appeal to your core audience but are buried in low-traffic slots right now.",
       "capacity": [
@@ -9203,13 +9305,6 @@
         "last_seen": "2026-07-20"
       },
       {
-        "id": 13177624,
-        "name": "Laura Douglas",
-        "membership": "Empower",
-        "days_absent": 15,
-        "last_seen": "2026-10-21"
-      },
-      {
         "id": 13262681,
         "name": "Lesley Drake",
         "membership": "Empower",
@@ -9278,13 +9373,6 @@
         "membership": "Elevate",
         "days_absent": 19,
         "last_seen": "2026-10-17"
-      },
-      {
-        "id": 13465042,
-        "name": "Tiarna O\u2019Neill",
-        "membership": "4 PT Sessions",
-        "days_absent": 14,
-        "last_seen": "2026-10-22"
       },
       {
         "id": 12218719,
@@ -9436,6 +9524,12 @@
       "upcoming": []
     },
     "lead_bookings": [
+      {
+        "name": "Jillian boyd",
+        "type": "Meet a Coach",
+        "date": "2026-11-09",
+        "upcoming": true
+      },
       {
         "name": "Mary Eakin",
         "type": "Meet a Coach",
@@ -11243,6 +11337,13 @@
     "configured": true,
     "orders": [
       {
+        "date": "2026-11-05",
+        "order_no": "",
+        "total": "\u00a3260.00",
+        "items": [],
+        "title": "T-Shirt Studio order"
+      },
+      {
         "date": "2026-09-15",
         "order_no": "",
         "total": "\u00a357.00",
@@ -11915,8 +12016,8 @@
         "title": "T-Shirt Studio order"
       }
     ],
-    "count": 96,
-    "total_spend": 9388.6,
+    "count": 97,
+    "total_spend": 9648.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "marketing": null,
