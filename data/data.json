@@ -1,45 +1,33 @@
 {
-  "generated_at": "2026-11-05T21:27:54.223870+00:00",
+  "generated_at": "2026-11-06T06:00:58.565591+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
   "chat_url": "https://script.google.com/macros/s/AKfycbyrEYTFnqQb5PYYr7GPIYzYp0uZcw7yP99NyFaFCeHH8Wqk9QYc7G77FTPo2nSBSq8/exec",
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
-    "date": "2026-11-05",
-    "event_count": 8,
-    "urgent_count": 2,
-    "enquiry_count": 4,
+    "date": "2026-11-06",
+    "event_count": 7,
+    "urgent_count": 0,
+    "enquiry_count": 3,
     "calendar": [
-      {
-        "title": "\ud83d\udcde Call: Kay Blackburn",
-        "time": "9:30am",
-        "start_raw": "2026-11-05T09:30:00",
-        "day": "Today",
-        "attendees": [
-          "Kay Blackburn"
-        ],
-        "description": "Booked discovery call",
-        "location": "",
-        "prep": "Review their enquiry; have trial offer, pricing and class times ready."
-      },
       {
         "title": "FitPro Leads Gym Conference",
         "time": "all day",
         "start_raw": "2026-11-06",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "jojo@theforge.pt"
         ],
         "description": "",
         "location": "Molineux Stadium, Waterloo Rd, Wolverhampton WV1 4QR, UK",
-        "prep": ""
+        "prep": "Print conference schedule, bring business cards, review key speaker topics."
       },
       {
         "title": "\ud83d\udcde Call: Tracy Boyd",
         "time": "10:30am",
         "start_raw": "2026-11-06T10:30:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "Tracy Boyd"
         ],
@@ -51,7 +39,7 @@
         "title": "Untitled",
         "time": "10:30am",
         "start_raw": "2026-11-06T10:30:00Z",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
@@ -61,7 +49,7 @@
         "title": "\ud83d\udcde Call: Laura Patton",
         "time": "11:10am",
         "start_raw": "2026-11-06T11:10:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "Laura Patton"
         ],
@@ -73,17 +61,17 @@
         "title": "Untitled",
         "time": "11:10am",
         "start_raw": "2026-11-06T11:10:00Z",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Register attendance, print conference schedule, confirm travel/parking arrangements."
+        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Lisa Bell",
         "time": "12:10pm",
         "start_raw": "2026-11-06T12:10:00",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [
           "Lisa Bell"
         ],
@@ -95,35 +83,14 @@
         "title": "Untitled",
         "time": "12:10pm",
         "start_raw": "2026-11-06T12:10:00Z",
-        "day": "Tomorrow",
+        "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
         "prep": ""
       }
     ],
-    "urgent": [
-      {
-        "from": "TShirt Studio Customer Service",
-        "from_raw": "TShirt Studio Customer Service <contact@tshirtstudio.com>",
-        "subject": "Confirmation of your TShirt Studio order - 3969745",
-        "snippet": "Your order confirmation Dear Customer, Thank you for shopping with TShirt Studio Your order reference number is: 3969745 Your order has been received as follows: Items Value T-Shirt (Value T-Shirt)",
-        "id": "1a1ad356918d7ecf",
-        "thread_id": "1a1ad356918d7ecf",
-        "msg_count": 1,
-        "draft_id": "r8220445733989665948"
-      },
-      {
-        "from": "Liz houston",
-        "from_raw": "Liz houston <lizhouston@hotmail.com>",
-        "subject": "Re: Receipt for transaction on TeamUp",
-        "snippet": "Hi Grace, Everything seems to be conspiring against me at the minute. I want to give notice to cancel my membership on the earliest possible date. Thanks Liz Sent from Outlook for iOS From: Forge",
-        "id": "1a1ac462601a4721",
-        "thread_id": "1a1ac462601a4721",
-        "msg_count": 1,
-        "draft_id": "r2227989214335607627"
-      }
-    ],
+    "urgent": [],
     "important": [
       {
         "from": "HMRC help and support",
@@ -134,38 +101,29 @@
     ],
     "enquiries": [
       {
-        "name": "Kay Blackburn",
-        "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Today 9:30am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Today 9:30am",
-        "snippet": "Booked a call for Today 9:30am \u2014 potential member",
-        "age": "",
-        "unread": 0
-      },
-      {
         "name": "Tracy Boyd",
         "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 10:30am",
-        "snippet": "Booked a call for Tomorrow 10:30am \u2014 potential member",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 10:30am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 10:30am",
+        "snippet": "Booked a call for Today 10:30am \u2014 potential member",
         "age": "",
         "unread": 0
       },
       {
         "name": "Laura Patton",
         "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:10am",
-        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 11:10am",
-        "snippet": "Booked a call for Tomorrow 11:10am \u2014 potential member",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 11:10am",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 11:10am",
+        "snippet": "Booked a call for Today 11:10am \u2014 potential member",
         "age": "",
         "unread": 0
       },
       {
         "name": "Lisa Bell",
         "channel": "Booked call",
-        "subject": "\ud83d\udcde Booked a call \u00b7 Tomorrow 12:10pm",
-        "path": "\ud83d\udcde Booked a call \u00b7 Tomorrow 12:10pm",
-        "snippet": "Booked a call for Tomorrow 12:10pm \u2014 potential member",
+        "subject": "\ud83d\udcde Booked a call \u00b7 Today 12:10pm",
+        "path": "\ud83d\udcde Booked a call \u00b7 Today 12:10pm",
+        "snippet": "Booked a call for Today 12:10pm \u2014 potential member",
         "age": "",
         "unread": 0
       }
@@ -173,9 +131,9 @@
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -281,11 +239,38 @@
   },
   "ghl": [
     {
-      "name": "Jo",
+      "name": "Wendy Robinson",
       "channel": "Phone",
-      "message": "Literally just watching this",
+      "message": "So sorry I haven't got back to you. I've been unwell so will leave it for now and hopefully sometime in future be able to join you. Thank you.",
       "age": "0h ago",
       "unread": 1,
+      "conv_id": "xd0pCw4e0tQkTHciFwfN",
+      "contact_id": "WYTJ3pcLMXwT00nl8Oh6"
+    },
+    {
+      "name": "Ann Mcnicholl",
+      "channel": "Phone",
+      "message": "Can u tell me a bit about it and the cost please",
+      "age": "6h ago",
+      "unread": 1,
+      "conv_id": "23tU0hFPqU6f1odfzuYK",
+      "contact_id": "ObK7YxhTY4R0VGYyN10Q"
+    },
+    {
+      "name": "Kay Blackburn",
+      "channel": "Phone",
+      "message": "I'm only free after 5.30pm tomorrow",
+      "age": "7h ago",
+      "unread": 1,
+      "conv_id": "cdRjLMvpvxJPCbGu8IaV",
+      "contact_id": "0pT4W1d3aZqQx5nbEzQi"
+    },
+    {
+      "name": "Jo",
+      "channel": "Phone",
+      "message": "https://www.instagram.com/reel/DfBUpYRxGVX/",
+      "age": "7h ago",
+      "unread": 4,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
     },
@@ -293,7 +278,7 @@
       "name": "Yvonna Stewart",
       "channel": "Phone",
       "message": "OK thanks.x",
-      "age": "0h ago",
+      "age": "9h ago",
       "unread": 1,
       "conv_id": "G6XnkCvzsI36MKq77X9f",
       "contact_id": "ZqNqmgjODVYEKOL9WbmQ"
@@ -302,7 +287,7 @@
       "name": "Sheila Lundy",
       "channel": "Phone",
       "message": "I have looked at them- he\u2019s a wee beauty!!",
-      "age": "0h ago",
+      "age": "9h ago",
       "unread": 1,
       "conv_id": "TcrxAet44Yh76BmcWhoo",
       "contact_id": "1ZtSC9s0CNF99mohCNbq"
@@ -311,7 +296,7 @@
       "name": "Kathy Donaghey",
       "channel": "Phone",
       "message": "Hi Grace\nI am so sorry for not replying earlier. I have had a crazy week. I wanted to give this some thought before making a decision. \nThe 6 week program sounds great but o couldn\u2019t afford the monthl",
-      "age": "14h ago",
+      "age": "23h ago",
       "unread": 1,
       "conv_id": "fH4GjEUb6KDQkdiVOYsS",
       "contact_id": "ovjWn2V9bl5Zx8Ih4AdZ"
@@ -320,7 +305,7 @@
       "name": "Yvonna Stewart",
       "channel": "Phone",
       "message": "Hey, it's the 6week Menopause one",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "CbjeiID1tNwMFDV9zi4c",
       "contact_id": "9If4MIMQvEeKo38VB5cd"
@@ -369,15 +354,6 @@
       "unread": 1,
       "conv_id": "UVOyvmIME5ymSR9z2uU9",
       "contact_id": "iNPTnsgJ9b8aWqNzx8uK"
-    },
-    {
-      "name": "Patricia Collatin",
-      "channel": "Phone",
-      "message": "OK Grace speak to you 22nd. Cheers",
-      "age": "1d ago",
-      "unread": 1,
-      "conv_id": "UnpT084NtcZ1H6j0GVTu",
-      "contact_id": "72kxELhcufSKuAVl0kQe"
     }
   ],
   "jumpstart": {
@@ -438,7 +414,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": 4,
+        "days_left": 3,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -470,7 +446,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 4,
+        "days_left": 3,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -502,7 +478,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": 6,
+        "days_left": 5,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -533,17 +509,17 @@
           false,
           false
         ],
-        "week_on": 4,
-        "days_left": 15,
+        "week_on": 5,
+        "days_left": 14,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
+        "missing_checkins": 2,
         "completed_checkins": 3,
-        "expected_checkins": 4,
+        "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
         "pause_reason": "recently diagonosed with full fronyal alopecia . on hrt"
@@ -566,7 +542,7 @@
           false
         ],
         "week_on": 4,
-        "days_left": 18,
+        "days_left": 17,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -597,17 +573,17 @@
           false,
           false
         ],
-        "week_on": 2,
-        "days_left": 29,
+        "week_on": 3,
+        "days_left": 28,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
+        "missing_checkins": 2,
         "completed_checkins": 1,
-        "expected_checkins": 2,
+        "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
         "pause_reason": "moderate neck arthritis, hysterectomy 15 years ago. widow last 6 years. carer for mum"
@@ -630,7 +606,7 @@
           false
         ],
         "week_on": 2,
-        "days_left": 34,
+        "days_left": 33,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -662,7 +638,7 @@
           false
         ],
         "week_on": 2,
-        "days_left": 34,
+        "days_left": 33,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -693,17 +669,17 @@
           false,
           false
         ],
-        "week_on": 1,
-        "days_left": 36,
+        "week_on": 2,
+        "days_left": 35,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
+        "missing_checkins": 2,
         "completed_checkins": 0,
-        "expected_checkins": 1,
+        "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
         "pause_reason": ""
@@ -726,7 +702,7 @@
           false
         ],
         "week_on": 1,
-        "days_left": 37,
+        "days_left": 36,
         "is_active": true,
         "is_converted": false,
         "not_converted": false,
@@ -760,7 +736,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -13,
+        "days_left": -14,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -792,7 +768,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -17,
+        "days_left": -18,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -824,7 +800,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -20,
+        "days_left": -21,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -856,7 +832,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -28,
+        "days_left": -29,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -888,7 +864,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -41,
+        "days_left": -42,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -920,7 +896,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -41,
+        "days_left": -42,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -952,7 +928,7 @@
           true
         ],
         "week_on": null,
-        "days_left": -43,
+        "days_left": -44,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -984,7 +960,7 @@
           true
         ],
         "week_on": 5,
-        "days_left": -45,
+        "days_left": -46,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1016,7 +992,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -46,
+        "days_left": -47,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1048,7 +1024,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -48,
+        "days_left": -49,
         "is_active": false,
         "is_converted": false,
         "not_converted": true,
@@ -1080,7 +1056,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -52,
+        "days_left": -53,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1112,7 +1088,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -52,
+        "days_left": -53,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1144,7 +1120,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -52,
+        "days_left": -53,
         "is_active": false,
         "is_converted": true,
         "not_converted": false,
@@ -1176,7 +1152,7 @@
           true
         ],
         "week_on": 6,
-        "days_left": -52,
+        "days_left": -53,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1210,7 +1186,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -5,
+        "days_left": -6,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1242,7 +1218,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -86,
+        "days_left": -87,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1274,7 +1250,7 @@
           false
         ],
         "week_on": 6,
-        "days_left": -5,
+        "days_left": -6,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1306,7 +1282,7 @@
           false
         ],
         "week_on": 3,
-        "days_left": -266,
+        "days_left": -267,
         "is_active": false,
         "is_converted": false,
         "not_converted": false,
@@ -1325,7 +1301,7 @@
       {
         "member": "Helen Faulkner",
         "type": "conversion",
-        "detail": "4d left \u2014 conversion chat not scheduled!"
+        "detail": "3d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Rebecca Gill",
@@ -1335,7 +1311,7 @@
       {
         "member": "Rebecca Gill",
         "type": "conversion",
-        "detail": "4d left \u2014 conversion chat not scheduled!"
+        "detail": "3d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Patricia Mcauley",
@@ -1345,12 +1321,17 @@
       {
         "member": "Patricia Mcauley",
         "type": "conversion",
-        "detail": "6d left \u2014 conversion chat not scheduled!"
+        "detail": "5d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Paula Hodges",
         "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 4)"
+        "detail": "Missing 2 check-in(s) (on week 5)"
+      },
+      {
+        "member": "Paula Hodges",
+        "type": "conversion",
+        "detail": "14d left \u2014 conversion chat not scheduled!"
       },
       {
         "member": "Deirdre Wallace",
@@ -1365,7 +1346,7 @@
       {
         "member": "sinead wilson",
         "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 2)"
+        "detail": "Missing 2 check-in(s) (on week 3)"
       },
       {
         "member": "sinead wilson",
@@ -1385,7 +1366,7 @@
       {
         "member": "michelle taggart",
         "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 1)"
+        "detail": "Missing 2 check-in(s) (on week 2)"
       },
       {
         "member": "michelle taggart",
@@ -1435,7 +1416,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-17",
-        "days_to_due": 42,
+        "days_to_due": 41,
         "overdue": false
       },
       {
@@ -1459,7 +1440,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-15",
-        "days_to_due": 40,
+        "days_to_due": 39,
         "overdue": false
       },
       {
@@ -1483,7 +1464,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-14",
-        "days_to_due": 39,
+        "days_to_due": 38,
         "overdue": false
       },
       {
@@ -1507,7 +1488,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-14",
-        "days_to_due": 39,
+        "days_to_due": 38,
         "overdue": false
       },
       {
@@ -1531,7 +1512,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-14",
-        "days_to_due": 39,
+        "days_to_due": 38,
         "overdue": false
       },
       {
@@ -1555,7 +1536,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-12",
-        "days_to_due": 37,
+        "days_to_due": 36,
         "overdue": false
       },
       {
@@ -1579,7 +1560,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-12",
-        "days_to_due": 37,
+        "days_to_due": 36,
         "overdue": false
       },
       {
@@ -1603,7 +1584,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-09",
-        "days_to_due": 34,
+        "days_to_due": 33,
         "overdue": false
       },
       {
@@ -1627,7 +1608,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-08",
-        "days_to_due": 33,
+        "days_to_due": 32,
         "overdue": false
       },
       {
@@ -1651,7 +1632,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-08",
-        "days_to_due": 33,
+        "days_to_due": 32,
         "overdue": false
       },
       {
@@ -1675,7 +1656,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-08",
-        "days_to_due": 33,
+        "days_to_due": 32,
         "overdue": false
       },
       {
@@ -1699,7 +1680,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-07",
-        "days_to_due": 32,
+        "days_to_due": 31,
         "overdue": false
       },
       {
@@ -1723,7 +1704,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-05",
-        "days_to_due": 30,
+        "days_to_due": 29,
         "overdue": false
       },
       {
@@ -1747,7 +1728,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-03",
-        "days_to_due": 28,
+        "days_to_due": 27,
         "overdue": false
       },
       {
@@ -1771,7 +1752,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-02",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -1795,7 +1776,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-02",
-        "days_to_due": 27,
+        "days_to_due": 26,
         "overdue": false
       },
       {
@@ -1819,7 +1800,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-12-01",
-        "days_to_due": 26,
+        "days_to_due": 25,
         "overdue": false
       },
       {
@@ -1843,7 +1824,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-28",
-        "days_to_due": 23,
+        "days_to_due": 22,
         "overdue": false
       },
       {
@@ -1867,7 +1848,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-27",
-        "days_to_due": 22,
+        "days_to_due": 21,
         "overdue": false
       },
       {
@@ -1891,7 +1872,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-25",
-        "days_to_due": 20,
+        "days_to_due": 19,
         "overdue": false
       },
       {
@@ -1915,7 +1896,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-23",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -1939,7 +1920,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-23",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -1963,7 +1944,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-23",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -1987,7 +1968,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-23",
-        "days_to_due": 18,
+        "days_to_due": 17,
         "overdue": false
       },
       {
@@ -2011,7 +1992,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-21",
-        "days_to_due": 16,
+        "days_to_due": 15,
         "overdue": false
       },
       {
@@ -2035,7 +2016,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-20",
-        "days_to_due": 15,
+        "days_to_due": 14,
         "overdue": false
       },
       {
@@ -2059,7 +2040,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-19",
-        "days_to_due": 14,
+        "days_to_due": 13,
         "overdue": false
       },
       {
@@ -2083,7 +2064,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-12",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       },
       {
@@ -2107,7 +2088,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-12",
-        "days_to_due": 7,
+        "days_to_due": 6,
         "overdue": false
       },
       {
@@ -2131,7 +2112,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-11",
-        "days_to_due": 6,
+        "days_to_due": 5,
         "overdue": false
       },
       {
@@ -2155,7 +2136,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-11",
-        "days_to_due": 6,
+        "days_to_due": 5,
         "overdue": false
       },
       {
@@ -2179,7 +2160,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-07",
-        "days_to_due": 2,
+        "days_to_due": 1,
         "overdue": false
       },
       {
@@ -2203,7 +2184,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2227,7 +2208,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2251,7 +2232,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2275,7 +2256,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2299,7 +2280,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2323,7 +2304,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2347,7 +2328,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2371,7 +2352,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-06",
-        "days_to_due": 1,
+        "days_to_due": 0,
         "overdue": false
       },
       {
@@ -2395,8 +2376,8 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-05",
-        "days_to_due": 0,
-        "overdue": false
+        "days_to_due": -1,
+        "overdue": true
       },
       {
         "name": "Mary Taggart",
@@ -2419,7 +2400,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-11-02",
-        "days_to_due": -3,
+        "days_to_due": -4,
         "overdue": true
       },
       {
@@ -2443,7 +2424,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-31",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2467,7 +2448,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-31",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2491,7 +2472,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-31",
-        "days_to_due": -5,
+        "days_to_due": -6,
         "overdue": true
       },
       {
@@ -2515,7 +2496,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-30",
-        "days_to_due": -6,
+        "days_to_due": -7,
         "overdue": true
       },
       {
@@ -2539,7 +2520,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-29",
-        "days_to_due": -7,
+        "days_to_due": -8,
         "overdue": true
       },
       {
@@ -2563,7 +2544,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-26",
-        "days_to_due": -10,
+        "days_to_due": -11,
         "overdue": true
       },
       {
@@ -2587,7 +2568,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-23",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -2611,7 +2592,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-23",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -2635,7 +2616,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-23",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -2659,7 +2640,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-23",
-        "days_to_due": -13,
+        "days_to_due": -14,
         "overdue": true
       },
       {
@@ -2683,7 +2664,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-22",
-        "days_to_due": -14,
+        "days_to_due": -15,
         "overdue": true
       },
       {
@@ -2707,7 +2688,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-21",
-        "days_to_due": -15,
+        "days_to_due": -16,
         "overdue": true
       },
       {
@@ -2731,7 +2712,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-21",
-        "days_to_due": -15,
+        "days_to_due": -16,
         "overdue": true
       },
       {
@@ -2755,7 +2736,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-19",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -2779,7 +2760,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-19",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -2803,7 +2784,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-19",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -2827,7 +2808,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-19",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -2851,7 +2832,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-19",
-        "days_to_due": -17,
+        "days_to_due": -18,
         "overdue": true
       },
       {
@@ -2875,7 +2856,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-17",
-        "days_to_due": -19,
+        "days_to_due": -20,
         "overdue": true
       },
       {
@@ -2899,7 +2880,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-17",
-        "days_to_due": -19,
+        "days_to_due": -20,
         "overdue": true
       },
       {
@@ -2923,7 +2904,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-17",
-        "days_to_due": -19,
+        "days_to_due": -20,
         "overdue": true
       },
       {
@@ -2947,7 +2928,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-16",
-        "days_to_due": -20,
+        "days_to_due": -21,
         "overdue": true
       },
       {
@@ -2971,7 +2952,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-16",
-        "days_to_due": -20,
+        "days_to_due": -21,
         "overdue": true
       },
       {
@@ -2995,7 +2976,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-15",
-        "days_to_due": -21,
+        "days_to_due": -22,
         "overdue": true
       },
       {
@@ -3019,7 +3000,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-15",
-        "days_to_due": -21,
+        "days_to_due": -22,
         "overdue": true
       },
       {
@@ -3043,7 +3024,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-15",
-        "days_to_due": -21,
+        "days_to_due": -22,
         "overdue": true
       },
       {
@@ -3067,7 +3048,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-14",
-        "days_to_due": -22,
+        "days_to_due": -23,
         "overdue": true
       },
       {
@@ -3091,7 +3072,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-09",
-        "days_to_due": -27,
+        "days_to_due": -28,
         "overdue": true
       },
       {
@@ -3115,7 +3096,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-07",
-        "days_to_due": -29,
+        "days_to_due": -30,
         "overdue": true
       },
       {
@@ -3139,7 +3120,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": -34,
+        "days_to_due": -35,
         "overdue": true
       },
       {
@@ -3163,7 +3144,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": -34,
+        "days_to_due": -35,
         "overdue": true
       },
       {
@@ -3187,7 +3168,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-10-02",
-        "days_to_due": -34,
+        "days_to_due": -35,
         "overdue": true
       },
       {
@@ -3211,7 +3192,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-29",
-        "days_to_due": -37,
+        "days_to_due": -38,
         "overdue": true
       },
       {
@@ -3235,7 +3216,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-28",
-        "days_to_due": -38,
+        "days_to_due": -39,
         "overdue": true
       },
       {
@@ -3259,7 +3240,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-26",
-        "days_to_due": -40,
+        "days_to_due": -41,
         "overdue": true
       },
       {
@@ -3283,7 +3264,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-26",
-        "days_to_due": -40,
+        "days_to_due": -41,
         "overdue": true
       },
       {
@@ -3307,7 +3288,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": -41,
+        "days_to_due": -42,
         "overdue": true
       },
       {
@@ -3331,7 +3312,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": -41,
+        "days_to_due": -42,
         "overdue": true
       },
       {
@@ -3355,7 +3336,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": -41,
+        "days_to_due": -42,
         "overdue": true
       },
       {
@@ -3379,7 +3360,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-25",
-        "days_to_due": -41,
+        "days_to_due": -42,
         "overdue": true
       },
       {
@@ -3403,7 +3384,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-24",
-        "days_to_due": -42,
+        "days_to_due": -43,
         "overdue": true
       },
       {
@@ -3427,7 +3408,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-23",
-        "days_to_due": -43,
+        "days_to_due": -44,
         "overdue": true
       },
       {
@@ -3451,7 +3432,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-22",
-        "days_to_due": -44,
+        "days_to_due": -45,
         "overdue": true
       },
       {
@@ -3475,7 +3456,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": -45,
+        "days_to_due": -46,
         "overdue": true
       },
       {
@@ -3499,7 +3480,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": -45,
+        "days_to_due": -46,
         "overdue": true
       },
       {
@@ -3523,7 +3504,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-21",
-        "days_to_due": -45,
+        "days_to_due": -46,
         "overdue": true
       },
       {
@@ -3547,7 +3528,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-19",
-        "days_to_due": -47,
+        "days_to_due": -48,
         "overdue": true
       },
       {
@@ -3571,7 +3552,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-18",
-        "days_to_due": -48,
+        "days_to_due": -49,
         "overdue": true
       },
       {
@@ -3595,7 +3576,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-17",
-        "days_to_due": -49,
+        "days_to_due": -50,
         "overdue": true
       },
       {
@@ -3619,7 +3600,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-16",
-        "days_to_due": -50,
+        "days_to_due": -51,
         "overdue": true
       },
       {
@@ -3643,7 +3624,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-15",
-        "days_to_due": -51,
+        "days_to_due": -52,
         "overdue": true
       },
       {
@@ -3667,7 +3648,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-14",
-        "days_to_due": -52,
+        "days_to_due": -53,
         "overdue": true
       },
       {
@@ -3691,7 +3672,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": -62,
+        "days_to_due": -63,
         "overdue": true
       },
       {
@@ -3715,7 +3696,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-09-04",
-        "days_to_due": -62,
+        "days_to_due": -63,
         "overdue": true
       },
       {
@@ -3739,7 +3720,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -69,
+        "days_to_due": -70,
         "overdue": true
       },
       {
@@ -3763,7 +3744,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -69,
+        "days_to_due": -70,
         "overdue": true
       },
       {
@@ -3787,7 +3768,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-28",
-        "days_to_due": -69,
+        "days_to_due": -70,
         "overdue": true
       },
       {
@@ -3811,7 +3792,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-27",
-        "days_to_due": -70,
+        "days_to_due": -71,
         "overdue": true
       },
       {
@@ -3835,7 +3816,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-26",
-        "days_to_due": -71,
+        "days_to_due": -72,
         "overdue": true
       },
       {
@@ -3859,7 +3840,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-26",
-        "days_to_due": -71,
+        "days_to_due": -72,
         "overdue": true
       },
       {
@@ -3883,7 +3864,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-22",
-        "days_to_due": -75,
+        "days_to_due": -76,
         "overdue": true
       },
       {
@@ -3907,7 +3888,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-22",
-        "days_to_due": -75,
+        "days_to_due": -76,
         "overdue": true
       },
       {
@@ -3931,7 +3912,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-20",
-        "days_to_due": -77,
+        "days_to_due": -78,
         "overdue": true
       },
       {
@@ -3955,7 +3936,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-18",
-        "days_to_due": -79,
+        "days_to_due": -80,
         "overdue": true
       },
       {
@@ -3979,7 +3960,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-17",
-        "days_to_due": -80,
+        "days_to_due": -81,
         "overdue": true
       },
       {
@@ -4003,7 +3984,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-15",
-        "days_to_due": -82,
+        "days_to_due": -83,
         "overdue": true
       },
       {
@@ -4027,7 +4008,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-13",
-        "days_to_due": -84,
+        "days_to_due": -85,
         "overdue": true
       },
       {
@@ -4051,7 +4032,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-11",
-        "days_to_due": -86,
+        "days_to_due": -87,
         "overdue": true
       },
       {
@@ -4075,7 +4056,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-08",
-        "days_to_due": -89,
+        "days_to_due": -90,
         "overdue": true
       },
       {
@@ -4099,7 +4080,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -93,
+        "days_to_due": -94,
         "overdue": true
       },
       {
@@ -4123,7 +4104,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-04",
-        "days_to_due": -93,
+        "days_to_due": -94,
         "overdue": true
       },
       {
@@ -4147,7 +4128,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-08-01",
-        "days_to_due": -96,
+        "days_to_due": -97,
         "overdue": true
       },
       {
@@ -4171,7 +4152,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -97,
+        "days_to_due": -98,
         "overdue": true
       },
       {
@@ -4195,7 +4176,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -97,
+        "days_to_due": -98,
         "overdue": true
       },
       {
@@ -4219,7 +4200,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-31",
-        "days_to_due": -97,
+        "days_to_due": -98,
         "overdue": true
       },
       {
@@ -4243,7 +4224,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-30",
-        "days_to_due": -98,
+        "days_to_due": -99,
         "overdue": true
       },
       {
@@ -4267,7 +4248,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-29",
-        "days_to_due": -99,
+        "days_to_due": -100,
         "overdue": true
       },
       {
@@ -4291,7 +4272,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": -100,
+        "days_to_due": -101,
         "overdue": true
       },
       {
@@ -4315,7 +4296,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-28",
-        "days_to_due": -100,
+        "days_to_due": -101,
         "overdue": true
       },
       {
@@ -4339,7 +4320,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": -106,
+        "days_to_due": -107,
         "overdue": true
       },
       {
@@ -4363,7 +4344,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-22",
-        "days_to_due": -106,
+        "days_to_due": -107,
         "overdue": true
       },
       {
@@ -4387,7 +4368,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": -107,
+        "days_to_due": -108,
         "overdue": true
       },
       {
@@ -4411,7 +4392,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-21",
-        "days_to_due": -107,
+        "days_to_due": -108,
         "overdue": true
       },
       {
@@ -4435,7 +4416,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-20",
-        "days_to_due": -108,
+        "days_to_due": -109,
         "overdue": true
       },
       {
@@ -4459,7 +4440,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-16",
-        "days_to_due": -112,
+        "days_to_due": -113,
         "overdue": true
       },
       {
@@ -4483,7 +4464,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-14",
-        "days_to_due": -114,
+        "days_to_due": -115,
         "overdue": true
       },
       {
@@ -4507,7 +4488,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -115,
+        "days_to_due": -116,
         "overdue": true
       },
       {
@@ -4531,7 +4512,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-13",
-        "days_to_due": -115,
+        "days_to_due": -116,
         "overdue": true
       },
       {
@@ -4555,7 +4536,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-09",
-        "days_to_due": -119,
+        "days_to_due": -120,
         "overdue": true
       },
       {
@@ -4579,7 +4560,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-07",
-        "days_to_due": -121,
+        "days_to_due": -122,
         "overdue": true
       },
       {
@@ -4603,7 +4584,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -122,
+        "days_to_due": -123,
         "overdue": true
       },
       {
@@ -4627,7 +4608,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -122,
+        "days_to_due": -123,
         "overdue": true
       },
       {
@@ -4651,7 +4632,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -122,
+        "days_to_due": -123,
         "overdue": true
       },
       {
@@ -4675,7 +4656,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -122,
+        "days_to_due": -123,
         "overdue": true
       },
       {
@@ -4699,7 +4680,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-06",
-        "days_to_due": -122,
+        "days_to_due": -123,
         "overdue": true
       },
       {
@@ -4723,7 +4704,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": -124,
+        "days_to_due": -125,
         "overdue": true
       },
       {
@@ -4747,7 +4728,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-04",
-        "days_to_due": -124,
+        "days_to_due": -125,
         "overdue": true
       },
       {
@@ -4771,7 +4752,7 @@
         "mineral_change": null,
         "vfa_change": null,
         "next_due": "2026-07-03",
-        "days_to_due": -125,
+        "days_to_due": -126,
         "overdue": true
       }
     ],
@@ -5446,7 +5427,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Good afternoon, Coach Grace. Just following up regarding my October payment. When you have a moment! Thank you.\n\n<https://link.payoneer.com/Token?t=DDA9B4DAC8EC",
-        "hours": 34,
+        "hours": 43,
         "name": "Julie Lapaz"
       }
     ],
@@ -5626,7 +5607,7 @@
     }
   },
   "kpi": {
-    "advice": "# THE FORGE \u2014 FRACTIONAL CFO REPORT\n\n## REVENUE \u2014 CRITICAL ISSUE: MEMBER QUALITY COLLAPSING\n\n**Last 3 months (Aug\u2013Oct): \u00a316,160 \u2192 \u00a322,016 \u2192 \u00a317,783. Member count up 20 (153\u2192173), revenue DOWN \u00a34,233 month-on-month. Rev/member crashed from \u00a3136 (Sep) to \u00a3103 (Oct). This is your biggest red flag.**\n\n- **Pricing audit now.** You're onboarding at lower price points or losing higher-tier members to churn. Oct churn 3.9% is good, but Aug\u2013Sep average 5.9% suggests recent joiners are weaker-quality. Run cohort analysis: what price did Sep joiners pay vs Aug? Implement tiered pricing for new members (entry \u00a335/month, standard \u00a345, premium \u00a360 with classes/PT bundle). Target Rev/member back to \u00a3130+ by December.\n\n- **Upsell PT & class bundles to existing base.** 173 active members at \u00a3103 per head is leaving \u00a34,500+/month on table. Identify 30\u201340 mid-tenure members (3\u20136 months in) for one-to-one PT trial offer (\u00a325 intro, bundle at \u00a315/class on top of membership). Projected uptake 20%+ = \u00a31,200+ incremental monthly.\n\n- **Halt the churn bleeding in Sep.** May 12.8% churn spike signals either a pricing change, class schedule disruption, or cohort quality issue around that intake. Cross-check: did you run a discount offer in Jul? Were there facility complaints Sep\u2013Oct? Fix root cause before it repeats.\n\n---\n\n## EXPENSES \u2014 SCALE WORKING, BUT STAFFING RISK LOOMS\n\n- **You've grown 53 members (+44%) since March without proportional opex growth** (assumed: rent/utilities locked post-relocation, headcount stable). This is healthy margin leverage. **Do not hire a second full-time staff member until Oct revenue repeats for 2 consecutive months.** Current model (likely 1 FT manager + PT instructors on class fees?) is efficient. Once you hit \u00a320k+ recurring, add PT coordinator 12\u201315 hrs/week, outsourced.\n\n- **Supplier cost review: check card processing fees.** GoCardless + Stripe on \u00a316\u201322k/month at standard UK rates = \u00a3400\u2013550/month drag (2.4\u20132.8%). Negotiate: if >2.5%, move GoCardless recurring to Stripe API direct",
+    "advice": "# The Forge \u2014 Fractional CFO Review\n\n## REVENUE TRENDS & ALERTS\n\n**What's off-track:**\n- **Revenue per member collapsed from \u00a3145 (July) \u2192 \u00a3103 (Oct).** You're adding members (120\u2192173) but revenue/head is down 29% in 3 months. This is your biggest red flag.\n- **Last 3 months avg \u00a317,320 vs prior 3 months avg \u00a317,668.** Flat-to-declining despite 30 more members. The studio expansion isn't yet translating to revenue lift.\n- **Churn spiked to 12.8% in May** (relocation month \u2014 understandable) but you're still at 3.9\u20136.2%, which is acceptable. That's not the problem.\n\n**The problem is pricing or membership mix:**\n- Either new members are on cheaper tiers, or existing members aren't upgrading to classes/PT/merchandise.\n- **Action 1: Audit your membership tiers.** What % are on the base tier vs premium (classes + PT credits + retail)? Target: shift 15% of base-tier members to premium within 60 days. Premium should carry at least 40% margin lift vs entry tier. Use email + 1-to-1 outreach.\n- **Action 2: Introduce a class pass upsell.** New 10-class bundles (no membership) at \u00a389\u201399. Retention is only good if members *use* the studio. Quiet class slots (early morning, late evening, mid-week) should have a \"fill-the-class\" discount: existing members + 3 friends for \u00a325/head. Track attendance by time; move weak classes.\n- **Action 3: Launch a PT/nutrition membership add-on.** Even 10% uptake at +\u00a325/month per member = +\u00a3400/month (at 162 members). Personal training and body comp tracking are high-margin, and women-only is a selling point.\n\n---\n\n## EXPENSE REVIEW\n\n**What I need to see** (you've given me revenue & member count, but not P&L detail):\n- **Payroll as % of revenue.** If it's >45%, that's your cost lever. Post-relocation, are you overstaffed on reception/cleaning?\n- **Studio rent/rates post-move.** Bigger space = higher occupancy cost. If rent jumped >20%, negotiate a 3-year lock or stagger expansion.\n\n**Without full P&L, one immediate check:**\n- **Action 4: Audit supplier contracts.** Equipment leases,",
     "advice_source": "live"
   },
   "staff": {
@@ -8472,12 +8453,12 @@
             "count": 596
           },
           {
-            "day": "Friday",
-            "count": 470
-          },
-          {
             "day": "Thursday",
             "count": 446
+          },
+          {
+            "day": "Friday",
+            "count": 433
           }
         ],
         "bottom_days": [
@@ -8486,12 +8467,12 @@
             "count": 265
           },
           {
-            "day": "Thursday",
-            "count": 446
+            "day": "Friday",
+            "count": 433
           },
           {
-            "day": "Friday",
-            "count": 470
+            "day": "Thursday",
+            "count": 446
           },
           {
             "day": "Monday",
@@ -8524,8 +8505,8 @@
             "count": 317
           },
           {
-            "name": "Mobility",
-            "count": 238
+            "name": "Circuits",
+            "count": 222
           }
         ],
         "bottom_classes": [
@@ -8543,15 +8524,15 @@
           },
           {
             "name": "Plate",
-            "count": 184
-          },
-          {
-            "name": "Circuits",
-            "count": 232
+            "count": 174
           },
           {
             "name": "Mobility",
-            "count": 238
+            "count": 221
+          },
+          {
+            "name": "Circuits",
+            "count": 222
           }
         ],
         "top_slots": [
@@ -8559,9 +8540,9 @@
             "day": "Friday",
             "time": "7pm",
             "name": "Mobility",
-            "count": 128,
-            "sessions": 12,
-            "avg": 10.7,
+            "count": 117,
+            "sessions": 11,
+            "avg": 10.6,
             "label": "Friday 7pm Mobility"
           },
           {
@@ -8666,13 +8647,13 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3202
+        "total_attended": 3165
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 321
+            "count": 257
           },
           {
             "day": "Wednesday",
@@ -8716,7 +8697,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 273
+            "count": 222
           },
           {
             "name": "Build: Full Body",
@@ -8732,7 +8713,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 110
+            "count": 97
           },
           {
             "name": "Circuits",
@@ -8797,18 +8778,18 @@
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
-            "count": 53,
-            "sessions": 5,
-            "avg": 10.6,
+            "count": 43,
+            "sessions": 4,
+            "avg": 10.8,
             "label": "Tuesday 7am Build: Upper"
           },
           {
             "day": "Tuesday",
             "time": "10am",
             "name": "Build: Upper",
-            "count": 52,
-            "sessions": 5,
-            "avg": 10.4,
+            "count": 43,
+            "sessions": 4,
+            "avg": 10.8,
             "label": "Tuesday 10am Build: Upper"
           },
           {
@@ -8877,9 +8858,9 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1131
+        "total_attended": 1067
       },
-      "suggestion": "**Fill quiet studio time:**\n\n1. Open a paid PT block (60-90 min slots) on Thursday and Friday mornings when studio demand is lowest\u2014trainers can fill these with clients who prefer off-peak, and it captures unused capacity without competing with scheduled classes.\n\n2. Add a drop-in \"Open Gym + Mobility\" session Thursday evenings (post-work, pre-dinner slot) to activate that quietest day; position it as unstructured time with a coach on hand for form checks\u2014low overhead, fills the gap, feeds Mobility class attendance.\n\n**Lift the quietest classes:**\n\n3. Move **Barbelle, Engine,** and **Capacity** to Tuesday or Wednesday mornings (your peak days) where studio energy and foot traffic are highest, then promote them as \"new time\" with a 2-week targeted invite to members who attended Build classes\u2014these strength-focused sessions appeal to your core audience but are buried in low-traffic slots right now.",
+      "suggestion": "**For quiet studio time:**\n\n1. **Add a Friday lunchtime \"Drop-in Barbell Basics\" workshop (30 mins, \u20ac5-8).** Friday is your quietest day and often has gaps between classes. A short, paid technique session removes barriers for members intimidated by Barbelle's low numbers and creates revenue from dead space.\n\n2. **Open the studio for 90-minute \"open gym with coach on floor\" blocks on Thursday and Friday afternoons.** Members often want unstructured lifting time with form feedback available\u2014this fills gaps, generates hourly revenue, and builds community for future class joiners.\n\n**For quieter classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday mornings (6:30-7:00am slot if available).** Your busiest days suggest members are already in the gym early; a quick, high-energy class before work could attract the same crowd as Build: Upper. Test for 4 weeks with a \"New Time\" email to lapsed attendees.\n\n4. **Rebrand \"Mobility\" as \"Mobility + Strength Finishing\" and invite Build: Lower graduates to attend as a recovery add-on.** Your Build classes are packed but Mobility is underused\u2014position it as a complementary cool-down rather than standalone, with targeted post-class prompts (\"Your next class:",
       "capacity": [
         {
           "name": "Strongevity",
@@ -8894,7 +8875,7 @@
           "sessions": 27,
           "cap": 13,
           "avg_attending": 10.1,
-          "fill_rate": 84,
+          "fill_rate": 85,
           "status": "healthy"
         },
         {
@@ -8909,8 +8890,8 @@
           "name": "Mobility",
           "sessions": 28,
           "cap": 12,
-          "avg_attending": 9.5,
-          "fill_rate": 79,
+          "avg_attending": 9.6,
+          "fill_rate": 80,
           "status": "healthy"
         },
         {
@@ -8946,16 +8927,16 @@
           "status": "attention"
         },
         {
-          "name": "Plate",
-          "sessions": 27,
+          "name": "Elevate",
+          "sessions": 52,
           "cap": 12,
           "avg_attending": 7.2,
           "fill_rate": 60,
           "status": "attention"
         },
         {
-          "name": "Elevate",
-          "sessions": 52,
+          "name": "Plate",
+          "sessions": 27,
           "cap": 12,
           "avg_attending": 7.2,
           "fill_rate": 60,
@@ -9231,220 +9212,237 @@
         "id": 13448952,
         "name": "Amy McNeill",
         "membership": "Empower",
-        "days_absent": 49,
+        "days_absent": 50,
         "last_seen": "2026-09-17"
       },
       {
         "id": 8986394,
         "name": "Ann Taggart",
         "membership": "Strongevity",
-        "days_absent": 16,
+        "days_absent": 17,
         "last_seen": "2026-10-20"
       },
       {
         "id": 12162382,
         "name": "Catherine Gavin",
         "membership": "8 PT Sessions",
-        "days_absent": 108,
+        "days_absent": 109,
         "last_seen": "2026-07-20"
       },
       {
         "id": 10746722,
         "name": "Catherine Mckay",
         "membership": "Elevate",
-        "days_absent": 174,
+        "days_absent": 175,
         "last_seen": "2026-05-15"
       },
       {
         "id": 9597193,
         "name": "Cheryl Sandford",
         "membership": "8 Class Block",
-        "days_absent": 45,
+        "days_absent": 46,
         "last_seen": "2026-09-21"
       },
       {
         "id": 9505781,
         "name": "Claire Green",
         "membership": "Kickstart PAID IN FULL",
-        "days_absent": 14,
+        "days_absent": 15,
         "last_seen": "2026-10-22"
       },
       {
         "id": 13232285,
         "name": "Claire Walker",
         "membership": "Elevate",
-        "days_absent": 65,
+        "days_absent": 66,
         "last_seen": "2026-09-01"
       },
       {
         "id": 13520776,
         "name": "Davina Dickson",
         "membership": "Strongevity Membership",
-        "days_absent": 24,
+        "days_absent": 25,
         "last_seen": "2026-10-12"
       },
       {
         "id": 13488742,
         "name": "Diane Thomson",
         "membership": "Strongevity Membership",
-        "days_absent": 38,
+        "days_absent": 39,
         "last_seen": "2026-09-28"
       },
       {
         "id": 12199003,
         "name": "Joules Williamson",
         "membership": "4 PT Sessions",
-        "days_absent": 13,
+        "days_absent": 14,
         "last_seen": "2026-10-23"
       },
       {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
-        "days_absent": 108,
+        "days_absent": 109,
         "last_seen": "2026-07-20"
       },
       {
         "id": 13262681,
         "name": "Lesley Drake",
         "membership": "Empower",
-        "days_absent": 23,
+        "days_absent": 24,
         "last_seen": "2026-10-13"
       },
       {
         "id": 11212636,
         "name": "Lesley Greehy",
         "membership": "4 PT Sessions",
-        "days_absent": 15,
+        "days_absent": 16,
         "last_seen": "2026-10-21"
       },
       {
         "id": 13507202,
         "name": "Linda Greer",
         "membership": "6 Week Jumpstart",
-        "days_absent": 94,
+        "days_absent": 95,
         "last_seen": "2026-08-03"
+      },
+      {
+        "id": 12852843,
+        "name": "Liz Houston",
+        "membership": "4 PT Sessions",
+        "days_absent": 11,
+        "last_seen": "2026-10-26"
       },
       {
         "id": 7561270,
         "name": "Mollie McGregor",
         "membership": "Elevate",
-        "days_absent": 62,
+        "days_absent": 63,
         "last_seen": "2026-09-04"
       },
       {
         "id": 9196376,
         "name": "Nerys Young",
         "membership": "Empower",
-        "days_absent": 27,
+        "days_absent": 28,
         "last_seen": "2026-10-09"
       },
       {
         "id": 13553225,
         "name": "Rachel Linton",
         "membership": "Empower",
-        "days_absent": 24,
+        "days_absent": 25,
         "last_seen": "2026-10-12"
       },
       {
         "id": 13959176,
         "name": "Rebecca Gill",
         "membership": "6 Week Jumpstart",
-        "days_absent": 14,
+        "days_absent": 15,
         "last_seen": "2026-10-22"
       },
       {
         "id": 14145369,
         "name": "Sarah Boyd",
         "membership": "6 Week Jumpstart",
-        "days_absent": 12,
+        "days_absent": 13,
         "last_seen": "2026-10-24"
       },
       {
         "id": 13899688,
         "name": "Sarah Logan",
         "membership": "4 Class Pass",
-        "days_absent": 45,
+        "days_absent": 46,
         "last_seen": "2026-09-21"
       },
       {
         "id": 12082042,
         "name": "Sharon Smyth",
         "membership": "Elevate",
-        "days_absent": 19,
+        "days_absent": 20,
         "last_seen": "2026-10-17"
+      },
+      {
+        "id": 13241681,
+        "name": "Victoria McCullough",
+        "membership": "Empower",
+        "days_absent": 11,
+        "last_seen": "2026-10-26"
       },
       {
         "id": 12218719,
         "name": "sandra mccrea",
         "membership": "Elevate",
-        "days_absent": 16,
+        "days_absent": 17,
         "last_seen": "2026-10-20"
       }
     ],
     "celebrations": {
       "first_week": [
         {
+          "name": "Pat Culbertson",
+          "days_in": 0,
+          "start_date": "2026-11-06"
+        },
+        {
+          "name": "Deirdre Bones",
+          "days_in": 0,
+          "start_date": "2026-11-06"
+        },
+        {
           "name": "Julia Millar",
-          "days_in": 5,
+          "days_in": 6,
           "start_date": "2026-10-31"
         },
         {
           "name": "Michelle Taggart",
-          "days_in": 6,
+          "days_in": 7,
           "start_date": "2026-10-30"
         }
       ],
       "new_members": [],
       "tenure": [
         {
-          "name": "susan Henry",
-          "label": "2 years",
-          "months": 24,
-          "days_until": -4,
-          "start_date": "2024-10-31"
-        },
-        {
           "name": "Heather Meenagh",
           "label": "2 years",
           "months": 24,
-          "days_until": -3,
+          "days_until": -4,
           "start_date": "2024-11-01"
         },
         {
           "name": "Karen Hanna",
           "label": "9 months",
           "months": 9,
-          "days_until": 1,
+          "days_until": 0,
           "start_date": "2026-02-05"
         },
         {
-          "name": "Louise Farley",
-          "label": "3 months",
-          "months": 3,
-          "days_until": -4,
-          "start_date": "2026-08-02"
-        },
-        {
-          "name": "Rosie Mc Fetridge",
-          "label": "3 months",
-          "months": 3,
-          "days_until": -4,
-          "start_date": "2026-08-02"
+          "name": "Nicola Duffin",
+          "label": "9 months",
+          "months": 9,
+          "days_until": 4,
+          "start_date": "2026-02-09"
         },
         {
           "name": "Amy McNeill",
           "label": "3 months",
           "months": 3,
-          "days_until": -3,
+          "days_until": -4,
           "start_date": "2026-08-03"
         },
         {
           "name": "Angela Dobbin",
           "label": "3 months",
           "months": 3,
-          "days_until": -2,
+          "days_until": -3,
           "start_date": "2026-08-04"
+        },
+        {
+          "name": "Zara Drain",
+          "label": "3 months",
+          "months": 3,
+          "days_until": 4,
+          "start_date": "2026-08-11"
         }
       ]
     },
