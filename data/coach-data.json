@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T15:01:01.819709+00:00",
+  "generated_at": "2026-11-06T20:53:40.869138+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -1123,6 +1123,78 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Chrissie Taggart",
+        "last_scan": "2026-11-06",
+        "scan_count": 3,
+        "weight": 142.0,
+        "smm": 57.3,
+        "pbf": 26.5,
+        "bmi": 22.2,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -1.5,
+        "smm_change": -3.8,
+        "pbf_change": 3.6,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-18",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "deirdreb159",
+        "last_scan": "2026-11-06",
+        "scan_count": 1,
+        "weight": 169.3,
+        "smm": 58.2,
+        "pbf": 37.4,
+        "bmi": 30.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-18",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "lisab158",
+        "last_scan": "2026-11-06",
+        "scan_count": 1,
+        "weight": 150.8,
+        "smm": 52.9,
+        "pbf": 35.5,
+        "bmi": 23.6,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-18",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "Helen Faulkner",
         "last_scan": "2026-11-05",
@@ -2723,30 +2795,6 @@
         "weight_change": null,
         "smm_change": null,
         "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-10-15",
-        "days_to_due": -22,
-        "overdue": true
-      },
-      {
-        "name": "Chrissie Taggart",
-        "last_scan": "2026-09-03",
-        "scan_count": 2,
-        "weight": 143.5,
-        "smm": 61.1,
-        "pbf": 22.9,
-        "bmi": 22.5,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": 2.4,
-        "smm_change": 3.1,
-        "pbf_change": -2.1,
         "tbw_change": null,
         "protein_change": null,
         "mineral_change": null,
@@ -4484,7 +4532,7 @@
         "overdue": true
       }
     ],
-    "total": 140,
+    "total": 142,
     "configured": true
   },
   "slack": {
@@ -4494,7 +4542,7 @@
       {
         "user_id": "U0BLXE1KQQH",
         "text": "Hi <@U05P1R84NKS> just following up regarding the new password for the enquiry@ email. If you have a moment. Thank you!",
-        "hours": 7,
+        "hours": 13,
         "name": "Julie Lapaz"
       }
     ],
@@ -4670,6 +4718,8 @@
       "margaret.edgar21": "U0CBSU8J0GN",
       "julia": "U0CCFLY2VUK",
       "michelle taggart": "U0CDH64LU1Z",
+      "lisa bell": "U0CFE5CN3SR",
+      "pat": "U0CFNARF76W",
       "dee": "U0CG0RKE2N4"
     }
   },
@@ -7545,7 +7595,7 @@
           },
           {
             "day": "Friday",
-            "count": 451
+            "count": 471
           },
           {
             "day": "Thursday",
@@ -7563,7 +7613,7 @@
           },
           {
             "day": "Friday",
-            "count": 451
+            "count": 471
           },
           {
             "day": "Monday",
@@ -7597,7 +7647,7 @@
           },
           {
             "name": "Mobility",
-            "count": 229
+            "count": 237
           }
         ],
         "bottom_classes": [
@@ -7619,23 +7669,14 @@
           },
           {
             "name": "Circuits",
-            "count": 222
+            "count": 234
           },
           {
             "name": "Mobility",
-            "count": 229
+            "count": 237
           }
         ],
         "top_slots": [
-          {
-            "day": "Friday",
-            "time": "7pm",
-            "name": "Mobility",
-            "count": 117,
-            "sessions": 11,
-            "avg": 10.6,
-            "label": "Friday 7pm Mobility"
-          },
           {
             "day": "Monday",
             "time": "11am",
@@ -7644,6 +7685,15 @@
             "sessions": 11,
             "avg": 10.5,
             "label": "Monday 11am Strongevity"
+          },
+          {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 125,
+            "sessions": 12,
+            "avg": 10.4,
+            "label": "Friday 7pm Mobility"
           },
           {
             "day": "Wednesday",
@@ -7738,7 +7788,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3183
+        "total_attended": 3203
       },
       "last_30_days": {
         "top_days": [
@@ -7751,12 +7801,12 @@
             "count": 221
           },
           {
-            "day": "Monday",
-            "count": 188
+            "day": "Friday",
+            "count": 190
           },
           {
-            "day": "Friday",
-            "count": 170
+            "day": "Monday",
+            "count": 188
           },
           {
             "day": "Thursday",
@@ -7773,12 +7823,12 @@
             "count": 163
           },
           {
-            "day": "Friday",
-            "count": 170
-          },
-          {
             "day": "Monday",
             "count": 188
+          },
+          {
+            "day": "Friday",
+            "count": 190
           },
           {
             "day": "Wednesday",
@@ -7808,7 +7858,7 @@
           },
           {
             "name": "Mobility",
-            "count": 85
+            "count": 93
           }
         ],
         "bottom_classes": [
@@ -7830,11 +7880,11 @@
           },
           {
             "name": "Circuits",
-            "count": 79
+            "count": 91
           },
           {
             "name": "Mobility",
-            "count": 85
+            "count": 93
           }
         ],
         "top_slots": [
@@ -7855,15 +7905,6 @@
             "sessions": 5,
             "avg": 10.8,
             "label": "Wednesday 7am Build: Full Body"
-          },
-          {
-            "day": "Friday",
-            "time": "7pm",
-            "name": "Mobility",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Friday 7pm Mobility"
           },
           {
             "day": "Tuesday",
@@ -7891,6 +7932,15 @@
             "sessions": 4,
             "avg": 10.2,
             "label": "Thursday 7am Build: Full Body"
+          },
+          {
+            "day": "Friday",
+            "time": "7pm",
+            "name": "Mobility",
+            "count": 51,
+            "sessions": 5,
+            "avg": 10.2,
+            "label": "Friday 7pm Mobility"
           }
         ],
         "bottom_slots": [
@@ -7949,7 +7999,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1085
+        "total_attended": 1105
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a Friday lunchtime \"Drop-in Barbell Basics\" workshop (30 mins, \u20ac5-8).** Friday is your quietest day and often has gaps between classes. A short, paid technique session removes barriers for members intimidated by Barbelle's low numbers and creates revenue from dead space.\n\n2. **Open the studio for 90-minute \"open gym with coach on floor\" blocks on Thursday and Friday afternoons.** Members often want unstructured lifting time with form feedback available\u2014this fills gaps, generates hourly revenue, and builds community for future class joiners.\n\n**For quieter classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday mornings (6:30-7:00am slot if available).** Your busiest days suggest members are already in the gym early; a quick, high-energy class before work could attract the same crowd as Build: Upper. Test for 4 weeks with a \"New Time\" email to lapsed attendees.\n\n4. **Rebrand \"Mobility\" as \"Mobility + Strength Finishing\" and invite Build: Lower graduates to attend as a recovery add-on.** Your Build classes are packed but Mobility is underused\u2014position it as a complementary cool-down rather than standalone, with targeted post-class prompts (\"Your next class:",
       "capacity": [
@@ -7981,8 +8031,8 @@
           "name": "Mobility",
           "sessions": 28,
           "cap": 12,
-          "avg_attending": 9.6,
-          "fill_rate": 80,
+          "avg_attending": 9.5,
+          "fill_rate": 79,
           "status": "healthy"
         },
         {
@@ -14358,6 +14408,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Invitation: Grace & JoJo Forge - Chat with Lily @ Wed 11 Nov 2026 1pm - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Grace &amp; JoJo Forge - Chat with Lily ========== Phone:- 07961 814812 Email:- grace@theforge.pt Need to make a change to this event? Reschedule:- https://link.leaddec.com/widget/booking/",
+        "id": "1a1b27f9617c26e3"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Invitation: FitPro Ads Meeting x JoJo x Lily @ Fri 6 Nov 2026 3pm - 4:30pm (GMT) (Coach JoJo)",
         "snippet": "FitPro Ads Meeting x JoJo x Lily \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Grace Smith is inviting you to a scheduled Zoom meeting. Join Zoom Meeting https://us02web.zoom.us/j/3238687370?omn=85852625473 Join and take notes https://",
         "id": "1a1b0ac0d99eb83e"
@@ -14369,7 +14425,14 @@
         "id": "1a196f93a1c9e3d9"
       }
     ],
-    "important": [],
-    "urgent_count": 2
+    "important": [
+      {
+        "from": "Grace Smith",
+        "subject": "Invitation: Grace & JoJo Forge - Chat with Lily @ Wed 11 Nov 2026 1pm - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Grace &amp; JoJo Forge - Chat with Lily ========== Phone:- 07961 814812 Email:- grace@theforge.pt Need to make a change to this event? Reschedule:- https://link.leaddec.com/widget/",
+        "id": "1a1b27f9617c26e3"
+      }
+    ],
+    "urgent_count": 3
   }
 }
