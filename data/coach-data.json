@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T06:00:58.565591+00:00",
+  "generated_at": "2026-11-06T14:09:33.610292+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -65,10 +65,10 @@
         "week_on": 6,
         "days_left": 3,
         "is_active": true,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
-        "welcome_pack": false,
+        "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 0,
         "completed_checkins": 6,
@@ -155,7 +155,7 @@
           true,
           false,
           true,
-          false,
+          true,
           false
         ],
         "week_on": 5,
@@ -166,8 +166,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 3,
+        "missing_checkins": 1,
+        "completed_checkins": 4,
         "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
@@ -186,7 +186,7 @@
           true,
           true,
           false,
-          false,
+          true,
           false,
           false
         ],
@@ -198,8 +198,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 2,
+        "missing_checkins": 1,
+        "completed_checkins": 3,
         "expected_checkins": 4,
         "paused": false,
         "pink_red": false,
@@ -216,7 +216,7 @@
         "inbody_done": false,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -230,8 +230,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 1,
+        "missing_checkins": 1,
+        "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -247,8 +247,8 @@
         "nutrition_sent": true,
         "inbody_done": true,
         "check_ins": [
-          false,
-          false,
+          true,
+          true,
           false,
           false,
           false,
@@ -262,8 +262,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 0,
+        "missing_checkins": 0,
+        "completed_checkins": 2,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -306,12 +306,12 @@
         "cohort": "October",
         "joined": "2026-10-30",
         "end": "2026-12-11",
-        "goal": "",
+        "goal": ", my main goal is to lose weight, improve my overall health and manage my type 2 diabetes better. Ideally, I would love to reach a point where I no longer need to take Metformin.",
         "notes": "",
         "nutrition_sent": false,
         "inbody_done": false,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -326,8 +326,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 0,
+        "missing_checkins": 1,
+        "completed_checkins": 1,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -338,8 +338,8 @@
         "cohort": "October",
         "joined": "2026-10-31",
         "end": "2026-12-12",
-        "goal": "",
-        "notes": "",
+        "goal": "1/ Weight loss. 2/ higher level of strength and fitness. 3/ to feel more motivated and energised",
+        "notes": "Sometimes work related stress, which leads to mental and physical fatigue.",
         "nutrition_sent": false,
         "inbody_done": false,
         "check_ins": [
@@ -363,7 +363,71 @@
         "expected_checkins": 1,
         "paused": false,
         "pink_red": false,
+        "pause_reason": "Sometimes work related stress, which leads to mental and physical fatigue."
+      },
+      {
+        "name": "deirdre Bones",
+        "cohort": "November",
+        "joined": "2026-11-06",
+        "end": "2026-12-18",
+        "goal": "",
+        "notes": "",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
         "pause_reason": ""
+      },
+      {
+        "name": "Patricia Culbertson",
+        "cohort": "November",
+        "joined": "2026-11-06",
+        "end": "2026-12-18",
+        "goal": "Health fitness tone up",
+        "notes": "Right foot surgery fibromyalgia,underlying health issues, no appetite ,5st weight loss not consuming enough calories per day due to no appetite, loss control of bowels ,",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 1,
+        "days_left": 42,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 1,
+        "completed_checkins": 0,
+        "expected_checkins": 1,
+        "paused": false,
+        "pink_red": false,
+        "pause_reason": "Right foot surgery fibromyalgia,underlying health issues, no appetite ,5st weight loss not consuming enough calories per day due to no appetite, loss control of bowels ,"
       }
     ],
     "recent": [
@@ -390,7 +454,7 @@
         "is_converted": false,
         "not_converted": false,
         "conv_chat_done": false,
-        "welcome_pack": false,
+        "welcome_pack": true,
         "follow_up": "",
         "missing_checkins": 3,
         "completed_checkins": 3,
@@ -975,7 +1039,7 @@
       {
         "member": "Paula Hodges",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 5)"
+        "detail": "Missing 1 check-in(s) (on week 5)"
       },
       {
         "member": "Paula Hodges",
@@ -985,17 +1049,12 @@
       {
         "member": "Deirdre Wallace",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 4)"
-      },
-      {
-        "member": "anne forgrave",
-        "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 2)"
+        "detail": "Missing 1 check-in(s) (on week 4)"
       },
       {
         "member": "sinead wilson",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 3)"
+        "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
         "member": "sinead wilson",
@@ -1015,7 +1074,7 @@
       {
         "member": "michelle taggart",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 2)"
+        "detail": "Missing 1 check-in(s) (on week 2)"
       },
       {
         "member": "michelle taggart",
@@ -1031,10 +1090,30 @@
         "member": "julia millar",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "deirdre Bones",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "deirdre Bones",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
+      },
+      {
+        "member": "Patricia Culbertson",
+        "type": "missing_checkin",
+        "detail": "Missing 1 check-in(s) (on week 1)"
+      },
+      {
+        "member": "Patricia Culbertson",
+        "type": "nutrition",
+        "detail": "Nutrition guide not sent yet"
       }
     ],
     "stats": {
-      "active_count": 10,
+      "active_count": 12,
       "paused_count": 4,
       "conv_rate": 29,
       "converted": 4,
@@ -4414,8 +4493,8 @@
     "unreplied_dms": [
       {
         "user_id": "U0BLXE1KQQH",
-        "text": "Good afternoon, Coach Grace. Just following up regarding my October payment. When you have a moment! Thank you.\n\n<https://link.payoneer.com/Token?t=DDA9B4DAC8EC",
-        "hours": 43,
+        "text": "Hi <@U05P1R84NKS> just following up regarding the new password for the enquiry@ email. If you have a moment. Thank you!",
+        "hours": 6,
         "name": "Julie Lapaz"
       }
     ],
@@ -4752,7 +4831,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower classes** \u2013 her 20 sessions are the biggest gap. JoJo already runs Build: Upper; assign Build: Lower to Eilis to give her variety and balance the lower-body offering across two coaches instead of relying on Grace alone.\n\n\u2022 **Move Eilis off some PT and into more classes** \u2013 she's doing 53 PT sessions (41% of her load). Reduce her PT to ~35\u201340 and shift capacity to regular classes like Plate and Mobility where she's underutilised; this builds her confidence and creates predictable member experience.\n\n\u2022 **Assign Grace's Strongevity and Engine to JoJo** \u2013 JoJo already coaches Strongevity (7 sessions); consolidating Grace's 5 Strongevity and 1 Engine session with her makes her the go-to coach for lower-intensity/longevity programming and simplifies the timetable.\n\n\u2022 **Keep Body Composition scans as admin, not coaching load** \u2013 Eilis and JoJo currently do 32 scans between them (roughly 25\u201330% of their session count). Strip these out as \"admin touches\" and allocate to reception or rotate them as a light task to keep true coaching time realistic.\n\n\u2022 **Have JoJo mentor Eilis on Build: Lower before handover** \u2013 since Eilis isn't yet ready for Tuesdays (the technical day), pairing her with JoJo for a few weeks to shadow Build: Lower coaching de-risks the transition and builds Eilis's skillset.",
+    "advice": "\u2022 **Redistribute Grace's classes immediately:** Her 20 Build: Lower sessions need reassigning \u2014 JoJo could take some, but consider splitting with Eilis (who has capacity) to avoid over-loading one coach and to give Eilis experience with a structured lower-body format.\n\n\u2022 **Cap Eilis's PT load:** At 53 PTs in one month, she's carrying too much 1:1 work. Shift some to JoJo (who has only 22) or consider whether all 53 are sustainable long-term; this protects her development and prevents burnout.\n\n\u2022 **Lean on Eilis for class delivery, not just PT:** She's doing well across Elevate, Build, Plate, and Mobility\u2014use her strength in group sessions to free up capacity. Eilis could absorb more class hours instead of staying PT-heavy.\n\n\u2022 **JoJo is under-loaded on classes relative to her head coach role:** Her 24 + 7 + 7 class hours (Build: Upper, Full Body, Strongevity) leave room to pick up Grace's Strongevity sessions and part of Build: Lower without overstretch.\n\n\u2022 **Eliminate the Body Composition Scan burden from PT tracking:** These 18 + 14 + 3 scans are admin, not coaching skill\u2014rotate them as quick admin tasks or use them flexibly to fill gaps, so they don't distort PT workload on your timetable.\n\n\u2022 **Establish a Tuesday cover plan:** JoJo always covers Tuesday (technically demanding). Ensure Eilis has a Monday/Wednesday/Thursday/Friday rota built around PT and easier classes so Tuesday stays protected and sustainable.",
     "period": "October 2026"
   },
   "asana": {
@@ -5442,10 +5521,6 @@
         "name": "Laura McGarry"
       },
       {
-        "id": 13262681,
-        "name": "Lesley Drake"
-      },
-      {
         "id": 13209864,
         "name": "Lesley Laverty"
       },
@@ -5536,6 +5611,10 @@
       {
         "id": 12605274,
         "name": "Noleen McMullan"
+      },
+      {
+        "id": 14016511,
+        "name": "Patricia McAuley"
       },
       {
         "id": 13149989,
@@ -5642,7 +5721,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 12,
+    "trial": 13,
     "trial_members": [
       {
         "id": 14231263,
@@ -5663,6 +5742,10 @@
       {
         "id": 13507202,
         "name": "Linda Greer"
+      },
+      {
+        "id": 14237342,
+        "name": "Lisa Bell"
       },
       {
         "id": 14166374,
@@ -5693,7 +5776,7 @@
         "name": "Sinead Wilson"
       }
     ],
-    "new_this_month": 17,
+    "new_this_month": 19,
     "cancellations_this_month": 5,
     "leaving_members": [
       {
@@ -5753,6 +5836,16 @@
       }
     ],
     "cancelled_by_month": [
+      {
+        "month": "2026-11",
+        "members": [
+          {
+            "name": "Lesley Drake",
+            "membership": "Empower",
+            "end": "2026-11-06"
+          }
+        ]
+      },
       {
         "month": "2026-10",
         "members": [
@@ -6020,6 +6113,16 @@
       }
     ],
     "lapsed_full_by_month": [
+      {
+        "month": "2026-11",
+        "members": [
+          {
+            "name": "Lesley Drake",
+            "membership": "Empower",
+            "end": "2026-11-06"
+          }
+        ]
+      },
       {
         "month": "2026-10",
         "members": [
@@ -6498,10 +6601,10 @@
         ]
       }
     ],
-    "cancelled_ytd": 54,
+    "cancelled_ytd": 55,
     "churn_rate": 3.0,
-    "avg_member_price": 137.55,
-    "monthly_recurring_revenue": 15130.0,
+    "avg_member_price": 137.36,
+    "monthly_recurring_revenue": 15110.0,
     "avg_tenure_months": 8.4,
     "cancelled_last_month": 5,
     "cancelled_members": [
@@ -6534,7 +6637,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 69,
+        "count": 68,
         "members": [
           {
             "id": 10803724,
@@ -6677,10 +6780,6 @@
             "name": "Laura Douglas"
           },
           {
-            "id": 13262681,
-            "name": "Lesley Drake"
-          },
-          {
             "id": 13209864,
             "name": "Lesley Laverty"
           },
@@ -6816,7 +6915,7 @@
       },
       {
         "name": "Elevate",
-        "count": 42,
+        "count": 43,
         "members": [
           {
             "id": 10803724,
@@ -6963,6 +7062,10 @@
             "name": "Noleen McMullan"
           },
           {
+            "id": 14016511,
+            "name": "Patricia McAuley"
+          },
+          {
             "id": 9187421,
             "name": "Shannon Campbell"
           },
@@ -7064,7 +7167,7 @@
       },
       {
         "name": "6 Week Jumpstart",
-        "count": 12,
+        "count": 13,
         "members": [
           {
             "id": 14231263,
@@ -7085,6 +7188,10 @@
           {
             "id": 13507202,
             "name": "Linda Greer"
+          },
+          {
+            "id": 14237342,
+            "name": "Lisa Bell"
           },
           {
             "id": 14166374,
@@ -7437,12 +7544,12 @@
             "count": 596
           },
           {
-            "day": "Thursday",
-            "count": 446
+            "day": "Friday",
+            "count": 451
           },
           {
-            "day": "Friday",
-            "count": 433
+            "day": "Thursday",
+            "count": 446
           }
         ],
         "bottom_days": [
@@ -7451,12 +7558,12 @@
             "count": 265
           },
           {
-            "day": "Friday",
-            "count": 433
-          },
-          {
             "day": "Thursday",
             "count": 446
+          },
+          {
+            "day": "Friday",
+            "count": 451
           },
           {
             "day": "Monday",
@@ -7489,8 +7596,8 @@
             "count": 317
           },
           {
-            "name": "Circuits",
-            "count": 222
+            "name": "Mobility",
+            "count": 229
           }
         ],
         "bottom_classes": [
@@ -7508,15 +7615,15 @@
           },
           {
             "name": "Plate",
-            "count": 174
-          },
-          {
-            "name": "Mobility",
-            "count": 221
+            "count": 184
           },
           {
             "name": "Circuits",
             "count": 222
+          },
+          {
+            "name": "Mobility",
+            "count": 229
           }
         ],
         "top_slots": [
@@ -7631,7 +7738,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 3165
+        "total_attended": 3183
       },
       "last_30_days": {
         "top_days": [
@@ -7648,12 +7755,12 @@
             "count": 188
           },
           {
-            "day": "Thursday",
-            "count": 163
+            "day": "Friday",
+            "count": 170
           },
           {
-            "day": "Friday",
-            "count": 152
+            "day": "Thursday",
+            "count": 163
           }
         ],
         "bottom_days": [
@@ -7662,12 +7769,12 @@
             "count": 86
           },
           {
-            "day": "Friday",
-            "count": 152
-          },
-          {
             "day": "Thursday",
             "count": 163
+          },
+          {
+            "day": "Friday",
+            "count": 170
           },
           {
             "day": "Monday",
@@ -7700,8 +7807,8 @@
             "count": 97
           },
           {
-            "name": "Circuits",
-            "count": 79
+            "name": "Mobility",
+            "count": 85
           }
         ],
         "bottom_classes": [
@@ -7719,15 +7826,15 @@
           },
           {
             "name": "Plate",
-            "count": 59
-          },
-          {
-            "name": "Mobility",
-            "count": 77
+            "count": 69
           },
           {
             "name": "Circuits",
             "count": 79
+          },
+          {
+            "name": "Mobility",
+            "count": 85
           }
         ],
         "top_slots": [
@@ -7842,7 +7949,7 @@
             "label": "Wednesday 5pm Build: Full Body"
           }
         ],
-        "total_attended": 1067
+        "total_attended": 1085
       },
       "suggestion": "**For quiet studio time:**\n\n1. **Add a Friday lunchtime \"Drop-in Barbell Basics\" workshop (30 mins, \u20ac5-8).** Friday is your quietest day and often has gaps between classes. A short, paid technique session removes barriers for members intimidated by Barbelle's low numbers and creates revenue from dead space.\n\n2. **Open the studio for 90-minute \"open gym with coach on floor\" blocks on Thursday and Friday afternoons.** Members often want unstructured lifting time with form feedback available\u2014this fills gaps, generates hourly revenue, and builds community for future class joiners.\n\n**For quieter classes:**\n\n3. **Move Barbelle and Engine to Tuesday or Wednesday mornings (6:30-7:00am slot if available).** Your busiest days suggest members are already in the gym early; a quick, high-energy class before work could attract the same crowd as Build: Upper. Test for 4 weeks with a \"New Time\" email to lapsed attendees.\n\n4. **Rebrand \"Mobility\" as \"Mobility + Strength Finishing\" and invite Build: Lower graduates to attend as a recovery add-on.** Your Build classes are packed but Mobility is underused\u2014position it as a complementary cool-down rather than standalone, with targeted post-class prompts (\"Your next class:",
       "capacity": [
@@ -8167,18 +8274,18 @@
       },
       {
         "month": "2026-11",
-        "active": 176,
+        "active": 177,
         "churn": 7.8,
         "by_type": {
           "Empower": 72,
           "8 PT Sessions": 4,
           "4 PT Sessions": 10,
           "Evolve": 4,
-          "Elevate": 42,
+          "Elevate": 43,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 10,
-          "6 Week Jumpstart": 12,
+          "6 Week Jumpstart": 13,
           "Strongevity Membership": 17,
           "8 Class Block": 1,
           "4 Class Pass": 1,
@@ -8212,13 +8319,6 @@
         "membership": "8 PT Sessions",
         "days_absent": 109,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 10746722,
-        "name": "Catherine Mckay",
-        "membership": "Elevate",
-        "days_absent": 175,
-        "last_seen": "2026-05-15"
       },
       {
         "id": 9597193,
@@ -8256,25 +8356,11 @@
         "last_seen": "2026-09-28"
       },
       {
-        "id": 12199003,
-        "name": "Joules Williamson",
-        "membership": "4 PT Sessions",
-        "days_absent": 14,
-        "last_seen": "2026-10-23"
-      },
-      {
         "id": 9049277,
         "name": "Kiera Lawthers",
         "membership": "4 PT Sessions",
         "days_absent": 109,
         "last_seen": "2026-07-20"
-      },
-      {
-        "id": 13262681,
-        "name": "Lesley Drake",
-        "membership": "Empower",
-        "days_absent": 24,
-        "last_seen": "2026-10-13"
       },
       {
         "id": 11212636,
@@ -8374,6 +8460,11 @@
           "start_date": "2026-11-06"
         },
         {
+          "name": "Lisa Bell",
+          "days_in": 0,
+          "start_date": "2026-11-06"
+        },
+        {
           "name": "Julia Millar",
           "days_in": 6,
           "start_date": "2026-10-31"
@@ -8384,7 +8475,13 @@
           "start_date": "2026-10-30"
         }
       ],
-      "new_members": [],
+      "new_members": [
+        {
+          "name": "Patricia McAuley",
+          "days_in": 0,
+          "start_date": "2026-11-06"
+        }
+      ],
       "tenure": [
         {
           "name": "Heather Meenagh",
@@ -9325,15 +9422,6 @@
         "last_momentum": null
       },
       {
-        "id": 13262681,
-        "name": "Lesley Drake",
-        "email": "lesleyannedrake@yahoo.co.uk",
-        "join_date": "2026-07-18",
-        "membership": "Empower",
-        "class_count": 39,
-        "last_momentum": null
-      },
-      {
         "id": 11212636,
         "name": "Lesley Greehy",
         "email": "lesanngre@yahoo.co.uk",
@@ -9628,6 +9716,15 @@
         "join_date": "2026-09-30",
         "membership": "8 PT Sessions",
         "class_count": 9,
+        "last_momentum": null
+      },
+      {
+        "id": 14016511,
+        "name": "Patricia McAuley",
+        "email": "trishamca22@gmail.com",
+        "join_date": "2026-09-30",
+        "membership": "Elevate",
+        "class_count": 13,
         "last_momentum": null
       },
       {
@@ -14261,12 +14358,18 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Invitation: FitPro Ads Meeting x JoJo x Lily @ Fri 6 Nov 2026 3pm - 4:30pm (GMT) (Coach JoJo)",
+        "snippet": "FitPro Ads Meeting x JoJo x Lily \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Grace Smith is inviting you to a scheduled Zoom meeting. Join Zoom Meeting https://us02web.zoom.us/j/3238687370?omn=85852625473 Join and take notes https://",
+        "id": "1a1b0ac0d99eb83e"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Fwd: Time for some reflection!",
         "snippet": "---------- Forwarded message --------- From: Trisha McAuley &lt;trishamca22@gmail.com&gt; Date: Sun, 1 Nov 2026 at 11:28 Subject: Re: Time for some reflection! To: &lt;grace@theforge.pt&gt; Hi Grace! ",
         "id": "1a196f93a1c9e3d9"
       }
     ],
     "important": [],
-    "urgent_count": 1
+    "urgent_count": 2
   }
 }
