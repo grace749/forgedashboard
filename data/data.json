@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T13:14:57.077511+00:00",
+  "generated_at": "2026-11-08T15:00:59.404017+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-08",
-    "event_count": 12,
-    "urgent_count": 2,
+    "event_count": 13,
+    "urgent_count": 0,
     "enquiry_count": 3,
     "calendar": [
       {
@@ -133,6 +133,16 @@
         "prep": "Review their enquiry; have trial offer, pricing and class times ready."
       },
       {
+        "title": "Untitled",
+        "time": "2:30pm",
+        "start_raw": "2026-11-10T14:30:00Z",
+        "day": "Tuesday",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": "Gather SIPP documentation; confirm junior account setup requirements."
+      },
+      {
         "title": "Setup junior  SIPP",
         "time": "10:00pm",
         "start_raw": "2026-11-10T22:00:00Z",
@@ -140,39 +150,11 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Gather SIPP documentation; confirm junior account setup requirements."
+        "prep": ""
       }
     ],
-    "urgent": [
-      {
-        "from": "mhewitt@acredula.co.uk",
-        "from_raw": "\"mhewitt@acredula.co.uk\" <mhewitt@acredula.co.uk>",
-        "subject": "The National Fitness Awards 2026",
-        "snippet": "Hi Grace, Many congratulations!\u2026 you will be very busy (and tired!) but it is all well worth it!! Completely understand - I have another zoom at 1pm tomorrow, so 12.45pm might be difficult - any other",
-        "id": "1a1bad680ec4271c",
-        "thread_id": "1a168231feb81c60",
-        "msg_count": 5,
-        "draft_id": "r7422638010315423224"
-      },
-      {
-        "from": "eilis kearns",
-        "from_raw": "eilis kearns <eiliskearns@hotmail.co.uk>",
-        "subject": "October 2026 invoice",
-        "snippet": "",
-        "id": "1a19c309513c1f68",
-        "thread_id": "1a19c309513c1f68",
-        "msg_count": 1,
-        "draft_id": "r4691219524762365614"
-      }
-    ],
-    "important": [
-      {
-        "from": "HMRC help and support",
-        "subject": "Salaried workers and the National Minimum Wage: are you getting it right?",
-        "snippet": "\ufeffView in browser\ufeff Dear customer, Your workers are salaried, but are you confident they&#39;re receiving the National Minimum Wage (NMW) for every hour they work? Salaried pay can seem straightforward,",
-        "id": "1a1a1a6425ccfa79"
-      }
-    ],
+    "urgent": [],
+    "important": [],
     "enquiries": [
       {
         "name": "Monica Patterson",
@@ -204,9 +186,9 @@
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -312,10 +294,19 @@
   },
   "ghl": [
     {
+      "name": "Sinead wilson",
+      "channel": "Phone",
+      "message": "Hi Grace I am beginning to enjoy it but it\u2019s still a bit daunting. However everyone is very helpful and I can\u2019t think of a single thing more they could be doing . Thank you , your wee son is so gorgeo",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "3PQ05CKhotipHihWqy8h",
+      "contact_id": "rJuOdqwW3MBtIUNARd3W"
+    },
+    {
       "name": "Kay Blackburn",
       "channel": "Phone",
       "message": "Do you mean it starts 16th? If so, yes. I'm a member of my current gym til 12th",
-      "age": "5h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "cdRjLMvpvxJPCbGu8IaV",
       "contact_id": "0pT4W1d3aZqQx5nbEzQi"
@@ -324,7 +315,7 @@
       "name": "Jo",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/DfcfRjbukmo/",
-      "age": "16h ago",
+      "age": "18h ago",
       "unread": 2,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -333,7 +324,7 @@
       "name": "Yvonna Stewart",
       "channel": "Phone",
       "message": "Hey Grace, thanks for that, I think I've underestimated the amount of time id need to dedicate to something like this and nows probably not the right time for me,however appreciate the info and perhap",
-      "age": "16h ago",
+      "age": "18h ago",
       "unread": 2,
       "conv_id": "G6XnkCvzsI36MKq77X9f",
       "contact_id": "ZqNqmgjODVYEKOL9WbmQ"
@@ -342,7 +333,7 @@
       "name": "Sarah Boyd",
       "channel": "Phone",
       "message": "Its all good dont worry :) \n\nBeen a bit better can chew as long as im careful to avoid front teeth. Wound is healing nicely just making my lip really stiff as it heals. Still have no feeling it it eit",
-      "age": "18h ago",
+      "age": "20h ago",
       "unread": 1,
       "conv_id": "HFse8Zp7V3kYGsOhyliT",
       "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
@@ -351,7 +342,7 @@
       "name": "deewall123",
       "channel": "Phone",
       "message": "\ud83d\udc4f",
-      "age": "23h ago",
+      "age": "1d ago",
       "unread": 2,
       "conv_id": "WkTXpzOpItdDmehR5ZeD",
       "contact_id": "FdQuIFhbjArKOVoh7V1c"
