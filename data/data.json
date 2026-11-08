@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T15:00:59.404017+00:00",
+  "generated_at": "2026-11-08T19:40:46.801762+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-08",
-    "event_count": 13,
-    "urgent_count": 0,
+    "event_count": 14,
+    "urgent_count": 2,
     "enquiry_count": 3,
     "calendar": [
       {
@@ -44,6 +44,16 @@
         "prep": "Review Google Profile updates; prepare any bio/imagery changes needed."
       },
       {
+        "title": "Midwife",
+        "time": "2:15pm",
+        "start_raw": "2026-11-09T14:15:00Z",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
         "title": "Pay Dan House Bills",
         "time": "all day",
         "start_raw": "2026-11-10",
@@ -61,7 +71,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Review client progress notes; confirm coaching focus areas."
       },
       {
         "title": "Precious & Patience Coaching",
@@ -73,7 +83,7 @@
         ],
         "description": "",
         "location": "",
-        "prep": "Review client progress notes; confirm coaching focus areas."
+        "prep": "Brief Jamie Lowe on new client profiles; prepare gym tour materials."
       },
       {
         "title": "New Clients 30 Minute Meetings with Jamie Lowe",
@@ -83,7 +93,7 @@
         "attendees": [],
         "description": "Event Name: New Clients 30 Minute Meetings\nEvent Description: Thanks for booking a meeting.Please use this option if we haven't spoken before to book a 30-minute meeting.If you can't find a meeting so",
         "location": "",
-        "prep": "Brief Jamie Lowe on new client profiles; prepare gym tour materials."
+        "prep": ""
       },
       {
         "title": "\ud83d\udcde Call: Sharon Heggarty",
@@ -105,7 +115,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Prepare talking points on gym achievements; test Zoom link beforehand."
       },
       {
         "title": "National Fitness Awards interview",
@@ -118,7 +128,7 @@
         ],
         "description": "Zoom link: https://us06web.zoom.us/j/86437093070?pwd=fj4I1UmCxPuQchbfdGejSuHwpky1ia.1",
         "location": "",
-        "prep": "Prepare talking points on gym achievements; test Zoom link beforehand."
+        "prep": "Gather SIPP documentation; confirm junior account setup requirements."
       },
       {
         "title": "\ud83d\udcde Call: Siobhan Brogan",
@@ -140,7 +150,7 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Gather SIPP documentation; confirm junior account setup requirements."
+        "prep": ""
       },
       {
         "title": "Setup junior  SIPP",
@@ -153,7 +163,27 @@
         "prep": ""
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "kay2007",
+        "from_raw": "kay2007@talk21.com",
+        "subject": "Re: Kay, \ud83d\udea8 Appointment Reminder",
+        "snippet": "Hi Grace We had a call on friday evening. We didn&#39;t make an appointment for another? Also, I replied to your WhatsApp message, but I haven&#39;t heard back. (Are some of the messages automated?) I",
+        "id": "1a1bc9a3acd529a1",
+        "thread_id": "1a1bc9a3acd529a1",
+        "msg_count": 1,
+        "draft_id": "r-3928586927769743264"
+      },
+      {
+        "from": "mhewitt@acredula.co.uk",
+        "from_raw": "\"mhewitt@acredula.co.uk\" <mhewitt@acredula.co.uk>",
+        "subject": "The National Fitness Awards 2026",
+        "snippet": "Hi Grace, I&#39;m afraid I can&#39;t do Friday\u2026 any other times? Kind regards, Mike From: Grace Smith &lt;grace@theforge.pt&gt; Date: Sunday, 8 November 2026 at 14:07 To: mhewitt@acredula.co.uk &lt;",
+        "id": "1a1bc78a91a7fb1a",
+        "thread_id": "1a168231feb81c60",
+        "msg_count": 7
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -186,8 +216,8 @@
     "checkins": {
       "by_email": {
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
@@ -297,25 +327,16 @@
       "name": "Sinead wilson",
       "channel": "Phone",
       "message": "Hi Grace I am beginning to enjoy it but it\u2019s still a bit daunting. However everyone is very helpful and I can\u2019t think of a single thing more they could be doing . Thank you , your wee son is so gorgeo",
-      "age": "1h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "3PQ05CKhotipHihWqy8h",
       "contact_id": "rJuOdqwW3MBtIUNARd3W"
     },
     {
-      "name": "Kay Blackburn",
-      "channel": "Phone",
-      "message": "Do you mean it starts 16th? If so, yes. I'm a member of my current gym til 12th",
-      "age": "7h ago",
-      "unread": 1,
-      "conv_id": "cdRjLMvpvxJPCbGu8IaV",
-      "contact_id": "0pT4W1d3aZqQx5nbEzQi"
-    },
-    {
       "name": "Jo",
       "channel": "Phone",
       "message": "https://www.instagram.com/reel/DfcfRjbukmo/",
-      "age": "18h ago",
+      "age": "22h ago",
       "unread": 2,
       "conv_id": "SSmsaXAmGesXC4DA1BV3",
       "contact_id": "xa3rPNDLcMKM9VtjK91V"
@@ -324,7 +345,7 @@
       "name": "Yvonna Stewart",
       "channel": "Phone",
       "message": "Hey Grace, thanks for that, I think I've underestimated the amount of time id need to dedicate to something like this and nows probably not the right time for me,however appreciate the info and perhap",
-      "age": "18h ago",
+      "age": "23h ago",
       "unread": 2,
       "conv_id": "G6XnkCvzsI36MKq77X9f",
       "contact_id": "ZqNqmgjODVYEKOL9WbmQ"
@@ -333,7 +354,7 @@
       "name": "Sarah Boyd",
       "channel": "Phone",
       "message": "Its all good dont worry :) \n\nBeen a bit better can chew as long as im careful to avoid front teeth. Wound is healing nicely just making my lip really stiff as it heals. Still have no feeling it it eit",
-      "age": "20h ago",
+      "age": "1d ago",
       "unread": 1,
       "conv_id": "HFse8Zp7V3kYGsOhyliT",
       "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
