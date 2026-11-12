@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T06:00:51.252785+00:00",
+  "generated_at": "2026-11-12T15:00:59.413239+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4446,7 +4446,7 @@
       {
         "user_id": "U0B8A4UBH47",
         "text": "Hi Grace,Jo jo and Eilish. I just wanted to let you know I have had to cancel my membership as alot going on but hopefully be back in the new year. Thanks for e",
-        "hours": 8,
+        "hours": 17,
         "name": "sharoncsmyth"
       }
     ],
@@ -4785,7 +4785,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower (20 sessions) to JoJo** \u2014 JoJo already runs Build: Upper and has the technical strength; consolidating lower-body strength under one coach improves consistency and frees Eilis to cover other areas.\n\n\u2022 **Redistribute Grace's Strongevity (5 sessions) between JoJo and Eilis** \u2014 JoJo already teaches it; giving Eilis 2\u20133 sessions lets her build confidence in a lower-intensity format and reduces single-coach dependency on JoJo.\n\n\u2022 **Shift some of Eilis's PT load to JoJo** \u2014 Eilis is running 53 PTs (nearly 2.5\u00d7 JoJo's 22). Move 10\u201315 of Eilis's PT clients to JoJo to balance workload and give Eilis headroom for class delivery.\n\n\u2022 **Keep Eilis anchored on Elevate, Plate, and Mobility** \u2014 she's the go-to for these; avoid overloading her further, but her current 131 sessions is sustainable once PT rebalances.\n\n\u2022 **Assign all Body Composition scans to one admin or rotating non-coaching slot** \u2014 neither coach should log these as delivery time. Frees ~30 phantom sessions per month and clarifies true coaching load.\n\n\u2022 **Confirm JoJo takes Tuesday strength classes (Build: Upper/Lower, Strongevity) and assign a secondary coach shadow** \u2014 reduces single-person risk on your most technically demanding day.",
+    "advice": "\u2022 **Redistribute Grace's Build: Lower (20 sessions) to JoJo and Eilis.** JoJo already coaches Build: Upper; add Build: Lower on non-Tuesday slots to spread her strength-based load. Eilis can co-lead or take some Lower sessions to develop range \u2014 this builds her confidence ahead of future Tuesday readiness.\n\n\u2022 **Move Grace's Strongevity (5 sessions) to JoJo.** JoJo already runs Strongevity; consolidating with Grace's sessions removes fragmentation and deepens member relationships on that programme.\n\n\u2022 **Assign Grace's Circuits and Engine classes to Eilis.** Eilis has capacity (she's at 131 sessions but only 53 are PT; most are group classes). Lower-intensity group work is a safe fit for her current level and keeps her developing.\n\n\u2022 **Cap Eilis's PT load at 40\u201345 sessions per month.** She's handling 53 PTs plus 78 group classes \u2014 that's unsustainable. Redirect new PT enquiries to JoJo or pause intake until a third coach joins. Body Composition scans (18/month) are not coaching \u2014 stop counting them against her PT capacity.\n\n\u2022 **Use JoJo strategically on Tuesdays and high-skill sessions only.** She's the strongest coach; don't waste her on low-demand or easy classes. Keep her on Build: Upper, Lower, Strongevity, and Momentum Call; let Eilis handle Plate, Mobility, and Elevate to match skill level.\n\n\u2022 **Hire or cross-train a third coach urgently.** With Grace stepping back, the team is stretched. A mid-level coach would absorb PT overflow and free JoJo for leadership.",
     "period": "October 2026"
   },
   "asana": {
@@ -4978,6 +4978,16 @@
         "project": null,
         "due_on": "2026-11-06",
         "overdue": true,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
+        "gid": "1220474524770381",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1220474524770381",
+        "project": null,
+        "due_on": "2026-11-13",
+        "overdue": false,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -7497,7 +7507,7 @@
           },
           {
             "day": "Thursday",
-            "count": 417
+            "count": 434
           }
         ],
         "bottom_days": [
@@ -7507,7 +7517,7 @@
           },
           {
             "day": "Thursday",
-            "count": 417
+            "count": 434
           },
           {
             "day": "Friday",
@@ -7529,7 +7539,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 492
+            "count": 501
           },
           {
             "name": "Build: Lower",
@@ -7537,7 +7547,7 @@
           },
           {
             "name": "Elevate",
-            "count": 336
+            "count": 344
           },
           {
             "name": "Strongevity",
@@ -7612,15 +7622,6 @@
             "label": "Tuesday 7pm Build: Upper"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 113,
-            "sessions": 11,
-            "avg": 10.3,
-            "label": "Thursday 7am Build: Full Body"
-          },
-          {
             "day": "Friday",
             "time": "6pm",
             "name": "Circuits",
@@ -7628,6 +7629,15 @@
             "sessions": 13,
             "avg": 10.2,
             "label": "Friday 6pm Circuits"
+          },
+          {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 122,
+            "sessions": 12,
+            "avg": 10.2,
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7680,13 +7690,13 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 79,
-            "sessions": 12,
-            "avg": 6.6,
+            "count": 87,
+            "sessions": 13,
+            "avg": 6.7,
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3147
+        "total_attended": 3164
       },
       "last_30_days": {
         "top_days": [
@@ -7703,12 +7713,12 @@
             "count": 166
           },
           {
-            "day": "Friday",
-            "count": 150
+            "day": "Thursday",
+            "count": 153
           },
           {
-            "day": "Thursday",
-            "count": 136
+            "day": "Friday",
+            "count": 150
           }
         ],
         "bottom_days": [
@@ -7717,12 +7727,12 @@
             "count": 88
           },
           {
-            "day": "Thursday",
-            "count": 136
-          },
-          {
             "day": "Friday",
             "count": 150
+          },
+          {
+            "day": "Thursday",
+            "count": 153
           },
           {
             "day": "Monday",
@@ -7740,7 +7750,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 164
+            "count": 173
           },
           {
             "name": "Build: Lower",
@@ -7748,7 +7758,7 @@
           },
           {
             "name": "Elevate",
-            "count": 112
+            "count": 120
           },
           {
             "name": "Strongevity",
@@ -7805,15 +7815,6 @@
             "label": "Tuesday 10am Build: Upper"
           },
           {
-            "day": "Thursday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 32,
-            "sessions": 3,
-            "avg": 10.7,
-            "label": "Thursday 7am Build: Full Body"
-          },
-          {
             "day": "Wednesday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -7839,6 +7840,15 @@
             "sessions": 4,
             "avg": 10.2,
             "label": "Wednesday 10am Circuits"
+          },
+          {
+            "day": "Thursday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 41,
+            "sessions": 4,
+            "avg": 10.2,
+            "label": "Thursday 7am Build: Full Body"
           }
         ],
         "bottom_slots": [
@@ -7882,9 +7892,9 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 24,
-            "sessions": 4,
-            "avg": 6.0,
+            "count": 32,
+            "sessions": 5,
+            "avg": 6.4,
             "label": "Thursday 10am Elevate"
           },
           {
@@ -7897,7 +7907,7 @@
             "label": "Wednesday 6pm Build: Full Body"
           }
         ],
-        "total_attended": 1084
+        "total_attended": 1101
       },
       "suggestion": "**For quiet studio time (gaps between PTs and classes):**\n\n1. **Add a paid \"Open Studio\" block** on Thursday and Friday afternoons (your quietest days) \u2014 60 mins of unstructured gym access with a coach on hand for form checks. Price it as a drop-in add-on (\u00a38\u201312) to capture members already in the gym for other reasons.\n\n2. **Run a Saturday \"Newcomer Strength Fundamentals\" workshop** (30\u201345 mins, small group cap of 8\u201310). Barbelle, Capacity, and Engine are all underperforming partly because they're likely too advanced or unclear for newer members \u2014 use quiet Saturday time to demystify form and build confidence before they try the real classes.\n\n**For the quieter classes themselves:**\n\n3. **Shift Engine to Thursday early evening** (5\u20136pm slot if available) and pair it with a **targeted invite campaign** to Build class regulars \u2014 position it as \"active recovery for strength athletes\" rather than a standalone class. Engine's low uptake suggests positioning problem, not a format problem. Same for Plate: rebrand it in promotions as \"core + stability for injury prevention\" and invite Strongevity members (older demographic) directly.",
       "capacity": [
@@ -7937,8 +7947,8 @@
           "name": "Build: Full Body",
           "sessions": 67,
           "cap": 12,
-          "avg_attending": 8.9,
-          "fill_rate": 74,
+          "avg_attending": 8.8,
+          "fill_rate": 73,
           "status": "attention"
         },
         {
@@ -7961,8 +7971,8 @@
           "name": "Barbelle",
           "sessions": 13,
           "cap": 9,
-          "avg_attending": 5.9,
-          "fill_rate": 66,
+          "avg_attending": 5.8,
+          "fill_rate": 65,
           "status": "attention"
         },
         {
