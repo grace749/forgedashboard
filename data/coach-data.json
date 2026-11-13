@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:28:34.085639+00:00",
+  "generated_at": "2026-11-13T15:00:56.939573+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -87,7 +87,7 @@
         "nutrition_sent": false,
         "inbody_done": false,
         "check_ins": [
-          false,
+          true,
           false,
           false,
           false,
@@ -102,8 +102,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 5,
-        "completed_checkins": 0,
+        "missing_checkins": 4,
+        "completed_checkins": 1,
         "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
@@ -1094,7 +1094,7 @@
       {
         "member": "Jillian Boyd",
         "type": "missing_checkin",
-        "detail": "Missing 5 check-in(s) (on week 5)"
+        "detail": "Missing 4 check-in(s) (on week 5)"
       },
       {
         "member": "Jillian Boyd",
