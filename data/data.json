@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:31:34.124387+00:00",
+  "generated_at": "2026-11-18T22:35:23.405800+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,8 +7,8 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-18",
-    "event_count": 3,
-    "urgent_count": 0,
+    "event_count": 4,
+    "urgent_count": 3,
     "enquiry_count": 1,
     "calendar": [
       {
@@ -36,6 +36,16 @@
         "prep": "Review fibromyalgia-friendly meal prep options; prepare simple, low-effort recipes."
       },
       {
+        "title": "Padel match galgorm",
+        "time": "6:30pm",
+        "start_raw": "2026-11-19T18:30:00Z",
+        "day": "Tomorrow",
+        "attendees": [],
+        "description": "",
+        "location": "",
+        "prep": ""
+      },
+      {
         "title": "Precious & Patience Coaching",
         "time": "8:30am",
         "start_raw": "2026-11-20T08:30:00Z",
@@ -45,10 +55,41 @@
         ],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Contact Grace Smith on 07961 814812 to confirm changes needed."
       }
     ],
-    "urgent": [],
+    "urgent": [
+      {
+        "from": "eilis kearns",
+        "from_raw": "eilis kearns <eiliskearns@hotmail.co.uk>",
+        "subject": "Accepted: Eilis 1:1 Meeting",
+        "snippet": "",
+        "id": "1a1f0bd808c8906d",
+        "thread_id": "1a1f0bd808c8906d",
+        "msg_count": 1,
+        "draft_id": "r-2311744785068586671"
+      },
+      {
+        "from": "eilis kearns",
+        "from_raw": "eilis kearns <eiliskearns@hotmail.co.uk>",
+        "subject": "Accepted: Studio Coaches Meeting",
+        "snippet": "",
+        "id": "1a1f0bd77831798d",
+        "thread_id": "1a1f0bd77831798d",
+        "msg_count": 1,
+        "draft_id": "r7147390051430121734"
+      },
+      {
+        "from": "Amanda Keane",
+        "from_raw": "Amanda Keane <info@prambee.ie>",
+        "subject": "Owlet",
+        "snippet": "Hi Grace A customer is returning an Owlet tomorrow, it should be with us Friday/Saturday. We will then process it, sanitise and do our safety checks. It should be ready to go again next Monday, I can",
+        "id": "1a1f050ded41dab7",
+        "thread_id": "1a1e5cfa6f69778c",
+        "msg_count": 4,
+        "draft_id": "r-8247871822084182444"
+      }
+    ],
     "important": [],
     "enquiries": [
       {
@@ -65,9 +106,9 @@
       "by_email": {
         "emmaglen2@aol.com": "2026-11-12",
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
-        "sarah@nourishandnurtu.re": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -179,15 +220,6 @@
       "unread": 0,
       "conv_id": "bDZWOey0DNiZE1Arcevq",
       "contact_id": "NmUuOSAvpRBHbSqehTOf"
-    },
-    {
-      "name": "Colleen Morrison",
-      "channel": "Phone",
-      "message": "Hi Grace I didn\u2019t even know you were pregnant!! Congratulations on your new baby! And thanks for the refund xx",
-      "age": "2d ago",
-      "unread": 1,
-      "conv_id": "ZDOc5dPFojCHXI7eNn4t",
-      "contact_id": "hhjD0iq30ycNEb5zXFQq"
     }
   ],
   "jumpstart": {
@@ -6126,7 +6158,7 @@
     }
   },
   "teamup": {
-    "total_members": 176,
+    "total_members": 178,
     "recurring": 111,
     "recurring_members": [
       {
@@ -6625,7 +6657,7 @@
         "name": "Sarah Boyd"
       }
     ],
-    "new_this_month": 24,
+    "new_this_month": 45,
     "cancellations_this_month": 9,
     "leaving_members": [
       {
@@ -7457,7 +7489,7 @@
       }
     ],
     "cancelled_ytd": 55,
-    "churn_rate": 5.4,
+    "churn_rate": 5.3,
     "avg_member_price": 137.27,
     "monthly_recurring_revenue": 15100.0,
     "avg_tenure_months": 8.5,
@@ -7947,6 +7979,96 @@
         ]
       },
       {
+        "name": "Unlimited Christmas Class Pack",
+        "count": 21,
+        "members": [
+          {
+            "id": 7196665,
+            "name": "Deborah Goss"
+          },
+          {
+            "id": 14231263,
+            "name": "Deirdre Bones"
+          },
+          {
+            "id": 12948327,
+            "name": "Eleanor Anderson"
+          },
+          {
+            "id": 2031286,
+            "name": "Heather Mitchell"
+          },
+          {
+            "id": 1793399,
+            "name": "Helen Traynor"
+          },
+          {
+            "id": 7399387,
+            "name": "Hilary-Anne Christie"
+          },
+          {
+            "id": 10052257,
+            "name": "Hilda Clements"
+          },
+          {
+            "id": 13588363,
+            "name": "Jennifer Reid"
+          },
+          {
+            "id": 12338245,
+            "name": "Karen Hanna"
+          },
+          {
+            "id": 8762722,
+            "name": "Karen Rhodes"
+          },
+          {
+            "id": 12822795,
+            "name": "Kathleen Simpson"
+          },
+          {
+            "id": 14237342,
+            "name": "Lisa Bell"
+          },
+          {
+            "id": 5379471,
+            "name": "Lyndsay Sinclair"
+          },
+          {
+            "id": 12994868,
+            "name": "Margaret Reynolds"
+          },
+          {
+            "id": 9198838,
+            "name": "Marlene Hayes"
+          },
+          {
+            "id": 10531246,
+            "name": "Mary Mckenna"
+          },
+          {
+            "id": 10726245,
+            "name": "Nichola McAuley"
+          },
+          {
+            "id": 4546410,
+            "name": "Noleen MCKILLOP"
+          },
+          {
+            "id": 12605274,
+            "name": "Noleen McMullan"
+          },
+          {
+            "id": 11621729,
+            "name": "Rebekah Newnes"
+          },
+          {
+            "id": 9637616,
+            "name": "susan Henry"
+          }
+        ]
+      },
+      {
         "name": "Strongevity Membership",
         "count": 17,
         "members": [
@@ -8381,12 +8503,12 @@
             "count": 798
           },
           {
-            "day": "Monday",
-            "count": 587
+            "day": "Wednesday",
+            "count": 599
           },
           {
-            "day": "Wednesday",
-            "count": 582
+            "day": "Monday",
+            "count": 587
           },
           {
             "day": "Friday",
@@ -8411,12 +8533,12 @@
             "count": 451
           },
           {
-            "day": "Wednesday",
-            "count": 582
-          },
-          {
             "day": "Monday",
             "count": 587
+          },
+          {
+            "day": "Wednesday",
+            "count": 599
           }
         ],
         "top_classes": [
@@ -8426,7 +8548,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 481
+            "count": 489
           },
           {
             "name": "Build: Lower",
@@ -8452,7 +8574,7 @@
           },
           {
             "name": "Capacity",
-            "count": 53
+            "count": 57
           },
           {
             "name": "Engine",
@@ -8460,7 +8582,7 @@
           },
           {
             "name": "Plate",
-            "count": 178
+            "count": 183
           },
           {
             "name": "Circuits",
@@ -8532,8 +8654,8 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 53,
-            "sessions": 11,
+            "count": 57,
+            "sessions": 12,
             "avg": 4.8,
             "label": "Wednesday 8pm Capacity"
           },
@@ -8568,9 +8690,9 @@
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 76,
-            "sessions": 12,
-            "avg": 6.3,
+            "count": 81,
+            "sessions": 13,
+            "avg": 6.2,
             "label": "Wednesday 7pm Plate"
           },
           {
@@ -8583,7 +8705,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3118
+        "total_attended": 3135
       },
       "last_30_days": {
         "top_days": [
@@ -8597,7 +8719,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 200
+            "count": 217
           },
           {
             "day": "Thursday",
@@ -8623,7 +8745,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 200
+            "count": 217
           },
           {
             "day": "Monday",
@@ -8641,7 +8763,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 150
+            "count": 158
           },
           {
             "name": "Elevate",
@@ -8663,7 +8785,7 @@
           },
           {
             "name": "Capacity",
-            "count": 20
+            "count": 24
           },
           {
             "name": "Engine",
@@ -8671,7 +8793,7 @@
           },
           {
             "name": "Plate",
-            "count": 60
+            "count": 65
           },
           {
             "name": "Mobility",
@@ -8743,18 +8865,18 @@
             "day": "Wednesday",
             "time": "8pm",
             "name": "Capacity",
-            "count": 20,
-            "sessions": 4,
-            "avg": 5.0,
+            "count": 24,
+            "sessions": 5,
+            "avg": 4.8,
             "label": "Wednesday 8pm Capacity"
           },
           {
             "day": "Wednesday",
             "time": "7pm",
             "name": "Plate",
-            "count": 22,
-            "sessions": 4,
-            "avg": 5.5,
+            "count": 27,
+            "sessions": 5,
+            "avg": 5.4,
             "label": "Wednesday 7pm Plate"
           },
           {
@@ -8794,7 +8916,7 @@
             "label": "Saturday 9am Elevate"
           }
         ],
-        "total_attended": 1094
+        "total_attended": 1111
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a Thursday or Friday 30-min \"Strength Skills\" drop-in workshop** (8\u201310 attendees max) targeting members who've done Build classes \u2014 teach barbell technique, programming basics, or mobility. Charge \u00a35\u20138 per session. This fills dead air and builds confidence for underused classes like Barbelle and Plate.\n\n2. **Open a Saturday morning \"Open Gym + Coach on Floor\" block (90 mins)** between existing classes. Members pay \u00a36 to use the studio with a PT available for form checks and spot requests \u2014 no structured class. Saturday is your quietest day; this converts empty studio time into revenue while keeping people in the building.\n\n**To lift the quietest classes:**\n\n3. **Rebrand and reposition Barbelle, Capacity, and Engine:** These three are critically underattended. Invite top 20 Build/Elevate regulars via direct message to try one free session with a specific hook (e.g. \"Barbelle is Build's older cousin \u2014 master loaded carries and grip strength\"). Run this as a 2-week challenge with a leaderboard or small prize. Weak class names may hurt discoverability; confirm the class description in your marketing clearly states what it delivers.",
       "capacity": [
@@ -9852,6 +9974,15 @@
         "last_momentum": null
       },
       {
+        "id": 14231263,
+        "name": "Deirdre Bones",
+        "email": "deirdrebones@live.co.uk",
+        "join_date": "2026-12-01",
+        "membership": "Unlimited Christmas Class Pack",
+        "class_count": 4,
+        "last_momentum": null
+      },
+      {
         "id": 13488742,
         "name": "Diane Thomson",
         "email": "dianethomson1@gmail.com",
@@ -10345,6 +10476,15 @@
         "membership": "Elevate",
         "class_count": 83,
         "last_momentum": "2026-10-19"
+      },
+      {
+        "id": 14237342,
+        "name": "Lisa Bell",
+        "email": "lisa.bell302@btinternet.com",
+        "join_date": "2026-12-01",
+        "membership": "Unlimited Christmas Class Pack",
+        "class_count": 4,
+        "last_momentum": null
       },
       {
         "id": 13127914,
