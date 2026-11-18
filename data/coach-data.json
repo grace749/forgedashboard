@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T06:00:55.699117+00:00",
+  "generated_at": "2026-11-18T15:01:03.956762+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4490,20 +4490,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U0B8A4UBH47",
-        "text": "Awh sharon sorry to hear you are leaving us! But we do understand there is a lot on and would always say family first. I have cancelled your DD with 30 days not",
-        "hours": 45,
-        "name": "sharoncsmyth"
-      },
-      {
-        "user_id": "U0BLXE1KQQH",
-        "text": "Hi Coach Grace, did you already reset the password for the enquiry email? In addition, Colleen Morrison was asking what dates are covered for her strongevity se",
-        "hours": 42,
-        "name": "Julie Lapaz"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -4837,7 +4824,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower classes to JoJo** \u2013 JoJo already coaches Upper; adding Lower (20 sessions) spreads Build coverage across both coaches and uses JoJo's strength in barbell work. This removes Grace's largest coaching commitment.\n\n\u2022 **Redistribute Grace's Strongevity and specialty classes to Eilis** \u2013 Eilis has capacity and variety in her schedule (Elevate, Mobility, Plate). Assign Strongevity and Engine to her to build her range and free Grace entirely from delivery.\n\n\u2022 **Stop relying on JoJo for Momentum Calls and Circuits** \u2013 These 12 sessions are low-technical group sessions; move them to Eilis to ease JoJo's load (currently 115 sessions) and give Eilis higher-contact-time classes that suit her development.\n\n\u2022 **Ignore Body Composition Scans in timetable balancing** \u2013 Eilis and JoJo are both doing InBody scans (18 and 14 sessions). These are admin tasks, not coaching; remove them from PT load counts when deciding who's stretched.\n\n\u2022 **Eilis is well-used but can absorb more group classes** \u2013 With 131 sessions (mostly PT and class variety), she's solid. Giving her Strongevity, Engine, Momentum Calls, and Circuits uses her strengths without overloading and balances the team.\n\n\u2022 **Outcome: Grace drops to zero delivery; JoJo holds Tuesday demand + barbell expertise; Eilis becomes the flexible, multi-class coach**\u2014more sustainable and reduces founder burnout.",
+    "advice": "\u2022 **Redistribute Grace's Build: Lower classes immediately.** She's the only coach delivering this class (20 sessions in October). JoJo already runs Build: Upper; consider splitting Lower between JoJo and Eilis, or converting some to Upper/Full Body if demand allows. This is the highest-risk gap.\n\n\u2022 **Move Eilis off Body Composition scans.** She logged 18 scans last month\u2014that's admin work masquerading as coaching. Train a studio coordinator or admin staff member to handle InBody stands instead. Frees Eilis for actual coaching and reduces her bloated 131-session count to meaningful delivery.\n\n\u2022 **Cap Eilis's PT load; she's carrying too much.** At 53 PT sessions, she's likely stretched thin and at risk of burnout. Gradually move new PT enquiries to JoJo (who took 22 last month) or recruit a third coach if demand is there. Eilis should focus on group classes where she can build confidence in the stronger technical environment.\n\n\u2022 **Plug Grace's Strongevity and Circuits into existing coaches' rotas.** JoJo already runs Strongevity (7 sessions); she can absorb Grace's 5 sessions. Circuits (1 session) is negligible but should rotate between JoJo and Eilis to build variety and depth.\n\n\u2022 **Agree a hard end-date for Grace's handover** (e.g., end of November 2026). Set clear milestones\u2014e.g., \"JoJo owns all Build: Lower by week 2; Eilis has two Strongevity sessions by week 4.\" Without deadlines, the transition will drift and the team won't adjust their headspace.",
     "period": "October 2026"
   },
   "asana": {
@@ -7549,7 +7536,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 555
+            "count": 582
           },
           {
             "day": "Friday",
@@ -7575,7 +7562,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 555
+            "count": 582
           },
           {
             "day": "Monday",
@@ -7588,12 +7575,12 @@
             "count": 693
           },
           {
-            "name": "Build: Lower",
-            "count": 473
+            "name": "Build: Full Body",
+            "count": 481
           },
           {
-            "name": "Build: Full Body",
-            "count": 472
+            "name": "Build: Lower",
+            "count": 473
           },
           {
             "name": "Elevate",
@@ -7601,7 +7588,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 310
+            "count": 316
           },
           {
             "name": "Mobility",
@@ -7627,7 +7614,7 @@
           },
           {
             "name": "Circuits",
-            "count": 208
+            "count": 220
           },
           {
             "name": "Mobility",
@@ -7681,13 +7668,13 @@
             "label": "Thursday 7am Build: Full Body"
           },
           {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 112,
-            "sessions": 11,
-            "avg": 10.2,
-            "label": "Wednesday 7am Build: Full Body"
+            "day": "Friday",
+            "time": "6pm",
+            "name": "Circuits",
+            "count": 121,
+            "sessions": 12,
+            "avg": 10.1,
+            "label": "Friday 6pm Circuits"
           }
         ],
         "bottom_slots": [
@@ -7746,7 +7733,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3091
+        "total_attended": 3118
       },
       "last_30_days": {
         "top_days": [
@@ -7760,7 +7747,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 173
+            "count": 200
           },
           {
             "day": "Thursday",
@@ -7786,7 +7773,7 @@
           },
           {
             "day": "Wednesday",
-            "count": 173
+            "count": 200
           },
           {
             "day": "Monday",
@@ -7804,7 +7791,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 141
+            "count": 150
           },
           {
             "name": "Elevate",
@@ -7812,11 +7799,11 @@
           },
           {
             "name": "Strongevity",
-            "count": 96
+            "count": 102
           },
           {
-            "name": "Mobility",
-            "count": 67
+            "name": "Circuits",
+            "count": 69
           }
         ],
         "bottom_classes": [
@@ -7833,16 +7820,16 @@
             "count": 33
           },
           {
-            "name": "Circuits",
-            "count": 57
-          },
-          {
             "name": "Plate",
             "count": 60
           },
           {
             "name": "Mobility",
             "count": 67
+          },
+          {
+            "name": "Circuits",
+            "count": 69
           }
         ],
         "top_slots": [
@@ -7856,15 +7843,6 @@
             "label": "Tuesday 10am Build: Upper"
           },
           {
-            "day": "Wednesday",
-            "time": "7am",
-            "name": "Build: Full Body",
-            "count": 43,
-            "sessions": 4,
-            "avg": 10.8,
-            "label": "Wednesday 7am Build: Full Body"
-          },
-          {
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
@@ -7874,6 +7852,24 @@
             "label": "Tuesday 7am Build: Upper"
           },
           {
+            "day": "Wednesday",
+            "time": "7am",
+            "name": "Build: Full Body",
+            "count": 52,
+            "sessions": 5,
+            "avg": 10.4,
+            "label": "Wednesday 7am Build: Full Body"
+          },
+          {
+            "day": "Wednesday",
+            "time": "10am",
+            "name": "Circuits",
+            "count": 41,
+            "sessions": 4,
+            "avg": 10.2,
+            "label": "Wednesday 10am Circuits"
+          },
+          {
             "day": "Thursday",
             "time": "7am",
             "name": "Build: Full Body",
@@ -7881,15 +7877,6 @@
             "sessions": 4,
             "avg": 10.2,
             "label": "Thursday 7am Build: Full Body"
-          },
-          {
-            "day": "Wednesday",
-            "time": "10am",
-            "name": "Circuits",
-            "count": 29,
-            "sessions": 3,
-            "avg": 9.7,
-            "label": "Wednesday 10am Circuits"
           },
           {
             "day": "Friday",
@@ -7924,9 +7911,9 @@
             "day": "Wednesday",
             "time": "11am",
             "name": "Strongevity",
-            "count": 26,
-            "sessions": 4,
-            "avg": 6.5,
+            "count": 32,
+            "sessions": 5,
+            "avg": 6.4,
             "label": "Wednesday 11am Strongevity"
           },
           {
@@ -7957,7 +7944,7 @@
             "label": "Saturday 9am Elevate"
           }
         ],
-        "total_attended": 1067
+        "total_attended": 1094
       },
       "suggestion": "**For quiet studio time gaps:**\n\n1. **Add a Thursday or Friday 30-min \"Strength Skills\" drop-in workshop** (8\u201310 attendees max) targeting members who've done Build classes \u2014 teach barbell technique, programming basics, or mobility. Charge \u00a35\u20138 per session. This fills dead air and builds confidence for underused classes like Barbelle and Plate.\n\n2. **Open a Saturday morning \"Open Gym + Coach on Floor\" block (90 mins)** between existing classes. Members pay \u00a36 to use the studio with a PT available for form checks and spot requests \u2014 no structured class. Saturday is your quietest day; this converts empty studio time into revenue while keeping people in the building.\n\n**To lift the quietest classes:**\n\n3. **Rebrand and reposition Barbelle, Capacity, and Engine:** These three are critically underattended. Invite top 20 Build/Elevate regulars via direct message to try one free session with a specific hook (e.g. \"Barbelle is Build's older cousin \u2014 master loaded carries and grip strength\"). Run this as a 2-week challenge with a leaderboard or small prize. Weak class names may hurt discoverability; confirm the class description in your marketing clearly states what it delivers.",
       "capacity": [
@@ -8045,8 +8032,8 @@
           "name": "Capacity",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 4.9,
-          "fill_rate": 41,
+          "avg_attending": 4.8,
+          "fill_rate": 40,
           "status": "attention"
         }
       ]
@@ -8416,13 +8403,6 @@
         "last_seen": "2026-11-03"
       },
       {
-        "id": 13094545,
-        "name": "Lyn Chestnutt",
-        "membership": "Strongevity Membership",
-        "days_absent": 14,
-        "last_seen": "2026-11-04"
-      },
-      {
         "id": 7561270,
         "name": "Mollie McGregor",
         "membership": "Elevate",
@@ -8477,6 +8457,13 @@
         "membership": "Empower",
         "days_absent": 18,
         "last_seen": "2026-10-31"
+      },
+      {
+        "id": 12082042,
+        "name": "Sharon Smyth",
+        "membership": "Elevate",
+        "days_absent": 32,
+        "last_seen": "2026-10-17"
       }
     ],
     "celebrations": {
@@ -14405,21 +14392,9 @@
         "subject": "Let's Get Them Coaches Nice & Toasty",
         "snippet": "DPS Weekly #34 Hi Joanne, Right, I&#39;m not gonna sugar coat it, your gym is fucking freezing! ...BUT, your coaches don&#39;t have to be! What about some branded Dry Robe style jackets to warm their",
         "id": "1a1d17dc1398936a"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Cancelled event: Grace & JoJo Forge - Chat with Lily @ Wed 11 Nov 2026 1pm - 1:30pm (GMT) (Coach JoJo)",
-        "snippet": "Grace &amp; JoJo Forge - Chat with Lily This event has been cancelled and removed from your calendar. ========== Phone:- 07961 814812 Email:- grace@theforge.pt Need to make a change to this event?",
-        "id": "1a1caa56a32e613e"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Invitation: Grace Smith - Chat with Lily @ Mon 16 Nov 2026 1pm - 1:30pm (GMT) (Coach JoJo)",
-        "snippet": "Grace Smith - Chat with Lily ========== Phone:- 07961 814812 Email:- grace@theforge.pt Need to make a change to this event? Reschedule:- https://link.leaddec.com/widget/booking/MoijCXxE3BR02bCsC1Ql?",
-        "id": "1a1c9f36abb2b964"
       }
     ],
     "important": [],
-    "urgent_count": 4
+    "urgent_count": 2
   }
 }
