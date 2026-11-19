@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T06:00:56.294685+00:00",
+  "generated_at": "2026-11-19T15:01:01.148782+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -7,31 +7,19 @@
   "report_url": "https://script.google.com/macros/s/AKfycbwEv2onZsKD0VL3Hx9Dc-mtl9sl9xpvdoRBCccHIdJbTDC_82f8_rOuEcqVxxu8_CpGuA/exec",
   "brief": {
     "date": "2026-11-19",
-    "event_count": 4,
-    "urgent_count": 0,
+    "event_count": 3,
+    "urgent_count": 2,
     "enquiry_count": 0,
     "calendar": [
       {
-        "title": "Grace Smith - Chat with Lily",
-        "time": "9:45am",
-        "start_raw": "2026-11-19T09:45:00Z",
-        "day": "Today",
-        "attendees": [
-          "jojo@theforge.pt"
-        ],
-        "description": "==========\n\nPhone:- 07961 814812\nEmail:- grace@theforge.pt\n\nNeed to make a change to this event?\nReschedule:-\nhttps://link.leaddec.com/widget/booking/MoijCXxE3BR02bCsC1Ql?event_id=kImAUI88lNEgsj5CsA",
-        "location": "https://app.fitproleadgen.com/meet/6aee34f0aff2fb8bd5a74636?pwd=EDEQ84E8CCDobbU4TNExtsoKSDsqC93O8i2UInJn--pzzg.v1",
-        "prep": "Confirm new phone/email details with Lily before call; prepare contact update form."
-      },
-      {
         "title": "Padel match galgorm",
-        "time": "6:30pm",
-        "start_raw": "2026-11-19T18:30:00Z",
+        "time": "7:00pm",
+        "start_raw": "2026-11-19T19:00:00Z",
         "day": "Today",
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": ""
+        "prep": "Confirm new phone/email details with Lily before call; prepare contact update form."
       },
       {
         "title": "Precious & Patience Coaching",
@@ -53,19 +41,47 @@
         "attendees": [],
         "description": "",
         "location": "",
-        "prep": "Confirm final participant numbers, court booking, and any equipment needs."
+        "prep": ""
       }
     ],
-    "urgent": [],
-    "important": [],
+    "urgent": [
+      {
+        "from": "Coach JoJo",
+        "from_raw": "Coach JoJo <jojo@theforge.pt>",
+        "subject": "Accepted: Studio Coaches Meeting @ Thu Dec 3, 2026 12pm - 1pm (GMT) (Grace Smith)",
+        "snippet": "Studio Coaches Meeting Coach JoJo has accepted this invitation. When Thursday Dec 3, 2026 \u22c5 12pm \u2013 1pm (United Kingdom Time) Location Forge Female Fitness, Unit 7, Taggarts Yard, 18 Meeting House St,",
+        "id": "1a1f4217729504b6",
+        "thread_id": "1a1f4217729504b6",
+        "msg_count": 1,
+        "draft_id": "r3312618473380355160"
+      },
+      {
+        "from": "Mike (Gymownr)",
+        "from_raw": "\"Mike (Gymownr)\" <mike@gymownr.com>",
+        "subject": "so I turned my ads off",
+        "snippet": "well, there&#39;s your problem...\u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c",
+        "id": "1a1f34037cf2e808",
+        "thread_id": "1a1f34037cf2e808",
+        "msg_count": 1,
+        "draft_id": "r-4367461928909215427"
+      }
+    ],
+    "important": [
+      {
+        "from": "HMRC help and support",
+        "subject": "We\u2019re ready to help you with your tax return",
+        "snippet": "\ufeffView in browser\ufeff Dear customer, Still need to send in your tax return and make a payment? Don&#39;t worry, we&#39;re here to help. We&#39;ve got plenty of online support to help you along the way.",
+        "id": "1a1f3ce5a6653c72"
+      }
+    ],
     "enquiries": [],
     "checkins": {
       "by_email": {
         "emmaglen2@aol.com": "2026-11-12",
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "sarah@nourishandnurtu.re": "2026-08-15",
-        "kathleen.simpson2210@gmail.com": "2026-08-15",
         "eiliskearns@hotmail.co.uk": "2026-08-15",
+        "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "sarah@nourishandnurtu.re": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -164,19 +180,10 @@
       "name": "Christina Faulkner",
       "channel": "Phone",
       "message": "I see what I\u2019m in for later",
-      "age": "1d ago",
+      "age": "2d ago",
       "unread": 0,
       "conv_id": "BGYPdYBUwccO29wMjcOY",
       "contact_id": "rCEV6eNjuuuD5XSLykg0"
-    },
-    {
-      "name": "Jaimie Howard",
-      "channel": "Phone",
-      "message": "Thanks grace x",
-      "age": "1d ago",
-      "unread": 0,
-      "conv_id": "bDZWOey0DNiZE1Arcevq",
-      "contact_id": "NmUuOSAvpRBHbSqehTOf"
     }
   ],
   "jumpstart": {
@@ -1170,6 +1177,54 @@
   "inbody": {
     "scans": [
       {
+        "name": "Tiarna O\u2019Neill",
+        "last_scan": "2026-11-19",
+        "scan_count": 3,
+        "weight": 142.5,
+        "smm": 54.7,
+        "pbf": 30.4,
+        "bmi": 22.3,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -0.7,
+        "smm_change": 0.2,
+        "pbf_change": 0.0,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-31",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
+        "name": "jillianb162",
+        "last_scan": "2026-11-19",
+        "scan_count": 1,
+        "weight": 200.8,
+        "smm": 62.0,
+        "pbf": 44.8,
+        "bmi": 33.4,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": null,
+        "smm_change": null,
+        "pbf_change": null,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2026-12-31",
+        "days_to_due": 42,
+        "overdue": false
+      },
+      {
         "name": "Eilis Kearns",
         "last_scan": "2026-11-17",
         "scan_count": 5,
@@ -2056,30 +2111,6 @@
         "next_due": "2026-11-19",
         "days_to_due": 0,
         "overdue": false
-      },
-      {
-        "name": "Tiarna O\u2019Neill",
-        "last_scan": "2026-10-01",
-        "scan_count": 2,
-        "weight": 143.2,
-        "smm": 54.5,
-        "pbf": 30.4,
-        "bmi": 22.4,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": 2.8,
-        "smm_change": 0.5,
-        "pbf_change": 0.9,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-11-12",
-        "days_to_due": -7,
-        "overdue": true
       },
       {
         "name": "Patricia McTaggart",
@@ -4626,7 +4657,7 @@
         "overdue": true
       }
     ],
-    "total": 144,
+    "total": 145,
     "configured": true
   },
   "sop": {
@@ -5288,7 +5319,7 @@
         "built": false
       }
     ],
-    "coo_evaluation": "# **Gaps \u2014 no SOP yet**\n\n- **Member onboarding**: First 7 days + first class experience (induction, PAR-Q, studio tour, expectations-setting, first workout debrief) \u2014 zero documented standard\n- **Churn prevention**: No SOP for pause requests, cancellation conversations, win-back campaigns, or exit interviews\n- **Coaching consistency**: Weekly key coach tasks undefined; no class quality audit checklist means no mechanism to flag degrading standards before members leave\n- **Member communication cadence**: No SOP for check-ins at day 7, 30, 90 days \u2014 critical retention moments are ad-hoc\n- **Data governance**: GDPR/privacy handling undocumented; risk if member data is shared, stored, or deleted without protocol\n- **Incident & complaints**: No formal process for handling injuries, safety issues, or member disputes \u2014 exposes gym to liability\n- **Financial controls**: No SOP visible for membership pricing changes, refunds, billing disputes, or payment follow-up for missed payments\n- **Referral ops**: No mechanism to track, incentivize, or reward referrals \u2014 leaving free member acquisition on the table\n\n---\n\n# **Needs updating**\n\n- **Coaches SOPs (21/24)**: Missing 3. Weekly tasks, development roadmap, and class audit are essential to prevent silent quality drift and coach burnout\n- **Client SOPs (28/37)**: 9 gaps (see Gaps section above) \u2014 these are the highest-churn moments in a fitness business; existing SOPs likely focus on logistics, not engagement or retention psychology\n- **Marketing (6/6)**: Check if these cover *member-facing* campaigns (milestone achievements, referral comms, re-engagement for churners) or only lead generation; likely skews towards acquisition only\n- **Facilities (8/8)**: Solid,"
+    "coo_evaluation": "# SOP Audit: The Forge Belfast\n\n**Gaps \u2014 no SOP yet**\n\n- **Member Onboarding** \u2013 no documented first-touch sequence (induction, goal-setting, class format intro, payment setup). Huge retention lever at day 1\u20137.\n- **Member Checkins** \u2013 no cadence for proactive outreach (week 2, month 1, month 3). Currently reactive only.\n- **Cancellation & Churn** \u2013 no win-back playbook or exit interview process. Lost revenue sits unrecovered.\n- **Coaching Development Roadmap** \u2013 no career progression or skill-gap closure plan for coaches. Turnover risk.\n- **Class Quality Audit Checklist** \u2013 no standardised observation/feedback loop. Inconsistent member experience.\n- **Member data privacy & GDPR** \u2013 no consent/retention/deletion workflow. Compliance liability.\n- **Referral Programme** \u2013 no incentive structure, tracking, or fulfilment SOP. Free growth left on table.\n- **30 Day Goals** \u2013 no structured goal-setting or tracking at intake. Vague progress = poor retention.\n- **Member Outcomes** \u2013 no feedback loop or milestone celebration (body scan results, strength gains, etc.). Engagement/retention killer.\n\n**Needs updating**\n\n- **Weekly Key Coach Tasks** \u2013 likely missing: class prep checklist, member progress note handover, injury/limitation flagging, standby/cover protocol.\n- **Troubleshooting Guide** \u2013 missing: late arrivals, no-shows, equipment failures, coach sickness, member complaints escalation path.\n- **Marketing SOPs (6)** \u2013 likely silent on: post-class member nurture, win-back campaigns, referrer tracking/rewards, seasonal re-engagement.\n- **Facilities (8)** \u2013 missing: deep-clean schedule,"
   },
   "slack": {
     "configured": true,
@@ -5631,7 +5662,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower classes immediately.** She's the only coach delivering this class (20 sessions in October). JoJo already runs Build: Upper; consider splitting Lower between JoJo and Eilis, or converting some to Upper/Full Body if demand allows. This is the highest-risk gap.\n\n\u2022 **Move Eilis off Body Composition scans.** She logged 18 scans last month\u2014that's admin work masquerading as coaching. Train a studio coordinator or admin staff member to handle InBody stands instead. Frees Eilis for actual coaching and reduces her bloated 131-session count to meaningful delivery.\n\n\u2022 **Cap Eilis's PT load; she's carrying too much.** At 53 PT sessions, she's likely stretched thin and at risk of burnout. Gradually move new PT enquiries to JoJo (who took 22 last month) or recruit a third coach if demand is there. Eilis should focus on group classes where she can build confidence in the stronger technical environment.\n\n\u2022 **Plug Grace's Strongevity and Circuits into existing coaches' rotas.** JoJo already runs Strongevity (7 sessions); she can absorb Grace's 5 sessions. Circuits (1 session) is negligible but should rotate between JoJo and Eilis to build variety and depth.\n\n\u2022 **Agree a hard end-date for Grace's handover** (e.g., end of November 2026). Set clear milestones\u2014e.g., \"JoJo owns all Build: Lower by week 2; Eilis has two Strongevity sessions by week 4.\" Without deadlines, the transition will drift and the team won't adjust their headspace.",
+    "advice": "\u2022 **Redistribute Grace's Build: Lower classes immediately** \u2013 these are her biggest commitment (20 sessions). JoJo already leads Upper; assign Lower to Eilis to build her strength and create clear class ownership, or split between both coaches if demand allows.\n\n\u2022 **Move Grace's Strongevity sessions to JoJo** \u2013 only 5 classes and JoJo already runs this format; consolidates delivery and removes Grace from the rota cleanly.\n\n\u2022 **Cap Eilis's PT load at 35\u201340 sessions monthly** \u2013 she's at 53, which is pushing her towards burnout and limiting her class delivery. Gradually shift surplus PT to JoJo (currently 22, with capacity to absorb 10\u201315 more) over the next two months.\n\n\u2022 **Stop treating Body Composition Scans as coaching time** \u2013 these 35 combined scan sessions are skewing workload perception. Assign them on a simple rotation or link to whoever's already on the floor; free up 5\u20138 real coaching hours per coach per month.\n\n\u2022 **Plug the Momentum Call and Circuits gaps** \u2013 JoJo runs all Momentum Calls (11 sessions); Eilis can deliver Circuits and Engine classes to diversify her portfolio and reduce single-coach dependency on niche formats.\n\n\u2022 **Target Grace to zero delivery by end of November** \u2013 confirm all her October classes have a named replacement scheduled, then hold the line so she can focus on operations and business.",
     "period": "October 2026"
   },
   "asana": {
@@ -5834,6 +5865,16 @@
         "project": null,
         "due_on": "2026-11-13",
         "overdue": true,
+        "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
+      },
+      {
+        "gid": "1220696871120912",
+        "name": "Consider updating your project progress",
+        "completed": false,
+        "url": "https://app.asana.com/1/1211586132567259/task/1220696871120912",
+        "project": null,
+        "due_on": "2026-11-20",
+        "overdue": false,
         "notes": "Update your project progress to keep stakeholders and teammates on the same page\n\nThese projects need a progress update:\nhttps://app.asana.com/0/1213271936070486/progress"
       },
       {
@@ -6083,7 +6124,7 @@
     }
   },
   "teamup": {
-    "total_members": 178,
+    "total_members": 176,
     "recurring": 111,
     "recurring_members": [
       {
@@ -6101,6 +6142,10 @@
       {
         "id": 11025666,
         "name": "Ann Wales"
+      },
+      {
+        "id": 14128812,
+        "name": "Anne Forgrave"
       },
       {
         "id": 13542995,
@@ -6451,10 +6496,6 @@
         "name": "Sarah Lacey"
       },
       {
-        "id": 7190530,
-        "name": "Sarah Poulton"
-      },
-      {
         "id": 7775785,
         "name": "Sarah Sandford"
       },
@@ -6531,7 +6572,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 12,
+    "trial": 11,
     "trial_members": [
       {
         "id": 14128812,
@@ -6566,10 +6607,6 @@
         "name": "Michelle Taggart"
       },
       {
-        "id": 14241693,
-        "name": "Nicola Neill"
-      },
-      {
         "id": 14221384,
         "name": "Pat Culbertson"
       },
@@ -6582,8 +6619,8 @@
         "name": "Sarah Boyd"
       }
     ],
-    "new_this_month": 48,
-    "cancellations_this_month": 9,
+    "new_this_month": 62,
+    "cancellations_this_month": 10,
     "leaving_members": [
       {
         "id": 10803724,
@@ -6610,6 +6647,10 @@
         "name": "Lynda Wright"
       },
       {
+        "id": 13047873,
+        "name": "Megan McClure Botha"
+      },
+      {
         "id": 13553225,
         "name": "Rachel Linton"
       },
@@ -6622,7 +6663,7 @@
         "name": "Zara Drain"
       }
     ],
-    "paused": 8,
+    "paused": 9,
     "paused_members": [
       {
         "id": 12283381,
@@ -6651,6 +6692,10 @@
       {
         "id": 12323224,
         "name": "Sami-Jo Smyth"
+      },
+      {
+        "id": 7190530,
+        "name": "Sarah Poulton"
       },
       {
         "id": 9188544,
@@ -7414,9 +7459,9 @@
       }
     ],
     "cancelled_ytd": 55,
-    "churn_rate": 5.3,
-    "avg_member_price": 137.27,
-    "monthly_recurring_revenue": 15100.0,
+    "churn_rate": 6.0,
+    "avg_member_price": 137.09,
+    "monthly_recurring_revenue": 15080.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 5,
     "cancelled_members": [
@@ -7449,7 +7494,7 @@
     "breakdown": [
       {
         "name": "Empower",
-        "count": 67,
+        "count": 66,
         "members": [
           {
             "id": 10803724,
@@ -7660,10 +7705,6 @@
             "name": "Sarah Lacey"
           },
           {
-            "id": 7190530,
-            "name": "Sarah Poulton"
-          },
-          {
             "id": 7775785,
             "name": "Sarah Sandford"
           },
@@ -7723,7 +7764,7 @@
       },
       {
         "name": "Elevate",
-        "count": 44,
+        "count": 45,
         "members": [
           {
             "id": 10803724,
@@ -7736,6 +7777,10 @@
           {
             "id": 11025666,
             "name": "Ann Wales"
+          },
+          {
+            "id": 14128812,
+            "name": "Anne Forgrave"
           },
           {
             "id": 13542995,
@@ -7905,8 +7950,16 @@
       },
       {
         "name": "Unlimited Christmas Class Pack",
-        "count": 24,
+        "count": 39,
         "members": [
+          {
+            "id": 930054,
+            "name": "Annette Scott"
+          },
+          {
+            "id": 12215372,
+            "name": "Chrissie taggart"
+          },
           {
             "id": 7196665,
             "name": "Deborah Goss"
@@ -7956,8 +8009,24 @@
             "name": "Kathleen Simpson"
           },
           {
+            "id": 7392514,
+            "name": "Kellie Carson"
+          },
+          {
+            "id": 4772999,
+            "name": "Kirsty Dunn"
+          },
+          {
+            "id": 12332786,
+            "name": "Linda Davidson"
+          },
+          {
             "id": 14237342,
             "name": "Lisa Bell"
+          },
+          {
+            "id": 13390194,
+            "name": "Louise Farley"
           },
           {
             "id": 5379471,
@@ -7976,6 +8045,10 @@
             "name": "Mary Mckenna"
           },
           {
+            "id": 10811161,
+            "name": "Mary Taggart"
+          },
+          {
             "id": 10726245,
             "name": "Nichola McAuley"
           },
@@ -7992,12 +8065,44 @@
             "name": "Rebekah Newnes"
           },
           {
+            "id": 13414335,
+            "name": "Rosie Mc Fetridge"
+          },
+          {
+            "id": 12982150,
+            "name": "Sarah Calvin"
+          },
+          {
+            "id": 9187421,
+            "name": "Shannon Campbell"
+          },
+          {
             "id": 10244264,
             "name": "Sharon Kirk"
           },
           {
+            "id": 13361715,
+            "name": "Sheila Lundy"
+          },
+          {
             "id": 13014573,
             "name": "Sorcha Gilmore"
+          },
+          {
+            "id": 9033220,
+            "name": "Suzanne Reynolds"
+          },
+          {
+            "id": 12294488,
+            "name": "Sybil M Donaghy"
+          },
+          {
+            "id": 7580861,
+            "name": "Tina Taggart"
+          },
+          {
+            "id": 10623000,
+            "name": "lynne brown"
           },
           {
             "id": 9637616,
@@ -8080,60 +8185,6 @@
         ]
       },
       {
-        "name": "6 Week Jumpstart",
-        "count": 12,
-        "members": [
-          {
-            "id": 14128812,
-            "name": "Anne Forgrave"
-          },
-          {
-            "id": 14087556,
-            "name": "Deirdre Wallace"
-          },
-          {
-            "id": 14158967,
-            "name": "Jayne McKay"
-          },
-          {
-            "id": 14234793,
-            "name": "Jillian boyd"
-          },
-          {
-            "id": 14185563,
-            "name": "Julia Millar"
-          },
-          {
-            "id": 14248406,
-            "name": "Kay Blackburn"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greer"
-          },
-          {
-            "id": 14166374,
-            "name": "Michelle Taggart"
-          },
-          {
-            "id": 14241693,
-            "name": "Nicola Neill"
-          },
-          {
-            "id": 14221384,
-            "name": "Pat Culbertson"
-          },
-          {
-            "id": 14069731,
-            "name": "Paula Hodges"
-          },
-          {
-            "id": 14145369,
-            "name": "Sarah Boyd"
-          }
-        ]
-      },
-      {
         "name": "Strongevity",
         "count": 11,
         "members": [
@@ -8180,6 +8231,56 @@
           {
             "id": 13616418,
             "name": "Wendy Hunter"
+          }
+        ]
+      },
+      {
+        "name": "6 Week Jumpstart",
+        "count": 11,
+        "members": [
+          {
+            "id": 14128812,
+            "name": "Anne Forgrave"
+          },
+          {
+            "id": 14087556,
+            "name": "Deirdre Wallace"
+          },
+          {
+            "id": 14158967,
+            "name": "Jayne McKay"
+          },
+          {
+            "id": 14234793,
+            "name": "Jillian boyd"
+          },
+          {
+            "id": 14185563,
+            "name": "Julia Millar"
+          },
+          {
+            "id": 14248406,
+            "name": "Kay Blackburn"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greer"
+          },
+          {
+            "id": 14166374,
+            "name": "Michelle Taggart"
+          },
+          {
+            "id": 14221384,
+            "name": "Pat Culbertson"
+          },
+          {
+            "id": 14069731,
+            "name": "Paula Hodges"
+          },
+          {
+            "id": 14145369,
+            "name": "Sarah Boyd"
           }
         ]
       },
@@ -8453,7 +8554,7 @@
           },
           {
             "day": "Thursday",
-            "count": 395
+            "count": 413
           }
         ],
         "bottom_days": [
@@ -8463,7 +8564,7 @@
           },
           {
             "day": "Thursday",
-            "count": 395
+            "count": 413
           },
           {
             "day": "Friday",
@@ -8484,16 +8585,16 @@
             "count": 693
           },
           {
+            "name": "Build: Full Body",
+            "count": 475
+          },
+          {
             "name": "Build: Lower",
             "count": 473
           },
           {
-            "name": "Build: Full Body",
-            "count": 466
-          },
-          {
             "name": "Elevate",
-            "count": 332
+            "count": 341
           },
           {
             "name": "Strongevity",
@@ -8636,13 +8737,13 @@
             "day": "Thursday",
             "time": "10am",
             "name": "Elevate",
-            "count": 76,
-            "sessions": 12,
-            "avg": 6.3,
+            "count": 85,
+            "sessions": 13,
+            "avg": 6.5,
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3086
+        "total_attended": 3104
       },
       "last_30_days": {
         "top_days": [
@@ -8660,7 +8761,7 @@
           },
           {
             "day": "Thursday",
-            "count": 138
+            "count": 156
           },
           {
             "day": "Friday",
@@ -8678,7 +8779,7 @@
           },
           {
             "day": "Thursday",
-            "count": 138
+            "count": 156
           },
           {
             "day": "Monday",
@@ -8696,7 +8797,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 158
+            "count": 167
           },
           {
             "name": "Build: Lower",
@@ -8704,7 +8805,7 @@
           },
           {
             "name": "Elevate",
-            "count": 116
+            "count": 125
           },
           {
             "name": "Strongevity",
@@ -8782,9 +8883,9 @@
             "day": "Thursday",
             "time": "7am",
             "name": "Build: Full Body",
-            "count": 41,
-            "sessions": 4,
-            "avg": 10.2,
+            "count": 50,
+            "sessions": 5,
+            "avg": 10.0,
             "label": "Thursday 7am Build: Full Body"
           },
           {
@@ -8827,15 +8928,6 @@
           },
           {
             "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 26,
-            "sessions": 4,
-            "avg": 6.5,
-            "label": "Thursday 10am Elevate"
-          },
-          {
-            "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
             "count": 14,
@@ -8851,9 +8943,18 @@
             "sessions": 4,
             "avg": 7.0,
             "label": "Saturday 9am Elevate"
+          },
+          {
+            "day": "Thursday",
+            "time": "10am",
+            "name": "Elevate",
+            "count": 35,
+            "sessions": 5,
+            "avg": 7.0,
+            "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1076
+        "total_attended": 1094
       },
       "suggestion": "**1. Add a 30-min \"Engine Prep\" workshop on Thursday or Friday mornings (9:30am slot)** \u2014 Engine is severely underattended (33 in last 30 days). Run a one-off, free taster session to demystify the format and build confidence; promote it as \"perfect if you've never tried interval work.\" This primes people to book the actual Engine class.\n\n**2. Create a paid \"Build Masterclass\" drop-in block on Wednesday 1\u20132pm** \u2014 Your quietest hour on your second-busiest day. Invite Build class regulars (you have 426 attendees across the three variants) to refine their form, ask questions, or try new variations. Charge \u00a38\u201312 per session. This fills dead studio time while reinforcing your most popular classes.\n\n**3. Reposition Barbelle to Thursday 6:30pm with a \"Beginner-Friendly Barbell\" rebrand and email invite to all Tuesday/Wednesday attendees** \u2014 Barbelle has 14 attendees in 30 days; Thursday is quiet (395 vs 798 Tuesday). Reframe it as an entry point to barbell lifting for people nervous about heavy lifts, then invite your Build class members who may not realize it exists.",
       "capacity": [
@@ -8909,16 +9010,16 @@
           "name": "Engine",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 7.6,
-          "fill_rate": 63,
+          "avg_attending": 7.7,
+          "fill_rate": 64,
           "status": "attention"
         },
         {
           "name": "Barbelle",
           "sessions": 13,
           "cap": 9,
-          "avg_attending": 5.6,
-          "fill_rate": 62,
+          "avg_attending": 5.5,
+          "fill_rate": 61,
           "status": "attention"
         },
         {
@@ -8934,7 +9035,7 @@
           "sessions": 52,
           "cap": 12,
           "avg_attending": 7.0,
-          "fill_rate": 59,
+          "fill_rate": 58,
           "status": "attention"
         },
         {
@@ -9175,18 +9276,18 @@
       },
       {
         "month": "2026-11",
-        "active": 176,
+        "active": 175,
         "churn": 5.0,
         "by_type": {
           "Empower": 72,
           "8 PT Sessions": 4,
           "4 PT Sessions": 10,
           "Evolve": 4,
-          "Elevate": 43,
+          "Elevate": 44,
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 10,
-          "6 Week Jumpstart": 12,
+          "6 Week Jumpstart": 11,
           "Strongevity Membership": 17,
           "4 Class Pass": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -9361,27 +9462,22 @@
         "last_seen": "2026-09-21"
       },
       {
-        "id": 7190530,
-        "name": "Sarah Poulton",
-        "membership": "Empower",
-        "days_absent": 14,
-        "last_seen": "2026-11-05"
-      },
-      {
         "id": 7775785,
         "name": "Sarah Sandford",
         "membership": "Empower",
         "days_absent": 19,
         "last_seen": "2026-10-31"
+      },
+      {
+        "id": 12082042,
+        "name": "Sharon Smyth",
+        "membership": "Elevate",
+        "days_absent": 33,
+        "last_seen": "2026-10-17"
       }
     ],
     "celebrations": {
       "first_week": [
-        {
-          "name": "Nicola Neill",
-          "days_in": 5,
-          "start_date": "2026-11-14"
-        },
         {
           "name": "Kay Blackburn",
           "days_in": 5,
@@ -9394,6 +9490,11 @@
         }
       ],
       "new_members": [
+        {
+          "name": "Anne Forgrave",
+          "days_in": 0,
+          "start_date": "2026-11-19"
+        },
         {
           "name": "Patricia McAuley",
           "days_in": 13,
@@ -9582,7 +9683,13 @@
           "status": "not_registered"
         }
       ],
-      "upcoming": []
+      "upcoming": [
+        {
+          "name": "Anne Forgrave",
+          "date": "2026-12-02",
+          "status": "registered"
+        }
+      ]
     },
     "lead_bookings": [
       {
@@ -9663,6 +9770,15 @@
         "join_date": "2025-06-27",
         "membership": "Elevate",
         "class_count": 134,
+        "last_momentum": null
+      },
+      {
+        "id": 14128812,
+        "name": "Anne Forgrave",
+        "email": "a.forgrave@outlook.com",
+        "join_date": "2026-10-28",
+        "membership": "Elevate",
+        "class_count": 7,
         "last_momentum": null
       },
       {
@@ -10791,15 +10907,6 @@
         "last_momentum": null
       },
       {
-        "id": 7190530,
-        "name": "Sarah Poulton",
-        "email": "sarahlouiseboorman@yahoo.co.uk",
-        "join_date": "2024-06-26",
-        "membership": "Empower",
-        "class_count": 317,
-        "last_momentum": null
-      },
-      {
         "id": 7775785,
         "name": "Sarah Sandford",
         "email": "sarahesandford@gmail.com",
@@ -11121,8 +11228,8 @@
       },
       {
         "month": "2026-11",
-        "collected": 10111.0,
-        "payments": 70
+        "collected": 12580.0,
+        "payments": 88
       }
     ],
     "failed": [
@@ -11239,119 +11346,119 @@
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "x",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "EXTERNAL: Refine our funnel landing pages to make it very clear what we offer, look at common questions",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Implement internal member feedback system (simple monthly form or post-class check-in)\n",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Write SOP's for membership members, personal training members, fuel forward, well75, strongevity. Every service should have a clear SOP.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Establish a consistent social media content calendar with 3\u20134 posts/week planned in advance",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Schedule regular videography sessions every 8 weeks with Jordan",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Revisit systemize automations for 6 week trial enquiries",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Finalise and document weekly action checklist for each role (JoJo, Eilis, Sarah) with KPIs they own",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Run team vision session \u2014 share the SSO, 90-day plan, and each person's lane clearly",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Audit workload distribution \u2014 identify who is over-stretched and rebalance over first 30 days",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Decrease costs by 10%",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Update Monthly finance KPI's",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Start Financial Forecasting",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Map profitability of each service (classes vs PT vs add-ons) \u2014 build a simple per-service P&L",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Audit all active systemize automations \u2014 remove duplicates, confirm enquiry-to-trial flow works end to end.",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Pick 3 repetitive tasks and build an AI automation",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       },
       {
         "Action": "Start Cyber security for forge website",
         "Owner": "Grace",
         "Deadline": "July 31st",
         "Done": "",
-        "advice": "# Service Menu Execution for The Forge\n\n**Get it done THIS week \u2014 here's how:**\n\n\u2022 **Start with your coaches, not members.** Run a 30-min huddle with your coaching team. Ask each coach: \"What do YOU actually sell?\" (not what you think they sell). Write down every variation \u2014 this reveals gaps and inconsistencies eating into your revenue. Use their real language, not corporate speak.\n\n\u2022 **Audit your current pricing by outcome, not by time.** Don't just list \"Personal Training \u2014 \u00a3X/session.\" Instead, bucket offerings by what members actually want: *\"Get fit for a holiday (8 weeks)\"*, *\"Build strength post-injury\"*, *\"Prep for a race.\"* Price the outcome, not the hour. This sells better AND justifies premium rates.\n\n\u2022 **Create TWO menus: one for display, one for coaches to sell from.** The member-facing menu is clean and simple (3\u20134 clear tiers). The coach menu is detailed \u2014 includes upsells, package options, what to recommend after someone buys Plan A. Coaches need permission and language to cross-sell.\n\n\u2022 **Lock down what's INCLUDED in each tier right now.** Members get confused when perks vary. Decide: Does the \u00a3X membership include class access? Locker? Showers? Progress tracking? Be ruthless \u2014 if coaches have to explain it, it's not clear enough.\n\n\u2022 **Test it with 5 members this week.** Show them the draft menu. Do they understand what they're buying? Can they explain it back to you? If not, rewrite it before launch.\n\nWhat's your current pricing structure \u2014 are you charging by class access, membership tiers,"
+        "advice": "# Service Menu Execution for The Forge\n\n**1. Start with your revenue reality, not ideals**\n- Audit what you're *actually* selling right now (classes, PT, memberships, add-ons). List every variation members pay for or coaches currently offer off-menu. This reveals gaps and accidental pricing.\n- Price the menu based on your current conversion rates\u2014don't invent new tiers. If nobody's buying premium packages, you've got a positioning problem, not a menu problem.\n\n**2. Build two separate documents with one source of truth**\n- Create ONE master spreadsheet (private) with everything: service, cost to you, price, margin, who delivers it, capacity limits.\n- Derivative docs: coach version (what they can sell + commission structure) and member version (benefits-focused language, no internal costs).\n- Use this spreadsheet as your living system\u2014update weekly for 4 weeks so pricing and offerings actually stick.\n\n**3. Test pricing with your best customers first**\n- Before publishing, run new offerings past 3-5 loyal members. Show them the menu, ask \"would you buy this?\" Not hypothetically\u2014get them to commit or decline.\n- Use their friction points to rewrite descriptions and adjust tiers immediately.\n\n**4. Make the coach menu a sales tool, not bureaucracy**\n- Include exactly what commission they get per service. Remove ambiguity\u2014coaches will sell harder if they know the number.\n- Add a one-page \"upsell ladder\" showing what members typically buy after their first service (creates natural conversation flow).\n\n**What's the biggest gap in your current offerings\u2014something members ask for that you're not capturing?**"
       }
     ]
   },
