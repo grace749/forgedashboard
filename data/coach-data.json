@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:00:58.596546+00:00",
+  "generated_at": "2026-11-20T15:01:06.339799+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -154,7 +154,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false,
           false
         ],
@@ -166,8 +166,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 3,
+        "missing_checkins": 1,
+        "completed_checkins": 4,
         "expected_checkins": 5,
         "paused": false,
         "pink_red": false,
@@ -204,38 +204,6 @@
         "paused": false,
         "pink_red": false,
         "pause_reason": "I find caring for my father stressful at times. If life is busy I get stressed. I\u2019m not prone to anxiety"
-      },
-      {
-        "name": "jayne mckay",
-        "cohort": "October",
-        "joined": "2026-10-28",
-        "end": "2026-12-09",
-        "goal": "Weight loss, get fit and boost self-esteem",
-        "notes": "carer for father",
-        "nutrition_sent": false,
-        "inbody_done": false,
-        "check_ins": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ],
-        "week_on": 4,
-        "days_left": 19,
-        "is_active": true,
-        "is_converted": false,
-        "not_converted": false,
-        "conv_chat_done": false,
-        "welcome_pack": false,
-        "follow_up": "",
-        "missing_checkins": 4,
-        "completed_checkins": 0,
-        "expected_checkins": 4,
-        "paused": false,
-        "pink_red": false,
-        "pause_reason": "carer for father"
       },
       {
         "name": "michelle taggart",
@@ -281,7 +249,7 @@
         "check_ins": [
           true,
           true,
-          false,
+          true,
           false,
           false,
           false
@@ -294,8 +262,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 2,
+        "missing_checkins": 0,
+        "completed_checkins": 3,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -312,7 +280,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -326,8 +294,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 2,
-        "completed_checkins": 1,
+        "missing_checkins": 1,
+        "completed_checkins": 2,
         "expected_checkins": 3,
         "paused": false,
         "pink_red": false,
@@ -344,7 +312,7 @@
         "inbody_done": true,
         "check_ins": [
           true,
-          false,
+          true,
           false,
           false,
           false,
@@ -358,8 +326,8 @@
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
-        "missing_checkins": 1,
-        "completed_checkins": 1,
+        "missing_checkins": 0,
+        "completed_checkins": 2,
         "expected_checkins": 2,
         "paused": false,
         "pink_red": false,
@@ -850,6 +818,38 @@
         "pause_reason": "Right foot surgery fibromyalgia,underlying health issues, no appetite ,5st weight loss not consuming enough calories per day due to no appetite, loss control of bowels ,"
       },
       {
+        "name": "jayne mckay",
+        "cohort": "October",
+        "joined": "2026-10-28",
+        "end": "2026-12-09",
+        "goal": "Weight loss, get fit and boost self-esteem",
+        "notes": "carer for father",
+        "nutrition_sent": false,
+        "inbody_done": false,
+        "check_ins": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "week_on": 4,
+        "days_left": 19,
+        "is_active": true,
+        "is_converted": false,
+        "not_converted": false,
+        "conv_chat_done": false,
+        "welcome_pack": false,
+        "follow_up": "",
+        "missing_checkins": 4,
+        "completed_checkins": 0,
+        "expected_checkins": 4,
+        "paused": true,
+        "pink_red": false,
+        "pause_reason": "carer for father"
+      },
+      {
         "name": "sarah boyd",
         "cohort": "October",
         "joined": "2026-10-21",
@@ -911,7 +911,7 @@
       {
         "member": "sinead wilson",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 5)"
+        "detail": "Missing 1 check-in(s) (on week 5)"
       },
       {
         "member": "sinead wilson",
@@ -922,16 +922,6 @@
         "member": "sinead wilson",
         "type": "conversion",
         "detail": "14d left \u2014 conversion chat not scheduled!"
-      },
-      {
-        "member": "jayne mckay",
-        "type": "missing_checkin",
-        "detail": "Missing 4 check-in(s) (on week 4)"
-      },
-      {
-        "member": "jayne mckay",
-        "type": "nutrition",
-        "detail": "Nutrition guide not sent yet"
       },
       {
         "member": "michelle taggart",
@@ -945,23 +935,13 @@
       },
       {
         "member": "julia millar",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 3)"
-      },
-      {
-        "member": "julia millar",
         "type": "nutrition",
         "detail": "Nutrition guide not sent yet"
       },
       {
         "member": "deirdre Bones",
         "type": "missing_checkin",
-        "detail": "Missing 2 check-in(s) (on week 3)"
-      },
-      {
-        "member": "Lisa bell",
-        "type": "missing_checkin",
-        "detail": "Missing 1 check-in(s) (on week 2)"
+        "detail": "Missing 1 check-in(s) (on week 3)"
       },
       {
         "member": "Nicola Neill",
@@ -990,8 +970,8 @@
       }
     ],
     "stats": {
-      "active_count": 11,
-      "paused_count": 6,
+      "active_count": 10,
+      "paused_count": 7,
       "conv_rate": 33,
       "converted": 3,
       "not_converted": 1,
@@ -4821,7 +4801,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower classes immediately** \u2013 these are her biggest commitment (20 sessions). JoJo already leads Upper; assign Lower to Eilis to build her strength and create clear class ownership, or split between both coaches if demand allows.\n\n\u2022 **Move Grace's Strongevity sessions to JoJo** \u2013 only 5 classes and JoJo already runs this format; consolidates delivery and removes Grace from the rota cleanly.\n\n\u2022 **Cap Eilis's PT load at 35\u201340 sessions monthly** \u2013 she's at 53, which is pushing her towards burnout and limiting her class delivery. Gradually shift surplus PT to JoJo (currently 22, with capacity to absorb 10\u201315 more) over the next two months.\n\n\u2022 **Stop treating Body Composition Scans as coaching time** \u2013 these 35 combined scan sessions are skewing workload perception. Assign them on a simple rotation or link to whoever's already on the floor; free up 5\u20138 real coaching hours per coach per month.\n\n\u2022 **Plug the Momentum Call and Circuits gaps** \u2013 JoJo runs all Momentum Calls (11 sessions); Eilis can deliver Circuits and Engine classes to diversify her portfolio and reduce single-coach dependency on niche formats.\n\n\u2022 **Target Grace to zero delivery by end of November** \u2013 confirm all her October classes have a named replacement scheduled, then hold the line so she can focus on operations and business.",
+    "advice": "\u2022 **Move Grace's Build: Lower (20 sessions) to JoJo** \u2013 this is Grace's largest commitment and JoJo already runs Build: Upper; splitting lower/upper between them spreads strength coaching evenly and reduces reliance on any single coach.\n\n\u2022 **Shift Grace's Strongevity (5 sessions) and Engine (1) to Eilis** \u2013 Eilis has capacity and these lower-intensity classes suit her development; JoJo keeps Momentum Call to stay on Tuesdays as required.\n\n\u2022 **Reassign Grace's one-off Circuits class to either coach on rotation** \u2013 too small to anchor to one person; use it as flexible coverage for absence or member requests.\n\n\u2022 **Remove Body Composition scans from PT scheduling** \u2013 brief any available coach to run InBody scans as admin-level tasks (not counted as delivery load); this frees ~8 hours of perceived PT time across the team.\n\n\u2022 **Review Eilis's PT load (53 sessions)** \u2013 she is carrying nearly 2.4\u00d7 JoJo's PT volume; either cap new PT requests to Eilis, offer some existing clients to JoJo, or confirm this is intentional (e.g. she prefers 1:1 work).\n\n\u2022 **Confirm Tuesday coverage is secure** \u2013 JoJo holds all technically demanding sessions; ensure at least one backup coach shadows Tuesdays so the rota doesn't collapse if JoJo is unavailable.",
     "period": "October 2026"
   },
   "asana": {
@@ -5283,7 +5263,7 @@
     }
   },
   "teamup": {
-    "total_members": 175,
+    "total_members": 176,
     "recurring": 111,
     "recurring_members": [
       {
@@ -5774,7 +5754,7 @@
         "name": "Sarah Boyd"
       }
     ],
-    "new_this_month": 66,
+    "new_this_month": 69,
     "cancellations_this_month": 10,
     "leaving_members": [
       {
@@ -6918,6 +6898,196 @@
         ]
       },
       {
+        "name": "Unlimited Christmas Class Pack",
+        "count": 46,
+        "members": [
+          {
+            "id": 930054,
+            "name": "Annette Scott"
+          },
+          {
+            "id": 13608450,
+            "name": "Caroline Stinson"
+          },
+          {
+            "id": 12215372,
+            "name": "Chrissie taggart"
+          },
+          {
+            "id": 7196665,
+            "name": "Deborah Goss"
+          },
+          {
+            "id": 14231263,
+            "name": "Deirdre Bones"
+          },
+          {
+            "id": 12948327,
+            "name": "Eleanor Anderson"
+          },
+          {
+            "id": 13588511,
+            "name": "Elizabeth Greenaway"
+          },
+          {
+            "id": 9524282,
+            "name": "Heather Meenagh"
+          },
+          {
+            "id": 2031286,
+            "name": "Heather Mitchell"
+          },
+          {
+            "id": 1793399,
+            "name": "Helen Traynor"
+          },
+          {
+            "id": 7399387,
+            "name": "Hilary-Anne Christie"
+          },
+          {
+            "id": 10052257,
+            "name": "Hilda Clements"
+          },
+          {
+            "id": 13489620,
+            "name": "Jacqueline Crawford"
+          },
+          {
+            "id": 13588363,
+            "name": "Jennifer Reid"
+          },
+          {
+            "id": 12338245,
+            "name": "Karen Hanna"
+          },
+          {
+            "id": 8762722,
+            "name": "Karen Rhodes"
+          },
+          {
+            "id": 12822795,
+            "name": "Kathleen Simpson"
+          },
+          {
+            "id": 7392514,
+            "name": "Kellie Carson"
+          },
+          {
+            "id": 4772999,
+            "name": "Kirsty Dunn"
+          },
+          {
+            "id": 12332786,
+            "name": "Linda Davidson"
+          },
+          {
+            "id": 14237342,
+            "name": "Lisa Bell"
+          },
+          {
+            "id": 7194891,
+            "name": "Lorna McMullan"
+          },
+          {
+            "id": 13390194,
+            "name": "Louise Farley"
+          },
+          {
+            "id": 5379471,
+            "name": "Lyndsay Sinclair"
+          },
+          {
+            "id": 12994868,
+            "name": "Margaret Reynolds"
+          },
+          {
+            "id": 9198838,
+            "name": "Marlene Hayes"
+          },
+          {
+            "id": 10531246,
+            "name": "Mary Mckenna"
+          },
+          {
+            "id": 10811161,
+            "name": "Mary Taggart"
+          },
+          {
+            "id": 10726245,
+            "name": "Nichola McAuley"
+          },
+          {
+            "id": 4546410,
+            "name": "Noleen MCKILLOP"
+          },
+          {
+            "id": 12605274,
+            "name": "Noleen McMullan"
+          },
+          {
+            "id": 13149989,
+            "name": "Paula Bamford"
+          },
+          {
+            "id": 11621729,
+            "name": "Rebekah Newnes"
+          },
+          {
+            "id": 13414335,
+            "name": "Rosie Mc Fetridge"
+          },
+          {
+            "id": 12982150,
+            "name": "Sarah Calvin"
+          },
+          {
+            "id": 12228505,
+            "name": "Sarah jayne Simpson"
+          },
+          {
+            "id": 9187421,
+            "name": "Shannon Campbell"
+          },
+          {
+            "id": 10244264,
+            "name": "Sharon Kirk"
+          },
+          {
+            "id": 13361715,
+            "name": "Sheila Lundy"
+          },
+          {
+            "id": 13014573,
+            "name": "Sorcha Gilmore"
+          },
+          {
+            "id": 9033220,
+            "name": "Suzanne Reynolds"
+          },
+          {
+            "id": 12294488,
+            "name": "Sybil M Donaghy"
+          },
+          {
+            "id": 11544150,
+            "name": "Teresa Dougan"
+          },
+          {
+            "id": 7580861,
+            "name": "Tina Taggart"
+          },
+          {
+            "id": 10623000,
+            "name": "lynne brown"
+          },
+          {
+            "id": 9637616,
+            "name": "susan Henry"
+          }
+        ]
+      },
+      {
         "name": "Elevate",
         "count": 45,
         "members": [
@@ -7100,184 +7270,6 @@
           {
             "id": 12218719,
             "name": "sandra mccrea"
-          }
-        ]
-      },
-      {
-        "name": "Unlimited Christmas Class Pack",
-        "count": 43,
-        "members": [
-          {
-            "id": 930054,
-            "name": "Annette Scott"
-          },
-          {
-            "id": 13608450,
-            "name": "Caroline Stinson"
-          },
-          {
-            "id": 12215372,
-            "name": "Chrissie taggart"
-          },
-          {
-            "id": 7196665,
-            "name": "Deborah Goss"
-          },
-          {
-            "id": 14231263,
-            "name": "Deirdre Bones"
-          },
-          {
-            "id": 12948327,
-            "name": "Eleanor Anderson"
-          },
-          {
-            "id": 9524282,
-            "name": "Heather Meenagh"
-          },
-          {
-            "id": 2031286,
-            "name": "Heather Mitchell"
-          },
-          {
-            "id": 1793399,
-            "name": "Helen Traynor"
-          },
-          {
-            "id": 7399387,
-            "name": "Hilary-Anne Christie"
-          },
-          {
-            "id": 10052257,
-            "name": "Hilda Clements"
-          },
-          {
-            "id": 13489620,
-            "name": "Jacqueline Crawford"
-          },
-          {
-            "id": 13588363,
-            "name": "Jennifer Reid"
-          },
-          {
-            "id": 12338245,
-            "name": "Karen Hanna"
-          },
-          {
-            "id": 8762722,
-            "name": "Karen Rhodes"
-          },
-          {
-            "id": 12822795,
-            "name": "Kathleen Simpson"
-          },
-          {
-            "id": 7392514,
-            "name": "Kellie Carson"
-          },
-          {
-            "id": 4772999,
-            "name": "Kirsty Dunn"
-          },
-          {
-            "id": 12332786,
-            "name": "Linda Davidson"
-          },
-          {
-            "id": 14237342,
-            "name": "Lisa Bell"
-          },
-          {
-            "id": 7194891,
-            "name": "Lorna McMullan"
-          },
-          {
-            "id": 13390194,
-            "name": "Louise Farley"
-          },
-          {
-            "id": 5379471,
-            "name": "Lyndsay Sinclair"
-          },
-          {
-            "id": 12994868,
-            "name": "Margaret Reynolds"
-          },
-          {
-            "id": 9198838,
-            "name": "Marlene Hayes"
-          },
-          {
-            "id": 10531246,
-            "name": "Mary Mckenna"
-          },
-          {
-            "id": 10811161,
-            "name": "Mary Taggart"
-          },
-          {
-            "id": 10726245,
-            "name": "Nichola McAuley"
-          },
-          {
-            "id": 4546410,
-            "name": "Noleen MCKILLOP"
-          },
-          {
-            "id": 12605274,
-            "name": "Noleen McMullan"
-          },
-          {
-            "id": 13149989,
-            "name": "Paula Bamford"
-          },
-          {
-            "id": 11621729,
-            "name": "Rebekah Newnes"
-          },
-          {
-            "id": 13414335,
-            "name": "Rosie Mc Fetridge"
-          },
-          {
-            "id": 12982150,
-            "name": "Sarah Calvin"
-          },
-          {
-            "id": 9187421,
-            "name": "Shannon Campbell"
-          },
-          {
-            "id": 10244264,
-            "name": "Sharon Kirk"
-          },
-          {
-            "id": 13361715,
-            "name": "Sheila Lundy"
-          },
-          {
-            "id": 13014573,
-            "name": "Sorcha Gilmore"
-          },
-          {
-            "id": 9033220,
-            "name": "Suzanne Reynolds"
-          },
-          {
-            "id": 12294488,
-            "name": "Sybil M Donaghy"
-          },
-          {
-            "id": 7580861,
-            "name": "Tina Taggart"
-          },
-          {
-            "id": 10623000,
-            "name": "lynne brown"
-          },
-          {
-            "id": 9637616,
-            "name": "susan Henry"
           }
         ]
       },
@@ -7721,7 +7713,7 @@
           },
           {
             "day": "Friday",
-            "count": 413
+            "count": 425
           }
         ],
         "bottom_days": [
@@ -7731,7 +7723,7 @@
           },
           {
             "day": "Friday",
-            "count": 413
+            "count": 425
           },
           {
             "day": "Thursday",
@@ -7768,8 +7760,8 @@
             "count": 316
           },
           {
-            "name": "Circuits",
-            "count": 211
+            "name": "Mobility",
+            "count": 212
           }
         ],
         "bottom_classes": [
@@ -7787,15 +7779,15 @@
           },
           {
             "name": "Plate",
-            "count": 176
-          },
-          {
-            "name": "Mobility",
-            "count": 206
+            "count": 182
           },
           {
             "name": "Circuits",
             "count": 211
+          },
+          {
+            "name": "Mobility",
+            "count": 212
           }
         ],
         "top_slots": [
@@ -7910,7 +7902,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3085
+        "total_attended": 3097
       },
       "last_30_days": {
         "top_days": [
@@ -7932,7 +7924,7 @@
           },
           {
             "day": "Friday",
-            "count": 133
+            "count": 145
           }
         ],
         "bottom_days": [
@@ -7942,7 +7934,7 @@
           },
           {
             "day": "Friday",
-            "count": 133
+            "count": 145
           },
           {
             "day": "Thursday",
@@ -7979,8 +7971,8 @@
             "count": 92
           },
           {
-            "name": "Circuits",
-            "count": 69
+            "name": "Mobility",
+            "count": 73
           }
         ],
         "bottom_classes": [
@@ -7997,16 +7989,16 @@
             "count": 40
           },
           {
+            "name": "Circuits",
+            "count": 69
+          },
+          {
             "name": "Plate",
-            "count": 65
+            "count": 71
           },
           {
             "name": "Mobility",
-            "count": 67
-          },
-          {
-            "name": "Circuits",
-            "count": 69
+            "count": 73
           }
         ],
         "top_slots": [
@@ -8121,7 +8113,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1047
+        "total_attended": 1059
       },
       "suggestion": "**For quiet studio gaps (between PT and classes):**\n\n1. **Add a Friday lunchtime \"Quick Strength\" open-gym slot (30-45 mins, 12-1pm or 1-2pm).** Friday is your quietest day\u2014a staff-supervised open slot with barbells and dumbbells costs little to run and captures members who can't commit to full class schedules. Promote it to your \"Build\" class loyalists as a flexible alternative.\n\n2. **Run a Saturday morning \"Mobility + Strength\" workshop (45 mins, 9am).** Saturday is dead but members are free\u2014pair mobility instruction (your weakest standalone class) with one barbell movement. Charge \u00a38-12 per person or include in membership. Market to your 40+ Strongevity members who value injury prevention.\n\n**To lift the quieter classes themselves:**\n\n3. **Rebrand and time-shift \"Barbelle\" and \"Capacity\" as \"Strength Skills\" weekday early mornings (6:30am, before work).** These niche classes are tanking because timing or naming doesn't resonate. Test a 4-week block at 6:30am Thursdays and Fridays with a tagline like \"Build foundational strength in 45 mins\"\u2014target your loyal Build class members via direct message offering a",
       "capacity": [
@@ -8146,7 +8138,7 @@
           "sessions": 27,
           "cap": 13,
           "avg_attending": 9.7,
-          "fill_rate": 81,
+          "fill_rate": 80,
           "status": "healthy"
         },
         {
@@ -10189,6 +10181,15 @@
         "join_date": "2025-10-13",
         "membership": "Empower",
         "class_count": 126,
+        "last_momentum": null
+      },
+      {
+        "id": 11544150,
+        "name": "Teresa Dougan",
+        "email": "teresa.dougan@yahoo.co.uk",
+        "join_date": "2026-12-01",
+        "membership": "Unlimited Christmas Class Pack",
+        "class_count": 1,
         "last_momentum": null
       },
       {
@@ -14591,6 +14592,12 @@
     "date": "2026-11-20",
     "urgent": [
       {
+        "from": "Grace Smith",
+        "subject": "Your Forge tasks \u2014 Fri 20 Nov",
+        "snippet": "JoJo, nothing new due today \u2014 just 1 overdue to catch up on. Overdue Finish event calendar \u2014 Admin &amp; Finance \u00b7 1 day late Today Nothing due. Tomorrow Nothing due. Open the planner: https://claude.",
+        "id": "1a1f7c0335eec5ce"
+      },
+      {
         "from": "churchesfirstaid",
         "subject": "Aw: first aid training",
         "snippet": "Hi Joanne Many thanks for your email. Unfortunately all my Saturdays in January are already booked, apart from 2nd, which may or may not be suitable! All Saturdays in February are free at present. Als",
@@ -14629,6 +14636,6 @@
         "id": "1a1f089c334fa1c0"
       }
     ],
-    "urgent_count": 5
+    "urgent_count": 6
   }
 }
