@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:01:00.092846+00:00",
+  "generated_at": "2026-11-21T14:33:03.599878+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4737,7 +4737,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower (20 sessions) to JoJo** \u2013 this is Grace's largest commitment and JoJo already runs Build: Upper; splitting lower/upper between them spreads strength coaching evenly and reduces reliance on any single coach.\n\n\u2022 **Shift Grace's Strongevity (5 sessions) and Engine (1) to Eilis** \u2013 Eilis has capacity and these lower-intensity classes suit her development; JoJo keeps Momentum Call to stay on Tuesdays as required.\n\n\u2022 **Reassign Grace's one-off Circuits class to either coach on rotation** \u2013 too small to anchor to one person; use it as flexible coverage for absence or member requests.\n\n\u2022 **Remove Body Composition scans from PT scheduling** \u2013 brief any available coach to run InBody scans as admin-level tasks (not counted as delivery load); this frees ~8 hours of perceived PT time across the team.\n\n\u2022 **Review Eilis's PT load (53 sessions)** \u2013 she is carrying nearly 2.4\u00d7 JoJo's PT volume; either cap new PT requests to Eilis, offer some existing clients to JoJo, or confirm this is intentional (e.g. she prefers 1:1 work).\n\n\u2022 **Confirm Tuesday coverage is secure** \u2013 JoJo holds all technically demanding sessions; ensure at least one backup coach shadows Tuesdays so the rota doesn't collapse if JoJo is unavailable.",
+    "advice": "\u2022 **Redistribute Grace's Build: Lower (20 sessions)** \u2014 this is her biggest load. Split between JoJo (12 sessions, her existing Upper strength focus) and Eilis (8 sessions, to build her lower-body confidence). This removes Grace's main class commitment.\n\n\u2022 **Move Grace's Strongevity (5 sessions) to JoJo** \u2014 aligns with JoJo's existing Strongevity delivery and consolidates specialised programming with the head coach. Removes Grace entirely from class rotation.\n\n\u2022 **Reallocate Grace's PT book (zero sessions now)** \u2014 she currently has none, but if any existing clients request her, transition them to Eilis (who has capacity) or JoJo (selective slots). This keeps Grace fully stepped back.\n\n\u2022 **Cap Eilis's PT at 40\u201345 sessions monthly** \u2014 she ran 53 in October, which is high. Redirect new PT enquiries to JoJo or suggest group-based options (Elevate, Build classes) to manage 1:1 demand without overloading one coach.\n\n\u2022 **Protect JoJo's Tuesday commitment but add Eilis to Mon/Wed/Fri PT availability** \u2014 JoJo is reliable on the technically demanding day; use Eilis to cover other days' personal training so workload is shared and no single coach becomes a bottleneck.\n\n\u2022 **Ignore Body Composition Scans in timetable balancing** \u2014 Eilis logged 18 and JoJo 14 last month; these are admin tasks, not coaching. Rotate them across all coaches or admin staff to free up coaching availability.",
     "period": "October 2026"
   },
   "asana": {
@@ -5690,7 +5690,7 @@
         "name": "Sarah Boyd"
       }
     ],
-    "new_this_month": 71,
+    "new_this_month": 72,
     "cancellations_this_month": 10,
     "leaving_members": [
       {
@@ -6835,7 +6835,7 @@
       },
       {
         "name": "Unlimited Christmas Class Pack",
-        "count": 48,
+        "count": 49,
         "members": [
           {
             "id": 930054,
@@ -6844,6 +6844,10 @@
           {
             "id": 13608450,
             "name": "Caroline Stinson"
+          },
+          {
+            "id": 9459737,
+            "name": "Cherith Cubitt"
           },
           {
             "id": 12215372,
@@ -7663,7 +7667,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 256
+            "count": 272
           },
           {
             "day": "Thursday",
@@ -7697,7 +7701,7 @@
           },
           {
             "name": "Elevate",
-            "count": 341
+            "count": 357
           },
           {
             "name": "Strongevity",
@@ -7804,9 +7808,9 @@
             "day": "Saturday",
             "time": "9am",
             "name": "Elevate",
-            "count": 65,
-            "sessions": 11,
-            "avg": 5.9,
+            "count": 67,
+            "sessions": 12,
+            "avg": 5.6,
             "label": "Saturday 9am Elevate"
           },
           {
@@ -7846,7 +7850,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3116
+        "total_attended": 3132
       },
       "last_30_days": {
         "top_days": [
@@ -7874,7 +7878,7 @@
         "bottom_days": [
           {
             "day": "Saturday",
-            "count": 90
+            "count": 106
           },
           {
             "day": "Friday",
@@ -7908,7 +7912,7 @@
           },
           {
             "name": "Elevate",
-            "count": 125
+            "count": 141
           },
           {
             "name": "Strongevity",
@@ -8021,6 +8025,15 @@
             "label": "Wednesday 7pm Plate"
           },
           {
+            "day": "Saturday",
+            "time": "9am",
+            "name": "Elevate",
+            "count": 30,
+            "sessions": 5,
+            "avg": 6.0,
+            "label": "Saturday 9am Elevate"
+          },
+          {
             "day": "Wednesday",
             "time": "11am",
             "name": "Strongevity",
@@ -8030,6 +8043,15 @@
             "label": "Wednesday 11am Strongevity"
           },
           {
+            "day": "Saturday",
+            "time": "8am",
+            "name": "Elevate",
+            "count": 35,
+            "sessions": 5,
+            "avg": 7.0,
+            "label": "Saturday 8am Elevate"
+          },
+          {
             "day": "Thursday",
             "time": "8pm",
             "name": "Barbelle",
@@ -8037,27 +8059,9 @@
             "sessions": 2,
             "avg": 7.0,
             "label": "Thursday 8pm Barbelle"
-          },
-          {
-            "day": "Saturday",
-            "time": "9am",
-            "name": "Elevate",
-            "count": 28,
-            "sessions": 4,
-            "avg": 7.0,
-            "label": "Saturday 9am Elevate"
-          },
-          {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 35,
-            "sessions": 5,
-            "avg": 7.0,
-            "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 1027
+        "total_attended": 1043
       },
       "suggestion": "**For quiet studio time (Thurs/Fri/Sat gaps):**\n\n1. **Open-gym blocks with optional PT add-ons** \u2014 slot 30-45 min open-access periods on Thursday and Friday afternoons, then offer 1-1 or small-group PT bookings within those windows at a premium rate; captures members already in the building.\n\n2. **Saturday workshops tied to underperforming classes** \u2014 run 20-min technique clinics (e.g. \"Barbell Basics,\" \"Engine Efficiency,\" \"Plate Loading Masterclass\") on Saturday mornings before or after quiet slots to build confidence and funnel people into those low-attendance classes later.\n\n**For the quiet classes themselves:**\n\n3. **Move Barbelle, Capacity, and Engine to Tuesday/Wednesday peak times** \u2014 if studio space allows, test running these on your busiest days at off-peak hours (e.g. early morning or 10am slots) to ride existing foot traffic; pair with a 2-week \"try-free\" invite sent to Build class regulars who might enjoy the variety.",
       "capacity": [
@@ -8121,7 +8125,7 @@
           "name": "Elevate",
           "sessions": 52,
           "cap": 12,
-          "avg_attending": 7.4,
+          "avg_attending": 7.3,
           "fill_rate": 61,
           "status": "attention"
         },
@@ -10953,17 +10957,10 @@
         "total": "\u00a336.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-21",
-        "order_no": "",
-        "total": "\u00a328.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
-    "count": 95,
-    "total_spend": 9577.6,
+    "count": 94,
+    "total_spend": 9549.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
@@ -14541,6 +14538,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Your Forge tasks \u2014 Sat 21 Nov",
+        "snippet": "JoJo \u2014 1 overdue, nothing due today or tomorrow. Overdue Finish event calendar \u2014 Admin &amp; Finance \u00b7 2 days late (was due Thu 19 Nov) Today Nothing due. Tomorrow Nothing due. Open the planner: https",
+        "id": "1a1fce7427ea8ee3"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Your Forge tasks \u2014 Fri 20 Nov",
         "snippet": "JoJo, nothing new due today \u2014 just 1 overdue to catch up on. Overdue Finish event calendar \u2014 Admin &amp; Finance \u00b7 1 day late Today Nothing due. Tomorrow Nothing due. Open the planner: https://claude.",
         "id": "1a1f7c0335eec5ce"
@@ -14584,6 +14587,6 @@
         "id": "1a1f089c334fa1c0"
       }
     ],
-    "urgent_count": 6
+    "urgent_count": 7
   }
 }
