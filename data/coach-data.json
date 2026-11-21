@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T15:00:58.380050+00:00",
+  "generated_at": "2026-11-21T20:54:11.197224+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4403,7 +4403,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U08BG08G4DS",
+        "text": "Hi grace can I plz pause dec, I'll be away the first 2 and a half weeks so def wouldn't get in between that and work ",
+        "hours": 4,
+        "name": "Evelyn Sharpe"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -5690,7 +5697,7 @@
         "name": "Sarah Boyd"
       }
     ],
-    "new_this_month": 72,
+    "new_this_month": 73,
     "cancellations_this_month": 10,
     "leaving_members": [
       {
@@ -6835,7 +6842,7 @@
       },
       {
         "name": "Unlimited Christmas Class Pack",
-        "count": 49,
+        "count": 50,
         "members": [
           {
             "id": 930054,
@@ -6924,6 +6931,10 @@
           {
             "id": 13122563,
             "name": "Laura Doherty"
+          },
+          {
+            "id": 13209864,
+            "name": "Lesley Laverty"
           },
           {
             "id": 12332786,
@@ -8810,6 +8821,12 @@
       ]
     },
     "lead_bookings": [
+      {
+        "name": "Erin McAuley",
+        "type": "Personal Training Sales Call",
+        "date": "2026-11-26",
+        "upcoming": true
+      },
       {
         "name": "Jillian boyd",
         "type": "Meet a Coach",
@@ -10950,17 +10967,10 @@
         "total": "\u00a374.00",
         "items": [],
         "title": "T-Shirt Studio order"
-      },
-      {
-        "date": "2024-11-21",
-        "order_no": "",
-        "total": "\u00a336.00",
-        "items": [],
-        "title": "T-Shirt Studio order"
       }
     ],
-    "count": 94,
-    "total_spend": 9549.6,
+    "count": 93,
+    "total_spend": 9513.6,
     "matched_query": "from:contact@tshirtstudio.com newer_than:730d subject:\"Confirmation of your TShirt Studio order\""
   },
   "moves": [
