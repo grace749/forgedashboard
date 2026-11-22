@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T15:00:57.077834+00:00",
+  "generated_at": "2026-11-22T21:02:59.110361+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -16,8 +16,8 @@
       {
         "month": "2026-10",
         "completed": 4,
-        "converted": 1,
-        "conv_rate": 25
+        "converted": 2,
+        "conv_rate": 50
       },
       {
         "month": "2026-09",
@@ -452,7 +452,7 @@
         "days_left": -13,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -483,7 +483,7 @@
         "week_on": 6,
         "days_left": -30,
         "is_active": false,
-        "is_converted": false,
+        "is_converted": true,
         "not_converted": false,
         "conv_chat_done": false,
         "welcome_pack": true,
@@ -516,7 +516,7 @@
         "days_left": -34,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "",
@@ -614,7 +614,7 @@
         "days_left": -22,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "not finishung personl issues",
@@ -710,7 +710,7 @@
         "days_left": -22,
         "is_active": false,
         "is_converted": false,
-        "not_converted": false,
+        "not_converted": true,
         "conv_chat_done": false,
         "welcome_pack": false,
         "follow_up": "not continueing due to mental health",
@@ -908,9 +908,9 @@
     "stats": {
       "active_count": 9,
       "paused_count": 7,
-      "conv_rate": 38,
-      "converted": 3,
-      "not_converted": 1,
+      "conv_rate": 50,
+      "converted": 4,
+      "not_converted": 3,
       "total_complete": 8
     }
   },
@@ -4407,7 +4407,7 @@
       {
         "user_id": "U08BG08G4DS",
         "text": "Hi grace can I plz pause dec, I'll be away the first 2 and a half weeks so def wouldn't get in between that and work ",
-        "hours": 22,
+        "hours": 28,
         "name": "Evelyn Sharpe"
       }
     ],
