@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T06:00:53.463489+00:00",
+  "generated_at": "2026-11-24T15:01:02.883949+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -891,6 +891,30 @@
   },
   "inbody": {
     "scans": [
+      {
+        "name": "Patricia McTaggart",
+        "last_scan": "2026-11-24",
+        "scan_count": 2,
+        "weight": 216.1,
+        "smm": 58.6,
+        "pbf": 50.1,
+        "bmi": 36.0,
+        "tbw": null,
+        "protein": null,
+        "mineral": null,
+        "vfa": null,
+        "inbody_age": null,
+        "weight_change": -6.9,
+        "smm_change": -0.7,
+        "pbf_change": -1.3,
+        "tbw_change": null,
+        "protein_change": null,
+        "mineral_change": null,
+        "vfa_change": null,
+        "next_due": "2027-01-05",
+        "days_to_due": 42,
+        "overdue": false
+      },
       {
         "name": "craigmccollum164",
         "last_scan": "2026-11-23",
@@ -2017,30 +2041,6 @@
         "vfa_change": null,
         "next_due": "2026-11-19",
         "days_to_due": -5,
-        "overdue": true
-      },
-      {
-        "name": "Patricia McTaggart",
-        "last_scan": "2026-10-01",
-        "scan_count": 1,
-        "weight": 223.0,
-        "smm": 59.3,
-        "pbf": 51.4,
-        "bmi": 37.1,
-        "tbw": null,
-        "protein": null,
-        "mineral": null,
-        "vfa": null,
-        "inbody_age": null,
-        "weight_change": null,
-        "smm_change": null,
-        "pbf_change": null,
-        "tbw_change": null,
-        "protein_change": null,
-        "mineral_change": null,
-        "vfa_change": null,
-        "next_due": "2026-11-12",
-        "days_to_due": -12,
         "overdue": true
       },
       {
@@ -4526,7 +4526,7 @@
       {
         "user_id": "U0BLHSPHZHC",
         "text": "How exciting! I do feel the benefits! ",
-        "hours": 10,
+        "hours": 19,
         "name": "Jennifer Reid"
       }
     ],
@@ -4863,7 +4863,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Redistribute Grace's Build: Lower (20 sessions) immediately** \u2014 this is her heaviest class load. Split between JoJo (12 sessions) and Eilis (8 sessions) to give Eilis more variety and prevent JoJo becoming the sole Lower Body specialist.\n\n\u2022 **Move Grace's Strongevity (5 sessions) to JoJo** \u2014 JoJo already teaches it and can absorb this easily; consolidates consistency for members and uses JoJo's existing expertise.\n\n\u2022 **Transition Grace's PT clients (22 hours implicit from her mixed load)** \u2014 urgently audit which of Grace's current PT members can move to JoJo or Eilis. Prioritise lower-complexity clients to Eilis to build her confidence; more technical clients to JoJo.\n\n\u2022 **Rebalance Eilis's timetable away from pure PT volume** \u2014 she's at 53 PT sessions plus classes. Capping her new PT intake and shifting her toward more group classes (Elevate, Plate, Mobility) lets her develop as a coach while reducing one-to-one dependency.\n\n\u2022 **Ensure JoJo isn't the single point of failure for technical programming** \u2014 Build: Upper and Strongevity now lean heavily on her. Upskill Eilis on Upper Body progressions (via shadowing or mentoring) so she can co-deliver or cover absences.\n\n\u2022 **Strip Body Composition Scans from PT scheduling** \u2014 these 35 scans across the team are admin, not coaching. Book them as 15-min slots with any available coach or reception staff; frees 4\u20135 hours monthly for real coaching work.",
+    "advice": "\u2022 **Redistribute Grace's Build: Lower (20 sessions).** This is her biggest commitment. Split it: JoJo takes 12\u201314 sessions (she's already running Build: Upper); Eilis takes the remaining 6\u20138. This balances the load and removes Grace's core class dependency.\n\n\u2022 **Move Grace's Strongevity (5 sessions) to JoJo.** JoJo already coaches Strongevity and can absorb these without strain. Eilis is not yet strong enough for this conditioning format.\n\n\u2022 **Eilis is carrying PT load.** At 53 PT sessions, she's over-stretched. Redistribute her PT clients: aim to move 10\u201315 PT slots to JoJo (who is at 22 and can handle more), freeing Eilis to run more classes where she's strong (Elevate, Plate, Mobility).\n\n\u2022 **Eilis should become the go-to for Elevate and Plate classes.** She ran 17 Elevate and 8 Plate last month\u2014these are her sweet spot. Increase her class load here and reduce PT to prevent burnout and build her confidence ahead of potentially handling Tuesdays later.\n\n\u2022 **JoJo on Tuesdays is working; don't change it.** She's the only coach covering technically demanding sessions. Ensure her non-Tuesday schedule (Mon/Wed/Thu/Fri) is capped at reasonable levels so Tuesdays don't push her over the edge.\n\n\u2022 **Stop all Body Composition Scans counting as coaching load.** Eilis and JoJo should split these admin-level tasks 50/50 to free up real coaching capacity.",
     "period": "October 2026"
   },
   "asana": {
@@ -5325,8 +5325,8 @@
     }
   },
   "teamup": {
-    "total_members": 177,
-    "recurring": 112,
+    "total_members": 176,
+    "recurring": 111,
     "recurring_members": [
       {
         "id": 10803724,
@@ -5769,10 +5769,6 @@
         "name": "lynne brown"
       },
       {
-        "id": 12218719,
-        "name": "sandra mccrea"
-      },
-      {
         "id": 9637616,
         "name": "susan Henry"
       }
@@ -5864,7 +5860,7 @@
         "name": "Zara Drain"
       }
     ],
-    "paused": 9,
+    "paused": 10,
     "paused_members": [
       {
         "id": 12283381,
@@ -5901,6 +5897,10 @@
       {
         "id": 9188544,
         "name": "Zara McCaughan"
+      },
+      {
+        "id": 12218719,
+        "name": "sandra mccrea"
       }
     ],
     "cancelled_by_month": [
@@ -6660,9 +6660,9 @@
       }
     ],
     "cancelled_ytd": 55,
-    "churn_rate": 5.9,
-    "avg_member_price": 137.24,
-    "monthly_recurring_revenue": 15234.0,
+    "churn_rate": 6.0,
+    "avg_member_price": 137.36,
+    "monthly_recurring_revenue": 15110.0,
     "avg_tenure_months": 8.5,
     "cancelled_last_month": 5,
     "cancelled_members": [
@@ -7187,7 +7187,7 @@
       },
       {
         "name": "Elevate",
-        "count": 45,
+        "count": 44,
         "members": [
           {
             "id": 10803724,
@@ -7364,16 +7364,12 @@
           {
             "id": 10623000,
             "name": "lynne brown"
-          },
-          {
-            "id": 12218719,
-            "name": "sandra mccrea"
           }
         ]
       },
       {
         "name": "Strongevity Membership",
-        "count": 17,
+        "count": 18,
         "members": [
           {
             "id": 13487762,
@@ -7438,6 +7434,10 @@
           {
             "id": 13212332,
             "name": "Sandra Sherrard"
+          },
+          {
+            "id": 14193486,
+            "name": "Shirley Anderson"
           },
           {
             "id": 13338052,
@@ -7795,7 +7795,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 726
+            "count": 741
           },
           {
             "day": "Monday",
@@ -7839,7 +7839,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 629
+            "count": 639
           },
           {
             "name": "Build: Lower",
@@ -7855,7 +7855,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 305
+            "count": 310
           },
           {
             "name": "Mobility",
@@ -8000,13 +8000,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3088
+        "total_attended": 3103
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 246
+            "count": 261
           },
           {
             "day": "Monday",
@@ -8050,7 +8050,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 215
+            "count": 225
           },
           {
             "name": "Build: Lower",
@@ -8066,7 +8066,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 96
+            "count": 101
           },
           {
             "name": "Mobility",
@@ -8096,7 +8096,7 @@
           },
           {
             "name": "Strongevity",
-            "count": 96
+            "count": 101
           }
         ],
         "top_slots": [
@@ -8113,9 +8113,9 @@
             "day": "Tuesday",
             "time": "7am",
             "name": "Build: Upper",
-            "count": 44,
-            "sessions": 4,
-            "avg": 11.0,
+            "count": 54,
+            "sessions": 5,
+            "avg": 10.8,
             "label": "Tuesday 7am Build: Upper"
           },
           {
@@ -8202,16 +8202,16 @@
             "label": "Saturday 8am Elevate"
           },
           {
-            "day": "Thursday",
-            "time": "10am",
-            "name": "Elevate",
-            "count": 30,
-            "sessions": 4,
-            "avg": 7.5,
-            "label": "Thursday 10am Elevate"
+            "day": "Tuesday",
+            "time": "11am",
+            "name": "Strongevity",
+            "count": 36,
+            "sessions": 5,
+            "avg": 7.2,
+            "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 996
+        "total_attended": 1011
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Add a paid \"Open Studio\" block on Thursday/Friday afternoons (2\u20134pm)** \u2014 these are your quietest days with likely dead time between classes. Charge \u00a38\u201312 per session for members to use the space freely, do their own workouts, or join drop-in mobility flows led by a rotating PT. Low lift to run, fills revenue gaps.\n\n2. **Host a monthly \"Barbell Basics\" workshop (45 mins) in a quiet Friday morning slot** \u2014 Barbelle is severely underattended (38 in 90 days). A one-off skills session removes the barrier (\"I don't know how to use barbells\") and can funnel members into the regular class once they're confident.\n\n**For the quieter classes themselves:**\n\n3. **Move Capacity and Engine to Tuesday mornings or early evenings** \u2014 your busiest day. Test if they're genuinely unpopular or just poorly timed. Pair with a one-week \"new time, new vibe\" email to lapsed attendees. Even a 20% lift on these two would meaningfully move the needle given how far behind they are.",
       "capacity": [
@@ -8534,7 +8534,7 @@
       {
         "month": "2026-11",
         "active": 175,
-        "churn": 4.4,
+        "churn": 3.8,
         "by_type": {
           "Empower": 73,
           "8 PT Sessions": 4,
@@ -8545,7 +8545,7 @@
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 10,
           "6 Week Jumpstart": 10,
-          "Strongevity Membership": 17,
+          "Strongevity Membership": 18,
           "4 Class Pass": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
           "Fuel Forward Nutrition Challenge": 1,
@@ -8891,12 +8891,6 @@
       ]
     },
     "class_milestones": [
-      {
-        "name": "sandra mccrea",
-        "total_classes": 48,
-        "next_milestone": 50,
-        "classes_away": 2
-      },
       {
         "name": "Grace McAlister",
         "total_classes": 245,
@@ -10424,15 +10418,6 @@
         "join_date": "2025-05-27",
         "membership": "Elevate",
         "class_count": 135,
-        "last_momentum": null
-      },
-      {
-        "id": 12218719,
-        "name": "sandra mccrea",
-        "email": "stay@thornfieldfarm.co.uk",
-        "join_date": "2026-02-12",
-        "membership": "Elevate",
-        "class_count": 48,
         "last_momentum": null
       },
       {
@@ -14704,6 +14689,18 @@
     "date": "2026-11-24",
     "urgent": [
       {
+        "from": "Grace Smith",
+        "subject": "Updated invitation: Jordan filming @ Tue 1 Dec 2026 10am - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Jordan filming You have been invited by Grace Smith to attend an event named Jordan filming on Tuesday 1 Dec 2026 \u22c5 10am \u2013 1:30pm (United Kingdom Time). This event has been updated Changed: Time When",
+        "id": "1a20cf3aea0d3cc1"
+      },
+      {
+        "from": "Grace Smith",
+        "subject": "Your Forge tasks \u2014 Tue 24 Nov",
+        "snippet": "JoJo, 3 due today. Nothing overdue, nothing yet for tomorrow. Today \u2605 Send t shirt order Contact Sarah Awaken, babs and first aid Check in with missing members Tomorrow Nothing due. Open the planner:",
+        "id": "1a20c59c0aa3b21d"
+      },
+      {
         "from": "Helen Logan",
         "subject": "Fw: HYROX Adaptive Community Update | November 2026 Town Hall Invitation & Team Updates",
         "snippet": "Sent from the all new AOL app for iOS Begin forwarded message: On Monday, 23 November 2026, 7:06 am, Maria Escabarte &lt;maria.escabarte@hyrox.com&gt; wrote: Hi Adaptive Community, We&#39;re excited t",
@@ -14734,12 +14731,6 @@
         "id": "1a1f7c0335eec5ce"
       },
       {
-        "from": "churchesfirstaid",
-        "subject": "Aw: first aid training",
-        "snippet": "Hi Joanne Many thanks for your email. Unfortunately all my Saturdays in January are already booked, apart from 2nd, which may or may not be suitable! All Saturdays in February are free at present. Als",
-        "id": "1a1f62b5e18e03d6"
-      },
-      {
         "from": "Coach Grace",
         "subject": "Johanna Lapsley - 30 Days as a Member Checkin",
         "snippet": "Hi Coach, Our member Johanna Lapsley has now been a member for 30 days. Coach JoJo can you formally checkin with them on Slack following this structure: 1. Celebrate their 30 days as a member -",
@@ -14758,7 +14749,14 @@
         "id": "1a1f089c334fa1c0"
       }
     ],
-    "important": [],
-    "urgent_count": 9
+    "important": [
+      {
+        "from": "Grace Smith",
+        "subject": "Updated invitation: Jordan filming @ Tue 1 Dec 2026 10am - 1:30pm (GMT) (Coach JoJo)",
+        "snippet": "Jordan filming You have been invited by Grace Smith to attend an event named Jordan filming on Tuesday 1 Dec 2026 \u22c5 10am \u2013 1:30pm (United Kingdom Time). This event has been updated",
+        "id": "1a20cf3aea0d3cc1"
+      }
+    ],
+    "urgent_count": 10
   }
 }
