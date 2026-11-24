@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T15:01:02.883949+00:00",
+  "generated_at": "2026-11-24T17:32:46.765081+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -8,7 +8,7 @@
   "brief": {
     "date": "2026-11-24",
     "event_count": 3,
-    "urgent_count": 1,
+    "urgent_count": 2,
     "enquiry_count": 2,
     "calendar": [
       {
@@ -49,6 +49,16 @@
       }
     ],
     "urgent": [
+      {
+        "from": "Coach JoJo",
+        "from_raw": "Coach JoJo <jojo@theforge.pt>",
+        "subject": "Invitation: Forge First Aid training @ Sat Feb 6, 2027 11:30am - 4pm (GMT) (Grace Smith)",
+        "snippet": "Forge First Aid training You have been invited by Coach JoJo to attend an event named Forge First Aid training on Saturday Feb 6, 2027 \u22c5 11:30am \u2013 4pm (United Kingdom Time). When Saturday Feb 6, 2027 \u22c5",
+        "id": "1a20e41167fba8be",
+        "thread_id": "1a20e41167fba8be",
+        "msg_count": 1,
+        "draft_id": "r-5734371688836188606"
+      },
       {
         "from": "jordan swain",
         "from_raw": "jordan swain <jordanswain23@gmail.com>",
@@ -200,10 +210,19 @@
   },
   "ghl": [
     {
+      "name": "Lisa Bell",
+      "channel": "Phone",
+      "message": "I\u2019m really good and really enjoying it, I feel so much better already. Defo going to join after my 6 week jumpstart \ud83d\ude0a",
+      "age": "1h ago",
+      "unread": 1,
+      "conv_id": "LWaHWVt6WUipfFXMZ18X",
+      "contact_id": "puWuc5dOiNmXxhvzezSd"
+    },
+    {
       "name": "Anne Diamond",
       "channel": "Phone",
       "message": "Hi Grace, i think im definitely peri, my hormones are all over the place and dont even mention the periods, they're horrific. Id love to get started but at the moment its financial, I really do hope t",
-      "age": "3h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "vdtkxKRvGKsTzVqjTEk2",
       "contact_id": "FoDwOXfGpACn2JmSeC9S"
@@ -212,7 +231,7 @@
       "name": "Sadie Royle",
       "channel": "Phone",
       "message": "Yes Tuesdays fine atmosphere Grace. Thanks",
-      "age": "4h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "iUY23N3Hkc70cSuWX28r",
       "contact_id": "n8ITw5jQgZIG6dvaFSED"
@@ -221,7 +240,7 @@
       "name": "Helen Basher Logan",
       "channel": "Phone",
       "message": "Good but in a lot of pain now . My hip is awful. \ud83d\ude22",
-      "age": "4h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "eQqHZ8ajEmhlhRz78UMe",
       "contact_id": "Lr2nH2gQkF8i2reVhHwZ"
@@ -230,19 +249,10 @@
       "name": "Sarah Boyd",
       "channel": "Phone",
       "message": "Healing good thank you. Was planning on coming back soon but I want to make sure my neck is ok as its still incredibly sore. Going to doctor today for it :) no doubt be sent to a&e \ud83d\ude05\n\nHow are you and ",
-      "age": "4h ago",
+      "age": "7h ago",
       "unread": 1,
       "conv_id": "HFse8Zp7V3kYGsOhyliT",
       "contact_id": "Wl4bphL5EXi7RN5Zkx2G"
-    },
-    {
-      "name": "Gym & Studio Owner Coaching",
-      "channel": "Phone",
-      "message": "Ping^ ;)",
-      "age": "1d ago",
-      "unread": 0,
-      "conv_id": "terGbVLmYvh3bEbgGvjS",
-      "contact_id": "ijrMu03JE2Vq1sDLACn2"
     }
   ],
   "jumpstart": {
@@ -5427,7 +5437,7 @@
       {
         "user_id": "U0BLHSPHZHC",
         "text": "How exciting! I do feel the benefits! ",
-        "hours": 19,
+        "hours": 21,
         "name": "Jennifer Reid"
       }
     ],
@@ -6678,11 +6688,15 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 10,
+    "trial": 11,
     "trial_members": [
       {
         "id": 14128812,
         "name": "Anne Forgrave"
+      },
+      {
+        "id": 14231263,
+        "name": "Deirdre Bones"
       },
       {
         "id": 14158967,
@@ -6705,6 +6719,10 @@
         "name": "Linda Greer"
       },
       {
+        "id": 14237342,
+        "name": "Lisa Bell"
+      },
+      {
         "id": 14166374,
         "name": "Michelle Taggart"
       },
@@ -6715,10 +6733,6 @@
       {
         "id": 14145369,
         "name": "Sarah Boyd"
-      },
-      {
-        "id": 13516704,
-        "name": "Sinead Wilson"
       }
     ],
     "new_this_month": 76,
@@ -8401,6 +8415,56 @@
         ]
       },
       {
+        "name": "6 Week Jumpstart",
+        "count": 11,
+        "members": [
+          {
+            "id": 14128812,
+            "name": "Anne Forgrave"
+          },
+          {
+            "id": 14231263,
+            "name": "Deirdre Bones"
+          },
+          {
+            "id": 14158967,
+            "name": "Jayne McKay"
+          },
+          {
+            "id": 14234793,
+            "name": "Jillian boyd"
+          },
+          {
+            "id": 14185563,
+            "name": "Julia Millar"
+          },
+          {
+            "id": 14248406,
+            "name": "Kay Blackburn"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greer"
+          },
+          {
+            "id": 14237342,
+            "name": "Lisa Bell"
+          },
+          {
+            "id": 14166374,
+            "name": "Michelle Taggart"
+          },
+          {
+            "id": 14221384,
+            "name": "Pat Culbertson"
+          },
+          {
+            "id": 14145369,
+            "name": "Sarah Boyd"
+          }
+        ]
+      },
+      {
         "name": "4 PT Sessions",
         "count": 10,
         "members": [
@@ -8443,52 +8507,6 @@
           {
             "id": 13248943,
             "name": "Yasmine Douglas"
-          }
-        ]
-      },
-      {
-        "name": "6 Week Jumpstart",
-        "count": 10,
-        "members": [
-          {
-            "id": 14128812,
-            "name": "Anne Forgrave"
-          },
-          {
-            "id": 14158967,
-            "name": "Jayne McKay"
-          },
-          {
-            "id": 14234793,
-            "name": "Jillian boyd"
-          },
-          {
-            "id": 14185563,
-            "name": "Julia Millar"
-          },
-          {
-            "id": 14248406,
-            "name": "Kay Blackburn"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greer"
-          },
-          {
-            "id": 14166374,
-            "name": "Michelle Taggart"
-          },
-          {
-            "id": 14221384,
-            "name": "Pat Culbertson"
-          },
-          {
-            "id": 14145369,
-            "name": "Sarah Boyd"
-          },
-          {
-            "id": 13516704,
-            "name": "Sinead Wilson"
           }
         ]
       },
@@ -8700,7 +8718,7 @@
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 741
+            "count": 750
           },
           {
             "day": "Monday",
@@ -8744,7 +8762,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 639
+            "count": 648
           },
           {
             "name": "Build: Lower",
@@ -8905,13 +8923,13 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3103
+        "total_attended": 3112
       },
       "last_30_days": {
         "top_days": [
           {
             "day": "Tuesday",
-            "count": 261
+            "count": 270
           },
           {
             "day": "Monday",
@@ -8955,7 +8973,7 @@
         "top_classes": [
           {
             "name": "Build: Upper",
-            "count": 225
+            "count": 234
           },
           {
             "name": "Build: Lower",
@@ -9116,7 +9134,7 @@
             "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 1011
+        "total_attended": 1020
       },
       "suggestion": "**For quiet studio gaps:**\n\n1. **Add a paid \"Open Studio\" block on Thursday/Friday afternoons (2\u20134pm)** \u2014 these are your quietest days with likely dead time between classes. Charge \u00a38\u201312 per session for members to use the space freely, do their own workouts, or join drop-in mobility flows led by a rotating PT. Low lift to run, fills revenue gaps.\n\n2. **Host a monthly \"Barbell Basics\" workshop (45 mins) in a quiet Friday morning slot** \u2014 Barbelle is severely underattended (38 in 90 days). A one-off skills session removes the barrier (\"I don't know how to use barbells\") and can funnel members into the regular class once they're confident.\n\n**For the quieter classes themselves:**\n\n3. **Move Capacity and Engine to Tuesday mornings or early evenings** \u2014 your busiest day. Test if they're genuinely unpopular or just poorly timed. Pair with a one-week \"new time, new vibe\" email to lapsed attendees. Even a 20% lift on these two would meaningfully move the needle given how far behind they are.",
       "capacity": [
@@ -9124,7 +9142,7 @@
           "name": "Build: Upper",
           "sessions": 78,
           "cap": 12,
-          "avg_attending": 10.1,
+          "avg_attending": 10.0,
           "fill_rate": 84,
           "status": "healthy"
         },
@@ -9416,7 +9434,7 @@
       },
       {
         "month": "2026-10",
-        "active": 165,
+        "active": 164,
         "churn": 4.0,
         "by_type": {
           "Empower": 74,
@@ -9427,7 +9445,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 2,
-          "6 Week Jumpstart": 7,
+          "6 Week Jumpstart": 6,
           "Strongevity Membership": 17,
           "4 Class Pass": 2,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -9438,8 +9456,8 @@
       },
       {
         "month": "2026-11",
-        "active": 175,
-        "churn": 3.8,
+        "active": 177,
+        "churn": 3.2,
         "by_type": {
           "Empower": 73,
           "8 PT Sessions": 4,
@@ -9449,7 +9467,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 10,
-          "6 Week Jumpstart": 10,
+          "6 Week Jumpstart": 11,
           "Strongevity Membership": 18,
           "4 Class Pass": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -10201,15 +10219,6 @@
         "last_momentum": null
       },
       {
-        "id": 14231263,
-        "name": "Deirdre Bones",
-        "email": "deirdrebones@live.co.uk",
-        "join_date": "2026-12-01",
-        "membership": "Unlimited Christmas Class Pack",
-        "class_count": 4,
-        "last_momentum": null
-      },
-      {
         "id": 14087556,
         "name": "Deirdre Wallace",
         "email": "deirdrewallace@hotmail.co.uk",
@@ -10714,15 +10723,6 @@
         "last_momentum": "2026-10-19"
       },
       {
-        "id": 14237342,
-        "name": "Lisa Bell",
-        "email": "lisa.bell302@btinternet.com",
-        "join_date": "2026-12-01",
-        "membership": "Unlimited Christmas Class Pack",
-        "class_count": 4,
-        "last_momentum": null
-      },
-      {
         "id": 13127914,
         "name": "Liz Bloomer",
         "email": "lizbloomer@yahoo.co.uk",
@@ -11158,7 +11158,7 @@
         "id": 13516704,
         "name": "Sinead Wilson",
         "email": "sinead.wilson33@gmail.com",
-        "join_date": "2026-10-23",
+        "join_date": "2026-11-23",
         "membership": "Empower",
         "class_count": 17,
         "last_momentum": null
