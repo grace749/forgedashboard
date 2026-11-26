@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T16:46:09.821103+00:00",
+  "generated_at": "2026-11-26T23:51:04.907145+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4507,20 +4507,7 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [
-      {
-        "user_id": "U08BG08G4DS",
-        "text": "Hi Evelyn, we need 30 days notice to pause, that\u2019s the setting from teamup. I can pause from the 21st December to 20th January if that suits.",
-        "hours": 46,
-        "name": "Evelyn Sharpe"
-      },
-      {
-        "user_id": "U0BLHSPHZHC",
-        "text": "Yes I went for xxl",
-        "hours": 44,
-        "name": "Jennifer Reid"
-      }
-    ],
+    "unreplied_dms": [],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -5774,8 +5761,12 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 11,
+    "trial": 12,
     "trial_members": [
+      {
+        "id": 14128812,
+        "name": "Anne Forgrave"
+      },
       {
         "id": 14231263,
         "name": "Deirdre Bones"
@@ -7479,6 +7470,60 @@
         ]
       },
       {
+        "name": "6 Week Jumpstart",
+        "count": 12,
+        "members": [
+          {
+            "id": 14128812,
+            "name": "Anne Forgrave"
+          },
+          {
+            "id": 14231263,
+            "name": "Deirdre Bones"
+          },
+          {
+            "id": 14158967,
+            "name": "Jayne McKay"
+          },
+          {
+            "id": 14234793,
+            "name": "Jillian boyd"
+          },
+          {
+            "id": 14185563,
+            "name": "Julia Millar"
+          },
+          {
+            "id": 14248406,
+            "name": "Kay Blackburn"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greer"
+          },
+          {
+            "id": 14237342,
+            "name": "Lisa Bell"
+          },
+          {
+            "id": 14166374,
+            "name": "Michelle Taggart"
+          },
+          {
+            "id": 14221384,
+            "name": "Pat Culbertson"
+          },
+          {
+            "id": 14145369,
+            "name": "Sarah Boyd"
+          },
+          {
+            "id": 13516704,
+            "name": "Sinead Wilson"
+          }
+        ]
+      },
+      {
         "name": "Strongevity",
         "count": 11,
         "members": [
@@ -7525,56 +7570,6 @@
           {
             "id": 13616418,
             "name": "Wendy Hunter"
-          }
-        ]
-      },
-      {
-        "name": "6 Week Jumpstart",
-        "count": 11,
-        "members": [
-          {
-            "id": 14231263,
-            "name": "Deirdre Bones"
-          },
-          {
-            "id": 14158967,
-            "name": "Jayne McKay"
-          },
-          {
-            "id": 14234793,
-            "name": "Jillian boyd"
-          },
-          {
-            "id": 14185563,
-            "name": "Julia Millar"
-          },
-          {
-            "id": 14248406,
-            "name": "Kay Blackburn"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greer"
-          },
-          {
-            "id": 14237342,
-            "name": "Lisa Bell"
-          },
-          {
-            "id": 14166374,
-            "name": "Michelle Taggart"
-          },
-          {
-            "id": 14221384,
-            "name": "Pat Culbertson"
-          },
-          {
-            "id": 14145369,
-            "name": "Sarah Boyd"
-          },
-          {
-            "id": 13516704,
-            "name": "Sinead Wilson"
           }
         ]
       },
@@ -7848,7 +7843,7 @@
           },
           {
             "day": "Thursday",
-            "count": 419
+            "count": 432
           }
         ],
         "bottom_days": [
@@ -7858,7 +7853,7 @@
           },
           {
             "day": "Thursday",
-            "count": 419
+            "count": 432
           },
           {
             "day": "Friday",
@@ -7884,7 +7879,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 471
+            "count": 480
           },
           {
             "name": "Elevate",
@@ -7910,7 +7905,7 @@
           },
           {
             "name": "Engine",
-            "count": 77
+            "count": 81
           },
           {
             "name": "Plate",
@@ -8037,7 +8032,7 @@
             "label": "Thursday 10am Elevate"
           }
         ],
-        "total_attended": 3122
+        "total_attended": 3135
       },
       "last_30_days": {
         "top_days": [
@@ -8055,7 +8050,7 @@
           },
           {
             "day": "Thursday",
-            "count": 156
+            "count": 169
           },
           {
             "day": "Friday",
@@ -8073,7 +8068,7 @@
           },
           {
             "day": "Thursday",
-            "count": 156
+            "count": 169
           },
           {
             "day": "Monday",
@@ -8095,7 +8090,7 @@
           },
           {
             "name": "Build: Full Body",
-            "count": 165
+            "count": 174
           },
           {
             "name": "Elevate",
@@ -8117,7 +8112,7 @@
           },
           {
             "name": "Engine",
-            "count": 33
+            "count": 37
           },
           {
             "name": "Circuits",
@@ -8248,9 +8243,9 @@
             "label": "Tuesday 11am Strongevity"
           }
         ],
-        "total_attended": 1077
+        "total_attended": 1090
       },
-      "suggestion": "**For quiet studio gaps:**\n\n1. **Add a Friday 6pm \"Engine Bootcamp\" drop-in block** \u2014 Engine is severely underattended (33 in last 30 days); repositioning it as a paid 30-min high-intensity slot on your quietest day, right after work, could capture commuters who skip weekday classes. Market it as \"quick, intense, no commitment.\"\n\n2. **Launch Saturday morning \"Mobility + Coffee\" workshop (8:30am, 45 mins, \u20ac8\u201312)** \u2014 Mobility ranks low (64 last month) but complements your strength-heavy timetable. Package it as a social, educational slot on your quietest day with free coffee; invite Build class regulars who need recovery focus.\n\n**For quieter classes:**\n\n3. **Move Barbelle (38 attendees in 90 days) to Tuesday evening and offer a 3-class intro pass at sign-up** \u2014 It's near-invisible; slot it after Build: Upper on your busiest day to ride that traffic, then give new members a discounted pass to try it 3 times before committing. Pair with one-to-one form demo at first attendance.",
+      "suggestion": "1. **Launch a Thursday\u2013Friday \"Drop-in Strength Block\" (30 mins, \u20ac8\u201312)** \u2014 Your quietest days have gaps between PT sessions and scheduled classes. Offer a mini-structured lift session targeting the Build: Upper/Lower movements members already love, to warm them up before evening classes or attract members who can't commit to full timetable slots. This fills dead studio time and primes people for your popular classes.\n\n2. **Move Barbelle and Capacity to Tuesday mornings as back-to-back \"Skill Lab\" slots** \u2014 These two are severely underattended (38 and 56 over 90 days). Tuesday is your busiest day, so stack them early when commuters and shift-workers are fresher. Add a cheeky incentive: \"First 3 weeks free if you commit to 4 sessions.\" Reframe them as micro-skill workshops rather than standalone classes to attract curious members from busy classes.\n\n3. **Create a Saturday \"Mobility + Coffee\" social slot (45 mins, included with membership)** \u2014 Saturday is dead (272 total attendance). Host Mobility in a social, informal format with coffee/tea after, marketed as \"recovery community time\" rather than a sweat class. Invite Build: Lower/Upper regulars by name (\"We know you crush it Mon\u2013Wed\u2014come recover",
       "capacity": [
         {
           "name": "Build: Upper",
@@ -8312,7 +8307,7 @@
           "name": "Engine",
           "sessions": 13,
           "cap": 12,
-          "avg_attending": 7.5,
+          "avg_attending": 7.4,
           "fill_rate": 62,
           "status": "attention"
         },
@@ -8548,7 +8543,7 @@
       },
       {
         "month": "2026-10",
-        "active": 164,
+        "active": 165,
         "churn": 4.0,
         "by_type": {
           "Empower": 74,
@@ -8559,7 +8554,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 2,
-          "6 Week Jumpstart": 6,
+          "6 Week Jumpstart": 7,
           "Strongevity Membership": 17,
           "4 Class Pass": 2,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -8571,7 +8566,7 @@
       {
         "month": "2026-11",
         "active": 177,
-        "churn": 3.2,
+        "churn": 3.1,
         "by_type": {
           "Empower": 73,
           "8 PT Sessions": 4,
@@ -8581,7 +8576,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 10,
-          "6 Week Jumpstart": 11,
+          "6 Week Jumpstart": 12,
           "Strongevity Membership": 18,
           "4 Class Pass": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -9062,7 +9057,7 @@
         "id": 14128812,
         "name": "Anne Forgrave",
         "email": "a.forgrave@outlook.com",
-        "join_date": "2026-11-19",
+        "join_date": "2026-10-28",
         "membership": "Elevate",
         "class_count": 7,
         "last_momentum": null
