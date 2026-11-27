@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T06:00:57.915467+00:00",
+  "generated_at": "2026-11-27T15:00:59.373482+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -4856,7 +4856,7 @@
         "classes": []
       }
     ],
-    "advice": "\u2022 **Move Grace's Build: Lower (20 sessions) to JoJo.** JoJo already leads Build: Upper; adding Lower consolidates strength programming under one coach and fills gaps in her timetable, giving her clear specialism and better member continuity.\n\n\u2022 **Redistribute Grace's Strongevity and niche classes (Circuits, Engine) to Eilis.** These lower-intensity sessions suit Eilis's current level and boost her total hours without overloading. Eilis is significantly under-used at 131 sessions vs. JoJo's 115 (excluding InBody scans).\n\n\u2022 **Stop counting InBody scans as coaching load** \u2014 they're admin, not delivery. This frees ~25\u201335 notional hours across the team each month that shouldn't factor into timetable balance.\n\n\u2022 **Reduce Eilis's Personal Training load (53 sessions) by ~10\u201315%, redirecting to JoJo or a new tier of group sessions.** Eilis is stretched thin on 1:1s; rebalancing lets her deliver better quality and reduces burnout risk.\n\n\u2022 **Create a Tuesday backup for JoJo** \u2014 either fast-track Eilis's Tuesday readiness through shadowing, or cross-train another coach to cover absences. Right now the studio is exposed if JoJo is unavailable on the most demanding delivery day.\n\n\u2022 **Audit which classes drive revenue vs. member satisfaction** \u2014 Grace's lower-attendance sessions (Circuits, Engine) may be candidates for consolidation rather than rotation, freeing more capacity for high-demand offerings.",
+    "advice": "\u2022 **Redistribute Grace's Build: Lower (20 sessions) immediately** \u2014 this is her main class load. Split between Eilis (12) and JoJo (8) to build redundancy; currently only Grace runs it, which is a single point of failure for members.\n\n\u2022 **Move Grace's Strongevity (5 sessions) to JoJo** \u2014 aligns with JoJo's existing Strongevity delivery and reduces Grace's class count to near-zero without overloading any one coach.\n\n\u2022 **Eilis is under-stretched on class delivery** \u2014 she runs only four class types (Elevate, Build: Full Body, Plate, Mobility) with low session counts. Add her to Build: Lower rotation and consider expanding her Plate offering if demand is there.\n\n\u2022 **JoJo is carrying heavy Tuesday load alone** \u2014 115 total sessions is high and concentration on the technically demanding day is a risk. Once Build: Lower is split to Eilis, monitor whether JoJo needs backfill on other days or whether Eilis can support lighter Tuesday slots as her confidence grows.\n\n\u2022 **PT load is imbalanced** \u2014 Eilis has 53 PT sessions versus JoJo's 22. Review whether Eilis can mentor JoJo on PT styles or whether member preference/booking patterns drive this, then rebalance if possible.\n\n\u2022 **Ignore the 18 and 14 Body Composition Scans** \u2014 these aren't coaching and shouldn't count toward workload balance; they're admin tasks any team member can absorb as needed.",
     "period": "October 2026"
   },
   "asana": {
@@ -5776,7 +5776,7 @@
         "name": "susan Henry"
       }
     ],
-    "trial": 12,
+    "trial": 11,
     "trial_members": [
       {
         "id": 14128812,
@@ -5821,10 +5821,6 @@
       {
         "id": 14145369,
         "name": "Sarah Boyd"
-      },
-      {
-        "id": 13516704,
-        "name": "Sinead Wilson"
       }
     ],
     "new_this_month": 79,
@@ -7485,60 +7481,6 @@
         ]
       },
       {
-        "name": "6 Week Jumpstart",
-        "count": 12,
-        "members": [
-          {
-            "id": 14128812,
-            "name": "Anne Forgrave"
-          },
-          {
-            "id": 14231263,
-            "name": "Deirdre Bones"
-          },
-          {
-            "id": 14158967,
-            "name": "Jayne McKay"
-          },
-          {
-            "id": 14234793,
-            "name": "Jillian boyd"
-          },
-          {
-            "id": 14185563,
-            "name": "Julia Millar"
-          },
-          {
-            "id": 14248406,
-            "name": "Kay Blackburn"
-          },
-          {
-            "id": 13507202,
-            "name": "Linda Greer"
-          },
-          {
-            "id": 14237342,
-            "name": "Lisa Bell"
-          },
-          {
-            "id": 14166374,
-            "name": "Michelle Taggart"
-          },
-          {
-            "id": 14221384,
-            "name": "Pat Culbertson"
-          },
-          {
-            "id": 14145369,
-            "name": "Sarah Boyd"
-          },
-          {
-            "id": 13516704,
-            "name": "Sinead Wilson"
-          }
-        ]
-      },
-      {
         "name": "Strongevity",
         "count": 11,
         "members": [
@@ -7585,6 +7527,56 @@
           {
             "id": 13616418,
             "name": "Wendy Hunter"
+          }
+        ]
+      },
+      {
+        "name": "6 Week Jumpstart",
+        "count": 11,
+        "members": [
+          {
+            "id": 14128812,
+            "name": "Anne Forgrave"
+          },
+          {
+            "id": 14231263,
+            "name": "Deirdre Bones"
+          },
+          {
+            "id": 14158967,
+            "name": "Jayne McKay"
+          },
+          {
+            "id": 14234793,
+            "name": "Jillian boyd"
+          },
+          {
+            "id": 14185563,
+            "name": "Julia Millar"
+          },
+          {
+            "id": 14248406,
+            "name": "Kay Blackburn"
+          },
+          {
+            "id": 13507202,
+            "name": "Linda Greer"
+          },
+          {
+            "id": 14237342,
+            "name": "Lisa Bell"
+          },
+          {
+            "id": 14166374,
+            "name": "Michelle Taggart"
+          },
+          {
+            "id": 14221384,
+            "name": "Pat Culbertson"
+          },
+          {
+            "id": 14145369,
+            "name": "Sarah Boyd"
           }
         ]
       },
@@ -8282,22 +8274,22 @@
           "name": "Circuits",
           "sessions": 27,
           "cap": 12,
-          "avg_attending": 9.6,
-          "fill_rate": 80,
+          "avg_attending": 9.4,
+          "fill_rate": 79,
           "status": "healthy"
-        },
-        {
-          "name": "Mobility",
-          "sessions": 28,
-          "cap": 12,
-          "avg_attending": 8.7,
-          "fill_rate": 73,
-          "status": "attention"
         },
         {
           "name": "Build: Lower",
           "sessions": 65,
           "cap": 13,
+          "avg_attending": 8.7,
+          "fill_rate": 72,
+          "status": "attention"
+        },
+        {
+          "name": "Mobility",
+          "sessions": 28,
+          "cap": 12,
           "avg_attending": 8.7,
           "fill_rate": 72,
           "status": "attention"
@@ -8558,7 +8550,7 @@
       },
       {
         "month": "2026-10",
-        "active": 165,
+        "active": 164,
         "churn": 4.0,
         "by_type": {
           "Empower": 74,
@@ -8569,7 +8561,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 2,
-          "6 Week Jumpstart": 7,
+          "6 Week Jumpstart": 6,
           "Strongevity Membership": 17,
           "4 Class Pass": 2,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -8581,7 +8573,7 @@
       {
         "month": "2026-11",
         "active": 177,
-        "churn": 3.1,
+        "churn": 3.2,
         "by_type": {
           "Empower": 73,
           "8 PT Sessions": 4,
@@ -8591,7 +8583,7 @@
           "Foundation PAID IN FULL": 4,
           "Kickstart PAID IN FULL": 2,
           "Strongevity": 10,
-          "6 Week Jumpstart": 12,
+          "6 Week Jumpstart": 11,
           "Strongevity Membership": 18,
           "4 Class Pass": 1,
           "1:2 Personal Training (With Friend/Family Member)": 1,
@@ -10283,7 +10275,7 @@
         "id": 13516704,
         "name": "Sinead Wilson",
         "email": "sinead.wilson33@gmail.com",
-        "join_date": "2026-10-23",
+        "join_date": "2026-11-23",
         "membership": "Empower",
         "class_count": 17,
         "last_momentum": null
@@ -14755,6 +14747,12 @@
     "urgent": [
       {
         "from": "Grace Smith",
+        "subject": "Your Forge tasks \u2014 Fri 27 Nov",
+        "snippet": "JoJo, nothing due today \u2014 clear run. Open the planner: https://claude.ai/artifact/WCkQU7qeeentUdteFp16qd",
+        "id": "1a21bccc8a79a901"
+      },
+      {
+        "from": "Grace Smith",
         "subject": "Fwd: Suggestion Box Idea",
         "snippet": "---------- Forwarded message --------- From: Coach Grace &lt;grace@forgefemalefitness.com&gt; Date: Thu, 26 Nov 2026 at 13:46 Subject: Suggestion Box Idea To: &lt;grace@theforge.pt&gt; Cc: &lt;jojo@",
         "id": "1a2184b33f0bb94c"
@@ -14800,12 +14798,6 @@
         "subject": "Your Forge tasks \u2014 Sat 21 Nov",
         "snippet": "JoJo \u2014 1 overdue, nothing due today or tomorrow. Overdue Finish event calendar \u2014 Admin &amp; Finance \u00b7 2 days late (was due Thu 19 Nov) Today Nothing due. Tomorrow Nothing due. Open the planner: https",
         "id": "1a1fce7427ea8ee3"
-      },
-      {
-        "from": "Grace Smith",
-        "subject": "Your Forge tasks \u2014 Fri 20 Nov",
-        "snippet": "JoJo, nothing new due today \u2014 just 1 overdue to catch up on. Overdue Finish event calendar \u2014 Admin &amp; Finance \u00b7 1 day late Today Nothing due. Tomorrow Nothing due. Open the planner: https://claude.",
-        "id": "1a1f7c0335eec5ce"
       }
     ],
     "important": [
