@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:00:59.373482+00:00",
+  "generated_at": "2026-11-27T16:31:18.729169+00:00",
   "apps_script_url": "https://script.google.com/macros/s/AKfycbyhNVZqF-DnYmPIMJd9I3KgBP_F-fwAAnXgh1fQhPUtS5a3witberyikUP1EEHEck30/exec",
   "asana_script_url": "https://script.google.com/macros/s/AKfycbxHD2Y8cSFWSuCVzoahzEbun1g9NjVi8jqpjk6DRdO3zvrLs4kG25cAPrdki0EvSx3t/exec",
   "atrisk_url": "https://script.google.com/macros/s/AKfycbzPIcRa3UBEgfNW-0LQVyb7EtU2MiZSAXGleqJJCLdmUQYKbjY72Yz0t-H1Oq6pRofXCQ/exec",
@@ -39,7 +39,7 @@
         "day": "Today",
         "attendees": [],
         "description": "",
-        "location": "11/12 booked",
+        "location": "10/12 booked",
         "prep": "",
         "source": "teamup"
       },
@@ -101,14 +101,14 @@
     ],
     "urgent": [
       {
-        "from": "Jamie Lowe",
-        "from_raw": "Jamie Lowe <jamie.lowe@sjpp.co.uk>",
-        "subject": "Critical Illness Cover- Documents",
-        "snippet": "You&#39;ve received an encrypted email message from St. James&#39;s Place. Please click here to access your message. https://mailsecurity.sjp.co.uk/formpostdir/securereader?id=",
-        "id": "1a21c1f1c67d1802",
-        "thread_id": "1a21c1f1c67d1802",
+        "from": "Roisin | Women in Business NI",
+        "from_raw": "\"Roisin | Women in Business NI\" <roisin@womeninbusinessni.com>",
+        "subject": "Who fancies a Christmas drink?",
+        "snippet": "Hi Grace We would love to see you! For the first time ever I have persuaded the Women in Business team to let us have a Business owners only gathering!! In the most lovely pub. The Dark Horse, in the",
+        "id": "1a21dcf8747d5ed8",
+        "thread_id": "1a21dcf8747d5ed8",
         "msg_count": 1,
-        "draft_id": "r-766841078548326527"
+        "draft_id": "r3202142575703951074"
       },
       {
         "from": "Amanda Keane",
@@ -145,9 +145,9 @@
       "by_email": {
         "emmaglen2@aol.com": "2026-11-12",
         "lesley.laverty123@gmail.com": "2026-10-20",
-        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarah@nourishandnurtu.re": "2026-08-15",
         "kathleen.simpson2210@gmail.com": "2026-08-15",
+        "eiliskearns@hotmail.co.uk": "2026-08-15",
         "sarabenetti2013@gmail.com": "2026-08-13",
         "conniegerrow101@hotmail.com": "2026-06-29",
         "melissatraynor@live.ie": "2026-06-21",
@@ -246,7 +246,7 @@
       "name": "Jillian Boyd",
       "channel": "Phone",
       "message": "Hi there.  I am really enjoying the classes and everyone is so lovely and supportive.   I would really like to improve strength in my legs but find they are so wobbly!  I\u2019ve been increasing my walking",
-      "age": "3h ago",
+      "age": "5h ago",
       "unread": 1,
       "conv_id": "GVciQri4tL4lCbVTCNcv",
       "contact_id": "iy8qgyHffsQnOPQUWcws"
@@ -255,7 +255,7 @@
       "name": "Mean Peach Supplements \ud83c\udf51",
       "channel": "Phone",
       "message": "Hi Grace! \ud83c\udf51\n\nI'm Britt, founder of Mean Peach, a female-focused sports nutrition brand specialising in our Peach Creatine. I'm a PT and nutritionist, and you might recognise me from BBC's The Apprenti",
-      "age": "5h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "bm4qejxujLb7bCHFl7fA",
       "contact_id": "nnQFaejQPen6nK52VxUf"
@@ -264,7 +264,7 @@
       "name": "RE:ACADEMY",
       "channel": "Phone",
       "message": "No way, congratulations \ud83e\udd73 \n\nBeautiful time of the year to \ud83c\udf85\ud83c\udffc",
-      "age": "5h ago",
+      "age": "6h ago",
       "unread": 1,
       "conv_id": "7JBCn26PsHDlooSBzVJo",
       "contact_id": "fClvUi8KJk4MKjpomw37"
@@ -273,7 +273,7 @@
       "name": "Lisa McGrillis",
       "channel": "Phone",
       "message": "Hi. Thank you for messaging. I did look to book a call but I start a new job on Monday and can't commit to any of the times available unfortunately",
-      "age": "17h ago",
+      "age": "19h ago",
       "unread": 1,
       "conv_id": "9Sf5Oko69H3mTJMOpbQR",
       "contact_id": "c9A4uAbUr730Wkbz9L3X"
@@ -5495,7 +5495,14 @@
   "slack": {
     "configured": true,
     "team_id": "T05MXJ4HH8X",
-    "unreplied_dms": [],
+    "unreplied_dms": [
+      {
+        "user_id": "U0A77CLG4PJ",
+        "text": "Grace I've had to cancel class tonight my mum is in craigavon hospital very unwell she is 92 and very weak I'm up and down to hospital so short notice!  Grace B",
+        "hours": 1,
+        "name": "Linda Davidson"
+      }
+    ],
     "mentions": [],
     "users": {
       "head coach jojo": "U05MXJC8QNB",
@@ -9267,7 +9274,7 @@
           "name": "Mobility",
           "sessions": 28,
           "cap": 12,
-          "avg_attending": 8.7,
+          "avg_attending": 8.6,
           "fill_rate": 72,
           "status": "attention"
         },
